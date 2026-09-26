@@ -148,6 +148,7 @@
       "enunciado": "Escucha y escribe la oración con sus comas.",
       "escuchar": "En la feria compramos papa, choclo y quinua.",
       "respuestas": ["En la feria compramos papa, choclo y quinua."],
+      "mayusculas": "estricto",
       "pista": "Escucha las pausas cortas: ahí van las comas, y después de cada coma se deja un espacio. Antes de la «y» no va coma. Termina con punto.",
       "explicacion": "Se escribe «En la feria compramos papa, choclo y quinua.» La coma separa «papa» y «choclo»; la «y» une «quinua».",
       "error": "dictado-comas"
@@ -221,6 +222,7 @@
       "id": "p13", "tipo": "escribir", "nivel": 3,
       "enunciado": "Escribe la oración con la coma que falta: «Mi tía vende api pasteles y buñuelos.»",
       "respuestas": ["Mi tía vende api, pasteles y buñuelos."],
+      "mayusculas": "estricto",
       "pista": "La lista tiene tres cosas. ¿Entre cuáles va la coma?",
       "explicacion": "Se escribe «Mi tía vende api, pasteles y buñuelos.» La coma separa «api» y «pasteles»; la «y» une «buñuelos».",
       "error": "falta-coma-lista"
@@ -311,7 +313,8 @@
       "enunciado": "Escucha y escribe la oración con sus comas.",
       "escuchar": "Mi perro juega con Inti, Nayra y Mateo.",
       "respuestas": ["Mi perro juega con Inti, Nayra y Mateo."],
-      "pista": "Escucha la pausa corta entre los nombres. Antes de la «y» no va coma. Termina con punto.",
+      "mayusculas": "estricto",
+      "pista": "Escucha la pausa corta entre los nombres. Antes de la «y» no va coma. Los nombres van con mayúscula y al final va punto.",
       "explicacion": "Se escribe «Mi perro juega con Inti, Nayra y Mateo.» La coma separa «Inti» y «Nayra»; la «y» une «Mateo».",
       "error": "dictado-comas"
     },
@@ -367,6 +370,7 @@
       "id": "c8", "tipo": "escribir", "nivel": 3,
       "enunciado": "Escribe la respuesta con las comas que faltan: «Sí ya tengo lápiz cuaderno y goma.»",
       "respuestas": ["Sí, ya tengo lápiz, cuaderno y goma."],
+      "mayusculas": "estricto",
       "pista": "Hay una coma después de «Sí» y otra en la lista.",
       "explicacion": "Se escribe «Sí, ya tengo lápiz, cuaderno y goma.» Una coma va después de «Sí» y la otra separa «lápiz» y «cuaderno».",
       "error": "usos-coma"

@@ -18,7 +18,7 @@
       "visual": { "tipo": "tabla", "columnas": ["-ar", "-er", "-ir"], "filas": [["saltar", "comer", "vivir"], ["bailar", "correr", "subir"], ["cantar", "beber", "escribir"]] }
     },
     {
-      "texto": "¡Actúa el verbo! Salta, aplaude, baila: los verbos se pueden **hacer**. Una mesa o una papa no se pueden hacer: son sustantivos, palabras que nombran.",
+      "texto": "¡Actúa el verbo! Salta, aplaude, baila: muchos verbos se pueden **actuar**. Una mesa o una papa no se pueden actuar: son sustantivos, palabras que nombran.",
       "emoji": "🎭",
       "visual": { "tipo": "emojis", "items": ["🤸", "👏", "💃"], "etiquetas": ["saltar", "aplaudir", "bailar"] }
     }
@@ -204,7 +204,7 @@
       ],
       "pista": "¿Para qué sirve cada cosa? La cosa es un nombre; lo que haces con ella es un verbo.",
       "explicacion": "Con las tijeras cortas, con la escoba barres, con el lápiz escribes y con el vaso bebes. Cortar, barrer, escribir y beber son verbos.",
-      "error": "confunde-sustantivo"
+      "error": "verbo-contexto"
     },
     {
       "id": "p11", "tipo": "opcion", "nivel": 2,
@@ -238,7 +238,7 @@
       "id": "p13", "tipo": "relacionar", "nivel": 3,
       "enunciado": "Une cada verbo con su infinitivo.",
       "pares": [["corre", "correr"], ["duerme", "dormir"], ["juega", "jugar"], ["escribe", "escribir"]],
-      "pista": "Di la acción con -ar, -er o -ir al final. Ojo: a veces cambia una letra de adentro.",
+      "pista": "Di la acción con -ar, -er o -ir al final. Ojo: a veces cambian letras del medio de la palabra.",
       "explicacion": "Corre → correr. Duerme → dormir. Juega → jugar. Escribe → escribir.",
       "error": "infinitivo"
     },
@@ -266,7 +266,8 @@
       "requisitos": [
         { "tipo": "mayuscula-inicial" },
         { "tipo": "punto-final" },
-        { "tipo": "min-oraciones", "valor": 2 }
+        { "tipo": "min-oraciones", "valor": 2 },
+        { "tipo": "min-palabras", "valor": 6 }
       ],
       "modelo": "La vicuña come pasto en el altiplano. Corre muy rápido.",
       "pista": "Piensa: ¿qué hace ese animal? ¿Come, corre, vuela, nada?",
@@ -284,37 +285,26 @@
       "error": "no-identifica-verbo"
     },
     {
-      "id": "c2", "tipo": "opcion", "nivel": 1,
-      "enunciado": "Escucha la oración. ¿Cuál es el verbo?",
-      "escuchar": "El perro ladra en la puerta.",
+      "id": "c2", "tipo": "multiple", "nivel": 1,
+      "enunciado": "Escucha la oración. Elige los dos verbos.",
+      "escuchar": "El perro ladra y corre en el patio.",
       "opciones": [
         { "texto": "ladra", "correcta": true },
         { "texto": "perro", "pista": "«Perro» nombra a un animal. ¿Qué hace el perro?", "error": "confunde-sustantivo" },
-        { "texto": "puerta", "pista": "«Puerta» nombra una cosa. Busca la acción.", "error": "confunde-sustantivo" }
+        { "texto": "corre", "correcta": true },
+        { "texto": "patio", "pista": "«Patio» nombra un lugar. Busca las acciones.", "error": "confunde-sustantivo" }
       ],
-      "columnas": 3,
-      "pista": "Escucha otra vez y pregúntate: ¿qué hace el perro?",
-      "explicacion": "El verbo es «ladra»: dice lo que hace el perro.",
+      "columnas": 2,
+      "pista": "Escucha otra vez y pregúntate: ¿qué hace el perro? Hace dos cosas.",
+      "explicacion": "Los verbos son «ladra» y «corre»: dicen lo que hace el perro. «Perro» y «patio» son nombres.",
       "error": "no-identifica-verbo"
     },
     {
-      "id": "c3", "tipo": "clasificar", "nivel": 2,
-      "enunciado": "¿Cómo termina cada verbo?",
-      "categorias": [
-        { "id": "ar", "texto": "-ar" },
-        { "id": "er", "texto": "-er" },
-        { "id": "ir", "texto": "-ir" }
-      ],
-      "elementos": [
-        { "texto": "regar", "categoria": "ar" },
-        { "texto": "sembrar", "categoria": "ar" },
-        { "texto": "barrer", "categoria": "er" },
-        { "texto": "romper", "categoria": "er" },
-        { "texto": "subir", "categoria": "ir" },
-        { "texto": "salir", "categoria": "ir" }
-      ],
-      "pista": "Mira las dos últimas letras de cada verbo.",
-      "explicacion": "-ar: regar y sembrar. -er: barrer y romper. -ir: subir y salir.",
+      "id": "c3", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa cada verbo con su final: -ar, -er o -ir.",
+      "texto": "En el recreo me gusta salt[ar], corr[er], jug[ar] y compart[ir] mi refrigerio.",
+      "pista": "Prueba cada final y di la palabra en voz alta. ¿Cuál forma una acción que conoces?",
+      "explicacion": "Se dice salt**ar**, corr**er**, jug**ar** y compart**ir**. Son infinitivos: terminan en -ar, -er o -ir.",
       "error": "terminacion-infinitivo"
     },
     {
@@ -332,16 +322,16 @@
       "escuchar": "barrer",
       "visual": { "tipo": "emoji", "valor": "🧹" },
       "respuestas": ["barrer"],
-      "pista": "Tiene dos sílabas y termina en -er. En el medio lleva la misma letra doble que «perro».",
-      "explicacion": "Se escribe **barrer**: ba-rrer. Lleva rr en el medio y termina en -er.",
+      "pista": "Tiene dos sílabas y termina en -er. Recuerda: entre dos vocales, la r fuerte se escribe con dos letras, como en «perro».",
+      "explicacion": "Se escribe **barrer**: ba-rrer. Entre dos vocales, la r fuerte se escribe rr. Termina en -er, como correr.",
       "error": "escritura-verbo"
     },
     {
       "id": "c6", "tipo": "tocar", "nivel": 2,
       "enunciado": "Toca los dos verbos.",
-      "texto": "Juan *cocina* sopa de maní y Arami *pone* la mesa.",
-      "pista": "Pregunta: ¿qué hace Juan? ¿Qué hace Arami?",
-      "explicacion": "«Cocina» y «pone» son los verbos: dicen lo que hacen Juan y Arami.",
+      "texto": "El viento *sopla* fuerte y Arami *cierra* la ventana.",
+      "pista": "Un verbo dice lo que pasa con el viento y otro dice lo que hace Arami.",
+      "explicacion": "«Sopla» dice lo que pasa con el viento y «cierra» dice lo que hace Arami. Los dos son verbos.",
       "error": "no-identifica-verbo"
     },
     {
@@ -367,8 +357,8 @@
       "id": "c8", "tipo": "escribir", "nivel": 3,
       "enunciado": "Escribe el infinitivo del verbo de esta oración: «La abuela cuenta un cuento».",
       "respuestas": ["contar"],
-      "pista": "Busca la acción y dila con -ar, -er o -ir al final. Ojo: a veces cambia una letra de adentro, como en duerme → dormir.",
-      "explicacion": "«Cuenta» viene de **contar**. La ue de adentro cambia a o, como en duerme → dormir.",
+      "pista": "Busca la acción y dila con -ar, -er o -ir al final. Ojo: a veces cambian letras del medio, como en duerme → dormir.",
+      "explicacion": "«Cuenta» viene de **contar**. La ue del medio cambia a o, como en duerme → dormir.",
       "error": "infinitivo"
     }
   ],

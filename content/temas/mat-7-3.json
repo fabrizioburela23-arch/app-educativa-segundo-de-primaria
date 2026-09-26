@@ -10,6 +10,7 @@
     },
     {
       "texto": "Si pagas con más dinero, te devuelven el **cambio**: lo que sobra. Pagas con 10 Bs algo que cuesta 9 Bs: 10 − 9 = 1 Bs de cambio.",
+      "audio": "Si pagas con más dinero, te devuelven el cambio: lo que sobra. Pagas con 10 bolivianos algo que cuesta 9 bolivianos: 10 menos 9, un boliviano de cambio.",
       "visual": { "tipo": "dinero", "items": ["b10"] }
     },
     {
@@ -213,7 +214,7 @@
     },
     {
       "id": "p12", "tipo": "numero", "nivel": 3,
-      "enunciado": "Mateo compra 4 panes. Cada pan cuesta 50 centavos. ¿Cuánto paga en total?",
+      "enunciado": "Mateo compra 4 panes. Cada pan cuesta 50 centavos. ¿Cuántos bolivianos paga en total?",
       "visual": { "tipo": "emoji", "valor": "🍞", "cantidad": 4 },
       "respuesta": 2,
       "sufijo": "Bs",
@@ -277,8 +278,8 @@
         { "etiqueta": "Bolivianos", "respuesta": 1 },
         { "etiqueta": "Centavos", "respuesta": 50 }
       ],
-      "pista": "Cuenta hacia arriba: de 3 Bs con 50 centavos a 4 Bs faltan 50 centavos. De 4 Bs a 5 Bs falta 1 Bs.",
-      "explicacion": "50 centavos y 1 Bs más: Kusi recibe 1 Bs con 50 centavos de cambio.",
+      "pista": "Cuenta hacia arriba. Primero: ¿cuántos centavos faltan para llegar a 4 Bs? Después: ¿cuánto falta de 4 Bs a 5 Bs?",
+      "explicacion": "De 3 Bs con 50 centavos a 4 Bs faltan 50 centavos. De 4 Bs a 5 Bs falta 1 Bs. Kusi recibe 1 Bs con 50 centavos de cambio.",
       "error": "cambio-centavos"
     },
     {
@@ -382,14 +383,14 @@
     },
     {
       "id": "c8", "tipo": "numero", "nivel": 3,
-      "enunciado": "Nayra compra un vaso de mocochinchi a 2 Bs con 50 centavos. Paga con 5 Bs. ¿Cuánto cambio recibe?",
-      "visual": { "tipo": "dinero", "items": ["m5"] },
+      "enunciado": "Nayra compra un vaso de mocochinchi a 2 Bs con 50 centavos. Paga con un billete de 10 Bs. ¿Cuánto cambio recibe?",
+      "visual": { "tipo": "dinero", "items": ["b10"] },
       "campos": [
-        { "etiqueta": "Bolivianos", "respuesta": 2 },
+        { "etiqueta": "Bolivianos", "respuesta": 7 },
         { "etiqueta": "Centavos", "respuesta": 50 }
       ],
-      "pista": "Cuenta hacia arriba: de 2 Bs con 50 centavos a 3 Bs faltan 50 centavos. De 3 Bs a 5 Bs faltan 2 Bs.",
-      "explicacion": "50 centavos y 2 Bs más: Nayra recibe 2 Bs con 50 centavos de cambio.",
+      "pista": "Cuenta hacia arriba. Primero: ¿cuántos centavos faltan para llegar a 3 Bs? Después: ¿cuántos Bs faltan de 3 a 10?",
+      "explicacion": "De 2 Bs con 50 centavos a 3 Bs faltan 50 centavos. De 3 Bs a 10 Bs faltan 7 Bs. Nayra recibe 7 Bs con 50 centavos de cambio.",
       "error": "cambio-centavos"
     }
   ],
@@ -400,7 +401,7 @@
   "adulto": {
     "objetivo": "Resolver situaciones de compra en la feria: calcular el total sumando precios, revisar si el dinero alcanza, pagar el monto justo y calcular el cambio restando o contando hacia arriba desde el total hasta lo que se pagó (primero el total, después el cambio).",
     "sugerencias": [
-      "En la feria o en la tienda, denle un monto pequeño (por ejemplo, 10 Bs) para comprar dos cosas: que calcule el total antes de pagar y cuente el cambio que le entregan.",
+      "Vayan juntos a la feria o a la tienda y denle un monto pequeño (por ejemplo, 10 Bs) para comprar dos cosas: que calcule el total antes de pagar y cuente el cambio que le entregan.",
       "Jueguen a la tiendita en casa con productos de la cocina, etiquetas de precio y dinero de papel. Túrnense para vender (dar el cambio contando hacia arriba: «16, 17, 18, 19, 20») y para comprar.",
       "En el patio, dibujen con tiza una recta del 0 al 20. Para calcular un cambio, que se pare en el precio y salte hasta lo que se pagó, contando los saltos."
     ],

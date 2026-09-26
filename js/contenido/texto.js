@@ -17,9 +17,20 @@ export function aHtml(texto) {
   return esc.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
 }
 
+const ORD = ['', 'primero', 'segundo', 'tercero', 'cuarto', 'quinto', 'sexto', 'séptimo', 'octavo', 'noveno', 'décimo',
+  'undécimo', 'duodécimo', 'decimotercero', 'decimocuarto', 'decimoquinto', 'decimosexto', 'decimoséptimo', 'decimoctavo', 'decimonoveno', 'vigésimo'];
+const FRACCIONES = { '1/2': 'un medio', '1/4': 'un cuarto', '2/4': 'dos cuartos', '3/4': 'tres cuartos', '4/4': 'cuatro cuartos', '2/2': 'dos medios' };
+
 // Texto apto para la voz sintética.
 export function paraVoz(texto) {
   return String(texto ?? '')
+    .replace(/\b(\d{1,2})\.º/g, (m, n) => ORD[Number(n)] || n)
+    .replace(/\b(\d{1,2})\.ª/g, (m, n) => (ORD[Number(n)] ? ORD[Number(n)].replace(/o$/, 'a') : n))
+    .replace(/\b([1-4])\/([24])\b/g, (m) => FRACCIONES[m] || m)
+    .replace(/(^|[^\d])1\s*Bs\b/g, '$1un boliviano')
+    .replace(/\bctv\.?/g, 'centavos')
+    .replace(/(\d)\s*>\s*(\d)/g, '$1 es mayor que $2')
+    .replace(/(\d)\s*<\s*(\d)/g, '$1 es menor que $2')
     .replace(/\*\*/g, '')
     .replace(/\*/g, '')
     .replace(/\[([^\]|]*)(\|[^\]]*)?\]/g, ' ... ')

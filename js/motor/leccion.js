@@ -186,7 +186,7 @@ export async function abrirLeccion(raiz, { tema, info, modo = 'normal', navegar 
   async function mostrarRepaso() {
     const rep = tema.repaso;
     vaciar(cuerpo);
-    const t = tarjeta({ texto: rep.texto, emoji: '🔁', visual: rep.visual });
+    const t = tarjeta({ texto: rep.texto, emoji: '🔁', visual: rep.visual, audio: rep.audio });
     t.classList.add('repaso-caja');
     cuerpo.append(h('h2', { style: 'text-align:center' }, 'Recordemos'), t);
     await botonPie('Seguir practicando');

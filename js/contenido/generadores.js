@@ -226,7 +226,7 @@ export const GENERADORES = {
         opciones: ['>', '<', '='].map((s) => ({
           texto: s,
           correcta: s === signo || undefined,
-          pista: s === signo ? undefined : 'Compara primero las centenas; si son iguales, las decenas; y al final las unidades.',
+          pista: s === signo ? undefined : max >= 100 ? 'Compara primero las centenas; si son iguales, las decenas; y al final las unidades.' : 'Compara primero las decenas; si son iguales, las unidades.',
           error: s === signo ? undefined : 'comparar-signo',
         })),
         columnas: 3,
@@ -241,17 +241,21 @@ export const GENERADORES = {
   'anterior-siguiente': {
     errores: ['anterior-siguiente'],
     crear({ max = 999, salto = 1 } = {}, rng) {
-      const n = ent(rng, salto + 1, max - salto);
+      // La recta dibujada se queda entre 0 y 999.
+      const tope = Math.min(max, 999);
+      const n = ent(rng, salto + 1, tope - salto);
+      const izq = Math.min(2, Math.floor(n / salto));
+      const der = Math.min(2, Math.floor((999 - n) / salto));
       const texto = salto === 1
-        ? `Escribe el número anterior y el siguiente de ${n}.`
-        : `Cuenta de ${salto} en ${salto}. ¿Qué número va antes y cuál va después de ${n}?`;
+        ? `Mira el ${n}. Escribe el número que va antes y el que va después.`
+        : `Cuenta de ${salto} en ${salto}. ¿Qué número va antes y cuál va después del ${n}?`;
       return {
         tipo: 'numero',
         enunciado: texto,
-        visual: { tipo: 'recta', min: n - 2 * salto, max: n + 2 * salto, paso: salto, marcar: [n], ocultar: [n - salto, n + salto] },
+        visual: { tipo: 'recta', min: n - izq * salto, max: n + der * salto, paso: salto, marcar: [n], ocultar: [n - salto, n + salto] },
         campos: [
-          { etiqueta: 'Anterior', respuesta: n - salto },
-          { etiqueta: 'Siguiente', respuesta: n + salto },
+          { etiqueta: salto === 1 ? 'Anterior' : 'Antes', respuesta: n - salto },
+          { etiqueta: salto === 1 ? 'Siguiente' : 'Después', respuesta: n + salto },
         ],
         pista: salto === 1 ? 'El anterior es 1 menos. El siguiente es 1 más.' : `Antes hay ${salto} menos; después hay ${salto} más.`,
         explicacion: `Antes de ${n} va ${n - salto} y después va ${n + salto}.`,
@@ -454,6 +458,7 @@ export const GENERADORES = {
         return {
           tipo: 'numero',
           enunciado: `¿Qué número es ${r}?`,
+          audio: `¿Qué número es este número romano? Se escribe con las letras: ${r.split('').join(', ')}.`,
           respuesta: n,
           erroresComunes,
           pista: 'I vale 1, V vale 5, X vale 10 y L vale 50.',
@@ -557,7 +562,7 @@ export const GENERADORES = {
       return {
         tipo: 'numero',
         enunciado: `¿Cuánto es ${a} × ${b}?`,
-        visual: visual ? { tipo: 'arreglo', filas: b, columnas: a, emoji: '🟡' } : { tipo: 'operacion', numeros: [a, b], op: '×', vertical: false },
+        visual: visual ? { tipo: 'arreglo', filas: b, columnas: a, emoji: '🔵' } : { tipo: 'operacion', numeros: [a, b], op: '×', vertical: false },
         respuesta: a * b,
         erroresComunes,
         pista: `Puedes contar de ${a} en ${a}, ${b} veces.`,
@@ -684,7 +689,8 @@ export const GENERADORES = {
       const k = p === 2 ? 1 : ent(rng, 1, 3);
       const nombres = { '2-1': 'un medio (la mitad)', '4-1': 'un cuarto', '4-2': 'dos cuartos (la mitad)', '4-3': 'tres cuartos', '2-2': 'un entero', '4-4': 'un entero' };
       const correcta = nombres[`${p}-${k}`];
-      const todas = ['un medio (la mitad)', 'un cuarto', 'tres cuartos', 'dos cuartos (la mitad)', 'un entero'];
+      const soloMitades = lista(partes, [2]).every((x) => x === 2);
+      const todas = soloMitades ? ['un medio (la mitad)', 'un entero'] : ['un medio (la mitad)', 'un cuarto', 'tres cuartos', 'dos cuartos (la mitad)', 'un entero'];
       const dis = mezclar(rng, todas.filter((x) => x !== correcta && !(p === 4 && k === 2 && x === 'un medio (la mitad)') && !(p === 2 && x === 'dos cuartos (la mitad)'))).slice(0, 2);
       return {
         tipo: 'opcion',
@@ -793,11 +799,13 @@ export const GENERADORES = {
         };
       }
       const cand = new Set();
+      const permitidos = new Set(minutosPosibles.concat(precision === 'cinco' ? [0, 30] : []));
       const hInv = m === 0 ? 12 : m / 5; // agujas confundidas
-      if (hInv >= 1 && hInv <= 12) cand.add(horaTexto(hInv, (h * 5) % 60));
+      if (hInv >= 1 && hInv <= 12 && permitidos.has((h * 5) % 60)) cand.add(horaTexto(hInv, (h * 5) % 60));
       cand.add(horaTexto(h === 12 ? 1 : h + 1, m));
-      cand.add(horaTexto(h, m === 30 ? 0 : 30));
-      if (m % 15 === 0) cand.add(horaTexto(h, (m + 15) % 60));
+      cand.add(horaTexto(h === 1 ? 12 : h - 1, m));
+      if (permitidos.has(m === 30 ? 0 : 30)) cand.add(horaTexto(h, m === 30 ? 0 : 30));
+      if (m % 15 === 0 && permitidos.has((m + 15) % 60)) cand.add(horaTexto(h, (m + 15) % 60));
       cand.delete(correcta);
       const dis = mezclar(rng, [...cand]).slice(0, 2);
       return {
@@ -837,12 +845,16 @@ export const GENERADORES = {
     crear({ propiedad = 'conmutativa' } = {}, rng) {
       const a = ent(rng, 2, 60), b = ent(rng, 2, 39), c = ent(rng, 2, 20);
       if (propiedad === 'asociativa') {
+        // b + c forman una decena exacta: agrupar primero esos dos hace la suma más fácil.
+        const b2 = ent(rng, 11, 48);
+        const c2 = (10 - (b2 % 10)) % 10 || 10;
+        const a2 = ent(rng, 12, 60);
         return {
           tipo: 'numero',
-          enunciado: `Completa: (${a} + ${b}) + ${c} = ${a} + (${b} + ☐)`,
-          respuesta: c,
-          pista: 'Si agrupamos los sumandos de otra forma, el resultado no cambia. ¿Qué número falta?',
-          explicacion: `Los sumandos son los mismos: ${a}, ${b} y ${c}. Falta el ${c}.`,
+          enunciado: `Suma agrupando para que sea más fácil: ${a2} + ${b2} + ${c2}`,
+          respuesta: a2 + b2 + c2,
+          pista: `Primero suma ${b2} + ${c2}: da un número redondo. Después suma ${a2}.`,
+          explicacion: `${a2} + (${b2} + ${c2}) = ${a2} + ${b2 + c2} = ${a2 + b2 + c2}. Cambiar cómo agrupamos los sumandos no cambia el resultado.`,
           error: 'propiedades-suma',
         };
       }
@@ -881,7 +893,7 @@ export const GENERADORES = {
           opciones: mezclar(rng, [j, ...dis]).map((x) => ({ texto: MESES[x], correcta: x === j || undefined, error: x === j ? undefined : 'calendario' })),
           columnas: 1,
           pista: 'Recita los meses en orden: enero, febrero, marzo...',
-          explicacion: `${pregunta === 'mes-siguiente' ? 'Después' : 'Antes'} de ${MESES[i]} viene ${MESES[j]}.`,
+          explicacion: `${pregunta === 'mes-siguiente' ? 'Después' : 'Antes'} de ${MESES[i]} viene ${MESES[j]}${pregunta === 'mes-siguiente' && i === 11 ? ', y empieza un año nuevo' : pregunta === 'mes-anterior' && i === 0 ? ', del año anterior' : ''}.`,
           error: 'calendario',
         };
       }

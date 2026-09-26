@@ -9,7 +9,7 @@
       "visual": { "tipo": "emojis", "items": ["🧺", "🏪", "🚌"], "etiquetas": ["feria", "tienda", "micro"] }
     },
     {
-      "texto": "Hay **monedas** de 10, 20 y 50 **centavos**. También hay monedas de 1, 2 y 5 Bs. Las monedas son redondas.",
+      "texto": "Hay **monedas** de 10, 20 y 50 **centavos**. También hay monedas de 1, 2 y 5 Bs. Las monedas son de metal.",
       "visual": { "tipo": "dinero", "items": ["c10", "c20", "c50", "m1", "m2", "m5"] }
     },
     {
@@ -28,7 +28,7 @@
     "pasos": [
       { "texto": "Primero buscamos el **número**. Esta moneda dice 2.", "visual": { "tipo": "dinero", "items": ["m2"] } },
       { "texto": "Después leemos la **palabra**: dice Bs. Entonces esta moneda vale 2 bolivianos.", "visual": { "tipo": "dinero", "items": ["m2"] } },
-      { "texto": "Esta otra moneda dice 20 y ctv. Vale 20 centavos: ¡mucho menos que 2 Bs!", "visual": { "tipo": "dinero", "items": ["c20", "m2"] } },
+      { "texto": "Esta otra moneda dice 20 y ctv. Vale 20 centavos: ¡mucho menos que 2 Bs!", "audio": "Esta otra moneda dice 20 y c, t, v. Vale 20 centavos: ¡mucho menos que 2 bolivianos!", "visual": { "tipo": "dinero", "items": ["c20", "m2"] } },
       { "texto": "Este billete dice 20 y Bs. Vale 20 bolivianos: ¡mucho más que la moneda de 2 Bs!", "visual": { "tipo": "dinero", "items": ["b20", "m2"] } }
     ],
     "explorar": { "tipo": "dinero" }
@@ -119,7 +119,8 @@
     },
     {
       "id": "p4", "tipo": "escribir", "nivel": 1,
-      "enunciado": "El dinero de Bolivia se escribe Bs. ¿Cómo se llama? Escribe la palabra completa.",
+      "enunciado": "El dinero de Bolivia se escribe corto así: Bs. ¿Cómo se llama? Escribe su nombre completo.",
+      "audio": "El dinero de Bolivia se escribe corto así: be, ese. ¿Cómo se llama? Escribe su nombre completo.",
       "respuestas": ["boliviano", "bolivianos", "el boliviano", "los bolivianos"],
       "pista": "Su nombre se parece mucho al nombre de nuestro país.",
       "explicacion": "El dinero de Bolivia se llama boliviano. Se escribe Bs.",
@@ -139,6 +140,7 @@
     {
       "id": "p7", "tipo": "clasificar", "nivel": 2,
       "enunciado": "¿Vale menos de 1 Bs, o vale 1 Bs o más?",
+      "audio": "¿Vale menos de un boliviano, o vale un boliviano o más?",
       "categorias": [
         { "id": "menos", "texto": "Menos de 1 Bs" },
         { "id": "mas", "texto": "1 Bs o más" }
@@ -169,7 +171,7 @@
       "enunciado": "Completa con el número correcto.",
       "texto": "1 Bs vale [100] centavos. De las monedas que vimos, la que vale menos es la de [10] centavos. El billete que vale más es el de [200] Bs.",
       "banco": ["20", "5"],
-      "pista": "Recuerda las monedas de centavos: 10, 20 y 50. Y los billetes: de 10 Bs a 200 Bs.",
+      "pista": "Recuerda cuántos centavos hacen 1 Bs. Después piensa en todas las monedas de centavos y en todos los billetes que viste.",
       "explicacion": "1 Bs vale 100 centavos. De las monedas que vimos, la que vale menos es la de 10 centavos. El billete que vale más es el de 200 Bs.",
       "error": "sistema-monetario"
     },
@@ -208,6 +210,7 @@
     {
       "id": "p13", "tipo": "numero", "nivel": 3,
       "enunciado": "Una moneda de 1 Bs vale 100 centavos. ¿Cuántos centavos vale una moneda de 2 Bs?",
+      "audio": "Una moneda de un boliviano vale 100 centavos. ¿Cuántos centavos vale una moneda de 2 bolivianos?",
       "visual": { "tipo": "dinero", "items": ["m2"] },
       "respuesta": 200,
       "sufijo": "centavos",
@@ -215,7 +218,7 @@
         { "respuesta": 20, "pista": "Cada boliviano vale 100 centavos, no 10. Suma 100 + 100.", "error": "equivalencia-bs" },
         { "respuesta": 102, "pista": "No sumes 2. Cada boliviano vale 100 centavos: 100 + 100.", "error": "equivalencia-bs" }
       ],
-      "pista": "Cada boliviano vale 100 centavos. ¿Cuánto es 100 + 100?",
+      "pista": "Cada boliviano vale 100 centavos. Esta moneda vale 2 bolivianos: ¿cuántas veces 100 centavos?",
       "explicacion": "2 Bs = 100 + 100 = 200 centavos.",
       "error": "equivalencia-bs"
     },
@@ -284,7 +287,7 @@
       "enunciado": "Escucha y pon ese dinero en la bandeja.",
       "escuchar": "Una moneda de cinco bolivianos.",
       "manipulable": { "tipo": "dinero", "objetivo": 500, "disponibles": ["c50", "m5", "b50", "b10"] },
-      "pista": "Escucha otra vez. Busca una moneda que diga 5 y Bs.",
+      "pista": "Escucha otra vez. ¿Dijo moneda o billete? ¿Dijo centavos o bolivianos? Mira el número y la palabra de cada pieza.",
       "explicacion": "Era una moneda de cinco bolivianos: la que dice 5 Bs. La de 50 centavos vale menos y los billetes valen más.",
       "error": "lee-valor"
     },
@@ -302,6 +305,7 @@
     {
       "id": "c8", "tipo": "numero", "nivel": 3,
       "enunciado": "¿Cuántas monedas de 1 Bs valen lo mismo que un billete de 10 Bs?",
+      "audio": "¿Cuántas monedas de un boliviano valen lo mismo que un billete de 10 bolivianos?",
       "visual": { "tipo": "dinero", "items": ["b10", "m1"] },
       "respuesta": 10,
       "sufijo": "monedas",
@@ -315,7 +319,7 @@
     }
   ],
   "repaso": {
-    "texto": "Monedas: 10, 20 y 50 centavos, y 1, 2 y 5 Bs. Billetes: 10, 20, 50, 100 y 200 Bs. Mira el número y la palabra. Recuerda: 1 Bs = 100 centavos.",
+    "texto": "Monedas: 10, 20 y 50 centavos, y 1, 2 y 5 Bs. Billetes: 10, 20, 50, 100 y 200 Bs. Mira el número y la palabra. Recuerda: un boliviano vale 100 centavos.",
     "visual": { "tipo": "dinero", "items": ["c10", "c20", "c50", "m1", "m2", "m5", "b10", "b20", "b50", "b100", "b200"] }
   },
   "adulto": {

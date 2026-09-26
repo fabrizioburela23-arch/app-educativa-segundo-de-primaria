@@ -4,7 +4,7 @@
   "objetivo": "Leo y marco la hora en un reloj de agujas: en punto, y cuarto, y media y menos cuarto.",
   "explicacion": [
     {
-      "texto": "El reloj tiene dos agujas. La **aguja corta** marca la hora. La **aguja larga** marca los minutos. Un día completo tiene 24 horas.",
+      "texto": "El reloj tiene dos agujas. La **aguja corta** marca la hora. La **aguja larga** marca los minutos. Un día completo tiene 24 horas: en un día, la aguja corta da dos vueltas.",
       "emoji": "⏰",
       "visual": { "tipo": "reloj", "hora": 3, "minutos": 0 }
     },
@@ -13,11 +13,11 @@
       "visual": { "tipo": "reloj", "hora": 7, "minutos": 0 }
     },
     {
-      "texto": "Una hora tiene **60 minutos**. De un número al siguiente, la aguja larga avanza 5 minutos. Si llega al 6, pasaron 30 minutos: son las 7 **y media** (7:30).",
+      "texto": "Una hora tiene **60 minutos**. Cuando la aguja larga pasa de un número al siguiente, pasan 5 minutos. En el 6 marca 30 minutos: son las 7 **y media** (7:30). La aguja corta está entre el 7 y el 8.",
       "visual": { "tipo": "reloj", "hora": 7, "minutos": 30 }
     },
     {
-      "texto": "Aguja larga en el 3: son las 7 **y cuarto** (7:15). Aguja larga en el 9: faltan 15 minutos para las 8, son las 8 **menos cuarto** (7:45).",
+      "texto": "Si la aguja larga está en el 3, son las 7 **y cuarto** (7:15). Si está en el 9, faltan 15 minutos para las 8: son las 8 **menos cuarto** (7:45).",
       "visual": { "tipo": "reloj", "hora": 7, "minutos": 45 }
     }
   ],
@@ -43,7 +43,7 @@
         "erroresComunes": [ { "respuesta": 12, "pista": "El 12 lo señala la aguja larga, la de los minutos. Mira adónde apunta la aguja corta.", "error": "confunde-agujas" } ],
         "pista": "La aguja corta es la que marca la hora.",
         "explicacion": "La aguja corta señala el 4 y la larga está en el 12: son las 4 en punto.",
-        "error": "lee-hora"
+        "error": "reloj-lectura"
       },
       {
         "id": "g2", "tipo": "manipular",
@@ -67,7 +67,7 @@
   },
   "practica": [
     {
-      "id": "p1", "tipo": "generador", "nivel": 1, "generador": "reloj", "params": { "precision": "hora" }
+      "id": "p1", "tipo": "generador", "nivel": 1, "generador": "reloj", "params": { "precision": "media" }
     },
     {
       "id": "p2", "tipo": "manipular", "nivel": 1,
@@ -197,7 +197,7 @@
           "tipo": "manipular",
           "enunciado": "Avanza la aguja larga 30 minutos. ¿A qué hora llega el micro a la escuela?",
           "manipulable": { "tipo": "reloj", "objetivo": { "hora": 7, "minutos": 45 }, "paso": 15, "inicial": { "hora": 7, "minutos": 15 } },
-          "pista": "Cada toque en «+ minutos» avanza 15 minutos. Necesitas dos toques.",
+          "pista": "Cada toque en «+ minutos» avanza 15 minutos. ¿Cuántos toques necesitas para 30 minutos?",
           "explicacion": "7:15 más 30 minutos son las 7:45: la aguja larga pasa del 3 al 9.",
           "error": "duracion"
         },
@@ -228,7 +228,7 @@
         { "respuesta": 7, "pista": "Restar 8 − 1 no sirve aquí. Cuenta las horas en el reloj: de las 8 a las 9 es 1 hora...", "error": "duracion" },
         { "respuesta": 6, "pista": "Cuenta los saltos, no los números: de las 8 a las 9 es 1 hora, de las 9 a las 10 es otra...", "error": "duracion" }
       ],
-      "pista": "Cuenta de hora en hora desde las 8: 9, 10, 11, 12, 1.",
+      "pista": "Cuenta los saltos de una hora desde las 8 hasta la 1. Después del 12 viene el 1.",
       "explicacion": "De las 8 a la 1 hay 5 saltos de una hora: 8→9, 9→10, 10→11, 11→12 y 12→1. Mateo está 5 horas en la escuela.",
       "error": "duracion"
     },
@@ -264,28 +264,32 @@
     },
     {
       "id": "c2", "tipo": "manipular", "nivel": 1,
-      "enunciado": "Wara se levanta a las 6 en punto. Marca esa hora en el reloj.",
-      "manipulable": { "tipo": "reloj", "objetivo": { "hora": 6, "minutos": 0 }, "paso": 30, "inicial": { "hora": 12, "minutos": 0 } },
-      "pista": "En punto: la aguja larga en el 12. La aguja corta va al número de la hora.",
-      "explicacion": "A las 6 en punto, la aguja corta señala el 6 y la larga está en el 12.",
+      "enunciado": "Wara se levanta a las 6 y media. Marca esa hora en el reloj.",
+      "manipulable": { "tipo": "reloj", "objetivo": { "hora": 6, "minutos": 30 }, "paso": 30, "inicial": { "hora": 12, "minutos": 0 } },
+      "pista": "Y media: la aguja larga va al 6. La aguja corta queda entre el 6 y el 7.",
+      "explicacion": "A las 6 y media, la aguja larga apunta al 6 y la corta está entre el 6 y el 7.",
       "error": "marca-hora"
     },
     {
-      "id": "c3", "tipo": "numero", "nivel": 2,
-      "enunciado": "Escucha la hora y escríbela con números.",
+      "id": "c3", "tipo": "opcion", "nivel": 2,
+      "enunciado": "Escucha la hora y elige el reloj que la marca.",
       "escuchar": "Son las once y media.",
-      "campos": [ { "etiqueta": "Hora", "respuesta": 11 }, { "etiqueta": "Minutos", "respuesta": 30 } ],
-      "pista": "Y media quiere decir 30 minutos.",
-      "explicacion": "Las 11 y media se escriben 11:30: hora 11 y 30 minutos.",
+      "opciones": [
+        { "visual": { "tipo": "reloj", "hora": 11, "minutos": 30 }, "correcta": true },
+        { "visual": { "tipo": "reloj", "hora": 5, "minutos": 55 }, "pista": "En ese reloj la aguja larga está en el 11 y la corta, cerca del 6. La hora la marca la aguja corta.", "error": "confunde-agujas" },
+        { "visual": { "tipo": "reloj", "hora": 12, "minutos": 30 }, "pista": "En ese reloj la aguja corta ya pasó el 12. A las 11 y media, la aguja corta está entre el 11 y el 12.", "error": "lee-hora" }
+      ],
+      "pista": "Y media: la aguja larga en el 6. Después mira dónde está la aguja corta.",
+      "explicacion": "Las 11 y media son las 11:30: la aguja larga apunta al 6 y la corta está entre el 11 y el 12.",
       "error": "nombra-hora"
     },
     {
       "id": "c4", "tipo": "escribir", "nivel": 2,
-      "enunciado": "Mira el reloj y escribe la palabra que falta: «Son las 3 y ☐».",
-      "visual": { "tipo": "reloj", "hora": 3, "minutos": 15 },
+      "enunciado": "Mira el reloj y escribe la palabra que falta: «Son las 5 y ☐».",
+      "visual": { "tipo": "reloj", "hora": 5, "minutos": 15 },
       "respuestas": ["cuarto", "quince", "15"],
       "pista": "La aguja larga está en el 3. ¿Cuántos minutos son?",
-      "explicacion": "La aguja larga en el 3 marca 15 minutos: son las 3 y cuarto (3:15).",
+      "explicacion": "La aguja larga en el 3 marca 15 minutos: son las 5 y cuarto (5:15).",
       "error": "nombra-hora"
     },
     {
@@ -310,11 +314,11 @@
     },
     {
       "id": "c8", "tipo": "numero", "nivel": 3,
-      "enunciado": "La clase de dibujo empieza a las 10 y cuarto y dura media hora. ¿A qué hora termina?",
-      "visual": { "tipo": "reloj", "hora": 10, "minutos": 15 },
-      "campos": [ { "etiqueta": "Hora", "respuesta": 10 }, { "etiqueta": "Minutos", "respuesta": 45 } ],
-      "pista": "Y cuarto son 15 minutos. Media hora son 30 minutos más.",
-      "explicacion": "15 + 30 = 45 minutos. La clase termina a las 10:45, o sea, a las 11 menos cuarto.",
+      "enunciado": "La clase de dibujo empieza a las 10 y media y dura media hora. ¿A qué hora termina? Escríbela como en un reloj digital.",
+      "visual": { "tipo": "reloj", "hora": 10, "minutos": 30 },
+      "campos": [ { "etiqueta": "Hora", "respuesta": 11 }, { "etiqueta": "Minutos", "respuesta": 0 } ],
+      "pista": "Desde el 6, la aguja larga avanza 30 minutos más. ¿A qué número llega? Si da la vuelta completa, empieza una hora nueva.",
+      "explicacion": "30 + 30 = 60 minutos: la aguja larga da la vuelta y llega al 12. Empieza una hora nueva: la clase termina a las 11 en punto (11:00).",
       "error": "duracion"
     }
   ],

@@ -13,7 +13,7 @@
       "emoji": "🗓️"
     },
     {
-      "texto": "Los meses no tienen los mismos días. Siete meses tienen **31** días, cuatro tienen **30** y febrero tiene **28**. En los años **bisiestos**, como 2028, febrero tiene 29.",
+      "texto": "No todos los meses tienen la misma cantidad de días. Siete meses tienen **31** días, cuatro tienen **30** y febrero tiene **28**. En los años **bisiestos**, como 2028, febrero tiene 29.",
       "visual": {
         "tipo": "tabla",
         "columnas": ["31 días", "30 días", "28 o 29 días"],
@@ -39,7 +39,7 @@
       { "texto": "Wara cumple años el 15 de octubre. Buscamos octubre de 2026 y el número 15. Subimos por su columna hasta arriba: dice «Ju». ¡Es jueves!", "visual": { "tipo": "calendario", "mes": 10, "anio": 2026, "marcar": [15], "titulo": "Cumpleaños de Wara" } },
       { "texto": "Si hoy es el jueves 15, ayer fue el miércoles 14 y mañana será el viernes 16.", "visual": { "tipo": "calendario", "mes": 10, "anio": 2026, "marcar": [14, 15, 16] } },
       { "texto": "Si contamos 7 días desde el jueves 15, llegamos al jueves 22. Cada 7 días se repite el mismo día de la semana.", "visual": { "tipo": "calendario", "mes": 10, "anio": 2026, "marcar": [15, 22] } },
-      { "texto": "El truco del puño: Wara nombra los meses tocando nudillo, hueco, nudillo... Al llegar a julio, vuelve al primer nudillo. Los meses de los nudillos tienen 31 días; los de los huecos, 30. ¡Pero febrero tiene 28 o 29!", "emoji": "✊" }
+      { "texto": "El truco del puño: Wara nombra los meses tocando nudillo, hueco, nudillo... Julio cae en el último nudillo y agosto vuelve a empezar en el primero. Nudillo: 31 días. Hueco: 30 días. ¡Pero febrero tiene 28 o 29!", "emoji": "✊" }
     ],
     "explorar": { "tipo": "calendario", "mes": 10, "anio": 2026 }
   },
@@ -204,7 +204,7 @@
           "respuesta": 3,
           "sufijo": "días",
           "erroresComunes": [ { "respuesta": 4, "pista": "No cuentes hoy. Empieza a contar desde mañana: viernes, sábado...", "error": "cuenta-dias" } ],
-          "pista": "Cuenta desde mañana: viernes, sábado, domingo.",
+          "pista": "No cuentes hoy. Empieza a contar desde mañana, que es viernes, hasta llegar al domingo.",
           "explicacion": "Viernes, sábado y domingo: faltan 3 días.",
           "error": "cuenta-dias"
         },
@@ -266,31 +266,39 @@
       "error": "orden-dias"
     },
     {
-      "id": "c3", "tipo": "generador", "nivel": 2, "generador": "calendario", "params": { "pregunta": "dia-anterior" }
+      "id": "c3", "tipo": "generador", "nivel": 2, "generador": "calendario", "params": { "pregunta": "mes-anterior" }
     },
     {
       "id": "c4", "tipo": "manipular", "nivel": 2,
       "enunciado": "Hoy es lunes 21 de diciembre. Toca en el calendario el día de ayer.",
       "manipulable": { "tipo": "calendario", "mes": 12, "anio": 2026, "objetivo": 20 },
-      "pista": "Busca el 21. Ayer es el día que está justo antes.",
-      "explicacion": "Si hoy es lunes 21, ayer fue domingo 20.",
+      "pista": "Busca el 21. Ayer es el número de antes. Si el 21 está al comienzo de una fila, mira al final de la fila de arriba.",
+      "explicacion": "Si hoy es lunes 21, ayer fue domingo 20. Está al final de la fila de arriba, en la columna «Do».",
       "error": "ayer-hoy-manana"
     },
     {
       "id": "c5", "tipo": "relacionar", "nivel": 2,
-      "enunciado": "Une cada uno con lo que dura.",
+      "enunciado": "Une cada uno con los días o meses que tiene.",
       "pares": [ ["una semana", "7 días"], ["un año", "12 meses"], ["marzo", "31 días"], ["junio", "30 días"], ["febrero de 2026", "28 días"] ],
       "pista": "Febrero es el mes más corto. Junio es uno de los cuatro meses de 30 días.",
-      "explicacion": "Una semana dura 7 días y un año, 12 meses. Marzo tiene 31 días, junio tiene 30 y febrero de 2026 tiene 28.",
+      "explicacion": "Una semana tiene 7 días y un año, 12 meses. Marzo tiene 31 días, junio tiene 30 y febrero de 2026 tiene 28.",
       "error": "dias-del-mes"
     },
     {
-      "id": "c6", "tipo": "ordenar", "nivel": 2,
-      "enunciado": "Ordena los últimos seis meses del año.",
-      "elementos": ["julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"],
-      "pista": "Después de junio viene julio. El año termina en diciembre.",
-      "explicacion": "Los últimos seis meses son: julio, agosto, septiembre, octubre, noviembre y diciembre.",
-      "error": "orden-meses"
+      "id": "c6", "tipo": "multiple", "nivel": 2,
+      "enunciado": "Luis juega fútbol todos los sábados. Mira marzo de 2026 y elige todas las fechas en que juega.",
+      "visual": { "tipo": "calendario", "mes": 3, "anio": 2026 },
+      "opciones": [
+        { "texto": "7", "correcta": true },
+        { "texto": "14", "correcta": true },
+        { "texto": "21", "correcta": true },
+        { "texto": "28", "correcta": true },
+        { "texto": "8", "pista": "El 8 está en la columna «Do»: es domingo.", "error": "lee-calendario" },
+        { "texto": "13", "pista": "El 13 está en la columna «Vi»: es viernes.", "error": "lee-calendario" }
+      ],
+      "pista": "Busca la columna «Sá» y mira todos los números que tiene.",
+      "explicacion": "En marzo de 2026, los sábados son el 7, el 14, el 21 y el 28: están en la columna «Sá». El 8 es domingo y el 13 es viernes.",
+      "error": "lee-calendario"
     },
     {
       "id": "c7", "tipo": "numero", "nivel": 3,
@@ -306,17 +314,14 @@
       "error": "dias-del-mes"
     },
     {
-      "id": "c8", "tipo": "numero", "nivel": 3,
-      "enunciado": "Hoy es martes 1 de septiembre. ¿Qué fecha será el martes de la semana que viene?",
-      "visual": { "tipo": "calendario", "mes": 9, "anio": 2026, "marcar": [1], "titulo": "Hoy" },
-      "respuesta": 8,
-      "erroresComunes": [
-        { "respuesta": 2, "pista": "El 2 es mañana, miércoles. Busca el martes siguiente en la misma columna.", "error": "cuenta-dias" },
-        { "respuesta": 7, "pista": "El 7 es lunes. Una semana después del martes vuelve a ser martes.", "error": "cuenta-dias" }
-      ],
-      "pista": "Una semana tiene 7 días. Baja una fila en la columna «Ma».",
-      "explicacion": "1 + 7 = 8. El martes de la semana que viene es el 8 de septiembre.",
-      "error": "cuenta-dias"
+      "id": "c8", "tipo": "completar", "nivel": 3,
+      "enunciado": "Hoy es miércoles 30 de septiembre. Completa la fecha de mañana.",
+      "visual": { "tipo": "calendario", "mes": 9, "anio": 2026, "marcar": [30], "titulo": "Hoy" },
+      "texto": "Septiembre tiene 30 días. Mañana será jueves [1] de [octubre].",
+      "banco": ["31", "septiembre"],
+      "pista": "Mira el calendario: después del 30 ya no hay más días en septiembre. ¿Qué mes viene después?",
+      "explicacion": "Septiembre termina el 30. Mañana empieza un mes nuevo: será el jueves 1 de octubre.",
+      "error": "dias-del-mes"
     }
   ],
   "repaso": {

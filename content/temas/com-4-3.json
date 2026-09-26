@@ -35,14 +35,17 @@
   "explicacion": [
     {
       "texto": "Cuando **preguntamos**, usamos los signos de **interrogación**: ¿ al inicio y ? al final. «¿Dónde vives?» es una pregunta.",
+      "audio": "Cuando preguntamos, usamos los signos de interrogación: uno que abre al inicio y otro que cierra al final. ¿Dónde vives? es una pregunta.",
       "visual": { "tipo": "emojis", "items": ["¿", "🤔", "?"], "etiquetas": ["abre", "pregunta", "cierra"] }
     },
     {
       "texto": "Cuando decimos algo con **emoción** (alegría, sorpresa, susto) o damos un aviso, usamos los signos de **exclamación**: ¡ al inicio y ! al final. «¡Qué lindo!» y «¡Cuidado!» son exclamaciones.",
+      "audio": "Cuando decimos algo con emoción, como alegría, sorpresa o susto, o damos un aviso, usamos los signos de exclamación: uno que abre al inicio y otro que cierra al final. ¡Qué lindo! y ¡Cuidado! son exclamaciones.",
       "visual": { "tipo": "emojis", "items": ["¡", "😃", "!"], "etiquetas": ["abre", "emoción", "cierra"] }
     },
     {
       "texto": "En castellano siempre escribimos **dos** signos: uno abre y otro cierra. Después de ? o de ! no se pone punto.",
+      "audio": "En castellano siempre escribimos dos signos: uno abre y otro cierra. Después del signo que cierra no se pone punto.",
       "visual": {
         "tipo": "tabla",
         "columnas": ["Así sí ✅", "Así no ❌"],
@@ -63,15 +66,17 @@
       },
       {
         "texto": "Primero pone el signo ¿ que abre la pregunta. Después escribe «Adónde» con **mayúscula**. Al final pone el signo ? que la cierra, sin punto después.",
+        "audio": "Primero pone el signo que abre la pregunta. Después escribe Adónde con mayúscula. Al final pone el signo que la cierra, sin punto después.",
         "visual": { "tipo": "tabla", "columnas": ["Abre", "Pregunta", "Cierra"], "filas": [["¿", "Adónde vas", "?"]] }
       },
       {
         "texto": "Wara está muy contenta y responde «¡Voy a la feria!» con emoción. Por eso usa ¡ al inicio y ! al final.",
+        "audio": "Wara está muy contenta y responde con emoción: ¡Voy a la feria! Por eso usa el signo de exclamación que abre al inicio y el que cierra al final.",
         "visual": { "tipo": "emojis", "items": ["👧"], "etiquetas": ["¡Voy a la feria!"] }
       },
       {
         "texto": "Inti le contesta con una exclamación y con una pregunta. Cada una lleva sus dos signos: uno al inicio y otro al final.",
-        "visual": { "tipo": "emojis", "items": ["👦", "👧"], "etiquetas": ["¡Qué bien!", "¿Puedo ir contigo?"] }
+        "visual": { "tipo": "tabla", "columnas": ["Inti dice", "Signos"], "filas": [["¡Qué bien!", "¡ !"], ["¿Puedo ir contigo?", "¿ ?"]] }
       }
     ]
   },
@@ -105,6 +110,7 @@
       {
         "id": "g3", "tipo": "escribir",
         "enunciado": "Escucha la pregunta y escríbela con ¿ al inicio y ? al final.",
+        "audio": "Escucha la pregunta y escríbela con el signo que abre al inicio y el signo que cierra al final.",
         "apoyo": "Si no ves el signo ¿ en el teclado, mantén apretado el signo ? un momento.",
         "escuchar": "¿Dónde está el gato?",
         "respuestas": ["¿Dónde está el gato?"],
@@ -158,6 +164,7 @@
     {
       "id": "p4", "tipo": "escribir", "nivel": 1,
       "enunciado": "Escucha la exclamación y escríbela con ¡ al inicio y ! al final.",
+      "audio": "Escucha la exclamación y escríbela con el signo que abre al inicio y el signo que cierra al final.",
       "escuchar": "¡Qué rico!",
       "respuestas": ["¡Qué rico!"],
       "pista": "Pon ¡ pegado a la primera palabra y ! pegado a la última. Si no ves el signo ¡, mantén apretado el signo ! un momento.",
@@ -219,6 +226,7 @@
       "enunciado": "Escucha y escribe la pregunta con sus signos.",
       "escuchar": "¿Cuántas patas tiene una araña?",
       "respuestas": ["¿Cuántas patas tiene una araña?"],
+      "mayusculas": "estricto",
       "pista": "Pon ¿ al inicio, empieza con mayúscula y pon ? al final.",
       "explicacion": "Se escribe «¿Cuántas patas tiene una araña?», con ¿ al inicio y ? al final. Por cierto, ¡la araña tiene ocho patas!",
       "error": "dictado-signos"
@@ -268,6 +276,7 @@
     {
       "id": "p13", "tipo": "tocar", "nivel": 3,
       "enunciado": "A las preguntas les falta el signo ¿ del inicio. Toca la palabra donde empieza cada pregunta.",
+      "audio": "A las preguntas les falta el signo que abre. Toca la palabra donde empieza cada pregunta.",
       "texto": "Mi tía vive en Potosí. *Tiene* una llama? Mi primo dice que sí. *Cómo* se llama?",
       "pista": "Busca cada signo ? y mira hacia atrás: la pregunta empieza justo después del punto o del signo anterior.",
       "explicacion": "Las preguntas son «¿Tiene una llama?» y «¿Cómo se llama?», así que el signo ¿ va antes de «Tiene» y antes de «Cómo».",
@@ -348,6 +357,7 @@
       "enunciado": "Escucha y escribe la pregunta con sus signos.",
       "escuchar": "¿A qué hora empieza la fiesta?",
       "respuestas": ["¿A qué hora empieza la fiesta?"],
+      "mayusculas": "estricto",
       "pista": "Pon ¿ al inicio, empieza con mayúscula y pon ? al final.",
       "explicacion": "Se escribe «¿A qué hora empieza la fiesta?», con ¿ al inicio y ? al final.",
       "error": "dictado-signos"
@@ -392,7 +402,7 @@
       "lectura": "feria",
       "respuesta": 4,
       "erroresComunes": [
-        { "respuesta": 3, "pista": "Revisa todo el texto: una exclamación está en el último párrafo, fuera de la conversación.", "error": "lee-signos" },
+        { "respuesta": 3, "pista": "Revisa todo el texto: algunos párrafos tienen dos oraciones, y el último párrafo no es parte de la conversación.", "error": "lee-signos" },
         { "respuesta": 2, "pista": "Esas son las preguntas. Cuenta las oraciones que empiezan con ¡ y terminan con el signo de cierre.", "error": "confunde-pregunta-exclamacion" },
         { "respuesta": 6, "pista": "Contaste también las preguntas. Cuenta solo las oraciones que tienen ¡ al inicio y ! al final.", "error": "confunde-pregunta-exclamacion" }
       ],

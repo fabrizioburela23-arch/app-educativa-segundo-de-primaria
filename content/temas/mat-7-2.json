@@ -14,10 +14,12 @@
     },
     {
       "texto": "Las monedas de centavos se juntan: 50 + 50 = 100 centavos = **1 Bs**. Si hay 3 Bs y una moneda de 50 centavos, decimos: **3 Bs con 50 centavos**.",
+      "audio": "Las monedas de centavos se juntan: 50 más 50 es igual a 100 centavos, que es un boliviano. Si hay 3 bolivianos y una moneda de 50 centavos, decimos: 3 bolivianos con 50 centavos.",
       "visual": { "tipo": "dinero", "items": ["m2", "m1", "c50"] }
     },
     {
       "texto": "Una misma cantidad se puede formar de **varias maneras**. 5 Bs es una moneda de 5 Bs. También es 2 + 2 + 1, o cinco monedas de 1 Bs.",
+      "audio": "Una misma cantidad se puede formar de varias maneras. 5 bolivianos es una moneda de 5 bolivianos. También es 2 más 2 más 1, o cinco monedas de un boliviano.",
       "emoji": "🔀",
       "visual": { "tipo": "dinero", "items": ["m2", "m2", "m1"] }
     }
@@ -27,7 +29,7 @@
     "pasos": [
       { "texto": "Wara pone primero lo que más vale: el billete, después las monedas de Bs y al final las de centavos.", "visual": { "tipo": "dinero", "items": ["b20", "m5", "m2", "c50", "c50"] } },
       { "texto": "Cuenta el billete y las monedas de Bs: 20, 25, 27.", "visual": { "tipo": "dinero", "items": ["b20", "m5", "m2"] } },
-      { "texto": "Junta las monedas de centavos: 50 + 50 = 100 centavos. ¡Es 1 Bs más!", "visual": { "tipo": "dinero", "items": ["c50", "c50"] } },
+      { "texto": "Junta las monedas de centavos: 50 + 50 = 100 centavos. ¡Es 1 Bs más!", "audio": "Junta las monedas de centavos: 50 más 50 es igual a 100 centavos. ¡Es un boliviano más!", "visual": { "tipo": "dinero", "items": ["c50", "c50"] } },
       { "texto": "27 + 1 = 28. Wara tiene 28 Bs en su alcancía.", "visual": { "tipo": "dinero", "items": ["b20", "m5", "m2", "c50", "c50"] } }
     ],
     "explorar": { "tipo": "dinero" }
@@ -53,6 +55,7 @@
       {
         "id": "g2", "tipo": "manipular",
         "enunciado": "Arma 1 Bs solo con monedas de centavos.",
+        "audio": "Arma un boliviano solo con monedas de centavos.",
         "apoyo": "1 Bs son 100 centavos. Puedes usar 2 monedas de 50, o 5 de 20, o mezclarlas.",
         "manipulable": { "tipo": "dinero", "objetivo": 100, "disponibles": ["c10", "c20", "c50"], "mostrarTotal": true },
         "pista": "Cuenta los centavos que pusiste. Tienen que sumar 100.",
@@ -152,6 +155,7 @@
     {
       "id": "p8", "tipo": "multiple", "nivel": 2,
       "enunciado": "¿Qué grupos valen 1 Bs? Elige todos.",
+      "audio": "¿Qué grupos valen un boliviano? Elige todos.",
       "opciones": [
         { "visual": { "tipo": "dinero", "items": ["c50", "c50"] }, "correcta": true },
         { "visual": { "tipo": "dinero", "items": ["c20", "c20", "c20", "c20", "c20"] }, "correcta": true },
@@ -232,6 +236,7 @@
     {
       "id": "p14", "tipo": "opcion", "nivel": 3,
       "enunciado": "Ana tiene un billete de 10 Bs. Luis tiene 3 monedas de 2 Bs y 4 monedas de 1 Bs. ¿Quién tiene más dinero?",
+      "audio": "Ana tiene un billete de 10 bolivianos. Luis tiene 3 monedas de 2 bolivianos y 4 monedas de un boliviano. ¿Quién tiene más dinero?",
       "opciones": [
         { "texto": "Ana", "pista": "Antes de decidir, suma las monedas de Luis.", "error": "formas-pagar" },
         { "texto": "Luis", "pista": "Luis tiene más piezas, pero eso no quiere decir más dinero. Suma lo que valen.", "error": "cuenta-piezas" },
@@ -260,22 +265,23 @@
     },
     {
       "id": "c2", "tipo": "manipular", "nivel": 1,
-      "enunciado": "Pon 9 Bs en la bandeja.",
-      "manipulable": { "tipo": "dinero", "objetivo": 900, "disponibles": ["m1", "m2", "m5"] },
-      "pista": "Empieza con la moneda de 5 Bs. ¿Cuánto falta para llegar a 9?",
-      "explicacion": "Por ejemplo: 5 + 2 + 2 = 9 Bs. También sirve 5 + 2 + 1 + 1.",
-      "error": "arma-cantidad"
+      "enunciado": "Hoy no hay monedas de 5 Bs. Arma 6 Bs con monedas de 2 Bs y de 1 Bs.",
+      "audio": "Hoy no hay monedas de 5 bolivianos. Arma 6 bolivianos con monedas de 2 bolivianos y de un boliviano.",
+      "manipulable": { "tipo": "dinero", "objetivo": 600, "disponibles": ["m1", "m2"] },
+      "pista": "Pon monedas de 2 Bs y cuenta de 2 en 2: 2, 4... ¿Cuánto falta para llegar a 6?",
+      "explicacion": "Por ejemplo: 2 + 2 + 2 = 6 Bs. También sirve 2 + 2 + 1 + 1. Hay varias maneras de formar 6 Bs.",
+      "error": "formas-pagar"
     },
     {
       "id": "c3", "tipo": "numero", "nivel": 2,
-      "enunciado": "¿Cuánto dinero hay? Escribe los bolivianos y los centavos.",
-      "visual": { "tipo": "dinero", "items": ["m2", "m1", "c50", "c20", "c10"] },
+      "enunciado": "Sofía abre su monedero. ¿Cuánto dinero tiene? Escribe los bolivianos y los centavos.",
+      "visual": { "tipo": "dinero", "items": ["b10", "m2", "c50", "c20", "c20"] },
       "campos": [
-        { "etiqueta": "Bolivianos", "respuesta": 3 },
-        { "etiqueta": "Centavos", "respuesta": 80 }
+        { "etiqueta": "Bolivianos", "respuesta": 12 },
+        { "etiqueta": "Centavos", "respuesta": 90 }
       ],
-      "pista": "Suma primero las monedas de Bs. Después, las de centavos.",
-      "explicacion": "2 + 1 = 3 Bs. 50 + 20 + 10 = 80 centavos. Hay 3 Bs con 80 centavos.",
+      "pista": "Suma primero el billete y la moneda de Bs. Después, las monedas de centavos.",
+      "explicacion": "10 + 2 = 12 Bs. 50 + 20 + 20 = 90 centavos. Sofía tiene 12 Bs con 90 centavos.",
       "error": "cuenta-centavos"
     },
     {
@@ -353,7 +359,7 @@
     }
   ],
   "repaso": {
-    "texto": "Para contar dinero, empieza por lo que más vale y ve sumando. Si hay piezas iguales, cuenta saltando. Recuerda: 100 centavos = 1 Bs.",
+    "texto": "Para contar dinero, empieza por lo que más vale y ve sumando. Si hay piezas iguales, cuenta saltando. Recuerda: 100 centavos valen lo mismo que un boliviano.",
     "visual": { "tipo": "dinero", "items": ["b20", "b10", "m5", "c50", "c50"] }
   },
   "adulto": {
