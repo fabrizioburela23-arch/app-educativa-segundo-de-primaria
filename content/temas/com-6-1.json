@@ -1,0 +1,399 @@
+{
+  "id": "com-6-1",
+  "titulo": "¿Qué es un verbo?",
+  "objetivo": "Reconozco los verbos: las palabras que dicen lo que alguien hace o lo que pasa.",
+  "explicacion": [
+    {
+      "texto": "Los **verbos** son palabras que dicen lo que alguien **hace**: correr, cantar, comer, dormir. ¡Son las palabras de la acción!",
+      "emoji": "🏃",
+      "visual": { "tipo": "emojis", "items": ["🏃", "🎤", "🍽️", "😴"], "etiquetas": ["correr", "cantar", "comer", "dormir"] }
+    },
+    {
+      "texto": "Los verbos también dicen lo que **pasa**: la lluvia **cae**, el sol **sale**, la planta **crece**. Para encontrar el verbo, pregunta: ¿qué hace? o ¿qué pasa?",
+      "visual": { "tipo": "emojis", "items": ["🌧️", "🌅", "🌱"], "etiquetas": ["cae", "sale", "crece"] }
+    },
+    {
+      "texto": "Cada verbo tiene un nombre que termina en **-ar**, **-er** o **-ir**: saltar, comer, vivir. Ese nombre se llama **infinitivo**.",
+      "emoji": "🔤",
+      "visual": { "tipo": "tabla", "columnas": ["-ar", "-er", "-ir"], "filas": [["saltar", "comer", "vivir"], ["bailar", "correr", "subir"], ["cantar", "beber", "escribir"]] }
+    },
+    {
+      "texto": "¡Actúa el verbo! Salta, aplaude, baila: los verbos se pueden **hacer**. Una mesa o una papa no se pueden hacer: son sustantivos, palabras que nombran.",
+      "emoji": "🎭",
+      "visual": { "tipo": "emojis", "items": ["🤸", "👏", "💃"], "etiquetas": ["saltar", "aplaudir", "bailar"] }
+    }
+  ],
+  "ejemplo": {
+    "instruccion": "Mira cómo encontramos el verbo en una oración.",
+    "pasos": [
+      {
+        "texto": "Leemos: «Inti patea la pelota en el patio».",
+        "visual": { "tipo": "emojis", "items": ["👦", "⚽"], "etiquetas": ["Inti", "pelota"] }
+      },
+      {
+        "texto": "Preguntamos: ¿qué **hace** Inti? **Patea**. Esa palabra dice la acción: ¡es el verbo!",
+        "visual": { "tipo": "emojis", "items": ["👦", "🦵", "⚽"], "etiquetas": ["Inti", "patea", "pelota"] }
+      },
+      {
+        "texto": "«Inti», «pelota» y «patio» no son acciones: son sustantivos, porque nombran. No se pueden hacer."
+      },
+      {
+        "texto": "El nombre de este verbo es **patear**: termina en **-ar**. ¡Ahora actúalo: patea una pelota imaginaria!",
+        "visual": { "tipo": "tabla", "columnas": ["En la oración", "Infinitivo"], "filas": [["patea", "patear"]] }
+      }
+    ]
+  },
+  "guiada": {
+    "intro": "Ahora buscamos verbos juntos.",
+    "pasos": [
+      {
+        "id": "g1", "tipo": "tocar",
+        "enunciado": "Toca el verbo: la palabra que dice qué hace Nayra.",
+        "apoyo": "Pregúntate: ¿qué hace Nayra en la escuela?",
+        "texto": "Nayra *canta* en la escuela.",
+        "pista": "Busca la palabra que dice una acción: algo que se puede hacer.",
+        "explicacion": "«Canta» dice lo que hace Nayra: es el verbo. Nayra y escuela son nombres.",
+        "error": "no-identifica-verbo"
+      },
+      {
+        "id": "g2", "tipo": "clasificar",
+        "enunciado": "¿Cómo termina cada verbo?",
+        "apoyo": "Mira las dos últimas letras de cada palabra: -ar, -er o -ir.",
+        "categorias": [
+          { "id": "ar", "texto": "-ar" },
+          { "id": "er", "texto": "-er" },
+          { "id": "ir", "texto": "-ir" }
+        ],
+        "elementos": [
+          { "texto": "nadar", "emoji": "🏊", "categoria": "ar" },
+          { "texto": "pintar", "emoji": "🎨", "categoria": "ar" },
+          { "texto": "correr", "emoji": "🏃", "categoria": "er" },
+          { "texto": "leer", "emoji": "📖", "categoria": "er" },
+          { "texto": "abrir", "emoji": "🚪", "categoria": "ir" },
+          { "texto": "dormir", "emoji": "😴", "categoria": "ir" }
+        ],
+        "pista": "Fíjate solo en el final de cada palabra.",
+        "explicacion": "Terminan en -ar: nadar y pintar. En -er: correr y leer. En -ir: abrir y dormir.",
+        "error": "terminacion-infinitivo"
+      },
+      {
+        "id": "g3", "tipo": "completar",
+        "enunciado": "Completa con el verbo que dice la acción.",
+        "apoyo": "Piensa: ¿qué hace el cóndor en el cielo?",
+        "visual": { "tipo": "emoji", "valor": "🦅" },
+        "texto": "El cóndor [vuela] sobre los cerros.",
+        "banco": ["pluma", "nido"],
+        "pista": "Falta la palabra que dice qué hace el cóndor.",
+        "explicacion": "«Vuela» dice lo que hace el cóndor: es el verbo. «Pluma» y «nido» son nombres de cosas.",
+        "error": "verbo-contexto"
+      }
+    ]
+  },
+  "practica": [
+    {
+      "id": "p1", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Toca el verbo.",
+      "texto": "El gato *duerme* sobre el poncho.",
+      "pista": "Pregúntate: ¿qué hace el gato?",
+      "explicacion": "«Duerme» dice lo que hace el gato: es el verbo. Gato y poncho son nombres.",
+      "error": "no-identifica-verbo"
+    },
+    {
+      "id": "p2", "tipo": "memoria", "nivel": 1,
+      "enunciado": "Encuentra las parejas: el dibujo y su acción.",
+      "pares": [
+        [{ "emoji": "🏊" }, "nadar"],
+        [{ "emoji": "😴" }, "dormir"],
+        [{ "emoji": "📖" }, "leer"],
+        [{ "emoji": "💃" }, "bailar"],
+        [{ "emoji": "✍️" }, "escribir"]
+      ],
+      "pista": "Mira qué se hace en cada dibujo y busca esa acción.",
+      "explicacion": "Nadar, dormir, leer, bailar y escribir son verbos: dicen acciones.",
+      "error": "no-identifica-verbo"
+    },
+    {
+      "id": "p3", "tipo": "multiple", "nivel": 1,
+      "enunciado": "Elige todas las palabras que son verbos.",
+      "opciones": [
+        { "texto": "saltar", "correcta": true },
+        { "texto": "mesa", "pista": "«Mesa» nombra una cosa: no se puede hacer.", "error": "confunde-sustantivo" },
+        { "texto": "cocinar", "correcta": true },
+        { "texto": "verde", "pista": "«Verde» dice cómo es algo; no es una acción.", "error": "confunde-adjetivo" },
+        { "texto": "subir", "correcta": true }
+      ],
+      "pista": "Hay tres acciones. Prueba actuar cada palabra: ¿se puede hacer?",
+      "explicacion": "Saltar, cocinar y subir son verbos: se pueden hacer. «Mesa» es un nombre y «verde» dice cómo es algo.",
+      "error": "no-identifica-verbo"
+    },
+    {
+      "id": "p4", "tipo": "escribir", "nivel": 1,
+      "enunciado": "Escucha el verbo y escríbelo.",
+      "escuchar": "saltar",
+      "visual": { "tipo": "emoji", "valor": "🤸" },
+      "respuestas": ["saltar"],
+      "pista": "Tiene dos sílabas. Termina en -ar.",
+      "explicacion": "Se escribe **saltar**: sal-tar. Termina en -ar, como muchos verbos.",
+      "error": "escritura-verbo"
+    },
+    {
+      "id": "p5", "tipo": "ordenar", "nivel": 1,
+      "enunciado": "Ordena las sílabas para formar un verbo.",
+      "visual": { "tipo": "emoji", "valor": "👏" },
+      "elementos": ["a", "plau", "dir"],
+      "unir": "",
+      "pista": "Es lo que haces con las manos cuando algo te gusta mucho.",
+      "explicacion": "a-plau-dir: **aplaudir**. Termina en -ir: es un verbo.",
+      "error": "escritura-verbo"
+    },
+    {
+      "id": "p6", "tipo": "tocar", "nivel": 2,
+      "enunciado": "Toca los dos verbos.",
+      "texto": "Mateo *lava* los platos y Rosa los *seca*.",
+      "pista": "Pregunta: ¿qué hace Mateo? ¿Qué hace Rosa?",
+      "explicacion": "«Lava» y «seca» son los verbos: dicen lo que hacen Mateo y Rosa.",
+      "error": "no-identifica-verbo"
+    },
+    {
+      "id": "p7", "tipo": "tocar", "nivel": 2,
+      "enunciado": "Toca los verbos que dicen lo que pasa.",
+      "visual": { "tipo": "emojis", "items": ["🌧️", "🏞️"] },
+      "texto": "En la tarde *llueve* y el río *crece*.",
+      "pista": "Aquí nadie hace una acción. Pregunta: ¿qué pasa en la tarde? ¿Qué pasa con el río?",
+      "explicacion": "«Llueve» y «crece» son verbos: dicen lo que pasa. Los verbos no solo dicen lo que hacen las personas.",
+      "error": "verbo-sucede"
+    },
+    {
+      "id": "p8", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "Pon cada verbo en su grupo.",
+      "categorias": [
+        { "id": "ar", "texto": "-ar" },
+        { "id": "er", "texto": "-er" },
+        { "id": "ir", "texto": "-ir" }
+      ],
+      "elementos": [
+        { "texto": "cocinar", "categoria": "ar" },
+        { "texto": "jugar", "categoria": "ar" },
+        { "texto": "aprender", "categoria": "er" },
+        { "texto": "vender", "categoria": "er" },
+        { "texto": "compartir", "categoria": "ir" },
+        { "texto": "recibir", "categoria": "ir" }
+      ],
+      "pista": "Mira las dos últimas letras de cada verbo.",
+      "explicacion": "-ar: cocinar y jugar. -er: aprender y vender. -ir: compartir y recibir.",
+      "error": "terminacion-infinitivo"
+    },
+    {
+      "id": "p9", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa con el verbo que va con cada animal.",
+      "visual": { "tipo": "emojis", "items": ["🐬", "🦜", "🦙"], "etiquetas": ["bufeo", "paraba", "llama"] },
+      "texto": "El bufeo [nada] en el río. La paraba [vuela] sobre los árboles. La llama [camina] por el cerro.",
+      "banco": ["pluma"],
+      "pista": "Piensa cómo se mueve cada animal: en el agua, en el aire o en la tierra.",
+      "explicacion": "El bufeo **nada**, la paraba **vuela** y la llama **camina**. Nada, vuela y camina son verbos. «Pluma» es un nombre.",
+      "error": "verbo-contexto"
+    },
+    {
+      "id": "p10", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "Une cada cosa con la acción que haces con ella.",
+      "pares": [
+        [{ "texto": "tijeras", "emoji": "✂️" }, "cortar"],
+        [{ "texto": "escoba", "emoji": "🧹" }, "barrer"],
+        [{ "texto": "lápiz", "emoji": "✏️" }, "escribir"],
+        [{ "texto": "vaso", "emoji": "🥛" }, "beber"]
+      ],
+      "pista": "¿Para qué sirve cada cosa? La cosa es un nombre; lo que haces con ella es un verbo.",
+      "explicacion": "Con las tijeras cortas, con la escoba barres, con el lápiz escribes y con el vaso bebes. Cortar, barrer, escribir y beber son verbos.",
+      "error": "confunde-sustantivo"
+    },
+    {
+      "id": "p11", "tipo": "opcion", "nivel": 2,
+      "enunciado": "Escucha la oración. ¿Cuál es el verbo?",
+      "escuchar": "La abuela teje una chompa de lana.",
+      "opciones": [
+        { "texto": "teje", "correcta": true },
+        { "texto": "abuela", "pista": "«Abuela» nombra a una persona. ¿Qué hace ella?", "error": "confunde-sustantivo" },
+        { "texto": "chompa", "pista": "«Chompa» nombra una cosa. Busca la acción.", "error": "confunde-sustantivo" }
+      ],
+      "columnas": 3,
+      "pista": "Escucha otra vez y pregúntate: ¿qué hace la abuela?",
+      "explicacion": "El verbo es «teje»: dice lo que hace la abuela con la lana.",
+      "error": "no-identifica-verbo"
+    },
+    {
+      "id": "p12", "tipo": "multiple", "nivel": 3,
+      "enunciado": "Elige solo los verbos. ¡Ojo! Algunas palabras terminan en -ar o -er, pero no son acciones.",
+      "opciones": [
+        { "texto": "bailar", "correcta": true },
+        { "texto": "collar", "pista": "Un collar se pone en el cuello: es una cosa, no una acción.", "error": "falsa-terminacion" },
+        { "texto": "correr", "correcta": true },
+        { "texto": "mujer", "pista": "«Mujer» nombra a una persona: no se puede hacer.", "error": "falsa-terminacion" },
+        { "texto": "mar", "pista": "El mar es un lugar, no una acción.", "error": "falsa-terminacion" }
+      ],
+      "pista": "No basta con mirar el final. Prueba actuar cada palabra: ¿se puede hacer?",
+      "explicacion": "Bailar y correr son verbos. Collar, mujer y mar terminan igual, pero son nombres: no se pueden hacer.",
+      "error": "falsa-terminacion"
+    },
+    {
+      "id": "p13", "tipo": "relacionar", "nivel": 3,
+      "enunciado": "Une cada verbo con su infinitivo.",
+      "pares": [["corre", "correr"], ["duerme", "dormir"], ["juega", "jugar"], ["escribe", "escribir"]],
+      "pista": "Di la acción con -ar, -er o -ir al final. Ojo: a veces cambia una letra de adentro.",
+      "explicacion": "Corre → correr. Duerme → dormir. Juega → jugar. Escribe → escribir.",
+      "error": "infinitivo"
+    },
+    {
+      "id": "p14", "tipo": "escribir", "nivel": 3,
+      "enunciado": "Escucha la oración. Escribe su verbo en infinitivo (termina en -ar, -er o -ir).",
+      "escuchar": "Kusi pinta un cóndor en su cuaderno.",
+      "respuestas": ["pintar"],
+      "pista": "Primero busca qué hace Kusi. Después di esa acción con -ar, -er o -ir al final.",
+      "explicacion": "El verbo de la oración es «pinta». Su infinitivo es **pintar**.",
+      "error": "infinitivo"
+    },
+    {
+      "id": "p15", "tipo": "tocar", "nivel": 3,
+      "enunciado": "Toca todos los verbos.",
+      "texto": "Cuando *sale* el sol, Wara *sube* al cerro y *mira* el lago.",
+      "pista": "Hay tres verbos. Uno dice lo que pasa con el sol y dos dicen lo que hace Wara.",
+      "explicacion": "Sale, sube y mira son verbos. «Sale» dice lo que pasa con el sol; «sube» y «mira» dicen lo que hace Wara.",
+      "error": "no-identifica-verbo"
+    },
+    {
+      "id": "p16", "tipo": "escribir-libre", "nivel": 3,
+      "enunciado": "Escribe dos oraciones sobre lo que hace un animal de Bolivia. Usa un verbo en cada una.",
+      "guia": ["La vicuña...", "El cóndor...", "El jucumari..."],
+      "requisitos": [
+        { "tipo": "mayuscula-inicial" },
+        { "tipo": "punto-final" },
+        { "tipo": "min-oraciones", "valor": 2 }
+      ],
+      "modelo": "La vicuña come pasto en el altiplano. Corre muy rápido.",
+      "pista": "Piensa: ¿qué hace ese animal? ¿Come, corre, vuela, nada?",
+      "explicacion": "Por ejemplo: «La vicuña come pasto en el altiplano. Corre muy rápido». Come y corre son verbos.",
+      "error": "produce-oracion"
+    }
+  ],
+  "comprobacion": [
+    {
+      "id": "c1", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Toca el verbo.",
+      "texto": "Ana *bebe* api caliente.",
+      "pista": "Pregúntate: ¿qué hace Ana?",
+      "explicacion": "«Bebe» dice lo que hace Ana: es el verbo. Ana y api son nombres.",
+      "error": "no-identifica-verbo"
+    },
+    {
+      "id": "c2", "tipo": "opcion", "nivel": 1,
+      "enunciado": "Escucha la oración. ¿Cuál es el verbo?",
+      "escuchar": "El perro ladra en la puerta.",
+      "opciones": [
+        { "texto": "ladra", "correcta": true },
+        { "texto": "perro", "pista": "«Perro» nombra a un animal. ¿Qué hace el perro?", "error": "confunde-sustantivo" },
+        { "texto": "puerta", "pista": "«Puerta» nombra una cosa. Busca la acción.", "error": "confunde-sustantivo" }
+      ],
+      "columnas": 3,
+      "pista": "Escucha otra vez y pregúntate: ¿qué hace el perro?",
+      "explicacion": "El verbo es «ladra»: dice lo que hace el perro.",
+      "error": "no-identifica-verbo"
+    },
+    {
+      "id": "c3", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "¿Cómo termina cada verbo?",
+      "categorias": [
+        { "id": "ar", "texto": "-ar" },
+        { "id": "er", "texto": "-er" },
+        { "id": "ir", "texto": "-ir" }
+      ],
+      "elementos": [
+        { "texto": "regar", "categoria": "ar" },
+        { "texto": "sembrar", "categoria": "ar" },
+        { "texto": "barrer", "categoria": "er" },
+        { "texto": "romper", "categoria": "er" },
+        { "texto": "subir", "categoria": "ir" },
+        { "texto": "salir", "categoria": "ir" }
+      ],
+      "pista": "Mira las dos últimas letras de cada verbo.",
+      "explicacion": "-ar: regar y sembrar. -er: barrer y romper. -ir: subir y salir.",
+      "error": "terminacion-infinitivo"
+    },
+    {
+      "id": "c4", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa con los verbos.",
+      "texto": "Mi hermano [lee] un cuento y mi prima [dibuja] una llama.",
+      "banco": ["mesa", "azul"],
+      "pista": "¿Qué se hace con un cuento? ¿Y qué se puede hacer con una llama en un papel?",
+      "explicacion": "Mi hermano **lee** un cuento y mi prima **dibuja** una llama. Lee y dibuja son verbos; mesa es un nombre y azul es un color.",
+      "error": "verbo-contexto"
+    },
+    {
+      "id": "c5", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha el verbo y escríbelo.",
+      "escuchar": "barrer",
+      "visual": { "tipo": "emoji", "valor": "🧹" },
+      "respuestas": ["barrer"],
+      "pista": "Tiene dos sílabas y termina en -er. En el medio lleva la misma letra doble que «perro».",
+      "explicacion": "Se escribe **barrer**: ba-rrer. Lleva rr en el medio y termina en -er.",
+      "error": "escritura-verbo"
+    },
+    {
+      "id": "c6", "tipo": "tocar", "nivel": 2,
+      "enunciado": "Toca los dos verbos.",
+      "texto": "Juan *cocina* sopa de maní y Arami *pone* la mesa.",
+      "pista": "Pregunta: ¿qué hace Juan? ¿Qué hace Arami?",
+      "explicacion": "«Cocina» y «pone» son los verbos: dicen lo que hacen Juan y Arami.",
+      "error": "no-identifica-verbo"
+    },
+    {
+      "id": "c7", "tipo": "clasificar", "nivel": 3,
+      "enunciado": "¿Es un verbo o no? ¡Ojo con las terminaciones!",
+      "categorias": [
+        { "id": "si", "texto": "Es verbo" },
+        { "id": "no", "texto": "No es verbo" }
+      ],
+      "elementos": [
+        { "texto": "pintar", "categoria": "si" },
+        { "texto": "hogar", "categoria": "no" },
+        { "texto": "beber", "categoria": "si" },
+        { "texto": "taller", "categoria": "no" },
+        { "texto": "dormir", "categoria": "si" },
+        { "texto": "azúcar", "categoria": "no" }
+      ],
+      "pista": "No basta con mirar el final. Pregúntate: ¿se puede hacer?",
+      "explicacion": "Pintar, beber y dormir son verbos. Hogar, taller y azúcar terminan en -ar o -er, pero son nombres: no se pueden hacer.",
+      "error": "falsa-terminacion"
+    },
+    {
+      "id": "c8", "tipo": "escribir", "nivel": 3,
+      "enunciado": "Escribe el infinitivo del verbo de esta oración: «La abuela cuenta un cuento».",
+      "respuestas": ["contar"],
+      "pista": "Busca la acción y dila con -ar, -er o -ir al final. Ojo: a veces cambia una letra de adentro, como en duerme → dormir.",
+      "explicacion": "«Cuenta» viene de **contar**. La ue de adentro cambia a o, como en duerme → dormir.",
+      "error": "infinitivo"
+    }
+  ],
+  "repaso": {
+    "texto": "Los verbos dicen lo que alguien hace o lo que pasa. Pregunta: ¿qué hace? ¿Qué pasa? Su nombre termina en -ar, -er o -ir.",
+    "visual": { "tipo": "emojis", "items": ["🤸", "🍽️", "✍️"], "etiquetas": ["saltar", "comer", "escribir"] }
+  },
+  "adulto": {
+    "objetivo": "Reconocer los verbos como palabras que expresan acciones o sucesos (llueve, crece), encontrarlos en oraciones y conocer su forma en infinitivo, terminada en -ar, -er o -ir.",
+    "sugerencias": [
+      "Jueguen a las mímicas: una persona actúa un verbo (barrer, nadar, tejer) y la otra lo adivina y dice si termina en -ar, -er o -ir.",
+      "En la feria o el mercado, pregunten «¿qué hace esa persona?» (vende, pesa, carga, cuenta el cambio) y digan juntos el verbo y su infinitivo.",
+      "Lean juntos una receta o las instrucciones de un paquete de fideos (hervir, mezclar, servir) y marquen los verbos con un color."
+    ],
+    "errores": {
+      "no-identifica-verbo": { "descripcion": "No siempre reconoce la palabra que dice la acción en una oración.", "sugerencia": "Lean oraciones cortas y pregunten «¿qué hace?»; pidan que señale la palabra que responde." },
+      "confunde-sustantivo": { "descripcion": "Confunde nombres de personas, animales o cosas con verbos.", "sugerencia": "Jueguen: si se puede señalar (mesa, gato), es un nombre; si se puede actuar (saltar, comer), es un verbo." },
+      "confunde-adjetivo": { "descripcion": "Confunde palabras que dicen cómo es algo (verde, grande) con verbos.", "sugerencia": "Pregunten «¿cómo es?» para las cualidades y «¿qué hace?» para los verbos." },
+      "terminacion-infinitivo": { "descripcion": "Duda al reconocer si un verbo termina en -ar, -er o -ir.", "sugerencia": "Escriban verbos en tarjetas y sepárenlos en tres columnas según sus dos últimas letras." },
+      "verbo-contexto": { "descripcion": "Le cuesta elegir el verbo que tiene sentido en la oración.", "sugerencia": "Lean la oración en voz alta con cada palabra posible y pregunten si tiene sentido." },
+      "verbo-sucede": { "descripcion": "No reconoce como verbos las palabras que dicen lo que pasa (llueve, crece, sale).", "sugerencia": "Miren por la ventana y describan lo que pasa: «llueve», «sopla el viento», «sale el sol». Digan que también son verbos." },
+      "escritura-verbo": { "descripcion": "Tiene dificultad para escribir verbos dictados o para armarlos por sílabas.", "sugerencia": "Dicten verbos separando las sílabas con palmadas (ba-rrer) y revisen juntos la terminación -ar, -er o -ir." },
+      "falsa-terminacion": { "descripcion": "Cree que toda palabra que termina en -ar, -er o -ir es un verbo (mar, collar, mujer).", "sugerencia": "Muestren pares como «mar» y «nadar» y pregunten cuál se puede hacer." },
+      "infinitivo": { "descripcion": "Le cuesta encontrar el infinitivo de un verbo (duerme → dormir, cuenta → contar).", "sugerencia": "Practiquen la pregunta «¿cómo se llama esta acción?»: él corre → correr; ella juega → jugar." },
+      "produce-oracion": { "descripcion": "Le cuesta escribir oraciones completas con un verbo, mayúscula y punto.", "sugerencia": "Escriban juntos oraciones cortas sobre lo que hace un animal o una persona y revisen la mayúscula, el verbo y el punto." }
+    }
+  }
+}

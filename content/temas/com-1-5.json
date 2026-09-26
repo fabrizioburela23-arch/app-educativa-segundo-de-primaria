@@ -70,7 +70,7 @@
         "enunciado": "Hay muchas naranjas. Escribe «dulce» en plural: «las naranjas ___».",
         "apoyo": "Si el sustantivo está en plural, el adjetivo también. «Dulce» termina en vocal: se le agrega -s.",
         "visual": { "tipo": "emoji", "valor": "🍊", "cantidad": 4, "etiqueta": "las naranjas" },
-        "respuestas": ["dulces", "las naranjas dulces"],
+        "respuestas": ["dulces", "las naranjas dulces", "naranjas dulces"],
         "pista": "Agrega una letra al final de «dulce».",
         "explicacion": "Se escribe «las naranjas dulces»: el sustantivo y el adjetivo están en plural.",
         "error": "concordancia-numero"
@@ -121,7 +121,7 @@
     },
     {
       "id": "p4", "tipo": "escribir", "nivel": 1,
-      "enunciado": "Escucha y escribe lo que oyes. Fíjate cómo termina cada palabra.",
+      "enunciado": "Escucha y escribe lo que oyes. Fíjate en cómo termina cada palabra.",
       "escuchar": "las gatas negras",
       "respuestas": ["las gatas negras"],
       "pista": "Son varias gatas. Escucha el final de las tres palabras.",
@@ -212,8 +212,8 @@
         {
           "tipo": "escribir",
           "enunciado": "Escríbelo en femenino: «la gata ___».",
-          "respuestas": ["traviesa", "la gata traviesa"],
-          "pista": "Si es gata, el adjetivo también termina como ella.",
+          "respuestas": ["traviesa", "la gata traviesa", "gata traviesa"],
+          "pista": "«Gata» es femenino. El adjetivo también debe ser femenino.",
           "explicacion": "La gata traviesa: femenino con femenino.",
           "error": "concordancia-genero"
         },
@@ -233,15 +233,16 @@
     },
     {
       "id": "p13", "tipo": "opcion", "nivel": 2,
-      "enunciado": "¿Qué palabra completa bien la oración? «La vicuña es muy ___.»",
+      "enunciado": "¿Qué palabra completa bien la oración? «La hormiga es muy ___.»",
+      "visual": { "tipo": "emoji", "valor": "🐜" },
       "opciones": [
-        { "texto": "rápida", "correcta": true },
-        { "texto": "rápido", "pista": "«Vicuña» es femenino. ¿En qué letra debe terminar el adjetivo?", "error": "concordancia-genero" },
-        { "texto": "rápidas", "pista": "Es una sola vicuña. El adjetivo va en singular.", "error": "concordancia-numero" }
+        { "texto": "pequeña", "correcta": true },
+        { "texto": "pequeño", "pista": "«Hormiga» es femenino. ¿En qué letra debe terminar el adjetivo?", "error": "concordancia-genero" },
+        { "texto": "pequeñas", "pista": "Es una sola hormiga. El adjetivo va en singular.", "error": "concordancia-numero" }
       ],
       "columnas": 3,
-      "pista": "«La vicuña» es femenino y es una sola.",
-      "explicacion": "«La vicuña es muy rápida»: vicuña es femenino y singular, y rápida también.",
+      "pista": "«La hormiga» es femenino y es una sola.",
+      "explicacion": "«La hormiga es muy pequeña»: hormiga es femenino y singular, y pequeña también.",
       "error": "concordancia-genero"
     },
     {
@@ -267,7 +268,7 @@
     },
     {
       "id": "p15", "tipo": "escribir", "nivel": 3,
-      "enunciado": "Escucha y escríbelo en plural, como si fueran muchas.",
+      "enunciado": "Escucha lo que dice. Luego escríbelo en plural.",
       "escuchar": "la flor amarilla",
       "respuestas": ["las flores amarillas"],
       "pista": "Cambian las tres palabras. «Flor» termina en consonante: en plural se agrega -es.",
@@ -339,15 +340,15 @@
     },
     {
       "id": "c5", "tipo": "relacionar", "nivel": 2,
-      "enunciado": "Une cada sustantivo con el adjetivo que concuerda.",
+      "enunciado": "Une cada sustantivo con el adjetivo que concuerda con él.",
       "pares": [
-        [ { "texto": "el pollito", "emoji": "🐤" }, "amarillo" ],
-        [ { "texto": "la flor", "emoji": "🌼" }, "amarilla" ],
+        [ { "texto": "el gato", "emoji": "🐈" }, "negro" ],
+        [ { "texto": "la vaca", "emoji": "🐄" }, "manchada" ],
         [ { "texto": "los pollitos", "emoji": "🐤" }, "amarillos" ],
-        [ { "texto": "las flores", "emoji": "🌼" }, "amarillas" ]
+        [ { "texto": "las ovejas", "emoji": "🐑" }, "blancas" ]
       ],
-      "pista": "El artículo te ayuda: el, la, los, las.",
-      "explicacion": "El pollito amarillo, la flor amarilla, los pollitos amarillos y las flores amarillas.",
+      "pista": "El artículo te ayuda: el, la, los, las. Mira también cómo termina cada adjetivo.",
+      "explicacion": "El gato negro (masculino, uno), la vaca manchada (femenino, una), los pollitos amarillos (masculino, varios) y las ovejas blancas (femenino, varias).",
       "error": "concordancia"
     },
     {
@@ -361,11 +362,11 @@
     },
     {
       "id": "c7", "tipo": "escribir", "nivel": 3,
-      "enunciado": "Escucha y escríbelo en plural, como si fueran muchos.",
-      "escuchar": "el árbol verde",
-      "respuestas": ["los árboles verdes"],
-      "pista": "Cambian las tres palabras. «Árbol» termina en consonante; «verde» termina en vocal.",
-      "explicacion": "Se escribe «los árboles verdes»: árbol → árboles (se agrega -es) y verde → verdes (se agrega -s).",
+      "enunciado": "Escucha lo que dice. Luego escríbelo en singular.",
+      "escuchar": "los ratones grises",
+      "respuestas": ["el ratón gris"],
+      "pista": "Cambian las tres palabras. Quita el final de plural: a veces es -s y a veces es -es.",
+      "explicacion": "Se escribe «el ratón gris»: los → el, ratones → ratón y grises → gris. Las tres palabras quedan en singular.",
       "error": "concordancia-numero"
     },
     {
@@ -392,7 +393,7 @@
     "texto": "El adjetivo dice cómo es el sustantivo y concuerda con él en género y número: gato negro, gata negra, gatos negros, gatas negras.",
     "visual": {
       "tipo": "tabla",
-      "columnas": ["Género", "Uno", "Varios"],
+      "columnas": ["Género", "Uno (singular)", "Varios (plural)"],
       "filas": [
         ["Masculino", "gato negro", "gatos negros"],
         ["Femenino", "gata negra", "gatas negras"]
@@ -412,7 +413,7 @@
       "confunde-verbo": { "descripcion": "Confunde acciones (saltar, comer) con adjetivos.", "sugerencia": "Actúen las palabras: si se puede hacer, es una acción; si dice cómo es algo, es un adjetivo." },
       "clase-adjetivo": { "descripcion": "Duda si un adjetivo habla del color, el tamaño, la forma, el sabor o el carácter.", "sugerencia": "Describan un mismo objeto con los cinco sentidos: ¿de qué color es?, ¿de qué tamaño?, ¿qué forma tiene?, ¿a qué sabe?" },
       "concordancia-genero": { "descripcion": "No cambia el adjetivo según el género (escribe «la casa pequeño»).", "sugerencia": "Digan en voz alta pares como «el gato negro / la gata negra» y pidan que escuche si «suena bien»." },
-      "concordancia-numero": { "descripcion": "Olvida poner el adjetivo en plural (escribe «los perros juguetón» o «las naranjas dulce»).", "sugerencia": "Con objetos reales, pasen de uno a varios: «una piedra lisa → tres piedras lisas», marcando cada -s con una palmada." },
+      "concordancia-numero": { "descripcion": "No pone el adjetivo en el mismo número que el sustantivo, sobre todo en plural (escribe «los perros juguetón» o «las naranjas dulce»).", "sugerencia": "Con objetos reales, pasen de uno a varios: «una piedra lisa → tres piedras lisas», marcando cada -s con una palmada." },
       "concordancia": { "descripcion": "Mezcla género y número al unir sustantivo y adjetivo.", "sugerencia": "Hagan tarjetas con sustantivos (el poncho, las polleras) y adjetivos (nuevo, nuevas) y armen parejas que concuerden." },
       "forma-invariable": { "descripcion": "Cree que todos los adjetivos cambian a -a en femenino (escribe «la hoja verda» o «la casa granda»).", "sugerencia": "Prueben adjetivos con «el gato» y «la gata»: si el adjetivo no cambia (alegre, verde, grande), tiene una sola forma." },
       "plural-adjetivo": { "descripcion": "Forma mal el plural de adjetivos que terminan en consonante (escribe «azuls»).", "sugerencia": "Recuerden la regla: si termina en vocal se agrega -s (verde → verdes); si termina en consonante, -es (azul → azules, gris → grises)." },

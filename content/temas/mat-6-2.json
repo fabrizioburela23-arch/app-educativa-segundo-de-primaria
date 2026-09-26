@@ -1,0 +1,401 @@
+{
+  "id": "mat-6-2",
+  "titulo": "El peso",
+  "objetivo": "Comparo pesos con la balanza, uso el kilo y el medio kilo, y compro por kilos en la feria.",
+  "explicacion": [
+    {
+      "texto": "Algunas cosas son **pesadas**: cuesta levantarlas, como una sandía. Otras son **livianas**, como una hoja. Pesado y liviano son palabras para hablar del **peso**.",
+      "visual": { "tipo": "emojis", "items": ["🍉", "🍃"], "etiquetas": ["pesada", "liviana"] }
+    },
+    {
+      "texto": "La **balanza** compara pesos. El platillo con lo más pesado **baja** y el más liviano **sube**. Si los dos pesan lo mismo, la balanza queda **equilibrada**.",
+      "visual": { "tipo": "balanza", "izquierda": ["🍉"], "derecha": ["🍎", "🍎"], "inclinada": "izquierda" }
+    },
+    {
+      "texto": "Para medir el peso usamos el **kilogramo** o **kilo** (kg). Estas papas pesan lo mismo que la pesa de 1 kilo: ¡pesan 1 kilo! En la feria compramos por kilos.",
+      "audio": "Para medir el peso usamos el kilogramo o kilo. Estas papas pesan lo mismo que la pesa de un kilo: ¡pesan un kilo! En la feria compramos por kilos.",
+      "visual": { "tipo": "balanza", "izquierda": ["🥔", "🥔", "🥔", "🥔", "🥔"], "derecha": ["1 kg"], "inclinada": "no" }
+    },
+    {
+      "texto": "**Medio kilo** es la mitad de un kilo. ¡Dos medios kilos pesan lo mismo que 1 kilo! En la tienda puedes pedir medio kilo de azúcar.",
+      "emoji": "🛒",
+      "visual": { "tipo": "fraccion", "forma": "barra", "partes": 2, "coloreadas": 1 }
+    }
+  ],
+  "ejemplo": {
+    "instruccion": "Mira cómo Inti compara pesos con una balanza de platillos.",
+    "pasos": [
+      { "texto": "Inti pone una piña en un platillo y un choclo en el otro.", "visual": { "tipo": "balanza", "izquierda": ["🍍"], "derecha": ["🌽"], "inclinada": "izquierda" } },
+      { "texto": "El platillo de la piña **baja**: la piña es **más pesada**. El platillo del choclo **sube**: el choclo es **más liviano**.", "visual": { "tipo": "emojis", "items": ["🍍", "🌽"], "etiquetas": ["más pesada", "más liviano"] } },
+      { "texto": "Ahora pone naranjas en un platillo y una pesa de 1 kilo en el otro. La balanza queda **equilibrada**: esas naranjas pesan **1 kilo**.", "visual": { "tipo": "balanza", "izquierda": ["🍊", "🍊", "🍊", "🍊", "🍊", "🍊"], "derecha": ["1 kg"], "inclinada": "no" } },
+      { "texto": "Si cambia la pesa por una de **medio kilo**, le basta con la mitad de las naranjas: 3 en lugar de 6.", "visual": { "tipo": "balanza", "izquierda": ["🍊", "🍊", "🍊"], "derecha": ["½ kg"], "inclinada": "no" } }
+    ]
+  },
+  "guiada": {
+    "intro": "Ahora pesamos juntos, paso a paso.",
+    "pasos": [
+      {
+        "id": "g1", "tipo": "opcion",
+        "enunciado": "Mira la balanza. ¿Qué es más pesado?",
+        "apoyo": "Fíjate qué platillo bajó. Lo más pesado siempre baja.",
+        "visual": { "tipo": "balanza", "izquierda": ["🍎"], "derecha": ["🍉"], "inclinada": "derecha" },
+        "opciones": [
+          { "texto": "la sandía", "emoji": "🍉", "correcta": true },
+          { "texto": "la manzana", "emoji": "🍎", "pista": "El platillo de la manzana subió. Lo que sube es más liviano.", "error": "lee-balanza" },
+          { "texto": "pesan lo mismo", "pista": "Si pesaran lo mismo, los dos platillos estarían a la misma altura.", "error": "lee-balanza" }
+        ],
+        "pista": "Busca el platillo que está más abajo.",
+        "explicacion": "El platillo de la sandía bajó: la sandía es más pesada que la manzana.",
+        "error": "lee-balanza"
+      },
+      {
+        "id": "g2", "tipo": "completar",
+        "enunciado": "Mira la barra y completa.",
+        "apoyo": "Piensa en un pan partido en 2 mitades iguales: las 2 mitades juntas forman el pan entero.",
+        "visual": { "tipo": "fraccion", "forma": "barra", "partes": 2, "coloreadas": 1 },
+        "texto": "Medio kilo es la [mitad] de un kilo. Dos medios kilos pesan [1] kilo.",
+        "banco": ["doble", "3"],
+        "pista": "La barra es un kilo entero, partido en 2 partes iguales.",
+        "explicacion": "Medio kilo es la mitad de un kilo, y dos medios kilos forman 1 kilo.",
+        "error": "medio-kilo"
+      },
+      {
+        "id": "g3", "tipo": "manipular",
+        "enunciado": "Un kilo de papa cuesta 6 Bs. Kusi compra 2 kilos. Pon el dinero justo.",
+        "apoyo": "Cada kilo cuesta 6 Bs. Para 2 kilos, suma 6 + 6.",
+        "manipulable": { "tipo": "dinero", "objetivo": 1200, "disponibles": ["m1", "m2", "m5", "b10"] },
+        "pista": "Primero calcula cuánto cuestan los 2 kilos.",
+        "explicacion": "2 kilos cuestan 6 + 6 = 12 Bs. Por ejemplo: un billete de 10 Bs y una moneda de 2 Bs.",
+        "error": "compra-por-kilo"
+      }
+    ]
+  },
+  "practica": [
+    {
+      "id": "p1", "tipo": "generador", "nivel": 1, "generador": "comparar", "params": { "max": 100 }
+    },
+    {
+      "id": "p2", "tipo": "clasificar", "nivel": 1,
+      "enunciado": "¿Es pesado o liviano? Piensa si podrías levantarlo con una mano.",
+      "categorias": [
+        { "id": "pesado", "texto": "Pesado" },
+        { "id": "liviano", "texto": "Liviano" }
+      ],
+      "elementos": [
+        { "texto": "un micro", "emoji": "🚌", "categoria": "pesado" },
+        { "texto": "una llama", "emoji": "🦙", "categoria": "pesado" },
+        { "texto": "un tractor", "emoji": "🚜", "categoria": "pesado" },
+        { "texto": "un ropero", "categoria": "pesado" },
+        { "texto": "una hoja", "emoji": "🍃", "categoria": "liviano" },
+        { "texto": "un globo", "emoji": "🎈", "categoria": "liviano" },
+        { "texto": "un lápiz", "emoji": "✏️", "categoria": "liviano" },
+        { "texto": "una pluma", "categoria": "liviano" }
+      ],
+      "pista": "Lo pesado cuesta mucho levantarlo. Lo liviano lo levantas fácil.",
+      "explicacion": "Pesados: el micro, la llama, el tractor y el ropero. Livianos: la hoja, el globo, el lápiz y la pluma.",
+      "error": "pesado-liviano"
+    },
+    {
+      "id": "p3", "tipo": "opcion", "nivel": 1,
+      "enunciado": "Mira la balanza. ¿Qué es más liviano?",
+      "visual": { "tipo": "balanza", "izquierda": ["🍈"], "derecha": ["🍋"], "inclinada": "izquierda" },
+      "opciones": [
+        { "texto": "el limón", "emoji": "🍋", "correcta": true },
+        { "texto": "el melón", "emoji": "🍈", "pista": "El platillo del melón bajó: el melón es el más pesado. ¿Cuál subió?", "error": "lee-balanza" },
+        { "texto": "pesan lo mismo", "pista": "La balanza no está equilibrada: un platillo bajó.", "error": "lee-balanza" }
+      ],
+      "pista": "Lo más liviano sube.",
+      "explicacion": "El platillo del limón subió: el limón es más liviano que el melón.",
+      "error": "lee-balanza"
+    },
+    {
+      "id": "p4", "tipo": "numero", "nivel": 1,
+      "enunciado": "Hay dos bolsas de medio kilo. ¿Cuántos kilos pesan juntas?",
+      "visual": { "tipo": "fraccion", "forma": "barra", "partes": 2, "coloreadas": 2 },
+      "respuesta": 1,
+      "sufijo": "kg",
+      "erroresComunes": [ { "respuesta": 2, "pista": "Son 2 bolsas, pero cada una pesa solo medio kilo.", "error": "medio-kilo" } ],
+      "pista": "Junta dos mitades: ¿qué forman?",
+      "explicacion": "Medio kilo más medio kilo es 1 kilo. Dos mitades forman un entero.",
+      "error": "medio-kilo"
+    },
+    {
+      "id": "p5", "tipo": "generador", "nivel": 2, "generador": "dinero-total", "params": { "productos": 2, "maxPrecio": 10 }
+    },
+    {
+      "id": "p6", "tipo": "ordenar", "nivel": 2,
+      "enunciado": "Ordena de lo más liviano a lo más pesado.",
+      "elementos": [
+        { "texto": "un limón", "emoji": "🍋" },
+        { "texto": "una piña", "emoji": "🍍" },
+        { "texto": "un costal de papas", "emoji": "🥔" },
+        { "texto": "una vaca", "emoji": "🐄" }
+      ],
+      "pista": "Piensa cuál es más fácil de levantar y cuál es imposible de levantar.",
+      "explicacion": "El limón es el más liviano; después, la piña; luego, el costal de papas; y la vaca es la más pesada.",
+      "error": "ordena-pesos"
+    },
+    {
+      "id": "p7", "tipo": "numero", "nivel": 2,
+      "enunciado": "Un kilo de tomate cuesta 8 Bs. ¿Cuánto cuesta medio kilo?",
+      "visual": { "tipo": "emoji", "valor": "🍅", "etiqueta": "1 kilo: 8 Bs" },
+      "respuesta": 4,
+      "sufijo": "Bs",
+      "erroresComunes": [ { "respuesta": 16, "pista": "16 Bs cuestan 2 kilos. Medio kilo es menos que 1 kilo.", "error": "compra-por-kilo" } ],
+      "pista": "Medio kilo cuesta la mitad de lo que cuesta un kilo.",
+      "explicacion": "La mitad de 8 es 4: medio kilo de tomate cuesta 4 Bs.",
+      "error": "compra-por-kilo"
+    },
+    {
+      "id": "p8", "tipo": "manipular", "nivel": 2,
+      "enunciado": "Un kilo de zanahoria cuesta 5 Bs. Mateo compra 3 kilos. Pon el dinero justo.",
+      "manipulable": { "tipo": "dinero", "objetivo": 1500, "disponibles": ["m1", "m2", "m5", "b10"] },
+      "pista": "Cada kilo cuesta 5 Bs. Suma 5 por cada kilo.",
+      "explicacion": "3 kilos cuestan 5 + 5 + 5 = 15 Bs. Por ejemplo: un billete de 10 Bs y una moneda de 5 Bs.",
+      "error": "compra-por-kilo"
+    },
+    {
+      "id": "p9", "tipo": "tocar", "nivel": 2,
+      "enunciado": "Toca las palabras que son medidas de peso.",
+      "texto": "Rosa compró 2 *kilos* de quinua, un *kilo* de azúcar y 3 metros de tela.",
+      "pista": "Hay dos. Busca la unidad que usamos en la balanza.",
+      "explicacion": "«Kilos» y «kilo» son medidas de peso. «Metros» mide el largo de la tela.",
+      "error": "confunde-magnitud"
+    },
+    {
+      "id": "p10", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha y escribe la palabra.",
+      "escuchar": "balanza",
+      "visual": { "tipo": "emoji", "valor": "⚖️" },
+      "respuestas": ["balanza"],
+      "pista": "Dila despacio y separa sus tres sílabas con palmadas.",
+      "explicacion": "Se escribe «balanza»: ba-lan-za, con z al final. Sirve para comparar pesos.",
+      "error": "escritura-medida"
+    },
+    {
+      "id": "p11", "tipo": "memoria", "nivel": 2,
+      "enunciado": "Encuentra las parejas que pesan lo mismo.",
+      "pares": [
+        ["1 kilo", "2 medios kilos"],
+        ["medio kilo", "la mitad de 1 kilo"],
+        ["2 kilos", "4 medios kilos"],
+        ["3 kilos", "1 kilo + 2 kilos"]
+      ],
+      "pista": "Recuerda: dos medios kilos forman 1 kilo.",
+      "explicacion": "1 kilo = 2 medios kilos; medio kilo = la mitad de 1 kilo; 2 kilos = 4 medios kilos; 3 kilos = 1 kilo + 2 kilos.",
+      "error": "medio-kilo"
+    },
+    {
+      "id": "p12", "tipo": "generador", "nivel": 3, "generador": "dinero-total", "params": { "productos": 3, "maxPrecio": 16 }
+    },
+    {
+      "id": "p13", "tipo": "pasos", "nivel": 3,
+      "enunciado": "Juan compra 2 kilos de papa a 6 Bs el kilo y medio kilo de maní. Un kilo de maní cuesta 14 Bs.",
+      "visual": { "tipo": "emojis", "items": ["🥔", "🥜"], "etiquetas": ["1 kilo: 6 Bs", "1 kilo: 14 Bs"] },
+      "pasos": [
+        {
+          "tipo": "numero", "enunciado": "¿Cuánto cuestan los 2 kilos de papa?",
+          "respuesta": 12, "sufijo": "Bs",
+          "erroresComunes": [ { "respuesta": 6, "pista": "Eso cuesta 1 kilo. Juan compra 2 kilos.", "error": "compra-por-kilo" } ],
+          "pista": "Suma 6 + 6.",
+          "explicacion": "6 + 6 = 12 Bs.",
+          "error": "compra-por-kilo"
+        },
+        {
+          "tipo": "numero", "enunciado": "¿Cuánto cuesta medio kilo de maní?",
+          "respuesta": 7, "sufijo": "Bs",
+          "erroresComunes": [ { "respuesta": 14, "pista": "14 Bs cuesta el kilo entero. Medio kilo cuesta la mitad.", "error": "medio-kilo" } ],
+          "pista": "Busca la mitad de 14.",
+          "explicacion": "La mitad de 14 es 7: medio kilo de maní cuesta 7 Bs.",
+          "error": "compra-por-kilo"
+        },
+        {
+          "tipo": "numero", "enunciado": "¿Cuánto paga Juan en total?",
+          "respuesta": 19, "sufijo": "Bs",
+          "erroresComunes": [ { "respuesta": 26, "pista": "Usaste el precio del kilo entero de maní. Juan compra solo medio kilo.", "error": "medio-kilo" } ],
+          "pista": "Suma lo que cuesta la papa y lo que cuesta el maní.",
+          "explicacion": "12 + 7 = 19 Bs.",
+          "error": "problema-peso"
+        }
+      ],
+      "pista": "Resuelve un paso a la vez.",
+      "explicacion": "Papa: 6 + 6 = 12 Bs. Maní: la mitad de 14 = 7 Bs. Total: 12 + 7 = 19 Bs.",
+      "error": "problema-peso"
+    },
+    {
+      "id": "p14", "tipo": "pasos", "nivel": 3,
+      "enunciado": "Arami compara tres frutas con una balanza: una piña, una pera y un melón.",
+      "pasos": [
+        {
+          "tipo": "opcion", "enunciado": "¿Qué pesa más: la piña o la pera?",
+          "visual": { "tipo": "balanza", "izquierda": ["🍍"], "derecha": ["🍐"], "inclinada": "izquierda" },
+          "opciones": [
+            { "texto": "la piña", "emoji": "🍍", "correcta": true },
+            { "texto": "la pera", "emoji": "🍐", "pista": "El platillo de la pera subió. Lo más pesado baja.", "error": "lee-balanza" }
+          ],
+          "pista": "Lo más pesado baja.",
+          "explicacion": "Bajó el platillo de la piña: la piña pesa más que la pera.",
+          "error": "lee-balanza"
+        },
+        {
+          "tipo": "opcion", "enunciado": "¿Qué pesa más: la piña o el melón?",
+          "visual": { "tipo": "balanza", "izquierda": ["🍍"], "derecha": ["🍈"], "inclinada": "derecha" },
+          "opciones": [
+            { "texto": "el melón", "emoji": "🍈", "correcta": true },
+            { "texto": "la piña", "emoji": "🍍", "pista": "Mira bien: esta vez el platillo de la piña subió.", "error": "lee-balanza" }
+          ],
+          "pista": "Lo más pesado baja.",
+          "explicacion": "Bajó el platillo del melón: el melón pesa más que la piña.",
+          "error": "lee-balanza"
+        },
+        {
+          "tipo": "ordenar", "enunciado": "Ordena las frutas de la más pesada a la más liviana.",
+          "elementos": [
+            { "texto": "el melón", "emoji": "🍈" },
+            { "texto": "la piña", "emoji": "🍍" },
+            { "texto": "la pera", "emoji": "🍐" }
+          ],
+          "pista": "Usa lo que viste en las dos balanzas.",
+          "explicacion": "El melón pesa más que la piña, y la piña pesa más que la pera. El orden es: melón, piña, pera.",
+          "error": "ordena-pesos"
+        }
+      ],
+      "pista": "Mira bien cada balanza: lo más pesado baja.",
+      "explicacion": "El melón es el más pesado; después viene la piña, y la pera es la más liviana.",
+      "error": "ordena-pesos"
+    },
+    {
+      "id": "p15", "tipo": "escribir-libre", "nivel": 3,
+      "enunciado": "Escribe qué comprarías en la feria y cuánto de cada cosa. Usa la palabra kilo o kilos.",
+      "guia": ["En la feria compraría...", "...kilos de...", "...medio kilo de..."],
+      "requisitos": [
+        { "tipo": "mayuscula-inicial" }, { "tipo": "punto-final" },
+        { "tipo": "min-palabras", "valor": 5 },
+        { "tipo": "incluye", "palabras": ["kilo", "kilos"] }
+      ],
+      "modelo": "En la feria compraría dos kilos de papa y medio kilo de maní.",
+      "pista": "Piensa en algo que se vende por kilos, como la papa, el arroz o la quinua.",
+      "explicacion": "Por ejemplo: «En la feria compraría dos kilos de papa y medio kilo de maní».",
+      "error": "explica-peso"
+    },
+    {
+      "id": "p16", "tipo": "numero", "nivel": 3,
+      "enunciado": "Nayra tiene 3 kilos de quinua. La pone en bolsas de medio kilo. ¿Cuántas bolsas llena?",
+      "respuesta": 6,
+      "erroresComunes": [ { "respuesta": 3, "pista": "Con cada kilo llenas 2 bolsas de medio kilo, no 1.", "error": "medio-kilo" } ],
+      "pista": "Con 1 kilo llenas 2 bolsas de medio kilo. ¿Y con 3 kilos?",
+      "explicacion": "Cada kilo alcanza para 2 bolsas de medio kilo: 2 + 2 + 2 = 6 bolsas.",
+      "error": "medio-kilo"
+    }
+  ],
+  "comprobacion": [
+    {
+      "id": "c1", "tipo": "opcion", "nivel": 1,
+      "enunciado": "¿Qué nos dice esta balanza?",
+      "visual": { "tipo": "balanza", "izquierda": ["🍎", "🍎", "🍎"], "derecha": ["🍊", "🍊", "🍊"], "inclinada": "no" },
+      "opciones": [
+        { "texto": "Las manzanas y las naranjas pesan lo mismo.", "correcta": true },
+        { "texto": "Las manzanas pesan más.", "pista": "Si las manzanas pesaran más, su platillo bajaría. ¿Algún platillo bajó?", "error": "lee-balanza" },
+        { "texto": "Las naranjas pesan más.", "pista": "Si las naranjas pesaran más, su platillo bajaría. ¿Algún platillo bajó?", "error": "lee-balanza" }
+      ],
+      "columnas": 1,
+      "pista": "Mira si los platillos están a la misma altura.",
+      "explicacion": "Los dos platillos están a la misma altura: la balanza está equilibrada, así que pesan lo mismo.",
+      "error": "lee-balanza"
+    },
+    {
+      "id": "c2", "tipo": "completar", "nivel": 1,
+      "enunciado": "Mira la balanza y completa.",
+      "visual": { "tipo": "balanza", "izquierda": ["🍉"], "derecha": ["🍇"], "inclinada": "izquierda" },
+      "texto": "La sandía es más [pesada] que las uvas. Las uvas son más [livianas] que la sandía.",
+      "pista": "El platillo que baja tiene lo más pesado.",
+      "explicacion": "La sandía bajó: es más pesada. Las uvas subieron: son más livianas.",
+      "error": "pesado-liviano"
+    },
+    {
+      "id": "c3", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "¿Qué unidad usamos para medir cada cosa? Une.",
+      "pares": [
+        [{ "texto": "el peso de una sandía", "emoji": "🍉" }, "kilos"],
+        [{ "texto": "el largo de una tela" }, "metros"],
+        [{ "texto": "el largo de un lápiz", "emoji": "✏️" }, "centímetros"]
+      ],
+      "pista": "El kilo sirve para pesar. El metro y el centímetro sirven para medir el largo.",
+      "explicacion": "La sandía se pesa en kilos. La tela, que es larga, se mide en metros. El lápiz, que es corto, en centímetros.",
+      "error": "confunde-magnitud"
+    },
+    {
+      "id": "c4", "tipo": "manipular", "nivel": 2,
+      "enunciado": "Un kilo de carne cuesta 44 Bs. Ana compra medio kilo. Pon el dinero justo.",
+      "manipulable": { "tipo": "dinero", "objetivo": 2200, "disponibles": ["m1", "m2", "m5", "b10", "b20"] },
+      "pista": "Medio kilo cuesta la mitad. Busca la mitad de 44.",
+      "explicacion": "La mitad de 44 es 22: medio kilo cuesta 22 Bs. Por ejemplo: un billete de 20 Bs y una moneda de 2 Bs.",
+      "error": "compra-por-kilo"
+    },
+    {
+      "id": "c5", "tipo": "numero", "nivel": 2,
+      "enunciado": "Escucha el problema y responde.",
+      "escuchar": "En la feria, Luis compra tres kilos de papa y cuatro kilos de naranja. ¿Cuántos kilos lleva en total?",
+      "respuesta": 7,
+      "sufijo": "kg",
+      "erroresComunes": [ { "respuesta": 1, "pista": "Te preguntan el total: junta los kilos de papa y los de naranja.", "error": "problema-peso" } ],
+      "pista": "Junta los kilos de papa y los kilos de naranja.",
+      "explicacion": "3 kilos + 4 kilos = 7 kilos.",
+      "error": "problema-peso"
+    },
+    {
+      "id": "c6", "tipo": "generador", "nivel": 2, "generador": "ordenar-numeros", "params": { "max": 100, "cantidad": 4, "orden": "asc" }
+    },
+    {
+      "id": "c7", "tipo": "opcion", "nivel": 3,
+      "enunciado": "La bolsa de Kusi pesa 2 kilos. La bolsa de Ana pesa 3 medios kilos. ¿Qué bolsa pesa más?",
+      "opciones": [
+        { "texto": "la de Kusi", "correcta": true },
+        { "texto": "la de Ana", "pista": "3 medios kilos son 1 kilo y medio. ¿Es más o menos que 2 kilos?", "error": "medio-kilo" },
+        { "texto": "pesan lo mismo", "pista": "2 medios kilos son 1 kilo. ¿Cuánto son 3 medios kilos?", "error": "medio-kilo" }
+      ],
+      "pista": "Piensa cuántos kilos son 3 medios kilos.",
+      "explicacion": "3 medios kilos son 1 kilo y medio, que es menos que 2 kilos. La bolsa de Kusi pesa más.",
+      "error": "medio-kilo"
+    },
+    {
+      "id": "c8", "tipo": "numero", "nivel": 3,
+      "enunciado": "Un kilo de quinua cuesta 16 Bs. ¿Cuánto cuestan 2 kilos y medio?",
+      "respuesta": 40,
+      "sufijo": "Bs",
+      "erroresComunes": [
+        { "respuesta": 32, "pista": "Eso cuestan 2 kilos. Te falta el medio kilo.", "error": "compra-por-kilo" },
+        { "respuesta": 48, "pista": "Eso cuestan 3 kilos. Son 2 kilos y medio: el último es solo medio kilo.", "error": "medio-kilo" }
+      ],
+      "pista": "Calcula el precio de 2 kilos y el de medio kilo (la mitad de 16). Luego suma.",
+      "explicacion": "2 kilos: 16 + 16 = 32 Bs. Medio kilo: la mitad de 16 = 8 Bs. Total: 32 + 8 = 40 Bs.",
+      "error": "compra-por-kilo"
+    }
+  ],
+  "repaso": {
+    "texto": "En la balanza, lo más pesado baja y lo más liviano sube. Medimos el peso en kilos: dos medios kilos forman 1 kilo.",
+    "visual": { "tipo": "balanza", "izquierda": ["🍉"], "derecha": ["🍎"], "inclinada": "izquierda" }
+  },
+  "adulto": {
+    "objetivo": "Comparar pesos (pesado, liviano, más pesado que) con la balanza; conocer el kilogramo y el medio kilo; ordenar objetos por su peso y resolver compras por kilo en la feria.",
+    "sugerencias": [
+      "En la cocina, busquen paquetes que digan «1 kg» y otros de medio kilo («500 g»). Pidan que sostenga uno en cada mano, diga cuál pesa más y luego lean juntos la etiqueta.",
+      "En la feria, compren 1 kilo y medio kilo de algún producto. Dejen que observe cómo pesa la casera o el casero, que sostenga las bolsas para sentir la diferencia y que calcule cuánto cuesta medio kilo si sabe el precio del kilo.",
+      "Armen una balanza con un gancho de ropa, hilo y dos bolsitas iguales. Comparen piedritas, fideos o juguetes, y ordénenlos del más liviano al más pesado."
+    ],
+    "errores": {
+      "comparar-signo": { "descripcion": "Se confunde al usar los signos > y < para comparar cantidades.", "sugerencia": "Comparen dos bolsas de la cocina con su peso escrito y digan en voz alta «pesa más que» o «pesa menos que» antes de usar el signo." },
+      "dinero-total": { "descripcion": "Se equivoca al sumar los precios de una compra.", "sugerencia": "Jueguen a la feria con precios en papelitos y monedas de juguete: sumen de a dos productos." },
+      "orden-numeros": { "descripcion": "Ordena mal números (y pesos) de menor a mayor.", "sugerencia": "Escriban pesos en tarjetas (por ejemplo, 12 kilos, 21 kilos, 8 kilos) y ordénenlas comparando primero las decenas." },
+      "lee-balanza": { "descripcion": "No interpreta bien la balanza: cree que el platillo que sube es el más pesado.", "sugerencia": "Con una balanza casera, pongan algo pesado y algo liviano, y repitan juntos: «lo más pesado baja»." },
+      "pesado-liviano": { "descripcion": "Confunde las palabras pesado y liviano.", "sugerencia": "Levanten objetos de la casa y clasifíquenlos en dos montones: pesados y livianos." },
+      "medio-kilo": { "descripcion": "No relaciona el medio kilo con la mitad del kilo (dos medios kilos forman 1 kilo).", "sugerencia": "Llenen dos bolsas de medio kilo de arroz y comparen su peso con una bolsa de 1 kilo en una balanza casera o en la tienda." },
+      "compra-por-kilo": { "descripcion": "Le cuesta calcular el precio de varios kilos o de medio kilo.", "sugerencia": "En la feria, pregunten el precio del kilo y calculen juntos cuánto costarían 2 kilos o medio kilo antes de pagar." },
+      "confunde-magnitud": { "descripcion": "Confunde las unidades de peso (kilo) con las de longitud (metro, centímetro).", "sugerencia": "Pregunten: «¿quiero saber cuánto pesa o cuánto mide?». La papa se compra por kilos y la tela, por metros." },
+      "escritura-medida": { "descripcion": "Escribe con errores palabras del tema (balanza, kilo).", "sugerencia": "Dicten palabras separando sílabas con palmadas (ba-lan-za) y revisen juntos las letras dudosas, como la z." },
+      "ordena-pesos": { "descripcion": "Le cuesta ordenar objetos del más liviano al más pesado.", "sugerencia": "Comparen objetos de dos en dos con la balanza casera y después pónganlos en fila del más liviano al más pesado." },
+      "problema-peso": { "descripcion": "Le cuesta resolver problemas con kilos (juntar o comparar pesos).", "sugerencia": "Representen el problema con bolsas reales o dibujadas y cuenten los kilos antes de hacer la cuenta." },
+      "explica-peso": { "descripcion": "Le cuesta escribir oraciones usando kilo y medio kilo.", "sugerencia": "Hagan juntos la lista de la feria de la semana: que escriba cuántos kilos o medios kilos de cada cosa necesitan." }
+    }
+  }
+}

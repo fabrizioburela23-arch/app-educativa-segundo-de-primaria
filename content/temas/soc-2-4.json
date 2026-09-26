@@ -13,11 +13,11 @@
       "visual": { "tipo": "emojis", "items": ["🚌", "🚐", "🚕", "🚂", "🚲", "🐴", "🦙"], "etiquetas": ["micro", "minibús", "trufi", "tren", "bicicleta", "caballo", "llama"] }
     },
     {
-      "texto": "Por **agua** viajan el bote, la canoa, la lancha y el barco, en ríos y lagos como el Titicaca. Por **aire** viajan el avión, el helicóptero y el **teleférico**: sus cabinas cuelgan de cables.",
+      "texto": "Por **agua** viajan el bote, la canoa, la lancha y el barco, en ríos y lagos como el Titicaca. Por **aire** viajan el avión y el helicóptero. El **teleférico** también va por el aire: sus cabinas cuelgan de cables.",
       "visual": { "tipo": "emojis", "items": ["🚣", "🛶", "🚤", "✈️", "🚁", "🚠"], "etiquetas": ["bote", "canoa", "lancha", "avión", "helicóptero", "teleférico"] }
     },
     {
-      "texto": "Para viajar **seguros**: cruzamos por el **paso de cebra**, con un adulto y con la luz verde para el peatón. Bajamos del vehículo solo cuando está detenido. En el auto usamos cinturón y en bicicleta, casco.",
+      "texto": "Para viajar **seguros**: cruzamos por el **paso de cebra**, con un adulto, mirando a los dos lados y con la luz verde para el peatón. Subimos y bajamos solo con el vehículo detenido. En el auto, cinturón; en bici, casco.",
       "emoji": "🚦",
       "visual": { "tipo": "emojis", "items": ["🦓", "🚦", "🚗", "🚲"], "etiquetas": ["paso de cebra", "luz verde", "auto: cinturón", "bici: casco"] }
     }
@@ -59,7 +59,7 @@
         "id": "g2", "tipo": "completar",
         "enunciado": "Completa cómo cruzamos la calle con seguridad.",
         "apoyo": "El paso de cebra tiene rayas blancas pintadas en la calle. La luz verde para el peatón dice «ya puedes cruzar».",
-        "texto": "Para cruzar la calle, voy de la mano de un [adulto]. Buscamos el [paso de cebra] y esperamos la luz [verde] para el peatón.",
+        "texto": "Para cruzar la calle, voy de la mano de un [adulto]. Buscamos el [paso de cebra] y cruzamos cuando se enciende la luz [verde] para el peatón.",
         "banco": ["roja"],
         "pista": "¿Qué color del semáforo para peatones te dice que puedes pasar?",
         "explicacion": "Cruzamos de la mano de un adulto, por el paso de cebra y con la luz verde para el peatón. Con la luz roja, esperamos en la acera.",
@@ -128,7 +128,7 @@
       "enunciado": "Escucha y escribe el medio de transporte.",
       "escuchar": "avión",
       "visual": { "tipo": "emoji", "valor": "✈️" },
-      "respuestas": ["avión"],
+      "respuestas": ["avión", "el avión"],
       "pista": "Vuela por el cielo y lleva pasajeros. Tiene dos sílabas: a-...",
       "explicacion": "La palabra es «avión»: a-vión, con tilde en la o.",
       "error": "escritura-transporte"
@@ -179,7 +179,7 @@
       "id": "p8", "tipo": "escribir", "nivel": 2,
       "enunciado": "Escucha la adivinanza y escribe el medio de transporte.",
       "escuchar": "Tengo cabinas de colores. Viajo colgado de cables, por el aire, entre La Paz y El Alto. ¿Quién soy?",
-      "respuestas": ["teleférico", "el teleférico"],
+      "respuestas": ["teleférico", "el teleférico", "mi teleférico"],
       "pista": "Sus cabinas cuelgan de cables. Empieza con «te».",
       "explicacion": "Es el teleférico: sus cabinas viajan por el aire, colgadas de cables, entre La Paz y El Alto.",
       "error": "transporte-bolivia"
@@ -198,7 +198,7 @@
     },
     {
       "id": "p10", "tipo": "relacionar", "nivel": 3,
-      "enunciado": "Une cada medio de transporte con el lugar de Bolivia donde se usa mucho.",
+      "enunciado": "Une cada medio de transporte con un lugar de Bolivia donde se usa.",
       "pares": [
         [ { "texto": "teleférico", "emoji": "🚠" }, "entre La Paz y El Alto" ],
         [ { "texto": "lancha", "emoji": "🚤" }, "en el estrecho de Tiquina" ],
@@ -333,33 +333,33 @@
       "enunciado": "Escucha y escribe el medio de transporte.",
       "escuchar": "minibús",
       "visual": { "tipo": "emoji", "valor": "🚐" },
-      "respuestas": ["minibús"],
+      "respuestas": ["minibús", "el minibús"],
       "pista": "Es más pequeño que el micro y lleva pasajeros en la ciudad. Empieza con «mi».",
       "explicacion": "La palabra es «minibús»: mi-ni-bús, con tilde en la u.",
       "error": "escritura-transporte"
     },
     {
       "id": "c4", "tipo": "completar", "nivel": 2,
-      "enunciado": "Completa las reglas para viajar seguro.",
-      "texto": "En el auto viajo en el asiento de [atrás], con el [cinturón] puesto. En la bicicleta uso [casco].",
-      "banco": ["adelante"],
-      "pista": "¿Dónde van sentados los niños? ¿Qué protege la cabeza en la bici?",
-      "explicacion": "En el auto, las niñas y los niños van atrás con el cinturón puesto. En la bicicleta, usamos casco.",
+      "enunciado": "Completa las reglas para andar seguro por la calle.",
+      "texto": "Por la [calle] pasan los autos, y las personas caminamos por la [acera]. Antes de cruzar, miro a los dos [lados]. En el auto, llevo puesto el [cinturón] todo el viaje.",
+      "banco": ["semáforo"],
+      "pista": "¿Por dónde caminan las personas y por dónde pasan los autos? ¿Qué te sujeta en el asiento del auto?",
+      "explicacion": "Caminamos por la acera, porque por la calle pasan los vehículos. Antes de cruzar miramos a los dos lados, y en el auto llevamos el cinturón puesto todo el viaje.",
       "error": "seguridad-vial"
     },
     {
       "id": "c5", "tipo": "multiple", "nivel": 2,
-      "enunciado": "¿Qué medios de transporte viajan por tierra? Elige todos.",
+      "enunciado": "Ana vive en El Alto y trabaja en La Paz. ¿En qué puede viajar cada día? Elige todos.",
       "opciones": [
+        { "texto": "teleférico", "emoji": "🚠", "correcta": true },
+        { "texto": "minibús", "emoji": "🚐", "correcta": true },
         { "texto": "micro", "emoji": "🚌", "correcta": true },
-        { "texto": "tren", "emoji": "🚂", "correcta": true },
-        { "texto": "caballo", "emoji": "🐴", "correcta": true },
-        { "texto": "lancha", "emoji": "🚤", "pista": "La lancha va por agua.", "error": "clasifica-transporte" },
-        { "texto": "avión", "emoji": "✈️", "pista": "El avión va por el aire.", "error": "clasifica-transporte" }
+        { "texto": "lancha", "emoji": "🚤", "pista": "Entre El Alto y La Paz no hay un lago ni un río para navegar.", "error": "transporte-bolivia" },
+        { "texto": "canoa", "emoji": "🛶", "pista": "La canoa va por el agua, y en ese camino no hay un río para navegar.", "error": "transporte-bolivia" }
       ],
-      "pista": "Busca los que van por caminos, calles o rieles.",
-      "explicacion": "El micro, el tren y el caballo van por tierra. La lancha va por agua y el avión, por aire.",
-      "error": "clasifica-transporte"
+      "pista": "Entre El Alto y La Paz hay calles, carreteras y cables del teleférico, pero no hay un lago.",
+      "explicacion": "Ana puede viajar en teleférico, en minibús o en micro. Entre El Alto y La Paz no hay agua para navegar en lancha ni en canoa.",
+      "error": "transporte-bolivia"
     },
     {
       "id": "c6", "tipo": "relacionar", "nivel": 2,
@@ -384,7 +384,7 @@
           "enunciado": "¿Dónde esperan?",
           "opciones": [
             { "texto": "En la acera, lejos del borde.", "correcta": true },
-            { "texto": "En medio de la calle, para que el chofer las vea.", "pista": "Por la calle pasan autos. Se espera en la acera.", "error": "seguridad-vial" },
+            { "texto": "En medio de la calle, para que el chofer nos vea.", "pista": "Por la calle pasan autos. Se espera en la acera.", "error": "seguridad-vial" },
             { "texto": "En el borde de la acera, con los pies en la calle.", "pista": "Un vehículo podría golpear tus pies. Aléjate del borde.", "error": "seguridad-vial" }
           ],
           "pista": "¿Dónde no pasan los autos?",
@@ -437,7 +437,7 @@
         { "texto": "teleférico", "emoji": "🚠", "categoria": "aire" },
         { "texto": "helicóptero", "emoji": "🚁", "categoria": "aire" }
       ],
-      "pista": "El teleférico no toca el suelo: sus cabinas cuelgan de cables. La balsa flota.",
+      "pista": "Pregúntate con cada uno: ¿tiene ruedas o patas, flota, o va por encima del suelo?",
       "explicacion": "Por tierra: el trufi, el mototaxi y el burro. Por agua: la balsa y la canoa. Por aire: el teleférico y el helicóptero.",
       "error": "clasifica-transporte"
     }
@@ -459,7 +459,7 @@
       "como-se-mueve": { "descripcion": "No relaciona cada medio con la forma en que se mueve (rieles, cables, agua, patas).", "sugerencia": "Busquen fotos del tren, del teleférico y de una lancha, y señalen juntos los rieles, los cables o el agua." },
       "transporte-bolivia": { "descripcion": "No relaciona los medios de transporte con los lugares de Bolivia donde se usan.", "sugerencia": "Miren fotos o videos del teleférico de La Paz, de las lanchas de Tiquina o de los ríos de la Amazonía y conversen sobre cómo viaja la gente allí." },
       "historia-transporte": { "descripcion": "Le cuesta ordenar en el tiempo los medios de transporte de antes y de ahora.", "sugerencia": "Hagan una línea del tiempo en una tira de papel con dibujos: llamas de carga, tren, avión y teleférico." },
-      "seguridad-vial": { "descripcion": "No reconoce todavía todas las normas de seguridad como peatón, pasajero o ciclista.", "sugerencia": "Practiquen las normas en la vida diaria: cruzar por el paso de cebra, usar cinturón atrás, casco en la bici y bajar del vehículo cuando está detenido." },
+      "seguridad-vial": { "descripcion": "No reconoce todavía todas las normas de seguridad como peatón, pasajero o ciclista.", "sugerencia": "Practiquen las normas en la vida diaria: cruzar por el paso de cebra, viajar atrás con cinturón (con alzador si todavía es pequeño), casco en la bici y bajar del vehículo cuando está detenido." },
       "senales-transito": { "descripcion": "Confunde el significado de las señales de tránsito (semáforo para peatones, paso de cebra, parada).", "sugerencia": "En la calle, deténganse ante un semáforo y pregunten qué dice cada luz; busquen juntos pasos de cebra y paradas." },
       "escritura-transporte": { "descripcion": "Comete errores al escribir nombres de medios de transporte dictados (avión, minibús).", "sugerencia": "Dicten los nombres separando las sílabas con palmadas y recuerden en qué sílaba va la tilde." },
       "produce-oracion": { "descripcion": "Le cuesta escribir una regla completa, con mayúscula y punto final.", "sugerencia": "Escriban juntos un cartel con tres reglas para viajar seguros y péguenlo cerca de la puerta de la casa." }

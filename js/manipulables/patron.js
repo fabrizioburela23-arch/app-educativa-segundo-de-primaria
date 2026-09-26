@@ -10,7 +10,7 @@ const valor = (x) => (x && typeof x === 'object' ? (x.emoji || x.texto || '') : 
 export function crear(cfg, opts) {
   const b = crearBase('patron', opts);
   const secuencia = Array.isArray(cfg.secuencia) ? cfg.secuencia.map(valor) : [];
-  const opciones = Array.isArray(cfg.opciones) ? cfg.opciones.map(valor) : [];
+  const opciones = Array.isArray(cfg.opciones) ? cfg.opciones.map(valor).filter((o) => o !== '') : [];
   const sol = Array.isArray(cfg.solucion) ? cfg.solucion.map(valor) : null;
   const n = entero(cfg.completar ?? (sol ? sol.length : 3), 1, 6, 3);
   let huecos = Array(n).fill(null);

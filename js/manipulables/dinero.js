@@ -55,7 +55,7 @@ export function crear(cfg, opts) {
   const botonPaleta = (k) => h('button', {
     type: 'button', class: `din-btn din-btn-${DINERO[k].clase}`,
     'aria-label': `Poner ${nombreCorto(k)}`, onclick: () => agregar(k),
-  }, dineroSVG(k, { escala: DINERO[k].clase === 'billete' ? 0.74 : 0.84 }));
+  }, dineroSVG(k, { escala: DINERO[k].clase === 'billete' ? 0.74 : 0.95 }));
   const paletaBtns = [];
   const paleta = h('div', { class: 'din-paleta', role: 'group', 'aria-label': 'Monedas y billetes' },
     monedas.length ? h('div', { class: 'din-paleta-fila' }, monedas.map((k) => { const x = botonPaleta(k); paletaBtns.push(x); return x; })) : null,
@@ -90,7 +90,7 @@ export function crear(cfg, opts) {
       ? orden.map(({ k, i }) => h('button', {
         type: 'button', class: `din-item din-item-${DINERO[k].clase}`, disabled: b.bloqueado,
         'aria-label': `Quitar ${nombreCorto(k)}`, onclick: () => quitar(i),
-      }, dineroSVG(k, { escala: DINERO[k].clase === 'billete' ? 0.7 : 0.8 })))
+      }, dineroSVG(k, { escala: DINERO[k].clase === 'billete' ? 0.7 : 0.95 })))
       : [h('div', { class: 'din-vacia' }, 'Toca el dinero de arriba para ponerlo aquí.')]));
     paletaBtns.forEach((x) => { x.disabled = b.bloqueado || bandeja.length >= MAX_BANDEJA; });
     const ver = mostrarTotal || solucion;

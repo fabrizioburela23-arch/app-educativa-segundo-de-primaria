@@ -1,0 +1,630 @@
+{
+  "id": "mat-8-2",
+  "titulo": "Interpreto y armo pictogramas",
+  "objetivo": "Comparo los datos de un pictograma (más, menos, cuántos más y el total) y armo un pictograma con los datos de una tabla.",
+  "explicacion": [
+    {
+      "texto": "En un pictograma podemos **comparar**. La fila más larga muestra **más** y la fila más corta muestra **menos**. Aquí vimos más llamas y menos vacas.",
+      "emoji": "📊",
+      "visual": {
+        "tipo": "pictograma", "titulo": "Animales que vimos en la comunidad", "icono": "🐾", "escala": 1,
+        "datos": [
+          { "etiqueta": "llama", "valor": 7, "emoji": "🦙" },
+          { "etiqueta": "oveja", "valor": 4, "emoji": "🐑" },
+          { "etiqueta": "vaca", "valor": 2, "emoji": "🐄" }
+        ]
+      }
+    },
+    {
+      "texto": "¿**Cuántos más**? Resta el número menor del mayor. Vimos 7 llamas y 4 ovejas: 7 − 4 = 3. Vimos 3 llamas más que ovejas.",
+      "emoji": "➖",
+      "visual": { "tipo": "operacion", "numeros": [7, 4], "op": "-" }
+    },
+    {
+      "texto": "Para saber el **total**, suma todas las filas: 7 + 4 + 2 = 13. En total vimos 13 animales.",
+      "emoji": "➕",
+      "visual": { "tipo": "operacion", "numeros": [7, 4, 2], "op": "+" }
+    },
+    {
+      "texto": "Una tabla y un pictograma pueden mostrar los mismos datos. Para **armar** el pictograma: escribe el título, elige un dibujo y su clave, y pon un dibujo por cada dato.",
+      "emoji": "✏️",
+      "visual": { "tipo": "tabla", "columnas": ["Animal", "Cantidad"], "filas": [["llama", 7], ["oveja", 4], ["vaca", 2]] }
+    }
+  ],
+  "ejemplo": {
+    "instruccion": "Mira cómo el curso de Mateo arma un pictograma con sus votos. Después, vota con tu familia y arma tú un pictograma.",
+    "pasos": [
+      {
+        "texto": "El curso de Mateo votó por su comida favorita. Anotaron los votos en una tabla.",
+        "visual": { "tipo": "tabla", "columnas": ["Comida", "Votos"], "filas": [["salteña", 5], ["sopa de maní", 3], ["majadito", 4]] }
+      },
+      {
+        "texto": "Mateo escribe el título y la clave: cada mano vale 1 voto. Pone 5 manos en la fila de la salteña.",
+        "visual": {
+          "tipo": "pictograma", "titulo": "Comida favorita del curso de Mateo", "icono": "✋", "escala": 1,
+          "datos": [
+            { "etiqueta": "salteña", "valor": 5, "emoji": "🥟" },
+            { "etiqueta": "sopa de maní", "valor": 0, "emoji": "🍲" },
+            { "etiqueta": "majadito", "valor": 0, "emoji": "🍚" }
+          ]
+        }
+      },
+      {
+        "texto": "Después pone 3 manos para la sopa de maní y 4 para el majadito. ¡Listo! La salteña tiene la fila más larga: ganó.",
+        "visual": {
+          "tipo": "pictograma", "titulo": "Comida favorita del curso de Mateo", "icono": "✋", "escala": 1,
+          "datos": [
+            { "etiqueta": "salteña", "valor": 5, "emoji": "🥟" },
+            { "etiqueta": "sopa de maní", "valor": 3, "emoji": "🍲" },
+            { "etiqueta": "majadito", "valor": 4, "emoji": "🍚" }
+          ]
+        }
+      }
+    ],
+    "explorar": {
+      "tipo": "pictograma", "icono": "✋", "escala": 1,
+      "categorias": [ { "etiqueta": "salteña" }, { "etiqueta": "sopa de maní" }, { "etiqueta": "majadito" }, { "etiqueta": "pollo frito" } ]
+    }
+  },
+  "guiada": {
+    "intro": "Vamos a armar y leer pictogramas juntos, paso a paso.",
+    "pasos": [
+      {
+        "id": "g1", "tipo": "manipular",
+        "enunciado": "Arma el pictograma de las cajas de fruta vendidas. Usa la tabla.",
+        "apoyo": "Lee la tabla fila por fila. Cada caja dibujada vale 1 caja: toca + una vez por cada caja.",
+        "visual": { "tipo": "tabla", "columnas": ["Fruta", "Cajas"], "filas": [["plátano", 4], ["mango", 2], ["piña", 3]] },
+        "manipulable": {
+          "tipo": "pictograma", "icono": "📦", "escala": 1,
+          "categorias": [ { "etiqueta": "plátano", "objetivo": 4 }, { "etiqueta": "mango", "objetivo": 2 }, { "etiqueta": "piña", "objetivo": 3 } ]
+        },
+        "pista": "Revisa cada fila: debe tener tantos dibujos como dice la tabla.",
+        "explicacion": "Plátano: 4 cajas dibujadas. Mango: 2. Piña: 3. Cada dibujo vale 1 caja.",
+        "error": "arma-pictograma"
+      },
+      {
+        "id": "g2", "tipo": "opcion",
+        "enunciado": "¿De qué animal vimos más?",
+        "apoyo": "Busca la fila más larga: es la que tiene más.",
+        "visual": {
+          "tipo": "pictograma", "titulo": "Animales que vimos en el campo", "icono": "🐾", "escala": 1,
+          "datos": [
+            { "etiqueta": "llama", "valor": 6, "emoji": "🦙" },
+            { "etiqueta": "oveja", "valor": 3, "emoji": "🐑" },
+            { "etiqueta": "gallina", "valor": 8, "emoji": "🐔" },
+            { "etiqueta": "vaca", "valor": 2, "emoji": "🐄" }
+          ]
+        },
+        "opciones": [
+          { "texto": "gallina", "emoji": "🐔", "correcta": true },
+          { "texto": "llama", "emoji": "🦙", "pista": "La llama tiene 6. Busca una fila más larga.", "error": "compara-filas" },
+          { "texto": "oveja", "emoji": "🐑", "pista": "La fila de la oveja es corta. Busca la más larga.", "error": "compara-filas" },
+          { "texto": "vaca", "emoji": "🐄", "pista": "La vaca tiene la fila más corta: de vacas vimos menos.", "error": "compara-filas" }
+        ],
+        "pista": "Compara el largo de las filas.",
+        "explicacion": "La gallina tiene la fila más larga, con 8 huellas. De gallinas vimos más.",
+        "error": "compara-filas"
+      },
+      {
+        "id": "g3", "tipo": "numero",
+        "enunciado": "¿Cuántas gallinas más que llamas vimos?",
+        "apoyo": "Cuenta las gallinas y las llamas. Después resta: el número mayor menos el menor.",
+        "visual": {
+          "tipo": "pictograma", "titulo": "Animales que vimos en el campo", "icono": "🐾", "escala": 1,
+          "datos": [
+            { "etiqueta": "llama", "valor": 6, "emoji": "🦙" },
+            { "etiqueta": "oveja", "valor": 3, "emoji": "🐑" },
+            { "etiqueta": "gallina", "valor": 8, "emoji": "🐔" },
+            { "etiqueta": "vaca", "valor": 2, "emoji": "🐄" }
+          ]
+        },
+        "respuesta": 2,
+        "erroresComunes": [ { "respuesta": 14, "pista": "Sumaste. Para saber cuántas más, resta.", "error": "suma-en-vez-de-restar" } ],
+        "pista": "Resta: gallinas menos llamas.",
+        "explicacion": "Vimos 8 gallinas y 6 llamas: 8 − 6 = 2. Vimos 2 gallinas más que llamas.",
+        "error": "diferencia-pictograma"
+      }
+    ]
+  },
+  "practica": [
+    {
+      "id": "p1", "tipo": "opcion", "nivel": 1,
+      "enunciado": "¿Qué comida tiene menos votos?",
+      "visual": {
+        "tipo": "pictograma", "titulo": "Comida favorita del curso", "icono": "✋", "escala": 1,
+        "datos": [
+          { "etiqueta": "salteña", "valor": 6, "emoji": "🥟" },
+          { "etiqueta": "sopa de maní", "valor": 3, "emoji": "🍲" },
+          { "etiqueta": "majadito", "valor": 5, "emoji": "🍚" },
+          { "etiqueta": "pollo frito", "valor": 4, "emoji": "🍗" }
+        ]
+      },
+      "opciones": [
+        { "texto": "sopa de maní", "emoji": "🍲", "correcta": true },
+        { "texto": "salteña", "emoji": "🥟", "pista": "La salteña tiene la fila más larga: tiene más votos.", "error": "compara-filas" },
+        { "texto": "majadito", "emoji": "🍚", "pista": "Hay una fila más corta que la del majadito.", "error": "compara-filas" },
+        { "texto": "pollo frito", "emoji": "🍗", "pista": "Hay una fila más corta que la del pollo frito.", "error": "compara-filas" }
+      ],
+      "pista": "Busca la fila más corta.",
+      "explicacion": "La sopa de maní tiene la fila más corta: 3 votos. Es la que tiene menos.",
+      "error": "compara-filas"
+    },
+    {
+      "id": "p2", "tipo": "manipular", "nivel": 1,
+      "enunciado": "Arma el pictograma de los animales de la granja de Nayra. Usa la tabla.",
+      "visual": { "tipo": "tabla", "columnas": ["Animal", "Cantidad"], "filas": [["gallina", 5], ["pato", 3], ["conejo", 2]] },
+      "manipulable": {
+        "tipo": "pictograma", "icono": "🐾", "escala": 1,
+        "categorias": [ { "etiqueta": "gallina", "objetivo": 5 }, { "etiqueta": "pato", "objetivo": 3 }, { "etiqueta": "conejo", "objetivo": 2 } ]
+      },
+      "pista": "Pon una huella por cada animal de la tabla.",
+      "explicacion": "Gallina: 5 huellas. Pato: 3. Conejo: 2. Cada huella vale 1 animal.",
+      "error": "arma-pictograma"
+    },
+    {
+      "id": "p3", "tipo": "ordenar", "nivel": 1,
+      "enunciado": "Ordena las comidas de la que tiene más votos a la que tiene menos.",
+      "visual": {
+        "tipo": "pictograma", "titulo": "Comida favorita del curso", "icono": "✋", "escala": 1,
+        "datos": [
+          { "etiqueta": "salteña", "valor": 6, "emoji": "🥟" },
+          { "etiqueta": "sopa de maní", "valor": 3, "emoji": "🍲" },
+          { "etiqueta": "majadito", "valor": 5, "emoji": "🍚" },
+          { "etiqueta": "pollo frito", "valor": 4, "emoji": "🍗" }
+        ]
+      },
+      "elementos": [
+        { "texto": "salteña", "emoji": "🥟" },
+        { "texto": "majadito", "emoji": "🍚" },
+        { "texto": "pollo frito", "emoji": "🍗" },
+        { "texto": "sopa de maní", "emoji": "🍲" }
+      ],
+      "vertical": true,
+      "pista": "Empieza por la fila más larga y termina con la más corta.",
+      "explicacion": "Salteña (6), majadito (5), pollo frito (4) y sopa de maní (3).",
+      "error": "ordena-datos"
+    },
+    {
+      "id": "p4", "tipo": "numero", "nivel": 1,
+      "enunciado": "¿Cuántos votos tienen juntos la salteña y el majadito?",
+      "visual": {
+        "tipo": "pictograma", "titulo": "Comida favorita del curso", "icono": "✋", "escala": 1,
+        "datos": [
+          { "etiqueta": "salteña", "valor": 6, "emoji": "🥟" },
+          { "etiqueta": "sopa de maní", "valor": 3, "emoji": "🍲" },
+          { "etiqueta": "majadito", "valor": 5, "emoji": "🍚" },
+          { "etiqueta": "pollo frito", "valor": 4, "emoji": "🍗" }
+        ]
+      },
+      "respuesta": 11,
+      "erroresComunes": [ { "respuesta": 1, "pista": "Restaste. «Juntos» quiere decir que debes sumar.", "error": "elige-operacion" } ],
+      "pista": "Cuenta las manos de las dos filas y súmalas.",
+      "explicacion": "La salteña tiene 6 y el majadito tiene 5: 6 + 5 = 11 votos.",
+      "error": "total-pictograma"
+    },
+    {
+      "id": "p5", "tipo": "numero", "nivel": 2,
+      "enunciado": "¿Cuántos animales vimos en total?",
+      "visual": {
+        "tipo": "pictograma", "titulo": "Animales que vimos en la comunidad", "icono": "🐾", "escala": 1,
+        "datos": [
+          { "etiqueta": "llama", "valor": 7, "emoji": "🦙" },
+          { "etiqueta": "oveja", "valor": 4, "emoji": "🐑" },
+          { "etiqueta": "vaca", "valor": 2, "emoji": "🐄" },
+          { "etiqueta": "gallina", "valor": 5, "emoji": "🐔" }
+        ]
+      },
+      "respuesta": 18,
+      "erroresComunes": [
+        { "respuesta": 4, "pista": "4 son las filas. Suma los animales de todas las filas.", "error": "total-pictograma" },
+        { "respuesta": 13, "pista": "Te faltó una fila. Suma las 4 filas.", "error": "total-pictograma" }
+      ],
+      "pista": "Suma todas las filas: llamas, ovejas, vacas y gallinas.",
+      "explicacion": "7 + 4 + 2 + 5 = 18. Vimos 18 animales en total.",
+      "error": "total-pictograma"
+    },
+    {
+      "id": "p6", "tipo": "numero", "nivel": 2,
+      "enunciado": "Mira el pictograma. Escucha la pregunta y responde.",
+      "escuchar": "¿Cuántos votos más tiene la salteña que el pollo frito?",
+      "visual": {
+        "tipo": "pictograma", "titulo": "Comida favorita del curso", "icono": "✋", "escala": 1,
+        "datos": [
+          { "etiqueta": "salteña", "valor": 6, "emoji": "🥟" },
+          { "etiqueta": "sopa de maní", "valor": 3, "emoji": "🍲" },
+          { "etiqueta": "majadito", "valor": 5, "emoji": "🍚" },
+          { "etiqueta": "pollo frito", "valor": 4, "emoji": "🍗" }
+        ]
+      },
+      "respuesta": 2,
+      "erroresComunes": [ { "respuesta": 10, "pista": "Sumaste. Para saber cuántos más, resta.", "error": "suma-en-vez-de-restar" } ],
+      "pista": "Resta: votos de la salteña menos votos del pollo frito. Puedes escuchar otra vez.",
+      "explicacion": "La salteña tiene 6 y el pollo frito tiene 4: 6 − 4 = 2. La salteña tiene 2 votos más.",
+      "error": "diferencia-pictograma"
+    },
+    {
+      "id": "p7", "tipo": "completar", "nivel": 2,
+      "enunciado": "Mira el pictograma y completa.",
+      "visual": {
+        "tipo": "pictograma", "titulo": "Animales que vimos en la comunidad", "icono": "🐾", "escala": 1,
+        "datos": [
+          { "etiqueta": "llama", "valor": 7, "emoji": "🦙" },
+          { "etiqueta": "oveja", "valor": 4, "emoji": "🐑" },
+          { "etiqueta": "vaca", "valor": 2, "emoji": "🐄" },
+          { "etiqueta": "gallina", "valor": 5, "emoji": "🐔" }
+        ]
+      },
+      "texto": "Vimos [más] llamas que ovejas y [menos] vacas que gallinas.",
+      "banco": ["iguales"],
+      "pista": "Compara el largo de las dos filas de cada parte.",
+      "explicacion": "7 llamas son más que 4 ovejas, y 2 vacas son menos que 5 gallinas.",
+      "error": "compara-filas"
+    },
+    {
+      "id": "p8", "tipo": "multiple", "nivel": 2,
+      "enunciado": "Elige las oraciones que dicen la verdad sobre el pictograma.",
+      "visual": {
+        "tipo": "pictograma", "titulo": "Comida favorita del curso", "icono": "✋", "escala": 1,
+        "datos": [
+          { "etiqueta": "salteña", "valor": 6, "emoji": "🥟" },
+          { "etiqueta": "sopa de maní", "valor": 3, "emoji": "🍲" },
+          { "etiqueta": "majadito", "valor": 5, "emoji": "🍚" },
+          { "etiqueta": "pollo frito", "valor": 4, "emoji": "🍗" }
+        ]
+      },
+      "opciones": [
+        { "texto": "La salteña tiene más votos que el majadito.", "correcta": true },
+        { "texto": "La sopa de maní tiene 1 voto menos que el pollo frito.", "correcta": true },
+        { "texto": "El majadito tiene 4 votos.", "pista": "Cuenta otra vez las manos del majadito.", "error": "conclusion-pictograma" },
+        { "texto": "En total hubo 20 votos.", "pista": "Suma las 4 filas: 6 + 3 + 5 + 4.", "error": "total-pictograma" }
+      ],
+      "columnas": 1,
+      "pista": "Revisa cada oración con el pictograma, una por una.",
+      "explicacion": "Es verdad que la salteña (6) tiene más votos que el majadito (5), y que la sopa de maní (3) tiene 1 menos que el pollo frito (4). El majadito tiene 5 votos y el total es 18.",
+      "error": "conclusion-pictograma"
+    },
+    {
+      "id": "p9", "tipo": "manipular", "nivel": 2,
+      "enunciado": "Arma el pictograma con la tabla. Cada caja dibujada vale 2 cajas.",
+      "visual": { "tipo": "tabla", "columnas": ["Fruta", "Cajas"], "filas": [["naranja", 6], ["plátano", 10], ["uva", 4]] },
+      "manipulable": {
+        "tipo": "pictograma", "icono": "📦", "escala": 2,
+        "categorias": [ { "etiqueta": "naranja", "objetivo": 6 }, { "etiqueta": "plátano", "objetivo": 10 }, { "etiqueta": "uva", "objetivo": 4 } ]
+      },
+      "pista": "Cada dibujo vale 2. Por ejemplo, para 8 cajas pondrías 4 dibujos: 2, 4, 6, 8.",
+      "explicacion": "Naranja: 3 dibujos (6 cajas). Plátano: 5 dibujos (10 cajas). Uva: 2 dibujos (4 cajas).",
+      "error": "arma-pictograma"
+    },
+    {
+      "id": "p10", "tipo": "clasificar", "nivel": 3,
+      "enunciado": "Para responder cada pregunta, ¿sumas o restas?",
+      "categorias": [
+        { "id": "sumar", "texto": "Sumo", "emoji": "➕" },
+        { "id": "restar", "texto": "Resto", "emoji": "➖" }
+      ],
+      "elementos": [
+        { "texto": "¿Cuántos animales vimos en total?", "categoria": "sumar" },
+        { "texto": "¿Cuántas llamas más que ovejas vimos?", "categoria": "restar" },
+        { "texto": "¿Cuántos votos hubo en todo el curso?", "categoria": "sumar" },
+        { "texto": "¿Cuántas cajas menos de mango que de piña?", "categoria": "restar" },
+        { "texto": "¿Cuántos plátanos y mangos hay juntos?", "categoria": "sumar" },
+        { "texto": "¿Cuántos votos le faltan al majadito para alcanzar a la salteña?", "categoria": "restar" }
+      ],
+      "pista": "«En total», «en todo» y «juntos» piden sumar. «Cuántos más», «cuántos menos» y «cuánto falta» piden restar.",
+      "explicacion": "Sumamos para saber el total o lo que hay junto. Restamos para comparar: cuántos más, cuántos menos o cuánto falta.",
+      "error": "elige-operacion"
+    },
+    {
+      "id": "p11", "tipo": "numero", "nivel": 3,
+      "enunciado": "¿Cuántas cajas más de naranja que de mango se vendieron?",
+      "visual": {
+        "tipo": "pictograma", "titulo": "Cajas de fruta vendidas el sábado", "icono": "📦", "escala": 2,
+        "datos": [
+          { "etiqueta": "naranja", "valor": 12, "emoji": "🍊" },
+          { "etiqueta": "mango", "valor": 4, "emoji": "🥭" },
+          { "etiqueta": "plátano", "valor": 8, "emoji": "🍌" },
+          { "etiqueta": "piña", "valor": 6, "emoji": "🍍" }
+        ]
+      },
+      "respuesta": 8,
+      "erroresComunes": [
+        { "respuesta": 4, "pista": "Restaste los dibujos. Cada caja dibujada vale 2 cajas.", "error": "ignora-escala" },
+        { "respuesta": 16, "pista": "Sumaste. Para saber cuántas más, resta.", "error": "suma-en-vez-de-restar" }
+      ],
+      "pista": "Primero lee cuántas cajas hay en cada fila con la clave. Después resta.",
+      "explicacion": "Naranja: 6 dibujos = 12 cajas. Mango: 2 dibujos = 4 cajas. 12 − 4 = 8 cajas más de naranja.",
+      "error": "diferencia-pictograma"
+    },
+    {
+      "id": "p12", "tipo": "numero", "nivel": 3,
+      "enunciado": "¿Cuántas cajas de fruta se vendieron en total?",
+      "visual": {
+        "tipo": "pictograma", "titulo": "Cajas de fruta vendidas el sábado", "icono": "📦", "escala": 2,
+        "datos": [
+          { "etiqueta": "naranja", "valor": 12, "emoji": "🍊" },
+          { "etiqueta": "mango", "valor": 4, "emoji": "🥭" },
+          { "etiqueta": "plátano", "valor": 8, "emoji": "🍌" },
+          { "etiqueta": "piña", "valor": 6, "emoji": "🍍" }
+        ]
+      },
+      "respuesta": 30,
+      "erroresComunes": [ { "respuesta": 15, "pista": "Sumaste los dibujos. Cada caja dibujada vale 2 cajas.", "error": "ignora-escala" } ],
+      "pista": "Lee cada fila con la clave y después suma todo.",
+      "explicacion": "Naranja 12 + mango 4 + plátano 8 + piña 6 = 30 cajas.",
+      "error": "total-pictograma"
+    },
+    {
+      "id": "p13", "tipo": "manipular", "nivel": 3,
+      "enunciado": "Arma el pictograma de la fruta favorita con la tabla. Cada mano vale 2 votos.",
+      "visual": { "tipo": "tabla", "columnas": ["Fruta", "Votos"], "filas": [["plátano", 8], ["mandarina", 12], ["uva", 6], ["frutilla", 4]] },
+      "manipulable": {
+        "tipo": "pictograma", "icono": "✋", "escala": 2,
+        "categorias": [
+          { "etiqueta": "plátano", "objetivo": 8 },
+          { "etiqueta": "mandarina", "objetivo": 12 },
+          { "etiqueta": "uva", "objetivo": 6 },
+          { "etiqueta": "frutilla", "objetivo": 4 }
+        ]
+      },
+      "pista": "Para cada fruta, cuenta de 2 en 2 hasta llegar a sus votos. Pon una mano por cada salto.",
+      "explicacion": "Plátano: 4 manos. Mandarina: 6 manos. Uva: 3 manos. Frutilla: 2 manos. Cada mano vale 2 votos.",
+      "error": "arma-pictograma"
+    },
+    {
+      "id": "p14", "tipo": "pasos", "nivel": 3,
+      "enunciado": "El curso de Inti votó por su comida favorita. Mira el pictograma: cada mano vale 2 votos.",
+      "visual": {
+        "tipo": "pictograma", "titulo": "Comida favorita del curso de Inti", "icono": "✋", "escala": 2,
+        "datos": [
+          { "etiqueta": "salteña", "valor": 10, "emoji": "🥟" },
+          { "etiqueta": "sopa de maní", "valor": 6, "emoji": "🍲" },
+          { "etiqueta": "majadito", "valor": 8, "emoji": "🍚" }
+        ]
+      },
+      "pasos": [
+        {
+          "tipo": "opcion", "enunciado": "¿Qué comida ganó?",
+          "opciones": [
+            { "texto": "salteña", "emoji": "🥟", "correcta": true },
+            { "texto": "sopa de maní", "emoji": "🍲", "pista": "La sopa de maní tiene la fila más corta.", "error": "compara-filas" },
+            { "texto": "majadito", "emoji": "🍚", "pista": "Hay una fila más larga que la del majadito.", "error": "compara-filas" }
+          ],
+          "pista": "Ganó la comida con la fila más larga.",
+          "explicacion": "La salteña tiene la fila más larga: 5 manos, que son 10 votos. ¡Ganó!",
+          "error": "compara-filas"
+        },
+        {
+          "tipo": "numero", "enunciado": "¿Cuántos votos más tiene la salteña que el majadito?", "respuesta": 2,
+          "erroresComunes": [
+            { "respuesta": 1, "pista": "Restaste los dibujos. Cada mano vale 2 votos.", "error": "ignora-escala" },
+            { "respuesta": 18, "pista": "Sumaste. Para saber cuántos más, resta.", "error": "suma-en-vez-de-restar" }
+          ],
+          "pista": "La salteña tiene 10 votos. ¿Cuántos tiene el majadito? Después resta.",
+          "explicacion": "Salteña: 10 votos. Majadito: 8 votos. 10 − 8 = 2 votos más.",
+          "error": "diferencia-pictograma"
+        },
+        {
+          "tipo": "numero", "enunciado": "¿Cuántos estudiantes votaron en total?", "respuesta": 24,
+          "erroresComunes": [ { "respuesta": 12, "pista": "Sumaste las manos. Cada mano vale 2 votos.", "error": "ignora-escala" } ],
+          "pista": "Suma los votos de las 3 comidas.",
+          "explicacion": "10 + 6 + 8 = 24. Votaron 24 estudiantes.",
+          "error": "total-pictograma"
+        }
+      ],
+      "pista": "Resuelve un paso a la vez y mira la clave.",
+      "explicacion": "Ganó la salteña con 10 votos, 2 más que el majadito. En total votaron 24 estudiantes.",
+      "error": "problema-pictograma"
+    },
+    {
+      "id": "p15", "tipo": "escribir-libre", "nivel": 2,
+      "enunciado": "Mira el pictograma. Escribe una oración que diga qué comida tiene más votos.",
+      "visual": {
+        "tipo": "pictograma", "titulo": "Comida favorita del curso", "icono": "✋", "escala": 1,
+        "datos": [
+          { "etiqueta": "salteña", "valor": 6, "emoji": "🥟" },
+          { "etiqueta": "sopa de maní", "valor": 3, "emoji": "🍲" },
+          { "etiqueta": "majadito", "valor": 5, "emoji": "🍚" },
+          { "etiqueta": "pollo frito", "valor": 4, "emoji": "🍗" }
+        ]
+      },
+      "guia": ["La comida con más votos es...", "Más estudiantes votaron por..."],
+      "requisitos": [
+        { "tipo": "mayuscula-inicial" }, { "tipo": "punto-final" },
+        { "tipo": "min-palabras", "valor": 4 },
+        { "tipo": "incluye", "palabras": ["más"] }
+      ],
+      "modelo": "La salteña tiene más votos que las otras comidas.",
+      "pista": "Busca la fila más larga. Escribe una oración con la palabra «más», que empiece con mayúscula y termine con punto.",
+      "explicacion": "Por ejemplo: «La salteña tiene más votos que las otras comidas». La salteña tiene 6 votos.",
+      "error": "conclusion-pictograma"
+    }
+  ],
+  "comprobacion": [
+    {
+      "id": "c1", "tipo": "opcion", "nivel": 1,
+      "enunciado": "¿De qué animal vimos menos?",
+      "visual": {
+        "tipo": "pictograma", "titulo": "Animales de la comunidad de Rosa", "icono": "🐾", "escala": 1,
+        "datos": [
+          { "etiqueta": "cabra", "valor": 3, "emoji": "🐐" },
+          { "etiqueta": "llama", "valor": 8, "emoji": "🦙" },
+          { "etiqueta": "oveja", "valor": 6, "emoji": "🐑" },
+          { "etiqueta": "caballo", "valor": 2, "emoji": "🐴" }
+        ]
+      },
+      "opciones": [
+        { "texto": "caballo", "emoji": "🐴", "correcta": true },
+        { "texto": "cabra", "emoji": "🐐", "pista": "La cabra tiene 3. Hay una fila más corta.", "error": "compara-filas" },
+        { "texto": "llama", "emoji": "🦙", "pista": "La llama tiene la fila más larga: de llamas vimos más.", "error": "compara-filas" },
+        { "texto": "oveja", "emoji": "🐑", "pista": "Hay filas más cortas que la de la oveja.", "error": "compara-filas" }
+      ],
+      "pista": "Busca la fila más corta.",
+      "explicacion": "El caballo tiene la fila más corta: solo 2 huellas. De caballos vimos menos.",
+      "error": "compara-filas"
+    },
+    {
+      "id": "c2", "tipo": "manipular", "nivel": 1,
+      "enunciado": "Arma el pictograma de las frutas de la merienda. Usa la tabla.",
+      "visual": { "tipo": "tabla", "columnas": ["Fruta", "Cantidad"], "filas": [["manzana", 4], ["plátano", 5], ["mandarina", 3]] },
+      "manipulable": {
+        "tipo": "pictograma", "icono": "⭐", "escala": 1,
+        "categorias": [ { "etiqueta": "manzana", "objetivo": 4 }, { "etiqueta": "plátano", "objetivo": 5 }, { "etiqueta": "mandarina", "objetivo": 3 } ]
+      },
+      "pista": "Pon una estrella por cada fruta de la tabla.",
+      "explicacion": "Manzana: 4 estrellas. Plátano: 5. Mandarina: 3. Cada estrella vale 1 fruta.",
+      "error": "arma-pictograma"
+    },
+    {
+      "id": "c3", "tipo": "numero", "nivel": 2,
+      "enunciado": "¿Cuántas llamas más que ovejas vimos?",
+      "visual": {
+        "tipo": "pictograma", "titulo": "Animales de la comunidad de Rosa", "icono": "🐾", "escala": 1,
+        "datos": [
+          { "etiqueta": "cabra", "valor": 3, "emoji": "🐐" },
+          { "etiqueta": "llama", "valor": 8, "emoji": "🦙" },
+          { "etiqueta": "oveja", "valor": 6, "emoji": "🐑" },
+          { "etiqueta": "caballo", "valor": 2, "emoji": "🐴" }
+        ]
+      },
+      "respuesta": 2,
+      "erroresComunes": [ { "respuesta": 14, "pista": "Sumaste. Para saber cuántas más, resta.", "error": "suma-en-vez-de-restar" } ],
+      "pista": "Cuenta las llamas y las ovejas. Después resta.",
+      "explicacion": "Vimos 8 llamas y 6 ovejas: 8 − 6 = 2. Vimos 2 llamas más que ovejas.",
+      "error": "diferencia-pictograma"
+    },
+    {
+      "id": "c4", "tipo": "numero", "nivel": 2,
+      "enunciado": "Mira el pictograma. Escucha la pregunta y responde.",
+      "escuchar": "¿Cuántos animales vimos en total?",
+      "visual": {
+        "tipo": "pictograma", "titulo": "Animales de la comunidad de Rosa", "icono": "🐾", "escala": 1,
+        "datos": [
+          { "etiqueta": "cabra", "valor": 3, "emoji": "🐐" },
+          { "etiqueta": "llama", "valor": 8, "emoji": "🦙" },
+          { "etiqueta": "oveja", "valor": 6, "emoji": "🐑" },
+          { "etiqueta": "caballo", "valor": 2, "emoji": "🐴" }
+        ]
+      },
+      "respuesta": 19,
+      "erroresComunes": [ { "respuesta": 4, "pista": "4 son las filas. Suma los animales de todas las filas.", "error": "total-pictograma" } ],
+      "pista": "Suma las 4 filas. Puedes escuchar otra vez.",
+      "explicacion": "3 + 8 + 6 + 2 = 19. Vimos 19 animales en total.",
+      "error": "total-pictograma"
+    },
+    {
+      "id": "c5", "tipo": "ordenar", "nivel": 2,
+      "enunciado": "Ordena las comidas de la que tiene menos votos a la que tiene más.",
+      "visual": {
+        "tipo": "pictograma", "titulo": "Comida favorita del curso de Ana", "icono": "✋", "escala": 1,
+        "datos": [
+          { "etiqueta": "salteña", "valor": 7, "emoji": "🥟" },
+          { "etiqueta": "sopa de maní", "valor": 2, "emoji": "🍲" },
+          { "etiqueta": "majadito", "valor": 4, "emoji": "🍚" },
+          { "etiqueta": "pollo frito", "valor": 5, "emoji": "🍗" }
+        ]
+      },
+      "elementos": [
+        { "texto": "sopa de maní", "emoji": "🍲" },
+        { "texto": "majadito", "emoji": "🍚" },
+        { "texto": "pollo frito", "emoji": "🍗" },
+        { "texto": "salteña", "emoji": "🥟" }
+      ],
+      "vertical": true,
+      "pista": "Empieza por la fila más corta y termina con la más larga.",
+      "explicacion": "Sopa de maní (2), majadito (4), pollo frito (5) y salteña (7).",
+      "error": "ordena-datos"
+    },
+    {
+      "id": "c6", "tipo": "multiple", "nivel": 2,
+      "enunciado": "Elige las oraciones que dicen la verdad sobre el pictograma.",
+      "visual": {
+        "tipo": "pictograma", "titulo": "Comida favorita del curso de Ana", "icono": "✋", "escala": 1,
+        "datos": [
+          { "etiqueta": "salteña", "valor": 7, "emoji": "🥟" },
+          { "etiqueta": "sopa de maní", "valor": 2, "emoji": "🍲" },
+          { "etiqueta": "majadito", "valor": 4, "emoji": "🍚" },
+          { "etiqueta": "pollo frito", "valor": 5, "emoji": "🍗" }
+        ]
+      },
+      "opciones": [
+        { "texto": "La salteña tiene 2 votos más que el pollo frito.", "correcta": true },
+        { "texto": "El majadito tiene más votos que la sopa de maní.", "correcta": true },
+        { "texto": "La sopa de maní ganó.", "pista": "Gana la comida con la fila más larga.", "error": "compara-filas" },
+        { "texto": "En total hubo 16 votos.", "pista": "Suma las 4 filas: 7 + 2 + 4 + 5.", "error": "total-pictograma" }
+      ],
+      "columnas": 1,
+      "pista": "Revisa cada oración con el pictograma, una por una.",
+      "explicacion": "Es verdad que la salteña (7) tiene 2 votos más que el pollo frito (5), y que el majadito (4) tiene más que la sopa de maní (2). Ganó la salteña y el total es 18.",
+      "error": "conclusion-pictograma"
+    },
+    {
+      "id": "c7", "tipo": "manipular", "nivel": 3,
+      "enunciado": "Arma el pictograma con la tabla. Cada caja dibujada vale 2 cajas.",
+      "visual": { "tipo": "tabla", "columnas": ["Fruta", "Cajas"], "filas": [["mango", 6], ["piña", 8], ["sandía", 2], ["uva", 10]] },
+      "manipulable": {
+        "tipo": "pictograma", "icono": "📦", "escala": 2,
+        "categorias": [
+          { "etiqueta": "mango", "objetivo": 6 },
+          { "etiqueta": "piña", "objetivo": 8 },
+          { "etiqueta": "sandía", "objetivo": 2 },
+          { "etiqueta": "uva", "objetivo": 10 }
+        ]
+      },
+      "pista": "Cada dibujo vale 2. Cuenta de 2 en 2 hasta llegar al número de la tabla.",
+      "explicacion": "Mango: 3 dibujos. Piña: 4. Sandía: 1. Uva: 5. Cada dibujo vale 2 cajas.",
+      "error": "arma-pictograma"
+    },
+    {
+      "id": "c8", "tipo": "numero", "nivel": 3,
+      "enunciado": "¿Cuántos votos menos tiene el majadito que la salteña?",
+      "visual": {
+        "tipo": "pictograma", "titulo": "Comida para la fiesta del curso", "icono": "✋", "escala": 2,
+        "datos": [
+          { "etiqueta": "salteña", "valor": 12, "emoji": "🥟" },
+          { "etiqueta": "sopa de maní", "valor": 6, "emoji": "🍲" },
+          { "etiqueta": "majadito", "valor": 4, "emoji": "🍚" },
+          { "etiqueta": "pollo frito", "valor": 10, "emoji": "🍗" }
+        ]
+      },
+      "respuesta": 8,
+      "erroresComunes": [
+        { "respuesta": 4, "pista": "Restaste los dibujos. Cada mano vale 2 votos.", "error": "ignora-escala" },
+        { "respuesta": 16, "pista": "Sumaste. Para saber cuántos menos, resta.", "error": "suma-en-vez-de-restar" }
+      ],
+      "pista": "Lee los votos de la salteña y del majadito con la clave. Después resta.",
+      "explicacion": "Salteña: 6 manos = 12 votos. Majadito: 2 manos = 4 votos. 12 − 4 = 8 votos menos.",
+      "error": "diferencia-pictograma"
+    }
+  ],
+  "repaso": {
+    "texto": "Fila más larga: más. Fila más corta: menos. Para saber cuántos más, resta. Para el total, suma todas las filas. ¡Mira siempre la clave!",
+    "visual": {
+      "tipo": "pictograma", "titulo": "Animales que vimos en la comunidad", "icono": "🐾", "escala": 1,
+      "datos": [
+        { "etiqueta": "llama", "valor": 7, "emoji": "🦙" },
+        { "etiqueta": "oveja", "valor": 4, "emoji": "🐑" },
+        { "etiqueta": "vaca", "valor": 2, "emoji": "🐄" }
+      ]
+    }
+  },
+  "adulto": {
+    "objetivo": "Interpretar pictogramas con claves de 1 y de 2 (qué categoría tiene más o menos, cuántos más o menos, cuánto hay en total, ordenar datos y sacar conclusiones), elegir entre sumar y restar según la pregunta, y armar un pictograma a partir de los datos de una tabla.",
+    "sugerencias": [
+      "Hagan una votación en familia (fruta, comida o juego favorito), anoten los votos en una tabla y armen juntos un pictograma en una hoja, con título y clave.",
+      "Al volver de la feria, dibujen un pictograma con lo que compraron (un dibujo por kilo o por bolsa) y pregunten: «¿de qué compramos más?, ¿cuántos kilos más?, ¿cuánto en total?».",
+      "En un paseo, cuenten animales o vehículos (micros, autos, bicicletas). En casa, armen un pictograma donde cada dibujo valga 2 y pidan que explique cómo lo leyó."
+    ],
+    "errores": {
+      "compara-filas": { "descripcion": "Confunde «más» y «menos» al comparar filas.", "sugerencia": "Comparen dos filas de objetos reales (tapas, piedritas) puestas una debajo de otra y pregunten cuál es más larga." },
+      "diferencia-pictograma": { "descripcion": "Le cuesta calcular cuántos más o cuántos menos hay entre dos filas.", "sugerencia": "Pongan dos filas de objetos una debajo de otra, emparejen uno con uno y cuenten los que quedan sin pareja." },
+      "suma-en-vez-de-restar": { "descripcion": "Suma cuando la pregunta pide «cuántos más» o «cuántos menos».", "sugerencia": "Subrayen juntos las palabras clave de la pregunta: «cuántos más» es comparar, y comparar es restar." },
+      "total-pictograma": { "descripcion": "Olvida filas al sumar el total, o cuenta filas en lugar de dibujos.", "sugerencia": "Pidan que escriba el número al lado de cada fila y que marque cada fila cuando la suma." },
+      "ignora-escala": { "descripcion": "Cuenta los dibujos sin mirar la clave cuando cada dibujo vale 2.", "sugerencia": "Antes de responder, pregunten «¿cuánto vale cada dibujo?» y cuenten juntos de 2 en 2." },
+      "arma-pictograma": { "descripcion": "Le cuesta armar un pictograma a partir de una tabla, sobre todo si cada dibujo vale 2.", "sugerencia": "Armen pictogramas con tapas o figuritas sobre la mesa: primero uno por dato; después, una tapa por cada 2." },
+      "ordena-datos": { "descripcion": "Le cuesta ordenar las categorías de mayor a menor o de menor a mayor.", "sugerencia": "Escriban cada categoría con su número en un papelito y ordénenlos juntos en la mesa." },
+      "elige-operacion": { "descripcion": "No sabe si una pregunta pide sumar o restar.", "sugerencia": "Hagan preguntas en voz alta sobre un pictograma y pidan que diga primero si va a juntar (sumar) o a comparar (restar)." },
+      "conclusion-pictograma": { "descripcion": "Le cuesta decidir si una oración sobre el pictograma es verdadera o escribir una conclusión.", "sugerencia": "Digan oraciones verdaderas y falsas sobre un pictograma hecho en casa y pidan que las compruebe contando." },
+      "problema-pictograma": { "descripcion": "Se pierde cuando debe responder varias preguntas seguidas sobre un pictograma.", "sugerencia": "Lean una pregunta a la vez y pidan que muestre con el dedo las filas que necesita antes de calcular." }
+    }
+  }
+}

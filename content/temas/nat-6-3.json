@@ -1,0 +1,429 @@
+{
+  "id": "nat-6-3",
+  "titulo": "Los hábitats",
+  "objetivo": "Sé qué es un hábitat, conozco hábitats de Bolivia y sé cómo el cuerpo de cada animal lo ayuda a vivir en su hogar.",
+  "explicacion": [
+    {
+      "texto": "El **hábitat** es el lugar donde vive un ser vivo. Allí encuentra agua, alimento y refugio, y puede cuidar a sus crías. ¡Es su hogar!",
+      "emoji": "🏞️",
+      "visual": { "tipo": "emojis", "items": ["💧", "🌿", "🏠"], "etiquetas": ["agua", "alimento", "refugio"] }
+    },
+    {
+      "texto": "Los animales **acuáticos** viven en el agua, como los peces y el bufeo. Los **terrestres** viven en la tierra, como la llama. Otros **vuelan**, como el cóndor y el murciélago, y descansan en rocas, árboles o cuevas.",
+      "visual": { "tipo": "emojis", "items": ["🐟", "🐬", "🦙", "🦅", "🦇"], "etiquetas": ["pez", "bufeo", "llama", "cóndor", "murciélago"] }
+    },
+    {
+      "texto": "Cada animal está **adaptado** a su hábitat: su cuerpo lo ayuda a vivir allí. La llama y la vicuña tienen lana que las abriga del frío. Los peces tienen aletas para nadar y branquias para respirar en el agua.",
+      "visual": { "tipo": "emojis", "items": ["🦙", "🐟", "🦅"], "etiquetas": ["lana para el frío", "aletas para nadar", "alas para volar"] }
+    },
+    {
+      "texto": "Si botamos basura, ensuciamos el agua o quemamos el monte, los animales pierden su hogar. La **rana gigante del Titicaca** está en peligro porque el agua del lago se ensucia y porque la cazan. ¡Cuidemos los hábitats!",
+      "emoji": "🐸"
+    }
+  ],
+  "ejemplo": {
+    "instruccion": "Viajemos por Bolivia. Mira qué animales viven en cada hábitat y cómo su cuerpo los ayuda.",
+    "pasos": [
+      {
+        "texto": "En el **altiplano** hace frío. La llama y la vicuña tienen lana abrigadora. El cóndor planea alto con sus alas enormes. En el lago Titicaca vive la rana gigante: pasa toda su vida en el agua y respira sobre todo por la piel.",
+        "visual": { "tipo": "ilustracion", "id": "paisaje-altiplano" }
+      },
+      {
+        "texto": "En los **Yungas** hay bosques húmedos en las laderas de las montañas, con mucha neblina. Allí vive el **jucumari**, el oso andino. Tiene garras fuertes para trepar a los árboles y come sobre todo frutos y plantas.",
+        "visual": { "tipo": "emojis", "items": ["⛰️", "🌫️", "🌳", "🐻"], "etiquetas": ["montaña", "neblina", "bosque", "jucumari"] }
+      },
+      {
+        "texto": "En los **llanos** y la **Amazonía** hace calor y hay selva y ríos grandes. La paraba hace su nido en huecos de árboles altos. El bufeo nada en los ríos con sus aletas. Las manchas del jaguar lo ayudan a esconderse.",
+        "visual": { "tipo": "ilustracion", "id": "paisaje-llanos" }
+      },
+      {
+        "texto": "El **Chaco** es caluroso y seco. El toborochi guarda agua en su tronco panzón para los meses sin lluvia. El tatú tiene garras para cavar una cueva, donde se protege del calor del día.",
+        "visual": { "tipo": "ilustracion", "id": "paisaje-chaco" }
+      }
+    ]
+  },
+  "guiada": {
+    "intro": "Ahora lo hacemos juntos, paso a paso.",
+    "pasos": [
+      {
+        "id": "g1", "tipo": "clasificar",
+        "enunciado": "¿Dónde vive o cómo se mueve cada animal?",
+        "apoyo": "Piensa cómo se mueve cada uno: ¿nada, camina o vuela?",
+        "categorias": [
+          { "id": "agua", "texto": "Vive en el agua", "emoji": "💧" },
+          { "id": "tierra", "texto": "Vive en la tierra", "emoji": "⛰️" },
+          { "id": "vuela", "texto": "Vuela", "emoji": "☁️" }
+        ],
+        "elementos": [
+          { "texto": "pez", "emoji": "🐟", "categoria": "agua" },
+          { "texto": "bufeo", "emoji": "🐬", "categoria": "agua" },
+          { "texto": "llama", "emoji": "🦙", "categoria": "tierra" },
+          { "texto": "jaguar", "emoji": "🐆", "categoria": "tierra" },
+          { "texto": "cóndor", "emoji": "🦅", "categoria": "vuela" },
+          { "texto": "paraba", "emoji": "🦜", "categoria": "vuela" }
+        ],
+        "pista": "El bufeo nada en los ríos. El cóndor y la paraba tienen alas.",
+        "explicacion": "El pez y el bufeo viven en el agua. La llama y el jaguar viven en la tierra. El cóndor y la paraba vuelan.",
+        "error": "tipo-habitat"
+      },
+      {
+        "id": "g2", "tipo": "relacionar",
+        "enunciado": "Une cada animal con su hábitat en Bolivia.",
+        "apoyo": "Recuerda el viaje por Bolivia: el altiplano frío, los bosques con neblina, los ríos grandes y el lugar seco.",
+        "pares": [
+          ["vicuña", "altiplano frío"],
+          ["jucumari", "bosques de los Yungas"],
+          ["bufeo", "ríos de la Amazonía"],
+          ["tatú", "Chaco seco"]
+        ],
+        "pista": "El bufeo necesita agua para nadar. El jucumari trepa árboles en bosques con neblina.",
+        "explicacion": "La vicuña vive en el altiplano frío, el jucumari en los bosques de los Yungas, el bufeo en los ríos de la Amazonía y el tatú en el Chaco seco.",
+        "error": "animales-bolivia"
+      },
+      {
+        "id": "g3", "tipo": "completar",
+        "enunciado": "Completa: ¿qué parte del cuerpo los ayuda?",
+        "apoyo": "Piensa: ¿qué cubre el cuerpo de la llama? ¿Con qué se mueven los peces en el agua?",
+        "texto": "La llama tiene [lana] que la abriga del frío. Los peces tienen [aletas] para nadar.",
+        "banco": ["plumas", "hojas"],
+        "pista": "La llama no es un ave, así que no tiene plumas. Busca lo que abriga.",
+        "explicacion": "La llama tiene lana que la abriga del frío. Los peces tienen aletas para nadar. Así, cada uno está adaptado a su hábitat.",
+        "error": "adaptacion"
+      }
+    ]
+  },
+  "practica": [
+    {
+      "id": "p1", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Toca los animales acuáticos.",
+      "texto": "En el río Mamoré nadan un *bufeo* y un *pacú*. En la orilla, un tatú busca comida.",
+      "pista": "Busca los animales que nadan en el río. Uno de ellos no es un pez.",
+      "explicacion": "El bufeo y el pacú viven en el agua: son acuáticos. El pacú es un pez; el bufeo no, porque respira aire. El tatú vive en la tierra.",
+      "error": "tipo-habitat"
+    },
+    {
+      "id": "p2", "tipo": "opcion", "nivel": 1,
+      "enunciado": "¿Qué es un hábitat?",
+      "opciones": [
+        { "texto": "El lugar donde vive un ser vivo.", "correcta": true },
+        { "texto": "La comida favorita de un animal.", "pista": "La comida es algo que el animal encuentra en su hábitat. Pero ¿qué es el hábitat?", "error": "concepto-habitat" },
+        { "texto": "El nombre de la cría de un animal.", "pista": "Piensa en la palabra «habitar», que quiere decir vivir en un lugar.", "error": "concepto-habitat" }
+      ],
+      "pista": "«Hábitat» se parece a «habitar», que quiere decir vivir en un lugar.",
+      "explicacion": "El hábitat es el lugar donde vive un ser vivo. Allí encuentra agua, alimento y refugio.",
+      "error": "concepto-habitat"
+    },
+    {
+      "id": "p3", "tipo": "escribir", "nivel": 1,
+      "enunciado": "Escucha la adivinanza y escribe qué animal es.",
+      "escuchar": "Soy un ave enorme de las montañas. Con mis alas grandes planeo muy alto sobre los Andes. Estoy en el escudo de Bolivia. ¿Quién soy?",
+      "respuestas": ["cóndor", "el cóndor", "un cóndor", "es el cóndor", "es un cóndor", "soy el cóndor"],
+      "pista": "Piensa en el ave del altiplano que tiene alas enormes y planea muy alto.",
+      "explicacion": "Es el **cóndor**. Vuela sobre las montañas con sus alas enormes y descansa en las rocas altas.",
+      "error": "animales-bolivia"
+    },
+    {
+      "id": "p4", "tipo": "relacionar", "nivel": 1,
+      "enunciado": "Une cada animal con cómo se mueve.",
+      "pares": [
+        [{ "texto": "pez", "emoji": "🐟" }, "nada con sus aletas"],
+        [{ "texto": "cóndor", "emoji": "🦅" }, "vuela con sus alas"],
+        [{ "texto": "llama", "emoji": "🦙" }, "camina con sus patas"],
+        [{ "texto": "víbora", "emoji": "🐍" }, "se arrastra por el suelo"]
+      ],
+      "pista": "Piensa qué partes tiene cada animal: aletas, alas, patas o ninguna de ellas.",
+      "explicacion": "El pez nada con sus aletas, el cóndor vuela con sus alas, la llama camina con sus patas y la víbora se arrastra, porque no tiene patas.",
+      "error": "adaptacion"
+    },
+    {
+      "id": "p5", "tipo": "multiple", "nivel": 1,
+      "enunciado": "¿Qué encuentra un animal en su hábitat? Elige todas las respuestas correctas.",
+      "opciones": [
+        { "texto": "agua", "emoji": "💧", "correcta": true },
+        { "texto": "alimento", "emoji": "🌿", "correcta": true },
+        { "texto": "refugio para descansar", "emoji": "🏠", "correcta": true },
+        { "texto": "una tienda para comprar", "pista": "Los animales silvestres no compran nada: todo lo encuentran en la naturaleza.", "error": "concepto-habitat" },
+        { "texto": "juguetes", "pista": "Los juguetes son cosas que hacen las personas. Un animal silvestre no los necesita.", "error": "concepto-habitat" }
+      ],
+      "pista": "Piensa en lo que un animal necesita para vivir. Hay tres respuestas correctas.",
+      "explicacion": "En su hábitat, el animal encuentra agua, alimento y refugio. Las tiendas y los juguetes son cosas de las personas.",
+      "error": "concepto-habitat"
+    },
+    {
+      "id": "p6", "tipo": "memoria", "nivel": 2,
+      "enunciado": "Encuentra las parejas: cada animal y lo que lo ayuda a vivir en su hábitat.",
+      "pares": [
+        ["cóndor", "alas enormes para planear"],
+        ["tatú", "garras para cavar"],
+        ["paraba", "pico fuerte para romper semillas"],
+        ["pato", "patas con membranas para nadar"],
+        ["jaguar", "manchas para esconderse"]
+      ],
+      "pista": "Piensa cómo vive cada animal: ¿vuela, cava, come semillas, nada o se esconde para cazar?",
+      "explicacion": "El cóndor planea con sus alas enormes, el tatú cava con sus garras, la paraba rompe semillas con su pico, el pato nada con sus patas con membranas y el jaguar se esconde gracias a sus manchas.",
+      "error": "adaptacion"
+    },
+    {
+      "id": "p7", "tipo": "completar", "nivel": 2,
+      "enunciado": "Las plantas también están adaptadas. Completa.",
+      "texto": "En el Chaco llueve poco. El toborochi guarda [agua] en su tronco panzón. El cactus tiene [espinas] que lo protegen.",
+      "banco": ["plumas", "nieve"],
+      "pista": "En un lugar seco, las plantas necesitan guardar lo que casi no hay. ¿Qué pincha si tocas un cactus?",
+      "explicacion": "El toborochi guarda agua en su tronco para los meses secos. El cactus tiene espinas que lo protegen de los animales que quieren comerlo.",
+      "error": "adaptacion"
+    },
+    {
+      "id": "p8", "tipo": "numero", "nivel": 2,
+      "enunciado": "¿Cuántos de estos animales son acuáticos?",
+      "visual": { "tipo": "emojis", "items": ["🐟", "🐻", "🐬", "🦇", "🐠", "🦋"], "etiquetas": ["surubí", "jucumari", "bufeo", "murciélago", "pacú", "mariposa"] },
+      "respuesta": 3,
+      "erroresComunes": [
+        { "respuesta": 2, "pista": "¿Contaste al bufeo? No es un pez, pero vive en el agua.", "error": "confunde-pez" },
+        { "respuesta": 6, "pista": "Contaste todos. Cuenta solo los que viven en el agua.", "error": "tipo-habitat" }
+      ],
+      "pista": "Cuenta los que viven en el agua, aunque no sean peces.",
+      "explicacion": "Son 3: el surubí, el bufeo y el pacú. El jucumari vive en la tierra. El murciélago y la mariposa vuelan.",
+      "error": "tipo-habitat"
+    },
+    {
+      "id": "p9", "tipo": "opcion", "nivel": 2,
+      "enunciado": "¿Por qué la vicuña puede vivir en el frío del altiplano?",
+      "opciones": [
+        { "texto": "Porque tiene una lana muy fina y abrigadora.", "correcta": true },
+        { "texto": "Porque tiene aletas para nadar en el lago.", "pista": "La vicuña camina en tierra y no tiene aletas. ¿Qué la protege del frío?", "error": "adaptacion" },
+        { "texto": "Porque duerme todo el día para no sentir frío.", "pista": "La vicuña pasa el día comiendo pasto. Piensa en lo que cubre su cuerpo.", "error": "adaptacion" }
+      ],
+      "pista": "Piensa en lo que cubre el cuerpo de la vicuña.",
+      "explicacion": "La vicuña tiene una lana muy fina y abrigadora. Por eso aguanta el frío del altiplano: está adaptada a su hábitat.",
+      "error": "adaptacion"
+    },
+    {
+      "id": "p10", "tipo": "ordenar", "nivel": 2,
+      "enunciado": "Ordena lo que pasa cuando alguien bota basura al lago.",
+      "elementos": [
+        "Alguien bota basura al lago.",
+        "El agua del lago se ensucia.",
+        "Las ranas y los peces se enferman.",
+        "Quedan menos animales en el lago."
+      ],
+      "vertical": true,
+      "pista": "Primero alguien bota la basura. ¿Qué le pasa al agua? ¿Y a los animales que viven en ella?",
+      "explicacion": "La basura ensucia el agua, las ranas y los peces se enferman y quedan menos animales. Por eso cuidamos el agua de los lagos y los ríos.",
+      "error": "cuidar-habitat"
+    },
+    {
+      "id": "p11", "tipo": "clasificar", "nivel": 3,
+      "enunciado": "¿Vive en el agua, vive en la tierra o vuela?",
+      "categorias": [
+        { "id": "agua", "texto": "Vive en el agua", "emoji": "💧" },
+        { "id": "tierra", "texto": "Vive en la tierra", "emoji": "⛰️" },
+        { "id": "vuela", "texto": "Vuela", "emoji": "☁️" }
+      ],
+      "elementos": [
+        { "texto": "rana gigante del Titicaca", "categoria": "agua" },
+        { "texto": "bufeo", "categoria": "agua" },
+        { "texto": "surubí", "categoria": "agua" },
+        { "texto": "murciélago", "categoria": "vuela" },
+        { "texto": "mariposa", "categoria": "vuela" },
+        { "texto": "jucumari", "categoria": "tierra" },
+        { "texto": "vicuña", "categoria": "tierra" }
+      ],
+      "pista": "Fíjate dónde pasa su vida y cómo se mueve. No todos los que nadan son peces, ni todos los que vuelan son aves.",
+      "explicacion": "La rana gigante del Titicaca, el bufeo y el surubí viven en el agua. El murciélago y la mariposa vuelan, aunque no son aves. El jucumari y la vicuña viven en la tierra.",
+      "error": "tipo-habitat"
+    },
+    {
+      "id": "p12", "tipo": "opcion", "nivel": 3,
+      "enunciado": "Nayra dice: «El bufeo vive en el río, entonces es un pez». ¿Tiene razón?",
+      "opciones": [
+        { "texto": "No. Vive en el agua, pero no es un pez: respira aire y sus crías toman leche.", "correcta": true },
+        { "texto": "Sí. Todo animal que vive en el agua es un pez.", "pista": "Piensa en la rana gigante del Titicaca: vive en el agua y no es un pez.", "error": "confunde-pez" },
+        { "texto": "Sí, porque tiene aletas.", "pista": "Tener aletas no basta. ¿El bufeo respira aire o usa branquias?", "error": "confunde-pez" }
+      ],
+      "pista": "Los peces respiran con branquias. ¿Y el bufeo? Sube a respirar aire.",
+      "explicacion": "Nayra no tiene razón. El bufeo vive en el agua, pero no es un pez: sube a respirar aire y sus crías toman leche de su mamá.",
+      "error": "confunde-pez"
+    },
+    {
+      "id": "p13", "tipo": "pasos", "nivel": 3,
+      "enunciado": "La paraba barba azul vive solo en Bolivia, en los llanos del Beni. Hace su nido en huecos de palmeras altas y come frutos.",
+      "visual": { "tipo": "emojis", "items": ["🦜", "🌴", "🌴"] },
+      "pasos": [
+        {
+          "tipo": "multiple",
+          "enunciado": "¿Qué encuentra la paraba en su hábitat? Elige todas las respuestas correctas.",
+          "opciones": [
+            { "texto": "palmeras para hacer su nido", "correcta": true },
+            { "texto": "frutos para comer", "correcta": true },
+            { "texto": "nieve para jugar", "pista": "En los llanos del Beni hace calor: no hay nieve.", "error": "concepto-habitat" },
+            { "texto": "cuevas bajo la tierra", "pista": "Lee otra vez: ¿dónde hace su nido la paraba?", "error": "concepto-habitat" }
+          ],
+          "pista": "Lee otra vez el texto: dice dónde hace su nido y qué come.",
+          "explicacion": "La paraba encuentra en su hábitat palmeras para su nido y frutos para comer.",
+          "error": "concepto-habitat"
+        },
+        {
+          "tipo": "multiple",
+          "enunciado": "¿Qué acciones dañan el hábitat de la paraba? Elige todas las respuestas correctas.",
+          "opciones": [
+            { "texto": "quemar las palmeras", "correcta": true },
+            { "texto": "atrapar parabas para venderlas", "correcta": true },
+            { "texto": "cuidar las palmeras", "pista": "Cuidar las palmeras ayuda a la paraba: allí hace su nido.", "error": "cuidar-habitat" },
+            { "texto": "mirarlas de lejos sin molestarlas", "pista": "Mirar sin molestar no les hace daño.", "error": "cuidar-habitat" }
+          ],
+          "pista": "Busca las acciones que le quitan su nido o la sacan de su hogar.",
+          "explicacion": "Quemar las palmeras y atrapar parabas para venderlas dañan su hábitat. Cuidar las palmeras y mirarlas de lejos las protege.",
+          "error": "cuidar-habitat"
+        },
+        {
+          "tipo": "opcion",
+          "enunciado": "¿Qué puede hacer tu familia para ayudar a las parabas?",
+          "opciones": [
+            { "texto": "No comprar parabas ni otros animales silvestres como mascotas.", "correcta": true },
+            { "texto": "Comprar una paraba para cuidarla en una jaula.", "pista": "En una jaula, la paraba no puede volar libre ni tener crías en la naturaleza. Busca otra forma de ayudar.", "error": "cuidar-habitat" },
+            { "texto": "Cortar palmeras para darles más espacio.", "pista": "Sin palmeras, la paraba no tiene dónde hacer su nido.", "error": "cuidar-habitat" }
+          ],
+          "pista": "Las parabas viven mejor libres en su hábitat.",
+          "explicacion": "Ayudamos si no compramos parabas ni otros animales silvestres: así se quedan libres en su hábitat.",
+          "error": "cuidar-habitat"
+        }
+      ],
+      "pista": "Lee bien el texto y resuelve un paso a la vez.",
+      "explicacion": "La paraba necesita palmeras y frutos. Quemar palmeras o atrapar parabas daña su hábitat. Ayudamos si no compramos animales silvestres.",
+      "error": "cuidar-habitat"
+    },
+    {
+      "id": "p14", "tipo": "escribir-libre", "nivel": 3,
+      "enunciado": "Escribe una oración sobre cómo podemos cuidar el hábitat de un animal.",
+      "guia": ["No botamos basura en...", "Cuidamos el bosque cuando..."],
+      "requisitos": [
+        { "tipo": "mayuscula-inicial" },
+        { "tipo": "punto-final" },
+        { "tipo": "min-palabras", "valor": 5 },
+        { "tipo": "incluye", "palabras": ["cuidar", "cuidamos", "cuido", "proteger", "protegemos", "basura", "árboles", "agua"] }
+      ],
+      "modelo": "Cuidamos el lago cuando no botamos basura.",
+      "pista": "Piensa en un animal que te guste. ¿Qué necesita su hogar para estar limpio y seguro?",
+      "explicacion": "Por ejemplo: «Cuidamos el lago cuando no botamos basura». Empieza con mayúscula, di cómo cuidar un hábitat y termina con punto.",
+      "error": "produce-oracion"
+    }
+  ],
+  "comprobacion": [
+    {
+      "id": "c1", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Toca los animales que vuelan.",
+      "texto": "Sobre el valle vuelan un *cóndor* y un *picaflor*. Abajo, una llama come pasto.",
+      "pista": "Busca los que tienen alas y se mueven por el aire. Hay dos.",
+      "explicacion": "El cóndor y el picaflor vuelan. La llama camina: es un animal terrestre.",
+      "error": "tipo-habitat"
+    },
+    {
+      "id": "c2", "tipo": "opcion", "nivel": 1,
+      "enunciado": "¿Cuál es un animal acuático?",
+      "opciones": [
+        { "texto": "el surubí, un pez de los ríos", "emoji": "🐟", "correcta": true },
+        { "texto": "la vicuña", "pista": "La vicuña camina en el altiplano. Busca un animal que vive en el agua.", "error": "tipo-habitat" },
+        { "texto": "el cóndor", "emoji": "🦅", "pista": "El cóndor vuela. Busca un animal que vive en el agua.", "error": "tipo-habitat" }
+      ],
+      "pista": "Un animal acuático vive en el agua.",
+      "explicacion": "El surubí es acuático: es un pez que vive en los ríos.",
+      "error": "tipo-habitat"
+    },
+    {
+      "id": "c3", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa con las palabras correctas.",
+      "texto": "La rana gigante del Titicaca vive siempre en el [agua] del lago. Respira sobre todo por su [piel].",
+      "banco": ["arena", "lana"],
+      "pista": "Piensa dónde pasa toda su vida esta rana. ¿Qué parte de su cuerpo toma el aire?",
+      "explicacion": "La rana gigante del Titicaca vive siempre en el agua del lago y respira sobre todo por su piel.",
+      "error": "adaptacion"
+    },
+    {
+      "id": "c4", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "Une cada animal con lo que lo ayuda a vivir en su hábitat.",
+      "pares": [
+        ["bufeo", "aletas para nadar"],
+        ["jucumari", "garras para trepar árboles"],
+        ["vicuña", "lana abrigadora"],
+        ["picaflor", "pico largo para beber de las flores"]
+      ],
+      "pista": "Piensa dónde vive cada uno: en el río, en el bosque, en el altiplano frío o entre las flores.",
+      "explicacion": "El bufeo nada con sus aletas, el jucumari trepa con sus garras, la vicuña se abriga con su lana y el picaflor bebe de las flores con su pico largo.",
+      "error": "adaptacion"
+    },
+    {
+      "id": "c5", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "¿Cuida o daña el hábitat de los animales?",
+      "categorias": [
+        { "id": "cuida", "texto": "Lo cuida", "emoji": "💚" },
+        { "id": "dana", "texto": "Lo daña", "emoji": "🚫" }
+      ],
+      "elementos": [
+        { "texto": "botar basura al río", "categoria": "dana" },
+        { "texto": "sembrar árboles", "categoria": "cuida" },
+        { "texto": "quemar el monte", "categoria": "dana" },
+        { "texto": "llevar la basura a casa después de un paseo", "categoria": "cuida" },
+        { "texto": "comprar una paraba como mascota", "categoria": "dana" },
+        { "texto": "mirar los nidos sin tocarlos", "categoria": "cuida" }
+      ],
+      "pista": "Pregúntate: ¿esto deja el hogar de los animales limpio y seguro, o se lo quita?",
+      "explicacion": "Sembrar árboles, llevar la basura a casa y mirar los nidos sin tocarlos cuida los hábitats. Botar basura, quemar el monte y comprar parabas los daña.",
+      "error": "cuidar-habitat"
+    },
+    {
+      "id": "c6", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha la adivinanza y escribe qué animal es.",
+      "escuchar": "Vivo en los ríos de la Amazonía. Parezco un pez, pero respiro aire y, cuando soy cría, tomo leche de mi mamá. Mi piel puede ser rosada. ¿Quién soy?",
+      "respuestas": ["bufeo", "el bufeo", "un bufeo", "es el bufeo", "es un bufeo", "soy el bufeo", "delfín", "el delfín", "un delfín", "delfín de río", "el delfín de río", "un delfín de río", "delfín rosado", "el delfín rosado"],
+      "pista": "Es el delfín de los ríos de Bolivia. Su nombre empieza con b.",
+      "explicacion": "Es el **bufeo**, el delfín de río de Bolivia. Vive en el agua, pero no es un pez: respira aire.",
+      "error": "animales-bolivia"
+    },
+    {
+      "id": "c7", "tipo": "multiple", "nivel": 3,
+      "enunciado": "¿Qué animales viven en el agua pero NO son peces? Elige todas las respuestas correctas.",
+      "opciones": [
+        { "texto": "el bufeo", "correcta": true },
+        { "texto": "la rana gigante del Titicaca", "correcta": true },
+        { "texto": "el surubí", "pista": "El surubí es un pez: respira con branquias.", "error": "confunde-pez" },
+        { "texto": "el pacú", "pista": "El pacú es un pez de los ríos de la Amazonía.", "error": "confunde-pez" }
+      ],
+      "pista": "Hay dos respuestas correctas: un animal que sube a respirar aire y otro que respira por la piel.",
+      "explicacion": "El bufeo y la rana gigante del Titicaca viven en el agua, pero no son peces. El surubí y el pacú sí son peces.",
+      "error": "confunde-pez"
+    },
+    {
+      "id": "c8", "tipo": "opcion", "nivel": 3,
+      "enunciado": "En el altiplano hay lagunas donde viven flamencos. Si una laguna se seca, ¿qué les pasa a los flamencos?",
+      "opciones": [
+        { "texto": "Pierden su hábitat: se quedan sin agua ni comida y deben buscar otro lugar.", "correcta": true },
+        { "texto": "Nada, porque los flamencos no necesitan agua.", "pista": "Todos los animales necesitan agua. Además, los flamencos buscan su comida en la laguna.", "error": "cuidar-habitat" },
+        { "texto": "Se quedan felices, porque tienen más espacio.", "pista": "Piensa en lo que el flamenco encuentra en la laguna: agua y comida.", "error": "cuidar-habitat" }
+      ],
+      "pista": "Piensa en lo que la laguna les da a los flamencos.",
+      "explicacion": "Si la laguna se seca, los flamencos pierden su hábitat: se quedan sin agua y sin comida, y tienen que buscar otro lugar para vivir.",
+      "error": "cuidar-habitat"
+    }
+  ],
+  "repaso": {
+    "texto": "El hábitat es el hogar de un ser vivo. Hay animales que viven en el agua, otros en la tierra y otros que vuelan. Su cuerpo está adaptado a su hábitat. ¡Cuidemos los hábitats!",
+    "visual": { "tipo": "emojis", "items": ["🐟", "🦙", "🦅"], "etiquetas": ["agua", "tierra", "vuelan"] }
+  },
+  "adulto": {
+    "objetivo": "Comprender qué es un hábitat; distinguir animales acuáticos, terrestres y que vuelan; conocer hábitats de Bolivia (altiplano y lago Titicaca, Yungas, llanos y Amazonía, Chaco) y sus animales; relacionar partes del cuerpo con el hábitat (adaptaciones) y proponer acciones para proteger los hábitats.",
+    "sugerencias": [
+      "Salgan al patio, a una plaza o al campo y busquen «pequeños hábitats»: bajo una piedra, en un árbol, en un charco. Anoten qué seres vivos hay en cada lugar y qué les da ese lugar (sombra, humedad, comida). Miren sin lastimar y dejen todo como estaba.",
+      "En el mercado, observen juntos un pescado: busquen sus aletas y sus branquias y conversen para qué le sirven en el agua. Después miren un ave del barrio, como una paloma: ¿qué partes de su cuerpo le sirven para volar?",
+      "Dibujen en una hoja un mapa sencillo de Bolivia con el altiplano, los Yungas, los llanos y la Amazonía, y el Chaco, y pongan un animal en cada lugar. En los paseos, lleven su basura de vuelta a casa y conversen por qué no se compran animales silvestres como mascotas."
+    ],
+    "errores": {
+      "concepto-habitat": { "descripcion": "No tiene claro qué es un hábitat (lo confunde con la comida o con el animal).", "sugerencia": "Pregunten por su propio hogar: ¿dónde vives?, ¿dónde encuentras agua, comida y refugio? Luego hagan lo mismo con un animal." },
+      "tipo-habitat": { "descripcion": "Duda al decir si un animal vive en el agua, en la tierra o vuela.", "sugerencia": "Jueguen a imitar animales (nadar, caminar, volar) y conversen dónde descansa y dónde busca comida cada uno." },
+      "confunde-pez": { "descripcion": "Cree que todo animal que vive en el agua es un pez.", "sugerencia": "Comparen el bufeo (respira aire y sus crías toman leche) con un pez (respira con branquias). Busquen otros ejemplos: la rana, el caimán, el pato." },
+      "animales-bolivia": { "descripcion": "Le cuesta recordar animales de Bolivia o ubicarlos en su hábitat.", "sugerencia": "Miren fotos o videos de animales de Bolivia y ubíquenlos en un mapa sencillo: altiplano, Yungas, Amazonía y Chaco." },
+      "adaptacion": { "descripcion": "No relaciona las partes del cuerpo de un animal o de una planta con su hábitat.", "sugerencia": "Al ver un animal, pregunten «¿para qué le sirve?»: la lana de la llama, las alas de una paloma, las patas del pato, las espinas del cactus." },
+      "cuidar-habitat": { "descripcion": "No reconoce qué acciones dañan o protegen los hábitats.", "sugerencia": "Conversen sobre situaciones reales (basura en un río, quemas, venta de animales silvestres) y decidan juntos qué puede hacer la familia." },
+      "produce-oracion": { "descripcion": "Le cuesta escribir una oración completa con mayúscula y punto.", "sugerencia": "Digan la oración en voz alta antes de escribirla y revisen juntos la mayúscula inicial y el punto final." }
+    }
+  }
+}

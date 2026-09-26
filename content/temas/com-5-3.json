@@ -1,0 +1,422 @@
+{
+  "id": "com-5-3",
+  "titulo": "c, s y z; ce y ci",
+  "objetivo": "Uso reglas y familias de palabras para escribir bien con c, s y z, y con ce y ci.",
+  "explicacion": [
+    {
+      "texto": "En Bolivia, la **s**, la **z** y la **c** de **ce** y **ci** suenan igual: «sopa», «zapato», «cereza». Por eso no basta con escuchar: usamos **reglas** y miramos bien cómo se escribe cada palabra.",
+      "emoji": "👀",
+      "visual": { "tipo": "emojis", "items": ["🍲", "👞", "🍒"], "etiquetas": ["sopa", "zapato", "cereza"] }
+    },
+    {
+      "texto": "La **c** tiene dos sonidos. Con **a**, **o**, **u** suena fuerte, como en **ca**sa, **co**co y **cu**na. Con **e**, **i** suena como la s: **ce**bolla, **ci**ne.",
+      "visual": { "tipo": "tabla", "columnas": ["ca, co, cu", "ce, ci"], "filas": [["casa, coco, cuna", "cebolla, cine"]] }
+    },
+    {
+      "texto": "La **z** va con **a**, **o**, **u**: **za**pato, **zo**rro, a**zú**car. Antes de **e** o **i**, casi siempre usamos **c**: **ce**reza, **ci**elo. ¡Casi nunca verás «ze» ni «zi»!",
+      "visual": { "tipo": "emojis", "items": ["👞", "🦊", "🍒", "☁️"], "etiquetas": ["zapato", "zorro", "cereza", "cielo"] }
+    },
+    {
+      "texto": "Si una palabra cambia y a la **z** le toca una **e** o una **i**, la z se vuelve **c**: lápi**z** → lápi**ces**, ta**z**a → ta**c**ita. Pero la **s** no cambia: me**s**a → me**s**ita.",
+      "visual": { "tipo": "tabla", "columnas": ["Palabra", "Cambia a"], "filas": [["lápiz", "lápices"], ["taza", "tacita"], ["mesa", "mesita"]] }
+    }
+  ],
+  "ejemplo": {
+    "instruccion": "Mira cómo escribimos el plural de «lápiz» y otra palabra de su familia.",
+    "pasos": [
+      {
+        "texto": "Tenemos un **lápiz**. Termina en **z**.",
+        "visual": { "tipo": "emoji", "valor": "✏️", "cantidad": 1, "etiqueta": "un lápiz" }
+      },
+      {
+        "texto": "Para decir que son varios, agregamos **es**. Pero la z casi nunca va antes de la e...",
+        "visual": { "tipo": "tabla", "columnas": ["Uno", "Se agrega"], "filas": [["lápiz", "es"]] }
+      },
+      {
+        "texto": "...por eso la z cambia a **c**: lápi**ces**. ¡Tres lápices!",
+        "visual": { "tipo": "emoji", "valor": "✏️", "cantidad": 3, "etiqueta": "tres lápices" }
+      },
+      {
+        "texto": "En la familia pasa lo mismo: de lápiz sale **lapicero**. Lleva c porque después viene una e: la-pi-**ce**-ro.",
+        "visual": { "tipo": "emojis", "items": ["✏️", "🖊️"], "etiquetas": ["lápiz", "lapicero"] }
+      }
+    ]
+  },
+  "guiada": {
+    "intro": "Ahora lo hacemos juntos, usando las reglas.",
+    "pasos": [
+      {
+        "id": "g1", "tipo": "completar",
+        "enunciado": "Completa con z o c.",
+        "apoyo": "Mira la vocal que viene después del espacio: con a, o, u va z; con e, i va c.",
+        "texto": "Kusi guarda sus [z]apatos, su [c]inturón y su [z]ampoña.",
+        "pista": "Fíjate en la vocal que sigue a cada espacio.",
+        "explicacion": "Zapatos y zampoña llevan z porque sigue la a. Cinturón lleva c porque sigue la i.",
+        "error": "regla-z-c"
+      },
+      {
+        "id": "g2", "tipo": "escribir",
+        "enunciado": "Un pez, dos... Escribe el plural de «pez».",
+        "apoyo": "«Pez» termina en z. Cambia la z por c y agrega es.",
+        "visual": { "tipo": "emoji", "valor": "🐟", "cantidad": 2 },
+        "respuestas": ["peces"],
+        "pista": "Recuerda: la z casi nunca va antes de la e.",
+        "explicacion": "Un pez, dos **peces**. La z cambia a c porque después viene la e.",
+        "error": "plural-z"
+      },
+      {
+        "id": "g3", "tipo": "opcion",
+        "enunciado": "Escucha la palabra. Es de la familia de «taza». ¿Cómo se escribe?",
+        "apoyo": "«Taza» se escribe con z. Si después viene una i, la z cambia a c.",
+        "escuchar": "tacita",
+        "visual": { "tipo": "emoji", "valor": "☕" },
+        "opciones": [
+          { "texto": "tacita", "correcta": true },
+          { "texto": "tazita", "pista": "La z casi nunca va antes de la i. ¿Qué letra la reemplaza?", "error": "familia-z-c" },
+          { "texto": "tasita", "pista": "«Taza» no lleva s. En su familia, la z cambia a c, no a s.", "error": "familia-z-c" }
+        ],
+        "columnas": 3,
+        "pista": "Piensa en la regla: ¿qué le pasa a la z cuando le sigue una i?",
+        "explicacion": "Se escribe **tacita**: la z de «taza» cambia a c porque después viene la i.",
+        "error": "familia-z-c"
+      }
+    ]
+  },
+  "practica": [
+    {
+      "id": "p1", "tipo": "memoria", "nivel": 1,
+      "enunciado": "Encuentra las parejas: el dibujo y su nombre.",
+      "pares": [
+        [{ "emoji": "🦊" }, "zorro"],
+        [{ "emoji": "👞" }, "zapato"],
+        [{ "emoji": "🥕" }, "zanahoria"],
+        [{ "emoji": "🍒" }, "cereza"],
+        [{ "emoji": "🎪" }, "circo"]
+      ],
+      "pista": "Mira cada dibujo y busca su nombre. Fíjate bien en cómo se escribe.",
+      "explicacion": "Zorro, zapato y zanahoria empiezan con z (zo, za). Cereza y circo empiezan con c (ce, ci).",
+      "error": "memoria-visual"
+    },
+    {
+      "id": "p2", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Toca las palabras que tienen ce o ci.",
+      "texto": "Mi tío *Marcelo* vende *cebollas* en la *ciudad*.",
+      "pista": "Hay tres. Busca la c seguida de una e o de una i.",
+      "explicacion": "Marcelo, cebollas y ciudad tienen ce o ci: Mar-**ce**-lo, **ce**-bo-llas, **ciu**-dad.",
+      "error": "no-reconoce-silaba"
+    },
+    {
+      "id": "p3", "tipo": "completar", "nivel": 1,
+      "enunciado": "Completa con z o c. Mira la vocal que sigue.",
+      "texto": "Nayra pone [z]anahoria, [c]ebolla y [z]apallo en la sopa.",
+      "pista": "Con a, o, u va z. Con e, i va c.",
+      "explicacion": "Zanahoria y zapallo llevan z porque sigue la a. Cebolla lleva c porque sigue la e.",
+      "error": "regla-z-c"
+    },
+    {
+      "id": "p4", "tipo": "escribir", "nivel": 1,
+      "enunciado": "Escucha y escribe la palabra. Empieza con z.",
+      "escuchar": "zapato",
+      "visual": { "tipo": "emoji", "valor": "👞" },
+      "respuestas": ["zapato"],
+      "pista": "Tiene tres sílabas. Escríbelas una por una.",
+      "explicacion": "Se escribe **zapato**: **za**-pa-to. Toda su familia lleva z: zapatero, zapatilla.",
+      "error": "dictado-c-s-z"
+    },
+    {
+      "id": "p5", "tipo": "opcion", "nivel": 1,
+      "enunciado": "¿Cuál está bien escrita?",
+      "visual": { "tipo": "emoji", "valor": "🍒" },
+      "opciones": [
+        { "texto": "cereza", "correcta": true },
+        { "texto": "zereza", "pista": "La z casi nunca va antes de la e. ¿Qué letra va con e?", "error": "regla-z-c" },
+        { "texto": "sereza", "pista": "Suena igual, pero esta fruta no empieza con s. Recuerda cómo la viste en la lección.", "error": "memoria-visual" }
+      ],
+      "columnas": 3,
+      "pista": "Recuerda la regla de la z y cómo viste esta palabra en la lección.",
+      "explicacion": "Se escribe **cereza**: empieza con ce y termina con za.",
+      "error": "memoria-visual"
+    },
+    {
+      "id": "p6", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "¿Cómo suena la c: como en «casa» o como en «cine»?",
+      "categorias": [
+        { "id": "fuerte", "texto": "Como en «casa»" },
+        { "id": "suave", "texto": "Como en «cine»" }
+      ],
+      "elementos": [
+        { "texto": "cuna", "categoria": "fuerte" },
+        { "texto": "boca", "emoji": "👄", "categoria": "fuerte" },
+        { "texto": "vaca", "emoji": "🐄", "categoria": "fuerte" },
+        { "texto": "cielo", "emoji": "☁️", "categoria": "suave" },
+        { "texto": "dulce", "emoji": "🍬", "categoria": "suave" },
+        { "texto": "cien", "emoji": "💯", "categoria": "suave" }
+      ],
+      "pista": "Mira la vocal que va después de la c: ¿es a, o, u, o es e, i?",
+      "explicacion": "En cuna, boca y vaca, la c va con u, o, a: suena como en «casa». En cielo, dulce y cien va con e, i: suena como en «cine».",
+      "error": "sonido-c"
+    },
+    {
+      "id": "p7", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha la palabra y escríbela en plural.",
+      "escuchar": "feliz",
+      "visual": { "tipo": "emoji", "valor": "😄", "cantidad": 2 },
+      "respuestas": ["felices"],
+      "pista": "La palabra termina en z. ¿Qué le pasa a la z cuando agregas es?",
+      "explicacion": "Feliz → **felices**. La z cambia a c porque después viene la e.",
+      "error": "plural-z"
+    },
+    {
+      "id": "p8", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa cada palabra de la familia con c o s.",
+      "texto": "De casa sale ca[s]ita. De pez sale pe[c]era. De pozo sale po[c]ito.",
+      "banco": ["z"],
+      "pista": "La s no cambia. La z cambia a c cuando le sigue una e o una i.",
+      "explicacion": "Casita lleva s, como casa. Pecera y pocito llevan c porque la z de pez y de pozo cambia antes de e y de i.",
+      "error": "familia-z-c"
+    },
+    {
+      "id": "p9", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Un pedazo pequeño es un... Escribe la palabra de la familia de «pedazo».",
+      "respuestas": ["pedacito"],
+      "pista": "Agrega «ito» al final. ¿Qué le pasa a la z cuando le sigue una i?",
+      "explicacion": "Se escribe **pedacito**: la z de «pedazo» cambia a c porque después viene la i.",
+      "error": "familia-z-c"
+    },
+    {
+      "id": "p10", "tipo": "ordenar", "nivel": 2,
+      "enunciado": "Ordena las palabras para formar la oración.",
+      "elementos": ["Cecilia", "pone", "azúcar", "en", "su", "taza."],
+      "unir": " ",
+      "pista": "Empieza con el nombre, que lleva mayúscula, y termina con la palabra que tiene punto.",
+      "explicacion": "«Cecilia pone azúcar en su taza.» Fíjate: Ce-ci-lia lleva ce y ci; a-zú-car y ta-za llevan z.",
+      "error": "orden-oracion"
+    },
+    {
+      "id": "p11", "tipo": "multiple", "nivel": 2,
+      "enunciado": "Elige todas las palabras que están bien escritas.",
+      "opciones": [
+        { "texto": "cielo", "correcta": true },
+        { "texto": "zielo", "pista": "La z casi nunca va antes de la i. ¿Qué letra usamos con i?", "error": "regla-z-c" },
+        { "texto": "dulce", "correcta": true },
+        { "texto": "dulze", "pista": "La z casi nunca va antes de la e. ¿Qué letra usamos con e?", "error": "regla-z-c" },
+        { "texto": "manzana", "correcta": true },
+        { "texto": "mancana", "pista": "Con a, la c suena fuerte, como en «casa»: se leería «man-ca-na». Aquí va otra letra.", "error": "sonido-c" }
+      ],
+      "pista": "Mira la vocal que va después de la z o de la c.",
+      "explicacion": "Están bien escritas cielo, dulce y manzana. «Zielo» y «dulze» no siguen la regla: antes de e o i va c. En «mancana», la c con a sonaría como en «casa».",
+      "error": "regla-z-c"
+    },
+    {
+      "id": "p12", "tipo": "escribir-libre", "nivel": 2,
+      "enunciado": "Escribe una oración con una de estas palabras: zapato, cereza, cielo, lápices, tacita o zapallo.",
+      "guia": ["Mi zapato...", "En el cielo..."],
+      "requisitos": [
+        { "tipo": "mayuscula-inicial" },
+        { "tipo": "punto-final" },
+        { "tipo": "min-palabras", "valor": 4 },
+        { "tipo": "incluye", "palabras": ["zapato", "cereza", "cielo", "lápices", "tacita", "zapallo"] }
+      ],
+      "modelo": "Mi abuela cocina zapallo con queso.",
+      "pista": "Elige una palabra y piensa qué pasa con ella. Empieza con mayúscula y termina con punto.",
+      "explicacion": "Por ejemplo: «Mi abuela cocina zapallo con queso.» Revisa si tu palabra lleva c, s o z.",
+      "error": "produce-oracion"
+    },
+    {
+      "id": "p13", "tipo": "opcion", "nivel": 2,
+      "enunciado": "Escucha la oración. ¿Cómo se escribe la última palabra?",
+      "escuchar": "Pinto con mis lápices.",
+      "opciones": [
+        { "texto": "lápices", "correcta": true },
+        { "texto": "lápizes", "pista": "La z casi nunca va antes de la e. ¿Qué letra la reemplaza?", "error": "plural-z" },
+        { "texto": "lápises", "pista": "«Lápiz» se escribe con z. En su plural, la z cambia a c, no a s.", "error": "plural-z" }
+      ],
+      "columnas": 3,
+      "pista": "Piensa en uno solo: «lápiz». ¿Qué pasa con la z en el plural?",
+      "explicacion": "Se escribe **lápices**: «lápiz» termina en z, y en el plural la z cambia a c.",
+      "error": "plural-z"
+    },
+    {
+      "id": "p14", "tipo": "clasificar", "nivel": 3,
+      "enunciado": "¿Está bien escrita o hay que corregirla?",
+      "categorias": [
+        { "id": "bien", "texto": "Está bien escrita" },
+        { "id": "corregir", "texto": "Hay que corregirla" }
+      ],
+      "elementos": [
+        { "texto": "veces", "categoria": "bien" },
+        { "texto": "zorrito", "categoria": "bien" },
+        { "texto": "mesita", "categoria": "bien" },
+        { "texto": "actrizes", "categoria": "corregir" },
+        { "texto": "cerezita", "categoria": "corregir" },
+        { "texto": "mecita", "categoria": "corregir" }
+      ],
+      "pista": "Revisa cada palabra con las reglas: ¿hay una z antes de e o de i? ¿Cambió una s que no debía cambiar?",
+      "explicacion": "Bien escritas: veces, zorrito y mesita (en «zorrito» la z va antes de la o, así que no cambia). Hay que corregir: actrizes (actrices), cerezita (cerecita) y mecita (mesita).",
+      "error": "familia-z-c"
+    },
+    {
+      "id": "p15", "tipo": "pasos", "nivel": 3,
+      "enunciado": "Trabajemos con la palabra «cabeza», que se escribe con z.",
+      "pasos": [
+        {
+          "tipo": "escribir",
+          "enunciado": "Escribe el plural: una cabeza, dos...",
+          "respuestas": ["cabezas"],
+          "pista": "«Cabeza» termina en a, no en z. ¿Qué agregamos a las palabras que terminan en vocal?",
+          "explicacion": "Se escribe **cabezas**: solo agregamos s. La z no cambia porque después viene la a.",
+          "error": "plural-sobregeneraliza"
+        },
+        {
+          "tipo": "escribir",
+          "enunciado": "Una cabeza pequeña es una... Escribe la palabra.",
+          "respuestas": ["cabecita"],
+          "pista": "Agrega «ita» al final. ¿Qué le pasa a la z cuando le sigue una i?",
+          "explicacion": "Se escribe **cabecita**: la z cambia a c porque después viene la i.",
+          "error": "familia-z-c"
+        },
+        {
+          "tipo": "opcion",
+          "enunciado": "¿Por qué «cabecita» se escribe con c?",
+          "opciones": [
+            { "texto": "Porque después viene una i, y la z casi nunca va antes de la i.", "correcta": true },
+            { "texto": "Porque «cabeza» se escribe con c.", "pista": "Mira otra vez: «cabeza» se escribe con z.", "error": "familia-z-c" },
+            { "texto": "Porque suena distinto que «cabeza».", "pista": "En Bolivia, «za» y «ci» tienen el mismo sonido de s. La razón está en la vocal que viene después.", "error": "regla-z-c" }
+          ],
+          "columnas": 1,
+          "pista": "Piensa en la regla de la z: ¿con qué vocales va?",
+          "explicacion": "La z cambia a c porque después viene la i: cabeza → cabecita.",
+          "error": "regla-z-c"
+        }
+      ],
+      "pista": "Resuelve un paso a la vez. Mira siempre qué vocal viene después de la z.",
+      "explicacion": "Cabeza → cabezas (la z sigue antes de a) y cabeza → cabecita (la z cambia a c antes de i).",
+      "error": "familia-z-c"
+    },
+    {
+      "id": "p16", "tipo": "escribir", "nivel": 3,
+      "enunciado": "Escucha la oración y escríbela.",
+      "escuchar": "El zorro come cerezas.",
+      "respuestas": ["El zorro come cerezas.", "El zorro come cerezas"],
+      "pista": "Son cuatro palabras. Piensa en cómo viste escritas «zorro» y «cereza», y en cómo se forma el plural de «cereza».",
+      "explicacion": "Se escribe «El zorro come cerezas.» «Cerezas» solo agrega s, porque «cereza» termina en a.",
+      "error": "dictado-c-s-z"
+    }
+  ],
+  "comprobacion": [
+    {
+      "id": "c1", "tipo": "completar", "nivel": 1,
+      "enunciado": "Completa con z o c.",
+      "texto": "El [z]orro mira el [c]ielo desde el [c]erro.",
+      "pista": "Mira la vocal que sigue a cada espacio.",
+      "explicacion": "Zorro lleva z porque sigue la o. Cielo y cerro llevan c porque siguen la i y la e.",
+      "error": "regla-z-c"
+    },
+    {
+      "id": "c2", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Toca las palabras que tienen za, zo o zu.",
+      "texto": "Wara lleva *zapatos* *azules* a la *plaza*.",
+      "pista": "Hay tres. Busca la z: puede estar al principio, en medio o cerca del final.",
+      "explicacion": "Zapatos (za), azules (zu) y plaza (za) tienen z.",
+      "error": "no-reconoce-silaba"
+    },
+    {
+      "id": "c3", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha la palabra y escríbela en plural.",
+      "escuchar": "luz",
+      "visual": { "tipo": "emoji", "valor": "💡", "cantidad": 3 },
+      "respuestas": ["luces"],
+      "pista": "La palabra termina en z. ¿Qué le pasa a la z cuando agregas es?",
+      "explicacion": "Luz → **luces**. La z cambia a c porque después viene la e.",
+      "error": "plural-z"
+    },
+    {
+      "id": "c4", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa con c o s. Piensa en la familia de cada palabra.",
+      "texto": "De plaza sale pla[c]ita. De oso sale o[s]ito. De brazo sale bra[c]ito. De mesa sale me[s]ita.",
+      "banco": ["z"],
+      "pista": "La s se queda. La z cambia a c si le sigue una i.",
+      "explicacion": "Placita y bracito llevan c porque la z de plaza y de brazo cambia antes de i. Osito y mesita llevan s, como oso y mesa.",
+      "error": "familia-z-c"
+    },
+    {
+      "id": "c5", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "¿Cómo se forma el plural de cada palabra?",
+      "categorias": [
+        { "id": "s", "texto": "Solo agrega s" },
+        { "id": "ces", "texto": "La z cambia a ces" }
+      ],
+      "elementos": [
+        { "texto": "cabeza", "categoria": "s" },
+        { "texto": "taza", "emoji": "☕", "categoria": "s" },
+        { "texto": "zapato", "emoji": "👞", "categoria": "s" },
+        { "texto": "lápiz", "emoji": "✏️", "categoria": "ces" },
+        { "texto": "actriz", "categoria": "ces" },
+        { "texto": "vez", "categoria": "ces" }
+      ],
+      "pista": "Mira cómo termina cada palabra: ¿en vocal o en z?",
+      "explicacion": "Cabeza, taza y zapato terminan en vocal: solo agregan s (cabezas, tazas, zapatos). Lápiz, actriz y vez terminan en z: lápices, actrices y veces.",
+      "error": "plural-z"
+    },
+    {
+      "id": "c6", "tipo": "opcion", "nivel": 2,
+      "enunciado": "Escucha la palabra. Es de la familia de «pez». ¿Cómo se escribe?",
+      "escuchar": "pececito",
+      "visual": { "tipo": "emoji", "valor": "🐟" },
+      "opciones": [
+        { "texto": "pececito", "correcta": true },
+        { "texto": "pezecito", "pista": "La z casi nunca va antes de la e. ¿Qué letra la reemplaza?", "error": "familia-z-c" },
+        { "texto": "pesesito", "pista": "«Pez» no lleva s. En su familia, la z cambia a c, no a s.", "error": "familia-z-c" }
+      ],
+      "columnas": 3,
+      "pista": "«Pez» se escribe con z. ¿Qué le pasa a la z cuando le sigue una e?",
+      "explicacion": "Se escribe **pececito**: la z de «pez» cambia a c porque después viene la e.",
+      "error": "familia-z-c"
+    },
+    {
+      "id": "c7", "tipo": "escribir", "nivel": 3,
+      "enunciado": "Dos calles se cruzan en una esquina. ¿Cómo se llama ese lugar? Es de la familia de «cruz».",
+      "respuestas": ["cruce", "crucero", "encrucijada"],
+      "pista": "Empieza como «cruz». ¿Qué le pasa a la z si después viene una e?",
+      "explicacion": "Es **cruce**: la z de «cruz» cambia a c porque después viene la e.",
+      "error": "familia-z-c"
+    },
+    {
+      "id": "c8", "tipo": "opcion", "nivel": 3,
+      "enunciado": "¿Qué oración está bien escrita?",
+      "opciones": [
+        { "texto": "Mi tía compró dos lápices y una tacita.", "correcta": true },
+        { "texto": "Mi tía compró dos lápizes y una tacita.", "pista": "Revisa el plural de «lápiz»: ¿puede ir una z antes de la e?", "error": "plural-z" },
+        { "texto": "Mi tía compró dos lápices y una tazita.", "pista": "Revisa la palabra pequeña de «taza»: ¿puede ir una z antes de la i?", "error": "familia-z-c" }
+      ],
+      "columnas": 1,
+      "pista": "Busca las palabras donde la z podría estar antes de e o de i.",
+      "explicacion": "Está bien escrita «Mi tía compró dos lápices y una tacita». En «lápices» y en «tacita», la z cambió a c porque después viene una e o una i.",
+      "error": "regla-z-c"
+    }
+  ],
+  "repaso": {
+    "texto": "La z va con a, o, u (zapato, zorro, azúcar). Con e, i usamos c (cereza, cielo). Si a la z le toca una e o una i, cambia a c: lápiz → lápices, taza → tacita. La s no cambia: mesa → mesita.",
+    "visual": { "tipo": "tabla", "columnas": ["za, zo, zu", "ce, ci"], "filas": [["zapato, zorro, azúcar", "cereza, cielo, cine"]] }
+  },
+  "adulto": {
+    "objetivo": "Escribir correctamente palabras con c, s y z, y con ce y ci. Como en Bolivia la s, la z y la c ante e, i suenan igual (seseo), se enseña con reglas y memoria visual, no por el sonido: za, zo, zu se escriben con z y ce, ci con c; el plural de las palabras terminadas en z (lápiz → lápices); y las familias de palabras, donde la z cambia a c ante e, i (taza → tacita) y la s se mantiene (mesa → mesita).",
+    "sugerencias": [
+      "En la feria o el mercado, busquen productos que se escriben con z o con c (zanahoria, zapallo, manzana, cebolla, cereza). Anótenlos en dos columnas, «con z» y «con c», y lean juntos cómo se ve cada palabra.",
+      "En casa, jueguen a «uno y muchos, grande y pequeño»: señalen objetos (lápiz, luz, taza, mesa) y pidan que diga y escriba el plural o la palabra pequeña (lápices, luces, tacita, mesita). Revisen juntos si la z cambió a c y por qué.",
+      "Al salir a la calle, lean letreros de tiendas y carteles y busquen palabras con za, zo, zu, ce o ci (plaza, zapatería, cerrado, ciudad). Cópienlas en un cuaderno y subrayen la sílaba con color."
+    ],
+    "errores": {
+      "regla-z-c": { "descripcion": "Escribe z antes de e o de i (zielo, dulze) o no recuerda que za, zo, zu van con z y ce, ci con c.", "sugerencia": "Hagan una tarjeta de ayuda con dos columnas, «za, zo, zu» y «ce, ci». Antes de escribir, pidan que mire qué vocal viene después." },
+      "sonido-c": { "descripcion": "Confunde los dos sonidos de la c: no tiene claro que ca, co, cu suenan fuerte y ce, ci suenan como s.", "sugerencia": "Lean pares como casa-cine, cuna-cielo, boca-dulce, y pidan que diga cómo suena la c en cada una y qué vocal la acompaña." },
+      "plural-z": { "descripcion": "Se equivoca en el plural de las palabras que terminan en z (lápizes, luses) o duda cuándo se aplica la regla.", "sugerencia": "Escriban palabras en z en tarjetas (luz, pez, lápiz) y, al lado, su plural con la z tachada y cambiada por c: lu-ces." },
+      "plural-sobregeneraliza": { "descripcion": "Cambia la z por c aunque la palabra no termine en z (escribe «cabeces» en lugar de cabezas).", "sugerencia": "Recuerden que el cambio a «ces» es solo para palabras que terminan en z. Comparen: cabeza → cabezas (termina en a) y pez → peces (termina en z)." },
+      "familia-z-c": { "descripcion": "En las familias de palabras no cambia la z por c (tazita) o cambia una s que debía quedarse (mecita).", "sugerencia": "Armen familias juntos: taza, tacita, tazón; mesa, mesita. Marquen con color qué letra se queda, cuál cambia y qué vocal viene después." },
+      "memoria-visual": { "descripcion": "Escribe con s palabras que llevan z o c (sapato, sereza), porque suenan igual.", "sugerencia": "Tengan a la vista una lista corta de palabras frecuentes con z y c (zapato, zorro, cereza, cielo). Léanlas, tápenlas, pidan que las escriba y luego comparen." },
+      "dictado-c-s-z": { "descripcion": "Tiene dificultad para escribir palabras u oraciones dictadas con c, s y z.", "sugerencia": "Dicten pocas palabras al día, de las que ya vio escritas. Después, que compare lo que escribió con el modelo y corrija con color." },
+      "no-reconoce-silaba": { "descripcion": "No encuentra en un texto las sílabas ce, ci, za, zo o zu.", "sugerencia": "Con un periódico o un libro, busquen juntos palabras con esas sílabas y rodéenlas con colores distintos: un color para z y otro para c." },
+      "orden-oracion": { "descripcion": "Le cuesta ordenar las palabras de una oración.", "sugerencia": "Escriban la oración en una tira de papel, córtenla por palabras y ármenla juntos: la mayúscula va al principio y el punto al final." },
+      "produce-oracion": { "descripcion": "Le cuesta escribir una oración completa con una palabra que lleve c, s o z.", "sugerencia": "Pidan que diga la oración en voz alta antes de escribirla; después revisen juntos la mayúscula, el punto y la letra de la palabra elegida." }
+    }
+  }
+}

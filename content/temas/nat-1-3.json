@@ -9,7 +9,7 @@
       "visual": { "tipo": "ilustracion", "id": "sistema-solar" }
     },
     {
-      "texto": "En el altiplano el sol quema más, aunque haga frío o esté nublado. Cuídate con **sombrero**, **lentes de sol** y **bloqueador**. ¡Nunca mires el sol directamente!",
+      "texto": "En el altiplano el sol es muy fuerte: quema la piel aunque haga frío o esté nublado. Cuídate con **sombrero**, **lentes de sol** y **bloqueador**. ¡Nunca mires el sol directamente!",
       "visual": { "tipo": "emojis", "items": ["👒", "🕶️", "🧴"], "etiquetas": ["sombrero", "lentes de sol", "bloqueador"] }
     },
     {
@@ -17,7 +17,7 @@
       "visual": { "tipo": "emojis", "items": ["💨", "🍃", "🎈"], "etiquetas": ["viento", "hojas que se mueven", "globo lleno de aire"] }
     },
     {
-      "texto": "El aire **limpio** nos ayuda a estar sanos. El humo de los autos, de las fábricas y de las quemas **contamina** el aire. Plantar árboles y no quemar basura ayuda a cuidarlo.",
+      "texto": "El aire **limpio** nos ayuda a estar sanos. El humo de los autos, de las fábricas y de las quemas **contamina** el aire. Plantar árboles y no quemar basura ayudan a cuidarlo.",
       "visual": { "tipo": "emojis", "items": ["🌳", "🚲", "🚗", "🏭"], "etiquetas": ["lo cuida", "lo cuida", "lo ensucia", "lo ensucia"] }
     }
   ],
@@ -26,7 +26,7 @@
     "pasos": [
       { "texto": "Mateo pega un papel seco en el fondo de un vaso.", "visual": { "tipo": "emojis", "items": ["📄"], "etiquetas": ["papel seco"] } },
       { "texto": "Mete el vaso boca abajo, bien derecho, en un balde con agua. Después lo saca sin inclinarlo.", "emoji": "💧" },
-      { "texto": "¡El papel sigue seco! El vaso no estaba vacío: estaba lleno de **aire**, y el aire no dejó entrar el agua.", "visual": { "tipo": "emojis", "items": ["📄", "💨"], "etiquetas": ["papel seco", "aire"] } },
+      { "texto": "¡El papel sigue seco! El vaso no estaba vacío: estaba lleno de **aire**, y el aire no dejó que el agua llegara hasta el papel.", "visual": { "tipo": "emojis", "items": ["📄", "💨"], "etiquetas": ["papel seco", "aire"] } },
       { "texto": "El aire no se ve, pero ocupa lugar. Cuando se mueve, lo sentimos en la cara: es el **viento**.", "visual": { "tipo": "emojis", "items": ["💨", "🍃"] } }
     ]
   },
@@ -86,7 +86,7 @@
       "opciones": [
         { "texto": "Una estrella.", "correcta": true },
         { "texto": "Un planeta.", "pista": "La Tierra es un planeta. El sol brilla con luz propia.", "error": "sol-estrella" },
-        { "texto": "Una bola de fuego.", "pista": "En el sol nada se quema como en una fogata. Es otra cosa.", "error": "sol-estrella" }
+        { "texto": "Una bola de fuego.", "pista": "El sol no arde como una fogata. Piensa en los puntitos que brillan en el cielo de noche.", "error": "sol-estrella" }
       ],
       "columnas": 1,
       "pista": "Es como los puntitos que brillan en el cielo de noche, pero mucho más cerca.",
@@ -118,10 +118,10 @@
     {
       "id": "p4", "tipo": "escribir", "nivel": 1,
       "enunciado": "Escucha la adivinanza y escribe la respuesta.",
-      "escuchar": "No tengo color. No me puedes ver, pero me sientes en la cara cuando sopla el viento. Todos los seres vivos me necesitan. ¿Qué soy?",
+      "escuchar": "No tengo color y no me puedes ver. Entro por tu nariz cada vez que respiras. Cuando me muevo, me llaman viento. ¿Qué soy?",
       "respuestas": ["aire", "el aire"],
-      "pista": "Lo respiras todo el tiempo por la nariz.",
-      "explicacion": "Es el aire. No lo vemos, pero lo necesitamos para respirar.",
+      "pista": "Con eso inflas un globo cuando soplas.",
+      "explicacion": "Es el aire. No lo vemos, pero lo respiramos todo el tiempo. Cuando el aire se mueve, es el viento.",
       "error": "aire-invisible"
     },
     {
@@ -131,11 +131,11 @@
         { "texto": "la vicuña", "correcta": true },
         { "texto": "el molle", "correcta": true },
         { "texto": "una roca", "pista": "La roca no está viva: no respira.", "error": "seres-vivos-aire" },
-        { "texto": "tu abuela", "correcta": true },
+        { "texto": "una niña", "correcta": true },
         { "texto": "una silla", "pista": "La silla no está viva: no respira.", "error": "seres-vivos-aire" }
       ],
-      "pista": "Todos los seres vivos necesitan aire: también las plantas. Hay tres.",
-      "explicacion": "La vicuña, el molle y tu abuela son seres vivos: necesitan aire. La roca y la silla no están vivas.",
+      "pista": "Las personas, los animales y también las plantas necesitan aire. Hay tres.",
+      "explicacion": "La vicuña, el molle y la niña son seres vivos: necesitan aire. La roca y la silla no están vivas.",
       "error": "seres-vivos-aire"
     },
     {
@@ -175,7 +175,7 @@
       "enunciado": "Completa lo que sabes del sol.",
       "texto": "El sol es una [estrella]. Nos da luz y [calor]. Las [plantas] usan su luz para fabricar su alimento.",
       "banco": ["planeta", "piedras"],
-      "pista": "El sol brilla con luz propia, nos calienta y ayuda a los seres vivos verdes.",
+      "pista": "El sol brilla con luz propia, nos calienta y ayuda a crecer a los seres vivos verdes.",
       "explicacion": "El sol es una estrella que nos da luz y calor. Las plantas usan su luz para fabricar su alimento.",
       "error": "sol-estrella"
     },
@@ -267,7 +267,7 @@
     },
     {
       "id": "p15", "tipo": "pasos", "nivel": 3,
-      "enunciado": "Luis siembra dos plantitas de haba iguales. Pone una junto a la ventana y la otra dentro de un armario oscuro.",
+      "enunciado": "Nayra tiene dos plantitas de haba iguales, en macetas. Pone una junto a la ventana y la otra dentro de un armario oscuro.",
       "visual": { "tipo": "emojis", "items": ["🌱", "🌱"], "etiquetas": ["junto a la ventana", "en el armario"] },
       "pasos": [
         {
@@ -316,16 +316,17 @@
   "comprobacion": [
     {
       "id": "c1", "tipo": "multiple", "nivel": 1,
-      "enunciado": "Elige lo que te protege del sol fuerte.",
+      "enunciado": "Hoy el sol está muy fuerte en Oruro. ¿Qué hace Kusi para cuidarse? Elige todo lo que lo cuida.",
       "opciones": [
-        { "texto": "una gorra o un sombrero", "correcta": true },
-        { "texto": "mirar el sol para ver si quema", "pista": "Mirar el sol daña los ojos.", "error": "proteccion-sol" },
-        { "texto": "lentes de sol", "correcta": true },
-        { "texto": "bloqueador", "correcta": true },
-        { "texto": "jugar al sol todo el mediodía", "pista": "Al mediodía es mejor buscar la sombra.", "error": "proteccion-sol" }
+        { "texto": "Juega a la sombra al mediodía.", "correcta": true },
+        { "texto": "Mira el sol fijamente para ver si quema.", "pista": "Mirar el sol lastima los ojos, aunque sea un ratito.", "error": "proteccion-sol" },
+        { "texto": "Se pone bloqueador antes de salir.", "correcta": true },
+        { "texto": "Se quita el sombrero porque hace frío.", "pista": "En el altiplano el sol quema aunque haga frío.", "error": "proteccion-sol" },
+        { "texto": "Usa lentes de sol.", "correcta": true }
       ],
-      "pista": "Hay tres cosas que cubren tu cabeza, tus ojos y tu piel.",
-      "explicacion": "Te protegen la gorra o el sombrero, los lentes de sol y el bloqueador.",
+      "columnas": 1,
+      "pista": "Hay tres. Busca lo que cuida su piel y sus ojos.",
+      "explicacion": "Kusi se cuida jugando a la sombra, con bloqueador y con lentes de sol. Nunca debe mirar el sol, y el sombrero lo protege aunque haga frío.",
       "error": "proteccion-sol"
     },
     {
@@ -344,11 +345,11 @@
     {
       "id": "c3", "tipo": "completar", "nivel": 2,
       "enunciado": "Completa sobre el aire.",
-      "texto": "El humo de la basura quemada [ensucia] el aire. Los [árboles] ayudan a cuidar el aire limpio.",
-      "banco": ["limpia", "autos"],
-      "pista": "¿El humo es bueno o malo para el aire? ¿Qué seres vivos verdes lo cuidan?",
-      "explicacion": "El humo ensucia el aire. Los árboles ayudan a mantenerlo limpio.",
-      "error": "aire-contaminado"
+      "texto": "Las personas, los animales y las plantas necesitan [aire] para vivir. El humo de las quemas lo [ensucia].",
+      "banco": ["limpia", "piedras"],
+      "pista": "¿Qué entra por tu nariz cuando respiras? ¿El humo es bueno o malo para el aire?",
+      "explicacion": "Las personas, los animales y las plantas necesitan aire para vivir. El humo de las quemas ensucia el aire; por eso no quemamos basura ni el monte.",
+      "error": "seres-vivos-aire"
     },
     {
       "id": "c4", "tipo": "relacionar", "nivel": 2,
@@ -366,7 +367,7 @@
     {
       "id": "c5", "tipo": "escribir", "nivel": 2,
       "enunciado": "Escucha la adivinanza y escribe la respuesta.",
-      "escuchar": "Soy una estrella. De día me ves en el cielo. Te doy luz y calor, y las plantas me necesitan. ¿Quién soy?",
+      "escuchar": "Soy una estrella. Cada mañana salgo y alumbro el día. Te doy luz y calor, y las plantas me necesitan. ¿Quién soy?",
       "respuestas": ["sol", "el sol"],
       "pista": "Es la estrella más cercana a la Tierra.",
       "explicacion": "Es el sol: una estrella que nos da luz y calor.",
@@ -437,7 +438,7 @@
       "proteccion-sol": { "descripcion": "No reconoce cómo protegerse del sol fuerte o cree que con frío o nubes no hace falta.", "sugerencia": "Conviertan en rutina ponerse gorra, lentes y bloqueador antes de salir, también en días fríos o nublados." },
       "aire-invisible": { "descripcion": "Cree que el aire no existe porque no se ve, o no lo relaciona con el viento.", "sugerencia": "Inflen un globo, abaniquen la cara con un cuaderno o miren cómo se mueve la ropa tendida: el aire no se ve, pero se siente y ocupa lugar." },
       "aire-contaminado": { "descripcion": "No distingue lo que ensucia el aire de lo que lo cuida.", "sugerencia": "En la calle, pregunten «¿de dónde sale humo aquí?» y piensen juntos cómo evitarlo: caminar, no quemar basura, cuidar los árboles." },
-      "seres-vivos-aire": { "descripcion": "No sabe que todos los seres vivos, también las plantas, necesitan aire.", "sugerencia": "Repasen juntos: personas, animales y plantas respiran; las cosas que no están vivas no respiran." },
+      "seres-vivos-aire": { "descripcion": "No sabe que las personas, los animales y también las plantas necesitan aire.", "sugerencia": "Repasen juntos: personas, animales y plantas respiran; las cosas que no están vivas no respiran." },
       "lee-pictograma": { "descripcion": "Le cuesta armar o leer un pictograma, o comparar sus datos.", "sugerencia": "Durante una semana, dibujen cada día un sol, una nube o una ráfaga de viento en una hoja y al final cuenten y comparen." },
       "vocabulario-tema": { "descripcion": "Le cuesta nombrar o escribir palabras del tema (sol, viento, sombrero, bloqueador...).", "sugerencia": "Escriban juntos una lista de las cosas que llevan para protegerse del sol, separando las sílabas con palmadas (blo-que-a-dor)." },
       "produce-oracion": { "descripcion": "Le cuesta escribir oraciones completas con mayúscula y punto.", "sugerencia": "Escriban juntos consejos cortos para cuidar el aire y revisen la mayúscula inicial y el punto final." }

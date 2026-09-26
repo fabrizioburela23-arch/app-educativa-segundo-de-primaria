@@ -5,8 +5,8 @@ import { crearBase, lectura, entero, unirY } from './comun.js';
 
 export function crear(cfg, opts) {
   const b = crearBase('repartir', opts);
-  const total = entero(cfg.total, 1, 30, 12);
   const G = entero(cfg.grupos, 2, 6, 3);
+  const total = Math.max(G, entero(cfg.total, 1, 30, 12)); // al menos uno por plato
   const emoji = cfg.emoji || '🍬';
   // Si el total no se reparte exacto (9 entre 2), lo correcto es dar lo mismo
   // a cada plato y dejar el resto en el montón.

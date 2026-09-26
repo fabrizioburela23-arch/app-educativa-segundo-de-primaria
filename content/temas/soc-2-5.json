@@ -13,7 +13,7 @@
       "visual": { "tipo": "tabla", "columnas": ["Con una persona", "Con muchas personas"], "filas": [["carta", "radio"], ["teléfono", "televisión"], ["", "periódico"]] }
     },
     {
-      "texto": "**Antes**, los chasquis corrían por los caminos para llevar mensajes, y una carta tardaba muchos días. La radio llegó a Bolivia hace unos 100 años y la televisión, en 1969. **Ahora**, con internet, un mensaje llega en segundos.",
+      "texto": "**Antes**, los chasquis corrían por los caminos para llevar mensajes, y una carta tardaba muchos días. La radio llegó a Bolivia hace casi 100 años y la televisión, en 1969. **Ahora**, con internet, un mensaje llega en segundos.",
       "visual": { "tipo": "emojis", "items": ["🏃", "✉️", "📻", "📺", "📱"], "etiquetas": ["chasqui", "carta", "radio", "televisión", "celular"] }
     },
     {
@@ -26,7 +26,7 @@
     "pasos": [
       { "texto": "Hace muchos años, la abuela Rosa vivía en una comunidad de Potosí. Escribía cartas a su hermano, que vivía en Santa Cruz. ¡Cada carta tardaba muchos días en llegar!", "visual": { "tipo": "emojis", "items": ["👵", "✉️", "⌛"], "etiquetas": ["abuela Rosa", "carta", "muchos días"] } },
       { "texto": "En su comunidad, la radio comunitaria avisaba de las reuniones en quechua. Así, todas las familias se enteraban.", "visual": { "tipo": "emojis", "items": ["📻", "🏘️"], "etiquetas": ["radio comunitaria", "comunidad"] } },
-      { "texto": "Hoy, Nayra, la nieta de Rosa, manda un mensaje de voz por celular a su tío de Santa Cruz. ¡Llega en segundos!", "visual": { "tipo": "emojis", "items": ["👧", "📱", "💬"], "etiquetas": ["Nayra", "celular", "mensaje"] } },
+      { "texto": "Hoy, Nayra, la nieta de Rosa, manda un mensaje de voz por celular a su tío abuelo, que vive en Santa Cruz. ¡Llega en segundos!", "visual": { "tipo": "emojis", "items": ["👧", "📱", "💬"], "etiquetas": ["Nayra", "celular", "mensaje"] } },
       { "texto": "Nayra usa el celular con permiso de su mamá y nunca da sus datos a personas que no conoce.", "visual": { "tipo": "emojis", "items": ["👩", "👧", "🔒"], "etiquetas": ["mamá", "Nayra", "datos cuidados"] } }
     ]
   },
@@ -40,11 +40,11 @@
         "pares": [
           [ { "texto": "carta", "emoji": "✉️" }, "Se escribe en papel y se envía en un sobre." ],
           [ { "texto": "teléfono", "emoji": "☎️" }, "Sirve para conversar con alguien que está lejos." ],
-          [ { "texto": "radio", "emoji": "📻" }, "Se escucha, pero no tiene imágenes." ],
+          [ { "texto": "radio", "emoji": "📻" }, "Da noticias y música que se escuchan, sin imágenes." ],
           [ { "texto": "televisión", "emoji": "📺" }, "Muestra imágenes con sonido." ]
         ],
         "pista": "Empieza por el que tiene imágenes. Después, el que solo se escucha.",
-        "explicacion": "La carta se escribe y se envía en un sobre. El teléfono sirve para conversar. La radio solo se escucha. La televisión muestra imágenes con sonido.",
+        "explicacion": "La carta se escribe y se envía en un sobre. El teléfono sirve para conversar. La radio da noticias y música que solo se escuchan. La televisión muestra imágenes con sonido.",
         "error": "uso-medios"
       },
       {
@@ -78,7 +78,7 @@
           { "texto": "internet", "emoji": "💻" }
         ],
         "pista": "¿Qué llegó primero a Bolivia: la radio o la televisión?",
-        "explicacion": "Primero, la carta. Después, la radio (hace unos 100 años) y la televisión (1969). Al final, internet.",
+        "explicacion": "Primero, la carta. Después, la radio (hace casi 100 años) y la televisión (1969). Al final, internet.",
         "error": "linea-tiempo"
       }
     ]
@@ -205,7 +205,7 @@
     },
     {
       "id": "p11", "tipo": "pasos", "nivel": 3,
-      "enunciado": "Juegas en la tablet de tu casa y alguien que no conoces te escribe: «¿Dónde vives? ¿En qué escuela estudias?».",
+      "enunciado": "Juegas en la tableta de tu casa y alguien que no conoces te escribe: «¿Dónde vives? ¿En qué escuela estudias?».",
       "visual": { "tipo": "emojis", "items": ["💬", "❓"] },
       "pasos": [
         {
@@ -334,15 +334,15 @@
         { "id": "mira", "texto": "Se mira y se escucha", "emoji": "👀" }
       ],
       "elementos": [
-        { "texto": "carta", "emoji": "✉️", "categoria": "lee" },
-        { "texto": "periódico", "emoji": "📰", "categoria": "lee" },
-        { "texto": "radio", "emoji": "📻", "categoria": "escucha" },
-        { "texto": "llamada por teléfono", "emoji": "☎️", "categoria": "escucha" },
-        { "texto": "televisión", "emoji": "📺", "categoria": "mira" },
-        { "texto": "videollamada", "emoji": "📱", "categoria": "mira" }
+        { "texto": "una carta de tu prima", "emoji": "✉️", "categoria": "lee" },
+        { "texto": "un mensaje escrito en el celular", "emoji": "💬", "categoria": "lee" },
+        { "texto": "un aviso de la radio comunitaria", "emoji": "📻", "categoria": "escucha" },
+        { "texto": "una llamada por teléfono", "emoji": "☎️", "categoria": "escucha" },
+        { "texto": "el noticiero de la televisión", "emoji": "📺", "categoria": "mira" },
+        { "texto": "una videollamada con tu abuela", "emoji": "📱", "categoria": "mira" }
       ],
-      "pista": "Piensa: ¿usas solo los ojos para leer, solo los oídos, o los ojos y los oídos?",
-      "explicacion": "La carta y el periódico se leen. La radio y la llamada por teléfono se escuchan. La televisión y la videollamada se miran y se escuchan.",
+      "pista": "Piensa: ¿usas solo los ojos, solo los oídos, o los ojos y los oídos a la vez?",
+      "explicacion": "La carta y el mensaje escrito se leen. El aviso de la radio y la llamada por teléfono se escuchan. El noticiero y la videollamada se miran y se escuchan.",
       "error": "uso-medios"
     },
     {

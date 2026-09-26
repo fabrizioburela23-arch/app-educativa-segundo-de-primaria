@@ -463,7 +463,8 @@ textarea.campo-texto { min-height: 140px; font-weight: 400; line-height: 1.5; re
 .pestanas { display: flex; gap: 6px; overflow-x: auto; padding-bottom: 4px; margin: 8px 0 14px; scrollbar-width: none; }
 .pestanas button { flex: 0 0 auto; border: 0; border-radius: 999px; padding: 10px 16px; background: var(--superficie); box-shadow: var(--sombra); font-weight: 700; min-height: 44px; }
 .pestanas button[aria-selected='true'] { background: #3C4A6B; color: #fff; }
-.adulto .tarjeta { padding: 16px; }
+.adulto .tarjeta { padding: 16px; overflow-wrap: anywhere; }
+.adulto select { max-width: 100%; }
 .adulto h2 { font-size: 1.2rem; }
 .adulto .nota { font-size: .92rem; color: var(--tinta-suave); }
 .fila-tema { display: flex; gap: 10px; align-items: center; padding: 10px 0; border-top: 1px solid var(--borde); }
@@ -475,10 +476,13 @@ textarea.campo-texto { min-height: 140px; font-weight: 400; line-height: 1.5; re
 .detalle-tema { background: var(--fondo); border-radius: 12px; padding: 10px 12px; margin: 4px 0 10px; font-size: .95rem; }
 .formulario { display: grid; gap: 12px; }
 .formulario label { display: grid; gap: 4px; font-weight: 700; font-size: .95rem; }
+.formulario > *, .formulario label { min-width: 0; }
 .formulario input, .formulario select, .formulario textarea {
+  width: 100%; max-width: 100%; min-width: 0;
   min-height: 48px; padding: 8px 12px; border: 2px solid var(--borde); border-radius: 12px; background: #fff; font-weight: 400;
 }
 .formulario textarea { min-height: 90px; }
+.formulario input[type='checkbox'] { width: 28px; height: 28px; min-height: 0; flex: 0 0 28px; }
 .fila-botones { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; }
 .editor-json { width: 100%; min-height: 320px; font-family: ui-monospace, 'Roboto Mono', monospace; font-size: 13px; line-height: 1.4; border: 2px solid var(--borde); border-radius: 12px; padding: 10px; background: #fff; }
 .lista-errores { color: #8A2F20; font-size: .9rem; padding-left: 18px; }

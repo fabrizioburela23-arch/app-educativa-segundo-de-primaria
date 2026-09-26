@@ -9,15 +9,15 @@
       "visual": { "tipo": "emojis", "items": ["👩‍⚕️", "👨‍🌾", "👩‍🏫", "👨‍🚒"], "etiquetas": ["médica", "agricultor", "maestra", "bombero"] }
     },
     {
-      "texto": "La agricultora cultiva papa y quinua. El chofer nos lleva en minibús. La enfermera nos pone vacunas. El barrendero limpia las calles. La dirigente vecinal organiza reuniones para mejorar el barrio.",
-      "visual": { "tipo": "emojis", "items": ["👩‍🌾", "🚐", "💉", "🧹", "🏘️"], "etiquetas": ["agricultora", "chofer", "enfermera", "barrendero", "dirigente vecinal"] }
+      "texto": "La agricultora cultiva papa y quinua. El chofer nos lleva en minibús. El enfermero nos pone vacunas. La barrendera limpia las calles. La dirigente vecinal, elegida por los vecinos, organiza reuniones para mejorar el barrio.",
+      "visual": { "tipo": "emojis", "items": ["👩‍🌾", "🚐", "💉", "🧹", "🏘️"], "etiquetas": ["agricultora", "chofer", "enfermero", "barrendera", "dirigente vecinal"] }
     },
     {
       "texto": "Todos los trabajos son importantes. Mujeres y varones pueden hacer cualquier trabajo: hay médicas y médicos, bomberas y bomberos. A todas las personas las tratamos con respeto.",
       "emoji": "🤝"
     },
     {
-      "texto": "Algunas personas son **destacadas**: la comunidad las recuerda por algo bueno que hicieron, como ayudar a construir la escuela o crear canciones. Tu familia puede contarte sus historias.",
+      "texto": "Algunas personas son **destacadas**: la comunidad las recuerda por algo bueno que hicieron, como ayudar a construir la escuela o crear canciones. Son personajes de tu comunidad. Tu familia puede contarte sus historias.",
       "emoji": "🌟",
       "visual": { "tipo": "emojis", "items": ["👵", "💬", "👧"], "etiquetas": ["abuela", "cuenta", "nieta"] }
     }
@@ -26,9 +26,9 @@
     "instruccion": "Mira cuántas personas trabajan para que tengas pan en el desayuno.",
     "pasos": [
       { "texto": "En el campo, una agricultora siembra y cosecha el trigo.", "visual": { "tipo": "emojis", "items": ["👩‍🌾", "🌾"], "etiquetas": ["agricultora", "trigo"] } },
-      { "texto": "En el molino, el trigo se convierte en harina. Un chofer lleva la harina en su camión a la ciudad.", "visual": { "tipo": "emojis", "items": ["🏭", "🚚"], "etiquetas": ["molino", "camión"] } },
+      { "texto": "En el molino, el trigo se convierte en harina. Una chofer lleva la harina en su camión a la ciudad.", "visual": { "tipo": "emojis", "items": ["🏭", "🚚"], "etiquetas": ["molino", "camión"] } },
       { "texto": "Muy temprano, el panadero mezcla la harina con agua y hornea el pan.", "visual": { "tipo": "emojis", "items": ["👨‍🍳", "🍞"], "etiquetas": ["panadero", "pan"] } },
-      { "texto": "La vendedora vende el pan en su tienda. ¡Muchas personas trabajaron para tu desayuno!", "visual": { "tipo": "emojis", "items": ["🏪", "🍞", "😋"], "etiquetas": ["tienda", "pan", "desayuno"] } }
+      { "texto": "Un vendedor ofrece el pan en su tienda. ¡Muchas personas trabajaron para tu desayuno!", "visual": { "tipo": "emojis", "items": ["🏪", "🍞", "😋"], "etiquetas": ["tienda", "pan", "desayuno"] } }
     ]
   },
   "guiada": {
@@ -36,7 +36,7 @@
     "pasos": [
       {
         "id": "g1", "tipo": "relacionar",
-        "enunciado": "Une cada persona con lo que hace.",
+        "enunciado": "Une a cada persona con lo que hace.",
         "apoyo": "Mira el dibujo de cada persona. Piensa: ¿dónde la has visto trabajar?",
         "pares": [
           [ { "texto": "médica", "emoji": "👩‍⚕️" }, "cura a las personas enfermas" ],
@@ -72,14 +72,14 @@
         "enunciado": "Kusi quiere conocer la historia de una persona destacada de su barrio. Ordena lo que hace.",
         "apoyo": "Antes de preguntar, Kusi necesita saber a quién va a preguntar y qué le va a preguntar.",
         "elementos": [
-          "Elige a la persona que quiere conocer.",
-          "Prepara sus preguntas.",
-          "Pregunta y escucha con atención.",
+          "Elige a una persona mayor que conoce esa historia.",
+          "Prepara preguntas para esa persona.",
+          "Le hace las preguntas y escucha con atención.",
           "Cuenta a su familia lo que aprendió."
         ],
         "vertical": true,
-        "pista": "¿Qué va primero: hacer las preguntas o pensar qué preguntar?",
-        "explicacion": "Primero elige a la persona, después prepara sus preguntas, luego pregunta y escucha, y al final cuenta lo que aprendió.",
+        "pista": "¿Qué va primero: hacer las preguntas o pensar qué preguntar? ¿Y a quién le va a preguntar?",
+        "explicacion": "Primero elige a quién preguntar, después prepara sus preguntas, luego pregunta y escucha, y al final cuenta lo que aprendió.",
         "error": "entrevista"
       }
     ]
@@ -116,7 +116,7 @@
         { "texto": "Solo las mujeres", "pista": "¿Recuerdas? También hay bomberos.", "error": "estereotipo-trabajo" }
       ],
       "pista": "Recuerda lo que aprendiste: ¿los trabajos son solo para mujeres o solo para varones?",
-      "explicacion": "Mujeres y varones pueden ser bomberos. Cualquier persona puede aprender el trabajo que le guste.",
+      "explicacion": "Mujeres y varones pueden ser bomberas y bomberos. Cualquier persona puede aprender el trabajo que le guste.",
       "error": "estereotipo-trabajo"
     },
     {
@@ -130,7 +130,7 @@
     },
     {
       "id": "p5", "tipo": "relacionar", "nivel": 2,
-      "enunciado": "Une cada persona con lo que usa en su trabajo.",
+      "enunciado": "Une a cada persona con lo que usa en su trabajo.",
       "pares": [
         [ "carpintera", { "texto": "martillo", "emoji": "🔨" } ],
         [ "barrendero", { "texto": "escoba", "emoji": "🧹" } ],
@@ -174,10 +174,10 @@
     {
       "id": "p8", "tipo": "completar", "nivel": 2,
       "enunciado": "Completa las oraciones con el trabajo correcto.",
-      "texto": "El [bombero] apaga el incendio. La [dirigente] vecinal organiza las reuniones de la junta de vecinos. La [agricultora] siembra papa en su chacra.",
+      "texto": "El [bombero] apaga el incendio. La [dirigente] vecinal reúne a los vecinos para mejorar el barrio. La [agricultora] siembra papa en su chacra.",
       "banco": ["bebé", "turista"],
       "pista": "Lee cada oración y piensa: ¿qué trabajo es ese?",
-      "explicacion": "El bombero apaga incendios. La dirigente vecinal organiza las reuniones del barrio. La agricultora siembra en su chacra.",
+      "explicacion": "El bombero apaga incendios. La dirigente vecinal reúne a los vecinos para mejorar el barrio. La agricultora siembra en su chacra.",
       "error": "funcion-oficio"
     },
     {
@@ -202,7 +202,7 @@
           "tipo": "opcion",
           "enunciado": "¿Qué haces primero?",
           "opciones": [
-            { "texto": "Me quedo en un lugar seguro, cerca de donde lo vi.", "correcta": true },
+            { "texto": "Me quedo en un lugar seguro, cerca de donde lo vi por última vez.", "correcta": true },
             { "texto": "Corro por toda la feria para buscarlo.", "pista": "Si corres de un lado a otro, es más difícil que te encuentren.", "error": "pedir-ayuda" },
             { "texto": "Me voy a casa sin avisar.", "pista": "Tu tío te buscará y se preocupará. Es mejor quedarte cerca.", "error": "pedir-ayuda" }
           ],
@@ -314,6 +314,20 @@
       "pista": "Lee cada problema y piensa quién sabe resolverlo.",
       "explicacion": "La muela: dentista. La mesa: carpintero. El incendio: bombera. Aprender a leer: maestra. La música para la fiesta: músico.",
       "error": "funcion-oficio"
+    },
+    {
+      "id": "p16", "tipo": "escribir-libre", "nivel": 3,
+      "enunciado": "Escribe una oración sobre una persona destacada de tu comunidad. Si no conoces a ninguna, pregunta a tu familia.",
+      "guia": ["Mi familia me contó que...", "En mi barrio recuerdan a... porque...", "... ayudó a..."],
+      "requisitos": [
+        { "tipo": "mayuscula-inicial" },
+        { "tipo": "punto-final" },
+        { "tipo": "min-palabras", "valor": 6 }
+      ],
+      "modelo": "Mi abuelo me contó que una vecina plantó los árboles de la plaza.",
+      "pista": "Cuenta quién es esa persona y qué hizo de bueno por la comunidad. Empieza con mayúscula y termina con punto.",
+      "explicacion": "Por ejemplo: «Mi abuelo me contó que una vecina plantó los árboles de la plaza.» Tu oración dice qué hizo de bueno esa persona.",
+      "error": "produce-oracion"
     }
   ],
   "comprobacion": [
@@ -349,11 +363,11 @@
         { "texto": "cocinero", "emoji": "👨‍🍳", "categoria": "alimentos" },
         { "texto": "heladero", "emoji": "🍦", "categoria": "alimentos" },
         { "texto": "zapatera", "emoji": "👞", "categoria": "objetos" },
-        { "texto": "costurero", "emoji": "🧵", "categoria": "objetos" },
+        { "texto": "sastre", "emoji": "🧵", "categoria": "objetos" },
         { "texto": "artesana", "emoji": "🏺", "categoria": "objetos" }
       ],
       "pista": "Pregúntate: lo que hace esta persona, ¿se come o se usa?",
-      "explicacion": "La panadera, el cocinero y el heladero nos dan alimentos. La zapatera, el costurero y la artesana hacen objetos, como zapatos, ropa y vasijas.",
+      "explicacion": "La panadera, el cocinero y el heladero nos dan alimentos. La zapatera, el sastre y la artesana hacen objetos, como zapatos, ropa y vasijas.",
       "error": "clasifica-oficios"
     },
     {
@@ -383,7 +397,7 @@
         { "texto": "Porque tiene mucho dinero.", "pista": "Tener dinero no es lo mismo que ayudar a los demás. Piensa en lo que hizo.", "error": "personaje-local" },
         { "texto": "Porque tiene la casa más grande.", "pista": "El tamaño de una casa no ayuda a la comunidad. Piensa en lo que hizo.", "error": "personaje-local" }
       ],
-      "pista": "Piensa en la vecina que ayudó a construir la escuela.",
+      "pista": "Piensa: ¿qué hizo esa persona por los demás?",
       "explicacion": "Recordamos a las personas destacadas porque hicieron algo bueno por todos, como construir una escuela o crear canciones.",
       "error": "personaje-local"
     },
@@ -435,13 +449,13 @@
       "enunciado": "¿Cómo llega un api calientito a tu mesa? Ordena el trabajo de cada persona.",
       "elementos": [
         "Una agricultora cosecha el maíz morado.",
-        "Un chofer lleva el maíz en su camión al mercado.",
+        "Una chofer lleva el maíz en su camión al mercado.",
         "Un cocinero prepara el api con ese maíz.",
         "Nayra toma un api calientito con su familia."
       ],
       "vertical": true,
       "pista": "Piensa: ¿qué se necesita antes de preparar el api?",
-      "explicacion": "Primero la agricultora cosecha el maíz, el chofer lo lleva al mercado, el cocinero prepara el api y al final Nayra lo toma.",
+      "explicacion": "Primero la agricultora cosecha el maíz, la chofer lo lleva al mercado, el cocinero prepara el api y al final Nayra lo toma.",
       "error": "cadena-trabajo"
     }
   ],

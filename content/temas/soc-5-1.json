@@ -243,12 +243,12 @@
           "tipo": "opcion",
           "enunciado": "¿Qué puedes hacer?",
           "opciones": [
-            { "texto": "Pedirle en voz baja que espere a que termine el himno", "correcta": true },
-            { "texto": "Gritarle fuerte que se quede quieto", "pista": "Si gritas, también interrumpes el himno. ¿Cómo puedes avisarle sin hacer ruido?", "error": "respeto-simbolos" },
+            { "texto": "Seguir cantando y, al terminar el himno, decirle con amabilidad que guarde la pelota", "correcta": true },
+            { "texto": "Gritarle fuerte que se quede quieto", "pista": "Si gritas, también interrumpes el himno. ¿Cuándo puedes hablar con Luis?", "error": "respeto-simbolos" },
             { "texto": "Ponerme a jugar con él", "pista": "Durante el himno estamos quietos y atentos.", "error": "respeto-simbolos" }
           ],
           "pista": "Busca la forma de ayudar a Luis sin interrumpir el himno.",
-          "explicacion": "Lo mejor es pedirle en voz baja que espere. Así los dos respetan el himno.",
+          "explicacion": "Lo mejor es seguir cantando y, cuando termine el himno, hablar con Luis con amabilidad. Así respetas el himno y ayudas a tu amigo.",
           "error": "respeto-simbolos"
         },
         {
@@ -298,7 +298,7 @@
         { "texto": "El himno se canta sentado y conversando.", "categoria": "f" }
       ],
       "pista": "Recuerda el orden de las franjas y cuántos símbolos nombra la Constitución.",
-      "explicacion": "Las tres primeras son verdaderas. La franja verde va abajo, Bolivia tiene siete símbolos del Estado y el himno se canta de pie y con atención.",
+      "explicacion": "Son verdaderas: las tres franjas son iguales, la wiphala es un símbolo del Estado y las dos flores tienen los colores de la bandera. Las otras son falsas, porque la franja verde va abajo, Bolivia tiene siete símbolos del Estado y el himno se canta de pie y con atención.",
       "error": "datos-simbolos"
     },
     {
@@ -328,16 +328,16 @@
     },
     {
       "id": "c2", "tipo": "opcion", "nivel": 1,
-      "enunciado": "Mira la flor. ¿Cuál es su nombre?",
-      "visual": { "tipo": "ilustracion", "id": "patuju" },
+      "enunciado": "Mira el dibujo. ¿Qué símbolo es?",
+      "visual": { "tipo": "ilustracion", "id": "escarapela" },
       "opciones": [
-        { "texto": "patujú", "correcta": true },
-        { "texto": "kantuta", "pista": "La kantuta cuelga como una campanita. Esta flor crece en zigzag.", "error": "flores-simbolos" },
-        { "texto": "clavel", "pista": "El clavel no es un símbolo del Estado. Esta flor es del oriente.", "error": "flores-simbolos" }
+        { "texto": "escarapela", "correcta": true },
+        { "texto": "kantuta", "pista": "La kantuta es una flor que cuelga como una campanita. Esto es una cinta redonda.", "error": "describe-simbolos" },
+        { "texto": "wiphala", "pista": "La wiphala es una bandera de cuadraditos de siete colores. Aquí hay solo tres colores.", "error": "describe-simbolos" }
       ],
-      "pista": "Es la flor del oriente que crece en zigzag.",
-      "explicacion": "Es el **patujú**, la flor del oriente con los colores de la bandera.",
-      "error": "flores-simbolos"
+      "pista": "Es una cinta redonda de tres colores. En los actos cívicos la llevamos en el pecho.",
+      "explicacion": "Es la **escarapela**: una cinta roja, amarilla y verde que llevamos en el pecho en los actos cívicos.",
+      "error": "describe-simbolos"
     },
     {
       "id": "c3", "tipo": "clasificar", "nivel": 2,
@@ -371,12 +371,12 @@
     },
     {
       "id": "c5", "tipo": "escribir", "nivel": 2,
-      "enunciado": "Escucha la adivinanza y escribe el nombre de la flor.",
-      "escuchar": "Soy una flor de los Andes. Cuelgo como una campanita y tengo los colores de la bandera: rojo, amarillo y verde.",
-      "respuestas": ["kantuta", "la kantuta", "cantuta", "la cantuta", "flor de la kantuta", "la flor de la kantuta"],
-      "pista": "No es el patujú, que crece en el oriente. Empieza con el sonido «kan».",
-      "explicacion": "Es la **kantuta**. También se puede escribir «cantuta».",
-      "error": "flores-simbolos"
+      "enunciado": "Escucha la adivinanza y escribe el nombre del símbolo.",
+      "escuchar": "Soy un símbolo de Bolivia. No soy bandera ni flor. Arriba tengo un cóndor con las alas abiertas y en el centro, un cerro y un sol. ¿Quién soy?",
+      "respuestas": ["escudo", "el escudo", "escudo de armas", "el escudo de armas", "escudo de Bolivia", "el escudo de Bolivia", "escudo boliviano", "el escudo boliviano", "escudo nacional", "el escudo nacional"],
+      "pista": "Tiene dibujos adentro. Su nombre empieza con «es», pero no es la escarapela.",
+      "explicacion": "Es el **escudo** de Bolivia. Arriba tiene un cóndor y en el centro, el Cerro Rico de Potosí y el sol.",
+      "error": "describe-simbolos"
     },
     {
       "id": "c6", "tipo": "numero", "nivel": 2,
@@ -429,13 +429,13 @@
       "elementos": [
         { "texto": "El amarillo de la bandera recuerda nuestras riquezas.", "categoria": "v" },
         { "texto": "El verde recuerda la naturaleza y la esperanza.", "categoria": "v" },
-        { "texto": "La escarapela se lleva en el pecho.", "categoria": "v" },
+        { "texto": "La franja amarilla va en el centro de la bandera.", "categoria": "v" },
         { "texto": "La kantuta es un animal de los Andes.", "categoria": "f" },
         { "texto": "Durante el himno podemos jugar si cantamos bajito.", "categoria": "f" },
         { "texto": "La wiphala tiene tres franjas.", "categoria": "f" }
       ],
-      "pista": "Recuerda qué es la kantuta, cómo es la wiphala y cómo estamos durante el himno.",
-      "explicacion": "Las tres primeras son verdaderas. La kantuta es una flor, durante el himno no jugamos y la wiphala tiene 49 cuadraditos, no franjas.",
+      "pista": "Piensa en los colores de la bandera, en qué es la kantuta, en cómo es la wiphala y en cómo estamos durante el himno.",
+      "explicacion": "Son verdaderas: el amarillo recuerda nuestras riquezas, el verde recuerda la naturaleza y la esperanza, y la franja amarilla va en el centro. Las otras son falsas, porque la kantuta es una flor, durante el himno no jugamos y la wiphala tiene 49 cuadraditos, no franjas.",
       "error": "datos-simbolos"
     }
   ],

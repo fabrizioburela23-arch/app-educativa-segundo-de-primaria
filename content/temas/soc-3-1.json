@@ -13,6 +13,7 @@
           ["hace más de 3000 años", "aldeas de Chiripa y Wankarani"],
           ["hace más de 1000 años", "la gran ciudad de Tiwanaku"],
           ["hace más de 500 años", "llegan los incas"],
+          ["poco después", "llegan los españoles"],
           ["en 1825", "nace Bolivia"]
         ]
       }
@@ -46,7 +47,7 @@
         "visual": { "tipo": "emojis", "items": ["🏔️", "🌱", "💧"], "etiquetas": ["cerros", "terrazas", "canales"] }
       },
       {
-        "texto": "Mucho después llegaron los **incas**. Llamaban **Qullasuyu** (o Collasuyu) a la región del lago Titicaca, el altiplano y los valles. Hicieron caminos, construyeron Incallajta (Cochabamba) y también edificios en Samaipata.",
+        "texto": "Mucho después de Tiwanaku llegaron los **incas**. Llamaban **Qullasuyu** (o Collasuyu) a la región del lago Titicaca, el altiplano y los valles. Hicieron caminos, construyeron Incallajta (Cochabamba) y también edificios en Samaipata.",
         "visual": { "tipo": "emojis", "items": ["🛣️", "🏛️", "⛰️"], "etiquetas": ["caminos", "Incallajta", "Samaipata"] }
       }
     ]
@@ -60,7 +61,7 @@
         "apoyo": "Hay una puerta, una pirámide y un templo. Lee con calma cada oración.",
         "texto": "La [Puerta del Sol] está tallada en un solo bloque de piedra. La [Akapana] es una pirámide con escalones. El [Kalasasaya] es un templo con muros de piedras paradas.",
         "banco": ["Iskanwaya"],
-        "pista": "«Kalasasaya» quiere decir «piedras paradas» en aimara. Iskanwaya no está en Tiwanaku.",
+        "pista": "Fíjate en las palabras «la» y «el» antes de cada espacio. Iskanwaya es de otra cultura.",
         "explicacion": "La Puerta del Sol es de un solo bloque de piedra, la Akapana es la pirámide y el Kalasasaya es el templo de piedras paradas. Iskanwaya es una ciudad de la cultura Mollo.",
         "error": "tiwanaku-obras"
       },
@@ -157,7 +158,7 @@
     {
       "id": "p6", "tipo": "tocar", "nivel": 2,
       "enunciado": "Toca los nombres de las tres construcciones antiguas de Tiwanaku.",
-      "texto": "En su paseo por Tiwanaku, Luis vio la *Puerta del Sol*, la *Akapana* y el *Kalasasaya*. Después almorzó en la plaza del pueblo.",
+      "texto": "En su paseo, Luis vio la *Puerta del Sol*, la *Akapana* y el *Kalasasaya*. Después almorzó en la plaza del pueblo.",
       "pista": "Busca los nombres de una puerta, una pirámide y un templo. La plaza del pueblo es de hoy.",
       "explicacion": "Las construcciones antiguas son la Puerta del Sol, la Akapana y el Kalasasaya. La plaza donde almorzó Luis es del pueblo de hoy.",
       "error": "tiwanaku-obras"
@@ -179,7 +180,7 @@
       "id": "p8", "tipo": "escribir", "nivel": 2,
       "enunciado": "Escucha la adivinanza y escribe la respuesta.",
       "escuchar": "Soy una puerta muy antigua. Me tallaron en un solo bloque de piedra y estoy en Tiwanaku. ¿Quién soy?",
-      "respuestas": ["Puerta del Sol", "la Puerta del Sol"],
+      "respuestas": ["Puerta del Sol", "la Puerta del Sol", "Puerta del Sol de Tiwanaku", "la Puerta del Sol de Tiwanaku"],
       "pista": "Su nombre tiene algo que brilla en el cielo durante el día.",
       "explicacion": "Es la Puerta del Sol, tallada en un solo bloque de piedra en Tiwanaku.",
       "error": "tiwanaku-obras"
@@ -270,7 +271,7 @@
     {
       "id": "p14", "tipo": "escribir", "nivel": 3,
       "enunciado": "¿Cómo llamaban los incas a la región del lago Titicaca y el altiplano? Escribe el nombre.",
-      "respuestas": ["Qullasuyu", "Collasuyu", "Collasuyo", "Qollasuyu", "Kollasuyu", "Kollasuyo", "Qullasuyo", "el Qullasuyu", "el Collasuyu"],
+      "respuestas": ["Qullasuyu", "Collasuyu", "Collasuyo", "Qollasuyu", "Kollasuyu", "Kollasuyo", "Qullasuyo", "Kullasuyu", "el Qullasuyu", "el Collasuyu", "el Collasuyo"],
       "pista": "Termina en «suyu», que quiere decir «región» o «parte».",
       "explicacion": "Los incas la llamaban Qullasuyu (o Collasuyu). Era una de las cuatro partes de su gran territorio, y una parte de él está hoy en Bolivia.",
       "error": "incas"
@@ -355,8 +356,8 @@
     {
       "id": "c6", "tipo": "escribir", "nivel": 2,
       "enunciado": "Escucha la adivinanza y escribe el nombre de la cultura.",
-      "escuchar": "Soy una cultura muy antigua del altiplano. Vivíamos en casas redondas de adobe y tallábamos cabezas de llama en piedra. ¿Quién soy?",
-      "respuestas": ["Wankarani", "Wancarani", "Huancarani", "cultura Wankarani", "la cultura Wankarani"],
+      "escuchar": "Fuimos un pueblo muy antiguo del altiplano. Vivíamos en casas redondas de adobe, criábamos llamas y tallábamos cabezas de llama en piedra. ¿Cómo se llama nuestra cultura?",
+      "respuestas": ["Wankarani", "Wancarani", "Huancarani", "Huankarani", "cultura Wankarani", "la cultura Wankarani"],
       "pista": "Es una de las primeras aldeas del altiplano, junto con Chiripa.",
       "explicacion": "Es la cultura Wankarani: casas redondas de adobe, llamas y cabezas de llama talladas en piedra.",
       "error": "escritura-nombres"
@@ -399,10 +400,10 @@
         {
           "tipo": "completar",
           "enunciado": "Completa por qué funciona.",
-          "texto": "El agua de los canales guarda el [calor] del sol y protege las plantas del [frío] de la noche.",
-          "banco": ["humo", "ruido"],
-          "pista": "De día el sol calienta el agua. De noche hace mucho frío en el altiplano.",
-          "explicacion": "El agua guarda el calor del sol y protege las plantas del frío de la noche.",
+          "texto": "De día, el [sol] calienta el agua de los canales. De noche, el agua suelta ese calor y [abriga] a las plantas.",
+          "banco": ["luna", "congela"],
+          "pista": "¿Qué calienta el agua durante el día? Si el agua suelta calor, ¿las plantas sienten más frío o menos frío?",
+          "explicacion": "De día, el sol calienta el agua. De noche, el agua suelta ese calor y abriga a las plantas, como una manta.",
           "error": "tecnicas-antiguas"
         }
       ],

@@ -9,7 +9,7 @@
       "visual": { "tipo": "bloques", "centenas": 2, "decenas": 4, "unidades": 3 }
     },
     {
-      "texto": "Del 11 al 15 hay nombres especiales: once, doce, trece, catorce y quince. Del 16 al 29 se escribe en **una sola palabra**: dieciséis, veintidós, veintiocho.",
+      "texto": "Del 11 al 15 hay nombres especiales: once, doce, trece, catorce y quince. Del 16 al 29, cada número se escribe en **una sola palabra**: dieciséis, veintidós, veintiocho.",
       "visual": { "tipo": "tabla", "columnas": ["Con cifras", "Con palabras"], "filas": [["15", "quince"], ["16", "dieciséis"], ["22", "veintidós"], ["28", "veintiocho"]] }
     },
     {
@@ -17,7 +17,7 @@
       "visual": { "tipo": "tabla", "columnas": ["Con cifras", "Con palabras"], "filas": [["45", "cuarenta y cinco"], ["87", "ochenta y siete"], ["305", "trescientos cinco"]] }
     },
     {
-      "texto": "Las centenas son: cien, doscientos, trescientos, cuatrocientos, **quinientos**, seiscientos, **setecientos**, ochocientos y **novecientos**. El 100 solo es «cien», pero 135 es «ciento treinta y cinco».",
+      "texto": "Las centenas son: cien, doscientos, trescientos, cuatrocientos, **quinientos**, seiscientos, **setecientos**, ochocientos y **novecientos**. El 100 se dice «cien», pero 135 se dice «ciento treinta y cinco».",
       "visual": { "tipo": "tabla", "columnas": ["Con cifras", "Con palabras"], "filas": [["100", "cien"], ["135", "ciento treinta y cinco"], ["500", "quinientos"], ["700", "setecientos"], ["900", "novecientos"]] }
     }
   ],
@@ -60,7 +60,7 @@
       {
         "id": "g3", "tipo": "escribir",
         "enunciado": "Escribe con palabras el número 16.",
-        "apoyo": "Del 16 al 19 se escribe en una sola palabra, como diecisiete o dieciocho.",
+        "apoyo": "Del 16 al 19, cada número se escribe en una sola palabra, como diecisiete o dieciocho.",
         "respuestas": ["dieciséis"],
         "pista": "Se forma con «diez» y «seis», juntos en una sola palabra.",
         "explicacion": "16 se escribe «dieciséis»: una sola palabra, con tilde en la é.",
@@ -120,17 +120,17 @@
     {
       "id": "p8", "tipo": "escribir", "nivel": 2,
       "enunciado": "Escucha el número y escríbelo con palabras.",
-      "escuchar": "quinientos",
-      "respuestas": ["quinientos"],
-      "pista": "Es el 500. Su nombre no empieza con «cinco».",
-      "explicacion": "500 se escribe «quinientos», con qu al comienzo.",
+      "escuchar": "quinientos cuarenta y tres",
+      "respuestas": ["quinientos cuarenta y tres"],
+      "pista": "Empieza por las centenas: el nombre del 500 no empieza con «cinco». Después escribe las decenas, la y y las unidades.",
+      "explicacion": "Se escribe «quinientos cuarenta y tres» (543). El 500 es quinientos, con qu, y la y va entre el cuarenta y el tres.",
       "error": "nombres-centenas"
     },
     {
       "id": "p9", "tipo": "manipular", "nivel": 2,
       "enunciado": "Arma con bloques el número doscientos seis.",
       "manipulable": { "tipo": "bloques", "objetivo": 206, "canonico": true },
-      "pista": "Doscientos son 2 centenas y seis son 6 unidades. ¿Hay decenas?",
+      "pista": "Piensa cuántas centenas, decenas y unidades tiene doscientos seis. ¿Hay alguna decena?",
       "explicacion": "Doscientos seis es 206: 2 placas, ninguna barra y 6 cubitos.",
       "error": "cero-intermedio"
     },
@@ -139,7 +139,7 @@
       "enunciado": "Completa el nombre de cada número.",
       "texto": "100 es [cien]. 105 es [ciento] cinco. 500 es [quin]ientos. 700 es [sete]cientos.",
       "banco": ["cinco", "siete"],
-      "pista": "El 100 solo se dice «cien»; si le siguen más números, cambia. El 500 y el 700 tienen nombres especiales.",
+      "pista": "Cuando el 100 va solito, se dice «cien»; si le siguen más números, cambia. El 500 y el 700 tienen nombres especiales.",
       "explicacion": "100 es cien, 105 es ciento cinco, 500 es quinientos y 700 es setecientos.",
       "error": "nombres-centenas"
     },
@@ -161,7 +161,7 @@
       "enunciado": "Escucha y toca el número que oyes.",
       "escuchar": "trescientos cinco",
       "texto": "350 *305* 335 503 35",
-      "pista": "Trescientos son 3 centenas y cinco son 5 unidades. ¿Hay decenas?",
+      "pista": "Piensa cuántas centenas, decenas y unidades oíste. ¿Oíste alguna decena?",
       "explicacion": "«Trescientos cinco» es 305: 3 centenas, 0 decenas y 5 unidades.",
       "error": "cero-intermedio"
     },
@@ -184,7 +184,7 @@
           "respuesta": 108,
           "erroresComunes": [
             { "respuesta": 1008, "pista": "Ciento ocho es 100 y 8. Tiene solo tres cifras.", "error": "escribe-por-partes" },
-            { "respuesta": 180, "pista": "El ocho son unidades, no decenas.", "error": "cero-intermedio" }
+            { "respuesta": 180, "pista": "El ocho está en las unidades, no en las decenas.", "error": "cero-intermedio" }
           ],
           "pista": "Ciento ocho tiene 1 centena, 0 decenas y 8 unidades.",
           "explicacion": "«Ciento ocho» se escribe 108.",
@@ -251,7 +251,7 @@
       "erroresComunes": [
         { "respuesta": 48, "pista": "Falta el lugar de las decenas. Cuando no hay decenas, escribe un 0.", "error": "cero-intermedio" },
         { "respuesta": 4008, "pista": "Cuatrocientos ocho tiene solo tres cifras.", "error": "escribe-por-partes" },
-        { "respuesta": 480, "pista": "El ocho son unidades, no decenas.", "error": "cero-intermedio" }
+        { "respuesta": 480, "pista": "El ocho está en las unidades, no en las decenas.", "error": "cero-intermedio" }
       ],
       "pista": "¿Cuántas centenas oíste? ¿Hay decenas?",
       "explicacion": "«Cuatrocientos ocho» son 4 centenas, 0 decenas y 8 unidades: se escribe 408.",
@@ -261,7 +261,7 @@
       "id": "c4", "tipo": "escribir", "nivel": 2,
       "enunciado": "Escribe con palabras el número 26.",
       "respuestas": ["veintiséis"],
-      "pista": "Del 16 al 29 se escribe todo en una sola palabra.",
+      "pista": "Del 16 al 29, cada número se escribe en una sola palabra.",
       "explicacion": "26 se escribe «veintiséis»: una sola palabra, con tilde en la é.",
       "error": "palabras-16-29"
     },
@@ -269,7 +269,7 @@
       "id": "c5", "tipo": "manipular", "nivel": 2,
       "enunciado": "Arma con bloques el número ciento cuarenta.",
       "manipulable": { "tipo": "bloques", "objetivo": 140, "canonico": true },
-      "pista": "Ciento es 1 centena. Cuarenta son 4 decenas. ¿Hay unidades sueltas?",
+      "pista": "¿Cuántas centenas hay en «ciento»? ¿Cuántas decenas hay en «cuarenta»? ¿Hay unidades sueltas?",
       "explicacion": "Ciento cuarenta es 140: 1 placa y 4 barras, sin cubitos.",
       "error": "lectura-numeros"
     },
@@ -289,7 +289,7 @@
       "enunciado": "Escucha y toca el número que oyes.",
       "escuchar": "ciento diecisiete",
       "texto": "170 *117* 1017 107 711",
-      "pista": "Ciento es 1 centena. Diecisiete es 1 decena y 7 unidades.",
+      "pista": "Ciento es 1 centena. ¿Cuántas decenas y cuántas unidades tiene diecisiete?",
       "explicacion": "«Ciento diecisiete» es 117: 100 + 10 + 7.",
       "error": "lectura-numeros"
     }
@@ -313,7 +313,7 @@
       "nombres-decenas": { "descripcion": "Confunde los nombres de las decenas o de los números del 11 al 19 (sesenta y setenta, catorce y cuarenta).", "sugerencia": "Cuenten de 10 en 10 en voz alta mientras suben gradas o dan pasos, y relacionen seis con sesenta y siete con setenta." },
       "palabras-16-29": { "descripcion": "Escribe separados o sin tilde los números del 16 al 29 (diez y seis, veintidos).", "sugerencia": "Escriban juntos una lista del 16 al 29 y marquen con color las tildes de dieciséis, veintidós, veintitrés y veintiséis." },
       "nombres-centenas": { "descripcion": "Se equivoca en los nombres de las centenas (cincocientos, sietecientos, nuevecientos) o confunde «cien» con «ciento».", "sugerencia": "Hagan un cartel con las nueve centenas y léanlo en voz alta; destaquen quinientos, setecientos y novecientos, y comparen cien (100) con ciento cinco (105)." },
-      "uso-de-y": { "descripcion": "Pone la «y» donde no va (ciento y cinco, seiscientos diez y cuatro) o la olvida (cuarenta siete).", "sugerencia": "Recuerden la regla: la «y» va solo entre las decenas y las unidades, desde el 31. Lean precios juntos y den una palmada cada vez que suene la «y»." }
+      "uso-de-y": { "descripcion": "Pone la «y» donde no va (ciento y cinco, seiscientos y catorce) o la olvida (cuarenta siete).", "sugerencia": "Recuerden la regla: la «y» va solo entre las decenas y las unidades, desde el 31. Lean precios juntos y den una palmada cada vez que suene la «y»." }
     }
   }
 }

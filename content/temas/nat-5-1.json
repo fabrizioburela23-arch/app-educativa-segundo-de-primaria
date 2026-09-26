@@ -27,7 +27,7 @@
       { "texto": "Wara pone una semilla de haba en tierra húmeda. Adentro, la semilla guarda una plantita muy pequeña y comida para ella.", "visual": { "tipo": "emojis", "items": ["🌰", "💧"], "etiquetas": ["semilla", "agua"] } },
       { "texto": "Con el agua, la semilla se hincha y se abre. Primero sale la **raíz**, que crece hacia abajo. Después sale un tallito que sube buscando la luz: es el **brote**.", "visual": { "tipo": "emoji", "valor": "🌱", "etiqueta": "brote" } },
       { "texto": "La planta crece y le salen muchas hojas. Sus hojas fabrican el alimento con la luz del sol. Un día aparecen **flores**, y las abejas llegan a visitarlas.", "visual": { "tipo": "emojis", "items": ["🌿", "☀️", "🌼", "🐝"], "etiquetas": ["hojas", "luz", "flores", "abeja"] } },
-      { "texto": "Cada flor se transforma en una **vaina**: ese es el **fruto** del haba. Adentro hay habas nuevas: ¡son las **semillas**! Con ellas, el ciclo empieza otra vez.", "visual": { "tipo": "ilustracion", "id": "ciclo-planta" } }
+      { "texto": "Las flores se transforman en **vainas**: la vaina es el **fruto** del haba. Adentro hay habas nuevas: ¡son las **semillas**! Con ellas, el ciclo empieza otra vez.", "visual": { "tipo": "ilustracion", "id": "ciclo-planta" } }
     ]
   },
   "guiada": {
@@ -150,7 +150,7 @@
         [{ "texto": "maní", "emoji": "🥜" }, "semillas"],
         ["coliflor", "flores"]
       ],
-      "pista": "¿Crece debajo de la tierra? ¿Es verde y plano? ¿Guarda semillas adentro? ¿Es la semilla misma? El nombre «coliflor» también te ayuda.",
+      "pista": "Piensa en lo que ves al comer cada uno: ¿guarda semillas adentro?, ¿es verde y delgado como una hoja?, ¿es la semilla misma? El nombre «coliflor» también te ayuda.",
       "explicacion": "Zanahoria: raíz. Lechuga: hojas. Tomate: fruto, porque guarda semillas. Maní: semillas. Coliflor: flores que todavía no se abrieron.",
       "error": "partes-comestibles"
     },
@@ -198,7 +198,9 @@
       "respuesta": 12,
       "erroresComunes": [
         { "respuesta": 3, "pista": "3 es la cantidad de vainas, es decir, de frutos. Cuenta las habas de adentro: son las semillas.", "error": "fruto-semilla" },
-        { "respuesta": 9, "pista": "Parece que sumaste solo dos vainas. Suma también la tercera.", "error": "suma-datos" }
+        { "respuesta": 9, "pista": "Parece que sumaste solo dos vainas. Suma también la tercera.", "error": "suma-datos" },
+        { "respuesta": 8, "pista": "Parece que sumaste solo dos vainas. Suma también la primera.", "error": "suma-datos" },
+        { "respuesta": 7, "pista": "Parece que sumaste solo dos vainas. Suma también la segunda.", "error": "suma-datos" }
       ],
       "pista": "Las semillas son las habas de adentro. Suma las habas de las tres vainas.",
       "explicacion": "4 + 5 + 3 = 12. Kusi encontró 12 semillas dentro de 3 frutos.",
@@ -439,12 +441,12 @@
       "Pongan un clavel blanco, con su tallo, en un vaso con agua y unas gotas de colorante de repostería. Al día siguiente verán el color en los pétalos: el tallo llevó el agua hacia arriba. En un paseo por la plaza o el campo, busquen raíces, tallos, hojas, flores y frutos en árboles como el molle."
     ],
     "errores": {
-      "nombra-partes": { "descripcion": "No reconoce o no nombra algunas partes de la planta.", "sugerencia": "Arranquen con cuidado una hierba del patio o compren una planta de cebollín con raíz y nombren juntos cada parte, de abajo hacia arriba." },
+      "nombra-partes": { "descripcion": "No reconoce o no nombra algunas partes de la planta.", "sugerencia": "Arranquen con cuidado una hierba del patio, con su raíz, y nombren juntos cada parte, de abajo hacia arriba. Después busquen una planta que tenga flores y frutos." },
       "funcion-partes": { "descripcion": "Confunde lo que hace cada parte (por ejemplo, cree que la raíz fabrica el alimento o no sabe que el tronco es un tallo).", "sugerencia": "Comparen la planta con el cuerpo: la raíz «toma» el agua, el tallo es el «camino» del agua y las hojas son la «cocina» donde se fabrica el alimento con la luz." },
       "necesidades-planta": { "descripcion": "No reconoce lo que una planta necesita para vivir (agua, luz, aire y suelo con nutrientes).", "sugerencia": "Cuiden juntos una planta de la casa: decidan dónde le llega luz, cuándo regarla y revisen si la tierra está seca tocándola con el dedo." },
       "ciclo-planta": { "descripcion": "Le cuesta ordenar el ciclo de vida de la planta.", "sugerencia": "Dibujen en tarjetas la semilla, el brote, la planta con hojas, la flor y el fruto; mézclenlas y ordénenlas en círculo." },
       "fruto-semilla": { "descripcion": "Confunde el fruto con la semilla.", "sugerencia": "Abran frutos en la cocina (tomate, palta, naranja, vaina de habas) y separen «lo que guarda» (fruto) de «lo que está guardado» (semillas)." },
-      "partes-comestibles": { "descripcion": "No reconoce qué parte de la planta comemos (por ejemplo, cree que la papa es una raíz).", "sugerencia": "Dejen una papa en un lugar oscuro unos días y miren cómo brotan sus ojitos: así se nota que es un tallo que guarda comida." },
+      "partes-comestibles": { "descripcion": "No reconoce qué parte de la planta comemos (por ejemplo, cree que la papa es una raíz).", "sugerencia": "Dejen una papa unas semanas en un lugar fresco y oscuro y miren cómo brotan sus ojitos: así se nota que es un tallo que guarda comida. Esa papa brotada ya no se come, pero pueden sembrarla en una maceta." },
       "alimento-planta": { "descripcion": "Cree que las plantas «comen» tierra o que las personas les dan su comida.", "sugerencia": "Expliquen que la raíz toma agua y nutrientes, pero que el alimento lo fabrican las hojas con la luz del sol, el agua y el aire." },
       "plantas-bolivia": { "descripcion": "No ubica dónde crecen algunas plantas de Bolivia.", "sugerencia": "Busquen fotos o un mapa de Bolivia y ubiquen juntos la quinua en el altiplano, el molle en los valles y el cacao y la castaña en la Amazonía." },
       "escritura-palabra": { "descripcion": "Tiene dificultad para escribir palabras dictadas.", "sugerencia": "Dicten palabras de la lección (semilla, raíz, tallo, hoja) separando las sílabas con palmadas antes de escribirlas." },

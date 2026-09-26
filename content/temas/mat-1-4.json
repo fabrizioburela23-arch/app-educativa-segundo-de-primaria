@@ -10,8 +10,8 @@
       "visual": { "tipo": "tabla", "columnas": ["Escribimos", "Leemos"], "filas": [["4 = 4", "4 es igual a 4"], ["8 > 5", "8 es mayor que 5"], ["3 < 7", "3 es menor que 7"]] }
     },
     {
-      "texto": "Primero mira cuántas cifras tiene cada número. El que tiene más cifras es mayor: 105 > 98. Si tienen las mismas cifras, compara las **centenas**: 452 > 387.",
-      "audio": "Primero mira cuántas cifras tiene cada número. El que tiene más cifras es mayor: 105 es mayor que 98. Si tienen las mismas cifras, compara las centenas: 452 es mayor que 387, porque 4 centenas son más que 3.",
+      "texto": "Primero mira cuántas cifras tiene cada número. El que tiene más cifras es mayor: 105 > 98. Si tienen igual cantidad de cifras, compara las **centenas**: 452 > 387.",
+      "audio": "Primero mira cuántas cifras tiene cada número. El que tiene más cifras es mayor: 105 es mayor que 98. Si tienen igual cantidad de cifras, compara las centenas: 452 es mayor que 387, porque 4 centenas son más que 3.",
       "visual": { "tipo": "tabla", "columnas": ["C", "D", "U"], "filas": [[4, 5, 2], [3, 8, 7]] }
     },
     {
@@ -20,7 +20,7 @@
       "visual": { "tipo": "tabla", "columnas": ["C", "D", "U"], "filas": [[5, 6, 2], [5, 8, 1]] }
     },
     {
-      "texto": "**Ordenar** es poner los números en fila. De menor a mayor: 100, 250, 400. De mayor a menor: 400, 250, 100. En la recta, el menor está más a la izquierda.",
+      "texto": "**Ordenar** es poner los números en fila según su valor. De menor a mayor: 100, 250, 400. De mayor a menor: 400, 250, 100. En la recta, el menor está más a la izquierda.",
       "emoji": "📶",
       "visual": { "tipo": "recta", "min": 0, "max": 500, "paso": 50, "marcar": [100, 250, 400] }
     }
@@ -91,7 +91,7 @@
       ],
       "columnas": 1,
       "pista": "Compara las decenas de 38 y de 83.",
-      "explicacion": "Kusi juntó más: 83 > 38, porque 8 decenas son más que 3 decenas.",
+      "explicacion": "Kusi juntó más: 83 es mayor que 38, porque 8 decenas son más que 3 decenas.",
       "error": "problema-comparar"
     },
     {
@@ -146,7 +146,7 @@
       "texto": "612 es [menor] que 621. 890 es [mayor] que 809.",
       "banco": ["igual"],
       "pista": "En cada pareja, las centenas son iguales. Compara las decenas.",
-      "explicacion": "612 es menor que 621, porque 1 decena es menos que 2. 890 es mayor que 809, porque 9 decenas son más que 0.",
+      "explicacion": "612 es menor que 621, porque 1 decena es menos que 2. 890 es mayor que 809, porque 9 decenas son más que 0 decenas.",
       "error": "compara-posicion"
     },
     {
@@ -228,8 +228,8 @@
       "id": "p15", "tipo": "completar", "nivel": 3,
       "enunciado": "Primero calcula cada suma. Después completa con el signo correcto.",
       "texto": "400 + 50 [>] 405. 300 + 7 [<] 370. 200 + 60 + 1 [=] 261.",
-      "pista": "400 + 50 es 450. Ahora compara 450 con 405.",
-      "explicacion": "400 + 50 = 450, y 450 > 405. 300 + 7 = 307, y 307 < 370. 200 + 60 + 1 = 261: son iguales.",
+      "pista": "Calcula primero cada suma. Después compara el resultado con el otro número: centenas, decenas y unidades.",
+      "explicacion": "400 + 50 = 450, que es mayor que 405. 300 + 7 = 307, que es menor que 370. 200 + 60 + 1 = 261: son iguales.",
       "error": "comparar-signo"
     },
     {
@@ -273,16 +273,16 @@
       "error": "comparar-signo"
     },
     {
-      "id": "c3", "tipo": "generador", "nivel": 2, "generador": "comparar", "params": { "max": 999 }
+      "id": "c3", "tipo": "generador", "nivel": 2, "generador": "ordenar-numeros", "params": { "max": 999, "cantidad": 4, "orden": "asc" }
     },
     {
       "id": "c4", "tipo": "completar", "nivel": 2,
-      "enunciado": "Completa con el signo correcto.",
-      "audio": "Completa con el signo correcto para comparar 530 y 535.",
-      "texto": "530 [<] 535",
-      "banco": [">", "="],
-      "pista": "Las centenas y las decenas son iguales. Mira las unidades.",
-      "explicacion": "530 es menor que 535, porque 0 unidades son menos que 5: 530 < 535.",
+      "enunciado": "Completa con los signos correctos.",
+      "audio": "Completa con los signos correctos. Compara 530 con 535, y 480 con 400 más 80.",
+      "texto": "530 [<] 535. 480 [=] 400 + 80.",
+      "banco": [">"],
+      "pista": "En 530 y 535, las centenas y las decenas son iguales: mira las unidades. En el otro, primero suma 400 + 80.",
+      "explicacion": "530 es menor que 535, porque 0 unidades son menos que 5. Y 400 + 80 = 480: son iguales.",
       "error": "comparar-signo"
     },
     {
@@ -327,15 +327,15 @@
       "pasos": [
         {
           "tipo": "opcion",
-          "enunciado": "¿Quién vendió más naranjas?",
+          "enunciado": "¿Quién vendió menos naranjas?",
           "opciones": [
-            { "texto": "Doña Ana", "correcta": true },
-            { "texto": "Doña Rosa", "pista": "182 tiene 1 centena. ¿Quién tiene 2 centenas?", "error": "compara-posicion" },
-            { "texto": "Don Luis", "pista": "128 tiene 1 centena y solo 2 decenas.", "error": "compara-posicion" }
+            { "texto": "Don Luis", "correcta": true },
+            { "texto": "Doña Rosa", "pista": "182 y 128 tienen 1 centena. Compara sus decenas: 8 y 2.", "error": "compara-posicion" },
+            { "texto": "Doña Ana", "pista": "218 tiene 2 centenas: es la que vendió más.", "error": "compara-posicion" }
           ],
           "columnas": 1,
-          "pista": "Compara primero las centenas.",
-          "explicacion": "Doña Ana vendió más: 218 es el único con 2 centenas.",
+          "pista": "Compara primero las centenas. Si son iguales, mira las decenas.",
+          "explicacion": "Don Luis vendió menos: 128 y 182 tienen 1 centena, pero 128 tiene solo 2 decenas.",
           "error": "problema-comparar"
         },
         {
@@ -348,12 +348,12 @@
         }
       ],
       "pista": "Resuelve un paso a la vez.",
-      "explicacion": "Doña Ana vendió más naranjas (218). De menor a mayor: 128, 182, 218.",
+      "explicacion": "Don Luis vendió menos naranjas (128) y doña Ana, más (218). De menor a mayor: 128, 182, 218.",
       "error": "problema-comparar"
     }
   ],
   "repaso": {
-    "texto": "Para comparar, cuenta primero las cifras. Si tienen las mismas, compara las centenas, después las decenas y al final las unidades. La parte abierta del signo mira al número mayor.",
+    "texto": "Para comparar, cuenta primero las cifras. Si tienen igual cantidad de cifras, compara las centenas, después las decenas y al final las unidades. La parte abierta del signo mira al número mayor.",
     "visual": { "tipo": "secuencia", "items": ["452", ">", "387"] }
   },
   "adulto": {

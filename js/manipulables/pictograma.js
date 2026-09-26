@@ -9,7 +9,7 @@ export function crear(cfg, opts) {
   const b = crearBase('pictograma', opts);
   const icono = cfg.icono || '⭐';
   const escala = Number(cfg.escala) > 0 ? Number(cfg.escala) : 1;
-  const cats = (Array.isArray(cfg.categorias) ? cfg.categorias : []).slice(0, 6);
+  const cats = (Array.isArray(cfg.categorias) ? cfg.categorias : []).filter((c) => c && typeof c === 'object').slice(0, 6);
   const conObjetivo = !b.libre && cats.length > 0 && cats.every((c) => Number.isInteger(c.objetivo));
   const ini = cats.map((c) => entero(c.inicial, 0, MAX, 0));
   let st = ini.slice();

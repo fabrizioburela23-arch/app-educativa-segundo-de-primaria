@@ -1,0 +1,426 @@
+{
+  "id": "nat-5-2",
+  "titulo": "La deforestación",
+  "objetivo": "Sé qué es la deforestación, por qué pasa, qué problemas trae y qué podemos hacer para cuidar los bosques.",
+  "explicacion": [
+    {
+      "texto": "Un **bosque** es un lugar con muchos árboles y otras plantas. Es la casa de muchos animales. La **deforestación** es cuando se cortan o se queman tantos árboles que el bosque desaparece.",
+      "emoji": "🌳",
+      "visual": { "tipo": "ilustracion", "id": "deforestacion" }
+    },
+    {
+      "texto": "¿Por qué pasa? Se **talan** (cortan) árboles para sacar madera o leña. Se limpian terrenos del bosque para sembrar, criar ganado o hacer caminos. A veces un **chaqueo**, que es quemar el monte, se vuelve un incendio.",
+      "visual": { "tipo": "emojis", "items": ["🌲", "🌾", "🐄", "🔥"], "etiquetas": ["madera y leña", "cultivos", "ganado", "chaqueo"] }
+    },
+    {
+      "texto": "Sin bosque, los animales pierden su casa y su comida. La lluvia se lleva el suelo, porque ya no hay raíces que lo sujeten. Puede haber menos agua y menos lluvia, y el humo ensucia el aire.",
+      "visual": { "tipo": "emojis", "items": ["🐆", "🌧️", "💧", "🔥"], "etiquetas": ["animales sin casa", "suelo lavado", "menos agua", "humo"] }
+    },
+    {
+      "texto": "¡Podemos ayudar! **Reforestar** es sembrar árboles donde faltan. También cuidamos el bosque si no hacemos fuego en el monte, si avisamos a un adulto cuando vemos humo y si **reutilizamos** el papel, que se hace con madera.",
+      "emoji": "💚",
+      "visual": { "tipo": "emojis", "items": ["🌱", "🚫", "📢", "📄"], "etiquetas": ["reforestar", "no hacer fuego", "avisar", "reutilizar papel"] }
+    }
+  ],
+  "ejemplo": {
+    "instruccion": "Mira lo que pasó en el cerro de la comunidad de Kusi.",
+    "pasos": [
+      { "texto": "Hace muchos años, el cerro estaba cubierto de **queñuas**. Sus raíces sujetaban el suelo, las aves hacían sus nidos y de una vertiente salía agua limpia.", "visual": { "tipo": "emojis", "items": ["⛰️", "🌳", "🐦", "💧"], "etiquetas": ["cerro", "queñuas", "aves", "vertiente"] } },
+      { "texto": "Poco a poco, se cortaron muchas queñuas para leña y hubo quemas. Sin raíces, la lluvia se llevó el suelo cerro abajo. Las aves se fueron y la vertiente dio menos agua.", "visual": { "tipo": "ilustracion", "id": "deforestacion" } },
+      { "texto": "La comunidad y la escuela decidieron **reforestar**. Cuidaron arbolitos de queñua en un vivero y un día los sembraron juntos en el cerro.", "visual": { "tipo": "emojis", "items": ["🌱", "🤝", "💧"], "etiquetas": ["arbolitos", "trabajo en equipo", "riego"] } },
+      { "texto": "Pasaron los años. Los arbolitos crecieron y sus raíces sujetan otra vez el suelo. Volvieron las aves y la vertiente tiene más agua. ¡Cuidar el bosque vale la pena!", "visual": { "tipo": "emojis", "items": ["🌳", "🐦", "💧"], "etiquetas": ["queñuas", "aves", "vertiente"] } }
+    ]
+  },
+  "guiada": {
+    "intro": "Ahora lo hacemos juntos. Piensa en el cerro de Kusi.",
+    "pasos": [
+      {
+        "id": "g1", "tipo": "opcion",
+        "enunciado": "Mira el dibujo. ¿Qué parte muestra la deforestación?",
+        "apoyo": "La deforestación es cuando se pierden los árboles del bosque. Busca dónde ya no hay árboles.",
+        "visual": { "tipo": "ilustracion", "id": "deforestacion" },
+        "opciones": [
+          { "texto": "El lado con troncos cortados y humo.", "correcta": true },
+          { "texto": "El lado con árboles, pasto y flores.", "pista": "Ese lado todavía tiene su bosque. Busca dónde faltan los árboles.", "error": "concepto-deforestacion" }
+        ],
+        "columnas": 1,
+        "pista": "Busca los troncos cortados.",
+        "explicacion": "La deforestación está en el lado con troncos cortados y humo: allí se perdieron los árboles. El otro lado todavía tiene su bosque.",
+        "error": "concepto-deforestacion"
+      },
+      {
+        "id": "g2", "tipo": "clasificar",
+        "enunciado": "¿Es una causa de la deforestación o algo que pasa después?",
+        "apoyo": "Una causa dice **por qué** se pierde el bosque. Lo que pasa después es un problema que aparece cuando ya no hay árboles.",
+        "categorias": [
+          { "id": "causa", "texto": "Causa: por qué pasa" },
+          { "id": "despues", "texto": "Lo que pasa después" }
+        ],
+        "elementos": [
+          { "texto": "se talan muchos árboles para sacar madera", "categoria": "causa" },
+          { "texto": "un chaqueo se vuelve incendio", "emoji": "🔥", "categoria": "causa" },
+          { "texto": "se limpia el monte para sembrar", "categoria": "causa" },
+          { "texto": "los animales pierden su casa", "emoji": "🐆", "categoria": "despues" },
+          { "texto": "la lluvia se lleva el suelo", "emoji": "🌧️", "categoria": "despues" },
+          { "texto": "la vertiente da menos agua", "emoji": "💧", "categoria": "despues" }
+        ],
+        "pista": "Pregúntate: ¿esto hace que se pierdan los árboles, o es un problema que aparece cuando ya no están?",
+        "explicacion": "Causas: la tala, los chaqueos que se vuelven incendios y limpiar el monte para sembrar. Después: los animales pierden su casa, la lluvia se lleva el suelo y hay menos agua.",
+        "error": "causas-deforestacion"
+      },
+      {
+        "id": "g3", "tipo": "completar",
+        "enunciado": "Completa lo que podemos hacer para cuidar el bosque.",
+        "apoyo": "Recuerda tres ayudas: reforestar, no quemar y reutilizar el papel.",
+        "texto": "Podemos [sembrar] árboles, no hacer [fuego] en el monte y usar las dos caras del [papel].",
+        "banco": ["cortar", "agua"],
+        "pista": "Una acción pone árboles nuevos, otra evita los incendios y otra ahorra hojas de cuaderno.",
+        "explicacion": "Podemos sembrar árboles, no hacer fuego en el monte y usar las dos caras del papel. Así cuidamos los bosques.",
+        "error": "acciones-cuidado"
+      }
+    ]
+  },
+  "practica": [
+    {
+      "id": "p1", "tipo": "opcion", "nivel": 1,
+      "enunciado": "¿Qué es la deforestación?",
+      "opciones": [
+        { "texto": "Perder los bosques porque se cortan o se queman muchos árboles.", "correcta": true },
+        { "texto": "Sembrar muchos árboles nuevos.", "pista": "¡Eso es lo contrario! Sembrar árboles es reforestar.", "error": "confunde-reforestar" },
+        { "texto": "Regar las plantas del jardín.", "pista": "Regar ayuda a las plantas. La deforestación es un problema para los bosques.", "error": "concepto-deforestacion" }
+      ],
+      "columnas": 1,
+      "pista": "Recuerda el dibujo del bosque que tenía un lado con troncos cortados.",
+      "explicacion": "La deforestación es perder los bosques porque se cortan o se queman muchos árboles. Sembrar árboles es lo contrario: reforestar.",
+      "error": "concepto-deforestacion"
+    },
+    {
+      "id": "p2", "tipo": "escribir", "nivel": 1,
+      "enunciado": "Escucha y escribe la palabra.",
+      "escuchar": "bosque",
+      "respuestas": ["bosque"],
+      "pista": "Tiene dos sílabas. La segunda suena «ke» y se escribe con «qu».",
+      "explicacion": "La palabra es «bosque»: bos-que. Un bosque es un lugar con muchos árboles.",
+      "error": "escritura-palabra"
+    },
+    {
+      "id": "p3", "tipo": "memoria", "nivel": 1,
+      "enunciado": "Encuentra las parejas: la palabra y lo que quiere decir.",
+      "pares": [
+        ["bosque", "lugar con muchos árboles"],
+        ["talar", "cortar árboles"],
+        ["chaqueo", "quemar el monte"],
+        ["reforestar", "sembrar árboles donde faltan"]
+      ],
+      "pista": "«Re-forestar» quiere decir volver a tener bosque.",
+      "explicacion": "Bosque: lugar con muchos árboles. Talar: cortar árboles. Chaqueo: quemar el monte. Reforestar: sembrar árboles donde faltan.",
+      "error": "vocabulario-bosque"
+    },
+    {
+      "id": "p4", "tipo": "ordenar", "nivel": 1,
+      "enunciado": "Ordena los pasos para sembrar un arbolito.",
+      "elementos": [
+        { "texto": "Cavamos un hoyo en la tierra." },
+        { "texto": "Ponemos el arbolito en el hoyo, sin romper su raíz.", "emoji": "🌱" },
+        { "texto": "Tapamos la raíz con tierra." },
+        { "texto": "Regamos el arbolito.", "emoji": "💧" }
+      ],
+      "vertical": true,
+      "pista": "Primero hay que preparar el lugar donde va el arbolito. El agua va al final, cuando ya está sembrado.",
+      "explicacion": "Cavamos un hoyo, ponemos el arbolito con cuidado, tapamos la raíz con tierra y lo regamos.",
+      "error": "acciones-cuidado"
+    },
+    {
+      "id": "p5", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Toca las tres cosas que nos dan los árboles.",
+      "texto": "Los árboles del bosque nos dan *sombra*, *frutos* y *madera*.",
+      "pista": "Busca las palabras que vienen después de «nos dan».",
+      "explicacion": "Los árboles nos dan sombra, frutos y madera. ¡Por eso vale la pena cuidarlos!",
+      "error": "valor-bosque"
+    },
+    {
+      "id": "p6", "tipo": "multiple", "nivel": 2,
+      "enunciado": "Si se pierde un bosque de la Amazonía, ¿qué animales se quedan sin casa? Elige todos.",
+      "opciones": [
+        { "texto": "jaguar", "emoji": "🐆", "correcta": true },
+        { "texto": "paraba", "emoji": "🦜", "correcta": true },
+        { "texto": "mono", "emoji": "🐒", "correcta": true },
+        { "texto": "llama", "emoji": "🦙", "pista": "La llama vive en el altiplano, donde hay pastos, no en la selva.", "error": "habitat-animales" },
+        { "texto": "vicuña", "pista": "La vicuña vive en el altiplano, entre pajonales, no en el bosque.", "error": "habitat-animales" }
+      ],
+      "pista": "Hay tres. Piensa en los animales que viven entre los árboles de la selva, que es caliente y húmeda.",
+      "explicacion": "El jaguar, la paraba y el mono viven en los bosques de la Amazonía. Sin bosque, pierden su casa y su comida. La llama y la vicuña viven en el altiplano.",
+      "error": "habitat-animales"
+    },
+    {
+      "id": "p7", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "Une cada causa con lo que pasa después.",
+      "pares": [
+        ["Se cortan los árboles del cerro.", "La lluvia se lleva el suelo."],
+        ["Se quema el monte.", "El humo ensucia el aire."],
+        ["Se pierde el bosque de la paraba.", "La paraba se queda sin casa."],
+        ["Hay menos árboles que suelten vapor de agua.", "Puede llover menos."]
+      ],
+      "pista": "Piensa qué hacía lo que se perdió: las raíces sujetan el suelo, el fuego hace humo y el vapor de agua forma nubes.",
+      "explicacion": "Sin árboles en el cerro, la lluvia se lleva el suelo. La quema llena el aire de humo. Sin bosque, la paraba pierde su casa. Y con menos árboles que suelten vapor de agua, puede llover menos.",
+      "error": "consecuencias-deforestacion"
+    },
+    {
+      "id": "p8", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa sobre la reforestación.",
+      "texto": "[Reforestar] es sembrar árboles donde el bosque se perdió. En un cerro de los valles, es mejor sembrar árboles [nativos], como el molle, que siempre crecieron allí.",
+      "banco": ["Deforestar", "de plástico"],
+      "pista": "Una palabra empieza con «re», como «volver a». La otra dice que el árbol es de ese mismo lugar.",
+      "explicacion": "Reforestar es sembrar árboles donde el bosque se perdió. Conviene sembrar árboles nativos, como el molle en los valles, porque ya están acostumbrados a ese lugar.",
+      "error": "confunde-reforestar"
+    },
+    {
+      "id": "p9", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Quemar el monte para limpiar el terreno tiene un nombre. Escribe esa palabra.",
+      "respuestas": ["chaqueo", "el chaqueo", "chaqueos"],
+      "pista": "Es una palabra que se usa mucho en Bolivia. Empieza con «ch» y la aprendiste en la lección.",
+      "explicacion": "Se llama **chaqueo**. Si el fuego se sale de control, se puede volver un incendio.",
+      "error": "vocabulario-bosque"
+    },
+    {
+      "id": "p10", "tipo": "numero", "nivel": 2,
+      "enunciado": "El curso de Nayra sembró 9 molles en la mañana y 7 en la tarde. ¿Cuántos arbolitos sembró en total?",
+      "respuesta": 16,
+      "erroresComunes": [
+        { "respuesta": 2, "pista": "Restaste. Sembraron en la mañana y también en la tarde: hay que juntar.", "error": "suma-datos" },
+        { "respuesta": 15, "pista": "Casi. Cuenta otra vez desde 9, siete números más.", "error": "suma-datos" }
+      ],
+      "pista": "Junta los arbolitos de la mañana y de la tarde: 9 + 7.",
+      "explicacion": "9 + 7 = 16. El curso de Nayra sembró 16 molles.",
+      "error": "suma-datos"
+    },
+    {
+      "id": "p11", "tipo": "opcion", "nivel": 2,
+      "enunciado": "¿Por qué reutilizar el papel ayuda a los bosques?",
+      "opciones": [
+        { "texto": "Porque el papel se hace con madera de árboles: si usamos menos, se cortan menos árboles.", "correcta": true },
+        { "texto": "Porque el papel usado se convierte en un árbol.", "pista": "El papel no vuelve a ser árbol. Piensa: ¿de qué está hecho el papel?", "error": "papel-arboles" },
+        { "texto": "Porque los árboles comen papel.", "pista": "Los árboles fabrican su alimento con la luz del sol. Piensa de dónde viene el papel.", "error": "papel-arboles" }
+      ],
+      "columnas": 1,
+      "pista": "Piensa de dónde viene el papel de tu cuaderno.",
+      "explicacion": "El papel se hace con la madera de los árboles. Si usamos las dos caras de la hoja y reciclamos, hace falta cortar menos árboles.",
+      "error": "papel-arboles"
+    },
+    {
+      "id": "p12", "tipo": "manipular", "nivel": 2,
+      "enunciado": "La escuela tiene 12 arbolitos de queñua. Repártelos en partes iguales entre 3 grupos de estudiantes.",
+      "manipulable": { "tipo": "repartir", "total": 12, "grupos": 3, "emoji": "🌱" },
+      "pista": "Da un arbolito a cada grupo, por turnos, hasta que no quede ninguno.",
+      "explicacion": "12 arbolitos repartidos entre 3 grupos: cada grupo siembra 4.",
+      "error": "repartir"
+    },
+    {
+      "id": "p13", "tipo": "pasos", "nivel": 3,
+      "enunciado": "Es la época seca. Alguien hizo un chaqueo, pero sopló un viento fuerte y el fuego se escapó hacia el bosque.",
+      "visual": { "tipo": "emojis", "items": ["🌬️", "🔥", "🌳"], "etiquetas": ["viento", "fuego", "bosque"] },
+      "pasos": [
+        {
+          "tipo": "opcion",
+          "enunciado": "¿Por qué el fuego se escapó tan rápido?",
+          "opciones": [
+            { "texto": "El viento empujó el fuego y el monte seco se quemó fácil.", "correcta": true },
+            { "texto": "Porque el monte estaba mojado.", "pista": "Lo mojado se quema con dificultad. ¿Cómo está el monte en la época seca?", "error": "causas-deforestacion" },
+            { "texto": "Porque estaba lloviendo mucho.", "pista": "La lluvia ayuda a apagar el fuego. Era la época seca.", "error": "causas-deforestacion" }
+          ],
+          "pista": "Mira el enunciado: ¿cómo era la época y qué sopló?",
+          "explicacion": "El viento empujó el fuego y el monte seco se quemó fácil. Por eso un chaqueo puede volverse un incendio.",
+          "error": "causas-deforestacion"
+        },
+        {
+          "tipo": "multiple",
+          "enunciado": "¿Qué problemas trae el incendio? Elige todos.",
+          "opciones": [
+            { "texto": "Los animales pierden su casa.", "correcta": true },
+            { "texto": "El humo ensucia el aire.", "correcta": true },
+            { "texto": "El suelo queda sin plantas que lo protejan.", "correcta": true },
+            { "texto": "Hay más sombra para descansar.", "pista": "La sombra la dan los árboles. Sin árboles, ¿hay más o menos sombra?", "error": "consecuencias-deforestacion" }
+          ],
+          "pista": "Hay tres. Piensa en los animales, en el aire y en el suelo.",
+          "explicacion": "El incendio deja a los animales sin casa, llena el aire de humo y deja el suelo sin plantas que lo protejan.",
+          "error": "consecuencias-deforestacion"
+        },
+        {
+          "tipo": "opcion",
+          "enunciado": "Si ves humo o fuego en el monte, ¿qué debes hacer?",
+          "opciones": [
+            { "texto": "Alejarme y avisar enseguida a una persona adulta.", "correcta": true },
+            { "texto": "Acercarme para apagarlo yo solo.", "pista": "Apagar un incendio es trabajo de personas adultas y de los bomberos. Tú ayudas avisando.", "error": "seguridad-fuego" },
+            { "texto": "No decir nada a nadie.", "pista": "Si avisas rápido, los adultos pueden llamar a los bomberos.", "error": "seguridad-fuego" }
+          ],
+          "pista": "Piensa en lo más seguro para ti y en quién puede pedir ayuda.",
+          "explicacion": "Lo mejor es alejarte y avisar enseguida a una persona adulta. Los adultos pueden llamar a los bomberos.",
+          "error": "seguridad-fuego"
+        }
+      ],
+      "pista": "Resuelve un paso a la vez.",
+      "explicacion": "Con viento y monte seco, un chaqueo puede volverse un incendio. El incendio deja a los animales sin casa, ensucia el aire y deja el suelo sin protección. Si ves humo, aléjate y avisa a un adulto.",
+      "error": "consecuencias-deforestacion"
+    },
+    {
+      "id": "p14", "tipo": "opcion", "nivel": 3,
+      "enunciado": "Mateo dice: «Si cortamos un árbol grande, no pasa nada: sembramos uno chiquito y listo». ¿Tiene razón?",
+      "opciones": [
+        { "texto": "No del todo. Sembrar ayuda, pero un arbolito tarda muchos años en ser grande. Por eso también hay que cuidar los árboles que ya tenemos.", "correcta": true },
+        { "texto": "Sí, porque el arbolito crece en una semana.", "pista": "Un árbol tarda muchos años en crecer. ¡Tú cumplirás muchos años mientras un molle se vuelve grande!", "error": "acciones-cuidado" },
+        { "texto": "No, porque sembrar árboles no sirve para nada.", "pista": "Sembrar árboles sí ayuda: así se recuperan los bosques. ¿Qué le falta a la idea de Mateo?", "error": "acciones-cuidado" }
+      ],
+      "columnas": 1,
+      "pista": "Piensa cuánto tiempo tarda un arbolito en volverse un árbol grande.",
+      "explicacion": "Sembrar árboles ayuda mucho, pero un arbolito tarda muchos años en crecer. Por eso lo mejor es cuidar los bosques que ya tenemos y, además, reforestar.",
+      "error": "acciones-cuidado"
+    },
+    {
+      "id": "p15", "tipo": "escribir-libre", "nivel": 3,
+      "enunciado": "Escribe un consejo para cuidar los bosques de Bolivia.",
+      "guia": ["Siembra un árbol nativo...", "No hagas fuego en...", "Usa las dos caras..."],
+      "requisitos": [
+        { "tipo": "mayuscula-inicial" },
+        { "tipo": "punto-final" },
+        { "tipo": "min-palabras", "valor": 5 }
+      ],
+      "modelo": "No hagas fuego en el monte.",
+      "pista": "Piensa en algo que tú puedes hacer: sembrar, no quemar, ahorrar papel o avisar si ves humo.",
+      "explicacion": "Por ejemplo: «No hagas fuego en el monte». Empieza con mayúscula y termina con punto.",
+      "error": "produce-oracion"
+    }
+  ],
+  "comprobacion": [
+    {
+      "id": "c1", "tipo": "escribir", "nivel": 1,
+      "enunciado": "Escucha la adivinanza y escribe la respuesta.",
+      "escuchar": "Tengo muchísimos árboles y otras plantas. Soy la casa del jaguar, del mono y de la paraba. ¿Qué soy?",
+      "respuestas": ["bosque", "el bosque", "un bosque", "selva", "la selva", "una selva", "monte", "el monte"],
+      "pista": "Es un lugar lleno de árboles. Aprendiste esta palabra en la lección.",
+      "explicacion": "Es el **bosque**: un lugar con muchos árboles, donde viven muchos animales.",
+      "error": "concepto-deforestacion"
+    },
+    {
+      "id": "c2", "tipo": "opcion", "nivel": 1,
+      "enunciado": "¿Qué acción es reforestar?",
+      "opciones": [
+        { "texto": "Sembrar queñuas en un cerro sin árboles.", "correcta": true },
+        { "texto": "Cortar árboles para hacer leña.", "pista": "Eso quita árboles. Reforestar es lo contrario.", "error": "confunde-reforestar" },
+        { "texto": "Quemar el pasto seco del monte.", "pista": "Quemar el monte es un chaqueo, y puede volverse un incendio.", "error": "confunde-reforestar" }
+      ],
+      "columnas": 1,
+      "pista": "Reforestar es volver a tener árboles.",
+      "explicacion": "Reforestar es sembrar árboles donde faltan, como sembrar queñuas en un cerro sin árboles.",
+      "error": "confunde-reforestar"
+    },
+    {
+      "id": "c3", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "¿Daña el bosque o lo cuida?",
+      "categorias": [
+        { "id": "dana", "texto": "Daña el bosque", "emoji": "🔥" },
+        { "id": "cuida", "texto": "Cuida el bosque", "emoji": "💚" }
+      ],
+      "elementos": [
+        { "texto": "talar muchos árboles sin sembrar otros", "categoria": "dana" },
+        { "texto": "hacer quemas en el monte", "categoria": "dana" },
+        { "texto": "dejar una fogata encendida", "categoria": "dana" },
+        { "texto": "sembrar árboles nativos", "emoji": "🌱", "categoria": "cuida" },
+        { "texto": "regar los arbolitos del vivero", "emoji": "💧", "categoria": "cuida" },
+        { "texto": "usar las dos caras de la hoja", "emoji": "📄", "categoria": "cuida" }
+      ],
+      "pista": "Pregúntate: ¿con esto hay más árboles o menos árboles?",
+      "explicacion": "Dañan el bosque: talar sin sembrar, hacer quemas y dejar fogatas encendidas. Lo cuidan: sembrar árboles nativos, regar los arbolitos y usar las dos caras de la hoja.",
+      "error": "acciones-cuidado"
+    },
+    {
+      "id": "c4", "tipo": "ordenar", "nivel": 2,
+      "enunciado": "Ordena lo que pasa cuando se cortan todos los árboles de un cerro.",
+      "elementos": [
+        "Se cortan los árboles del cerro.",
+        "El suelo se queda sin raíces que lo sujeten.",
+        "Llueve fuerte y el agua arrastra el suelo.",
+        "El río baja lleno de barro."
+      ],
+      "vertical": true,
+      "pista": "Piensa: ¿qué sujetaba el suelo? ¿Qué pasa cuando llueve y eso ya no está?",
+      "explicacion": "Se cortan los árboles, el suelo queda sin raíces, la lluvia lo arrastra y el río baja lleno de barro.",
+      "error": "consecuencias-deforestacion"
+    },
+    {
+      "id": "c5", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "Une cada acción con la forma en que ayuda.",
+      "pares": [
+        ["reforestar el cerro", "las raíces nuevas sujetan el suelo del cerro"],
+        ["no quemar el monte", "el aire queda limpio, sin humo"],
+        ["reutilizar el papel", "se cortan menos árboles para hacer papel"],
+        ["cuidar el bosque de la Amazonía", "el jaguar y la paraba conservan su casa"]
+      ],
+      "pista": "Piensa qué problema evita cada acción.",
+      "explicacion": "Reforestar el cerro: las raíces sujetan el suelo. No quemar: el aire queda sin humo. Reutilizar el papel: se cortan menos árboles. Cuidar el bosque de la Amazonía: los animales conservan su casa.",
+      "error": "acciones-cuidado"
+    },
+    {
+      "id": "c6", "tipo": "multiple", "nivel": 2,
+      "enunciado": "¿Qué puede pasar cuando se pierde un bosque? Elige todas las correctas.",
+      "opciones": [
+        { "texto": "Los animales pierden su casa y su comida.", "correcta": true },
+        { "texto": "La lluvia se lleva el suelo.", "correcta": true },
+        { "texto": "Las vertientes y los ríos tienen menos agua.", "correcta": true },
+        { "texto": "Hay más sombra para descansar.", "pista": "La sombra la dan los árboles. Sin árboles, ¿hay más o menos sombra?", "error": "consecuencias-deforestacion" },
+        { "texto": "Llegan más animales a vivir allí.", "pista": "Sin bosque, los animales no tienen casa ni comida. ¿Podrían vivir ahí?", "error": "consecuencias-deforestacion" }
+      ],
+      "pista": "Hay tres correctas. Piensa en los animales, en el suelo y en el agua.",
+      "explicacion": "Cuando se pierde un bosque, los animales pierden su casa y su comida, la lluvia se lleva el suelo y hay menos agua. Además, se pierde la sombra.",
+      "error": "consecuencias-deforestacion"
+    },
+    {
+      "id": "c7", "tipo": "tocar", "nivel": 3,
+      "enunciado": "Toca las tres palabras que nombran causas de la deforestación.",
+      "texto": "Los bosques se pierden por la *tala*, los *chaqueos* y los *incendios*. La lluvia y la reforestación ayudan a que vuelvan a crecer.",
+      "pista": "Busca lo que hace que se pierdan los árboles. Cuidado: una palabra larga se parece a «deforestación», pero ayuda al bosque.",
+      "explicacion": "Las causas son la tala, los chaqueos y los incendios. La reforestación es lo contrario: ayuda a que el bosque vuelva.",
+      "error": "causas-deforestacion"
+    },
+    {
+      "id": "c8", "tipo": "opcion", "nivel": 3,
+      "enunciado": "En un lugar se perdió mucho bosque. Con los años, allí llueve menos. ¿Por qué puede pasar esto?",
+      "opciones": [
+        { "texto": "Los árboles sueltan vapor de agua por sus hojas, y ese vapor ayuda a formar nubes. Sin árboles, hay menos vapor.", "correcta": true },
+        { "texto": "Los árboles cortados se llevaron las nubes.", "pista": "Los árboles no se llevan las nubes. Piensa en lo que sale de sus hojas.", "error": "consecuencias-deforestacion" },
+        { "texto": "Sin árboles, el sol deja de calentar.", "pista": "El sol sigue calentando. Piensa en el vapor de agua que forma las nubes.", "error": "consecuencias-deforestacion" }
+      ],
+      "columnas": 1,
+      "pista": "Las nubes se forman con vapor de agua. ¿De dónde sale una parte de ese vapor?",
+      "explicacion": "Los árboles sueltan vapor de agua por sus hojas. Ese vapor ayuda a formar nubes y lluvia. Por eso, donde se pierde mucho bosque, puede llover menos.",
+      "error": "consecuencias-deforestacion"
+    }
+  ],
+  "repaso": {
+    "texto": "La deforestación es perder los bosques por la tala, los chaqueos y los incendios. Sin bosque, los animales pierden su casa, la lluvia se lleva el suelo y hay menos agua. Ayudamos si reforestamos, no quemamos y reutilizamos el papel.",
+    "visual": { "tipo": "ilustracion", "id": "deforestacion" }
+  },
+  "adulto": {
+    "objetivo": "Comprender qué es la deforestación; reconocer sus causas principales (tala para madera o leña, limpieza de terrenos para cultivos, ganado o caminos, y chaqueos que se convierten en incendios), sus consecuencias (los animales pierden su hogar, el suelo se erosiona, hay menos agua y lluvia, el humo contamina el aire) y acciones para cuidar los bosques (reforestar con árboles nativos, no hacer fuego en el monte, avisar a un adulto si se ve humo, reutilizar y reciclar el papel). Se trabaja con un tono tranquilo y esperanzador, sin culpar a nadie.",
+    "sugerencias": [
+      "Hagan el experimento del suelo: pongan tierra en dos bandejas o cajas un poco inclinadas; en una, tierra con pasto o plantitas con raíces; en la otra, tierra sola. Rieguen las dos con una botella con agujeros en la tapa y recojan en vasos el agua que baja. El agua de la tierra sin plantas sale más turbia: la lluvia se lleva el suelo cuando no hay raíces.",
+      "Siembren juntos un arbolito nativo de su zona (por ejemplo molle, queñua o tajibo; en un vivero municipal pueden aconsejarles cuál conviene) en una lata o en el patio. Túrnense para regarlo y midan cada mes cuánto crece. Conversen sobre cuántos años tardará en ser un árbol grande.",
+      "Durante una semana, junten las hojas usadas de un solo lado y úsenlas para dibujar, hacer listas o jugar. Al final, cuenten cuántas hojas ahorraron y conversen de dónde viene el papel. Aprovechen para acordar qué hacer si ven humo o fuego: alejarse y avisar a una persona adulta."
+    ],
+    "errores": {
+      "concepto-deforestacion": { "descripcion": "No explica con sus palabras qué es un bosque o qué es la deforestación.", "sugerencia": "Miren juntos el dibujo de la lección o una foto de un bosque y pregunten: «¿qué pasaría si se cortaran casi todos estos árboles?»." },
+      "confunde-reforestar": { "descripcion": "Confunde deforestar (perder el bosque) con reforestar (sembrar árboles donde faltan).", "sugerencia": "Jueguen con las palabras: «re» como en «volver a»; reforestar es volver a tener bosque. Asocien cada palabra con un gesto: cortar o sembrar." },
+      "vocabulario-bosque": { "descripcion": "No recuerda palabras como talar, chaqueo o reforestar.", "sugerencia": "Hagan tarjetas con la palabra de un lado y un dibujo del otro, y jueguen a adivinarlas." },
+      "causas-deforestacion": { "descripcion": "No reconoce por qué se pierden los bosques (tala, limpieza de terrenos, chaqueos e incendios).", "sugerencia": "Conversen sobre de dónde viene la madera de los muebles y la leña, y por qué el fuego se extiende tan rápido cuando hay viento y el monte está seco." },
+      "consecuencias-deforestacion": { "descripcion": "No relaciona la pérdida del bosque con sus efectos (animales sin casa, suelo lavado, menos agua, humo).", "sugerencia": "Repitan el experimento del suelo con bandejas y pregunten qué le pasaría a un cerro sin árboles después de una lluvia fuerte." },
+      "acciones-cuidado": { "descripcion": "No distingue las acciones que cuidan el bosque de las que lo dañan, o cree que un árbol se reemplaza enseguida.", "sugerencia": "Hagan juntos una lista de «cosas que puedo hacer» (sembrar, regar, no hacer fuego, usar las dos caras del papel) y marquen cada día la que cumplieron." },
+      "habitat-animales": { "descripcion": "No reconoce qué animales viven en los bosques y cuáles en otros lugares, como el altiplano.", "sugerencia": "Busquen fotos de animales de Bolivia y sepárenlos en «viven en el bosque» (jaguar, mono, paraba) y «viven en el altiplano» (llama, vicuña)." },
+      "papel-arboles": { "descripcion": "No sabe que el papel se hace con la madera de los árboles.", "sugerencia": "Rompan un pedazo de cartón o papel grueso y miren sus fibras con una lupa; cuéntenle que esas fibras vienen de la madera." },
+      "valor-bosque": { "descripcion": "No reconoce lo que nos dan los árboles y los bosques.", "sugerencia": "En un paseo, busquen juntos algo que dé cada árbol: sombra, frutos, madera o un lugar para los nidos de las aves." },
+      "seguridad-fuego": { "descripcion": "No sabe qué hacer si ve humo o fuego en el monte.", "sugerencia": "Practiquen la regla: «me alejo y aviso a una persona adulta». Expliquen que apagar el fuego es trabajo de adultos y de los bomberos." },
+      "escritura-palabra": { "descripcion": "Tiene dificultad para escribir palabras dictadas.", "sugerencia": "Dicten palabras de la lección (bosque, árbol, reforestar) separando las sílabas con palmadas antes de escribirlas." },
+      "produce-oracion": { "descripcion": "Le cuesta escribir una oración completa con mayúscula y punto.", "sugerencia": "Pidan que diga su consejo en voz alta, escríbanlo juntos y revisen la mayúscula inicial y el punto final." },
+      "suma-datos": { "descripcion": "Se equivoca al sumar los datos de un problema.", "sugerencia": "Usen palitos o semillas para representar los arbolitos de la mañana y de la tarde, júntenlos y cuéntenlos." },
+      "repartir": { "descripcion": "Le cuesta repartir en partes iguales.", "sugerencia": "Repartan 12 tapitas o semillas en 3 platos, de una en una, y verifiquen que todos los platos tengan lo mismo." }
+    }
+  }
+}

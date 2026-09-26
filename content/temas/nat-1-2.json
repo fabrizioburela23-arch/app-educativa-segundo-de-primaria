@@ -13,8 +13,9 @@
       "visual": { "tipo": "emojis", "items": ["❄️", "🏔️", "🏞️", "🌧️"], "etiquetas": ["nieve", "nevado", "río", "lluvia"] }
     },
     {
-      "texto": "**Gaseoso**: es el **vapor de agua**. ¡Es invisible! Lo blanco que sale de una olla caliente no es vapor: son gotitas muy pequeñas, porque el vapor se enfrió al salir.",
-      "emoji": "🍲"
+      "texto": "**Gaseoso**: es el **vapor de agua**. ¡Es invisible! En los dibujos lo pintamos con rayitas. Lo blanco que sale de una olla caliente no es vapor: son gotitas muy pequeñas que se forman cuando el vapor se enfría.",
+      "emoji": "🍲",
+      "visual": { "tipo": "ilustracion", "id": "estados-agua", "resaltar": "gaseoso" }
     },
     {
       "texto": "Con **calor**, el hielo se **derrite** y el agua líquida se **evapora**. Con **frío**, el vapor se **condensa** en gotitas y el agua líquida se **congela**.",
@@ -221,7 +222,7 @@
       "error": "cambios-estado"
     },
     {
-      "id": "p11", "tipo": "manipular", "nivel": 2,
+      "id": "p11", "tipo": "manipular", "nivel": 1,
       "enunciado": "El ciclo del agua se repite: lago, nube, lluvia... Completa los dos que siguen.",
       "manipulable": {
         "tipo": "patron",
@@ -289,7 +290,7 @@
     },
     {
       "id": "p15", "tipo": "opcion", "nivel": 3,
-      "enunciado": "Juan pone agua con sal en un plato y lo deja al sol varios días. El agua desaparece. ¿Qué queda en el plato?",
+      "enunciado": "Juan pone agua con sal en un plato y lo deja al sol varios días. Al final, el agua ya no está. ¿Qué queda en el plato?",
       "opciones": [
         { "texto": "La sal.", "correcta": true },
         { "texto": "Nada.", "pista": "El agua se evaporó, pero la sal no se evapora.", "error": "cambios-estado" },
@@ -383,19 +384,20 @@
     },
     {
       "id": "c6", "tipo": "relacionar", "nivel": 2,
-      "enunciado": "Une cada estado del agua con un ejemplo.",
+      "enunciado": "¿Para qué usa el agua cada persona en su trabajo? Une.",
       "pares": [
-        ["sólido", "la nieve del Illimani"],
-        ["líquido", "el agua del río Beni"],
-        ["gaseoso", "el vapor invisible del aire"]
+        [ { "texto": "la agricultora", "emoji": "👩‍🌾" }, "riega la chacra de papa" ],
+        [ { "texto": "el cocinero", "emoji": "👨‍🍳" }, "prepara la sopa de maní" ],
+        [ { "texto": "la bombera", "emoji": "👩‍🚒" }, "apaga el fuego" ],
+        [ { "texto": "el enfermero", "emoji": "👨‍⚕️" }, "se lava las manos antes de curar una herida" ]
       ],
-      "pista": "¿Cuál tiene forma propia? ¿Cuál corre? ¿Cuál no se ve?",
-      "explicacion": "Sólido: la nieve. Líquido: el agua del río. Gaseoso: el vapor de agua, que no se ve.",
-      "error": "estados-agua"
+      "pista": "Piensa en el trabajo de cada persona: ¿qué hace con el agua?",
+      "explicacion": "La agricultora riega la chacra, el cocinero prepara la sopa, la bombera apaga el fuego y el enfermero se lava las manos. ¡Todos necesitamos agua!",
+      "error": "usos-agua"
     },
     {
       "id": "c7", "tipo": "opcion", "nivel": 3,
-      "enunciado": "Nayra sopla su aliento sobre un espejo frío y el espejo se empaña. ¿Por qué?",
+      "enunciado": "Nayra echa su aliento sobre un espejo frío y el espejo se empaña. ¿Por qué?",
       "opciones": [
         { "texto": "El vapor de agua de su aliento se enfrió y se condensó en gotitas.", "correcta": true },
         { "texto": "El espejo se derritió un poquito.", "pista": "El espejo no se derrite con el aliento. Lo que se ve son gotitas de agua.", "error": "cambios-estado" },
@@ -408,17 +410,17 @@
     },
     {
       "id": "c8", "tipo": "multiple", "nivel": 3,
-      "enunciado": "Elige lo que pasa gracias al calor del sol.",
+      "enunciado": "En el altiplano, para hacer chuño, dejan las papas afuera varias noches y varios días. Elige lo que es verdad.",
+      "visual": { "tipo": "emojis", "items": ["🥔", "🌙", "☀️"], "etiquetas": ["papas", "noche con helada", "día de sol"] },
       "opciones": [
-        { "texto": "El agua del charco se evapora.", "correcta": true },
-        { "texto": "La ropa mojada se seca.", "correcta": true },
-        { "texto": "Se forman gotitas por fuera de un vaso con hielo.", "pista": "Esas gotitas aparecen porque el vaso está frío.", "error": "calor-frio" },
-        { "texto": "La nieve del cerro se derrite.", "correcta": true },
-        { "texto": "Se forma hielo en el charco.", "pista": "El hielo se forma con frío, no con calor.", "error": "calor-frio" }
+        { "texto": "En la noche, la helada congela el agua de las papas.", "correcta": true },
+        { "texto": "En el día, con el calor del sol, las papas se van secando.", "correcta": true },
+        { "texto": "En la noche, la helada derrite las papas.", "pista": "La helada es mucho frío. Con frío, ¿el agua se derrite o se congela?", "error": "calor-frio" },
+        { "texto": "En el día, el sol congela las papas.", "pista": "El sol da calor. ¿El calor congela el agua?", "error": "calor-frio" }
       ],
       "columnas": 1,
-      "pista": "El calor hace que el hielo se derrita y que el agua se evapore. Hay tres.",
-      "explicacion": "Con el calor del sol, el charco se evapora, la ropa se seca y la nieve se derrite. El hielo del charco y las gotitas del vaso frío se forman con frío.",
+      "pista": "La helada es mucho frío y el sol da calor. ¿Qué le pasa al agua con frío? ¿Y con calor? Hay dos.",
+      "explicacion": "Con el frío de la helada, el agua de las papas se congela. Con el calor del sol, el agua se evapora poco a poco y las papas quedan secas. ¡Así se hace el chuño!",
       "error": "calor-frio"
     }
   ],
@@ -431,7 +433,7 @@
     "sugerencias": [
       "Hagan cubitos de hielo en el congelador. Después, dejen uno en un plato al sol y otro a la sombra: observen cuál se derrite primero y si, al rato, el plato del sol queda seco porque el agua se evaporó.",
       "Con un adulto sosteniendo la tapa y el niño mirando a una distancia segura, pongan una tapa fría sobre una olla con agua caliente: verán gotitas debajo de la tapa (condensación). Otra forma sin calor: echar el aliento sobre un espejo frío.",
-      "Pongan agua con un poco de sal en un plato al sol durante varios días y observen qué queda. Cuando llueva o granice, o si ven un nevado de lejos, pregunten: «¿en qué estado está el agua?». Conversen sobre los usos del agua en casa y cómo no desperdiciarla."
+      "Pongan agua con un poco de sal en un plato al sol durante varios días y observen qué queda. Cuando llueva o granice, o si ven un nevado de lejos, pregunten: «¿en qué estado está el agua?». Conversen sobre los usos del agua en casa y cómo no desperdiciarla. Si tienen chuño, cuenten cómo se hace: la helada de la noche congela las papas y el sol del día las seca."
     ],
     "errores": {
       "estados-agua": { "descripcion": "Confunde los estados del agua (sólido, líquido y gaseoso) o no los reconoce en ejemplos (granizo, lluvia, vapor).", "sugerencia": "Muestren un cubito de hielo, un vaso de agua y una olla con agua caliente (sin tocarla) y pregunten: ¿es duro?, ¿corre?, ¿se ve?" },

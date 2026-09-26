@@ -40,11 +40,11 @@
         "visual": { "tipo": "ilustracion", "id": "paisaje-altiplano" }
       },
       {
-        "texto": "En los llanos y la Amazonía viven, entre otros, los **mojeños** (Beni), los **chiquitanos** (Santa Cruz) y los **tacanas** (norte de La Paz). En San Ignacio de Moxos se celebra la **Ichapekene Piesta**.",
+        "texto": "En los llanos y la Amazonía viven, entre otros, los **mojeños** (Beni), los **tacanas** (norte de La Paz) y, en Santa Cruz, los **chiquitanos** y los **ayoreos**. En San Ignacio de Moxos se celebra la **Ichapekene Piesta**.",
         "visual": { "tipo": "ilustracion", "id": "paisaje-llanos" }
       },
       {
-        "texto": "En el Chaco viven los **guaraníes** y los **ayoreos**, entre otros. Los guaraníes celebran el **Arete Guasu**, su fiesta grande. En los Yungas de La Paz vive gran parte del pueblo **afroboliviano**, que toca la **saya** con tambores.",
+        "texto": "En el Chaco viven los **guaraníes** y los **weenhayek**, entre otros. Los guaraníes celebran el **Arete Guasu**, su fiesta grande. En los Yungas de La Paz hay muchas comunidades **afrobolivianas**; su música es la **saya**, con tambores.",
         "visual": { "tipo": "ilustracion", "id": "paisaje-chaco" }
       },
       {
@@ -129,16 +129,16 @@
       ],
       "elementos": [
         { "texto": "saya", "emoji": "🥁", "categoria": "musica" },
-        { "texto": "taquirari", "categoria": "musica" },
+        { "texto": "taquirari", "emoji": "💃", "categoria": "musica" },
         { "texto": "sopa de maní", "emoji": "🥜", "categoria": "comida" },
         { "texto": "majadito", "emoji": "🍚", "categoria": "comida" },
         { "texto": "chuño", "emoji": "🥔", "categoria": "comida" },
-        { "texto": "tipoy", "categoria": "ropa" },
-        { "texto": "poncho", "categoria": "ropa" },
+        { "texto": "tipoy", "emoji": "👗", "categoria": "ropa" },
+        { "texto": "poncho", "emoji": "🧥", "categoria": "ropa" },
         { "texto": "aguayo", "emoji": "🧶", "categoria": "ropa" }
       ],
-      "pista": "La saya y el taquirari se bailan. El tipoy es un vestido largo del oriente y el aguayo es un tejido de colores.",
-      "explicacion": "Música: saya y taquirari. Comida: sopa de maní, majadito y chuño. Ropa y tejidos: tipoy, poncho y aguayo.",
+      "pista": "Pregúntate: ¿se escucha y se baila, se come o se usa para vestirse? Mira también los dibujos.",
+      "explicacion": "Música: saya y taquirari, que se bailan. Comida: sopa de maní, majadito y chuño. Ropa y tejidos: el tipoy (un vestido largo del oriente), el poncho y el aguayo.",
       "error": "expresiones-culturales"
     },
     {
@@ -340,7 +340,7 @@
         { "texto": "Que en Bolivia se habla un solo idioma", "pista": "En Bolivia hay muchos idiomas oficiales.", "error": "concepto-plurinacional" },
         { "texto": "Que Bolivia tiene muchos ríos", "pista": "«Plurinacional» habla de naciones y pueblos, no de ríos.", "error": "concepto-plurinacional" }
       ],
-      "pista": "«Pluri» quiere decir «muchos». Plurinacional: muchas naciones.",
+      "pista": "Recuerda la primera tarjeta: ¿quiénes viven en Bolivia? «Pluri» quiere decir «muchos».",
       "explicacion": "Estado Plurinacional quiere decir que en Bolivia viven muchas naciones y pueblos juntos.",
       "error": "concepto-plurinacional"
     },
@@ -378,14 +378,14 @@
     },
     {
       "id": "c6", "tipo": "pasos", "nivel": 3,
-      "enunciado": "A tu curso llega Rosa, una niña ayorea. Habla zamuco en su casa y está aprendiendo castellano.",
+      "enunciado": "A tu curso llega Rosa, una niña del pueblo ayoreo. En su casa habla el idioma de su pueblo y ahora aprende castellano.",
       "pasos": [
         {
           "tipo": "opcion",
           "enunciado": "¿Qué puedes hacer para que Rosa se sienta bien?",
           "opciones": [
             { "texto": "Invitarla a jugar y pedirle que te enseñe palabras de su idioma", "correcta": true },
-            { "texto": "Pedirle que ya no hable su idioma", "pista": "El zamuco es el idioma de Rosa y es oficial en Bolivia.", "error": "respeto-diversidad" },
+            { "texto": "Pedirle que ya no hable su idioma", "pista": "El idioma de Rosa es parte de su cultura y es oficial en Bolivia.", "error": "respeto-diversidad" },
             { "texto": "No jugar con ella porque habla diferente", "pista": "¿Cómo te sentirías tú si nadie jugara contigo?", "error": "respeto-diversidad" }
           ],
           "pista": "Busca la opción que hace sentir bienvenida a Rosa.",
@@ -395,15 +395,15 @@
         {
           "tipo": "completar",
           "enunciado": "Completa sobre el idioma de Rosa.",
-          "texto": "El idioma de Rosa es el [zamuco]. Es un idioma [oficial] de Bolivia, igual que el castellano.",
-          "banco": ["quechua", "prohibido"],
-          "pista": "Lee otra vez qué idioma habla Rosa en su casa.",
-          "explicacion": "Rosa habla zamuco, el idioma del pueblo ayoreo. Es un idioma oficial de Bolivia.",
+          "texto": "En la Constitución, el idioma del pueblo ayoreo se llama [zamuco]. Es un idioma [oficial] de Bolivia, igual que el castellano.",
+          "banco": ["bésiro", "extranjero"],
+          "pista": "Recuerda la tabla de pueblos e idiomas: busca al pueblo ayoreo. El bésiro es de otro pueblo.",
+          "explicacion": "El idioma del pueblo ayoreo se llama zamuco en la Constitución. Es un idioma oficial de Bolivia, igual que el castellano.",
           "error": "pueblo-idioma"
         }
       ],
       "pista": "Resuelve un paso a la vez.",
-      "explicacion": "Rosa merece respeto. Su idioma, el zamuco, es oficial en Bolivia y podemos aprender de él.",
+      "explicacion": "Rosa merece respeto. Su idioma (el zamuco o ayoreo) es oficial en Bolivia y podemos aprender de él.",
       "error": "respeto-diversidad"
     },
     {

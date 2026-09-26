@@ -26,8 +26,8 @@
     "instruccion": "Mira cómo buscamos el número anterior y el siguiente al 250. Después, mueve tú el marcador por la recta.",
     "pasos": [
       { "texto": "Buscamos el 250 en la recta.", "visual": { "tipo": "recta", "min": 246, "max": 254, "paso": 1, "marcar": [250] } },
-      { "texto": "Un salto a la izquierda llega al 249. Es el **anterior**: 1 menos.", "visual": { "tipo": "recta", "min": 246, "max": 254, "paso": 1, "marcar": [249], "saltos": [[250, 249]] } },
-      { "texto": "Un salto a la derecha llega al 251. Es el **siguiente**: 1 más.", "visual": { "tipo": "recta", "min": 246, "max": 254, "paso": 1, "marcar": [251], "saltos": [[250, 251]] } },
+      { "texto": "Un salto a la izquierda llega al 249. Es el **anterior**: 1 menos. También se llama antecesor.", "visual": { "tipo": "recta", "min": 246, "max": 254, "paso": 1, "marcar": [249], "saltos": [[250, 249]] } },
+      { "texto": "Un salto a la derecha llega al 251. Es el **siguiente**: 1 más. También se llama sucesor.", "visual": { "tipo": "recta", "min": 246, "max": 254, "paso": 1, "marcar": [251], "saltos": [[250, 251]] } },
       { "texto": "Si contamos de 10 en 10, antes de 250 va 240 y después va 260.", "visual": { "tipo": "recta", "min": 220, "max": 280, "paso": 10, "marcar": [250], "saltos": [[250, 240], [250, 260]] } }
     ],
     "explorar": { "tipo": "recta", "min": 190, "max": 210, "paso": 1 }
@@ -76,8 +76,8 @@
       "enunciado": "Mira el 19. Escribe el número anterior y el siguiente.",
       "visual": { "tipo": "recta", "min": 15, "max": 23, "paso": 1, "marcar": [19], "ocultar": [18, 20] },
       "campos": [ { "etiqueta": "Anterior", "respuesta": 18 }, { "etiqueta": "Siguiente", "respuesta": 20 } ],
-      "pista": "Después del 19 se completa una decena.",
-      "explicacion": "Antes de 19 va 18 y después va 20: 19 + 1 completa 2 decenas.",
+      "pista": "Suma 1 a 19. Cuando las unidades llegan a 10, cambia la decena.",
+      "explicacion": "Antes de 19 va 18. Después va 20, porque 19 + 1 = 20: se forma una decena más.",
       "error": "cambio-decena"
     },
     {
@@ -111,22 +111,22 @@
         { "texto": "69", "pista": "69 es 10 más. El siguiente es solo 1 más.", "error": "salto-recta" }
       ],
       "columnas": 4,
-      "pista": "El siguiente es 1 más. Después del 9 se completa una decena.",
+      "pista": "El siguiente es 1 más. Si las unidades son 9, al sumar 1 cambia la decena.",
       "explicacion": "Después del 59 viene el 60, porque 59 + 1 = 60.",
       "error": "cambio-decena"
     },
     {
-      "id": "p6", "tipo": "generador", "nivel": 2, "generador": "anterior-siguiente", "params": { "max": 999, "salto": 1 }
+      "id": "p6", "tipo": "generador", "nivel": 2, "generador": "anterior-siguiente", "params": { "max": 998, "salto": 1 }
     },
     {
-      "id": "p7", "tipo": "generador", "nivel": 2, "generador": "anterior-siguiente", "params": { "max": 999, "salto": 10 }
+      "id": "p7", "tipo": "generador", "nivel": 2, "generador": "anterior-siguiente", "params": { "max": 979, "salto": 10 }
     },
     {
       "id": "p8", "tipo": "manipular", "nivel": 2,
       "enunciado": "Mueve el marcador hasta el 370.",
-      "manipulable": { "tipo": "recta", "min": 300, "max": 400, "paso": 10, "objetivo": 370 },
-      "pista": "Esta recta va de 10 en 10: 300, 310, 320...",
-      "explicacion": "El 370 está entre el 360 y el 380.",
+      "manipulable": { "tipo": "recta", "min": 200, "max": 400, "paso": 10, "objetivo": 370 },
+      "pista": "Cada rayita vale 10. Busca el número escrito más cercano y sigue contando de 10 en 10.",
+      "explicacion": "El 370 está 2 rayitas después del 350: 360, 370. Queda entre el 360 y el 380.",
       "error": "salto-recta"
     },
     {
@@ -146,7 +146,7 @@
       "id": "p10", "tipo": "relacionar", "nivel": 2,
       "enunciado": "Une cada número con su siguiente.",
       "pares": [["109", "110"], ["299", "300"], ["459", "460"], ["690", "691"]],
-      "pista": "Suma 1. Si las unidades son 9, cambia la decena.",
+      "pista": "Suma 1. Si las unidades son 9, cambia la decena; a veces también la centena.",
       "explicacion": "Después de 109 viene 110; después de 299, 300; después de 459, 460; y después de 690, 691.",
       "error": "cambio-decena"
     },
@@ -155,7 +155,7 @@
       "enunciado": "Escucha la pregunta y toca la respuesta.",
       "escuchar": "¿Qué número va justo después del doscientos nueve?",
       "texto": "208 *210* 219 2010 200",
-      "pista": "El siguiente es 1 más. Después del 9, cambia la decena.",
+      "pista": "El siguiente es 1 más. Si las unidades son 9, al sumar 1 cambia la decena.",
       "explicacion": "Después del 209 va el 210, porque 209 + 1 = 210.",
       "error": "cambio-decena"
     },
@@ -259,21 +259,21 @@
     },
     {
       "id": "c3", "tipo": "completar", "nivel": 2,
-      "enunciado": "Completa con el número anterior y el siguiente.",
+      "enunciado": "Cuenta de 1 en 1. Completa con el número anterior y el siguiente.",
       "texto": "Para el 380: el anterior es [379] y el siguiente es [381].",
       "banco": ["370", "390"],
-      "pista": "Aquí contamos de 1 en 1, no de 10 en 10.",
+      "pista": "El anterior es 1 menos y el siguiente es 1 más. Al restar 1 a 380, cambia la decena.",
       "explicacion": "380 − 1 = 379 y 380 + 1 = 381.",
       "error": "cambio-decena"
     },
     {
-      "id": "c4", "tipo": "generador", "nivel": 2, "generador": "anterior-siguiente", "params": { "max": 999, "salto": 10 }
+      "id": "c4", "tipo": "generador", "nivel": 2, "generador": "anterior-siguiente", "params": { "max": 979, "salto": 10 }
     },
     {
       "id": "c5", "tipo": "relacionar", "nivel": 2,
       "enunciado": "Une cada número con su anterior.",
       "pares": [["300", "299"], ["150", "149"], ["801", "800"], ["410", "409"]],
-      "pista": "Resta 1. Si el número termina en 0, cambia la decena.",
+      "pista": "Resta 1. Si el número termina en 0, cambia la decena; a veces también la centena.",
       "explicacion": "Antes de 300 va 299; antes de 150, 149; antes de 801, 800; y antes de 410, 409.",
       "error": "cambio-decena"
     },
@@ -287,20 +287,24 @@
     },
     {
       "id": "c7", "tipo": "pasos", "nivel": 3,
-      "enunciado": "En la feria, los puestos tienen números. Ana vende quinua en el puesto 109.",
+      "enunciado": "En la feria, los puestos tienen números del 100 al 120. Ana vende quinua en el puesto 109.",
       "visual": { "tipo": "emoji", "valor": "🌾" },
       "pasos": [
         {
+          "tipo": "manipular",
+          "enunciado": "Mueve el marcador hasta el 109, el puesto de Ana.",
+          "manipulable": { "tipo": "recta", "min": 100, "max": 120, "paso": 1, "objetivo": 109 },
+          "pista": "Cada rayita vale 1. Busca el número escrito más cercano y cuenta las rayitas.",
+          "explicacion": "El 109 está justo antes del 110: una rayita a la izquierda.",
+          "error": "ubica-recta"
+        },
+        {
           "tipo": "numero",
-          "enunciado": "¿Qué número tiene el puesto que está justo antes?",
-          "respuesta": 108,
-          "erroresComunes": [
-            { "respuesta": 110, "pista": "Ese es el siguiente. Busca el de antes.", "error": "anterior-siguiente" },
-            { "respuesta": 99, "pista": "Eso es 10 menos. Justo antes es solo 1 menos.", "error": "salto-recta" }
-          ],
-          "pista": "Justo antes es 1 menos.",
-          "explicacion": "109 − 1 = 108.",
-          "error": "anterior-siguiente"
+          "enunciado": "Escribe el número del puesto que está justo antes y el del puesto que está justo después.",
+          "campos": [ { "etiqueta": "Anterior", "respuesta": 108 }, { "etiqueta": "Siguiente", "respuesta": 110 } ],
+          "pista": "El anterior es 1 menos y el siguiente es 1 más. Al sumar 1 a 109, cambia la decena.",
+          "explicacion": "109 − 1 = 108 y 109 + 1 = 110. Los puestos vecinos son el 108 y el 110.",
+          "error": "cambio-decena"
         },
         {
           "tipo": "numero",
@@ -316,7 +320,7 @@
         }
       ],
       "pista": "Resuelve un paso a la vez. Imagina los puestos en una recta.",
-      "explicacion": "El puesto de antes es el 108 y el de Kusi es el 119.",
+      "explicacion": "El puesto de Ana está entre el 108 y el 110. Kusi está en el puesto 119.",
       "error": "anterior-siguiente"
     },
     {

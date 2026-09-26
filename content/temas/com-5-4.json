@@ -1,0 +1,359 @@
+{
+  "id": "com-5-4",
+  "titulo": "g, gu, güe y güi",
+  "objetivo": "Sé cuándo escribo g, gu o gü: gato, guitarra y pingüino.",
+  "explicacion": [
+    {
+      "texto": "Con **a**, **o** y **u**, la **g** suena suave: **ga**to, **go**ta, **gu**sano. Solo escribes la g y la vocal.",
+      "emoji": "🐈",
+      "visual": { "tipo": "emojis", "items": ["🐈", "💧", "🐛"], "etiquetas": ["ga-to", "go-ta", "gu-sa-no"] }
+    },
+    {
+      "texto": "Con la **e** y con la **i**, la g suena fuerte: **ge**nte, **gi**rasol. Para que suene suave, ponemos una **u** en el medio: **gue**, **gui**. ¡Esa u no suena! Ju**gue**te, **gui**tarra.",
+      "visual": { "tipo": "emojis", "items": ["🧸", "🎸"], "etiquetas": ["ju-gue-te", "gui-ta-rra"] }
+    },
+    {
+      "texto": "¿Y si la u tiene que sonar? Le ponemos dos puntitos encima: **ü**. Se llaman **diéresis**. Así escribimos pin**güi**no y ci**güe**ña.",
+      "emoji": "🐧",
+      "visual": {
+        "tipo": "tabla",
+        "columnas": ["La u no suena", "La u suena"],
+        "filas": [["gue: juguete", "güe: cigüeña"], ["gui: guitarra", "güi: pingüino"]]
+      }
+    },
+    {
+      "texto": "Un truco: si en la familia de la palabra hay **gua**, la u sigue sonando. Por eso: agua → a**güi**ta, paraguas → para**güe**ro, lengua → len**güi**ta.",
+      "emoji": "💡",
+      "visual": { "tipo": "emojis", "items": ["💧", "☂️", "👅"], "etiquetas": ["agua → agüita", "paraguas → paragüero", "lengua → lengüita"] }
+    }
+  ],
+  "ejemplo": {
+    "instruccion": "Mira cómo decidimos si escribimos g, gu o gü.",
+    "pasos": [
+      { "texto": "Queremos escribir «gusano». Después de la g viene la u, así que la g ya suena suave: **gu**-sa-no. ¡Listo!", "visual": { "tipo": "emojis", "items": ["🐛"], "etiquetas": ["gu-sa-no"] } },
+      { "texto": "Ahora «guitarra». Con «gi» sonaría fuerte, como en girasol. Por eso ponemos u: **gui**-ta-rra. Esa u no se oye.", "visual": { "tipo": "emojis", "items": ["🎸"], "etiquetas": ["gui-ta-rra"] } },
+      { "texto": "Ahora «pingüino». Aquí la u sí se oye: pin-**güi**-no. Por eso le ponemos diéresis: ü.", "visual": { "tipo": "emojis", "items": ["🐧"], "etiquetas": ["pin-güi-no"] } },
+      { "texto": "Para decidir, lee en voz alta. Si la u no suena, escribe gue o gui. Si la u suena, escribe güe o güi.", "visual": { "tipo": "emojis", "items": ["🤫", "🔊"], "etiquetas": ["gue, gui", "güe, güi"] } }
+    ]
+  },
+  "guiada": {
+    "intro": "Ahora lo hacemos juntos. Lee cada palabra en voz alta.",
+    "pasos": [
+      {
+        "id": "g1", "tipo": "completar",
+        "enunciado": "Completa cada palabra con ga, go o gu.",
+        "apoyo": "Mira los dibujos y di cada palabra despacio. Con a, o y u, la g suena suave.",
+        "visual": { "tipo": "emojis", "items": ["🐈", "💧", "🐛"] },
+        "texto": "El [ga]to mira una [go]ta de agua y un [gu]sano.",
+        "banco": ["ge", "gi"],
+        "pista": "¿Qué vocal suena después de la g en cada palabra?",
+        "explicacion": "Se escribe «gato», «gota» y «gusano». Con a, o y u, solo escribimos la g y la vocal.",
+        "error": "sonido-g-suave"
+      },
+      {
+        "id": "g2", "tipo": "tocar",
+        "enunciado": "Toca las palabras que tienen gue o gui.",
+        "apoyo": "Busca «gue» o «gui» dentro de cada palabra. Hay tres.",
+        "texto": "*Miguel* toca la *guitarra* y Sara juega con su *juguete*.",
+        "pista": "Mira bien: en «juega» la g va con la a. Busca la g, la u y después una e o una i.",
+        "explicacion": "Mi**gue**l, **gui**tarra y ju**gue**te tienen gue o gui. En esas palabras la u no suena.",
+        "error": "reconoce-gue-gui"
+      },
+      {
+        "id": "g3", "tipo": "completar",
+        "enunciado": "Completa con gu o gü.",
+        "apoyo": "Lee cada palabra en voz alta. Si la u se oye, lleva diéresis: gü.",
+        "visual": { "tipo": "emojis", "items": ["🐧", "🎸"] },
+        "texto": "El pin[gü]ino nada. La ci[gü]eña vuela. Mi tío toca la [gu]itarra.",
+        "banco": ["g"],
+        "pista": "Di cada palabra despacio. ¿En cuáles se oye la u? Esas llevan los dos puntitos.",
+        "explicacion": "Pingüino y cigüeña llevan gü porque la u suena. Guitarra lleva gu: ahí la u no suena.",
+        "error": "olvida-dieresis"
+      }
+    ]
+  },
+  "practica": [
+    {
+      "id": "p1", "tipo": "memoria", "nivel": 1,
+      "enunciado": "Encuentra las parejas: cada dibujo con su nombre.",
+      "pares": [
+        [{ "emoji": "🐈" }, "gato"],
+        [{ "emoji": "💧" }, "gota"],
+        [{ "emoji": "🐛" }, "gusano"],
+        [{ "emoji": "🎸" }, "guitarra"],
+        [{ "emoji": "🐧" }, "pingüino"]
+      ],
+      "pista": "Di en voz alta el nombre de cada dibujo y busca esa palabra.",
+      "explicacion": "Gato, gota, gusano, guitarra y pingüino: en todas, la g suena suave.",
+      "error": "sonido-g-suave"
+    },
+    {
+      "id": "p2", "tipo": "completar", "nivel": 1,
+      "enunciado": "Completa con ga, go o gu.",
+      "texto": "Mi ami[go] Inti ve una [ga]llina cerca de la la[gu]na.",
+      "banco": ["ge", "gi"],
+      "pista": "Lee cada palabra en voz alta. ¿Qué vocal suena después de la g?",
+      "explicacion": "Se escribe «amigo», «gallina» y «laguna». Con a, o y u, la g va sola con la vocal.",
+      "error": "sonido-g-suave"
+    },
+    {
+      "id": "p3", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Toca las palabras que tienen ga, go o gu.",
+      "texto": "Mi *amigo* Luis come *mango* con *gusto*.",
+      "pista": "Hay tres palabras. Busca la g y mira qué vocal va después.",
+      "explicacion": "Ami**go**, man**go** y **gu**sto tienen la g con sonido suave.",
+      "error": "sonido-g-suave"
+    },
+    {
+      "id": "p4", "tipo": "opcion", "nivel": 1,
+      "enunciado": "Escucha la palabra. ¿Con qué sílaba empieza?",
+      "escuchar": "gorila",
+      "opciones": [
+        { "texto": "ga", "pista": "Con ga diríamos «garila». Escucha otra vez.", "error": "sonido-g-suave" },
+        { "texto": "go", "correcta": true },
+        { "texto": "gu", "pista": "Con gu diríamos «gurila». Escucha otra vez.", "error": "sonido-g-suave" }
+      ],
+      "mezclar": false, "columnas": 3,
+      "pista": "Di la palabra despacio y fíjate en la primera vocal.",
+      "explicacion": "La palabra es «gorila»: go-ri-la. Empieza con go.",
+      "error": "sonido-g-suave"
+    },
+    {
+      "id": "p5", "tipo": "ordenar", "nivel": 1,
+      "enunciado": "Ordena las sílabas para formar el nombre del animal.",
+      "visual": { "tipo": "emoji", "valor": "🐢" },
+      "elementos": ["tor", "tu", "ga"],
+      "unir": "",
+      "pista": "Di el nombre del animal despacio. ¿Qué sílaba suena primero?",
+      "explicacion": "Tor-tu-ga forma «tortuga». Termina en ga, con la g suave.",
+      "error": "arma-palabra"
+    },
+    {
+      "id": "p6", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa con g o gu.",
+      "texto": "El á[gu]ila vuela sobre el la[g]o. Mi[gu]el la mira con su ami[g]a.",
+      "banco": ["gü"],
+      "pista": "Mira la vocal que sigue. Con a y con o va la g sola. Con e y con i, para que suene suave, va gu.",
+      "explicacion": "Águila y Miguel llevan gu, y la u no suena. Lago y amiga llevan solo g.",
+      "error": "olvida-u"
+    },
+    {
+      "id": "p7", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "Lee cada palabra en voz alta. ¿La u suena o no suena?",
+      "categorias": [
+        { "id": "muda", "texto": "La u no suena", "emoji": "🤫" },
+        { "id": "suena", "texto": "La u suena", "emoji": "🔊" }
+      ],
+      "elementos": [
+        { "texto": "guitarra", "categoria": "muda" },
+        { "texto": "juguete", "categoria": "muda" },
+        { "texto": "hormiguero", "categoria": "muda" },
+        { "texto": "Miguel", "categoria": "muda" },
+        { "texto": "pingüino", "categoria": "suena" },
+        { "texto": "cigüeña", "categoria": "suena" },
+        { "texto": "agüita", "categoria": "suena" },
+        { "texto": "bilingüe", "categoria": "suena" }
+      ],
+      "pista": "Los dos puntitos (ü) avisan que la u se oye.",
+      "explicacion": "Guitarra, juguete, hormiguero y Miguel: la u no suena. Pingüino, cigüeña, agüita y bilingüe: la u suena y lleva diéresis.",
+      "error": "reconoce-gue-gui"
+    },
+    {
+      "id": "p8", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha y escribe la palabra.",
+      "escuchar": "pingüino",
+      "visual": { "tipo": "emoji", "valor": "🐧" },
+      "respuestas": ["pingüino"],
+      "tildes": "estricto",
+      "pista": "Escucha la sílaba del medio: la u se oye. ¿Qué le pones encima a la u?",
+      "explicacion": "Se escribe «pingüino», con diéresis (ü), porque la u suena.",
+      "error": "olvida-dieresis"
+    },
+    {
+      "id": "p9", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha y escribe la palabra.",
+      "escuchar": "juguete",
+      "visual": { "tipo": "emoji", "valor": "🧸" },
+      "respuestas": ["juguete"],
+      "pista": "En la sílaba del medio, la g suena suave antes de la e. ¿Qué letra necesita?",
+      "explicacion": "Se escribe «juguete»: ju-gue-te. La u hace que la g suene suave, y no se oye.",
+      "error": "olvida-u"
+    },
+    {
+      "id": "p10", "tipo": "multiple", "nivel": 3,
+      "enunciado": "¿Qué palabras están bien escritas? Elige todas.",
+      "opciones": [
+        { "texto": "cigüeña", "correcta": true },
+        { "texto": "guitarra", "correcta": true },
+        { "texto": "Miguel", "correcta": true },
+        { "texto": "pinguino", "pista": "Lee «pin-gui-no»: así la u no sonaría. ¿Qué le falta?", "error": "olvida-dieresis" },
+        { "texto": "jugete", "pista": "Con «ge», la g suena fuerte. ¿Qué letra falta para que suene suave?", "error": "olvida-u" },
+        { "texto": "güiso", "pista": "En «guiso» la u no suena. ¿Hacen falta los puntitos?", "error": "dieresis-de-mas" }
+      ],
+      "pista": "Lee cada palabra en voz alta. Piensa si la u suena o no.",
+      "explicacion": "Están bien: cigüeña, guitarra y Miguel. Se escribe «pingüino» (con ü), «juguete» (con u) y «guiso» (sin puntitos).",
+      "error": "reconoce-gue-gui"
+    },
+    {
+      "id": "p11", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "Une cada palabra con otra de su familia.",
+      "pares": [["agua", "agüita"], ["paraguas", "paragüero"], ["lengua", "lengüita"], ["yegua", "yegüita"]],
+      "pista": "Busca la palabra que empieza igual. En la familia, la u sigue sonando.",
+      "explicacion": "Agua → agüita, paraguas → paragüero, lengua → lengüita, yegua → yegüita. La u suena, por eso llevan ü.",
+      "error": "olvida-dieresis"
+    },
+    {
+      "id": "p12", "tipo": "ordenar", "nivel": 3,
+      "enunciado": "Ordena las sílabas: es el mueble donde se guardan los paraguas.",
+      "visual": { "tipo": "emoji", "valor": "☂️" },
+      "elementos": ["pa", "ra", "güe", "ro"],
+      "unir": "",
+      "pista": "Es de la familia de «paraguas» y empieza igual.",
+      "explicacion": "Pa-ra-güe-ro forma «paragüero». Lleva ü porque la u suena, como en paraguas.",
+      "error": "arma-palabra"
+    },
+    {
+      "id": "p13", "tipo": "completar", "nivel": 3,
+      "enunciado": "Completa con g, gu o gü.",
+      "texto": "Wara es bilin[gü]e: habla aimara y castellano. Dibuja un pin[gü]ino con su ami[g]o.",
+      "banco": ["gu"],
+      "pista": "Lee en voz alta. ¿En qué palabras se oye la u?",
+      "explicacion": "Bilingüe y pingüino llevan gü porque la u suena. Amigo lleva la g sola, porque sigue una o.",
+      "error": "olvida-dieresis"
+    },
+    {
+      "id": "p14", "tipo": "escribir-libre", "nivel": 3,
+      "enunciado": "Escribe una oración con una palabra que lleve güe o güi.",
+      "guia": ["El pingüino...", "La cigüeña...", "Mi abuela me da una agüita de..."],
+      "requisitos": [
+        { "tipo": "mayuscula-inicial" },
+        { "tipo": "punto-final" },
+        { "tipo": "min-palabras", "valor": 4 },
+        { "tipo": "incluye", "palabras": ["pingüino", "cigüeña", "agüita", "paragüero", "bilingüe", "lengüita", "yegüita"] }
+      ],
+      "modelo": "El pingüino nada en el agua fría.",
+      "pista": "Elige una palabra con ü, por ejemplo pingüino o cigüeña, y cuenta algo sobre ella.",
+      "explicacion": "Por ejemplo: «El pingüino nada en el agua fría». Recuerda los dos puntitos sobre la u.",
+      "error": "produce-oracion"
+    },
+    {
+      "id": "p15", "tipo": "escribir", "nivel": 3,
+      "enunciado": "Escucha y escribe. Es una palabra de la familia de «agua».",
+      "escuchar": "agüita",
+      "respuestas": ["agüita"],
+      "tildes": "estricto",
+      "pista": "En «agua» la u suena. En la palabra nueva, ¿la u sigue sonando?",
+      "explicacion": "Se escribe «agüita», con ü: la u suena igual que en agua.",
+      "error": "olvida-dieresis"
+    },
+    {
+      "id": "p16", "tipo": "tocar", "nivel": 3,
+      "enunciado": "Toca las palabras que tienen una u muda (una u que no suena).",
+      "texto": "*Guillermo* guarda el paraguas en el paragüero y come un *guiso*.",
+      "pista": "Lee cada palabra en voz alta. Busca gue o gui sin puntitos. En «gua» la u sí se oye.",
+      "explicacion": "En **Gui**llermo y **gui**so la u no suena. En guarda, paraguas y paragüero la u sí se oye.",
+      "error": "reconoce-gue-gui"
+    }
+  ],
+  "comprobacion": [
+    {
+      "id": "c1", "tipo": "completar", "nivel": 1,
+      "enunciado": "Completa con ga, go o gu.",
+      "visual": { "tipo": "emojis", "items": ["🐓", "🧢"] },
+      "texto": "El [ga]llo canta con [gu]sto. Mi abuelo se pone la [go]rra.",
+      "banco": ["ge", "gi"],
+      "pista": "Lee cada palabra en voz alta y mira qué vocal sigue a la g.",
+      "explicacion": "Se escribe «gallo», «gusto» y «gorra». Con a, o y u, la g va sola.",
+      "error": "sonido-g-suave"
+    },
+    {
+      "id": "c2", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Toca las palabras que tienen gue o gui.",
+      "texto": "Mi papá sirve *guiso* y luego toca la *guitarra*.",
+      "pista": "Busca la g, la u y después una e o una i. Hay dos palabras.",
+      "explicacion": "**Gui**so y **gui**tarra tienen gui. En «luego» no hay gue: la g va con la o.",
+      "error": "reconoce-gue-gui"
+    },
+    {
+      "id": "c3", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha y escribe la palabra.",
+      "escuchar": "paragüero",
+      "visual": { "tipo": "emoji", "valor": "☂️" },
+      "respuestas": ["paragüero"],
+      "tildes": "estricto",
+      "pista": "Es de la familia de «paraguas». ¿Se oye la u después de la g?",
+      "explicacion": "Se escribe «paragüero», con ü: la u suena, igual que en paraguas.",
+      "error": "olvida-dieresis"
+    },
+    {
+      "id": "c4", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa con gu o gü.",
+      "texto": "Miguel dibuja una ci[gü]eña al lado de una [gu]itarra.",
+      "banco": ["g"],
+      "pista": "¿En qué palabra se oye la u? Esa lleva los dos puntitos.",
+      "explicacion": "Cigüeña lleva gü porque la u suena. Guitarra lleva gu porque la u no suena.",
+      "error": "olvida-dieresis"
+    },
+    {
+      "id": "c5", "tipo": "opcion", "nivel": 2,
+      "enunciado": "¿Cuál está bien escrita?",
+      "opciones": [
+        { "texto": "manguera", "correcta": true },
+        { "texto": "mangera", "pista": "Con «ge», la g sonaría fuerte, como en gente.", "error": "olvida-u" },
+        { "texto": "mangüera", "pista": "En esta palabra la u no suena. ¿Necesita los puntitos?", "error": "dieresis-de-mas" }
+      ],
+      "columnas": 3,
+      "pista": "Piensa cómo suena la g y si la u se oye.",
+      "explicacion": "Se escribe «manguera»: la u hace que la g suene suave, y no se oye.",
+      "error": "olvida-u"
+    },
+    {
+      "id": "c6", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "Une las dos partes de cada palabra.",
+      "pares": [["pin", "güino"], ["ci", "güeña"], ["ju", "guete"], ["hormi", "guero"]],
+      "pista": "Lee las dos partes juntas en voz alta hasta que suene una palabra.",
+      "explicacion": "Pin-güino, ci-güeña, ju-guete y hormi-guero.",
+      "error": "reconoce-gue-gui"
+    },
+    {
+      "id": "c7", "tipo": "escribir", "nivel": 3,
+      "enunciado": "Escucha y escribe. Es una palabra de la familia de «lengua».",
+      "escuchar": "lengüita",
+      "respuestas": ["lengüita"],
+      "tildes": "estricto",
+      "pista": "En «lengua» la u suena. En la palabra nueva, ¿la u sigue sonando?",
+      "explicacion": "Se escribe «lengüita», con ü: la u suena igual que en lengua.",
+      "error": "olvida-dieresis"
+    },
+    {
+      "id": "c8", "tipo": "ordenar", "nivel": 3,
+      "enunciado": "Ordena las sílabas: así se dice de una persona que habla dos idiomas.",
+      "elementos": ["bi", "lin", "güe"],
+      "unir": "",
+      "pista": "Empieza con bi, como bicicleta, que tiene dos ruedas.",
+      "explicacion": "Bi-lin-güe forma «bilingüe». En Bolivia, muchas personas son bilingües.",
+      "error": "arma-palabra"
+    }
+  ],
+  "repaso": {
+    "texto": "ga, go, gu: la g suena suave. gue, gui: la u no suena (guitarra). güe, güi: la u suena y lleva diéresis (pingüino).",
+    "visual": { "tipo": "emojis", "items": ["🐈", "🎸", "🐧"], "etiquetas": ["ga-to", "gui-ta-rra", "pin-güi-no"] }
+  },
+  "adulto": {
+    "objetivo": "Escribir la g con sonido suave: ga, go, gu; gue, gui (con u muda) y güe, güi (con u que suena y diéresis). Se apoya en la lectura en voz alta y en familias de palabras (agua → agüita).",
+    "sugerencias": [
+      "En casa, escriban en tarjetas gato, gota, guiso, guitarra, pingüino y cigüeña. Léanlas en voz alta y sepárenlas en dos montones: «la u no suena» y «la u suena».",
+      "En la feria o la tienda, busquen palabras con g en carteles y envases (mango, agua, hamburguesa, manguera) y pregunten: ¿la u se oye?",
+      "Jueguen a las familias: el adulto dice agua, paraguas o lengua y el niño escribe agüita, paragüero o lengüita, sin olvidar los dos puntitos."
+    ],
+    "errores": {
+      "sonido-g-suave": { "descripcion": "Duda al leer o escribir ga, go y gu (sonido suave de la g).", "sugerencia": "Lean juntos palabras como gato, gota y gusano, y que marque con un color la g y la vocal que la sigue." },
+      "reconoce-gue-gui": { "descripcion": "No reconoce cuándo la u es muda (gue, gui) y cuándo suena (güe, güi).", "sugerencia": "Lean en voz alta pares como guitarra y pingüino, o juguete y cigüeña. Que levante la mano cuando oiga la u." },
+      "olvida-u": { "descripcion": "Escribe ge o gi cuando la g debe sonar suave (jugete, gitarra).", "sugerencia": "Recuérdele que con e o i la g sola suena fuerte (gente). Para el sonido suave se agrega u: escriban juntos juguete, guiso y Miguel." },
+      "olvida-dieresis": { "descripcion": "Olvida la diéresis cuando la u suena (pinguino, aguita).", "sugerencia": "Digan la palabra despacio y pregunten: ¿se oye la u? Si se oye, lleva dos puntitos. Usen familias: agua → agüita." },
+      "dieresis-de-mas": { "descripcion": "Pone diéresis donde la u no suena (güitarra, güiso).", "sugerencia": "Comparen en voz alta guitarra y pingüino, y que note que en guitarra la u no se oye." },
+      "arma-palabra": { "descripcion": "Le cuesta ordenar sílabas para formar palabras.", "sugerencia": "Escriban sílabas en papelitos y armen palabras juntos, leyendo en voz alta cada intento." },
+      "produce-oracion": { "descripcion": "Le cuesta escribir una oración completa con la palabra pedida.", "sugerencia": "Primero digan la oración en voz alta; después la escribe y revisan juntos la mayúscula, el punto y los dos puntitos." }
+    }
+  }
+}

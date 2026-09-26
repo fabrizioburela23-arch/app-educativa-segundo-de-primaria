@@ -933,6 +933,13 @@ export const GENERADORES = {
       }
       const f = elegir(rng, fechas);
       const fechaTxt = (x) => `${x.dia} de ${MESES[x.mes - 1]}`;
+      const PISTA_TIPO = {
+        civica: 'Es una fecha cívica: recordamos un hecho importante de la historia de Bolivia.',
+        conmemorativa: 'Es una fecha conmemorativa: celebramos o agradecemos a personas, o cuidamos la naturaleza.',
+        departamental: 'Es el aniversario de un departamento de Bolivia.',
+      };
+      // La pista nunca debe decir la respuesta: en «cuando» se quita cualquier día o mes del texto.
+      const sinFecha = (t) => String(t).replace(/\b\d{1,2} de [a-záéíóú]+/gi, 'esa fecha');
       const otras = [];
       for (const x of mezclar(rng, fechas)) {
         if (otras.length === 2) break;
@@ -946,7 +953,7 @@ export const GENERADORES = {
           enunciado: `¿Cuándo recordamos: ${f.nombre}?`,
           opciones: mezclar(rng, [f, ...otras]).map((x) => ({ texto: fechaTxt(x), correcta: x.id === f.id || undefined, error: x.id === f.id ? undefined : 'fechas-civicas' })),
           columnas: 1,
-          pista: f.pista || f.descripcion,
+          pista: f.pista || sinFecha(f.descripcion),
           explicacion: `${f.nombre}: ${fechaTxt(f)}. ${f.descripcion}`,
           error: 'fechas-civicas',
         };
@@ -956,7 +963,7 @@ export const GENERADORES = {
         enunciado: `¿Qué recordamos el ${fechaTxt(f)}?`,
         opciones: mezclar(rng, [f, ...otras]).map((x) => ({ texto: x.nombre, correcta: x.id === f.id || undefined, error: x.id === f.id ? undefined : 'fechas-civicas' })),
         columnas: 1,
-        pista: f.pista || f.descripcion,
+        pista: PISTA_TIPO[f.tipo] || 'Piensa en lo que hacemos en la escuela en esa fecha.',
         explicacion: `El ${fechaTxt(f)} recordamos: ${f.nombre}. ${f.descripcion}`,
         error: 'fechas-civicas',
       };

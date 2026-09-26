@@ -1,7 +1,7 @@
 // Recta numérica: tocar (o arrastrar) cerca de una marca para poner el marcador.
 // Toda la recta es zona táctil y el marcador salta a la marca más cercana.
 import { h } from '../ui/dom.js';
-import { crearRecta, s } from '../visuales/visual.js';
+import { crearRecta, numeroRecta, s } from '../visuales/visual.js';
 import { crearBase, boton, lectura, xEnSvg } from './comun.js';
 
 export function crear(cfg, opts) {
@@ -52,7 +52,8 @@ export function crear(cfg, opts) {
   function mover(d) {
     if (b.bloqueado) return;
     const base = marca === null ? (d > 0 ? min - paso : max + paso) : marca;
-    const v = Math.max(min, Math.min(max, base + d * paso));
+    // Se ajusta a la rayita más cercana (evita 0.30000000000000004 con pasos decimales).
+    const v = r.valorEnX(r.xDe(Math.max(min, Math.min(max, base + d * paso))));
     poner(v);
   }
 
@@ -102,13 +103,13 @@ export function crear(cfg, opts) {
       const t = r.etiquetasEl.get(marca);
       if (t) t.classList.add('solucion');
       else {
-        etSolucion = s('text', { x: r.xDe(marca), y: y0 + 31, 'text-anchor': 'middle', 'dominant-baseline': 'central', class: 'rn-et solucion' }, String(marca));
+        etSolucion = s('text', { x: r.xDe(marca), y: y0 + 31, 'text-anchor': 'middle', 'dominant-baseline': 'central', class: 'rn-et solucion' }, numeroRecta(marca));
         svg.append(etSolucion);
       }
     }
     const mostrar = b.libre || solucion;
     lect.hidden = !mostrar;
-    if (mostrar) lect.textContent = hay ? (solucion ? `Aquí está el ${marca}` : `Elegiste el ${marca}`) : 'Toca la recta';
+    if (mostrar) lect.textContent = hay ? (solucion ? `Aquí está el ${numeroRecta(marca)}` : `Elegiste el ${numeroRecta(marca)}`) : 'Toca la recta';
     menos.disabled = b.bloqueado || (hay && marca <= min);
     mas.disabled = b.bloqueado || (hay && marca >= max);
     svg.classList.toggle('bloqueada', b.bloqueado);
@@ -149,7 +150,7 @@ export function crear(cfg, opts) {
       svg.setAttribute('tabindex', '0');
       pintar();
     },
-    valorTexto: () => (marca === null ? 'sin marca' : `marca en ${marca}`),
+    valorTexto: () => (marca === null ? 'sin marca' : `marca en ${numeroRecta(marca)}`),
   };
   pintar();
   return api;

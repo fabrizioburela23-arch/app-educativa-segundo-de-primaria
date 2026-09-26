@@ -4,7 +4,7 @@
   "objetivo": "Conozco las fechas cívicas más importantes de Bolivia, sé qué recordamos en cada una y participo con respeto en los actos cívicos.",
   "explicacion": [
     {
-      "texto": "Una **fecha cívica** es un día para recordar un hecho importante de la historia de Bolivia o a nuestros símbolos patrios. Ese día, en la escuela, hacemos un **acto cívico**.",
+      "texto": "Una **fecha cívica** es un día en que recordamos un hecho importante de la historia de Bolivia o celebramos nuestros símbolos patrios. Ese día, en la escuela, hacemos un **acto cívico**.",
       "emoji": "🇧🇴",
       "visual": { "tipo": "fechas", "filtro": "civica" }
     },
@@ -34,14 +34,14 @@
     }
   ],
   "ejemplo": {
-    "instruccion": "Acompaña a Inti: marca en el calendario de su escuela las fechas cívicas del año.",
+    "instruccion": "Mira cómo Inti marca las fechas cívicas en el calendario de su escuela. Después, explora tú el calendario.",
     "pasos": [
       {
-        "texto": "En marzo, Inti marca el **23 de marzo**, Día del Mar. Ese día recordamos a **Eduardo Abaroa**, que defendió el Litoral en 1879.",
+        "texto": "Inti marca el **23 de marzo**, Día del Mar. Ese día recordamos a **Eduardo Abaroa**, que defendió el Litoral en 1879.",
         "visual": { "tipo": "calendario", "mes": 3, "anio": 2026, "marcar": [23], "titulo": "Día del Mar" }
       },
       {
-        "texto": "En julio marca el **16 de julio**: en 1809, en La Paz, hubo una lucha por la libertad. Unos meses antes, el **25 de mayo** de 1809, hubo otra en Chuquisaca.",
+        "texto": "Después marca el **16 de julio**: en 1809, en La Paz, hubo una lucha por la libertad. Poco antes, el **25 de mayo** de 1809, hubo otra en Chuquisaca.",
         "visual": { "tipo": "calendario", "mes": 7, "anio": 2026, "marcar": [16], "titulo": "Revolución de La Paz" }
       },
       {
@@ -68,7 +68,7 @@
           ["17 de agosto", "Día de la Bandera"],
           ["18 de noviembre", "Día del Himno"]
         ],
-        "pista": "En agosto hay dos fechas distintas: el 6 y el 17. Míralas bien en la lista.",
+        "pista": "Fíjate bien en el número del día: el 6 y el 17 de agosto son fechas distintas.",
         "explicacion": "6 de agosto: Independencia de Bolivia. 17 de agosto: Día de la Bandera. 18 de noviembre: Día del Himno.",
         "error": "significado-fecha"
       },
@@ -78,7 +78,7 @@
         "apoyo": "La Independencia se celebra el 6 de agosto. Busca el número 6.",
         "manipulable": { "tipo": "calendario", "mes": 8, "anio": 2026, "objetivo": 6 },
         "pista": "Cuenta los días desde el 1 hasta llegar al 6.",
-        "explicacion": "El Día de la Independencia es el 6 de agosto. En 2026 fue un jueves.",
+        "explicacion": "El Día de la Independencia es el 6 de agosto. En este calendario de 2026, cae jueves.",
         "error": "ubica-fecha"
       },
       {
@@ -103,10 +103,10 @@
     },
     {
       "id": "p2", "tipo": "tocar", "nivel": 1,
-      "enunciado": "Toca las tres palabras que dicen lo que hacemos en un acto cívico.",
-      "texto": "En el acto cívico, *izamos* la bandera, *cantamos* el himno y *desfilamos* por la plaza.",
+      "enunciado": "Toca las tres palabras que dicen lo que hacemos el 6 de agosto.",
+      "texto": "El 6 de agosto, en el acto cívico, *izamos* la bandera y *cantamos* el himno. Después, *desfilamos* por la plaza.",
       "pista": "Busca lo que hacemos con la bandera, con el himno y en la plaza.",
-      "explicacion": "En un acto cívico izamos la bandera, cantamos el himno y desfilamos.",
+      "explicacion": "En el acto cívico izamos la bandera y cantamos el himno. Después, desfilamos por la plaza.",
       "error": "acto-civico"
     },
     {
@@ -118,7 +118,7 @@
         ["23 de marzo", "Día del Mar"],
         ["18 de noviembre", "Día del Himno"]
       ],
-      "pista": "En agosto hay dos fechas: el 6 es la Independencia y el 17 es otra.",
+      "pista": "Hay dos cartas de agosto: el 6 es la Independencia. ¿Qué celebramos el 17?",
       "explicacion": "6 de agosto: Independencia. 17 de agosto: Día de la Bandera. 23 de marzo: Día del Mar. 18 de noviembre: Día del Himno.",
       "error": "significado-fecha"
     },
@@ -137,7 +137,7 @@
       "enunciado": "El Día de la Bandera es el 17 de agosto. Tócalo en el calendario.",
       "manipulable": { "tipo": "calendario", "mes": 8, "anio": 2026, "objetivo": 17 },
       "pista": "Busca el número 17. Está después del 16.",
-      "explicacion": "El Día de la Bandera es el 17 de agosto. En 2026 fue un lunes.",
+      "explicacion": "El Día de la Bandera es el 17 de agosto. En este calendario de 2026, cae lunes.",
       "error": "ubica-fecha"
     },
     {
@@ -145,9 +145,9 @@
     },
     {
       "id": "p7", "tipo": "clasificar", "nivel": 2,
-      "enunciado": "¿Esta fecha celebra un símbolo patrio o recuerda un hecho de la historia?",
+      "enunciado": "¿Es el día de un símbolo patrio o recuerda un hecho de la historia?",
       "categorias": [
-        { "id": "simbolo", "texto": "Celebra un símbolo patrio", "emoji": "🇧🇴" },
+        { "id": "simbolo", "texto": "Día de un símbolo patrio", "emoji": "🇧🇴" },
         { "id": "hecho", "texto": "Recuerda un hecho de la historia", "emoji": "📜" }
       ],
       "elementos": [
@@ -156,10 +156,11 @@
         { "texto": "6 de agosto: Independencia", "categoria": "hecho" },
         { "texto": "25 de mayo: Primer Grito Libertario", "categoria": "hecho" },
         { "texto": "16 de julio: Revolución de La Paz", "categoria": "hecho" },
-        { "texto": "23 de marzo: Día del Mar", "categoria": "hecho" }
+        { "texto": "23 de marzo: Día del Mar", "categoria": "hecho" },
+        { "texto": "22 de enero: Estado Plurinacional", "categoria": "hecho" }
       ],
       "pista": "La bandera y el himno son símbolos patrios. Las otras fechas recuerdan cosas que pasaron.",
-      "explicacion": "El Día de la Bandera y el Día del Himno celebran símbolos patrios. La Independencia, el Primer Grito Libertario, la Revolución de La Paz y el Día del Mar recuerdan hechos de la historia.",
+      "explicacion": "El Día de la Bandera y el Día del Himno celebran símbolos patrios. La Independencia, el Primer Grito Libertario, la Revolución de La Paz, el Día del Mar y el Día del Estado Plurinacional recuerdan hechos de la historia.",
       "error": "hecho-o-simbolo"
     },
     {
@@ -221,10 +222,11 @@
         ["25 de mayo de 1809", "Lucha por la libertad en Chuquisaca"],
         ["16 de julio de 1809", "Lucha por la libertad en La Paz"],
         ["6 de agosto de 1825", "Bolivia se declara independiente"],
-        ["18 de noviembre de 1845", "Se canta el himno por primera vez"]
+        ["18 de noviembre de 1845", "Se canta el himno por primera vez"],
+        ["22 de enero de 2010", "Se funda el Estado Plurinacional"]
       ],
-      "pista": "Empieza por los años que recuerdas mejor, 1825 y 1845. Después piensa en qué ciudad fue cada lucha de 1809.",
-      "explicacion": "25 de mayo de 1809: Chuquisaca. 16 de julio de 1809: La Paz. 6 de agosto de 1825: Independencia. 18 de noviembre de 1845: el himno se canta por primera vez.",
+      "pista": "Empieza por los años que recuerdas mejor, como 1825 y 2010. Después piensa en qué ciudad fue cada lucha de 1809.",
+      "explicacion": "25 de mayo de 1809: Chuquisaca. 16 de julio de 1809: La Paz. 6 de agosto de 1825: Independencia. 18 de noviembre de 1845: el himno se canta por primera vez. 22 de enero de 2010: se funda el Estado Plurinacional, porque en Bolivia viven muchas naciones y culturas.",
       "error": "significado-fecha"
     },
     {
@@ -242,7 +244,7 @@
       "respuesta": 16,
       "sufijo": "años",
       "erroresComunes": [
-        { "respuesta": 24, "pista": "Revisa las unidades: a 5 no le puedes quitar 9 así nomás. Mejor cuenta desde 1809 hasta 1825.", "error": "calcula-tiempo" },
+        { "respuesta": 24, "pista": "Revisa las unidades: a 5 no le puedes quitar 9 sin pedir prestado. Prueba contar desde 1809 hasta 1825.", "error": "calcula-tiempo" },
         { "respuesta": 17, "pista": "Contaste los años de las puntas. Cuenta los saltos: de 1809 a 1810 es 1 año.", "error": "calcula-tiempo" },
         { "respuesta": 15, "pista": "Casi. De 1809 a 1810 también pasa 1 año.", "error": "calcula-tiempo" }
       ],
@@ -275,7 +277,7 @@
             { "texto": "Izar la bandera y cantar el himno", "correcta": true },
             { "texto": "Contar quién fue Eduardo Abaroa", "correcta": true },
             { "texto": "Leer un poema sobre el mar escrito por el curso", "correcta": true },
-            { "texto": "Burlarse de las personas de otro país", "pista": "En un acto cívico recordamos con respeto. No nos burlamos de nadie.", "error": "acto-civico" },
+            { "texto": "Burlarse de las personas de otros países", "pista": "En un acto cívico recordamos con respeto. No nos burlamos de nadie.", "error": "acto-civico" },
             { "texto": "Correr y gritar durante el himno", "pista": "Durante el himno estamos quietos y atentos.", "error": "acto-civico" }
           ],
           "columnas": 1,
@@ -304,7 +306,7 @@
     },
     {
       "id": "p16", "tipo": "escribir-libre", "nivel": 3,
-      "enunciado": "¿Cuál es tu fecha cívica favorita? Escribe qué recordamos ese día y qué hacen en tu escuela.",
+      "enunciado": "¿Cuál es tu fecha cívica favorita? Escribe el día y el mes, qué recordamos y qué hacen en tu escuela.",
       "guia": ["Mi fecha cívica favorita es el...", "Ese día recordamos...", "En mi escuela..."],
       "requisitos": [
         { "tipo": "mayuscula-inicial" }, { "tipo": "punto-final" },
@@ -312,9 +314,9 @@
         { "tipo": "min-palabras", "valor": 10 },
         { "tipo": "incluye", "palabras": ["enero", "marzo", "mayo", "julio", "agosto", "noviembre"] }
       ],
-      "modelo": "Mi fecha favorita es el 6 de agosto. Ese día recordamos la Independencia y en mi escuela desfilamos.",
+      "modelo": "Mi fecha cívica favorita es el 6 de agosto. Ese día recordamos la Independencia y en mi escuela desfilamos.",
       "pista": "Escribe la fecha con su mes. Luego cuenta qué recordamos y qué hacen en tu escuela.",
-      "explicacion": "Por ejemplo: «Mi fecha favorita es el 6 de agosto. Ese día recordamos la Independencia y en mi escuela desfilamos».",
+      "explicacion": "Por ejemplo: «Mi fecha cívica favorita es el 6 de agosto. Ese día recordamos la Independencia y en mi escuela desfilamos».",
       "error": "produce-texto"
     }
   ],
@@ -333,21 +335,30 @@
       "enunciado": "El Día del Mar es el 23 de marzo. Tócalo en el calendario.",
       "manipulable": { "tipo": "calendario", "mes": 3, "anio": 2026, "objetivo": 23 },
       "pista": "Busca el número 23. Está después del 22.",
-      "explicacion": "El Día del Mar es el 23 de marzo. En 2026 fue un lunes.",
+      "explicacion": "El Día del Mar es el 23 de marzo. En este calendario de 2026, cae lunes.",
       "error": "ubica-fecha"
     },
     {
       "id": "c3", "tipo": "generador", "nivel": 2, "generador": "fechas-civicas", "params": { "tipo": "civica", "modo": "cuando" }
     },
     {
-      "id": "c4", "tipo": "escribir", "nivel": 2,
-      "enunciado": "Escucha y escribe el mes del Día del Himno Nacional.",
-      "escuchar": "El Día del Himno Nacional es el 18 de noviembre. Escribe el nombre del mes: noviembre.",
-      "visual": { "tipo": "emoji", "valor": "🎶" },
-      "respuestas": ["noviembre"],
-      "pista": "Es el mes número 11, casi al final del año. Empieza con n.",
-      "explicacion": "El Día del Himno es el 18 de noviembre. Se escribe no-viem-bre, con v.",
-      "error": "escribe-mes"
+      "id": "c4", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "En el acto cívico, ¿esta acción muestra respeto o no?",
+      "categorias": [
+        { "id": "si", "texto": "Muestra respeto", "emoji": "👍" },
+        { "id": "no", "texto": "No muestra respeto", "emoji": "✋" }
+      ],
+      "elementos": [
+        { "texto": "Mirar la bandera mientras la izan", "categoria": "si" },
+        { "texto": "Escuchar en silencio a quien habla", "categoria": "si" },
+        { "texto": "Ponerse de pie cuando suena el himno", "categoria": "si" },
+        { "texto": "Hacer bromas durante el himno", "categoria": "no" },
+        { "texto": "Empujar a un compañero en la fila", "categoria": "no" },
+        { "texto": "Salir corriendo en medio del acto", "categoria": "no" }
+      ],
+      "pista": "Pregúntate: ¿esa acción ayuda a que todos recuerden la fecha con atención?",
+      "explicacion": "Mirar la bandera, escuchar en silencio y ponerse de pie cuando suena el himno muestran respeto. Hacer bromas, empujar o salir corriendo no muestran respeto y distraen a los demás.",
+      "error": "acto-civico"
     },
     {
       "id": "c5", "tipo": "multiple", "nivel": 2,
@@ -448,7 +459,7 @@
       "hecho-o-simbolo": { "descripcion": "No distingue las fechas que celebran un símbolo patrio (bandera, himno) de las que recuerdan un hecho histórico.", "sugerencia": "Pregunten: «¿Ese día celebramos algo que nos representa, como la bandera, o algo que pasó hace mucho?»." },
       "acto-civico": { "descripcion": "No tiene claro qué se hace en un acto cívico o cómo mostrar respeto.", "sugerencia": "Jueguen a hacer un pequeño acto cívico en casa: izar una bandera de papel, cantar el himno de pie y escuchar en silencio." },
       "escribe-mes": { "descripcion": "Tiene dificultad para escribir el nombre de los meses.", "sugerencia": "Escriban los meses en tiras de papel, sepárenlos en sílabas con palmadas (a-gos-to) y péguenlos en la pared." },
-      "reconoce-personajes": { "descripcion": "Confunde a los personajes de la historia que se recuerdan en cada fecha.", "sugerencia": "Busquen juntos calles, plazas o billetes con nombres de personajes (Abaroa, Murillo, Zamudio) y conversen sobre quién fue cada uno." },
+      "reconoce-personajes": { "descripcion": "Confunde a los personajes de la historia que se recuerdan en cada fecha.", "sugerencia": "Busquen juntos calles, plazas o unidades educativas con nombres de personajes (Abaroa, Murillo, Zamudio) y conversen sobre quién fue cada uno." },
       "calcula-tiempo": { "descripcion": "Se equivoca al calcular cuántos días o años pasan entre dos fechas.", "sugerencia": "Cuenten saltos en el calendario o en una cinta métrica: empiecen a contar desde el día siguiente al de hoy." },
       "produce-texto": { "descripcion": "Le cuesta escribir oraciones completas sobre las fechas cívicas.", "sugerencia": "Conversen primero en voz alta sobre la fecha y luego escriban juntos una oración con mayúscula inicial y punto final." },
       "fechas-civicas": { "descripcion": "Confunde las fechas cívicas con lo que se recuerda en cada una.", "sugerencia": "Revisen juntos la lista de fechas en el panel de adultos y marquen cada una en un calendario de la casa." }

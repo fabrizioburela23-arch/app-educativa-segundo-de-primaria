@@ -120,7 +120,7 @@
     },
     {
       "id": "p6", "tipo": "numero", "nivel": 2,
-      "enunciado": "Wara tiene 12 huevos. Usa un cuarto de los huevos para hacer un queque. ¿Cuántos huevos usa?",
+      "enunciado": "Juan tiene 12 huevos. Usa un cuarto de los huevos para hacer un queque. ¿Cuántos huevos usa?",
       "visual": { "tipo": "emoji", "valor": "🥚", "cantidad": 12 },
       "respuesta": 3,
       "erroresComunes": [
@@ -128,7 +128,7 @@
         { "respuesta": 4, "pista": "Un cuarto no son 4 huevos. Reparte los 12 huevos en 4 grupos iguales.", "error": "cuarto-es-cuatro" }
       ],
       "pista": "Reparte los 12 huevos en 4 grupos iguales. ¿Cuántos hay en un grupo?",
-      "explicacion": "12 huevos en 4 grupos iguales: 3 en cada grupo. Un cuarto de 12 es 3, así que Wara usa 3 huevos.",
+      "explicacion": "12 huevos en 4 grupos iguales: 3 en cada grupo. Un cuarto de 12 es 3, así que Juan usa 3 huevos.",
       "error": "cuarto-cantidad"
     },
     {
@@ -359,7 +359,7 @@
       "pinta-fraccion": { "descripcion": "Pinta más o menos partes de las que pide la fracción.", "sugerencia": "Antes de pintar, pidan que muestre con el dedo «un cuarto», «dos cuartos» o «tres cuartos» en una hoja doblada en 4." },
       "partes-desiguales": { "descripcion": "Acepta como cuartos 4 partes de distinto tamaño.", "sugerencia": "Corten una tortilla en 4 pedazos desiguales y pregunten si es justo repartirla así entre 4 personas." },
       "confunde-mitad-cuarto": { "descripcion": "Confunde un cuarto con un medio (reparte en 2 en lugar de 4).", "sugerencia": "Partan una naranja en 2 y otra igual en 4, y comparen los pedazos: «medio es 1 de 2; un cuarto es 1 de 4»." },
-      "cuenta-partes": { "descripcion": "Cuenta mal las partes totales o las partes pintadas.", "sugerencia": "Pidan que cuente primero todas las partes y después solo las pintadas, tocándolas con el dedo." },
+      "cuenta-partes": { "descripcion": "Se equivoca al contar todas las partes o las partes pintadas.", "sugerencia": "Pidan que cuente primero todas las partes y después solo las pintadas, tocándolas con el dedo." },
       "vocabulario-fraccion": { "descripcion": "No recuerda la palabra «cuarto» para cada una de 4 partes iguales.", "sugerencia": "Usen la palabra al servir la comida: «te doy un cuarto de sandía», «quedan tres cuartos de torta»." },
       "notacion-fraccion": { "descripcion": "Le cuesta relacionar el nombre de la fracción con su forma escrita (1/4, 2/4, 3/4, 1/2).", "sugerencia": "Escriban tarjetas con «un cuarto» y «1/4», etc., y jueguen a juntar parejas usando una hoja doblada en 4 para comprobar." },
       "cuarto-cantidad": { "descripcion": "Le cuesta hallar un cuarto de una cantidad (por ejemplo, un cuarto de 12).", "sugerencia": "Repartan objetos reales (papas, fideos, piedritas) uno a uno en 4 platos y cuenten lo que hay en un plato." },

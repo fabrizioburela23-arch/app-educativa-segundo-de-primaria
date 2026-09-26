@@ -9,7 +9,7 @@
       "visual": { "tipo": "emojis", "items": ["👩‍🌾", "🤝", "👨‍🌾"] }
     },
     {
-      "texto": "**Ayni** es ayuda que se devuelve: hoy yo ayudo a tu familia y otro día tu familia ayuda a la mía, con el mismo trabajo. Como dice el dicho: «hoy por ti, mañana por mí».",
+      "texto": "**Ayni** es ayuda que se devuelve: hoy yo ayudo a tu familia y otro día tu familia ayuda a la mía. El trabajo se devuelve con trabajo. Como dice el dicho: «hoy por ti, mañana por mí».",
       "visual": { "tipo": "emojis", "items": ["🙋‍♀️", "🔁", "🙋‍♂️"], "etiquetas": ["hoy te ayudo", "la ayuda vuelve", "mañana me ayudas"] }
     },
     {
@@ -167,9 +167,9 @@
     {
       "id": "p7", "tipo": "tocar", "nivel": 2,
       "enunciado": "Toca los tres trabajos que hicieron juntos en la mink’a.",
-      "texto": "El sábado, los vecinos se reunieron para *cosechar* papa, *limpiar* el canal y *techar* la sede. Al final, compartieron un almuerzo.",
+      "texto": "El sábado, los vecinos se reunieron para *limpiar* el canal, *arreglar* el camino y *pintar* la sede. Al final, compartieron un almuerzo.",
       "pista": "Busca tres acciones de trabajo. Compartir el almuerzo fue para agradecer.",
-      "explicacion": "Los trabajos fueron cosechar, limpiar y techar. Después compartieron un almuerzo para agradecer.",
+      "explicacion": "Los trabajos fueron limpiar, arreglar y pintar. Después compartieron un almuerzo para agradecer.",
       "error": "concepto-minka"
     },
     {
@@ -430,7 +430,7 @@
     "visual": { "tipo": "emojis", "items": ["🔁", "👨‍👩‍👧‍👦"], "etiquetas": ["ayni", "mink’a"] }
   },
   "adulto": {
-    "objetivo": "Comprender dos formas andinas de trabajo comunitario: el ayni (ayuda recíproca entre familias: la ayuda recibida se devuelve con el mismo trabajo) y la mink’a o minka (trabajo colectivo convocado por una familia o por la comunidad, que se agradece con comida o productos, o que se hace para obras comunes). Reconocer ejemplos actuales en el campo y la ciudad y valorar la solidaridad y la reciprocidad, valores que la Constitución reconoce (art. 8).",
+    "objetivo": "Comprender dos formas andinas de trabajo comunitario: el ayni (ayuda recíproca entre familias: la ayuda recibida se devuelve después con trabajo, no con dinero) y la mink’a o minka (trabajo colectivo convocado por una familia o por la comunidad, que se agradece con comida o productos, o que se hace para obras comunes). Reconocer ejemplos actuales en el campo y la ciudad y valorar la solidaridad y la reciprocidad, valores que la Constitución reconoce (art. 8).",
     "sugerencias": [
       "Hagan un «ayni familiar»: esta semana su hija o hijo ayuda a un familiar en una tarea (regar, ordenar, cocinar) y otro día esa persona le devuelve la misma ayuda. Conversen sobre cómo se sintieron.",
       "Organicen una pequeña mink’a con la familia o los vecinos: limpiar el patio, la acera o un espacio común entre varios y compartir después un refrigerio. Pregunten: ¿quién invitó?, ¿cómo se agradeció?",
@@ -440,7 +440,7 @@
       "concepto-ayni": { "descripcion": "No comprende que en el ayni la ayuda recibida se devuelve.", "sugerencia": "Jueguen a «hoy por ti, mañana por mí»: ayúdense en tareas pequeñas y anoten quién ayudó a quién para devolver la ayuda." },
       "concepto-minka": { "descripcion": "No reconoce la mink’a como trabajo de muchas personas juntas.", "sugerencia": "Recuerden una actividad en la que muchas personas trabajaron juntas (limpieza, cosecha, techado) y conversen sobre quién invitó y cómo se agradeció." },
       "confunde-ayni-minka": { "descripcion": "Confunde el ayni con la mink’a.", "sugerencia": "Usen dos preguntas: «¿se devuelve la misma ayuda?» (ayni) y «¿trabajan muchas personas juntas para una familia o para todos?» (mink’a)." },
-      "escritura-terminos": { "descripcion": "Le cuesta escribir las palabras ayni y mink’a.", "sugerencia": "Escriban juntos las palabras en tarjetas y digan sus letras en voz alta: a-y-n-i, m-i-n-k-a." },
+      "escritura-terminos": { "descripcion": "Le cuesta escribir las palabras ayni y mink’a.", "sugerencia": "Escriban juntos las palabras en tarjetas y digan sus letras en voz alta: a-y-n-i, m-i-n-k-a. Muestren que mink’a lleva un apóstrofo entre la k y la a, y que también se acepta escribir minka." },
       "situacion-ayuda": { "descripcion": "Duda sobre cómo actuar cuando alguien le ayudó o necesita ayuda.", "sugerencia": "Planteen situaciones cotidianas («tu primo te prestó su lápiz, hoy él no tiene») y conversen sobre lo justo." },
       "valores-comunitarios": { "descripcion": "No reconoce la solidaridad y la reciprocidad como valores del trabajo comunitario.", "sugerencia": "Cuando ayuden a alguien en casa o en el barrio, nombren el valor: «esto es solidaridad», «esto es devolver la ayuda»." },
       "secuencia-trabajo": { "descripcion": "Ordena mal los pasos de una mink’a o de un ayni.", "sugerencia": "Cuenten la historia con dibujos en tarjetas y pidan que las ordene: necesidad, invitación, trabajo y agradecimiento." },

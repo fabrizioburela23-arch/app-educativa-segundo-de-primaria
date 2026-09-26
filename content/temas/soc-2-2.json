@@ -4,16 +4,16 @@
   "objetivo": "Cuento mi propia historia en orden, desde que era bebé hasta hoy, y sé cómo averiguar lo que pasó.",
   "explicacion": [
     {
-      "texto": "Tu vida tiene una historia: empezó el día en que naciste y sigue hoy. Cuando cuentas tu propia historia, eso se llama **autobiografía**.",
+      "texto": "Tu vida tiene una historia: empezó el día en que naciste y sigue hasta hoy. Cuando cuentas tu propia historia, eso se llama **autobiografía**.",
       "emoji": "📖",
       "visual": { "tipo": "emojis", "items": ["👶", "👣", "🎒", "🧒"], "etiquetas": ["nací", "caminé", "fui a la escuela", "hoy"] }
     },
     {
       "texto": "Una **línea del tiempo** pone en orden lo que pasó: primero lo más antiguo y al final lo de ahora. Cada número puede ser una edad: el 0 es cuando naciste.",
-      "visual": { "tipo": "recta", "min": 0, "max": 8, "paso": 1, "marcar": [0, 1, 4, 6] }
+      "visual": { "tipo": "recta", "min": 0, "max": 8, "paso": 1, "marcar": [0, 1, 5, 6] }
     },
     {
-      "texto": "¿Cómo sabes lo que pasó cuando eras bebé? Mira **fotos**, escucha los **relatos** de tu familia y revisa **documentos**. Si no tienes fotos, las personas que te cuidan pueden contarte.",
+      "texto": "¿Cómo puedes saber lo que pasó cuando eras bebé? Mira **fotos**, escucha los **relatos** de tu familia y lee tus **documentos** con un adulto. Si no tienes fotos, las personas que te cuidan pueden contarte.",
       "visual": { "tipo": "emojis", "items": ["📷", "🗣️", "📄"], "etiquetas": ["fotos", "relatos", "documentos"] }
     },
     {
@@ -24,9 +24,9 @@
   "ejemplo": {
     "instruccion": "Mira cómo Nayra arma la historia de su vida. Después, mueve el marcador por tu propia línea del tiempo.",
     "pasos": [
-      { "texto": "Nayra quiere contar su historia. Primero pregunta a su abuela cómo era de bebé, y miran fotos juntas.", "visual": { "tipo": "emojis", "items": ["👧", "👵", "📷"], "etiquetas": ["Nayra", "abuela", "fotos"] } },
+      { "texto": "Nayra quiere contar su historia. Primero pregunta a su abuela cómo era de bebé y miran fotos juntas.", "visual": { "tipo": "emojis", "items": ["👧", "👵", "📷"], "etiquetas": ["Nayra", "abuela", "fotos"] } },
       { "texto": "Después ordena lo que pasó: nació, dio sus primeros pasos, entró al kínder y luego a primero de primaria.", "visual": { "tipo": "emojis", "items": ["👶", "👣", "🧸", "🎒"], "etiquetas": ["nació", "primeros pasos", "kínder", "primero"] } },
-      { "texto": "Hoy Nayra tiene 7 años y está en segundo. Eso va al final de su línea del tiempo, porque es lo más nuevo.", "visual": { "tipo": "recta", "min": 0, "max": 8, "paso": 1, "marcar": [0, 1, 4, 6, 7] } },
+      { "texto": "Hoy Nayra tiene 7 años y está en segundo. Eso va al final de su línea del tiempo, porque es lo más nuevo.", "visual": { "tipo": "recta", "min": 0, "max": 8, "paso": 1, "marcar": [0, 1, 5, 6, 7] } },
       { "texto": "Al final, escribe: «Me llamo Nayra. Cuando era bebé, mi mamá me cargaba en su aguayo. Ahora me encanta leer cuentos.»", "emoji": "📝" }
     ],
     "explorar": { "tipo": "recta", "min": 0, "max": 8, "paso": 1 }
@@ -74,11 +74,11 @@
         "apoyo": "Una foto se mira, un relato se escucha y un documento se lee.",
         "pares": [
           [ { "texto": "una foto", "emoji": "📷" }, "cómo era tu cara de bebé" ],
-          [ { "texto": "un relato de tu familia", "emoji": "🗣️" }, "lo que ellos recuerdan de ti" ],
-          [ { "texto": "el certificado de nacimiento", "emoji": "📄" }, "el día en que naciste" ]
+          [ { "texto": "un relato de tu familia", "emoji": "🗣️" }, "lo que tu familia recuerda de ti" ],
+          [ { "texto": "el certificado de nacimiento", "emoji": "📄" }, "la fecha y el lugar en que naciste" ]
         ],
-        "pista": "¿Qué puedes ver en una foto? ¿Qué dato está escrito en un documento?",
-        "explicacion": "La foto muestra cómo era tu cara, el relato cuenta lo que tu familia recuerda y el certificado dice el día en que naciste.",
+        "pista": "¿Qué puedes ver en una foto? ¿Qué datos están escritos en un documento?",
+        "explicacion": "La foto muestra cómo era tu cara, el relato cuenta lo que tu familia recuerda y el certificado dice la fecha y el lugar en que naciste.",
         "error": "fuentes-historia"
       }
     ]
@@ -119,7 +119,7 @@
     },
     {
       "id": "p4", "tipo": "completar", "nivel": 1,
-      "enunciado": "Completa con la palabra que dice cuándo pasó.",
+      "enunciado": "Completa con la palabra de tiempo correcta.",
       "texto": "[Antes] yo usaba pañales. [Ahora] ya sé leer.",
       "banco": ["Mañana"],
       "pista": "¿Cuándo usabas pañales: hace mucho tiempo o hoy?",
@@ -160,36 +160,36 @@
       "elementos": [
         "0 años: nació.",
         "1 año: dio sus primeros pasos.",
-        "4 años: entró al kínder.",
+        "5 años: entró al kínder.",
         "6 años: entró a primero de primaria.",
         "7 años: aprendió a andar en bicicleta."
       ],
       "vertical": true,
       "pista": "Empieza por el número más pequeño: el 0 es cuando nació.",
-      "explicacion": "Se ordena de la edad menor a la mayor: 0, 1, 4, 6 y 7 años.",
+      "explicacion": "Se ordena de la edad menor a la mayor: 0, 1, 5, 6 y 7 años.",
       "error": "orden-temporal"
     },
     {
       "id": "p8", "tipo": "escribir", "nivel": 2,
       "enunciado": "Escucha y responde: ¿qué miró Luis para conocer su historia? Escribe una palabra.",
       "escuchar": "Luis miró una foto de cuando tenía un año. Se vio muy pequeño y sonriente.",
-      "respuestas": ["foto", "fotografía", "una foto", "la foto", "una fotografía"],
+      "respuestas": ["foto", "fotografía", "una foto", "la foto", "una fotografía", "su foto", "fotos"],
       "pista": "Escucha otra vez: ¿qué cosa miró Luis?",
       "explicacion": "Luis miró una foto. Las fotos nos muestran cómo éramos antes.",
       "error": "escucha-comprension"
     },
     {
       "id": "p9", "tipo": "numero", "nivel": 2,
-      "enunciado": "Arami entró al kínder a los 4 años. Ahora tiene 7. ¿Cuántos años pasaron?",
-      "visual": { "tipo": "recta", "min": 0, "max": 8, "paso": 1, "marcar": [4, 7] },
+      "enunciado": "Arami entró al kínder a los 5 años. Ahora tiene 8. ¿Cuántos años pasaron?",
+      "visual": { "tipo": "recta", "min": 0, "max": 8, "paso": 1, "marcar": [5, 8] },
       "respuesta": 3,
       "sufijo": "años",
       "erroresComunes": [
-        { "respuesta": 11, "pista": "No hay que sumar. Cuenta los saltos del 4 al 7.", "error": "cuenta-anios" },
-        { "respuesta": 4, "pista": "Cuenta los saltos, no los números: del 4 al 5 es un salto.", "error": "cuenta-anios" }
+        { "respuesta": 13, "pista": "No hay que sumar. Cuenta los saltos del 5 al 8.", "error": "cuenta-anios" },
+        { "respuesta": 4, "pista": "Cuenta los saltos, no los números: del 5 al 6 es un salto.", "error": "cuenta-anios" }
       ],
-      "pista": "Pon el dedo en el 4 y cuenta los saltos hasta llegar al 7.",
-      "explicacion": "Del 4 al 7 hay 3 saltos: 7 − 4 = 3. Pasaron 3 años.",
+      "pista": "Pon el dedo en el 5 y cuenta los saltos hasta llegar al 8.",
+      "explicacion": "Del 5 al 8 hay 3 saltos: 8 − 5 = 3. Pasaron 3 años.",
       "error": "cuenta-anios"
     },
     {
@@ -272,7 +272,7 @@
         },
         {
           "tipo": "escribir-libre",
-          "enunciado": "Escribe una pregunta que Kusi puede hacer a su familia.",
+          "enunciado": "Escribe una pregunta que Kusi puede hacerle a su familia.",
           "guia": ["¿Qué me gustaba...?", "¿Cómo era yo cuando...?"],
           "requisitos": [
             { "tipo": "signos-pregunta" },
@@ -326,45 +326,45 @@
         { "id": "ahora", "texto": "Ahora", "emoji": "👧" }
       ],
       "elementos": [
-        { "texto": "no tenía dientes", "categoria": "antes" },
+        { "texto": "todavía no caminaba", "categoria": "antes" },
         { "texto": "dormía en una cuna", "categoria": "antes" },
         { "texto": "escribo mi nombre", "emoji": "✏️", "categoria": "ahora" },
         { "texto": "ayudo a regar las plantas", "emoji": "🌱", "categoria": "ahora" },
         { "texto": "juego a la pelota", "emoji": "⚽", "categoria": "ahora" }
       ],
       "pista": "Piensa: ¿un bebé puede hacer eso?",
-      "explicacion": "Cuando era bebé, Rosa no tenía dientes y dormía en una cuna. Ahora escribe su nombre, ayuda a regar las plantas y juega a la pelota.",
+      "explicacion": "Cuando era bebé, Rosa todavía no caminaba y dormía en una cuna. Ahora escribe su nombre, ayuda a regar las plantas y juega a la pelota.",
       "error": "antes-ahora"
     },
     {
       "id": "c3", "tipo": "tocar", "nivel": 2,
-      "enunciado": "Toca las fuentes que usó Ana para conocer su historia.",
-      "texto": "Ana miró sus *fotos*, leyó su *certificado de nacimiento* y escuchó los *relatos de su abuela*.",
-      "pista": "Busca tres fuentes: algo que se mira, un documento y algo que se escucha.",
-      "explicacion": "Ana usó tres fuentes: sus fotos, su certificado de nacimiento y los relatos de su abuela.",
+      "enunciado": "¿Qué fuentes usó Ana para conocer su historia? Toca 3 palabras: algo que miró, algo que leyó y algo que escuchó.",
+      "texto": "Ana miró sus *fotos*, leyó su *certificado* de nacimiento y escuchó *relatos* de cuando era bebé.",
+      "pista": "Toca una sola palabra por cada fuente: lo que Ana miró, el documento que leyó y lo que escuchó.",
+      "explicacion": "Ana usó tres fuentes: miró sus fotos, leyó su certificado de nacimiento y escuchó relatos de cuando era bebé.",
       "error": "fuentes-historia"
     },
     {
       "id": "c4", "tipo": "numero", "nivel": 2,
-      "enunciado": "Mateo aprendió a caminar cuando tenía 1 año. Entró a primero de primaria a los 6. ¿Cuántos años pasaron?",
-      "visual": { "tipo": "recta", "min": 0, "max": 8, "paso": 1, "marcar": [1, 6] },
-      "respuesta": 5,
+      "enunciado": "Lucía tiene 8 años. Dio sus primeros pasos cuando tenía 1 año. ¿Hace cuántos años fue?",
+      "visual": { "tipo": "recta", "min": 0, "max": 8, "paso": 1, "marcar": [1, 8] },
+      "respuesta": 7,
       "sufijo": "años",
       "erroresComunes": [
-        { "respuesta": 7, "pista": "No hay que sumar. Cuenta los saltos del 1 al 6.", "error": "cuenta-anios" },
-        { "respuesta": 6, "pista": "Cuenta los saltos, no los números: del 1 al 2 es un salto.", "error": "cuenta-anios" }
+        { "respuesta": 9, "pista": "No hay que sumar. Cuenta los saltos del 1 al 8.", "error": "cuenta-anios" },
+        { "respuesta": 8, "pista": "Cuenta los saltos, no los números: del 1 al 2 es un salto.", "error": "cuenta-anios" }
       ],
-      "pista": "Pon el dedo en el 1 y cuenta los saltos hasta llegar al 6.",
-      "explicacion": "Del 1 al 6 hay 5 saltos: 6 − 1 = 5. Pasaron 5 años.",
+      "pista": "Pon el dedo en el 1 y cuenta los saltos hasta el 8, que es su edad de hoy.",
+      "explicacion": "Del 1 al 8 hay 7 saltos: 8 − 1 = 7. Lucía dio sus primeros pasos hace 7 años.",
       "error": "cuenta-anios"
     },
     {
       "id": "c5", "tipo": "completar", "nivel": 2,
-      "enunciado": "Completa con la fuente correcta.",
-      "texto": "Para ver cómo era de bebé, miro una [foto]. Para saber el día en que nací, leo mi [certificado] de nacimiento.",
+      "enunciado": "Completa lo que cuenta Inti sobre su historia.",
+      "texto": "Mi [autobiografía] es la historia de mi vida contada por mí. Para ver cómo era de bebé, miro una [foto]. Para saber el día en que nací, leo mi [certificado] de nacimiento.",
       "banco": ["pelota", "receta"],
-      "pista": "Una fuente se mira y la otra es un documento.",
-      "explicacion": "Para ver cómo eras, miras una foto. El día en que naciste está en tu certificado de nacimiento.",
+      "pista": "¿Cómo se llama la historia de tu vida contada por ti? Después piensa: ¿qué fuente se mira y cuál es un documento?",
+      "explicacion": "La historia de tu vida contada por ti es tu autobiografía. Para ver cómo eras, miras una foto. El día en que naciste está en tu certificado de nacimiento.",
       "error": "fuentes-historia"
     },
     {
@@ -381,13 +381,13 @@
       "enunciado": "Sofía tiene 8 años. Ordena su historia, de lo más antiguo a lo más nuevo.",
       "elementos": [
         "Nació hace 8 años.",
-        "Entró al kínder hace 4 años.",
+        "Entró al kínder hace 3 años.",
         "Aprendió a nadar hace 1 año.",
         "Hoy cumple 8 años."
       ],
       "vertical": true,
       "pista": "Lo que pasó hace más años es más antiguo: va primero.",
-      "explicacion": "Hace 8 años nació, hace 4 entró al kínder, hace 1 aprendió a nadar y hoy cumple 8 años.",
+      "explicacion": "Hace 8 años nació, hace 3 entró al kínder, hace 1 aprendió a nadar y hoy cumple 8 años.",
       "error": "orden-temporal"
     },
     {

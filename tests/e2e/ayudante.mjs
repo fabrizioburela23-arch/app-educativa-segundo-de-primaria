@@ -32,17 +32,18 @@ async function teclear(page, numero) {
 export async function responder(page, ej, bien, manipular = null) {
   switch (ej.tipo) {
     case 'opcion': {
-      const op = bien ? ej.opciones.find((o) => o.correcta) : ej.opciones.find((o) => !o.correcta);
+      const candidatas = bien ? ej.opciones.filter((o) => o.correcta) : ej.opciones.filter((o) => !o.correcta);
       const ops = page.locator('.opcion');
       const n = await ops.count();
-      const esperado = norm([op.emoji, op.texto].filter(Boolean).join(' '));
-      for (let i = 0; i < n; i++) {
-        const t = norm(await ops.nth(i).innerText());
-        if (t === esperado || (op.texto && t.endsWith(norm(op.texto)) && t.length - norm(op.texto).length <= 4) || (!op.texto && t === norm(op.emoji || ''))) {
-          if (!(await ops.nth(i).isDisabled())) { await ops.nth(i).click(); return; }
+      for (const op of candidatas) {
+        const esperado = norm([op.emoji, op.texto].filter(Boolean).join(' '));
+        for (let i = 0; i < n; i++) {
+          const t = norm(await ops.nth(i).innerText());
+          const coincide = t === esperado || (op.texto && t.endsWith(norm(op.texto)) && t.length - norm(op.texto).length <= 4) || (!op.texto && t === norm(op.emoji || ''));
+          if (coincide && !(await ops.nth(i).isDisabled())) { await ops.nth(i).click(); return; }
         }
       }
-      throw new Error(`Opción no encontrada: ${esperado}`);
+      throw new Error(`Opción no encontrada (${bien ? 'correcta' : 'incorrecta'}) en ${ej.id}`);
     }
     case 'multiple': {
       const lista = bien ? ej.opciones.filter((o) => o.correcta) : [ej.opciones.find((o) => !o.correcta)];

@@ -21,7 +21,7 @@
       "visual": { "tipo": "emojis", "items": ["🌾", "➡️", "🍞"], "etiquetas": ["materia prima: trigo", "se transforma", "producto: pan"] }
     },
     {
-      "texto": "La transforman los **artesanos**, que trabajan a mano en su taller, como los tejedores, las alfareras y las carpinteras. También las **industrias**: fábricas con máquinas que hacen muchos productos iguales.",
+      "texto": "La materia prima la transforman los **artesanos**, que trabajan a mano en su taller, como los tejedores, las alfareras y las carpinteras. También las **industrias**: fábricas con máquinas que hacen muchos productos iguales.",
       "visual": { "tipo": "emojis", "items": ["🧶", "🏺", "🏭"], "etiquetas": ["tejido a mano", "vasija de barro", "fábrica"] }
     }
   ],
@@ -29,7 +29,7 @@
     "instruccion": "Mira cómo la lana de la alpaca se transforma en una chompa.",
     "pasos": [
       {
-        "texto": "Doña Wara cría alpacas en el altiplano. Cuando la lana ya creció, la corta con cuidado: eso se llama **esquilar**. A la alpaca no le duele: es como cortarse el pelo.",
+        "texto": "Doña Wara cría alpacas en el altiplano. Cuando la lana ya creció, la corta con cuidado: eso se llama **esquilar**. A la alpaca no le duele. ¡Es como cuando te cortan el pelo!",
         "visual": { "tipo": "emojis", "items": ["🦙", "✂️"], "etiquetas": ["alpaca", "esquilar"] }
       },
       {
@@ -237,7 +237,7 @@
       "elementos": [
         { "texto": "Tejer un aguayo en el telar de la casa", "categoria": "art" },
         { "texto": "Moldear una vasija de barro con las manos", "categoria": "art" },
-        { "texto": "Tallar una cuchara de madera", "categoria": "art" },
+        { "texto": "Tallar a mano una cuchara de madera", "categoria": "art" },
         { "texto": "Envasar miles de cajas de leche con máquinas", "categoria": "ind" },
         { "texto": "Hacer azúcar de la caña en un ingenio con máquinas grandes", "categoria": "ind" },
         { "texto": "Hacer miles de galletas iguales con máquinas", "categoria": "ind" }
@@ -280,7 +280,7 @@
     },
     {
       "id": "p14", "tipo": "pasos", "nivel": 3,
-      "enunciado": "En el Beni, la familia de Arami cosecha cacao. Con las semillas del cacao se hace el chocolate.",
+      "enunciado": "En el Beni, la familia de Mateo cosecha cacao. Con las semillas del cacao se hace el chocolate.",
       "visual": { "tipo": "emojis", "items": ["🌳", "🍫"], "etiquetas": ["árbol de cacao", "chocolate"] },
       "pasos": [
         {

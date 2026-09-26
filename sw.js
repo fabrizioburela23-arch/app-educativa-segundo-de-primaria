@@ -1,6 +1,6 @@
 // Service worker: guarda la app y todas las lecciones para usarlas sin conexión.
 // VERSION la actualiza tools/generar-precache.mjs cuando cambia algún archivo.
-const VERSION = '6b7b72cf0169';
+const VERSION = 'c49c65f95a96';
 const CACHE = `aprendo2-${VERSION}`;
 
 self.addEventListener('install', (event) => {

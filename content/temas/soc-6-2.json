@@ -1,0 +1,484 @@
+{
+  "id": "soc-6-2",
+  "titulo": "Fechas conmemorativas y de mi departamento",
+  "objetivo": "Conozco fechas conmemorativas, como el Día del Niño y la Niña o el Año Nuevo Andino Amazónico y del Chaco, y sé cuándo celebra su aniversario cada departamento.",
+  "explicacion": [
+    {
+      "texto": "Las **fechas conmemorativas** nos recuerdan a personas, a la naturaleza o a nuestras culturas. Ese día **agradecemos**, **celebramos** o **pensamos** en algo importante.",
+      "emoji": "🎊",
+      "visual": { "tipo": "fechas", "filtro": "conmemorativa" }
+    },
+    {
+      "texto": "Algunas celebran a **personas**: a los papás (19 de marzo), a las niñas y los niños (12 de abril), a las mamás (27 de mayo), a quienes enseñan (6 de junio) y a quienes estudian (21 de septiembre).",
+      "visual": { "tipo": "emojis", "items": ["👨", "🧒", "👩", "👩‍🏫", "🎒"], "etiquetas": ["19 de marzo", "12 de abril", "27 de mayo", "6 de junio", "21 de septiembre"] }
+    },
+    {
+      "texto": "Otras nos invitan a cuidar la **naturaleza** y a valorar nuestras **culturas**. El 22 de abril es el Día de la Madre Tierra. El 21 de junio celebramos el Año Nuevo Andino Amazónico y del Chaco: empieza un nuevo ciclo agrícola.",
+      "visual": { "tipo": "calendario", "mes": 6, "anio": 2026, "marcar": [21], "titulo": "Año Nuevo Andino Amazónico y del Chaco" }
+    },
+    {
+      "texto": "Cada **departamento** celebra su **aniversario** y recuerda un hecho de su historia. Por ejemplo, Tarija, el 15 de abril, y Cochabamba, el 14 de septiembre. ¿Cuándo es el de tu departamento?",
+      "visual": { "tipo": "fechas", "filtro": "departamental" }
+    }
+  ],
+  "ejemplo": {
+    "instruccion": "Mira cómo Arami arma su calendario de fechas importantes. Después, explora tú el calendario.",
+    "pasos": [
+      {
+        "texto": "Arami vive en Santa Cruz. Marca el aniversario de su departamento: el **24 de septiembre**. ¡Ese mismo día también celebra Pando!",
+        "visual": { "tipo": "calendario", "mes": 9, "anio": 2026, "marcar": [24], "titulo": "Aniversario de Santa Cruz y de Pando" }
+      },
+      {
+        "texto": "Luego marca el **21 de septiembre**, Día del Estudiante y de la Primavera. Desde ese día, faltan 3 días para el aniversario.",
+        "visual": { "tipo": "calendario", "mes": 9, "anio": 2026, "marcar": [21, 24] }
+      },
+      {
+        "texto": "En abril marca el **12**, Día del Niño y la Niña, y el **22**, Día de la Madre Tierra.",
+        "visual": { "tipo": "calendario", "mes": 4, "anio": 2026, "marcar": [12, 22] }
+      },
+      {
+        "texto": "En junio marca el **6**, Día del Maestro y la Maestra, y el **21**, Año Nuevo Andino Amazónico y del Chaco.",
+        "visual": { "tipo": "calendario", "mes": 6, "anio": 2026, "marcar": [6, 21] }
+      }
+    ],
+    "explorar": { "tipo": "calendario", "mes": 9, "anio": 2026 }
+  },
+  "guiada": {
+    "intro": "Vamos a hacerlo juntos, paso a paso.",
+    "pasos": [
+      {
+        "id": "g1", "tipo": "clasificar",
+        "enunciado": "¿Qué celebra cada fecha?",
+        "apoyo": "Pregúntate: ¿ese día celebramos a alguien o pensamos en cuidar el agua, el aire y las plantas?",
+        "categorias": [
+          { "id": "personas", "texto": "Celebra a personas", "emoji": "🤗" },
+          { "id": "naturaleza", "texto": "Nos invita a cuidar la naturaleza", "emoji": "🌱" }
+        ],
+        "elementos": [
+          { "texto": "Día del Niño y la Niña", "categoria": "personas" },
+          { "texto": "Día del Maestro y la Maestra", "categoria": "personas" },
+          { "texto": "Día del Padre", "categoria": "personas" },
+          { "texto": "Día de la Madre Tierra", "categoria": "naturaleza" },
+          { "texto": "Día Mundial del Medio Ambiente", "categoria": "naturaleza" }
+        ],
+        "pista": "Cuidado: la Madre Tierra no es una persona. Es nuestro planeta, con su agua, su aire, sus plantas y sus animales.",
+        "explicacion": "El Día del Niño y la Niña, el del Maestro y la Maestra y el del Padre celebran a personas. El Día de la Madre Tierra y el del Medio Ambiente nos invitan a cuidar la naturaleza.",
+        "error": "significado-conmemorativa"
+      },
+      {
+        "id": "g2", "tipo": "manipular",
+        "enunciado": "Toca en el calendario el Día del Niño y la Niña.",
+        "apoyo": "El Día del Niño y la Niña es el 12 de abril. Busca el número 12.",
+        "manipulable": { "tipo": "calendario", "mes": 4, "anio": 2026, "objetivo": 12 },
+        "pista": "Busca el número que viene después del 11.",
+        "explicacion": "El Día del Niño y la Niña es el 12 de abril. En este calendario de 2026, cae domingo.",
+        "error": "ubica-fecha"
+      },
+      {
+        "id": "g3", "tipo": "relacionar",
+        "enunciado": "Une cada departamento con la fecha de su aniversario.",
+        "apoyo": "Mira la lista de aniversarios. Busca el nombre de cada departamento.",
+        "visual": { "tipo": "fechas", "filtro": "departamental" },
+        "pares": [
+          ["La Paz", "16 de julio"],
+          ["Chuquisaca", "25 de mayo"],
+          ["Cochabamba", "14 de septiembre"]
+        ],
+        "pista": "Lee la lista con calma: al lado de cada fecha está el nombre del departamento.",
+        "explicacion": "La Paz celebra el 16 de julio, Chuquisaca el 25 de mayo y Cochabamba el 14 de septiembre.",
+        "error": "aniversario-departamento"
+      }
+    ]
+  },
+  "practica": [
+    {
+      "id": "p1", "tipo": "generador", "nivel": 1, "generador": "fechas-civicas", "params": { "tipo": "conmemorativa", "modo": "que-se-celebra" }
+    },
+    {
+      "id": "p2", "tipo": "memoria", "nivel": 1,
+      "enunciado": "Encuentra las parejas: la fecha y lo que celebramos.",
+      "pares": [
+        ["12 de abril", "Día del Niño y la Niña"],
+        ["6 de junio", "Día del Maestro y la Maestra"],
+        ["22 de abril", "Día de la Madre Tierra"],
+        ["21 de septiembre", "Día del Estudiante"],
+        ["27 de mayo", "Día de la Madre"]
+      ],
+      "pista": "Hay dos cartas de abril: el 12 es para las niñas y los niños. ¿Y el 22?",
+      "explicacion": "12 de abril: Día del Niño y la Niña. 22 de abril: Día de la Madre Tierra. 27 de mayo: Día de la Madre. 6 de junio: Día del Maestro y la Maestra. 21 de septiembre: Día del Estudiante.",
+      "error": "significado-conmemorativa"
+    },
+    {
+      "id": "p3", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Toca las palabras que nombran a las personas que celebramos.",
+      "texto": "En marzo celebramos a los *papás*, en abril a las *niñas* y los *niños*, en mayo a las *mamás* y en junio a las *maestras* y los *maestros*.",
+      "pista": "Busca las palabras que nombran personas. Hay una en marzo, dos en abril, una en mayo y dos en junio.",
+      "explicacion": "Celebramos a los papás, a las niñas y los niños, a las mamás y a las maestras y los maestros.",
+      "error": "significado-conmemorativa"
+    },
+    {
+      "id": "p4", "tipo": "manipular", "nivel": 1,
+      "enunciado": "El Día de la Madre Tierra es el 22 de abril. Tócalo en el calendario.",
+      "manipulable": { "tipo": "calendario", "mes": 4, "anio": 2026, "objetivo": 22 },
+      "pista": "Busca el número 22. Está después del 21.",
+      "explicacion": "El Día de la Madre Tierra es el 22 de abril. En este calendario de 2026, cae miércoles.",
+      "error": "ubica-fecha"
+    },
+    {
+      "id": "p5", "tipo": "escribir", "nivel": 1,
+      "enunciado": "Escucha y escribe el mes del Día del Niño y la Niña.",
+      "escuchar": "El Día del Niño y la Niña es el 12 de abril. Escribe el nombre del mes: abril.",
+      "visual": { "tipo": "emoji", "valor": "🧒" },
+      "respuestas": ["abril"],
+      "pista": "Es el mes número 4 del año. Empieza con a.",
+      "explicacion": "El Día del Niño y la Niña es el 12 de abril. Se escribe a-bril.",
+      "error": "escribe-palabra"
+    },
+    {
+      "id": "p6", "tipo": "generador", "nivel": 2, "generador": "fechas-civicas", "params": { "tipo": "departamental", "modo": "cuando" }
+    },
+    {
+      "id": "p7", "tipo": "generador", "nivel": 2, "generador": "fechas-civicas", "params": { "tipo": "conmemorativa", "modo": "cuando" }
+    },
+    {
+      "id": "p8", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "¿Es una fecha conmemorativa o el aniversario de un departamento?",
+      "categorias": [
+        { "id": "conm", "texto": "Fecha conmemorativa", "emoji": "🎊" },
+        { "id": "dep", "texto": "Aniversario de un departamento", "emoji": "🗺️" }
+      ],
+      "elementos": [
+        { "texto": "Día del Maestro y la Maestra", "categoria": "conm" },
+        { "texto": "Año Nuevo Andino Amazónico y del Chaco", "categoria": "conm" },
+        { "texto": "Día de la Madre Tierra", "categoria": "conm" },
+        { "texto": "Oruro recuerda la rebelión de 1781", "categoria": "dep" },
+        { "texto": "Tarija recuerda la Batalla de La Tablada", "categoria": "dep" },
+        { "texto": "Potosí recuerda el levantamiento de 1810", "categoria": "dep" }
+      ],
+      "pista": "Los aniversarios de los departamentos recuerdan un hecho de la historia de ese lugar.",
+      "explicacion": "Oruro, Tarija y Potosí celebran el aniversario de su departamento. El Día del Maestro y la Maestra, el Año Nuevo Andino Amazónico y del Chaco y el Día de la Madre Tierra son fechas conmemorativas.",
+      "error": "tipo-fecha"
+    },
+    {
+      "id": "p9", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "Une cada departamento con la fecha de su aniversario.",
+      "pares": [
+        ["Oruro", "10 de febrero"],
+        ["Tarija", "15 de abril"],
+        ["Potosí", "10 de noviembre"],
+        ["Beni", "18 de noviembre"]
+      ],
+      "pista": "Oruro celebra a comienzos del año. Potosí y el Beni celebran en noviembre: el Beni, el mismo día que el Día del Himno.",
+      "explicacion": "Oruro: 10 de febrero. Tarija: 15 de abril. Potosí: 10 de noviembre. Beni: 18 de noviembre.",
+      "error": "aniversario-departamento"
+    },
+    {
+      "id": "p10", "tipo": "ordenar", "nivel": 2,
+      "enunciado": "Ordena los aniversarios como aparecen en el calendario, de enero a diciembre.",
+      "elementos": [
+        "Oruro: 10 de febrero",
+        "Tarija: 15 de abril",
+        "Chuquisaca: 25 de mayo",
+        "La Paz: 16 de julio",
+        "Cochabamba: 14 de septiembre",
+        "Potosí: 10 de noviembre"
+      ],
+      "vertical": true,
+      "pista": "Fíjate solo en los meses. Recuerda su orden: enero, febrero, marzo, abril...",
+      "explicacion": "El orden es: Oruro (febrero), Tarija (abril), Chuquisaca (mayo), La Paz (julio), Cochabamba (septiembre) y Potosí (noviembre).",
+      "error": "orden-calendario"
+    },
+    {
+      "id": "p11", "tipo": "multiple", "nivel": 2,
+      "enunciado": "¿Qué fechas celebramos en junio? Elige todas.",
+      "opciones": [
+        { "texto": "Día del Maestro y la Maestra", "correcta": true },
+        { "texto": "Año Nuevo Andino Amazónico y del Chaco", "correcta": true },
+        { "texto": "Día del Niño y la Niña", "pista": "El Día del Niño y la Niña es en abril.", "error": "mes-de-fecha" },
+        { "texto": "Día del Estudiante", "pista": "El Día del Estudiante es en septiembre, con la primavera.", "error": "mes-de-fecha" },
+        { "texto": "Día de la Madre Tierra", "pista": "El Día de la Madre Tierra es en abril.", "error": "mes-de-fecha" }
+      ],
+      "columnas": 1,
+      "pista": "Busca la fecha de quienes enseñan y la del nuevo ciclo agrícola.",
+      "explicacion": "En junio celebramos el Día del Maestro y la Maestra (6 de junio) y el Año Nuevo Andino Amazónico y del Chaco (21 de junio).",
+      "error": "mes-de-fecha"
+    },
+    {
+      "id": "p12", "tipo": "generador", "nivel": 3, "generador": "fechas-civicas", "params": { "tipo": "departamental", "modo": "que-se-celebra" }
+    },
+    {
+      "id": "p13", "tipo": "clasificar", "nivel": 3,
+      "enunciado": "¿Es una fecha cívica, conmemorativa o departamental?",
+      "categorias": [
+        { "id": "civica", "texto": "Cívica", "emoji": "🇧🇴" },
+        { "id": "conmemorativa", "texto": "Conmemorativa", "emoji": "🎊" },
+        { "id": "departamental", "texto": "Departamental", "emoji": "🗺️" }
+      ],
+      "elementos": [
+        { "texto": "Independencia de Bolivia", "categoria": "civica" },
+        { "texto": "Día del Himno Nacional", "categoria": "civica" },
+        { "texto": "Día de la Bandera", "categoria": "civica" },
+        { "texto": "Día del Niño y la Niña", "categoria": "conmemorativa" },
+        { "texto": "Día del Estudiante y de la Primavera", "categoria": "conmemorativa" },
+        { "texto": "Día de la Madre Tierra", "categoria": "conmemorativa" },
+        { "texto": "Aniversario del Beni", "categoria": "departamental" },
+        { "texto": "Aniversario de Pando", "categoria": "departamental" }
+      ],
+      "pista": "Las cívicas recuerdan la historia de Bolivia y sus símbolos. Las departamentales son de un solo departamento. Las otras son conmemorativas.",
+      "explicacion": "Cívicas: Independencia, Día del Himno y Día de la Bandera. Conmemorativas: Día del Niño y la Niña, Día del Estudiante y Día de la Madre Tierra. Departamentales: aniversarios del Beni y de Pando.",
+      "error": "tipo-fecha"
+    },
+    {
+      "id": "p14", "tipo": "pasos", "nivel": 3,
+      "enunciado": "Hoy es 6 de junio, Día del Maestro y la Maestra. Kusi espera con alegría el Año Nuevo Andino Amazónico y del Chaco.",
+      "pasos": [
+        {
+          "tipo": "manipular",
+          "enunciado": "Toca en el calendario el día del Año Nuevo Andino Amazónico y del Chaco.",
+          "manipulable": { "tipo": "calendario", "mes": 6, "anio": 2026, "objetivo": 21 },
+          "pista": "Es casi al final de junio, cuando empieza el invierno.",
+          "explicacion": "El Año Nuevo Andino Amazónico y del Chaco es el 21 de junio.",
+          "error": "ubica-fecha"
+        },
+        {
+          "tipo": "numero",
+          "enunciado": "Si hoy es 6 de junio, ¿cuántos días faltan para el 21 de junio?",
+          "respuesta": 15,
+          "sufijo": "días",
+          "erroresComunes": [
+            { "respuesta": 16, "pista": "Contaste también el 6. Hoy ya es 6: empieza a contar desde el 7.", "error": "calcula-dias" },
+            { "respuesta": 27, "pista": "No sumes los números. Busca cuántos días hay desde el 7 hasta el 21.", "error": "calcula-dias" }
+          ],
+          "pista": "Resta 21 − 6, o cuenta desde el 7 hasta el 21.",
+          "explicacion": "21 − 6 = 15. Faltan 15 días.",
+          "error": "calcula-dias"
+        },
+        {
+          "tipo": "opcion",
+          "enunciado": "Mira el calendario de junio de 2026. ¿Qué día de la semana es el 21?",
+          "visual": { "tipo": "calendario", "mes": 6, "anio": 2026, "marcar": [21] },
+          "opciones": [
+            { "texto": "sábado", "pista": "El sábado es la columna de al lado. Mira bien sobre qué columna está el 21.", "error": "dia-semana" },
+            { "texto": "domingo", "correcta": true },
+            { "texto": "lunes", "pista": "El lunes es la primera columna. Busca la columna del 21.", "error": "dia-semana" }
+          ],
+          "mezclar": false,
+          "pista": "Busca el 21 y sube por su columna hasta las letras de arriba.",
+          "explicacion": "En el calendario de 2026, el 21 de junio está en la columna «Do»: es domingo.",
+          "error": "dia-semana"
+        }
+      ],
+      "pista": "Resuelve un paso a la vez con ayuda del calendario.",
+      "explicacion": "El Año Nuevo Andino Amazónico y del Chaco es el 21 de junio. Desde el 6 de junio faltan 15 días. En 2026, el 21 de junio es domingo.",
+      "error": "calcula-dias"
+    },
+    {
+      "id": "p15", "tipo": "pasos", "nivel": 3,
+      "enunciado": "Es 24 de septiembre y en Santa Cruz hay un desfile por el aniversario. Rosa llegó hace poco al curso de Arami. Antes vivía en Potosí.",
+      "pasos": [
+        {
+          "tipo": "opcion",
+          "enunciado": "Rosa quiere ver el desfile, pero todavía no conoce a nadie. Si fueras Arami, ¿qué harías?",
+          "opciones": [
+            { "texto": "La invito a ir conmigo y le cuento qué recordamos", "correcta": true },
+            { "texto": "Le digo que no puede ir porque no es de aquí", "pista": "Todas las personas pueden participar y aprender. ¿Cómo la puedes incluir?", "error": "respeto-diversidad" },
+            { "texto": "Me voy sin decirle nada", "pista": "Rosa se sentiría sola. ¿Qué te gustaría que hicieran por ti?", "error": "respeto-diversidad" }
+          ],
+          "columnas": 1,
+          "pista": "Piensa en cómo te sentirías tú en un lugar nuevo.",
+          "explicacion": "Lo mejor es invitarla y contarle qué recordamos. Así Rosa se siente bienvenida y todos aprendemos juntos.",
+          "error": "respeto-diversidad"
+        },
+        {
+          "tipo": "opcion",
+          "enunciado": "Rosa es de Potosí. ¿Cuándo celebra Potosí su aniversario?",
+          "opciones": [
+            { "texto": "10 de noviembre", "correcta": true },
+            { "texto": "16 de julio", "pista": "El 16 de julio es el aniversario de La Paz.", "error": "aniversario-departamento" },
+            { "texto": "14 de septiembre", "pista": "El 14 de septiembre es el aniversario de Cochabamba.", "error": "aniversario-departamento" }
+          ],
+          "columnas": 1,
+          "pista": "Potosí celebra casi al final del año.",
+          "explicacion": "Potosí celebra su aniversario el 10 de noviembre. Recuerda el levantamiento de 1810.",
+          "error": "aniversario-departamento"
+        },
+        {
+          "tipo": "escribir-libre",
+          "enunciado": "Escribe una pregunta para saber cómo celebran en Potosí, el departamento de Rosa.",
+          "guia": ["¿Cómo celebran...?", "¿Qué hacen en Potosí...?"],
+          "requisitos": [
+            { "tipo": "signos-pregunta" },
+            { "tipo": "mayuscula-inicial" },
+            { "tipo": "min-palabras", "valor": 4 }
+          ],
+          "modelo": "¿Cómo celebran el aniversario en Potosí?",
+          "pista": "Empieza con «¿» y termina con «?». Pregunta algo sobre la fiesta de Potosí.",
+          "explicacion": "Por ejemplo: «¿Cómo celebran el aniversario en Potosí?».",
+          "error": "produce-texto"
+        }
+      ],
+      "pista": "Resuelve un paso a la vez.",
+      "explicacion": "Incluimos a Rosa, conocemos la fecha de su departamento (10 de noviembre) y le preguntamos con interés por sus costumbres.",
+      "error": "respeto-diversidad"
+    },
+    {
+      "id": "p16", "tipo": "escribir-libre", "nivel": 3,
+      "enunciado": "Escribe un mensaje de agradecimiento para tu maestra o maestro en su día.",
+      "guia": ["Gracias, maestra, por...", "Gracias, profe, porque..."],
+      "requisitos": [
+        { "tipo": "mayuscula-inicial" }, { "tipo": "punto-final" },
+        { "tipo": "min-palabras", "valor": 6 },
+        { "tipo": "incluye", "palabras": ["gracias"] }
+      ],
+      "modelo": "Gracias, maestra, por enseñarme a leer con paciencia.",
+      "pista": "Usa la palabra «gracias» y di por qué agradeces.",
+      "explicacion": "Por ejemplo: «Gracias, maestra, por enseñarme a leer con paciencia».",
+      "error": "produce-texto"
+    }
+  ],
+  "comprobacion": [
+    {
+      "id": "c1", "tipo": "completar", "nivel": 1,
+      "enunciado": "Completa la fecha del Día del Niño y la Niña.",
+      "texto": "El Día del Niño y la Niña es el [12] de [abril].",
+      "banco": ["21", "septiembre"],
+      "pista": "Es en el mismo mes que el Día de la Madre Tierra.",
+      "explicacion": "El Día del Niño y la Niña es el 12 de abril. El 21 de septiembre es el Día del Estudiante.",
+      "error": "significado-conmemorativa"
+    },
+    {
+      "id": "c2", "tipo": "manipular", "nivel": 1,
+      "enunciado": "El aniversario de Cochabamba es el 14 de septiembre. Tócalo en el calendario.",
+      "manipulable": { "tipo": "calendario", "mes": 9, "anio": 2026, "objetivo": 14 },
+      "pista": "Busca el número 14. Está después del 13.",
+      "explicacion": "Cochabamba celebra su aniversario el 14 de septiembre. En este calendario de 2026, cae lunes.",
+      "error": "ubica-fecha"
+    },
+    {
+      "id": "c3", "tipo": "generador", "nivel": 2, "generador": "fechas-civicas", "params": { "tipo": "departamental", "modo": "que-se-celebra" }
+    },
+    {
+      "id": "c4", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "Une cada fecha con lo que celebramos ese día.",
+      "pares": [
+        ["19 de marzo", "Día del Padre"],
+        ["6 de junio", "Día del Maestro y la Maestra"],
+        ["21 de junio", "Año Nuevo Andino Amazónico y del Chaco"],
+        ["21 de septiembre", "Día del Estudiante y de la Primavera"]
+      ],
+      "pista": "Hay dos fechas con el número 21: una en junio y otra en septiembre, cuando llega la primavera.",
+      "explicacion": "19 de marzo: Día del Padre. 6 de junio: Día del Maestro y la Maestra. 21 de junio: Año Nuevo Andino Amazónico y del Chaco. 21 de septiembre: Día del Estudiante y de la Primavera.",
+      "error": "significado-conmemorativa"
+    },
+    {
+      "id": "c5", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha la adivinanza y escribe el nombre del departamento.",
+      "escuchar": "Adivina: celebro mi aniversario el 15 de abril y recuerdo la Batalla de La Tablada. ¿Qué departamento soy?",
+      "respuestas": ["Tarija"],
+      "pista": "Es un departamento del sur de Bolivia. Empieza con T.",
+      "explicacion": "Es Tarija: celebra su aniversario el 15 de abril y recuerda la Batalla de La Tablada, de 1817.",
+      "error": "aniversario-departamento"
+    },
+    {
+      "id": "c6", "tipo": "numero", "nivel": 2,
+      "enunciado": "Hoy es 15 de abril, aniversario de Tarija. ¿Cuántos días faltan para el Día de la Madre Tierra, el 22 de abril?",
+      "visual": { "tipo": "calendario", "mes": 4, "anio": 2026, "marcar": [15, 22] },
+      "respuesta": 7,
+      "sufijo": "días",
+      "erroresComunes": [
+        { "respuesta": 8, "pista": "Contaste también el 15. Hoy ya es 15: empieza a contar desde el 16.", "error": "calcula-dias" },
+        { "respuesta": 37, "pista": "No sumes los números. Cuenta los días desde el 16 hasta el 22.", "error": "calcula-dias" }
+      ],
+      "pista": "Cuenta desde el 16 hasta el 22, o resta 22 − 15.",
+      "explicacion": "22 − 15 = 7. Faltan 7 días: justo una semana. En el calendario, el 22 está debajo del 15.",
+      "error": "calcula-dias"
+    },
+    {
+      "id": "c7", "tipo": "clasificar", "nivel": 3,
+      "enunciado": "¿En qué mes celebramos cada fecha?",
+      "categorias": [
+        { "id": "abril", "texto": "Abril" },
+        { "id": "junio", "texto": "Junio" },
+        { "id": "septiembre", "texto": "Septiembre" }
+      ],
+      "elementos": [
+        { "texto": "Día del Niño y la Niña", "categoria": "abril" },
+        { "texto": "Día de la Madre Tierra", "categoria": "abril" },
+        { "texto": "Aniversario de Tarija", "categoria": "abril" },
+        { "texto": "Día del Maestro y la Maestra", "categoria": "junio" },
+        { "texto": "Año Nuevo Andino Amazónico y del Chaco", "categoria": "junio" },
+        { "texto": "Día del Estudiante y de la Primavera", "categoria": "septiembre" },
+        { "texto": "Aniversario de Cochabamba", "categoria": "septiembre" },
+        { "texto": "Aniversario de Santa Cruz", "categoria": "septiembre" }
+      ],
+      "pista": "Hay tres fechas en abril, dos en junio y tres en septiembre.",
+      "explicacion": "Abril: Día del Niño y la Niña (12), Madre Tierra (22) y Tarija (15). Junio: Maestro y Maestra (6) y Año Nuevo Andino Amazónico y del Chaco (21). Septiembre: Cochabamba (14), Estudiante (21) y Santa Cruz (24).",
+      "error": "mes-de-fecha"
+    },
+    {
+      "id": "c8", "tipo": "pasos", "nivel": 3,
+      "enunciado": "Es 22 de abril, Día de la Madre Tierra. El curso de Juan quiere celebrarlo cuidando la naturaleza.",
+      "visual": { "tipo": "emojis", "items": ["🌎", "💧", "🌱"] },
+      "pasos": [
+        {
+          "tipo": "multiple",
+          "enunciado": "¿Qué acciones cuidan la Madre Tierra? Elige todas.",
+          "opciones": [
+            { "texto": "Plantar un arbolito", "emoji": "🌱", "correcta": true },
+            { "texto": "Recoger la basura del patio", "correcta": true },
+            { "texto": "Cerrar la llave del agua mientras te cepillas", "emoji": "💧", "correcta": true },
+            { "texto": "Quemar la basura", "pista": "El humo ensucia el aire que respiramos.", "error": "cuidado-naturaleza" },
+            { "texto": "Dejar la luz prendida todo el día", "pista": "Así gastamos energía sin necesidad.", "error": "cuidado-naturaleza" }
+          ],
+          "columnas": 1,
+          "pista": "Elige lo que ayuda al agua, al aire, al suelo y a las plantas.",
+          "explicacion": "Plantar un arbolito, recoger la basura y cerrar la llave del agua cuidan la Madre Tierra. Quemar basura y dejar la luz prendida la dañan.",
+          "error": "cuidado-naturaleza"
+        },
+        {
+          "tipo": "escribir-libre",
+          "enunciado": "Escribe una promesa para cuidar la Madre Tierra.",
+          "guia": ["Yo voy a...", "Prometo..."],
+          "requisitos": [
+            { "tipo": "mayuscula-inicial" }, { "tipo": "punto-final" },
+            { "tipo": "min-palabras", "valor": 5 }
+          ],
+          "modelo": "Prometo cerrar la llave del agua para cuidar la Madre Tierra.",
+          "pista": "Piensa en algo que tú puedes hacer en tu casa o en tu escuela.",
+          "explicacion": "Por ejemplo: «Prometo cerrar la llave del agua para cuidar la Madre Tierra».",
+          "error": "produce-texto"
+        }
+      ],
+      "pista": "Resuelve un paso a la vez.",
+      "explicacion": "El 22 de abril, Día de la Madre Tierra, recordamos que debemos cuidar el agua, el aire, el suelo, las plantas y los animales.",
+      "error": "cuidado-naturaleza"
+    }
+  ],
+  "repaso": {
+    "texto": "Las fechas conmemorativas celebran a personas, a la naturaleza y a nuestras culturas. Cada departamento tiene su aniversario. ¡Busca el tuyo en la lista!",
+    "visual": { "tipo": "fechas", "filtro": "departamental" }
+  },
+  "adulto": {
+    "objetivo": "Conocer fechas conmemorativas (Día del Padre, del Niño y la Niña, de la Madre Tierra, de la Madre, del Maestro y la Maestra, Año Nuevo Andino Amazónico y del Chaco, Día del Estudiante), comprender qué se celebra en cada una, conocer los aniversarios de los nueve departamentos y trabajar con el calendario (ubicar fechas, contar días, reconocer el día de la semana). Las fechas vienen de la lista que usted puede revisar en el panel de adultos.",
+    "sugerencias": [
+      "Hagan juntos un «calendario de la familia»: en un calendario de pared marquen con colores los cumpleaños, el aniversario de su departamento y fechas como el Día del Niño y la Niña o el Día de la Madre Tierra.",
+      "Antes del Día de la Madre, del Padre o del Maestro y la Maestra, paseen por la feria o el mercado y conversen sobre lo que la gente prepara (flores, tortas, tarjetas). Luego hagan en casa una tarjeta de agradecimiento para alguien que los cuida o les enseña.",
+      "El 22 de abril, planten una semilla en una lata o recojan la basura de la calle; cerca del 21 de junio, conversen con los abuelos o vecinos sobre cómo se recibe el Año Nuevo Andino Amazónico y del Chaco en su comunidad."
+    ],
+    "errores": {
+      "significado-conmemorativa": { "descripcion": "Confunde qué se celebra en cada fecha conmemorativa.", "sugerencia": "Dibujen juntos una tarjeta para cada fecha (una flor, un cuaderno, la Tierra) y jueguen a unir el dibujo con la fecha." },
+      "ubica-fecha": { "descripcion": "Le cuesta encontrar una fecha en el calendario.", "sugerencia": "Con un calendario de pared, pidan que busque primero el mes y luego el día; empiecen con los cumpleaños de la familia." },
+      "aniversario-departamento": { "descripcion": "Confunde las fechas de aniversario de los departamentos.", "sugerencia": "Empiecen por el aniversario de su propio departamento y luego el de los departamentos de familiares o vecinos." },
+      "tipo-fecha": { "descripcion": "No distingue las fechas cívicas, las conmemorativas y las departamentales.", "sugerencia": "Pregunten: «¿Esta fecha es de toda Bolivia y de su historia, es para celebrar a alguien o a la naturaleza, o es de un solo departamento?»." },
+      "orden-calendario": { "descripcion": "Ordena las fechas sin tener en cuenta el orden de los meses.", "sugerencia": "Reciten juntos los meses del año y ordenen tarjetas con los nombres de los meses antes de ordenar fechas." },
+      "mes-de-fecha": { "descripcion": "No recuerda en qué mes se celebra cada fecha.", "sugerencia": "Hagan un cartel con los 12 meses y peguen en cada uno un dibujo de sus fechas importantes." },
+      "escribe-palabra": { "descripcion": "Tiene dificultad para escribir nombres de meses o de departamentos que escucha.", "sugerencia": "Dicten nombres cortos separando sílabas con palmadas (a-bril, Ta-ri-ja) antes de escribirlos." },
+      "calcula-dias": { "descripcion": "Se equivoca al contar cuántos días faltan para una fecha (cuenta también el día de hoy o suma los números).", "sugerencia": "En un calendario, pongan una ficha en el día de hoy y cuenten saltando al día siguiente, uno por uno, hasta la fecha." },
+      "dia-semana": { "descripcion": "Le cuesta saber qué día de la semana cae una fecha en el calendario.", "sugerencia": "Pidan que ponga el dedo en la fecha y lo suba por la columna hasta el nombre del día." },
+      "respeto-diversidad": { "descripcion": "Le cuesta pensar en cómo incluir a personas de otros lugares en las celebraciones.", "sugerencia": "Conversen sobre las fiestas de otros departamentos o comunidades y sobre cómo se siente alguien que llega a un lugar nuevo." },
+      "cuidado-naturaleza": { "descripcion": "No reconoce qué acciones cuidan la naturaleza y cuáles la dañan.", "sugerencia": "Durante un día, anoten juntos acciones de la casa que ahorran agua o luz y otras que las desperdician." },
+      "produce-texto": { "descripcion": "Le cuesta escribir mensajes u oraciones completas.", "sugerencia": "Digan primero el mensaje en voz alta y luego escríbanlo juntos, revisando la mayúscula inicial y el punto final." },
+      "fechas-civicas": { "descripcion": "Confunde las fechas con lo que se celebra en cada una.", "sugerencia": "Revisen juntos la lista de fechas en el panel de adultos y marquen en un calendario de la casa las más cercanas." }
+    }
+  }
+}

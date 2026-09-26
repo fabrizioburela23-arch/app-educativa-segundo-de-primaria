@@ -186,7 +186,7 @@
     },
     {
       "id": "p10", "tipo": "opcion", "nivel": 2,
-      "enunciado": "¿Por qué el agua NO es un ser vivo?",
+      "enunciado": "¿Por qué el agua **no** es un ser vivo?",
       "opciones": [
         { "texto": "Porque no nace, no crece ni se alimenta.", "correcta": true },
         { "texto": "Porque se mueve.", "pista": "Los animales también se mueven y están vivos. Moverse no es la razón.", "error": "confunde-vivo-no-vivo" },
@@ -207,7 +207,7 @@
       "elementos": [
         { "texto": "plantar un árbol", "emoji": "🌳", "categoria": "cuida" },
         { "texto": "botar basura al río", "categoria": "dania" },
-        { "texto": "cerrar el grifo mientras te cepillas", "emoji": "🚰", "categoria": "cuida" },
+        { "texto": "cerrar el grifo mientras te cepillas los dientes", "emoji": "🚰", "categoria": "cuida" },
         { "texto": "quemar basura", "emoji": "🔥", "categoria": "dania" },
         { "texto": "llevar tu basura a casa después del paseo", "categoria": "cuida" },
         { "texto": "romper las ramas de los árboles", "categoria": "dania" }
@@ -360,7 +360,7 @@
       "enunciado": "Escucha la adivinanza y escribe la respuesta.",
       "escuchar": "Soy un elemento no vivo. Soy duro y pesado. Estoy en los cerros y en la orilla del río. No crezco ni como. ¿Qué soy?",
       "respuestas": ["roca", "una roca", "la roca", "rocas", "las rocas", "piedra", "una piedra", "la piedra", "piedras", "las piedras"],
-      "pista": "Con esto se hacen muros y pircas.",
+      "pista": "Es muy dura. En el campo se usa para levantar muros y pircas.",
       "explicacion": "Es una roca (o una piedra). Es un elemento no vivo: no nace, no crece ni se alimenta.",
       "error": "nombra-componentes"
     },

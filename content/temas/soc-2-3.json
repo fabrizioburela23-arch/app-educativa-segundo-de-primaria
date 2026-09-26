@@ -27,7 +27,7 @@
     "pasos": [
       { "texto": "Kusi y su abuela llegan a la feria del domingo. Saludan: «Buenos días, casera».", "visual": { "tipo": "emojis", "items": ["👦", "👵", "🧺"], "etiquetas": ["Kusi", "abuela", "feria"] } },
       { "texto": "Kusi pregunta con amabilidad: «¿A cuánto está el kilo de papa?». La casera responde: «A 6 Bs».", "visual": { "tipo": "emoji", "valor": "🥔", "etiqueta": "1 kilo de papa: 6 Bs" } },
-      { "texto": "La abuela paga con un billete de 10 Bs. La casera le da 4 Bs de cambio, porque 10 − 6 = 4. ¡Y les regala unas papitas más de **yapa**, como regalo!", "visual": { "tipo": "dinero", "items": ["b10"] } },
+      { "texto": "La abuela paga con un billete de 10 Bs. La casera le da 4 Bs de cambio, porque 10 − 6 = 4. ¡Y les da unas papitas más de **yapa**, de regalo!", "visual": { "tipo": "dinero", "items": ["b10"] } },
       { "texto": "Se despiden: «¡Gracias, casera!». En casa, Kusi se lava las manos y lavan las papas antes de cocinarlas.", "visual": { "tipo": "emojis", "items": ["🙏", "🧼", "💧", "🥔"], "etiquetas": ["gracias", "jabón", "agua", "papas"] } }
     ],
     "explorar": { "tipo": "dinero" }
@@ -143,7 +143,7 @@
         [ { "texto": "quinua", "emoji": "🌾" }, "el altiplano" ],
         [ { "texto": "trucha", "emoji": "🐟" }, "el lago Titicaca" ]
       ],
-      "pista": "La trucha es un pez. La castaña crece en árboles muy altos de la selva.",
+      "pista": "Piensa: ¿dónde vive un pez? ¿Qué crece donde hace frío y qué crece donde hace calor?",
       "explicacion": "La castaña llega de la Amazonía, la uva de los valles de Tarija, la quinua del altiplano y la trucha del lago Titicaca.",
       "error": "origen-productos"
     },
@@ -378,11 +378,11 @@
     },
     {
       "id": "c6", "tipo": "completar", "nivel": 2,
-      "enunciado": "Completa cómo cuidamos la limpieza en el mercado.",
-      "texto": "Antes de comer la fruta, la [lavamos] con agua limpia. Las cáscaras y las bolsas van al [basurero]. Los alimentos del puesto deben estar [tapados].",
-      "banco": ["suelo", "sucios"],
-      "pista": "Piensa en lo que ayuda a que los alimentos estén limpios.",
-      "explicacion": "Lavamos la fruta, botamos la basura en el basurero y tapamos los alimentos para que no les caigan polvo ni moscas.",
+      "enunciado": "Completa cómo cuidamos la limpieza de los alimentos.",
+      "texto": "La casera [tapa] el pan para que no le caigan moscas ni polvo. Es mejor comprar en puestos [limpios]. En casa, [lavamos] la fruta con agua limpia antes de comerla.",
+      "banco": ["destapa", "sucios"],
+      "pista": "Piensa en lo que ayuda a que los alimentos no se ensucien.",
+      "explicacion": "La casera tapa el pan para protegerlo de las moscas y del polvo. Compramos en puestos limpios y, en casa, lavamos la fruta antes de comerla.",
       "error": "higiene-mercado"
     },
     {
@@ -431,24 +431,19 @@
       "error": "compra-venta"
     },
     {
-      "id": "c8", "tipo": "clasificar", "nivel": 3,
-      "enunciado": "¿De qué región llega cada producto?",
-      "categorias": [
-        { "id": "altiplano", "texto": "Altiplano", "emoji": "🏔️" },
-        { "id": "valles", "texto": "Valles", "emoji": "🌄" },
-        { "id": "llanos", "texto": "Llanos y Amazonía", "emoji": "🌴" }
+      "id": "c8", "tipo": "multiple", "nivel": 3,
+      "enunciado": "Un camión llega al mercado desde el altiplano. ¿Qué productos trae? Elige todos.",
+      "visual": { "tipo": "emojis", "items": ["🏔️", "🚚", "🧺"], "etiquetas": ["altiplano", "camión", "mercado"] },
+      "opciones": [
+        { "texto": "chuño", "correcta": true },
+        { "texto": "quinua", "emoji": "🌾", "correcta": true },
+        { "texto": "carne de llama", "emoji": "🦙", "correcta": true },
+        { "texto": "plátano", "emoji": "🍌", "pista": "El plátano necesita calor. Llega de los llanos.", "error": "origen-productos" },
+        { "texto": "durazno", "emoji": "🍑", "pista": "El durazno se da en los valles, donde el clima es templado.", "error": "origen-productos" },
+        { "texto": "castaña", "pista": "La castaña crece en árboles muy altos de la selva amazónica.", "error": "origen-productos" }
       ],
-      "elementos": [
-        { "texto": "trucha del lago Titicaca", "emoji": "🐟", "categoria": "altiplano" },
-        { "texto": "chuño", "categoria": "altiplano" },
-        { "texto": "uva de Tarija", "emoji": "🍇", "categoria": "valles" },
-        { "texto": "durazno", "emoji": "🍑", "categoria": "valles" },
-        { "texto": "castaña", "categoria": "llanos" },
-        { "texto": "yuca", "categoria": "llanos" },
-        { "texto": "arroz", "emoji": "🍚", "categoria": "llanos" }
-      ],
-      "pista": "El lago Titicaca está en el altiplano. La castaña crece en la selva amazónica.",
-      "explicacion": "La trucha del lago Titicaca y el chuño llegan del altiplano. La uva de Tarija y el durazno, de los valles. La castaña, la yuca y el arroz, de los llanos y la Amazonía.",
+      "pista": "El altiplano es alto y frío. ¿Qué se produce allí?",
+      "explicacion": "Del altiplano llegan el chuño, la quinua y la carne de llama. El plátano y la castaña llegan de los llanos y la Amazonía; el durazno, de los valles.",
       "error": "origen-productos"
     }
   ],

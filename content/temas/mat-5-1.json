@@ -124,7 +124,7 @@
     },
     {
       "id": "p7", "tipo": "numero", "nivel": 2,
-      "enunciado": "Mateo cosechó 6 choclos. Le da la mitad a su abuela. ¿Cuántos choclos le da?",
+      "enunciado": "Mateo cosechó 6 choclos y le dio la mitad a su abuela. ¿Cuántos choclos le dio?",
       "visual": { "tipo": "emoji", "valor": "🌽", "cantidad": 6 },
       "respuesta": 3,
       "erroresComunes": [
@@ -132,7 +132,7 @@
         { "respuesta": 12, "pista": "12 es el doble de 6. La mitad es más pequeña que 6.", "error": "mitad-doble" }
       ],
       "pista": "Reparte los 6 choclos en 2 grupos iguales. ¿Cuántos hay en un grupo?",
-      "explicacion": "6 choclos en 2 grupos iguales: 3 y 3. La mitad de 6 es 3, así que le da 3 choclos.",
+      "explicacion": "6 choclos en 2 grupos iguales: 3 y 3. La mitad de 6 es 3, así que le dio 3 choclos.",
       "error": "mitad-cantidad"
     },
     {
@@ -344,7 +344,7 @@
     "sugerencias": [
       "Al partir un pan, una naranja o una tortilla en casa, pidan que diga si las 2 partes son iguales. Si una es más grande, pregunten: «¿son mitades?, ¿por qué?».",
       "En la feria o la tienda, pidan que reparta 8 papas, 10 huevos o 12 panes en 2 bolsas iguales y que diga cuánto hay en cada bolsa: esa es la mitad.",
-      "Doblen hojas de papel por la mitad de distintas maneras (a lo largo, a lo ancho, en diagonal) y comprueben que las 2 partes quedan exactamente una sobre otra."
+      "Doblen una hoja cuadrada por la mitad de distintas maneras (de lado a lado o de punta a punta) y comprueben que las 2 partes quedan exactamente una sobre otra. Luego doblen otra hoja en 2 partes distintas y comparen."
     ],
     "errores": {
       "fraccion-reconocer": { "descripcion": "Le cuesta reconocer si una figura está partida en partes iguales o qué parte está pintada.", "sugerencia": "Corten figuras de papel en partes iguales y desiguales, y pregunten cuáles sirven para compartir de forma justa." },

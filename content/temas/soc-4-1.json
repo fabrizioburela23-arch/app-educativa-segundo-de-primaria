@@ -9,7 +9,7 @@
       "visual": { "tipo": "emojis", "items": ["👩‍🏫", "🧒", "📋"], "etiquetas": ["maestras y maestros enseñan", "estudiantes aprenden", "todos cumplen las reglas"] }
     },
     {
-      "texto": "Bolivia es un **Estado Plurinacional**. Para organizarse tiene **cuatro órganos**: Legislativo, Ejecutivo, Judicial y Electoral. Cada uno tiene su propia tarea, y se coordinan entre sí.",
+      "texto": "Bolivia es un **Estado Plurinacional**. Para organizarse tiene **cuatro órganos**: Legislativo, Ejecutivo, Judicial y Electoral. Cada uno tiene su propia tarea y no hace la tarea de otro, pero se coordinan entre sí.",
       "visual": { "tipo": "emojis", "items": ["📜", "🏛️", "⚖️", "🗳️"], "etiquetas": ["Legislativo", "Ejecutivo", "Judicial", "Electoral"] }
     },
     {
@@ -26,7 +26,7 @@
       }
     },
     {
-      "texto": "Hay otras **instituciones públicas** que nos sirven: la escuela fiscal, el centro de salud, el hospital, la Policía y la Defensoría de la Niñez y Adolescencia, que protege los derechos de niñas y niños.",
+      "texto": "Hay otras **instituciones públicas** que nos sirven: la escuela fiscal, el centro de salud, el hospital, la Policía y la Defensoría de la Niñez y Adolescencia, que protege los derechos de niñas, niños y adolescentes.",
       "visual": { "tipo": "emojis", "items": ["🏫", "🏥", "👮", "🛡️"], "etiquetas": ["escuela", "centro de salud y hospital", "Policía", "Defensoría de la Niñez"] }
     }
   ],
@@ -81,12 +81,12 @@
           { "texto": "diputada", "categoria": "legislativo" },
           { "texto": "senador", "categoria": "legislativo" },
           { "texto": "presidenta del Estado", "categoria": "ejecutivo" },
-          { "texto": "ministro de Salud", "categoria": "ejecutivo" },
+          { "texto": "ministro", "categoria": "ejecutivo" },
           { "texto": "jueza", "emoji": "👩‍⚖️", "categoria": "judicial" },
           { "texto": "juez", "emoji": "👨‍⚖️", "categoria": "judicial" }
         ],
         "pista": "Pregúntate: ¿esta persona aprueba leyes, gobierna o decide en un juicio?",
-        "explicacion": "Diputada y senador: Legislativo, porque aprueban leyes. Presidenta del Estado y ministro de Salud: Ejecutivo, porque gobiernan. Jueza y juez: Judicial.",
+        "explicacion": "Diputada y senador: Legislativo, porque aprueban leyes. Presidenta del Estado y ministro: Ejecutivo, porque gobiernan. Jueza y juez: Judicial, porque resuelven conflictos según la ley.",
         "error": "personas-organos"
       },
       {
@@ -155,10 +155,10 @@
         ["Se necesita una ley nueva para cuidar los bosques", "Legislativo"],
         ["Hay que organizar la votación para elegir autoridades", "Electoral"],
         ["Dos vecinos no se ponen de acuerdo y una jueza decide", "Judicial"],
-        ["El Ministerio de Salud organiza una campaña de vacunas", "Ejecutivo"]
+        ["Una ministra organiza una campaña de vacunas en todo el país", "Ejecutivo"]
       ],
-      "pista": "Busca la palabra clave de cada frase: «ley», «votación», «jueza», «ministerio».",
-      "explicacion": "Una ley nueva: Legislativo. La votación: Electoral. Una jueza decide: Judicial. Un ministerio organiza vacunas: Ejecutivo, porque los ministerios son parte del Ejecutivo.",
+      "pista": "Busca la palabra clave de cada frase: «ley», «votación», «jueza», «ministra».",
+      "explicacion": "Una ley nueva: Legislativo. La votación: Electoral. Una jueza decide: Judicial. Una ministra organiza vacunas: Ejecutivo, porque las ministras y los ministros son parte del Ejecutivo.",
       "error": "funcion-organos"
     },
     {
@@ -168,7 +168,9 @@
       "respuestas": [
         "Legislativo", "el Legislativo", "Órgano Legislativo", "el Órgano Legislativo",
         "Asamblea Legislativa Plurinacional", "la Asamblea Legislativa Plurinacional",
-        "Asamblea Legislativa", "la Asamblea Legislativa"
+        "Asamblea Legislativa", "la Asamblea Legislativa",
+        "Asamblea Plurinacional", "la Asamblea Plurinacional",
+        "Asamblea", "la Asamblea"
       ],
       "pista": "Su nombre se parece a la palabra «ley».",
       "explicacion": "Es el Órgano Legislativo, es decir, la Asamblea Legislativa Plurinacional. Allí se aprueban las leyes.",
@@ -196,11 +198,11 @@
     },
     {
       "id": "p8", "tipo": "completar", "nivel": 2,
-      "enunciado": "Completa sobre el Órgano Ejecutivo.",
-      "texto": "El Órgano [Ejecutivo] lo forman la presidenta o el presidente, la vicepresidenta o el vicepresidente, y las ministras y los ministros. Juntos [gobiernan] el país.",
-      "banco": ["Judicial", "Electoral"],
-      "pista": "¿Qué órgano gobierna? Piensa en lo que hacen la presidenta o el presidente y sus ministros.",
-      "explicacion": "El Órgano Ejecutivo lo forman la presidenta o el presidente, la vicepresidenta o el vicepresidente, y las ministras y los ministros. Juntos gobiernan el país.",
+      "enunciado": "Completa: ¿cómo se resuelve un conflicto con justicia?",
+      "texto": "Dos vecinos discuten por un muro entre sus casas y van a juicio. Una [jueza] escucha a los dos vecinos y decide según la [ley].",
+      "banco": ["diputada", "suerte"],
+      "pista": "¿Quién trabaja en el Órgano Judicial? ¿Con qué reglas decide?",
+      "explicacion": "Una jueza (o un juez) del Órgano Judicial escucha a las dos partes y decide según la ley, no según la suerte ni lo que le guste. La diputada aprueba leyes; no decide juicios.",
       "error": "personas-organos"
     },
     {
@@ -212,10 +214,10 @@
         { "texto": "Judicial", "correcta": true },
         { "texto": "Electoral", "correcta": true },
         { "texto": "Escolar", "pista": "La escuela es una institución, pero no es un órgano del Estado.", "error": "organos-nombres" },
-        { "texto": "Deportivo", "pista": "No hay un órgano deportivo. Recuerda las cuatro tareas: leyes, gobierno, conflictos y elecciones.", "error": "organos-nombres" }
+        { "texto": "Policial", "pista": "La Policía es una institución pública, pero no es uno de los cuatro órganos. Recuerda las cuatro tareas: leyes, gobierno, conflictos y elecciones.", "error": "organos-nombres" }
       ],
       "pista": "Son cuatro, uno por cada tarea: leyes, gobierno, conflictos y elecciones.",
-      "explicacion": "Los órganos son Legislativo, Ejecutivo, Judicial y Electoral. «Escolar» y «Deportivo» no son órganos del Estado.",
+      "explicacion": "Los órganos son Legislativo, Ejecutivo, Judicial y Electoral. La escuela y la Policía son instituciones públicas, pero no son órganos del Estado.",
       "error": "organos-nombres"
     },
     {
@@ -377,13 +379,13 @@
       "elementos": [
         { "texto": "aprobar una ley para proteger a los animales silvestres", "categoria": "legislativo" },
         { "texto": "cambiar una ley antigua", "categoria": "legislativo" },
-        { "texto": "preparar el calendario escolar en el Ministerio de Educación", "categoria": "ejecutivo" },
+        { "texto": "preparar, en un ministerio, el calendario escolar de todo el país", "categoria": "ejecutivo" },
         { "texto": "gobernar el país con las ministras y los ministros", "categoria": "ejecutivo" },
         { "texto": "decidir un juicio según la ley", "categoria": "judicial" },
         { "texto": "resolver con la ley un problema entre dos familias", "categoria": "judicial" }
       ],
       "pista": "Pregúntate: ¿es hacer o cambiar leyes, gobernar o resolver conflictos?",
-      "explicacion": "Aprobar y cambiar leyes: Legislativo. Preparar el calendario escolar y gobernar con los ministros: Ejecutivo. Decidir juicios y resolver problemas con la ley: Judicial.",
+      "explicacion": "Aprobar y cambiar leyes: Legislativo. Preparar el calendario escolar en un ministerio y gobernar con las ministras y los ministros: Ejecutivo. Decidir juicios y resolver problemas con la ley: Judicial.",
       "error": "funcion-organos"
     },
     {
@@ -402,7 +404,8 @@
       "respuestas": [
         "Defensoría de la Niñez y Adolescencia", "la Defensoría de la Niñez y Adolescencia",
         "Defensoría de la Niñez y la Adolescencia", "la Defensoría de la Niñez y la Adolescencia",
-        "Defensoría de la Niñez", "la Defensoría de la Niñez",
+        "Defensoría de Niñez y Adolescencia", "Defensoría de la Niñez", "la Defensoría de la Niñez",
+        "Defensoría de los niños", "la Defensoría de los niños",
         "Defensoría", "la Defensoría", "DNA", "la DNA"
       ],
       "pista": "Su nombre empieza como la palabra «defender».",
@@ -411,16 +414,16 @@
     },
     {
       "id": "c6", "tipo": "multiple", "nivel": 2,
-      "enunciado": "¿Quiénes forman el Órgano Ejecutivo? Elige todas las respuestas correctas.",
+      "enunciado": "¿Quiénes trabajan en el Órgano Ejecutivo? Elige todas las respuestas correctas.",
       "opciones": [
         { "texto": "la presidenta o el presidente", "correcta": true },
-        { "texto": "la vicepresidenta o el vicepresidente", "correcta": true },
         { "texto": "las ministras y los ministros", "correcta": true },
         { "texto": "las juezas y los jueces", "pista": "Ellas y ellos trabajan en el Órgano Judicial.", "error": "personas-organos" },
-        { "texto": "las diputadas y los diputados", "pista": "Ellas y ellos trabajan en la Asamblea Legislativa Plurinacional.", "error": "personas-organos" }
+        { "texto": "las diputadas y los diputados", "pista": "Ellas y ellos trabajan en la Asamblea Legislativa Plurinacional.", "error": "personas-organos" },
+        { "texto": "las senadoras y los senadores", "pista": "Ellas y ellos también trabajan en la Asamblea Legislativa Plurinacional.", "error": "personas-organos" }
       ],
-      "pista": "Son tres grupos de personas que gobiernan juntas.",
-      "explicacion": "El Órgano Ejecutivo lo forman la presidenta o el presidente, la vicepresidenta o el vicepresidente, y las ministras y los ministros.",
+      "pista": "Busca a las personas que gobiernan el país.",
+      "explicacion": "En el Órgano Ejecutivo trabajan la presidenta o el presidente, la vicepresidenta o el vicepresidente, y las ministras y los ministros: juntos gobiernan. Juezas y jueces son del Judicial; diputados y senadores, del Legislativo.",
       "error": "personas-organos"
     },
     {

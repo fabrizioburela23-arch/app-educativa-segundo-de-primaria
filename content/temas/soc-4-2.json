@@ -29,15 +29,15 @@
         "visual": { "tipo": "emojis", "items": ["🏘️", "📝", "💡"], "etiquetas": ["junta vecinal", "carta a la alcaldía", "luces nuevas"] }
       },
       {
-        "texto": "Mateo vive en una comunidad de los valles de Chuquisaca. Su **sindicato agrario** se reúne en asamblea, y allí eligen a su secretaria general.",
+        "texto": "Mateo vive en una comunidad de los valles de Chuquisaca. Allí las familias se organizan en un **sindicato agrario**: se reúnen en asamblea y eligen a su secretaria general.",
         "visual": { "tipo": "ilustracion", "id": "paisaje-valle" }
       },
       {
-        "texto": "Nayra vive en un **ayllu** del altiplano de Oruro. Sus autoridades, el mallku y la mama t’alla, sirven a la comunidad por turno y en pareja, mujer y varón: es el chacha-warmi.",
+        "texto": "Nayra vive en un **ayllu** del altiplano de Oruro. Sus autoridades, como el mallku y la mama t’alla, sirven a la comunidad por turno y en pareja, mujer y varón: es el chacha-warmi.",
         "visual": { "tipo": "ilustracion", "id": "paisaje-altiplano" }
       },
       {
-        "texto": "Arami es guaraní y vive en Charagua Iyambae, en el Chaco, una **autonomía indígena**: allí su pueblo se gobierna con sus propias normas. Se organiza en **capitanías**, con autoridades llamadas mburuvicha, y decide en asamblea.",
+        "texto": "Arami es guaraní y vive en Charagua Iyambae, en el Chaco: una **autonomía indígena** que se gobierna con sus propias normas. Los guaraníes se organizan en **capitanías**, con autoridades llamadas mburuvicha, y deciden en asamblea.",
         "visual": { "tipo": "ilustracion", "id": "paisaje-chaco" }
       }
     ]
@@ -110,7 +110,7 @@
           },
           {
             "tipo": "opcion",
-            "enunciado": "Ganó Wara. ¿Qué hace Luis?",
+            "enunciado": "Ganó Wara. ¿Qué es lo mejor que puede hacer Luis?",
             "opciones": [
               { "texto": "La felicita y la ayuda a trabajar por el curso.", "correcta": true },
               { "texto": "Se enoja y ya no quiere participar.", "pista": "Perder una votación no es malo. ¿Cómo puede seguir ayudando?", "error": "democracia" },
@@ -192,14 +192,14 @@
     },
     {
       "id": "p6", "tipo": "relacionar", "nivel": 2,
-      "enunciado": "Une cada organización con el lugar donde la encontramos.",
+      "enunciado": "Une cada organización con quienes la forman.",
       "pares": [
-        ["junta vecinal", "un barrio de la ciudad"],
-        ["capitanía guaraní", "una comunidad del Chaco"],
-        ["ayllu", "una comunidad del altiplano"]
+        ["junta vecinal", "vecinas y vecinos de un barrio"],
+        ["capitanía guaraní", "comunidades guaraníes del Chaco"],
+        ["ayllu", "comunidades originarias del altiplano y los valles"]
       ],
-      "pista": "Recuerda a Sofía, Nayra y Arami. ¿Dónde vive cada una?",
-      "explicacion": "La junta vecinal está en los barrios, como el de Sofía en El Alto. La capitanía guaraní, en el Chaco, como la de Arami. El ayllu, en el altiplano, como el de Nayra.",
+      "pista": "Recuerda a Sofía, Nayra y Arami. ¿Dónde vive cada una y cómo se organiza su lugar?",
+      "explicacion": "La junta vecinal reúne a los vecinos de un barrio, como el de Sofía en El Alto. La capitanía guaraní reúne a comunidades guaraníes del Chaco, como la de Arami. El ayllu reúne a comunidades originarias del altiplano y los valles, como la de Nayra.",
       "error": "organizacion-local"
     },
     {
@@ -209,7 +209,8 @@
       "respuestas": [
         "alcalde", "alcaldesa", "el alcalde", "la alcaldesa",
         "alcaldesa o alcalde", "alcalde o alcaldesa",
-        "la alcaldesa o el alcalde", "el alcalde o la alcaldesa"
+        "la alcaldesa o el alcalde", "el alcalde o la alcaldesa",
+        "alcalde municipal", "alcaldesa municipal", "el alcalde municipal", "la alcaldesa municipal"
       ],
       "pista": "Trabaja en la alcaldía, y su nombre se parece a esa palabra.",
       "explicacion": "Es la alcaldesa o el alcalde. Dirige el gobierno municipal y sus obras.",
@@ -231,9 +232,9 @@
     {
       "id": "p9", "tipo": "tocar", "nivel": 2,
       "enunciado": "Toca los nombres de organizaciones de barrios y comunidades.",
-      "texto": "Nayra va a la asamblea de su *ayllu*. Su prima Ana vive en La Paz, y su *junta vecinal* pidió arreglar la plaza. Arami, en el Chaco, participa en su *capitanía*.",
+      "texto": "Nayra vive en un *ayllu* del altiplano. Su prima Ana vive en La Paz, y la *junta vecinal* de su barrio pidió arreglar la plaza. Arami vive en el Chaco y va con su mamá a las reuniones de la *capitanía*.",
       "pista": "Busca tres organizaciones: una del altiplano, una de la ciudad y una del Chaco.",
-      "explicacion": "Ayllu, junta vecinal y capitanía son organizaciones. La asamblea es la reunión donde deciden; La Paz y el Chaco son lugares.",
+      "explicacion": "Ayllu, junta vecinal y capitanía son organizaciones. El altiplano, La Paz, el Chaco, el barrio y la plaza son lugares; las reuniones son los encuentros donde deciden.",
       "error": "organizacion-local"
     },
     {
@@ -248,7 +249,8 @@
           "sufijo": "vecinos",
           "erroresComunes": [
             { "respuesta": 67, "pista": "No hay que sumar: a los 40 vecinos quítales los 27 que votaron por la plaza.", "error": "calculo" },
-            { "respuesta": 23, "pista": "Cuidado: a 0 no le puedes quitar 7. Presta una decena.", "error": "calculo" }
+            { "respuesta": 27, "pista": "Cuidado: a 0 no le puedes quitar 7. Presta una decena del 4.", "error": "calculo" },
+            { "respuesta": 23, "pista": "Prestaste una decena: al 4 le quedan 3 decenas. Ahora resta 3 − 2.", "error": "calculo" }
           ],
           "pista": "Resta: 40 − 27.",
           "explicacion": "40 − 27 = 13. Trece vecinos votan por la cancha.",
@@ -376,10 +378,10 @@
     },
     {
       "id": "c2", "tipo": "tocar", "nivel": 1,
-      "enunciado": "Toca los servicios que don Juan pide al gobierno municipal.",
-      "texto": "Don Juan pide a la alcaldía *alumbrado público* y *recojo de basura* para su zona.",
-      "pista": "Busca dos servicios que el municipio da a todos los vecinos.",
-      "explicacion": "Don Juan pide alumbrado público y recojo de basura: dos servicios del gobierno municipal.",
+      "enunciado": "Toca los lugares que cuida el gobierno municipal.",
+      "texto": "Cerca de la casa de don Juan hay una *plaza*, una tienda, un *parque* y una panadería.",
+      "pista": "Busca dos lugares que son de todos los vecinos, no de una sola persona.",
+      "explicacion": "La plaza y el parque son de todos: los cuida el gobierno municipal. La tienda y la panadería son negocios de algunas personas.",
       "error": "servicios-municipio"
     },
     {
@@ -408,7 +410,7 @@
         "asamblea", "la asamblea", "una asamblea",
         "asamblea vecinal", "asamblea comunal", "asamblea de vecinos", "asamblea comunitaria"
       ],
-      "pista": "Es la misma palabra que aparece en «Asamblea Departamental».",
+      "pista": "Piensa en la reunión de la junta vecinal, del sindicato o del ayllu, donde todos pueden pedir la palabra.",
       "explicacion": "Se llama asamblea: allí todas las personas pueden hablar, escuchar y decidir juntas.",
       "error": "democracia"
     },
@@ -447,7 +449,8 @@
           "sufijo": "votos",
           "erroresComunes": [
             { "respuesta": 65, "pista": "No sumes: te preguntan cuántos votos más. Resta 36 − 29.", "error": "calculo" },
-            { "respuesta": 13, "pista": "Cuidado: a 6 no le puedes quitar 9. Presta una decena.", "error": "calculo" }
+            { "respuesta": 13, "pista": "Cuidado: a 6 no le puedes quitar 9. Presta una decena del 3.", "error": "calculo" },
+            { "respuesta": 17, "pista": "Prestaste una decena: al 3 le quedan 2 decenas. Ahora resta 2 − 2.", "error": "calculo" }
           ],
           "pista": "Para saber cuántos más, resta: 36 − 29.",
           "explicacion": "36 − 29 = 7. Doña Rosa sacó 7 votos más.",

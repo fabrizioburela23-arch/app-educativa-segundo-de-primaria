@@ -31,9 +31,9 @@
       "visual": { "tipo": "bandera", "franjas": ["verde", "blanco", "verde"], "orientacion": "horizontal", "etiqueta": "Santa Cruz" }
     },
     {
-      "texto": "Cada departamento tiene también su **escudo**, con dibujos de su historia y su naturaleza. En el escudo de Potosí está el **Cerro Rico**; en el de Santa Cruz hay palmeras y un **toborochi**.",
+      "texto": "Cada departamento tiene también su **escudo**: un dibujo con forma de escudo que recuerda su historia y su naturaleza. Por ejemplo, en el escudo de Potosí está el **Cerro Rico**, el cerro famoso por su plata.",
       "emoji": "🛡️",
-      "visual": { "tipo": "emojis", "items": ["⛰️", "🌴", "🌳"], "etiquetas": ["Cerro Rico", "palmeras", "toborochi"] }
+      "visual": { "tipo": "emojis", "items": ["🛡️", "⛰️"], "etiquetas": ["escudo", "Cerro Rico"] }
     }
   ],
   "ejemplo": {
@@ -52,14 +52,14 @@
         "visual": { "tipo": "bandera", "franjas": ["#9E1B32"], "orientacion": "horizontal", "etiqueta": "Oruro" }
       },
       {
-        "texto": "Otras banderas tienen formas o dibujos. Te las contamos con palabras:",
+        "texto": "Otras banderas tienen una cruz, cuatro partes o estrellas. Te las contamos con palabras:",
         "visual": {
           "tipo": "tabla",
           "columnas": ["Departamento", "Su bandera"],
           "filas": [
             ["Chuquisaca", "blanca, con una cruz roja en forma de X"],
             ["Potosí", "cuatro partes: dos blancas y dos rojas"],
-            ["Beni", "verde, con ocho estrellas doradas"]
+            ["Beni", "verde; algunas llevan estrellas doradas"]
           ]
         }
       }
@@ -164,10 +164,11 @@
         ["Tarija", "roja y blanca"],
         ["Pando", "blanca y verde"],
         ["Cochabamba", "toda celeste"],
-        ["Santa Cruz", "verde, blanca y verde"]
+        ["Santa Cruz", "verde, blanca y verde"],
+        ["Beni", "verde, a veces con estrellas"]
       ],
       "pista": "Dos banderas empiezan con rojo arriba: La Paz y Tarija. Mira qué color va abajo.",
-      "explicacion": "La Paz: roja y verde. Tarija: roja y blanca. Pando: blanca y verde. Cochabamba: celeste. Santa Cruz: verde, blanca y verde.",
+      "explicacion": "La Paz: roja y verde. Tarija: roja y blanca. Pando: blanca y verde. Cochabamba: celeste. Santa Cruz: verde, blanca y verde. Beni: verde, a veces con estrellas doradas.",
       "error": "banderas-departamentales"
     },
     {
@@ -202,15 +203,21 @@
       "error": "banderas-departamentales"
     },
     {
-      "id": "p9", "tipo": "relacionar", "nivel": 2,
-      "enunciado": "Une cada departamento con algo que hay en su escudo.",
-      "pares": [
-        ["Potosí", "el Cerro Rico"],
-        ["Santa Cruz", "palmeras y un toborochi"],
-        ["La Paz", "una montaña nevada y un río"]
+      "id": "p9", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "¿Hablamos de una bandera o de un escudo?",
+      "categorias": [
+        { "id": "bandera", "texto": "Bandera", "emoji": "🚩" },
+        { "id": "escudo", "texto": "Escudo", "emoji": "🛡️" }
       ],
-      "pista": "El Cerro Rico está en Potosí. El toborochi es un árbol de tronco gordo que crece en el oriente.",
-      "explicacion": "En el escudo de Potosí está el Cerro Rico; en el de Santa Cruz, palmeras y un toborochi; y en el de La Paz, una montaña nevada y un río.",
+      "elementos": [
+        { "texto": "Es de tela y se iza en un asta.", "categoria": "bandera" },
+        { "texto": "Santa Cruz: verde, blanca y verde.", "categoria": "bandera" },
+        { "texto": "Cochabamba: toda celeste.", "categoria": "bandera" },
+        { "texto": "Tiene dibujos que recuerdan la historia y la naturaleza del lugar.", "categoria": "escudo" },
+        { "texto": "Bolivia: un cóndor arriba y, en el centro, un cerro y el sol.", "categoria": "escudo" }
+      ],
+      "pista": "Las banderas son de tela y tienen colores o franjas. Los escudos tienen dibujos adentro.",
+      "explicacion": "Bandera: es de tela y se iza; la de Santa Cruz es verde, blanca y verde; la de Cochabamba, celeste. Escudo: tiene dibujos de la historia y la naturaleza, como el de Bolivia, con su cóndor.",
       "error": "escudos-departamentales"
     },
     {
@@ -255,11 +262,10 @@
         { "texto": "Tarija", "categoria": "no" },
         { "texto": "Cochabamba", "categoria": "no" },
         { "texto": "Oruro", "categoria": "no" },
-        { "texto": "Chuquisaca", "categoria": "no" },
         { "texto": "Potosí", "categoria": "no" }
       ],
-      "pista": "Cuatro banderas tienen verde. Las de Tarija, Chuquisaca y Potosí tienen rojo y blanco.",
-      "explicacion": "Tienen verde: La Paz, Santa Cruz, Pando y Beni. No tienen verde: Tarija, Cochabamba, Oruro, Chuquisaca y Potosí.",
+      "pista": "Cuatro banderas tienen verde. Las de Tarija y Potosí son rojas y blancas.",
+      "explicacion": "Tienen verde: La Paz, Santa Cruz, Pando y Beni. No tienen verde: Tarija (roja y blanca), Cochabamba (celeste), Oruro (carmesí) y Potosí (blanca y roja).",
       "error": "banderas-departamentales"
     },
     {
@@ -308,22 +314,37 @@
         { "texto": "La capital de Pando es Oruro.", "categoria": "f" }
       ],
       "pista": "Recuerda la tabla de departamentos y capitales, y el color de la bandera de Cochabamba.",
-      "explicacion": "Las cuatro primeras son verdaderas. Bolivia tiene nueve departamentos, la bandera de Cochabamba es celeste y la capital de Pando es Cobija.",
+      "explicacion": "Es verdad que Sucre es la capital de Bolivia, que en La Paz está la sede de gobierno, que la capital del Beni es Trinidad y que cada departamento tiene su bandera y su escudo. Las otras son falsas, porque Bolivia tiene nueve departamentos, la bandera de Cochabamba es celeste y la capital de Pando es Cobija.",
       "error": "datos-departamentos"
     },
     {
       "id": "p15", "tipo": "escribir-libre", "nivel": 3,
-      "enunciado": "Escribe en qué departamento vives y cómo es su bandera.",
-      "guia": ["Vivo en ... y su bandera es...", "Mi departamento es ... y su bandera tiene..."],
+      "enunciado": "Elige un departamento. Escribe cuál es su capital y cómo es su bandera.",
+      "guia": ["La capital de ... es ... y su bandera es...", "La bandera de ... tiene... Su capital es..."],
+      "requisitos": [
+        { "tipo": "mayuscula-inicial" },
+        { "tipo": "punto-final" },
+        { "tipo": "min-palabras", "valor": 8 },
+        { "tipo": "incluye-todas", "palabras": ["capital", "bandera"] }
+      ],
+      "modelo": "La capital de Pando es Cobija y su bandera es blanca y verde.",
+      "pista": "Primero di la capital del departamento que elegiste. Después, di los colores de su bandera.",
+      "explicacion": "Por ejemplo: «La capital de Pando es Cobija y su bandera es blanca y verde».",
+      "error": "produce-oracion"
+    },
+    {
+      "id": "p16", "tipo": "escribir-libre", "nivel": 3,
+      "enunciado": "Imagina que diseñas un escudo para tu comunidad o tu barrio. Escribe qué dibujos tendría.",
+      "guia": ["Mi escudo tendría...", "En mi escudo dibujaría... porque..."],
       "requisitos": [
         { "tipo": "mayuscula-inicial" },
         { "tipo": "punto-final" },
         { "tipo": "min-palabras", "valor": 6 },
-        { "tipo": "incluye", "palabras": ["bandera"] }
+        { "tipo": "incluye", "palabras": ["escudo"] }
       ],
-      "modelo": "Vivo en Tarija y su bandera es roja y blanca.",
-      "pista": "Primero di el nombre de tu departamento. Después, di los colores de su bandera.",
-      "explicacion": "Por ejemplo: «Vivo en Tarija y su bandera es roja y blanca».",
+      "modelo": "Mi escudo tendría una montaña, un río y una llama.",
+      "pista": "Piensa en algo importante de tu lugar: una montaña, un río, un animal, una planta o una fiesta.",
+      "explicacion": "Por ejemplo: «Mi escudo tendría una montaña, un río y una llama». Los escudos de los departamentos también tienen dibujos de su historia y su naturaleza.",
       "error": "produce-oracion"
     }
   ],
@@ -331,10 +352,10 @@
     {
       "id": "c1", "tipo": "ordenar", "nivel": 1,
       "enunciado": "Ordena las palabras para formar la oración.",
-      "elementos": ["Sucre", "es", "la", "capital", "de", "Bolivia."],
+      "elementos": ["En", "La Paz", "está", "la", "sede", "de", "gobierno."],
       "unir": " ",
-      "pista": "Empieza con el nombre de la ciudad. La palabra con punto va al final.",
-      "explicacion": "«Sucre es la capital de Bolivia.»",
+      "pista": "Empieza con «En». La palabra con punto va al final.",
+      "explicacion": "«En La Paz está la sede de gobierno.» Allí trabajan la presidencia y la Asamblea Legislativa.",
       "error": "capital-sede"
     },
     {
@@ -353,9 +374,9 @@
     {
       "id": "c3", "tipo": "tocar", "nivel": 2,
       "enunciado": "Toca solo los nombres de los departamentos.",
-      "texto": "Rosa vive en Trinidad, la capital del *Beni*. Su primo vive en Cobija, en *Pando*.",
-      "pista": "Trinidad y Cobija son ciudades. Busca los departamentos donde están.",
-      "explicacion": "Beni y Pando son departamentos. Trinidad y Cobija son sus capitales.",
+      "texto": "Rosa vive en Sucre, en *Chuquisaca*. Su primo vive en Cobija, en *Pando*.",
+      "pista": "Sucre y Cobija son ciudades. Busca los departamentos donde están.",
+      "explicacion": "Chuquisaca y Pando son departamentos. Sucre y Cobija son sus capitales.",
       "error": "capitales"
     },
     {
@@ -369,56 +390,58 @@
     },
     {
       "id": "c5", "tipo": "escribir", "nivel": 2,
-      "enunciado": "Escribe el nombre de la capital de Bolivia, según la Constitución.",
+      "enunciado": "Escucha y escribe el nombre de la ciudad.",
+      "escuchar": "Según la Constitución, esta ciudad es la capital de Bolivia. ¿Cómo se llama?",
       "respuestas": ["Sucre"],
-      "pista": "Está en el departamento de Chuquisaca. En La Paz está la sede de gobierno.",
-      "explicacion": "La capital de Bolivia es **Sucre**, en Chuquisaca.",
+      "pista": "No es La Paz: en La Paz está la sede de gobierno. La capital de Bolivia está en Chuquisaca.",
+      "explicacion": "La capital de Bolivia es **Sucre**, en Chuquisaca. En La Paz está la sede de gobierno.",
       "error": "capital-sede"
     },
     {
-      "id": "c6", "tipo": "relacionar", "nivel": 2,
-      "enunciado": "Une cada bandera con su departamento.",
-      "pares": [
-        ["blanca, con una cruz roja en X", "Chuquisaca"],
-        ["cuatro partes: dos blancas y dos rojas", "Potosí"],
-        ["verde, con ocho estrellas doradas", "Beni"]
+      "id": "c6", "tipo": "opcion", "nivel": 2,
+      "enunciado": "¿Qué está dibujado en el escudo del departamento de Potosí?",
+      "visual": { "tipo": "emoji", "valor": "🛡️" },
+      "opciones": [
+        { "texto": "el Cerro Rico", "correcta": true },
+        { "texto": "el Illimani", "pista": "El Illimani es una montaña de La Paz. Piensa en el cerro famoso de Potosí.", "error": "escudos-departamentales" },
+        { "texto": "el lago Titicaca", "pista": "El lago Titicaca está en La Paz, no en Potosí.", "error": "escudos-departamentales" }
       ],
-      "pista": "La bandera del Beni es verde como sus bosques. La de Potosí tiene cuatro partes.",
-      "explicacion": "Chuquisaca: blanca con una cruz roja. Potosí: cuatro partes blancas y rojas. Beni: verde con ocho estrellas doradas.",
-      "error": "banderas-departamentales"
+      "pista": "Es un cerro de Potosí, famoso por su plata.",
+      "explicacion": "En el escudo de Potosí está el **Cerro Rico**, el cerro famoso por su plata.",
+      "error": "escudos-departamentales"
     },
     {
       "id": "c7", "tipo": "pasos", "nivel": 3,
-      "enunciado": "Nayra vive en Santa Cruz de la Sierra. Hoy le cuenta a su curso cómo son los símbolos de su departamento.",
+      "enunciado": "Nayra vive en Trinidad. Hoy le cuenta a su curso cómo es su departamento.",
       "pasos": [
         {
           "tipo": "opcion",
-          "enunciado": "¿Cómo es la bandera de Santa Cruz?",
+          "enunciado": "¿En qué departamento vive Nayra?",
           "opciones": [
-            { "texto": "Verde, blanca y verde", "correcta": true },
-            { "texto": "Blanca y verde", "pista": "Esa es la de Pando, que tiene solo dos franjas.", "error": "banderas-departamentales" },
-            { "texto": "Roja y verde", "pista": "Esa es la de La Paz.", "error": "banderas-departamentales" }
+            { "texto": "Beni", "correcta": true },
+            { "texto": "Pando", "pista": "La capital de Pando es Cobija.", "error": "capitales" },
+            { "texto": "Santa Cruz", "pista": "La capital de Santa Cruz es Santa Cruz de la Sierra.", "error": "capitales" }
           ],
-          "pista": "Tiene tres franjas: el verde va arriba y abajo.",
-          "explicacion": "La bandera de Santa Cruz es verde, blanca y verde.",
-          "error": "banderas-departamentales"
+          "pista": "Trinidad es una capital que no se llama igual que su departamento.",
+          "explicacion": "Trinidad es la capital del Beni. Nayra vive en el Beni.",
+          "error": "capitales"
         },
         {
           "tipo": "opcion",
-          "enunciado": "¿Qué hay en el escudo de Santa Cruz?",
+          "enunciado": "¿Cómo es la bandera de su departamento?",
           "opciones": [
-            { "texto": "Palmeras y un toborochi", "correcta": true },
-            { "texto": "El Cerro Rico", "pista": "El Cerro Rico está en el escudo de Potosí.", "error": "escudos-departamentales" },
-            { "texto": "Una montaña nevada y un río", "pista": "La montaña nevada y el río están en el escudo de La Paz.", "error": "escudos-departamentales" }
+            { "texto": "Verde; algunas llevan estrellas doradas", "correcta": true },
+            { "texto": "Verde, blanca y verde", "pista": "Esa es la bandera de Santa Cruz.", "error": "banderas-departamentales" },
+            { "texto": "Blanca y verde", "pista": "Esa es la bandera de Pando.", "error": "banderas-departamentales" }
           ],
-          "pista": "Piensa en árboles del oriente.",
-          "explicacion": "En el escudo de Santa Cruz hay palmeras y un toborochi, entre otros dibujos.",
-          "error": "escudos-departamentales"
+          "pista": "La bandera del Beni no tiene franjas blancas.",
+          "explicacion": "La bandera del Beni es verde. Algunas llevan estrellas doradas.",
+          "error": "banderas-departamentales"
         }
       ],
       "pista": "Resuelve un paso a la vez.",
-      "explicacion": "La bandera de Santa Cruz es verde, blanca y verde, y su escudo tiene palmeras y un toborochi.",
-      "error": "banderas-departamentales"
+      "explicacion": "Trinidad es la capital del Beni, y la bandera del Beni es verde.",
+      "error": "capitales"
     },
     {
       "id": "c8", "tipo": "clasificar", "nivel": 3,
@@ -462,7 +485,7 @@
     }
   },
   "adulto": {
-    "objetivo": "Nombrar los nueve departamentos de Bolivia y sus capitales; saber que, según la Constitución (art. 6.I), Sucre es la capital de Bolivia y que en La Paz está la sede de gobierno; reconocer las banderas departamentales y saber que cada departamento tiene su escudo. La app dibuja solo las banderas de franjas o de un color (La Paz, Tarija, Santa Cruz, Pando, Oruro y Cochabamba); las de Chuquisaca (blanca con la cruz roja de Borgoña), Potosí (cuartelada en blanco y rojo) y Beni (verde; la versión del Departamento Autónomo lleva ocho estrellas doradas) se describen con palabras. Algunas versiones oficiales llevan además el escudo en el centro. La app no tiene imágenes de los escudos departamentales.",
+    "objetivo": "Nombrar los nueve departamentos de Bolivia y sus capitales; saber que, según la Constitución (art. 6.I), Sucre es la capital de Bolivia y que en La Paz está la sede de gobierno (allí funcionan la presidencia y la Asamblea Legislativa Plurinacional); reconocer las banderas departamentales y saber que cada departamento tiene su escudo. La app dibuja solo las banderas de franjas o de un solo color (La Paz, Tarija, Santa Cruz, Pando, Oruro y Cochabamba); las de Chuquisaca (blanca con la cruz roja de Borgoña, en forma de X), Potosí (cuartelada en blanco y rojo) y Beni (verde; algunas versiones llevan estrellas doradas) se describen con palabras. Algunas versiones oficiales llevan además el escudo en el centro. La app no tiene imágenes de los escudos departamentales: enseña qué es un escudo, cómo se distingue de una bandera y un dato fácil de recordar (el Cerro Rico en el escudo de Potosí). Para conocer los demás escudos, mírenlos juntos en el texto escolar o en una fuente oficial.",
     "sugerencias": [
       "Como la app no muestra los escudos departamentales, mírenlos juntos en el texto escolar o en la página oficial de la gobernación de su departamento. Pregunten: «¿qué dibujos tiene?, ¿hay animales, montañas, árboles o ríos?» y comparen dos escudos.",
       "Dibujen un mapa sencillo de Bolivia (o usen uno del texto escolar) y escriban en cada departamento su nombre y su capital. Pinten al lado las banderas que son de franjas o de un solo color.",
@@ -473,7 +496,7 @@
       "capitales": { "descripcion": "Confunde las capitales, sobre todo las que tienen otro nombre (Sucre, Trinidad, Cobija, Santa Cruz de la Sierra).", "sugerencia": "Hagan tarjetas con departamentos y capitales y jueguen a encontrar parejas. Empiecen por las cuatro capitales con otro nombre." },
       "capital-sede": { "descripcion": "Confunde la capital de Bolivia (Sucre) con la sede de gobierno (La Paz).", "sugerencia": "Expliquen que la Constitución nombra a Sucre como capital y que en La Paz trabajan la presidencia y la Asamblea Legislativa. Repitan: «Sucre, capital; La Paz, sede de gobierno»." },
       "banderas-departamentales": { "descripcion": "Confunde los colores o la forma de las banderas departamentales.", "sugerencia": "Pinten las banderas de franjas en tarjetas y describan en voz alta las otras (Chuquisaca, Potosí y Beni). Empiecen por la bandera de su propio departamento." },
-      "escudos-departamentales": { "descripcion": "No recuerda qué hay en algunos escudos departamentales.", "sugerencia": "Miren juntos los escudos en el texto escolar o en la página de la gobernación y busquen un dibujo fácil de recordar en cada uno (el Cerro Rico en Potosí, el toborochi en Santa Cruz)." },
+      "escudos-departamentales": { "descripcion": "Confunde la bandera con el escudo o no recuerda qué hay en el escudo de Potosí.", "sugerencia": "Comparen en voz alta: la bandera es de tela y tiene colores o franjas; el escudo tiene dibujos adentro. Miren juntos los escudos en el texto escolar o en la página oficial de la gobernación y busquen en cada uno un dibujo fácil de recordar (por ejemplo, el Cerro Rico en el de Potosí)." },
       "datos-departamentos": { "descripcion": "Duda con datos básicos: cuántos departamentos hay, sus capitales o sus banderas.", "sugerencia": "Repasen con la tabla de la lección y hagan preguntas de verdadero o falso en voz alta." },
       "orden-oracion": { "descripcion": "Le cuesta ordenar palabras para formar una oración.", "sugerencia": "Escriban oraciones cortas en tiras de papel, córtenlas por palabras y ármenlas juntos, empezando por la mayúscula." },
       "produce-oracion": { "descripcion": "Le cuesta escribir oraciones completas con mayúscula y punto.", "sugerencia": "Conversen primero la idea en voz alta, luego escríbanla juntos y revisen la mayúscula inicial y el punto final." }

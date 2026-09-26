@@ -1,0 +1,421 @@
+{
+  "id": "com-6-2",
+  "titulo": "Pasado, presente y futuro",
+  "objetivo": "Sé si un verbo dice algo que ya pasó, que pasa ahora o que va a pasar, y escribo el verbo en cada tiempo.",
+  "lecturas": [
+    {
+      "id": "nayra",
+      "titulo": "El fin de semana de Nayra",
+      "genero": "relato",
+      "emoji": "🧺",
+      "parrafos": [
+        "Ayer fue sábado. Nayra visitó la feria con su papá. Compraron papa, habas, choclo, queso y pan. Nayra cargó la bolsa del pan.",
+        "Hoy es domingo. Nayra ayuda en la cocina: pela las habas y su papá cocina el choclo.",
+        "Mañana, después de la escuela, visitarán a la abuela Juana. Nayra le llevará un rico plato paceño."
+      ]
+    }
+  ],
+  "explicacion": [
+    {
+      "texto": "Los verbos también dicen **cuándo** pasa algo. Hay tres tiempos: **pasado** (ya pasó), **presente** (pasa ahora) y **futuro** (todavía no pasó).",
+      "emoji": "⏳"
+    },
+    {
+      "texto": "Las palabras **ayer**, **hoy** y **mañana** nos dan una pista. Ayer **jugué**. Hoy **juego**. Mañana **jugaré**.",
+      "emoji": "📅",
+      "visual": { "tipo": "tabla", "columnas": ["Pasado", "Presente", "Futuro"], "filas": [["ayer", "hoy", "mañana"], ["jugué", "juego", "jugaré"]] }
+    },
+    {
+      "texto": "El verbo también cambia según **quién** hace la acción. Hoy yo **bailo** y Wara **baila**. Ayer yo **bailé** y Wara **bailó**. Mañana yo **bailaré** y Wara **bailará**.",
+      "emoji": "💃",
+      "visual": { "tipo": "tabla", "columnas": ["Tiempo", "Yo", "Wara"], "filas": [["pasado", "bailé", "bailó"], ["presente", "bailo", "baila"], ["futuro", "bailaré", "bailará"]] }
+    },
+    {
+      "texto": "¡Cuida la **tilde**! «Yo canto» es presente, pero «Wara cantó» es pasado. Una tilde cambia cuándo pasa la acción y quién la hace.",
+      "emoji": "✏️",
+      "visual": { "tipo": "tabla", "columnas": ["Sin tilde", "Con tilde"], "filas": [["yo canto (hoy)", "Wara cantó (ayer)"], ["yo camino (hoy)", "Wara caminó (ayer)"]] }
+    }
+  ],
+  "ejemplo": {
+    "instruccion": "Mira cómo cambia el verbo «cocinar» según cuándo pasa.",
+    "pasos": [
+      {
+        "texto": "Hoy Luis **cocina** majadito. Pasa ahora: es **presente**.",
+        "visual": { "tipo": "emojis", "items": ["👨‍🍳", "🍚"], "etiquetas": ["Luis", "majadito"] }
+      },
+      {
+        "texto": "Ayer Luis **cocinó** sopa de maní. Ya pasó: es **pasado**. ¡Mira la tilde en la ó!",
+        "visual": { "tipo": "emojis", "items": ["👨‍🍳", "🍲"], "etiquetas": ["Luis", "sopa de maní"] }
+      },
+      {
+        "texto": "Mañana Luis **cocinará** choclo con queso. Todavía no pasó: es **futuro**.",
+        "visual": { "tipo": "emojis", "items": ["👨‍🍳", "🌽", "🧀"], "etiquetas": ["Luis", "choclo", "queso"] }
+      },
+      {
+        "texto": "Si hablo yo, digo: ayer **cociné**, hoy **cocino** y mañana **cocinaré**.",
+        "visual": { "tipo": "tabla", "columnas": ["Ayer", "Hoy", "Mañana"], "filas": [["cociné", "cocino", "cocinaré"]] }
+      }
+    ]
+  },
+  "guiada": {
+    "intro": "Ahora lo hacemos juntos, paso a paso.",
+    "pasos": [
+      {
+        "id": "g1", "tipo": "opcion",
+        "enunciado": "«Ayer Kusi bailó en la fiesta». ¿Cuándo pasó?",
+        "apoyo": "Busca la palabra que dice cuándo: ayer, hoy o mañana.",
+        "opciones": [
+          { "texto": "Pasado: ya pasó", "correcta": true },
+          { "texto": "Presente: pasa ahora", "pista": "¿La fiesta es ahora? Mira la primera palabra de la oración.", "error": "marcador-tiempo" },
+          { "texto": "Futuro: todavía no pasó", "pista": "«Ayer» es un día que ya terminó. Piensa otra vez.", "error": "marcador-tiempo" }
+        ],
+        "mezclar": false,
+        "columnas": 1,
+        "pista": "¿Qué palabra de la oración dice cuándo fue la fiesta?",
+        "explicacion": "Es **pasado**: «ayer» y «bailó» nos dicen que la fiesta ya pasó.",
+        "error": "tiempo-verbal"
+      },
+      {
+        "id": "g2", "tipo": "completar",
+        "enunciado": "Completa con el verbo en pasado.",
+        "apoyo": "«Ayer» dice que ya pasó, y habla «yo». Busca la forma de «yo» en pasado.",
+        "texto": "Ayer yo [comí] quinua con leche.",
+        "banco": ["comeré", "comió"],
+        "pista": "Mira dos cosas: ¿ya pasó? ¿Quién lo hace? Busca la forma que va con «yo».",
+        "explicacion": "Ayer yo **comí**. «Comeré» es futuro y «comió» se usa para él o ella.",
+        "error": "conjuga-verbo"
+      },
+      {
+        "id": "g3", "tipo": "escribir",
+        "enunciado": "Hoy Sofía salta la cuerda. Mañana también lo hará. Escribe «saltar» en futuro para Sofía.",
+        "apoyo": "Para él o ella, el futuro se forma así: saltar + á. ¡No olvides la tilde!",
+        "visual": { "tipo": "emoji", "valor": "🤸" },
+        "respuestas": ["saltará"],
+        "tildes": "estricto",
+        "pista": "Escribe una sola palabra. Empieza con «saltar» y agrega la terminación del futuro para ella.",
+        "explicacion": "Mañana Sofía **saltará**. El futuro para él o ella termina en -rá, con tilde.",
+        "error": "tilde-verbo"
+      }
+    ]
+  },
+  "practica": [
+    {
+      "id": "p1", "tipo": "clasificar", "nivel": 1,
+      "enunciado": "¿Pasado, presente o futuro? Mira la palabra del tiempo.",
+      "categorias": [
+        { "id": "pasado", "texto": "Pasado" },
+        { "id": "presente", "texto": "Presente" },
+        { "id": "futuro", "texto": "Futuro" }
+      ],
+      "elementos": [
+        { "texto": "Ayer comí chuño.", "categoria": "pasado" },
+        { "texto": "Ayer Rosa pintó un árbol.", "categoria": "pasado" },
+        { "texto": "Hoy leo un cuento.", "categoria": "presente" },
+        { "texto": "Hoy Juan barre el patio.", "categoria": "presente" },
+        { "texto": "Mañana viajaré a Tarija.", "categoria": "futuro" },
+        { "texto": "Mañana Inti nadará en el río.", "categoria": "futuro" }
+      ],
+      "pista": "Busca en cada oración la palabra ayer, hoy o mañana.",
+      "explicacion": "Con «ayer» (comí, pintó): pasado. Con «hoy» (leo, barre): presente. Con «mañana» (viajaré, nadará): futuro.",
+      "error": "marcador-tiempo"
+    },
+    {
+      "id": "p2", "tipo": "escribir", "nivel": 1,
+      "enunciado": "Escucha la oración. ¿Cuándo pasa? Escribe: pasado, presente o futuro.",
+      "escuchar": "Mañana visitaré el lago Titicaca.",
+      "respuestas": ["futuro", "el futuro", "en futuro"],
+      "pista": "¿Ya pasó, pasa ahora o todavía no pasó? Escucha bien la primera palabra.",
+      "explicacion": "Es **futuro**: «mañana» y «visitaré» dicen que todavía no pasó.",
+      "error": "tiempo-verbal"
+    },
+    {
+      "id": "p3", "tipo": "completar", "nivel": 1,
+      "enunciado": "Completa con «Ayer» o «Mañana». Mira el verbo.",
+      "texto": "[Ayer] Wara jugó con su perro. [Mañana] Wara jugará con su gato.",
+      "pista": "Mira el verbo de cada oración: ¿ya pasó o todavía no pasó?",
+      "explicacion": "**Ayer** Wara jugó (pasado). **Mañana** Wara jugará (futuro).",
+      "error": "marcador-tiempo"
+    },
+    {
+      "id": "p4", "tipo": "completar", "nivel": 1,
+      "enunciado": "Completa con el verbo en presente. Fíjate quién lava.",
+      "visual": { "tipo": "emojis", "items": ["☕", "🍽️"], "etiquetas": ["taza", "plato"] },
+      "texto": "Hoy yo [lavo] mi taza y mi primo [lava] su plato.",
+      "banco": ["lavar"],
+      "pista": "Una forma va con «yo» y la otra va con «mi primo». ¿Cómo termina cada una?",
+      "explicacion": "Hoy yo **lavo** y mi primo **lava**. Con «yo» termina en o; con él, en a. «Lavar» es el infinitivo.",
+      "error": "persona-verbal"
+    },
+    {
+      "id": "p5", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa con el verbo en pasado. Fíjate quién canta.",
+      "texto": "Ayer yo [canté] en el coro. Ayer mi prima también [cantó].",
+      "banco": ["cantaré", "cantará"],
+      "pista": "Las dos oraciones dicen «ayer». Para «yo» el pasado termina en é; para ella, en ó.",
+      "explicacion": "Ayer yo **canté** y mi prima **cantó**. «Cantaré» y «cantará» son futuro.",
+      "error": "persona-verbal"
+    },
+    {
+      "id": "p6", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa con el verbo en futuro. Fíjate quién toma.",
+      "texto": "Mañana yo [tomaré] api con pastel. Mañana mi abuelo [tomará] té.",
+      "banco": ["tomé", "tomó"],
+      "pista": "Las dos oraciones dicen «mañana». Para «yo» el futuro termina en -ré; para él, en -rá.",
+      "explicacion": "Mañana yo **tomaré** api y mi abuelo **tomará** té. «Tomé» y «tomó» son pasado.",
+      "error": "persona-verbal"
+    },
+    {
+      "id": "p7", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha la oración y escribe solo el verbo.",
+      "escuchar": "Ayer Wara bailó en la fiesta.",
+      "respuestas": ["bailó"],
+      "tildes": "estricto",
+      "pista": "Es una acción que ya pasó y la hizo Wara. Piensa si lleva tilde.",
+      "explicacion": "El verbo es **bailó**: pasado, para ella. La tilde en la ó dice que ya pasó.",
+      "error": "dictado-verbo"
+    },
+    {
+      "id": "p8", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "¿Pasado, presente o futuro? Mira bien las tildes.",
+      "categorias": [
+        { "id": "pasado", "texto": "Pasado" },
+        { "id": "presente", "texto": "Presente" },
+        { "id": "futuro", "texto": "Futuro" }
+      ],
+      "elementos": [
+        { "texto": "bailo", "categoria": "presente" },
+        { "texto": "bailó", "categoria": "pasado" },
+        { "texto": "bailaré", "categoria": "futuro" },
+        { "texto": "escribe", "categoria": "presente" },
+        { "texto": "escribió", "categoria": "pasado" },
+        { "texto": "escribirá", "categoria": "futuro" }
+      ],
+      "pista": "Pregúntate: ¿ya pasó, pasa ahora o todavía no pasó? Mira cómo termina cada palabra y si lleva tilde.",
+      "explicacion": "Presente: bailo, escribe. Pasado: bailó, escribió. Futuro: bailaré, escribirá.",
+      "error": "tilde-verbo"
+    },
+    {
+      "id": "p9", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "Une cada comienzo con el verbo que le corresponde.",
+      "pares": [["Ayer yo…", "salté"], ["Ayer Inti…", "saltó"], ["Mañana yo…", "saltaré"], ["Mañana Inti…", "saltará"]],
+      "pista": "Mira dos cosas: cuándo pasa (ayer o mañana) y quién lo hace (yo o Inti).",
+      "explicacion": "Ayer yo salté; ayer Inti saltó. Mañana yo saltaré; mañana Inti saltará.",
+      "error": "persona-verbal"
+    },
+    {
+      "id": "p10", "tipo": "tocar", "nivel": 2,
+      "enunciado": "Toca los verbos en futuro.",
+      "texto": "Hoy leo un cuento. Mañana *pintaré* un dibujo y Mateo *lavará* los platos.",
+      "pista": "Hay dos verbos en futuro. Todavía no pasaron.",
+      "explicacion": "«Pintaré» y «lavará» están en futuro. «Leo» está en presente: pasa hoy.",
+      "error": "tiempo-verbal"
+    },
+    {
+      "id": "p11", "tipo": "clasificar", "nivel": 2,
+      "lectura": "nayra",
+      "enunciado": "Lee el texto. ¿Cuándo pasa cada cosa?",
+      "categorias": [
+        { "id": "ayer", "texto": "Ayer" },
+        { "id": "hoy", "texto": "Hoy" },
+        { "id": "manana", "texto": "Mañana" }
+      ],
+      "elementos": [
+        { "texto": "visitar la feria", "categoria": "ayer" },
+        { "texto": "cargar la bolsa del pan", "categoria": "ayer" },
+        { "texto": "pelar las habas", "categoria": "hoy" },
+        { "texto": "cocinar el choclo", "categoria": "hoy" },
+        { "texto": "visitar a la abuela", "categoria": "manana" },
+        { "texto": "llevar un plato paceño", "categoria": "manana" }
+      ],
+      "pista": "Cada párrafo empieza con ayer, hoy o mañana. Busca en qué párrafo está cada acción.",
+      "explicacion": "Ayer: visitó la feria y cargó el pan. Hoy: pela las habas y el papá cocina el choclo. Mañana: visitarán a la abuela y le llevará un plato paceño.",
+      "error": "comprension-lectura"
+    },
+    {
+      "id": "p12", "tipo": "escribir", "nivel": 3,
+      "enunciado": "Mira: hoy Wara canta → ayer Wara cantó. Ahora tú: hoy Wara camina → ayer Wara…",
+      "audio": "Mira: hoy Wara canta; ayer Wara cantó. Ahora tú: hoy Wara camina; ayer Wara... Escribe el verbo.",
+      "respuestas": ["caminó"],
+      "tildes": "estricto",
+      "pista": "Fíjate qué cambió de «canta» a «cantó». Haz lo mismo con «camina».",
+      "explicacion": "Ayer Wara **caminó**: la a final cambia por una ó con tilde. Sin tilde, «camino» sería «yo, hoy».",
+      "error": "tilde-verbo"
+    },
+    {
+      "id": "p13", "tipo": "escribir", "nivel": 3,
+      "enunciado": "Escucha la oración y escribe solo el verbo.",
+      "escuchar": "Mañana escribiré una carta a mi abuela.",
+      "respuestas": ["escribiré"],
+      "tildes": "estricto",
+      "pista": "Es un verbo en futuro y habla «yo». Revisa cómo termina y si lleva tilde.",
+      "explicacion": "El verbo es **escribiré**: futuro, para «yo». Lleva tilde en la é final.",
+      "error": "dictado-verbo"
+    },
+    {
+      "id": "p14", "tipo": "completar", "nivel": 3,
+      "enunciado": "Completa con el verbo «abrir». Mira cuándo pasa y quién lo hace.",
+      "texto": "Ayer yo [abrí] la ventana. Mañana mi abuela [abrirá] la tienda.",
+      "banco": ["abriré", "abrió"],
+      "pista": "Primera oración: ayer y «yo». Segunda oración: mañana y «ella».",
+      "explicacion": "Ayer yo **abrí** (pasado, yo). Mañana mi abuela **abrirá** (futuro, ella).",
+      "error": "conjuga-verbo"
+    },
+    {
+      "id": "p15", "tipo": "multiple", "nivel": 3,
+      "enunciado": "Elige todas las oraciones que están en futuro.",
+      "opciones": [
+        { "texto": "Rosa viajará a Cobija.", "correcta": true },
+        { "texto": "Mi tío sembrará papa.", "correcta": true },
+        { "texto": "El cóndor voló muy alto.", "pista": "«Voló» ya pasó: es pasado.", "error": "tiempo-verbal" },
+        { "texto": "Ana dibuja una llama.", "pista": "«Dibuja» pasa ahora: es presente.", "error": "tiempo-verbal" }
+      ],
+      "columnas": 1,
+      "pista": "Aquí no hay ayer ni mañana: mira cómo termina cada verbo.",
+      "explicacion": "«Viajará» y «sembrará» están en futuro: terminan en -rá. «Voló» es pasado y «dibuja» es presente.",
+      "error": "tiempo-verbal"
+    },
+    {
+      "id": "p16", "tipo": "escribir-libre", "nivel": 3,
+      "enunciado": "Escribe tres oraciones sobre ti: una con «ayer», una con «hoy» y una con «mañana».",
+      "guia": ["Ayer yo...", "Hoy yo...", "Mañana yo..."],
+      "requisitos": [
+        { "tipo": "mayuscula-inicial" },
+        { "tipo": "punto-final" },
+        { "tipo": "min-oraciones", "valor": 3 },
+        { "tipo": "incluye-todas", "palabras": ["ayer", "hoy", "mañana"] }
+      ],
+      "modelo": "Ayer jugué con mi perro. Hoy leo un cuento. Mañana visitaré a mi abuela.",
+      "pista": "Con «ayer» usa un verbo que ya pasó; con «mañana», uno que todavía no pasó.",
+      "explicacion": "Por ejemplo: «Ayer jugué con mi perro. Hoy leo un cuento. Mañana visitaré a mi abuela». Jugué es pasado, leo es presente y visitaré es futuro.",
+      "error": "produce-oracion"
+    }
+  ],
+  "comprobacion": [
+    {
+      "id": "c1", "tipo": "opcion", "nivel": 1,
+      "enunciado": "«Mañana Arami visitará a su tía». ¿Cuándo pasa?",
+      "opciones": [
+        { "texto": "Pasado: ya pasó", "pista": "«Mañana» es un día que todavía no llegó.", "error": "marcador-tiempo" },
+        { "texto": "Presente: pasa ahora", "pista": "La visita no es ahora. Mira la primera palabra de la oración.", "error": "marcador-tiempo" },
+        { "texto": "Futuro: todavía no pasó", "correcta": true }
+      ],
+      "mezclar": false,
+      "columnas": 1,
+      "pista": "¿Qué palabra de la oración dice cuándo será la visita?",
+      "explicacion": "Es **futuro**: «mañana» y «visitará» dicen que todavía no pasó.",
+      "error": "tiempo-verbal"
+    },
+    {
+      "id": "c2", "tipo": "clasificar", "nivel": 1,
+      "enunciado": "¿Con qué palabra va cada verbo: ayer o mañana?",
+      "categorias": [
+        { "id": "ayer", "texto": "Ayer" },
+        { "id": "manana", "texto": "Mañana" }
+      ],
+      "elementos": [
+        { "texto": "comí", "categoria": "ayer" },
+        { "texto": "comeré", "categoria": "manana" },
+        { "texto": "bailó", "categoria": "ayer" },
+        { "texto": "bailará", "categoria": "manana" },
+        { "texto": "subí", "categoria": "ayer" },
+        { "texto": "subiré", "categoria": "manana" }
+      ],
+      "pista": "Pregúntate: ¿esta acción ya pasó o todavía no pasó?",
+      "explicacion": "Ya pasaron (ayer): comí, bailó, subí. Todavía no pasan (mañana): comeré, bailará, subiré.",
+      "error": "marcador-tiempo"
+    },
+    {
+      "id": "c3", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa con el verbo en pasado. Fíjate quién pinta.",
+      "texto": "Ayer yo [pinté] una vicuña. Ayer mi amigo [pintó] un cóndor.",
+      "banco": ["pintaré", "pintará"],
+      "pista": "Las dos oraciones dicen «ayer». Para «yo» el pasado termina en é; para él, en ó.",
+      "explicacion": "Ayer yo **pinté** y mi amigo **pintó**. «Pintaré» y «pintará» son futuro.",
+      "error": "persona-verbal"
+    },
+    {
+      "id": "c4", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha la oración y escribe solo el verbo.",
+      "escuchar": "Mañana Juan cocinará sopa de maní.",
+      "respuestas": ["cocinará"],
+      "tildes": "estricto",
+      "pista": "Es una acción que todavía no pasó y la hará Juan. Revisa cómo termina y si lleva tilde.",
+      "explicacion": "El verbo es **cocinará**: futuro, para él. Lleva tilde en la á final.",
+      "error": "dictado-verbo"
+    },
+    {
+      "id": "c5", "tipo": "tocar", "nivel": 2,
+      "enunciado": "Toca el verbo que está en pasado.",
+      "texto": "Hoy juego en el patio, pero ayer *jugué* en la cancha.",
+      "pista": "Hay dos verbos. Uno pasa hoy y el otro ya pasó.",
+      "explicacion": "«Jugué» está en pasado: pasó ayer. «Juego» está en presente: pasa hoy.",
+      "error": "tiempo-verbal"
+    },
+    {
+      "id": "c6", "tipo": "opcion", "nivel": 2,
+      "lectura": "nayra",
+      "enunciado": "Lee el texto. ¿Qué hará Nayra mañana?",
+      "opciones": [
+        { "texto": "Llevará un plato paceño a su abuela.", "correcta": true },
+        { "texto": "Cargó la bolsa del pan.", "pista": "Eso ya pasó: fue ayer. Busca lo que va a pasar.", "error": "tiempo-verbal" },
+        { "texto": "Pela las habas.", "pista": "Eso pasa hoy, domingo. Lee el último párrafo.", "error": "comprension-lectura" }
+      ],
+      "columnas": 1,
+      "pista": "Busca el párrafo que empieza con «Mañana».",
+      "explicacion": "Mañana Nayra **llevará** un plato paceño a su abuela. «Llevará» está en futuro.",
+      "error": "comprension-lectura"
+    },
+    {
+      "id": "c7", "tipo": "clasificar", "nivel": 3,
+      "enunciado": "¿Pasado, presente o futuro? Aquí no hay pistas: mira el verbo.",
+      "categorias": [
+        { "id": "pasado", "texto": "Pasado" },
+        { "id": "presente", "texto": "Presente" },
+        { "id": "futuro", "texto": "Futuro" }
+      ],
+      "elementos": [
+        { "texto": "Mi papá tejió una chompa.", "categoria": "pasado" },
+        { "texto": "La paraba voló muy alto.", "categoria": "pasado" },
+        { "texto": "El bufeo nada en el río.", "categoria": "presente" },
+        { "texto": "Kusi riega las plantas.", "categoria": "presente" },
+        { "texto": "Luis escribirá un cuento.", "categoria": "futuro" },
+        { "texto": "Sofía leerá un libro.", "categoria": "futuro" }
+      ],
+      "pista": "Busca el verbo de cada oración. ¿Dice algo que ya pasó, que pasa ahora o que todavía no pasó?",
+      "explicacion": "Pasado: tejió, voló. Presente: nada, riega. Futuro: escribirá, leerá.",
+      "error": "tiempo-verbal"
+    },
+    {
+      "id": "c8", "tipo": "escribir", "nivel": 3,
+      "enunciado": "Mira: hoy yo bebo → ayer yo bebí. Ahora tú: hoy yo corro → ayer yo…",
+      "audio": "Mira: hoy yo bebo; ayer yo bebí. Ahora tú: hoy yo corro; ayer yo... Escribe el verbo.",
+      "respuestas": ["corrí"],
+      "tildes": "estricto",
+      "pista": "Fíjate qué cambió de «bebo» a «bebí». Haz lo mismo con «corro».",
+      "explicacion": "Ayer yo **corrí**: la o final cambia por una í con tilde, como en bebo → bebí.",
+      "error": "tilde-verbo"
+    }
+  ],
+  "repaso": {
+    "texto": "Pasado: ya pasó (ayer jugué). Presente: pasa ahora (hoy juego). Futuro: todavía no pasó (mañana jugaré). ¡Cuida las tildes!",
+    "visual": { "tipo": "tabla", "columnas": ["Ayer", "Hoy", "Mañana"], "filas": [["jugué", "juego", "jugaré"], ["Wara jugó", "Wara juega", "Wara jugará"]] }
+  },
+  "adulto": {
+    "objetivo": "Reconocer los tiempos verbales (pasado, presente y futuro) con ayuda de palabras como ayer, hoy y mañana, y conjugar verbos regulares en primera persona (yo) y tercera persona (él, ella), cuidando las tildes que cambian el sentido (canto / cantó). Se practica el futuro de una sola palabra (jugaré); en casa también es correcto decir «voy a jugar».",
+    "sugerencias": [
+      "En la cena, conversen en tres tiempos: «Ayer yo cociné…», «Hoy yo lavo…», «Mañana yo compraré…». Túrnense y fíjense en cómo cambia el verbo.",
+      "En la feria o camino al mercado, pregunten sobre lo que ven: «¿La señora ya vendió, vende ahora o venderá después?». Pidan que diga la oración completa.",
+      "Escriban en tarjetas formas de un verbo (canté, canto, cantaré, cantó, canta, cantará) y pidan que las ordene en tres columnas: ayer, hoy y mañana. Revisen juntos las tildes."
+    ],
+    "errores": {
+      "marcador-tiempo": { "descripcion": "No relaciona ayer, hoy y mañana con el pasado, el presente y el futuro.", "sugerencia": "Usen un calendario: marquen ayer, hoy y mañana, y digan una acción para cada día." },
+      "tiempo-verbal": { "descripcion": "Duda al decidir si una acción ya pasó, pasa ahora o va a pasar.", "sugerencia": "Pregunten con cosas reales del día: «¿ya pasó, está pasando o todavía no pasó?»." },
+      "persona-verbal": { "descripcion": "Confunde la forma de «yo» con la de «él o ella» (canté / cantó, tomaré / tomará).", "sugerencia": "Comparen en voz alta «yo canté» y «la abuela cantó» y señalen quién hizo la acción." },
+      "tilde-verbo": { "descripcion": "Olvida las tildes que cambian el tiempo o la persona (caminó, corrí, saltará).", "sugerencia": "Digan juntos «yo camino» y «ella caminó», marcando con la voz la sílaba fuerte, y escriban la tilde con un color." },
+      "conjuga-verbo": { "descripcion": "Le cuesta formar el verbo en el tiempo y la persona que se piden.", "sugerencia": "Elijan un verbo (lavar) y armen juntos la tabla: ayer lavé / lavó, hoy lavo / lava, mañana lavaré / lavará." },
+      "dictado-verbo": { "descripcion": "Tiene dificultad para escribir el verbo que escucha en una oración.", "sugerencia": "Dicten oraciones cortas y pidan que escriba solo el verbo; revisen juntos la terminación y la tilde." },
+      "comprension-lectura": { "descripcion": "No ubica en un texto cuándo pasa cada acción.", "sugerencia": "Lean el texto de nuevo y busquen juntos las palabras ayer, hoy y mañana al inicio de cada párrafo." },
+      "produce-oracion": { "descripcion": "Le cuesta escribir oraciones con el verbo en el tiempo correcto.", "sugerencia": "Escriban un pequeño diario: una oración de ayer, una de hoy y una de mañana, con mayúscula y punto." }
+    }
+  }
+}

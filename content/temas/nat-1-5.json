@@ -26,7 +26,7 @@
       "visual": { "tipo": "ilustracion", "id": "tierra-traslacion" }
     },
     {
-      "texto": "En Bolivia hay dos épocas. La **época de lluvias** va más o menos de noviembre a marzo: incluye el verano. La **época seca** va más o menos de mayo a octubre: incluye el invierno.",
+      "texto": "Además, en Bolivia hablamos de dos épocas. La **época de lluvias** va más o menos de noviembre a marzo, e incluye el verano. La **época seca** va más o menos de mayo a octubre, e incluye el invierno.",
       "visual": { "tipo": "emojis", "items": ["🌧️", "☀️"], "etiquetas": ["época de lluvias", "época seca"] }
     }
   ],
@@ -38,7 +38,7 @@
         "visual": { "tipo": "ilustracion", "id": "estaciones", "resaltar": "verano" }
       },
       {
-        "texto": "**Otoño** (de marzo a junio): las lluvias se van y el aire se enfría. Algunos árboles pierden sus hojas. En el altiplano y los valles se cosechan la papa y el maíz.",
+        "texto": "**Otoño** (de marzo a junio): las lluvias se van y el aire se enfría. Algunos árboles pierden sus hojas. En el altiplano se cosecha la papa, y en los valles, el maíz.",
         "visual": { "tipo": "ilustracion", "id": "estaciones", "resaltar": "otono" }
       },
       {
@@ -140,7 +140,7 @@
     },
     {
       "id": "p4", "tipo": "manipular", "nivel": 1,
-      "enunciado": "El Año Nuevo Andino Amazónico se celebra el 21 de junio, cerca del inicio del invierno. Toca ese día.",
+      "enunciado": "El Año Nuevo Andino Amazónico y del Chaco se celebra el 21 de junio, cerca del inicio del invierno. Toca ese día.",
       "manipulable": { "tipo": "calendario", "mes": 6, "anio": 2026, "objetivo": 21 },
       "pista": "Busca el número 21 en el calendario de junio.",
       "explicacion": "El 21 de junio es el Año Nuevo Andino Amazónico y del Chaco. Por esos días empieza el invierno.",
@@ -239,21 +239,21 @@
     },
     {
       "id": "p12", "tipo": "ordenar", "nivel": 3,
-      "enunciado": "Ordena lo que pasa con la papa en el altiplano durante el año. Empieza por la primavera.",
+      "enunciado": "Ordena lo que pasa con la papa en el altiplano, desde la primavera hasta el invierno.",
       "elementos": [
-        { "texto": "Primavera: se siembra la papa.", "emoji": "🌱" },
-        { "texto": "Verano: la planta crece con las lluvias.", "emoji": "🌧️" },
-        { "texto": "Otoño: se cosecha la papa.", "emoji": "🥔" },
-        { "texto": "Invierno: con las heladas se hace chuño.", "emoji": "❄️" }
+        { "texto": "Se siembra la papa.", "emoji": "🌱" },
+        { "texto": "La planta crece con las lluvias.", "emoji": "🌧️" },
+        { "texto": "Se cosecha la papa.", "emoji": "🥔" },
+        { "texto": "Con las heladas se hace chuño.", "emoji": "❄️" }
       ],
       "vertical": true,
-      "pista": "Primero hay que sembrar. ¿Qué necesita la planta para crecer?",
+      "pista": "Primero hay que sembrar. Las lluvias llegan en verano y las heladas, en invierno.",
       "explicacion": "En primavera se siembra la papa, en verano crece con las lluvias, en otoño se cosecha y en invierno, con las heladas, se hace chuño.",
       "error": "cambios-estacion"
     },
     {
       "id": "p13", "tipo": "pasos", "nivel": 3,
-      "enunciado": "Hoy es 15 de julio. Luis vive en El Alto y sale temprano a la escuela.",
+      "enunciado": "Hoy es 15 de julio. Luis vive en El Alto y sale muy temprano de su casa.",
       "visual": { "tipo": "calendario", "mes": 7, "anio": 2026, "marcar": [15], "titulo": "Julio" },
       "pasos": [
         {
@@ -289,7 +289,7 @@
             { "texto": "muchas flores nuevas", "pista": "Las plantas florecen más en primavera.", "error": "cambios-estacion" }
           ],
           "pista": "Piensa en las noches muy frías del altiplano en invierno.",
-          "explicacion": "En las mañanas de invierno, el pasto amanece blanco por la helada. Esa capa blanca es la escarcha: agua congelada.",
+          "explicacion": "En las mañanas de invierno, el pasto amanece blanco por la helada. Esa capa blanca es la escarcha: hielo muy fino.",
           "error": "cambios-estacion"
         }
       ],
@@ -363,11 +363,11 @@
       "error": "ropa-clima"
     },
     {
-      "id": "c3", "tipo": "manipular", "nivel": 1,
-      "enunciado": "El 21 de septiembre es el Día del Estudiante y de la Primavera. Toca ese día.",
+      "id": "c3", "tipo": "manipular", "nivel": 2,
+      "enunciado": "En Bolivia, el Día del Estudiante es también el Día de la Primavera. Toca ese día en septiembre.",
       "manipulable": { "tipo": "calendario", "mes": 9, "anio": 2026, "objetivo": 21 },
-      "pista": "Busca el número 21 en el calendario de septiembre.",
-      "explicacion": "El 21 de septiembre celebramos el Día del Estudiante y de la Primavera, porque por esos días empieza la primavera.",
+      "pista": "Recuerda: cada estación empieza cerca del mismo número de día. ¿Cuál era ese número?",
+      "explicacion": "Es el 21 de septiembre: celebramos el Día del Estudiante y de la Primavera, porque por esos días empieza la primavera.",
       "error": "ubica-fecha"
     },
     {
@@ -376,11 +376,11 @@
       "pares": [
         ["enero", "verano"],
         ["abril", "otoño"],
-        ["julio", "invierno"],
+        ["agosto", "invierno"],
         ["octubre", "primavera"]
       ],
       "pista": "Recuerda en qué mes empieza cada estación: diciembre, marzo, junio y septiembre.",
-      "explicacion": "Enero es verano, abril es otoño, julio es invierno y octubre es primavera.",
+      "explicacion": "Enero es verano, abril es otoño, agosto es invierno y octubre es primavera.",
       "error": "meses-estaciones"
     },
     {

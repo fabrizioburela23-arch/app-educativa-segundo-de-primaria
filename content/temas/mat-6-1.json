@@ -1,0 +1,393 @@
+{
+  "id": "mat-6-1",
+  "titulo": "Longitud: el metro",
+  "objetivo": "Mido con la regla en centímetros, sé que 1 metro tiene 100 centímetros y comparo qué es más largo o más corto.",
+  "explicacion": [
+    {
+      "texto": "Podemos medir con partes del cuerpo: con la **cuarta** (la mano abierta), con el **pie** o con **pasos**. ¡Pero no todas las personas tienen las manos y los pies del mismo tamaño!",
+      "visual": { "tipo": "emojis", "items": ["✋", "👣", "🚶"], "etiquetas": ["cuarta", "pie", "paso"] }
+    },
+    {
+      "texto": "Wara midió una mesa y le salieron 6 cuartas. Su tío midió la misma mesa y le salieron 4. ¡La mesa no cambió! Por eso usamos una medida **igual para todos**: el **centímetro** y el **metro**.",
+      "emoji": "🤔"
+    },
+    {
+      "texto": "La **regla** mide en **centímetros** (cm). Pon el **0** donde empieza el objeto y mira el número donde termina. Este lápiz mide 8 cm.",
+      "audio": "La regla mide en centímetros. Pon el cero donde empieza el objeto y mira el número donde termina. Este lápiz mide 8 centímetros.",
+      "visual": { "tipo": "regla", "longitud": 8, "objeto": "✏️" }
+    },
+    {
+      "texto": "Un **metro** (m) tiene **100 centímetros**. Usamos el metro para cosas largas, como una puerta o el patio. Antes de medir, puedes **estimar**: pensar más o menos cuánto mide.",
+      "audio": "Un metro tiene 100 centímetros. Usamos el metro para cosas largas, como una puerta o el patio. Antes de medir, puedes estimar: pensar más o menos cuánto mide.",
+      "visual": { "tipo": "recta", "min": 0, "max": 100, "paso": 10 }
+    }
+  ],
+  "ejemplo": {
+    "instruccion": "Mira cómo Kusi mide y compara con la regla. Después, explora la cinta de 1 metro: va de 0 a 100 cm.",
+    "pasos": [
+      { "texto": "Kusi pone la punta de su crayón justo en el **0** de la regla.", "visual": { "tipo": "regla", "longitud": 6, "objeto": "🖍️" } },
+      { "texto": "El crayón termina en el **6**. Entonces mide **6 cm**. Contamos los espacios desde el 0, no desde el 1.", "visual": { "tipo": "regla", "longitud": 6, "objeto": "🖍️" } },
+      { "texto": "Ahora mide su llave: empieza en el 0 y termina en el **4**. La llave mide **4 cm**.", "visual": { "tipo": "regla", "longitud": 4, "objeto": "🔑" } },
+      { "texto": "6 cm es más que 4 cm. El crayón es **más largo** y la llave es **más corta**.", "visual": { "tipo": "emojis", "items": ["🖍️", "🔑"], "etiquetas": ["6 cm", "4 cm"] } }
+    ],
+    "explorar": { "tipo": "recta", "min": 0, "max": 100, "paso": 10 }
+  },
+  "guiada": {
+    "intro": "Ahora medimos juntos, paso a paso.",
+    "pasos": [
+      {
+        "id": "g1", "tipo": "numero",
+        "enunciado": "¿Cuántos centímetros mide la cuchara?",
+        "apoyo": "La cuchara empieza en el 0. Busca el número donde termina.",
+        "visual": { "tipo": "regla", "longitud": 11, "objeto": "🥄" },
+        "respuesta": 11,
+        "sufijo": "cm",
+        "erroresComunes": [ { "respuesta": 12, "pista": "Contaste desde el 1. La cuchara empieza en el 0: cuenta los espacios.", "error": "medir-longitud" } ],
+        "pista": "Mira el número que está justo debajo de la punta de la cuchara.",
+        "explicacion": "La cuchara empieza en el 0 y termina en el 11: mide 11 cm.",
+        "error": "medir-longitud"
+      },
+      {
+        "id": "g2", "tipo": "opcion",
+        "enunciado": "¿Qué unidad es mejor para medir el largo del patio de tu escuela?",
+        "apoyo": "El patio es muy largo. Piensa en la unidad más grande que conoces para medir el largo.",
+        "opciones": [
+          { "texto": "metros", "correcta": true },
+          { "texto": "centímetros", "pista": "Se podría, pero el número sería enorme. Para cosas largas hay una unidad más grande.", "error": "elige-unidad" },
+          { "texto": "kilos", "pista": "El kilo sirve para pesar, no para medir el largo.", "error": "confunde-magnitud" }
+        ],
+        "columnas": 3,
+        "pista": "Los centímetros son para cosas pequeñas, como un lápiz.",
+        "explicacion": "El patio es largo: conviene medirlo en metros. Los centímetros son para cosas pequeñas y los kilos, para pesar.",
+        "error": "elige-unidad"
+      },
+      {
+        "id": "g3", "tipo": "manipular",
+        "enunciado": "Esta cinta mide 1 metro. Marca dónde está **medio metro**.",
+        "apoyo": "La cinta va de 0 a 100 centímetros. Medio metro está justo en la mitad de la cinta.",
+        "manipulable": { "tipo": "recta", "min": 0, "max": 100, "paso": 10, "objetivo": 50 },
+        "pista": "¿Cuál es la mitad de 100?",
+        "explicacion": "Medio metro es la mitad de 1 metro: 50 cm. Y 50 + 50 = 100.",
+        "error": "ubica-en-cinta"
+      }
+    ]
+  },
+  "practica": [
+    {
+      "id": "p1", "tipo": "generador", "nivel": 1, "generador": "regla", "params": { "max": 10 }
+    },
+    {
+      "id": "p2", "tipo": "opcion", "nivel": 1,
+      "enunciado": "¿Qué oruga es más larga?",
+      "opciones": [
+        { "visual": { "tipo": "regla", "longitud": 9, "objeto": "🐛" }, "correcta": true },
+        { "visual": { "tipo": "regla", "longitud": 5, "objeto": "🐛" }, "pista": "Esta oruga termina en el 5. Busca la que llega más lejos.", "error": "compara-longitud" }
+      ],
+      "columnas": 1,
+      "pista": "Mira en qué número termina cada oruga.",
+      "explicacion": "Una oruga mide 9 cm y la otra, 5 cm. 9 es más que 5: la de 9 cm es la más larga.",
+      "error": "compara-longitud"
+    },
+    {
+      "id": "p3", "tipo": "relacionar", "nivel": 1,
+      "enunciado": "Une cada medida con lo que usamos para medir.",
+      "pares": [
+        ["cuarta", { "texto": "la mano abierta", "emoji": "✋" }],
+        ["pie", { "texto": "del talón a la punta del pie", "emoji": "👣" }],
+        ["paso", { "texto": "un paso al caminar", "emoji": "🚶" }],
+        ["centímetro", { "texto": "las marcas de la regla", "emoji": "📏" }]
+      ],
+      "pista": "Piensa qué parte del cuerpo o qué objeto usas en cada medida.",
+      "explicacion": "La cuarta se mide con la mano abierta; el pie, del talón a la punta; y el paso, al caminar. Los centímetros están marcados en la regla.",
+      "error": "unidad-no-convencional"
+    },
+    {
+      "id": "p4", "tipo": "numero", "nivel": 1,
+      "enunciado": "¿Cuántos centímetros tiene 1 metro?",
+      "respuesta": 100,
+      "sufijo": "cm",
+      "erroresComunes": [
+        { "respuesta": 10, "pista": "10 cm es muy poco: cabe en tu mano. Un metro es mucho más largo.", "error": "equivalencia-metro" },
+        { "respuesta": 1000, "pista": "Es demasiado. Recuerda la cinta de 1 metro: ¿hasta qué número llegaba?", "error": "equivalencia-metro" }
+      ],
+      "pista": "Piensa en la cinta de 1 metro: empieza en el 0. ¿En qué número termina?",
+      "explicacion": "1 metro tiene 100 centímetros.",
+      "error": "equivalencia-metro"
+    },
+    {
+      "id": "p5", "tipo": "generador", "nivel": 2, "generador": "regla", "params": { "max": 20 }
+    },
+    {
+      "id": "p6", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "¿Qué unidad conviene usar para medir cada cosa?",
+      "categorias": [
+        { "id": "cm", "texto": "Centímetros", "emoji": "📏" },
+        { "id": "m", "texto": "Metros" }
+      ],
+      "elementos": [
+        { "texto": "un lápiz", "emoji": "✏️", "categoria": "cm" },
+        { "texto": "una llave", "emoji": "🔑", "categoria": "cm" },
+        { "texto": "una cuchara", "emoji": "🥄", "categoria": "cm" },
+        { "texto": "un zapato", "emoji": "👟", "categoria": "cm" },
+        { "texto": "el alto de un árbol", "emoji": "🌳", "categoria": "m" },
+        { "texto": "el largo de un micro", "emoji": "🚌", "categoria": "m" },
+        { "texto": "el largo de una cancha", "emoji": "⚽", "categoria": "m" },
+        { "texto": "el largo de una calle", "categoria": "m" }
+      ],
+      "pista": "Si cabe en tu mano, usa centímetros. Si es muy largo, usa metros.",
+      "explicacion": "El lápiz, la llave, la cuchara y el zapato son pequeños: centímetros. El árbol, el micro, la cancha y la calle son grandes: metros.",
+      "error": "elige-unidad"
+    },
+    {
+      "id": "p7", "tipo": "manipular", "nivel": 2,
+      "enunciado": "La mesa de Nayra mide 70 cm. Marca en la cinta de 1 metro dónde termina la mesa.",
+      "manipulable": { "tipo": "recta", "min": 0, "max": 100, "paso": 10, "objetivo": 70 },
+      "pista": "Cuenta de 10 en 10 desde el 0: 10, 20, 30…",
+      "explicacion": "70 cm está después de 7 saltos de 10: 10, 20, 30, 40, 50, 60, 70.",
+      "error": "ubica-en-cinta"
+    },
+    {
+      "id": "p8", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha y escribe la palabra.",
+      "escuchar": "centímetro",
+      "visual": { "tipo": "emoji", "valor": "📏" },
+      "respuestas": ["centímetro"],
+      "tildes": "flexible",
+      "pista": "Dila despacio y separa las sílabas con palmadas: tiene cuatro.",
+      "explicacion": "Se escribe «centímetro»: cen-tí-me-tro, con tilde en la í. Es la unidad de la regla.",
+      "error": "escritura-unidad"
+    },
+    {
+      "id": "p9", "tipo": "ordenar", "nivel": 2,
+      "enunciado": "Ordena las cintas de la más corta a la más larga.",
+      "elementos": [
+        { "texto": "18 cm", "emoji": "🎀" },
+        { "texto": "45 cm", "emoji": "🎀" },
+        { "texto": "54 cm", "emoji": "🎀" },
+        { "texto": "81 cm", "emoji": "🎀" }
+      ],
+      "pista": "Compara primero las decenas: la cifra de adelante.",
+      "explicacion": "El orden es 18 cm, 45 cm, 54 cm y 81 cm. Fíjate: 45 y 54 tienen las mismas cifras, pero 45 es menor.",
+      "error": "orden-longitudes"
+    },
+    {
+      "id": "p10", "tipo": "tocar", "nivel": 2,
+      "enunciado": "Toca las palabras que son medidas de longitud.",
+      "texto": "Luis compró 2 *metros* de tela, 3 kilos de papa y una cinta de 50 *centímetros*.",
+      "pista": "Hay dos. Busca las unidades que usamos para medir el largo.",
+      "explicacion": "«Metros» y «centímetros» miden longitud. «Kilos» mide el peso de la papa.",
+      "error": "confunde-magnitud"
+    },
+    {
+      "id": "p11", "tipo": "multiple", "nivel": 2,
+      "enunciado": "Estima: ¿qué cosas miden más de 1 metro? Elige todas.",
+      "opciones": [
+        { "texto": "el alto de una puerta", "emoji": "🚪", "correcta": true },
+        { "texto": "el largo de una cama", "emoji": "🛏️", "correcta": true },
+        { "texto": "un borrador", "pista": "Un borrador cabe en tu mano: mide mucho menos de 1 metro.", "error": "estima-longitud" },
+        { "texto": "una hoja de cuaderno", "emoji": "📄", "pista": "Una hoja de cuaderno es más corta que la cinta de 1 metro.", "error": "estima-longitud" },
+        { "texto": "una taza", "emoji": "☕", "pista": "Una taza es pequeña: mide unos pocos centímetros.", "error": "estima-longitud" }
+      ],
+      "pista": "Imagina la cinta de 1 metro junto a cada cosa. ¿Cuáles son más largas que la cinta?",
+      "explicacion": "La puerta y la cama miden más de 1 metro. El borrador, la hoja y la taza son cortos: miden unos centímetros.",
+      "error": "estima-longitud"
+    },
+    {
+      "id": "p12", "tipo": "generador", "nivel": 3, "generador": "suma", "params": { "digitos": 2, "llevar": true }
+    },
+    {
+      "id": "p13", "tipo": "pasos", "nivel": 3,
+      "enunciado": "Arami tiene dos cintas: una de 45 cm y otra de 38 cm. Las pone una detrás de la otra.",
+      "visual": { "tipo": "emojis", "items": ["🎀", "🎀"], "etiquetas": ["45 cm", "38 cm"] },
+      "pasos": [
+        {
+          "tipo": "numero", "enunciado": "¿Cuánto miden las dos cintas juntas?",
+          "respuesta": 83, "sufijo": "cm",
+          "erroresComunes": [ { "respuesta": 73, "pista": "Casi. 5 + 8 = 13: ¿sumaste la decena que llevabas?", "error": "problema-longitud" } ],
+          "pista": "Suma 45 + 38.",
+          "explicacion": "45 + 38 = 83. Las dos cintas juntas miden 83 cm.",
+          "error": "problema-longitud"
+        },
+        {
+          "tipo": "numero", "enunciado": "¿Cuántos centímetros le faltan para tener 1 metro de cinta?",
+          "respuesta": 17, "sufijo": "cm",
+          "erroresComunes": [ { "respuesta": 83, "pista": "83 cm es lo que ya tiene. ¿Cuánto le falta para llegar a 100 cm?", "error": "problema-longitud" } ],
+          "pista": "1 metro tiene 100 cm. Cuenta desde 83 hasta 100.",
+          "explicacion": "De 83 a 90 hay 7, y de 90 a 100 hay 10: faltan 7 + 10 = 17 cm.",
+          "error": "problema-longitud"
+        }
+      ],
+      "pista": "Primero junta las cintas. Después piensa cuántos centímetros tiene 1 metro.",
+      "explicacion": "45 + 38 = 83 cm. Para llegar a 100 cm faltan 17 cm.",
+      "error": "problema-longitud"
+    },
+    {
+      "id": "p14", "tipo": "numero", "nivel": 3,
+      "enunciado": "La cuerda de saltar de Luis mide 1 metro y 35 centímetros. ¿Cuántos centímetros mide en total?",
+      "respuesta": 135,
+      "sufijo": "cm",
+      "erroresComunes": [ { "respuesta": 36, "pista": "1 metro no es 1 centímetro. ¿Cuántos centímetros tiene 1 metro?", "error": "equivalencia-metro" } ],
+      "pista": "Cambia el metro por centímetros y después suma los 35 cm.",
+      "explicacion": "1 metro son 100 cm. 100 + 35 = 135 cm.",
+      "error": "equivalencia-metro"
+    },
+    {
+      "id": "p15", "tipo": "ordenar", "nivel": 3,
+      "enunciado": "Ordena estas medidas de la más corta a la más larga.",
+      "elementos": ["70 cm", "1 m", "1 m y 20 cm", "2 m"],
+      "pista": "Pasa todo a centímetros: 1 metro = 100 cm.",
+      "explicacion": "70 cm; 1 metro = 100 cm; 1 metro y 20 cm = 120 cm; 2 metros = 200 cm. De la más corta a la más larga: 70 cm, 1 m, 1 m y 20 cm, 2 m.",
+      "error": "orden-longitudes"
+    },
+    {
+      "id": "p16", "tipo": "escribir-libre", "nivel": 3,
+      "enunciado": "¿Con qué medirías el largo de tu cama: con la regla, con la cinta métrica o con cuartas? Escribe tu respuesta y por qué.",
+      "guia": ["Mediría mi cama con...", "...porque..."],
+      "requisitos": [
+        { "tipo": "mayuscula-inicial" }, { "tipo": "punto-final" },
+        { "tipo": "min-palabras", "valor": 6 },
+        { "tipo": "incluye", "palabras": ["regla", "cinta", "cuartas", "metro", "pasos"] }
+      ],
+      "modelo": "Mediría mi cama con la cinta métrica porque es larga.",
+      "pista": "Piensa si tu cama es corta o larga, y qué sirve mejor para medir cosas largas.",
+      "explicacion": "Por ejemplo: «Mediría mi cama con la cinta métrica porque es larga». Con cuartas, cada persona obtendría un número distinto.",
+      "error": "explica-medida"
+    }
+  ],
+  "comprobacion": [
+    {
+      "id": "c1", "tipo": "numero", "nivel": 1,
+      "enunciado": "¿Cuántos centímetros mide el plátano?",
+      "visual": { "tipo": "regla", "longitud": 15, "objeto": "🍌" },
+      "respuesta": 15,
+      "sufijo": "cm",
+      "erroresComunes": [ { "respuesta": 16, "pista": "Contaste desde el 1. El plátano empieza en el 0.", "error": "medir-longitud" } ],
+      "pista": "Busca el número donde termina el plátano.",
+      "explicacion": "El plátano empieza en el 0 y termina en el 15: mide 15 cm.",
+      "error": "medir-longitud"
+    },
+    {
+      "id": "c2", "tipo": "multiple", "nivel": 1,
+      "enunciado": "¿Qué cosas conviene medir en centímetros? Elige todas.",
+      "opciones": [
+        { "texto": "un crayón", "emoji": "🖍️", "correcta": true },
+        { "texto": "una galleta", "emoji": "🍪", "correcta": true },
+        { "texto": "una hoja de cuaderno", "emoji": "📄", "correcta": true },
+        { "texto": "el largo de un puente", "pista": "Un puente es muy largo: conviene medirlo en metros.", "error": "elige-unidad" },
+        { "texto": "el alto de un cerro", "emoji": "⛰️", "pista": "Un cerro es muy alto: conviene medirlo en metros.", "error": "elige-unidad" }
+      ],
+      "pista": "Los centímetros sirven para cosas pequeñas, que caben en tu mano o en tu mesa.",
+      "explicacion": "El crayón, la galleta y la hoja son pequeños: se miden en centímetros. El puente y el cerro son enormes: se miden en metros.",
+      "error": "elige-unidad"
+    },
+    {
+      "id": "c3", "tipo": "manipular", "nivel": 2,
+      "enunciado": "Esta cinta mide 2 metros: 200 cm. Marca dónde termina el primer metro.",
+      "manipulable": { "tipo": "recta", "min": 0, "max": 200, "paso": 20, "objetivo": 100 },
+      "pista": "Piensa cuántos centímetros tiene 1 metro.",
+      "explicacion": "1 metro tiene 100 cm. El primer metro termina en el 100, justo en la mitad de la cinta.",
+      "error": "equivalencia-metro"
+    },
+    {
+      "id": "c4", "tipo": "completar", "nivel": 2,
+      "enunciado": "Lee y completa.",
+      "texto": "La mano de Wara es más pequeña que la de su tío. Los dos miden la misma mesa con cuartas. A Wara le salen [más] cuartas que a su tío. Por eso usamos una medida [igual] para todos, como el metro.",
+      "banco": ["menos", "distinta"],
+      "pista": "Si la mano es más pequeña, ¿necesitas más o menos cuartas para cubrir la mesa?",
+      "explicacion": "Con una mano más pequeña se necesitan más cuartas. Como las manos son distintas, usamos una medida igual para todos: el metro y el centímetro.",
+      "error": "unidad-no-convencional"
+    },
+    {
+      "id": "c5", "tipo": "numero", "nivel": 2,
+      "enunciado": "Escucha el problema y responde en centímetros.",
+      "escuchar": "Rosa compró tres metros de tela en la feria. ¿Cuántos centímetros de tela compró?",
+      "respuesta": 300,
+      "sufijo": "cm",
+      "erroresComunes": [
+        { "respuesta": 3, "pista": "Rosa compró 3 metros, pero la pregunta pide centímetros.", "error": "equivalencia-metro" },
+        { "respuesta": 30, "pista": "Cada metro tiene más de 10 centímetros. Piensa otra vez.", "error": "equivalencia-metro" }
+      ],
+      "pista": "Cada metro tiene 100 centímetros. ¿Cuántos centímetros hay en 3 metros?",
+      "explicacion": "3 metros son 100 + 100 + 100 = 300 cm.",
+      "error": "equivalencia-metro"
+    },
+    {
+      "id": "c6", "tipo": "generador", "nivel": 2, "generador": "regla", "params": { "max": 15 }
+    },
+    {
+      "id": "c7", "tipo": "pasos", "nivel": 3,
+      "enunciado": "Mateo mide los pupitres. El suyo mide 60 cm de largo y el de Sofía mide 75 cm.",
+      "visual": { "tipo": "tabla", "columnas": ["Pupitre", "Largo"], "filas": [["Mateo", "60 cm"], ["Sofía", "75 cm"]] },
+      "pasos": [
+        {
+          "tipo": "opcion", "enunciado": "¿Qué pupitre es más largo?",
+          "opciones": [
+            { "texto": "el de Sofía", "correcta": true },
+            { "texto": "el de Mateo", "pista": "Compara los números: ¿cuál es mayor, 60 o 75?", "error": "compara-longitud" }
+          ],
+          "pista": "Compara 60 y 75.",
+          "explicacion": "75 cm es más que 60 cm: el pupitre de Sofía es más largo.",
+          "error": "compara-longitud"
+        },
+        {
+          "tipo": "numero", "enunciado": "¿Cuántos centímetros más largo es?",
+          "respuesta": 15, "sufijo": "cm",
+          "erroresComunes": [ { "respuesta": 135, "pista": "Sumaste los dos. Busca la diferencia: cuánto le falta a 60 para llegar a 75.", "error": "problema-longitud" } ],
+          "pista": "Resta: 75 − 60.",
+          "explicacion": "75 − 60 = 15. Es 15 cm más largo.",
+          "error": "problema-longitud"
+        },
+        {
+          "tipo": "opcion", "enunciado": "Si ponen los dos pupitres uno detrás del otro, ¿miden más o menos de 1 metro?",
+          "opciones": [
+            { "texto": "más de 1 metro", "correcta": true },
+            { "texto": "menos de 1 metro", "pista": "Suma 60 + 75 y compara con 100 cm.", "error": "problema-longitud" }
+          ],
+          "mezclar": false,
+          "pista": "Suma los dos largos y compara con 100 cm.",
+          "explicacion": "60 + 75 = 135 cm, y 135 cm es más que 100 cm: miden más de 1 metro.",
+          "error": "problema-longitud"
+        }
+      ],
+      "pista": "Resuelve una pregunta a la vez.",
+      "explicacion": "El pupitre de Sofía es 15 cm más largo. Juntos miden 135 cm: más de 1 metro.",
+      "error": "problema-longitud"
+    },
+    {
+      "id": "c8", "tipo": "ordenar", "nivel": 3,
+      "enunciado": "Ordena estas medidas de la más larga a la más corta.",
+      "elementos": ["2 m", "150 cm", "1 m", "90 cm"],
+      "pista": "Pasa los metros a centímetros: 1 metro = 100 cm.",
+      "explicacion": "2 metros = 200 cm, después 150 cm, luego 1 metro = 100 cm y al final 90 cm.",
+      "error": "orden-longitudes"
+    }
+  ],
+  "repaso": {
+    "texto": "Para medir con la regla, pon el 0 donde empieza el objeto y mira dónde termina. Recuerda: 1 metro tiene 100 centímetros.",
+    "visual": { "tipo": "regla", "longitud": 7, "objeto": "🖍️" }
+  },
+  "adulto": {
+    "objetivo": "Medir longitudes con unidades no convencionales (cuarta, pie, paso) y comprender por qué se necesita una unidad común; medir con regla en centímetros, estimar y comparar longitudes, y conocer el metro (1 m = 100 cm).",
+    "sugerencias": [
+      "Midan la mesa de la casa con cuartas: primero la niña o el niño y después el adulto. Comparen los números, conversen por qué salen distintos y luego mídanla con una regla o una cinta métrica.",
+      "Con una regla, midan objetos pequeños de la casa (cuchara, lápiz, llave). Antes de medir cada uno, pidan que estime cuánto mide y después comprueben juntos.",
+      "Corten una pita o cuerda de 1 metro con ayuda de una cinta métrica. En el patio, la calle o el mercado, busquen cosas que midan más y menos de 1 metro, y fíjense cómo venden la tela o el elástico por metros."
+    ],
+    "errores": {
+      "medir-longitud": { "descripcion": "Lee mal la regla: empieza a contar desde el 1 o no pone el objeto en el 0.", "sugerencia": "Midan juntos objetos de la casa: pongan el dedo en el 0 y cuenten los espacios (no las rayitas) hasta donde termina el objeto." },
+      "suma-olvida-llevar": { "descripcion": "Al sumar medidas, olvida sumar la decena que lleva.", "sugerencia": "Sumen con palitos y atados de 10: cuando juntan 10 palitos sueltos, armen un atado y pásenlo a las decenas." },
+      "suma-calculo": { "descripcion": "Se equivoca al sumar números de dos cifras.", "sugerencia": "Sumen primero las unidades y después las decenas, en columnas, con números de cintas o cuerdas que midan en casa." },
+      "compara-longitud": { "descripcion": "Confunde «más largo» con «más corto» o compara mal dos medidas.", "sugerencia": "Pongan dos objetos lado a lado, con un extremo alineado, y pregunten cuál sobresale más." },
+      "unidad-no-convencional": { "descripcion": "No entiende por qué salen números distintos al medir con cuartas, pies o pasos.", "sugerencia": "Midan el mismo objeto con la cuarta del niño y la del adulto, anoten los resultados y conversen por qué necesitamos el metro." },
+      "elige-unidad": { "descripcion": "Duda si conviene medir algo en centímetros o en metros.", "sugerencia": "Jueguen a «¿cabe en la mano?»: si cabe, se mide en centímetros; si es muy largo (patio, calle), en metros." },
+      "confunde-magnitud": { "descripcion": "Confunde las unidades de longitud (metro, centímetro) con las de peso (kilo).", "sugerencia": "Pregunten: «¿quiero saber cuánto mide o cuánto pesa?». La tela se compra por metros y la papa, por kilos." },
+      "equivalencia-metro": { "descripcion": "No recuerda que 1 metro tiene 100 centímetros o no sabe pasar de metros a centímetros.", "sugerencia": "Estiren una cinta métrica y cuenten de 10 en 10 hasta el 100. Luego marquen 1 metro en el piso con cinta o tiza." },
+      "ubica-en-cinta": { "descripcion": "Le cuesta ubicar una medida en la cinta métrica.", "sugerencia": "Con una cinta métrica, pidan que señale 10, 20, 50 y 70 cm contando de 10 en 10 desde el 0." },
+      "escritura-unidad": { "descripcion": "Escribe con errores las palabras de medida (centímetro, metro).", "sugerencia": "Dicten las palabras separando las sílabas con palmadas (cen-tí-me-tro) y revisen juntos la tilde." },
+      "orden-longitudes": { "descripcion": "Ordena mal medidas, sobre todo cuando unas están en metros y otras en centímetros.", "sugerencia": "Escriban cada medida en una tarjeta, pasen los metros a centímetros y ordénenlas de menor a mayor." },
+      "estima-longitud": { "descripcion": "Le cuesta estimar si un objeto mide más o menos de 1 metro.", "sugerencia": "Con una cuerda de 1 metro, adivinen primero y después comprueben si cada cosa mide más o menos que la cuerda." },
+      "problema-longitud": { "descripcion": "Le cuesta resolver problemas con medidas (juntar, comparar o calcular cuánto falta).", "sugerencia": "Resuelvan el problema con cintas o tiras de papel reales: júntenlas, compárenlas y midan lo que falta." },
+      "explica-medida": { "descripcion": "Le cuesta explicar por escrito qué usaría para medir y por qué.", "sugerencia": "Conversen primero en voz alta qué usarían para medir la cama o la puerta, y después escriban juntos una oración." }
+    }
+  }
+}

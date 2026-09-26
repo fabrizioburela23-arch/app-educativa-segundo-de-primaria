@@ -20,7 +20,7 @@
       "visual": { "tipo": "emojis", "items": ["🐈", "💤"], "etiquetas": ["El gato", "duerme."] }
     },
     {
-      "texto": "En una oración decimos **de quién** se habla y **qué se dice** de él o de ella. En «La llama come pasto.», hablamos de la llama y decimos que come pasto.",
+      "texto": "En una oración decimos **de quién** se habla (una persona, un animal o una cosa) y **qué se dice** de él o de ella. En «La llama come pasto.» hablamos de la llama y decimos que come pasto.",
       "visual": {
         "tipo": "tabla",
         "columnas": ["¿De quién se habla?", "¿Qué se dice?"],
@@ -28,7 +28,7 @@
       }
     },
     {
-      "texto": "Toda oración empieza con **mayúscula** y termina con **punto**. Mira: «El cóndor vuela alto.» La primera letra es mayúscula y al final hay un punto.",
+      "texto": "Cuando escribimos una oración, empieza con **mayúscula** y termina con **punto**. Mira: «El cóndor vuela alto.» La primera letra es mayúscula y al final hay un punto.",
       "emoji": "✍️",
       "visual": { "tipo": "emoji", "valor": "🦅", "etiqueta": "El cóndor vuela alto." }
     },
@@ -122,7 +122,7 @@
         { "texto": "y después", "categoria": "falta" }
       ],
       "pista": "Pregúntate: ¿dice de quién se habla y qué se dice de él o de ella?",
-      "explicacion": "«el sol brilla», «mi hermana canta» y «el perro ladra» dicen una idea completa. «el perro grande» dice cómo es el perro, pero no qué hace; «en la casa» y «y después» están cortadas.",
+      "explicacion": "«el sol brilla», «mi hermana canta» y «el perro ladra» dicen una idea completa. «el perro grande» nombra al perro, pero no dice nada de él (falta, por ejemplo, «ladra»). «en la casa» y «y después» están cortadas.",
       "error": "no-reconoce-oracion"
     },
     {
@@ -224,11 +224,11 @@
     },
     {
       "id": "p11", "tipo": "escribir", "nivel": 3,
-      "enunciado": "Escribe bien esta oración, con mayúsculas y punto: nayra vive en oruro",
-      "respuestas": ["Nayra vive en Oruro."],
+      "enunciado": "Escribe bien esta oración, con mayúsculas y punto: wara vive en santa cruz",
+      "respuestas": ["Wara vive en Santa Cruz."],
       "mayusculas": "estricto",
-      "pista": "Hay dos nombres propios. Uno de ellos también empieza la oración. No olvides el punto.",
-      "explicacion": "Se escribe «Nayra vive en Oruro.»: Nayra y Oruro son nombres propios, y la oración termina con punto.",
+      "pista": "Busca el nombre de una persona y el de una ciudad. El de la ciudad tiene dos palabras. No olvides el punto.",
+      "explicacion": "Se escribe «Wara vive en Santa Cruz.»: Wara y Santa Cruz son nombres propios (las dos palabras de la ciudad van con mayúscula), y la oración termina con punto.",
       "error": "corrige-oracion"
     },
     {
@@ -280,7 +280,7 @@
       "escuchar": "Mateo es de Tarija. Le gusta nadar en el río.",
       "respuestas": ["Mateo es de Tarija. Le gusta nadar en el río."],
       "mayusculas": "estricto",
-      "pista": "Revisa: mayúscula al inicio, en el nombre de la ciudad y después del primer punto.",
+      "pista": "Revisa: mayúscula al inicio, en el nombre de la ciudad y después del primer punto. Cada oración termina con punto.",
       "explicacion": "Se escribe «Mateo es de Tarija. Le gusta nadar en el río.» Mateo y Tarija son nombres propios, y «Le» va después del punto.",
       "error": "dictado-oracion"
     }
@@ -335,11 +335,11 @@
     {
       "id": "c5", "tipo": "escribir", "nivel": 2,
       "enunciado": "Escucha y escribe la oración. Empieza con mayúscula y termina con punto.",
-      "escuchar": "Inti juega con su perro.",
-      "respuestas": ["Inti juega con su perro."],
+      "escuchar": "El perro de Inti corre en el patio.",
+      "respuestas": ["El perro de Inti corre en el patio."],
       "mayusculas": "estricto",
-      "pista": "Revisa la mayúscula del inicio y el punto final.",
-      "explicacion": "Se escribe «Inti juega con su perro.»: mayúscula al inicio (Inti también es un nombre propio) y punto al final.",
+      "pista": "Revisa la mayúscula del inicio, el nombre de la persona y el punto final.",
+      "explicacion": "Se escribe «El perro de Inti corre en el patio.»: «El» empieza la oración, «Inti» es un nombre propio y al final va punto.",
       "error": "dictado-oracion"
     },
     {

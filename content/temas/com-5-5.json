@@ -1,0 +1,383 @@
+{
+  "id": "com-5-5",
+  "titulo": "j, r y rr",
+  "objetivo": "Escribo bien palabras con j, con r y con rr.",
+  "explicacion": [
+    {
+      "texto": "La **j** suena fuerte con todas las vocales: **ja**, **je**, **ji**, **jo**, **ju**. Escucha: **ja**guar, **ji**rafa, o**jo**, **ju**go. Con a, o y u, ese sonido se escribe con j.",
+      "emoji": "🐆",
+      "visual": { "tipo": "emojis", "items": ["🐆", "🦒", "👁️", "🥤"], "etiquetas": ["ja-guar", "ji-ra-fa", "o-jo", "ju-go"] }
+    },
+    {
+      "texto": "¡Ojo! **ge** y **gi** suenan igual que **je** y **ji**. Unas palabras van con j: **ji**rafa, te**ji**do. Otras van con g: **ge**nte, **gi**rasol, **gi**gante. ¡Míralas bien para recordarlas!",
+      "emoji": "👀",
+      "visual": {
+        "tipo": "tabla",
+        "columnas": ["Con j", "Con g"],
+        "filas": [["jirafa", "gente"], ["tejido", "girasol"], ["ají", "gigante"]]
+      }
+    },
+    {
+      "texto": "La **r** entre vocales suena suave: pe**r**a, lo**r**o, Ta**r**ija. Al inicio de una palabra suena fuerte, pero se escribe con una sola r: **r**atón, **r**ío, **r**ana.",
+      "visual": { "tipo": "emojis", "items": ["🍐", "🦜", "🐭", "🐸"], "etiquetas": ["pe-ra", "lo-ro", "ra-tón", "ra-na"] }
+    },
+    {
+      "texto": "Para la r fuerte **entre vocales** escribimos **rr**: pe**rr**o, ca**rr**o, tie**rr**a. Después de **n**, **l** o **s**, suena fuerte con una sola r: son**r**isa, En**r**ique, al**r**ededor.",
+      "emoji": "🐕",
+      "visual": { "tipo": "emojis", "items": ["🐕", "🚗", "😊"], "etiquetas": ["pe-rro", "ca-rro", "son-ri-sa"] }
+    }
+  ],
+  "ejemplo": {
+    "instruccion": "Mira cómo pensamos antes de escribir.",
+    "pasos": [
+      { "texto": "Queremos escribir «ojito». Es de la familia de «ojo», que lleva j. ¡La familia se queda con la j! o-**ji**-to.", "visual": { "tipo": "emojis", "items": ["👁️"], "etiquetas": ["ojo → ojito"] } },
+      { "texto": "Ahora «girasol». Suena «ji», pero esta palabra va con g: **gi**-ra-sol. Es de las que hay que recordar.", "visual": { "tipo": "emojis", "items": ["🌻"], "etiquetas": ["gi-ra-sol"] } },
+      { "texto": "«Perro»: la r suena fuerte y está entre dos vocales, la e y la o. Escribimos rr: pe-**rro**.", "visual": { "tipo": "emojis", "items": ["🐕"], "etiquetas": ["pe-rro"] } },
+      { "texto": "«Ratón»: la r suena fuerte, pero está al inicio. Va una sola r: **ra**-tón.", "visual": { "tipo": "emojis", "items": ["🐭"], "etiquetas": ["ra-tón"] } }
+    ]
+  },
+  "guiada": {
+    "intro": "Ahora lo hacemos juntos. Lee en voz alta antes de responder.",
+    "pasos": [
+      {
+        "id": "g1", "tipo": "completar",
+        "enunciado": "Completa con ja, jo o ju.",
+        "apoyo": "Lee en voz alta. Con a, o y u, el sonido fuerte se escribe con j.",
+        "visual": { "tipo": "emojis", "items": ["🐆", "👁️", "🥤"] },
+        "texto": "El [ja]guar abre los o[jo]s. Kusi toma [ju]go de piña.",
+        "banco": ["go", "gu"],
+        "pista": "¿Qué vocal va en cada hueco? Recuerda que go y gu suenan suave.",
+        "explicacion": "Se escribe «jaguar», «ojos» y «jugo». Con a, o y u, el sonido fuerte va con j.",
+        "error": "escribe-j"
+      },
+      {
+        "id": "g2", "tipo": "clasificar",
+        "enunciado": "Lee cada palabra en voz alta. ¿La r suena suave o fuerte?",
+        "apoyo": "La r fuerte suena larga y con fuerza: rrr. La r suave es cortita, como en «pera».",
+        "categorias": [
+          { "id": "suave", "texto": "r suave", "emoji": "🍃" },
+          { "id": "fuerte", "texto": "r fuerte", "emoji": "🏍️" }
+        ],
+        "elementos": [
+          { "texto": "pera", "emoji": "🍐", "categoria": "suave" },
+          { "texto": "loro", "emoji": "🦜", "categoria": "suave" },
+          { "texto": "Oruro", "categoria": "suave" },
+          { "texto": "ratón", "emoji": "🐭", "categoria": "fuerte" },
+          { "texto": "perro", "emoji": "🐕", "categoria": "fuerte" },
+          { "texto": "sonrisa", "emoji": "😊", "categoria": "fuerte" }
+        ],
+        "pista": "Di cada palabra despacio. ¿La r suena larga y fuerte, o cortita?",
+        "explicacion": "Suave: pera, loro, Oruro. Fuerte: ratón, perro, sonrisa.",
+        "error": "sonido-r"
+      },
+      {
+        "id": "g3", "tipo": "completar",
+        "enunciado": "Completa con r o rr.",
+        "apoyo": "Al inicio de la palabra va una sola r. Entre vocales: r para el sonido suave y rr para el fuerte.",
+        "texto": "El [r]atón se esconde en la tie[rr]a y come una pe[r]a.",
+        "pista": "Di cada palabra en voz alta. ¿Dónde está la r y cómo suena?",
+        "explicacion": "«Ratón» lleva una r porque está al inicio. «Tierra» lleva rr: suena fuerte entre vocales. «Pera» lleva r: suena suave.",
+        "error": "confunde-r-rr"
+      }
+    ]
+  },
+  "practica": [
+    {
+      "id": "p1", "tipo": "memoria", "nivel": 1,
+      "enunciado": "Encuentra las parejas: cada animal con su nombre.",
+      "pares": [
+        [{ "emoji": "🐆" }, "jaguar"],
+        [{ "emoji": "🦒" }, "jirafa"],
+        [{ "emoji": "🐇" }, "conejo"],
+        [{ "emoji": "🐝" }, "abeja"],
+        [{ "emoji": "🐸" }, "rana"],
+        [{ "emoji": "🐕" }, "perro"]
+      ],
+      "pista": "Di en voz alta el nombre de cada animal y busca esa palabra.",
+      "explicacion": "Jaguar, jirafa, conejo y abeja llevan j. Rana y perro llevan r fuerte.",
+      "error": "lee-palabras"
+    },
+    {
+      "id": "p2", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Toca las palabras que tienen j.",
+      "texto": "La *abeja* se posa en una *hoja* *roja*.",
+      "pista": "Hay tres palabras con j. Mira bien cada una.",
+      "explicacion": "Abe**ja**, ho**ja** y ro**ja** tienen j.",
+      "error": "escribe-j"
+    },
+    {
+      "id": "p3", "tipo": "completar", "nivel": 1,
+      "enunciado": "Completa con r o rr.",
+      "visual": { "tipo": "emojis", "items": ["🐸", "🐕", "🦜"] },
+      "texto": "La [r]ana salta. El pe[rr]o ladra. El lo[r]o habla.",
+      "pista": "¿La r está al inicio o entre vocales? ¿Suena suave o fuerte?",
+      "explicacion": "Rana: una r, porque está al inicio. Perro: rr, fuerte entre vocales. Loro: r, suave.",
+      "error": "confunde-r-rr"
+    },
+    {
+      "id": "p4", "tipo": "opcion", "nivel": 1,
+      "enunciado": "Escucha. ¿Qué palabra dije?",
+      "escuchar": "perro",
+      "opciones": [
+        { "texto": "perro", "correcta": true },
+        { "texto": "pero", "pista": "En «pero» la r suena suave. Escucha otra vez: ¿la r suena larga y fuerte?", "error": "confunde-r-rr" },
+        { "texto": "pera", "pista": "Escucha bien cómo termina la palabra.", "error": "sonido-r" }
+      ],
+      "columnas": 3,
+      "pista": "Escucha bien cómo suena la r.",
+      "explicacion": "Dije «perro»: la r suena fuerte entre vocales, por eso lleva rr.",
+      "error": "sonido-r"
+    },
+    {
+      "id": "p5", "tipo": "ordenar", "nivel": 1,
+      "enunciado": "Ordena las sílabas para formar el nombre del animal.",
+      "visual": { "tipo": "emoji", "valor": "🐇" },
+      "elementos": ["co", "ne", "jo"],
+      "unir": "",
+      "pista": "Di el nombre del animal despacio. ¿Qué sílaba suena primero?",
+      "explicacion": "Co-ne-jo forma «conejo». Termina en jo, con j.",
+      "error": "arma-palabra"
+    },
+    {
+      "id": "p6", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa con r o rr.",
+      "texto": "Enrique mira el [r]ío desde el ce[rr]o con una son[r]isa.",
+      "pista": "Al inicio de la palabra o después de la n va una sola r. La rr solo va entre vocales.",
+      "explicacion": "Río: una r al inicio. Cerro: rr entre vocales. Sonrisa: una sola r después de la n.",
+      "error": "confunde-r-rr"
+    },
+    {
+      "id": "p7", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "Todas estas palabras tienen r fuerte. ¿Dónde está esa r?",
+      "categorias": [
+        { "id": "inicio", "texto": "Al inicio (r)" },
+        { "id": "entre", "texto": "Entre vocales (rr)" },
+        { "id": "despues", "texto": "Después de n o l (r)" }
+      ],
+      "elementos": [
+        { "texto": "ratón", "categoria": "inicio" },
+        { "texto": "río", "categoria": "inicio" },
+        { "texto": "perro", "categoria": "entre" },
+        { "texto": "carro", "categoria": "entre" },
+        { "texto": "tierra", "categoria": "entre" },
+        { "texto": "sonrisa", "categoria": "despues" },
+        { "texto": "Enrique", "categoria": "despues" },
+        { "texto": "alrededor", "categoria": "despues" }
+      ],
+      "pista": "Mira la letra que va justo antes de la r fuerte.",
+      "explicacion": "Al inicio: ratón, río. Entre vocales: perro, carro, tierra. Después de n o l: sonrisa, Enrique, alrededor.",
+      "error": "confunde-r-rr"
+    },
+    {
+      "id": "p8", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha y escribe la palabra.",
+      "escuchar": "tierra",
+      "respuestas": ["tierra"],
+      "pista": "La r suena fuerte y está entre dos vocales. ¿Una r o dos?",
+      "explicacion": "Se escribe «tierra»: tie-rra, con rr, porque suena fuerte entre vocales.",
+      "error": "confunde-r-rr"
+    },
+    {
+      "id": "p9", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha y escribe. Es una palabra de la familia de «ojo».",
+      "escuchar": "ojito",
+      "visual": { "tipo": "emoji", "valor": "👁️" },
+      "respuestas": ["ojito"],
+      "pista": "«Ojo» se escribe con j. ¿Qué pasa en su familia?",
+      "explicacion": "Se escribe «ojito», con j, igual que «ojo».",
+      "error": "familia-j"
+    },
+    {
+      "id": "p10", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "Une cada palabra con su palabra pequeñita.",
+      "pares": [["caja", "cajita"], ["hoja", "hojita"], ["conejo", "conejito"], ["abeja", "abejita"]],
+      "pista": "Busca la palabra que empieza igual.",
+      "explicacion": "Caja → cajita, hoja → hojita, conejo → conejito, abeja → abejita. La j se queda en toda la familia.",
+      "error": "familia-j"
+    },
+    {
+      "id": "p11", "tipo": "multiple", "nivel": 2,
+      "enunciado": "¿Qué palabras están bien escritas? Elige todas.",
+      "opciones": [
+        { "texto": "ratón", "correcta": true },
+        { "texto": "carro", "correcta": true },
+        { "texto": "Tarija", "correcta": true },
+        { "texto": "rratón", "pista": "Al inicio de una palabra nunca va rr.", "error": "rr-inicio" },
+        { "texto": "tiera", "pista": "Entre vocales, la r fuerte se escribe rr.", "error": "confunde-r-rr" },
+        { "texto": "sonrrisa", "pista": "Después de la n va una sola r.", "error": "rr-tras-consonante" }
+      ],
+      "pista": "Recuerda: la rr solo va entre vocales.",
+      "explicacion": "Están bien: ratón, carro y Tarija. Se escribe «ratón» y «sonrisa» con una sola r, y «tierra» con rr.",
+      "error": "confunde-r-rr"
+    },
+    {
+      "id": "p12", "tipo": "completar", "nivel": 3,
+      "enunciado": "Completa con j o g.",
+      "visual": { "tipo": "emojis", "items": ["🦒", "🌻"] },
+      "texto": "Los niños dibujan una [j]irafa [g]igante junto a un [g]irasol.",
+      "pista": "Recuerda la lista: unas palabras van con j y otras con g.",
+      "explicacion": "Jirafa va con j. Gigante y girasol van con g. ¡Son palabras para recordar!",
+      "error": "confunde-ge-je"
+    },
+    {
+      "id": "p13", "tipo": "ordenar", "nivel": 3,
+      "enunciado": "Ordena las sílabas para formar el nombre de un pueblo del Beni, a orillas de un río.",
+      "elementos": ["Ru", "rre", "na", "ba", "que"],
+      "unir": "",
+      "pista": "Es un nombre propio: empieza con mayúscula. Después busca la sílaba con rr.",
+      "explicacion": "Ru-rre-na-ba-que forma «Rurrenabaque». Tiene una r al inicio y rr entre vocales: ¡dos r fuertes!",
+      "error": "arma-palabra"
+    },
+    {
+      "id": "p14", "tipo": "escribir", "nivel": 3,
+      "enunciado": "Escucha y escribe el nombre.",
+      "escuchar": "Enrique",
+      "respuestas": ["Enrique"],
+      "pista": "Después de la n, la r suena fuerte. ¿Se escribe con una r o con dos?",
+      "explicacion": "Se escribe «Enrique»: después de la n va una sola r, aunque suene fuerte. Es un nombre: empieza con mayúscula.",
+      "error": "rr-tras-consonante"
+    },
+    {
+      "id": "p15", "tipo": "escribir-libre", "nivel": 3,
+      "enunciado": "Escribe una oración con una palabra que tenga rr y otra que tenga j.",
+      "guia": ["Mi perro...", "El jaguar...", "En el cerro vive un conejo..."],
+      "requisitos": [
+        { "tipo": "mayuscula-inicial" },
+        { "tipo": "punto-final" },
+        { "tipo": "min-palabras", "valor": 5 },
+        { "tipo": "incluye", "palabras": ["perro", "perrito", "carro", "burro", "zorro", "tierra", "cerro", "gorro", "torre", "arroz", "jarra", "corre", "guitarra", "cotorra"] },
+        { "tipo": "incluye", "palabras": ["jaguar", "jirafa", "jugo", "jugar", "juega", "ojo", "caja", "hoja", "abeja", "conejo", "roja", "rojo", "ají", "ajo", "dibujo"] }
+      ],
+      "modelo": "Mi perro corre detrás del conejo.",
+      "pista": "Piensa en un animal con rr (perro, burro, zorro) y en algo con j (conejo, jugo, hoja).",
+      "explicacion": "Por ejemplo: «Mi perro corre detrás del conejo». Perro lleva rr y conejo lleva j.",
+      "error": "produce-oracion"
+    },
+    {
+      "id": "p16", "tipo": "tocar", "nivel": 3,
+      "enunciado": "Toca las palabras con r fuerte.",
+      "texto": "*Rosa* y *Enrique* suben al *cerro* con su *perro*.",
+      "pista": "Busca la r al inicio, la rr y la r después de la n. Hay cuatro.",
+      "explicacion": "Rosa (r al inicio), Enrique (r después de n), cerro y perro (rr entre vocales).",
+      "error": "sonido-r"
+    }
+  ],
+  "comprobacion": [
+    {
+      "id": "c1", "tipo": "opcion", "nivel": 1,
+      "enunciado": "Escucha. ¿Qué palabra dije?",
+      "escuchar": "carro",
+      "opciones": [
+        { "texto": "carro", "correcta": true },
+        { "texto": "caro", "pista": "En «caro» la r suena suave. Escucha otra vez.", "error": "confunde-r-rr" },
+        { "texto": "cara", "pista": "Escucha bien cómo termina la palabra.", "error": "sonido-r" }
+      ],
+      "columnas": 3,
+      "pista": "Escucha si la r suena suave o fuerte.",
+      "explicacion": "Dije «carro»: la r suena fuerte entre vocales, por eso lleva rr.",
+      "error": "sonido-r"
+    },
+    {
+      "id": "c2", "tipo": "completar", "nivel": 1,
+      "enunciado": "Completa con ja o ju.",
+      "texto": "Inti sirve [ju]go en la [ja]rra ro[ja].",
+      "banco": ["gu", "ge"],
+      "pista": "Con a, o y u, el sonido fuerte va con j.",
+      "explicacion": "Se escribe «jugo», «jarra» y «roja», con j.",
+      "error": "escribe-j"
+    },
+    {
+      "id": "c3", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha y escribe. Es una palabra de la familia de «caja».",
+      "escuchar": "cajita",
+      "visual": { "tipo": "emoji", "valor": "📦" },
+      "respuestas": ["cajita"],
+      "pista": "«Caja» se escribe con j. ¿Qué pasa en su familia?",
+      "explicacion": "Se escribe «cajita», con j, igual que «caja».",
+      "error": "familia-j"
+    },
+    {
+      "id": "c4", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha y escribe la palabra.",
+      "escuchar": "gorro",
+      "respuestas": ["gorro"],
+      "pista": "La r suena fuerte y está entre dos vocales. ¿Una r o dos?",
+      "explicacion": "Se escribe «gorro»: go-rro, con rr, porque suena fuerte entre vocales.",
+      "error": "confunde-r-rr"
+    },
+    {
+      "id": "c5", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa con r o rr.",
+      "visual": { "tipo": "emojis", "items": ["🦜", "🏞️"] },
+      "texto": "La pa[r]aba y la coto[rr]a vuelan sobre el [r]ío.",
+      "pista": "¿La r suena suave o fuerte? ¿Está al inicio o entre vocales?",
+      "explicacion": "Paraba: r suave. Cotorra: rr, fuerte entre vocales. Río: una r, porque está al inicio.",
+      "error": "confunde-r-rr"
+    },
+    {
+      "id": "c6", "tipo": "multiple", "nivel": 3,
+      "enunciado": "¿Qué palabras se completan con j? Elige todas.",
+      "opciones": [
+        { "texto": "☐aguar", "emoji": "🐆", "correcta": true },
+        { "texto": "o☐ito", "emoji": "👁️", "correcta": true },
+        { "texto": "☐irafa", "emoji": "🦒", "correcta": true },
+        { "texto": "☐irasol", "emoji": "🌻", "pista": "«Girasol» es de las palabras que van con g.", "error": "confunde-ge-je" },
+        { "texto": "☐ente", "emoji": "👥", "pista": "«Gente» va con g. ¡Es de las que hay que recordar!", "error": "confunde-ge-je" }
+      ],
+      "pista": "Ja, jo y ju van con j. Para je y ji, recuerda las palabras de la lista.",
+      "explicacion": "Con j: jaguar, ojito y jirafa. Con g: girasol y gente.",
+      "error": "confunde-ge-je"
+    },
+    {
+      "id": "c7", "tipo": "ordenar", "nivel": 2,
+      "enunciado": "Ordena las sílabas: es una comida típica del oriente de Bolivia.",
+      "elementos": ["ma", "ja", "di", "to"],
+      "unir": "",
+      "pista": "Tiene cuatro sílabas. La segunda lleva j.",
+      "explicacion": "Ma-ja-di-to forma «majadito», un plato de arroz del oriente boliviano.",
+      "error": "arma-palabra"
+    },
+    {
+      "id": "c8", "tipo": "escribir", "nivel": 3,
+      "enunciado": "Escucha y escribe la palabra.",
+      "escuchar": "alrededor",
+      "respuestas": ["alrededor"],
+      "pista": "Después de la l, la r suena fuerte. ¿Se escribe con una r o con dos?",
+      "explicacion": "Se escribe «alrededor»: después de la l va una sola r, aunque suene fuerte.",
+      "error": "rr-tras-consonante"
+    }
+  ],
+  "repaso": {
+    "texto": "ja, jo, ju van con j. je y ji pueden ir con j o con g (jirafa, gente). La r fuerte va con rr solo entre vocales: perro. Al inicio y después de n, l o s va una sola r: ratón, sonrisa.",
+    "visual": {
+      "tipo": "tabla",
+      "columnas": ["Sonido", "Se escribe", "Ejemplo"],
+      "filas": [
+        ["r suave entre vocales", "r", "pera"],
+        ["r fuerte al inicio", "r", "ratón"],
+        ["r fuerte entre vocales", "rr", "perro"],
+        ["r fuerte después de n, l o s", "r", "sonrisa"]
+      ]
+    }
+  },
+  "adulto": {
+    "objetivo": "Escribir la j en ja, je, ji, jo, ju y recordar las palabras comunes con ge y gi (gente, girasol). Distinguir la r suave de la fuerte y aplicar las reglas: una sola r al inicio y después de n, l o s; rr solo entre vocales.",
+    "sugerencias": [
+      "Jueguen a «¿suave o fuerte?»: digan pares como pero y perro, caro y carro, para y parra. Cuando escuche la r fuerte, que dé una palmada.",
+      "En el mercado o la feria, busquen alimentos con j o con rr (ajo, ají, naranja, jugo, arroz) y escriban juntos la lista de compras.",
+      "Peguen en la pared dos listas: palabras con j (jirafa, ojo, caja) y palabras con g que suenan como j (gente, girasol, gigante). Agreguen una palabra nueva cada semana y léanlas en voz alta."
+    ],
+    "errores": {
+      "escribe-j": { "descripcion": "Escribe g o duda al escribir ja, jo, ju (por ejemplo, gugo en lugar de jugo).", "sugerencia": "Recuérdele que ga, go y gu suenan suave; el sonido fuerte con a, o y u se escribe con j. Lean juntos jaguar, ojo y jugo." },
+      "confunde-ge-je": { "descripcion": "Confunde je y ji con ge y gi (jente, girafa).", "sugerencia": "Usen la lista de la pared: lean seguido las palabras con g (gente, girasol, gigante) y las con j (jirafa, tejido). Es cuestión de memoria visual." },
+      "familia-j": { "descripcion": "Cambia la j en palabras de la misma familia (ogito en lugar de ojito).", "sugerencia": "Jueguen a achicar palabras: ojo → ojito, caja → cajita, hoja → hojita. La j se queda en toda la familia." },
+      "sonido-r": { "descripcion": "Le cuesta oír la diferencia entre la r suave y la r fuerte.", "sugerencia": "Digan palabras despacio, alargando la r fuerte (perrrro), y compárenla con la r cortita de pera o loro." },
+      "confunde-r-rr": { "descripcion": "Confunde r y rr entre vocales (tiera, pero en lugar de perro).", "sugerencia": "Escriban pares como pero/perro y caro/carro, léanlos en voz alta y comenten qué cambia al poner rr." },
+      "rr-inicio": { "descripcion": "Escribe rr al inicio de las palabras (rratón).", "sugerencia": "Recuérdele que la rr nunca va al inicio. Busquen palabras que empiecen con r en carteles (Rosa, río, ratón)." },
+      "rr-tras-consonante": { "descripcion": "Escribe rr después de n, l o s (sonrrisa, Enrrique).", "sugerencia": "Muestren que la rr solo va entre dos vocales: en son-ri-sa, antes de la r hay una n, así que va una sola r." },
+      "lee-palabras": { "descripcion": "Le cuesta leer palabras con j, r o rr.", "sugerencia": "Lean juntos etiquetas y carteles cortos, marcando con el dedo cada sílaba con j, r o rr." },
+      "arma-palabra": { "descripcion": "Le cuesta ordenar sílabas para formar palabras.", "sugerencia": "Escriban sílabas en papelitos y armen palabras juntos, leyendo en voz alta cada intento." },
+      "produce-oracion": { "descripcion": "Le cuesta escribir una oración completa con las palabras pedidas.", "sugerencia": "Primero digan la oración en voz alta; después la escribe y revisan juntos la mayúscula, el punto y las letras j, r y rr." }
+    }
+  }
+}

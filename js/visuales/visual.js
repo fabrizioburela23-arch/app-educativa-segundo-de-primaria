@@ -88,6 +88,7 @@ export function renderVisual(v, ctx = {}) {
     console.error('Error al dibujar el visual', v, err);
     while (cont.firstChild) cont.removeChild(cont.firstChild);
     cont.append(h('p', { class: 'visual-aviso' }, 'Este dibujo no se puede mostrar.'));
+    return cont; // el aviso se lee tal cual (sin role="img")
   }
   if (!SIN_ROL_IMG.has(tipo)) {
     cont.setAttribute('role', 'img');
@@ -311,6 +312,9 @@ function vBloques(v, c) {
 // recta numérica
 // ---------------------------------------------------------------------------
 
+// En Bolivia la coma separa los decimales (0,5).
+export const numeroRecta = (val) => String(val).replace('.', ',');
+
 export function crearRecta(cfg = {}, { interactiva = false, etiquetas = 'todas' } = {}) {
   let min = Number(cfg.min), max = Number(cfg.max);
   if (!Number.isFinite(min)) min = 0;
@@ -343,7 +347,10 @@ export function crearRecta(cfg = {}, { interactiva = false, etiquetas = 'todas' 
     return { xa, xb, ha };
   });
   const y0 = Math.max(interactiva ? 58 : 24, arcos.length ? alturaArco + 26 : 0);
-  const fila1 = y0 + 31, fila2 = y0 + 55;
+  // Las cajas «?» miden 28 de alto: si hay alguna y las filas se alternan, la
+  // segunda fila baja un poco más para que las cajas no se encimen.
+  const hayCajas = !interactiva && valores.some((val) => ocultar.has(val));
+  const fila1 = y0 + 31, fila2 = fila1 + (hayCajas ? 31 : 24);
   const H = (alterno ? fila2 : fila1) + 17;
   const svg = lienzo(W, H, { clase: `rn${interactiva ? ' rn-interactiva' : ''}`, max: 380, decorativo: !interactiva });
   if (interactiva) svg.append(s('rect', { x: 0, y: 0, width: W, height: H, class: 'rn-fondo' }));
@@ -370,7 +377,7 @@ export function crearRecta(cfg = {}, { interactiva = false, etiquetas = 'todas' 
     if (oculta || soloExtremos) return;
     const visible = cada === 1 || i % cada === 0 || i === n || marcar.has(val);
     if (!visible) return;
-    const t = texto(x, fy, val, { class: `rn-et${marcar.has(val) ? ' marcada' : ''}` });
+    const t = texto(x, fy, numeroRecta(val), { class: `rn-et${marcar.has(val) ? ' marcada' : ''}` });
     etiquetasEl.set(val, t);
     svg.append(t);
   });

@@ -1,0 +1,419 @@
+{
+  "id": "mat-7-3",
+  "titulo": "Compro en la feria",
+  "objetivo": "Calculo cuánto pago en total y cuánto cambio me dan cuando compro en la feria.",
+  "explicacion": [
+    {
+      "texto": "En la feria, la casera o el casero te dice el **precio** de cada cosa. Si compras varias cosas, **suma los precios**. Eso es el **total**: 6 + 3 = 9 Bs.",
+      "emoji": "🧺",
+      "visual": { "tipo": "emojis", "items": ["🥔", "🌽"], "etiquetas": ["papa: 6 Bs", "choclo: 3 Bs"] }
+    },
+    {
+      "texto": "Si pagas con más dinero, te devuelven el **cambio**: lo que sobra. Pagas con 10 Bs algo que cuesta 9 Bs: 10 − 9 = 1 Bs de cambio.",
+      "visual": { "tipo": "dinero", "items": ["b10"] }
+    },
+    {
+      "texto": "Truco: **cuenta hacia arriba** desde el precio hasta lo que pagaste. Cuesta 13 Bs y pagas con 20 Bs: 14, 15, 16, 17, 18, 19, 20. ¡Son 7 saltos: 7 Bs de cambio!",
+      "emoji": "🐸",
+      "visual": {
+        "tipo": "recta", "min": 10, "max": 20, "paso": 1, "marcar": [13, 20],
+        "saltos": [[13, 14], [14, 15], [15, 16], [16, 17], [17, 18], [18, 19], [19, 20]]
+      }
+    },
+    {
+      "texto": "Primero calcula el **total** y después el **cambio**. Antes de pagar, revisa si tu dinero **alcanza**. Para comprobar, suma: total + cambio = lo que pagaste.",
+      "emoji": "✅",
+      "visual": { "tipo": "tabla", "columnas": ["Total", "Cambio", "Pagué"], "filas": [["13 Bs", "7 Bs", "20 Bs"]] }
+    }
+  ],
+  "ejemplo": {
+    "instruccion": "Mira cómo Nayra compra en la feria: primero calcula el total y después el cambio. Después, juega con el dinero.",
+    "pasos": [
+      {
+        "texto": "Nayra compra un kilo de tomate a 7 Bs, una lechuga a 3 Bs y una bolsa de pan a 5 Bs.",
+        "visual": { "tipo": "emojis", "items": ["🍅", "🥬", "🍞"], "etiquetas": ["7 Bs", "3 Bs", "5 Bs"] }
+      },
+      {
+        "texto": "**Total:** suma los precios. 7 + 3 + 5 = 15 Bs.",
+        "visual": { "tipo": "tabla", "columnas": ["Compra", "Precio"], "filas": [["tomate", "7 Bs"], ["lechuga", "3 Bs"], ["pan", "5 Bs"], ["Total", "15 Bs"]] }
+      },
+      {
+        "texto": "Paga con un billete de 20 Bs. **Cambio:** cuenta desde 15 hasta 20: 16, 17, 18, 19, 20. ¡Son 5 Bs!",
+        "visual": { "tipo": "recta", "min": 15, "max": 20, "paso": 1, "marcar": [15, 20], "saltos": [[15, 16], [16, 17], [17, 18], [18, 19], [19, 20]] }
+      },
+      {
+        "texto": "La casera le da una moneda de 5 Bs. Nayra comprueba: 15 + 5 = 20. ¡Está bien!",
+        "visual": { "tipo": "dinero", "items": ["m5"] }
+      }
+    ],
+    "explorar": { "tipo": "dinero" }
+  },
+  "guiada": {
+    "intro": "Vamos de compras juntos. Paso a paso.",
+    "pasos": [
+      {
+        "id": "g1", "tipo": "numero",
+        "enunciado": "Kusi compra un choclo a 3 Bs y una bolsa de pan a 5 Bs. ¿Cuánto paga en total?",
+        "apoyo": "El total es la suma de los precios: 3 + 5.",
+        "visual": { "tipo": "emojis", "items": ["🌽", "🍞"], "etiquetas": ["3 Bs", "5 Bs"] },
+        "respuesta": 8,
+        "sufijo": "Bs",
+        "erroresComunes": [ { "respuesta": 2, "pista": "Restaste. Para el total, junta los precios: suma.", "error": "dinero-total" } ],
+        "pista": "Junta los dos precios.",
+        "explicacion": "3 + 5 = 8. Kusi paga 8 Bs en total.",
+        "error": "dinero-total"
+      },
+      {
+        "id": "g2", "tipo": "numero",
+        "enunciado": "Un kilo de papa cuesta 6 Bs. Inti paga con un billete de 10 Bs. ¿Cuánto cambio recibe?",
+        "apoyo": "Cuenta hacia arriba desde 6 hasta 10: 7, 8, 9, 10. ¿Cuántos saltos hay?",
+        "visual": { "tipo": "recta", "min": 0, "max": 10, "paso": 1, "marcar": [6, 10], "saltos": [[6, 7], [7, 8], [8, 9], [9, 10]] },
+        "respuesta": 4,
+        "sufijo": "Bs",
+        "erroresComunes": [ { "respuesta": 16, "pista": "Sumaste. El cambio es lo que sobra: cuenta desde 6 hasta 10.", "error": "dinero-cambio" } ],
+        "pista": "Cuenta los saltos desde 6 hasta 10.",
+        "explicacion": "De 6 a 10 hay 4 saltos: 10 − 6 = 4. Inti recibe 4 Bs de cambio.",
+        "error": "contar-hacia-arriba"
+      },
+      {
+        "id": "g3", "tipo": "pasos",
+        "enunciado": "Ana compra una piña a 8 Bs y un kilo de naranjas a 6 Bs. Paga con un billete de 20 Bs.",
+        "apoyo": "Primero calcula el total. Después, el cambio.",
+        "visual": { "tipo": "dinero", "items": ["b20"] },
+        "pasos": [
+          {
+            "tipo": "numero", "enunciado": "¿Cuánto es el total?",
+            "respuesta": 14, "sufijo": "Bs",
+            "erroresComunes": [ { "respuesta": 2, "pista": "Restaste. Para el total, suma los precios.", "error": "dinero-total" } ],
+            "pista": "Suma 8 + 6.",
+            "explicacion": "8 + 6 = 14. El total es 14 Bs.",
+            "error": "dinero-total"
+          },
+          {
+            "tipo": "numero", "enunciado": "¿Cuánto cambio recibe Ana?",
+            "respuesta": 6, "sufijo": "Bs",
+            "erroresComunes": [
+              { "respuesta": 34, "pista": "Sumaste. El cambio es lo que sobra de los 20 Bs.", "error": "dinero-cambio" },
+              { "respuesta": 12, "pista": "Ese sería el cambio de la piña sola. Usa el total: 14 Bs.", "error": "problema-compra" }
+            ],
+            "pista": "Cuenta desde 14 hasta 20.",
+            "explicacion": "De 14 a 20 hay 6: 20 − 14 = 6. Ana recibe 6 Bs de cambio.",
+            "error": "dinero-cambio"
+          }
+        ],
+        "pista": "Resuelve un paso a la vez: primero el total.",
+        "explicacion": "Total: 8 + 6 = 14 Bs. Cambio: 20 − 14 = 6 Bs.",
+        "error": "problema-compra"
+      }
+    ]
+  },
+  "practica": [
+    {
+      "id": "p1", "tipo": "generador", "nivel": 1, "generador": "dinero-total", "params": { "productos": 2, "maxPrecio": 10 }
+    },
+    {
+      "id": "p2", "tipo": "numero", "nivel": 1,
+      "enunciado": "Una salteña cuesta 8 Bs. Luis paga con un billete de 10 Bs. ¿Cuánto cambio recibe?",
+      "visual": { "tipo": "dinero", "items": ["b10"] },
+      "respuesta": 2,
+      "sufijo": "Bs",
+      "erroresComunes": [ { "respuesta": 18, "pista": "Sumaste. Luis paga más de lo que cuesta: el cambio es lo que sobra.", "error": "dinero-cambio" } ],
+      "pista": "Cuenta desde 8 hasta 10: 9, 10.",
+      "explicacion": "De 8 a 10 hay 2: 10 − 8 = 2. Luis recibe 2 Bs de cambio.",
+      "error": "dinero-cambio"
+    },
+    {
+      "id": "p3", "tipo": "manipular", "nivel": 1,
+      "enunciado": "Un kilo de arroz cuesta 9 Bs. Paga justo ese precio.",
+      "manipulable": { "tipo": "dinero", "objetivo": 900, "disponibles": ["m1", "m2", "m5", "b10"] },
+      "pista": "No te pases de 9 Bs. Puedes empezar con la moneda de 5 Bs.",
+      "explicacion": "Por ejemplo: 5 + 2 + 2 = 9 Bs. Así pagas justo y no necesitas cambio.",
+      "error": "paga-justo"
+    },
+    {
+      "id": "p4", "tipo": "numero", "nivel": 1,
+      "enunciado": "Escucha el problema y responde.",
+      "escuchar": "Rosa compra una lechuga a tres bolivianos. Paga con una moneda de cinco bolivianos. ¿Cuánto cambio recibe?",
+      "respuesta": 2,
+      "sufijo": "Bs",
+      "erroresComunes": [ { "respuesta": 8, "pista": "Sumaste. Rosa paga más de lo que cuesta: el cambio es lo que sobra.", "error": "dinero-cambio" } ],
+      "pista": "Escucha otra vez. Cuenta desde el precio hasta lo que paga Rosa.",
+      "explicacion": "La lechuga cuesta 3 Bs y Rosa paga con 5 Bs: 5 − 3 = 2. Recibe 2 Bs de cambio.",
+      "error": "dinero-cambio"
+    },
+    {
+      "id": "p5", "tipo": "ordenar", "nivel": 2,
+      "enunciado": "Ordena los pasos para comprar en la feria.",
+      "elementos": [
+        "Elijo lo que voy a comprar.",
+        "Sumo los precios: ese es el total.",
+        "Reviso si mi dinero alcanza.",
+        "Pago con mi dinero.",
+        "Cuento el cambio que me dan."
+      ],
+      "vertical": true,
+      "pista": "No puedes saber si tu dinero alcanza sin saber el total. Y el cambio llega después de pagar.",
+      "explicacion": "Elijo, sumo los precios (total), reviso si me alcanza, pago y cuento el cambio.",
+      "error": "problema-compra"
+    },
+    {
+      "id": "p6", "tipo": "generador", "nivel": 2, "generador": "dinero-cambio", "params": { "maxPrecio": 20, "pagos": [10, 20] }
+    },
+    {
+      "id": "p7", "tipo": "generador", "nivel": 2, "generador": "dinero-total", "params": { "productos": 3, "maxPrecio": 15 }
+    },
+    {
+      "id": "p8", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "Tienes 10 Bs. ¿Te alcanza para comprar esto?",
+      "categorias": [
+        { "id": "si", "texto": "Me alcanza" },
+        { "id": "no", "texto": "No me alcanza" }
+      ],
+      "elementos": [
+        { "texto": "un kilo de tomate: 7 Bs", "emoji": "🍅", "categoria": "si" },
+        { "texto": "una sandía: 15 Bs", "emoji": "🍉", "categoria": "no" },
+        { "texto": "un choclo y una lechuga: 3 Bs + 3 Bs", "emoji": "🌽", "categoria": "si" },
+        { "texto": "una piña y una bolsa de pan: 8 Bs + 5 Bs", "emoji": "🍍", "categoria": "no" },
+        { "texto": "una mano de plátanos: 10 Bs", "emoji": "🍌", "categoria": "si" },
+        { "texto": "un queso: 18 Bs", "emoji": "🧀", "categoria": "no" }
+      ],
+      "pista": "Si hay dos cosas, suma primero. Si el total es 10 Bs o menos, te alcanza.",
+      "explicacion": "Te alcanza para el tomate (7 Bs), el choclo con la lechuga (6 Bs) y los plátanos (10 Bs justos). No te alcanza para la sandía (15 Bs), la piña con el pan (13 Bs) ni el queso (18 Bs).",
+      "error": "alcanza"
+    },
+    {
+      "id": "p9", "tipo": "completar", "nivel": 2,
+      "enunciado": "Un kilo de quinua cuesta 16 Bs. Pagas con 20 Bs. Completa contando hacia arriba.",
+      "texto": "Desde 16: 17, [18], [19], [20]. El cambio es [4] Bs.",
+      "banco": ["36", "21"],
+      "pista": "Cuenta de uno en uno hasta llegar a 20. Después cuenta cuántos números dijiste.",
+      "explicacion": "17, 18, 19, 20: son 4 saltos. El cambio es 4 Bs, porque 20 − 16 = 4.",
+      "error": "contar-hacia-arriba"
+    },
+    {
+      "id": "p10", "tipo": "manipular", "nivel": 2,
+      "enunciado": "Tú vendes en la feria. Un kilo de papa cuesta 6 Bs y te pagan con 20 Bs. Pon el cambio en la bandeja.",
+      "manipulable": { "tipo": "dinero", "objetivo": 1400, "disponibles": ["m1", "m2", "m5", "b10"] },
+      "pista": "Cuenta desde 6 hasta 20, o piensa: 20 − 6.",
+      "explicacion": "El cambio es 14 Bs: por ejemplo, un billete de 10 Bs y dos monedas de 2 Bs.",
+      "error": "dinero-cambio"
+    },
+    {
+      "id": "p11", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "Une cada compra con su cambio.",
+      "pares": [
+        ["Cuesta 9 Bs y pagas con 10 Bs.", "1 Bs"],
+        ["Cuesta 15 Bs y pagas con 20 Bs.", "5 Bs"],
+        ["Cuesta 12 Bs y pagas con 20 Bs.", "8 Bs"],
+        ["Cuesta 30 Bs y pagas con 50 Bs.", "20 Bs"]
+      ],
+      "pista": "En cada compra, cuenta desde el precio hasta lo que pagas.",
+      "explicacion": "10 − 9 = 1. 20 − 15 = 5. 20 − 12 = 8. 50 − 30 = 20.",
+      "error": "dinero-cambio"
+    },
+    {
+      "id": "p12", "tipo": "numero", "nivel": 3,
+      "enunciado": "Mateo compra 4 panes. Cada pan cuesta 50 centavos. ¿Cuánto paga en total?",
+      "visual": { "tipo": "emoji", "valor": "🍞", "cantidad": 4 },
+      "respuesta": 2,
+      "sufijo": "Bs",
+      "erroresComunes": [
+        { "respuesta": 200, "pista": "Son 200 centavos. ¿Cuántos Bs son? Recuerda: 100 centavos = 1 Bs.", "error": "total-centavos" },
+        { "respuesta": 4, "pista": "Cada pan cuesta 50 centavos, no 1 Bs. Dos panes cuestan 1 Bs.", "error": "total-centavos" }
+      ],
+      "pista": "Dos panes cuestan 50 + 50 = 100 centavos, o sea 1 Bs.",
+      "explicacion": "50 + 50 + 50 + 50 = 200 centavos, que son 2 Bs. Mateo paga 2 Bs.",
+      "error": "total-centavos"
+    },
+    {
+      "id": "p13", "tipo": "pasos", "nivel": 3,
+      "enunciado": "Wara compra un kilo de quinua a 16 Bs y un queso a 18 Bs. Paga con un billete de 50 Bs.",
+      "visual": { "tipo": "dinero", "items": ["b50"] },
+      "pasos": [
+        {
+          "tipo": "numero", "enunciado": "¿Cuánto es el total?",
+          "respuesta": 34, "sufijo": "Bs",
+          "erroresComunes": [ { "respuesta": 2, "pista": "Restaste. Para el total, suma los precios.", "error": "dinero-total" } ],
+          "pista": "Suma 16 + 18.",
+          "explicacion": "16 + 18 = 34. El total es 34 Bs.",
+          "error": "dinero-total"
+        },
+        {
+          "tipo": "numero", "enunciado": "¿Cuánto cambio recibe Wara?",
+          "respuesta": 16, "sufijo": "Bs",
+          "erroresComunes": [
+            { "respuesta": 84, "pista": "Sumaste. El cambio es lo que sobra de los 50 Bs.", "error": "dinero-cambio" },
+            { "respuesta": 24, "pista": "Revisa la resta. Cuenta hacia arriba: de 34 a 40, y de 40 a 50.", "error": "contar-hacia-arriba" }
+          ],
+          "pista": "Cuenta hacia arriba: de 34 a 40, y después de 40 a 50.",
+          "explicacion": "De 34 a 40 hay 6, y de 40 a 50 hay 10: 6 + 10 = 16. Wara recibe 16 Bs de cambio.",
+          "error": "contar-hacia-arriba"
+        },
+        {
+          "tipo": "opcion", "enunciado": "¿Con qué dinero le pueden dar ese cambio?",
+          "opciones": [
+            { "visual": { "tipo": "dinero", "items": ["b10", "m5", "m1"] }, "correcta": true },
+            { "visual": { "tipo": "dinero", "items": ["b10", "m5"] }, "pista": "Ese dinero suma 15 Bs: falta 1 Bs.", "error": "dinero-cambio" },
+            { "visual": { "tipo": "dinero", "items": ["b20"] }, "pista": "Ese billete vale 20 Bs: es más que el cambio.", "error": "dinero-cambio" }
+          ],
+          "columnas": 1,
+          "pista": "Busca el dinero que suma justo el cambio.",
+          "explicacion": "10 + 5 + 1 = 16 Bs: justo el cambio de Wara.",
+          "error": "dinero-cambio"
+        }
+      ],
+      "pista": "Primero calcula el total. Después, el cambio.",
+      "explicacion": "Total: 16 + 18 = 34 Bs. Cambio: 50 − 34 = 16 Bs, por ejemplo con un billete de 10 Bs, una moneda de 5 Bs y una de 1 Bs.",
+      "error": "problema-compra"
+    },
+    {
+      "id": "p14", "tipo": "generador", "nivel": 3, "generador": "dinero-cambio", "params": { "maxPrecio": 45, "pagos": [50, 100] }
+    },
+    {
+      "id": "p15", "tipo": "numero", "nivel": 3,
+      "enunciado": "Kusi compra un vaso de api a 3 Bs con 50 centavos. Paga con una moneda de 5 Bs. ¿Cuánto cambio recibe?",
+      "visual": { "tipo": "dinero", "items": ["m5"] },
+      "campos": [
+        { "etiqueta": "Bolivianos", "respuesta": 1 },
+        { "etiqueta": "Centavos", "respuesta": 50 }
+      ],
+      "pista": "Cuenta hacia arriba: de 3 Bs con 50 centavos a 4 Bs faltan 50 centavos. De 4 Bs a 5 Bs falta 1 Bs.",
+      "explicacion": "50 centavos y 1 Bs más: Kusi recibe 1 Bs con 50 centavos de cambio.",
+      "error": "cambio-centavos"
+    },
+    {
+      "id": "p16", "tipo": "escribir-libre", "nivel": 3,
+      "enunciado": "Inventa un problema de compra en la feria. Di el precio y con cuánto pagas. Termina con una pregunta.",
+      "guia": ["Compro ... a ... Bs.", "Pago con ... Bs.", "¿Cuánto cambio recibo?"],
+      "requisitos": [
+        { "tipo": "mayuscula-inicial" },
+        { "tipo": "signos-pregunta" },
+        { "tipo": "incluye", "palabras": ["Bs", "bolivianos", "boliviano"] },
+        { "tipo": "min-palabras", "valor": 8 }
+      ],
+      "modelo": "Compro una piña a 8 Bs y pago con 10 Bs. ¿Cuánto cambio recibo?",
+      "pista": "Piensa en algo que venden en la feria, cuánto cuesta y con qué billete pagas.",
+      "explicacion": "Por ejemplo: «Compro una piña a 8 Bs y pago con 10 Bs. ¿Cuánto cambio recibo?». La respuesta es 2 Bs.",
+      "error": "inventa-problema"
+    }
+  ],
+  "comprobacion": [
+    {
+      "id": "c1", "tipo": "numero", "nivel": 1,
+      "enunciado": "Un kilo de zanahoria cuesta 5 Bs y un kilo de tomate, 7 Bs. ¿Cuánto pagas en total?",
+      "visual": { "tipo": "emojis", "items": ["🥕", "🍅"], "etiquetas": ["5 Bs", "7 Bs"] },
+      "respuesta": 12,
+      "sufijo": "Bs",
+      "erroresComunes": [ { "respuesta": 2, "pista": "Restaste. Para el total, suma los precios.", "error": "dinero-total" } ],
+      "pista": "Junta los dos precios: 5 + 7.",
+      "explicacion": "5 + 7 = 12. Pagas 12 Bs en total.",
+      "error": "dinero-total"
+    },
+    {
+      "id": "c2", "tipo": "numero", "nivel": 1,
+      "enunciado": "Un litro de leche cuesta 7 Bs. Pagas con un billete de 10 Bs. ¿Cuánto cambio recibes?",
+      "visual": { "tipo": "dinero", "items": ["b10"] },
+      "respuesta": 3,
+      "sufijo": "Bs",
+      "erroresComunes": [ { "respuesta": 17, "pista": "Sumaste. Pagas más de lo que cuesta: el cambio es lo que sobra.", "error": "dinero-cambio" } ],
+      "pista": "Cuenta desde 7 hasta 10.",
+      "explicacion": "8, 9, 10: son 3. 10 − 7 = 3 Bs de cambio.",
+      "error": "dinero-cambio"
+    },
+    {
+      "id": "c3", "tipo": "manipular", "nivel": 2,
+      "enunciado": "Compras un kilo de manzanas a 12 Bs y un kilo de papa a 6 Bs. Paga justo el total.",
+      "manipulable": { "tipo": "dinero", "objetivo": 1800, "disponibles": ["m1", "m2", "m5", "b10", "b20"] },
+      "pista": "Primero suma 12 + 6. Después pon ese dinero, sin pasarte.",
+      "explicacion": "12 + 6 = 18 Bs. Por ejemplo: un billete de 10 Bs, una moneda de 5 Bs, una de 2 Bs y una de 1 Bs.",
+      "error": "dinero-total"
+    },
+    {
+      "id": "c4", "tipo": "completar", "nivel": 2,
+      "enunciado": "Compras tomate a 7 Bs y pagas con 20 Bs. Completa contando hacia arriba.",
+      "texto": "De 7 a 10 hay [3] Bs. De 10 a 20 hay [10] Bs. El cambio es [13] Bs.",
+      "banco": ["27", "17"],
+      "pista": "Primero salta hasta 10. Después salta de 10 hasta 20. Al final, junta los dos saltos.",
+      "explicacion": "De 7 a 10 hay 3 y de 10 a 20 hay 10. El cambio es 3 + 10 = 13 Bs.",
+      "error": "contar-hacia-arriba"
+    },
+    {
+      "id": "c5", "tipo": "numero", "nivel": 2,
+      "enunciado": "Escucha el problema y responde.",
+      "escuchar": "Luis compra una mano de plátanos a diez bolivianos y un choclo a tres bolivianos. ¿Cuánto paga en total?",
+      "respuesta": 13,
+      "sufijo": "Bs",
+      "erroresComunes": [ { "respuesta": 7, "pista": "Restaste. Para el total, suma los precios.", "error": "dinero-total" } ],
+      "pista": "Escucha otra vez los dos precios y súmalos.",
+      "explicacion": "Los plátanos cuestan 10 Bs y el choclo 3 Bs: 10 + 3 = 13 Bs en total.",
+      "error": "dinero-total"
+    },
+    {
+      "id": "c6", "tipo": "generador", "nivel": 2, "generador": "dinero-cambio", "params": { "maxPrecio": 20, "pagos": [20, 50] }
+    },
+    {
+      "id": "c7", "tipo": "pasos", "nivel": 3,
+      "enunciado": "Arami compra 2 salteñas. Cada salteña cuesta 8 Bs. Paga con un billete de 20 Bs.",
+      "visual": { "tipo": "dinero", "items": ["b20"] },
+      "pasos": [
+        {
+          "tipo": "numero", "enunciado": "¿Cuánto cuestan las 2 salteñas?",
+          "respuesta": 16, "sufijo": "Bs",
+          "erroresComunes": [ { "respuesta": 8, "pista": "Ese es el precio de una sola salteña. Arami compra 2: 8 + 8.", "error": "dinero-total" } ],
+          "pista": "Suma 8 + 8.",
+          "explicacion": "8 + 8 = 16. Las 2 salteñas cuestan 16 Bs.",
+          "error": "dinero-total"
+        },
+        {
+          "tipo": "numero", "enunciado": "¿Cuánto cambio recibe Arami?",
+          "respuesta": 4, "sufijo": "Bs",
+          "erroresComunes": [
+            { "respuesta": 12, "pista": "Ese sería el cambio de una sola salteña. Usa el total: 16 Bs.", "error": "problema-compra" },
+            { "respuesta": 36, "pista": "Sumaste. El cambio es lo que sobra de los 20 Bs.", "error": "dinero-cambio" }
+          ],
+          "pista": "Cuenta desde 16 hasta 20.",
+          "explicacion": "17, 18, 19, 20: son 4. 20 − 16 = 4 Bs de cambio.",
+          "error": "dinero-cambio"
+        }
+      ],
+      "pista": "Primero calcula el total de las 2 salteñas. Después, el cambio.",
+      "explicacion": "Total: 8 + 8 = 16 Bs. Cambio: 20 − 16 = 4 Bs.",
+      "error": "problema-compra"
+    },
+    {
+      "id": "c8", "tipo": "numero", "nivel": 3,
+      "enunciado": "Nayra compra un vaso de mocochinchi a 2 Bs con 50 centavos. Paga con 5 Bs. ¿Cuánto cambio recibe?",
+      "visual": { "tipo": "dinero", "items": ["m5"] },
+      "campos": [
+        { "etiqueta": "Bolivianos", "respuesta": 2 },
+        { "etiqueta": "Centavos", "respuesta": 50 }
+      ],
+      "pista": "Cuenta hacia arriba: de 2 Bs con 50 centavos a 3 Bs faltan 50 centavos. De 3 Bs a 5 Bs faltan 2 Bs.",
+      "explicacion": "50 centavos y 2 Bs más: Nayra recibe 2 Bs con 50 centavos de cambio.",
+      "error": "cambio-centavos"
+    }
+  ],
+  "repaso": {
+    "texto": "Primero suma los precios: ese es el total. Después calcula el cambio: cuenta desde el total hasta lo que pagaste.",
+    "visual": { "tipo": "recta", "min": 15, "max": 20, "paso": 1, "marcar": [15, 20], "saltos": [[15, 16], [16, 17], [17, 18], [18, 19], [19, 20]] }
+  },
+  "adulto": {
+    "objetivo": "Resolver situaciones de compra en la feria: calcular el total sumando precios, revisar si el dinero alcanza, pagar el monto justo y calcular el cambio restando o contando hacia arriba desde el total hasta lo que se pagó (primero el total, después el cambio).",
+    "sugerencias": [
+      "En la feria o en la tienda, denle un monto pequeño (por ejemplo, 10 Bs) para comprar dos cosas: que calcule el total antes de pagar y cuente el cambio que le entregan.",
+      "Jueguen a la tiendita en casa con productos de la cocina, etiquetas de precio y dinero de papel. Túrnense para vender (dar el cambio contando hacia arriba: «16, 17, 18, 19, 20») y para comprar.",
+      "En el patio, dibujen con tiza una recta del 0 al 20. Para calcular un cambio, que se pare en el precio y salte hasta lo que se pagó, contando los saltos."
+    ],
+    "errores": {
+      "dinero-total": { "descripcion": "Se equivoca al sumar los precios para hallar el total.", "sugerencia": "Anoten los precios uno debajo del otro y súmenlos juntos antes de pagar." },
+      "dinero-cambio": { "descripcion": "Se equivoca al calcular el cambio (a veces suma en lugar de restar).", "sugerencia": "Pregunten: «¿pagaste más de lo que cuesta?». El cambio es lo que sobra. Comprueben sumando: precio + cambio = lo que se pagó." },
+      "contar-hacia-arriba": { "descripcion": "Le cuesta contar desde el precio hasta lo que se pagó.", "sugerencia": "Usen una cinta métrica o una recta dibujada: pongan el dedo en el precio y cuenten los saltos hasta lo que se pagó (primero hasta la decena siguiente)." },
+      "alcanza": { "descripcion": "No sabe decidir si el dinero alcanza para una compra.", "sugerencia": "Antes de comprar, comparen: ¿el total es menor, igual o mayor que el dinero que tenemos?" },
+      "paga-justo": { "descripcion": "Le cuesta pagar la cantidad exacta sin pasarse.", "sugerencia": "Pidan que pague precios pequeños con monedas, diciendo en voz alta cuánto lleva: «5, 7, 9... ¡listo!»." },
+      "problema-compra": { "descripcion": "Mezcla los pasos de una compra (calcula el cambio antes del total o con un solo precio).", "sugerencia": "Escriban los pasos en un papel: 1) total, 2) ¿alcanza?, 3) pago, 4) cambio. Márquenlos a medida que resuelven." },
+      "cambio-centavos": { "descripcion": "Se confunde con el cambio cuando el precio tiene centavos.", "sugerencia": "Cuenten hacia arriba con monedas reales: primero los centavos hasta completar el boliviano y después de 1 Bs en 1 Bs." },
+      "total-centavos": { "descripcion": "Le cuesta sumar precios en centavos y pasarlos a bolivianos.", "sugerencia": "Junten monedas de 50 centavos de dos en dos y cambien cada par por 1 Bs." },
+      "inventa-problema": { "descripcion": "Le cuesta inventar un problema de compra con precio, pago y pregunta.", "sugerencia": "Inventen problemas en voz alta en la feria: «Si compramos esto y pagamos con 20 Bs, ¿cuánto nos devuelven?»." }
+    }
+  }
+}
