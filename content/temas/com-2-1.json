@@ -16,7 +16,7 @@
       }
     },
     {
-      "texto": "Hay 5 **vocales**: a, e, i, o, u. Las otras 22 letras son **consonantes**, como la b, la m, la ñ o la t. Cada letra tiene mayúscula y minúscula: A a, Ñ ñ.",
+      "texto": "Hay 5 **vocales**: a, e, i, o, u (abeja, elefante, iglesia, oso, uva). Las otras 22 letras son **consonantes**, como la b, la m, la ñ o la t. Cada letra tiene mayúscula y minúscula: A a, Ñ ñ.",
       "visual": { "tipo": "emojis", "items": ["🐝", "🐘", "⛪", "🐻", "🍇"], "etiquetas": ["abeja", "elefante", "iglesia", "oso", "uva"] }
     },
     {
@@ -141,17 +141,17 @@
       "visual": { "tipo": "emoji", "valor": "🦙", "etiqueta": "llama" },
       "respuesta": 5,
       "erroresComunes": [
-        { "respuesta": 4, "pista": "La ll hace un solo sonido, pero son dos letras: l y l.", "error": "cuenta-digrafos" }
+        { "respuesta": 4, "pista": "La ll hace un solo sonido, pero tiene dos letras: l y l.", "error": "cuenta-digrafos" }
       ],
       "pista": "Toca cada letra con el dedo y cuéntalas una por una.",
-      "explicacion": "«Llama» tiene 5 letras: l, l, a, m, a. La ll es un dígrafo: son dos letras.",
+      "explicacion": "«Llama» tiene 5 letras: l, l, a, m, a. La ll es un dígrafo: tiene dos letras.",
       "error": "cuenta-digrafos"
     },
     {
       "id": "p6", "tipo": "ordenar", "nivel": 2,
       "enunciado": "Ordena estas comidas en orden alfabético.",
       "elementos": ["api", "chuño", "majadito", "yuca"],
-      "pista": "Mira la primera letra de cada palabra. Ojo: «chuño» empieza con c, porque la ch son dos letras.",
+      "pista": "Mira la primera letra de cada palabra. Ojo: «chuño» empieza con c, porque la ch tiene dos letras: c y h.",
       "explicacion": "El orden es api (a), chuño (c), majadito (m) y yuca (y).",
       "error": "orden-primera-letra"
     },
@@ -169,10 +169,10 @@
     },
     {
       "id": "p8", "tipo": "escribir", "nivel": 2,
-      "enunciado": "¿Qué letra va entre la n y la o? Escríbela.",
+      "enunciado": "¿Qué letra va justo antes de la o? Escríbela.",
       "respuestas": ["ñ"],
-      "pista": "Es una letra muy parecida a la n, pero con una rayita ondulada encima.",
-      "explicacion": "Entre la n y la o está la ñ: n, ñ, o.",
+      "pista": "Recita el abecedario despacio desde la m hasta la o. ¡No te saltes ninguna letra!",
+      "explicacion": "Justo antes de la o está la ñ: n, ñ, o. Si escribiste n, recuerda que entre la n y la o está la ñ.",
       "error": "letra-ñ"
     },
     {
@@ -181,7 +181,7 @@
       "escuchar": "araña",
       "visual": { "tipo": "emoji", "valor": "🕷️" },
       "respuestas": ["araña"],
-      "pista": "Es un animal de ocho patas. Al final lleva la letra ñ.",
+      "pista": "Es un animal de ocho patas. En la última sílaba lleva la letra ñ.",
       "explicacion": "Se escribe «araña», con ñ.",
       "error": "dictado-ñ"
     },
@@ -224,7 +224,7 @@
     },
     {
       "id": "p13", "tipo": "ordenar", "nivel": 3,
-      "enunciado": "Ordena en orden alfabético. Recuerda: la ll son dos letras.",
+      "enunciado": "Ordena en orden alfabético. Recuerda: la ll tiene dos letras.",
       "elementos": ["lago", "lana", "llama", "luna"],
       "pista": "Todas empiezan con l. Mira la segunda letra. Si también es igual, mira la tercera.",
       "explicacion": "Lago y lana empiezan con «la»; lago va antes porque la g va antes que la n. Llama tiene l + l, y la l va entre la a y la u. Al final, luna.",
@@ -251,17 +251,37 @@
     },
     {
       "id": "p15", "tipo": "escribir-libre", "nivel": 3,
-      "enunciado": "Escribe una oración con una o más palabras que lleven ñ.",
+      "enunciado": "Escribe una oración con una palabra que lleve ñ: niño, niña, piña, uña, araña, montaña o muñeca.",
       "guia": ["La niña...", "En la montaña..."],
       "requisitos": [
         { "tipo": "mayuscula-inicial" },
         { "tipo": "punto-final" },
-        { "tipo": "min-palabras", "valor": 4 }
+        { "tipo": "min-palabras", "valor": 4 },
+        { "tipo": "incluye", "palabras": ["niño", "niña", "piña", "uña", "araña", "montaña", "muñeca"] }
       ],
       "modelo": "La niña come piña en la feria.",
-      "pista": "Piensa en palabras como niño, piña, año, uña, araña o montaña.",
+      "pista": "Elige una palabra de la lista. Empieza con mayúscula y termina con punto.",
       "explicacion": "Por ejemplo: «La niña come piña en la feria.» Niña y piña llevan ñ.",
       "error": "produce-oracion"
+    },
+    {
+      "id": "p16", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "¿Es una letra del abecedario o un dígrafo (dos letras juntas)?",
+      "categorias": [
+        { "id": "letra", "texto": "Una letra" },
+        { "id": "digrafo", "texto": "Dígrafo: dos letras" }
+      ],
+      "elementos": [
+        { "texto": "ñ", "categoria": "letra" },
+        { "texto": "ch", "categoria": "digrafo" },
+        { "texto": "k", "categoria": "letra" },
+        { "texto": "ll", "categoria": "digrafo" },
+        { "texto": "w", "categoria": "letra" },
+        { "texto": "rr", "categoria": "digrafo" }
+      ],
+      "pista": "La ñ lleva una rayita, pero es una sola letra. Busca las fichas que tienen dos letras juntas.",
+      "explicacion": "Ñ, k y w son letras del abecedario. Ch, ll y rr son dígrafos: dos letras juntas que suenan como una.",
+      "error": "digrafo-letra"
     }
   ],
   "comprobacion": [
@@ -307,7 +327,8 @@
       "visual": { "tipo": "emoji", "valor": "🐷", "etiqueta": "chancho" },
       "respuesta": 7,
       "erroresComunes": [
-        { "respuesta": 5, "pista": "Cada ch son dos letras: c y h. ¡Y la palabra tiene dos ch!", "error": "cuenta-digrafos" }
+        { "respuesta": 5, "pista": "Cada ch tiene dos letras: c y h. ¡Y la palabra tiene dos ch!", "error": "cuenta-digrafos" },
+        { "respuesta": 6, "pista": "Casi. La palabra tiene dos ch, y cada una tiene dos letras.", "error": "cuenta-digrafos" }
       ],
       "pista": "Toca cada letra con el dedo y cuéntalas una por una.",
       "explicacion": "«Chancho» tiene 7 letras: c, h, a, n, c, h, o. Cada ch es un dígrafo de dos letras.",
@@ -324,20 +345,21 @@
     },
     {
       "id": "c6", "tipo": "opcion", "nivel": 2,
-      "enunciado": "¿Qué letra va justo antes de la o?",
+      "enunciado": "¿Cuántas letras tiene nuestro abecedario?",
       "opciones": [
-        { "texto": "ñ", "correcta": true },
-        { "texto": "n", "pista": "La n va antes de la o, pero no justo antes: hay una letra entre las dos.", "error": "letra-ñ" },
-        { "texto": "p", "pista": "La p va después de la o.", "error": "orden-letras" }
+        { "texto": "26", "pista": "Te falta una letra. ¿Contaste la ñ?", "error": "letra-ñ" },
+        { "texto": "27", "correcta": true },
+        { "texto": "29", "pista": "Contaste la ch y la ll, pero son dígrafos: dos letras juntas, no letras nuevas.", "error": "digrafo-letra" }
       ],
+      "mezclar": false,
       "columnas": 3,
-      "pista": "Recita el abecedario desde la m hasta la o.",
-      "explicacion": "Justo antes de la o está la ñ: n, ñ, o.",
-      "error": "letra-ñ"
+      "pista": "Recuerda: la ñ sí es una letra. La ch y la ll no: son dígrafos.",
+      "explicacion": "Nuestro abecedario tiene 27 letras: de la a a la z, con la ñ. La ch y la ll no se cuentan como letras porque son dígrafos.",
+      "error": "digrafo-letra"
     },
     {
       "id": "c7", "tipo": "ordenar", "nivel": 3,
-      "enunciado": "Ordena en orden alfabético. Recuerda: la ch son dos letras.",
+      "enunciado": "Ordena en orden alfabético. Recuerda: la ch tiene dos letras.",
       "elementos": ["casa", "chompa", "cuna"],
       "pista": "Las tres empiezan con c. Compara la segunda letra de cada una.",
       "explicacion": "Las segundas letras son a (casa), h (chompa) y u (cuna). La h va entre la a y la u, por eso chompa va en el medio.",
@@ -353,7 +375,7 @@
     }
   ],
   "repaso": {
-    "texto": "El abecedario tiene 27 letras: 5 vocales (a, e, i, o, u) y 22 consonantes. La ñ va después de la n. Para ordenar palabras, mira la primera letra; si es igual, mira la segunda.",
+    "texto": "El abecedario tiene 27 letras: 5 vocales (a, e, i, o, u) y 22 consonantes. La ñ va después de la n. La ch y la ll son dígrafos, no letras. Para ordenar palabras, mira la primera letra; si es igual, mira la segunda.",
     "visual": { "tipo": "secuencia", "items": ["l", "m", "n", "ñ", "o"], "oculto": 3 }
   },
   "adulto": {
@@ -373,6 +395,7 @@
       "mayuscula-minuscula": { "descripcion": "No relaciona la mayúscula con su minúscula.", "sugerencia": "Busquen en etiquetas y periódicos la misma letra en mayúscula y en minúscula, y recórtenlas en parejas." },
       "sonido-inicial": { "descripcion": "Le cuesta reconocer el primer sonido de una palabra que escucha.", "sugerencia": "Jueguen «Veo, veo una cosa que empieza con...» usando las vocales y letras de sonido claro, como m, p o t." },
       "cuenta-digrafos": { "descripcion": "Cuenta la ch, la ll o la rr como una sola letra.", "sugerencia": "Escriban palabras como «llama» o «chancho» y cuenten las letras tocándolas una por una con el dedo." },
+      "digrafo-letra": { "descripcion": "Cree que ch, ll o rr son letras del abecedario (y cuenta 29 o 30 letras).", "sugerencia": "Escriban ch, ll y rr en papelitos y córtenlos por la mitad: cada uno está hecho de dos letras que ya están en el abecedario." },
       "dictado-ñ": { "descripcion": "Olvida la ñ al escribir palabras dictadas.", "sugerencia": "Dicten palabras con ñ (niño, año, caña, uña) y revisen juntos la rayita ondulada sobre la n." },
       "h-consonante": { "descripcion": "Cree que las palabras con h empiezan con vocal porque la h no suena.", "sugerencia": "Muestren palabras escritas (hoja, huevo, hilo) y pidan que señale la primera letra que ve, no la que escucha." },
       "produce-oracion": { "descripcion": "Le cuesta escribir una oración completa con mayúscula y punto.", "sugerencia": "Escriban juntos una oración corta sobre algo del día y revisen la mayúscula al inicio y el punto al final." }

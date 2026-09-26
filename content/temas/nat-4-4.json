@@ -17,7 +17,7 @@
       "visual": { "tipo": "ilustracion", "id": "aparato-digestivo", "resaltar": "intestino-delgado", "etiquetas": true }
     },
     {
-      "texto": "El **hígado** ayuda desde afuera: la comida no pasa por él, pero prepara la **bilis**, un jugo para digerir las grasas. Tú ayudas si **masticas bien**, comes **con calma**, tomas **agua** y comes **fibra**.",
+      "texto": "El **hígado** ayuda desde afuera: la comida no pasa por él, pero prepara la **bilis**, un jugo que ayuda a digerir las grasas. Tú ayudas si **masticas bien**, comes **con calma**, tomas **agua** y comes frutas y verduras (tienen **fibra**).",
       "emoji": "🥕",
       "visual": { "tipo": "emojis", "items": ["🦷", "🍽️", "💧", "🍎"], "etiquetas": ["masticar bien", "comer con calma", "tomar agua", "fibra"] }
     }
@@ -26,7 +26,7 @@
     "instruccion": "Acompaña a una cucharada de majadito en su viaje por el cuerpo de Kusi.",
     "pasos": [
       {
-        "texto": "Kusi mastica bien: sus dientes cortan el charque y sus muelas muelen el arroz, como un **batán**. La saliva moja el bocado y la lengua forma una bolita para tragarla.",
+        "texto": "Kusi mastica bien: sus dientes de adelante cortan el charque y sus muelas muelen el arroz, como un **batán**. La saliva moja el bocado y la lengua forma una bolita para tragarla.",
         "visual": { "tipo": "ilustracion", "id": "aparato-digestivo", "resaltar": "boca", "etiquetas": true }
       },
       {
@@ -107,7 +107,7 @@
         [ { "texto": "saliva", "emoji": "💧" }, "moja la comida" ],
         [ "estómago", "mezcla con jugos" ]
       ],
-      "pista": "Piensa en lo que pasa en tu boca cuando comes.",
+      "pista": "Piensa en lo que pasa con la comida en tu boca y después en tu estómago.",
       "explicacion": "Los dientes cortan y muelen, la lengua mueve la comida, la saliva la moja y el estómago la mezcla con jugos.",
       "error": "funcion-partes"
     },
@@ -156,11 +156,11 @@
       "id": "p7", "tipo": "relacionar", "nivel": 2,
       "enunciado": "Une cada tipo de diente con su trabajo.",
       "pares": [
-        ["incisivos (los de adelante)", "cortan, como tijeras"],
-        ["colmillos", "tienen punta y desgarran"],
-        ["muelas", "muelen, como un batán"]
+        ["incisivos (los de adelante)", "cortan la comida, como tijeras"],
+        ["colmillos", "desgarran la comida"],
+        ["muelas", "muelen la comida, como un batán"]
       ],
-      "pista": "Toca tus dientes con la lengua: los de adelante son planos y finos, los colmillos tienen punta y las muelas son anchas.",
+      "pista": "Toca tus dientes con la lengua: los de adelante tienen un borde fino, los colmillos tienen punta y las muelas son anchas.",
       "explicacion": "Los incisivos cortan, los colmillos desgarran con su punta y las muelas muelen la comida, como un batán.",
       "error": "funcion-partes"
     },
@@ -190,7 +190,7 @@
     },
     {
       "id": "p10", "tipo": "numero", "nivel": 2,
-      "enunciado": "Los niños tienen 20 dientes de leche. Una persona adulta tiene 32 dientes. ¿Cuántos dientes más tiene la persona adulta?",
+      "enunciado": "Un niño o una niña tiene 20 dientes de leche. Una persona adulta, con todos sus dientes, tiene 32. ¿Cuántos dientes más tiene?",
       "visual": { "tipo": "emojis", "items": ["🧒", "🧑"], "etiquetas": ["20 dientes", "32 dientes"] },
       "respuesta": 12,
       "sufijo": "dientes",
@@ -294,7 +294,7 @@
         { "tipo": "mayuscula-inicial" },
         { "tipo": "punto-final" },
         { "tipo": "min-palabras", "valor": 5 },
-        { "tipo": "incluye", "palabras": ["mastica", "agua", "despacio", "calma", "tranquilo", "tranquila", "fruta", "verdura", "fibra"] }
+        { "tipo": "incluye", "palabras": ["mastica", "mastique", "agua", "despacio", "lento", "lenta", "calma", "tranquilo", "tranquila", "apuro", "fruta", "verdura", "fibra"] }
       ],
       "modelo": "Mastica bien la comida y toma agua.",
       "pista": "Piensa en cómo comes, qué tomas y qué alimentos tienen fibra.",
@@ -318,11 +318,12 @@
     },
     {
       "id": "c2", "tipo": "completar", "nivel": 1,
-      "enunciado": "Completa con el nombre correcto.",
-      "texto": "La comida baja de la boca al estómago por un tubo llamado [esófago].",
-      "banco": ["pulmón", "corazón"],
-      "pista": "Dos de las palabras nombran partes que sirven para respirar y para mover la sangre. Busca el tubo por donde baja la comida.",
-      "explicacion": "La comida baja por el **esófago**, un tubo que va de la boca al estómago.",
+      "enunciado": "Mira la parte marcada en el dibujo y completa.",
+      "visual": { "tipo": "ilustracion", "id": "aparato-digestivo", "resaltar": "intestino-grueso" },
+      "texto": "La parte marcada es el intestino [grueso]. Es la [última] parte del camino de la comida.",
+      "banco": ["delgado", "primera"],
+      "pista": "Compara los dos tubos de la barriga: ¿el marcado es el más ancho o el más fino? La comida llega ahí después de pasar por todas las otras partes.",
+      "explicacion": "Es el **intestino grueso**, el tubo más ancho. Es la **última** parte del camino: ahí se forman las heces.",
       "error": "partes-digestivo"
     },
     {
@@ -336,23 +337,23 @@
     {
       "id": "c4", "tipo": "escribir", "nivel": 2,
       "enunciado": "Escucha la adivinanza y escribe la respuesta.",
-      "escuchar": "Estoy en la parte de arriba de tu barriga. Soy como una bolsa: mezclo la comida con mis jugos hasta hacerla papilla. ¿Quién soy?",
-      "respuestas": ["estómago", "el estómago"],
-      "pista": "Recibe la comida que baja por el esófago.",
-      "explicacion": "Es el **estómago**: una bolsa que mezcla la comida con sus jugos.",
+      "escuchar": "Vivo dentro de tu boca. Muevo la comida de un lado a otro y la empujo hacia atrás para que la tragues. También siento los sabores. ¿Quién soy?",
+      "respuestas": ["lengua", "la lengua"],
+      "pista": "Está dentro de tu boca, detrás de los dientes. Puedes sacarla frente al espejo.",
+      "explicacion": "Es la **lengua**: mueve la comida dentro de la boca, la empuja para tragarla y siente los sabores.",
       "error": "partes-digestivo"
     },
     {
       "id": "c5", "tipo": "relacionar", "nivel": 2,
-      "enunciado": "Une cada parte con su trabajo.",
+      "enunciado": "Une cada parte con la frase que habla de ella.",
       "pares": [
-        ["los dientes", "cortan y muelen la comida"],
-        ["la saliva", "moja la comida"],
+        ["el esófago", "empuja la comida hacia el estómago"],
         ["el hígado", "prepara la bilis"],
-        ["el intestino grueso", "forma las heces"]
+        ["el intestino delgado", "es el tubo más largo y está enrollado"],
+        ["el intestino grueso", "saca el agua de los restos"]
       ],
-      "pista": "Dos trabajan en la boca. El hígado ayuda desde afuera con un jugo. El intestino grueso está al final.",
-      "explicacion": "Los dientes cortan y muelen, la saliva moja la comida, el hígado prepara la bilis y el intestino grueso forma las heces.",
+      "pista": "El esófago une la boca con el estómago. El hígado ayuda desde afuera con un jugo. Uno de los intestinos es muy largo; el otro está al final del camino.",
+      "explicacion": "El esófago empuja la comida hacia el estómago, el hígado prepara la bilis, el intestino delgado es el tubo más largo y enrollado, y el intestino grueso saca el agua de los restos.",
       "error": "funcion-partes"
     },
     {
@@ -363,15 +364,16 @@
         { "id": "no", "texto": "No ayuda", "emoji": "👎" }
       ],
       "elementos": [
-        { "texto": "masticar cada bocado despacio", "emoji": "🦷", "categoria": "si" },
-        { "texto": "comer una ensalada de frutas", "emoji": "🍉", "categoria": "si" },
-        { "texto": "tomar agua cuando tengo sed", "emoji": "💧", "categoria": "si" },
-        { "texto": "tragar la comida casi sin masticar", "categoria": "no" },
-        { "texto": "comer muy apurado", "categoria": "no" },
-        { "texto": "comer solo golosinas y nada de verduras", "emoji": "🍭", "categoria": "no" }
+        { "texto": "comer en bocados pequeños", "emoji": "🥄", "categoria": "si" },
+        { "texto": "comer una sopa con verduras", "emoji": "🥕", "categoria": "si" },
+        { "texto": "tomar agua en vez de gaseosa", "emoji": "💧", "categoria": "si" },
+        { "texto": "sentarme a la mesa y comer sin prisa", "emoji": "🍽️", "categoria": "si" },
+        { "texto": "llenarme la boca con un bocado enorme", "categoria": "no" },
+        { "texto": "comer muy rápido para salir a jugar", "categoria": "no" },
+        { "texto": "comer solo dulces todo el día", "emoji": "🍭", "categoria": "no" }
       ],
-      "pista": "Piensa si el hábito deja trabajar tranquilo a tu aparato digestivo.",
-      "explicacion": "Ayudan: masticar despacio, comer frutas y tomar agua. No ayudan: tragar sin masticar, comer apurado y comer solo golosinas.",
+      "pista": "Piensa si el hábito deja trabajar tranquilo a tu aparato digestivo: bocados pequeños, calma, agua y fibra.",
+      "explicacion": "Ayudan: los bocados pequeños, la sopa con verduras (tiene fibra), el agua y comer con calma. No ayudan: los bocados enormes, comer muy rápido y comer solo dulces.",
       "error": "cuidado-digestion"
     },
     {
@@ -391,7 +393,7 @@
       "id": "c8", "tipo": "escribir", "nivel": 3,
       "enunciado": "¿En qué parte del aparato digestivo pasan los nutrientes a la sangre? Escribe su nombre.",
       "respuestas": ["intestino delgado", "el intestino delgado", "en el intestino delgado"],
-      "pista": "Es el tubo más largo y enrollado del aparato digestivo.",
+      "pista": "Es la parte que recibe la papilla cuando sale del estómago.",
       "explicacion": "En el **intestino delgado** los nutrientes pasan a la sangre, que los lleva a todo el cuerpo.",
       "error": "funcion-partes"
     }

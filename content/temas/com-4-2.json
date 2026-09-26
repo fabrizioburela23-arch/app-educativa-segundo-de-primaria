@@ -33,7 +33,7 @@
         "visual": { "tipo": "emojis", "items": ["🥔", "🥕", "🍅", "🍌"], "etiquetas": ["papa", "zanahoria", "tomate", "plátano"] }
       },
       {
-        "texto": "Escribe: «Voy a comprar papa, zanahoria, tomate...». Entre una cosa y la siguiente pone una **coma**.",
+        "texto": "Empieza a escribir «Voy a comprar papa, zanahoria, tomate...» y pone una **coma** entre una cosa y la siguiente.",
         "visual": { "tipo": "emojis", "items": ["🥔", "🥕", "🍅"], "etiquetas": ["papa,", "zanahoria,", "tomate"] }
       },
       {
@@ -120,7 +120,7 @@
       "escuchar": "rojo, amarillo y verde",
       "visual": { "tipo": "ilustracion", "id": "bandera-bolivia" },
       "respuestas": ["rojo, amarillo y verde"],
-      "pista": "Son tres colores. Pon coma entre los dos primeros y «y» antes del último.",
+      "pista": "Son tres colores. Pon coma entre los dos primeros, deja un espacio después de la coma y escribe «y» antes del último.",
       "explicacion": "Se escribe «rojo, amarillo y verde». Antes de la «y» no va coma.",
       "error": "dictado-comas"
     },
@@ -140,7 +140,7 @@
         { "texto": "Traje pan, queso, y leche.", "categoria": "corregir" }
       ],
       "pista": "Revisa dos cosas: ¿hay coma entre las cosas de la lista? ¿Hay una coma antes de la «y»?",
-      "explicacion": "Están bien «Comí arroz, huevo y plátano.», «Vi un gato, un perro y un loro.» y «Sí, me gusta el api.». En las otras falta una coma entre las cosas o sobra la coma antes de la «y».",
+      "explicacion": "Están bien escritas «Comí arroz, huevo y plátano», «Vi un gato, un perro y un loro» y «Sí, me gusta el api». En las otras falta una coma entre las cosas o sobra la coma antes de la «y».",
       "error": "coma-antes-de-y"
     },
     {
@@ -148,7 +148,7 @@
       "enunciado": "Escucha y escribe la oración con sus comas.",
       "escuchar": "En la feria compramos papa, choclo y quinua.",
       "respuestas": ["En la feria compramos papa, choclo y quinua."],
-      "pista": "Escucha las pausas cortas: ahí van las comas. Antes de la «y» no va coma. Termina con punto.",
+      "pista": "Escucha las pausas cortas: ahí van las comas, y después de cada coma se deja un espacio. Antes de la «y» no va coma. Termina con punto.",
       "explicacion": "Se escribe «En la feria compramos papa, choclo y quinua.» La coma separa «papa» y «choclo»; la «y» une «quinua».",
       "error": "dictado-comas"
     },
@@ -211,7 +211,7 @@
     },
     {
       "id": "p12", "tipo": "tocar", "nivel": 3,
-      "enunciado": "Faltan las comas. Toca las palabras después de las que va una coma.",
+      "enunciado": "Faltan las comas. Toca las palabras que deben llevar una coma después.",
       "texto": "En la feria venden *papas* *ocas* habas y choclos.",
       "pista": "La lista tiene cuatro cosas. Recuerda: antes de la «y» no va coma.",
       "explicacion": "Se escribe «En la feria venden papas, ocas, habas y choclos.» Van comas después de «papas» y de «ocas». Después de «habas» viene la «y», así que no lleva coma.",
@@ -299,11 +299,11 @@
     },
     {
       "id": "c2", "tipo": "completar", "nivel": 1,
-      "enunciado": "Pon la coma que falta en la lista.",
-      "texto": "En el jardín de la escuela hay kantutas[,] rosas y claveles.",
-      "banco": ["."],
-      "pista": "La oración no termina después de «kantutas»: la lista de flores sigue.",
-      "explicacion": "«En el jardín de la escuela hay kantutas, rosas y claveles.» La coma separa «kantutas» y «rosas»; la «y» une «claveles».",
+      "enunciado": "Pon las comas que faltan en la lista de flores.",
+      "texto": "En el jardín de la escuela hay kantutas[,] rosas[,] claveles y margaritas.",
+      "banco": [".", "y"],
+      "pista": "Hay cuatro flores. La «y» ya une la última: ¿qué signo va entre las otras?",
+      "explicacion": "Se escribe «En el jardín de la escuela hay kantutas, rosas, claveles y margaritas.» Las comas van después de «kantutas» y de «rosas»; la «y» une «margaritas».",
       "error": "falta-coma-lista"
     },
     {
@@ -331,19 +331,19 @@
         { "texto": "Tengo lápiz, goma, y regla.", "categoria": "corregir" }
       ],
       "pista": "Mira las listas: ¿hay coma entre las cosas? ¿Hay coma antes de la «y»? Recuerda también la coma después de «no» y del nombre de quien escucha.",
-      "explicacion": "Están bien «Llevo pan, queso y agua.», «No, gracias.» y «Wara, mira el cóndor.». En «Vimos llamas, alpacas y vicuñas.» faltaba una coma, y en las otras dos sobra la coma antes de la «y».",
+      "explicacion": "Están bien escritas «Llevo pan, queso y agua», «No, gracias» y «Wara, mira el cóndor». En «Vimos llamas alpacas y vicuñas» falta la coma después de «llamas», y en las otras dos sobra la coma antes de la «y».",
       "error": "coma-antes-de-y"
     },
     {
       "id": "c5", "tipo": "numero", "nivel": 2,
-      "enunciado": "¿Cuántas comas necesita esta oración? «En el zoológico vimos monos loros tortugas capibaras y jaguares.»",
-      "respuesta": 3,
+      "enunciado": "¿Cuántas comas necesita esta oración? «En el zoológico vimos monos loros tortugas capibaras jaguares y cóndores.»",
+      "respuesta": 4,
       "erroresComunes": [
-        { "respuesta": 4, "pista": "Antes de la «y» no va coma. Cuenta otra vez.", "error": "coma-antes-de-y" },
-        { "respuesta": 5, "pista": "Contaste los animales. Cuenta los lugares entre ellos donde va una coma.", "error": "cuenta-comas" }
+        { "respuesta": 5, "pista": "Antes de la «y» no va coma. Cuenta otra vez.", "error": "coma-antes-de-y" },
+        { "respuesta": 6, "pista": "Contaste los animales. Cuenta los lugares entre ellos donde va una coma.", "error": "cuenta-comas" }
       ],
       "pista": "Di la lista en voz alta haciendo una pausa corta entre los animales. Antes de la «y» no hay coma.",
-      "explicacion": "Se escribe «En el zoológico vimos monos, loros, tortugas, capibaras y jaguares.»: 3 comas.",
+      "explicacion": "Son 4 comas: «En el zoológico vimos monos, loros, tortugas, capibaras, jaguares y cóndores.» Hay seis animales, y antes de la «y» no va coma.",
       "error": "cuenta-comas"
     },
     {
@@ -357,7 +357,7 @@
     },
     {
       "id": "c7", "tipo": "tocar", "nivel": 3,
-      "enunciado": "Faltan las comas. Toca las palabras después de las que va una coma.",
+      "enunciado": "Faltan las comas. Toca las palabras que deben llevar una coma después.",
       "texto": "Kusi guarda en su caja *canicas* *lápices* *tizas* botones y cintas.",
       "pista": "La lista tiene cinco cosas. Antes de la «y» no va coma.",
       "explicacion": "Se escribe «Kusi guarda en su caja canicas, lápices, tizas, botones y cintas.» Van comas después de «canicas», «lápices» y «tizas». Después de «botones» viene la «y».",

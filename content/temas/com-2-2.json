@@ -39,7 +39,7 @@
         "visual": { "tipo": "emoji", "valor": "👏", "cantidad": 3 }
       },
       {
-        "texto": "Escribimos cada sílaba con un guion en el medio: pa-ra-ba. Cada sílaba tiene su vocal.",
+        "texto": "Escribimos las sílabas con un guion (-) entre una y otra: pa-ra-ba. Cada sílaba tiene su vocal.",
         "visual": { "tipo": "emojis", "items": ["🦜"], "etiquetas": ["pa-ra-ba"] }
       },
       {
@@ -243,12 +243,12 @@
     },
     {
       "id": "p12", "tipo": "ordenar", "nivel": 3,
-      "enunciado": "Ordena las sílabas para formar el nombre de un animal.",
-      "visual": { "tipo": "emoji", "valor": "🐻" },
-      "elementos": ["ju", "cu", "ma", "ri"],
+      "enunciado": "Ordena las 5 sílabas para formar el nombre de lo que ves en el dibujo.",
+      "visual": { "tipo": "emoji", "valor": "💻" },
+      "elementos": ["com", "pu", "ta", "do", "ra"],
       "unir": "",
-      "pista": "Es el oso andino que vive en los bosques de Bolivia. Su nombre empieza con «ju».",
-      "explicacion": "Ju-cu-ma-ri forma «jucumari», el oso andino.",
+      "pista": "Di el nombre del dibujo muy despacio, con una palmada en cada golpe de voz. ¿Qué sílaba suena primero?",
+      "explicacion": "Com-pu-ta-do-ra forma «computadora». Tiene 5 sílabas: es polisílaba.",
       "error": "arma-palabra"
     },
     {
@@ -309,12 +309,12 @@
     },
     {
       "id": "c2", "tipo": "ordenar", "nivel": 1,
-      "enunciado": "Ordena las sílabas para formar el nombre del animal.",
-      "visual": { "tipo": "emoji", "valor": "🐴" },
-      "elementos": ["ca", "ba", "llo"],
+      "enunciado": "Ordena las sílabas para formar el nombre de una fruta.",
+      "visual": { "tipo": "emoji", "valor": "🍓" },
+      "elementos": ["fru", "ti", "lla"],
       "unir": "",
       "pista": "Mira el dibujo y di su nombre despacio. ¿Con qué sílaba empieza?",
-      "explicacion": "Ca-ba-llo forma «caballo». La ll no se parte.",
+      "explicacion": "Fru-ti-lla forma «frutilla». La fr y la ll van juntas.",
       "error": "arma-palabra"
     },
     {
@@ -340,14 +340,15 @@
     {
       "id": "c4", "tipo": "opcion", "nivel": 2,
       "enunciado": "¿Cuál está bien separada en sílabas?",
+      "visual": { "tipo": "emoji", "valor": "🚲" },
       "opciones": [
-        { "texto": "cho-clo", "correcta": true },
-        { "texto": "choc-lo", "pista": "La cl va junta, como en «clavo».", "error": "separa-grupo" },
-        { "texto": "c-ho-clo", "pista": "La ch no se parte, y cada sílaba necesita una vocal.", "error": "separa-digrafo" }
+        { "texto": "bi-ci-cle-ta", "correcta": true },
+        { "texto": "bi-cic-le-ta", "pista": "La cl va junta, como en «clavo».", "error": "separa-grupo" },
+        { "texto": "bi-ci-c-le-ta", "pista": "Cada sílaba necesita al menos una vocal. ¿La tiene la «c» sola?", "error": "silaba-sin-vocal" }
       ],
-      "columnas": 3,
-      "pista": "Recuerda: la ch no se parte y la cl va junta.",
-      "explicacion": "Se separa cho-clo: la ch va junta y la cl también.",
+      "columnas": 1,
+      "pista": "Da una palmada en cada golpe de voz. Recuerda: la cl va junta.",
+      "explicacion": "Se separa bi-ci-cle-ta: 4 sílabas, y la cl va junta en la misma sílaba.",
       "error": "separa-grupo"
     },
     {

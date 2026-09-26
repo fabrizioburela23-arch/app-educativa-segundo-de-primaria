@@ -88,7 +88,7 @@
         "apoyo": "El punto va al final de la idea, pegado a la última palabra.",
         "opciones": [
           { "texto": "La llama come pasto.", "correcta": true },
-          { "texto": "La llama come. pasto", "pista": "La idea no termina en «come». ¿Qué come la llama?", "error": "lugar-del-punto" },
+          { "texto": "La llama. come pasto", "pista": "La idea no termina en «llama»: todavía no sabemos qué hace la llama.", "error": "lugar-del-punto" },
           { "texto": ".La llama come pasto", "pista": "El punto no va al principio: va al final de la oración.", "error": "lugar-del-punto" }
         ],
         "columnas": 1,
@@ -209,7 +209,7 @@
       ],
       "columnas": 1,
       "pista": "Revisa tres cosas: mayúscula al inicio, punto al final y mayúscula después de cada punto.",
-      "explicacion": "Están bien «El sol calienta.» y «Ana canta. Luis baila.». A las otras les falta una mayúscula o el punto final.",
+      "explicacion": "«El sol calienta.» y «Ana canta. Luis baila.» están bien escritas. A las otras les falta una mayúscula o el punto final.",
       "error": "olvida-punto"
     },
     {
@@ -230,7 +230,7 @@
         { "texto": "Todos están muy contentos.", "categoria": "final" }
       ],
       "pista": "Busca cada oración en el texto. ¿Qué viene después: otra oración en el mismo párrafo, un párrafo nuevo o nada más?",
-      "explicacion": "Llevan punto seguido «Su familia siembra papa.», «Nayra y su abuelo recogen las papas.» y «Por la tarde comen juntos en el campo.». Llevan punto aparte «Hoy es día de cosecha.» y «Llenan tres costales.». «Todos están muy contentos.» lleva el punto final.",
+      "explicacion": "Hay punto seguido después de «Su familia siembra papa», «Nayra y su abuelo recogen las papas» y «Por la tarde comen juntos en el campo», porque sigue otra oración del mismo párrafo. Hay punto aparte después de «Hoy es día de cosecha» y «Llenan tres costales», porque ahí termina un párrafo. «Todos están muy contentos» termina el texto con punto final.",
       "error": "tipos-de-punto"
     },
     {
@@ -249,7 +249,7 @@
     },
     {
       "id": "p12", "tipo": "escribir", "nivel": 3,
-      "enunciado": "Escribe bien este texto. Son dos oraciones: el cóndor vuela alto tiene alas muy grandes",
+      "enunciado": "Escribe bien este texto de dos oraciones: «el cóndor vuela alto tiene alas muy grandes»",
       "respuestas": ["El cóndor vuela alto. Tiene alas muy grandes."],
       "mayusculas": "estricto",
       "pista": "¿Dónde termina la primera idea? Pon punto ahí y empieza la segunda oración con mayúscula.",
@@ -321,13 +321,17 @@
       "error": "limite-oracion"
     },
     {
-      "id": "c2", "tipo": "ordenar", "nivel": 1,
-      "enunciado": "Ordena las palabras para formar la oración.",
-      "elementos": ["Mi", "prima", "baila", "caporales."],
-      "unir": " ",
-      "pista": "La palabra con mayúscula va primero y la que tiene punto va al final.",
-      "explicacion": "«Mi prima baila caporales.» Empieza con mayúscula y termina con punto.",
-      "error": "orden-oracion"
+      "id": "c2", "tipo": "opcion", "nivel": 1,
+      "enunciado": "Sofía terminó su cuento y ya no va a escribir nada más. ¿Qué punto pone al final?",
+      "visual": { "tipo": "emoji", "valor": "📖" },
+      "opciones": [
+        { "texto": "punto final", "correcta": true },
+        { "texto": "punto seguido", "pista": "Con punto seguido, el texto continúa en el mismo renglón. ¿Sofía va a seguir escribiendo?", "error": "tipos-de-punto" },
+        { "texto": "punto aparte", "pista": "Con punto aparte empieza otro párrafo. ¿Sofía va a escribir otro párrafo?", "error": "tipos-de-punto" }
+      ],
+      "pista": "Piensa: ¿el cuento sigue o ya terminó?",
+      "explicacion": "Sofía pone punto final, porque ahí termina todo su cuento.",
+      "error": "tipos-de-punto"
     },
     {
       "id": "c3", "tipo": "escribir", "nivel": 2,
@@ -355,10 +359,10 @@
     {
       "id": "c5", "tipo": "completar", "nivel": 2,
       "enunciado": "Pon los puntos y la mayúscula que faltan.",
-      "texto": "La feria abre temprano[.] [H]ay frutas y verduras[.]",
-      "banco": ["h"],
-      "pista": "Hay dos oraciones. ¿Cómo empieza la palabra que va después del punto?",
-      "explicacion": "«La feria abre temprano. Hay frutas y verduras.» Cada oración termina con punto y «Hay» empieza con mayúscula porque va después del punto.",
+      "texto": "La feria abre temprano[.] [H]ay frutas y verduras[.] [M]i tío vende naranjas[.]",
+      "banco": ["h", "m", ","],
+      "pista": "Hay tres oraciones. ¿Qué signo cierra cada una? ¿Cómo empieza la palabra que va después del punto?",
+      "explicacion": "Se escribe «La feria abre temprano. Hay frutas y verduras. Mi tío vende naranjas.» Cada oración termina con punto, y «Hay» y «Mi» empiezan con mayúscula porque van después de un punto.",
       "error": "mayuscula-despues-punto"
     },
     {
@@ -373,7 +377,7 @@
       ],
       "columnas": 1,
       "pista": "Revisa la mayúscula del inicio, el punto del final y la mayúscula después de cada punto.",
-      "explicacion": "Están bien «Luis lee un cuento.» y «Hace frío. Me pongo la chompa.». A las otras les falta una mayúscula o el punto final.",
+      "explicacion": "«Luis lee un cuento.» y «Hace frío. Me pongo la chompa.» están bien escritas. A las otras les falta una mayúscula o el punto final.",
       "error": "mayuscula-despues-punto"
     },
     {
@@ -391,11 +395,11 @@
     },
     {
       "id": "c8", "tipo": "escribir", "nivel": 3,
-      "enunciado": "Escribe bien este texto. Son dos oraciones: mi hermano juega fútbol es muy rápido",
-      "respuestas": ["Mi hermano juega fútbol. Es muy rápido."],
+      "enunciado": "Escribe bien este texto de tres oraciones: «hoy es sábado vamos al río llevamos pan y queso»",
+      "respuestas": ["Hoy es sábado. Vamos al río. Llevamos pan y queso."],
       "mayusculas": "estricto",
-      "pista": "¿Dónde termina la primera idea? Pon punto ahí y empieza la segunda con mayúscula.",
-      "explicacion": "Se escribe «Mi hermano juega fútbol. Es muy rápido.» Cada oración empieza con mayúscula y termina con punto.",
+      "pista": "Busca dónde termina cada idea: son tres. Pon punto al final de cada una y empieza la siguiente con mayúscula.",
+      "explicacion": "Se escribe «Hoy es sábado. Vamos al río. Llevamos pan y queso.» Cada oración empieza con mayúscula y termina con punto.",
       "error": "limite-oracion"
     }
   ],

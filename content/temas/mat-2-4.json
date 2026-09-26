@@ -17,7 +17,7 @@
       "visual": { "tipo": "recta", "min": 0, "max": 10, "paso": 1, "marcar": [5, 9], "saltos": [[5, 6], [6, 7], [7, 8], [8, 9]] }
     },
     {
-      "texto": "Con números grandes restamos por columnas: primero las **unidades**, después las **decenas** y al final las **centenas**. En 58 − 23: 8 − 3 = 5 y 5 − 2 = 3. El resultado es 35.",
+      "texto": "Con números de dos o tres cifras restamos por columnas: primero las **unidades**, después las **decenas** y al final las **centenas**. En 58 − 23: 8 − 3 = 5 y 5 − 2 = 3. El resultado es 35.",
       "visual": { "tipo": "tabla", "columnas": ["", "D", "U"], "filas": [["", "5", "8"], ["−", "2", "3"], ["=", "3", "5"]] }
     }
   ],
@@ -57,7 +57,7 @@
       {
         "id": "g3", "tipo": "numero",
         "enunciado": "Arami recogió 9 huevos del gallinero y Luis recogió 6. ¿Cuántos huevos más recogió Arami?",
-        "apoyo": "Compara las dos filas: cuenta los huevos de Arami que quedan después de los 6 de Luis.",
+        "apoyo": "Mira las dos filas. Forma parejas: un huevo de Arami con uno de Luis. Cuenta los huevos de Arami que se quedan sin pareja.",
         "visual": { "tipo": "pictograma", "titulo": "Huevos que recogieron", "icono": "🥚", "escala": 1, "datos": [ { "etiqueta": "Arami", "valor": 9, "emoji": "🥚" }, { "etiqueta": "Luis", "valor": 6, "emoji": "🥚" } ] },
         "respuesta": 3,
         "erroresComunes": [ { "respuesta": 15, "pista": "Juntaste los huevos de los dos. La pregunta es cuántos **más** recogió Arami: hay que comparar.", "error": "problema-comparar" } ],
@@ -105,7 +105,7 @@
       "enunciado": "Completa la resta 86 − 52, columna por columna.",
       "visual": { "tipo": "operacion", "numeros": [86, 52], "op": "-", "vertical": true },
       "texto": "Unidades: 6 − 2 = [4]. Decenas: 8 − 5 = [3]. Resultado: 86 − 52 = [34].",
-      "banco": ["138", "7"],
+      "banco": ["138", "8"],
       "pista": "Resta primero las unidades y después las decenas. El resultado junta las dos cifras.",
       "explicacion": "6 − 2 = 4 y 8 − 5 = 3. Por eso 86 − 52 = 34.",
       "error": "resta-columnas"

@@ -4,12 +4,12 @@
   "objetivo": "Descubro cómo se relacionan dos palabras y busco otra pareja que se relacione igual.",
   "explicacion": [
     {
-      "texto": "Algunas palabras forman **parejas** porque se relacionan. El perro ladra y el gato maúlla: cada animal va con su sonido.",
+      "texto": "Algunas palabras forman **parejas** porque se relacionan. El perro ladra y el gato maúlla. Por eso decimos: «Perro es a ladrar como gato es a maullar».",
       "emoji": "🐕",
       "visual": { "tipo": "emojis", "items": ["🐕", "🐈"], "etiquetas": ["perro → ladrar", "gato → maullar"] }
     },
     {
-      "texto": "Una **analogía** compara dos parejas que se relacionan de la **misma manera**. El zapato se pone en el pie y el guante, en la mano: «Pie es a zapato como mano es a guante».",
+      "texto": "Eso se llama **analogía**: dos parejas que se relacionan de la **misma manera**. El zapato se pone en el pie y el guante, en la mano: «Pie es a zapato como mano es a guante».",
       "visual": { "tipo": "emojis", "items": ["🦶", "👟", "✋", "🧤"], "etiquetas": ["pie", "zapato", "mano", "guante"] }
     },
     {
@@ -191,7 +191,7 @@
       "visual": { "tipo": "emojis", "items": ["🐄", "🐑"], "etiquetas": ["vaca", "oveja"] },
       "elementos": ["cor", "de", "ro"],
       "unir": "",
-      "pista": "Busca la cría de la oveja. La palabra empieza con «cor».",
+      "pista": "Busca el nombre de la cría de la oveja. Dilo despacio, sílaba por sílaba, dando palmadas.",
       "explicacion": "El ternero es la cría de la vaca y el cordero es la cría de la oveja: cor-de-ro.",
       "error": "escritura-palabra"
     },
@@ -228,8 +228,8 @@
     },
     {
       "id": "p13", "tipo": "pasos", "nivel": 3,
-      "enunciado": "Resuelve en dos pasos: «Abeja es a colmena como pájaro es a ___».",
-      "visual": { "tipo": "emojis", "items": ["🐝", "🐦"], "etiquetas": ["abeja", "pájaro"] },
+      "enunciado": "Resuelve en dos pasos: «Abeja es a colmena como hormiga es a ___».",
+      "visual": { "tipo": "emojis", "items": ["🐝", "🐜"], "etiquetas": ["abeja", "hormiga"] },
       "pasos": [
         {
           "tipo": "opcion",
@@ -246,15 +246,15 @@
         {
           "tipo": "completar",
           "enunciado": "Ahora completa con la misma relación.",
-          "texto": "Abeja es a colmena como pájaro es a [nido].",
-          "banco": ["pluma", "volar"],
-          "pista": "¿Dónde pone sus huevos y cuida a sus crías el pájaro?",
-          "explicacion": "La abeja vive en la colmena y el pájaro vive en el nido.",
+          "texto": "Abeja es a colmena como hormiga es a [hormiguero].",
+          "banco": ["azúcar", "caminar"],
+          "pista": "La colmena es la casa de las abejas. ¿Cómo se llama la casa de las hormigas?",
+          "explicacion": "La abeja vive en la colmena y la hormiga vive en el hormiguero. «Azúcar» es algo que come la hormiga y «caminar» es algo que hace: no dicen dónde vive.",
           "error": "relacion-distinta"
         }
       ],
       "pista": "Primero descubre la relación de la primera pareja. Después úsala en la segunda.",
-      "explicacion": "«Abeja es a colmena como pájaro es a nido»: cada animal con el lugar donde vive.",
+      "explicacion": "«Abeja es a colmena como hormiga es a hormiguero»: cada animal con el lugar donde vive.",
       "error": "no-identifica-relacion"
     },
     {
@@ -334,7 +334,7 @@
     {
       "id": "c5", "tipo": "completar", "nivel": 2,
       "enunciado": "Completa la analogía.",
-      "visual": { "tipo": "emojis", "items": ["🎸", "📖"], "etiquetas": ["charango", "libro"] },
+      "visual": { "tipo": "emojis", "items": ["🎶", "📖"], "etiquetas": ["charango", "libro"] },
       "texto": "Charango es a tocar como libro es a [leer].",
       "banco": ["dormir", "comer"],
       "pista": "El charango sirve para tocar música. ¿Para qué sirve un libro?",

@@ -33,12 +33,12 @@
         "visual": { "tipo": "emojis", "items": ["🦙", "✂️"], "etiquetas": ["alpaca", "esquilar"] }
       },
       {
-        "texto": "Primero se **lava** la lana para quitarle la tierra. Después se **hila**: se estira y se tuerce hasta formar un hilo largo, que se enrolla en ovillos.",
+        "texto": "Luego se **lava** la lana para quitarle la tierra. Después se **hila**: se estira y se tuerce hasta formar un hilo largo, que se enrolla en ovillos.",
         "visual": { "tipo": "emojis", "items": ["💧", "🧶"], "etiquetas": ["lavar", "hilar"] }
       },
       {
         "texto": "Don Inti **teje** el hilo con palillos. Punto a punto, el hilo se vuelve una chompa calentita.",
-        "visual": { "tipo": "emojis", "items": ["🧶", "🧥"], "etiquetas": ["hilo", "tejer"] }
+        "visual": { "tipo": "emojis", "items": ["🧶", "🧥"], "etiquetas": ["hilo", "chompa"] }
       },
       {
         "texto": "¡Lista la **chompa**! La lana es la **materia prima** y la chompa es el **producto**. Para transformarla hubo que esquilar, lavar, hilar y tejer.",
@@ -110,10 +110,10 @@
         [{ "texto": "cuero" }, { "texto": "zapatos", "emoji": "👞" }],
         [{ "texto": "madera", "emoji": "🌳" }, { "texto": "mesa" }],
         [{ "texto": "leche", "emoji": "🥛" }, { "texto": "queso", "emoji": "🧀" }],
-        [{ "texto": "arena" }, { "texto": "vidrio" }]
+        [{ "texto": "algodón" }, { "texto": "polera", "emoji": "👕" }]
       ],
       "pista": "Piensa de qué está hecho cada producto.",
-      "explicacion": "La chompa se teje con lana; los zapatos se hacen con cuero; la mesa, con madera; el queso, con leche, y el vidrio, con arena derretida en hornos muy calientes.",
+      "explicacion": "La chompa se teje con lana; los zapatos se hacen con cuero; la mesa, con madera; el queso, con leche, y la polera, con hilo de algodón.",
       "error": "relaciona-producto"
     },
     {
@@ -186,8 +186,8 @@
       "enunciado": "Escucha la adivinanza y escribe la respuesta.",
       "escuchar": "Soy suave y abrigo mucho. Cubro el cuerpo de la alpaca. Me cortan, me lavan, me hilan y me tejen. Así me vuelvo chompa. ¿Qué soy?",
       "visual": { "tipo": "emoji", "valor": "🦙" },
-      "respuestas": ["lana", "la lana", "es la lana", "es lana", "lana de alpaca", "la lana de alpaca", "es la lana de alpaca"],
-      "pista": "Es la materia prima de la chompa. Empieza con l.",
+      "respuestas": ["lana", "la lana", "es la lana", "es lana", "lana de alpaca", "la lana de alpaca", "es la lana de alpaca", "fibra", "la fibra", "fibra de alpaca", "la fibra de alpaca"],
+      "pista": "Es la materia prima de la chompa. Empieza con la letra «l».",
       "explicacion": "Es la **lana**: una materia prima de origen animal.",
       "error": "identifica-materia-prima"
     },
@@ -221,10 +221,10 @@
     {
       "id": "p10", "tipo": "completar", "nivel": 2,
       "enunciado": "Completa: ¿cómo se transforma cada materia prima?",
-      "texto": "El trigo se [muele] y se vuelve harina. La lana se [hila] y se vuelve hilo. La papa se [congela] con la helada, se pisa y se seca al sol: así se vuelve [chuño].",
-      "banco": ["ordeña", "queso"],
-      "pista": "¿Qué pasa con el trigo en el molino? ¿Qué le hace la helada de la noche a la papa?",
-      "explicacion": "El trigo se **muele** y da harina. La lana se **hila** y da hilo. La papa se **congela** con la helada, se pisa y se seca al sol: así se hace el **chuño**.",
+      "texto": "El trigo se [muele] y se vuelve harina. La lana se [hila] y se vuelve hilo. El cuero se corta y se [cose] con aguja e hilo: así se hacen los [zapatos].",
+      "banco": ["ordeña", "chompa"],
+      "pista": "¿Qué pasa con el trigo en el molino? ¿Qué se hace con una aguja y un hilo?",
+      "explicacion": "El trigo se **muele** y da harina. La lana se **hila** y da hilo. El cuero se corta y se **cose**: así se hacen los **zapatos**.",
       "error": "procesos-transformacion"
     },
     {
@@ -344,14 +344,14 @@
       "id": "c1", "tipo": "multiple", "nivel": 1,
       "enunciado": "Elige las cosas que se pueden hacer con madera.",
       "opciones": [
-        { "texto": "una mesa", "correcta": true },
-        { "texto": "una puerta", "emoji": "🚪", "correcta": true },
+        { "texto": "una silla", "correcta": true },
+        { "texto": "una cama", "emoji": "🛏️", "correcta": true },
         { "texto": "una cuchara de palo", "emoji": "🥄", "correcta": true },
         { "texto": "un queso", "emoji": "🧀", "pista": "El queso se hace con leche.", "error": "relaciona-producto" },
         { "texto": "una botella de vidrio", "pista": "El vidrio se hace con arena.", "error": "relaciona-producto" }
       ],
       "pista": "Hay tres. Piensa en lo que hace una carpintera.",
-      "explicacion": "Con madera se hacen mesas, puertas y cucharas de palo. El queso se hace con leche y el vidrio, con arena.",
+      "explicacion": "Con madera se hacen sillas, camas y cucharas de palo. El queso se hace con leche y el vidrio, con arena.",
       "error": "relaciona-producto"
     },
     {
@@ -393,7 +393,7 @@
       "enunciado": "Escucha la adivinanza y escribe la respuesta.",
       "escuchar": "Soy una tierra fina y pegajosa. Me mezclan con agua, me dan forma y me cocinan en un horno. Así me vuelvo ladrillo o vasija. ¿Qué soy?",
       "respuestas": ["arcilla", "la arcilla", "es la arcilla", "es arcilla", "barro", "el barro", "es el barro", "es barro"],
-      "pista": "Es una materia prima de origen mineral. Empieza con a.",
+      "pista": "Es una materia prima de origen mineral. Empieza con la letra «a».",
       "explicacion": "Es la **arcilla**: una materia prima de origen mineral. Con ella se hacen ladrillos y vasijas.",
       "error": "identifica-materia-prima"
     },
@@ -401,26 +401,26 @@
       "id": "c5", "tipo": "relacionar", "nivel": 2,
       "enunciado": "Une cada materia prima con su producto.",
       "pares": [
-        [{ "texto": "papa", "emoji": "🥔" }, "chuño"],
+        ["totora", { "texto": "balsa", "emoji": "🛶" }],
         ["caña de azúcar", "azúcar"],
         ["arena", "vidrio"],
         ["plata", "aretes"]
       ],
-      "pista": "Piensa qué se hace con la helada en el altiplano y qué metal brilla en las joyas.",
-      "explicacion": "La papa se vuelve chuño; la caña de azúcar da azúcar; la arena se vuelve vidrio, y con la plata se hacen aretes.",
+      "pista": "Piensa en las balsas del lago Titicaca y en qué metal brilla en las joyas.",
+      "explicacion": "Con la totora del lago Titicaca se hacen balsas; la caña de azúcar da azúcar; la arena se vuelve vidrio, y con la plata se hacen aretes.",
       "error": "relaciona-producto"
     },
     {
       "id": "c6", "tipo": "opcion", "nivel": 2,
-      "enunciado": "Doña Rosa hace vasijas de barro con sus manos, en el patio de su casa. ¿Qué es doña Rosa?",
+      "enunciado": "En una fábrica, máquinas grandes lavan e hilan lana de alpaca. Cada día salen miles de ovillos iguales. ¿Quién transforma la lana?",
       "opciones": [
-        { "texto": "una artesana", "correcta": true },
-        { "texto": "una industria", "pista": "Una industria es una fábrica con máquinas que hace muchísimos productos iguales.", "error": "quien-transforma" },
-        { "texto": "una materia prima", "pista": "La materia prima es lo que ella transforma: la arcilla.", "error": "materia-prima-producto" }
+        { "texto": "una industria", "correcta": true },
+        { "texto": "una artesana", "pista": "Una artesana trabaja a mano y hace pocos productos. Aquí trabajan máquinas grandes.", "error": "quien-transforma" },
+        { "texto": "la alpaca", "pista": "La alpaca nos da la lana, pero no la transforma.", "error": "materia-prima-producto" }
       ],
       "columnas": 1,
-      "pista": "Fíjate: trabaja a mano, en su casa.",
-      "explicacion": "Doña Rosa es una **artesana**: transforma la arcilla con sus manos, en su propio taller.",
+      "pista": "Fíjate: ¿trabajan manos o máquinas? ¿Salen pocos productos o miles?",
+      "explicacion": "La transforma una **industria**: una fábrica con máquinas grandes que hace muchísimos productos iguales.",
       "error": "quien-transforma"
     },
     {
@@ -439,9 +439,9 @@
     {
       "id": "c8", "tipo": "tocar", "nivel": 3,
       "enunciado": "Toca las palabras que dicen cómo se transforma la lana.",
-      "texto": "Nayra *lava* la lana, la *hila* con paciencia y después la *teje* en el telar.",
-      "pista": "Hay tres. Busca las acciones que cambian la lana.",
-      "explicacion": "Lava, hila y teje: son los pasos que transforman la lana en una prenda.",
+      "texto": "Nayra *lava* la lana y la *hila* con paciencia. Mientras canta, la *teje* en el telar.",
+      "pista": "Hay tres. Busca solo las acciones que cambian la lana.",
+      "explicacion": "Lava, hila y teje: son los pasos que transforman la lana en un tejido. «Canta» no cambia la lana.",
       "error": "procesos-transformacion"
     }
   ],

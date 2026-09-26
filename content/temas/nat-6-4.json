@@ -326,18 +326,17 @@
       "error": "cambios-forma"
     },
     {
-      "id": "c4", "tipo": "manipular", "nivel": 2,
-      "enunciado": "El ciclo de la gallina se repite. Completa lo que sigue.",
-      "manipulable": {
-        "tipo": "patron",
-        "secuencia": ["🥚", "🐣", "🐥", "🐔", "🥚", "🐣"],
-        "opciones": ["🥚", "🐣", "🐥", "🐔", "🐸"],
-        "completar": 2,
-        "solucion": ["🐥", "🐔"]
-      },
-      "pista": "Mira qué viene después del pollito que sale del huevo en la primera vuelta.",
-      "explicacion": "Después del pollito que rompe el cascarón viene el pollito que crece, y después la gallina adulta.",
-      "error": "orden-ciclo"
+      "id": "c4", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "Une cada etapa de la vida de la llama con lo que pasa.",
+      "pares": [
+        ["nacer", "la cría sale de la panza de su mamá"],
+        ["crecer", "la cría toma leche, come pasto y se hace grande"],
+        ["reproducirse", "la llama adulta tiene su propia cría"],
+        ["morir", "la llama muy vieja deja de vivir"]
+      ],
+      "pista": "Piensa en el orden de la vida: ¿qué pasa primero, qué pasa después y qué pasa al final?",
+      "explicacion": "Nacer: la cría sale de la panza de su mamá. Crecer: toma leche, come pasto y se hace grande. Reproducirse: la llama adulta tiene su propia cría. Morir: la llama muy vieja deja de vivir.",
+      "error": "ciclo-etapas"
     },
     {
       "id": "c5", "tipo": "multiple", "nivel": 2,
@@ -366,12 +365,12 @@
       "id": "c7", "tipo": "opcion", "nivel": 3,
       "enunciado": "¿Un pez necesita aire para vivir?",
       "opciones": [
-        { "texto": "Sí. Con sus branquias toma el aire que está mezclado en el agua.", "correcta": true },
+        { "texto": "Sí. Con sus branquias toma el oxígeno del aire que está mezclado en el agua.", "correcta": true },
         { "texto": "No. Los peces solo necesitan agua.", "pista": "Todos los seres vivos necesitan aire. ¿Cómo lo toma el pez?", "error": "necesidades" },
         { "texto": "No. Solo lo necesitan los animales de la tierra.", "pista": "Todos los seres vivos necesitan aire, también los que viven en el agua.", "error": "necesidades" }
       ],
       "pista": "Recuerda: todos los seres vivos necesitan aire.",
-      "explicacion": "Sí. El pez también necesita aire: con sus branquias toma el aire que está mezclado en el agua.",
+      "explicacion": "Sí. El pez también necesita aire: con sus branquias toma el oxígeno del aire que está mezclado en el agua. Por eso no puede vivir en agua sin aire.",
       "error": "necesidades"
     },
     {
@@ -389,8 +388,8 @@
         { "texto": "cóndor", "emoji": "🦅", "categoria": "parecido" },
         { "texto": "gato", "emoji": "🐈", "categoria": "parecido" }
       ],
-      "pista": "El sapo tiene renacuajos, como la rana. La abeja y el mosquito nacen como larvas, parecidas a gusanitos.",
-      "explicacion": "El sapo, la abeja y el mosquito cambian de forma al crecer. La vicuña, el cóndor y el gato nacen parecidos a sus padres y solo crecen.",
+      "pista": "Piensa en cómo son sus crías: ¿se parecen a sus padres o son muy distintas, como el renacuajo y la oruga? Hay tres de cada grupo.",
+      "explicacion": "El sapo, la abeja y el mosquito cambian de forma al crecer: el sapo es primero renacuajo, y la abeja y el mosquito nacen como larvas, parecidas a gusanitos. La vicuña, el cóndor y el gato nacen parecidos a sus padres y solo crecen.",
       "error": "cambios-forma"
     }
   ],

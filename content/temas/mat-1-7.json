@@ -14,15 +14,15 @@
       "visual": { "tipo": "tabla", "columnas": ["I", "V", "X"], "filas": [["1", "5", "10"]] }
     },
     {
-      "texto": "**Para sumar:** si una letra igual o menor va a la derecha, se suma: VI = 6 y XII = 12. La I y la X se repiten hasta 3 veces: III = 3, XXX = 30. La V nunca se repite.",
-      "audio": "Para sumar: si una letra igual o menor va a la derecha, se suma. Uve, i es seis. Equis, i, i es doce. La i y la equis se repiten hasta tres veces: tres íes es tres y tres equis es treinta. La uve nunca se repite.",
+      "texto": "**Para sumar:** si a la derecha va una letra que vale lo mismo o menos, se suma: VI = 6 y XII = 12. La I y la X se repiten hasta 3 veces: III = 3, XXX = 30. La V nunca se repite.",
+      "audio": "Para sumar: si a la derecha va una letra que vale lo mismo o menos, se suma. Uve, i es seis. Equis, i, i es doce. La i y la equis se repiten hasta tres veces: tres íes es tres y tres equis es treinta. La uve nunca se repite.",
       "visual": { "tipo": "tabla", "columnas": ["II", "VI", "XII", "XXX"], "filas": [["2", "6", "12", "30"]] }
     },
     {
       "texto": "**Para restar:** si la I va antes de la V o de la X, se resta: IV = 5 − 1 = 4 y IX = 10 − 1 = 9. Por eso el 4 se escribe IV y no IIII.",
       "audio": "Para restar: si la i va antes de la uve o de la equis, se resta. I, uve es cuatro, porque cinco menos uno es cuatro. I, equis es nueve, porque diez menos uno es nueve. Por eso el cuatro se escribe i, uve, y no con cuatro íes.",
       "emoji": "💡",
-      "visual": { "tipo": "tabla", "columnas": ["IV", "IX", "XIV", "XIX"], "filas": [["4", "9", "14", "19"]] }
+      "visual": { "tipo": "tabla", "columnas": ["IV", "IX", "XIV", "XXIX"], "filas": [["4", "9", "14", "29"]] }
     }
   ],
   "ejemplo": {
@@ -72,11 +72,11 @@
       },
       {
         "id": "g3", "tipo": "escribir",
-        "enunciado": "Escribe el número 12 con números romanos.",
-        "apoyo": "12 = 10 + 2. Escribe primero la letra que vale 10 y después dos I.",
-        "respuestas": ["XII"],
-        "pista": "¿Qué letra vale 10?",
-        "explicacion": "12 = 10 + 1 + 1, entonces se escribe XII.",
+        "enunciado": "Escribe el número 13 con números romanos.",
+        "apoyo": "13 = 10 + 3. Escribe primero la letra que vale 10 y después tres I.",
+        "respuestas": ["XIII"],
+        "pista": "¿Qué letra vale 10? ¿Cuántas I necesitas para el 3?",
+        "explicacion": "13 = 10 + 1 + 1 + 1, entonces se escribe XIII.",
         "error": "escribe-romanos"
       }
     ]
@@ -113,15 +113,15 @@
       "id": "p5", "tipo": "generador", "nivel": 2, "generador": "romano", "params": { "max": 39, "modo": "a-cifras" }
     },
     {
-      "id": "p6", "tipo": "generador", "nivel": 2, "generador": "romano", "params": { "max": 39, "modo": "a-romano" }
+      "id": "p6", "tipo": "generador", "nivel": 2, "generador": "romano", "params": { "max": 38, "modo": "a-romano" }
     },
     {
       "id": "p7", "tipo": "manipular", "nivel": 2,
-      "enunciado": "El reloj de la plaza tiene números romanos. Pon las agujas a las IX en punto.",
-      "audio": "El reloj de la plaza tiene números romanos. Pon las agujas en la hora i, equis, en punto.",
+      "enunciado": "El reloj de la plaza tiene números romanos. Su aguja corta señala el IX y la larga, el XII. Pon esa hora en este reloj.",
+      "audio": "El reloj de la plaza tiene números romanos. Su aguja corta señala el i, equis, y la larga, el equis, i, i. Pon esa hora en este reloj.",
       "manipulable": { "tipo": "reloj", "objetivo": { "hora": 9, "minutos": 0 }, "paso": 30, "inicial": { "hora": 12, "minutos": 0 } },
       "pista": "Primero descubre qué número es IX: la I está antes de la X.",
-      "explicacion": "IX = 10 − 1 = 9. A las 9 en punto, la aguja corta señala el 9 y la larga, el 12.",
+      "explicacion": "IX = 10 − 1 = 9 y XII = 12. Son las 9 en punto: la aguja corta señala el 9 y la larga, el 12.",
       "error": "regla-resta"
     },
     {
@@ -235,28 +235,33 @@
       "enunciado": "Ordena de menor a mayor.",
       "elementos": ["II", "IV", "V", "IX", "X"],
       "pista": "Primero descubre qué número es cada uno.",
-      "explicacion": "II = 2, IV = 4, V = 5, IX = 9 y X = 10.",
+      "explicacion": "II = 2, IV = 4, V = 5, IX = 9 y X = 10. Por eso el orden es II, IV, V, IX, X.",
       "error": "regla-resta"
     },
     {
       "id": "c4", "tipo": "generador", "nivel": 2, "generador": "romano", "params": { "max": 30, "modo": "a-cifras" }
     },
     {
-      "id": "c5", "tipo": "manipular", "nivel": 2,
-      "enunciado": "El reloj de la iglesia tiene números romanos. Pon las agujas a las IV en punto.",
-      "audio": "El reloj de la iglesia tiene números romanos. Pon las agujas en la hora i, uve, en punto.",
-      "manipulable": { "tipo": "reloj", "objetivo": { "hora": 4, "minutos": 0 }, "paso": 30, "inicial": { "hora": 12, "minutos": 0 } },
-      "pista": "La I está antes de la V: se resta.",
-      "explicacion": "IV = 5 − 1 = 4. A las 4 en punto, la aguja corta señala el 4 y la larga, el 12.",
-      "error": "regla-resta"
+      "id": "c5", "tipo": "multiple", "nivel": 2,
+      "enunciado": "¿Dónde podemos ver números romanos? Elige todas.",
+      "opciones": [
+        { "texto": "En algunos relojes", "emoji": "🕰️", "correcta": true },
+        { "texto": "En los capítulos de algunos libros", "emoji": "📖", "correcta": true },
+        { "texto": "Al escribir los siglos, como el siglo XXI", "emoji": "📅", "correcta": true },
+        { "texto": "En el precio de las papas en la feria", "emoji": "🥔", "pista": "Los precios de la feria se escriben con cifras, como 5 Bs.", "error": "reconoce-romanos" },
+        { "texto": "En el marcador de un partido de fútbol", "emoji": "⚽", "pista": "El marcador de un partido se escribe con cifras, como 2 a 1.", "error": "reconoce-romanos" }
+      ],
+      "pista": "Los números romanos se escriben con letras como I, V y X. ¿Dónde has visto números así?",
+      "explicacion": "Vemos números romanos en algunos relojes, en los capítulos de algunos libros y en los siglos (ahora vivimos en el siglo XXI). Los precios y el marcador de un partido se escriben con cifras.",
+      "error": "reconoce-romanos"
     },
     {
       "id": "c6", "tipo": "escribir", "nivel": 2,
       "enunciado": "Escucha el número y escríbelo con números romanos.",
-      "escuchar": "veinticuatro",
-      "respuestas": ["XXIV"],
-      "pista": "24 = 20 + 4. ¿Cómo se escribe cada parte?",
-      "explicacion": "20 es XX y 4 es IV: el 24 se escribe XXIV.",
+      "escuchar": "treinta y cuatro",
+      "respuestas": ["XXXIV"],
+      "pista": "34 = 30 + 4. ¿Cómo se escribe cada parte?",
+      "explicacion": "30 es XXX y 4 es IV: el 34 se escribe XXXIV.",
       "error": "escribe-romanos"
     },
     {
@@ -293,7 +298,7 @@
     "objetivo": "Leer y escribir números romanos sencillos con I, V y X hasta XXXIX (39), aplicando las reglas de sumar (VI), restar (IV, IX) y repetir (hasta 3 veces la I y la X; la V nunca), y reconocer dónde se usan: relojes, capítulos de libros y siglos. La L (50) y el XL (40) son solo un desafío.",
     "sugerencias": [
       "Busquen números romanos en la casa o en la calle: relojes, capítulos de libros, placas de edificios o iglesias. Pidan que diga qué número es. Algunos relojes muestran IIII en lugar de IV: es una costumbre antigua de los relojeros.",
-      "Armen números romanos con palitos de fósforo usados, fideos largos o ramitas: la I con un palito, la V con dos y la X con dos cruzados. Túrnense para armar un número y leerlo.",
+      "Armen números romanos con palitos de helado, fideos largos o ramitas: la I con un palito, la V con dos y la X con dos cruzados. Túrnense para armar un número y leerlo.",
       "Escriban la fecha de hoy con el mes en números romanos (por ejemplo, 26-IX para el 26 de septiembre) o numeren con romanos los capítulos de un cuento que inventen juntos."
     ],
     "errores": {

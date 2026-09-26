@@ -38,7 +38,7 @@
       {
         "id": "g1", "tipo": "numero",
         "enunciado": "Kusi tiene 10 choclos. Pone 2 choclos en cada bolsa. ¿Cuántas bolsas llena?",
-        "apoyo": "Cuenta de 2 en 2 hasta llegar a 10: 2, 4, 6... ¿Cuántos saltos diste?",
+        "apoyo": "Cuenta de 2 en 2 hasta llegar a 10: 2, 4, 6... ¿Cuántos números dijiste? Cada número es una bolsa.",
         "visual": { "tipo": "emoji", "valor": "🌽", "cantidad": 10 },
         "respuesta": 5,
         "erroresComunes": [
@@ -126,7 +126,7 @@
     },
     {
       "id": "p8", "tipo": "pasos", "nivel": 2,
-      "enunciado": "Juan sirve huevos duros para el desayuno. En cada plato pone 3 huevos.",
+      "enunciado": "Para el paseo del curso, Juan pone huevos duros en platos: 3 huevos en cada plato.",
       "pasos": [
         {
           "tipo": "manipular", "enunciado": "Pon 3 huevos en cada uno de los 4 platos.",
@@ -219,8 +219,8 @@
         { "respuesta": 32, "pista": "Restaste 40 − 8. Busca cuántos grupos de 8 caben en 40.", "error": "operacion-equivocada" },
         { "respuesta": 48, "pista": "Sumaste 40 + 8. Busca cuántos grupos de 8 caben en 40.", "error": "operacion-equivocada" }
       ],
-      "pista": "Cuenta de 8 en 8 hasta llegar a 40. ¿Cuántos saltos das?",
-      "explicacion": "8, 16, 24, 32, 40: son 5 saltos. 40 ÷ 8 = 5, porque 8 × 5 = 40.",
+      "pista": "Cuenta de 8 en 8 hasta llegar a 40. ¿Cuántos números dices?",
+      "explicacion": "8, 16, 24, 32, 40: son 5 grupos de 8. 40 ÷ 8 = 5, porque 8 × 5 = 40.",
       "error": "division-multiplicacion"
     },
     {
@@ -292,15 +292,15 @@
     {
       "id": "c5", "tipo": "numero", "nivel": 2,
       "enunciado": "Escucha el problema y escribe la respuesta.",
-      "escuchar": "Hay veinte naranjas. Pongo cinco naranjas en cada bolsa. ¿Cuántas bolsas lleno?",
+      "escuchar": "En el patio de la escuela hay veinte niños. Forman equipos de cinco niños. ¿Cuántos equipos forman?",
       "respuesta": 4,
       "erroresComunes": [
-        { "respuesta": 5, "pista": "5 es lo que va en cada bolsa. ¿Cuántas bolsas se llenan?", "error": "confunde-grupos" },
-        { "respuesta": 15, "pista": "Quitaste un solo grupo de 5. Sigue quitando grupos hasta que no quede nada.", "error": "resta-repetida" },
-        { "respuesta": 25, "pista": "Sumaste 20 + 5. Forma grupos de 5 naranjas.", "error": "operacion-equivocada" }
+        { "respuesta": 5, "pista": "5 son los niños de cada equipo. ¿Cuántos equipos se forman?", "error": "confunde-grupos" },
+        { "respuesta": 15, "pista": "Formaste un solo equipo de 5. Sigue formando equipos hasta que no quede nadie.", "error": "resta-repetida" },
+        { "respuesta": 25, "pista": "Sumaste 20 + 5. Forma equipos de 5 niños.", "error": "operacion-equivocada" }
       ],
       "pista": "Cuenta de 5 en 5 hasta llegar a 20. Escucha otra vez si lo necesitas.",
-      "explicacion": "5, 10, 15, 20: son 4 grupos de 5. Lleno 4 bolsas: 20 ÷ 5 = 4.",
+      "explicacion": "5, 10, 15, 20: son 4 grupos de 5. Forman 4 equipos: 20 ÷ 5 = 4.",
       "error": "division"
     },
     {

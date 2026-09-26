@@ -9,7 +9,7 @@
       "visual": { "tipo": "emojis", "items": ["🍞", "👩‍🍳", "🏪", "🧺"], "etiquetas": ["pan", "panadera", "panadería", "panera"] }
     },
     {
-      "texto": "La **palabra primitiva** no viene de otra palabra, como **flor**. Las **palabras derivadas** nacen de ella agregando letras: flor**ero**, flor**ería**, flor**ista**.",
+      "texto": "La **palabra primitiva** no viene de otra palabra, como **flor**. Las **palabras derivadas** nacen de ella con un pedacito nuevo: flor**ero**, flor**ería**, flor**ista**.",
       "visual": {
         "tipo": "tabla",
         "columnas": ["Primitiva", "Derivadas"],
@@ -25,7 +25,7 @@
       "visual": { "tipo": "emojis", "items": ["🍞", "👖"], "etiquetas": ["pan", "pantalón"] }
     },
     {
-      "texto": "Las familias te ayudan a escribir. **Caballo** lleva ll, y caballito y caballero también. **Hoja** lleva h, y hojita también.",
+      "texto": "Las familias te ayudan a escribir. **Caballo** lleva b y ll, y caballito también. **Hoja** lleva h, y hojita también.",
       "visual": { "tipo": "emojis", "items": ["🐴", "🍃"], "etiquetas": ["caballo, caballito", "hoja, hojita"] }
     }
   ],
@@ -106,11 +106,11 @@
         { "texto": "florero", "correcta": true },
         { "texto": "florista", "correcta": true },
         { "texto": "florería", "correcta": true },
-        { "texto": "flojo", "pista": "«Flojo» empieza parecido, pero no tiene que ver con las flores.", "error": "parecido-no-familia" },
+        { "texto": "flota", "pista": "«Flota» empieza parecido, pero no tiene que ver con las flores.", "error": "parecido-no-familia" },
         { "texto": "mesa", "pista": "«Mesa» no comparte ninguna parte con «flor».", "error": "reconoce-familia" }
       ],
       "pista": "Busca las que comparten «flor» y hablan de flores.",
-      "explicacion": "Florero, florista y florería son de la familia de flor. «Flojo» se parece, pero no habla de flores.",
+      "explicacion": "Florero, florista y florería son de la familia de flor. «Flota» se parece, pero no habla de flores.",
       "error": "reconoce-familia"
     },
     {
@@ -239,10 +239,10 @@
     {
       "id": "p13", "tipo": "completar", "nivel": 3,
       "enunciado": "Mira la palabra primitiva y completa la derivada con la letra correcta.",
-      "texto": "De vaso sale [v]asito. De caballo sale caba[ll]ero.",
+      "texto": "De vaso sale [v]asito. De lluvia sale [ll]uvioso.",
       "banco": ["b", "y"],
       "pista": "Copia las letras de la palabra primitiva: su familia se escribe igual.",
-      "explicacion": "Vaso se escribe con v, entonces vasito también. Caballo se escribe con ll, entonces caballero también.",
+      "explicacion": "Vaso se escribe con v, entonces vasito también. Lluvia se escribe con ll, entonces lluvioso también.",
       "error": "ortografia-familia"
     },
     {
@@ -266,9 +266,9 @@
       "pasos": [
         {
           "tipo": "escribir",
-          "enunciado": "De pan sale panadero. De pastel sale... ¿Cómo se llama la persona que hace pasteles?",
+          "enunciado": "De zapato sale zapatero. ¿Cómo se llama la persona que hace pasteles?",
           "respuestas": ["pastelero", "pastelera"],
-          "pista": "Usa la misma terminación que en «panadero»: -ero.",
+          "pista": "Haz lo mismo que con zapato y zapatero: termina en -ero.",
           "explicacion": "De pastel sale pastelero o pastelera.",
           "error": "forma-derivada"
         },
@@ -276,7 +276,7 @@
           "tipo": "escribir",
           "enunciado": "¿Cómo se llama la tienda donde venden pasteles?",
           "respuestas": ["pastelería"],
-          "pista": "Piensa en panadería o librería: terminan en -ería.",
+          "pista": "Piensa en zapatería o librería: terminan en -ería.",
           "explicacion": "Es la pastelería.",
           "error": "forma-derivada"
         },
@@ -293,7 +293,7 @@
           "error": "primitiva-derivada"
         }
       ],
-      "pista": "Usa lo que sabes de la familia de «pan».",
+      "pista": "Usa lo que sabes de otras familias, como la de «zapato».",
       "explicacion": "Pastel es la primitiva. Pastelero, pastelera y pastelería son derivadas.",
       "error": "forma-derivada"
     }
@@ -301,10 +301,10 @@
   "comprobacion": [
     {
       "id": "c1", "tipo": "relacionar", "nivel": 1,
-      "enunciado": "Une cada palabra primitiva con una palabra de su familia.",
-      "pares": [["carne", "carnicero"], ["huevo", "huevera"], ["limón", "limonada"], ["queso", "quesero"]],
+      "enunciado": "Une cada palabra derivada con la palabra primitiva de donde nace.",
+      "pares": [["carnicero", "carne"], ["pollito", "pollo"], ["limonada", "limón"], ["quesero", "queso"]],
       "pista": "Busca la parte que se repite en las dos palabras.",
-      "explicacion": "Carne y carnicero, huevo y huevera, limón y limonada, queso y quesero.",
+      "explicacion": "Carnicero nace de carne, pollito de pollo, limonada de limón y quesero de queso.",
       "error": "reconoce-familia"
     },
     {
@@ -327,15 +327,15 @@
         { "id": "derivada", "texto": "Derivada" }
       ],
       "elementos": [
-        { "texto": "carta", "categoria": "primitiva" },
-        { "texto": "cartero", "categoria": "derivada" },
+        { "texto": "gato", "categoria": "primitiva" },
+        { "texto": "gatito", "categoria": "derivada" },
         { "texto": "leña", "categoria": "primitiva" },
         { "texto": "leñador", "categoria": "derivada" },
         { "texto": "pelo", "categoria": "primitiva" },
         { "texto": "peludo", "categoria": "derivada" }
       ],
       "pista": "Pregúntate: ¿esta palabra nace de otra más corta?",
-      "explicacion": "Primitivas: carta, leña y pelo. Derivadas: cartero, leñador y peludo.",
+      "explicacion": "Primitivas: gato, leña y pelo. Derivadas: gatito, leñador y peludo.",
       "error": "primitiva-derivada"
     },
     {
@@ -349,20 +349,20 @@
     },
     {
       "id": "c5", "tipo": "tocar", "nivel": 2,
-      "enunciado": "Toca las palabras de la familia de «zapato».",
-      "texto": "La *zapatera* arregla un *zapato* en su *zapatería*.",
-      "pista": "Hay tres palabras que comparten «zapat».",
-      "explicacion": "Zapato (primitiva), zapatera y zapatería (derivadas) son una familia.",
+      "enunciado": "Toca las palabras de la familia de «reloj».",
+      "texto": "Juan lleva su *reloj* a la *relojería*. El *relojero* lo arregla en un ratito.",
+      "pista": "Hay tres palabras que comparten «reloj» y tienen que ver con los relojes.",
+      "explicacion": "Reloj (primitiva), relojería y relojero (derivadas) son una familia: las tres comparten «reloj» y hablan de relojes.",
       "error": "reconoce-familia"
     },
     {
       "id": "c6", "tipo": "escribir", "nivel": 2,
-      "enunciado": "Escucha la palabra y escribe su palabra primitiva.",
-      "escuchar": "florería",
-      "respuestas": ["flor"],
-      "pista": "¿De qué palabra más corta nace? Piensa en lo que venden ahí.",
-      "explicacion": "«Florería» nace de «flor». Flor es la palabra primitiva.",
-      "error": "primitiva-derivada"
+      "enunciado": "Escucha la pregunta y escribe la respuesta. Es una palabra de la familia de «juguete».",
+      "escuchar": "Si en la panadería venden pan, ¿cómo se llama la tienda donde venden juguetes?",
+      "respuestas": ["juguetería"],
+      "pista": "Nace de «juguete» y termina igual que librería: en -ería.",
+      "explicacion": "Es la «juguetería»: nace de juguete, igual que librería nace de libro.",
+      "error": "forma-derivada"
     },
     {
       "id": "c7", "tipo": "tocar", "nivel": 3,
@@ -400,7 +400,7 @@
     "sugerencias": [
       "En el barrio o en la feria, nombren tiendas y oficios de la misma familia: pan, panadería, panadero; fruta, frutería, frutera; carne, carnicería, carnicero.",
       "Dibujen un árbol en una hoja: en el tronco escriban una palabra primitiva (flor) y en las ramas sus derivadas (florero, florería, florista). Cada semana, un árbol nuevo.",
-      "Cuando dude cómo se escribe una palabra, busquen juntos otra de su familia: si «hoja» lleva h, «hojita» también; si «caballo» lleva ll, «caballero» también."
+      "Cuando dude cómo se escribe una palabra, busquen juntos otra de su familia: si «hoja» lleva h, «hojita» también; si «caballo» lleva ll, «caballito» también."
     ],
     "errores": {
       "reconoce-familia": { "descripcion": "No reconoce qué palabras pertenecen a una misma familia.", "sugerencia": "Escriban palabras de una familia y subrayen juntos la parte que se repite (pan-adero, pan-adería)." },

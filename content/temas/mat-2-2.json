@@ -18,7 +18,7 @@
       "visual": { "tipo": "tabla", "columnas": ["", "D", "U"], "filas": [["llevo", "1", ""], ["", "2", "8"], ["+", "1", "5"], ["Total", "4", "3"]] }
     },
     {
-      "texto": "Con las decenas pasa lo mismo: 10 decenas forman 1 **centena**. En 75 + 52, las decenas dan 7 + 5 = 12. Escribimos el 2 y llevamos 1 a las centenas. Total: 127.",
+      "texto": "Con las decenas pasa lo mismo: 10 decenas forman 1 **centena**. En 75 + 52, las unidades dan 5 + 2 = 7. Las decenas dan 7 + 5 = 12: escribimos 2 y llevamos 1 a las centenas. Total: 127.",
       "visual": { "tipo": "tabla", "columnas": ["", "C", "D", "U"], "filas": [["llevo", "1", "", ""], ["", "", "7", "5"], ["+", "", "5", "2"], ["Total", "1", "2", "7"]] }
     }
   ],
@@ -142,7 +142,7 @@
     },
     {
       "id": "p8", "tipo": "numero", "nivel": 2,
-      "enunciado": "En la feria, Nayra vende 38 salteñas en la mañana y 25 en la tarde. ¿Cuántas salteñas vende en total?",
+      "enunciado": "Una mañana, Nayra vende 38 salteñas de pollo y 25 de carne. ¿Cuántas salteñas vende en total?",
       "visual": { "tipo": "operacion", "numeros": [38, 25], "op": "+", "vertical": true },
       "respuesta": 63,
       "erroresComunes": [

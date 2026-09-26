@@ -50,7 +50,7 @@
       {
         "id": "g2", "tipo": "opcion",
         "enunciado": "¿Qué unidad es mejor para medir el largo del patio de tu escuela?",
-        "apoyo": "El patio es muy largo. Piensa en la unidad más grande que conoces para medir el largo.",
+        "apoyo": "El patio es muy largo. Los centímetros sirven para cosas cortas. ¿Qué unidad usamos para cosas largas?",
         "opciones": [
           { "texto": "metros", "correcta": true },
           { "texto": "centímetros", "pista": "Se podría, pero el número sería enorme. Para cosas largas hay una unidad más grande.", "error": "elige-unidad" },
@@ -92,13 +92,13 @@
       "id": "p3", "tipo": "relacionar", "nivel": 1,
       "enunciado": "Une cada medida con lo que usamos para medir.",
       "pares": [
-        ["cuarta", { "texto": "la mano abierta", "emoji": "✋" }],
-        ["pie", { "texto": "del talón a la punta del pie", "emoji": "👣" }],
-        ["paso", { "texto": "un paso al caminar", "emoji": "🚶" }],
+        ["cuarta", { "texto": "la mano bien abierta", "emoji": "✋" }],
+        ["pie", { "texto": "del talón a la punta de los dedos", "emoji": "👣" }],
+        ["paso", { "texto": "lo que avanzas al caminar", "emoji": "🚶" }],
         ["centímetro", { "texto": "las marcas de la regla", "emoji": "📏" }]
       ],
       "pista": "Piensa qué parte del cuerpo o qué objeto usas en cada medida.",
-      "explicacion": "La cuarta se mide con la mano abierta; el pie, del talón a la punta; y el paso, al caminar. Los centímetros están marcados en la regla.",
+      "explicacion": "La cuarta se mide con la mano bien abierta; el pie, del talón a la punta de los dedos; y el paso es lo que avanzas al caminar. Los centímetros están marcados en la regla.",
       "error": "unidad-no-convencional"
     },
     {
@@ -111,7 +111,7 @@
         { "respuesta": 1000, "pista": "Es demasiado. Recuerda la cinta de 1 metro: ¿hasta qué número llegaba?", "error": "equivalencia-metro" }
       ],
       "pista": "Piensa en la cinta de 1 metro: empieza en el 0. ¿En qué número termina?",
-      "explicacion": "1 metro tiene 100 centímetros.",
+      "explicacion": "1 metro tiene 100 centímetros. En la cinta de 1 metro cuentas de 10 en 10 desde el 0 y llegas al 100.",
       "error": "equivalencia-metro"
     },
     {
@@ -134,13 +134,13 @@
         { "texto": "el largo de una cancha", "emoji": "⚽", "categoria": "m" },
         { "texto": "el largo de una calle", "categoria": "m" }
       ],
-      "pista": "Si cabe en tu mano, usa centímetros. Si es muy largo, usa metros.",
-      "explicacion": "El lápiz, la llave, la cuchara y el zapato son pequeños: centímetros. El árbol, el micro, la cancha y la calle son grandes: metros.",
+      "pista": "Si es corto, como las cosas que caben en tu mesa, usa centímetros. Si es muy largo o muy alto, usa metros.",
+      "explicacion": "El lápiz, la llave, la cuchara y el zapato son cortos: se miden en centímetros. El árbol, el micro, la cancha y la calle son muy largos o muy altos: se miden en metros.",
       "error": "elige-unidad"
     },
     {
       "id": "p7", "tipo": "manipular", "nivel": 2,
-      "enunciado": "La mesa de Nayra mide 70 cm. Marca en la cinta de 1 metro dónde termina la mesa.",
+      "enunciado": "La mesita de Nayra mide 70 cm de largo. Marca en la cinta de 1 metro dónde termina la mesita.",
       "manipulable": { "tipo": "recta", "min": 0, "max": 100, "paso": 10, "objetivo": 70 },
       "pista": "Cuenta de 10 en 10 desde el 0: 10, 20, 30…",
       "explicacion": "70 cm está después de 7 saltos de 10: 10, 20, 30, 40, 50, 60, 70.",
@@ -236,35 +236,34 @@
       "enunciado": "Ordena estas medidas de la más corta a la más larga.",
       "elementos": ["70 cm", "1 m", "1 m y 20 cm", "2 m"],
       "pista": "Pasa todo a centímetros: 1 metro = 100 cm.",
-      "explicacion": "70 cm; 1 metro = 100 cm; 1 metro y 20 cm = 120 cm; 2 metros = 200 cm. De la más corta a la más larga: 70 cm, 1 m, 1 m y 20 cm, 2 m.",
+      "explicacion": "1 metro = 100 cm; 1 metro y 20 cm = 120 cm; 2 metros = 200 cm. De la más corta a la más larga: 70 cm, 1 metro, 1 metro y 20 cm, 2 metros.",
       "error": "orden-longitudes"
     },
     {
       "id": "p16", "tipo": "escribir-libre", "nivel": 3,
-      "enunciado": "¿Con qué medirías el largo de tu cama: con la regla, con la cinta métrica o con cuartas? Escribe tu respuesta y por qué.",
-      "guia": ["Mediría mi cama con...", "...porque..."],
+      "enunciado": "¿Con qué medirías el largo de una cama: con la regla, con la cinta métrica o con cuartas? Escribe qué usarías y por qué.",
+      "guia": ["Mediría la cama con...", "...porque..."],
       "requisitos": [
         { "tipo": "mayuscula-inicial" }, { "tipo": "punto-final" },
         { "tipo": "min-palabras", "valor": 6 },
-        { "tipo": "incluye", "palabras": ["regla", "cinta", "cuartas", "metro", "pasos"] }
+        { "tipo": "incluye", "palabras": ["regla", "cinta", "cuarta", "metro", "paso"] }
       ],
-      "modelo": "Mediría mi cama con la cinta métrica porque es larga.",
-      "pista": "Piensa si tu cama es corta o larga, y qué sirve mejor para medir cosas largas.",
-      "explicacion": "Por ejemplo: «Mediría mi cama con la cinta métrica porque es larga». Con cuartas, cada persona obtendría un número distinto.",
+      "modelo": "Mediría la cama con la cinta métrica porque es larga.",
+      "pista": "Piensa si una cama es corta o larga, y qué sirve mejor para medir cosas largas.",
+      "explicacion": "Por ejemplo: «Mediría la cama con la cinta métrica porque es larga». Con cuartas, cada persona obtendría un número distinto.",
       "error": "explica-medida"
     }
   ],
   "comprobacion": [
     {
-      "id": "c1", "tipo": "numero", "nivel": 1,
-      "enunciado": "¿Cuántos centímetros mide el plátano?",
-      "visual": { "tipo": "regla", "longitud": 15, "objeto": "🍌" },
-      "respuesta": 15,
-      "sufijo": "cm",
-      "erroresComunes": [ { "respuesta": 16, "pista": "Contaste desde el 1. El plátano empieza en el 0.", "error": "medir-longitud" } ],
-      "pista": "Busca el número donde termina el plátano.",
-      "explicacion": "El plátano empieza en el 0 y termina en el 15: mide 15 cm.",
-      "error": "medir-longitud"
+      "id": "c1", "tipo": "completar", "nivel": 1,
+      "enunciado": "Mira las medidas y completa.",
+      "visual": { "tipo": "emojis", "items": ["✏️", "🔑"], "etiquetas": ["12 cm", "5 cm"] },
+      "texto": "El lápiz mide 12 cm y la llave mide 5 cm. El lápiz es más [largo] que la llave. La llave es más [corta] que el lápiz.",
+      "banco": ["corto", "larga"],
+      "pista": "Compara los números: ¿cuál es mayor, 12 o 5?",
+      "explicacion": "12 cm es más que 5 cm. Por eso el lápiz es más largo y la llave es más corta.",
+      "error": "compara-longitud"
     },
     {
       "id": "c2", "tipo": "multiple", "nivel": 1,
@@ -291,7 +290,7 @@
     {
       "id": "c4", "tipo": "completar", "nivel": 2,
       "enunciado": "Lee y completa.",
-      "texto": "La mano de Wara es más pequeña que la de su tío. Los dos miden la misma mesa con cuartas. A Wara le salen [más] cuartas que a su tío. Por eso usamos una medida [igual] para todos, como el metro.",
+      "texto": "La mano de Wara es más pequeña que la de su tío. Los dos miden la misma mesa con cuartas. A Wara le salen [más] cuartas que a su tío: ¡dos números para la misma mesa! Por eso usamos una medida [igual] para todos, como el metro.",
       "banco": ["menos", "distinta"],
       "pista": "Si la mano es más pequeña, ¿necesitas más o menos cuartas para cubrir la mesa?",
       "explicacion": "Con una mano más pequeña se necesitan más cuartas. Como las manos son distintas, usamos una medida igual para todos: el metro y el centímetro.",
@@ -358,7 +357,7 @@
       "enunciado": "Ordena estas medidas de la más larga a la más corta.",
       "elementos": ["2 m", "150 cm", "1 m", "90 cm"],
       "pista": "Pasa los metros a centímetros: 1 metro = 100 cm.",
-      "explicacion": "2 metros = 200 cm, después 150 cm, luego 1 metro = 100 cm y al final 90 cm.",
+      "explicacion": "De la más larga a la más corta: 2 metros (200 cm), 150 cm, 1 metro (100 cm) y 90 cm.",
       "error": "orden-longitudes"
     }
   ],

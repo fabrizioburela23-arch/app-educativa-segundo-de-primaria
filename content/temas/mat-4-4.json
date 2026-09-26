@@ -38,7 +38,7 @@
       {
         "id": "g1", "tipo": "numero",
         "enunciado": "¿Cuánto dinero hay?",
-        "apoyo": "Cada billete vale 10 Bs. Toca cada billete con el dedo y cuenta de 10 en 10: 10, 20, 30...",
+        "apoyo": "Cada billete vale 10 Bs. Señala cada billete con el dedo y cuenta de 10 en 10: 10, 20, 30...",
         "visual": { "tipo": "dinero", "items": ["b10", "b10", "b10", "b10", "b10", "b10", "b10"] },
         "respuesta": 70, "sufijo": "Bs",
         "erroresComunes": [
@@ -160,10 +160,10 @@
     },
     {
       "id": "p10", "tipo": "manipular", "nivel": 2,
-      "enunciado": "Salta de 100 en 100 desde el 0 y marca el resultado de 6 × 100.",
+      "enunciado": "Cuenta de 100 en 100 desde el 0 y marca en la recta el resultado de 6 × 100.",
       "manipulable": { "tipo": "recta", "min": 0, "max": 1000, "paso": 100, "objetivo": 600 },
-      "pista": "Cada salto vale 100. Da 6 saltos desde el 0.",
-      "explicacion": "100, 200, 300, 400, 500, 600. Con 6 saltos de 100 llegas al 600: 6 × 100 = 600.",
+      "pista": "Cada rayita vale 100 más que la anterior. Avanza 6 rayitas desde el 0.",
+      "explicacion": "100, 200, 300, 400, 500, 600. Contando 6 veces 100 llegas al 600: 6 × 100 = 600.",
       "error": "multiplicar-10-100"
     },
     {
@@ -270,7 +270,7 @@
       "error": "multiplicar-10-100"
     },
     {
-      "id": "c3", "tipo": "generador", "nivel": 2, "generador": "por-10-100-1000", "params": { "factores": [10], "max": 99 }
+      "id": "c3", "tipo": "generador", "nivel": 2, "generador": "por-10-100-1000", "params": { "factores": [100, 1000], "max": 9 }
     },
     {
       "id": "c4", "tipo": "relacionar", "nivel": 2,

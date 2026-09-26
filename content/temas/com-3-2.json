@@ -67,7 +67,7 @@
         "visual": { "tipo": "emojis", "items": ["⛰️", "✨"], "etiquetas": ["real", "fantástico"] }
       },
       {
-        "texto": "**Idea principal:** el viento le tejió a la vicuña una lana fina. **Detalles:** tenía frío, era de noche, el viento era su amigo.",
+        "texto": "**Idea principal:** la vicuña tiene una lana fina porque el viento se la tejió. **Detalles:** pasa en el altiplano, era de noche, el viento era su amigo.",
         "visual": { "tipo": "emojis", "items": ["🌳", "🍃"], "etiquetas": ["idea principal", "detalles"] }
       }
     ]
@@ -240,7 +240,7 @@
       "escuchar": "Dicen que hace mucho tiempo la quinua era verde.",
       "visual": { "tipo": "emoji", "valor": "🌾" },
       "respuestas": ["Dicen que hace mucho tiempo la quinua era verde.", "Dicen que hace mucho tiempo la quinua era verde", "Dicen que, hace mucho tiempo, la quinua era verde.", "Dicen que hace mucho tiempo, la quinua era verde."],
-      "pista": "«Hace» empieza con h, que no suena. «Quinua» se escribe con qu. Empieza con mayúscula y termina con punto.",
+      "pista": "«Hace» es de la familia de «hacer». «Quinua» empieza igual que «quince» y «quiero». Empieza con mayúscula y termina con punto.",
       "explicacion": "Se escribe: «Dicen que hace mucho tiempo la quinua era verde.» Muchas leyendas empiezan así: «Dicen que hace mucho tiempo...».",
       "error": "dictado"
     },
@@ -320,7 +320,7 @@
       "id": "c1", "tipo": "escribir", "nivel": 1,
       "lectura": "condor",
       "enunciado": "Lee la leyenda. ¿De qué color era antes el cóndor? Escribe la palabra.",
-      "respuestas": ["negro", "todo negro", "era negro", "era todo negro"],
+      "respuestas": ["negro", "todo negro", "era negro", "era todo negro", "el cóndor era negro", "el cóndor era todo negro"],
       "pista": "Busca al comienzo de la leyenda: «Dicen que antes el cóndor era...».",
       "explicacion": "Antes, el cóndor era todo negro. Es un detalle de la leyenda.",
       "error": "detalles"
@@ -331,7 +331,7 @@
       "escuchar": "El cóndor tiene un collar blanco.",
       "visual": { "tipo": "emoji", "valor": "🦅" },
       "respuestas": ["El cóndor tiene un collar blanco.", "El cóndor tiene un collar blanco"],
-      "pista": "«Cóndor» lleva tilde en la o. «Collar» se escribe con ll. Empieza con mayúscula y termina con punto.",
+      "pista": "Escucha otra vez, palabra por palabra. «Collar» es de la familia de «cuello»: se escriben con la misma letra. ¿Qué palabra lleva tilde?",
       "explicacion": "Se escribe: «El cóndor tiene un collar blanco.» Es verdad: los cóndores adultos tienen plumas blancas alrededor del cuello.",
       "error": "dictado"
     },
@@ -360,13 +360,13 @@
       "lectura": "condor",
       "enunciado": "¿Cuál es la idea principal de esta leyenda?",
       "opciones": [
-        { "texto": "El cóndor tiene un collar blanco porque una nube se lo regaló por ayudarla.", "correcta": true },
+        { "texto": "El cóndor tiene un collar blanco porque ayudó a una nube perdida y ella se lo regaló.", "correcta": true },
         { "texto": "Una nube pequeña lloraba gotitas.", "pista": "Es un detalle. ¿Qué es lo más importante que explica la leyenda?", "error": "idea-principal" },
         { "texto": "El cóndor miraba todo desde el cielo.", "pista": "Es un detalle del comienzo. Si lo quitas, la leyenda se entiende igual.", "error": "idea-principal" }
       ],
       "columnas": 1,
       "pista": "La idea principal dice lo más importante de toda la leyenda. Fíjate en el título.",
-      "explicacion": "La idea principal es: el cóndor tiene un collar blanco porque una nube se lo regaló por ayudarla. Lo demás son detalles.",
+      "explicacion": "La idea principal es: el cóndor tiene un collar blanco porque ayudó a una nube perdida y ella se lo regaló. Lo demás son detalles.",
       "error": "idea-principal"
     },
     {
@@ -406,24 +406,25 @@
         { "tipo": "min-palabras", "valor": 6 },
         { "tipo": "incluye-todas", "palabras": ["cóndor", "collar"] }
       ],
-      "modelo": "Una nube le regaló al cóndor un collar blanco para darle las gracias.",
+      "modelo": "Una nube perdida le regaló al cóndor su collar blanco, porque él la ayudó.",
       "pista": "Cuenta en una oración lo más importante: ¿qué tiene el cóndor y por qué?",
-      "explicacion": "Por ejemplo: «Una nube le regaló al cóndor un collar blanco para darle las gracias.» Esa es la idea principal; lo demás son detalles.",
+      "explicacion": "Por ejemplo: «Una nube perdida le regaló al cóndor su collar blanco, porque él la ayudó.» Esa es la idea principal; lo demás son detalles.",
       "error": "idea-principal"
     },
     {
-      "id": "c8", "tipo": "relacionar", "nivel": 3,
+      "id": "c8", "tipo": "multiple", "nivel": 3,
       "lectura": "condor",
-      "enunciado": "Une cada pregunta con el detalle de la leyenda que la responde.",
-      "pares": [
-        ["¿A quién ayudó el cóndor?", "a una nube pequeña"],
-        ["¿Cómo la llevó?", "en su espalda"],
-        ["¿Qué le regaló la nube?", "un pedazo de algodón"],
-        ["¿Dónde se lo puso?", "en el cuello"]
+      "enunciado": "¿Por qué «El collar blanco del cóndor» es una leyenda? Elige las dos razones.",
+      "opciones": [
+        { "texto": "Explica el origen de algo: por qué el cóndor tiene un collar blanco.", "correcta": true },
+        { "texto": "Mezcla cosas reales, como el cóndor y los cerros, con cosas fantásticas, como una nube que llora.", "correcta": true },
+        { "texto": "Cuenta lo que pasó ayer en la escuela.", "pista": "La leyenda no habla de la escuela ni de ayer: pasa «antes», hace mucho tiempo.", "error": "que-es-leyenda" },
+        { "texto": "Enseña los pasos para hacer un collar.", "pista": "La leyenda no da pasos para hacer un collar. ¿Qué explica al final, con «Desde entonces»?", "error": "origen" }
       ],
-      "pista": "Lee cada pregunta con calma y busca la respuesta en la leyenda.",
-      "explicacion": "El cóndor ayudó a una nube pequeña, la llevó en su espalda, ella le regaló un pedazo de algodón y él se lo puso en el cuello.",
-      "error": "detalles"
+      "columnas": 1,
+      "pista": "Recuerda lo que tienen las leyendas: explican el origen de algo y mezclan lo real con lo fantástico.",
+      "explicacion": "Es una leyenda porque explica el origen del collar blanco del cóndor y porque mezcla cosas reales (el cóndor, los cerros) con cosas fantásticas (una nube que llora y regala su algodón).",
+      "error": "que-es-leyenda"
     }
   ],
   "repaso": {

@@ -5,7 +5,8 @@ import { renderVisual } from '../visuales/visual.js';
 
 export default function opcion(cont, ej, ctx) {
   const multi = ej.tipo === 'multiple';
-  const ops = (ej.mezclar === false ? ej.opciones : mezclar(ej.opciones)).map((o) => ({ ...o }));
+  const originales = ej.opciones.map((o, i) => ({ ...o, _i: i }));
+  const ops = ej.mezclar === false ? originales : mezclar(originales);
   const elegidas = new Set();
   const botones = [];
 
@@ -16,8 +17,9 @@ export default function opcion(cont, ej, ctx) {
   const grid = h('div', { class: `opciones c${cols}`, role: multi ? 'group' : 'radiogroup', 'aria-label': ej.enunciado });
   ops.forEach((o, i) => {
     const b = h('button', {
-      class: 'opcion', type: 'button',
+      class: 'opcion', type: 'button', 'data-i': String(o._i),
       role: multi ? 'checkbox' : 'radio', 'aria-checked': 'false',
+      'aria-label': o.texto ? undefined : `Opción ${i + 1}`,
       onclick: () => tocar(i),
     },
     o.visual ? h('span', { class: 'visual-mini' }, renderVisual(o.visual, ctx.datosVisual)) : null,

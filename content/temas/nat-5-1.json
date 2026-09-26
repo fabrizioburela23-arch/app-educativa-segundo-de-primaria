@@ -2,9 +2,19 @@
   "id": "nat-5-1",
   "titulo": "La planta y sus partes",
   "objetivo": "Conozco las partes de la planta y lo que hace cada una, sé qué necesita una planta para vivir y cómo crece desde la semilla.",
+  "lecturas": [
+    {
+      "id": "plantas-bolivia", "titulo": "Plantas de mi Bolivia", "genero": "texto informativo", "emoji": "🌿",
+      "parrafos": [
+        "En el **altiplano** hace frío. Allí crecen la quinua y la papa. En los cerros altos crece la **queñua**, un árbol de tronco rojizo que aguanta el frío.",
+        "En los **valles** no hace tanto frío. Allí crecen el **molle**, un árbol de frutitos rosados, y la **kantuta**, con flores que cuelgan como campanitas.",
+        "En los **llanos** y la **Amazonía** hace calor y llueve mucho. Allí crecen el **cacao**, el árbol de **castaña** y el **patujú**, una flor roja y amarilla."
+      ]
+    }
+  ],
   "explicacion": [
     {
-      "texto": "Las plantas son **seres vivos**: nacen, crecen, se alimentan y forman semillas. Necesitan agua, luz del sol, aire y un suelo con nutrientes. Muchas tienen **raíz**, **tallo**, **hojas**, **flores** y **frutos**.",
+      "texto": "Las plantas son **seres vivos**: nacen, crecen, se alimentan, se reproducen y mueren. Necesitan agua, luz del sol, aire y un suelo con nutrientes. Muchas tienen **raíz**, **tallo**, **hojas**, **flores**, **frutos** y **semillas**.",
       "emoji": "🌱",
       "visual": { "tipo": "ilustracion", "id": "planta-partes" }
     },
@@ -85,7 +95,7 @@
       "id": "p1", "tipo": "escribir", "nivel": 1,
       "enunciado": "Escribe el nombre de la parte marcada.",
       "visual": { "tipo": "ilustracion", "id": "planta-partes", "resaltar": "flor" },
-      "respuestas": ["flor", "la flor", "una flor"],
+      "respuestas": ["flor", "la flor", "una flor", "flores"],
       "pista": "Es la parte de colores que visitan las abejas.",
       "explicacion": "Es la **flor**. De la flor nace el fruto.",
       "error": "nombra-partes"
@@ -230,7 +240,8 @@
     },
     {
       "id": "p13", "tipo": "clasificar", "nivel": 3,
-      "enunciado": "¿Dónde crece cada planta en Bolivia?",
+      "enunciado": "Lee el texto. ¿Dónde crece cada planta en Bolivia?",
+      "lectura": "plantas-bolivia",
       "categorias": [
         { "id": "andes", "texto": "Altiplano y valles", "emoji": "🏔️" },
         { "id": "llanos", "texto": "Llanos y Amazonía", "emoji": "🌴" }
@@ -244,7 +255,7 @@
         { "texto": "castaña", "emoji": "🌰", "categoria": "llanos" },
         { "texto": "patujú", "categoria": "llanos" }
       ],
-      "pista": "Piensa en cada planta: ¿aguanta el frío de las alturas o necesita calor y mucha lluvia?",
+      "pista": "Busca cada planta en el texto. ¿Está en la parte del altiplano y los valles, o en la de los llanos y la Amazonía?",
       "explicacion": "En el altiplano y los valles crecen la quinua, la queñua, el molle y la kantuta. En los llanos y la Amazonía, que son calientes y húmedos, crecen el cacao, la castaña y el patujú.",
       "error": "plantas-bolivia"
     },
@@ -254,7 +265,7 @@
       "visual": { "tipo": "emoji", "valor": "🥔" },
       "opciones": [
         { "texto": "un tallo", "correcta": true },
-        { "texto": "una raíz", "pista": "Crece bajo la tierra, pero las raíces no tienen ojitos que brotan. Recuerda lo que aprendiste sobre la papa.", "error": "partes-comestibles" },
+        { "texto": "una raíz", "pista": "Crece bajo la tierra, pero no es una raíz. Recuerda lo que aprendiste sobre la papa en la lección.", "error": "partes-comestibles" },
         { "texto": "un fruto", "pista": "Los frutos nacen de las flores y guardan semillas. La papa crece bajo la tierra.", "error": "partes-comestibles" }
       ],
       "columnas": 3,
@@ -264,7 +275,7 @@
     },
     {
       "id": "p15", "tipo": "pasos", "nivel": 3,
-      "enunciado": "El cacao es un árbol de la Amazonía. Sus flores y sus frutos, las mazorcas, crecen pegados al tronco.",
+      "enunciado": "El cacao es un árbol de la Amazonía. Sus flores y sus frutos, las mazorcas, crecen pegados al tronco y a las ramas gruesas.",
       "visual": { "tipo": "emojis", "items": ["🌳", "🍫"], "etiquetas": ["árbol de cacao", "chocolate"] },
       "pasos": [
         {
@@ -351,7 +362,7 @@
       "id": "c3", "tipo": "escribir", "nivel": 2,
       "enunciado": "Escucha la adivinanza y escribe qué parte de la planta es.",
       "escuchar": "Vivo escondida debajo de la tierra. Sujeto a la planta para que no se caiga y tomo el agua del suelo. ¿Quién soy?",
-      "respuestas": ["raíz", "la raíz", "raíces", "las raíces"],
+      "respuestas": ["raíz", "la raíz", "una raíz", "raíces", "las raíces"],
       "pista": "Esta parte no se ve, porque está bajo la tierra.",
       "explicacion": "Es la **raíz**: vive bajo la tierra, sujeta la planta y toma el agua del suelo.",
       "error": "funcion-partes"

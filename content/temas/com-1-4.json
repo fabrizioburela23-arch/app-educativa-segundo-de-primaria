@@ -177,7 +177,7 @@
     {
       "id": "p9", "tipo": "tocar", "nivel": 2,
       "enunciado": "Toca los artículos indefinidos.",
-      "texto": "*Un* cóndor vuela sobre *unas* montañas y el lago.",
+      "texto": "*Un* cóndor mira *unas* llamas desde el cerro.",
       "pista": "Los indefinidos empiezan con «un».",
       "explicacion": "«Un» y «unas» son indefinidos. «El» también es un artículo, pero es definido.",
       "error": "confunde-definido-indefinido"
@@ -209,8 +209,8 @@
       "enunciado": "Completa. ¡Ojo con las palabras que empiezan con una «a» que suena fuerte!",
       "texto": "Nayra toma [el] agua fresca y mira cómo [el] águila vuela alto.",
       "banco": ["la"],
-      "pista": "Di en voz alta «la agua»: las dos «a» chocan. Hay otro artículo que se usa en su lugar.",
-      "explicacion": "Se dice «el agua» y «el águila». Son palabras femeninas (el agua fresca), pero empiezan con «a» fuerte y en singular llevan «el». En plural se dice «las aguas» y «las águilas».",
+      "pista": "Di despacio «a-gua» y «á-gui-la»: la primera «a» suena fuerte. Con esas palabras, en singular, no usamos «la».",
+      "explicacion": "Se dice «el agua» y «el águila». Son femeninas (el agua fresca), pero empiezan con «a» fuerte y en singular llevan «el». En plural: «las aguas», «las águilas». Con «amiga» sí decimos «la amiga».",
       "error": "el-agua"
     },
     {
@@ -300,10 +300,10 @@
         { "texto": "las ovejas", "categoria": "d" },
         { "texto": "un gallo", "categoria": "i" },
         { "texto": "la yuca", "categoria": "d" },
-        { "texto": "unos patos", "categoria": "i" }
+        { "texto": "unos cuyes", "categoria": "i" }
       ],
       "pista": "Los indefinidos empiezan con «un».",
-      "explicacion": "Definidos: el tambor, las ovejas, la yuca. Indefinidos: unas quenas, un gallo, unos patos.",
+      "explicacion": "Definidos: el tambor, las ovejas, la yuca. Indefinidos: unas quenas, un gallo, unos cuyes.",
       "error": "confunde-definido-indefinido"
     },
     {
@@ -318,10 +318,10 @@
     {
       "id": "c4", "tipo": "escribir", "nivel": 2,
       "enunciado": "Escucha y escribe lo que oyes.",
-      "escuchar": "unas papas",
-      "respuestas": ["unas papas"],
+      "escuchar": "las naranjas",
+      "respuestas": ["las naranjas"],
       "pista": "Son dos palabras: primero un artículo y después un sustantivo.",
-      "explicacion": "Oíste «unas papas». «Unas» es un artículo indefinido, femenino y plural.",
+      "explicacion": "Oíste «las naranjas». «Las» es un artículo definido, femenino y plural.",
       "error": "escritura-articulo"
     },
     {
@@ -335,31 +335,31 @@
     {
       "id": "c6", "tipo": "tocar", "nivel": 2,
       "enunciado": "Toca los artículos definidos.",
-      "texto": "*La* abuela de Nayra vende *los* choclos y una sandía.",
+      "texto": "*La* abuela de Nayra pone *los* choclos en una canasta.",
       "pista": "Busca artículos que no empiecen con «un».",
       "explicacion": "«La» y «los» son definidos. «Una» es un artículo indefinido.",
       "error": "confunde-definido-indefinido"
     },
     {
       "id": "c7", "tipo": "completar", "nivel": 3,
-      "enunciado": "Completa. ¡Ojo con la «a» que suena fuerte!",
-      "texto": "[Las] águilas vuelan alto y [el] águila más grande busca agua.",
-      "banco": ["Los", "la"],
-      "pista": "«Águilas» es femenino plural. En singular, «águila» empieza con «a» fuerte.",
-      "explicacion": "«Las águilas» en plural y «el águila» en singular. «Águila» es femenina, pero en singular lleva «el» porque empieza con «a» fuerte.",
-      "error": "el-agua"
+      "enunciado": "Completa con el artículo que concuerda. ¡Estas palabras no cambian!",
+      "texto": "En la banda, Mateo es [el] cantante y Sofía es [la] guitarrista.",
+      "banco": ["los", "las"],
+      "pista": "«Cantante» y «guitarrista» se escriben igual para hombres y mujeres. Fíjate de quién se habla en cada caso.",
+      "explicacion": "«El cantante», porque hablamos de Mateo, y «la guitarrista», porque hablamos de Sofía. Como estas palabras no cambian, el artículo nos dice el género.",
+      "error": "concordancia-genero"
     },
     {
       "id": "c8", "tipo": "opcion", "nivel": 3,
-      "enunciado": "Sofía dice: «Busco ___ mochila azul que dejé en la silla». ¿Qué artículo va?",
+      "enunciado": "Rosa dice: «Busco ___ mochila azul que dejé en la silla». ¿Qué artículo va?",
       "opciones": [
         { "texto": "la", "correcta": true },
-        { "texto": "una", "pista": "Sofía sabe cuál mochila busca: la que dejó en la silla.", "error": "confunde-definido-indefinido" },
+        { "texto": "una", "pista": "Rosa sabe qué mochila busca: la que dejó en la silla.", "error": "confunde-definido-indefinido" },
         { "texto": "las", "pista": "Es una sola mochila.", "error": "concordancia-numero" }
       ],
       "columnas": 3,
-      "pista": "¿Sofía habla de una mochila cualquiera o de una que ya conoce?",
-      "explicacion": "«Busco la mochila azul que dejé en la silla»: Sofía sabe de cuál habla, por eso usa el artículo definido «la».",
+      "pista": "¿Rosa habla de una mochila cualquiera o de una que ya conoce?",
+      "explicacion": "«Busco la mochila azul que dejé en la silla»: Rosa sabe de cuál habla, por eso usa el artículo definido «la».",
       "error": "confunde-definido-indefinido"
     }
   ],
@@ -380,7 +380,7 @@
       "concordancia": { "descripcion": "Elige un artículo que no concuerda con el sustantivo.", "sugerencia": "Pidan que se haga dos preguntas: «¿es masculino o femenino?» y «¿es uno o son varios?». Recién después, que elija el artículo." },
       "concordancia-genero": { "descripcion": "Usa un artículo del género equivocado (el leche, unas plátanos).", "sugerencia": "Digan en voz alta la palabra con «el» y con «la» y escuchen cuál suena bien, sobre todo con palabras que terminan en -e o en consonante." },
       "concordancia-numero": { "descripcion": "Mezcla singular y plural (un plátanos, la papas).", "sugerencia": "Muestren un objeto y luego varios, y pidan que diga el artículo para cada caso: la cuchara, las cucharas." },
-      "el-agua": { "descripcion": "Dice o escribe «la agua» o «la águila».", "sugerencia": "Cuéntenle la curiosidad: agua y águila son femeninas, pero en singular llevan «el»; en plural, «las aguas», «las águilas». Úsenlo al servir agua en casa." },
+      "el-agua": { "descripcion": "Dice o escribe «la agua» o «la águila».", "sugerencia": "Cuéntenle la curiosidad: agua y águila son femeninas, pero en singular llevan «el» porque empiezan con una «a» que suena fuerte; en plural, «las aguas», «las águilas». Con otras palabras no pasa: «la amiga», «la abuela». Úsenlo al servir agua en casa." },
       "escritura-articulo": { "descripcion": "Tiene dificultad para escribir el artículo y el sustantivo que escucha.", "sugerencia": "Dicten parejas cortas (unos choclos, las papas), aplaudiendo cada palabra, y revisen juntos que el artículo y el sustantivo terminen igual en plural." },
       "produce-oracion": { "descripcion": "Le cuesta escribir oraciones con artículos, mayúscula y punto.", "sugerencia": "Escriban juntos oraciones cortas sobre lo que ven en la calle y subrayen los artículos con un color." }
     }

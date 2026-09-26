@@ -10,11 +10,11 @@
       "emoji": "🦙",
       "parrafos": [
         "Wara vive con su abuelo Mateo en una comunidad cerca del lago Titicaca. Tienen una llama blanca que se llama Nube. Nube es muy curiosa: todo lo quiere oler.",
-        "Un sábado, Wara y su abuelo fueron a la feria del pueblo a vender papas. Nube cargó los costales todo el camino. En la feria, Wara ató la cuerda de Nube a un poste.",
-        "Pero el nudo estaba flojo. Mientras Wara ayudaba a su abuelo, Nube tiró de la cuerda, se soltó y se fue a pasear. Cuando Wara miró el poste, ¡Nube ya no estaba!",
+        "Un sábado, Wara y su abuelo fueron a la feria del pueblo a vender papas. Nube cargó los costales todo el camino. En la feria, Wara amarró la cuerda de Nube a un poste.",
+        "Pero Wara no la amarró bien. Mientras ayudaba a su abuelo, Nube tiró de la cuerda, se soltó y se fue a pasear. Cuando Wara miró el poste, ¡Nube ya no estaba!",
         "Wara buscó a Nube por toda la feria. Le preguntó a don Luis, que vendía helados: «¿Vio una llama blanca?». Don Luis señaló el puesto de flores.",
         "Allí estaba Nube, oliendo las flores del puesto de doña Rosa. Wara le pidió disculpas a la vendedora. Doña Rosa se rio y dijo: «No pasa nada. ¡Tu llama tiene buen olfato!».",
-        "Wara volvió con Nube al puesto de su abuelo. El abuelo Mateo le enseñó a hacer un nudo doble y fuerte. Al final del día vendieron todas las papas y regresaron a casa muy contentos."
+        "Wara volvió con Nube al puesto de su abuelo. El abuelo Mateo le enseñó a amarrar la cuerda con dos vueltas, bien fuerte. Al final del día vendieron todas las papas y regresaron a casa muy contentos."
       ]
     },
     {
@@ -26,7 +26,7 @@
         "Kusi vive en Cochabamba. Una tarde de mucho viento, hizo una cometa con papel de colores, cañas y un hilo largo.",
         "Kusi y su hermana Ana subieron a una loma para hacerla volar. La cometa subió alto, muy alto, hasta parecer un pajarito.",
         "De pronto, un viento fuerte rompió el hilo. La cometa se fue volando y quedó atrapada en la rama de un árbol muy alto.",
-        "Kusi estaba triste, porque no podía alcanzarla. Entonces Ana tuvo una idea: «¡Pidamos ayuda a don Pedro! Él tiene una escalera larga».",
+        "Kusi estaba triste porque no podía alcanzarla. Entonces Ana tuvo una idea: «¡Pidamos ayuda a don Pedro, el vecino! Él tiene una escalera larga».",
         "Don Pedro subió por la escalera y bajó la cometa con cuidado. Kusi le dio las gracias, amarró otra vez el hilo y, al final, la cometa volvió a volar."
       ]
     }
@@ -79,7 +79,7 @@
         "lectura": "nube",
         "enunciado": "Lee el comienzo del cuento. Toca los nombres de los tres personajes.",
         "apoyo": "Los personajes son personas o animales que aparecen en el cuento. ¡Cuidado: un lugar no es un personaje!",
-        "texto": "*Wara* vive con su abuelo *Mateo* cerca del lago Titicaca. Tienen una llama blanca que se llama *Nube*.",
+        "texto": "*Wara* vive con su abuelo *Mateo* en una comunidad cerca del lago Titicaca. Tienen una llama blanca que se llama *Nube*.",
         "pista": "Busca el nombre de una niña, el de su abuelo y el de su llama. «Titicaca» es el nombre de un lago.",
         "explicacion": "Los personajes son Wara, su abuelo Mateo y la llama Nube. «Titicaca» también lleva mayúscula, pero es el nombre de un lago: es un lugar, no un personaje.",
         "error": "personajes"
@@ -92,11 +92,11 @@
         "elementos": [
           "Wara, su abuelo y Nube van a la feria.",
           "Nube se suelta y se pierde en la feria.",
-          "Wara encuentra a Nube y la ata con un nudo fuerte."
+          "Wara encuentra a Nube y vuelven al puesto del abuelo."
         ],
         "vertical": true,
         "pista": "¿Qué pasó primero: que Nube se perdiera o que Wara la encontrara?",
-        "explicacion": "Inicio: van a la feria. Nudo: Nube se suelta y se pierde. Desenlace: Wara la encuentra y la ata con un nudo fuerte.",
+        "explicacion": "Inicio: van a la feria. Nudo (el problema): Nube se suelta y se pierde. Desenlace (la solución): Wara la encuentra y vuelven al puesto del abuelo.",
         "error": "partes-cuento"
       },
       {
@@ -134,7 +134,7 @@
     {
       "id": "p2", "tipo": "tocar", "nivel": 1,
       "enunciado": "Lee el comienzo de este cuento. Toca los dos personajes.",
-      "texto": "Había una vez un *cóndor* que vivía en un cerro. Su mejor amiga era una *vizcacha* muy saltarina.",
+      "texto": "Había una vez un *cóndor* que vivía en un cerro. Cada mañana jugaba con una *vizcacha* muy saltarina.",
       "pista": "Busca dos animales. El cerro es un lugar.",
       "explicacion": "Los personajes son el cóndor y la vizcacha. El cerro es el lugar donde vive el cóndor.",
       "error": "personajes"
@@ -158,7 +158,7 @@
       "enunciado": "Escucha el cuento. ¿Cómo se llama el personaje principal? Escribe su nombre.",
       "escuchar": "Había una vez una rana llamada Rosita. Vivía en el lago Titicaca y le encantaba nadar entre las totoras. Un día, Rosita ayudó a un pececito a salir de una red.",
       "visual": { "tipo": "emoji", "valor": "🐸" },
-      "respuestas": ["Rosita", "la rana Rosita"],
+      "respuestas": ["Rosita", "la rana Rosita", "rana Rosita"],
       "pista": "El cuento empieza presentando a su personaje principal: «Había una vez una rana llamada...».",
       "explicacion": "El personaje principal es la rana Rosita: el cuento cuenta lo que ella hace. El pececito es un personaje secundario.",
       "error": "escucha-comprension"
@@ -169,15 +169,15 @@
       "enunciado": "Ordena los hechos del cuento, del primero al último.",
       "elementos": [
         "Wara, su abuelo y Nube van a la feria.",
-        "Wara ata a Nube a un poste.",
+        "Wara amarra a Nube a un poste.",
         "Nube se suelta y se va a pasear.",
         "Don Luis señala el puesto de flores.",
         "Wara encuentra a Nube oliendo las flores.",
-        "El abuelo le enseña a Wara un nudo doble."
+        "El abuelo le enseña a Wara a amarrar bien la cuerda."
       ],
       "vertical": true,
-      "pista": "Piensa qué tuvo que pasar antes. Por ejemplo, Nube no pudo soltarse antes de que la ataran.",
-      "explicacion": "El orden es: van a la feria, Wara ata a Nube, Nube se suelta, don Luis señala las flores, Wara encuentra a Nube y el abuelo le enseña un nudo doble.",
+      "pista": "Piensa qué tuvo que pasar antes. Por ejemplo, Nube no pudo soltarse antes de que la amarraran.",
+      "explicacion": "El orden es: van a la feria, Wara amarra a Nube, Nube se suelta, don Luis señala las flores, Wara encuentra a Nube y el abuelo le enseña a amarrar bien la cuerda.",
       "error": "secuencia"
     },
     {
@@ -211,20 +211,20 @@
         ["Nube", "se soltó del poste"],
         ["don Luis", "señaló el puesto de flores"],
         ["doña Rosa", "dijo: «No pasa nada»"],
-        ["el abuelo Mateo", "enseñó un nudo doble"]
+        ["el abuelo Mateo", "enseñó a amarrar bien la cuerda"]
       ],
       "pista": "Si no recuerdas algo, vuelve a leer el cuento y busca el nombre de cada personaje.",
-      "explicacion": "Wara buscó a Nube, Nube se soltó del poste, don Luis señaló las flores, doña Rosa dijo «No pasa nada» y el abuelo Mateo enseñó un nudo doble.",
+      "explicacion": "Wara buscó a Nube, Nube se soltó del poste, don Luis señaló las flores, doña Rosa dijo «No pasa nada» y el abuelo Mateo enseñó a amarrar bien la cuerda.",
       "error": "detalles-cuento"
     },
     {
       "id": "p8", "tipo": "completar", "nivel": 2,
       "lectura": "nube",
       "enunciado": "Completa con los detalles del cuento.",
-      "texto": "Nube es una llama [blanca]. Wara la ató a un [poste]. Don Luis vendía [helados] y doña Rosa vendía [flores].",
+      "texto": "Nube es una llama [blanca]. Wara la amarró a un [poste]. Don Luis vendía [helados] y doña Rosa vendía [flores].",
       "banco": ["negra", "árbol", "papas"],
-      "pista": "Busca cada dato en el cuento: el color de Nube, dónde la ató Wara y qué vendía cada persona.",
-      "explicacion": "Nube es una llama blanca. Wara la ató a un poste. Don Luis vendía helados y doña Rosa vendía flores.",
+      "pista": "Busca cada dato en el cuento: el color de Nube, dónde la amarró Wara y qué vendía cada persona.",
+      "explicacion": "Nube es una llama blanca. Wara la amarró a un poste. Don Luis vendía helados y doña Rosa vendía flores.",
       "error": "detalles-cuento"
     },
     {
@@ -232,13 +232,13 @@
       "lectura": "nube",
       "enunciado": "¿Por qué Nube pudo soltarse?",
       "opciones": [
-        { "texto": "Porque el nudo estaba flojo.", "correcta": true },
-        { "texto": "Porque don Luis desató la cuerda.", "pista": "Don Luis vendía helados; él no tocó la cuerda. Mira cómo estaba el nudo.", "error": "detalles-cuento" },
+        { "texto": "Porque Wara no la amarró bien.", "correcta": true },
+        { "texto": "Porque don Luis desató la cuerda.", "pista": "Don Luis vendía helados; él no tocó la cuerda. Lee cómo la amarró Wara.", "error": "detalles-cuento" },
         { "texto": "Porque la cuerda se rompió.", "pista": "El cuento no dice que la cuerda se rompió. Lee otra vez el tercer párrafo.", "error": "detalles-cuento" }
       ],
       "columnas": 1,
       "pista": "Lee el comienzo del tercer párrafo.",
-      "explicacion": "Nube pudo soltarse porque el nudo estaba flojo. Por eso, al final, el abuelo le enseñó a Wara un nudo doble y fuerte.",
+      "explicacion": "Nube pudo soltarse porque Wara no la amarró bien. Por eso, al final, el abuelo le enseñó a amarrar la cuerda con dos vueltas, bien fuerte.",
       "error": "detalles-cuento"
     },
     {
@@ -298,16 +298,16 @@
     {
       "id": "p14", "tipo": "opcion", "nivel": 3,
       "lectura": "nube",
-      "enunciado": "¿Qué aprendió Wara al final del cuento?",
+      "enunciado": "¿Por qué el abuelo le enseñó a Wara a amarrar la cuerda con dos vueltas?",
       "opciones": [
-        { "texto": "A hacer un nudo doble y fuerte.", "correcta": true },
-        { "texto": "A vender helados.", "pista": "Don Luis vendía helados. ¿Qué le enseñó el abuelo a Wara?", "error": "detalles-cuento" },
-        { "texto": "A cuidar flores.", "pista": "Las flores eran de doña Rosa. Lee el último párrafo.", "error": "detalles-cuento" }
+        { "texto": "Para que Nube no se vuelva a soltar.", "correcta": true },
+        { "texto": "Para que Nube cargue más costales.", "pista": "Nube ya cargaba los costales. Piensa en el problema del cuento: ¿qué pasó con la cuerda?", "error": "inferencia" },
+        { "texto": "Para que Wara venda helados.", "pista": "Don Luis vendía helados; eso no tiene que ver con la cuerda. ¿Qué problema hubo en el cuento?", "error": "inferencia" }
       ],
       "columnas": 1,
-      "pista": "Lee el último párrafo: ¿qué le enseñó el abuelo Mateo?",
-      "explicacion": "Wara aprendió a hacer un nudo doble y fuerte, para que Nube no se vuelva a soltar. Así, el problema del cuento no se repite.",
-      "error": "detalles-cuento"
+      "pista": "El cuento no lo dice con esas palabras. Piensa: ¿qué problema tuvo Wara con la cuerda de Nube?",
+      "explicacion": "Para que Nube no se vuelva a soltar. Nube se soltó porque Wara no la amarró bien; con dos vueltas, la cuerda queda fuerte y el problema no se repite.",
+      "error": "inferencia"
     },
     {
       "id": "p15", "tipo": "escribir-libre", "nivel": 3,
@@ -343,7 +343,7 @@
       "visual": { "tipo": "emoji", "valor": "🌬️" },
       "respuestas": ["Kusi hizo una cometa.", "Kusi hizo una cometa"],
       "mayusculas": "estricto",
-      "pista": "Kusi es un nombre: va con mayúscula. «Hizo» viene de «hacer»: empieza con h, que no suena, y lleva z.",
+      "pista": "Kusi es un nombre: va con mayúscula. «Hizo» es de la familia de «hacer»: piensa cómo empieza «hacer». Termina con punto.",
       "explicacion": "Se escribe: «Kusi hizo una cometa.» Kusi lleva mayúscula porque es un nombre. «Hizo» empieza con h, como «hacer», y se escribe con z.",
       "error": "dictado"
     },
@@ -415,10 +415,10 @@
       "pares": [
         ["Inicio", "Kusi hace una cometa y sube a una loma con Ana."],
         ["Nudo", "El viento rompe el hilo y la cometa queda en un árbol."],
-        ["Desenlace", "Don Pedro baja la cometa y vuelve a volar."]
+        ["Desenlace", "Don Pedro baja la cometa y Kusi la hace volar otra vez."]
       ],
       "pista": "El nudo es el problema. El desenlace es cuando el problema se resuelve.",
-      "explicacion": "Inicio: Kusi hace la cometa y sube a la loma con Ana. Nudo: el viento rompe el hilo. Desenlace: don Pedro baja la cometa y vuelve a volar.",
+      "explicacion": "Inicio: Kusi hace la cometa y sube a la loma con Ana. Nudo: el viento rompe el hilo y la cometa queda en un árbol. Desenlace: don Pedro baja la cometa y Kusi la hace volar otra vez.",
       "error": "partes-cuento"
     },
     {
@@ -455,6 +455,7 @@
       "secuencia": { "descripcion": "Le cuesta ordenar los hechos de un cuento.", "sugerencia": "Escriban los hechos en tiras de papel y ordénenlos juntos preguntando «¿qué tuvo que pasar antes?»." },
       "partes-cuento": { "descripcion": "Confunde el inicio, el nudo y el desenlace.", "sugerencia": "Usen tres preguntas: «¿Quiénes son y dónde están?» (inicio), «¿Qué problema aparece?» (nudo), «¿Cómo se resuelve?» (desenlace)." },
       "detalles-cuento": { "descripcion": "No recuerda o no encuentra detalles del cuento (quién, qué, dónde, por qué).", "sugerencia": "Enséñenle a volver al texto: lean juntos el párrafo donde está la respuesta y subrayen la parte que la dice." },
+      "inferencia": { "descripcion": "Le cuesta deducir por qué un personaje hace algo cuando el cuento no lo dice con esas palabras.", "sugerencia": "Pregunten «¿Por qué crees que lo hizo?» y pidan que muestre la parte del cuento que le da la pista (por ejemplo, el problema que hubo antes)." },
       "conectores": { "descripcion": "No usa las palabras de secuencia (había una vez, después, al final) para ordenar.", "sugerencia": "Cuando cuente algo, pídanle que empiece cada parte con «primero», «después» o «al final»." },
       "escucha-comprension": { "descripcion": "Le cuesta responder preguntas sobre un cuento que escucha.", "sugerencia": "Lean en voz alta cuentos cortos y hagan una sola pregunta al final. Si no recuerda, lean de nuevo más despacio." },
       "dictado": { "descripcion": "Comete errores al escribir oraciones dictadas (mayúsculas, letras o punto).", "sugerencia": "Dicten oraciones cortas, palabra por palabra, y revisen juntos la mayúscula inicial, los nombres y el punto final." },

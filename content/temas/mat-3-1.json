@@ -219,8 +219,8 @@
     },
     {
       "id": "p13", "tipo": "pasos", "nivel": 3,
-      "enunciado": "Don Luis acomoda naranjas en su puesto de la feria. En la 1.ª fila pone 3, en la 2.ª pone 6 y en la 3.ª pone 9.",
-      "visual": { "tipo": "tabla", "columnas": ["Fila", "1.ª", "2.ª", "3.ª", "4.ª", "5.ª"], "filas": [["Naranjas", "3", "6", "9", "?", "?"]] },
+      "enunciado": "Don Luis acomoda naranjas en su puesto de la feria. En la primera fila pone 3, en la segunda pone 6 y en la tercera pone 9.",
+      "visual": { "tipo": "tabla", "columnas": ["Fila", "1", "2", "3", "4", "5"], "filas": [["Naranjas", "3", "6", "9", "?", "?"]] },
       "pasos": [
         {
           "tipo": "opcion",
@@ -236,24 +236,24 @@
         },
         {
           "tipo": "numero",
-          "enunciado": "¿Cuántas naranjas pone en la 4.ª fila?",
+          "enunciado": "¿Cuántas naranjas pone en la cuarta fila?",
           "respuesta": 12,
           "erroresComunes": [ { "respuesta": 10, "pista": "Sumaste 1. La regla es sumar 3: 9 + 3.", "error": "patron-regla" } ],
-          "pista": "Usa la regla: suma 3 a las naranjas de la 3.ª fila.",
+          "pista": "Usa la regla: suma 3 a las naranjas de la tercera fila.",
           "explicacion": "9 + 3 = 12 naranjas.",
           "error": "patron-problema"
         },
         {
           "tipo": "numero",
-          "enunciado": "¿Y cuántas pone en la 5.ª fila?",
+          "enunciado": "¿Y cuántas pone en la quinta fila?",
           "respuesta": 15,
-          "pista": "Suma 3 a las naranjas de la 4.ª fila.",
+          "pista": "Suma 3 a las naranjas de la cuarta fila.",
           "explicacion": "12 + 3 = 15 naranjas.",
           "error": "patron-problema"
         }
       ],
       "pista": "Primero encuentra la regla. Después úsala fila por fila.",
-      "explicacion": "La regla es sumar 3: 3, 6, 9, 12, 15. En la 5.ª fila pone 15 naranjas.",
+      "explicacion": "La regla es sumar 3: 3, 6, 9, 12, 15. En la quinta fila pone 15 naranjas.",
       "error": "patron-problema"
     },
     {
@@ -329,10 +329,10 @@
     },
     {
       "id": "c4", "tipo": "ordenar", "nivel": 2,
-      "enunciado": "Ordena los números para formar un patrón que baja de 10 en 10.",
+      "enunciado": "Mateo inventó un patrón: empieza en 95 y su regla es restar 10. Ordena los números de su patrón.",
       "elementos": ["95", "85", "75", "65", "55"],
-      "pista": "Empieza por el número más grande y resta 10 cada vez.",
-      "explicacion": "95, 85, 75, 65, 55: cada número tiene 10 menos que el anterior.",
+      "pista": "Empieza en 95 y resta 10 cada vez.",
+      "explicacion": "95, 85, 75, 65, 55: empieza en 95 y cada número tiene 10 menos que el anterior.",
       "error": "patron-sube-baja"
     },
     {
@@ -351,11 +351,11 @@
     {
       "id": "c7", "tipo": "pasos", "nivel": 3,
       "enunciado": "Doña Rosa lleva 60 salteñas para vender en la fiesta de la escuela. Cada hora vende 10.",
-      "visual": { "tipo": "tabla", "columnas": ["Al empezar", "1.ª hora", "2.ª hora", "3.ª hora", "4.ª hora"], "filas": [["60", "?", "?", "?", "?"]] },
+      "visual": { "tipo": "tabla", "columnas": ["Al empezar", "1 hora", "2 horas", "3 horas", "4 horas"], "filas": [["60", "?", "?", "?", "?"]] },
       "pasos": [
         {
           "tipo": "numero",
-          "enunciado": "¿Cuántas salteñas le quedan después de la 1.ª hora?",
+          "enunciado": "¿Cuántas salteñas le quedan después de 1 hora?",
           "respuesta": 50,
           "erroresComunes": [ { "respuesta": 70, "pista": "Doña Rosa vende salteñas: le quedan menos, no más.", "error": "patron-sube-baja" } ],
           "pista": "Tenía 60 y vendió 10.",
@@ -376,11 +376,11 @@
         },
         {
           "tipo": "numero",
-          "enunciado": "¿Cuántas salteñas le quedan después de la 4.ª hora?",
+          "enunciado": "¿Cuántas salteñas le quedan después de 4 horas?",
           "respuesta": 20,
-          "erroresComunes": [ { "respuesta": 30, "pista": "Eso es después de la 3.ª hora. Falta una hora más.", "error": "patron-problema" } ],
+          "erroresComunes": [ { "respuesta": 30, "pista": "Eso es lo que le queda después de 3 horas. Falta una hora más.", "error": "patron-problema" } ],
           "pista": "Sigue el patrón hora por hora: 60, 50, 40...",
-          "explicacion": "60, 50, 40, 30, 20. Después de la 4.ª hora le quedan 20 salteñas.",
+          "explicacion": "60, 50, 40, 30, 20. Después de 4 horas le quedan 20 salteñas.",
           "error": "patron-problema"
         }
       ],

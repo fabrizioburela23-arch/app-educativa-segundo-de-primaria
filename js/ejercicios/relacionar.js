@@ -14,7 +14,7 @@ export default function relacionar(cont, ej, ctx) {
   let elegidoDer = null;
   let bloqueado = false;
 
-  const boton = (item, onclick) => h('button', { class: 'ficha', type: 'button', onclick },
+  const boton = (item, onclick) => h('button', { class: 'ficha', type: 'button', 'data-i': String(item.i), onclick },
     item.emoji ? h('span', { class: 'emoji', 'aria-hidden': 'true' }, item.emoji) : null,
     item.texto ? h('span', {}, item.texto) : null);
 

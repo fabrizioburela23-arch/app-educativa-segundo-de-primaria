@@ -9,7 +9,7 @@
       "visual": { "tipo": "emojis", "items": ["🌅", "☀️", "🌇", "🌙"], "etiquetas": ["desayuno", "almuerzo", "té", "cena"] }
     },
     {
-      "texto": "Para estar sanos, comemos **variado**, con frutas y verduras todos los días. Para la sed, tomamos **agua**. Las gaseosas, los dulces y la comida chatarra tienen mucha azúcar, grasa o sal: mejor, **poco** y de vez en cuando.",
+      "texto": "Para estar sanos, comemos **variado**, con frutas y verduras todos los días. Para la sed, tomamos **agua**. Las gaseosas, los dulces y la comida chatarra tienen mucha azúcar, grasa o sal. Son solo para **de vez en cuando**.",
       "visual": { "tipo": "emojis", "items": ["🍎", "🥕", "💧", "🥤", "🍬"], "etiquetas": ["frutas", "verduras", "agua", "gaseosa", "dulces"] }
     },
     {
@@ -70,7 +70,7 @@
           { "texto": "sal", "emoji": "🧂", "categoria": "mineral" },
           { "texto": "agua", "emoji": "💧", "categoria": "mineral" }
         ],
-        "pista": "Las plantas nos dan tubérculos y frutas. Los animales nos dan leche, carne y huevos. El agua y la sal no son ni plantas ni animales.",
+        "pista": "Las plantas nos dan frutas, verduras y granos. Los animales nos dan leche, carne y huevos. El agua y la sal no son ni plantas ni animales.",
         "explicacion": "La papa y el plátano son de origen **vegetal**. El huevo y la leche, de origen **animal**. La sal y el agua, de origen **mineral**.",
         "error": "origen-alimento"
       },
@@ -121,7 +121,7 @@
     },
     {
       "id": "p2", "tipo": "clasificar", "nivel": 1,
-      "enunciado": "¿Lo comemos todos los días o solo de vez en cuando?",
+      "enunciado": "¿Es para todos los días o solo para de vez en cuando?",
       "categorias": [
         { "id": "diario", "texto": "Todos los días", "emoji": "📅" },
         { "id": "aveces", "texto": "De vez en cuando", "emoji": "🎉" }
@@ -182,18 +182,18 @@
       "pares": [
         ["chuño", "papa"],
         [{ "texto": "queso", "emoji": "🧀" }, "leche"],
-        ["api morado", "maíz morado"],
+        ["api", "maíz"],
         ["charque", "carne"]
       ],
       "pista": "Piensa con qué se prepara cada uno, en la cocina o en el campo.",
-      "explicacion": "El chuño se hace con **papa**; el queso, con **leche**; el api morado, con **maíz morado**, y el charque, con **carne** secada con sal.",
+      "explicacion": "El chuño se hace con **papa**; el queso, con **leche**; el api, con **maíz** morado o blanco, y el charque, con **carne** secada con sal.",
       "error": "de-donde-viene"
     },
     {
       "id": "p7", "tipo": "escribir", "nivel": 2,
       "enunciado": "Escucha la adivinanza y escribe la respuesta.",
       "escuchar": "Soy blanca y salada. Me sacan del salar de Uyuni. En la sopa me ponen poquito. No vengo de plantas ni de animales. ¿Quién soy?",
-      "respuestas": ["sal", "la sal"],
+      "respuestas": ["sal", "la sal", "es la sal", "eres la sal"],
       "pista": "Le da sabor salado a la comida y su origen es mineral.",
       "explicacion": "Es la **sal**. Su origen es **mineral**. Con un poquito basta para darle sabor a la comida.",
       "error": "origen-mineral"
@@ -249,11 +249,11 @@
         { "texto": "uva", "emoji": "🍇", "categoria": "valles" },
         { "texto": "durazno", "categoria": "valles" },
         { "texto": "yuca", "categoria": "llanos" },
-        { "texto": "castaña", "emoji": "🌰", "categoria": "llanos" },
+        { "texto": "arroz", "emoji": "🍚", "categoria": "llanos" },
         { "texto": "achachairú", "categoria": "llanos" }
       ],
       "pista": "El altiplano es alto y frío; los valles son templados; los llanos y la Amazonía son calurosos.",
-      "explicacion": "El chuño y la quinua son del **altiplano**. La uva y el durazno, de los **valles**, como los de Tarija y Cochabamba. La yuca, la castaña y el achachairú, una fruta naranja y agridulce, son de los **llanos y la Amazonía**.",
+      "explicacion": "El chuño y la quinua son del **altiplano**. La uva y el durazno, de los **valles**, como los de Tarija y Cochabamba. La yuca, el arroz y el achachairú, una fruta naranja y agridulce, son de los **llanos y la Amazonía**.",
       "error": "alimentos-region"
     },
     {
@@ -390,7 +390,7 @@
       "escuchar": "Nayra toma sopa de maní. El maní crece en una planta, bajo la tierra. ¿De qué origen es el maní?",
       "respuestas": ["vegetal", "origen vegetal", "de origen vegetal", "es vegetal", "es de origen vegetal"],
       "pista": "Si un alimento crece en una planta, ¿de qué origen es?",
-      "explicacion": "El maní es de origen **vegetal**, porque viene de una planta.",
+      "explicacion": "El maní es de origen **vegetal**, porque viene de una planta. Aunque crece bajo la tierra, no es mineral.",
       "error": "origen-alimento"
     },
     {
@@ -404,15 +404,16 @@
     },
     {
       "id": "c6", "tipo": "opcion", "nivel": 2,
-      "enunciado": "Rosa vive en el altiplano. ¿Qué alimento se hace allí con el frío de las noches de invierno?",
+      "enunciado": "Kusi vive en Pando, en la Amazonía. Allí hay árboles altísimos. Sus frutos caen al suelo y guardan semillas ricas. ¿Qué alimento es?",
+      "visual": { "tipo": "emojis", "items": ["🌳", "🌳", "🌳"] },
       "opciones": [
-        { "texto": "chuño", "correcta": true },
-        { "texto": "castaña", "pista": "La castaña crece en los bosques calurosos de la Amazonía.", "error": "alimentos-region" },
-        { "texto": "achachairú", "pista": "El achachairú es una fruta de los llanos, donde hace calor.", "error": "alimentos-region" }
+        { "texto": "castaña", "emoji": "🌰", "correcta": true },
+        { "texto": "chuño", "pista": "El chuño se hace con papas en el altiplano, donde hace mucho frío.", "error": "alimentos-region" },
+        { "texto": "uva", "emoji": "🍇", "pista": "La uva crece en parras, en los valles, como los de Tarija.", "error": "alimentos-region" }
       ],
       "columnas": 3,
-      "pista": "Se hace con papas que se congelan con la helada.",
-      "explicacion": "El **chuño** se hace en el altiplano: las papas se congelan con la helada de la noche y después se secan al sol.",
+      "pista": "Recuerda los alimentos de los llanos y la Amazonía. Este tiene cáscara dura y se come como el maní.",
+      "explicacion": "Es la **castaña**. Crece en árboles muy altos del bosque amazónico, en Pando y el Beni. Las familias recogen sus frutos del suelo y sacan las castañas de adentro.",
       "error": "alimentos-region"
     },
     {

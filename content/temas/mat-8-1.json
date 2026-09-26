@@ -456,6 +456,28 @@
       "pista": "Mira la clave antes de cada paso.",
       "explicacion": "Media papa dibujada vale 1 saco. En la semana 2 cosechó 9 sacos, y en la semana 3, 4 sacos.",
       "error": "problema-pictograma"
+    },
+    {
+      "id": "p15", "tipo": "opcion", "nivel": 1,
+      "enunciado": "Lee el título. ¿De qué trata este pictograma?",
+      "visual": {
+        "tipo": "pictograma", "titulo": "Cómo llegamos a la escuela", "icono": "🧒", "escala": 1,
+        "datos": [
+          { "etiqueta": "a pie", "valor": 7, "emoji": "🚶" },
+          { "etiqueta": "micro", "valor": 5, "emoji": "🚌" },
+          { "etiqueta": "bicicleta", "valor": 3, "emoji": "🚲" },
+          { "etiqueta": "auto", "valor": 2, "emoji": "🚗" }
+        ]
+      },
+      "opciones": [
+        { "texto": "De cómo llegan los estudiantes a la escuela.", "correcta": true },
+        { "texto": "De los animales de la comunidad.", "pista": "En este pictograma no hay animales. Lee el título, arriba.", "error": "partes-pictograma" },
+        { "texto": "De la fruta vendida en la feria.", "pista": "En este pictograma no hay fruta. Lee el título, arriba.", "error": "partes-pictograma" }
+      ],
+      "columnas": 1,
+      "pista": "El título está arriba de todo y dice de qué trata el pictograma.",
+      "explicacion": "El título dice «Cómo llegamos a la escuela». Las filas muestran cuántos estudiantes llegan a pie, en micro, en bicicleta o en auto.",
+      "error": "partes-pictograma"
     }
   ],
   "comprobacion": [
@@ -566,11 +588,11 @@
           { "etiqueta": "mono", "valor": 6, "emoji": "🐒" }
         ]
       },
-      "texto": "Vimos [6] monos y [2] bufeos.",
-      "banco": ["5", "3"],
-      "pista": "Busca la fila de cada animal y cuenta sus estrellas.",
-      "explicacion": "La fila del mono tiene 6 estrellas y la del bufeo tiene 2.",
-      "error": "confunde-fila"
+      "texto": "El pictograma muestra los [animales] que vimos en el paseo. Cada estrella vale [1]. Vimos [6] monos.",
+      "banco": ["frutas", "2", "5"],
+      "pista": "Lee el título arriba y la clave abajo. Después busca la fila del mono y cuenta sus estrellas.",
+      "explicacion": "El título habla de los animales que vimos en el paseo al río. La clave dice que cada estrella vale 1. La fila del mono tiene 6 estrellas: vimos 6 monos.",
+      "error": "partes-pictograma"
     },
     {
       "id": "c7", "tipo": "numero", "nivel": 3,

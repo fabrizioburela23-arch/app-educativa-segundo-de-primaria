@@ -4,7 +4,7 @@
   "objetivo": "Leo, escucho, digo y escribo palabras con br, bl, cr y cl.",
   "explicacion": [
     {
-      "texto": "Algunas consonantes son **amigas**: van juntas en la misma sílaba. La **b** se junta con la **r** o con la **l**: **bra**-zo, **blu**-sa.",
+      "texto": "Algunas consonantes son **amigas**: van juntas en la misma sílaba. La **b** se junta con la **r** o con la **l**: **bra**-zo, **blu**-sa. Antes de r o de l siempre va **b**, nunca v.",
       "emoji": "🤝",
       "visual": { "tipo": "emojis", "items": ["💪", "👚"], "etiquetas": ["brazo", "blusa"] }
     },
@@ -136,7 +136,7 @@
       "visual": { "tipo": "emoji", "valor": "📖" },
       "respuestas": ["libro"],
       "pista": "Tiene dos sílabas: la primera es «li». Escucha bien la segunda.",
-      "explicacion": "Se escribe **libro**: li-**bro**, con br.",
+      "explicacion": "Se escribe **libro**: li-**bro**, con br. Antes de r siempre va b, nunca v.",
       "error": "dictado-grupos"
     },
     {
@@ -183,14 +183,14 @@
       "enunciado": "Elige todas las palabras que tienen cr.",
       "opciones": [
         { "texto": "secreto", "emoji": "🤫", "correcta": true },
-        { "texto": "cráter", "correcta": true },
+        { "texto": "cruz", "correcta": true },
         { "texto": "crudo", "correcta": true },
         { "texto": "carro", "emoji": "🚗", "pista": "En «carro» hay una a entre la c y la r. Busca la c con la r pegada.", "error": "no-reconoce-grupo" },
         { "texto": "clima", "pista": "«Clima» lleva c y l: es cl, no cr.", "error": "confunde-r-l" },
         { "texto": "cuna", "pista": "«Cuna» no tiene r. Busca la c con la r pegada.", "error": "no-reconoce-grupo" }
       ],
       "pista": "Busca la c con la r pegada, sin vocal en medio.",
-      "explicacion": "Secreto, cráter y crudo tienen cr: se-**cre**-to, **crá**-ter, **cru**-do. En «carro» hay una vocal entre la c y la r.",
+      "explicacion": "Secreto, cruz y crudo tienen cr: se-**cre**-to, **cruz**, **cru**-do. En «carro» hay una vocal entre la c y la r.",
       "error": "no-reconoce-grupo"
     },
     {
@@ -202,10 +202,10 @@
         { "texto": "bicicleta", "correcta": true },
         { "texto": "biciceta", "pista": "Falta una letra. Di despacio: bi-ci-cle-ta.", "error": "omite-consonante" },
         { "texto": "blusa", "correcta": true },
-        { "texto": "bulsa", "pista": "Mira el orden: en «blusa», la l va pegada a la b.", "error": "invierte-grupo" }
+        { "texto": "vlusa", "pista": "La b y la v suenan igual, pero antes de l o de r siempre va b.", "error": "b-v-grupo" }
       ],
-      "pista": "Lee cada palabra en voz alta, despacio. ¿Falta una letra o hay letras cambiadas de lugar?",
-      "explicacion": "Están bien escritas cabra, bicicleta y blusa. En «carba» y «bulsa» las letras cambiaron de lugar; en «biciceta» falta la l.",
+      "pista": "Lee cada palabra despacio. ¿Falta una letra? ¿Hay letras cambiadas de lugar? ¿Va la letra correcta antes de la l o la r?",
+      "explicacion": "Están bien escritas cabra, bicicleta y blusa. En «carba» la b y la r cambiaron de lugar; en «biciceta» falta la l, y «vlusa» va con b: antes de l o de r siempre va b.",
       "error": "omite-consonante"
     },
     {
@@ -412,11 +412,11 @@
     }
   ],
   "repaso": {
-    "texto": "Las consonantes amigas van juntas en la misma sílaba: br (li-bro), bl (blu-sa), cr (mi-cro) y cl (bi-ci-cle-ta). Escucha si suena r o l, y escribe las dos letras.",
+    "texto": "Las consonantes amigas van juntas en la misma sílaba: br (li-bro), bl (blu-sa), cr (mi-cro) y cl (bi-ci-cle-ta). Escucha si suena r o l, y escribe las dos letras. Antes de r o l va b, nunca v.",
     "visual": { "tipo": "emojis", "items": ["📖", "👚", "🚌", "🚲"], "etiquetas": ["li-bro", "blu-sa", "mi-cro", "bi-ci-cle-ta"] }
   },
   "adulto": {
-    "objetivo": "Leer, pronunciar y escribir palabras con los grupos consonánticos br, bl, cr y cl. Se trabaja la escucha (distinguir r de l después de b y de c), la escritura sin omitir ni invertir letras (cabra, no «caba» ni «carba») y la separación en sílabas sin partir el grupo (ca-bra, ta-bla).",
+    "objetivo": "Leer, pronunciar y escribir palabras con los grupos consonánticos br, bl, cr y cl. Se trabaja la escucha (distinguir r de l después de b y de c), la escritura sin omitir ni invertir letras (cabra, no «caba» ni «carba»), la regla de que antes de r o l siempre se escribe b y nunca v (blusa, libro), y la separación en sílabas sin partir el grupo (ca-bra, ta-bla).",
     "sugerencias": [
       "En casa, jueguen «Veo, veo una palabra con br, bl, cr o cl» (libro, sombrero, blusa, cable, crema, clavo). Por cada palabra, den una palmada fuerte en la sílaba que tiene el grupo: som-BRE-ro.",
       "En la tienda o la feria, busquen en etiquetas y carteles palabras con estos grupos (crema dental, cloro, sobres, cable). Cópienlas en un cuaderno y pinten de color las dos consonantes amigas.",
@@ -427,6 +427,7 @@
       "confunde-r-l": { "descripcion": "Confunde la r y la l después de b o de c (escribe «brusa» por blusa o «clema» por crema).", "sugerencia": "Digan pares de sílabas exagerando el sonido (bra-bla, cra-cla) y pidan que levante la mano cuando escuche la l. Miren juntos en un espejo cómo se mueve la lengua." },
       "omite-consonante": { "descripcion": "Olvida la segunda consonante del grupo (escribe «caba» por cabra o «biciceta» por bicicleta).", "sugerencia": "Digan la palabra muy despacio, estirando los sonidos (c-a-b-r-a), y cuenten con los dedos cuántos sonidos escuchan antes de escribir." },
       "invierte-grupo": { "descripcion": "Cambia de lugar las letras del grupo (escribe «barzo» por brazo o «bulsa» por blusa).", "sugerencia": "Armen la palabra con letras recortadas o tapitas con letras y lean en voz alta cada sílaba: «bra», no «bar»." },
+      "b-v-grupo": { "descripcion": "Escribe v en lugar de b antes de r o de l (escribe «vlusa» por blusa o «livro» por libro). La b y la v suenan igual, así que se decide por la regla.", "sugerencia": "Recuerden juntos la regla: antes de r o l siempre va b. Busquen en un libro o en etiquetas palabras con br y bl, y comprueben que nunca aparece «vr» ni «vl»." },
       "separa-grupo": { "descripcion": "Parte el grupo al separar sílabas (tab-la) o mete una vocal de más al hablar (ta-ba-la).", "sugerencia": "Separen palabras con palmadas y recuerden que las consonantes amigas van en la misma palmada: ta-bla, ca-bra." },
       "dictado-grupos": { "descripcion": "Tiene dificultad para escribir palabras u oraciones dictadas con br, bl, cr o cl.", "sugerencia": "Dicten tres palabras por día, sílaba por sílaba. Después, que lea en voz alta lo que escribió y lo compare con la palabra escrita por ustedes." },
       "vocabulario-grupos": { "descripcion": "No reconoce o no nombra algunas palabras con estos grupos (micrófono, ancla, nublado).", "sugerencia": "Miren dibujos o fotos, nombren juntos las cosas y escriban el nombre debajo de cada dibujo." },

@@ -1,0 +1,435 @@
+{
+  "id": "com-6-3",
+  "titulo": "La sílaba tónica",
+  "objetivo": "Encuentro la sílaba que suena más fuerte y sé si una palabra es aguda, grave o esdrújula.",
+  "explicacion": [
+    {
+      "texto": "Cuando decimos una palabra, una de sus sílabas suena **más fuerte** que las otras. Esa es la **sílaba tónica**. Escucha: ca-**mión**, **me**-sa, **pá**-ja-ro.",
+      "emoji": "📢",
+      "visual": { "tipo": "tabla", "columnas": ["Palabra", "Sílaba tónica"], "filas": [["ca-mión", "mión"], ["me-sa", "me"], ["pá-ja-ro", "pá"]] }
+    },
+    {
+      "texto": "¿Cómo la encuentras? Llama la palabra como si alguien estuviera lejos: «¡ca-miiión!». La sílaba que se estira y suena más fuerte es la tónica.",
+      "emoji": "🗣️",
+      "visual": { "tipo": "emojis", "items": ["🔉", "🔊"], "etiquetas": ["ca: suave", "mión: fuerte"] }
+    },
+    {
+      "texto": "Ahora cuenta las sílabas **desde el final**. Si la tónica es la última, la palabra es **aguda**. Si es la penúltima, es **grave** o **llana**. Si es la antepenúltima, es **esdrújula**.",
+      "visual": {
+        "tipo": "tabla",
+        "columnas": ["Palabra", "La tónica es la...", "Clase"],
+        "filas": [
+          ["ca-mión", "última", "aguda"],
+          ["me-sa", "penúltima", "grave o llana"],
+          ["pá-ja-ro", "antepenúltima", "esdrújula"]
+        ]
+      }
+    },
+    {
+      "texto": "La **tilde** (´) es una rayita que va sobre la vocal de la sílaba tónica. Las **esdrújulas** siempre llevan tilde. Las agudas y las graves, a veces sí y a veces no.",
+      "emoji": "✏️",
+      "visual": {
+        "tipo": "tabla",
+        "columnas": ["Clase", "Con tilde", "Sin tilde"],
+        "filas": [
+          ["Aguda", "ra-tón", "pa-pel"],
+          ["Grave", "ár-bol", "lu-na"],
+          ["Esdrújula", "plá-ta-no", "nunca"]
+        ]
+      }
+    }
+  ],
+  "ejemplo": {
+    "instruccion": "Mira cómo encontramos la sílaba tónica y la clase de una palabra.",
+    "pasos": [
+      {
+        "texto": "Busquemos la sílaba tónica de «tortuga». Primero la separamos en sílabas: tor-tu-ga.",
+        "visual": { "tipo": "emojis", "items": ["🐢"], "etiquetas": ["tor-tu-ga"] }
+      },
+      {
+        "texto": "La llamamos como si estuviera lejos: «¡tor-tuuu-ga!». La sílaba que se estira es **tu**. ¡Esa es la sílaba tónica!",
+        "visual": { "tipo": "emojis", "items": ["🔉", "🔊", "🔉"], "etiquetas": ["tor", "tu", "ga"] }
+      },
+      {
+        "texto": "Contamos desde el final: **ga** es la última y **tu** es la penúltima. La tónica está en la penúltima: «tortuga» es una palabra **grave**.",
+        "visual": { "tipo": "tabla", "columnas": ["tor", "tu", "ga"], "filas": [["antepenúltima", "penúltima", "última"]] }
+      },
+      {
+        "texto": "Otra palabra: «sábado», **sá**-ba-do. La tónica es la antepenúltima: es **esdrújula**. Por eso lleva tilde, como todas las esdrújulas.",
+        "visual": { "tipo": "emojis", "items": ["📅"], "etiquetas": ["sá-ba-do"] }
+      }
+    ]
+  },
+  "guiada": {
+    "intro": "Ahora lo hacemos juntos. ¡Usa tu voz!",
+    "pasos": [
+      {
+        "id": "g1", "tipo": "tocar",
+        "enunciado": "Escucha la palabra y toca su sílaba tónica.",
+        "apoyo": "Di la palabra en voz alta, como si llamaras a alguien que está lejos. ¿Qué sílaba se estira?",
+        "escuchar": "limón",
+        "visual": { "tipo": "emoji", "valor": "🍋" },
+        "texto": "li–*món*",
+        "pista": "Si dices la palabra con fuerza en «li», ¿suena bien? Prueba con la otra sílaba.",
+        "explicacion": "En li-**món** suena más fuerte **món**. Esa es la sílaba tónica. ¡Y ahí está la tilde!",
+        "error": "no-encuentra-tonica"
+      },
+      {
+        "id": "g2", "tipo": "clasificar",
+        "enunciado": "¿Dónde está la sílaba tónica? Clasifica las palabras.",
+        "apoyo": "Busca la sílaba fuerte y cuenta desde el final: la última es aguda, la penúltima es grave y la antepenúltima es esdrújula.",
+        "categorias": [
+          { "id": "aguda", "texto": "Aguda (la última)" },
+          { "id": "grave", "texto": "Grave (la penúltima)" },
+          { "id": "esdrujula", "texto": "Esdrújula (la antepenúltima)" }
+        ],
+        "elementos": [
+          { "texto": "ja-bón", "categoria": "aguda" },
+          { "texto": "ta-tú", "categoria": "aguda" },
+          { "texto": "lu-na", "categoria": "grave" },
+          { "texto": "lla-ma", "categoria": "grave" },
+          { "texto": "mú-si-ca", "categoria": "esdrujula" },
+          { "texto": "lá-gri-ma", "categoria": "esdrujula" }
+        ],
+        "pista": "Di cada palabra en voz alta. Después cuenta desde la última sílaba hacia atrás hasta llegar a la fuerte.",
+        "explicacion": "Agudas: ja-**bón**, ta-**tú**. Graves: **lu**-na, **lla**-ma. Esdrújulas: **mú**-si-ca, **lá**-gri-ma.",
+        "error": "clasifica-acento"
+      },
+      {
+        "id": "g3", "tipo": "escribir",
+        "enunciado": "Escucha y escribe la palabra. Es esdrújula: ¡no olvides la tilde!",
+        "apoyo": "Todas las esdrújulas llevan tilde. En esta palabra, la sílaba tónica es la primera: ahí va la tilde.",
+        "escuchar": "plátano",
+        "visual": { "tipo": "emoji", "valor": "🍌" },
+        "respuestas": ["plátano"],
+        "tildes": "estricto",
+        "pista": "Sepárala en sílabas: pla-ta-no. ¿Cuál suena más fuerte? Ponle la tilde a su vocal.",
+        "explicacion": "Se escribe «plátano», con tilde en la á: **plá**-ta-no es esdrújula.",
+        "error": "tilde-esdrujula"
+      }
+    ]
+  },
+  "practica": [
+    {
+      "id": "p1", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Escucha la palabra y toca su sílaba tónica.",
+      "escuchar": "pelota",
+      "visual": { "tipo": "emoji", "valor": "⚽" },
+      "texto": "pe–*lo*–ta",
+      "pista": "Llama la palabra como si tu amiga estuviera lejos. ¿Qué sílaba se estira?",
+      "explicacion": "En pe-**lo**-ta suena más fuerte **lo**. Esa es la sílaba tónica.",
+      "error": "no-encuentra-tonica"
+    },
+    {
+      "id": "p2", "tipo": "opcion", "nivel": 1,
+      "enunciado": "Escucha la palabra. ¿Cuál es su sílaba tónica?",
+      "escuchar": "mariposa",
+      "visual": { "tipo": "emoji", "valor": "🦋" },
+      "opciones": [
+        { "texto": "ma", "pista": "Si dices la palabra con fuerza en «ma», ¿suena bien? Escucha otra vez.", "error": "no-encuentra-tonica" },
+        { "texto": "ri", "pista": "Si dices la palabra con fuerza en «ri», ¿suena como siempre? Escucha otra vez.", "error": "no-encuentra-tonica" },
+        { "texto": "po", "correcta": true },
+        { "texto": "sa", "pista": "Si dices la palabra con fuerza en «sa», suena raro. Busca otra sílaba.", "error": "no-encuentra-tonica" }
+      ],
+      "mezclar": false,
+      "columnas": 4,
+      "pista": "Llama la palabra de lejos y escucha qué sílaba se estira.",
+      "explicacion": "Ma-ri-**po**-sa: la sílaba tónica es **po**.",
+      "error": "no-encuentra-tonica"
+    },
+    {
+      "id": "p3", "tipo": "relacionar", "nivel": 1,
+      "enunciado": "Une cada palabra con su sílaba tónica.",
+      "pares": [["me-sa", "me"], ["ca-sa", "ca"], ["sa-po", "sa"], ["ma-má", "má"]],
+      "pista": "Di cada palabra en voz alta. ¡Ojo! «sa» aparece en varias palabras: busca en cuál suena más fuerte.",
+      "explicacion": "**Me**-sa, **ca**-sa, **sa**-po y ma-**má**. En «mamá», la tilde te ayuda: está en la sílaba tónica.",
+      "error": "no-encuentra-tonica"
+    },
+    {
+      "id": "p4", "tipo": "memoria", "nivel": 1,
+      "enunciado": "Encuentra las parejas: dibujo y palabra. Todas son esdrújulas: fíjate en su tilde.",
+      "pares": [
+        [{ "emoji": "🐦" }, "pájaro"],
+        [{ "emoji": "🍌" }, "plátano"],
+        [{ "emoji": "🎵" }, "música"],
+        [{ "emoji": "📞" }, "teléfono"],
+        [{ "emoji": "🦇" }, "murciélago"]
+      ],
+      "pista": "Di el nombre del dibujo y busca la palabra que lo nombra.",
+      "explicacion": "Pájaro, plátano, música, teléfono y murciélago son esdrújulas. Todas llevan tilde en la sílaba tónica.",
+      "error": "tilde-esdrujula"
+    },
+    {
+      "id": "p5", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Escucha la palabra y toca su sílaba tónica.",
+      "escuchar": "árbol",
+      "visual": { "tipo": "emoji", "valor": "🌳" },
+      "texto": "*ár*–bol",
+      "pista": "Mira bien la palabra: ¿tiene una rayita? La tilde siempre va en la sílaba tónica.",
+      "explicacion": "En **ár**-bol suena más fuerte **ár**. La tilde está justo en la sílaba tónica.",
+      "error": "no-encuentra-tonica"
+    },
+    {
+      "id": "p6", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "Animales de Bolivia: ¿aguda, grave o esdrújula?",
+      "categorias": [
+        { "id": "aguda", "texto": "Aguda" },
+        { "id": "grave", "texto": "Grave" },
+        { "id": "esdrujula", "texto": "Esdrújula" }
+      ],
+      "elementos": [
+        { "texto": "colibrí", "categoria": "aguda" },
+        { "texto": "jaguar", "categoria": "aguda" },
+        { "texto": "ñandú", "categoria": "aguda" },
+        { "texto": "llama", "categoria": "grave" },
+        { "texto": "vicuña", "categoria": "grave" },
+        { "texto": "cóndor", "categoria": "grave" },
+        { "texto": "víbora", "categoria": "esdrujula" },
+        { "texto": "águila", "categoria": "esdrujula" }
+      ],
+      "pista": "Llama cada palabra de lejos y cuenta desde el final: ¿la tónica es la última, la penúltima o la antepenúltima?",
+      "explicacion": "Agudas: co-li-**brí**, ja-**guar**, ñan-**dú**. Graves: **lla**-ma, vi-**cu**-ña, **cón**-dor. Esdrújulas: **ví**-bo-ra, **á**-gui-la.",
+      "error": "clasifica-acento"
+    },
+    {
+      "id": "p7", "tipo": "opcion", "nivel": 2,
+      "enunciado": "Escucha la palabra. ¿Es aguda, grave o esdrújula?",
+      "escuchar": "tambor",
+      "visual": { "tipo": "emoji", "valor": "🥁" },
+      "opciones": [
+        { "texto": "aguda", "correcta": true },
+        { "texto": "grave", "pista": "Si dices la palabra con fuerza en la penúltima sílaba, ¿suena bien? Escucha otra vez.", "error": "clasifica-acento" },
+        { "texto": "esdrújula", "pista": "Una esdrújula tiene por lo menos tres sílabas. Cuenta las sílabas de esta palabra.", "error": "clasifica-acento" }
+      ],
+      "mezclar": false,
+      "columnas": 3,
+      "pista": "Busca la sílaba fuerte y cuenta desde el final: ¿es la última, la penúltima o la antepenúltima?",
+      "explicacion": "Tam-**bor**: la sílaba tónica es la última. Por eso «tambor» es **aguda**, aunque no lleva tilde.",
+      "error": "clasifica-acento"
+    },
+    {
+      "id": "p8", "tipo": "tocar", "nivel": 2,
+      "enunciado": "Toca la sílaba tónica de cada palabra. ¡Son tres palabras!",
+      "texto": "ja–*bón*, *chu*–ño, *mé*–di–co",
+      "pista": "Di cada palabra en voz alta, una por una. Si una palabra tiene tilde, la tilde te ayuda.",
+      "explicacion": "Ja-**bón**, **chu**-ño y **mé**-di-co. «Jabón» es aguda, «chuño» es grave y «médico» es esdrújula.",
+      "error": "no-encuentra-tonica"
+    },
+    {
+      "id": "p9", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa con aguda, grave o esdrújula.",
+      "texto": "«Ratón» es [aguda]. «Salteña» es [grave]. «Lámpara» es [esdrújula].",
+      "pista": "Busca la sílaba fuerte de cada palabra y cuenta desde el final.",
+      "explicacion": "Ra-**tón** es aguda (la última). Sal-**te**-ña es grave (la penúltima). **Lám**-pa-ra es esdrújula (la antepenúltima).",
+      "error": "clasifica-acento"
+    },
+    {
+      "id": "p10", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha y escribe la palabra. Es esdrújula: ¡no olvides la tilde!",
+      "escuchar": "pájaro",
+      "respuestas": ["pájaro"],
+      "tildes": "estricto",
+      "pista": "Sepárala en sílabas: pa-ja-ro. ¿Cuál suena más fuerte? Ahí va la tilde.",
+      "explicacion": "Se escribe «pájaro», con tilde en la á: **pá**-ja-ro es esdrújula y todas las esdrújulas llevan tilde.",
+      "error": "tilde-esdrujula"
+    },
+    {
+      "id": "p11", "tipo": "multiple", "nivel": 2,
+      "enunciado": "Elige todas las palabras agudas.",
+      "opciones": [
+        { "texto": "reloj", "correcta": true },
+        { "texto": "papel", "correcta": true },
+        { "texto": "maní", "correcta": true },
+        { "texto": "cóndor", "pista": "«Cóndor» tiene tilde, pero su sílaba fuerte es «cón», la penúltima.", "error": "tilde-no-define" },
+        { "texto": "pelota", "pista": "Pe-lo-ta: ¿la sílaba fuerte es la última?", "error": "clasifica-acento" },
+        { "texto": "música", "pista": "En «música», la sílaba fuerte es «mú». Cuenta desde el final: ¿qué lugar ocupa?", "error": "clasifica-acento" }
+      ],
+      "pista": "En una palabra aguda, la sílaba fuerte es la última. ¡Ojo! Algunas agudas llevan tilde y otras no.",
+      "explicacion": "Son agudas re-**loj**, pa-**pel** y ma-**ní**. **Cón**-dor y pe-**lo**-ta son graves, y **mú**-si-ca es esdrújula.",
+      "error": "clasifica-acento"
+    },
+    {
+      "id": "p12", "tipo": "tocar", "nivel": 3,
+      "enunciado": "Toca las palabras esdrújulas.",
+      "texto": "El *sábado*, Inés vio un *murciélago* cerca del árbol y un *pájaro* sobre el camión.",
+      "pista": "Hay tres. Su sílaba fuerte es la antepenúltima. ¡Ojo! No todas las palabras con tilde son esdrújulas.",
+      "explicacion": "Las esdrújulas son **sá**-ba-do, mur-**cié**-la-go y **pá**-ja-ro. «Inés» y «camión» son agudas, y «árbol» es grave, aunque tienen tilde.",
+      "error": "tilde-no-define"
+    },
+    {
+      "id": "p13", "tipo": "completar", "nivel": 3,
+      "enunciado": "Completa con «papa» o «papá». ¡La sílaba tónica cambia la palabra!",
+      "texto": "Mi [papá] pela la [papa] para la sopa.",
+      "pista": "Las dos palabras tienen las mismas letras, pero la sílaba fuerte cambia. ¿Cuál nombra a una persona?",
+      "explicacion": "Mi pa-**pá** (aguda: una persona) pela la **pa**-pa (grave: la que comemos). ¡La sílaba tónica cambia el significado!",
+      "error": "no-encuentra-tonica"
+    },
+    {
+      "id": "p14", "tipo": "ordenar", "nivel": 3,
+      "enunciado": "Ordena: primero la palabra aguda, después la grave y al final la esdrújula.",
+      "elementos": ["tucán", "alpaca", "miércoles"],
+      "pista": "Busca la sílaba tónica de cada palabra y cuenta desde el final.",
+      "explicacion": "Tu-**cán** es aguda, al-**pa**-ca es grave y **miér**-co-les es esdrújula.",
+      "error": "clasifica-acento"
+    },
+    {
+      "id": "p15", "tipo": "opcion", "nivel": 3,
+      "enunciado": "Es un día de la semana y es una palabra esdrújula. ¿Cuál está bien escrita?",
+      "visual": { "tipo": "emoji", "valor": "📅" },
+      "opciones": [
+        { "texto": "sábado", "correcta": true },
+        { "texto": "sabado", "pista": "Es esdrújula. ¿Qué le falta a esta palabra?", "error": "tilde-esdrujula" },
+        { "texto": "sabádo", "pista": "La tilde va en la sílaba tónica. Di la palabra en voz alta: ¿dónde suena más fuerte?", "error": "no-encuentra-tonica" }
+      ],
+      "columnas": 3,
+      "pista": "Las esdrújulas llevan tilde en la sílaba que suena más fuerte.",
+      "explicacion": "Se escribe «sábado»: **sá**-ba-do. La tilde va en la sílaba tónica, que es la antepenúltima.",
+      "error": "tilde-esdrujula"
+    },
+    {
+      "id": "p16", "tipo": "escribir-libre", "nivel": 3,
+      "enunciado": "Escribe una oración con una palabra esdrújula. ¡No olvides su tilde!",
+      "guia": ["Puedes usar: pájaro, plátano, música, sábado, teléfono o número.", "Mi abuela escucha música en la radio."],
+      "requisitos": [
+        { "tipo": "mayuscula-inicial" },
+        { "tipo": "punto-final" },
+        { "tipo": "min-palabras", "valor": 4 },
+        { "tipo": "incluye", "palabras": ["pájaro", "plátano", "música", "sábado", "teléfono", "número", "murciélago", "médico", "médica", "lámpara", "víbora", "águila", "miércoles", "brújula", "película", "lágrima", "brócoli"] }
+      ],
+      "modelo": "El sábado comí un plátano en la feria.",
+      "pista": "Elige una palabra esdrújula de la lista y piensa qué quieres contar con ella.",
+      "explicacion": "Por ejemplo: «El sábado comí un plátano en la feria.» Sábado y plátano son esdrújulas y llevan tilde.",
+      "error": "produce-oracion"
+    }
+  ],
+  "comprobacion": [
+    {
+      "id": "c1", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Escucha la palabra y toca su sílaba tónica.",
+      "escuchar": "zapato",
+      "visual": { "tipo": "emoji", "valor": "👞" },
+      "texto": "za–*pa*–to",
+      "pista": "Llama la palabra de lejos. ¿Qué sílaba se estira?",
+      "explicacion": "Za-**pa**-to: la sílaba tónica es **pa**.",
+      "error": "no-encuentra-tonica"
+    },
+    {
+      "id": "c2", "tipo": "opcion", "nivel": 1,
+      "enunciado": "Escucha la palabra. ¿Cuál es su sílaba tónica?",
+      "escuchar": "corazón",
+      "visual": { "tipo": "emoji", "valor": "❤️" },
+      "opciones": [
+        { "texto": "co", "pista": "Si dices la palabra con fuerza en «co», ¿suena bien? Escucha otra vez.", "error": "no-encuentra-tonica" },
+        { "texto": "ra", "pista": "Si dices la palabra con fuerza en «ra», ¿suena como siempre? Escucha otra vez.", "error": "no-encuentra-tonica" },
+        { "texto": "zón", "correcta": true }
+      ],
+      "mezclar": false,
+      "columnas": 3,
+      "pista": "Llama la palabra de lejos. ¿Qué sílaba se estira?",
+      "explicacion": "Co-ra-**zón**: la sílaba tónica es **zón**, la última. ¡Por eso lleva tilde ahí!",
+      "error": "no-encuentra-tonica"
+    },
+    {
+      "id": "c3", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "Comidas de la feria: ¿aguda, grave o esdrújula?",
+      "categorias": [
+        { "id": "aguda", "texto": "Aguda" },
+        { "id": "grave", "texto": "Grave" },
+        { "id": "esdrujula", "texto": "Esdrújula" }
+      ],
+      "elementos": [
+        { "texto": "maní", "categoria": "aguda" },
+        { "texto": "ají", "categoria": "aguda" },
+        { "texto": "café", "categoria": "aguda" },
+        { "texto": "yuca", "categoria": "grave" },
+        { "texto": "choclo", "categoria": "grave" },
+        { "texto": "azúcar", "categoria": "grave" },
+        { "texto": "plátano", "categoria": "esdrujula" },
+        { "texto": "brócoli", "categoria": "esdrujula" }
+      ],
+      "pista": "Di cada palabra en voz alta, busca la sílaba fuerte y cuenta desde el final.",
+      "explicacion": "Agudas: ma-**ní**, a-**jí**, ca-**fé**. Graves: **yu**-ca, **cho**-clo, a-**zú**-car. Esdrújulas: **plá**-ta-no, **bró**-co-li.",
+      "error": "clasifica-acento"
+    },
+    {
+      "id": "c4", "tipo": "opcion", "nivel": 2,
+      "enunciado": "Escucha la palabra. ¿Es aguda, grave o esdrújula?",
+      "escuchar": "lápiz",
+      "visual": { "tipo": "emoji", "valor": "✏️" },
+      "opciones": [
+        { "texto": "aguda", "pista": "Escucha otra vez: ¿la sílaba fuerte es la última? Ojo: llevar tilde no hace aguda a una palabra.", "error": "tilde-no-define" },
+        { "texto": "grave", "correcta": true },
+        { "texto": "esdrújula", "pista": "Una esdrújula tiene por lo menos tres sílabas. Cuenta las sílabas de esta palabra.", "error": "clasifica-acento" }
+      ],
+      "mezclar": false,
+      "columnas": 3,
+      "pista": "Busca la sílaba fuerte y cuenta desde el final.",
+      "explicacion": "**Lá**-piz: la sílaba tónica es la penúltima. Es **grave**, y además lleva tilde.",
+      "error": "clasifica-acento"
+    },
+    {
+      "id": "c5", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha y escribe la palabra. Es esdrújula: ¡pon su tilde!",
+      "escuchar": "número",
+      "respuestas": ["número"],
+      "tildes": "estricto",
+      "pista": "Sepárala en sílabas: nu-me-ro. La tilde va en la sílaba que suena más fuerte.",
+      "explicacion": "Se escribe «número», con tilde en la ú: **nú**-me-ro es esdrújula.",
+      "error": "tilde-esdrujula"
+    },
+    {
+      "id": "c6", "tipo": "tocar", "nivel": 2,
+      "enunciado": "Toca la sílaba tónica de cada palabra. ¡Son tres palabras!",
+      "texto": "sa–*lar*, zam–*po*–ña, *brú*–ju–la",
+      "pista": "Di cada palabra en voz alta, una por una, y escucha qué sílaba se estira.",
+      "explicacion": "Sa-**lar** (aguda), zam-**po**-ña (grave) y **brú**-ju-la (esdrújula).",
+      "error": "no-encuentra-tonica"
+    },
+    {
+      "id": "c7", "tipo": "tocar", "nivel": 3,
+      "enunciado": "Toca las palabras esdrújulas.",
+      "texto": "La *médica* escucha *música* en su *teléfono* después del almuerzo.",
+      "pista": "Hay tres. Su sílaba fuerte es la antepenúltima. No todas las palabras con tilde son esdrújulas.",
+      "explicacion": "Las esdrújulas son **mé**-di-ca, **mú**-si-ca y te-**lé**-fo-no. «Después» tiene tilde, pero es aguda: des-**pués**.",
+      "error": "tilde-no-define"
+    },
+    {
+      "id": "c8", "tipo": "multiple", "nivel": 3,
+      "enunciado": "Elige todas las palabras graves.",
+      "opciones": [
+        { "texto": "árbol", "correcta": true },
+        { "texto": "charango", "correcta": true },
+        { "texto": "fútbol", "correcta": true },
+        { "texto": "ratón", "pista": "Ra-tón: ¿la sílaba fuerte es la penúltima o la última?", "error": "clasifica-acento" },
+        { "texto": "sábado", "pista": "«Sábado» tiene la fuerza en «sá». Cuenta desde el final: ¿qué lugar ocupa?", "error": "clasifica-acento" },
+        { "texto": "jabalí", "pista": "Ja-ba-lí: ¿la sílaba fuerte es la penúltima?", "error": "clasifica-acento" }
+      ],
+      "pista": "En una palabra grave, la sílaba fuerte es la penúltima. Algunas graves llevan tilde y otras no.",
+      "explicacion": "Son graves **ár**-bol, cha-**ran**-go y **fút**-bol. Ra-**tón** y ja-ba-**lí** son agudas, y **sá**-ba-do es esdrújula.",
+      "error": "clasifica-acento"
+    }
+  ],
+  "repaso": {
+    "texto": "La sílaba tónica es la que suena más fuerte. Cuenta desde el final: última = aguda; penúltima = grave (llana); antepenúltima = esdrújula. ¡Las esdrújulas siempre llevan tilde!",
+    "visual": {
+      "tipo": "tabla",
+      "columnas": ["Aguda", "Grave", "Esdrújula"],
+      "filas": [["ca-mión", "me-sa", "pá-ja-ro"], ["pa-pel", "ár-bol", "mú-si-ca"]]
+    }
+  },
+  "adulto": {
+    "objetivo": "Reconocer la sílaba tónica (la que se pronuncia con más fuerza) y clasificar palabras en agudas, graves (llanas) y esdrújulas, contando las sílabas desde el final. A este nivel solo se trabaja una regla de tildación: todas las esdrújulas llevan tilde. Las reglas de tilde de agudas y graves se verán más adelante.",
+    "sugerencias": [
+      "En casa, jueguen a «llamar palabras»: digan nombres de cosas como si llamaran a alguien que está lejos (¡pe-looo-ta!, ¡ca-miiión!) y descubran juntos qué sílaba se estira.",
+      "En la feria o el mercado, elijan productos (papa, maní, plátano, zanahoria) y den una palmada por sílaba, más fuerte en la sílaba tónica. Luego digan si la palabra es aguda, grave o esdrújula.",
+      "Al caminar por la calle, busquen palabras en carteles y envases. Sepárenlas en sílabas, cuenten desde el final y anoten las esdrújulas que encuentren: ¿todas tienen tilde?"
+    ],
+    "errores": {
+      "no-encuentra-tonica": { "descripcion": "Le cuesta reconocer la sílaba que suena más fuerte.", "sugerencia": "Digan la palabra cambiando la fuerza de lugar (PE-lo-ta, pe-LO-ta, pe-lo-TA) y pregunten cuál suena como la decimos siempre. Llamar la palabra «de lejos» también ayuda." },
+      "clasifica-acento": { "descripcion": "Confunde aguda, grave y esdrújula; a veces cuenta las sílabas desde el principio y no desde el final.", "sugerencia": "Escriban la palabra separada en sílabas, señalen la última y cuenten hacia atrás con los dedos: 1 = aguda, 2 = grave, 3 = esdrújula." },
+      "tilde-no-define": { "descripcion": "Cree que toda palabra con tilde es aguda o esdrújula, o decide la clase solo mirando la tilde.", "sugerencia": "Muestren palabras como árbol, lápiz o cóndor: tienen tilde y son graves. Lo que decide la clase es el lugar de la sílaba tónica, no la tilde." },
+      "tilde-esdrujula": { "descripcion": "Olvida la tilde en las palabras esdrújulas o la pone en otra sílaba.", "sugerencia": "Armen una lista de esdrújulas conocidas (pájaro, plátano, sábado, música) y repasen que todas llevan tilde en la sílaba tónica." },
+      "produce-oracion": { "descripcion": "Le cuesta escribir una oración completa que use una palabra esdrújula.", "sugerencia": "Elijan juntos una esdrújula, digan una oración en voz alta y luego escríbanla con mayúscula, tilde y punto." }
+    }
+  }
+}

@@ -24,7 +24,7 @@ export default function clasificar(cont, ej, ctx) {
 
   const fichas = new Map();
   elementos.forEach((e) => {
-    const b = h('button', { class: 'ficha', type: 'button' },
+    const b = h('button', { class: 'ficha', type: 'button', 'data-k': String(e.k) },
       e.emoji ? h('span', { class: 'emoji', 'aria-hidden': 'true' }, e.emoji) : null, e.texto ? ` ${e.texto}` : '');
     hacerArrastrable(b, {
       destinos: () => cats.map((x) => x.el),

@@ -97,7 +97,7 @@
     },
     {
       "id": "p2", "tipo": "clasificar", "nivel": 1,
-      "enunciado": "¿Hay que sumar o restar? Pon cada frase en su grupo.",
+      "enunciado": "Para saber cuántos hay al final, ¿sumo o resto? Pon cada frase en su grupo.",
       "categorias": [ { "id": "suma", "texto": "Sumo", "emoji": "➕" }, { "id": "resta", "texto": "Resto", "emoji": "➖" } ],
       "elementos": [
         { "texto": "Llegan 5 invitados más a la fiesta.", "categoria": "suma" },
@@ -122,14 +122,12 @@
       "error": "calculo-problema"
     },
     {
-      "id": "p4", "tipo": "numero", "nivel": 1,
-      "enunciado": "En la canasta hay 18 huevos. Se rompen 5. ¿Cuántos huevos sanos quedan?",
-      "visual": { "tipo": "emoji", "valor": "🥚", "cantidad": 18, "etiqueta": "18 huevos" },
-      "respuesta": 13,
-      "erroresComunes": [ { "respuesta": 23, "pista": "Si se rompen huevos, quedan menos sanos. ¿Hay que sumar o restar?", "error": "elige-operacion" } ],
-      "pista": "Quita los 5 huevos rotos de los 18.",
-      "explicacion": "18 − 5 = 13. Quedan 13 huevos sanos.",
-      "error": "calculo-problema"
+      "id": "p4", "tipo": "manipular", "nivel": 1,
+      "enunciado": "Rosa lleva 15 Bs a la feria. Compra una lechuga a 3 Bs. Pon en la bandeja el dinero que le queda.",
+      "manipulable": { "tipo": "dinero", "objetivo": 1200, "disponibles": ["b10", "m5", "m2", "m1"], "mostrarTotal": true },
+      "pista": "Rosa gasta dinero: le queda menos. Quita 3 Bs de los 15 Bs.",
+      "explicacion": "15 − 3 = 12. A Rosa le quedan 12 Bs: por ejemplo, un billete de 10 Bs y una moneda de 2 Bs.",
+      "error": "elige-operacion"
     },
     {
       "id": "p5", "tipo": "ordenar", "nivel": 1,
@@ -271,7 +269,7 @@
         { "tipo": "mayuscula-inicial" },
         { "tipo": "signos-pregunta" },
         { "tipo": "min-palabras", "valor": 5 },
-        { "tipo": "incluye", "palabras": ["más", "menos", "falta", "faltan", "queda", "quedan", "diferencia"] }
+        { "tipo": "incluye", "palabras": ["más", "menos", "falta", "queda", "sobra", "gasta", "gastó", "diferencia"] }
       ],
       "modelo": "¿Cuántos bolivianos más tiene Wara que Luis?",
       "pista": "Puedes comparar lo que ahorraron los dos: ¿quién tiene más y cuánto más?",
@@ -295,7 +293,7 @@
   "comprobacion": [
     {
       "id": "c1", "tipo": "numero", "nivel": 1,
-      "enunciado": "Para la fiesta, el tío Inti sirvió 14 vasos de api. Después sirvió 5 más. ¿Cuántos vasos de api sirvió?",
+      "enunciado": "Para la fiesta, el tío Inti sirvió 14 vasos de api. Después sirvió 5 más. ¿Cuántos vasos de api sirvió en total?",
       "visual": { "tipo": "emoji", "valor": "☕", "cantidad": 14, "etiqueta": "14 vasos de api" },
       "respuesta": 19,
       "erroresComunes": [ { "respuesta": 9, "pista": "Sirvió más vasos: hay que juntar.", "error": "elige-operacion" } ],
@@ -310,7 +308,7 @@
       "opciones": [
         { "texto": "16 − 6", "correcta": true },
         { "texto": "16 + 6", "pista": "Si se esconden, se ven menos pollitos, no más.", "error": "elige-operacion" },
-        { "texto": "6 + 6", "pista": "Empieza por todos los pollitos que había: 16.", "error": "datos-problema" }
+        { "texto": "6 − 16", "pista": "Empieza por todos los pollitos que había: 16. Después quita los que se esconden.", "error": "datos-problema" }
       ],
       "columnas": 3,
       "pista": "Si se esconden, ¿se ven más o menos pollitos?",
@@ -365,9 +363,9 @@
     {
       "id": "c6", "tipo": "tocar", "nivel": 2,
       "enunciado": "Toca los dos números que necesitas para responder la pregunta.",
-      "texto": "Mateo tiene 7 años. Cosechó *43* mandarinas y regaló *12* a sus vecinos. ¿Cuántas mandarinas le quedan?",
-      "pista": "La edad de Mateo no dice nada sobre las mandarinas.",
-      "explicacion": "Necesitas 43 (las que cosechó) y 12 (las que regaló): le quedan 43 − 12 = 31 mandarinas.",
+      "texto": "En la huerta hay 5 árboles de mandarina. Mateo cosechó *43* mandarinas y regaló *12* a sus vecinos. ¿Cuántas mandarinas le quedan?",
+      "pista": "La pregunta es sobre mandarinas. ¿Cuántas cosechó Mateo y cuántas regaló?",
+      "explicacion": "Necesitas 43 (las que cosechó) y 12 (las que regaló): le quedan 43 − 12 = 31 mandarinas. Los 5 árboles no sirven para esta pregunta.",
       "error": "datos-problema"
     },
     {
@@ -376,7 +374,9 @@
       "visual": { "tipo": "emojis", "items": ["🚚", "🚚"], "etiquetas": ["256 sandías", "178 sandías"] },
       "respuesta": 434,
       "erroresComunes": [
-        { "respuesta": 324, "pista": "Revisa lo que llevas: 6 + 8 = 14, así que llevas 1 decena.", "error": "suma-olvida-llevar" },
+        { "respuesta": 424, "pista": "En las unidades, 6 + 8 = 14: llevas 1 decena. ¿La sumaste en las decenas?", "error": "suma-olvida-llevar" },
+        { "respuesta": 334, "pista": "En las decenas, 5 + 7 + 1 = 13: llevas 1 centena. ¿La sumaste en las centenas?", "error": "suma-olvida-llevar" },
+        { "respuesta": 324, "pista": "Revisa lo que llevas: en las unidades y en las decenas la suma pasa de 9.", "error": "suma-olvida-llevar" },
         { "respuesta": 78, "pista": "«Entre los dos» pide juntar: hay que sumar.", "error": "elige-operacion" }
       ],
       "pista": "«Entre los dos» quiere decir juntar. Suma por columnas y no olvides lo que llevas.",

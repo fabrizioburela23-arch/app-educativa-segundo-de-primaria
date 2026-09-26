@@ -9,7 +9,7 @@
       "visual": { "tipo": "recta", "min": 0, "max": 10, "paso": 1, "marcar": [2, 4, 6, 8, 10], "saltos": [[0, 2], [2, 4], [4, 6], [6, 8], [8, 10]] }
     },
     {
-      "texto": "3 × 4 son 3 grupos de 4, y 4 × 3 son 4 grupos de 3: ¡los dos dan 12! El orden no cambia el resultado. Por eso, para la tabla del 3 puedes contar de 3 en 3: 3, 6, 9, 12.",
+      "texto": "3 × 4 son 3 grupos de 4, y 4 × 3 son 4 grupos de 3: ¡los dos dan 12! El orden no cambia el resultado. Por eso, 3 × 4 también se puede contar de 3 en 3, cuatro veces: 3, 6, 9, 12.",
       "visual": { "tipo": "arreglo", "filas": 4, "columnas": 3, "emoji": "🍊" }
     },
     {
@@ -18,7 +18,7 @@
       "visual": { "tipo": "tabla", "columnas": ["×", "1", "2", "3", "4", "5"], "filas": [["2", "2", "4", "6", "8", "10"], ["4", "4", "8", "12", "16", "20"], ["5", "5", "10", "15", "20", "25"]] }
     },
     {
-      "texto": "Cuenta de 5 en 5 los dedos de las manos de tu familia: una mano, 5; dos manos, 10; tres manos, 15. Entonces 5 × 3 = 15.",
+      "texto": "Cada mano tiene 5 dedos. Cuenta los dedos de 5 en 5: una mano, 5; dos manos, 10; tres manos, 15. Contaste de 5 en 5, tres veces: 5 × 3 = 15.",
       "visual": { "tipo": "emojis", "items": ["✋", "✋", "✋"], "etiquetas": ["5", "10", "15"] }
     }
   ],
@@ -36,7 +36,7 @@
     "pasos": [
       {
         "id": "g1", "tipo": "manipular",
-        "enunciado": "Cuenta de 2 en 2 desde el 0. Da 6 saltos y marca dónde llegas.",
+        "enunciado": "Cuenta de 2 en 2 desde el 0. Da 6 saltos y marca el número al que llegas.",
         "apoyo": "Di en voz alta un número por cada salto: 2, 4, 6... Levanta un dedo en cada salto para no perder la cuenta.",
         "manipulable": { "tipo": "recta", "min": 0, "max": 20, "paso": 1, "objetivo": 12 },
         "pista": "Cuenta tus dedos levantados: deben ser 6 saltos de 2.",
@@ -233,12 +233,12 @@
     },
     {
       "id": "c2", "tipo": "completar", "nivel": 1,
-      "enunciado": "Cuenta de 5 en 5 y completa.",
-      "texto": "5, 10, 15, [20], [25], [30]",
-      "banco": ["21", "26"],
-      "pista": "Suma 5 cada vez. Los números terminan en 0 o en 5.",
-      "explicacion": "5, 10, 15, 20, 25, 30: es la tabla del 5.",
-      "error": "salta-conteo"
+      "enunciado": "Completa estas multiplicaciones de la tabla del 2.",
+      "texto": "2 × 6 = [12]; 2 × 8 = [16]; 2 × 9 = [18]",
+      "banco": ["14", "17"],
+      "pista": "Cuenta de 2 en 2: 2, 4, 6... Da tantos saltos como dice el segundo número.",
+      "explicacion": "2 × 6 = 12, 2 × 8 = 16 y 2 × 9 = 18. Contando de 2 en 2: 2, 4, 6, 8, 10, 12, 14, 16, 18.",
+      "error": "tabla-multiplicar"
     },
     {
       "id": "c3", "tipo": "relacionar", "nivel": 2,

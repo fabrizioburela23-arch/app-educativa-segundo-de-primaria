@@ -172,7 +172,7 @@
     },
     {
       "id": "p11", "tipo": "manipular", "nivel": 2,
-      "enunciado": "Cuenta de 8 en 8: da 6 saltos desde el 0 y marca dónde llegas.",
+      "enunciado": "Cuenta de 8 en 8: da 6 saltos desde el 0 y marca el número al que llegas.",
       "manipulable": { "tipo": "recta", "min": 0, "max": 80, "paso": 8, "objetivo": 48 },
       "pista": "Cada rayita es un salto de 8. Cuenta 6 saltos desde el 0.",
       "explicacion": "8, 16, 24, 32, 40, 48: con 6 saltos de 8 llegas al 48. Entonces 8 × 6 = 48.",
@@ -280,18 +280,18 @@
     },
     {
       "id": "c5", "tipo": "multiple", "nivel": 2,
-      "enunciado": "Elige todas las multiplicaciones que dan 36.",
+      "enunciado": "Elige todas las multiplicaciones que dan 40.",
       "opciones": [
-        { "texto": "6 × 6", "correcta": true },
-        { "texto": "9 × 4", "correcta": true },
-        { "texto": "4 × 9", "correcta": true },
-        { "texto": "7 × 5", "pista": "7 × 5 = 35: le falta 1 para 36.", "error": "tabla-multiplicar" },
-        { "texto": "8 × 4", "pista": "8 × 4 es el doble de 4 × 4: 16 + 16 = 32.", "error": "tabla-multiplicar" },
-        { "texto": "6 × 7", "pista": "6 × 7 es el doble de 3 × 7: 21 + 21 = 42.", "error": "tabla-multiplicar" }
+        { "texto": "8 × 5", "correcta": true },
+        { "texto": "5 × 8", "correcta": true },
+        { "texto": "10 × 4", "correcta": true },
+        { "texto": "9 × 4", "pista": "Con los dedos, para 9 × 4 bajas el cuarto dedo: 3 y 6, o sea 36.", "error": "tabla-multiplicar" },
+        { "texto": "6 × 7", "pista": "6 × 7 es el doble de 3 × 7: 21 + 21 = 42.", "error": "tabla-multiplicar" },
+        { "texto": "9 × 5", "pista": "9 × 5 = 45: se pasa de 40.", "error": "tabla-multiplicar" }
       ],
       "columnas": 3,
-      "pista": "Calcula cada una. Recuerda que 9 × 4 y 4 × 9 dan lo mismo.",
-      "explicacion": "6 × 6, 9 × 4 y 4 × 9 dan 36. En cambio, 7 × 5 = 35, 8 × 4 = 32 y 6 × 7 = 42.",
+      "pista": "Calcula cada una con un truco: cambia el orden, agrega un 0, usa el doble o los dedos.",
+      "explicacion": "8 × 5, 5 × 8 y 10 × 4 dan 40. En cambio, 9 × 4 = 36, 6 × 7 = 42 y 9 × 5 = 45.",
       "error": "tabla-multiplicar"
     },
     {
@@ -309,25 +309,28 @@
     },
     {
       "id": "c7", "tipo": "pasos", "nivel": 3,
-      "enunciado": "En la fiesta del barrio hay 8 mesas. En cada mesa pueden sentarse 6 personas. Ya llegaron 41 personas.",
+      "enunciado": "En la cosecha, la familia de Arami llena 8 canastas con 6 mangos en cada una. Después regalan 9 mangos a sus vecinos.",
       "pasos": [
         {
-          "tipo": "numero", "enunciado": "¿Cuántas personas pueden sentarse en total?", "respuesta": 48,
-          "erroresComunes": [ { "respuesta": 14, "pista": "Sumaste 8 + 6. Son 8 mesas con 6 lugares cada una.", "error": "suma-en-vez-de-multiplicar" } ],
+          "tipo": "numero", "enunciado": "¿Cuántos mangos hay en las 8 canastas?", "respuesta": 48,
+          "erroresComunes": [ { "respuesta": 14, "pista": "Sumaste 8 + 6. Son 8 canastas con 6 mangos cada una.", "error": "suma-en-vez-de-multiplicar" } ],
           "pista": "Calcula 8 × 6. Puedes usar el doble: 4 × 6 = 24.",
-          "explicacion": "8 × 6 = 48 lugares, el doble de 24.",
+          "explicacion": "8 × 6 = 48 mangos, porque es el doble de 24.",
           "error": "tabla-multiplicar"
         },
         {
-          "tipo": "numero", "enunciado": "¿Cuántos lugares quedan libres?", "respuesta": 7,
-          "erroresComunes": [ { "respuesta": 89, "pista": "Sumaste. Algunos lugares ya están ocupados: resta 48 − 41.", "error": "problema-pasos" } ],
-          "pista": "A los lugares que hay, quítales las personas que ya llegaron.",
-          "explicacion": "48 − 41 = 7 lugares libres.",
+          "tipo": "numero", "enunciado": "¿Cuántos mangos les quedan?", "respuesta": 39,
+          "erroresComunes": [
+            { "respuesta": 57, "pista": "Sumaste. Regalaron mangos, así que ahora tienen menos: resta.", "error": "problema-pasos" },
+            { "respuesta": 41, "pista": "A 8 no le puedes quitar 9. Pide prestada una decena: 18 − 9.", "error": "problema-pasos" }
+          ],
+          "pista": "A los mangos de las canastas, quítales los que regalaron.",
+          "explicacion": "48 − 9 = 39 mangos.",
           "error": "problema-pasos"
         }
       ],
-      "pista": "Primero multiplica. Después resta las personas que ya llegaron.",
-      "explicacion": "8 × 6 = 48 lugares. 48 − 41 = 7 lugares libres.",
+      "pista": "Primero multiplica. Después resta los mangos que regalaron.",
+      "explicacion": "8 × 6 = 48 mangos. 48 − 9 = 39: les quedan 39 mangos.",
       "error": "problema-pasos"
     },
     {

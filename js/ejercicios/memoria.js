@@ -5,8 +5,11 @@ const lado = (x) => (typeof x === 'string' ? { texto: x } : x);
 
 export default function memoria(cont, ej, ctx) {
   const cartas = mezclar(ej.pares.flatMap((p, i) => [{ par: i, ...lado(p[0]) }, { par: i, ...lado(p[1]) }]));
-  const cols = cartas.length <= 6 ? 3 : 4;
-  const grid = h('div', { class: 'memoria', style: `--cols: ${cols}` });
+  // Con textos largos se usan menos columnas y cartas más bajas, para que quepan en el celular.
+  const largo = Math.max(...cartas.map((c) => Math.max(0, ...String(c.texto || '').split(/\s+/).map((w) => w.length)) + (c.texto || '').length / 4));
+  const textos = largo > 9;
+  const cols = textos ? (cartas.length <= 8 ? 2 : 3) : cartas.length <= 6 ? 3 : 4;
+  const grid = h('div', { class: `memoria ${textos ? 'textos' : ''}`, style: `--cols: ${cols}` });
   const info = h('p', { class: 'memoria-info', 'aria-live': 'polite' }, 'Toca dos cartas para darles la vuelta.');
   cont.append(grid, info);
 

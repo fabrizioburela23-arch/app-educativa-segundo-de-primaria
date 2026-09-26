@@ -31,33 +31,32 @@ async function teclear(page, numero) {
 // Responde el ejercicio actual. bien=true: respuesta correcta; bien=false: incorrecta.
 export async function responder(page, ej, bien, manipular = null) {
   switch (ej.tipo) {
-    case 'opcion': {
-      const candidatas = bien ? ej.opciones.filter((o) => o.correcta) : ej.opciones.filter((o) => !o.correcta);
-      const ops = page.locator('.opcion');
-      const n = await ops.count();
-      for (const op of candidatas) {
-        const esperado = norm([op.emoji, op.texto].filter(Boolean).join(' '));
-        for (let i = 0; i < n; i++) {
-          const t = norm(await ops.nth(i).innerText());
-          const coincide = t === esperado || (op.texto && t.endsWith(norm(op.texto)) && t.length - norm(op.texto).length <= 4) || (!op.texto && t === norm(op.emoji || ''));
-          if (coincide && !(await ops.nth(i).isDisabled())) { await ops.nth(i).click(); return; }
-        }
-      }
-      throw new Error(`Opción no encontrada (${bien ? 'correcta' : 'incorrecta'}) en ${ej.id}`);
-    }
+    case 'opcion':
     case 'multiple': {
-      const lista = bien ? ej.opciones.filter((o) => o.correcta) : [ej.opciones.find((o) => !o.correcta)];
-      for (const op of lista) await clicTexto(page, '.opcion', [op.emoji, op.texto].filter(Boolean).join(' '), { excluir: 'elegida', opcional: true });
+      const idx = ej.opciones.map((o, i) => i).filter((i) => (bien ? ej.opciones[i].correcta : !ej.opciones[i].correcta));
+      const lista = ej.tipo === 'multiple' && bien ? idx : idx.slice();
+      for (const i of lista) {
+        const b = page.locator(`.opcion[data-i="${i}"]`);
+        if (await b.isDisabled()) continue;
+        const cls = (await b.getAttribute('class')) || '';
+        if (cls.includes('elegida')) { if (ej.tipo === 'opcion') return; continue; }
+        await b.click();
+        if (ej.tipo === 'opcion' || !bien) return;
+      }
+      if (ej.tipo === 'opcion') throw new Error(`Opción no encontrada (${bien ? 'correcta' : 'incorrecta'}) en ${ej.id}`);
       return;
     }
     case 'tocar': {
-      const correctas = (ej.texto.match(/\*([^*]+)\*/g) || []).map((x) => x.replace(/\*/g, ''));
-      if (bien) { for (const c of correctas) await clicTexto(page, '.palabra', c, { excluir: 'elegida', opcional: true }); return; }
-      const todas = page.locator('.palabra');
-      const n = await todas.count();
-      for (let i = 0; i < n; i++) {
-        const t = norm(await todas.nth(i).innerText());
-        if (!correctas.includes(t)) { await todas.nth(i).click(); return; }
+      const toks = await page.evaluate(async (texto) => {
+        const m = await import(`${location.origin}/js/contenido/texto.js`);
+        return m.tokenizarTocar(texto).tokens.map((t, i) => ({ i, palabra: !!t.palabra, correcta: !!t.correcta }));
+      }, ej.texto);
+      const objetivo = bien ? toks.filter((t) => t.correcta) : [toks.find((t) => t.palabra && !t.correcta)];
+      for (const t of objetivo) {
+        const b = page.locator(`.palabra[data-i="${t.i}"]`);
+        const cls = (await b.getAttribute('class')) || '';
+        if (bien && cls.includes('elegida')) continue;
+        await b.click();
       }
       return;
     }
@@ -99,28 +98,35 @@ export async function responder(page, ej, bien, manipular = null) {
       return;
     }
     case 'ordenar': {
-      const els = ej.elementos.map((e) => norm(typeof e === 'string' ? e : [e.emoji, e.texto].filter(Boolean).join(' ')));
-      const orden = bien ? els : [...els].reverse();
-      for (const e of orden) await clicTexto(page, '.ordenar-origen .ficha', e, { excluir: 'usada', opcional: true });
+      const orden = ej.elementos.map((e, k) => k);
+      if (!bien) orden.reverse();
+      for (const k of orden) {
+        const b = page.locator(`.ordenar-origen .ficha[data-k="${k}"]`);
+        if (await b.isDisabled()) continue;
+        await b.click();
+      }
       return;
     }
     case 'relacionar': {
-      const pares = ej.pares.map((p) => [etiqueta(p[0]), etiqueta(p[1])]);
-      const der = pares.map((p) => p[1]);
-      const usar = bien ? der : [der[1], der[0], ...der.slice(2)];
-      for (let i = 0; i < pares.length; i++) {
-        if (!(await clicTexto(page, '.relacionar .col:first-child .ficha', pares[i][0], { excluir: 'unida', opcional: true }))) continue;
-        await clicTexto(page, '.relacionar .col:nth-child(2) .ficha', usar[i]);
+      const n = ej.pares.length;
+      for (let i = 0; i < n; i++) {
+        const izq = page.locator(`.relacionar .col:first-child .ficha[data-i="${i}"]`);
+        if (((await izq.getAttribute('class')) || '').includes('unida')) continue;
+        const j = bien ? i : (i === 0 ? 1 : i === 1 ? 0 : i);
+        await izq.click();
+        await page.locator(`.relacionar .col:nth-child(2) .ficha[data-i="${j}"]`).click();
       }
       return;
     }
     case 'clasificar': {
-      for (let i = 0; i < ej.elementos.length; i++) {
-        const e = ej.elementos[i];
-        let cat = ej.categorias.find((c) => c.id === e.categoria);
-        if (!bien && i === 0) cat = ej.categorias.find((c) => c.id !== e.categoria);
-        if (!(await clicTexto(page, '.clasificar-origen .ficha', [e.emoji, e.texto].filter(Boolean).join(' '), { opcional: true }))) continue;
-        await page.locator('.categoria', { hasText: cat.texto }).first().locator('.cab').click();
+      for (let k = 0; k < ej.elementos.length; k++) {
+        const e = ej.elementos[k];
+        const ficha = page.locator(`.clasificar-origen .ficha[data-k="${k}"]`);
+        if (!(await ficha.count())) continue;
+        let cat = e.categoria;
+        if (!bien && k === 0) cat = ej.categorias.find((c) => c.id !== e.categoria).id;
+        await ficha.click();
+        await page.locator(`.categoria[data-cat="${cat}"] .cab`).click();
       }
       return;
     }
@@ -129,52 +135,26 @@ export async function responder(page, ej, bien, manipular = null) {
       const n = await cartas.count();
       const pares = ej.pares.map((p) => p.map(etiqueta));
       const parDe = (t) => { for (const [a, b] of pares) { if (a === t) return b; if (b === t) return a; } return null; };
-      const conocidas = new Map();
-      const hechas = new Set();
-      for (let i = 0; i < n; i++) {
-        if (hechas.has(i)) continue;
+      const conocidas = new Map(); // índice → texto
+      const hecha = async (i) => ((await cartas.nth(i).getAttribute('class')) || '').includes('hecha');
+      const abrir = async (i) => {
         await cartas.nth(i).click();
         const t = norm(await cartas.nth(i).innerText());
-        const pareja = parDe(t);
-        if (conocidas.has(pareja)) {
-          const j = conocidas.get(pareja);
-          await cartas.nth(j).click();
-          hechas.add(i); hechas.add(j);
-          await page.waitForTimeout(150);
-          continue;
-        }
-        // abrir la siguiente para ver si es su pareja
-        let k = i + 1;
-        while (k < n && hechas.has(k)) k++;
-        if (k >= n) break;
-        await cartas.nth(k).click();
-        const t2 = norm(await cartas.nth(k).innerText());
-        if (parDe(t2) === t) { hechas.add(i); hechas.add(k); await page.waitForTimeout(150); continue; }
-        conocidas.set(t, i); conocidas.set(t2, k);
-        await page.waitForTimeout(1250);
-        // si la pareja de t2 ya se conocía, ciérrala ahora
-        const p2 = parDe(t2);
-        if (conocidas.has(p2) && conocidas.get(p2) !== k) {
-          await cartas.nth(conocidas.get(p2)).click();
-          await cartas.nth(k).click();
-          hechas.add(conocidas.get(p2)); hechas.add(k);
-          await page.waitForTimeout(150);
-        }
-        i = i; // continúa
-      }
-      // repasar las que falten con lo que ya se sabe
-      for (let guard = 0; guard < 20 && hechas.size < n; guard++) {
-        const pend = [...Array(n).keys()].filter((x) => !hechas.has(x));
-        const a = pend[0];
-        await cartas.nth(a).click();
-        const ta = norm(await cartas.nth(a).innerText());
-        const objetivo = parDe(ta);
-        let b = [...conocidas].find(([t, idx]) => t === objetivo && !hechas.has(idx) && idx !== a)?.[1];
-        if (b === undefined) b = pend[1];
-        await cartas.nth(b).click();
-        const tb = norm(await cartas.nth(b).innerText());
-        conocidas.set(ta, a); conocidas.set(tb, b);
-        if (parDe(ta) === tb) { hechas.add(a); hechas.add(b); await page.waitForTimeout(150); } else await page.waitForTimeout(1250);
+        conocidas.set(i, t);
+        return t;
+      };
+      for (let guardia = 0; guardia < 60; guardia++) {
+        const pendientes = [];
+        for (let i = 0; i < n; i++) if (!(await hecha(i))) pendientes.push(i);
+        if (!pendientes.length) return;
+        const a = pendientes[0];
+        const ta = await abrir(a);
+        const buscado = parDe(ta);
+        let b = pendientes.find((i) => i !== a && conocidas.get(i) === buscado);
+        if (b === undefined) b = pendientes.find((i) => i !== a && !conocidas.has(i));
+        if (b === undefined) b = pendientes.find((i) => i !== a);
+        await abrir(b);
+        await page.waitForTimeout(parDe(ta) === conocidas.get(b) ? 200 : 1300);
       }
       return;
     }

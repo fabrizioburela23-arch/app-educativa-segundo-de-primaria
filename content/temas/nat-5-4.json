@@ -1,10 +1,10 @@
 {
   "id": "nat-5-4",
   "titulo": "Máquinas simples del barrio",
-  "objetivo": "Reconozco la palanca, la polea, la rueda y eje y el plano inclinado en mi barrio, sé cómo nos ayudan y las uso con cuidado.",
+  "objetivo": "Reconozco las máquinas simples de mi barrio (palanca, polea, rueda y eje, plano inclinado), sé cómo nos ayudan y las uso con cuidado.",
   "explicacion": [
     {
-      "texto": "Las **máquinas simples** no usan motor y nos ayudan a hacer trabajos con menos fuerza o más cómodos. La **palanca** es una barra que gira sobre un **punto de apoyo**: el balancín (sube y baja) y el abridor de botellas son palancas.",
+      "texto": "Las **máquinas simples** no tienen motor. Nos ayudan a hacer un trabajo con menos fuerza o de forma más cómoda. La **palanca** es una barra que gira sobre un **punto de apoyo**, como el balancín (sube y baja) o el abridor de botellas.",
       "emoji": "⚙️",
       "visual": { "tipo": "ilustracion", "id": "palanca" }
     },
@@ -219,14 +219,14 @@
       ],
       "elementos": [
         { "texto": "Avisar antes de bajarte del balancín", "categoria": "si" },
-        { "texto": "Bajar por el resbalín sentado y de a uno", "categoria": "si" },
+        { "texto": "Esperar tu turno y bajar sentado por el resbalín", "categoria": "si" },
         { "texto": "Llevar la carretilla despacio y con poca carga", "categoria": "si" },
         { "texto": "Pararte debajo de un balde que suben con polea", "categoria": "no" },
         { "texto": "Poner los dedos en la cadena de la bicicleta", "categoria": "no" },
-        { "texto": "Jugar a empujarse en la rampa", "categoria": "no" }
+        { "texto": "Empujar a otros niños en la rampa", "categoria": "no" }
       ],
       "pista": "Pregúntate: ¿alguien se puede golpear, apretar los dedos o caer?",
-      "explicacion": "Es seguro avisar antes de bajarte, bajar por el resbalín sentado y de a uno, y llevar la carretilla despacio. Pararse debajo del balde, tocar la cadena o empujarse en la rampa puede causar golpes.",
+      "explicacion": "Es seguro avisar antes de bajarte, esperar tu turno en el resbalín y llevar la carretilla despacio. Pararte debajo del balde, meter los dedos en la cadena o empujar a otros en la rampa puede lastimar a alguien.",
       "error": "seguridad-maquinas"
     },
     {
@@ -308,7 +308,7 @@
       "requisitos": [
         { "tipo": "mayuscula-inicial" }, { "tipo": "punto-final" },
         { "tipo": "min-palabras", "valor": 6 },
-        { "tipo": "incluye", "palabras": ["palanca", "polea", "rueda", "rampa", "plano", "cuña", "balancín", "carretilla", "resbalín"] }
+        { "tipo": "incluye", "palabras": ["palanca", "polea", "roldana", "rueda", "rampa", "plano", "cuña", "balancín", "sube y baja", "carretilla", "resbalín", "tobogán", "abridor", "bicicleta", "triciclo", "carrito", "zigzag", "hacha", "cuchillo", "mástil", "grúa"] }
       ],
       "modelo": "En mi barrio hay una rampa para subir las compras.",
       "pista": "Piensa en el parque, el mercado, una obra o tu casa. Nombra la máquina y di para qué sirve.",
@@ -333,10 +333,10 @@
     },
     {
       "id": "c2", "tipo": "tocar", "nivel": 1,
-      "enunciado": "Toca las máquinas simples de la escuela.",
-      "texto": "En la escuela hay una *rampa* en la entrada y una *polea* en el mástil de la bandera.",
-      "pista": "Hay dos. Una es un camino inclinado; la otra es una rueda con cuerda.",
-      "explicacion": "La rampa es un plano inclinado y la polea ayuda a subir la bandera.",
+      "enunciado": "Toca las máquinas simples que usa Ana en la obra.",
+      "texto": "En la obra del barrio, Ana usa casco. Con una *polea* sube el cemento y por una *rampa* lleva los ladrillos.",
+      "pista": "Hay dos. Una es una rueda con cuerda; la otra es un camino inclinado.",
+      "explicacion": "La polea ayuda a subir el cemento y la rampa es un plano inclinado. El casco no es una máquina: cuida la cabeza de Ana.",
       "error": "identifica-maquina"
     },
     {
@@ -348,22 +348,22 @@
         { "id": "plano", "texto": "Plano inclinado" }
       ],
       "elementos": [
-        { "texto": "abridor de botellas", "categoria": "palanca" },
-        { "texto": "sube y baja", "categoria": "palanca" },
-        { "texto": "bicicleta", "emoji": "🚲", "categoria": "rueda" },
+        { "texto": "martillo que saca un clavo", "categoria": "palanca" },
+        { "texto": "tijeras", "emoji": "✂️", "categoria": "palanca" },
         { "texto": "carrito del mercado", "emoji": "🛒", "categoria": "rueda" },
-        { "texto": "camino en zigzag", "categoria": "plano" },
-        { "texto": "rampa del hospital", "categoria": "plano" }
+        { "texto": "silla de ruedas", "categoria": "rueda" },
+        { "texto": "rampa del hospital", "categoria": "plano" },
+        { "texto": "tabla inclinada para subir sacos a un camión", "categoria": "plano" }
       ],
-      "pista": "Barra con punto de apoyo, rueda que gira o camino inclinado: ¿qué tiene cada una?",
-      "explicacion": "Palancas: el abridor y el sube y baja. Rueda y eje: la bicicleta y el carrito. Planos inclinados: el camino en zigzag y la rampa.",
+      "pista": "Barra que gira sobre un punto de apoyo, rueda que gira o camino inclinado: ¿qué tiene cada una?",
+      "explicacion": "Palancas: el martillo que saca un clavo y las tijeras. Rueda y eje: el carrito y la silla de ruedas. Planos inclinados: la rampa y la tabla inclinada.",
       "error": "ejemplos-maquinas"
     },
     {
       "id": "c4", "tipo": "escribir", "nivel": 2,
       "enunciado": "Escucha la adivinanza y escribe la respuesta.",
       "escuchar": "Soy una rueda por donde pasa una cuerda. Estoy arriba del pozo y en lo alto del mástil de la bandera. Cuando jalas la cuerda hacia abajo, el balde sube. ¿Qué máquina simple soy?",
-      "respuestas": ["polea", "la polea", "una polea", "es la polea", "es una polea", "eres la polea", "eres una polea", "roldana", "la roldana", "una roldana", "garrucha", "la garrucha"],
+      "respuestas": ["polea", "la polea", "una polea", "es la polea", "es una polea", "eres la polea", "eres una polea", "roldana", "la roldana", "una roldana", "es la roldana", "es una roldana", "garrucha", "la garrucha", "una garrucha"],
       "pista": "Está arriba del pozo. Tiene 5 letras.",
       "explicacion": "Es la **polea**: una rueda por donde pasa una cuerda.",
       "error": "identifica-maquina"
@@ -384,13 +384,13 @@
       "opciones": [
         { "texto": "Agarrarme fuerte con las dos manos en el balancín.", "correcta": true },
         { "texto": "Dejar que un adulto use el hacha y el cuchillo grande.", "correcta": true },
-        { "texto": "Alejarme cuando suben un balde con la polea.", "correcta": true },
+        { "texto": "Usar casco cuando ando en bicicleta.", "correcta": true },
         { "texto": "Meter la mano en la rueda de la polea.", "pista": "La cuerda puede apretarte los dedos. Mejor mira de lejos.", "error": "seguridad-maquinas" },
         { "texto": "Subir corriendo por el resbalín mientras otros bajan.", "pista": "Te puedes chocar con quien baja. Espera tu turno.", "error": "seguridad-maquinas" }
       ],
       "columnas": 1,
       "pista": "Hay tres. Elige lo que te cuida de golpes y cortes.",
-      "explicacion": "Es seguro agarrarse fuerte, dejar el hacha y el cuchillo a los adultos y alejarse del balde que sube. Meter la mano en la polea o subir por el resbalín mientras otros bajan puede lastimarte.",
+      "explicacion": "Es seguro agarrarte fuerte, dejar el hacha y el cuchillo a los adultos y usar casco en la bicicleta. Meter la mano en la polea o subir por el resbalín mientras otros bajan puede lastimarte.",
       "error": "seguridad-maquinas"
     },
     {
@@ -421,7 +421,7 @@
     }
   ],
   "repaso": {
-    "texto": "Las máquinas simples nos ayudan a mover cosas con menos fuerza o más fácil. Recuerda un ejemplo de cada una.",
+    "texto": "Las máquinas simples nos ayudan a mover cosas con menos fuerza o de forma más cómoda. Recuerda un ejemplo de cada una.",
     "visual": {
       "tipo": "tabla",
       "columnas": ["Máquina simple", "Ejemplos"],

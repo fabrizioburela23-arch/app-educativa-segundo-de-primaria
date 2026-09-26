@@ -14,7 +14,7 @@
       "visual": { "tipo": "fraccion", "forma": "barra", "partes": 4, "coloreadas": 3 }
     },
     {
-      "texto": "**Dos cuartos** ocupan lo mismo que **un medio**. Por eso un cuarto es más pequeño que un medio: el entero se partió en más pedazos.",
+      "texto": "**Dos cuartos** ocupan lo mismo que **un medio**. Entonces, un cuarto es más pequeño que un medio: ¡un cuarto es la mitad de una mitad!",
       "emoji": "💡",
       "visual": { "tipo": "fraccion", "forma": "circulo", "partes": 4, "coloreadas": 2 }
     },
@@ -30,7 +30,7 @@
       { "texto": "Inti tiene una sandía entera. La quiere compartir con 3 amigos: son 4 en total.", "visual": { "tipo": "fraccion", "forma": "circulo", "partes": 1, "coloreadas": 1 } },
       { "texto": "Primero la corta por la mitad: quedan 2 mitades iguales.", "visual": { "tipo": "fraccion", "forma": "circulo", "partes": 2, "coloreadas": 0 } },
       { "texto": "Después corta cada mitad por la mitad. ¡Quedan 4 partes iguales! Cada parte es un cuarto.", "visual": { "tipo": "fraccion", "forma": "circulo", "partes": 4, "coloreadas": 1 } },
-      { "texto": "Cada amigo recibe un cuarto. Los 4 cuartos juntos son la sandía entera.", "visual": { "tipo": "fraccion", "forma": "circulo", "partes": 4, "coloreadas": 4 } }
+      { "texto": "Inti y cada uno de sus 3 amigos reciben un cuarto. Los 4 cuartos juntos son la sandía entera.", "visual": { "tipo": "fraccion", "forma": "circulo", "partes": 4, "coloreadas": 4 } }
     ],
     "explorar": { "tipo": "fraccion", "forma": "circulo", "partes": 4 }
   },
@@ -78,7 +78,7 @@
       "id": "p2", "tipo": "manipular", "nivel": 1,
       "enunciado": "Pinta un cuarto de la torta.",
       "manipulable": { "tipo": "fraccion", "forma": "circulo", "partes": 4, "objetivo": 1 },
-      "pista": "La torta tiene 4 partes iguales. Un cuarto es solo una de ellas.",
+      "pista": "La torta tiene 4 partes iguales. ¿Cuántas de esas partes son un cuarto?",
       "explicacion": "Un cuarto es 1 de 4 partes iguales. Se pinta una sola parte.",
       "error": "pinta-fraccion"
     },
@@ -100,10 +100,10 @@
       "id": "p4", "tipo": "relacionar", "nivel": 1,
       "enunciado": "Une lo que está pintado con su nombre.",
       "pares": [
-        ["1 de 4 partes pintada", "un cuarto"],
-        ["2 de 4 partes pintadas", "dos cuartos"],
-        ["3 de 4 partes pintadas", "tres cuartos"],
-        ["4 de 4 partes pintadas", "cuatro cuartos"]
+        ["1 parte pintada de 4", "un cuarto"],
+        ["2 partes pintadas de 4", "dos cuartos"],
+        ["3 partes pintadas de 4", "tres cuartos"],
+        ["4 partes pintadas de 4", "cuatro cuartos"]
       ],
       "pista": "El número de partes pintadas dice cuántos cuartos hay.",
       "explicacion": "1 parte de 4 es un cuarto; 2 partes, dos cuartos; 3 partes, tres cuartos; y 4 partes, cuatro cuartos: el entero.",
@@ -143,7 +143,7 @@
       "id": "p8", "tipo": "completar", "nivel": 2,
       "enunciado": "Mira la figura y completa.",
       "visual": { "tipo": "fraccion", "forma": "circulo", "partes": 4, "coloreadas": 2 },
-      "texto": "[Dos] cuartos forman un medio y [cuatro] cuartos forman un entero.",
+      "texto": "Con [dos] cuartos formo un medio y con [cuatro] cuartos formo un entero.",
       "banco": ["tres", "cinco"],
       "pista": "¿Cuántos cuartos cubren la mitad del círculo? ¿Y cuántos cubren todo el círculo?",
       "explicacion": "Dos cuartos ocupan lo mismo que un medio, y cuatro cuartos forman el entero.",
@@ -287,10 +287,10 @@
       "id": "c4", "tipo": "completar", "nivel": 2,
       "enunciado": "Mira la figura y completa.",
       "visual": { "tipo": "fraccion", "forma": "rectangulo", "partes": 4, "coloreadas": 3 },
-      "texto": "La figura tiene [4] partes iguales. Hay [3] partes pintadas: son tres [cuartos].",
-      "banco": ["2", "medios"],
-      "pista": "Cuenta todas las partes y después solo las pintadas.",
-      "explicacion": "La figura tiene 4 partes iguales y 3 están pintadas: son tres cuartos.",
+      "texto": "Cada parte es un [cuarto]. Lo pintado son [tres] cuartos. Falta [un] cuarto para formar el entero.",
+      "banco": ["medio", "dos", "cuatro"],
+      "pista": "Cuenta todas las partes y después solo las pintadas. ¿Cuántas partes quedan sin pintar?",
+      "explicacion": "La figura tiene 4 partes iguales: cada una es un cuarto. Hay 3 pintadas: son tres cuartos. Falta un cuarto para tener los cuatro cuartos del entero.",
       "error": "cuenta-partes"
     },
     {
@@ -317,14 +317,14 @@
     },
     {
       "id": "c7", "tipo": "opcion", "nivel": 3,
-      "enunciado": "Kusi comió dos cuartos de una naranja. Arami comió un medio de otra naranja igual. ¿Quién comió más?",
+      "enunciado": "Kusi y Arami tienen naranjas iguales. Kusi comió dos cuartos de su naranja y Arami, la mitad de la suya. ¿Quién comió más?",
       "opciones": [
         { "texto": "Comieron lo mismo.", "correcta": true },
         { "texto": "Kusi, porque comió 2 pedazos.", "pista": "Kusi comió 2 pedazos, pero son más pequeños. ¿Cuánto ocupan 2 cuartos?", "error": "equivalencia-cuartos" },
-        { "texto": "Arami, porque un medio es más grande.", "pista": "Un medio es más grande que un cuarto, pero Kusi comió 2 cuartos.", "error": "equivalencia-cuartos" }
+        { "texto": "Arami, porque la mitad es más grande.", "pista": "La mitad es más grande que un cuarto, pero Kusi comió 2 cuartos.", "error": "equivalencia-cuartos" }
       ],
       "pista": "Piensa cuántos cuartos ocupan lo mismo que un medio.",
-      "explicacion": "Dos cuartos ocupan lo mismo que un medio. Kusi y Arami comieron lo mismo.",
+      "explicacion": "Dos cuartos ocupan lo mismo que un medio, es decir, la mitad. Kusi y Arami comieron lo mismo.",
       "error": "equivalencia-cuartos"
     },
     {

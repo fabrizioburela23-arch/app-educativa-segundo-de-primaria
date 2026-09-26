@@ -4,7 +4,7 @@
   "objetivo": "Sé cuidar mi salud: me lavo bien las manos, cuido mi higiene, tomo agua segura, descanso, me muevo y voy a mis vacunas y controles.",
   "explicacion": [
     {
-      "texto": "La **higiene** es mantener limpios tu cuerpo, tu ropa y tus cosas. Así alejas a los **microbios**: seres vivos tan pequeñitos que no se ven. Algunos causan enfermedades, como la diarrea.",
+      "texto": "La **higiene** es mantener limpios tu cuerpo, tu ropa y tus cosas. Así alejas a los **microbios**: seres vivos tan pequeñitos que tus ojos no los pueden ver. Algunos causan enfermedades, como la diarrea.",
       "emoji": "🦠",
       "visual": { "tipo": "emojis", "items": ["🦠", "🧼", "💧"], "etiquetas": ["microbios", "jabón", "agua limpia"] }
     },
@@ -13,7 +13,7 @@
       "visual": { "tipo": "emojis", "items": ["🍽️", "🚽", "⚽", "🐕", "🗑️"], "etiquetas": ["antes de comer", "después del baño", "al volver de jugar", "después de tocar animales", "después de tocar basura"] }
     },
     {
-      "texto": "**Cepilla tus dientes** al menos dos veces al día, sobre todo antes de dormir: así evitas las **caries**. **Báñate** seguido, ponte **ropa limpia** y ten las uñas cortas y limpias.",
+      "texto": "**Cepilla tus dientes** al menos dos veces al día, sobre todo antes de dormir: así ayudas a evitar las **caries**. **Báñate** seguido, ponte **ropa limpia** y ten las uñas cortas y limpias.",
       "visual": { "tipo": "emojis", "items": ["🦷", "🚿", "👕", "🧦"], "etiquetas": ["dientes limpios", "baño", "ropa limpia", "medias limpias"] }
     },
     {
@@ -26,7 +26,7 @@
     "pasos": [
       {
         "texto": "Inti **moja** sus manos con agua limpia, **cierra el grifo** para no gastar agua y se pone **jabón**.",
-        "visual": { "tipo": "emojis", "items": ["💧", "🚰", "🧼"], "etiquetas": ["mojar", "grifo cerrado", "jabón"] }
+        "visual": { "tipo": "emojis", "items": ["💧", "🚰", "🧼"], "etiquetas": ["mojar", "cerrar el grifo", "jabón"] }
       },
       {
         "texto": "**Frota** las palmas, el dorso, entre los dedos y las uñas, y cuenta despacio hasta 20.",
@@ -81,7 +81,7 @@
         "enunciado": "Completa el consejo para tus dientes.",
         "apoyo": "Recuerda la tarjeta de los dientes: ¿cuántas veces al día? ¿Antes de qué?",
         "texto": "Me cepillo los [dientes] al menos [dos] veces al día, sobre todo antes de [dormir].",
-        "banco": ["uñas", "diez", "saltar"],
+        "banco": ["codos", "diez", "saltar"],
         "pista": "Se cepillan en la boca. Lo más importante es cepillarte antes de ir a la cama.",
         "explicacion": "Me cepillo los **dientes** al menos **dos** veces al día, sobre todo antes de **dormir**.",
         "error": "higiene-personal"
@@ -137,10 +137,10 @@
         { "texto": "dormir temprano", "emoji": "😴", "categoria": "sano" },
         { "texto": "comer con las manos sucias", "categoria": "enferma" },
         { "texto": "tomar agua del río sin hervir", "categoria": "enferma" },
-        { "texto": "prestar mi cepillo de dientes", "categoria": "enferma" }
+        { "texto": "comer comida que tocaron las moscas", "categoria": "enferma" }
       ],
       "pista": "Piensa: ¿esto aleja a los microbios o los deja entrar a tu cuerpo?",
-      "explicacion": "Te ayudan: lavarte las manos, tomar agua hervida y dormir temprano. Pueden enfermarte: comer con las manos sucias, tomar agua del río sin hervir y prestar tu cepillo, porque así pasan los microbios.",
+      "explicacion": "Te ayudan: lavarte las manos, tomar agua hervida y dormir temprano. Pueden enfermarte: comer con las manos sucias, tomar agua del río sin hervir y comer lo que tocaron las moscas, porque así entran los microbios a tu cuerpo.",
       "error": "habitos-salud"
     },
     {
@@ -156,14 +156,14 @@
       "id": "p6", "tipo": "relacionar", "nivel": 2,
       "enunciado": "Une cada hábito con lo que logra.",
       "pares": [
-        ["cepillarme los dientes", "evita las caries"],
+        ["cepillarme los dientes", "protege mis dientes de las caries"],
         ["lavarme las manos con jabón", "saca los microbios de mis manos"],
         ["dormir bien", "mi cuerpo descansa y crece"],
         ["jugar y correr", "fortalece mis músculos y mi corazón"],
-        ["ponerme mis vacunas", "ayuda a mi cuerpo a defenderse de enfermedades"]
+        ["vacunarme", "ayuda a mi cuerpo a defenderse de enfermedades"]
       ],
       "pista": "Piensa qué parte del cuerpo cuida cada hábito: los dientes, las manos, todo el cuerpo...",
-      "explicacion": "Cepillarte evita las caries; el jabón saca los microbios; al dormir tu cuerpo descansa y crece; al jugar y correr se fortalecen tus músculos y tu corazón, y las vacunas ayudan a tu cuerpo a defenderse.",
+      "explicacion": "Cepillarte protege tus dientes de las caries; el jabón saca los microbios; al dormir tu cuerpo descansa y crece; al jugar y correr se fortalecen tus músculos y tu corazón, y las vacunas ayudan a tu cuerpo a defenderse.",
       "error": "habitos-salud"
     },
     {
@@ -171,7 +171,7 @@
       "enunciado": "Completa sobre la comida y el agua.",
       "texto": "Antes de comer una manzana, la [lavo] con agua segura. El agua para tomar debe ser [hervida] o potable.",
       "banco": ["ensucio", "salada"],
-      "pista": "La fruta puede tener tierra y microbios. El agua se hace segura cuando un adulto la hace hervir.",
+      "pista": "La fruta puede tener tierra y microbios: ¿qué hacemos antes de comerla? Piensa también qué hace una persona adulta con el agua en la olla para quitarle los microbios.",
       "explicacion": "Antes de comer una manzana, la **lavo** con agua segura. El agua para tomar debe ser **hervida** o potable.",
       "error": "agua-alimentos"
     },
@@ -192,8 +192,8 @@
     },
     {
       "id": "p9", "tipo": "numero", "nivel": 2,
-      "enunciado": "Kusi juega a la pelota 40 minutos y salta la cuerda 20 minutos. ¿Cuántos minutos se movió en total?",
-      "visual": { "tipo": "emojis", "items": ["⚽", "🏃"], "etiquetas": ["40 minutos", "20 minutos"] },
+      "enunciado": "Kusi juega a la pelota 40 minutos y anda en bicicleta 20 minutos. ¿Cuántos minutos se movió en total?",
+      "visual": { "tipo": "emojis", "items": ["⚽", "🚲"], "etiquetas": ["40 minutos", "20 minutos"] },
       "respuesta": 60,
       "sufijo": "minutos",
       "erroresComunes": [
@@ -210,12 +210,12 @@
       "opciones": [
         { "texto": "cepillarlos antes de dormir", "correcta": true },
         { "texto": "ir al dentista para un control", "correcta": true },
-        { "texto": "usar solo mi propio cepillo", "correcta": true },
+        { "texto": "cepillarlos por todos lados, también las muelas", "correcta": true },
         { "texto": "comer dulces a cada rato", "emoji": "🍬", "pista": "El azúcar que queda en los dientes ayuda a que salgan caries.", "error": "higiene-personal" },
         { "texto": "dormir sin cepillarme", "pista": "Si no te cepillas, los restos de comida se quedan en tus dientes toda la noche.", "error": "higiene-personal" }
       ],
       "pista": "Hay tres respuestas correctas. Piensa qué deja tus dientes limpios y sanos.",
-      "explicacion": "Cuidan tus dientes: cepillarlos antes de dormir, ir al dentista y usar solo tu propio cepillo. Los dulces a cada rato y dormir sin cepillarte causan caries.",
+      "explicacion": "Cuidan tus dientes: cepillarlos antes de dormir, ir al dentista y cepillarlos por todos lados, también las muelas. Comer dulces a cada rato y dormir sin cepillarte pueden causar caries.",
       "error": "higiene-personal"
     },
     {
@@ -263,7 +263,7 @@
       ],
       "elementos": [
         { "texto": "taparme con el codo al estornudar", "categoria": "cuida" },
-        { "texto": "usar un pañuelo y botarlo al basurero", "categoria": "cuida" },
+        { "texto": "usar un pañuelo de papel y botarlo al basurero", "categoria": "cuida" },
         { "texto": "lavarme las manos después de sonarme la nariz", "categoria": "cuida" },
         { "texto": "toser encima de la comida", "categoria": "pasa" },
         { "texto": "estornudar hacia mis compañeros", "categoria": "pasa" },
@@ -302,7 +302,7 @@
         { "tipo": "mayuscula-inicial" },
         { "tipo": "punto-final" },
         { "tipo": "min-palabras", "valor": 5 },
-        { "tipo": "incluye", "palabras": ["manos", "jabón", "dientes", "agua", "lava", "baña", "limpia", "limpio", "vacunas", "dormir"] }
+        { "tipo": "incluye", "palabras": ["mano", "jabón", "dientes", "cepilla", "agua", "lava", "baña", "ropa", "limpia", "limpio", "vacuna", "duerme", "dormir"] }
       ],
       "modelo": "Lávate las manos con agua y jabón antes de comer.",
       "pista": "Piensa en tus manos, tus dientes, el agua que tomas o la comida que comes.",
@@ -360,13 +360,13 @@
       "id": "c5", "tipo": "relacionar", "nivel": 2,
       "enunciado": "Une cada cosa con cómo cuida tu salud.",
       "pares": [
-        ["la dentista", "revisa y cuida tus dientes"],
-        ["la vacuna", "enseña a tu cuerpo a defenderse"],
+        ["la dentista", "revisa tus dientes"],
+        ["el control en el centro de salud", "mide cuánto creciste y cuánto pesas"],
         ["el agua hervida", "se puede tomar sin peligro"],
-        ["el jabón", "saca los microbios de la piel"]
+        ["el baño con jabón", "quita el sudor y la suciedad de tu cuerpo"]
       ],
-      "pista": "Piensa para qué sirve cada una: ¿quién trabaja con los dientes? ¿Qué te ponen en el centro de salud?",
-      "explicacion": "La dentista cuida tus dientes; la vacuna enseña a tu cuerpo a defenderse; el agua hervida se puede tomar sin peligro, y el jabón saca los microbios de la piel.",
+      "pista": "Piensa para qué sirve cada una: ¿quién trabaja con los dientes? ¿Qué te hacen cuando vas a tu control? ¿Qué pasa con el agua en la olla?",
+      "explicacion": "La dentista revisa tus dientes; en el control del centro de salud miden cuánto creciste y cuánto pesas; el agua hervida se puede tomar sin peligro, y el baño con jabón quita el sudor y la suciedad.",
       "error": "habitos-salud"
     },
     {
@@ -380,12 +380,13 @@
         { "texto": "ponerme ropa limpia después de bañarme", "emoji": "👕", "categoria": "si" },
         { "texto": "correr y jugar en el recreo", "emoji": "🏃", "categoria": "si" },
         { "texto": "tener las uñas cortas y limpias", "categoria": "si" },
-        { "texto": "comer una manzana sin lavarla", "emoji": "🍎", "categoria": "no" },
+        { "texto": "ponerme la vacuna que me toca", "emoji": "💉", "categoria": "si" },
+        { "texto": "comer uvas sin lavarlas", "emoji": "🍇", "categoria": "no" },
         { "texto": "ver la tele hasta muy tarde en la noche", "emoji": "📺", "categoria": "no" },
-        { "texto": "tomar agua de la acequia", "categoria": "no" }
+        { "texto": "quedarme toda la tarde en la silla sin moverme", "categoria": "no" }
       ],
-      "pista": "Los hábitos saludables te mantienen limpio, descansado y con energía.",
-      "explicacion": "Saludables: la ropa limpia, correr en el recreo y las uñas cortas. No saludables: la fruta sin lavar, desvelarse con la tele y tomar agua de la acequia, que no es segura.",
+      "pista": "Los hábitos saludables mantienen tu cuerpo limpio, descansado y con energía.",
+      "explicacion": "Saludables: la ropa limpia, correr en el recreo, las uñas cortas y ponerte tus vacunas. No saludables: comer fruta sin lavar, desvelarse con la tele y pasar toda la tarde sin moverse.",
       "error": "habitos-salud"
     },
     {
@@ -416,7 +417,7 @@
     }
   ],
   "repaso": {
-    "texto": "Recuerda: lávate las manos con agua y jabón al menos 20 segundos. Cepilla tus dientes, báñate, toma agua segura, duerme bien, muévete y ve a tus controles.",
+    "texto": "Recuerda: lávate las manos con agua y jabón al menos 20 segundos. Cepilla tus dientes, báñate, toma agua segura, duerme bien, muévete y ve a tus vacunas y controles.",
     "visual": { "tipo": "emojis", "items": ["🧼", "🦷", "🚿", "💧", "😴", "🏃"], "etiquetas": ["manos", "dientes", "baño", "agua segura", "dormir", "moverse"] }
   },
   "adulto": {

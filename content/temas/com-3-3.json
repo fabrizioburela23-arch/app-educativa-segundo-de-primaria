@@ -12,8 +12,8 @@
         "Es sábado. Sofía y su papá, Luis, llegan al puesto de frutas de don Juan, en la feria del barrio.",
         "—¡Buenos días, don Juan! —saluda Sofía.",
         "—¡Buenos días, Sofía! ¿Qué van a llevar hoy? —pregunta don Juan.",
-        "—Queremos una mano de plátanos. Vamos a hacer un queque para el cumpleaños de mi abuela —responde Sofía.",
-        "—¿Cuánto cuesta la mano? —pregunta el papá.",
+        "—Queremos una docena de plátanos. Vamos a hacer un queque para el cumpleaños de mi abuela —responde Sofía.",
+        "—¿Cuánto cuesta la docena? —pregunta el papá.",
         "—Diez bolivianos —dice don Juan.",
         "El papá paga con un billete de diez bolivianos. Don Juan pone los plátanos en una bolsa y agrega dos naranjas.",
         "—Estas naranjas son la yapa, para la abuela. ¡Que tenga un feliz cumpleaños! —dice don Juan.",
@@ -50,7 +50,7 @@
       "emoji": "🗣️"
     },
     {
-      "texto": "Los signos nos dicen cómo leer: **¿ ?** encierran una pregunta, y **¡ !** muestran alegría, sorpresa o susto. Así leemos con la voz correcta.",
+      "texto": "Los signos nos dicen cómo leer: **¿ ?** encierran una pregunta. **¡ !** encierran algo dicho con emoción o con fuerza: alegría, sorpresa, susto o un llamado.",
       "visual": { "tipo": "emojis", "items": ["❓", "❗"], "etiquetas": ["pregunta", "exclamación"] }
     }
   ],
@@ -92,10 +92,10 @@
         "id": "g2", "tipo": "completar",
         "enunciado": "Completa lo que dice el papá con los signos que faltan.",
         "apoyo": "La palabra «pregunta» te da una pista: ¿qué signos usamos para preguntar?",
-        "texto": "—[¿]Cuánto cuesta la mano[?] —pregunta el papá.",
+        "texto": "—[¿]Cuánto cuesta la docena[?] —pregunta el papá.",
         "banco": ["¡", "!"],
         "pista": "Para preguntar usamos un signo al principio y otro al final.",
-        "explicacion": "Es una pregunta: va entre ¿ y ?. Se escribe: —¿Cuánto cuesta la mano? —pregunta el papá.",
+        "explicacion": "Es una pregunta: va entre ¿ y ?. Se escribe: —¿Cuánto cuesta la docena? —pregunta el papá.",
         "error": "signos-dialogo"
       },
       {
@@ -133,10 +133,10 @@
     },
     {
       "id": "p2", "tipo": "tocar", "nivel": 1,
-      "enunciado": "Toca las palabras que dicen quién habla en cada turno.",
-      "texto": "—¿Quieres api con buñuelo? —pregunta *la abuela*. —¡Sí, por favor! —responde *Mateo*.",
-      "pista": "Mira después de la segunda raya de cada turno: ahí están las palabras «pregunta» y «responde».",
-      "explicacion": "Primero habla la abuela («pregunta la abuela») y después Mateo («responde Mateo»).",
+      "enunciado": "¿Quién habla en este turno? Toca a quien habla.",
+      "texto": "—¿Quieres api con buñuelo? —pregunta *la abuela*.",
+      "pista": "Mira después de la segunda raya: justo después de «pregunta» está quien habla.",
+      "explicacion": "Habla la abuela: después de la segunda raya dice «pregunta la abuela».",
       "error": "quien-habla"
     },
     {
@@ -145,11 +145,11 @@
       "pares": [
         ["la raya —", "avisa que alguien empieza a hablar"],
         ["¿ ?", "encierran una pregunta"],
-        ["¡ !", "muestran alegría, sorpresa o susto"],
-        ["dice, pregunta, responde", "nos cuentan quién habla"]
+        ["¡ !", "encierran algo dicho con emoción o con fuerza"],
+        ["dice, pregunta, responde", "nos ayudan a saber quién habla"]
       ],
       "pista": "Piensa en el diálogo de Sofía y don Juan: ¿qué signo va al comienzo de cada turno?",
-      "explicacion": "La raya avisa que alguien habla; ¿ ? encierran preguntas; ¡ ! muestran alegría, sorpresa o susto; y dice, pregunta o responde nos cuentan quién habla.",
+      "explicacion": "La raya avisa que alguien habla; ¿ ? encierran preguntas; ¡ ! encierran algo dicho con emoción o con fuerza; y dice, pregunta o responde nos ayudan a saber quién habla.",
       "error": "signos-dialogo"
     },
     {
@@ -174,7 +174,7 @@
       "elementos": [
         { "texto": "¡Buenos días, don Juan!", "categoria": "sofia" },
         { "texto": "Vamos a hacer un queque.", "categoria": "sofia" },
-        { "texto": "¿Cuánto cuesta la mano?", "categoria": "papa" },
+        { "texto": "¿Cuánto cuesta la docena?", "categoria": "papa" },
         { "texto": "¿Qué van a llevar hoy?", "categoria": "juan" },
         { "texto": "Diez bolivianos.", "categoria": "juan" },
         { "texto": "Estas naranjas son la yapa.", "categoria": "juan" }
@@ -185,11 +185,11 @@
     },
     {
       "id": "p6", "tipo": "completar", "nivel": 2,
-      "enunciado": "Completa el diálogo con los signos que faltan.",
-      "texto": "—[¿]Tienes plátanos[?] —pregunta Ana. —[¡]Sí, y están muy dulces[!] —responde don Juan.",
+      "enunciado": "Completa el turno de Ana con los signos que faltan.",
+      "texto": "—[¡]Qué grandes están las paltas[!] [¿]A cuánto las vende[?] —pregunta Ana.",
       "banco": [".", ","],
-      "pista": "Ana pregunta. Don Juan responde con alegría. Recuerda: cada signo tiene su pareja, uno al principio y otro al final.",
-      "explicacion": "Ana pregunta: —¿Tienes plátanos? Don Juan responde con alegría: —¡Sí, y están muy dulces!",
+      "pista": "Ana dice dos cosas: primero se asombra y después pregunta. Cada signo tiene su pareja: uno al principio y otro al final.",
+      "explicacion": "Ana se asombra: «¡Qué grandes están las paltas!». Después pregunta: «¿A cuánto las vende?». Se escribe: —¡Qué grandes están las paltas! ¿A cuánto las vende? —pregunta Ana.",
       "error": "signos-dialogo"
     },
     {
@@ -213,7 +213,7 @@
       "enunciado": "¿Por qué don Juan pone dos naranjas en la bolsa?",
       "opciones": [
         { "texto": "Son la yapa: un regalo para la abuela.", "correcta": true },
-        { "texto": "Porque el papá pagó por ellas.", "pista": "El papá pagó diez bolivianos por la mano de plátanos. ¿Qué dice don Juan de las naranjas?", "error": "por-que-dice" },
+        { "texto": "Porque el papá pagó por ellas.", "pista": "El papá pagó diez bolivianos por la docena de plátanos. ¿Qué dice don Juan de las naranjas?", "error": "por-que-dice" },
         { "texto": "Porque Sofía las pidió.", "pista": "Sofía pidió plátanos. Lee lo que dice don Juan cuando pone las naranjas.", "error": "por-que-dice" }
       ],
       "columnas": 1,
@@ -239,7 +239,7 @@
       "enunciado": "¿El personaje pregunta algo o muestra una emoción?",
       "categorias": [
         { "id": "pregunta", "texto": "Pregunta algo", "emoji": "❓" },
-        { "id": "exclama", "texto": "Muestra alegría, sorpresa o susto", "emoji": "❗" }
+        { "id": "exclama", "texto": "Lo dice con emoción", "emoji": "❗" }
       ],
       "elementos": [
         { "texto": "—¿Dónde está mi gorro?", "categoria": "pregunta" },
@@ -249,7 +249,7 @@
         { "texto": "—¿A qué hora llega la abuela?", "categoria": "pregunta" },
         { "texto": "—¡Qué susto me diste!", "categoria": "exclama" }
       ],
-      "pista": "Mira los signos: ¿ ? encierran preguntas; ¡ ! muestran emociones.",
+      "pista": "Mira los signos: ¿ ? encierran preguntas; ¡ ! encierran lo que se dice con emoción.",
       "explicacion": "Preguntan: «¿Dónde está mi gorro?», «¿Me ayudas con la tarea?» y «¿A qué hora llega la abuela?». Muestran emoción: «¡Qué lindo día!», «¡Ganamos el partido!» y «¡Qué susto me diste!».",
       "error": "signos-dialogo"
     },
@@ -269,15 +269,15 @@
     },
     {
       "id": "p12", "tipo": "tocar", "nivel": 3,
-      "enunciado": "Toca solo los nombres de quienes hablan. ¡Cuidado! Algunos nombres son de la persona a quien le hablan.",
-      "texto": "—¿Vamos a jugar, Ana? —pregunta *Mateo*. —¡Sí, Mateo, vamos! —responde *Ana*.",
-      "pista": "Busca los nombres que van después de «pregunta» y «responde». Los otros nombres son de la persona a quien le hablan.",
-      "explicacion": "Hablan Mateo («pregunta Mateo») y Ana («responde Ana»). El primer «Ana» y el segundo «Mateo» son las personas a quienes les hablan.",
+      "enunciado": "Toca solo a quien habla. ¡Cuidado! Los otros nombres son de las personas a quienes les habla.",
+      "texto": "—¡Mateo, Ana, la sopa de maní está lista! —avisa *la abuela*.",
+      "pista": "Mateo y Ana escuchan. Busca después de la segunda raya: junto a «avisa» está quien habla.",
+      "explicacion": "Habla la abuela: después de la segunda raya dice «avisa la abuela». Mateo y Ana son las personas a quienes ella les habla.",
       "error": "nombre-mencionado"
     },
     {
       "id": "p13", "tipo": "escribir", "nivel": 3,
-      "enunciado": "Escucha la pregunta y escríbela con sus signos ¿ ?. Si no ves el ¿ en el teclado, deja apretado el signo ?.",
+      "enunciado": "Escucha la pregunta y escríbela con sus dos signos de pregunta. Si no ves el ¿, deja apretada la tecla del ? en el teclado.",
       "escuchar": "¿Cuánto cuesta la papa?",
       "visual": { "tipo": "emoji", "valor": "🥔" },
       "respuestas": ["¿Cuánto cuesta la papa?"],
@@ -302,7 +302,7 @@
     },
     {
       "id": "p15", "tipo": "escribir-libre", "nivel": 3,
-      "enunciado": "Estás en la feria y quieres comprar papas. Escribe la pregunta que le harías a don Juan.",
+      "enunciado": "Estás en la feria y quieres comprar papas. Escribe la pregunta que le harías a la casera.",
       "guia": ["¿Cuánto cuesta...", "¿Tiene..."],
       "requisitos": [
         { "tipo": "mayuscula-inicial" },
@@ -310,9 +310,9 @@
         { "tipo": "punto-final" },
         { "tipo": "min-palabras", "valor": 3 }
       ],
-      "modelo": "¿Cuánto cuesta el kilo de papa, don Juan?",
-      "pista": "Empieza con ¿ y una letra mayúscula, y termina con ?. Puedes tocar una idea para empezar. Si no ves el ¿ en el teclado, deja apretado el ?.",
-      "explicacion": "Por ejemplo: «¿Cuánto cuesta el kilo de papa, don Juan?». Una pregunta empieza con ¿ y termina con ?.",
+      "modelo": "¿Cuánto cuesta el kilo de papa, casera?",
+      "pista": "Empieza con ¿ y una letra mayúscula, y cierra la pregunta con el otro signo. Puedes tocar una idea para empezar. Si no ves el ¿, deja apretada la tecla del ?.",
+      "explicacion": "Por ejemplo: «¿Cuánto cuesta el kilo de papa, casera?». Una pregunta empieza con ¿ y termina con ?.",
       "error": "produce-texto"
     }
   ],
@@ -376,12 +376,17 @@
       "error": "por-que-dice"
     },
     {
-      "id": "c5", "tipo": "completar", "nivel": 2,
-      "enunciado": "Completa el diálogo con los signos que faltan.",
-      "texto": "—[¡]Qué linda está la planta[!] —dice Nayra. —[¿]Ya la regaste[?] —pregunta Inti.",
-      "banco": [".", ","],
-      "pista": "Nayra está contenta. Inti pregunta. Cada signo tiene su pareja: uno al principio y otro al final.",
-      "explicacion": "Nayra está contenta: —¡Qué linda está la planta! Inti pregunta: —¿Ya la regaste?",
+      "id": "c5", "tipo": "opcion", "nivel": 2,
+      "enunciado": "¿Qué turno de diálogo está bien escrito?",
+      "opciones": [
+        { "texto": "—¿Ya la regaste? —pregunta Inti.", "correcta": true },
+        { "texto": "—Ya la regaste? —pregunta Inti.", "pista": "Falta un signo: la pregunta se abre con ¿ y se cierra con ?.", "error": "signos-dialogo" },
+        { "texto": "¿Ya la regaste? pregunta Inti.", "pista": "Faltan las rayas: una al comienzo del turno y otra antes de «pregunta Inti».", "error": "signos-dialogo" },
+        { "texto": "—¡Ya la regaste? —pregunta Inti.", "pista": "Los signos van en pareja: si termina con ?, tiene que empezar con ¿.", "error": "signos-dialogo" }
+      ],
+      "columnas": 1,
+      "pista": "Revisa tres cosas: la raya del comienzo, la raya antes de «pregunta Inti» y los dos signos de pregunta.",
+      "explicacion": "Está bien escrito: —¿Ya la regaste? —pregunta Inti. Tiene una raya al comienzo, otra raya antes de quien habla, y la pregunta va entre ¿ y ?.",
       "error": "signos-dialogo"
     },
     {
@@ -391,7 +396,7 @@
       "visual": { "tipo": "emoji", "valor": "🌳" },
       "respuestas": ["Ana"],
       "pista": "Luis invita. ¿Quién responde que ahora no puede?",
-      "explicacion": "Ana no puede ir al parque, porque tiene que ayudar a su hermano con su tarea. Luis es quien la invita.",
+      "explicacion": "Ana no puede ir al parque porque tiene que ayudar a su hermano con su tarea. Luis es quien la invita.",
       "error": "escucha-comprension"
     },
     {

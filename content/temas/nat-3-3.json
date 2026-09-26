@@ -4,7 +4,7 @@
   "objetivo": "Conozco los huesos principales de mi cuerpo, para qué sirven y cómo cuidarlos.",
   "explicacion": [
     {
-      "texto": "Dentro de tu cuerpo hay muchos **huesos**. Todos juntos forman el **esqueleto**. Una persona adulta tiene unos **206 huesos**. ¡Los bebés nacen con más, porque algunos huesos se unen al crecer!",
+      "texto": "Dentro de tu cuerpo hay muchos **huesos**. Todos juntos forman el **esqueleto**. Una persona adulta tiene unos **206 huesos**. ¡Los bebés nacen con más huesos, pero algunos se unen al crecer!",
       "emoji": "🦴"
     },
     {
@@ -36,7 +36,7 @@
         "visual": { "tipo": "ilustracion", "id": "esqueleto", "resaltar": "costillas", "etiquetas": true }
       },
       {
-        "texto": "Dobla el codo y la rodilla. Ahí se unen dos huesos: son **articulaciones**. Los **músculos** jalan los huesos, y así Arami se mueve.",
+        "texto": "Dobla el codo y la rodilla. Ahí se unen los huesos: son **articulaciones**. Los **músculos** jalan los huesos, y así Arami se mueve.",
         "visual": { "tipo": "ilustracion", "id": "esqueleto", "resaltar": "brazo", "etiquetas": true }
       }
     ]
@@ -152,20 +152,20 @@
     },
     {
       "id": "p6", "tipo": "escribir", "nivel": 2,
-      "enunciado": "Escribe el nombre de la parte marcada del esqueleto.",
-      "visual": { "tipo": "ilustracion", "id": "esqueleto", "resaltar": "columna" },
-      "respuestas": ["columna vertebral", "la columna vertebral", "columna", "la columna", "espina dorsal", "la espina dorsal"],
-      "pista": "Está en tu espalda y tiene muchos huesitos en fila: las vértebras.",
-      "explicacion": "Es la **columna vertebral**. Está formada por vértebras y te mantiene derecho.",
+      "enunciado": "Escribe el nombre del hueso marcado.",
+      "visual": { "tipo": "ilustracion", "id": "esqueleto", "resaltar": "pelvis" },
+      "respuestas": ["pelvis", "la pelvis", "hueso de la cadera", "el hueso de la cadera", "huesos de la cadera", "los huesos de la cadera", "cadera", "la cadera"],
+      "pista": "Está en tu cadera, entre la columna y las piernas. Su nombre empieza con p.",
+      "explicacion": "Es la **pelvis**, el hueso de la cadera. Une la columna con los huesos de las piernas.",
       "error": "nombra-huesos"
     },
     {
       "id": "p7", "tipo": "completar", "nivel": 2,
       "enunciado": "Completa cómo nos movemos.",
-      "texto": "Los [músculos] jalan los huesos, y así nos movemos. Donde se unen dos huesos hay una [articulación], como el codo o la rodilla.",
+      "texto": "Los [músculos] jalan los huesos, y así nos movemos. Donde se unen los huesos hay una [articulación], como en el codo o la rodilla.",
       "banco": ["costilla", "uña"],
       "pista": "Unos se ponen duros cuando haces fuerza. La otra palabra nombra el lugar donde puedes doblarte.",
-      "explicacion": "Los **músculos** jalan los huesos. Donde se unen dos huesos hay una **articulación**: ahí podemos doblarnos.",
+      "explicacion": "Los **músculos** jalan los huesos. Donde se unen los huesos hay una **articulación**: ahí podemos doblarnos.",
       "error": "huesos-musculos"
     },
     {
@@ -216,7 +216,7 @@
     },
     {
       "id": "p11", "tipo": "tocar", "nivel": 2,
-      "enunciado": "Toca las articulaciones: los lugares donde se unen dos huesos.",
+      "enunciado": "Toca las articulaciones: los lugares donde se unen los huesos.",
       "texto": "Para bailar, Wara dobla el *codo* y la *rodilla*, y mueve la *muñeca* para agitar su pañuelo.",
       "pista": "Son lugares del brazo y de la pierna donde puedes doblarte o girar. Hay tres.",
       "explicacion": "El **codo**, la **rodilla** y la **muñeca** son articulaciones: allí se unen huesos y podemos doblarnos o girar.",
@@ -247,7 +247,7 @@
     },
     {
       "id": "p14", "tipo": "opcion", "nivel": 3,
-      "enunciado": "Mateo se cayó jugando y se fracturó un hueso del brazo. La doctora le puso yeso. ¿Para qué sirve el yeso?",
+      "enunciado": "Mateo se cayó jugando y se rompió un hueso del brazo. La doctora le puso yeso. ¿Para qué sirve el yeso?",
       "opciones": [
         { "texto": "Para que el hueso se quede quieto mientras sana.", "correcta": true },
         { "texto": "Para que el brazo crezca más largo.", "pista": "El yeso no hace crecer el brazo. Piensa en qué necesita un hueso para sanar.", "error": "huesos-vivos" },
@@ -333,19 +333,20 @@
     {
       "id": "c2", "tipo": "tocar", "nivel": 1,
       "enunciado": "Toca los alimentos que tienen mucho calcio.",
-      "texto": "En la merienda, Luis comió *queso* y un plátano, y tomó un vaso de *leche*.",
+      "texto": "En la merienda, Luis comió choclo con *queso* y un plátano, y tomó un vaso de *leche*.",
       "pista": "Busca la leche y lo que se hace con leche. Hay dos.",
-      "explicacion": "El **queso** y la **leche** tienen mucho calcio. El plátano es sano, pero casi no tiene calcio.",
+      "explicacion": "El **queso** y la **leche** tienen mucho calcio. El choclo y el plátano son sanos, pero casi no tienen calcio.",
       "error": "cuidado-huesos"
     },
     {
       "id": "c3", "tipo": "completar", "nivel": 2,
-      "enunciado": "Completa.",
-      "texto": "Una persona adulta tiene unos [206] huesos. Todos juntos forman el [esqueleto].",
-      "banco": ["20", "corazón"],
-      "pista": "Es un número de tres cifras. La otra palabra nombra a todos los huesos juntos.",
-      "explicacion": "Una persona adulta tiene unos **206** huesos, y todos juntos forman el **esqueleto**.",
-      "error": "numero-huesos"
+      "enunciado": "Mira los huesos marcados y completa.",
+      "visual": { "tipo": "ilustracion", "id": "esqueleto", "resaltar": "brazo" },
+      "texto": "Los huesos marcados están en los [brazos]. Se unen en el [codo], y por eso el brazo se puede doblar.",
+      "banco": ["piernas", "cráneo"],
+      "pista": "Mira de dónde salen los huesos marcados: ¿de los hombros o de la cadera? Luego dobla tu brazo y fíjate dónde se dobla.",
+      "explicacion": "Son los huesos de los **brazos**. Se unen en el **codo**, que es una articulación: por eso el brazo se puede doblar.",
+      "error": "ubica-huesos"
     },
     {
       "id": "c4", "tipo": "clasificar", "nivel": 2,
@@ -402,15 +403,17 @@
     },
     {
       "id": "c8", "tipo": "numero", "nivel": 3,
-      "enunciado": "Cada pie tiene 26 huesos. ¿Cuántos huesos hay en tus dos pies?",
-      "respuesta": 52,
+      "enunciado": "En tus dos manos hay 54 huesos y en tus dos pies hay 52. ¿Cuántos huesos hay en tus manos y pies juntos?",
+      "visual": { "tipo": "emojis", "items": ["🙌", "👣"], "etiquetas": ["54 huesos", "52 huesos"] },
+      "respuesta": 106,
       "sufijo": "huesos",
       "erroresComunes": [
-        { "respuesta": 26, "pista": "Esos son los huesos de un solo pie. Tienes dos.", "error": "calculo" },
-        { "respuesta": 42, "pista": "6 + 6 = 12: ¿sumaste la decena que llevabas?", "error": "calculo" }
+        { "respuesta": 6, "pista": "Suma también las decenas: 5 decenas + 5 decenas son 10 decenas, o sea 100.", "error": "calculo" },
+        { "respuesta": 96, "pista": "Revisa las decenas: 50 + 50 = 100.", "error": "calculo" },
+        { "respuesta": 54, "pista": "Esos son solo los huesos de las manos. Suma también los de los pies.", "error": "calculo" }
       ],
-      "pista": "Tienes dos pies con 26 huesos cada uno. Suma los huesos de los dos.",
-      "explicacion": "26 + 26 = 52. En tus dos pies hay **52 huesos**. ¡Entre tus manos y tus pies tienes más de 100 huesos!",
+      "pista": "Suma 54 + 52. Primero las unidades y después las decenas.",
+      "explicacion": "54 + 52 = 106. ¡Solo en tus manos y tus pies hay **106 huesos**: más de la mitad de los 206 huesos de tu cuerpo!",
       "error": "calculo"
     }
   ],
@@ -423,7 +426,7 @@
     "sugerencias": [
       "Jueguen a «Simón dice» con los huesos: «Simón dice: toca tu cráneo… tus costillas… tu pelvis… tu codo». Después, cambien los papeles: que sea su hija o su hijo quien dé las órdenes y les pida tocar cada hueso.",
       "Después de comer pollo, laven y sequen bien un hueso y obsérvenlo juntos: es duro, liviano y tiene la punta más ancha, donde se unía con otro hueso. Si en la familia hay una radiografía, mírenla a contraluz y adivinen qué huesos se ven.",
-      "En la feria o la tienda, busquen juntos alimentos con calcio (leche, queso, yogur, sardinas con sus espinas, amaranto o millmi) y armen un «plato para huesos fuertes». En casa, revisen cómo se sienta para hacer las tareas y cómo lleva la mochila (en los dos hombros y sin demasiado peso), y antes de andar en bici o patines, pónganse el casco juntos."
+      "En la feria o la tienda, busquen juntos alimentos con calcio (leche, queso, yogur, sardinas con sus espinas o amaranto, también llamado millmi) y armen un «plato para huesos fuertes». En casa, revisen cómo se sienta para hacer las tareas y cómo lleva la mochila (en los dos hombros y sin demasiado peso), y antes de andar en bici o patines, pónganse el casco juntos."
     ],
     "errores": {
       "nombra-huesos": {
@@ -463,7 +466,7 @@
         "sugerencia": "Jueguen a señalar partes del cuerpo y decir su nombre: hueso, músculo, corazón, cerebro."
       },
       "calculo": {
-        "descripcion": "Se equivoca al sumar números de dos cifras llevando (27 + 27, 26 + 26).",
+        "descripcion": "Se equivoca al sumar números de dos cifras llevando (27 + 27, 54 + 52).",
         "sugerencia": "Usen palitos o fideos en atados de 10 para sumar, y recuerden anotar la decena que se lleva."
       },
       "produce-oracion": {

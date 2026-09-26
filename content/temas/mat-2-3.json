@@ -97,7 +97,7 @@
       "id": "p4", "tipo": "escribir", "nivel": 1,
       "enunciado": "Escucha la pregunta y escribe la respuesta, con número o con palabra.",
       "escuchar": "¿Qué número puedes sumar a cualquier número sin que ese número cambie?",
-      "respuestas": ["0", "cero", "el cero", "el 0"],
+      "respuestas": ["0", "cero", "el cero", "el 0", "es el cero", "es el 0", "es cero"],
       "pista": "Prueba: 8 + 1 = 9, y el 8 ya cambió. ¿Qué número podrías sumarle al 8 para que siga siendo 8?",
       "explicacion": "Es el **0** (cero): 8 + 0 = 8. Por eso el 0 se llama elemento neutro de la suma.",
       "error": "neutro"
@@ -117,22 +117,23 @@
     {
       "id": "p7", "tipo": "tocar", "nivel": 2,
       "enunciado": "Toca los dos números que juntos dan 10.",
-      "texto": "*7* + 5 + *3*",
+      "texto": "*2* + 7 + *8*",
       "pista": "Prueba juntar los números de dos en dos.",
-      "explicacion": "7 + 3 = 10. Después: 10 + 5 = 15.",
+      "explicacion": "2 + 8 = 10. Después: 10 + 7 = 17.",
       "error": "busca-diez"
     },
     {
       "id": "p8", "tipo": "numero", "nivel": 2,
-      "enunciado": "En el corral hay 6 llamas blancas, 9 de color café y 4 negras. ¿Cuántas llamas hay en total?",
+      "enunciado": "En el corral hay 3 llamas blancas, 8 de color café y 7 negras. ¿Cuántas llamas hay en total?",
       "visual": { "tipo": "emoji", "valor": "🦙" },
-      "respuesta": 19,
+      "respuesta": 18,
       "erroresComunes": [
-        { "respuesta": 15, "pista": "Te faltaron las llamas negras. Suma los tres grupos.", "error": "busca-diez" },
-        { "respuesta": 10, "pista": "6 + 4 = 10 es solo una parte. Suma también las llamas de color café.", "error": "busca-diez" }
+        { "respuesta": 11, "pista": "Te faltaron las llamas negras. Suma los tres grupos.", "error": "busca-diez" },
+        { "respuesta": 15, "pista": "Te faltaron las llamas blancas. Suma los tres grupos.", "error": "busca-diez" },
+        { "respuesta": 10, "pista": "3 + 7 = 10 es solo una parte. Suma también las llamas de color café.", "error": "busca-diez" }
       ],
       "pista": "Junta primero dos grupos que den 10 y después suma el otro.",
-      "explicacion": "6 + 4 = 10 y 10 + 9 = 19. En el corral hay 19 llamas.",
+      "explicacion": "3 + 7 = 10 y 10 + 8 = 18. En el corral hay 18 llamas.",
       "error": "busca-diez"
     },
     {
@@ -165,16 +166,16 @@
       "error": "conmutativa"
     },
     {
-      "id": "p11", "tipo": "relacionar", "nivel": 2,
-      "enunciado": "Une cada suma con su forma más rápida: los números que dan 10, juntos.",
+      "id": "p11", "tipo": "relacionar", "nivel": 3,
+      "enunciado": "Une cada suma con su total. Truco: suma primero los dos números que forman una decena exacta.",
       "pares": [
-        ["8 + 7 + 2", "8 + 2 + 7"],
-        ["4 + 9 + 6", "4 + 6 + 9"],
-        ["5 + 3 + 5", "5 + 5 + 3"],
-        ["1 + 6 + 9", "1 + 9 + 6"]
+        ["17 + 9 + 3", "29"],
+        ["25 + 8 + 5", "38"],
+        ["44 + 7 + 6", "57"],
+        ["31 + 4 + 9", "44"]
       ],
-      "pista": "Busca en cada suma los dos números que juntos dan 10.",
-      "explicacion": "8 + 2, 4 + 6, 5 + 5 y 1 + 9 dan 10. Por eso conviene sumarlos primero.",
+      "pista": "En cada suma, busca el número que le falta al primero para llegar a la decena siguiente. Por ejemplo, al 17 le faltan 3 para llegar a 20.",
+      "explicacion": "17 + 3 = 20 y 20 + 9 = 29. 25 + 5 = 30 y 30 + 8 = 38. 44 + 6 = 50 y 50 + 7 = 57. 31 + 9 = 40 y 40 + 4 = 44.",
       "error": "busca-diez"
     },
     {
@@ -195,7 +196,7 @@
       "enunciado": "Calcula rápido: 25 + 38 + 75.",
       "visual": { "tipo": "operacion", "numeros": [25, 38, 75], "op": "+" },
       "respuesta": 138,
-      "erroresComunes": [ { "respuesta": 128, "pista": "Casi. Revisa 25 + 75: 5 + 5 = 10, así que llevas 1.", "error": "asociativa" } ],
+      "erroresComunes": [ { "respuesta": 128, "pista": "Casi. Revisa 25 + 75: 5 + 5 = 10, así que llevas 1.", "error": "suma-calculo" } ],
       "pista": "Busca dos números que juntos den 100. Súmalos primero.",
       "explicacion": "25 + 75 = 100 y 100 + 38 = 138. Agrupar los números que dan 100 hace la suma más rápida.",
       "error": "asociativa"
@@ -306,39 +307,50 @@
         { "texto": "(5 + 5) + 2 = 5 + (5 + 2)", "categoria": "asoc" }
       ],
       "pista": "En cada ejemplo, fíjate: ¿cambia el orden, cambian los paréntesis o se suma 0?",
-      "explicacion": "Conmutativa: 7 + 2 = 2 + 7 y 10 + 30 = 30 + 10. Asociativa: los ejemplos donde cambian los paréntesis. Elemento neutro: 0 + 15 = 15 y 99 + 0 = 99.",
+      "explicacion": "Conmutativa: 7 + 2 = 2 + 7 y 10 + 30 = 30 + 10. Asociativa: (4 + 1) + 3 = 4 + (1 + 3) y (5 + 5) + 2 = 5 + (5 + 2). Elemento neutro: 0 + 15 = 15 y 99 + 0 = 99.",
       "error": "nombra-propiedad"
     },
     {
-      "id": "c7", "tipo": "generador", "nivel": 3, "generador": "suma-propiedad",
-      "params": { "propiedad": "asociativa" }
+      "id": "c7", "tipo": "numero", "nivel": 3,
+      "enunciado": "Calcula rápido: 36 + 45 + 14.",
+      "visual": { "tipo": "operacion", "numeros": [36, 45, 14], "op": "+" },
+      "respuesta": 95,
+      "erroresComunes": [
+        { "respuesta": 50, "pista": "36 + 14 = 50 es solo una parte. Suma también el 45.", "error": "busca-diez" },
+        { "respuesta": 81, "pista": "Te faltó sumar el 14. Suma los tres números.", "error": "busca-diez" },
+        { "respuesta": 85, "pista": "Casi. Revisa 36 + 14: 6 + 4 = 10, así que llevas 1.", "error": "suma-calculo" }
+      ],
+      "pista": "Busca dos números cuyas unidades juntas den 10. Súmalos primero.",
+      "explicacion": "36 + 14 = 50 y 50 + 45 = 95. Juntar primero los números que forman una decena exacta hace la suma más rápida.",
+      "error": "asociativa"
     },
     {
       "id": "c8", "tipo": "pasos", "nivel": 3,
-      "enunciado": "En la feria, Juan compra una piña a 8 Bs, una bolsa de maní a 6 Bs y una lechuga a 2 Bs.",
-      "visual": { "tipo": "emojis", "items": ["🍍", "🥜", "🥬"], "etiquetas": ["8 Bs", "6 Bs", "2 Bs"] },
+      "enunciado": "En la feria, Juan compra un queso a 17 Bs, una piña a 9 Bs y una lechuga a 3 Bs.",
+      "visual": { "tipo": "emojis", "items": ["🧀", "🍍", "🥬"], "etiquetas": ["17 Bs", "9 Bs", "3 Bs"] },
       "pasos": [
         {
-          "tipo": "tocar", "enunciado": "Toca los dos precios que juntos dan 10 Bs.",
-          "texto": "*8* Bs, 6 Bs y *2* Bs",
-          "pista": "Prueba juntar los precios de dos en dos.",
-          "explicacion": "8 Bs + 2 Bs = 10 Bs.",
+          "tipo": "tocar", "enunciado": "Toca los dos precios que juntos dan 20 Bs.",
+          "texto": "*17* Bs, 9 Bs y *3* Bs",
+          "pista": "Prueba juntar los precios de dos en dos. ¿Cuál completa la decena del 17?",
+          "explicacion": "17 Bs + 3 Bs = 20 Bs.",
           "error": "busca-diez"
         },
         {
           "tipo": "numero", "enunciado": "¿Cuánto paga Juan en total?",
-          "respuesta": 16, "sufijo": "Bs",
+          "respuesta": 29, "sufijo": "Bs",
           "erroresComunes": [
-            { "respuesta": 10, "pista": "Esos son la piña y la lechuga. Suma también el maní.", "error": "busca-diez" },
-            { "respuesta": 14, "pista": "Te faltó la lechuga. Suma los tres precios.", "error": "busca-diez" }
+            { "respuesta": 20, "pista": "Esos son el queso y la lechuga. Suma también la piña.", "error": "busca-diez" },
+            { "respuesta": 26, "pista": "Te faltó la lechuga. Suma los tres precios.", "error": "busca-diez" },
+            { "respuesta": 12, "pista": "Te faltó el queso. Suma los tres precios.", "error": "busca-diez" }
           ],
-          "pista": "Ya tienes 10 Bs. Súmale el precio del maní.",
-          "explicacion": "(8 + 2) + 6 = 10 + 6 = 16 Bs.",
+          "pista": "Ya tienes 20 Bs. Súmale el precio de la piña.",
+          "explicacion": "(17 + 3) + 9 = 20 + 9 = 29 Bs.",
           "error": "asociativa"
         }
       ],
-      "pista": "Busca primero los precios que juntos dan 10.",
-      "explicacion": "8 + 2 = 10 y 10 + 6 = 16. Juan paga 16 Bs.",
+      "pista": "Busca primero los dos precios que juntos forman una decena exacta.",
+      "explicacion": "17 + 3 = 20 y 20 + 9 = 29. Juan paga 29 Bs.",
       "error": "asociativa"
     }
   ],
@@ -358,7 +370,8 @@
       "conmutativa": { "descripcion": "Cree que el total cambia si se cambia el orden de los sumandos, o vuelve a sumar todo sin necesidad.", "sugerencia": "Pongan 3 papas y 5 choclos en fila, cuenten, y luego den vuelta la fila: pregunten si cambió la cantidad." },
       "asociativa": { "descripcion": "Le cuesta agrupar tres sumandos de otra forma o entender qué indican los paréntesis.", "sugerencia": "Usen tres montones de semillas: junten primero dos y después el tercero; luego júntenlos en otro orden y comparen el total." },
       "neutro": { "descripcion": "Piensa que sumar 0 da 0, o le agrega un cero al número (7 + 0 = 70).", "sugerencia": "Muestren una bolsa con 7 frutas y otra vacía: juntar las dos bolsas no agrega nada." },
-      "busca-diez": { "descripcion": "No busca las parejas que suman 10 para calcular más rápido, o se olvida de un sumando.", "sugerencia": "Practiquen las parejas del 10 con los dedos y, al sumar tres números, pidan que tache cada número que ya sumó." },
+      "suma-calculo": { "descripcion": "Se equivoca al sumar, por ejemplo olvida llevar en 25 + 75.", "sugerencia": "Repasen la suma llevando con billetes de 10 Bs y monedas de 1 Bs: al juntar 10 monedas, se cambian por un billete." },
+      "busca-diez": { "descripcion": "No busca las parejas que suman 10 (o que forman una decena exacta, como 17 + 3) para calcular más rápido, o se olvida de un sumando.", "sugerencia": "Practiquen las parejas del 10 con los dedos y, al sumar tres números, pidan que tache cada número que ya sumó." },
       "nombra-propiedad": { "descripcion": "Confunde los nombres de las propiedades.", "sugerencia": "Hagan tres tarjetas: «cambio el orden» (conmutativa), «cambio los paréntesis» (asociativa) y «sumo 0» (elemento neutro), y úsenlas para clasificar ejemplos." }
     }
   }

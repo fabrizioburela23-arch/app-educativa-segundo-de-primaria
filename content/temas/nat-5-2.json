@@ -9,7 +9,7 @@
       "visual": { "tipo": "ilustracion", "id": "deforestacion" }
     },
     {
-      "texto": "¿Por qué pasa? Se **talan** (cortan) árboles para sacar madera o leña. Se limpian terrenos del bosque para sembrar, criar ganado o hacer caminos. A veces un **chaqueo**, que es quemar el monte, se vuelve un incendio.",
+      "texto": "¿Por qué pasa? Se **talan** (cortan) árboles para sacar madera o leña. Se limpian terrenos del bosque para sembrar, criar ganado o hacer caminos. En el **chaqueo** se quema el monte para limpiarlo, y a veces el fuego se vuelve un incendio.",
       "visual": { "tipo": "emojis", "items": ["🌲", "🌾", "🐄", "🔥"], "etiquetas": ["madera y leña", "cultivos", "ganado", "chaqueo"] }
     },
     {
@@ -26,7 +26,7 @@
     "instruccion": "Mira lo que pasó en el cerro de la comunidad de Kusi.",
     "pasos": [
       { "texto": "Hace muchos años, el cerro estaba cubierto de **queñuas**. Sus raíces sujetaban el suelo, las aves hacían sus nidos y de una vertiente salía agua limpia.", "visual": { "tipo": "emojis", "items": ["⛰️", "🌳", "🐦", "💧"], "etiquetas": ["cerro", "queñuas", "aves", "vertiente"] } },
-      { "texto": "Poco a poco, se cortaron muchas queñuas para leña y hubo quemas. Sin raíces, la lluvia se llevó el suelo cerro abajo. Las aves se fueron y la vertiente dio menos agua.", "visual": { "tipo": "ilustracion", "id": "deforestacion" } },
+      { "texto": "Poco a poco, se cortaron muchas queñuas para leña y hubo quemas. Sin árboles que lo sujetaran, la lluvia se llevó el suelo cerro abajo. Las aves se fueron y la vertiente dio menos agua.", "visual": { "tipo": "ilustracion", "id": "deforestacion" } },
       { "texto": "La comunidad y la escuela decidieron **reforestar**. Cuidaron arbolitos de queñua en un vivero y un día los sembraron juntos en el cerro.", "visual": { "tipo": "emojis", "items": ["🌱", "🤝", "💧"], "etiquetas": ["arbolitos", "trabajo en equipo", "riego"] } },
       { "texto": "Pasaron los años. Los arbolitos crecieron y sus raíces sujetan otra vez el suelo. Volvieron las aves y la vertiente tiene más agua. ¡Cuidar el bosque vale la pena!", "visual": { "tipo": "emojis", "items": ["🌳", "🐦", "💧"], "etiquetas": ["queñuas", "aves", "vertiente"] } }
     ]
@@ -58,7 +58,7 @@
         ],
         "elementos": [
           { "texto": "se talan muchos árboles para sacar madera", "categoria": "causa" },
-          { "texto": "un chaqueo se vuelve incendio", "emoji": "🔥", "categoria": "causa" },
+          { "texto": "un chaqueo se vuelve un incendio", "emoji": "🔥", "categoria": "causa" },
           { "texto": "se limpia el monte para sembrar", "categoria": "causa" },
           { "texto": "los animales pierden su casa", "emoji": "🐆", "categoria": "despues" },
           { "texto": "la lluvia se lleva el suelo", "emoji": "🌧️", "categoria": "despues" },
@@ -134,7 +134,7 @@
       "id": "p5", "tipo": "tocar", "nivel": 1,
       "enunciado": "Toca las tres cosas que nos dan los árboles.",
       "texto": "Los árboles del bosque nos dan *sombra*, *frutos* y *madera*.",
-      "pista": "Busca las palabras que vienen después de «nos dan».",
+      "pista": "Piensa en lo que te da un árbol cuando hace calor, cuando tienes hambre y cuando alguien hace una mesa.",
       "explicacion": "Los árboles nos dan sombra, frutos y madera. ¡Por eso vale la pena cuidarlos!",
       "error": "valor-bosque"
     },
@@ -156,19 +156,19 @@
       "id": "p7", "tipo": "relacionar", "nivel": 2,
       "enunciado": "Une cada causa con lo que pasa después.",
       "pares": [
-        ["Se cortan los árboles del cerro.", "La lluvia se lleva el suelo."],
-        ["Se quema el monte.", "El humo ensucia el aire."],
-        ["Se pierde el bosque de la paraba.", "La paraba se queda sin casa."],
-        ["Hay menos árboles que suelten vapor de agua.", "Puede llover menos."]
+        ["Se cortan los árboles del cerro y llueve fuerte.", "El agua arrastra el suelo cerro abajo."],
+        ["Un chaqueo se vuelve un incendio.", "El humo ensucia el aire."],
+        ["Se tala el bosque donde vive la paraba.", "La paraba se queda sin casa."],
+        ["Hay menos hojas que suelten vapor de agua.", "Se forman menos nubes y puede llover menos."]
       ],
-      "pista": "Piensa qué hacía lo que se perdió: las raíces sujetan el suelo, el fuego hace humo y el vapor de agua forma nubes.",
-      "explicacion": "Sin árboles en el cerro, la lluvia se lleva el suelo. La quema llena el aire de humo. Sin bosque, la paraba pierde su casa. Y con menos árboles que suelten vapor de agua, puede llover menos.",
+      "pista": "Piensa qué hacía lo que se perdió: las raíces sujetan el suelo, el fuego hace humo, el bosque es una casa y el vapor de agua forma nubes.",
+      "explicacion": "Sin árboles en el cerro, la lluvia fuerte arrastra el suelo. El incendio llena el aire de humo. Sin bosque, la paraba pierde su casa. Y con menos hojas que suelten vapor de agua, se forman menos nubes y puede llover menos.",
       "error": "consecuencias-deforestacion"
     },
     {
       "id": "p8", "tipo": "completar", "nivel": 2,
       "enunciado": "Completa sobre la reforestación.",
-      "texto": "[Reforestar] es sembrar árboles donde el bosque se perdió. En un cerro de los valles, es mejor sembrar árboles [nativos], como el molle, que siempre crecieron allí.",
+      "texto": "[Reforestar] es sembrar árboles donde el bosque se perdió. Es mejor sembrar árboles [nativos], que crecen allí desde siempre, como el molle en los valles.",
       "banco": ["Deforestar", "de plástico"],
       "pista": "Una palabra empieza con «re», como «volver a». La otra dice que el árbol es de ese mismo lugar.",
       "explicacion": "Reforestar es sembrar árboles donde el bosque se perdió. Conviene sembrar árboles nativos, como el molle en los valles, porque ya están acostumbrados a ese lugar.",
@@ -176,9 +176,9 @@
     },
     {
       "id": "p9", "tipo": "escribir", "nivel": 2,
-      "enunciado": "Quemar el monte para limpiar el terreno tiene un nombre. Escribe esa palabra.",
-      "respuestas": ["chaqueo", "el chaqueo", "chaqueos"],
-      "pista": "Es una palabra que se usa mucho en Bolivia. Empieza con «ch» y la aprendiste en la lección.",
+      "enunciado": "En Bolivia, quemar el monte para limpiar el terreno tiene un nombre que empieza con «ch». Escríbelo.",
+      "respuestas": ["chaqueo", "el chaqueo", "un chaqueo", "chaqueos", "los chaqueos", "chaquear"],
+      "pista": "La aprendiste en la lección: a veces su fuego se escapa y se vuelve un incendio. Tiene tres sílabas.",
       "explicacion": "Se llama **chaqueo**. Si el fuego se sale de control, se puede volver un incendio.",
       "error": "vocabulario-bosque"
     },
@@ -224,12 +224,12 @@
           "tipo": "opcion",
           "enunciado": "¿Por qué el fuego se escapó tan rápido?",
           "opciones": [
-            { "texto": "El viento empujó el fuego y el monte seco se quemó fácil.", "correcta": true },
+            { "texto": "Porque el viento empujó el fuego y el monte seco se quemó muy rápido.", "correcta": true },
             { "texto": "Porque el monte estaba mojado.", "pista": "Lo mojado se quema con dificultad. ¿Cómo está el monte en la época seca?", "error": "causas-deforestacion" },
             { "texto": "Porque estaba lloviendo mucho.", "pista": "La lluvia ayuda a apagar el fuego. Era la época seca.", "error": "causas-deforestacion" }
           ],
           "pista": "Mira el enunciado: ¿cómo era la época y qué sopló?",
-          "explicacion": "El viento empujó el fuego y el monte seco se quemó fácil. Por eso un chaqueo puede volverse un incendio.",
+          "explicacion": "El viento empujó el fuego y el monte seco se quemó muy rápido. Por eso un chaqueo puede volverse un incendio.",
           "error": "causas-deforestacion"
         },
         {
@@ -295,10 +295,10 @@
       "id": "c1", "tipo": "escribir", "nivel": 1,
       "enunciado": "Escucha la adivinanza y escribe la respuesta.",
       "escuchar": "Tengo muchísimos árboles y otras plantas. Soy la casa del jaguar, del mono y de la paraba. ¿Qué soy?",
-      "respuestas": ["bosque", "el bosque", "un bosque", "selva", "la selva", "una selva", "monte", "el monte"],
+      "respuestas": ["bosque", "el bosque", "un bosque", "bosques", "selva", "la selva", "una selva", "monte", "el monte", "un monte", "Amazonía", "la Amazonía"],
       "pista": "Es un lugar lleno de árboles. Aprendiste esta palabra en la lección.",
       "explicacion": "Es el **bosque**: un lugar con muchos árboles, donde viven muchos animales.",
-      "error": "concepto-deforestacion"
+      "error": "vocabulario-bosque"
     },
     {
       "id": "c2", "tipo": "opcion", "nivel": 1,
@@ -351,12 +351,12 @@
       "enunciado": "Une cada acción con la forma en que ayuda.",
       "pares": [
         ["reforestar el cerro", "las raíces nuevas sujetan el suelo del cerro"],
-        ["no quemar el monte", "el aire queda limpio, sin humo"],
-        ["reutilizar el papel", "se cortan menos árboles para hacer papel"],
-        ["cuidar el bosque de la Amazonía", "el jaguar y la paraba conservan su casa"]
+        ["no hacer fuego en el monte", "el aire queda limpio, sin humo"],
+        ["usar las dos caras de la hoja", "se cortan menos árboles para hacer papel"],
+        ["avisar a un adulto si ves humo", "los bomberos pueden apagar el fuego a tiempo"]
       ],
       "pista": "Piensa qué problema evita cada acción.",
-      "explicacion": "Reforestar el cerro: las raíces sujetan el suelo. No quemar: el aire queda sin humo. Reutilizar el papel: se cortan menos árboles. Cuidar el bosque de la Amazonía: los animales conservan su casa.",
+      "explicacion": "Reforestar el cerro: las raíces nuevas sujetan el suelo. No hacer fuego: el aire queda sin humo. Usar las dos caras de la hoja: se cortan menos árboles. Avisar si ves humo: los bomberos llegan a tiempo.",
       "error": "acciones-cuidado"
     },
     {
@@ -366,11 +366,11 @@
         { "texto": "Los animales pierden su casa y su comida.", "correcta": true },
         { "texto": "La lluvia se lleva el suelo.", "correcta": true },
         { "texto": "Las vertientes y los ríos tienen menos agua.", "correcta": true },
-        { "texto": "Hay más sombra para descansar.", "pista": "La sombra la dan los árboles. Sin árboles, ¿hay más o menos sombra?", "error": "consecuencias-deforestacion" },
+        { "texto": "El suelo queda más firme.", "pista": "Las raíces sujetan el suelo. Sin raíces, ¿el suelo queda firme o se lo lleva la lluvia?", "error": "consecuencias-deforestacion" },
         { "texto": "Llegan más animales a vivir allí.", "pista": "Sin bosque, los animales no tienen casa ni comida. ¿Podrían vivir ahí?", "error": "consecuencias-deforestacion" }
       ],
       "pista": "Hay tres correctas. Piensa en los animales, en el suelo y en el agua.",
-      "explicacion": "Cuando se pierde un bosque, los animales pierden su casa y su comida, la lluvia se lleva el suelo y hay menos agua. Además, se pierde la sombra.",
+      "explicacion": "Cuando se pierde un bosque, los animales pierden su casa y su comida, la lluvia se lleva el suelo y hay menos agua. El suelo no queda más firme: sin raíces, se suelta.",
       "error": "consecuencias-deforestacion"
     },
     {

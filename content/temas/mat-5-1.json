@@ -78,7 +78,7 @@
       "id": "p2", "tipo": "manipular", "nivel": 1,
       "enunciado": "Pinta la mitad de la barra de chocolate.",
       "manipulable": { "tipo": "fraccion", "forma": "barra", "partes": 2, "objetivo": 1 },
-      "pista": "La barra tiene 2 partes iguales. Pinta solo una.",
+      "pista": "La barra tiene 2 partes iguales. ¿Cuántas de esas partes son la mitad?",
       "explicacion": "1 de 2 partes iguales es la mitad. ¡Pintaste medio chocolate!",
       "error": "pinta-fraccion"
     },
@@ -109,7 +109,7 @@
       "id": "p5", "tipo": "escribir", "nivel": 1,
       "enunciado": "Un pan se parte en 2 partes iguales. ¿Cómo se llama cada parte? Escribe la palabra.",
       "visual": { "tipo": "fraccion", "forma": "rectangulo", "partes": 2, "coloreadas": 1 },
-      "respuestas": ["mitad", "una mitad", "la mitad", "medio", "un medio", "1/2"],
+      "respuestas": ["mitad", "una mitad", "la mitad", "medio", "un medio", "1/2", "medio pan", "mitad del pan", "la mitad del pan", "una mitad del pan"],
       "pista": "La palabra empieza con m.",
       "explicacion": "Cada parte se llama **una mitad**. También se dice **un medio**.",
       "error": "vocabulario-fraccion"
@@ -185,7 +185,7 @@
     },
     {
       "id": "p12", "tipo": "clasificar", "nivel": 3,
-      "enunciado": "¿Es la mitad o no?",
+      "enunciado": "¿Es la mitad o no? «2 de 4 panes» quiere decir: tomo 2 panes de un total de 4.",
       "categorias": [
         { "id": "si", "texto": "Es la mitad", "emoji": "✅" },
         { "id": "no", "texto": "No es la mitad", "emoji": "❌" }
@@ -216,6 +216,7 @@
         },
         {
           "tipo": "numero", "enunciado": "¿Cuántos panes le quedan a Kusi?", "respuesta": 6,
+          "erroresComunes": [ { "respuesta": 12, "pista": "12 son todos los panes. Kusi ya puso algunos en la bolsa.", "error": "problema-mitad" } ],
           "pista": "Tenía 12 panes y puso algunos en la bolsa. ¿Cuántos quedan afuera?",
           "explicacion": "12 − 6 = 6. A Kusi le quedan 6 panes: la otra mitad.",
           "error": "problema-mitad"
@@ -255,12 +256,16 @@
   ],
   "comprobacion": [
     {
-      "id": "c1", "tipo": "manipular", "nivel": 1,
-      "enunciado": "Pinta la mitad de la hoja.",
-      "manipulable": { "tipo": "fraccion", "forma": "rectangulo", "partes": 2, "objetivo": 1 },
-      "pista": "La hoja tiene 2 partes iguales. La mitad es una de ellas.",
-      "explicacion": "La mitad es 1 de 2 partes iguales: se pinta una sola parte.",
-      "error": "pinta-fraccion"
+      "id": "c1", "tipo": "numero", "nivel": 1,
+      "enunciado": "Ana parte un pan por la mitad. ¿Cuántas mitades juntas forman el pan entero?",
+      "visual": { "tipo": "fraccion", "forma": "rectangulo", "partes": 2, "coloreadas": 0 },
+      "respuesta": 2,
+      "erroresComunes": [
+        { "respuesta": 1, "pista": "Una mitad es solo una parte del pan. ¿Cuántas mitades juntas hacen el pan entero?", "error": "mitades-entero" }
+      ],
+      "pista": "Imagina que juntas otra vez los pedazos del pan. ¿Cuántos pedazos iguales juntas?",
+      "explicacion": "Un pan entero tiene 2 mitades iguales. Si juntas 2 mitades, tienes otra vez el pan entero.",
+      "error": "mitades-entero"
     },
     {
       "id": "c2", "tipo": "generador", "nivel": 1, "generador": "fraccion", "params": { "partes": [2] }
@@ -290,13 +295,13 @@
       "id": "c5", "tipo": "multiple", "nivel": 2,
       "enunciado": "Elige todas las figuras que tienen la mitad pintada.",
       "opciones": [
+        { "visual": { "tipo": "fraccion", "forma": "rectangulo", "partes": 2, "coloreadas": 1 }, "correcta": true },
         { "visual": { "tipo": "fraccion", "forma": "circulo", "partes": 2, "coloreadas": 1 }, "correcta": true },
-        { "visual": { "tipo": "fraccion", "forma": "barra", "partes": 2, "coloreadas": 1 }, "correcta": true },
-        { "visual": { "tipo": "fraccion", "forma": "rectangulo", "partes": 2, "iguales": false, "coloreadas": 1 }, "pista": "En una figura las partes no son iguales: lo pintado no es la mitad.", "error": "partes-desiguales" },
-        { "visual": { "tipo": "fraccion", "forma": "circulo", "partes": 3, "coloreadas": 1 }, "pista": "Una figura tiene 3 partes: lo pintado no es la mitad.", "error": "cuenta-partes" }
+        { "visual": { "tipo": "fraccion", "forma": "barra", "partes": 2, "iguales": false, "coloreadas": 1 }, "pista": "En una figura las 2 partes no son iguales: lo pintado no es la mitad.", "error": "partes-desiguales" },
+        { "visual": { "tipo": "fraccion", "forma": "circulo", "partes": 2, "coloreadas": 2 }, "pista": "Una figura tiene las 2 mitades pintadas: eso es el entero.", "error": "mitades-entero" }
       ],
-      "pista": "La mitad pintada es 1 de 2 partes iguales.",
-      "explicacion": "Tienen la mitad pintada el círculo de 2 partes y la barra: 1 de 2 partes iguales. En las otras, las partes no son iguales o son 3.",
+      "pista": "La mitad pintada es 1 de 2 partes iguales: ni más, ni menos.",
+      "explicacion": "Tienen la mitad pintada el rectángulo y el círculo con 1 de 2 partes iguales pintada. En la barra las partes no son iguales, y en el otro círculo está pintado el entero.",
       "error": "partes-desiguales"
     },
     {
@@ -356,6 +361,7 @@
       "mitad-doble": { "descripcion": "Confunde la mitad con el doble, o no sabe hallar el número cuando conoce su mitad.", "sugerencia": "Con 2 platos iguales, pregunten: «si en un plato hay 4, ¿cuántos hay en los dos?» y al revés." },
       "reparte-desigual": { "descripcion": "Al repartir en 2, deja platos con cantidades distintas o sobrantes.", "sugerencia": "Repartan de a uno, diciendo «uno para ti, uno para mí», hasta que no quede nada, y comparen los montones." },
       "problema-mitad": { "descripcion": "Se pierde en problemas de mitades con más de un paso (lo que regala y lo que le queda).", "sugerencia": "Representen el problema con objetos: separen la mitad que se regala y cuenten lo que queda." },
+      "mitades-entero": { "descripcion": "No reconoce que 2 mitades juntas forman el entero.", "sugerencia": "Partan un pan o una tortilla por la mitad y vuelvan a juntar las 2 partes: «dos mitades forman un entero»." },
       "compara-mitades": { "descripcion": "No reconoce que las mitades de dos enteros iguales tienen el mismo tamaño.", "sugerencia": "Partan dos panes iguales por la mitad y pongan una mitad de cada pan una sobre otra para compararlas." }
     }
   }

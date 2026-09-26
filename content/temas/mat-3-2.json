@@ -29,7 +29,7 @@
       "visual": { "tipo": "emojis", "items": ["🦋", "🍁", "🙂"], "etiquetas": ["mariposa", "hoja", "cara"] }
     },
     {
-      "texto": "En Chuquisaca, muchos tejidos de Tarabuco tienen dibujos ordenados y simétricos. Los tejidos jalq’a tienen animales fantásticos sin simetría. ¡Los dos son muy hermosos!",
+      "texto": "En Chuquisaca, muchos tejidos de Tarabuco tienen dibujos ordenados y simétricos. En muchos tejidos jalq’a, los animales fantásticos no tienen simetría. ¡Los dos son muy hermosos!",
       "emoji": "🧶"
     }
   ],
@@ -106,7 +106,7 @@
         "apoyo": "Recuerda la palabra que aprendiste para la línea del medio.",
         "texto": "La línea que parte una figura simétrica en dos mitades iguales se llama [eje] de simetría. Las dos mitades son [iguales], como en un espejo.",
         "banco": ["borde", "distintas"],
-        "pista": "La línea del medio tiene un nombre corto de tres letras.",
+        "pista": "Piensa en la línea punteada que hace de espejo. ¿Qué nombre aprendiste para ella?",
         "explicacion": "La línea se llama eje de simetría, y las dos mitades son iguales.",
         "error": "eje-simetria"
       }
@@ -180,11 +180,11 @@
     },
     {
       "id": "p7", "tipo": "numero", "nivel": 2,
-      "enunciado": "Esta mariposa es simétrica. En las alas del lado izquierdo tiene 4 manchas. ¿Cuántas manchas tiene en total?",
+      "enunciado": "Las manchas de esta mariposa son simétricas. En las alas del lado izquierdo tiene 4 manchas. ¿Cuántas tiene en total?",
       "visual": { "tipo": "emoji", "valor": "🦋" },
       "respuesta": 8,
       "erroresComunes": [ { "respuesta": 4, "pista": "Esas son las manchas de un solo lado. ¿Cuántas hay del otro lado?", "error": "simetria-cuenta" } ],
-      "pista": "Si la mariposa es simétrica, el otro lado tiene las mismas manchas.",
+      "pista": "Si las manchas son simétricas, el otro lado tiene las mismas manchas.",
       "explicacion": "Cada lado tiene 4 manchas: 4 + 4 = 8 manchas.",
       "error": "simetria-cuenta"
     },
@@ -212,12 +212,12 @@
       "visual": { "tipo": "emoji", "valor": "🧶" },
       "opciones": [
         { "texto": "No: algunos son simétricos y otros no.", "correcta": true },
-        { "texto": "Sí, todos son simétricos.", "pista": "Recuerda los tejidos jalq’a, con sus animales fantásticos.", "error": "simetria-entorno" }
+        { "texto": "Sí, todos son simétricos.", "pista": "Recuerda los tejidos jalq’a, con sus animales fantásticos puestos sin simetría.", "error": "simetria-entorno" }
       ],
       "mezclar": false,
       "columnas": 1,
       "pista": "Piensa en lo que aprendiste de los tejidos de Chuquisaca.",
-      "explicacion": "Algunos tejidos, como muchos de Tarabuco, son simétricos. Otros, como los jalq’a, no lo son. Todos son valiosos.",
+      "explicacion": "Algunos tejidos, como muchos de Tarabuco, son simétricos. Otros, como muchos tejidos jalq’a, no lo son. Todos son valiosos.",
       "error": "simetria-entorno"
     },
     {
@@ -261,11 +261,11 @@
     },
     {
       "id": "p13", "tipo": "pasos", "nivel": 3,
-      "enunciado": "Wara teje una faja con un dibujo simétrico.",
+      "enunciado": "Inti teje una faja con un dibujo simétrico.",
       "pasos": [
         {
           "tipo": "manipular",
-          "enunciado": "Completa el dibujo de Wara para que sea simétrico.",
+          "enunciado": "Completa el dibujo de Inti para que sea simétrico.",
           "manipulable": { "tipo": "simetria", "filas": 6, "columnas": 6, "color": "#C0392B", "celdas": [[0, 1], [1, 0], [1, 2], [2, 1], [3, 1], [4, 0], [4, 2], [5, 1]] },
           "pista": "Fila por fila, pinta cada reflejo a la misma distancia del eje.",
           "explicacion": "Cada cuadrito se refleja del otro lado del eje, en su misma fila y a la misma distancia.",
@@ -383,11 +383,12 @@
     },
     {
       "id": "c5", "tipo": "completar", "nivel": 2,
-      "enunciado": "Completa las oraciones sobre la mariposa.",
-      "texto": "Las alas de la mariposa son casi [iguales] a cada lado de su cuerpo. Su cuerpo está sobre el [eje] de simetría.",
-      "banco": ["distintas", "techo"],
-      "pista": "La mariposa es casi simétrica. ¿Cómo se llama la línea que la parte en dos?",
-      "explicacion": "Las alas son casi iguales, y el cuerpo de la mariposa está sobre el eje de simetría.",
+      "enunciado": "Completa las oraciones sobre tu cara.",
+      "visual": { "tipo": "emoji", "valor": "🙂" },
+      "texto": "Tu cara es casi simétrica. Tienes un ojo y una oreja a cada [lado]. Tu nariz está justo sobre el [eje] de simetría.",
+      "banco": ["arriba", "color"],
+      "pista": "Imagina una línea de la frente a la barbilla. ¿Por dónde pasa? ¿Qué hay a sus dos lados?",
+      "explicacion": "Tienes un ojo y una oreja a cada lado. La línea que parte tu cara en dos mitades casi iguales pasa por la nariz: es el eje de simetría.",
       "error": "eje-simetria"
     },
     {
@@ -428,7 +429,7 @@
       "opciones": [
         { "texto": "El eje de simetría parte la figura en dos mitades iguales.", "correcta": true },
         { "texto": "Las alas de una mariposa son casi iguales a los dos lados.", "correcta": true },
-        { "texto": "Todos los tejidos de Bolivia son simétricos.", "pista": "Recuerda los tejidos jalq’a, con animales fantásticos sin simetría.", "error": "simetria-entorno" },
+        { "texto": "Todos los tejidos de Bolivia son simétricos.", "pista": "Recuerda los tejidos jalq’a: en muchos, los animales fantásticos no tienen simetría.", "error": "simetria-entorno" },
         { "texto": "En una figura simétrica, un lado es más grande que el otro.", "pista": "En una figura simétrica, los dos lados son iguales.", "error": "reconoce-simetria" }
       ],
       "columnas": 1,

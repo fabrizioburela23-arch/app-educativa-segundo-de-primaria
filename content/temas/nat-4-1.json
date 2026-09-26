@@ -17,7 +17,7 @@
       "visual": { "tipo": "emojis", "items": ["👅", "✋"], "etiquetas": ["gusto", "tacto"] }
     },
     {
-      "texto": "Algunas personas no ven o no oyen, o ven u oyen poco. Usan otros sentidos y ayudas: lentes, audífonos, el **braille** (letras de puntitos que se leen tocando) y la **lengua de señas**. ¡Todos merecemos respeto!",
+      "texto": "Algunas personas ven u oyen poco, o nada. Usan otros sentidos y ayudas: lentes, audífonos para oír mejor, el **braille** (letras de puntitos que se leen con los dedos) y la **lengua de señas**. ¡Todos merecemos respeto!",
       "emoji": "🤝"
     }
   ],
@@ -63,7 +63,7 @@
       },
       {
         "id": "g2", "tipo": "tocar",
-        "enunciado": "Toca las dos palabras que dicen lo que Mateo siente con la piel.",
+        "enunciado": "Toca las dos palabras que dicen cómo siente Mateo las cosas con la piel.",
         "apoyo": "Con la piel sentimos si algo está frío o caliente, y si es suave o áspero.",
         "texto": "Mateo mete la mano en el agua del río y la siente *fría*. Después acaricia a su perro y siente su pelo *suave*.",
         "pista": "Busca palabras que digan cómo se siente algo al tocarlo.",
@@ -94,7 +94,7 @@
         [ { "emoji": "✋" }, "tacto" ]
       ],
       "pista": "Piensa qué haces con cada parte: ¿miras, escuchas, hueles, pruebas o tocas?",
-      "explicacion": "👀 vista, 👂 oído, 👃 olfato, 👅 gusto y ✋ tacto, con la piel de la mano.",
+      "explicacion": "Los ojos son de la vista; los oídos, del oído; la nariz, del olfato; la lengua, del gusto, y la piel de la mano, del tacto.",
       "error": "sentido-organo"
     },
     {
@@ -189,7 +189,7 @@
       "id": "p8", "tipo": "escribir", "nivel": 2,
       "enunciado": "Escucha la adivinanza y escribe la respuesta.",
       "escuchar": "Estoy en el centro de tu cara y tengo dos agujeritos. Gracias a mí sientes el olor de las flores y del pan. ¿Quién soy?",
-      "respuestas": ["nariz", "la nariz"],
+      "respuestas": ["nariz", "la nariz", "es la nariz", "eres la nariz"],
       "pista": "Con ella usamos el olfato. Empieza con «na».",
       "explicacion": "Es la **nariz**: el órgano del olfato. Se escribe con **z** al final.",
       "error": "vocabulario-tema"
@@ -233,7 +233,7 @@
       "enunciado": "Completa con el órgano correcto.",
       "texto": "Con la [lengua] sentimos los sabores, y con la [piel] sentimos el frío y el calor.",
       "banco": ["oreja", "ceja"],
-      "pista": "¿Qué parte de tu boca toca la comida? ¿Qué parte de tu cuerpo lo cubre todo?",
+      "pista": "¿Qué parte de tu boca toca la comida? ¿Qué parte cubre todo tu cuerpo?",
       "explicacion": "Con la **lengua** sentimos los sabores (gusto) y con la **piel** sentimos el frío y el calor (tacto).",
       "error": "sentido-organo"
     },
@@ -243,12 +243,12 @@
       "pares": [
         [{ "texto": "olor a humo en la cocina", "emoji": "💨" }, "olfato"],
         [{ "texto": "la bocina de un auto", "emoji": "🚗" }, "oído"],
-        [{ "texto": "una olla muy caliente", "emoji": "🍲" }, "tacto"],
+        [{ "texto": "el calor de una olla al acercar la mano", "emoji": "🍲" }, "tacto"],
         [{ "texto": "la luz roja del semáforo", "emoji": "🚦" }, "vista"],
         ["un sabor raro en la leche", "gusto"]
       ],
       "pista": "Piensa: ¿el aviso se ve, se oye, se huele, se prueba o se siente con la piel?",
-      "explicacion": "El humo se nota con el **olfato**; la bocina, con el **oído**; la olla caliente, con el **tacto**; la luz roja, con la **vista**, y el sabor raro, con el **gusto**. ¡Los sentidos nos protegen!",
+      "explicacion": "El humo se nota con el **olfato**; la bocina, con el **oído**; el calor de la olla, con el **tacto**; la luz roja, con la **vista**, y el sabor raro, con el **gusto** (y esa leche ya no se toma). ¡Los sentidos nos protegen!",
       "error": "que-percibe"
     },
     {
@@ -309,7 +309,7 @@
         {
           "tipo": "escribir",
           "enunciado": "¿Con qué órgano sintió Rosa el sabor dulce? Escribe su nombre.",
-          "respuestas": ["lengua", "la lengua", "con la lengua"],
+          "respuestas": ["lengua", "la lengua", "con la lengua", "su lengua", "con su lengua"],
           "pista": "Está dentro de la boca y se mueve cuando hablas.",
           "explicacion": "El órgano del gusto es la **lengua**.",
           "error": "sentido-organo"
@@ -327,7 +327,7 @@
         { "tipo": "mayuscula-inicial" },
         { "tipo": "punto-final" },
         { "tipo": "min-palabras", "valor": 5 },
-        { "tipo": "incluye", "palabras": ["ojos", "oídos", "orejas", "nariz", "lengua", "piel", "manos", "dedos"] }
+        { "tipo": "incluye", "palabras": ["ojo", "oído", "oreja", "nariz", "lengua", "boca", "piel", "mano", "dedo"] }
       ],
       "modelo": "Me gusta oler las flores del parque con mi nariz.",
       "pista": "Piensa en algo rico de ver, oír, oler, probar o tocar.",
@@ -366,7 +366,7 @@
     },
     {
       "id": "c3", "tipo": "clasificar", "nivel": 2,
-      "enunciado": "¿Cuida o daña tus ojos?",
+      "enunciado": "¿Cuida o puede dañar los ojos?",
       "categorias": [
         { "id": "cuida", "texto": "Los cuida", "emoji": "✅" },
         { "id": "dana", "texto": "Los puede dañar", "emoji": "⚠️" }
@@ -377,17 +377,17 @@
         { "texto": "ir al doctor de los ojos si ves borroso", "categoria": "cuida" },
         { "texto": "frotarse los ojos con las manos sucias", "categoria": "dana" },
         { "texto": "jugar con palos o lápices cerca de la cara", "categoria": "dana" },
-        { "texto": "mirar el sol directamente", "categoria": "dana" }
+        { "texto": "tirar tierra o arena a la cara de otro niño", "categoria": "dana" }
       ],
-      "pista": "Pregúntate: ¿esto protege mis ojos o los puede lastimar?",
-      "explicacion": "La gorra y los lentes de sol, las manos limpias y la visita al doctor **cuidan** los ojos. Frotarlos con las manos sucias, jugar con palos cerca de la cara y mirar el sol los **pueden dañar**.",
+      "pista": "Pregúntate: ¿esto protege los ojos o los puede lastimar?",
+      "explicacion": "La gorra y los lentes de sol, las manos limpias y la visita al doctor **cuidan** los ojos. Frotarlos con las manos sucias, jugar con palos cerca de la cara y tirar tierra o arena a la cara los **pueden dañar**.",
       "error": "cuidado-sentidos"
     },
     {
       "id": "c4", "tipo": "escribir", "nivel": 2,
       "enunciado": "Escucha y escribe el nombre del sentido que usa Luis.",
-      "escuchar": "Luis camina por la feria con los ojos cerrados. Aun así, sabe que alguien vende buñuelos, porque siente su olor.",
-      "respuestas": ["olfato", "el olfato"],
+      "escuchar": "Luis está sentado en la feria con los ojos cerrados. Aun así, sabe que cerca venden buñuelos, porque siente su olor. ¿Qué sentido usa Luis?",
+      "respuestas": ["olfato", "el olfato", "sentido del olfato", "el sentido del olfato"],
       "pista": "Es el sentido que sirve para sentir olores. Empieza con «ol».",
       "explicacion": "Luis usa el **olfato**: siente el olor de los buñuelos con su nariz.",
       "error": "que-percibe"
@@ -395,18 +395,18 @@
     {
       "id": "c5", "tipo": "completar", "nivel": 2,
       "enunciado": "Completa con el sabor correcto.",
-      "texto": "El limón es [ácido], la miel es [dulce] y el café sin azúcar es [amargo].",
+      "texto": "El limón es [ácido], el mango maduro es [dulce] y el café sin azúcar es [amargo].",
       "banco": ["salado"],
       "pista": "Imagina cada sabor en tu boca: el limón te hace fruncir la cara y el café sin azúcar no es nada dulce.",
-      "explicacion": "El limón es **ácido**, la miel es **dulce** y el café sin azúcar es **amargo**. Ninguno de los tres es salado.",
+      "explicacion": "El limón es **ácido**, el mango maduro es **dulce** y el café sin azúcar es **amargo**. Ninguno de los tres es salado.",
       "error": "sabores"
     },
     {
       "id": "c6", "tipo": "tocar", "nivel": 2,
-      "enunciado": "Toca las palabras que dicen lo que Ana siente con la piel.",
-      "texto": "En la orilla del río, Ana siente el agua *fría* y la arena *caliente*. Ve peces pequeños y escucha a los pájaros.",
-      "pista": "Busca cómo se sienten las cosas al tocarlas. Hay dos palabras.",
-      "explicacion": "«Fría» y «caliente» dicen lo que Ana siente con el tacto. Los peces pequeños los ve con los ojos y a los pájaros los escucha con los oídos.",
+      "enunciado": "Toca las palabras que dicen cómo siente Ana las cosas con la piel.",
+      "texto": "Ana ayuda a su abuelo en la huerta. Toca la tierra *húmeda* y una piedra *caliente* por el sol. Ve tomates rojos y escucha a los pájaros.",
+      "pista": "Busca cómo se sienten las cosas al tocarlas. Hay dos palabras. Recuerda: un color se ve, no se toca.",
+      "explicacion": "«Húmeda» y «caliente» dicen cómo siente Ana la tierra y la piedra con el tacto. Que los tomates son rojos lo sabe con la vista, y a los pájaros los escucha con los oídos.",
       "error": "tacto-sensaciones"
     },
     {
@@ -437,10 +437,10 @@
     "visual": { "tipo": "ilustracion", "id": "sentidos" }
   },
   "adulto": {
-    "objetivo": "Reconocer los cinco sentidos y sus órganos (vista-ojos, oído-oídos, olfato-nariz, gusto-lengua, tacto-piel), lo que percibe cada uno, cómo cuidarlos y que se usan juntos. También valorar con respeto que algunas personas ven u oyen poco o nada y usan otros sentidos y ayudas: lentes, audífonos, bastón blanco, braille y lengua de señas (en Bolivia, la Lengua de Señas Boliviana es idioma oficial desde 2025).",
+    "objetivo": "Reconocer los cinco sentidos y sus órganos (vista-ojos, oído-oídos, olfato-nariz, gusto-lengua, tacto-piel), lo que percibe cada uno, cómo cuidarlos y que se usan juntos. También valorar con respeto que algunas personas ven u oyen poco o nada y usan otros sentidos y ayudas: lentes, audífonos, bastón blanco, braille y lengua de señas (en Bolivia se usa la Lengua de Señas Boliviana, LSB).",
     "sugerencias": [
       "Jueguen a la «bolsa misteriosa»: pongan en una bolsa de tela cosas de la casa (una papa, una cuchara, un ovillo de lana, una piedra) y pidan que adivine qué es solo con el tacto y diga si es suave o áspera, fría o tibia.",
-      "En la cocina, con los ojos cerrados, denle a probar un poquito de azúcar, sal, limón y café sin azúcar, y que diga el sabor. Luego repitan tapándose la nariz y conversen por qué cuesta más reconocerlos.",
+      "En la cocina, con los ojos cerrados, denle a probar un poquito de azúcar, sal, limón y café sin azúcar, y que diga cada sabor: dulce, salado, ácido o amargo. Otro día, con la nariz tapada, que pruebe un pedacito de manzana y otro de pera, y luego sin taparse: notará que sin el olfato cuesta más distinguirlos.",
       "Salgan a la plaza o al patio y hagan un minuto de silencio: anoten juntos todos los sonidos que escuchan (pájaros, micros, voces) y si son fuertes o suaves. Aprovechen para hablar de cómo cuidar los oídos y los ojos del sol fuerte."
     ],
     "errores": {

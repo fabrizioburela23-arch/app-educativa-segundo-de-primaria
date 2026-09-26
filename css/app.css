@@ -292,10 +292,10 @@ strong { font-weight: 700; }
 
 /* ---------- ejercicios: opciones ---------- */
 .opciones { display: grid; gap: 12px; }
-.opciones.c2 { grid-template-columns: 1fr 1fr; }
-.opciones.c3 { grid-template-columns: repeat(3, 1fr); }
-.opciones.c4 { grid-template-columns: repeat(2, 1fr); }
-@media (min-width: 560px) { .opciones.c4 { grid-template-columns: repeat(4, 1fr); } }
+.opciones.c2 { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+.opciones.c3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.opciones.c4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+@media (min-width: 560px) { .opciones.c4 { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
 .opcion {
   display: flex; align-items: center; justify-content: center; gap: 10px; flex-wrap: wrap;
   min-height: 64px; padding: 12px 14px;
@@ -304,6 +304,7 @@ strong { font-weight: 700; }
   box-shadow: 0 3px 0 var(--borde);
 }
 .opcion .emoji { font-size: 1.8em; line-height: 1; }
+.opcion .txt { overflow-wrap: anywhere; min-width: 0; }
 .opcion.elegida { border-color: var(--primario); background: var(--primario-claro); box-shadow: 0 3px 0 var(--primario); }
 .opcion.descartada { opacity: .45; border-style: dashed; }
 .opcion.correcta { border-color: var(--exito); background: var(--exito-claro); box-shadow: 0 3px 0 var(--exito); }
@@ -394,15 +395,15 @@ textarea.campo-texto { min-height: 140px; font-weight: 400; line-height: 1.5; re
 .vista-previa { text-align: center; font-size: 1.4rem; font-weight: 700; margin-top: 10px; min-height: 1.5em; color: var(--primario-oscuro); }
 
 /* ---------- relacionar ---------- */
-.relacionar { display: grid; grid-template-columns: 1fr 1fr; gap: 12px 28px; position: relative; }
+.relacionar { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 12px 28px; position: relative; }
 .relacionar .col { display: grid; gap: 12px; align-content: start; }
-.relacionar .ficha { width: 100%; min-height: 60px; display: flex; align-items: center; justify-content: center; gap: 6px; text-align: center; }
+.relacionar .ficha { width: 100%; min-height: 60px; overflow-wrap: anywhere; hyphens: auto; display: flex; align-items: center; justify-content: center; gap: 6px; text-align: center; }
 .relacionar .ficha .emoji { font-size: 1.5em; }
 .relacionar svg.lineas { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; overflow: visible; }
 .relacionar .ficha.unida { border-color: var(--par, var(--primario)); background: color-mix(in srgb, var(--par, var(--primario)) 14%, white); }
 
 /* ---------- clasificar ---------- */
-.categorias { display: grid; gap: 12px; grid-template-columns: repeat(var(--n, 2), 1fr); }
+.categorias { display: grid; gap: 12px; grid-template-columns: repeat(var(--n, 2), minmax(0, 1fr)); }
 .categoria { border: 3px dashed var(--borde); border-radius: 18px; background: #fff; min-height: 150px; padding: 10px; display: flex; flex-direction: column; gap: 8px; }
 .categoria.destino { border-color: var(--primario); background: var(--primario-claro); }
 .categoria .cab { text-align: center; font-weight: 700; display: flex; flex-direction: column; align-items: center; gap: 2px; min-height: 48px; justify-content: center; border-radius: 12px; padding: 4px; }
@@ -420,7 +421,9 @@ textarea.campo-texto { min-height: 140px; font-weight: 400; line-height: 1.5; re
 }
 
 /* ---------- memoria ---------- */
-.memoria { display: grid; grid-template-columns: repeat(var(--cols, 3), 1fr); gap: 10px; }
+.memoria { display: grid; grid-template-columns: repeat(var(--cols, 3), minmax(0, 1fr)); gap: 10px; }
+.memoria .carta { overflow-wrap: anywhere; hyphens: auto; line-height: 1.2; }
+.memoria.textos .carta { aspect-ratio: auto; min-height: 88px; }
 .carta {
   aspect-ratio: 3 / 4; min-height: 90px; border: 0; border-radius: 16px;
   background: var(--c, var(--primario)); color: #fff; font-size: 2rem; font-weight: 700;

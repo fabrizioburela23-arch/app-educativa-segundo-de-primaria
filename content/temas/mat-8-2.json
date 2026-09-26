@@ -26,7 +26,7 @@
       "visual": { "tipo": "operacion", "numeros": [7, 4, 2], "op": "+" }
     },
     {
-      "texto": "Una tabla y un pictograma pueden mostrar los mismos datos. Para **armar** el pictograma: escribe el título, elige un dibujo y su clave, y pon un dibujo por cada dato.",
+      "texto": "Una tabla y un pictograma pueden mostrar los mismos datos. Para **armar** el pictograma: escribe el título, elige un dibujo, escribe la clave y pon en cada fila los dibujos que dice la tabla.",
       "emoji": "✏️",
       "visual": { "tipo": "tabla", "columnas": ["Animal", "Cantidad"], "filas": [["llama", 7], ["oveja", 4], ["vaca", 2]] }
     }
@@ -306,7 +306,7 @@
         { "texto": "¿Cuántos animales vimos en total?", "categoria": "sumar" },
         { "texto": "¿Cuántas llamas más que ovejas vimos?", "categoria": "restar" },
         { "texto": "¿Cuántos votos hubo en todo el curso?", "categoria": "sumar" },
-        { "texto": "¿Cuántas cajas menos de mango que de piña?", "categoria": "restar" },
+        { "texto": "¿Cuántas cajas menos hay de mango que de piña?", "categoria": "restar" },
         { "texto": "¿Cuántos plátanos y mangos hay juntos?", "categoria": "sumar" },
         { "texto": "¿Cuántos votos le faltan al majadito para alcanzar a la salteña?", "categoria": "restar" }
       ],
@@ -442,7 +442,7 @@
   "comprobacion": [
     {
       "id": "c1", "tipo": "opcion", "nivel": 1,
-      "enunciado": "¿De qué animal vimos menos?",
+      "enunciado": "¿De qué animal vimos más?",
       "visual": {
         "tipo": "pictograma", "titulo": "Animales de la comunidad de Rosa", "icono": "🐾", "escala": 1,
         "datos": [
@@ -453,13 +453,13 @@
         ]
       },
       "opciones": [
-        { "texto": "caballo", "emoji": "🐴", "correcta": true },
-        { "texto": "cabra", "emoji": "🐐", "pista": "La cabra tiene 3. Hay una fila más corta.", "error": "compara-filas" },
-        { "texto": "llama", "emoji": "🦙", "pista": "La llama tiene la fila más larga: de llamas vimos más.", "error": "compara-filas" },
-        { "texto": "oveja", "emoji": "🐑", "pista": "Hay filas más cortas que la de la oveja.", "error": "compara-filas" }
+        { "texto": "llama", "emoji": "🦙", "correcta": true },
+        { "texto": "oveja", "emoji": "🐑", "pista": "La oveja tiene 6. Hay una fila más larga.", "error": "compara-filas" },
+        { "texto": "cabra", "emoji": "🐐", "pista": "La fila de la cabra es corta. Busca la más larga.", "error": "compara-filas" },
+        { "texto": "caballo", "emoji": "🐴", "pista": "El caballo tiene la fila más corta: de caballos vimos menos.", "error": "compara-filas" }
       ],
-      "pista": "Busca la fila más corta.",
-      "explicacion": "El caballo tiene la fila más corta: solo 2 huellas. De caballos vimos menos.",
+      "pista": "Busca la fila más larga.",
+      "explicacion": "La llama tiene la fila más larga: 8 huellas. De llamas vimos más.",
       "error": "compara-filas"
     },
     {
@@ -476,7 +476,7 @@
     },
     {
       "id": "c3", "tipo": "numero", "nivel": 2,
-      "enunciado": "¿Cuántas llamas más que ovejas vimos?",
+      "enunciado": "¿Cuántas ovejas más que cabras vimos?",
       "visual": {
         "tipo": "pictograma", "titulo": "Animales de la comunidad de Rosa", "icono": "🐾", "escala": 1,
         "datos": [
@@ -486,10 +486,13 @@
           { "etiqueta": "caballo", "valor": 2, "emoji": "🐴" }
         ]
       },
-      "respuesta": 2,
-      "erroresComunes": [ { "respuesta": 14, "pista": "Sumaste. Para saber cuántas más, resta.", "error": "suma-en-vez-de-restar" } ],
-      "pista": "Cuenta las llamas y las ovejas. Después resta.",
-      "explicacion": "Vimos 8 llamas y 6 ovejas: 8 − 6 = 2. Vimos 2 llamas más que ovejas.",
+      "respuesta": 3,
+      "erroresComunes": [
+        { "respuesta": 9, "pista": "Sumaste. Para saber cuántas más, resta.", "error": "suma-en-vez-de-restar" },
+        { "respuesta": 6, "pista": "6 son todas las ovejas. ¿Cuántas ovejas más que cabras hay?", "error": "diferencia-pictograma" }
+      ],
+      "pista": "Cuenta las ovejas y las cabras. Después resta.",
+      "explicacion": "Vimos 6 ovejas y 3 cabras: 6 − 3 = 3. Vimos 3 ovejas más que cabras.",
       "error": "diferencia-pictograma"
     },
     {
@@ -580,19 +583,19 @@
       "visual": {
         "tipo": "pictograma", "titulo": "Comida para la fiesta del curso", "icono": "✋", "escala": 2,
         "datos": [
-          { "etiqueta": "salteña", "valor": 12, "emoji": "🥟" },
-          { "etiqueta": "sopa de maní", "valor": 6, "emoji": "🍲" },
-          { "etiqueta": "majadito", "valor": 4, "emoji": "🍚" },
+          { "etiqueta": "salteña", "valor": 14, "emoji": "🥟" },
+          { "etiqueta": "sopa de maní", "valor": 8, "emoji": "🍲" },
+          { "etiqueta": "majadito", "valor": 6, "emoji": "🍚" },
           { "etiqueta": "pollo frito", "valor": 10, "emoji": "🍗" }
         ]
       },
       "respuesta": 8,
       "erroresComunes": [
         { "respuesta": 4, "pista": "Restaste los dibujos. Cada mano vale 2 votos.", "error": "ignora-escala" },
-        { "respuesta": 16, "pista": "Sumaste. Para saber cuántos menos, resta.", "error": "suma-en-vez-de-restar" }
+        { "respuesta": 20, "pista": "Sumaste. Para saber cuántos menos, resta.", "error": "suma-en-vez-de-restar" }
       ],
       "pista": "Lee los votos de la salteña y del majadito con la clave. Después resta.",
-      "explicacion": "Salteña: 6 manos = 12 votos. Majadito: 2 manos = 4 votos. 12 − 4 = 8 votos menos.",
+      "explicacion": "Salteña: 7 manos = 14 votos. Majadito: 3 manos = 6 votos. 14 − 6 = 8. El majadito tiene 8 votos menos.",
       "error": "diferencia-pictograma"
     }
   ],

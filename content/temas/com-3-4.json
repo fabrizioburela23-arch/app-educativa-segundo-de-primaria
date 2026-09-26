@@ -31,7 +31,7 @@
       "visual": { "tipo": "tabla", "columnas": ["Palabra", "Termina en"], "filas": [["casa", "asa"], ["masa", "asa"], ["mesa", "esa"]] }
     },
     {
-      "texto": "Los poemas se escriben en renglones llamados **versos**. Muchas veces, los versos terminan con palabras que riman. Aquí usamos la raya / para separar los versos.",
+      "texto": "Los poemas se escriben en renglones llamados **versos**. Muchas veces, los versos terminan con palabras que riman. Aquí separamos los versos con una barra: /.",
       "visual": { "tipo": "tabla", "columnas": ["Verso", "Termina en"], "filas": [["Mi gato Tomás", "ás"], ["camina hacia atrás.", "ás"]] }
     },
     {
@@ -122,12 +122,12 @@
       "enunciado": "¿Qué palabra rima con «llama»?",
       "visual": { "tipo": "emoji", "valor": "🦙" },
       "opciones": [
-        { "texto": "cama", "emoji": "🛏️", "correcta": true },
+        { "texto": "rama", "emoji": "🌿", "correcta": true },
         { "texto": "mesa", "pista": "«Mesa» termina en «esa». Escucha cómo termina «llama».", "error": "no-reconoce-rima" },
         { "texto": "sol", "emoji": "☀️", "pista": "«Sol» termina en «ol». Escucha cómo termina «llama».", "error": "no-reconoce-rima" }
       ],
       "pista": "Di «llama» despacio y fíjate en su final.",
-      "explicacion": "«Cama» rima con «llama»: las dos terminan en «ama».",
+      "explicacion": "«Rama» rima con «llama»: las dos terminan en «ama».",
       "error": "no-reconoce-rima"
     },
     {
@@ -141,7 +141,7 @@
     {
       "id": "p4", "tipo": "escribir", "nivel": 1,
       "enunciado": "Cambia la primera letra de «pato» y escribe el nombre de un animal que dice «miau».",
-      "respuestas": ["gato"],
+      "respuestas": ["gato", "el gato", "un gato"],
       "pista": "Deja «ato» igual y cambia solo la primera letra.",
       "explicacion": "Es «gato». «Pato» y «gato» riman: las dos terminan en «ato».",
       "error": "forma-rima"
@@ -191,7 +191,7 @@
       "id": "p8", "tipo": "tocar", "nivel": 2,
       "enunciado": "Mira la última palabra de cada verso. Toca las dos que riman.",
       "texto": "En la feria del barrio / hay choclo, papa y *maní*; / la casera me regala / un plátano para *mí*.",
-      "pista": "Lee la palabra que está antes de cada raya / y la del final. ¿Cuáles suenan igual al terminar?",
+      "pista": "Lee la palabra que está antes de cada barra / y la del final. ¿Cuáles suenan igual al terminar?",
       "explicacion": "«Maní» y «mí» riman: las dos terminan en «í». «Barrio» y «regala» no riman con ellas.",
       "error": "rima-en-poema"
     },
@@ -222,7 +222,7 @@
       "id": "p11", "tipo": "escribir", "nivel": 2,
       "enunciado": "Escucha las tres palabras. Escribe la que rima con «papa».",
       "escuchar": "sopa, capa, mesa.",
-      "respuestas": ["capa"],
+      "respuestas": ["capa", "la capa", "una capa"],
       "pista": "«Papa» termina en «apa». Escucha otra vez: ¿cuál termina igual?",
       "explicacion": "«Capa» rima con «papa»: las dos terminan en «apa». «Sopa» termina en «opa»: se parece, pero no rima.",
       "error": "escucha-rima"
@@ -299,7 +299,7 @@
       "id": "c1", "tipo": "opcion", "nivel": 1,
       "enunciado": "¿Qué es un trabalenguas?",
       "opciones": [
-        { "texto": "Un juego de palabras con un sonido que se repite y es difícil de decir rápido.", "correcta": true },
+        { "texto": "Un juego de palabras difícil de decir rápido.", "correcta": true },
         { "texto": "Un cuento largo con personajes y un final.", "pista": "Eso es un cuento. Piensa en lo que pasa cuando dices un trabalenguas rápido.", "error": "concepto-trabalenguas" },
         { "texto": "Una pregunta con pistas para adivinar algo.", "pista": "Eso es una adivinanza. Piensa en lo que pasa cuando dices un trabalenguas rápido.", "error": "concepto-trabalenguas" }
       ],
@@ -355,10 +355,10 @@
     },
     {
       "id": "c6", "tipo": "tocar", "nivel": 2,
-      "enunciado": "Toca las palabras que tienen «ch».",
-      "texto": "*Chabela* *echa* *leche* al *chocolate* caliente.",
-      "pista": "Hay cuatro. Busca «ch» al principio y también en el medio de las palabras.",
-      "explicacion": "Chabela, echa, leche y chocolate tienen «ch». «Caliente» no la tiene.",
+      "enunciado": "Lee el trabalenguas. ¿Qué sonido se repite? Toca todas las palabras que lo tienen.",
+      "texto": "*Saúl* *sirve* *sopa* *sabrosa* con *sal*.",
+      "pista": "Dilo en voz alta: ¿con qué sonido empiezan casi todas las palabras? Hay cinco.",
+      "explicacion": "Se repite el sonido de la s: Saúl, sirve, sopa, sabrosa y sal. «Con» no lo tiene.",
       "error": "sonido-repetido"
     },
     {
@@ -377,7 +377,7 @@
     {
       "id": "c8", "tipo": "escribir", "nivel": 3,
       "enunciado": "Escribe una palabra que rime con «ratón» y que nombre lo que cierra tu camisa.",
-      "respuestas": ["botón"],
+      "respuestas": ["botón", "el botón", "un botón"],
       "pista": "Termina en «ón», como «ratón». Tu camisa tiene varios, pequeños y redondos.",
       "explicacion": "Es «botón»: rima con «ratón» porque las dos terminan en «ón».",
       "error": "forma-rima"

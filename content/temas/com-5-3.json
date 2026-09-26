@@ -13,7 +13,7 @@
       "visual": { "tipo": "tabla", "columnas": ["ca, co, cu", "ce, ci"], "filas": [["casa, coco, cuna", "cebolla, cine"]] }
     },
     {
-      "texto": "La **z** va con **a**, **o**, **u**: **za**pato, **zo**rro, a**zú**car. Antes de **e** o **i**, casi siempre usamos **c**: **ce**reza, **ci**elo. ¡Casi nunca verás «ze» ni «zi»!",
+      "texto": "La **z** va con **a**, **o**, **u**: **za**pato, **zo**rro, a**zú**car. ¡Casi nunca verás «ze» ni «zi»! En su lugar escribimos **ce** y **ci**: **ce**reza, **ci**elo.",
       "visual": { "tipo": "emojis", "items": ["👞", "🦊", "🍒", "☁️"], "etiquetas": ["zapato", "zorro", "cereza", "cielo"] }
     },
     {
@@ -158,11 +158,11 @@
     },
     {
       "id": "p7", "tipo": "escribir", "nivel": 2,
-      "enunciado": "Escucha la palabra y escríbela en plural.",
+      "enunciado": "Escucha la palabra: termina en z. Escríbela en plural.",
       "escuchar": "feliz",
       "visual": { "tipo": "emoji", "valor": "😄", "cantidad": 2 },
       "respuestas": ["felices"],
-      "pista": "La palabra termina en z. ¿Qué le pasa a la z cuando agregas es?",
+      "pista": "Para el plural agregas «es». ¿Puede ir la z antes de la e?",
       "explicacion": "Feliz → **felices**. La z cambia a c porque después viene la e.",
       "error": "plural-z"
     },
@@ -281,7 +281,7 @@
           "opciones": [
             { "texto": "Porque después viene una i, y la z casi nunca va antes de la i.", "correcta": true },
             { "texto": "Porque «cabeza» se escribe con c.", "pista": "Mira otra vez: «cabeza» se escribe con z.", "error": "familia-z-c" },
-            { "texto": "Porque suena distinto que «cabeza».", "pista": "En Bolivia, «za» y «ci» tienen el mismo sonido de s. La razón está en la vocal que viene después.", "error": "regla-z-c" }
+            { "texto": "Porque suena distinto que «cabeza».", "pista": "En Bolivia, la z de «cabeza» y la c de «cabecita» suenan igual. La razón está en la vocal que viene después.", "error": "regla-z-c" }
           ],
           "columnas": 1,
           "pista": "Piensa en la regla de la z: ¿con qué vocales va?",
@@ -295,7 +295,7 @@
     },
     {
       "id": "p16", "tipo": "escribir", "nivel": 3,
-      "enunciado": "Escucha la oración y escríbela.",
+      "enunciado": "Escucha la oración y escríbela. Usa lo que aprendiste de la z y la c.",
       "escuchar": "El zorro come cerezas.",
       "respuestas": ["El zorro come cerezas.", "El zorro come cerezas"],
       "pista": "Son cuatro palabras. Piensa en cómo viste escritas «zorro» y «cereza», y en cómo se forma el plural de «cereza».",
@@ -309,7 +309,7 @@
       "enunciado": "Completa con z o c.",
       "texto": "El [z]orro mira el [c]ielo desde el [c]erro.",
       "pista": "Mira la vocal que sigue a cada espacio.",
-      "explicacion": "Zorro lleva z porque sigue la o. Cielo y cerro llevan c porque siguen la i y la e.",
+      "explicacion": "Zorro lleva z porque sigue la o. Cielo y cerro llevan c: antes de la i y de la e casi nunca va z.",
       "error": "regla-z-c"
     },
     {
@@ -322,21 +322,21 @@
     },
     {
       "id": "c3", "tipo": "escribir", "nivel": 2,
-      "enunciado": "Escucha la palabra y escríbela en plural.",
+      "enunciado": "Escucha la palabra: termina en z. Escríbela en plural.",
       "escuchar": "luz",
       "visual": { "tipo": "emoji", "valor": "💡", "cantidad": 3 },
       "respuestas": ["luces"],
-      "pista": "La palabra termina en z. ¿Qué le pasa a la z cuando agregas es?",
+      "pista": "Para el plural agregas «es». ¿Qué le pasa a la z cuando le sigue una e?",
       "explicacion": "Luz → **luces**. La z cambia a c porque después viene la e.",
       "error": "plural-z"
     },
     {
       "id": "c4", "tipo": "completar", "nivel": 2,
-      "enunciado": "Completa con c o s. Piensa en la familia de cada palabra.",
-      "texto": "De plaza sale pla[c]ita. De oso sale o[s]ito. De brazo sale bra[c]ito. De mesa sale me[s]ita.",
+      "enunciado": "Completa con c o s. Piensa de qué palabra viene cada una.",
+      "texto": "En la pla[c]ita, Inti le da un que[s]ito a su o[s]ito de peluche.",
       "banco": ["z"],
-      "pista": "La s se queda. La z cambia a c si le sigue una i.",
-      "explicacion": "Placita y bracito llevan c porque la z de plaza y de brazo cambia antes de i. Osito y mesita llevan s, como oso y mesa.",
+      "pista": "Piensa en la palabra de la que viene: ¿se escribe con s o con z? La s se queda; la z cambia a c si le sigue una i.",
+      "explicacion": "Placita lleva c porque la z de «plaza» cambia antes de la i. Quesito y osito llevan s, como queso y oso: la s no cambia.",
       "error": "familia-z-c"
     },
     {
@@ -375,10 +375,10 @@
     },
     {
       "id": "c7", "tipo": "escribir", "nivel": 3,
-      "enunciado": "Dos calles se cruzan en una esquina. ¿Cómo se llama ese lugar? Es de la familia de «cruz».",
-      "respuestas": ["cruce", "crucero", "encrucijada"],
-      "pista": "Empieza como «cruz». ¿Qué le pasa a la z si después viene una e?",
-      "explicacion": "Es **cruce**: la z de «cruz» cambia a c porque después viene la e.",
+      "enunciado": "Donde se juntan dos calles hay un... Escribe esa palabra de la familia de «cruz». Termina en e.",
+      "respuestas": ["cruce"],
+      "pista": "Empieza como «cruz» y termina en e. ¿Qué le pasa a la z si después viene una e?",
+      "explicacion": "Es **cruce**: la z de «cruz» cambia a c porque después viene la e. Cruz y cruce son de la misma familia.",
       "error": "familia-z-c"
     },
     {

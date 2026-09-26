@@ -60,7 +60,7 @@
       {
         "id": "g3", "tipo": "completar",
         "enunciado": "Lee el problema y completa.",
-        "apoyo": "El 130 tiene 3 decenas y el 50 tiene 5 decenas. Suma decenas con decenas.",
+        "apoyo": "En el 130, la cifra de las decenas es 3. En el 50, es 5. Suma decenas con decenas.",
         "texto": "Sofía vende 130 panes en la mañana y 50 en la tarde. En total vende [180] panes.",
         "banco": ["630", "80"],
         "pista": "Pon el 50 debajo del 130 con el 0 debajo del 0. El 5 va en la columna de las decenas.",
@@ -124,7 +124,7 @@
     },
     {
       "id": "p8", "tipo": "clasificar", "nivel": 2,
-      "enunciado": "Calcula cada suma y llévala a su total.",
+      "enunciado": "Calcula cada suma y ponla en el grupo de su total.",
       "categorias": [
         { "id": "t48", "texto": "Da 48" },
         { "id": "t57", "texto": "Da 57" },
@@ -185,7 +185,7 @@
       "enunciado": "¿Qué número falta? 23 + ☐ = 58",
       "respuesta": 35,
       "erroresComunes": [ { "respuesta": 81, "pista": "Sumaste 23 + 58, y eso da más que 58. Busca cuánto le falta al 23 para llegar a 58.", "error": "sumando-faltante" } ],
-      "pista": "Piensa por columnas: 3 más ¿cuánto? da 8, y 2 más ¿cuánto? da 5.",
+      "pista": "Piensa por columnas: ¿3 más cuánto da 8? ¿Y 2 más cuánto da 5?",
       "explicacion": "Falta el 35, porque 23 + 35 = 58: en las unidades, 3 + 5 = 8, y en las decenas, 2 + 3 = 5.",
       "error": "sumando-faltante"
     },
@@ -199,7 +199,7 @@
     },
     {
       "id": "p15", "tipo": "pasos", "nivel": 3,
-      "enunciado": "En la cosecha, la familia de Inti llena 214 bolsas de papa el lunes y 163 bolsas el martes.",
+      "enunciado": "En la cosecha, la comunidad de Inti llena 214 bolsas de papa el lunes y 163 bolsas el martes.",
       "visual": { "tipo": "tabla", "columnas": ["Día", "Bolsas de papa"], "filas": [["lunes", "214"], ["martes", "163"]] },
       "pasos": [
         {
@@ -228,16 +228,16 @@
     {
       "id": "p16", "tipo": "escribir-libre", "nivel": 3,
       "enunciado": "Inventa un problema de suma sobre la feria. Termina con una pregunta.",
-      "guia": ["Mi tía vende ... y ...", "¿Cuántos ... vende en total?"],
+      "guia": ["En la feria, mi tía vende ... en la mañana y ... en la tarde.", "¿Cuántos ... vende en total?"],
       "requisitos": [
         { "tipo": "mayuscula-inicial" },
         { "tipo": "signos-pregunta" },
         { "tipo": "min-palabras", "valor": 10 },
         { "tipo": "incluye", "palabras": ["cuántos", "cuántas", "cuánto", "cuánta"] }
       ],
-      "modelo": "Ana compra 12 panes y 6 choclos. ¿Cuántas cosas compra en total?",
+      "modelo": "En la feria, mi tía vende 12 choclos en la mañana y 6 en la tarde. ¿Cuántos choclos vende en total?",
       "pista": "Piensa en dos cantidades que se juntan. Después pregunta cuántas hay en total, con ¿ al inicio y ? al final.",
-      "explicacion": "Por ejemplo: «Ana compra 12 panes y 6 choclos. ¿Cuántas cosas compra en total?». Se resuelve con 12 + 6 = 18.",
+      "explicacion": "Por ejemplo: «En la feria, mi tía vende 12 choclos en la mañana y 6 en la tarde. ¿Cuántos choclos vende en total?». Se resuelve con 12 + 6 = 18.",
       "error": "inventa-problema"
     }
   ],
@@ -255,7 +255,7 @@
     {
       "id": "c2", "tipo": "escribir", "nivel": 1,
       "enunciado": "En 20 + 7 = 27, ¿cómo se llaman el 20 y el 7? Escribe la palabra.",
-      "respuestas": ["sumandos", "los sumandos", "son sumandos", "sumando"],
+      "respuestas": ["sumandos", "los sumandos", "son sumandos", "son los sumandos", "sumando"],
       "pista": "Son los números que juntamos. La palabra se parece a «sumar».",
       "explicacion": "El 20 y el 7 son los **sumandos**. El 27 es la suma o total.",
       "error": "partes-suma"
@@ -337,7 +337,7 @@
   "adulto": {
     "objetivo": "Sumar números de hasta tres cifras sin llevadas: entender la suma como juntar, reconocer sumandos y total, ubicar las cifras en columnas según su valor y sumar columna por columna empezando por las unidades; resolver problemas sencillos de la vida diaria.",
     "sugerencias": [
-      "Hagan atados de 10 palitos (de fósforo usados, de helado o fideos largos) con una liga. Armen dos números, por ejemplo 23 y 14, y júntenlos: primero los palitos sueltos y después los atados.",
+      "Hagan atados de 10 palitos (de helado, ramitas o fideos largos) con una liga. Armen dos números, por ejemplo 23 y 14, y júntenlos: primero los palitos sueltos y después los atados.",
       "En la feria o en la tienda, elijan dos productos cuyos precios no necesiten llevar (12 Bs y 5 Bs, 30 Bs y 18 Bs). Pidan que calcule el total y que prepare el dinero justo.",
       "En el patio o la vereda, dibujen con tiza una recta del 0 al 20. Para sumar 13 + 4, la niña o el niño se para en el 13 y da 4 saltos contando 14, 15, 16, 17."
     ],

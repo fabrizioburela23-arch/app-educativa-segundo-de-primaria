@@ -153,7 +153,7 @@
     },
     {
       "id": "p7", "tipo": "completar", "nivel": 2,
-      "enunciado": "Completa cada oración con lo contrario de la primera palabra.",
+      "enunciado": "Completa con el antónimo de «abierta» y el antónimo de «vacío».",
       "texto": "La ventana está abierta y la puerta está [cerrada]. El plato está vacío y la jarra está [llena].",
       "banco": ["dormida", "feliz"],
       "pista": "¿Qué es lo contrario de «abierta»? ¿Y lo contrario de «vacío»?",
@@ -323,7 +323,7 @@
         { "id": "ant", "texto": "Antónimos", "emoji": "↔️" }
       ],
       "elementos": [
-        { "texto": "empezar – comenzar", "categoria": "sin" },
+        { "texto": "pelo – cabello", "categoria": "sin" },
         { "texto": "auto – carro", "categoria": "sin" },
         { "texto": "regalo – obsequio", "categoria": "sin" },
         { "texto": "cerca – lejos", "categoria": "ant" },
@@ -331,7 +331,7 @@
         { "texto": "temprano – tarde", "categoria": "ant" }
       ],
       "pista": "Pregúntate: ¿dicen lo mismo o dicen lo contrario?",
-      "explicacion": "Sinónimos: empezar – comenzar, auto – carro, regalo – obsequio. Antónimos: cerca – lejos, ancho – angosto, temprano – tarde.",
+      "explicacion": "Sinónimos: pelo – cabello, auto – carro, regalo – obsequio. Antónimos: cerca – lejos, ancho – angosto, temprano – tarde.",
       "error": "mezcla-sin-ant"
     },
     {

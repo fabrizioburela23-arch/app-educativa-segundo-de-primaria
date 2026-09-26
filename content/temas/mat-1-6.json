@@ -50,7 +50,7 @@
     "pasos": [
       {
         "id": "g1", "tipo": "numero",
-        "enunciado": "Estas personas hacen fila para comprar api. ¿En qué lugar está el abuelo 👴? Escribe el número.",
+        "enunciado": "En la feria, estas personas hacen fila para comprar api. ¿En qué lugar está el abuelo 👴? Escribe el número.",
         "apoyo": "La fila empieza junto al puesto 🏪. Cuenta desde ahí: primero, segundo, tercero...",
         "visual": { "tipo": "emojis", "items": ["🏪", "👩", "👦", "👧", "👴", "👨"] },
         "respuesta": 4,
@@ -98,15 +98,15 @@
     },
     {
       "id": "p3", "tipo": "tocar", "nivel": 1,
-      "enunciado": "Toca la palabra que dice un lugar.",
-      "texto": "En mi calle hay ocho casas y la mía es la *cuarta*.",
-      "pista": "Una palabra dice cuántas casas hay. Otra dice en qué lugar está mi casa.",
-      "explicacion": "«Cuarta» dice el lugar de mi casa: es un número ordinal. «Ocho» dice cuántas casas hay.",
+      "enunciado": "Toca el número ordinal: la palabra que dice en qué orden está mi casa.",
+      "texto": "En mi calle hay ocho casas en fila. La mía es la *cuarta*.",
+      "pista": "Una palabra dice cuántas casas hay. Otra dice en qué orden está la mía.",
+      "explicacion": "«Cuarta» dice el orden de mi casa en la fila: es un número ordinal. «Ocho» dice cuántas casas hay.",
       "error": "cantidad-lugar"
     },
     {
       "id": "p4", "tipo": "manipular", "nivel": 1,
-      "enunciado": "Mueve el marcador al sexto lugar.",
+      "enunciado": "En esta recta, cada número es un lugar de la fila. Pon el marcador en el sexto lugar.",
       "manipulable": { "tipo": "recta", "min": 1, "max": 10, "paso": 1, "objetivo": 6 },
       "pista": "Sexto va justo después de quinto.",
       "explicacion": "El sexto lugar es el 6.º: está en el número 6.",
@@ -211,7 +211,7 @@
     {
       "id": "p14", "tipo": "completar", "nivel": 3,
       "enunciado": "Escribe cada ordinal en corto, con la letrita correcta.",
-      "texto": "la segunda casa → la [2.ª] casa; el quinto piso → el [5.º] piso; la cuarta fila → la [4.ª] fila",
+      "texto": "La segunda casa es la [2.ª] casa. El quinto piso es el [5.º] piso. La cuarta fila es la [4.ª] fila.",
       "banco": ["2.º", "5.ª", "4.º"],
       "pista": "Si la palabra termina en a (segunda, cuarta), usa ª. Si termina en o, usa º.",
       "explicacion": "La segunda casa es la 2.ª casa, el quinto piso es el 5.º piso y la cuarta fila es la 4.ª fila.",
@@ -221,7 +221,7 @@
       "id": "p15", "tipo": "manipular", "nivel": 3,
       "enunciado": "Mira el calendario de octubre de 2026. Toca el tercer lunes del mes.",
       "manipulable": { "tipo": "calendario", "mes": 10, "anio": 2026, "objetivo": 19 },
-      "pista": "Busca la columna de los lunes y cuenta desde arriba: primero, segundo, tercero.",
+      "pista": "Busca la columna de los lunes. Cuenta desde arriba solo los días que tienen número: primero, segundo, tercero.",
       "explicacion": "Los lunes de octubre de 2026 son 5, 12, 19 y 26. El tercer lunes es el 19.",
       "error": "cuenta-posicion"
     }
@@ -275,7 +275,7 @@
     },
     {
       "id": "c6", "tipo": "clasificar", "nivel": 2,
-      "enunciado": "¿Con qué palabra va cada una: segundo o segunda?",
+      "enunciado": "¿Cada palabra va con segundo o con segunda?",
       "categorias": [ { "id": "o", "texto": "segundo (2.º)" }, { "id": "a", "texto": "segunda (2.ª)" } ],
       "elementos": [
         { "texto": "el micro", "categoria": "o" }, { "texto": "la casa", "categoria": "a" },

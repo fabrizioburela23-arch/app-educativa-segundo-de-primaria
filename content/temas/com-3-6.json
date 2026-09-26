@@ -52,7 +52,7 @@
       "visual": {
         "tipo": "tabla",
         "columnas": ["Orden", "Oración"],
-        "filas": [["Primero", "Wara lava las papas."], ["Después", "Las cocina en la olla."], ["Al final", "Come con su familia."]]
+        "filas": [["Primero", "Wara lava las papas."], ["Después", "Las cocina en la olla."], ["Al final", "Las come con su familia."]]
       }
     },
     {
@@ -73,24 +73,24 @@
     "instruccion": "Mira cómo una oración corta crece cuando respondemos preguntas.",
     "pasos": [
       {
-        "texto": "¿Quién? **La abuela Rosa.** ¿Qué hace? **Teje.** Ya tenemos una oración: «La abuela Rosa teje.»",
-        "visual": { "tipo": "tabla", "columnas": ["¿Quién?", "¿Qué hace?"], "filas": [["La abuela Rosa", "teje"]] }
+        "texto": "¿Quién? **El abuelo Juan.** ¿Qué hace? **Teje.** Ya tenemos una oración: «El abuelo Juan teje.»",
+        "visual": { "tipo": "tabla", "columnas": ["¿Quién?", "¿Qué hace?"], "filas": [["El abuelo Juan", "teje"]] }
       },
       {
-        "texto": "¿Qué teje? **Una chompa.** Ahora dice más: «La abuela Rosa teje una chompa.»",
-        "visual": { "tipo": "emojis", "items": ["👵", "🧶"], "etiquetas": ["abuela Rosa", "chompa"] }
+        "texto": "¿Qué teje? **Una chompa.** Ahora dice más: «El abuelo Juan teje una chompa.»",
+        "visual": { "tipo": "emojis", "items": ["👴", "🧶"], "etiquetas": ["abuelo Juan", "chompa"] }
       },
       {
         "texto": "¿Dónde? **En el patio.** ¿Cuándo? **Por la tarde.**",
         "visual": {
           "tipo": "tabla",
           "columnas": ["¿Quién?", "¿Qué hace?", "¿Dónde?", "¿Cuándo?"],
-          "filas": [["La abuela Rosa", "teje una chompa", "en el patio", "por la tarde"]]
+          "filas": [["El abuelo Juan", "teje una chompa", "en el patio", "por la tarde"]]
         }
       },
       {
-        "texto": "Juntamos todo: «Por la tarde, la abuela Rosa teje una chompa en el patio.» Al final revisamos la mayúscula del inicio y el punto final.",
-        "visual": { "tipo": "emojis", "items": ["🌇", "👵", "🧶"], "etiquetas": ["por la tarde", "abuela Rosa", "chompa"] }
+        "texto": "Juntamos todo: «Por la tarde, el abuelo Juan teje una chompa en el patio.» Al final revisamos la mayúscula del inicio y el punto final.",
+        "visual": { "tipo": "emojis", "items": ["🌇", "👴", "🧶"], "etiquetas": ["por la tarde", "abuelo Juan", "chompa"] }
       }
     ]
   },
@@ -162,13 +162,13 @@
       "id": "p2", "tipo": "memoria", "nivel": 1,
       "enunciado": "Encuentra las parejas: la pregunta y su respuesta.",
       "pares": [
-        ["¿Quién?", "mi abuela"],
+        ["¿Quién?", "mi abuelo"],
         ["¿Qué hace?", "cocina sopa"],
         ["¿Dónde?", "en la cocina"],
         ["¿Cuándo?", "al mediodía"]
       ],
       "pista": "¿Quién? es una persona; ¿qué hace?, una acción; ¿dónde?, un lugar; ¿cuándo?, un momento.",
-      "explicacion": "¿Quién? mi abuela. ¿Qué hace? cocina sopa. ¿Dónde? en la cocina. ¿Cuándo? al mediodía.",
+      "explicacion": "¿Quién? mi abuelo. ¿Qué hace? cocina sopa. ¿Dónde? en la cocina. ¿Cuándo? al mediodía.",
       "error": "preguntas-oracion"
     },
     {
@@ -212,7 +212,7 @@
       "enunciado": "Lee el recado. ¿Qué parte le falta?",
       "lectura": "recado-abuela",
       "opciones": [
-        { "texto": "la firma: el nombre de quien lo escribe", "correcta": true },
+        { "texto": "la firma", "correcta": true },
         { "texto": "el saludo", "pista": "«Hola, abuela:» es el saludo. Ese sí lo tiene.", "error": "partes-recado" },
         { "texto": "la despedida", "pista": "«Te quiero mucho.» es la despedida. Esa sí la tiene.", "error": "partes-recado" }
       ],
@@ -234,7 +234,7 @@
     {
       "id": "p8", "tipo": "completar", "nivel": 2,
       "enunciado": "Completa el texto con primero, después y al final.",
-      "texto": "[Primero], Ana pone agua en la olla. [Después], echa los fideos. [Al final], sirve la sopa.",
+      "texto": "[Primero], Juan pone agua en la olla. [Después], echa los fideos. [Al final], sirve la sopa.",
       "banco": ["Ayer"],
       "pista": "¿Qué se hace antes que todo? ¿Y qué se hace al terminar?",
       "explicacion": "Primero pone agua en la olla, después echa los fideos y al final sirve la sopa.",
@@ -340,9 +340,9 @@
         { "tipo": "min-oraciones", "valor": 2 },
         { "tipo": "min-palabras", "valor": 10 }
       ],
-      "modelo": "La vicuña es pequeña y tiene lana fina. Vive libre en el altiplano y come pasto.",
+      "modelo": "La vicuña es más pequeña que la llama y tiene lana fina. Vive libre en el altiplano y come pasto.",
       "pista": "En la primera oración di cómo es. En la segunda, qué hace o dónde vive.",
-      "explicacion": "Por ejemplo: «La vicuña es pequeña y tiene lana fina. Vive libre en el altiplano y come pasto.»",
+      "explicacion": "Por ejemplo: «La vicuña es más pequeña que la llama y tiene lana fina. Vive libre en el altiplano y come pasto.» Dice cómo es y qué hace.",
       "error": "produce-texto"
     }
   ],
@@ -461,7 +461,7 @@
   "adulto": {
     "objetivo": "Producir oraciones completas y claras respondiendo ¿quién?, ¿qué hace?, ¿dónde? y ¿cuándo?, y textos breves con orden (primero, después, al final), un solo tema y el formato de un recado o mensaje (saludo, mensaje, despedida y firma).",
     "sugerencias": [
-      "Dejen recados de verdad en la casa: peguen una nota en la puerta del refrigerador («Hola, Wara: la sopa está en la olla. Un beso, mamá») y pidan que responda con otro recado que tenga saludo, mensaje, despedida y firma.",
+      "Dejen recados de verdad en la casa: peguen una nota en la puerta del refrigerador («Hola, Wara: la sopa está en la olla. Un beso, papá») y pidan que responda con otro recado que tenga saludo, mensaje, despedida y firma.",
       "Al volver de la feria o de un paseo, pregunten: ¿quién fue?, ¿qué hicieron?, ¿dónde?, ¿cuándo? Con las respuestas, escriban juntos una oración larga y clara.",
       "Preparen juntos algo sencillo (un api, una ensalada de frutas). Después, que escriba tres oraciones con primero, después y al final, y léanlas en voz alta para revisar el orden."
     ],

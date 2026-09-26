@@ -9,15 +9,15 @@
       "visual": { "tipo": "emojis", "items": ["👦", "👧", "👨‍⚕️", "👩‍⚕️"], "etiquetas": ["el niño", "la niña", "el doctor", "la doctora"] }
     },
     {
-      "texto": "Muchos masculinos terminan en **-o** y muchos femeninos en **-a**. Si la palabra termina en **-e** o en consonante, prueba con «el» o «la»: el puente, la nube, el pez, la flor.",
+      "texto": "Muchas palabras masculinas terminan en **-o**, y muchas femeninas, en **-a**. Si la palabra termina en **-e** o en consonante, prueba con «el» o «la»: el puente, la nube, el pez, la flor.",
       "visual": { "tipo": "emojis", "items": ["🌉", "☁️", "🐟", "🌸"], "etiquetas": ["el puente", "la nube", "el pez", "la flor"] }
     },
     {
-      "texto": "Algunas parejas cambian toda la palabra: el toro y la vaca, el caballo y la yegua, el gallo y la gallina. Otras tienen una sola forma: el estudiante y la estudiante; la hormiga macho y la hormiga hembra.",
+      "texto": "Algunas parejas cambian mucho: el toro y la vaca, el caballo y la yegua, el gallo y la gallina. Otras tienen una sola forma: el estudiante y la estudiante; la hormiga macho y la hormiga hembra.",
       "visual": { "tipo": "emojis", "items": ["🐂", "🐄", "🐓", "🐔"], "etiquetas": ["el toro", "la vaca", "el gallo", "la gallina"] }
     },
     {
-      "texto": "El **número** dice cuántos son: **singular** es uno solo y **plural**, más de uno. Si termina en vocal, suma **s**. Si termina en consonante, suma **es**. Si termina en **z**, cambia a **ces**.",
+      "texto": "El **número** dice cuántos son: **singular** es uno solo y **plural**, más de uno. Si termina en vocal, suma **s**. Si termina en consonante, suma **es**. Si termina en **z**, la z cambia a **c** y se suma **es**.",
       "visual": { "tipo": "tabla", "columnas": ["Singular", "Plural"], "filas": [["llama", "llamas"], ["flor", "flores"], ["pez", "peces"]] }
     }
   ],
@@ -56,7 +56,7 @@
       {
         "id": "g2", "tipo": "relacionar",
         "enunciado": "Une cada palabra masculina con su pareja femenina.",
-        "apoyo": "Estas parejas cambian toda la palabra. No sirve cambiar -o por -a.",
+        "apoyo": "En estas parejas no basta con cambiar la -o por la -a: la palabra cambia mucho.",
         "pares": [
           [{ "texto": "toro", "emoji": "🐂" }, "vaca"],
           [{ "texto": "gallo", "emoji": "🐓" }, "gallina"],
@@ -131,11 +131,11 @@
     },
     {
       "id": "p5", "tipo": "completar", "nivel": 2,
-      "enunciado": "Completa los plurales. Recuerda lo que pasa con la z.",
-      "texto": "Una luz, muchas lu[ces]. Una nuez, cinco nue[ces]. Una lombriz, dos lombri[ces].",
-      "banco": ["ses", "zes"],
-      "pista": "Si la palabra termina en z, la z no se queda en el plural.",
-      "explicacion": "Luz, luces. Nuez, nueces. Lombriz, lombrices. La z cambia a c y se suma es.",
+      "enunciado": "Completa los plurales. Mira bien la última letra: ¿es z o es s?",
+      "texto": "Una luz, muchas lu[ces]. Un mes, dos me[ses]. Una lombriz, tres lombri[ces].",
+      "banco": ["zes"],
+      "pista": "Si la palabra termina en z, la z cambia a c. Si termina en s, la s se queda. En los dos casos se suma es.",
+      "explicacion": "Luz, luces y lombriz, lombrices: la z cambia a c y se suma es. Mes, meses: la s se queda y se suma es.",
       "error": "plural-z-ces"
     },
     {
@@ -149,7 +149,7 @@
       "error": "plural-regla"
     },
     {
-      "id": "p7", "tipo": "relacionar", "nivel": 2,
+      "id": "p7", "tipo": "relacionar", "nivel": 1,
       "enunciado": "Une cada palabra con su plural.",
       "pares": [["pez", "peces"], ["flor", "flores"], ["papa", "papas"], ["papel", "papeles"], ["mar", "mares"]],
       "pista": "Busca la palabra que empieza igual y mira cómo cambia el final.",
@@ -189,11 +189,11 @@
         { "texto": "carne", "emoji": "🥩", "categoria": "f" },
         { "texto": "miel", "emoji": "🍯", "categoria": "f" },
         { "texto": "tomate", "emoji": "🍅", "categoria": "m" },
-        { "texto": "diente", "emoji": "🦷", "categoria": "m" },
+        { "texto": "chocolate", "emoji": "🍫", "categoria": "m" },
         { "texto": "pan", "emoji": "🍞", "categoria": "m" }
       ],
       "pista": "No mires el final. Di en voz alta «el» y «la» delante de cada palabra.",
-      "explicacion": "Femeninos: la leche, la carne, la miel. Masculinos: el tomate, el diente, el pan.",
+      "explicacion": "Femeninos: la leche, la carne, la miel. Masculinos: el tomate, el chocolate, el pan.",
       "error": "confunde-genero"
     },
     {
@@ -323,10 +323,11 @@
     {
       "id": "c3", "tipo": "escribir", "nivel": 2,
       "enunciado": "Escucha la palabra y escríbela en plural.",
-      "escuchar": "el caracol",
-      "respuestas": ["los caracoles", "caracoles"],
-      "pista": "«Caracol» termina en consonante. ¿Qué le sumas?",
-      "explicacion": "Se escribe «los caracoles»: caracol termina en l y se suma es.",
+      "escuchar": "el tren",
+      "visual": { "tipo": "emoji", "valor": "🚂" },
+      "respuestas": ["los trenes", "trenes"],
+      "pista": "«Tren» termina en n, que es una consonante. ¿Qué le sumas?",
+      "explicacion": "Se escribe «los trenes»: tren termina en consonante y se suma es.",
       "error": "plural-regla"
     },
     {
@@ -341,23 +342,23 @@
     {
       "id": "c5", "tipo": "relacionar", "nivel": 2,
       "enunciado": "Une cada palabra con su femenino.",
-      "pares": [["caballo", "yegua"], ["padre", "madre"], ["rey", "reina"], ["profesor", "profesora"]],
-      "pista": "Algunas parejas cambian toda la palabra y otras solo el final.",
-      "explicacion": "Caballo y yegua, padre y madre, rey y reina, profesor y profesora.",
+      "pares": [["toro", "vaca"], ["padre", "madre"], ["rey", "reina"], ["profesor", "profesora"]],
+      "pista": "Algunas parejas cambian mucho y otras solo el final.",
+      "explicacion": "Toro y vaca, padre y madre, rey y reina, profesor y profesora.",
       "error": "genero-parejas"
     },
     {
       "id": "c6", "tipo": "opcion", "nivel": 2,
-      "enunciado": "¿Cuál es el plural de «reloj»?",
+      "enunciado": "¿Cuál de estas palabras es femenina? Ninguna termina en -a.",
       "opciones": [
-        { "texto": "relojes", "correcta": true },
-        { "texto": "relojs", "pista": "«Reloj» termina en consonante. ¿Basta con sumar s?", "error": "plural-regla" },
-        { "texto": "reloces", "pista": "Solo se cambia a «ces» cuando la palabra termina en z.", "error": "plural-z-ces" }
+        { "texto": "calle", "correcta": true },
+        { "texto": "parque", "pista": "Di en voz alta «la parque» y «el parque». ¿Cuál suena bien?", "error": "confunde-genero" },
+        { "texto": "maíz", "pista": "Decimos «el maíz»: es masculino.", "error": "confunde-genero" }
       ],
       "columnas": 3,
-      "pista": "Mira la última letra de «reloj».",
-      "explicacion": "«Reloj» termina en j, una consonante: se suma es. Relojes.",
-      "error": "plural-regla"
+      "pista": "Di «el» y «la» delante de cada palabra. ¿Con cuál queda bien «la»?",
+      "explicacion": "Decimos «la calle»: es femenina, aunque termina en -e. En cambio, decimos «el parque» y «el maíz».",
+      "error": "confunde-genero"
     },
     {
       "id": "c7", "tipo": "tocar", "nivel": 3,
@@ -373,7 +374,7 @@
       "visual": { "tipo": "emoji", "valor": "🦁" },
       "respuestas": ["leona", "la leona"],
       "tildes": "estricto",
-      "pista": "Suma una -a al final de «león» y fíjate bien en la tilde.",
+      "pista": "¿Cómo se llama la hembra del león? Cuando la escribas, revisa si la palabra nueva lleva tilde.",
       "explicacion": "El femenino de «león» es «leona». Ojo: «león» lleva tilde, pero «leona» se escribe sin tilde.",
       "error": "forma-femenino"
     }
@@ -383,7 +384,7 @@
     "visual": { "tipo": "tabla", "columnas": ["", "Singular", "Plural"], "filas": [["Masculino", "el niño", "los niños"], ["Femenino", "la niña", "las niñas"], ["Termina en z", "el pez", "los peces"]] }
   },
   "adulto": {
-    "objetivo": "Reconocer el género (masculino y femenino) y el número (singular y plural) de los sustantivos: formar femeninos (incluidas las parejas que cambian toda la palabra y las palabras de una sola forma) y formar plurales con -s, -es y z → ces.",
+    "objetivo": "Reconocer el género (masculino y femenino) y el número (singular y plural) de los sustantivos: formar femeninos (incluidas las parejas que cambian mucho, como toro y vaca o gallo y gallina, y las palabras de una sola forma) y formar plurales con -s, -es y z → ces.",
     "sugerencias": [
       "En la feria, jueguen a «uno y muchos»: el adulto nombra un producto en singular (una papa, un limón, un choclo) y el niño lo dice en plural (unas papas, unos limones, unos choclos).",
       "Hagan tarjetas con parejas de animales (toro y vaca, gallo y gallina, caballo y yegua, carnero y oveja) y jueguen a encontrarlas boca abajo.",
@@ -391,7 +392,7 @@
     ],
     "errores": {
       "confunde-genero": { "descripcion": "Confunde masculino y femenino, sobre todo en palabras que terminan en -e o en consonante (la leche, el pan).", "sugerencia": "Antes de decidir, pidan que diga la palabra en voz alta con «el» y con «la» y elija la que suena bien." },
-      "genero-parejas": { "descripcion": "No conoce las parejas que cambian toda la palabra (dice «caballa» en lugar de «yegua»).", "sugerencia": "Miren juntos animales de la granja o del campo y nombren al macho y a la hembra de cada uno." },
+      "genero-parejas": { "descripcion": "No conoce las parejas que cambian mucho o toda la palabra (dice «caballa» en lugar de «yegua»).", "sugerencia": "Miren juntos animales de la granja o del campo y nombren al macho y a la hembra de cada uno." },
       "forma-femenino": { "descripcion": "Forma mal el femenino, o cree que todas las palabras cambian (dice «la estudianta»).", "sugerencia": "Hagan dos listas en una hoja: palabras que cambian (niño, niña) y palabras de una sola forma (el estudiante, la estudiante)." },
       "confunde-numero": { "descripcion": "Confunde singular y plural.", "sugerencia": "Muestren un objeto y luego varios (una cuchara, tres cucharas) y pidan que diga el nombre de cada grupo." },
       "plural-regla": { "descripcion": "Elige mal entre sumar -s o -es (escribe «flors» o «papaes»).", "sugerencia": "Pidan que mire la última letra: si es vocal, suma s; si es consonante, suma es. Escriban juntos una tabla con ejemplos." },

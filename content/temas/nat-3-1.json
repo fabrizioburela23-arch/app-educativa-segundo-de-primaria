@@ -100,13 +100,13 @@
       "enunciado": "Encuentra las parejas: el dibujo y su nombre.",
       "pares": [
         [ { "emoji": "🌅" }, "amanecer" ],
-        [ { "emoji": "🌇" }, "atardecer" ],
         [ { "emoji": "🌎" }, "Tierra" ],
         [ { "emoji": "☀️" }, "Sol" ],
-        [ { "emoji": "🌃" }, "noche" ]
+        [ { "emoji": "🌃" }, "noche" ],
+        [ { "emoji": "🔦" }, "linterna" ]
       ],
       "pista": "Di en voz alta lo que ves en cada dibujo.",
-      "explicacion": "🌅 amanecer, 🌇 atardecer, 🌎 Tierra, ☀️ Sol y 🌃 noche.",
+      "explicacion": "🌅 amanecer, 🌎 Tierra, ☀️ Sol, 🌃 noche y 🔦 linterna, como la del experimento.",
       "error": "vocabulario-tema"
     },
     {
@@ -160,7 +160,7 @@
       "id": "p6", "tipo": "escribir", "nivel": 1,
       "enunciado": "Escucha la adivinanza y escribe la respuesta.",
       "escuchar": "Soy redonda y giro como un trompo. También viajo alrededor del Sol. En mí viven las personas, los animales y las plantas. ¿Quién soy?",
-      "respuestas": ["Tierra", "la Tierra", "planeta Tierra", "el planeta Tierra"],
+      "respuestas": ["Tierra", "la Tierra", "planeta Tierra", "el planeta Tierra", "mundo", "el mundo"],
       "pista": "Es el planeta donde vives.",
       "explicacion": "Es la **Tierra**, nuestro planeta. Gira sobre sí misma y viaja alrededor del Sol.",
       "error": "vocabulario-tema"
@@ -202,18 +202,20 @@
       "error": "duracion-movimientos"
     },
     {
-      "id": "p10", "tipo": "multiple", "nivel": 2,
-      "enunciado": "¿Qué pasa porque la Tierra gira sobre sí misma? Elige todas las correctas.",
+      "id": "p10", "tipo": "multiple", "nivel": 3,
+      "enunciado": "Kusi mira la sombra de un poste en la mañana, al mediodía y en la tarde. ¿Qué descubre? Elige todas las correctas.",
+      "visual": { "tipo": "emojis", "items": ["🌅", "☀️", "🌇"], "etiquetas": ["mañana", "mediodía", "tarde"] },
       "opciones": [
-        { "texto": "Hay día y noche.", "correcta": true },
-        { "texto": "Vemos que el Sol sale y se oculta.", "correcta": true },
-        { "texto": "Pasa un año entero.", "pista": "Un año es lo que tarda la Tierra en dar la vuelta al Sol: eso es la traslación.", "error": "efectos-movimientos" },
-        { "texto": "Cambian las estaciones.", "pista": "Las estaciones cambian por el viaje alrededor del Sol, con la Tierra inclinada.", "error": "efectos-movimientos" }
+        { "texto": "Temprano en la mañana, la sombra es larga.", "correcta": true },
+        { "texto": "Al mediodía, la sombra es más corta.", "correcta": true },
+        { "texto": "La sombra cambia de lugar porque la Tierra gira.", "correcta": true },
+        { "texto": "Al mediodía, la sombra es la más larga del día.", "pista": "Al mediodía el Sol está alto en el cielo. Cuando la luz viene de arriba, ¿la sombra es larga o corta?", "error": "sombras" },
+        { "texto": "La sombra se queda en el mismo lugar todo el día.", "pista": "Durante el día, el Sol parece moverse por el cielo. ¿Qué le pasa entonces a la sombra?", "error": "sombras" }
       ],
       "columnas": 1,
-      "pista": "Girar sobre sí misma es la rotación, que dura un día. Hay dos respuestas correctas.",
-      "explicacion": "Por la rotación hay día y noche, y vemos que el Sol sale y se oculta. El año y las estaciones se deben a la traslación.",
-      "error": "efectos-movimientos"
+      "pista": "Cuando el Sol está bajo, las sombras son largas; cuando está alto, son cortas. Hay tres respuestas correctas.",
+      "explicacion": "Temprano en la mañana el Sol está bajo y la sombra es larga. Al mediodía el Sol está alto y la sombra es más corta. La sombra cambia de lugar porque la Tierra gira y el Sol parece cruzar el cielo.",
+      "error": "sombras"
     },
     {
       "id": "p11", "tipo": "ordenar", "nivel": 2,
@@ -312,8 +314,8 @@
     {
       "id": "c2", "tipo": "tocar", "nivel": 1,
       "enunciado": "Toca por dónde sale y por dónde se oculta el Sol.",
-      "texto": "Cada mañana el Sol aparece por el *este*, sube en el cielo y en la tarde se oculta por el *oeste*.",
-      "pista": "Busca los nombres de dos lados. Hay dos palabras.",
+      "texto": "Inti mira el cielo desde su patio en Sucre. Al norte y al sur ve cerros. En la mañana, el Sol sale por el *este*. En la tarde, se oculta por el *oeste*.",
+      "pista": "Hay cuatro lados en el texto, pero el Sol solo sale por uno y se oculta por el contrario. Toca dos palabras.",
       "explicacion": "El Sol parece salir por el **este** y ocultarse por el **oeste**, porque la Tierra gira.",
       "error": "sol-este-oeste"
     },
@@ -356,14 +358,14 @@
       "id": "c6", "tipo": "multiple", "nivel": 2,
       "enunciado": "¿Qué pasa por la traslación de la Tierra? Elige todas las correctas.",
       "opciones": [
-        { "texto": "Pasa un año.", "correcta": true },
-        { "texto": "Como la Tierra viaja inclinada, cambian las estaciones.", "correcta": true },
-        { "texto": "Hay día y noche.", "pista": "El día y la noche vienen de la rotación, que dura un día.", "error": "efectos-movimientos" },
-        { "texto": "El Sol aparece por el este cada mañana.", "pista": "Eso pasa cada día, porque la Tierra gira sobre sí misma.", "error": "efectos-movimientos" }
+        { "texto": "De un Año Nuevo al siguiente, la Tierra da una vuelta completa al Sol.", "correcta": true },
+        { "texto": "Como la Tierra viaja inclinada, durante el año pasamos por el verano, el otoño, el invierno y la primavera.", "correcta": true },
+        { "texto": "Cada tarde, el cielo se oscurece y llega la noche.", "pista": "Eso pasa todos los días, porque la Tierra gira sobre sí misma: es la rotación.", "error": "efectos-movimientos" },
+        { "texto": "Cada mañana, el Sol aparece por el este.", "pista": "Eso pasa cada día, porque la Tierra gira sobre sí misma.", "error": "efectos-movimientos" }
       ],
       "columnas": 1,
-      "pista": "La traslación es el viaje alrededor del Sol y dura un año. Hay dos respuestas correctas.",
-      "explicacion": "Por la traslación pasa un año y, como la Tierra viaja inclinada, cambian las estaciones. El día, la noche y el amanecer por el este vienen de la rotación.",
+      "pista": "La traslación es el viaje alrededor del Sol y dura un año. Busca lo que tarda un año. Hay dos respuestas correctas.",
+      "explicacion": "Por la traslación pasa un año, de un Año Nuevo al siguiente, y, como la Tierra viaja inclinada, cambian las estaciones. La noche y el amanecer de cada día vienen de la rotación.",
       "error": "efectos-movimientos"
     },
     {
@@ -454,12 +456,16 @@
         "descripcion": "Cree que las estaciones se deben a que la Tierra se acerca o se aleja del Sol.",
         "sugerencia": "Con una linterna, alumbren una hoja de frente y luego inclinada: de frente la mancha de luz es más pequeña y más fuerte. Expliquen que la Tierra viaja inclinada y que, cuando en Bolivia es verano, en el norte del mundo es invierno."
       },
+      "sombras": {
+        "descripcion": "No relaciona los cambios de las sombras durante el día con el giro de la Tierra y el camino aparente del Sol.",
+        "sugerencia": "Pongan una botella en el patio y marquen con tiza la punta de su sombra en la mañana, al mediodía y en la tarde. Comparen: al mediodía, con el Sol alto, la sombra es más corta."
+      },
       "calculo-tiempo": {
         "descripcion": "Se equivoca al calcular con horas y días.",
         "sugerencia": "Usen el calendario y el reloj de la casa: sumen juntos las horas de dos días (24 + 24) o agreguen un día a 365."
       },
       "vocabulario-tema": {
-        "descripcion": "Le cuesta nombrar o escribir palabras del tema (Tierra, Sol, amanecer, atardecer).",
+        "descripcion": "Le cuesta nombrar o escribir palabras del tema (Tierra, Sol, amanecer, noche).",
         "sugerencia": "Observen juntos el cielo al amanecer y al atardecer y nombren en voz alta lo que ven."
       },
       "produce-oracion": {

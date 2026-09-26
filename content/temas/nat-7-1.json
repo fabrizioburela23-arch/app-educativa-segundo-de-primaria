@@ -14,7 +14,7 @@
     },
     {
       "texto": "Nos parecemos a nuestra familia porque heredamos rasgos de la mamá y el papá que nos dieron la vida, como el color de los ojos o la forma del cabello. Eso es la **herencia**. ¡Y a toda familia la une el cariño!",
-      "emoji": "👨‍👩‍👧"
+      "emoji": "💞"
     },
     {
       "texto": "El cuerpo de niñas y niños es casi igual. Solo son diferentes las **partes íntimas**, las que cubre la ropa interior. Son privadas: nadie puede tocarlas ni pedir verlas. Si algo te incomoda, cuéntalo a un adulto de confianza.",
@@ -25,8 +25,8 @@
     "instruccion": "Conoce al curso de la profesora Ana. Todos son distintos y todos valen lo mismo.",
     "pasos": [
       {
-        "texto": "Kusi es el más alto del curso. Arami tiene el cabello rizado y Mateo, lacio. Rosa tiene la piel oscura y Sofía, clara. ¡Y nadie tiene las mismas huellas de los dedos que otra persona!",
-        "visual": { "tipo": "emojis", "items": ["👦🏽", "👧🏽", "👦🏼", "👧🏿", "👧🏻"], "etiquetas": ["Kusi", "Arami", "Mateo", "Rosa", "Sofía"] }
+        "texto": "Kusi es el más alto del curso. Arami tiene el cabello rizado y Mateo, lacio. Rosa tiene la piel oscura y Wara, clara. ¡Y nadie tiene las mismas huellas de los dedos que otra persona!",
+        "visual": { "tipo": "emojis", "items": ["👦🏽", "👧🏾", "👦🏼", "👧🏿", "👧🏻"], "etiquetas": ["Kusi", "Arami", "Mateo", "Rosa", "Wara"] }
       },
       {
         "texto": "Luis usa **lentes** para ver mejor. Nayra usa **silla de ruedas** y juega básquet. Juan es sordo y conversa en **lengua de señas**. La abuela de Inti es ciega y lee en **braille**, con los dedos.",
@@ -37,7 +37,7 @@
         "visual": { "tipo": "emojis", "items": ["⚽", "🍳", "🎨", "🔧"], "etiquetas": ["fútbol", "cocina", "pintura", "arreglos"] }
       },
       {
-        "texto": "Tu cuerpo es tuyo. Solo un médico o una enfermera pueden revisar tus partes íntimas, para cuidar tu salud y con un adulto de confianza presente. Si algo te hace sentir mal, di «¡No!», aléjate y cuéntalo.",
+        "texto": "Tu cuerpo es tuyo. Solo una doctora o un enfermero pueden revisar tus partes íntimas, para cuidar tu salud y con un adulto de confianza presente. Si algo te hace sentir mal, di «¡No!», aléjate y cuéntalo.",
         "visual": { "tipo": "emojis", "items": ["✋", "🏃", "🗣️"], "etiquetas": ["di «¡No!»", "aléjate", "cuéntalo"] }
       }
     ]
@@ -105,7 +105,7 @@
       "opciones": [
         { "texto": "De la melanina, una sustancia de nuestro cuerpo.", "correcta": true },
         { "texto": "De lo que comemos.", "pista": "La comida nos da energía, pero no decide el color de la piel.", "error": "melanina" },
-        { "texto": "De cuánto nos bañamos.", "pista": "Bañarse limpia la piel, pero no cambia su color. Todas las pieles quedan limpias al bañarse.", "error": "melanina" }
+        { "texto": "Del color de la ropa que usamos.", "pista": "La ropa cubre la piel, pero no le da su color.", "error": "melanina" }
       ],
       "pista": "Recuerda la palabra nueva que empieza con «me».",
       "explicacion": "El color de la piel depende de la melanina. Con más melanina, la piel es más oscura; con menos, más clara.",
@@ -118,17 +118,17 @@
         ["estatura", "alto o bajo"],
         ["cabello", "lacio, ondulado o rizado"],
         ["edad", "bebé, niña o abuelo"],
-        ["ojos", "cafés, verdes o azules"]
+        ["color de ojos", "cafés, verdes o azules"]
       ],
-      "pista": "Piensa en lo que describe cada ejemplo: ¿el tamaño, el pelo, los años o la mirada?",
-      "explicacion": "Estatura: alto o bajo. Cabello: lacio, ondulado o rizado. Edad: bebé, niña o abuelo. Ojos: cafés, verdes o azules.",
+      "pista": "Piensa en lo que describe cada ejemplo: ¿el tamaño, el pelo, los años o el color de los ojos?",
+      "explicacion": "Estatura: alto o bajo. Cabello: lacio, ondulado o rizado. Edad: bebé, niña o abuelo. Color de ojos: cafés, verdes o azules.",
       "error": "diferencias"
     },
     {
       "id": "p4", "tipo": "escribir", "nivel": 1,
       "enunciado": "Escucha y escribe cómo se siente Kusi.",
       "escuchar": "Kusi perdió su pelota favorita y tiene ganas de llorar. ¿Cómo se siente?",
-      "respuestas": ["triste", "está triste", "se siente triste", "muy triste", "tristeza", "con tristeza"],
+      "respuestas": ["triste", "está triste", "se siente triste", "muy triste", "está muy triste", "se siente muy triste", "tristeza", "con tristeza", "siente tristeza", "se siente con tristeza"],
       "pista": "Piensa cómo te sientes tú cuando pierdes algo que quieres mucho.",
       "explicacion": "Kusi se siente **triste**. Todas las personas sentimos tristeza a veces: es un sentimiento que compartimos.",
       "error": "sentimientos"
@@ -315,6 +315,15 @@
       "pista": "Puede ser algo del cuerpo, como los ojos, o algo que les gusta hacer, como reír o cantar.",
       "explicacion": "Por ejemplo: «Me parezco a mi abuela en los ojos». Empieza con mayúscula, di en qué se parecen y termina con punto.",
       "error": "produce-oracion"
+    },
+    {
+      "id": "p15", "tipo": "completar", "nivel": 1,
+      "enunciado": "Completa sobre el cuerpo de niñas y niños.",
+      "texto": "El cuerpo de niñas y niños es casi [igual]. Solo son diferentes las partes íntimas. Son [privadas]: nadie puede tocarlas ni pedir verlas.",
+      "banco": ["distinto", "de todos"],
+      "pista": "Piensa en los brazos, las piernas y el corazón de niñas y niños. Y recuerda: tu cuerpo es tuyo.",
+      "explicacion": "El cuerpo de niñas y niños es casi igual. Solo son diferentes las partes íntimas, que son privadas: nadie puede tocarlas ni pedir verlas, salvo para cuidar tu salud, con un adulto de confianza presente.",
+      "error": "vocabulario-cuerpo"
     }
   ],
   "comprobacion": [
@@ -341,10 +350,10 @@
     {
       "id": "c3", "tipo": "completar", "nivel": 2,
       "enunciado": "Completa con las palabras correctas.",
-      "texto": "Rosa es sorda y conversa con sus amigos en [lengua de señas]. Luis es ciego y lee cuentos en [braille].",
+      "texto": "Lucía es sorda y conversa con sus amigos en [lengua de señas]. Don Mario es ciego y lee cuentos en [braille].",
       "banco": ["lentes", "silla de ruedas"],
-      "pista": "Una persona sorda conversa con las manos. Una persona ciega lee con los dedos.",
-      "explicacion": "Rosa conversa en lengua de señas, con las manos y la cara. Luis lee en braille, tocando puntitos con los dedos.",
+      "pista": "Piensa: ¿cómo conversa una persona que no oye? ¿Y cómo lee una persona que no ve?",
+      "explicacion": "Lucía conversa en lengua de señas, con las manos y la cara. Don Mario lee en braille, tocando puntitos con los dedos.",
       "error": "discapacidad"
     },
     {
@@ -392,12 +401,12 @@
       "id": "c7", "tipo": "opcion", "nivel": 3,
       "enunciado": "¿Quién puede revisar tus partes íntimas?",
       "opciones": [
-        { "texto": "Un médico o una enfermera, para cuidar tu salud y con un adulto de confianza presente.", "correcta": true },
+        { "texto": "Una doctora o un enfermero, para cuidar tu salud y con un adulto de confianza presente.", "correcta": true },
         { "texto": "Cualquier persona que conozcas bien.", "pista": "Tus partes íntimas son privadas, aunque la persona sea conocida.", "error": "cuidado-cuerpo" },
         { "texto": "Un amigo, si te lo pide como un juego.", "pista": "Eso no es un juego. Si alguien te lo pide, di «¡No!» y cuéntalo a un adulto de confianza.", "error": "cuidado-cuerpo" }
       ],
       "pista": "Solo se revisan para cuidar tu salud.",
-      "explicacion": "Solo un médico o una enfermera pueden revisarlas, para cuidar tu salud y con un adulto de confianza presente. Tu cuerpo es tuyo.",
+      "explicacion": "Solo una doctora o un enfermero pueden revisarlas, para cuidar tu salud y con un adulto de confianza presente. Tu cuerpo es tuyo.",
       "error": "cuidado-cuerpo"
     },
     {
@@ -405,12 +414,12 @@
       "enunciado": "¿Qué frases son verdaderas y respetuosas? Elige todas las respuestas correctas.",
       "opciones": [
         { "texto": "Todas las personas valemos lo mismo.", "correcta": true },
-        { "texto": "Niñas y niños pueden ser doctores, choferes o cocineros.", "correcta": true },
+        { "texto": "Mujeres y hombres pueden trabajar de doctores, choferes o cocineros.", "correcta": true },
         { "texto": "Hay un color de piel más bonito que los demás.", "pista": "Todos los colores de piel son bonitos. Ninguno es mejor.", "error": "estereotipos" },
         { "texto": "Las personas en silla de ruedas no pueden hacer deporte.", "pista": "Recuerda a Nayra, que juega básquet en su silla.", "error": "discapacidad" }
       ],
       "pista": "Hay dos frases correctas. Busca las que tratan a todos con respeto.",
-      "explicacion": "Es verdad que todas las personas valemos lo mismo y que niñas y niños pueden tener cualquier trabajo. Ningún color de piel es más bonito, y las personas en silla de ruedas pueden hacer deporte.",
+      "explicacion": "Es verdad que todas las personas valemos lo mismo y que mujeres y hombres pueden tener cualquier trabajo. Ningún color de piel es más bonito, y las personas en silla de ruedas pueden hacer deporte.",
       "error": "estereotipos"
     }
   ],
@@ -428,7 +437,7 @@
     "errores": {
       "semejanzas": { "descripcion": "No reconoce lo que todas las personas tenemos en común.", "sugerencia": "Hagan una lista «todos tenemos...» (corazón, sentimientos, necesidades, derechos) pensando en personas muy distintas de la familia y del barrio." },
       "diferencias": { "descripcion": "Le cuesta nombrar diferencias físicas entre las personas.", "sugerencia": "Jueguen a «¿Quién es?» describiendo a familiares por su estatura, cabello, ojos o voz, siempre con palabras respetuosas." },
-      "melanina": { "descripcion": "No sabe de qué depende el color de la piel o tiene ideas equivocadas (por ejemplo, que depende de bañarse).", "sugerencia": "Expliquen que la melanina da color a la piel, al cabello y a los ojos, y que ayuda a proteger del sol. Corrijan con calma expresiones como «piel sucia»: todas las pieles quedan limpias al bañarse." },
+      "melanina": { "descripcion": "No sabe de qué depende el color de la piel o tiene ideas equivocadas (por ejemplo, que depende de la comida o de la ropa).", "sugerencia": "Expliquen que la melanina da color a la piel, al cabello y a los ojos, y que ayuda a proteger del sol. Corrijan con calma expresiones como «piel sucia»: todas las pieles quedan limpias al bañarse." },
       "herencia": { "descripcion": "No relaciona el parecido familiar con la herencia.", "sugerencia": "Busquen en fotos quién tiene los ojos o el cabello de quién. En familias adoptivas o diversas, resalten también los parecidos en gustos y costumbres." },
       "sentimientos": { "descripcion": "Le cuesta nombrar sentimientos.", "sugerencia": "Nombren en voz alta cómo se sienten durante el día («estoy alegre», «me siento triste») y pregunten cómo se siente él o ella." },
       "discapacidad": { "descripcion": "Tiene ideas equivocadas sobre las personas con discapacidad o sobre las ayudas que usan.", "sugerencia": "Conversen sobre personas conocidas o deportistas con discapacidad, y sobre cómo adaptar un juego para que todos participen." },

@@ -16,7 +16,7 @@ export default function ordenar(cont, ej, ctx) {
 
   const fichasOrigen = new Map();
   mezclados.forEach((e) => {
-    const b = h('button', { class: 'ficha', type: 'button', onclick: () => colocar(e.k) },
+    const b = h('button', { class: 'ficha', type: 'button', 'data-k': String(e.k), onclick: () => colocar(e.k) },
       e.emoji ? h('span', { class: 'emoji', 'aria-hidden': 'true' }, e.emoji) : null, e.etiqueta ? ` ${e.etiqueta}` : '');
     fichasOrigen.set(e.k, b);
     origen.appendChild(b);

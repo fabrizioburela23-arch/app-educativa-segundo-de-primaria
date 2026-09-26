@@ -9,7 +9,7 @@
       "visual": { "tipo": "grupos", "grupos": 2, "porGrupo": 3, "emoji": "🍌" }
     },
     {
-      "texto": "¿Cómo se reparte? Da uno a cada uno, por turnos, hasta que no quede nada. Así, 12 panes en 3 platos quedan con 4 panes en cada plato.",
+      "texto": "¿Cómo se reparte? Da uno a cada uno, por turnos, hasta que no quede nada. Si repartes así 12 panes en 3 platos, cada plato queda con 4 panes.",
       "visual": { "tipo": "grupos", "grupos": 3, "porGrupo": 4, "emoji": "🍞" }
     },
     {
@@ -85,7 +85,7 @@
     },
     {
       "id": "p3", "tipo": "clasificar", "nivel": 1,
-      "enunciado": "Cada número dice cuántas uvas recibe un niño. ¿Es un reparto en partes iguales?",
+      "enunciado": "Los números dicen cuántas uvas recibió cada niño. ¿Fue un reparto en partes iguales?",
       "categorias": [
         { "id": "si", "texto": "Partes iguales", "emoji": "✅" },
         { "id": "no", "texto": "No son iguales", "emoji": "❌" }
@@ -172,7 +172,7 @@
     {
       "id": "p11", "tipo": "tocar", "nivel": 2,
       "enunciado": "¿Cuántos limones van en cada bolsa? Toca los dos números que necesitas para saberlo.",
-      "texto": "Doña Ana tiene *24* limones. Los reparte en *4* bolsas iguales. Cada limón cuesta 1 Bs.",
+      "texto": "Doña Ana tiene *24* limones. Los reparte en *4* bolsas iguales. Vende cada bolsa a 5 Bs.",
       "pista": "Busca cuántos limones hay y en cuántas bolsas se reparten. El precio no hace falta.",
       "explicacion": "Necesitas el 24 (los limones) y el 4 (las bolsas): 24 ÷ 4 = 6 limones en cada bolsa. El precio no sirve para esta pregunta.",
       "error": "datos-problema"
@@ -227,7 +227,7 @@
         { "tipo": "mayuscula-inicial" },
         { "tipo": "signos-pregunta" },
         { "tipo": "min-palabras", "valor": 8 },
-        { "tipo": "incluye", "palabras": ["reparte", "repartir", "repartimos", "reparto"] }
+        { "tipo": "incluye", "palabras": ["reparte", "repartió", "repartir", "repartimos", "repartieron", "reparto"] }
       ],
       "modelo": "Rosa reparte 12 panes entre 3 amigos. ¿Cuántos panes recibe cada uno?",
       "pista": "Di qué se reparte, cuántos hay y entre cuántos. Después pregunta cuánto recibe cada uno.",
@@ -293,28 +293,28 @@
     },
     {
       "id": "c7", "tipo": "pasos", "nivel": 3,
-      "enunciado": "La familia de Inti cosechó 32 duraznos. Comieron 2 y repartieron los demás en 5 canastas, en partes iguales.",
+      "enunciado": "La familia de Inti cosechó 30 duraznos. Comieron 2 y repartieron los demás en 4 canastas, en partes iguales.",
       "pasos": [
         {
-          "tipo": "numero", "enunciado": "¿Cuántos duraznos quedaron para repartir?", "respuesta": 30,
-          "erroresComunes": [ { "respuesta": 34, "pista": "Sumaste. Si se comieron 2, quedan menos: resta.", "error": "operacion-equivocada" } ],
+          "tipo": "numero", "enunciado": "¿Cuántos duraznos quedaron para repartir?", "respuesta": 28,
+          "erroresComunes": [ { "respuesta": 32, "pista": "Sumaste. Si se comieron 2, quedan menos: resta.", "error": "operacion-equivocada" } ],
           "pista": "A los duraznos que cosecharon, quítales los que comieron.",
-          "explicacion": "32 − 2 = 30 duraznos.",
+          "explicacion": "30 − 2 = 28 duraznos.",
           "error": "problema-pasos"
         },
         {
-          "tipo": "numero", "enunciado": "¿Cuántos duraznos van en cada canasta?", "respuesta": 6,
+          "tipo": "numero", "enunciado": "¿Cuántos duraznos van en cada canasta?", "respuesta": 7,
           "erroresComunes": [
-            { "respuesta": 5, "pista": "5 es el número de canastas. ¿Cuántos duraznos van en cada una?", "error": "confunde-grupos" },
-            { "respuesta": 25, "pista": "Restaste 30 − 5. Reparte los 30 duraznos en las 5 canastas.", "error": "operacion-equivocada" }
+            { "respuesta": 4, "pista": "4 es el número de canastas. ¿Cuántos duraznos van en cada una?", "error": "confunde-grupos" },
+            { "respuesta": 24, "pista": "Restaste 28 − 4. Reparte los 28 duraznos en las 4 canastas.", "error": "operacion-equivocada" }
           ],
-          "pista": "En cada vuelta pones 5 duraznos, uno en cada canasta. ¿Cuántas vueltas das con 30?",
-          "explicacion": "30 ÷ 5 = 6 duraznos en cada canasta.",
+          "pista": "En cada vuelta pones 4 duraznos, uno en cada canasta. ¿Cuántas vueltas das con 28?",
+          "explicacion": "28 ÷ 4 = 7 duraznos en cada canasta, porque 7 + 7 + 7 + 7 = 28.",
           "error": "division"
         }
       ],
       "pista": "Primero resta los que comieron. Después reparte los que quedan.",
-      "explicacion": "32 − 2 = 30 duraznos. 30 ÷ 5 = 6 duraznos en cada canasta.",
+      "explicacion": "30 − 2 = 28 duraznos. 28 ÷ 4 = 7 duraznos en cada canasta.",
       "error": "problema-pasos"
     },
     {

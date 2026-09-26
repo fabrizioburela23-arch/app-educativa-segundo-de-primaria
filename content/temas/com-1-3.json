@@ -261,13 +261,19 @@
       "error": "confunde-comun-propio"
     },
     {
-      "id": "c3", "tipo": "escribir", "nivel": 2,
-      "enunciado": "Escucha y escribe el nombre del departamento.",
-      "escuchar": "Potosí",
-      "respuestas": ["Potosí"],
-      "mayusculas": "estricto",
-      "pista": "Es un nombre propio. ¿Con qué tipo de letra empieza?",
-      "explicacion": "Se escribe «Potosí», con P mayúscula porque es un nombre propio, y con tilde en la í.",
+      "id": "c3", "tipo": "multiple", "nivel": 2,
+      "enunciado": "Estas palabras están escritas con minúscula. ¿Cuáles deben llevar mayúscula?",
+      "opciones": [
+        { "texto": "juan", "correcta": true },
+        { "texto": "río", "pista": "Hay muchos ríos: «río» es común y va con minúscula.", "error": "mayuscula-en-comun" },
+        { "texto": "oruro", "correcta": true },
+        { "texto": "abuela", "pista": "Hay muchas abuelas: «abuela» es común y va con minúscula.", "error": "mayuscula-en-comun" },
+        { "texto": "mamoré", "correcta": true },
+        { "texto": "ciudad", "pista": "Hay muchas ciudades: «ciudad» es común y va con minúscula.", "error": "mayuscula-en-comun" }
+      ],
+      "columnas": 3,
+      "pista": "Busca el nombre especial de una persona, el de una ciudad y el de un río.",
+      "explicacion": "Juan, Oruro y Mamoré son nombres propios: se escriben con mayúscula. «Río», «abuela» y «ciudad» son comunes.",
       "error": "propio-sin-mayuscula"
     },
     {
@@ -288,17 +294,14 @@
       "error": "relaciona-propio-comun"
     },
     {
-      "id": "c6", "tipo": "opcion", "nivel": 2,
-      "enunciado": "¿Qué palabra es un sustantivo propio?",
-      "opciones": [
-        { "texto": "Amazonía", "correcta": true },
-        { "texto": "selva", "pista": "Hay muchas selvas: «selva» es común.", "error": "confunde-comun-propio" },
-        { "texto": "árbol", "pista": "«Árbol» nombra a cualquier árbol: es común.", "error": "confunde-comun-propio" }
-      ],
-      "columnas": 3,
-      "pista": "Busca el nombre especial de un lugar.",
-      "explicacion": "«Amazonía» es el nombre de un lugar muy grande de Bolivia y de otros países: es propio. «Selva» y «árbol» son comunes.",
-      "error": "confunde-comun-propio"
+      "id": "c6", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha la oración y escríbela. Recuerda las mayúsculas y el punto.",
+      "escuchar": "Mateo toma api en Tarija.",
+      "respuestas": ["Mateo toma api en Tarija.", "Mateo toma api en Tarija"],
+      "mayusculas": "estricto",
+      "pista": "Hay dos nombres propios: el de un niño y el de una ciudad. Los dos llevan mayúscula.",
+      "explicacion": "Se escribe: «Mateo toma api en Tarija». Mateo y Tarija son nombres propios: llevan mayúscula. «Api» es común: va con minúscula.",
+      "error": "propio-sin-mayuscula"
     },
     {
       "id": "c7", "tipo": "tocar", "nivel": 3,
@@ -313,6 +316,7 @@
       "enunciado": "Escribe bien esta oración, con las mayúsculas que faltan: «el perro de luis se llama bruno.»",
       "respuestas": ["El perro de Luis se llama Bruno.", "El perro de Luis se llama Bruno"],
       "mayusculas": "estricto",
+      "tildes": "estricto",
       "pista": "Tres palabras necesitan mayúscula: la primera de la oración y dos nombres propios.",
       "explicacion": "Se escribe «El perro de Luis se llama Bruno.»: «El» empieza la oración; Luis y Bruno son nombres propios.",
       "error": "propio-sin-mayuscula"

@@ -9,7 +9,7 @@
       "visual": { "tipo": "emojis", "items": ["⭐", "🌎", "🌙", "🌌"], "etiquetas": ["estrellas", "planetas", "lunas", "galaxias"] }
     },
     {
-      "texto": "El **Sol** es una **estrella**. A su alrededor giran **ocho planetas**: Mercurio, Venus, Tierra, Marte, Júpiter, Saturno, Urano y Neptuno. Juntos forman el **sistema solar**.",
+      "texto": "El **Sol** es la **estrella** más cercana a nosotros. A su alrededor giran **ocho planetas**: Mercurio, Venus, Tierra, Marte, Júpiter, Saturno, Urano y Neptuno. Juntos forman el **sistema solar**.",
       "visual": { "tipo": "ilustracion", "id": "sistema-solar" }
     },
     {
@@ -17,7 +17,7 @@
       "visual": { "tipo": "ilustracion", "id": "fases-luna" }
     },
     {
-      "texto": "Las **estrellas** son soles muy lejanos. Algunas forman figuras llamadas **constelaciones**, como la **Cruz del Sur**. Los telescopios nos ayudan a verlas mejor, y los astronautas viajan al espacio.",
+      "texto": "Las **estrellas** son soles muy lejanos. Unidas con líneas imaginarias, algunas forman figuras: las **constelaciones**, como la **Cruz del Sur**. Los telescopios nos ayudan a verlas, y los astronautas viajan al espacio.",
       "visual": { "tipo": "emojis", "items": ["✨", "🔭", "👩‍🚀", "🚀"], "etiquetas": ["estrellas", "telescopio", "astronauta", "cohete"] }
     }
   ],
@@ -92,22 +92,22 @@
       "pares": [
         [ { "emoji": "☀️" }, "Sol" ],
         [ { "emoji": "🌙" }, "Luna" ],
-        [ { "emoji": "⭐" }, "estrella" ],
+        [ { "emoji": "🌎" }, "Tierra" ],
         [ { "emoji": "🔭" }, "telescopio" ],
         [ { "emoji": "🚀" }, "cohete" ],
         [ { "emoji": "👩‍🚀" }, "astronauta" ]
       ],
       "pista": "Di en voz alta el nombre de cada dibujo.",
-      "explicacion": "☀️ Sol, 🌙 Luna, ⭐ estrella, 🔭 telescopio, 🚀 cohete y 👩‍🚀 astronauta.",
+      "explicacion": "☀️ Sol, 🌙 Luna, 🌎 Tierra, 🔭 telescopio, 🚀 cohete y 👩‍🚀 astronauta.",
       "error": "vocabulario-tema"
     },
     {
       "id": "p2", "tipo": "completar", "nivel": 1,
       "enunciado": "Completa qué es la Cruz del Sur.",
       "texto": "La Cruz del Sur es una [constelación]: un grupo de [estrellas] que forma una figura en el cielo.",
-      "banco": ["montaña", "nubes"],
+      "banco": ["montaña", "piedras"],
       "pista": "Es una figura que forman varios puntos brillantes del cielo de la noche.",
-      "explicacion": "La Cruz del Sur es una **constelación**: un grupo de **estrellas** que forma una cruz. Desde Bolivia se ve muy bien.",
+      "explicacion": "La Cruz del Sur es una **constelación**: un grupo de **estrellas** que, unidas con líneas imaginarias, forman una cruz. Desde Bolivia se ve muy bien.",
       "error": "estrellas-constelaciones"
     },
     {
@@ -116,7 +116,7 @@
       "escuchar": "estrella",
       "visual": { "tipo": "emoji", "valor": "⭐" },
       "respuestas": ["estrella"],
-      "pista": "Tiene tres sílabas. Fíjate bien en la última: se escribe con ll.",
+      "pista": "Sepárala en sílabas: es-tre-... La última suena como el comienzo de «llama».",
       "explicacion": "Se escribe «estrella», con **ll**. El Sol es una estrella.",
       "error": "vocabulario-tema"
     },
@@ -135,7 +135,7 @@
         ["estrella", "tiene luz propia, como el Sol"],
         ["planeta", "gira alrededor del Sol, como la Tierra"],
         ["satélite", "gira alrededor de un planeta, como la Luna"],
-        ["constelación", "estrellas que forman una figura"]
+        ["constelación", "estrellas que, unidas, forman una figura"]
       ],
       "pista": "Fíjate en los ejemplos: el Sol, la Tierra, la Luna y la Cruz del Sur.",
       "explicacion": "Una estrella tiene luz propia; un planeta gira alrededor del Sol; un satélite gira alrededor de un planeta, y una constelación es un grupo de estrellas que forma una figura.",
@@ -308,14 +308,15 @@
   "comprobacion": [
     {
       "id": "c1", "tipo": "relacionar", "nivel": 1,
-      "enunciado": "Une cada uno con lo que es.",
+      "enunciado": "Une cada nombre con lo que es.",
       "pares": [
-        [ { "texto": "el Sol", "emoji": "☀️" }, "una estrella" ],
-        [ { "texto": "la Tierra", "emoji": "🌎" }, "un planeta" ],
-        [ { "texto": "la Luna", "emoji": "🌙" }, "un satélite" ]
+        [ { "texto": "el Sol", "emoji": "☀️" }, "la estrella más cercana a nosotros" ],
+        [ { "texto": "la Luna", "emoji": "🌙" }, "el satélite natural de la Tierra" ],
+        [ "Neptuno", "el planeta más lejano del Sol" ],
+        [ { "texto": "la Cruz del Sur", "emoji": "✨" }, "una constelación que vemos desde Bolivia" ]
       ],
-      "pista": "Uno tiene luz propia, otro es nuestro planeta y otro gira alrededor de la Tierra.",
-      "explicacion": "El Sol es una estrella, la Tierra es un planeta y la Luna es un satélite.",
+      "pista": "Busca las palabras clave: estrella, satélite, planeta y constelación.",
+      "explicacion": "El Sol es la estrella más cercana, la Luna es el satélite natural de la Tierra, Neptuno es el planeta más lejano del Sol y la Cruz del Sur es una constelación.",
       "error": "cuerpos-celestes"
     },
     {
@@ -350,11 +351,15 @@
       "error": "exploracion-espacio"
     },
     {
-      "id": "c5", "tipo": "ordenar", "nivel": 2,
-      "enunciado": "Ordena estos planetas desde el más cercano al Sol hasta el más lejano.",
-      "elementos": ["Marte", "Júpiter", "Saturno", "Urano", "Neptuno"],
-      "pista": "Después de Marte viene el planeta más grande. El último es Neptuno.",
-      "explicacion": "El orden es Marte, Júpiter, Saturno, Urano y Neptuno.",
+      "id": "c5", "tipo": "numero", "nivel": 2,
+      "enunciado": "Contando desde el Sol, ¿en qué lugar está cada planeta? Mercurio es el 1.",
+      "campos": [
+        { "etiqueta": "Venus", "respuesta": 2 },
+        { "etiqueta": "Marte", "respuesta": 4 },
+        { "etiqueta": "Saturno", "respuesta": 6 }
+      ],
+      "pista": "Di los planetas en orden y cuenta con los dedos: Mercurio 1, Venus 2, Tierra 3...",
+      "explicacion": "Mercurio 1, **Venus 2**, Tierra 3, **Marte 4**, Júpiter 5, **Saturno 6**, Urano 7 y Neptuno 8.",
       "error": "orden-planetas"
     },
     {
@@ -387,7 +392,7 @@
     {
       "id": "c8", "tipo": "tocar", "nivel": 3,
       "enunciado": "Toca solo lo que tiene luz propia.",
-      "texto": "De día vemos el *Sol*. De noche vemos la Luna, el planeta Marte y muchas *estrellas*.",
+      "texto": "De día vemos el *Sol*. De noche vemos la Luna, a veces el planeta Marte y muchas *estrellas*.",
       "pista": "Solo las estrellas producen su propia luz. Hay dos palabras.",
       "explicacion": "El **Sol** y las **estrellas** tienen luz propia. La Luna y Marte brillan porque el Sol los ilumina.",
       "error": "luz-propia"
@@ -401,7 +406,7 @@
     "objetivo": "Introducir el universo: el Sol es una estrella (la más cercana a la Tierra) y, con los ocho planetas que giran a su alrededor, forma el sistema solar, que es parte de nuestra galaxia, la Vía Láctea. Nombrar los planetas en orden; reconocer que la Luna es el satélite natural de la Tierra, que no tiene luz propia y que sus fases se deben a cuánto de su lado iluminado vemos desde la Tierra (no a la sombra de la Tierra); saber que las estrellas son soles lejanos que forman constelaciones, como la Cruz del Sur, y que exploramos el espacio con telescopios, cohetes, satélites artificiales y astronautas.",
     "sugerencias": [
       "Durante un mes, miren la Luna cada vez que puedan (al anochecer o algunas mañanas) y dibújenla en un calendario. Al final, observen cómo la parte iluminada creció y se achicó. En Bolivia, la Luna puede verse iluminada del lado contrario al de muchos libros hechos en el norte del mundo, así que el truco de la «C» y la «D» no siempre sirve aquí: lo seguro es comparar de un día a otro si la parte iluminada crece o se achica.",
-      "En una noche despejada, lejos de las luces de la ciudad (en el campo, el altiplano o un mirador), busquen juntos la Cruz del Sur: cuatro estrellas brillantes en forma de cruz, junto a dos estrellas muy brillantes que parecen señalarla. Se ve mejor en las noches de marzo a agosto. Busquen también la Vía Láctea: en sus manchas oscuras los pueblos andinos veían figuras, como la llama Yakana.",
+      "En una noche despejada, lejos de las luces de la ciudad (en el campo, el altiplano o un mirador), busquen juntos la Cruz del Sur: cuatro estrellas brillantes en forma de cruz, junto a dos estrellas muy brillantes que parecen señalarla. Se ve mejor en las noches de marzo a agosto. Busquen también la Vía Láctea: en sus manchas oscuras, los pueblos quechua y aymara reconocen figuras, como la llama Yakana.",
       "Armen un sistema solar en fila con una naranja para el Sol y ocho bolitas de papel para los planetas, e inventen una frase para recordar el orden con las iniciales M, V, T, M, J, S, U, N. Cuéntenle que el Sol es muchísimo más grande: si la Tierra fuera un grano de quinua, el Sol sería como una pelota de fútbol. Si pueden, visiten el Observatorio Astronómico Nacional de Santa Ana, en Tarija."
     ],
     "errores": {

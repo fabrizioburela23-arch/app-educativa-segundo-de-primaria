@@ -9,7 +9,7 @@
       "visual": { "tipo": "emojis", "items": ["🍓", "🌸", "🦗", "🎈"], "etiquetas": ["fresa", "flor", "grillo", "globo"] }
     },
     {
-      "texto": "Escucha bien si suena **r** o **l**, porque una letra cambia la palabra. Tú **fr**otas tus manos con jabón. Un bote **fl**ota en el lago Titicaca.",
+      "texto": "Escucha bien si suena **r** o **l**, porque una letra cambia la palabra. Te **fr**otas las manos con jabón. Un bote **fl**ota en el lago Titicaca.",
       "visual": { "tipo": "emojis", "items": ["🧼", "⛵"], "etiquetas": ["frota", "flota"] }
     },
     {
@@ -125,11 +125,11 @@
     {
       "id": "p4", "tipo": "escribir", "nivel": 1,
       "enunciado": "Escucha y escribe la palabra.",
-      "escuchar": "globo",
-      "visual": { "tipo": "emoji", "valor": "🎈" },
-      "respuestas": ["globo"],
-      "pista": "Tiene dos sílabas. La primera empieza con dos consonantes amigas.",
-      "explicacion": "Se escribe **globo**: **glo**-bo, con gl.",
+      "escuchar": "regla",
+      "visual": { "tipo": "emoji", "valor": "📏" },
+      "respuestas": ["regla"],
+      "pista": "Tiene dos sílabas. La segunda empieza con dos consonantes amigas: ¿suena r o l?",
+      "explicacion": "Se escribe **regla**: re-**gla**, con gl.",
       "error": "dictado-grupos"
     },
     {
@@ -186,9 +186,9 @@
     {
       "id": "p9", "tipo": "tocar", "nivel": 2,
       "enunciado": "Lee el trabalenguas. Toca las palabras que tienen fl.",
-      "texto": "*Flavio* toca la *flauta* y *Flora* *infla* un globo.",
+      "texto": "*Flavio* toca la *flauta* y *Florencia* *infla* un globo.",
       "pista": "Hay cuatro. Busca la f con la l pegada. ¡Cuidado con una palabra que tiene gl!",
-      "explicacion": "Flavio, flauta, Flora e infla tienen fl. «Globo» tiene gl, no fl.",
+      "explicacion": "Flavio, flauta, Florencia e infla tienen fl. «Globo» tiene gl, no fl.",
       "error": "no-reconoce-grupo"
     },
     {
@@ -327,10 +327,10 @@
     {
       "id": "c4", "tipo": "escribir", "nivel": 2,
       "enunciado": "Escucha y escribe la palabra.",
-      "escuchar": "fresco",
-      "respuestas": ["fresco"],
-      "pista": "Tiene dos sílabas. La primera empieza con dos consonantes amigas: ¿suena r o l?",
-      "explicacion": "Se escribe **fresco**: **fres**-co, con fr.",
+      "escuchar": "florero",
+      "respuestas": ["florero"],
+      "pista": "Tiene tres sílabas. La primera empieza con dos consonantes amigas: ¿suena r o l?",
+      "explicacion": "Se escribe **florero**: **flo**-re-ro, con fl. Es de la familia de «flor».",
       "error": "dictado-grupos"
     },
     {
@@ -377,10 +377,10 @@
     {
       "id": "c8", "tipo": "escribir", "nivel": 3,
       "enunciado": "Escucha la oración y escríbela.",
-      "escuchar": "El globo es gris.",
-      "respuestas": ["El globo es gris.", "El globo es gris"],
-      "pista": "Son cuatro palabras. Dos tienen consonantes amigas: escúchalas despacio.",
-      "explicacion": "Se escribe «El globo es gris.» «Globo» lleva gl y «gris» lleva gr.",
+      "escuchar": "Flora pinta un tigre.",
+      "respuestas": ["Flora pinta un tigre.", "Flora pinta un tigre"],
+      "pista": "Son cuatro palabras y la primera es un nombre. Dos tienen consonantes amigas: escúchalas despacio.",
+      "explicacion": "Se escribe «Flora pinta un tigre.» «Flora» lleva fl y «tigre» lleva gr. Flora es un nombre: va con mayúscula.",
       "error": "dictado-grupos"
     }
   ],

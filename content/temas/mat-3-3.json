@@ -4,7 +4,7 @@
   "objetivo": "Reconozco el cubo, el prisma, la pirámide, la esfera, el cilindro y el cono, y los encuentro en las cosas de todos los días.",
   "explicacion": [
     {
-      "texto": "Los **cuerpos geométricos** no son planos como un dibujo: tienen largo, ancho y alto. Los puedes tomar con la mano, como un dado, una pelota o una lata.",
+      "texto": "Los **cuerpos geométricos** no son planos como un dibujo: tienen largo, ancho y alto. Muchas cosas que tomas con la mano tienen su forma, como un dado, una pelota o una lata.",
       "visual": { "tipo": "emojis", "items": ["🎲", "⚽", "🥫"], "etiquetas": ["dado", "pelota", "lata"] }
     },
     {
@@ -16,7 +16,7 @@
       "visual": { "tipo": "ilustracion", "id": "esfera" }
     },
     {
-      "texto": "Los cuerpos están en todas partes. Un dado es un cubo, una caja es un prisma, una pelota es una esfera, un turril es un cilindro y un cucurucho de helado es un cono.",
+      "texto": "Los cuerpos están en todas partes. Un dado tiene forma de cubo y una caja, forma de prisma. Una pelota tiene forma de esfera. Mira la tabla y descubre más.",
       "visual": {
         "tipo": "tabla",
         "columnas": ["Cuerpo", "Objeto"],
@@ -28,7 +28,7 @@
     "instruccion": "Conoce más cuerpos geométricos. Después, busca en tu casa un objeto parecido a cada uno.",
     "pasos": [
       {
-        "texto": "Este es un **prisma**, como una caja de fósforos. Tiene 6 caras planas y no rueda.",
+        "texto": "Este es un **prisma**. Se parece a una caja de fósforos. Este prisma tiene 6 caras planas y no rueda.",
         "visual": { "tipo": "ilustracion", "id": "prisma" }
       },
       {
@@ -103,15 +103,15 @@
     {
       "id": "p1", "tipo": "opcion", "nivel": 1,
       "enunciado": "¿Cómo se llama este cuerpo geométrico?",
-      "visual": { "tipo": "ilustracion", "id": "esfera" },
+      "visual": { "tipo": "ilustracion", "id": "piramide" },
       "opciones": [
-        { "texto": "esfera", "correcta": true },
-        { "texto": "cilindro", "pista": "El cilindro tiene dos caras planas redondas. ¿Ves alguna cara plana aquí?", "error": "nombra-cuerpo" },
-        { "texto": "cono", "pista": "El cono tiene una punta. Este cuerpo no tiene puntas.", "error": "nombra-cuerpo" }
+        { "texto": "pirámide", "correcta": true },
+        { "texto": "cono", "pista": "El cono tiene una base redonda y una superficie curva. Este cuerpo tiene solo caras planas.", "error": "nombra-cuerpo" },
+        { "texto": "prisma", "pista": "El prisma es como una caja: no termina en una punta. Este cuerpo sí.", "error": "nombra-cuerpo" }
       ],
       "columnas": 3,
-      "pista": "Es redondo por todas partes, como una pelota.",
-      "explicacion": "Es una esfera: es curva por todas partes y no tiene caras planas ni vértices.",
+      "pista": "Mira las caras de los lados: son triángulos que se juntan arriba, en una punta.",
+      "explicacion": "Es una pirámide: su base es un cuadrado y sus 4 caras triangulares se juntan arriba, en un vértice.",
       "error": "nombra-cuerpo"
     },
     {
@@ -147,7 +147,7 @@
         { "texto": "caja", "emoji": "📦", "pista": "La caja tiene caras planas: es un prisma.", "error": "cuerpo-objeto" }
       ],
       "pista": "Una esfera es redonda por todas partes y no tiene caras planas.",
-      "explicacion": "La pelota y la naranja son esferas. El dado, la lata y la caja tienen caras planas.",
+      "explicacion": "La pelota y la naranja tienen forma de esfera. El dado, la lata y la caja tienen caras planas.",
       "error": "cuerpo-objeto"
     },
     {
@@ -157,7 +157,7 @@
       "respuesta": 6,
       "erroresComunes": [ { "respuesta": 3, "pista": "Contaste solo las caras que se ven. También hay caras atrás, abajo y al otro lado.", "error": "cuenta-caras" } ],
       "pista": "Imagina el cubo en tu mano. Cuenta la cara de arriba y la de abajo, la de adelante y la de atrás, y las de los lados.",
-      "explicacion": "El cubo tiene 6 caras: arriba, abajo, adelante, atrás, izquierda y derecha. Por eso un dado tiene números del 1 al 6.",
+      "explicacion": "El cubo tiene 6 caras: arriba, abajo, adelante, atrás, izquierda y derecha. Por eso un dado muestra del 1 al 6: un número en cada cara.",
       "error": "cuenta-caras"
     },
     {
