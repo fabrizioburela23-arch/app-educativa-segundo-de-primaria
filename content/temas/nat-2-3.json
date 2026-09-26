@@ -1,19 +1,19 @@
 {
   "id": "nat-2-3",
   "titulo": "Prevenimos riesgos",
-  "objetivo": "Conozco los fenómenos naturales que pueden pasar en Bolivia y sé qué hacer antes, durante y después para estar seguro con mi familia.",
+  "objetivo": "Conozco los fenómenos naturales que pueden pasar en Bolivia y sé qué hacer antes, durante y después para estar a salvo con mi familia.",
   "explicacion": [
     {
-      "texto": "A veces la naturaleza trae fenómenos fuertes: inundaciones, granizadas, heladas, sequías, incendios, tormentas con rayos, sismos y mazamorras (barro y piedras que bajan del cerro). ¡Podemos **prepararnos**!",
+      "texto": "En Bolivia pueden pasar inundaciones, sequías, granizadas, heladas, tormentas con rayos, sismos y mazamorras (barro y piedras que bajan del cerro). También incendios, casi siempre causados por personas. ¡Podemos **prepararnos**!",
       "emoji": "⛑️",
-      "visual": { "tipo": "emojis", "items": ["🌊", "⛈️", "❄️", "🏜️", "🔥"], "etiquetas": ["inundación", "granizada", "helada", "sequía", "incendio"] }
+      "visual": { "tipo": "emojis", "items": ["🌊", "🏜️", "❄️", "⛈️", "🔥"], "etiquetas": ["inundación", "sequía", "helada", "tormenta", "incendio"] }
     },
     {
-      "texto": "**Antes**: arma un **plan** con tu familia: ¿por dónde salimos?, ¿dónde nos encontramos?, ¿a quién llamamos? Preparen una **mochila de emergencia** y aprende con tu familia los números de emergencia.",
+      "texto": "**Antes**: arma un **plan** con tu familia: ¿por dónde salimos?, ¿dónde nos encontramos?, ¿a quién llamamos? Ayuda a preparar la **mochila de emergencia** y aprende con tu familia los números de emergencia.",
       "visual": { "tipo": "emojis", "items": ["🚪", "📍", "🎒", "📞"], "etiquetas": ["salida", "punto de encuentro", "mochila", "números de emergencia"] }
     },
     {
-      "texto": "**Durante**: mantén la calma y escucha a las personas adultas. Si tiembla, **agáchate, cúbrete y sujétate**. Si el agua sube, ve a un lugar alto. Si hay rayos, entra a una casa.",
+      "texto": "**Durante**: mantén la calma y escucha a las personas adultas. Si tiembla, **agáchate, cúbrete y sujétate**. Si el agua sube, ve con tu familia a un lugar alto. Si hay rayos, entra a una casa.",
       "visual": { "tipo": "emojis", "items": ["😌", "👂", "⛰️", "🏠"], "etiquetas": ["calma", "escucha", "lugar alto", "bajo techo"] }
     },
     {
@@ -26,7 +26,7 @@
     "pasos": [
       { "texto": "Es verano y llueve mucho. Los ríos de los llanos pueden crecer y salirse. La familia de Inti escucha los avisos del tiempo en la radio.", "visual": { "tipo": "ilustracion", "id": "paisaje-llanos" } },
       { "texto": "**Antes**: arman su plan. Eligen un lugar alto y seguro como **punto de encuentro** y preparan la mochila de emergencia.", "visual": { "tipo": "emojis", "items": ["🎒", "🔦", "💧", "📻"], "etiquetas": ["mochila", "linterna", "agua", "radio"] } },
-      { "texto": "**Durante**: el agua empieza a subir. Inti mantiene la calma, toma la mano de su abuela y van juntos al lugar alto. No caminan por el agua que corre.", "visual": { "tipo": "emojis", "items": ["🌊", "👵", "👦", "⛰️"] } },
+      { "texto": "**Durante**: el agua empieza a subir. Inti mantiene la calma y va con su familia al lugar alto, de la mano de su abuela. No caminan por el agua que corre.", "visual": { "tipo": "emojis", "items": ["🌊", "👵", "👦", "⛰️"] } },
       { "texto": "**Después**: vuelven a casa solo cuando las autoridades dicen que es seguro. Toman agua hervida o embotellada y ayudan a limpiar.", "visual": { "tipo": "emojis", "items": ["🏠", "💧", "🧹"], "etiquetas": ["volver con permiso", "agua segura", "limpiar"] } }
     ]
   },
@@ -51,7 +51,7 @@
       {
         "id": "g2", "tipo": "clasificar",
         "enunciado": "¿Va en la mochila de emergencia?",
-        "apoyo": "Piensa: ¿es liviano? ¿Te ayuda a estar seguro, a abrigarte o a pedir ayuda?",
+        "apoyo": "Piensa: ¿es liviano? ¿Te ayuda a estar a salvo, a abrigarte o a pedir ayuda?",
         "categorias": [
           { "id": "si", "texto": "Sí va", "emoji": "🎒" },
           { "id": "no", "texto": "No va", "emoji": "🚫" }
@@ -319,10 +319,10 @@
     },
     {
       "id": "c2", "tipo": "tocar", "nivel": 1,
-      "enunciado": "Toca lo que abriga a Kusi en una noche de helada.",
-      "texto": "Kusi se pone su *chompa*, su *poncho* y su *chullo* antes de salir al patio.",
+      "enunciado": "Toca las prendas que abrigan a Kusi en una mañana de helada.",
+      "texto": "Esta mañana hubo helada. Kusi se pone su *chompa*, su *poncho* y su *chullo* para ir a la escuela.",
       "pista": "Hay tres prendas de ropa que dan calor.",
-      "explicacion": "La chompa, el poncho y el chullo abrigan a Kusi en una noche de helada.",
+      "explicacion": "La chompa, el poncho y el chullo abrigan a Kusi. En las mañanas de helada hace mucho frío y hay que abrigarse bien.",
       "error": "accion-segura"
     },
     {
@@ -345,15 +345,15 @@
     },
     {
       "id": "c5", "tipo": "relacionar", "nivel": 2,
-      "enunciado": "¿Cómo nos preparamos antes? Une.",
+      "enunciado": "¿Qué hacemos antes para estar preparados? Une.",
       "pares": [
-        ["para prevenir incendios", "no dejar fogatas encendidas"],
-        ["para una sequía", "cuidar el agua y no desperdiciarla"],
-        ["para un sismo", "practicar simulacros en la escuela"],
-        ["para una helada", "abrigar a los animales en un corral con techo"]
+        ["incendio", "no dejar fogatas encendidas"],
+        ["sequía", "guardar agua y no desperdiciarla"],
+        ["sismo", "practicar «agáchate, cúbrete y sujétate»"],
+        ["helada", "abrigar a los animales en un corral con techo"]
       ],
       "pista": "Piensa qué problema trae cada uno: fuego, falta de agua, la tierra que se mueve o mucho frío.",
-      "explicacion": "Incendios: no dejar fogatas encendidas. Sequía: cuidar el agua. Sismo: practicar simulacros. Helada: abrigar a los animales.",
+      "explicacion": "Incendio: no dejar fogatas encendidas. Sequía: guardar agua y no desperdiciarla. Sismo: practicar «agáchate, cúbrete y sujétate». Helada: abrigar a los animales.",
       "error": "prevencion"
     },
     {
@@ -366,21 +366,21 @@
       ],
       "columnas": 1,
       "pista": "Busca la opción que te protege del granizo y del agua que corre.",
-      "explicacion": "Te proteges bajo un techo y te alejas del agua que corre por las calles. Así estás seguro hasta que pase la granizada.",
+      "explicacion": "Te proteges bajo un techo y te alejas del agua que corre por las calles. Así estás a salvo hasta que pase la granizada.",
       "error": "accion-segura"
     },
     {
       "id": "c7", "tipo": "ordenar", "nivel": 3,
-      "enunciado": "El río crece cerca de la casa de Mateo. Ordena lo que hace su familia.",
+      "enunciado": "Llueve muchos días en el barrio de Mateo, que está junto a un cerro. Ordena lo que hace su familia.",
       "elementos": [
-        { "texto": "Escuchan en la radio que el río puede crecer.", "emoji": "📻" },
-        { "texto": "Toman su mochila de emergencia.", "emoji": "🎒" },
-        { "texto": "Van con calma al lugar alto de su plan.", "emoji": "⛰️" },
-        { "texto": "Vuelven a casa cuando las autoridades dicen que es seguro.", "emoji": "🏠" }
+        { "texto": "La radio avisa que del cerro puede bajar una mazamorra.", "emoji": "📻" },
+        { "texto": "La familia toma su mochila de emergencia.", "emoji": "🎒" },
+        { "texto": "Se alejan del cerro y del río, y van con calma al lugar seguro de su plan.", "emoji": "🚶" },
+        { "texto": "Vuelven a casa cuando las autoridades dicen que ya no hay peligro.", "emoji": "🏠" }
       ],
       "vertical": true,
-      "pista": "Primero se enteran del peligro. Al final, vuelven a casa.",
-      "explicacion": "Escuchan el aviso, toman la mochila, van con calma al lugar alto y vuelven cuando es seguro.",
+      "pista": "Primero se enteran del peligro. ¿Qué toman antes de salir? ¿Cuándo pueden volver?",
+      "explicacion": "Escuchan el aviso, toman la mochila, se alejan del cerro y del río hasta el lugar seguro, y vuelven solo cuando ya no hay peligro.",
       "error": "antes-durante-despues"
     },
     {

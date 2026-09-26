@@ -9,7 +9,7 @@
       "visual": { "tipo": "emojis", "items": ["💧", "🌱", "🦙", "⛏️", "☀️", "💨"], "etiquetas": ["agua", "plantas", "animales", "minerales", "sol", "viento"] }
     },
     {
-      "texto": "Los recursos **renovables** se vuelven a formar si los cuidamos: la lluvia llena otra vez los ríos y nacen nuevas plantas y animales. El suelo se forma muy despacio. El sol y el viento no se acaban.",
+      "texto": "Los recursos **renovables** se vuelven a formar si los cuidamos: la lluvia llena otra vez los ríos y nacen nuevas plantas y animales. El suelo también, pero muy despacio. El sol y el viento no se gastan aunque los usemos.",
       "visual": { "tipo": "ilustracion", "id": "ciclo-agua" }
     },
     {
@@ -133,10 +133,10 @@
         ["plata", "Cerro Rico de Potosí"],
         ["litio", "salar de Uyuni"],
         ["gas natural", "Chaco de Tarija"],
-        ["estaño", "minas de Oruro"]
+        ["estaño", "minas de Huanuni, en Oruro"]
       ],
-      "pista": "El salar es una gran llanura blanca de sal. El Cerro Rico es un cerro con minas muy antiguas y famosas.",
-      "explicacion": "Hay plata en el Cerro Rico de Potosí, litio en el salar de Uyuni, gas natural en el Chaco de Tarija y estaño en las minas de Oruro.",
+      "pista": "El salar es una gran llanura blanca de sal. El Cerro Rico es famoso en el mundo por su plata.",
+      "explicacion": "Hay plata en el Cerro Rico de Potosí, litio en el salar de Uyuni, gas natural en el Chaco de Tarija y estaño en las minas de Huanuni, en Oruro.",
       "error": "recursos-bolivia"
     },
     {
@@ -244,20 +244,20 @@
           "enunciado": "Completa.",
           "texto": "La luz del sol es un recurso [renovable]. El gas natural es un recurso [no renovable].",
           "pista": "¿Cuál de los dos se puede acabar?",
-          "explicacion": "El sol no se acaba: es renovable. El gas natural se acaba y no vuelve: es no renovable.",
+          "explicacion": "La luz del sol no se gasta: es renovable. El gas natural se acaba y no vuelve: es no renovable.",
           "error": "confunde-renovable"
         },
         {
           "tipo": "escribir",
-          "enunciado": "¿Cuál de los dos recursos se puede acabar algún día? Escríbelo.",
-          "respuestas": ["gas natural", "el gas natural", "gas", "el gas"],
-          "pista": "No es el sol: el sol no se acaba.",
+          "enunciado": "¿Cuál de los dos recursos se acaba si lo gastamos y no vuelve? Escríbelo.",
+          "respuestas": ["gas natural", "el gas natural", "gas", "el gas", "es el gas natural", "es el gas"],
+          "pista": "No es el sol: la luz del sol no se gasta aunque la usemos.",
           "explicacion": "El gas natural se puede acabar. Por eso lo usamos con cuidado.",
           "error": "confunde-renovable"
         }
       ],
       "pista": "Resuelve un paso a la vez.",
-      "explicacion": "El calentador usa la luz del sol, que es renovable. El gas natural es no renovable: algún día se puede acabar.",
+      "explicacion": "El calentador usa la luz del sol, que es renovable. El gas natural es no renovable: si lo gastamos, se acaba y no vuelve.",
       "error": "confunde-renovable"
     },
     {
@@ -319,11 +319,11 @@
     },
     {
       "id": "c3", "tipo": "completar", "nivel": 2,
-      "enunciado": "Completa con el lugar de Bolivia.",
-      "texto": "El litio está en el salar de [Uyuni]. La plata está en el Cerro Rico de [Potosí].",
-      "banco": ["Titicaca", "Pando"],
-      "pista": "El salar más grande de Bolivia es famoso en el mundo. El Cerro Rico está en una ciudad minera muy antigua.",
-      "explicacion": "El litio está en el salar de Uyuni y la plata, en el Cerro Rico de Potosí.",
+      "enunciado": "Completa sobre un recurso de Bolivia.",
+      "texto": "Del Chaco de [Tarija] sale mucho gas natural. Tardó muchísimo en formarse bajo la tierra: es un recurso [no renovable].",
+      "banco": ["Pando", "renovable"],
+      "pista": "El gas natural de Bolivia sale sobre todo del sur del país. ¿Vuelve a formarse pronto si lo gastamos?",
+      "explicacion": "Del Chaco de Tarija sale mucho gas natural. Es un recurso no renovable: tardó muchísimo en formarse y, si se acaba, no vuelve.",
       "error": "recursos-bolivia"
     },
     {
@@ -377,21 +377,27 @@
       "error": "cuidado-recursos"
     },
     {
-      "id": "c8", "tipo": "numero", "nivel": 3,
-      "enunciado": "¿Cuántos de estos recursos son **no renovables**?",
-      "visual": { "tipo": "emojis", "items": ["💧", "🔥", "🌽", "💍", "💨", "🛢️", "🔋"], "etiquetas": ["agua", "gas natural", "maíz", "plata (mineral)", "viento", "petróleo", "litio"] },
-      "respuesta": 4,
-      "erroresComunes": [
-        { "respuesta": 3, "pista": "Contaste los renovables: agua, maíz y viento. Ahora cuenta los otros.", "error": "confunde-renovable" },
-        { "respuesta": 7, "pista": "No todos son no renovables. Deja afuera los que se renuevan.", "error": "confunde-renovable" }
+      "id": "c8", "tipo": "clasificar", "nivel": 3,
+      "enunciado": "Estas cosas las hicieron las personas. ¿Vienen de un recurso renovable o de uno no renovable?",
+      "categorias": [
+        { "id": "ren", "texto": "De un recurso renovable", "emoji": "🌱" },
+        { "id": "noren", "texto": "De un recurso no renovable", "emoji": "⛏️" }
       ],
-      "pista": "Busca los minerales, el gas natural y el petróleo.",
-      "explicacion": "Son no renovables el gas natural, la plata, el petróleo y el litio: 4. El agua, el maíz y el viento son renovables.",
+      "elementos": [
+        { "texto": "mesa de madera", "emoji": "🌳", "categoria": "ren" },
+        { "texto": "chompa de lana de alpaca", "emoji": "🧶", "categoria": "ren" },
+        { "texto": "api de maíz morado", "emoji": "🌽", "categoria": "ren" },
+        { "texto": "gasolina", "emoji": "⛽", "categoria": "noren" },
+        { "texto": "anillo de plata", "emoji": "💍", "categoria": "noren" },
+        { "texto": "batería de litio", "emoji": "🔋", "categoria": "noren" }
+      ],
+      "pista": "Pregúntate de qué está hecha cada cosa: ¿de una planta o de un animal, o de algo que se sacó de muy abajo de la tierra?",
+      "explicacion": "Vienen de recursos renovables la mesa (árboles), la chompa (alpaca) y el api (maíz). Vienen de recursos no renovables la gasolina (petróleo), el anillo (plata) y la batería (litio).",
       "error": "confunde-renovable"
     }
   ],
   "repaso": {
-    "texto": "**Renovables**: se vuelven a formar si los cuidamos (agua, plantas, animales) o no se acaban (sol, viento). **No renovables**: si se acaban, no vuelven (minerales, gas natural, petróleo).",
+    "texto": "**Renovables**: se vuelven a formar si los cuidamos (agua, plantas, animales) o no se gastan (sol, viento). **No renovables**: si se acaban, no vuelven (minerales, gas natural, petróleo).",
     "visual": { "tipo": "emojis", "items": ["💧", "🌳", "🦙", "☀️", "⛏️", "🔥", "🛢️"], "etiquetas": ["agua", "plantas", "animales", "sol", "minerales", "gas natural", "petróleo"] }
   },
   "adulto": {
