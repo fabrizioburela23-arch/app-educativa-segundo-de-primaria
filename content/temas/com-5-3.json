@@ -385,14 +385,14 @@
       "id": "c8", "tipo": "opcion", "nivel": 3,
       "enunciado": "¿Qué oración está bien escrita?",
       "opciones": [
-        { "texto": "Mi tía compró dos lápices y una tacita.", "correcta": true },
-        { "texto": "Mi tía compró dos lápizes y una tacita.", "pista": "Revisa el plural de «lápiz»: ¿puede ir una z antes de la e?", "error": "plural-z" },
-        { "texto": "Mi tía compró dos lápices y una tazita.", "pista": "Revisa la palabra pequeña de «taza»: ¿puede ir una z antes de la i?", "error": "familia-z-c" }
+        { "texto": "En el carnaval vimos disfraces y danzas.", "correcta": true },
+        { "texto": "En el carnaval vimos disfrazes y danzas.", "pista": "Revisa el plural de «disfraz»: ¿puede ir una z antes de la e?", "error": "plural-z" },
+        { "texto": "En el carnaval vimos disfraces y dances.", "pista": "«Danza» termina en a, no en z: para el plural solo agregamos s.", "error": "plural-sobregeneraliza" }
       ],
       "columnas": 1,
-      "pista": "Busca las palabras donde la z podría estar antes de e o de i.",
-      "explicacion": "Está bien escrita «Mi tía compró dos lápices y una tacita». En «lápices» y en «tacita», la z cambió a c porque después viene una e o una i.",
-      "error": "regla-z-c"
+      "pista": "Piensa en cada palabra en singular: «disfraz» y «danza». Solo cambia la z de la palabra que termina en z.",
+      "explicacion": "Está bien escrita «En el carnaval vimos disfraces y danzas». «Disfraz» termina en z: disfraces. «Danza» termina en a: solo agrega s, y la z se queda.",
+      "error": "plural-z"
     }
   ],
   "repaso": {
