@@ -30,7 +30,8 @@ const entero = (x, min, max, def = min) => {
   return Math.max(min, Math.min(max, n));
 };
 const RE_EMOJI = /\p{Extended_Pictographic}/u;
-export const esEmoji = (t) => RE_EMOJI.test(String(t ?? ''));
+// «☐» (casilla vacía) y «?» no cuentan como dibujos.
+export const esEmoji = (t) => RE_EMOJI.test(String(t ?? '').replace(/[☐?]/g, ''));
 const mayus = (t) => (t ? t[0].toUpperCase() + t.slice(1) : t);
 
 // Crea un elemento SVG. s('rect', { x: 1, class: 'a' }, hijos...)
@@ -95,6 +96,15 @@ export function renderVisual(v, ctx = {}) {
   return cont;
 }
 
+// Lista segura: si el campo no es una lista, se usa una lista vacía.
+const lista = (x) => (Array.isArray(x) ? x : []);
+// Texto de un elemento que puede ser texto, número u objeto { texto, emoji }.
+const textoDe = (x) => {
+  if (x === null || x === undefined) return '';
+  if (typeof x === 'object') return String(x.emoji || x.texto || '');
+  return String(x);
+};
+
 // ---------------------------------------------------------------------------
 // emoji / emojis
 // ---------------------------------------------------------------------------
@@ -117,8 +127,8 @@ function vEmoji(v, c) {
 }
 
 function vEmojis(v, c) {
-  const items = Array.isArray(v.items) ? v.items.slice(0, 12) : [];
-  const et = Array.isArray(v.etiquetas) ? v.etiquetas : [];
+  const items = lista(v.items).slice(0, 12).map(textoDe);
+  const et = lista(v.etiquetas).map(textoDe);
   const tam = items.length <= 4 ? 'g' : items.length <= 8 ? 'm' : 'p';
   c.append(h('div', { class: `emojis-fila emojis-${tam}` },
     items.map((it, i) => h('div', { class: 'emojis-item' },
@@ -237,11 +247,13 @@ export function dibujarBloques(cfg = {}, { ancho = 320 } = {}) {
   const C = entero(cfg.centenas ?? 0, 0, 20, 0);
   const D = entero(cfg.decenas ?? 0, 0, 20, 0);
   const U = entero(cfg.unidades ?? 0, 0, 20, 0);
-  const c = C <= 3 ? 10 : C <= 6 ? 8 : C <= 12 ? 6 : 5;
+  // Un mismo tamaño de cubito para todo: la barra mide lo mismo que el lado de
+  // la placa y el cubito suelto es igual a un cuadrito de la barra.
+  const c = C <= 3 ? 10 : C <= 6 ? 8 : C <= 12 ? 7 : 5;
   const partes = [];
   if (C) partes.push(medidasCentenas(C, c, ancho));
-  if (D) partes.push(medidasDecenas(D, Math.max(c, 7), ancho));
-  if (U) partes.push(medidasUnidades(U, Math.max(c, 9)));
+  if (D) partes.push(medidasDecenas(D, c, ancho));
+  if (U) partes.push(medidasUnidades(U, c));
   const PAD = 4, SEP = 20, VSEP = 18;
   if (!partes.length) {
     const svg = lienzo(ancho + 2 * PAD, 70, { clase: 'bq-svg', max: ancho + 2 * PAD });
@@ -260,10 +272,12 @@ export function dibujarBloques(cfg = {}, { ancho = 320 } = {}) {
     cur.h = Math.max(cur.h, p.h);
   }
   const alto = lineas.reduce((a, l) => a + l.h, 0) + VSEP * (lineas.length - 1) + 2 * PAD;
-  const svg = lienzo(ancho + 2 * PAD, alto, { clase: 'bq-svg', max: ancho + 2 * PAD });
+  // El lienzo mide lo que ocupa el dibujo (así se puede achicar sin márgenes vacíos).
+  const W = Math.max(...lineas.map((l) => l.w));
+  const svg = lienzo(W + 2 * PAD, alto, { clase: 'bq-svg', max: W + 2 * PAD });
   let y = PAD;
   for (const l of lineas) {
-    let x = PAD + (ancho - l.w) / 2;
+    let x = PAD + (W - l.w) / 2;
     for (const p of l.items) {
       p.dibujar(svg, x, y + l.h - p.h);
       x += p.w + SEP;
@@ -303,12 +317,13 @@ export function crearRecta(cfg = {}, { interactiva = false, etiquetas = 'todas' 
   if (!Number.isFinite(max) || max <= min) max = min + 10;
   const paso = Number(cfg.paso) > 0 ? Number(cfg.paso) : 1;
   const n = Math.max(1, Math.min(40, Math.round((max - min) / paso)));
-  const valores = Array.from({ length: n + 1 }, (_, i) => min + i * paso);
+  // Redondeo para que 0.1 + 0.2 no se muestre como 0.30000000000000004.
+  const valores = Array.from({ length: n + 1 }, (_, i) => Math.round((min + i * paso) * 1e6) / 1e6);
   const W = 340, M = 22, largo = W - 2 * M, esp = largo / n;
   const xDe = (val) => M + ((val - min) / (paso * n)) * largo;
-  const ocultar = new Set((cfg.ocultar || []).map(Number));
-  const marcar = new Set((cfg.marcar || []).map(Number));
-  const saltos = (cfg.saltos || []).filter((sl) => Array.isArray(sl) && sl.length === 2 && Number(sl[0]) !== Number(sl[1]));
+  const ocultar = new Set(lista(cfg.ocultar).map(Number));
+  const marcar = new Set(lista(cfg.marcar).map(Number));
+  const saltos = lista(cfg.saltos).filter((sl) => Array.isArray(sl) && sl.length === 2 && Number(sl[0]) !== Number(sl[1]));
 
   // ¿Caben todas las etiquetas? Si no, se alternan en dos filas.
   const fs = 18;
@@ -493,7 +508,7 @@ export function dineroSVG(codigo, { escala = 1 } = {}) {
       svg.append(s('circle', { cx: c, cy: c, r: R - 5, class: 'din-anillo' }));
     }
     svg.append(texto(c, c - R * 0.17, num, { class: 'din-num', 'font-size': centavos ? 19 : 24 }));
-    svg.append(texto(c, c + R * 0.42, centavos ? 'ctv' : 'Bs', { class: 'din-unidad', 'font-size': 14 }));
+    svg.append(texto(c, c + R * 0.42, centavos ? 'ctv' : 'Bs', { class: 'din-unidad', 'font-size': 15 }));
     return svg;
   }
   const W = 132, H = 66;
@@ -507,9 +522,9 @@ export function dineroSVG(codigo, { escala = 1 } = {}) {
     s('rect', { x: 7, y: 7, width: W - 14, height: H - 14, rx: 5, class: 'din-marco' }),
     s('circle', { cx: 31, cy: H / 2, r: 16, class: 'din-sello' }),
     s('path', { d: `M31 ${H / 2 - 9}l2.6 5.6 6.1.7-4.5 4.2 1.2 6-5.4-3-5.4 3 1.2-6-4.5-4.2 6.1-.7z`, class: 'din-estrella' }),
-    s('text', { x: 88, y: H / 2 + 1, 'text-anchor': 'middle', 'dominant-baseline': 'central', class: 'din-valor' },
-      s('tspan', { 'font-size': valor.length > 2 ? 26 : 30, 'font-weight': 700 }, valor),
-      s('tspan', { 'font-size': 16, dx: 3 }, 'Bs')),
+    s('text', { x: valor.length > 2 ? 86 : 88, y: H / 2 + 1, 'text-anchor': 'middle', 'dominant-baseline': 'central', class: 'din-valor' },
+      s('tspan', { 'font-size': valor.length > 2 ? 25 : 30, 'font-weight': 700 }, valor),
+      s('tspan', { 'font-size': valor.length > 2 ? 16 : 18, dx: 2 }, 'Bs')),
   );
   return svg;
 }
@@ -539,16 +554,21 @@ export function crearReloj({ hora = 12, minutos = 0 } = {}, { interactiva = fals
     if (i % 5 === 0) grandes += seg; else marcas += seg;
   }
   svg.append(s('path', { d: marcas, class: 'rj-min' }), s('path', { d: grandes, class: 'rj-hr' }));
+  // Los números van encima de las agujas (con un borde del color de la cara)
+  // para que siempre se puedan leer, aunque la aguja larga pase por debajo.
+  const numeros = s('g', { class: 'rj-numeros' });
   for (let k = 1; k <= 12; k++) {
     const a = (k * Math.PI) / 6;
-    svg.append(texto(C + 75 * Math.sin(a), C - 75 * Math.cos(a) + 1, k, { class: 'rj-num' }));
+    numeros.append(texto(C + 75 * Math.sin(a), C - 75 * Math.cos(a) + 1, k, { class: 'rj-num' }));
   }
   const gHora = s('g', { class: 'rj-aguja-hora' },
     s('line', { x1: C, y1: C + 12, x2: C, y2: C - 54 }));
   const gMin = s('g', { class: 'rj-aguja-min' },
+    // zona táctil ancha e invisible a lo largo de la aguja larga
+    interactiva ? s('line', { x1: C, y1: C - 10, x2: C, y2: C - 104, class: 'rj-toque' }) : null,
     s('line', { x1: C, y1: C + 16, x2: C, y2: C - 88 }),
-    interactiva ? s('circle', { cx: C, cy: C - 80, r: 17, class: 'rj-asa' }) : null);
-  svg.append(gHora, gMin,
+    interactiva ? s('circle', { cx: C, cy: C - 97, r: 6.5, class: 'rj-asa' }) : null);
+  svg.append(gHora, gMin, numeros,
     s('circle', { cx: C, cy: C, r: 8.5, class: 'rj-centro' }),
     s('circle', { cx: C, cy: C, r: 3, class: 'rj-centro-2' }));
   const fijar = (hh, mm) => {
@@ -574,7 +594,9 @@ export function columnasPlato(n) {
 
 export function plato(n, emoji, clase = '') {
   const cols = columnasPlato(n);
-  const el = h('div', { class: `plato ${n > 6 ? 'plato-lleno' : ''} ${clase}`.trim(), style: `--cols:${cols}` });
+  const filas = Math.max(1, Math.ceil(n / cols));
+  const d = Math.max(Math.max(cols, filas) * 1.2 + 1.7, 3.6); // diámetro en em
+  const el = h('div', { class: `plato ${n > 6 ? 'plato-lleno' : ''} ${clase}`.trim(), style: `--cols:${cols};--d:${d.toFixed(2)}em` });
   for (let i = 0; i < n; i++) el.append(h('span', { class: 'emo' }, emoji));
   return el;
 }
@@ -609,13 +631,17 @@ export function clavePicto(icono, escala) {
 function vPictograma(v, c) {
   const escala = Number(v.escala) > 0 ? Number(v.escala) : 1;
   const icono = v.icono || '⭐';
-  const datos = Array.isArray(v.datos) ? v.datos : [];
+  const datos = lista(v.datos).filter((d) => d && typeof d === 'object');
   const cuentas = datos.map((d) => {
     const val = Math.max(0, Number(d.valor) || 0);
     return { llenos: Math.floor(val / escala), medio: val % escala > 0 };
   });
   const maxIconos = Math.max(0, ...cuentas.map((x) => x.llenos + (x.medio ? 1 : 0)));
-  const caja = h('div', { class: `pic${maxIconos > 7 ? ' pic-apilado' : ''}` });
+  // Misma columna de etiquetas en todas las filas, para que los íconos queden alineados.
+  const largo = Math.max(1, ...datos.map((d) => String(d.etiqueta || '').length));
+  const conEmoji = datos.some((d) => d.emoji);
+  const anchoEtq = `min(46%, ${(largo * 0.6 + (conEmoji ? 2.3 : 0.4)).toFixed(1)}em)`;
+  const caja = h('div', { class: `pic${maxIconos > 7 ? ' pic-apilado' : ''}`, style: `--pic-etq:${anchoEtq}` });
   if (v.titulo) caja.append(h('div', { class: 'pic-titulo' }, v.titulo));
   caja.append(h('div', { class: 'pic-filas' }, datos.map((d, i) => h('div', { class: 'pic-fila' },
     h('div', { class: 'pic-etq' }, d.emoji ? h('span', { class: 'pic-etq-emo' }, d.emoji) : null, h('span', {}, d.etiqueta || '')),
@@ -633,13 +659,14 @@ function vPictograma(v, c) {
 const esHueco = (x) => x === '?' || x === '☐' || x === null;
 
 function celda(tag, x) {
-  return h(tag, {}, esHueco(x) ? cajaPregunta() : String(x ?? ''));
+  return h(tag, {}, esHueco(x) ? cajaPregunta() : textoDe(x));
 }
 
 function vTabla(v, c) {
   const cols = Array.isArray(v.columnas) ? v.columnas : [];
   const filas = Array.isArray(v.filas) ? v.filas : [];
-  const tabla = h('table', { class: 'tabla-visual', 'aria-label': textoAlternativo(v) },
+  const nCols = Math.max(cols.length, ...filas.map((f) => (Array.isArray(f) ? f.length : 1)));
+  const tabla = h('table', { class: `tabla-visual${nCols >= 4 ? ' tabla-ancha' : ''}`, 'aria-label': textoAlternativo(v) },
     cols.length ? h('thead', {}, h('tr', {}, cols.map((x) => celda('th', x)))) : null,
     h('tbody', {}, filas.map((f) => h('tr', {}, (Array.isArray(f) ? f : [f]).map((x) => celda('td', x))))));
   c.append(h('div', { class: 'tabla-caja' }, tabla));
@@ -654,10 +681,10 @@ export const DIAS_CORTOS = ['Lu', 'Ma', 'Mi', 'Ju', 'Vi', 'Sá', 'Do'];
 // Hoja de calendario (lunes primero). Con alTocar, los días son botones.
 export function crearCalendario({ mes, anio, marcar = [], titulo, alTocar } = {}) {
   const m = entero(mes, 1, 12, 1);
-  const a = entero(anio, 1900, 2200, new Date().getFullYear());
+  const a = anioSeguro(anio);
   const dias = diasDelMes(m, a);
   const desfase = (new Date(a, m - 1, 1).getDay() + 6) % 7;
-  const marcados = new Set((marcar || []).map(Number));
+  const marcados = new Set(lista(marcar).map(Number));
   const botones = new Map();
   const grid = h('div', { class: 'cal-grid' },
     DIAS_CORTOS.map((d, i) => h('div', { class: `cal-sem${i >= 5 ? ' finde' : ''}` }, d)));
@@ -693,7 +720,7 @@ export function crearCuadricula({ filas, columnas, celdas = [], color, editable,
   const F = entero(filas, 2, 10, 4);
   let K = entero(columnas, 2, 10, 4);
   if (K % 2) K += 1;
-  const pintadas = new Set((celdas || []).map((x) => `${x[0]},${x[1]}`));
+  const pintadas = new Set(lista(celdas).filter(Array.isArray).map((x) => `${x[0]},${x[1]}`));
   const grid = h('div', { class: 'sim-grid', style: `--cols:${K};--filas:${F}` });
   const celdasEl = new Map();
   for (let f = 0; f < F; f++) {
@@ -716,7 +743,7 @@ export function crearCuadricula({ filas, columnas, celdas = [], color, editable,
 function vSimetria(v, c) {
   // Con completa:true se dibujan las dos mitades tal como vienen; si no, solo
   // viene la mitad izquierda (el validador lo exige) y la derecha queda vacía.
-  const celdas = (v.celdas || []).filter((x) => Array.isArray(x) && x.length === 2);
+  const celdas = lista(v.celdas).filter((x) => Array.isArray(x) && x.length === 2);
   c.append(crearCuadricula({ filas: v.filas, columnas: v.columnas, celdas, color: v.color }).el);
 }
 
@@ -730,9 +757,11 @@ function vRegla(v, c) {
   const W = 340, M = 20;
   const u = Math.min(40, (W - 2 * M) / L);
   const x0 = (W - L * u) / 2;
-  const fs = Math.min(18, (u - 3) / 1.16);
-  const alterno = L >= 10 && fs < 14.5;
-  const fsFinal = alterno ? Math.min(18, (2 * u - 3) / 1.16) : Math.min(18, (u - 2) / (String(L).length * 0.58));
+  // Tamaño de los números: si no caben en una fila, se alternan en dos.
+  const dig = String(L).length;
+  const fsUna = (u - 5) / (dig * 0.62);
+  const alterno = fsUna < 14;
+  const fsFinal = Math.min(18, alterno ? (2 * u - 5) / (dig * 0.62) : fsUna);
   const xFin = x0 + lon * u;
   const emojiArriba = lon * u < 34;
   const yObj = emojiArriba ? 34 : 14;
@@ -771,7 +800,7 @@ function vBalanza(v, c) {
   const P = { x: 160, y: 66 };
   const t = v.inclinada === 'izquierda' ? 1 : v.inclinada === 'derecha' ? -1 : 0;
   const ang = (12 * Math.PI) / 180;
-  const brazo = 108;
+  const brazo = 100;
   const dx = brazo * Math.cos(t ? ang : 0), dy = brazo * Math.sin(ang) * t;
   const izq = { x: P.x - dx, y: P.y + dy }, der = { x: P.x + dx, y: P.y - dy };
   const svg = lienzo(W, H, { clase: 'bal', max: 360 });
@@ -784,19 +813,19 @@ function vBalanza(v, c) {
   const platillo = (E, items) => {
     const g = s('g', { class: 'bal-lado' });
     const yP = E.y + 60;
-    g.append(s('path', { d: `M${r2(E.x)} ${r2(E.y)}L${r2(E.x - 46)} ${r2(yP)}M${r2(E.x)} ${r2(E.y)}L${r2(E.x + 46)} ${r2(yP)}`, class: 'bal-cuerda' }));
-    const lista = (Array.isArray(items) ? items : []).slice(0, 10);
-    const porFila = lista.length > 8 ? 5 : 4;
-    const fs = lista.length > 8 ? 19 : 23;
+    g.append(s('path', { d: `M${r2(E.x)} ${r2(E.y)}L${r2(E.x - 45)} ${r2(yP)}M${r2(E.x)} ${r2(E.y)}L${r2(E.x + 45)} ${r2(yP)}`, class: 'bal-cuerda' }));
+    const lista = (Array.isArray(items) ? items : []).slice(0, 12);
+    const porFila = 4;
+    const fs = lista.length > 8 ? 19 : 22;
     lista.forEach((it, i) => {
       const fila = Math.floor(i / porFila);
       const enFila = Math.min(porFila, lista.length - fila * porFila);
       const k = i % porFila;
       const esp = fs + 3;
       const x = E.x + (k - (enFila - 1) / 2) * esp;
-      g.append(texto(x, yP - fs / 2 - 1 - fila * (fs + 1), it, { class: 'bal-obj', 'font-size': fs }));
+      g.append(texto(x, yP - fs / 2 - 1 - fila * (fs + 1), textoDe(it), { class: 'bal-obj', 'font-size': fs }));
     });
-    g.append(s('path', { d: `M${r2(E.x - 54)} ${r2(yP)}Q${r2(E.x)} ${r2(yP + 34)} ${r2(E.x + 54)} ${r2(yP)}Z`, class: 'bal-plato' }));
+    g.append(s('path', { d: `M${r2(E.x - 52)} ${r2(yP)}Q${r2(E.x)} ${r2(yP + 34)} ${r2(E.x + 52)} ${r2(yP)}Z`, class: 'bal-plato' }));
     g.append(s('circle', { cx: E.x, cy: E.y, r: 4.5, class: 'bal-gancho' }));
     return g;
   };
@@ -812,8 +841,12 @@ function vBalanza(v, c) {
 const SIGNO = { '+': '+', '-': '−', '−': '−', '×': '×', x: '×', '*': '×', '÷': '÷', '/': '÷', ':': '÷' };
 
 function vOperacion(v, c) {
-  const nums = (Array.isArray(v.numeros) ? v.numeros : []).slice(0, 3).map((x) => String(x));
+  const nums = lista(v.numeros).slice(0, 3).map(textoDe);
   const op = SIGNO[v.op] || '+';
+  if (!nums.length) {
+    c.append(h('p', { class: 'visual-aviso' }, 'Este dibujo no se puede mostrar.'));
+    return;
+  }
   if (!v.vertical || nums.length < 2) {
     const partes = [];
     nums.forEach((x, i) => {
@@ -902,8 +935,11 @@ function vSecuencia(v, c) {
 
 function vFechas(v, c, ctx) {
   const filtro = v.filtro || 'todas';
+  // Las fechas las edita el adulto: se normalizan día y mes, y se descartan las inválidas.
   const lista = (Array.isArray(ctx.fechas) ? ctx.fechas : [])
-    .filter((f) => f && Number.isFinite(Number(f.dia)) && Number.isFinite(Number(f.mes)))
+    .filter((f) => f && typeof f === 'object' && f.publicada !== false)
+    .map((f) => ({ ...f, dia: Number(f.dia), mes: Number(f.mes) }))
+    .filter((f) => Number.isInteger(f.mes) && f.mes >= 1 && f.mes <= 12 && Number.isInteger(f.dia) && f.dia >= 1 && f.dia <= 31)
     .filter((f) => filtro === 'todas' || f.tipo === filtro)
     .filter((f) => !v.mes || Number(f.mes) === Number(v.mes))
     .sort((a, b) => a.mes - b.mes || a.dia - b.dia);
@@ -920,7 +956,7 @@ function vFechas(v, c, ctx) {
   for (const [mes, fs] of porMes) {
     const nombreMes = MESES[mes - 1];
     caja.append(h('section', { class: 'fechas-mes', role: 'listitem' },
-      h('div', { class: 'fechas-mes-nombre' }, nombreMes),
+      h('div', { class: 'fechas-mes-nombre' }, mayus(nombreMes)),
       h('ul', {}, fs.map((f) => h('li', { class: `fecha fecha-${f.tipo || 'otra'}` },
         h('span', { class: 'fecha-dia' }, `${f.dia} de ${nombreMes}`),
         h('span', { class: 'fecha-sep', 'aria-hidden': 'true' }, ' — '),
@@ -985,40 +1021,62 @@ const FORMA_ALT = { circulo: 'Un círculo', rectangulo: 'Un rectángulo', barra:
 const OP_ALT = { '+': 'Suma', '−': 'Resta', '×': 'Multiplicación', '÷': 'División' };
 
 export function textoAlternativo(v) {
-  if (!v || typeof v !== 'object') return 'Dibujo';
+  if (!v || typeof v !== 'object') return 'Dibujo.';
+  try {
+    return altDe(v);
+  } catch (err) {
+    console.warn('Texto alternativo no disponible', err);
+    return 'Dibujo.';
+  }
+}
+
+const SIGNO_ALT = { '<': 'menor que', '>': 'mayor que', '=': 'igual a' };
+const anioSeguro = (a) => entero(a, 1900, 2200, new Date().getFullYear());
+
+function altDe(v) {
   switch (v.tipo) {
     case 'emoji': {
-      const n = v.cantidad === undefined ? 1 : Number(v.cantidad);
-      const base = n === 0 ? 'Un espacio vacío' : n === 1 ? 'Un dibujo' : 'Varios dibujos iguales, en grupos de cinco';
+      const n = v.cantidad === undefined ? 1 : entero(v.cantidad, 0, 30, 1);
+      const base = n === 0 ? 'Un espacio vacío'
+        : n === 1 ? 'Un dibujo'
+          : n <= 5 ? 'Varios dibujos iguales' : 'Varios dibujos iguales, en grupos de cinco';
       return v.etiqueta ? `${base}: ${v.etiqueta}.` : `${base}.`;
     }
-    case 'emojis':
-      return Array.isArray(v.etiquetas) && v.etiquetas.length
-        ? `Dibujos: ${v.etiquetas.join(', ')}.`
-        : 'Una fila de dibujos.';
+    case 'emojis': {
+      const et = lista(v.etiquetas).map(textoDe).filter(Boolean);
+      return et.length ? `Dibujos: ${et.join(', ')}.` : 'Una fila de dibujos.';
+    }
     case 'ilustracion': {
-      const base = `Ilustración de ${ILUSTRACION_ALT[v.id] || 'un tema de la clase'}`;
+      const base = `Ilustración de ${ILUSTRACION_ALT[v.id] || 'un tema de la clase'}`.replace(/\bde el\b/, 'del');
       return v.resaltar ? `${base}, con una parte resaltada.` : `${base}.`;
     }
     case 'bloques': {
       const hay = [];
-      if (v.centenas) hay.push('placas de cien');
-      if (v.decenas) hay.push('barras de diez');
-      if (v.unidades) hay.push('cubitos sueltos');
+      if (Number(v.centenas) > 0) hay.push('placas de cien');
+      if (Number(v.decenas) > 0) hay.push('barras de diez');
+      if (Number(v.unidades) > 0) hay.push('cubitos sueltos');
       return hay.length ? `Bloques para contar: ${unirY(hay)}.` : 'Bloques para contar.';
     }
     case 'recta': {
-      const oc = new Set((v.ocultar || []).map(Number));
-      const extremos = !oc.has(Number(v.min)) && !oc.has(Number(v.max)) ? ` del ${v.min} al ${v.max}` : '';
+      // Mismos extremos que dibuja crearRecta.
+      let min = Number(v.min), max = Number(v.max);
+      if (!Number.isFinite(min)) min = 0;
+      if (!Number.isFinite(max) || max <= min) max = min + 10;
+      const oc = new Set(lista(v.ocultar).map(Number));
+      const extremos = !oc.has(min) && !oc.has(max) ? ` del ${min} al ${max}` : '';
       const extra = [];
-      if (v.marcar && v.marcar.length) extra.push('puntos marcados');
-      if (v.saltos && v.saltos.length) extra.push('saltos');
+      const nMarcas = lista(v.marcar).length;
+      if (nMarcas) extra.push(nMarcas === 1 ? 'un punto marcado' : 'puntos marcados');
+      if (lista(v.saltos).length) extra.push('saltos');
       if (oc.size) extra.push('números escondidos');
       return `Recta numérica${extremos}${extra.length ? `, con ${unirY(extra)}` : ''}.`;
     }
-    case 'fraccion':
-      return `${FORMA_ALT[v.forma] || 'Una figura'} dividido en partes${v.iguales === false ? ' de distinto tamaño' : ''}${v.coloreadas ? ', con algunas partes pintadas' : ''}.`
-        .replace('Una barra dividido', 'Una barra dividida');
+    case 'fraccion': {
+      // crearFraccion dibuja un círculo si la forma no es válida.
+      const forma = FORMA_ALT[v.forma] ? v.forma : 'circulo';
+      const dividido = forma === 'barra' ? 'dividida' : 'dividido';
+      return `${FORMA_ALT[forma]} ${dividido} en partes${v.iguales === false ? ' de distinto tamaño' : ''}${Number(v.coloreadas) > 0 ? ', con algunas partes pintadas' : ''}.`;
+    }
     case 'dinero':
       return 'Monedas y billetes de Bolivia.';
     case 'reloj':
@@ -1028,15 +1086,17 @@ export function textoAlternativo(v) {
     case 'arreglo':
       return 'Objetos ordenados en filas y columnas.';
     case 'pictograma': {
-      const filas = (v.datos || []).map((d) => d.etiqueta).filter(Boolean);
+      const filas = lista(v.datos).map((d) => (d && typeof d === 'object' ? textoDe(d.etiqueta) : '')).filter(Boolean);
       return `Pictograma${v.titulo ? `: ${v.titulo}` : ''}. ${filas.length ? `Filas: ${filas.join(', ')}.` : ''}`.trim();
     }
-    case 'tabla':
-      return Array.isArray(v.columnas) && v.columnas.length ? `Tabla con columnas ${v.columnas.join(', ')}.` : 'Tabla.';
+    case 'tabla': {
+      const cols = lista(v.columnas).map((x) => (esHueco(x) ? 'algo que falta' : textoDe(x))).filter(Boolean);
+      return cols.length ? `Tabla con columnas ${cols.join(', ')}.` : 'Tabla.';
+    }
     case 'calendario': {
       const m = entero(v.mes, 1, 12, 1);
-      const base = `Calendario de ${MESES[m - 1]} de ${v.anio}`;
-      return v.marcar && v.marcar.length ? `${base}, con días marcados.` : `${base}.`;
+      const base = `Calendario de ${MESES[m - 1]} de ${anioSeguro(v.anio)}`;
+      return lista(v.marcar).length ? `${base}, con días marcados.` : `${base}.`;
     }
     case 'simetria':
       return v.completa ? 'Cuadrícula con cuadritos pintados y una línea en el medio.' : 'Cuadrícula con cuadritos pintados a un lado de una línea de simetría.';
@@ -1045,22 +1105,33 @@ export function textoAlternativo(v) {
     case 'balanza':
       return 'Una balanza con objetos en sus dos platillos.';
     case 'operacion': {
-      const nums = (v.numeros || []).map(String);
+      const nums = lista(v.numeros).slice(0, 3).map(textoDe);
       const op = SIGNO[v.op] || '+';
       const tipo = OP_ALT[op] || 'Operación';
-      return `${tipo}${v.vertical ? ' escrita en columnas' : ''}: ${nums.join(` ${op} `)}.`;
+      return nums.length ? `${tipo}${v.vertical ? ' escrita en columnas' : ''}: ${nums.join(` ${op} `)}.` : `${tipo}.`;
     }
     case 'bandera':
       return v.etiqueta ? `Una bandera de franjas: ${v.etiqueta}.` : 'Una bandera de franjas.';
     case 'secuencia': {
-      const items = Array.isArray(v.items) ? v.items : [];
+      const items = lista(v.items);
       const oc = v.oculto === undefined ? -1 : Number(v.oculto);
-      if (items.some((x) => esEmoji(typeof x === 'object' ? x.emoji : x))) return 'Una secuencia de dibujos con un espacio para completar.';
-      const t = items.map((x, i) => (i === oc || x === '?' ? 'algo que falta' : x === '☐' ? 'un espacio' : String(typeof x === 'object' ? x.texto : x)));
+      const falta = (x, i) => i === oc || x === '?';
+      const hueco = items.some((x, i) => falta(x, i) || x === '☐' || x === '' || x === null);
+      if (items.some((x) => esEmoji(textoDe(x)))) {
+        return hueco ? 'Una secuencia de dibujos con un espacio para completar.' : 'Una secuencia de dibujos.';
+      }
+      const t = items.map((x, i) => {
+        if (falta(x, i)) return 'algo que falta';
+        if (x === '☐' || x === '' || x === null || x === undefined) return 'un espacio';
+        const tx = textoDe(x);
+        return SIGNO_ALT[tx.trim()] || tx;
+      });
       return `Secuencia: ${t.join(', ')}.`;
     }
-    case 'fechas':
-      return v.mes ? `Fechas importantes de ${MESES[entero(v.mes, 1, 12, 1) - 1]}.` : 'Fechas importantes de Bolivia.';
+    case 'fechas': {
+      const m = Number(v.mes);
+      return Number.isInteger(m) && m >= 1 && m <= 12 ? `Fechas importantes de ${MESES[m - 1]}.` : 'Fechas importantes de Bolivia.';
+    }
     default:
       return 'Dibujo.';
   }

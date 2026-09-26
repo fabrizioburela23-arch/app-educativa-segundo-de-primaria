@@ -6,6 +6,10 @@ import { horaTexto } from '../contenido/generadores.js';
 import { crearBase, boton, lectura, entero, puntoEnSvg } from './comun.js';
 
 const digital = (t) => `${t.hora}:${String(t.minutos).padStart(2, '0')}`;
+// «Las 3 y media», «La 1 y 20»... (horaTexto solo nombra en punto, cuartos y media).
+const frase = (t) => ([0, 15, 30, 45].includes(t.minutos)
+  ? horaTexto(t.hora, t.minutos)
+  : `${t.hora === 1 ? 'La' : 'Las'} ${t.hora} y ${t.minutos}`);
 
 export function crear(cfg, opts) {
   const b = crearBase('reloj', opts);
@@ -63,28 +67,34 @@ export function crear(cfg, opts) {
     fijar({ hora: Math.floor(total / 60) || 12, minutos: total % 60 });
   }
 
-  // arrastrar la aguja larga
-  let arrastre = false;
+  // Arrastrar la aguja larga. El ángulo se sigue de forma continua (sin
+  // redondear), así la hora avanza o retrocede cada vez que la aguja pasa por
+  // el 12, con cualquier paso (5, 15 o 30) y aunque el dedo vaya rápido.
+  let arrastre = null; // { total: minutos desde las 12:00 sin redondear, ang }
+  const anguloDe = (e) => {
+    const p = puntoEnSvg(rj.svg, e, 240, 240);
+    const a = (Math.atan2(p.x - rj.C, -(p.y - rj.C)) * 180) / Math.PI;
+    return a < 0 ? a + 360 : a;
+  };
+  const diferencia = (a, b) => ((((a - b) % 360) + 540) % 360) - 180; // entre −180 y 180
   rj.gMin.addEventListener('pointerdown', (e) => {
     if (b.bloqueado) return;
-    arrastre = true;
     e.preventDefault();
+    const ang = anguloDe(e);
+    const base = (st.hora % 12) * 60 + st.minutos;
+    arrastre = { total: base + diferencia(ang, st.minutos * 6) / 6, ang };
     try { rj.svg.setPointerCapture(e.pointerId); } catch { /* sin captura */ }
     rj.svg.classList.add('arrastrando');
   });
   rj.svg.addEventListener('pointermove', (e) => {
     if (!arrastre || b.bloqueado) return;
-    const p = puntoEnSvg(rj.svg, e, 240, 240);
-    let ang = (Math.atan2(p.x - rj.C, -(p.y - rj.C)) * 180) / Math.PI;
-    if (ang < 0) ang += 360;
-    const m = (Math.round(ang / 6 / paso) * paso) % 60;
-    if (m === st.minutos) return;
-    let hora = st.hora;
-    if (st.minutos >= 45 && m < 15) hora = (hora % 12) + 1; // pasó por el 12 hacia adelante
-    else if (st.minutos < 15 && m >= 45) hora = ((hora + 10) % 12) + 1; // hacia atrás
-    fijar({ hora, minutos: m });
+    const ang = anguloDe(e);
+    arrastre.total += diferencia(ang, arrastre.ang) / 6;
+    arrastre.ang = ang;
+    const t = ((Math.round(arrastre.total / paso) * paso % 720) + 720) % 720;
+    fijar({ hora: Math.floor(t / 60) || 12, minutos: t % 60 });
   });
-  const soltar = () => { arrastre = false; rj.svg.classList.remove('arrastrando'); };
+  const soltar = () => { arrastre = null; rj.svg.classList.remove('arrastrando'); };
   rj.svg.addEventListener('pointerup', soltar);
   rj.svg.addEventListener('pointercancel', soltar);
 
@@ -97,7 +107,7 @@ export function crear(cfg, opts) {
     if (mostrar) {
       lect.replaceChildren(
         h('div', { class: 'manip-numero rjm-digital' }, digital(st)),
-        h('div', { class: 'manip-frase' }, horaTexto(st.hora, st.minutos)));
+        h('div', { class: 'manip-frase' }, frase(st)));
     }
   }
 

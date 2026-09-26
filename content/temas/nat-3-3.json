@@ -1,0 +1,475 @@
+{
+  "id": "nat-3-3",
+  "titulo": "El esqueleto",
+  "objetivo": "Conozco los huesos principales de mi cuerpo, para qué sirven y cómo cuidarlos.",
+  "explicacion": [
+    {
+      "texto": "Dentro de tu cuerpo hay muchos **huesos**. Todos juntos forman el **esqueleto**. Una persona adulta tiene unos **206 huesos**. ¡Los bebés nacen con más, porque algunos huesos se unen al crecer!",
+      "emoji": "🦴"
+    },
+    {
+      "texto": "Los huesos principales son el **cráneo** (en la cabeza), la **columna vertebral** (en la espalda), las **costillas** (en el pecho), la **pelvis** (en la cadera) y los huesos de los **brazos** y las **piernas**.",
+      "visual": { "tipo": "ilustracion", "id": "esqueleto" }
+    },
+    {
+      "texto": "El esqueleto tiene tres trabajos: **sostiene** tu cuerpo, **protege** partes delicadas y, junto con los músculos, te permite **moverte**. El cráneo protege el cerebro, y las costillas, el corazón y los pulmones.",
+      "visual": { "tipo": "emojis", "items": ["🧠", "❤️", "💪"], "etiquetas": ["cerebro", "corazón", "músculo"] }
+    },
+    {
+      "texto": "Tus huesos están vivos y crecen contigo. Para cuidarlos, toma leche o come queso y yogur, que tienen **calcio**. Siéntate derecho, haz ejercicio y usa **casco** al andar en bici.",
+      "visual": { "tipo": "emojis", "items": ["🥛", "🧀", "🏃", "🚴"], "etiquetas": ["leche", "queso", "ejercicio", "casco en la bici"] }
+    }
+  ],
+  "ejemplo": {
+    "instruccion": "Descubre tu esqueleto con tus manos. Haz lo mismo que Arami.",
+    "pasos": [
+      {
+        "texto": "Arami se toca la cabeza: siente algo duro. Es el **cráneo**, que protege su cerebro como un casco.",
+        "visual": { "tipo": "ilustracion", "id": "esqueleto", "resaltar": "craneo", "etiquetas": true }
+      },
+      {
+        "texto": "Se toca el centro de la espalda: siente bolitas en fila. Son las **vértebras**, los huesitos de la **columna vertebral**. La columna la mantiene derecha.",
+        "visual": { "tipo": "ilustracion", "id": "esqueleto", "resaltar": "columna", "etiquetas": true }
+      },
+      {
+        "texto": "Respira hondo y se toca el pecho: siente unas barras curvas. Son las **costillas**, que cuidan su corazón y sus pulmones.",
+        "visual": { "tipo": "ilustracion", "id": "esqueleto", "resaltar": "costillas", "etiquetas": true }
+      },
+      {
+        "texto": "Dobla el codo y la rodilla. Ahí se unen dos huesos: son **articulaciones**. Los **músculos** jalan los huesos, y así Arami se mueve.",
+        "visual": { "tipo": "ilustracion", "id": "esqueleto", "resaltar": "brazo", "etiquetas": true }
+      }
+    ]
+  },
+  "guiada": {
+    "intro": "Ahora lo hacemos juntos, paso a paso.",
+    "pasos": [
+      {
+        "id": "g1", "tipo": "relacionar",
+        "enunciado": "Une cada hueso con la parte del cuerpo donde está.",
+        "apoyo": "Toca tu propio cuerpo mientras buscas cada hueso: cabeza, espalda, pecho y cadera.",
+        "pares": [
+          ["cráneo", "cabeza"],
+          ["columna vertebral", "espalda"],
+          ["costillas", "pecho"],
+          ["pelvis", "cadera"]
+        ],
+        "pista": "El cráneo es duro y redondo. Las costillas se mueven un poquito cuando respiras.",
+        "explicacion": "El cráneo está en la cabeza, la columna vertebral en la espalda, las costillas en el pecho y la pelvis en la cadera.",
+        "error": "nombra-huesos"
+      },
+      {
+        "id": "g2", "tipo": "completar",
+        "enunciado": "Completa qué protege cada hueso.",
+        "apoyo": "Piensa qué hay dentro de tu cabeza y qué late dentro de tu pecho.",
+        "texto": "El cráneo protege el [cerebro]. Las costillas protegen el [corazón] y los pulmones.",
+        "banco": ["rodilla", "dedo"],
+        "pista": "Con una de esas partes piensas; la otra late: pum, pum.",
+        "explicacion": "El cráneo protege el **cerebro**, y las costillas protegen el **corazón** y los pulmones.",
+        "error": "funciones-esqueleto"
+      },
+      {
+        "id": "g3", "tipo": "clasificar",
+        "enunciado": "¿Cuida tus huesos o los pone en peligro?",
+        "apoyo": "Piensa: ¿esto hace más fuertes tus huesos o puede lastimarlos?",
+        "categorias": [
+          { "id": "cuida", "texto": "Cuida mis huesos", "emoji": "✅" },
+          { "id": "peligro", "texto": "Los pone en peligro", "emoji": "⚠️" }
+        ],
+        "elementos": [
+          { "texto": "tomar leche o comer queso", "emoji": "🥛", "categoria": "cuida" },
+          { "texto": "usar casco al andar en bici", "emoji": "🚴", "categoria": "cuida" },
+          { "texto": "sentarme con la espalda derecha", "categoria": "cuida" },
+          { "texto": "andar en bici sin casco", "categoria": "peligro" },
+          { "texto": "cargar una mochila muy pesada en un solo hombro", "emoji": "🎒", "categoria": "peligro" },
+          { "texto": "saltar desde un muro alto", "categoria": "peligro" }
+        ],
+        "pista": "El calcio, la buena postura y el casco ayudan a tus huesos. Los golpes fuertes y el peso mal cargado pueden dañarlos.",
+        "explicacion": "Cuidan tus huesos: la leche y el queso, el casco y sentarte derecho. Los ponen en peligro: andar sin casco, cargar mucho peso en un hombro y saltar desde lo alto.",
+        "error": "cuidado-huesos"
+      }
+    ]
+  },
+  "practica": [
+    {
+      "id": "p1", "tipo": "opcion", "nivel": 1,
+      "enunciado": "¿Cómo se llama el hueso marcado?",
+      "visual": { "tipo": "ilustracion", "id": "esqueleto", "resaltar": "craneo" },
+      "opciones": [
+        { "texto": "cráneo", "correcta": true },
+        { "texto": "pelvis", "pista": "La pelvis está en la cadera. Mira dónde está la parte marcada.", "error": "nombra-huesos" },
+        { "texto": "costillas", "pista": "Las costillas están en el pecho. Mira dónde está la parte marcada.", "error": "nombra-huesos" }
+      ],
+      "columnas": 3,
+      "pista": "La parte marcada está en la cabeza.",
+      "explicacion": "Es el **cráneo**: el hueso de la cabeza que protege el cerebro.",
+      "error": "nombra-huesos"
+    },
+    {
+      "id": "p2", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Toca los nombres de huesos.",
+      "texto": "La doctora le mostró a Rosa una radiografía de su *cráneo* y de sus *costillas*.",
+      "pista": "Busca los nombres de dos huesos: uno de la cabeza y otro del pecho.",
+      "explicacion": "**Cráneo** y **costillas** son huesos. Una radiografía es una foto especial que muestra los huesos.",
+      "error": "nombra-huesos"
+    },
+    {
+      "id": "p3", "tipo": "memoria", "nivel": 1,
+      "enunciado": "Encuentra las parejas: el dibujo y su nombre.",
+      "pares": [
+        [ { "emoji": "🦴" }, "hueso" ],
+        [ { "emoji": "🧠" }, "cerebro" ],
+        [ { "emoji": "❤️" }, "corazón" ],
+        [ { "emoji": "💪" }, "músculo" ],
+        [ { "emoji": "🥛" }, "leche" ]
+      ],
+      "pista": "Di en voz alta el nombre de cada dibujo.",
+      "explicacion": "🦴 hueso, 🧠 cerebro, ❤️ corazón, 💪 músculo y 🥛 leche.",
+      "error": "vocabulario-tema"
+    },
+    {
+      "id": "p4", "tipo": "escribir", "nivel": 1,
+      "enunciado": "Escucha y escribe la palabra.",
+      "escuchar": "hueso",
+      "visual": { "tipo": "emoji", "valor": "🦴" },
+      "respuestas": ["hueso"],
+      "pista": "Empieza con una letra que no suena. ¡No te olvides de ella!",
+      "explicacion": "Se escribe «hueso», con **h** al principio. La h no suena.",
+      "error": "escritura-tema"
+    },
+    {
+      "id": "p5", "tipo": "numero", "nivel": 2,
+      "enunciado": "¿Cuántos huesos tiene el esqueleto de una persona adulta?",
+      "respuesta": 206,
+      "sufijo": "huesos",
+      "erroresComunes": [
+        { "respuesta": 300, "pista": "Eso es más o menos lo que tiene un bebé. Al crecer, algunos huesos se unen.", "error": "numero-huesos" },
+        { "respuesta": 26, "pista": "Son muchos más: es un número de tres cifras.", "error": "numero-huesos" }
+      ],
+      "pista": "Es un número de tres cifras que empieza con 2.",
+      "explicacion": "Una persona adulta tiene unos **206 huesos**. Los bebés nacen con más, pero algunos se unen al crecer.",
+      "error": "numero-huesos"
+    },
+    {
+      "id": "p6", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escribe el nombre de la parte marcada del esqueleto.",
+      "visual": { "tipo": "ilustracion", "id": "esqueleto", "resaltar": "columna" },
+      "respuestas": ["columna vertebral", "la columna vertebral", "columna", "la columna", "espina dorsal", "la espina dorsal"],
+      "pista": "Está en tu espalda y tiene muchos huesitos en fila: las vértebras.",
+      "explicacion": "Es la **columna vertebral**. Está formada por vértebras y te mantiene derecho.",
+      "error": "nombra-huesos"
+    },
+    {
+      "id": "p7", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa cómo nos movemos.",
+      "texto": "Los [músculos] jalan los huesos, y así nos movemos. Donde se unen dos huesos hay una [articulación], como el codo o la rodilla.",
+      "banco": ["costilla", "uña"],
+      "pista": "Unos se ponen duros cuando haces fuerza. La otra palabra nombra el lugar donde puedes doblarte.",
+      "explicacion": "Los **músculos** jalan los huesos. Donde se unen dos huesos hay una **articulación**: ahí podemos doblarnos.",
+      "error": "huesos-musculos"
+    },
+    {
+      "id": "p8", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "Une cada parte del esqueleto con su trabajo.",
+      "pares": [
+        ["el cráneo", "protege el cerebro"],
+        ["las costillas", "protegen el corazón y los pulmones"],
+        ["la columna vertebral", "nos mantiene derechos"],
+        ["los huesos de las piernas", "nos sostienen para caminar y saltar"]
+      ],
+      "pista": "Piensa dónde está cada hueso y qué hay cerca de él.",
+      "explicacion": "El cráneo protege el cerebro; las costillas, el corazón y los pulmones; la columna nos mantiene derechos, y los huesos de las piernas nos sostienen para caminar y saltar.",
+      "error": "funciones-esqueleto"
+    },
+    {
+      "id": "p9", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "¿Es una buena postura o una mala postura para tu espalda?",
+      "categorias": [
+        { "id": "buena", "texto": "Buena postura", "emoji": "👍" },
+        { "id": "mala", "texto": "Mala postura", "emoji": "👎" }
+      ],
+      "elementos": [
+        { "texto": "sentarme con la espalda recta para escribir", "categoria": "buena" },
+        { "texto": "llevar la mochila en los dos hombros", "categoria": "buena" },
+        { "texto": "doblar las rodillas para levantar algo del suelo", "categoria": "buena" },
+        { "texto": "escribir casi acostado sobre el cuaderno", "categoria": "mala" },
+        { "texto": "mirar el celular con la cabeza muy agachada por mucho rato", "categoria": "mala" },
+        { "texto": "llevar la mochila colgada de un solo hombro", "categoria": "mala" }
+      ],
+      "pista": "Una buena postura mantiene tu columna derecha y reparte bien el peso.",
+      "explicacion": "Buena postura: la espalda recta, la mochila en los dos hombros y doblar las rodillas para levantar cosas. Mala postura: escribir casi acostado, agachar mucho la cabeza y cargar la mochila en un solo hombro.",
+      "error": "cuidado-huesos"
+    },
+    {
+      "id": "p10", "tipo": "multiple", "nivel": 2,
+      "enunciado": "¿Qué alimentos tienen mucho calcio para tus huesos? Elige todos los correctos.",
+      "opciones": [
+        { "texto": "leche", "emoji": "🥛", "correcta": true },
+        { "texto": "queso", "emoji": "🧀", "correcta": true },
+        { "texto": "yogur", "correcta": true },
+        { "texto": "caramelos", "emoji": "🍬", "pista": "Los caramelos tienen mucha azúcar y casi nada de calcio.", "error": "cuidado-huesos" },
+        { "texto": "gaseosa", "pista": "La gaseosa casi no tiene calcio. Es mejor tomar agua o leche.", "error": "cuidado-huesos" }
+      ],
+      "pista": "Busca la leche y los alimentos que se hacen con leche. Hay tres.",
+      "explicacion": "La leche, el queso y el yogur tienen mucho calcio, que ayuda a tener huesos fuertes. Los caramelos y la gaseosa casi no tienen.",
+      "error": "cuidado-huesos"
+    },
+    {
+      "id": "p11", "tipo": "tocar", "nivel": 2,
+      "enunciado": "Toca las articulaciones: los lugares donde se unen dos huesos.",
+      "texto": "Para bailar, Wara dobla el *codo* y la *rodilla*, y mueve la *muñeca* para agitar su pañuelo.",
+      "pista": "Son lugares del brazo y de la pierna donde puedes doblarte o girar. Hay tres.",
+      "explicacion": "El **codo**, la **rodilla** y la **muñeca** son articulaciones: allí se unen huesos y podemos doblarnos o girar.",
+      "error": "huesos-musculos"
+    },
+    {
+      "id": "p12", "tipo": "numero", "nivel": 3,
+      "enunciado": "Cada mano tiene 27 huesos. ¿Cuántos huesos hay en tus dos manos?",
+      "visual": { "tipo": "emojis", "items": ["✋", "🤚"], "etiquetas": ["27 huesos", "27 huesos"] },
+      "respuesta": 54,
+      "sufijo": "huesos",
+      "erroresComunes": [
+        { "respuesta": 27, "pista": "Esos son los huesos de una sola mano. Tienes dos.", "error": "calculo" },
+        { "respuesta": 44, "pista": "7 + 7 = 14: ¿sumaste la decena que llevabas?", "error": "calculo" }
+      ],
+      "pista": "Tienes dos manos con 27 huesos cada una. Suma los huesos de las dos.",
+      "explicacion": "27 + 27 = 54. En tus dos manos hay **54 huesos**. ¡Por eso puedes mover tanto los dedos!",
+      "error": "calculo"
+    },
+    {
+      "id": "p13", "tipo": "ordenar", "nivel": 3,
+      "enunciado": "Ordena estos huesos de arriba hacia abajo, desde la cabeza hasta los pies.",
+      "elementos": ["cráneo", "costillas", "pelvis", "huesos de las piernas", "huesos de los pies"],
+      "vertical": true,
+      "pista": "Toca tu cuerpo desde la cabeza hacia abajo: cabeza, pecho, cadera, piernas y pies.",
+      "explicacion": "De arriba hacia abajo: cráneo, costillas, pelvis, huesos de las piernas y huesos de los pies.",
+      "error": "ubica-huesos"
+    },
+    {
+      "id": "p14", "tipo": "opcion", "nivel": 3,
+      "enunciado": "Mateo se cayó jugando y se fracturó un hueso del brazo. La doctora le puso yeso. ¿Para qué sirve el yeso?",
+      "opciones": [
+        { "texto": "Para que el hueso se quede quieto mientras sana.", "correcta": true },
+        { "texto": "Para que el brazo crezca más largo.", "pista": "El yeso no hace crecer el brazo. Piensa en qué necesita un hueso para sanar.", "error": "huesos-vivos" },
+        { "texto": "Para reemplazar el hueso, porque ya no sirve.", "pista": "Los huesos están vivos: pueden sanar si se quedan quietos.", "error": "huesos-vivos" }
+      ],
+      "columnas": 1,
+      "pista": "Los huesos están vivos y pueden sanar. ¿Qué pasaría si Mateo moviera mucho el brazo?",
+      "explicacion": "El yeso mantiene quieto el hueso para que sane. Los huesos están vivos: en unas semanas, el hueso de Mateo se unirá otra vez.",
+      "error": "huesos-vivos"
+    },
+    {
+      "id": "p15", "tipo": "escribir-libre", "nivel": 3,
+      "enunciado": "Escribe un consejo para cuidar los huesos.",
+      "guia": ["Para tener huesos fuertes...", "Cuando andes en bici..."],
+      "requisitos": [
+        { "tipo": "mayuscula-inicial" },
+        { "tipo": "punto-final" },
+        { "tipo": "min-palabras", "valor": 5 },
+        { "tipo": "incluye", "palabras": ["leche", "queso", "yogur", "calcio", "casco", "ejercicio", "postura", "derecho", "derecha"] }
+      ],
+      "modelo": "Toma leche y usa casco cuando andes en bici.",
+      "pista": "Piensa en lo que comes, en cómo te sientas o en cómo te proteges cuando juegas.",
+      "explicacion": "Por ejemplo: «Toma leche y usa casco cuando andes en bici». Empieza con mayúscula y termina con punto.",
+      "error": "produce-oracion"
+    },
+    {
+      "id": "p16", "tipo": "pasos", "nivel": 3,
+      "enunciado": "Juan va a andar en bicicleta en el parque con su tía.",
+      "visual": { "tipo": "emoji", "valor": "🚴" },
+      "pasos": [
+        {
+          "tipo": "opcion",
+          "enunciado": "¿Qué debe ponerse Juan para proteger su cabeza?",
+          "opciones": [
+            { "texto": "un casco", "emoji": "⛑️", "correcta": true },
+            { "texto": "una gorra", "emoji": "🧢", "pista": "La gorra da sombra, pero no protege de los golpes.", "error": "cuidado-huesos" },
+            { "texto": "lentes de sol", "emoji": "🕶️", "pista": "Los lentes cuidan los ojos del sol, pero no protegen la cabeza de los golpes.", "error": "cuidado-huesos" }
+          ],
+          "columnas": 3,
+          "pista": "Busca algo duro que cubra toda la cabeza.",
+          "explicacion": "Juan debe usar **casco**: es duro y protege su cabeza de los golpes.",
+          "error": "cuidado-huesos"
+        },
+        {
+          "tipo": "escribir",
+          "enunciado": "El casco cuida el hueso marcado. ¿Cómo se llama?",
+          "visual": { "tipo": "ilustracion", "id": "esqueleto", "resaltar": "craneo" },
+          "respuestas": ["cráneo", "el cráneo"],
+          "pista": "Es el hueso duro y redondo de la cabeza.",
+          "explicacion": "Es el **cráneo**. El casco lo protege, y el cráneo protege el cerebro.",
+          "error": "nombra-huesos"
+        },
+        {
+          "tipo": "completar",
+          "enunciado": "Completa.",
+          "texto": "El casco protege el cráneo, y el cráneo protege el [cerebro].",
+          "banco": ["corazón", "pie"],
+          "pista": "Es lo que está dentro de tu cabeza y te sirve para pensar.",
+          "explicacion": "El cráneo protege el **cerebro**. Por eso es tan importante cuidar la cabeza con casco.",
+          "error": "funciones-esqueleto"
+        }
+      ],
+      "pista": "Resuelve un paso a la vez.",
+      "explicacion": "Juan debe usar casco. El casco protege el cráneo, y el cráneo protege el cerebro.",
+      "error": "cuidado-huesos"
+    }
+  ],
+  "comprobacion": [
+    {
+      "id": "c1", "tipo": "opcion", "nivel": 1,
+      "enunciado": "¿Cómo se llaman los huesos marcados?",
+      "visual": { "tipo": "ilustracion", "id": "esqueleto", "resaltar": "costillas" },
+      "opciones": [
+        { "texto": "costillas", "correcta": true },
+        { "texto": "cráneo", "pista": "El cráneo está en la cabeza. Mira dónde están los huesos marcados.", "error": "nombra-huesos" },
+        { "texto": "pelvis", "pista": "La pelvis está en la cadera. Mira dónde están los huesos marcados.", "error": "nombra-huesos" }
+      ],
+      "columnas": 3,
+      "pista": "Están en el pecho y se mueven un poquito cuando respiras.",
+      "explicacion": "Son las **costillas**: protegen el corazón y los pulmones.",
+      "error": "nombra-huesos"
+    },
+    {
+      "id": "c2", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Toca los alimentos que tienen mucho calcio.",
+      "texto": "En la merienda, Luis comió *queso* y un plátano, y tomó un vaso de *leche*.",
+      "pista": "Busca la leche y lo que se hace con leche. Hay dos.",
+      "explicacion": "El **queso** y la **leche** tienen mucho calcio. El plátano es sano, pero casi no tiene calcio.",
+      "error": "cuidado-huesos"
+    },
+    {
+      "id": "c3", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa.",
+      "texto": "Una persona adulta tiene unos [206] huesos. Todos juntos forman el [esqueleto].",
+      "banco": ["20", "corazón"],
+      "pista": "Es un número de tres cifras. La otra palabra nombra a todos los huesos juntos.",
+      "explicacion": "Una persona adulta tiene unos **206** huesos, y todos juntos forman el **esqueleto**.",
+      "error": "numero-huesos"
+    },
+    {
+      "id": "c4", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "¿Lo hacen los huesos o los músculos?",
+      "categorias": [
+        { "id": "huesos", "texto": "Los huesos", "emoji": "🦴" },
+        { "id": "musculos", "texto": "Los músculos", "emoji": "💪" }
+      ],
+      "elementos": [
+        { "texto": "sostienen el cuerpo", "categoria": "huesos" },
+        { "texto": "protegen el cerebro y el corazón", "categoria": "huesos" },
+        { "texto": "forman el esqueleto", "categoria": "huesos" },
+        { "texto": "jalan los huesos para movernos", "categoria": "musculos" },
+        { "texto": "se ponen duros cuando hacemos fuerza", "categoria": "musculos" }
+      ],
+      "pista": "Los huesos son duros y forman el esqueleto. Los músculos pueden jalar.",
+      "explicacion": "Los huesos sostienen el cuerpo, protegen el cerebro y el corazón y forman el esqueleto. Los músculos jalan los huesos y se ponen duros cuando hacemos fuerza.",
+      "error": "huesos-musculos"
+    },
+    {
+      "id": "c5", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha la adivinanza y escribe la respuesta.",
+      "escuchar": "Soy una fila de huesitos en tu espalda. Te mantengo derecho y te ayudo a agacharte y a girar. ¿Quién soy?",
+      "respuestas": ["columna vertebral", "la columna vertebral", "columna", "la columna", "espina dorsal", "la espina dorsal"],
+      "pista": "Sus huesitos se llaman vértebras.",
+      "explicacion": "Es la **columna vertebral**, formada por muchos huesitos llamados vértebras.",
+      "error": "nombra-huesos"
+    },
+    {
+      "id": "c6", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "Une cada cuidado con lo que logra.",
+      "pares": [
+        ["usar casco en la bici", "protege el cráneo de los golpes"],
+        ["tomar leche", "da calcio a los huesos"],
+        ["sentarme derecho", "cuida la columna"],
+        ["hacer ejercicio", "fortalece los huesos y los músculos"]
+      ],
+      "pista": "Piensa para qué sirve cada cuidado.",
+      "explicacion": "El casco protege el cráneo; la leche da calcio; sentarte derecho cuida la columna, y el ejercicio fortalece los huesos y los músculos.",
+      "error": "cuidado-huesos"
+    },
+    {
+      "id": "c7", "tipo": "opcion", "nivel": 3,
+      "enunciado": "¿Qué pasaría si no tuviéramos esqueleto?",
+      "opciones": [
+        { "texto": "No podríamos estar de pie: el cuerpo sería blando.", "correcta": true },
+        { "texto": "Seríamos más altos y fuertes.", "pista": "Sin huesos, nada sostendría el cuerpo. Piensa en una lombriz.", "error": "funciones-esqueleto" },
+        { "texto": "Podríamos correr más rápido.", "pista": "Para correr, los músculos necesitan jalar los huesos.", "error": "funciones-esqueleto" }
+      ],
+      "columnas": 1,
+      "pista": "Piensa en el primer trabajo del esqueleto: sostener.",
+      "explicacion": "Sin esqueleto, nada sostendría el cuerpo: seríamos blandos y no podríamos estar de pie ni caminar. Además, el cerebro y el corazón no tendrían protección.",
+      "error": "funciones-esqueleto"
+    },
+    {
+      "id": "c8", "tipo": "numero", "nivel": 3,
+      "enunciado": "Cada pie tiene 26 huesos. ¿Cuántos huesos hay en tus dos pies?",
+      "respuesta": 52,
+      "sufijo": "huesos",
+      "erroresComunes": [
+        { "respuesta": 26, "pista": "Esos son los huesos de un solo pie. Tienes dos.", "error": "calculo" },
+        { "respuesta": 42, "pista": "6 + 6 = 12: ¿sumaste la decena que llevabas?", "error": "calculo" }
+      ],
+      "pista": "Tienes dos pies con 26 huesos cada uno. Suma los huesos de los dos.",
+      "explicacion": "26 + 26 = 52. En tus dos pies hay **52 huesos**. ¡Entre tus manos y tus pies tienes más de 100 huesos!",
+      "error": "calculo"
+    }
+  ],
+  "repaso": {
+    "texto": "El esqueleto de un adulto tiene unos 206 huesos: cráneo, columna vertebral, costillas, pelvis y huesos de brazos y piernas. Sostiene, protege y, con los músculos, nos mueve. Cuídalo con calcio, buena postura, ejercicio y casco.",
+    "visual": { "tipo": "ilustracion", "id": "esqueleto" }
+  },
+  "adulto": {
+    "objetivo": "Conocer el esqueleto humano a nivel introductorio: ubicar y nombrar los huesos principales (cráneo, columna vertebral, costillas, pelvis y huesos de brazos y piernas); comprender sus funciones (sostener el cuerpo, proteger órganos como el cerebro, el corazón y los pulmones, y permitir el movimiento junto con los músculos y las articulaciones), y practicar hábitos que lo cuidan (alimentos con calcio, buena postura, ejercicio y casco). Un adulto tiene unos 206 huesos; un bebé nace con más (entre 270 y 300, aproximadamente), que se van uniendo al crecer.",
+    "sugerencias": [
+      "Jueguen a «Simón dice» con los huesos: «Simón dice: toca tu cráneo… tus costillas… tu pelvis… tu codo». Después, cambien los papeles: que sea su hija o su hijo quien dé las órdenes y les pida tocar cada hueso.",
+      "Después de comer pollo, laven y sequen bien un hueso y obsérvenlo juntos: es duro, liviano y tiene la punta más ancha, donde se unía con otro hueso. Si en la familia hay una radiografía, mírenla a contraluz y adivinen qué huesos se ven.",
+      "En la feria o la tienda, busquen juntos alimentos con calcio (leche, queso, yogur, sardinas con sus espinas, amaranto o millmi) y armen un «plato para huesos fuertes». En casa, revisen cómo se sienta para hacer las tareas y cómo lleva la mochila (en los dos hombros y sin demasiado peso), y antes de andar en bici o patines, pónganse el casco juntos."
+    ],
+    "errores": {
+      "nombra-huesos": {
+        "descripcion": "No reconoce o no recuerda el nombre de los huesos principales.",
+        "sugerencia": "Toquen juntos cada hueso en el cuerpo y nómbrenlo en voz alta: cráneo, columna, costillas, pelvis, brazos y piernas."
+      },
+      "ubica-huesos": {
+        "descripcion": "Le cuesta ubicar los huesos en el cuerpo, de arriba hacia abajo.",
+        "sugerencia": "Dibujen juntos la silueta de su cuerpo acostado sobre un papel grande o en el piso con tiza, y dibujen dentro los huesos principales en su lugar."
+      },
+      "funciones-esqueleto": {
+        "descripcion": "No relaciona los huesos con sus funciones: sostener, proteger y permitir el movimiento.",
+        "sugerencia": "Pregunten: «¿Qué cuida este hueso?». Comparen el cráneo con un casco y las costillas con una jaula que cuida el corazón y los pulmones."
+      },
+      "huesos-musculos": {
+        "descripcion": "No distingue el trabajo de los huesos del de los músculos, o no sabe qué son las articulaciones.",
+        "sugerencia": "Pídanle que doble el brazo con fuerza y toque su músculo: se pone duro y jala el hueso. El codo es el lugar donde se unen los huesos del brazo."
+      },
+      "cuidado-huesos": {
+        "descripcion": "No reconoce los hábitos que cuidan los huesos (calcio, postura, ejercicio, casco).",
+        "sugerencia": "Hagan juntos una lista de «cuidados de mis huesos» y marquen cada día los que cumplieron."
+      },
+      "numero-huesos": {
+        "descripcion": "No recuerda cuántos huesos tiene, más o menos, una persona adulta.",
+        "sugerencia": "Escriban «206 huesos» en una tarjeta junto a un dibujo del esqueleto y pongan la tarjeta en un lugar visible de la casa por unos días."
+      },
+      "huesos-vivos": {
+        "descripcion": "Cree que los huesos no están vivos o que un hueso roto ya no se puede sanar.",
+        "sugerencia": "Expliquen que los huesos crecen con nosotros y se reparan si se quedan quietos; por eso se usa yeso. Midan su estatura en una pared cada pocos meses para ver cómo crece."
+      },
+      "escritura-tema": {
+        "descripcion": "Le cuesta escribir palabras del tema, como «hueso» (con h) o «cráneo» (con tilde).",
+        "sugerencia": "Escriban juntos las palabras del esqueleto en tarjetas y marquen con color la h de «hueso» y la tilde de «cráneo»."
+      },
+      "vocabulario-tema": {
+        "descripcion": "Le cuesta nombrar palabras del tema (hueso, cerebro, músculo...).",
+        "sugerencia": "Jueguen a señalar partes del cuerpo y decir su nombre: hueso, músculo, corazón, cerebro."
+      },
+      "calculo": {
+        "descripcion": "Se equivoca al sumar números de dos cifras llevando (27 + 27, 26 + 26).",
+        "sugerencia": "Usen palitos o fideos en atados de 10 para sumar, y recuerden anotar la decena que se lleva."
+      },
+      "produce-oracion": {
+        "descripcion": "Le cuesta escribir un consejo completo, con mayúscula y punto.",
+        "sugerencia": "Primero digan el consejo en voz alta, luego escríbanlo juntos y revisen la mayúscula inicial y el punto final."
+      }
+    }
+  }
+}

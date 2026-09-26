@@ -1,0 +1,507 @@
+{
+  "id": "soc-4-1",
+  "titulo": "Instituciones del Estado",
+  "objetivo": "Conozco los cuatro órganos del Estado Plurinacional de Bolivia y otras instituciones públicas que nos sirven.",
+  "explicacion": [
+    {
+      "texto": "Una **institución** es un grupo de personas organizadas para cumplir una tarea que sirve a todos. Tu escuela es una institución: tiene reglas, y cada persona tiene su papel.",
+      "emoji": "🏫",
+      "visual": { "tipo": "emojis", "items": ["👩‍🏫", "🧒", "📋"], "etiquetas": ["maestras y maestros enseñan", "estudiantes aprenden", "todos cumplen las reglas"] }
+    },
+    {
+      "texto": "Bolivia es un **Estado Plurinacional**. Para organizarse tiene **cuatro órganos**: Legislativo, Ejecutivo, Judicial y Electoral. Cada uno tiene su propia tarea, y se coordinan entre sí.",
+      "visual": { "tipo": "emojis", "items": ["📜", "🏛️", "⚖️", "🗳️"], "etiquetas": ["Legislativo", "Ejecutivo", "Judicial", "Electoral"] }
+    },
+    {
+      "texto": "El **Legislativo** hace las leyes, que son las reglas de todo el país. El **Ejecutivo** gobierna y hace cumplir las leyes. El **Judicial** resuelve conflictos según la ley. El **Electoral** organiza las elecciones.",
+      "visual": {
+        "tipo": "tabla",
+        "columnas": ["Órgano", "¿Qué hace?"],
+        "filas": [
+          ["Legislativo", "hace las leyes"],
+          ["Ejecutivo", "gobierna"],
+          ["Judicial", "resuelve conflictos"],
+          ["Electoral", "organiza las elecciones"]
+        ]
+      }
+    },
+    {
+      "texto": "Hay otras **instituciones públicas** que nos sirven: la escuela fiscal, el centro de salud, el hospital, la Policía y la Defensoría de la Niñez y Adolescencia, que protege los derechos de niñas y niños.",
+      "visual": { "tipo": "emojis", "items": ["🏫", "🏥", "👮", "🛡️"], "etiquetas": ["escuela", "centro de salud y hospital", "Policía", "Defensoría de la Niñez"] }
+    }
+  ],
+  "ejemplo": {
+    "instruccion": "Mira cómo el curso de Nayra se parece a los cuatro órganos del Estado.",
+    "pasos": [
+      {
+        "texto": "El curso de Nayra conversa y aprueba sus **reglas del aula**. Se parece al Órgano Legislativo: la Asamblea Legislativa Plurinacional aprueba las leyes de Bolivia.",
+        "visual": { "tipo": "emojis", "items": ["🗣️", "✋", "📜"], "etiquetas": ["conversan", "aprueban", "reglas"] }
+      },
+      {
+        "texto": "Para elegir a su delegada o delegado, el curso hace una **votación** justa. Se parece al Órgano Electoral, que organiza las elecciones y cuida que cada voto cuente.",
+        "visual": { "tipo": "emojis", "items": ["🙋", "🗳️"], "etiquetas": ["se presentan", "votan"] }
+      },
+      {
+        "texto": "La maestra y la delegada **organizan el trabajo** del curso. Se parece al Órgano Ejecutivo: la presidenta o el presidente, la vicepresidenta o el vicepresidente, y las ministras y los ministros gobiernan.",
+        "visual": { "tipo": "emojis", "items": ["📋", "🏛️"], "etiquetas": ["organizar", "gobernar"] }
+      },
+      {
+        "texto": "Si dos compañeros tienen un problema, se busca una **solución justa**, según las reglas. Se parece al Órgano Judicial: sus juezas y jueces resuelven conflictos según la ley.",
+        "visual": { "tipo": "emojis", "items": ["⚖️", "🤝"], "etiquetas": ["justicia", "solución"] }
+      }
+    ]
+  },
+  "guiada": {
+    "intro": "Ahora lo hacemos juntos. Piensa en tu curso para ayudarte.",
+    "pasos": [
+      {
+        "id": "g1", "tipo": "relacionar",
+        "enunciado": "Une cada órgano con lo que hace.",
+        "apoyo": "Recuerda el curso de Nayra: aprobar reglas, organizar el trabajo, resolver problemas y organizar la votación.",
+        "pares": [
+          [ { "texto": "Legislativo", "emoji": "📜" }, "hace las leyes" ],
+          [ { "texto": "Ejecutivo", "emoji": "🏛️" }, "gobierna el país" ],
+          [ { "texto": "Judicial", "emoji": "⚖️" }, "resuelve conflictos según la ley" ],
+          [ { "texto": "Electoral", "emoji": "🗳️" }, "organiza las elecciones" ]
+        ],
+        "pista": "Mira las palabras: «Legislativo» se parece a «ley» y «Electoral» se parece a «elección».",
+        "explicacion": "El Legislativo hace las leyes, el Ejecutivo gobierna, el Judicial resuelve conflictos según la ley y el Electoral organiza las elecciones.",
+        "error": "funcion-organos"
+      },
+      {
+        "id": "g2", "tipo": "clasificar",
+        "enunciado": "¿En qué órgano trabaja cada persona?",
+        "apoyo": "Piensa qué hace cada persona: ¿aprueba leyes, gobierna o resuelve conflictos?",
+        "categorias": [
+          { "id": "legislativo", "texto": "Legislativo", "emoji": "📜" },
+          { "id": "ejecutivo", "texto": "Ejecutivo", "emoji": "🏛️" },
+          { "id": "judicial", "texto": "Judicial", "emoji": "⚖️" }
+        ],
+        "elementos": [
+          { "texto": "diputada", "categoria": "legislativo" },
+          { "texto": "senador", "categoria": "legislativo" },
+          { "texto": "presidenta del Estado", "categoria": "ejecutivo" },
+          { "texto": "ministro de Salud", "categoria": "ejecutivo" },
+          { "texto": "jueza", "emoji": "👩‍⚖️", "categoria": "judicial" },
+          { "texto": "juez", "emoji": "👨‍⚖️", "categoria": "judicial" }
+        ],
+        "pista": "Pregúntate: ¿esta persona aprueba leyes, gobierna o decide en un juicio?",
+        "explicacion": "Diputada y senador: Legislativo, porque aprueban leyes. Presidenta del Estado y ministro de Salud: Ejecutivo, porque gobiernan. Jueza y juez: Judicial.",
+        "error": "personas-organos"
+      },
+      {
+        "id": "g3", "tipo": "completar",
+        "enunciado": "Completa sobre las leyes.",
+        "apoyo": "Las leyes son como las reglas del aula, pero para todo el país.",
+        "texto": "La Asamblea Legislativa Plurinacional aprueba las [leyes]. Todas las personas deben [cumplir] las leyes, también las autoridades.",
+        "banco": ["calles", "romper"],
+        "pista": "El nombre «Legislativo» viene de «ley». ¿Qué hacemos con una regla?",
+        "explicacion": "La Asamblea aprueba las leyes, y todas las personas deben cumplirlas, también las autoridades. Así la ley es igual para todos.",
+        "error": "leyes-para-todos"
+      }
+    ]
+  },
+  "practica": [
+    {
+      "id": "p1", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Toca las instituciones públicas que hay cerca de la casa de Inti.",
+      "texto": "Cerca de la casa de Inti están la *escuela*, el *centro de salud* y la *Policía*. También hay una tienda y una peluquería.",
+      "pista": "Busca tres lugares que atienden a todas las personas del barrio.",
+      "explicacion": "La escuela, el centro de salud y la Policía son instituciones públicas: sirven a todos. La tienda y la peluquería son negocios.",
+      "error": "instituciones-publicas"
+    },
+    {
+      "id": "p2", "tipo": "memoria", "nivel": 1,
+      "enunciado": "Encuentra las parejas: cada institución y lo que hace.",
+      "pares": [
+        [ { "texto": "escuela", "emoji": "🏫" }, "enseña" ],
+        [ { "texto": "centro de salud", "emoji": "🏥" }, "cura y vacuna" ],
+        [ { "texto": "Policía", "emoji": "👮" }, "cuida la seguridad" ],
+        [ { "texto": "Defensoría de la Niñez", "emoji": "🛡️" }, "protege los derechos de la niñez" ]
+      ],
+      "pista": "Piensa qué pasa en cada lugar: aprender, curarse, estar seguros o hacer respetar tus derechos.",
+      "explicacion": "La escuela enseña, el centro de salud cura y vacuna, la Policía cuida la seguridad y la Defensoría de la Niñez protege los derechos de niñas, niños y adolescentes.",
+      "error": "instituciones-publicas"
+    },
+    {
+      "id": "p3", "tipo": "numero", "nivel": 1,
+      "enunciado": "¿Cuántos órganos tiene el Estado Plurinacional de Bolivia?",
+      "respuesta": 4,
+      "erroresComunes": [
+        { "respuesta": 3, "pista": "Te falta uno. ¿Contaste el que organiza las elecciones?", "error": "organos-nombres" },
+        { "respuesta": 9, "pista": "Nueve son los departamentos. Aquí cuenta los órganos del Estado.", "error": "organos-nombres" }
+      ],
+      "pista": "Cuenta con los dedos: uno hace leyes, otro gobierna, otro resuelve conflictos y otro organiza elecciones.",
+      "explicacion": "Son 4 órganos: Legislativo, Ejecutivo, Judicial y Electoral.",
+      "error": "organos-nombres"
+    },
+    {
+      "id": "p4", "tipo": "opcion", "nivel": 1,
+      "enunciado": "Escucha la adivinanza. ¿Qué órgano es?",
+      "escuchar": "Cuando llega el día de votar, preparo las mesas y las papeletas, y cuido que cada voto se cuente bien. ¿Quién soy?",
+      "opciones": [
+        { "texto": "el Órgano Electoral", "correcta": true },
+        { "texto": "el Órgano Judicial", "pista": "El Judicial resuelve conflictos. ¿Quién organiza las votaciones?", "error": "funcion-organos" },
+        { "texto": "el Órgano Legislativo", "pista": "El Legislativo hace las leyes. ¿Quién se ocupa de los votos?", "error": "funcion-organos" }
+      ],
+      "pista": "Piensa en la palabra «elección».",
+      "explicacion": "Es el Órgano Electoral: organiza las elecciones y cuida que cada voto se cuente bien.",
+      "error": "escucha-comprension"
+    },
+    {
+      "id": "p5", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "Une cada situación con el órgano que se ocupa de ella.",
+      "pares": [
+        ["Se necesita una ley nueva para cuidar los bosques", "Legislativo"],
+        ["Hay que organizar la votación para elegir autoridades", "Electoral"],
+        ["Dos vecinos no se ponen de acuerdo y una jueza decide", "Judicial"],
+        ["El Ministerio de Salud organiza una campaña de vacunas", "Ejecutivo"]
+      ],
+      "pista": "Busca la palabra clave de cada frase: «ley», «votación», «jueza», «ministerio».",
+      "explicacion": "Una ley nueva: Legislativo. La votación: Electoral. Una jueza decide: Judicial. Un ministerio organiza vacunas: Ejecutivo, porque los ministerios son parte del Ejecutivo.",
+      "error": "funcion-organos"
+    },
+    {
+      "id": "p6", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha la pregunta y escribe el nombre del órgano.",
+      "escuchar": "¿Qué órgano del Estado hace las leyes de Bolivia?",
+      "respuestas": [
+        "Legislativo", "el Legislativo", "Órgano Legislativo", "el Órgano Legislativo",
+        "Asamblea Legislativa Plurinacional", "la Asamblea Legislativa Plurinacional",
+        "Asamblea Legislativa", "la Asamblea Legislativa"
+      ],
+      "pista": "Su nombre se parece a la palabra «ley».",
+      "explicacion": "Es el Órgano Legislativo, es decir, la Asamblea Legislativa Plurinacional. Allí se aprueban las leyes.",
+      "error": "funcion-organos"
+    },
+    {
+      "id": "p7", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "¿Dónde pueden pedir ayuda?",
+      "categorias": [
+        { "id": "salud", "texto": "Centro de salud", "emoji": "🏥" },
+        { "id": "policia", "texto": "Policía", "emoji": "👮" },
+        { "id": "defensoria", "texto": "Defensoría de la Niñez", "emoji": "🛡️" }
+      ],
+      "elementos": [
+        { "texto": "Wara tiene fiebre y mucha tos.", "categoria": "salud" },
+        { "texto": "Hay que vacunar al hermanito de Kusi.", "emoji": "💉", "categoria": "salud" },
+        { "texto": "Alguien le robó la bicicleta a Mateo.", "emoji": "🚲", "categoria": "policia" },
+        { "texto": "Una persona entró a robar a una casa.", "categoria": "policia" },
+        { "texto": "A una niña la hacen trabajar y no la dejan ir a la escuela.", "categoria": "defensoria" },
+        { "texto": "Un niño necesita que alguien defienda sus derechos.", "categoria": "defensoria" }
+      ],
+      "pista": "Pregúntate: ¿es un problema de salud, de seguridad o de los derechos de una niña o un niño?",
+      "explicacion": "Fiebre y vacunas: centro de salud. Robos: Policía. Cuando no respetan los derechos de una niña o un niño: Defensoría de la Niñez y Adolescencia.",
+      "error": "pedir-ayuda"
+    },
+    {
+      "id": "p8", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa sobre el Órgano Ejecutivo.",
+      "texto": "El Órgano [Ejecutivo] lo forman la presidenta o el presidente, la vicepresidenta o el vicepresidente, y las ministras y los ministros. Juntos [gobiernan] el país.",
+      "banco": ["Judicial", "Electoral"],
+      "pista": "¿Qué órgano gobierna? Piensa en lo que hacen la presidenta o el presidente y sus ministros.",
+      "explicacion": "El Órgano Ejecutivo lo forman la presidenta o el presidente, la vicepresidenta o el vicepresidente, y las ministras y los ministros. Juntos gobiernan el país.",
+      "error": "personas-organos"
+    },
+    {
+      "id": "p9", "tipo": "multiple", "nivel": 2,
+      "enunciado": "¿Cuáles son órganos del Estado Plurinacional? Elige todos los correctos.",
+      "opciones": [
+        { "texto": "Legislativo", "correcta": true },
+        { "texto": "Ejecutivo", "correcta": true },
+        { "texto": "Judicial", "correcta": true },
+        { "texto": "Electoral", "correcta": true },
+        { "texto": "Escolar", "pista": "La escuela es una institución, pero no es un órgano del Estado.", "error": "organos-nombres" },
+        { "texto": "Deportivo", "pista": "No hay un órgano deportivo. Recuerda las cuatro tareas: leyes, gobierno, conflictos y elecciones.", "error": "organos-nombres" }
+      ],
+      "pista": "Son cuatro, uno por cada tarea: leyes, gobierno, conflictos y elecciones.",
+      "explicacion": "Los órganos son Legislativo, Ejecutivo, Judicial y Electoral. «Escolar» y «Deportivo» no son órganos del Estado.",
+      "error": "organos-nombres"
+    },
+    {
+      "id": "p10", "tipo": "ordenar", "nivel": 3,
+      "enunciado": "Ordena cómo se elige a la presidenta o al presidente de Bolivia.",
+      "elementos": [
+        "El Órgano Electoral organiza las elecciones.",
+        "Las personas de 18 años o más votan en secreto.",
+        "En cada mesa se cuentan los votos.",
+        "El Órgano Electoral da a conocer los resultados."
+      ],
+      "vertical": true,
+      "pista": "Primero hay que preparar la elección. ¿Qué pasa después de votar?",
+      "explicacion": "Primero el Órgano Electoral organiza las elecciones; después las personas de 18 años o más votan; luego se cuentan los votos y al final se dan a conocer los resultados.",
+      "error": "elecciones"
+    },
+    {
+      "id": "p11", "tipo": "pasos", "nivel": 3,
+      "enunciado": "Muchas familias piden una ley para cuidar el agua de los ríos.",
+      "visual": { "tipo": "emojis", "items": ["🏞️", "💧", "📜"] },
+      "pasos": [
+        {
+          "tipo": "opcion",
+          "enunciado": "¿Qué órgano puede aprobar esa ley?",
+          "opciones": [
+            { "texto": "el Órgano Legislativo", "correcta": true },
+            { "texto": "el Órgano Judicial", "pista": "El Judicial resuelve conflictos; no aprueba leyes.", "error": "funcion-organos" },
+            { "texto": "el Órgano Electoral", "pista": "El Electoral organiza elecciones; no aprueba leyes.", "error": "funcion-organos" }
+          ],
+          "pista": "«Legislativo» viene de «ley».",
+          "explicacion": "La Asamblea Legislativa Plurinacional, que es el Órgano Legislativo, aprueba las leyes.",
+          "error": "funcion-organos"
+        },
+        {
+          "tipo": "completar",
+          "enunciado": "Ya hay ley. ¿Quién hace planes y obras para cumplirla?",
+          "texto": "El Órgano [Ejecutivo], con sus ministerios, hace planes y obras para cuidar los ríos.",
+          "banco": ["Electoral", "Judicial"],
+          "pista": "¿Qué órgano gobierna y hace cumplir las leyes?",
+          "explicacion": "El Órgano Ejecutivo gobierna: con sus ministerios hace planes y obras para cumplir la ley.",
+          "error": "funcion-organos"
+        },
+        {
+          "tipo": "opcion",
+          "enunciado": "Una comunidad y una fábrica tienen un conflicto por el río y van a juicio. ¿Quién decide?",
+          "opciones": [
+            { "texto": "una jueza o un juez del Órgano Judicial", "correcta": true },
+            { "texto": "el Órgano Electoral", "pista": "El Electoral organiza elecciones, no juicios.", "error": "funcion-organos" },
+            { "texto": "la delegada del curso", "pista": "La delegada ayuda en su curso; no decide juicios.", "error": "funcion-organos" }
+          ],
+          "pista": "¿Qué órgano resuelve conflictos según la ley?",
+          "explicacion": "Una jueza o un juez del Órgano Judicial escucha a las dos partes y decide según la ley.",
+          "error": "funcion-organos"
+        }
+      ],
+      "pista": "Resuelve un paso a la vez. Piensa en la tarea de cada órgano.",
+      "explicacion": "El Legislativo aprueba la ley, el Ejecutivo la hace cumplir con planes y obras, y el Judicial resuelve los conflictos según la ley.",
+      "error": "funcion-organos"
+    },
+    {
+      "id": "p12", "tipo": "pasos", "nivel": 3,
+      "enunciado": "Arami se entera de que a Juan, su vecino de 8 años, no lo dejan ir a la escuela y lo hacen trabajar todo el día.",
+      "visual": { "tipo": "emojis", "items": ["🧒", "😟"] },
+      "pasos": [
+        {
+          "tipo": "opcion",
+          "enunciado": "¿Qué derecho de Juan no se está respetando?",
+          "opciones": [
+            { "texto": "el derecho a la educación", "correcta": true },
+            { "texto": "el derecho a votar", "pista": "Votar es para personas de 18 años o más. ¿Adónde no dejan ir a Juan?", "error": "pedir-ayuda" },
+            { "texto": "ninguno: está bien que trabaje todo el día", "pista": "Las niñas y los niños tienen derecho a estudiar, jugar y descansar.", "error": "pedir-ayuda" }
+          ],
+          "pista": "Juan no puede ir a la escuela. ¿Qué derecho es ese?",
+          "explicacion": "Juan tiene derecho a la educación: debe poder ir a la escuela.",
+          "error": "pedir-ayuda"
+        },
+        {
+          "tipo": "opcion",
+          "enunciado": "¿Qué puede hacer Arami?",
+          "opciones": [
+            { "texto": "Contarle a una persona adulta de confianza.", "correcta": true },
+            { "texto": "Guardar el secreto y no decir nada.", "pista": "Cuando una niña o un niño necesita ayuda, hay que avisar a una persona adulta.", "error": "pedir-ayuda" },
+            { "texto": "Ir sola a pelear con la familia de Juan.", "pista": "Eso puede ser peligroso. Es mejor avisar a una persona adulta.", "error": "pedir-ayuda" }
+          ],
+          "pista": "Busca una forma segura de ayudar.",
+          "explicacion": "Lo mejor es contarle a una persona adulta de confianza, como su mamá, su papá o su maestra.",
+          "error": "pedir-ayuda"
+        },
+        {
+          "tipo": "opcion",
+          "enunciado": "¿Qué institución puede ayudar a Juan?",
+          "opciones": [
+            { "texto": "la Defensoría de la Niñez y Adolescencia", "correcta": true },
+            { "texto": "el Órgano Electoral", "pista": "El Electoral organiza elecciones. Busca la institución que protege a niñas y niños.", "error": "instituciones-publicas" },
+            { "texto": "una tienda del barrio", "pista": "Una tienda es un negocio. Busca la institución que protege los derechos de la niñez.", "error": "instituciones-publicas" }
+          ],
+          "pista": "¿Qué institución protege los derechos de niñas y niños?",
+          "explicacion": "La Defensoría de la Niñez y Adolescencia de su municipio puede ayudar a Juan, y su ayuda es gratis.",
+          "error": "pedir-ayuda"
+        }
+      ],
+      "pista": "Piensa en los derechos de las niñas y los niños y en quién los protege.",
+      "explicacion": "Juan tiene derecho a estudiar. Arami debe contarle a una persona adulta de confianza, y la Defensoría de la Niñez y Adolescencia puede ayudar a Juan.",
+      "error": "pedir-ayuda"
+    },
+    {
+      "id": "p13", "tipo": "escribir-libre", "nivel": 3,
+      "enunciado": "¿Por qué es bueno que haya cuatro órganos y no una sola persona que decida todo? Escribe tu idea.",
+      "guia": ["Es bueno porque...", "Si una sola persona decide todo..."],
+      "requisitos": [
+        { "tipo": "mayuscula-inicial" },
+        { "tipo": "punto-final" },
+        { "tipo": "min-palabras", "valor": 6 }
+      ],
+      "modelo": "Es bueno porque así nadie manda solo y todos cuidan que se cumpla la ley.",
+      "pista": "Piensa en tu curso: ¿qué pasaría si una sola persona hiciera las reglas, resolviera los problemas y contara los votos?",
+      "explicacion": "Por ejemplo: «Es bueno porque así nadie manda solo y todos cuidan que se cumpla la ley». Cuando cada órgano tiene su tarea, se cuidan mejor los derechos de todos.",
+      "error": "produce-texto"
+    },
+    {
+      "id": "p14", "tipo": "completar", "nivel": 3,
+      "enunciado": "Completa: ¿a qué órgano se parece cada cosa del curso?",
+      "texto": "Aprobar las reglas del aula se parece al Órgano [Legislativo]. Resolver con justicia un problema entre compañeros se parece al Órgano [Judicial]. Organizar la votación de la delegada se parece al Órgano [Electoral].",
+      "banco": ["Ejecutivo"],
+      "pista": "Piensa: ¿qué órgano hace leyes, cuál resuelve conflictos y cuál organiza elecciones?",
+      "explicacion": "Las reglas del aula se parecen a las leyes (Legislativo); resolver con justicia un problema se parece al trabajo de juezas y jueces (Judicial); organizar la votación se parece al Órgano Electoral.",
+      "error": "analogia-escuela"
+    }
+  ],
+  "comprobacion": [
+    {
+      "id": "c1", "tipo": "opcion", "nivel": 1,
+      "enunciado": "¿Qué hace el Órgano Legislativo?",
+      "opciones": [
+        { "texto": "Hace las leyes.", "correcta": true },
+        { "texto": "Organiza las elecciones.", "pista": "Eso lo hace el Órgano Electoral.", "error": "funcion-organos" },
+        { "texto": "Cura a las personas enfermas.", "pista": "Eso se hace en el centro de salud o en el hospital.", "error": "instituciones-publicas" }
+      ],
+      "pista": "«Legislativo» se parece a una palabra que ya conoces: «ley».",
+      "explicacion": "El Órgano Legislativo, la Asamblea Legislativa Plurinacional, hace las leyes.",
+      "error": "funcion-organos"
+    },
+    {
+      "id": "c2", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Toca el nombre del órgano que organiza las elecciones.",
+      "texto": "Bolivia tiene cuatro órganos: Legislativo, Ejecutivo, Judicial y *Electoral*.",
+      "pista": "Busca la palabra que se parece a «elección».",
+      "explicacion": "El Órgano Electoral organiza las elecciones.",
+      "error": "funcion-organos"
+    },
+    {
+      "id": "c3", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "¿Qué órgano se ocupa de cada tarea?",
+      "categorias": [
+        { "id": "legislativo", "texto": "Legislativo", "emoji": "📜" },
+        { "id": "ejecutivo", "texto": "Ejecutivo", "emoji": "🏛️" },
+        { "id": "judicial", "texto": "Judicial", "emoji": "⚖️" }
+      ],
+      "elementos": [
+        { "texto": "aprobar una ley para proteger a los animales silvestres", "categoria": "legislativo" },
+        { "texto": "cambiar una ley antigua", "categoria": "legislativo" },
+        { "texto": "preparar el calendario escolar en el Ministerio de Educación", "categoria": "ejecutivo" },
+        { "texto": "gobernar el país con las ministras y los ministros", "categoria": "ejecutivo" },
+        { "texto": "decidir un juicio según la ley", "categoria": "judicial" },
+        { "texto": "resolver con la ley un problema entre dos familias", "categoria": "judicial" }
+      ],
+      "pista": "Pregúntate: ¿es hacer o cambiar leyes, gobernar o resolver conflictos?",
+      "explicacion": "Aprobar y cambiar leyes: Legislativo. Preparar el calendario escolar y gobernar con los ministros: Ejecutivo. Decidir juicios y resolver problemas con la ley: Judicial.",
+      "error": "funcion-organos"
+    },
+    {
+      "id": "c4", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa con el órgano correcto.",
+      "texto": "Las elecciones las organiza el Órgano [Electoral]. Los conflictos los resuelve el Órgano [Judicial].",
+      "banco": ["Legislativo", "Ejecutivo"],
+      "pista": "Una palabra se parece a «elección». La otra nombra el trabajo de juezas y jueces.",
+      "explicacion": "El Órgano Electoral organiza las elecciones y el Órgano Judicial resuelve los conflictos según la ley.",
+      "error": "funcion-organos"
+    },
+    {
+      "id": "c5", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha y escribe el nombre de la institución.",
+      "escuchar": "Es una institución de tu municipio. Protege los derechos de las niñas, los niños y los adolescentes, y su ayuda es gratis. ¿Cómo se llama?",
+      "respuestas": [
+        "Defensoría de la Niñez y Adolescencia", "la Defensoría de la Niñez y Adolescencia",
+        "Defensoría de la Niñez y la Adolescencia", "la Defensoría de la Niñez y la Adolescencia",
+        "Defensoría de la Niñez", "la Defensoría de la Niñez",
+        "Defensoría", "la Defensoría", "DNA", "la DNA"
+      ],
+      "pista": "Su nombre empieza como la palabra «defender».",
+      "explicacion": "Es la Defensoría de la Niñez y Adolescencia. Allí defienden, gratis, los derechos de niñas, niños y adolescentes.",
+      "error": "instituciones-publicas"
+    },
+    {
+      "id": "c6", "tipo": "multiple", "nivel": 2,
+      "enunciado": "¿Quiénes forman el Órgano Ejecutivo? Elige todas las respuestas correctas.",
+      "opciones": [
+        { "texto": "la presidenta o el presidente", "correcta": true },
+        { "texto": "la vicepresidenta o el vicepresidente", "correcta": true },
+        { "texto": "las ministras y los ministros", "correcta": true },
+        { "texto": "las juezas y los jueces", "pista": "Ellas y ellos trabajan en el Órgano Judicial.", "error": "personas-organos" },
+        { "texto": "las diputadas y los diputados", "pista": "Ellas y ellos trabajan en la Asamblea Legislativa Plurinacional.", "error": "personas-organos" }
+      ],
+      "pista": "Son tres grupos de personas que gobiernan juntas.",
+      "explicacion": "El Órgano Ejecutivo lo forman la presidenta o el presidente, la vicepresidenta o el vicepresidente, y las ministras y los ministros.",
+      "error": "personas-organos"
+    },
+    {
+      "id": "c7", "tipo": "pasos", "nivel": 3,
+      "enunciado": "Hay elecciones en Bolivia. Sofía, de 8 años, acompaña a su abuela a votar.",
+      "visual": { "tipo": "emojis", "items": ["👵", "🗳️", "👧"] },
+      "pasos": [
+        {
+          "tipo": "numero",
+          "enunciado": "Para votar hay que tener 18 años o más. ¿Cuántos años le faltan a Sofía?",
+          "respuesta": 10,
+          "sufijo": "años",
+          "erroresComunes": [
+            { "respuesta": 26, "pista": "No sumes. Piensa cuánto falta de 8 para llegar a 18.", "error": "calculo" },
+            { "respuesta": 11, "pista": "Cuenta los saltos desde 8 hasta 18, sin contar el 8.", "error": "calculo" }
+          ],
+          "pista": "Cuenta desde 8 hasta 18, o resta 18 − 8.",
+          "explicacion": "18 − 8 = 10. A Sofía le faltan 10 años para poder votar.",
+          "error": "calculo"
+        },
+        {
+          "tipo": "opcion",
+          "enunciado": "¿Qué órgano organiza estas elecciones?",
+          "opciones": [
+            { "texto": "el Órgano Electoral", "correcta": true },
+            { "texto": "el Órgano Ejecutivo", "pista": "El Ejecutivo gobierna, pero las elecciones las organiza otro órgano.", "error": "funcion-organos" },
+            { "texto": "el Órgano Judicial", "pista": "El Judicial resuelve conflictos, no organiza elecciones.", "error": "funcion-organos" }
+          ],
+          "pista": "Su nombre se parece a «elección».",
+          "explicacion": "El Órgano Electoral organiza las elecciones.",
+          "error": "funcion-organos"
+        },
+        {
+          "tipo": "opcion",
+          "enunciado": "¿Cómo vota la abuela?",
+          "opciones": [
+            { "texto": "En secreto: nadie ve por quién vota.", "correcta": true },
+            { "texto": "Un vecino decide por ella.", "pista": "El voto es de cada persona. Nadie puede decidir por otra.", "error": "elecciones" },
+            { "texto": "Vota varias veces.", "pista": "Cada persona vota una sola vez.", "error": "elecciones" }
+          ],
+          "pista": "El voto es de cada persona, y nadie más lo ve.",
+          "explicacion": "La abuela vota en secreto y una sola vez: su voto es libre y vale igual que el de las demás personas.",
+          "error": "elecciones"
+        }
+      ],
+      "pista": "Resuelve un paso a la vez.",
+      "explicacion": "A Sofía le faltan 10 años para votar. El Órgano Electoral organiza las elecciones, y la abuela vota en secreto, una sola vez.",
+      "error": "elecciones"
+    },
+    {
+      "id": "c8", "tipo": "tocar", "nivel": 3,
+      "enunciado": "Toca las personas que trabajan en la Asamblea Legislativa Plurinacional.",
+      "texto": "A la reunión llegaron una *diputada*, un ministro, una jueza y un *senador*.",
+      "pista": "En la Asamblea se aprueban las leyes. ¿Quiénes hacen ese trabajo?",
+      "explicacion": "La diputada y el senador trabajan en la Asamblea Legislativa Plurinacional. El ministro es del Ejecutivo y la jueza, del Judicial.",
+      "error": "personas-organos"
+    }
+  ],
+  "repaso": {
+    "texto": "Recuerda: el Legislativo hace las leyes, el Ejecutivo gobierna, el Judicial resuelve conflictos según la ley y el Electoral organiza las elecciones.",
+    "visual": { "tipo": "emojis", "items": ["📜", "🏛️", "⚖️", "🗳️"], "etiquetas": ["leyes", "gobierno", "justicia", "elecciones"] }
+  },
+  "adulto": {
+    "objetivo": "Conocer que el Estado Plurinacional de Bolivia organiza su poder en cuatro órganos —Legislativo, Ejecutivo, Judicial y Electoral (Constitución Política del Estado, art. 12)— y la tarea básica de cada uno; reconocer instituciones públicas cercanas (escuela fiscal, centro de salud, Policía, Defensoría de la Niñez y Adolescencia) y saber cuándo acudir a ellas. Se usa la analogía del curso escolar, sin contenido partidario.",
+    "sugerencias": [
+      "Armen un «Estado en casa» por una semana: acuerden tres reglas familiares (Legislativo), repartan las tareas por igual entre niñas, niños y personas adultas (Ejecutivo), decidan cómo resolver un desacuerdo con justicia (Judicial) y voten en secreto, con papelitos en una caja, qué comida preparar el domingo (Electoral).",
+      "Al caminar por el barrio o ir a la feria, señalen instituciones públicas (escuela, centro de salud, módulo policial, alcaldía) y pregunten: «¿A quién sirve? ¿Qué hace?». Si ven una noticia, identifiquen solo qué órgano actúa (una ley, un juicio, una elección), sin opiniones partidarias.",
+      "Miren juntos el certificado de nacimiento de la niña o el niño: cuéntenle que lo entrega el Registro Civil (SERECI), que depende del Órgano Electoral, y que tener nombre e identidad es un derecho. Anoten también el teléfono y la dirección de la Defensoría de la Niñez y Adolescencia de su municipio."
+    ],
+    "errores": {
+      "funcion-organos": { "descripcion": "Confunde la tarea de cada órgano (por ejemplo, cree que el Judicial hace las leyes).", "sugerencia": "Usen la pista de las palabras: Legislativo–ley, Electoral–elección, Judicial–juez. Hagan tarjetas con cada órgano y su tarea y jueguen a unirlas." },
+      "personas-organos": { "descripcion": "No ubica a las autoridades en su órgano (diputadas y senadores, presidenta y ministros, juezas y jueces).", "sugerencia": "Dibujen cuatro casas, una por órgano, y coloquen dentro figuras de papel con cada autoridad, diciendo qué hace." },
+      "organos-nombres": { "descripcion": "Olvida cuántos son los órganos del Estado o sus nombres.", "sugerencia": "Cuenten los órganos con los dedos mientras dicen su nombre y su tarea; repítanlo como un juego camino a la escuela." },
+      "instituciones-publicas": { "descripcion": "Confunde instituciones públicas con negocios, o no recuerda qué hace cada institución.", "sugerencia": "Recorran el barrio y conversen: la escuela, el centro de salud o la Policía sirven a todas las personas; una tienda es un negocio." },
+      "pedir-ayuda": { "descripcion": "Duda sobre qué hacer o a qué institución acudir cuando una niña o un niño necesita ayuda.", "sugerencia": "Conversen con calma: con fiebre, al centro de salud; si hay un robo, a la Policía; si no respetan los derechos de un niño, se avisa a una persona adulta de confianza y a la Defensoría de la Niñez." },
+      "leyes-para-todos": { "descripcion": "No comprende que las leyes son para todas las personas, también para las autoridades.", "sugerencia": "Comparen con las reglas de la casa: si la regla es no gritar, tampoco la persona adulta grita. Así la regla es justa para todos." },
+      "elecciones": { "descripcion": "Le cuesta entender cómo es una elección (organizar, votar en secreto una sola vez, contar, anunciar resultados).", "sugerencia": "Hagan una pequeña elección en casa con papelitos y una caja: voten en secreto, cuenten los votos juntos y anuncien el resultado." },
+      "escucha-comprension": { "descripcion": "Le cuesta responder después de escuchar un texto.", "sugerencia": "Lean en voz alta adivinanzas cortas y pidan que repita con sus palabras lo que escuchó antes de responder." },
+      "analogia-escuela": { "descripcion": "No relaciona las tareas del curso (reglas, votación, resolver problemas) con los órganos del Estado.", "sugerencia": "En una reunión de familia o de curso, pregunten: «¿Esto se parece a hacer leyes, a gobernar, a resolver un conflicto o a una elección?»." },
+      "produce-texto": { "descripcion": "Le cuesta escribir su opinión en una oración completa.", "sugerencia": "Que primero diga su idea en voz alta; luego escríbanla juntos empezando con «Es bueno porque...» y revisen la mayúscula y el punto." },
+      "calculo": { "descripcion": "Se equivoca al calcular cuántos años faltan (suma en lugar de restar o cuenta de más).", "sugerencia": "Usen una recta numérica dibujada o los dedos para contar desde la edad actual hasta 18." }
+    }
+  }
+}

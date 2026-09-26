@@ -1,0 +1,353 @@
+{
+  "id": "mat-4-1",
+  "titulo": "Multiplicar es sumar grupos iguales",
+  "objetivo": "Reconozco grupos iguales, los cuento con una suma repetida y los escribo como multiplicación.",
+  "explicacion": [
+    {
+      "texto": "Mira los platos: cada uno tiene 4 naranjas. Todos tienen la misma cantidad. Por eso decimos que son **grupos iguales**.",
+      "emoji": "🍊",
+      "visual": { "tipo": "grupos", "grupos": 3, "porGrupo": 4, "emoji": "🍊" }
+    },
+    {
+      "texto": "¿Cuántas naranjas hay? Sumamos 4 por cada plato: 4 + 4 + 4 = 12. Cuando sumamos el mismo número varias veces, hacemos una **suma repetida**.",
+      "visual": { "tipo": "tabla", "columnas": ["Plato 1", "Plato 2", "Plato 3", "Total"], "filas": [["4", "4", "4", "12"]] }
+    },
+    {
+      "texto": "La suma repetida se escribe más corto con una **multiplicación**: 3 × 4 = 12. Se lee «3 por 4» y quiere decir 3 grupos de 4.",
+      "emoji": "✖️",
+      "visual": { "tipo": "tabla", "columnas": ["Suma repetida", "Multiplicación"], "filas": [["4 + 4 + 4 = 12", "3 × 4 = 12"]] }
+    },
+    {
+      "texto": "Los grupos iguales también pueden estar en filas. Aquí hay 2 filas de 5 huevos: 5 + 5 = 10. Con multiplicación: 2 × 5 = 10.",
+      "visual": { "tipo": "arreglo", "filas": 2, "columnas": 5, "emoji": "🥚" }
+    }
+  ],
+  "ejemplo": {
+    "instruccion": "Mira cómo cuenta Inti los panes para la hora del té. Después, pon la misma cantidad de panes en cada plato y mira el total.",
+    "pasos": [
+      { "texto": "Inti sirve el té. Pone 5 panes en cada plato. Hay 3 platos.", "visual": { "tipo": "grupos", "grupos": 3, "porGrupo": 5, "emoji": "🍞" } },
+      { "texto": "Suma los panes plato por plato: 5 + 5 + 5 = 15.", "visual": { "tipo": "emoji", "valor": "🍞", "cantidad": 15, "etiqueta": "5 + 5 + 5 = 15" } },
+      { "texto": "Son 3 grupos de 5. Con multiplicación se escribe 3 × 5 = 15. ¡Hay 15 panes!", "visual": { "tipo": "tabla", "columnas": ["Grupos", "En cada grupo", "En total"], "filas": [["3", "5", "15"]] } }
+    ],
+    "explorar": { "tipo": "grupos", "grupos": 4, "emoji": "🍞" }
+  },
+  "guiada": {
+    "intro": "Vamos a formar y contar grupos iguales, paso a paso.",
+    "pasos": [
+      {
+        "id": "g1", "tipo": "manipular",
+        "enunciado": "Pon 2 papas en cada plato.",
+        "apoyo": "Toca + en cada plato hasta que tenga 2 papas. Todos los platos deben tener lo mismo.",
+        "manipulable": { "tipo": "grupos", "grupos": 4, "porGrupo": 2, "emoji": "🥔" },
+        "pista": "Cuenta las papas de cada plato. ¿Todos tienen 2?",
+        "explicacion": "Hay 4 platos con 2 papas cada uno: 2 + 2 + 2 + 2 = 8. Es decir, 4 × 2 = 8.",
+        "error": "arma-grupos"
+      },
+      {
+        "id": "g2", "tipo": "numero",
+        "enunciado": "Mira los choclos y responde.",
+        "apoyo": "Cada plato es un grupo. Primero cuenta los platos. Después cuenta los choclos de un solo plato. Al final, cuenta todos.",
+        "visual": { "tipo": "grupos", "grupos": 5, "porGrupo": 3, "emoji": "🌽" },
+        "campos": [
+          { "etiqueta": "¿Cuántos grupos hay?", "respuesta": 5 },
+          { "etiqueta": "¿Cuántos hay en cada grupo?", "respuesta": 3 },
+          { "etiqueta": "¿Cuántos hay en total?", "respuesta": 15 }
+        ],
+        "pista": "Para el total, suma los choclos de todos los platos: 3 + 3 + ...",
+        "explicacion": "Hay 5 grupos de 3 choclos: 3 + 3 + 3 + 3 + 3 = 15. Es decir, 5 × 3 = 15.",
+        "error": "cuenta-grupos"
+      },
+      {
+        "id": "g3", "tipo": "completar",
+        "enunciado": "Completa la multiplicación.",
+        "apoyo": "Cada plato es un 5 de la suma. La cantidad de platos es la cantidad de grupos.",
+        "visual": { "tipo": "grupos", "grupos": 4, "porGrupo": 5, "emoji": "🍋" },
+        "texto": "5 + 5 + 5 + 5 = [4] × 5 = [20]",
+        "banco": ["5", "25"],
+        "pista": "Cuenta cuántas veces está el 5 en la suma. Para el total, cuenta de 5 en 5.",
+        "explicacion": "5 + 5 + 5 + 5 = 20. Son 4 grupos de 5, entonces 4 × 5 = 20.",
+        "error": "suma-repetida"
+      }
+    ]
+  },
+  "practica": [
+    {
+      "id": "p1", "tipo": "generador", "nivel": 1, "generador": "multiplicar-grupos",
+      "params": { "maxGrupos": 3, "maxPorGrupo": 5 }
+    },
+    {
+      "id": "p2", "tipo": "manipular", "nivel": 1,
+      "enunciado": "Pon 3 naranjas en cada plato.",
+      "manipulable": { "tipo": "grupos", "grupos": 5, "porGrupo": 3, "emoji": "🍊" },
+      "pista": "Cada plato necesita 3 naranjas: ni más ni menos.",
+      "explicacion": "5 platos con 3 naranjas: 3 + 3 + 3 + 3 + 3 = 15. Es decir, 5 × 3 = 15.",
+      "error": "arma-grupos"
+    },
+    {
+      "id": "p3", "tipo": "clasificar", "nivel": 1,
+      "enunciado": "Los números dicen cuántas frutas hay en cada plato. ¿Son grupos iguales?",
+      "categorias": [
+        { "id": "si", "texto": "Grupos iguales", "emoji": "✅" },
+        { "id": "no", "texto": "Grupos distintos", "emoji": "❌" }
+      ],
+      "elementos": [
+        { "texto": "4, 4 y 4", "categoria": "si" }, { "texto": "2, 5 y 2", "categoria": "no" },
+        { "texto": "3 y 3", "categoria": "si" }, { "texto": "1, 2 y 3", "categoria": "no" },
+        { "texto": "5, 5, 5 y 5", "categoria": "si" }, { "texto": "6 y 7", "categoria": "no" }
+      ],
+      "pista": "Son grupos iguales cuando todos los platos tienen la misma cantidad.",
+      "explicacion": "Son grupos iguales: «4, 4 y 4», «3 y 3» y «5, 5, 5 y 5». En «2, 5 y 2», «1, 2 y 3» y «6 y 7», los platos tienen cantidades distintas.",
+      "error": "grupos-iguales"
+    },
+    {
+      "id": "p4", "tipo": "memoria", "nivel": 1,
+      "enunciado": "Encuentra las parejas: la suma repetida y su multiplicación.",
+      "pares": [ ["2 + 2 + 2", "3 × 2"], ["5 + 5", "2 × 5"], ["4 + 4 + 4 + 4", "4 × 4"], ["3 + 3 + 3 + 3 + 3", "5 × 3"] ],
+      "pista": "Cuenta cuántas veces se repite el número: esa es la cantidad de grupos.",
+      "explicacion": "2 + 2 + 2 = 3 × 2; 5 + 5 = 2 × 5; 4 + 4 + 4 + 4 = 4 × 4; y 3 + 3 + 3 + 3 + 3 = 5 × 3.",
+      "error": "suma-repetida"
+    },
+    {
+      "id": "p5", "tipo": "generador", "nivel": 2, "generador": "multiplicar-grupos",
+      "params": { "maxGrupos": 5, "maxPorGrupo": 5 }
+    },
+    {
+      "id": "p6", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "Une cada suma repetida con su multiplicación.",
+      "pares": [ ["6 + 6 + 6", "3 × 6"], ["7 + 7", "2 × 7"], ["4 + 4 + 4 + 4 + 4", "5 × 4"], ["9 + 9 + 9", "3 × 9"] ],
+      "pista": "Mira qué número se repite y cuántas veces aparece.",
+      "explicacion": "6 + 6 + 6 = 3 × 6; 7 + 7 = 2 × 7; 4 + 4 + 4 + 4 + 4 = 5 × 4; y 9 + 9 + 9 = 3 × 9.",
+      "error": "suma-repetida"
+    },
+    {
+      "id": "p7", "tipo": "numero", "nivel": 2,
+      "enunciado": "En el micro hay 5 filas de asientos. Cada fila tiene 4 asientos. ¿Cuántos asientos hay?",
+      "visual": { "tipo": "arreglo", "filas": 5, "columnas": 4, "emoji": "💺" },
+      "respuesta": 20,
+      "erroresComunes": [ { "respuesta": 9, "pista": "Sumaste 5 + 4. Cada fila tiene 4 asientos: suma el 4 cinco veces.", "error": "suma-en-vez-de-multiplicar" } ],
+      "pista": "Cada fila es un grupo de 4. Cuenta de 4 en 4: 4, 8...",
+      "explicacion": "Son 5 filas de 4 asientos: 4 + 4 + 4 + 4 + 4 = 20. Es decir, 5 × 4 = 20.",
+      "error": "cuenta-grupos"
+    },
+    {
+      "id": "p8", "tipo": "numero", "nivel": 2,
+      "enunciado": "Escucha el problema y escribe la respuesta.",
+      "escuchar": "Sofía tiene 3 bolsas. En cada bolsa hay 6 mandarinas. ¿Cuántas mandarinas tiene Sofía en total?",
+      "respuesta": 18,
+      "erroresComunes": [ { "respuesta": 9, "pista": "Sumaste 3 + 6. Hay 3 bolsas y cada una tiene 6: suma el 6 tres veces.", "error": "suma-en-vez-de-multiplicar" } ],
+      "pista": "Son 3 grupos de 6. Escucha otra vez si lo necesitas.",
+      "explicacion": "3 bolsas de 6 mandarinas: 6 + 6 + 6 = 18. Es decir, 3 × 6 = 18.",
+      "error": "problema-grupos"
+    },
+    {
+      "id": "p9", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa la suma repetida y el resultado.",
+      "texto": "4 × 2 = [2] + [2] + [2] + [2] = [8]",
+      "banco": ["4", "6"],
+      "pista": "4 × 2 quiere decir 4 grupos de 2. Escribe el 2 una vez por cada grupo.",
+      "explicacion": "4 × 2 son 4 grupos de 2: 2 + 2 + 2 + 2 = 8.",
+      "error": "suma-repetida"
+    },
+    {
+      "id": "p10", "tipo": "opcion", "nivel": 2,
+      "enunciado": "¿Qué multiplicación muestran los platos?",
+      "visual": { "tipo": "grupos", "grupos": 2, "porGrupo": 6, "emoji": "🥭" },
+      "opciones": [
+        { "texto": "2 × 6", "correcta": true },
+        { "texto": "2 + 6", "pista": "Así sumas los platos con los mangos de un plato. Pero hay 2 grupos de 6.", "error": "suma-en-vez-de-multiplicar" },
+        { "texto": "2 × 8", "pista": "Cuenta otra vez los mangos de un plato.", "error": "cuenta-grupos" }
+      ],
+      "columnas": 3,
+      "pista": "Cuenta los platos. Después cuenta los mangos de un plato.",
+      "explicacion": "Hay 2 platos con 6 mangos cada uno: 6 + 6 = 12. Es decir, 2 × 6 = 12.",
+      "error": "cuenta-grupos"
+    },
+    {
+      "id": "p11", "tipo": "generador", "nivel": 3, "generador": "multiplicar-grupos",
+      "params": { "maxGrupos": 6, "maxPorGrupo": 10 }
+    },
+    {
+      "id": "p12", "tipo": "pasos", "nivel": 3,
+      "enunciado": "En la fiesta de la escuela hay 4 mesas con 5 tazas de api en cada una. Después traen 3 tazas más.",
+      "visual": { "tipo": "grupos", "grupos": 4, "porGrupo": 5, "emoji": "☕" },
+      "pasos": [
+        {
+          "tipo": "numero", "enunciado": "¿Cuántas tazas hay en las 4 mesas?", "respuesta": 20,
+          "erroresComunes": [ { "respuesta": 9, "pista": "Sumaste 4 + 5. Son 4 grupos de 5.", "error": "suma-en-vez-de-multiplicar" } ],
+          "pista": "Cuenta de 5 en 5, una vez por cada mesa.",
+          "explicacion": "5 + 5 + 5 + 5 = 20. Es decir, 4 × 5 = 20 tazas.",
+          "error": "problema-grupos"
+        },
+        {
+          "tipo": "numero", "enunciado": "¿Cuántas tazas hay ahora en total?", "respuesta": 23,
+          "pista": "A las tazas de las mesas, súmales las 3 que trajeron.",
+          "explicacion": "20 + 3 = 23 tazas.",
+          "error": "problema-pasos"
+        }
+      ],
+      "pista": "Primero multiplica. Después suma las tazas nuevas.",
+      "explicacion": "4 × 5 = 20 tazas en las mesas. 20 + 3 = 23 tazas en total.",
+      "error": "problema-pasos"
+    },
+    {
+      "id": "p13", "tipo": "escribir-libre", "nivel": 3,
+      "enunciado": "Inventa un problema de grupos iguales. Usa la palabra «cada» y termina con una pregunta.",
+      "guia": ["En la feria hay ... bolsas con ... en cada bolsa.", "¿Cuántos ... hay en total?"],
+      "requisitos": [
+        { "tipo": "mayuscula-inicial" },
+        { "tipo": "incluye", "palabras": ["cada"] },
+        { "tipo": "signos-pregunta" },
+        { "tipo": "min-palabras", "valor": 8 }
+      ],
+      "modelo": "En la feria hay 3 bolsas con 5 papas en cada bolsa. ¿Cuántas papas hay en total?",
+      "pista": "Di cuántos grupos hay y cuántas cosas hay en cada grupo. Al final, pregunta por el total.",
+      "explicacion": "Por ejemplo: «En la feria hay 3 bolsas con 5 papas en cada bolsa. ¿Cuántas papas hay en total?». Se resuelve con 3 × 5 = 15.",
+      "error": "produce-problema"
+    },
+    {
+      "id": "p14", "tipo": "opcion", "nivel": 3,
+      "enunciado": "Nayra pone sus choclos en 3 filas de 5. Kusi pone los suyos en 5 filas de 3. ¿Quién tiene más choclos?",
+      "visual": { "tipo": "arreglo", "filas": 3, "columnas": 5, "emoji": "🌽" },
+      "opciones": [
+        { "texto": "Nayra", "pista": "Calcula los dos: 5 + 5 + 5 y 3 + 3 + 3 + 3 + 3.", "error": "orden-factores" },
+        { "texto": "Kusi", "pista": "Kusi tiene más filas, pero cada fila tiene menos choclos. Calcula los dos totales.", "error": "orden-factores" },
+        { "texto": "Tienen la misma cantidad", "correcta": true }
+      ],
+      "mezclar": false,
+      "columnas": 1,
+      "pista": "Calcula cuántos choclos tiene cada uno y compara.",
+      "explicacion": "Nayra: 3 × 5 = 15. Kusi: 5 × 3 = 15. ¡Tienen lo mismo! Si giras el arreglo, las filas se vuelven columnas y el total no cambia.",
+      "error": "orden-factores"
+    },
+    {
+      "id": "p15", "tipo": "tocar", "nivel": 3,
+      "enunciado": "Toca los dos números que necesitas para responder la pregunta.",
+      "texto": "Inti trabaja 2 horas en la cosecha. Llena *5* costales. En cada costal pone *10* kilos de papa. ¿Cuántos kilos de papa pone en total?",
+      "pista": "La pregunta es sobre los kilos de papa. ¿Qué números hablan de los costales y de los kilos?",
+      "explicacion": "Necesitas el 5 (los costales) y el 10 (los kilos de cada costal): 5 × 10 = 50 kilos. Las 2 horas no sirven para esta pregunta.",
+      "error": "datos-problema"
+    }
+  ],
+  "comprobacion": [
+    {
+      "id": "c1", "tipo": "numero", "nivel": 1,
+      "enunciado": "Mira las manzanas y responde.",
+      "visual": { "tipo": "grupos", "grupos": 4, "porGrupo": 3, "emoji": "🍎" },
+      "campos": [
+        { "etiqueta": "Grupos", "respuesta": 4 },
+        { "etiqueta": "En cada grupo", "respuesta": 3 },
+        { "etiqueta": "En total", "respuesta": 12 }
+      ],
+      "pista": "Cada plato es un grupo. Cuenta los platos y después las manzanas de un plato.",
+      "explicacion": "Hay 4 grupos de 3 manzanas: 3 + 3 + 3 + 3 = 12. Es decir, 4 × 3 = 12.",
+      "error": "cuenta-grupos"
+    },
+    {
+      "id": "c2", "tipo": "manipular", "nivel": 1,
+      "enunciado": "Pon 4 panes en cada plato.",
+      "manipulable": { "tipo": "grupos", "grupos": 3, "porGrupo": 4, "emoji": "🍞" },
+      "pista": "Revisa cada plato: todos deben tener 4 panes.",
+      "explicacion": "3 platos con 4 panes: 4 + 4 + 4 = 12. Es decir, 3 × 4 = 12.",
+      "error": "arma-grupos"
+    },
+    {
+      "id": "c3", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa la multiplicación.",
+      "texto": "6 + 6 + 6 = [3] × 6 = [18]",
+      "banco": ["6", "12"],
+      "pista": "Cuenta cuántas veces se suma el 6: esa es la cantidad de grupos.",
+      "explicacion": "El 6 se suma 3 veces: 6 + 6 + 6 = 18. Es decir, 3 × 6 = 18.",
+      "error": "suma-repetida"
+    },
+    {
+      "id": "c4", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "Une cada frase con su suma repetida.",
+      "pares": [ ["2 grupos de 8", "8 + 8"], ["3 grupos de 3", "3 + 3 + 3"], ["4 grupos de 2", "2 + 2 + 2 + 2"], ["2 grupos de 4", "4 + 4"] ],
+      "pista": "El primer número dice cuántas veces se suma. El segundo dice qué número se suma.",
+      "explicacion": "2 grupos de 8: 8 + 8. 3 grupos de 3: 3 + 3 + 3. 4 grupos de 2: 2 + 2 + 2 + 2. 2 grupos de 4: 4 + 4.",
+      "error": "suma-repetida"
+    },
+    {
+      "id": "c5", "tipo": "numero", "nivel": 2,
+      "enunciado": "Escucha el problema y escribe la respuesta.",
+      "escuchar": "En la tienda de la escuela hay 4 cajas. En cada caja hay 6 lápices. ¿Cuántos lápices hay en total?",
+      "respuesta": 24,
+      "erroresComunes": [ { "respuesta": 10, "pista": "Sumaste 4 + 6. Hay 4 cajas con 6 lápices cada una: suma el 6 cuatro veces.", "error": "suma-en-vez-de-multiplicar" } ],
+      "pista": "Son 4 grupos de 6. Escucha otra vez si lo necesitas.",
+      "explicacion": "4 cajas de 6 lápices: 6 + 6 + 6 + 6 = 24. Es decir, 4 × 6 = 24.",
+      "error": "problema-grupos"
+    },
+    {
+      "id": "c6", "tipo": "opcion", "nivel": 2,
+      "enunciado": "¿Qué suma repetida es igual a 5 × 2?",
+      "opciones": [
+        { "texto": "2 + 2 + 2 + 2 + 2", "correcta": true },
+        { "texto": "5 + 2", "pista": "Esa suma junta el 5 y el 2 una sola vez. 5 × 2 son 5 grupos de 2.", "error": "suma-en-vez-de-multiplicar" },
+        { "texto": "5 + 5 + 5", "pista": "Esa suma tiene 3 grupos de 5. Busca 5 grupos de 2.", "error": "suma-repetida" }
+      ],
+      "columnas": 1,
+      "pista": "5 × 2 quiere decir 5 grupos de 2.",
+      "explicacion": "5 × 2 son 5 grupos de 2: 2 + 2 + 2 + 2 + 2 = 10.",
+      "error": "suma-repetida"
+    },
+    {
+      "id": "c7", "tipo": "pasos", "nivel": 3,
+      "enunciado": "Luis vende salteñas. Tiene 3 bandejas con 6 salteñas en cada una. En la mañana vende 10 salteñas.",
+      "visual": { "tipo": "grupos", "grupos": 3, "porGrupo": 6, "emoji": "🥟" },
+      "pasos": [
+        {
+          "tipo": "numero", "enunciado": "¿Cuántas salteñas tenía al comienzo?", "respuesta": 18,
+          "erroresComunes": [ { "respuesta": 9, "pista": "Sumaste 3 + 6. Son 3 bandejas con 6 salteñas cada una.", "error": "suma-en-vez-de-multiplicar" } ],
+          "pista": "Suma 6 una vez por cada bandeja.",
+          "explicacion": "6 + 6 + 6 = 18. Es decir, 3 × 6 = 18 salteñas.",
+          "error": "problema-grupos"
+        },
+        {
+          "tipo": "numero", "enunciado": "¿Cuántas salteñas le quedan?", "respuesta": 8,
+          "erroresComunes": [ { "respuesta": 28, "pista": "Sumaste. Luis vendió salteñas, así que ahora tiene menos: resta.", "error": "problema-pasos" } ],
+          "pista": "A las salteñas que tenía, quítale las que vendió.",
+          "explicacion": "18 − 10 = 8 salteñas.",
+          "error": "problema-pasos"
+        }
+      ],
+      "pista": "Primero multiplica para saber cuántas tenía. Después resta las que vendió.",
+      "explicacion": "3 × 6 = 18 salteñas. 18 − 10 = 8: le quedan 8 salteñas.",
+      "error": "problema-pasos"
+    },
+    {
+      "id": "c8", "tipo": "numero", "nivel": 3,
+      "enunciado": "En el huerto de la escuela hay 4 filas de lechugas. En cada fila hay 7 lechugas. ¿Cuántas lechugas hay?",
+      "visual": { "tipo": "arreglo", "filas": 4, "columnas": 7, "emoji": "🥬" },
+      "respuesta": 28,
+      "erroresComunes": [ { "respuesta": 11, "pista": "Sumaste 4 + 7. Hay 4 filas de 7: suma el 7 cuatro veces.", "error": "suma-en-vez-de-multiplicar" } ],
+      "pista": "Cada fila es un grupo de 7. Suma 7 + 7 + 7 + 7.",
+      "explicacion": "7 + 7 + 7 + 7 = 28. Es decir, 4 × 7 = 28 lechugas.",
+      "error": "cuenta-grupos"
+    }
+  ],
+  "repaso": {
+    "texto": "Grupos iguales tienen la misma cantidad. 3 grupos de 2: 2 + 2 + 2 = 6. Con multiplicación: 3 × 2 = 6.",
+    "visual": { "tipo": "grupos", "grupos": 3, "porGrupo": 2, "emoji": "🍎" }
+  },
+  "adulto": {
+    "objetivo": "Comprender la multiplicación como grupos iguales y como suma repetida: reconocer grupos iguales, contar cuántos grupos hay y cuántos elementos tiene cada uno, pasar de la suma repetida a la multiplicación (4 + 4 + 4 = 3 × 4) y resolver problemas sencillos.",
+    "sugerencias": [
+      "Con platos y papas, fideos o botones, armen grupos iguales (por ejemplo, 4 platos con 3 papas). Pidan que diga la suma repetida y la multiplicación: 3 + 3 + 3 + 3 = 12, o sea 4 × 3 = 12.",
+      "En la feria o la tienda, busquen grupos iguales: bolsas de 5 naranjas, atados de cebollas, filas de huevos en un maple. Pregunten: «¿Cuántos grupos hay? ¿Cuántos en cada uno? ¿Cuántos en total?».",
+      "Al poner la mesa, cuenten de grupo en grupo: «Somos 4 y cada uno usa 2 cubiertos: 2, 4, 6, 8». Después escriban juntos la multiplicación en un papel: 4 × 2 = 8."
+    ],
+    "errores": {
+      "multiplicacion-grupos": { "descripcion": "Le cuesta escribir la suma repetida y la multiplicación que muestran unos grupos dibujados.", "sugerencia": "Armen los mismos grupos con objetos reales y digan en voz alta: «4 platos de 3: 3 + 3 + 3 + 3 = 12, o sea 4 × 3»." },
+      "arma-grupos": { "descripcion": "Le cuesta formar grupos con la misma cantidad de objetos.", "sugerencia": "Repartan fideos en vasos de a uno, contando en voz alta, hasta que todos los vasos tengan la cantidad pedida." },
+      "cuenta-grupos": { "descripcion": "Confunde la cantidad de grupos con la cantidad de objetos que hay en cada grupo.", "sugerencia": "Pongan cada grupo en un plato y pregunten primero «¿cuántos platos hay?» y después «¿cuántos hay en un plato?»." },
+      "suma-repetida": { "descripcion": "Le cuesta pasar de la suma repetida a la multiplicación (o al revés).", "sugerencia": "Escriban una suma repetida y cuenten juntos cuántas veces aparece el número: ese es el primer número de la multiplicación." },
+      "grupos-iguales": { "descripcion": "No distingue grupos iguales de grupos con cantidades distintas.", "sugerencia": "Armen platos con cantidades iguales y distintas y pregunten: «¿Todos tienen lo mismo?». Solo se multiplica cuando todos tienen lo mismo." },
+      "suma-en-vez-de-multiplicar": { "descripcion": "Suma los dos números (por ejemplo, 3 + 4) en lugar de sumar grupos iguales (4 + 4 + 4).", "sugerencia": "Dibujen los grupos antes de calcular: 3 círculos con 4 puntos cada uno. Así ve que se suma el 4 tres veces." },
+      "problema-grupos": { "descripcion": "Le cuesta reconocer los grupos iguales en un problema escuchado o leído.", "sugerencia": "Lean el problema despacio y pregunten: «¿Cuáles son los grupos? ¿Cuántos hay en cada uno?». Pueden dibujarlo." },
+      "problema-pasos": { "descripcion": "Resuelve bien la multiplicación, pero le cuesta el segundo paso del problema (sumar o restar después).", "sugerencia": "Resuelvan un paso a la vez y escriban cada resultado antes de seguir con la pregunta siguiente." },
+      "produce-problema": { "descripcion": "Le cuesta inventar un problema de grupos iguales con una pregunta al final.", "sugerencia": "Inventen problemas juntos con cosas de la casa: «Hay 3 vasos con 2 cucharas en cada vaso. ¿Cuántas cucharas hay?»." },
+      "orden-factores": { "descripcion": "No ve que 3 × 5 y 5 × 3 dan el mismo total.", "sugerencia": "Armen un arreglo con tapas (3 filas de 5), cuéntenlo, gírenlo y vuelvan a contar: el total no cambia." },
+      "datos-problema": { "descripcion": "Le cuesta elegir los números que sirven para responder la pregunta de un problema.", "sugerencia": "Lean primero la pregunta y subrayen solo los números que hablan de lo que se pregunta." }
+    }
+  }
+}

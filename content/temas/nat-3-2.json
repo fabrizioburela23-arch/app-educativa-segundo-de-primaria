@@ -1,0 +1,450 @@
+{
+  "id": "nat-3-2",
+  "titulo": "El universo",
+  "objetivo": "Conozco el Sol, los ocho planetas, la Luna y sus fases, las estrellas y cómo exploramos el espacio.",
+  "explicacion": [
+    {
+      "texto": "El **universo** es todo lo que existe: estrellas, planetas, lunas y un espacio enorme. Nuestro Sol es una de las muchísimas estrellas de la **Vía Láctea**, nuestra galaxia.",
+      "emoji": "🌌",
+      "visual": { "tipo": "emojis", "items": ["⭐", "🌎", "🌙", "🌌"], "etiquetas": ["estrellas", "planetas", "lunas", "galaxias"] }
+    },
+    {
+      "texto": "El **Sol** es una **estrella**. A su alrededor giran **ocho planetas**: Mercurio, Venus, Tierra, Marte, Júpiter, Saturno, Urano y Neptuno. Juntos forman el **sistema solar**.",
+      "visual": { "tipo": "ilustracion", "id": "sistema-solar" }
+    },
+    {
+      "texto": "La **Luna** es el **satélite natural** de la Tierra: gira a su alrededor. No tiene luz propia: brilla porque **refleja la luz del Sol**. Según el día, vemos más o menos de su parte iluminada: son sus **fases**.",
+      "visual": { "tipo": "ilustracion", "id": "fases-luna" }
+    },
+    {
+      "texto": "Las **estrellas** son soles muy lejanos. Algunas forman figuras llamadas **constelaciones**, como la **Cruz del Sur**. Los telescopios nos ayudan a verlas mejor, y los astronautas viajan al espacio.",
+      "visual": { "tipo": "emojis", "items": ["✨", "🔭", "👩‍🚀", "🚀"], "etiquetas": ["estrellas", "telescopio", "astronauta", "cohete"] }
+    }
+  ],
+  "ejemplo": {
+    "instruccion": "Kusi mira la Luna desde su casa en Potosí durante casi un mes. Mira lo que descubre.",
+    "pasos": [
+      {
+        "texto": "**Luna nueva**: la mitad iluminada de la Luna no mira hacia la Tierra. Por eso, esos días Kusi no la ve.",
+        "visual": { "tipo": "emoji", "valor": "🌑" }
+      },
+      {
+        "texto": "Día a día, Kusi ve una parte iluminada más grande. Cuando ve media luna que va creciendo, es el **cuarto creciente**.",
+        "visual": { "tipo": "ilustracion", "id": "fases-luna" }
+      },
+      {
+        "texto": "Unos días después, la ve redonda y toda brillante: es la **luna llena**. Luego, la parte iluminada se achica hasta ser otra vez media luna: es el **cuarto menguante**.",
+        "visual": { "tipo": "emoji", "valor": "🌕" }
+      },
+      {
+        "texto": "La Luna no cambia de forma: siempre es redonda. Mientras gira alrededor de la Tierra, vemos más o menos de su lado iluminado. Después de casi un mes, vuelve la luna nueva.",
+        "visual": { "tipo": "ilustracion", "id": "fases-luna" }
+      }
+    ]
+  },
+  "guiada": {
+    "intro": "Ahora lo hacemos juntos, paso a paso.",
+    "pasos": [
+      {
+        "id": "g1", "tipo": "ordenar",
+        "enunciado": "Ordena los cuatro planetas más cercanos al Sol. Empieza por el más cercano.",
+        "apoyo": "El planeta más cercano al Sol es Mercurio. La Tierra es el tercero.",
+        "elementos": ["Mercurio", "Venus", "Tierra", "Marte"],
+        "pista": "Después de Mercurio viene Venus. ¿Qué planeta viene después de la Tierra?",
+        "explicacion": "El orden es Mercurio, Venus, Tierra y Marte. La Tierra es el tercer planeta desde el Sol.",
+        "error": "orden-planetas"
+      },
+      {
+        "id": "g2", "tipo": "completar",
+        "enunciado": "Completa qué es el Sol y qué es la Luna.",
+        "apoyo": "Una estrella tiene luz propia. Un satélite gira alrededor de un planeta.",
+        "texto": "El Sol es una [estrella] y tiene luz propia. La Luna es un [satélite] de la Tierra y brilla porque refleja la luz del Sol.",
+        "banco": ["planeta", "nube"],
+        "pista": "¿Cuál de los dos brilla con su propia luz? ¿Cuál gira alrededor de la Tierra?",
+        "explicacion": "El Sol es una **estrella**: tiene luz propia. La Luna es un **satélite**: gira alrededor de la Tierra y refleja la luz del Sol.",
+        "error": "cuerpos-celestes"
+      },
+      {
+        "id": "g3", "tipo": "clasificar",
+        "enunciado": "¿Tiene luz propia o brilla porque el Sol lo ilumina?",
+        "apoyo": "Solo las estrellas producen su propia luz. Los planetas y las lunas se ven porque el Sol los ilumina.",
+        "categorias": [
+          { "id": "propia", "texto": "Tiene luz propia", "emoji": "✨" },
+          { "id": "refleja", "texto": "El Sol lo ilumina", "emoji": "🔦" }
+        ],
+        "elementos": [
+          { "texto": "el Sol", "emoji": "☀️", "categoria": "propia" },
+          { "texto": "la Luna", "emoji": "🌙", "categoria": "refleja" },
+          { "texto": "las estrellas de la Cruz del Sur", "categoria": "propia" },
+          { "texto": "el planeta Marte", "categoria": "refleja" },
+          { "texto": "el planeta Venus", "categoria": "refleja" }
+        ],
+        "pista": "Pregúntate: ¿es una estrella? Si no lo es, no tiene luz propia.",
+        "explicacion": "El Sol y las estrellas de la Cruz del Sur tienen luz propia. La Luna, Marte y Venus brillan porque el Sol los ilumina.",
+        "error": "luz-propia"
+      }
+    ]
+  },
+  "practica": [
+    {
+      "id": "p1", "tipo": "memoria", "nivel": 1,
+      "enunciado": "Encuentra las parejas: el dibujo y su nombre.",
+      "pares": [
+        [ { "emoji": "☀️" }, "Sol" ],
+        [ { "emoji": "🌙" }, "Luna" ],
+        [ { "emoji": "⭐" }, "estrella" ],
+        [ { "emoji": "🔭" }, "telescopio" ],
+        [ { "emoji": "🚀" }, "cohete" ],
+        [ { "emoji": "👩‍🚀" }, "astronauta" ]
+      ],
+      "pista": "Di en voz alta el nombre de cada dibujo.",
+      "explicacion": "☀️ Sol, 🌙 Luna, ⭐ estrella, 🔭 telescopio, 🚀 cohete y 👩‍🚀 astronauta.",
+      "error": "vocabulario-tema"
+    },
+    {
+      "id": "p2", "tipo": "completar", "nivel": 1,
+      "enunciado": "Completa qué es la Cruz del Sur.",
+      "texto": "La Cruz del Sur es una [constelación]: un grupo de [estrellas] que forma una figura en el cielo.",
+      "banco": ["montaña", "nubes"],
+      "pista": "Es una figura que forman varios puntos brillantes del cielo de la noche.",
+      "explicacion": "La Cruz del Sur es una **constelación**: un grupo de **estrellas** que forma una cruz. Desde Bolivia se ve muy bien.",
+      "error": "estrellas-constelaciones"
+    },
+    {
+      "id": "p3", "tipo": "escribir", "nivel": 1,
+      "enunciado": "Escucha y escribe la palabra.",
+      "escuchar": "estrella",
+      "visual": { "tipo": "emoji", "valor": "⭐" },
+      "respuestas": ["estrella"],
+      "pista": "Tiene tres sílabas. Fíjate bien en la última: se escribe con ll.",
+      "explicacion": "Se escribe «estrella», con **ll**. El Sol es una estrella.",
+      "error": "vocabulario-tema"
+    },
+    {
+      "id": "p4", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Toca los nombres de planetas.",
+      "texto": "Wara dibujó el Sol, la Luna, una estrella y los planetas *Marte*, *Saturno* y *Neptuno*.",
+      "pista": "El Sol y las estrellas no son planetas, y la Luna tampoco. Hay tres planetas.",
+      "explicacion": "Marte, Saturno y Neptuno son planetas. El Sol es una estrella y la Luna es un satélite.",
+      "error": "cuerpos-celestes"
+    },
+    {
+      "id": "p5", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "Une cada palabra con lo que significa.",
+      "pares": [
+        ["estrella", "tiene luz propia, como el Sol"],
+        ["planeta", "gira alrededor del Sol, como la Tierra"],
+        ["satélite", "gira alrededor de un planeta, como la Luna"],
+        ["constelación", "estrellas que forman una figura"]
+      ],
+      "pista": "Fíjate en los ejemplos: el Sol, la Tierra, la Luna y la Cruz del Sur.",
+      "explicacion": "Una estrella tiene luz propia; un planeta gira alrededor del Sol; un satélite gira alrededor de un planeta, y una constelación es un grupo de estrellas que forma una figura.",
+      "error": "cuerpos-celestes"
+    },
+    {
+      "id": "p6", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa lo que sabes de los planetas.",
+      "texto": "Mercurio es el planeta más [cercano] al Sol. La Tierra es el [tercer] planeta desde el Sol. [Júpiter] es el planeta más grande.",
+      "banco": ["lejano", "quinto", "Marte"],
+      "pista": "Recuerda el orden: Mercurio, Venus, Tierra, Marte... El más grande viene justo después de Marte.",
+      "explicacion": "Mercurio es el más **cercano** al Sol, la Tierra es el **tercer** planeta y **Júpiter** es el más grande.",
+      "error": "orden-planetas"
+    },
+    {
+      "id": "p7", "tipo": "ordenar", "nivel": 2,
+      "enunciado": "Ordena las fases de la Luna. Empieza por la luna nueva.",
+      "elementos": [
+        { "texto": "luna nueva", "emoji": "🌑" },
+        "cuarto creciente",
+        { "texto": "luna llena", "emoji": "🌕" },
+        "cuarto menguante"
+      ],
+      "pista": "La parte iluminada que vemos primero crece y después se achica.",
+      "explicacion": "Luna nueva, cuarto creciente, luna llena y cuarto menguante. Después vuelve la luna nueva.",
+      "error": "fases-luna"
+    },
+    {
+      "id": "p8", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha la adivinanza y escribe la respuesta.",
+      "escuchar": "Giro alrededor de la Tierra. No tengo luz propia: brillo porque el Sol me ilumina. A veces me ves redonda y otras veces, como una tajada de sandía. ¿Quién soy?",
+      "respuestas": ["Luna", "la Luna"],
+      "pista": "Es el satélite natural de la Tierra.",
+      "explicacion": "Es la **Luna**: el satélite natural de la Tierra. Brilla porque refleja la luz del Sol.",
+      "error": "luna-satelite"
+    },
+    {
+      "id": "p9", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "¿Es una estrella, un planeta o un satélite?",
+      "categorias": [
+        { "id": "estrella", "texto": "Estrella", "emoji": "⭐" },
+        { "id": "planeta", "texto": "Planeta", "emoji": "🌎" },
+        { "id": "satelite", "texto": "Satélite", "emoji": "🌙" }
+      ],
+      "elementos": [
+        { "texto": "el Sol", "categoria": "estrella" },
+        { "texto": "Venus", "categoria": "planeta" },
+        { "texto": "la Luna", "categoria": "satelite" },
+        { "texto": "la Tierra", "categoria": "planeta" },
+        { "texto": "Urano", "categoria": "planeta" }
+      ],
+      "pista": "Las estrellas tienen luz propia. Los planetas giran alrededor del Sol. Los satélites giran alrededor de un planeta.",
+      "explicacion": "El Sol es una estrella. Venus, la Tierra y Urano son planetas. La Luna es un satélite.",
+      "error": "cuerpos-celestes"
+    },
+    {
+      "id": "p10", "tipo": "opcion", "nivel": 2,
+      "enunciado": "¿Para qué sirve un telescopio?",
+      "visual": { "tipo": "emoji", "valor": "🔭" },
+      "opciones": [
+        { "texto": "Para ver mejor cosas muy lejanas, como la Luna y los planetas.", "correcta": true },
+        { "texto": "Para ver cosas muy pequeñas, como los microbios.", "pista": "Para ver cosas muy pequeñas se usa un microscopio.", "error": "exploracion-espacio" },
+        { "texto": "Para viajar al espacio.", "pista": "Para viajar al espacio se usa un cohete.", "error": "exploracion-espacio" }
+      ],
+      "columnas": 1,
+      "pista": "Piensa en lo que está muy, muy lejos de nosotros.",
+      "explicacion": "El telescopio sirve para ver mejor y más grandes las cosas que están muy lejos, como la Luna, los planetas y las estrellas. En Tarija hay un observatorio con telescopios.",
+      "error": "exploracion-espacio"
+    },
+    {
+      "id": "p11", "tipo": "manipular", "nivel": 2,
+      "enunciado": "Arma el pictograma de las lunas: Mercurio y Venus no tienen lunas, la Tierra tiene 1 y Marte tiene 2.",
+      "manipulable": {
+        "tipo": "pictograma", "icono": "🌙", "escala": 1,
+        "categorias": [
+          { "etiqueta": "Mercurio", "objetivo": 0 },
+          { "etiqueta": "Venus", "objetivo": 0 },
+          { "etiqueta": "Tierra", "objetivo": 1 },
+          { "etiqueta": "Marte", "objetivo": 2 }
+        ]
+      },
+      "pista": "Pon un ícono 🌙 por cada luna. Si un planeta no tiene lunas, deja su fila vacía.",
+      "explicacion": "Mercurio: 0. Venus: 0. Tierra: 1, nuestra Luna. Marte: 2 lunas pequeñas.",
+      "error": "lee-pictograma"
+    },
+    {
+      "id": "p12", "tipo": "ordenar", "nivel": 3,
+      "enunciado": "Ordena los ocho planetas, desde el más cercano al Sol hasta el más lejano.",
+      "elementos": ["Mercurio", "Venus", "Tierra", "Marte", "Júpiter", "Saturno", "Urano", "Neptuno"],
+      "vertical": true,
+      "pista": "Empieza por Mercurio. La Tierra es el tercero y Neptuno es el último.",
+      "explicacion": "El orden es: Mercurio, Venus, Tierra, Marte, Júpiter, Saturno, Urano y Neptuno.",
+      "error": "orden-planetas"
+    },
+    {
+      "id": "p13", "tipo": "opcion", "nivel": 3,
+      "enunciado": "Al amanecer, Nayra ve un punto muy brillante que muchos llaman «lucero». Es Venus. ¿Qué es Venus?",
+      "opciones": [
+        { "texto": "un planeta", "correcta": true },
+        { "texto": "una estrella", "pista": "Parece una estrella, pero no tiene luz propia: brilla porque el Sol lo ilumina.", "error": "luz-propia" },
+        { "texto": "un satélite", "pista": "Venus no gira alrededor de otro planeta: gira alrededor del Sol.", "error": "cuerpos-celestes" }
+      ],
+      "columnas": 3,
+      "pista": "Recuerda los ocho planetas: Mercurio, Venus, Tierra...",
+      "explicacion": "Venus es un **planeta**, el segundo desde el Sol. Brilla mucho porque está cerca de la Tierra y refleja muy bien la luz del Sol.",
+      "error": "cuerpos-celestes"
+    },
+    {
+      "id": "p14", "tipo": "multiple", "nivel": 3,
+      "enunciado": "¿Qué forma parte del sistema solar? Elige todas las correctas.",
+      "opciones": [
+        { "texto": "el Sol", "correcta": true },
+        { "texto": "Júpiter", "correcta": true },
+        { "texto": "la Luna", "correcta": true },
+        { "texto": "las estrellas de la Cruz del Sur", "pista": "Esas estrellas son otros soles, muchísimo más lejos que los planetas.", "error": "estrellas-constelaciones" }
+      ],
+      "columnas": 1,
+      "pista": "El sistema solar es el Sol y todo lo que gira a su alrededor. Hay tres respuestas correctas.",
+      "explicacion": "El Sol, Júpiter y la Luna son parte del sistema solar. Las estrellas de la Cruz del Sur son otros soles, muy lejanos.",
+      "error": "estrellas-constelaciones"
+    },
+    {
+      "id": "p15", "tipo": "escribir-libre", "nivel": 3,
+      "enunciado": "Imagina que eres astronauta. Escribe una oración sobre lo que verías desde el espacio.",
+      "guia": ["Desde el espacio vería...", "Por la ventana de la nave..."],
+      "requisitos": [
+        { "tipo": "mayuscula-inicial" },
+        { "tipo": "punto-final" },
+        { "tipo": "min-palabras", "valor": 6 },
+        { "tipo": "incluye", "palabras": ["Tierra", "Luna", "Sol", "estrella", "estrellas", "planeta", "planetas"] }
+      ],
+      "modelo": "Desde el espacio vería la Tierra redonda y azul.",
+      "pista": "Piensa en la Tierra, la Luna, el Sol o las estrellas.",
+      "explicacion": "Por ejemplo: «Desde el espacio vería la Tierra redonda y azul». Empieza con mayúscula y termina con punto.",
+      "error": "produce-oracion"
+    },
+    {
+      "id": "p16", "tipo": "pasos", "nivel": 3,
+      "enunciado": "Imagina que Nayra es astronauta y sale de la nave espacial para arreglar una antena.",
+      "visual": { "tipo": "emojis", "items": ["👩‍🚀", "🛰️", "🌎"] },
+      "pasos": [
+        {
+          "tipo": "opcion",
+          "enunciado": "¿Por qué Nayra usa un traje espacial?",
+          "opciones": [
+            { "texto": "Porque en el espacio no hay aire para respirar.", "correcta": true },
+            { "texto": "Porque en el espacio llueve mucho.", "pista": "En el espacio no hay nubes ni lluvia. Piensa en lo que necesitas para respirar.", "error": "exploracion-espacio" },
+            { "texto": "Porque el traje la hace volar más rápido.", "pista": "El traje no sirve para volar. Piensa en lo que necesitas para respirar.", "error": "exploracion-espacio" }
+          ],
+          "columnas": 1,
+          "pista": "¿Qué necesitamos todo el tiempo para vivir y respirar?",
+          "explicacion": "En el espacio no hay aire. El traje espacial le da aire a Nayra y la protege del frío, del calor y de la luz fuerte del Sol.",
+          "error": "exploracion-espacio"
+        },
+        {
+          "tipo": "completar",
+          "enunciado": "Nayra mira hacia abajo y ve la Tierra. Completa.",
+          "texto": "Desde el espacio, la Tierra se ve [redonda], como una pelota azul con nubes blancas.",
+          "banco": ["plana", "cuadrada"],
+          "pista": "¿Qué forma tiene una pelota?",
+          "explicacion": "La Tierra se ve **redonda**. Se ve azul por sus mares y tiene nubes blancas.",
+          "error": "exploracion-espacio"
+        }
+      ],
+      "pista": "Resuelve un paso a la vez.",
+      "explicacion": "Los astronautas usan traje espacial porque en el espacio no hay aire. Desde allí ven que la Tierra es redonda.",
+      "error": "exploracion-espacio"
+    }
+  ],
+  "comprobacion": [
+    {
+      "id": "c1", "tipo": "relacionar", "nivel": 1,
+      "enunciado": "Une cada uno con lo que es.",
+      "pares": [
+        [ { "texto": "el Sol", "emoji": "☀️" }, "una estrella" ],
+        [ { "texto": "la Tierra", "emoji": "🌎" }, "un planeta" ],
+        [ { "texto": "la Luna", "emoji": "🌙" }, "un satélite" ]
+      ],
+      "pista": "Uno tiene luz propia, otro es nuestro planeta y otro gira alrededor de la Tierra.",
+      "explicacion": "El Sol es una estrella, la Tierra es un planeta y la Luna es un satélite.",
+      "error": "cuerpos-celestes"
+    },
+    {
+      "id": "c2", "tipo": "numero", "nivel": 1,
+      "enunciado": "¿Cuántos planetas giran alrededor del Sol?",
+      "visual": { "tipo": "ilustracion", "id": "sistema-solar" },
+      "respuesta": 8,
+      "sufijo": "planetas",
+      "erroresComunes": [
+        { "respuesta": 9, "pista": "Hace años también se contaba a Plutón, pero ahora se lo llama planeta enano.", "error": "orden-planetas" }
+      ],
+      "pista": "Recuerda sus nombres, desde Mercurio hasta Neptuno, y cuéntalos con los dedos.",
+      "explicacion": "Son **8 planetas**: Mercurio, Venus, Tierra, Marte, Júpiter, Saturno, Urano y Neptuno.",
+      "error": "orden-planetas"
+    },
+    {
+      "id": "c3", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa los nombres de las fases de la Luna.",
+      "texto": "Cuando vemos la Luna redonda y toda iluminada, es luna [llena]. Cuando no la vemos, es luna [nueva].",
+      "banco": ["creciente"],
+      "pista": "En una fase la Luna se ve completa; en la otra, su lado iluminado no nos mira.",
+      "explicacion": "La Luna redonda y brillante es la **luna llena**. Cuando no la vemos, es la **luna nueva**.",
+      "error": "fases-luna"
+    },
+    {
+      "id": "c4", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha la adivinanza y escribe la respuesta.",
+      "escuchar": "Soy un tubo largo con lentes o espejos. Si miras por mí, ves más grandes la Luna, los planetas y las estrellas. ¿Quién soy?",
+      "respuestas": ["telescopio", "el telescopio", "un telescopio"],
+      "pista": "Empieza con «tele», que quiere decir «lejos».",
+      "explicacion": "Es el **telescopio**: nos ayuda a ver mejor las cosas que están muy lejos.",
+      "error": "exploracion-espacio"
+    },
+    {
+      "id": "c5", "tipo": "ordenar", "nivel": 2,
+      "enunciado": "Ordena estos planetas desde el más cercano al Sol hasta el más lejano.",
+      "elementos": ["Marte", "Júpiter", "Saturno", "Urano", "Neptuno"],
+      "pista": "Después de Marte viene el planeta más grande. El último es Neptuno.",
+      "explicacion": "El orden es Marte, Júpiter, Saturno, Urano y Neptuno.",
+      "error": "orden-planetas"
+    },
+    {
+      "id": "c6", "tipo": "multiple", "nivel": 2,
+      "enunciado": "Elige las frases verdaderas sobre la Luna.",
+      "opciones": [
+        { "texto": "Gira alrededor de la Tierra.", "correcta": true },
+        { "texto": "Brilla porque refleja la luz del Sol.", "correcta": true },
+        { "texto": "Tiene luz propia, como el Sol.", "pista": "La Luna no produce luz: la recibe del Sol.", "error": "luz-propia" },
+        { "texto": "Solo se puede ver de noche.", "pista": "Algunas mañanas y tardes también se ve la Luna en el cielo celeste.", "error": "luna-satelite" }
+      ],
+      "columnas": 1,
+      "pista": "Hay dos frases verdaderas.",
+      "explicacion": "La Luna gira alrededor de la Tierra y brilla porque refleja la luz del Sol. No tiene luz propia, y a veces también se ve de día.",
+      "error": "luna-satelite"
+    },
+    {
+      "id": "c7", "tipo": "opcion", "nivel": 3,
+      "enunciado": "Bolivia tiene un satélite llamado Túpac Katari. Un cohete lo llevó al espacio en 2013. ¿En qué se diferencia de la Luna?",
+      "opciones": [
+        { "texto": "Lo fabricaron las personas. La Luna es natural.", "correcta": true },
+        { "texto": "El Túpac Katari es una estrella.", "pista": "Una estrella tiene luz propia y es enorme. El Túpac Katari es una máquina.", "error": "exploracion-espacio" },
+        { "texto": "La Luna también la fabricaron las personas.", "pista": "Nadie fabricó la Luna: es un satélite natural.", "error": "luna-satelite" }
+      ],
+      "columnas": 1,
+      "pista": "Piensa: ¿quién construyó cada uno?",
+      "explicacion": "El Túpac Katari es un **satélite artificial**: lo construyeron personas y ayuda a llevar señales de televisión, teléfono e internet. La Luna es un **satélite natural**.",
+      "error": "exploracion-espacio"
+    },
+    {
+      "id": "c8", "tipo": "tocar", "nivel": 3,
+      "enunciado": "Toca solo lo que tiene luz propia.",
+      "texto": "De día vemos el *Sol*. De noche vemos la Luna, el planeta Marte y muchas *estrellas*.",
+      "pista": "Solo las estrellas producen su propia luz. Hay dos palabras.",
+      "explicacion": "El **Sol** y las **estrellas** tienen luz propia. La Luna y Marte brillan porque el Sol los ilumina.",
+      "error": "luz-propia"
+    }
+  ],
+  "repaso": {
+    "texto": "El Sol es una estrella. Los ocho planetas, en orden, son Mercurio, Venus, Tierra, Marte, Júpiter, Saturno, Urano y Neptuno. La Luna es el satélite de la Tierra y refleja la luz del Sol.",
+    "visual": { "tipo": "ilustracion", "id": "sistema-solar" }
+  },
+  "adulto": {
+    "objetivo": "Introducir el universo: el Sol es una estrella (la más cercana a la Tierra) y, con los ocho planetas que giran a su alrededor, forma el sistema solar, que es parte de nuestra galaxia, la Vía Láctea. Nombrar los planetas en orden; reconocer que la Luna es el satélite natural de la Tierra, que no tiene luz propia y que sus fases se deben a cuánto de su lado iluminado vemos desde la Tierra (no a la sombra de la Tierra); saber que las estrellas son soles lejanos que forman constelaciones, como la Cruz del Sur, y que exploramos el espacio con telescopios, cohetes, satélites artificiales y astronautas.",
+    "sugerencias": [
+      "Durante un mes, miren la Luna cada vez que puedan (al anochecer o algunas mañanas) y dibújenla en un calendario. Al final, observen cómo la parte iluminada creció y se achicó. En Bolivia, la Luna puede verse iluminada del lado contrario al de muchos libros hechos en el norte del mundo, así que el truco de la «C» y la «D» no siempre sirve aquí: lo seguro es comparar de un día a otro si la parte iluminada crece o se achica.",
+      "En una noche despejada, lejos de las luces de la ciudad (en el campo, el altiplano o un mirador), busquen juntos la Cruz del Sur: cuatro estrellas brillantes en forma de cruz, junto a dos estrellas muy brillantes que parecen señalarla. Se ve mejor en las noches de marzo a agosto. Busquen también la Vía Láctea: en sus manchas oscuras los pueblos andinos veían figuras, como la llama Yakana.",
+      "Armen un sistema solar en fila con una naranja para el Sol y ocho bolitas de papel para los planetas, e inventen una frase para recordar el orden con las iniciales M, V, T, M, J, S, U, N. Cuéntenle que el Sol es muchísimo más grande: si la Tierra fuera un grano de quinua, el Sol sería como una pelota de fútbol. Si pueden, visiten el Observatorio Astronómico Nacional de Santa Ana, en Tarija."
+    ],
+    "errores": {
+      "cuerpos-celestes": {
+        "descripcion": "Confunde estrellas, planetas y satélites (por ejemplo, cree que el Sol es un planeta o que la Luna es una estrella).",
+        "sugerencia": "Hagan tres tarjetas —estrella, planeta y satélite— y clasifiquen juntos el Sol, la Tierra, la Luna, Marte y Venus. Recuerden: la estrella tiene luz propia, el planeta gira alrededor del Sol y el satélite gira alrededor de un planeta."
+      },
+      "orden-planetas": {
+        "descripcion": "No recuerda cuántos planetas hay o en qué orden están.",
+        "sugerencia": "Inventen juntos una frase divertida con las iniciales M, V, T, M, J, S, U, N y repítanla mientras ordenan ocho bolitas de papel en fila."
+      },
+      "luz-propia": {
+        "descripcion": "Cree que la Luna o los planetas producen su propia luz.",
+        "sugerencia": "En un cuarto oscuro, alumbren una pelota con una linterna: la pelota brilla solo cuando la linterna la ilumina, igual que la Luna y los planetas con el Sol."
+      },
+      "luna-satelite": {
+        "descripcion": "No sabe que la Luna gira alrededor de la Tierra, o cree que solo se ve de noche.",
+        "sugerencia": "Busquen la Luna también en algunas mañanas o tardes, y representen con dos pelotas cómo la Luna gira alrededor de la Tierra."
+      },
+      "fases-luna": {
+        "descripcion": "Confunde el nombre o el orden de las fases de la Luna.",
+        "sugerencia": "Dibujen la Luna durante un mes y escriban el nombre de las cuatro fases principales cuando aparezcan: luna nueva, cuarto creciente, luna llena y cuarto menguante."
+      },
+      "estrellas-constelaciones": {
+        "descripcion": "No sabe que las estrellas son soles lejanos ni qué es una constelación.",
+        "sugerencia": "En una noche despejada, busquen la Cruz del Sur y unan sus estrellas con el dedo para ver la figura. Expliquen que cada estrella es un sol, muchísimo más lejos que los planetas."
+      },
+      "exploracion-espacio": {
+        "descripcion": "Confunde para qué sirven el telescopio, el cohete, el traje espacial o un satélite artificial.",
+        "sugerencia": "Miren juntos imágenes o videos de telescopios, cohetes y astronautas, y conversen sobre para qué sirve cada uno."
+      },
+      "lee-pictograma": {
+        "descripcion": "Le cuesta armar un pictograma, sobre todo cuando un valor es cero.",
+        "sugerencia": "Armen pictogramas con objetos de la casa y pregunten qué pasa con una fila que no tiene nada: vale cero."
+      },
+      "vocabulario-tema": {
+        "descripcion": "Le cuesta nombrar o escribir palabras del tema (estrella, Luna, telescopio...).",
+        "sugerencia": "Escriban juntos las palabras del espacio en tarjetas, separando las sílabas con palmadas (es-tre-lla, te-les-co-pio)."
+      },
+      "produce-oracion": {
+        "descripcion": "Le cuesta escribir una oración completa sobre el espacio.",
+        "sugerencia": "Primero digan la oración en voz alta, luego escríbanla juntos y revisen la mayúscula inicial y el punto final."
+      }
+    }
+  }
+}

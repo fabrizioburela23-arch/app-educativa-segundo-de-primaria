@@ -1,0 +1,471 @@
+{
+  "id": "nat-3-1",
+  "titulo": "Los movimientos de la Tierra",
+  "objetivo": "Sé que la Tierra gira sobre sí misma y viaja alrededor del Sol, y que por eso hay día y noche y pasan los años.",
+  "explicacion": [
+    {
+      "texto": "La Tierra, nuestro planeta, nunca está quieta. Hace dos movimientos al mismo tiempo: **gira sobre sí misma**, como un trompo, y **viaja alrededor del Sol**.",
+      "emoji": "🌎"
+    },
+    {
+      "texto": "La **rotación** es el giro de la Tierra sobre sí misma. Una vuelta completa dura unas **24 horas**: un día entero. La mitad que mira al Sol tiene **día**; la otra mitad tiene **noche**.",
+      "visual": { "tipo": "ilustracion", "id": "tierra-rotacion" }
+    },
+    {
+      "texto": "Como la Tierra gira, vemos que el Sol **sale por el este** en la mañana y **se oculta por el oeste** en la tarde. Pero el Sol no da vueltas alrededor de nosotros: ¡somos nosotros los que giramos!",
+      "visual": { "tipo": "emojis", "items": ["🌅", "☀️", "🌇"], "etiquetas": ["sale por el este", "mediodía", "se oculta por el oeste"] }
+    },
+    {
+      "texto": "La **traslación** es el viaje de la Tierra alrededor del Sol. Una vuelta completa dura unos **365 días**: un **año**. Como la Tierra viaja inclinada, a lo largo del año cambian las estaciones.",
+      "visual": { "tipo": "ilustracion", "id": "tierra-traslacion" }
+    }
+  ],
+  "ejemplo": {
+    "instruccion": "Mira el experimento de Sofía y su hermano Inti con una linterna y una naranja.",
+    "pasos": [
+      {
+        "texto": "En un cuarto oscuro, Inti prende una linterna: será el **Sol**. Sofía toma una naranja: será la **Tierra**. Con un marcador pinta un punto en la naranja: ¡es Bolivia!",
+        "visual": { "tipo": "emojis", "items": ["🔦", "🍊"], "etiquetas": ["el Sol", "la Tierra"] }
+      },
+      {
+        "texto": "La luz alumbra solo la mitad de la naranja que mira a la linterna: allí es de **día**. La otra mitad queda oscura: allí es de **noche**.",
+        "visual": { "tipo": "ilustracion", "id": "tierra-rotacion" }
+      },
+      {
+        "texto": "Sofía gira la naranja despacio. El punto de Bolivia pasa de la luz a la sombra y vuelve a la luz. Así se repiten el día y la noche: es la **rotación**.",
+        "visual": { "tipo": "emojis", "items": ["🌅", "☀️", "🌇", "🌃"], "etiquetas": ["amanece", "día", "atardece", "noche"] }
+      },
+      {
+        "texto": "Ahora Sofía camina alrededor de la linterna sin dejar de girar la naranja. Una vuelta completa alrededor del Sol es un **año**: es la **traslación**.",
+        "visual": { "tipo": "ilustracion", "id": "tierra-traslacion" }
+      }
+    ]
+  },
+  "guiada": {
+    "intro": "Ahora lo hacemos juntos, paso a paso.",
+    "pasos": [
+      {
+        "id": "g1", "tipo": "completar",
+        "enunciado": "Completa los nombres de los movimientos de la Tierra.",
+        "apoyo": "«Rotación» se parece a «rotar», que es girar. «Traslación» se parece a «trasladarse», que es ir de un lugar a otro.",
+        "texto": "Cuando la Tierra gira sobre sí misma, hace la [rotación]. Cuando viaja alrededor del Sol, hace la [traslación].",
+        "banco": ["evaporación"],
+        "pista": "Un movimiento es girar como un trompo; el otro es dar la vuelta alrededor de algo.",
+        "explicacion": "Girar sobre sí misma es la **rotación**. Viajar alrededor del Sol es la **traslación**.",
+        "error": "nombres-movimientos"
+      },
+      {
+        "id": "g2", "tipo": "opcion",
+        "enunciado": "Mira la parte marcada de la Tierra. ¿Allí es de día o de noche?",
+        "apoyo": "Busca el Sol en el dibujo. La mitad de la Tierra que mira al Sol recibe su luz.",
+        "visual": { "tipo": "ilustracion", "id": "tierra-rotacion", "resaltar": "noche" },
+        "opciones": [
+          { "texto": "Es de día.", "emoji": "☀️", "pista": "Fíjate bien: la parte marcada está del lado que no mira al Sol.", "error": "dia-noche" },
+          { "texto": "Es de noche.", "emoji": "🌙", "correcta": true }
+        ],
+        "mezclar": false,
+        "columnas": 2,
+        "pista": "¿La parte marcada mira hacia el Sol o hacia el otro lado?",
+        "explicacion": "Allí es de noche: la parte marcada no mira al Sol, por eso no le llega su luz.",
+        "error": "dia-noche"
+      },
+      {
+        "id": "g3", "tipo": "ordenar",
+        "enunciado": "Ordena lo que ve Nayra en el cielo desde que se despierta, al amanecer.",
+        "apoyo": "Piensa en el camino que parece hacer el Sol: aparece por un lado, sube y baja por el lado contrario.",
+        "elementos": [
+          { "texto": "Amanece: el Sol aparece por el este.", "emoji": "🌅" },
+          { "texto": "Al mediodía, el Sol está alto en el cielo.", "emoji": "☀️" },
+          { "texto": "Atardece: el Sol se oculta por el oeste.", "emoji": "🌇" },
+          { "texto": "Llega la noche y el cielo se pone oscuro.", "emoji": "🌃" }
+        ],
+        "vertical": true,
+        "pista": "El día empieza cuando el Sol aparece y termina cuando se oculta.",
+        "explicacion": "Primero amanece por el este, al mediodía el Sol está alto, en la tarde se oculta por el oeste y después llega la noche.",
+        "error": "sol-este-oeste"
+      }
+    ]
+  },
+  "practica": [
+    {
+      "id": "p1", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Toca los nombres de los dos movimientos de la Tierra.",
+      "texto": "Mateo aprendió que la Tierra hace la *rotación*, que dura un día, y la *traslación*, que dura un año.",
+      "pista": "Los nombres de los dos movimientos terminan igual: en «-ción».",
+      "explicacion": "Los dos movimientos son la **rotación** (dura un día) y la **traslación** (dura un año).",
+      "error": "nombres-movimientos"
+    },
+    {
+      "id": "p2", "tipo": "memoria", "nivel": 1,
+      "enunciado": "Encuentra las parejas: el dibujo y su nombre.",
+      "pares": [
+        [ { "emoji": "🌅" }, "amanecer" ],
+        [ { "emoji": "🌇" }, "atardecer" ],
+        [ { "emoji": "🌎" }, "Tierra" ],
+        [ { "emoji": "☀️" }, "Sol" ],
+        [ { "emoji": "🌃" }, "noche" ]
+      ],
+      "pista": "Di en voz alta lo que ves en cada dibujo.",
+      "explicacion": "🌅 amanecer, 🌇 atardecer, 🌎 Tierra, ☀️ Sol y 🌃 noche.",
+      "error": "vocabulario-tema"
+    },
+    {
+      "id": "p3", "tipo": "clasificar", "nivel": 1,
+      "enunciado": "¿Pasa de día o de noche?",
+      "categorias": [
+        { "id": "dia", "texto": "De día", "emoji": "☀️" },
+        { "id": "noche", "texto": "De noche", "emoji": "🌙" }
+      ],
+      "elementos": [
+        { "texto": "La luz del Sol entra por la ventana.", "categoria": "dia" },
+        { "texto": "El Sol brilla alto en el cielo.", "categoria": "dia" },
+        { "texto": "Wara se pone bloqueador para jugar al sol.", "categoria": "dia" },
+        { "texto": "El cielo está oscuro y se ven estrellas.", "categoria": "noche" },
+        { "texto": "Encendemos los focos porque no hay luz del Sol.", "categoria": "noche" },
+        { "texto": "Los murciélagos salen a buscar comida.", "categoria": "noche" }
+      ],
+      "pista": "Pregúntate: ¿el lado de la Tierra donde estoy mira al Sol o no?",
+      "explicacion": "De día: la luz del Sol entra, el Sol está alto y Wara usa bloqueador. De noche: el cielo está oscuro, encendemos los focos y los murciélagos salen a comer.",
+      "error": "dia-noche"
+    },
+    {
+      "id": "p4", "tipo": "manipular", "nivel": 1,
+      "enunciado": "El día y la noche se repiten siempre. Completa la serie.",
+      "manipulable": {
+        "tipo": "patron",
+        "secuencia": ["🌅", "☀️", "🌇", "🌃", "🌅", "☀️"],
+        "opciones": ["🌅", "☀️", "🌇", "🌃"],
+        "completar": 2,
+        "solucion": ["🌇", "🌃"]
+      },
+      "pista": "🌅 es el amanecer y ☀️ es el mediodía. ¿Qué viene después del mediodía?",
+      "explicacion": "Después del mediodía ☀️ viene el atardecer 🌇 y luego la noche 🌃. Se repite porque la Tierra no deja de girar.",
+      "error": "dia-noche"
+    },
+    {
+      "id": "p5", "tipo": "numero", "nivel": 1,
+      "enunciado": "¿Cuántas horas tarda la Tierra en dar una vuelta completa sobre sí misma?",
+      "visual": { "tipo": "ilustracion", "id": "tierra-rotacion" },
+      "respuesta": 24,
+      "sufijo": "horas",
+      "erroresComunes": [
+        { "respuesta": 12, "pista": "Eso es solo la mitad. Una vuelta completa tiene el día y también la noche.", "error": "duracion-movimientos" },
+        { "respuesta": 365, "pista": "Eso tarda la vuelta alrededor del Sol, y son días, no horas. Piensa en un solo día.", "error": "duracion-movimientos" }
+      ],
+      "pista": "Una vuelta completa sobre sí misma dura un día entero, con su día y su noche.",
+      "explicacion": "La Tierra tarda unas **24 horas** en girar una vez sobre sí misma: eso es un día completo.",
+      "error": "duracion-movimientos"
+    },
+    {
+      "id": "p6", "tipo": "escribir", "nivel": 1,
+      "enunciado": "Escucha la adivinanza y escribe la respuesta.",
+      "escuchar": "Soy redonda y giro como un trompo. También viajo alrededor del Sol. En mí viven las personas, los animales y las plantas. ¿Quién soy?",
+      "respuestas": ["Tierra", "la Tierra", "planeta Tierra", "el planeta Tierra"],
+      "pista": "Es el planeta donde vives.",
+      "explicacion": "Es la **Tierra**, nuestro planeta. Gira sobre sí misma y viaja alrededor del Sol.",
+      "error": "vocabulario-tema"
+    },
+    {
+      "id": "p7", "tipo": "opcion", "nivel": 2,
+      "enunciado": "Mira la parte marcada de la Tierra. ¿Por qué allí es de día?",
+      "visual": { "tipo": "ilustracion", "id": "tierra-rotacion", "resaltar": "dia" },
+      "opciones": [
+        { "texto": "Porque esa mitad de la Tierra mira al Sol.", "correcta": true },
+        { "texto": "Porque esa parte de la Tierra está quieta.", "pista": "La Tierra nunca está quieta: gira todo el tiempo.", "error": "tierra-quieta" },
+        { "texto": "Porque la Luna la ilumina.", "pista": "La luz del día viene del Sol, no de la Luna.", "error": "dia-noche" }
+      ],
+      "columnas": 1,
+      "pista": "Busca el Sol en el dibujo. ¿Hacia dónde mira la parte marcada?",
+      "explicacion": "Allí es de día porque esa mitad de la Tierra mira al Sol y recibe su luz.",
+      "error": "dia-noche"
+    },
+    {
+      "id": "p8", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa por dónde parece salir y ocultarse el Sol.",
+      "texto": "Cada mañana, el Sol parece salir por el [este]. Cada tarde, parece ocultarse por el [oeste].",
+      "banco": ["norte", "sur"],
+      "pista": "Salir y ocultarse pasan en lados contrarios. Recuerda el dibujo del amanecer y del atardecer.",
+      "explicacion": "El Sol parece salir por el **este** y ocultarse por el **oeste**. En realidad, es la Tierra la que gira.",
+      "error": "sol-este-oeste"
+    },
+    {
+      "id": "p9", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "Une cada momento con lo que pasa.",
+      "pares": [
+        ["un día", "la Tierra gira una vez sobre sí misma"],
+        ["un año", "la Tierra da una vuelta alrededor del Sol"],
+        ["el amanecer", "el Sol aparece por el este"],
+        ["el atardecer", "el Sol se oculta por el oeste"]
+      ],
+      "pista": "Un día y un año son los tiempos de los dos movimientos. El amanecer y el atardecer son momentos del día.",
+      "explicacion": "En un día, la Tierra gira una vez; en un año, da una vuelta al Sol. Al amanecer, el Sol aparece por el este y al atardecer se oculta por el oeste.",
+      "error": "duracion-movimientos"
+    },
+    {
+      "id": "p10", "tipo": "multiple", "nivel": 2,
+      "enunciado": "¿Qué pasa porque la Tierra gira sobre sí misma? Elige todas las correctas.",
+      "opciones": [
+        { "texto": "Hay día y noche.", "correcta": true },
+        { "texto": "Vemos que el Sol sale y se oculta.", "correcta": true },
+        { "texto": "Pasa un año entero.", "pista": "Un año es lo que tarda la Tierra en dar la vuelta al Sol: eso es la traslación.", "error": "efectos-movimientos" },
+        { "texto": "Cambian las estaciones.", "pista": "Las estaciones cambian por el viaje alrededor del Sol, con la Tierra inclinada.", "error": "efectos-movimientos" }
+      ],
+      "columnas": 1,
+      "pista": "Girar sobre sí misma es la rotación, que dura un día. Hay dos respuestas correctas.",
+      "explicacion": "Por la rotación hay día y noche, y vemos que el Sol sale y se oculta. El año y las estaciones se deben a la traslación.",
+      "error": "efectos-movimientos"
+    },
+    {
+      "id": "p11", "tipo": "ordenar", "nivel": 2,
+      "enunciado": "Ordena del tiempo más corto al más largo.",
+      "elementos": ["una hora", "un día: una rotación", "una semana", "un año: una traslación"],
+      "vertical": true,
+      "pista": "Piensa cuántas horas tiene un día, y cuántos días tienen una semana y un año.",
+      "explicacion": "Una hora es lo más corto. Un día (una rotación) tiene 24 horas, una semana tiene 7 días y un año (una traslación) tiene unos 365 días.",
+      "error": "duracion-movimientos"
+    },
+    {
+      "id": "p12", "tipo": "numero", "nivel": 3,
+      "enunciado": "Una rotación de la Tierra dura unas 24 horas. ¿Cuántas horas duran 2 rotaciones?",
+      "visual": { "tipo": "emoji", "valor": "🔄", "cantidad": 2, "etiqueta": "2 rotaciones" },
+      "respuesta": 48,
+      "sufijo": "horas",
+      "erroresComunes": [
+        { "respuesta": 26, "pista": "Sumaste 24 + 2. Cada rotación dura 24 horas: suma 24 + 24.", "error": "calculo-tiempo" },
+        { "respuesta": 24, "pista": "Eso dura una sola rotación. Son dos.", "error": "calculo-tiempo" }
+      ],
+      "pista": "Son 2 días completos. Suma las horas de cada uno.",
+      "explicacion": "24 + 24 = 48. Dos rotaciones, o sea dos días completos, duran **48 horas**.",
+      "error": "calculo-tiempo"
+    },
+    {
+      "id": "p13", "tipo": "opcion", "nivel": 3,
+      "enunciado": "Cuando en Bolivia es mediodía, en China es de noche. ¿Por qué?",
+      "opciones": [
+        { "texto": "Porque el Sol ilumina solo la mitad de la Tierra, y China está en la otra mitad.", "correcta": true },
+        { "texto": "Porque en China el Sol se apaga un rato.", "pista": "El Sol brilla siempre. Piensa en qué mitad de la Tierra está cada lugar.", "error": "dia-noche" },
+        { "texto": "Porque la Luna tapa al Sol en China.", "pista": "La Luna no tapa al Sol cada noche. Recuerda la linterna y la naranja.", "error": "dia-noche" }
+      ],
+      "columnas": 1,
+      "pista": "Recuerda el experimento de la linterna: ¿alumbra toda la naranja a la vez?",
+      "explicacion": "El Sol solo puede iluminar la mitad de la Tierra a la vez. Cuando Bolivia mira al Sol, China está del otro lado, en la noche.",
+      "error": "dia-noche"
+    },
+    {
+      "id": "p14", "tipo": "clasificar", "nivel": 3,
+      "enunciado": "¿Pasa por la rotación o por la traslación de la Tierra?",
+      "categorias": [
+        { "id": "rot", "texto": "Rotación: gira sobre sí misma", "emoji": "🔄" },
+        { "id": "tras", "texto": "Traslación: viaja alrededor del Sol", "emoji": "☀️" }
+      ],
+      "elementos": [
+        { "texto": "Hay día y noche.", "categoria": "rot" },
+        { "texto": "El Sol aparece por el este.", "categoria": "rot" },
+        { "texto": "El Sol se oculta por el oeste.", "categoria": "rot" },
+        { "texto": "Pasa un año.", "categoria": "tras" },
+        { "texto": "Llega otra vez mi cumpleaños.", "emoji": "🎂", "categoria": "tras" },
+        { "texto": "Cambian las estaciones.", "categoria": "tras" }
+      ],
+      "pista": "La rotación dura un día. La traslación dura un año.",
+      "explicacion": "Por la rotación: el día y la noche, el amanecer por el este y el atardecer por el oeste. Por la traslación: pasa un año, vuelve tu cumpleaños y, con la Tierra inclinada, cambian las estaciones.",
+      "error": "efectos-movimientos"
+    },
+    {
+      "id": "p15", "tipo": "escribir-libre", "nivel": 3,
+      "enunciado": "Explica con tus palabras por qué hay día y noche.",
+      "guia": ["Hay día y noche porque la Tierra...", "Cuando mi lado de la Tierra mira al Sol..."],
+      "requisitos": [
+        { "tipo": "mayuscula-inicial" },
+        { "tipo": "punto-final" },
+        { "tipo": "min-palabras", "valor": 6 },
+        { "tipo": "incluye", "palabras": ["gira", "girar", "rota", "rotación", "vuelta", "vueltas"] }
+      ],
+      "modelo": "Hay día y noche porque la Tierra gira sobre sí misma.",
+      "pista": "Recuerda la naranja que giraba frente a la linterna.",
+      "explicacion": "Por ejemplo: «Hay día y noche porque la Tierra gira sobre sí misma». La mitad que mira al Sol tiene día y la otra, noche.",
+      "error": "produce-oracion"
+    },
+    {
+      "id": "p16", "tipo": "opcion", "nivel": 3,
+      "enunciado": "La Tierra se mueve muy rápido. ¿Por qué no sentimos que se mueve?",
+      "opciones": [
+        { "texto": "Porque todo se mueve junto con ella, suave y parejo, sin saltos ni frenazos.", "correcta": true },
+        { "texto": "Porque en realidad la Tierra está quieta.", "pista": "La Tierra nunca está quieta: gira y viaja alrededor del Sol.", "error": "tierra-quieta" },
+        { "texto": "Porque solo se mueve de noche, mientras dormimos.", "pista": "La Tierra se mueve de día y de noche, sin parar.", "error": "tierra-quieta" }
+      ],
+      "columnas": 1,
+      "pista": "Piensa en un bus que avanza muy suave por una carretera lisa: con los ojos cerrados, ¿sientes que avanzas?",
+      "explicacion": "No lo sentimos porque nosotros, el aire, las casas y los cerros nos movemos junto con la Tierra, siempre de forma suave y pareja.",
+      "error": "tierra-quieta"
+    }
+  ],
+  "comprobacion": [
+    {
+      "id": "c1", "tipo": "escribir", "nivel": 1,
+      "enunciado": "Escucha y escribe cómo se llama este movimiento.",
+      "escuchar": "La Tierra gira sobre sí misma, como un trompo. Una vuelta dura un día. ¿Cómo se llama este movimiento?",
+      "respuestas": ["rotación", "la rotación", "movimiento de rotación", "el movimiento de rotación"],
+      "pista": "Su nombre se parece a «rotar», que quiere decir girar.",
+      "explicacion": "Se llama **rotación**: la Tierra gira sobre sí misma y una vuelta dura un día.",
+      "error": "nombres-movimientos"
+    },
+    {
+      "id": "c2", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Toca por dónde sale y por dónde se oculta el Sol.",
+      "texto": "Cada mañana el Sol aparece por el *este*, sube en el cielo y en la tarde se oculta por el *oeste*.",
+      "pista": "Busca los nombres de dos lados. Hay dos palabras.",
+      "explicacion": "El Sol parece salir por el **este** y ocultarse por el **oeste**, porque la Tierra gira.",
+      "error": "sol-este-oeste"
+    },
+    {
+      "id": "c3", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa lo que sabes de la traslación.",
+      "texto": "La Tierra da una vuelta alrededor del Sol en unos [365] días. Ese tiempo se llama un [año].",
+      "banco": ["24", "mes"],
+      "pista": "Es el mismo tiempo que pasa de un cumpleaños al siguiente.",
+      "explicacion": "La traslación dura unos **365 días**: un **año**.",
+      "error": "duracion-movimientos"
+    },
+    {
+      "id": "c4", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "En el experimento de la linterna, ¿qué representa cada cosa? Une.",
+      "pares": [
+        [ { "texto": "la linterna", "emoji": "🔦" }, "el Sol" ],
+        [ { "texto": "la naranja", "emoji": "🍊" }, "la Tierra" ],
+        ["girar la naranja", "la rotación"],
+        ["caminar con la naranja alrededor de la linterna", "la traslación"]
+      ],
+      "pista": "La linterna da luz, como una estrella. La naranja es nuestro planeta.",
+      "explicacion": "La linterna es el Sol y la naranja es la Tierra. Girar la naranja es la rotación; caminar alrededor de la linterna es la traslación.",
+      "error": "nombres-movimientos"
+    },
+    {
+      "id": "c5", "tipo": "numero", "nivel": 2,
+      "enunciado": "Un año tiene 365 días. Algunos años, llamados **bisiestos**, tienen 1 día más. ¿Cuántos días tiene un año bisiesto?",
+      "respuesta": 366,
+      "sufijo": "días",
+      "erroresComunes": [
+        { "respuesta": 364, "pista": "Tiene un día más, no uno menos. Suma 1.", "error": "calculo-tiempo" },
+        { "respuesta": 365, "pista": "Así es un año normal. El bisiesto tiene 1 día más.", "error": "calculo-tiempo" }
+      ],
+      "pista": "Suma 1 a 365.",
+      "explicacion": "365 + 1 = 366. La vuelta al Sol dura un poquito más de 365 días; por eso, algunos años se agrega un día: el 29 de febrero.",
+      "error": "calculo-tiempo"
+    },
+    {
+      "id": "c6", "tipo": "multiple", "nivel": 2,
+      "enunciado": "¿Qué pasa por la traslación de la Tierra? Elige todas las correctas.",
+      "opciones": [
+        { "texto": "Pasa un año.", "correcta": true },
+        { "texto": "Como la Tierra viaja inclinada, cambian las estaciones.", "correcta": true },
+        { "texto": "Hay día y noche.", "pista": "El día y la noche vienen de la rotación, que dura un día.", "error": "efectos-movimientos" },
+        { "texto": "El Sol aparece por el este cada mañana.", "pista": "Eso pasa cada día, porque la Tierra gira sobre sí misma.", "error": "efectos-movimientos" }
+      ],
+      "columnas": 1,
+      "pista": "La traslación es el viaje alrededor del Sol y dura un año. Hay dos respuestas correctas.",
+      "explicacion": "Por la traslación pasa un año y, como la Tierra viaja inclinada, cambian las estaciones. El día, la noche y el amanecer por el este vienen de la rotación.",
+      "error": "efectos-movimientos"
+    },
+    {
+      "id": "c7", "tipo": "opcion", "nivel": 3,
+      "enunciado": "Arami dice: «En verano hace calor porque la Tierra está más cerca del Sol». ¿Tiene razón?",
+      "opciones": [
+        { "texto": "No. Las estaciones cambian porque la Tierra está inclinada mientras viaja alrededor del Sol.", "correcta": true },
+        { "texto": "Sí. En verano la Tierra se acerca mucho al Sol.", "pista": "Si fuera así, todo el mundo tendría verano al mismo tiempo. Pero cuando en Bolivia es verano, en el norte del mundo es invierno.", "error": "causa-estaciones" },
+        { "texto": "Sí. En invierno el Sol se aleja y se enfría.", "pista": "El Sol no se enfría en invierno. Piensa en cómo viaja la Tierra.", "error": "causa-estaciones" }
+      ],
+      "columnas": 1,
+      "pista": "Cuando en Bolivia es verano, en los países del norte del mundo es invierno. ¿Podría ser por la distancia?",
+      "explicacion": "Arami no tiene razón. Las estaciones cambian porque la Tierra viaja **inclinada**: en verano la luz del Sol nos llega más directa. Por eso, cuando aquí es verano, en el norte es invierno.",
+      "error": "causa-estaciones"
+    },
+    {
+      "id": "c8", "tipo": "pasos", "nivel": 3,
+      "enunciado": "Hoy Luis cumple 8 años. ¡Su familia prepara una torta!",
+      "visual": { "tipo": "emoji", "valor": "🎂" },
+      "pasos": [
+        {
+          "tipo": "opcion",
+          "enunciado": "De un cumpleaños al siguiente pasa un año. ¿Qué movimiento completa la Tierra en ese tiempo?",
+          "opciones": [
+            { "texto": "la traslación", "correcta": true },
+            { "texto": "la rotación", "pista": "La rotación es el giro de un solo día. Entre un cumpleaños y otro pasa un año.", "error": "nombres-movimientos" }
+          ],
+          "columnas": 2,
+          "pista": "¿Qué movimiento dura un año?",
+          "explicacion": "Es la **traslación**: una vuelta completa alrededor del Sol dura un año.",
+          "error": "nombres-movimientos"
+        },
+        {
+          "tipo": "numero",
+          "enunciado": "¿Cuántas vueltas alrededor del Sol dio la Tierra desde que Luis nació?",
+          "respuesta": 8,
+          "sufijo": "vueltas",
+          "erroresComunes": [
+            { "respuesta": 365, "pista": "365 son los días de una sola vuelta. Cuenta una vuelta por cada año.", "error": "duracion-movimientos" }
+          ],
+          "pista": "Cada año de vida es una vuelta alrededor del Sol.",
+          "explicacion": "Luis tiene 8 años: la Tierra dio **8 vueltas** alrededor del Sol desde que él nació.",
+          "error": "duracion-movimientos"
+        }
+      ],
+      "pista": "Resuelve un paso a la vez.",
+      "explicacion": "Un año es una vuelta de la Tierra alrededor del Sol: la traslación. Luis cumple 8 años, así que la Tierra dio 8 vueltas desde que él nació.",
+      "error": "duracion-movimientos"
+    }
+  ],
+  "repaso": {
+    "texto": "Rotación: la Tierra gira sobre sí misma en unas 24 horas, y por eso hay día y noche. Traslación: viaja alrededor del Sol en unos 365 días, y así pasa un año. El Sol sale por el este y se oculta por el oeste.",
+    "visual": { "tipo": "ilustracion", "id": "tierra-rotacion" }
+  },
+  "adulto": {
+    "objetivo": "Reconocer los dos movimientos de la Tierra y su relación con lo que observamos. Rotación: gira sobre su eje en unas 24 horas; produce el día y la noche y el movimiento aparente del Sol, que sale por el este y se oculta por el oeste. Traslación: da una vuelta alrededor del Sol en unos 365 días (algo más, por eso existen los años bisiestos de 366); marca el año y, junto con la inclinación del eje, produce las estaciones. Conviene corregir con calma dos ideas erróneas frecuentes: que el Sol gira alrededor de la Tierra y que las estaciones se deben a la distancia al Sol.",
+    "sugerencias": [
+      "Hagan el experimento de la linterna y la naranja (o una pelota) en un cuarto oscuro. Marquen Bolivia con un punto o un sticker, giren la naranja despacio y pregunten: «¿Ahora es de día o de noche en Bolivia?». Luego caminen con la naranja, un poco inclinada, alrededor de la linterna para mostrar la traslación.",
+      "Pongan un palo derecho o una botella en un lugar soleado del patio. Marquen con tiza o piedritas la punta de la sombra en la mañana, al mediodía y en la tarde: verán que la sombra cambia de largo y de lugar porque la Tierra gira. Otro día, observen desde la puerta por dónde sale el Sol y por dónde se oculta. Recuerden no mirar nunca el Sol directamente.",
+      "En el calendario de la casa, marquen los cumpleaños de la familia y conversen: cada cumpleaños, la Tierra dio una vuelta completa alrededor del Sol. Pregunten cuántas vueltas al Sol tiene cada persona (¡algunas personas mayores tienen más de 60!). Si conocen a alguien que vive en un país lejano, averigüen qué hora es allá en este momento."
+    ],
+    "errores": {
+      "nombres-movimientos": {
+        "descripcion": "Confunde los nombres rotación y traslación.",
+        "sugerencia": "Relacionen cada palabra con una acción: «rotar» es girar en el mismo lugar (den una vuelta sobre sí mismos) y «trasladarse» es ir de un lugar a otro (caminen alrededor de una silla)."
+      },
+      "dia-noche": {
+        "descripcion": "No relaciona el día y la noche con el giro de la Tierra (por ejemplo, cree que de noche el Sol se apaga o se esconde detrás de los cerros).",
+        "sugerencia": "Repitan el experimento de la linterna y la naranja y deténganse a preguntar dónde es de día y dónde es de noche en cada momento."
+      },
+      "tierra-quieta": {
+        "descripcion": "Cree que la Tierra está quieta y que el Sol da vueltas a su alrededor.",
+        "sugerencia": "En un bus o un auto que avanza suave, pregunten si con los ojos cerrados sienten que se mueven. Expliquen que el Sol parece moverse en el cielo, pero somos nosotros los que giramos con la Tierra."
+      },
+      "sol-este-oeste": {
+        "descripcion": "Confunde por dónde sale y por dónde se oculta el Sol.",
+        "sugerencia": "Desde la puerta o la ventana, señalen juntos por dónde sale el Sol en la mañana (este) y por dónde se oculta en la tarde (oeste). Peguen un cartel con cada palabra en esa pared."
+      },
+      "duracion-movimientos": {
+        "descripcion": "Confunde cuánto dura cada movimiento (unas 24 horas y unos 365 días).",
+        "sugerencia": "Asocien la rotación con un día (del desayuno de hoy al de mañana) y la traslación con un año (de un cumpleaños al siguiente)."
+      },
+      "efectos-movimientos": {
+        "descripcion": "No distingue qué fenómenos vienen de la rotación (día y noche) y cuáles de la traslación (el año y las estaciones).",
+        "sugerencia": "Hagan dos tarjetas, «un día» y «un año», y clasifiquen juntos lo que pasa en cada tiempo: amanecer, noche, cumpleaños, cambio de estación."
+      },
+      "causa-estaciones": {
+        "descripcion": "Cree que las estaciones se deben a que la Tierra se acerca o se aleja del Sol.",
+        "sugerencia": "Con una linterna, alumbren una hoja de frente y luego inclinada: de frente la mancha de luz es más pequeña y más fuerte. Expliquen que la Tierra viaja inclinada y que, cuando en Bolivia es verano, en el norte del mundo es invierno."
+      },
+      "calculo-tiempo": {
+        "descripcion": "Se equivoca al calcular con horas y días.",
+        "sugerencia": "Usen el calendario y el reloj de la casa: sumen juntos las horas de dos días (24 + 24) o agreguen un día a 365."
+      },
+      "vocabulario-tema": {
+        "descripcion": "Le cuesta nombrar o escribir palabras del tema (Tierra, Sol, amanecer, atardecer).",
+        "sugerencia": "Observen juntos el cielo al amanecer y al atardecer y nombren en voz alta lo que ven."
+      },
+      "produce-oracion": {
+        "descripcion": "Le cuesta explicar con una oración completa por qué hay día y noche.",
+        "sugerencia": "Primero que lo explique en voz alta con la naranja y la linterna; luego escriban juntos la oración, con mayúscula inicial y punto final."
+      }
+    }
+  }
+}

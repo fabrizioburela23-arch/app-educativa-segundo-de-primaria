@@ -1,0 +1,435 @@
+{
+  "id": "com-4-1",
+  "titulo": "El punto",
+  "objetivo": "Uso el punto para terminar oraciones, párrafos y textos, y escribo mayúscula después del punto.",
+  "lecturas": [
+    {
+      "id": "cosecha",
+      "titulo": "Día de cosecha",
+      "genero": "relato",
+      "emoji": "🥔",
+      "parrafos": [
+        "Nayra vive cerca del lago Titicaca. Su familia siembra papa. Hoy es día de cosecha.",
+        "Su mamá cava la tierra con cuidado. Nayra y su abuelo recogen las papas. Llenan tres costales.",
+        "Por la tarde comen juntos en el campo. Todos están muy contentos."
+      ]
+    },
+    {
+      "id": "bufeo",
+      "titulo": "El bufeo",
+      "genero": "texto informativo",
+      "emoji": "🐬",
+      "parrafos": [
+        "El bufeo es un delfín de río. Vive en los ríos de la Amazonía de Bolivia.",
+        "Su piel puede ser gris o rosada. Come peces del río.",
+        "Debemos cuidar los ríos. Así el bufeo tendrá siempre un lugar donde vivir."
+      ]
+    }
+  ],
+  "explicacion": [
+    {
+      "texto": "El **punto** es un signo pequeño: «.». Lo ponemos al final de una oración para decir «aquí termina esta idea». Al leer, en el punto hacemos una pausa.",
+      "visual": { "tipo": "emojis", "items": ["🦙", "."], "etiquetas": ["La llama come pasto", "punto"] }
+    },
+    {
+      "texto": "Después del punto, la palabra que sigue empieza con **mayúscula**. Mira: «Kusi tiene una perrita. **S**e llama Chispa.»",
+      "visual": { "tipo": "tabla", "columnas": ["Oración 1", "Oración 2"], "filas": [["Kusi tiene una perrita.", "Se llama Chispa."]] }
+    },
+    {
+      "texto": "Hay tres clases de punto. El **punto seguido** separa oraciones del mismo párrafo. El **punto aparte** termina un párrafo. El **punto final** termina todo el texto.",
+      "visual": {
+        "tipo": "tabla",
+        "columnas": ["Punto", "¿Qué hago después?"],
+        "filas": [
+          ["seguido", "Sigo escribiendo en el mismo renglón."],
+          ["aparte", "Empiezo un párrafo nuevo en otro renglón."],
+          ["final", "Ya no escribo más: el texto terminó."]
+        ]
+      }
+    },
+    {
+      "texto": "Un **párrafo** es un grupo de oraciones que hablan de lo mismo. Cada párrafo empieza en un renglón nuevo. Al punto seguido y al punto aparte también se les dice «punto y seguido» y «punto y aparte».",
+      "emoji": "📄"
+    }
+  ],
+  "ejemplo": {
+    "instruccion": "Mira cómo Wara escribe un texto sobre su llama y qué punto usa en cada lugar.",
+    "pasos": [
+      {
+        "texto": "Wara escribe la primera oración y la termina con punto: «Mi llama se llama Nube.»",
+        "visual": { "tipo": "emoji", "valor": "🦙", "etiqueta": "Mi llama se llama Nube." }
+      },
+      {
+        "texto": "Sigue hablando de Nube en el mismo renglón: «Es blanca y muy curiosa.» El punto que separa las dos oraciones es un **punto seguido**.",
+        "visual": { "tipo": "tabla", "columnas": ["Párrafo", "Texto"], "filas": [["1", "Mi llama se llama Nube. Es blanca y muy curiosa."]] }
+      },
+      {
+        "texto": "Ahora quiere contar qué come Nube. Por eso pone **punto aparte** después de «curiosa» y empieza un párrafo nuevo en otro renglón.",
+        "visual": {
+          "tipo": "tabla", "columnas": ["Párrafo", "Texto"],
+          "filas": [["1", "Mi llama se llama Nube. Es blanca y muy curiosa."], ["2", "Nube come pasto en el cerro."]]
+        }
+      },
+      {
+        "texto": "Escribe una última oración y la termina con **punto final**: ahí se acaba todo el texto.",
+        "visual": {
+          "tipo": "tabla", "columnas": ["Párrafo", "Texto"],
+          "filas": [["1", "Mi llama se llama Nube. Es blanca y muy curiosa."], ["2", "Nube come pasto en el cerro. Después toma agua del río."]]
+        }
+      }
+    ]
+  },
+  "guiada": {
+    "intro": "Ahora lo hacemos juntos.",
+    "pasos": [
+      {
+        "id": "g1", "tipo": "opcion",
+        "enunciado": "¿En qué oración el punto está bien puesto?",
+        "apoyo": "El punto va al final de la idea, pegado a la última palabra.",
+        "opciones": [
+          { "texto": "La llama come pasto.", "correcta": true },
+          { "texto": "La llama come. pasto", "pista": "La idea no termina en «come». ¿Qué come la llama?", "error": "lugar-del-punto" },
+          { "texto": ".La llama come pasto", "pista": "El punto no va al principio: va al final de la oración.", "error": "lugar-del-punto" }
+        ],
+        "columnas": 1,
+        "pista": "Lee la oración entera. ¿Dónde termina la idea?",
+        "explicacion": "«La llama come pasto.» El punto va al final, después de «pasto», porque ahí termina la idea.",
+        "error": "lugar-del-punto"
+      },
+      {
+        "id": "g2", "tipo": "completar",
+        "enunciado": "Pon los puntos y la mayúscula que faltan.",
+        "apoyo": "Hay dos oraciones. Después del punto, la palabra que sigue empieza con mayúscula.",
+        "texto": "Kusi tiene una perrita[.] [S]e llama Chispa[.]",
+        "banco": ["s"],
+        "pista": "Busca dónde termina la primera idea. ¿Cómo empieza la palabra que va después del punto?",
+        "explicacion": "«Kusi tiene una perrita. Se llama Chispa.» Cada oración termina con punto, y «Se» empieza con mayúscula porque va después del punto.",
+        "error": "mayuscula-despues-punto"
+      },
+      {
+        "id": "g3", "tipo": "relacionar",
+        "enunciado": "Une cada punto con lo que haces después de ponerlo.",
+        "apoyo": "Piensa: ¿sigues en el mismo renglón, cambias de renglón o ya terminaste?",
+        "pares": [
+          ["punto seguido", "Sigo en el mismo renglón."],
+          ["punto aparte", "Empiezo un párrafo nuevo."],
+          ["punto final", "Termino el texto."]
+        ],
+        "pista": "«Seguido» viene de seguir, «aparte» es separar y «final» es terminar.",
+        "explicacion": "Punto seguido: sigo en el mismo renglón. Punto aparte: empiezo un párrafo nuevo en otro renglón. Punto final: el texto termina.",
+        "error": "tipos-de-punto"
+      }
+    ]
+  },
+  "practica": [
+    {
+      "id": "p1", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Toca la palabra que va justo después del punto.",
+      "texto": "Inti come pan. *Luego* toma api.",
+      "pista": "Busca el punto. ¿Qué palabra está a su derecha?",
+      "explicacion": "«Luego» va después del punto. Por eso empieza con mayúscula.",
+      "error": "mayuscula-despues-punto"
+    },
+    {
+      "id": "p2", "tipo": "completar", "nivel": 1,
+      "enunciado": "Completa con el nombre de cada punto.",
+      "texto": "Para seguir en el mismo renglón pongo punto [seguido]. Para empezar un párrafo nuevo pongo punto [aparte]. Para terminar el texto pongo punto [final].",
+      "pista": "Piensa en lo que quiere decir cada palabra: seguir, separar, terminar.",
+      "explicacion": "Punto seguido para seguir en el mismo renglón, punto aparte para empezar un párrafo nuevo y punto final para terminar el texto.",
+      "error": "tipos-de-punto"
+    },
+    {
+      "id": "p3", "tipo": "ordenar", "nivel": 1,
+      "enunciado": "Ordena las palabras para formar la oración.",
+      "elementos": ["El", "tatú", "cava", "un", "hoyo."],
+      "unir": " ",
+      "pista": "La palabra con mayúscula va primero. La que tiene punto va al final.",
+      "explicacion": "«El tatú cava un hoyo.» Empieza con mayúscula y termina con punto.",
+      "error": "orden-oracion"
+    },
+    {
+      "id": "p4", "tipo": "escribir", "nivel": 1,
+      "enunciado": "Escucha y escribe la oración. Recuerda la mayúscula y el punto.",
+      "escuchar": "La paraba vuela alto.",
+      "respuestas": ["La paraba vuela alto."],
+      "mayusculas": "estricto",
+      "pista": "Son cuatro palabras. ¿Pusiste mayúscula al inicio y punto al final?",
+      "explicacion": "Se escribe «La paraba vuela alto.»: mayúscula al inicio y punto al final.",
+      "error": "dictado-punto"
+    },
+    {
+      "id": "p5", "tipo": "tocar", "nivel": 2,
+      "enunciado": "Toca la primera palabra de cada oración.",
+      "texto": "*Wara* fue a la feria. *Compró* papas y habas. *Después* volvió a su casa.",
+      "pista": "Hay tres oraciones. Una oración empieza al inicio del texto o después de un punto.",
+      "explicacion": "Las oraciones empiezan con «Wara», «Compró» y «Después». Las dos últimas van después de un punto, por eso llevan mayúscula.",
+      "error": "limite-oracion"
+    },
+    {
+      "id": "p6", "tipo": "completar", "nivel": 2,
+      "enunciado": "Pon los puntos y la mayúscula que faltan.",
+      "texto": "Hoy llueve mucho[.] [L]as calles están mojadas[.]",
+      "banco": ["l"],
+      "pista": "Hay dos oraciones. ¿Cómo empieza la palabra que va después del punto?",
+      "explicacion": "«Hoy llueve mucho. Las calles están mojadas.» Cada oración termina con punto y «Las» empieza con mayúscula porque va después del punto.",
+      "error": "mayuscula-despues-punto"
+    },
+    {
+      "id": "p7", "tipo": "numero", "nivel": 2,
+      "enunciado": "Lee el texto. ¿Cuántos párrafos tiene?",
+      "lectura": "cosecha",
+      "respuesta": 3,
+      "erroresComunes": [
+        { "respuesta": 8, "pista": "Contaste las oraciones. Un párrafo es un bloque de oraciones que empieza en un renglón nuevo.", "error": "cuenta-parrafos" },
+        { "respuesta": 4, "pista": "El título no es un párrafo. Cuenta solo los bloques del texto.", "error": "cuenta-parrafos" }
+      ],
+      "pista": "Cada párrafo empieza en un renglón nuevo. Cuenta los bloques de oraciones.",
+      "explicacion": "El texto tiene 3 párrafos: el primero cuenta que es día de cosecha, el segundo cómo sacan las papas y el tercero qué hacen por la tarde.",
+      "error": "cuenta-parrafos"
+    },
+    {
+      "id": "p8", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha y escribe. Son dos oraciones: sepáralas con punto seguido.",
+      "escuchar": "La vicuña vive en el altiplano. Tiene lana muy fina.",
+      "respuestas": ["La vicuña vive en el altiplano. Tiene lana muy fina."],
+      "mayusculas": "estricto",
+      "pista": "Después del primer punto deja un espacio y empieza con mayúscula. No olvides el punto final.",
+      "explicacion": "Se escribe «La vicuña vive en el altiplano. Tiene lana muy fina.» El punto seguido separa las dos oraciones y «Tiene» empieza con mayúscula.",
+      "error": "dictado-punto"
+    },
+    {
+      "id": "p9", "tipo": "multiple", "nivel": 2,
+      "enunciado": "Elige todas las oraciones bien escritas.",
+      "opciones": [
+        { "texto": "El sol calienta.", "correcta": true },
+        { "texto": "Ana canta. Luis baila.", "correcta": true },
+        { "texto": "el río suena.", "pista": "Mira la primera letra.", "error": "mayuscula-inicio" },
+        { "texto": "Mi gato duerme", "pista": "Mira el final. ¿Dónde está el punto?", "error": "olvida-punto" },
+        { "texto": "Rosa ríe. ella está feliz.", "pista": "Mira la palabra que va después del punto.", "error": "mayuscula-despues-punto" }
+      ],
+      "columnas": 1,
+      "pista": "Revisa tres cosas: mayúscula al inicio, punto al final y mayúscula después de cada punto.",
+      "explicacion": "Están bien «El sol calienta.» y «Ana canta. Luis baila.». A las otras les falta una mayúscula o el punto final.",
+      "error": "olvida-punto"
+    },
+    {
+      "id": "p10", "tipo": "clasificar", "nivel": 3,
+      "enunciado": "Lee el texto. ¿Con qué punto termina cada oración?",
+      "lectura": "cosecha",
+      "categorias": [
+        { "id": "seguido", "texto": "Punto seguido" },
+        { "id": "aparte", "texto": "Punto aparte" },
+        { "id": "final", "texto": "Punto final" }
+      ],
+      "elementos": [
+        { "texto": "Su familia siembra papa.", "categoria": "seguido" },
+        { "texto": "Hoy es día de cosecha.", "categoria": "aparte" },
+        { "texto": "Nayra y su abuelo recogen las papas.", "categoria": "seguido" },
+        { "texto": "Llenan tres costales.", "categoria": "aparte" },
+        { "texto": "Por la tarde comen juntos en el campo.", "categoria": "seguido" },
+        { "texto": "Todos están muy contentos.", "categoria": "final" }
+      ],
+      "pista": "Busca cada oración en el texto. ¿Qué viene después: otra oración en el mismo párrafo, un párrafo nuevo o nada más?",
+      "explicacion": "Llevan punto seguido «Su familia siembra papa.», «Nayra y su abuelo recogen las papas.» y «Por la tarde comen juntos en el campo.». Llevan punto aparte «Hoy es día de cosecha.» y «Llenan tres costales.». «Todos están muy contentos.» lleva el punto final.",
+      "error": "tipos-de-punto"
+    },
+    {
+      "id": "p11", "tipo": "numero", "nivel": 3,
+      "enunciado": "Lee el texto. ¿Cuántos puntos aparte tiene?",
+      "lectura": "cosecha",
+      "respuesta": 2,
+      "erroresComunes": [
+        { "respuesta": 3, "pista": "El último punto del texto es el punto final, no un punto aparte.", "error": "tipos-de-punto" },
+        { "respuesta": 5, "pista": "Esos son los puntos seguidos. Busca los puntos que terminan un párrafo.", "error": "tipos-de-punto" },
+        { "respuesta": 8, "pista": "Contaste todos los puntos. Cuenta solo los que terminan un párrafo cuando después viene otro.", "error": "tipos-de-punto" }
+      ],
+      "pista": "El punto aparte está al final de un párrafo, cuando después empieza otro párrafo.",
+      "explicacion": "Hay 2 puntos aparte: al final del primer párrafo y al final del segundo. El punto del tercer párrafo es el punto final.",
+      "error": "tipos-de-punto"
+    },
+    {
+      "id": "p12", "tipo": "escribir", "nivel": 3,
+      "enunciado": "Escribe bien este texto. Son dos oraciones: el cóndor vuela alto tiene alas muy grandes",
+      "respuestas": ["El cóndor vuela alto. Tiene alas muy grandes."],
+      "mayusculas": "estricto",
+      "pista": "¿Dónde termina la primera idea? Pon punto ahí y empieza la segunda oración con mayúscula.",
+      "explicacion": "Se escribe «El cóndor vuela alto. Tiene alas muy grandes.» Cada oración empieza con mayúscula y termina con punto.",
+      "error": "limite-oracion"
+    },
+    {
+      "id": "p13", "tipo": "pasos", "nivel": 3,
+      "enunciado": "Arami escribió sobre el api de su abuela, pero olvidó algunas cosas: «Mi abuela prepara api. es morado y dulce»",
+      "pasos": [
+        {
+          "tipo": "tocar",
+          "enunciado": "Toca la palabra que debe empezar con mayúscula.",
+          "texto": "Mi abuela prepara api. *es* morado y dulce",
+          "pista": "Busca la palabra que va después del punto.",
+          "explicacion": "«Es» va después del punto: debe empezar con mayúscula.",
+          "error": "mayuscula-despues-punto"
+        },
+        {
+          "tipo": "opcion",
+          "enunciado": "¿Qué le falta al final del texto?",
+          "opciones": [
+            { "texto": "un punto final", "correcta": true },
+            { "texto": "un punto seguido", "pista": "Después de «dulce» no viene otra oración.", "error": "tipos-de-punto" },
+            { "texto": "nada, está completo", "pista": "Toda oración termina con un signo al final. Mira después de «dulce».", "error": "olvida-punto" }
+          ],
+          "columnas": 1,
+          "pista": "Mira la última palabra. ¿Qué tiene después?",
+          "explicacion": "Falta el punto final después de «dulce», porque ahí termina el texto.",
+          "error": "olvida-punto"
+        },
+        {
+          "tipo": "escribir",
+          "enunciado": "Escribe el texto corregido.",
+          "respuestas": ["Mi abuela prepara api. Es morado y dulce."],
+          "mayusculas": "estricto",
+          "pista": "Cambia «es» por «Es» y agrega el punto final.",
+          "explicacion": "Se escribe «Mi abuela prepara api. Es morado y dulce.»",
+          "error": "corrige-texto"
+        }
+      ],
+      "pista": "Resuelve un paso a la vez.",
+      "explicacion": "El texto corregido es «Mi abuela prepara api. Es morado y dulce.»: mayúscula después del punto y punto final.",
+      "error": "corrige-texto"
+    },
+    {
+      "id": "p14", "tipo": "escribir-libre", "nivel": 3,
+      "enunciado": "Escribe dos oraciones sobre tu comida favorita. Sepáralas con punto seguido.",
+      "guia": ["Mi comida favorita es...", "La prepara..."],
+      "requisitos": [
+        { "tipo": "mayuscula-inicial" },
+        { "tipo": "punto-final" },
+        { "tipo": "min-oraciones", "valor": 2 },
+        { "tipo": "min-palabras", "valor": 8 }
+      ],
+      "modelo": "Mi comida favorita es el majadito. Lo prepara mi papá los domingos.",
+      "pista": "Escribe una idea, pon punto y empieza la segunda oración con mayúscula.",
+      "explicacion": "Por ejemplo: «Mi comida favorita es el majadito. Lo prepara mi papá los domingos.» El punto seguido separa las dos oraciones y el texto termina con punto final.",
+      "error": "produce-texto"
+    }
+  ],
+  "comprobacion": [
+    {
+      "id": "c1", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Toca la última palabra de cada oración.",
+      "texto": "El sol sale *temprano*. Los gallos *cantan*.",
+      "pista": "Cada oración termina donde está el punto.",
+      "explicacion": "«Temprano» y «cantan» son las últimas palabras: después de cada una va un punto.",
+      "error": "limite-oracion"
+    },
+    {
+      "id": "c2", "tipo": "ordenar", "nivel": 1,
+      "enunciado": "Ordena las palabras para formar la oración.",
+      "elementos": ["Mi", "prima", "baila", "caporales."],
+      "unir": " ",
+      "pista": "La palabra con mayúscula va primero y la que tiene punto va al final.",
+      "explicacion": "«Mi prima baila caporales.» Empieza con mayúscula y termina con punto.",
+      "error": "orden-oracion"
+    },
+    {
+      "id": "c3", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha y escribe. Son dos oraciones: sepáralas con punto seguido.",
+      "escuchar": "El jaguar vive en la selva. Tiene manchas negras.",
+      "respuestas": ["El jaguar vive en la selva. Tiene manchas negras."],
+      "mayusculas": "estricto",
+      "pista": "Pon punto donde termina la primera idea, deja un espacio y empieza la segunda con mayúscula.",
+      "explicacion": "Se escribe «El jaguar vive en la selva. Tiene manchas negras.» Hay un punto seguido, un punto final y «Tiene» va con mayúscula.",
+      "error": "dictado-punto"
+    },
+    {
+      "id": "c4", "tipo": "numero", "nivel": 2,
+      "enunciado": "Lee el texto. ¿Cuántas oraciones tiene?",
+      "lectura": "bufeo",
+      "respuesta": 6,
+      "erroresComunes": [
+        { "respuesta": 3, "pista": "Contaste los párrafos. Cada párrafo tiene más de una oración.", "error": "cuenta-parrafos" },
+        { "respuesta": 7, "pista": "El título no es una oración del texto. Cuenta solo las que terminan con punto.", "error": "cuenta-parrafos" }
+      ],
+      "pista": "Cada oración termina con un punto. Cuenta los puntos.",
+      "explicacion": "El texto tiene 6 oraciones, porque tiene 6 puntos: dos en cada párrafo.",
+      "error": "cuenta-parrafos"
+    },
+    {
+      "id": "c5", "tipo": "completar", "nivel": 2,
+      "enunciado": "Pon los puntos y la mayúscula que faltan.",
+      "texto": "La feria abre temprano[.] [H]ay frutas y verduras[.]",
+      "banco": ["h"],
+      "pista": "Hay dos oraciones. ¿Cómo empieza la palabra que va después del punto?",
+      "explicacion": "«La feria abre temprano. Hay frutas y verduras.» Cada oración termina con punto y «Hay» empieza con mayúscula porque va después del punto.",
+      "error": "mayuscula-despues-punto"
+    },
+    {
+      "id": "c6", "tipo": "multiple", "nivel": 2,
+      "enunciado": "Elige todas las oraciones bien escritas.",
+      "opciones": [
+        { "texto": "Luis lee un cuento.", "correcta": true },
+        { "texto": "Hace frío. Me pongo la chompa.", "correcta": true },
+        { "texto": "la vaca da leche.", "pista": "Mira la primera letra.", "error": "mayuscula-inicio" },
+        { "texto": "Nayra dibuja. pinta un sol.", "pista": "Mira la palabra que va después del punto.", "error": "mayuscula-despues-punto" },
+        { "texto": "El tren llega", "pista": "Mira el final de la oración.", "error": "olvida-punto" }
+      ],
+      "columnas": 1,
+      "pista": "Revisa la mayúscula del inicio, el punto del final y la mayúscula después de cada punto.",
+      "explicacion": "Están bien «Luis lee un cuento.» y «Hace frío. Me pongo la chompa.». A las otras les falta una mayúscula o el punto final.",
+      "error": "mayuscula-despues-punto"
+    },
+    {
+      "id": "c7", "tipo": "opcion", "nivel": 3,
+      "enunciado": "Lee el texto. ¿Qué punto va después de «Come peces del río»?",
+      "lectura": "bufeo",
+      "opciones": [
+        { "texto": "punto aparte", "correcta": true },
+        { "texto": "punto seguido", "pista": "Después de esa oración, ¿el texto sigue en el mismo párrafo?", "error": "tipos-de-punto" },
+        { "texto": "punto final", "pista": "Después de esa oración el texto continúa. ¿Termina ahí todo el texto?", "error": "tipos-de-punto" }
+      ],
+      "pista": "Busca la oración en el texto. ¿Qué viene después de ella?",
+      "explicacion": "Después de «Come peces del río» termina el segundo párrafo y empieza otro. Por eso lleva punto aparte.",
+      "error": "tipos-de-punto"
+    },
+    {
+      "id": "c8", "tipo": "escribir", "nivel": 3,
+      "enunciado": "Escribe bien este texto. Son dos oraciones: mi hermano juega fútbol es muy rápido",
+      "respuestas": ["Mi hermano juega fútbol. Es muy rápido."],
+      "mayusculas": "estricto",
+      "pista": "¿Dónde termina la primera idea? Pon punto ahí y empieza la segunda con mayúscula.",
+      "explicacion": "Se escribe «Mi hermano juega fútbol. Es muy rápido.» Cada oración empieza con mayúscula y termina con punto.",
+      "error": "limite-oracion"
+    }
+  ],
+  "repaso": {
+    "texto": "El punto termina una oración, y después del punto va mayúscula. Punto seguido: sigo en el mismo renglón. Punto aparte: empiezo otro párrafo. Punto final: termina el texto.",
+    "visual": {
+      "tipo": "tabla",
+      "columnas": ["Punto", "¿Qué hago después?"],
+      "filas": [
+        ["seguido", "Sigo en el mismo renglón."],
+        ["aparte", "Empiezo un párrafo nuevo."],
+        ["final", "Termino el texto."]
+      ]
+    }
+  },
+  "adulto": {
+    "objetivo": "Usar el punto para cerrar oraciones, párrafos y textos: punto seguido (entre oraciones del mismo párrafo), punto aparte (al terminar un párrafo) y punto final (al terminar el texto), y escribir mayúscula después del punto. La RAE prefiere los nombres «punto y seguido» y «punto y aparte»; en la escuela también se usan «punto seguido» y «punto aparte».",
+    "sugerencias": [
+      "Lean juntos un cuento corto o una noticia del periódico. En cada punto seguido den una palmada; si después empieza un párrafo nuevo (punto aparte), den dos palmadas; en el punto final, levanten las manos.",
+      "En la feria o en el mercado, dicten dos oraciones cortas sobre lo que ven (Hay muchas naranjas. El kilo cuesta seis bolivianos.) y pidan que las escriba en un papel. Revisen juntos los puntos y la mayúscula después de cada punto.",
+      "Escriban en una hoja o con tiza en el patio un texto sin puntos (mi gato es gris le gusta dormir al sol). Pidan que ponga una semilla o un botón donde va cada punto y que diga qué palabra debe llevar mayúscula."
+    ],
+    "errores": {
+      "lugar-del-punto": { "descripcion": "Pone el punto en medio de la idea o al inicio, en lugar de al final.", "sugerencia": "Lean la oración en voz alta y pregunten: «¿ya terminó la idea?». El punto va solo cuando la idea está completa." },
+      "mayuscula-despues-punto": { "descripcion": "Después de un punto sigue escribiendo con minúscula.", "sugerencia": "Al revisar un texto, que señale cada punto con el dedo y mire si la palabra siguiente empieza con mayúscula." },
+      "tipos-de-punto": { "descripcion": "Confunde el punto seguido, el punto aparte y el punto final.", "sugerencia": "Tomen un texto de tres párrafos y marquen con colores: verde para el punto seguido, azul para el punto aparte y rojo para el punto final." },
+      "olvida-punto": { "descripcion": "Olvida el punto al final de la oración o del texto.", "sugerencia": "Pidan que, al terminar cada oración, «cierre la puerta» con un punto y lo señale con el dedo." },
+      "mayuscula-inicio": { "descripcion": "Olvida la mayúscula al empezar la oración.", "sugerencia": "Antes de escribir, que diga en voz alta «empiezo con mayúscula» y, al revisar, que marque con un círculo la primera letra." },
+      "orden-oracion": { "descripcion": "Le cuesta ordenar palabras para formar una oración.", "sugerencia": "Escriban una oración en tiras de papel, córtenla por palabras y armen la oración juntos: primero la palabra con mayúscula y al final la que tiene punto." },
+      "dictado-punto": { "descripcion": "En los dictados olvida el punto, el espacio después del punto o la mayúscula que sigue.", "sugerencia": "Dicten despacio y digan la palabra «punto» en voz alta cuando corresponda. Después, que revise su texto buscando cada punto." },
+      "limite-oracion": { "descripcion": "No reconoce dónde termina una oración y empieza otra (junta dos ideas sin punto).", "sugerencia": "Lean en voz alta un texto sin puntos y pidan que levante la mano cada vez que termina una idea. Ahí va un punto." },
+      "cuenta-parrafos": { "descripcion": "Confunde párrafos y oraciones al contarlos.", "sugerencia": "En un libro, pidan que encierre cada párrafo con un lápiz (empieza en renglón nuevo) y que cuente los puntos que hay dentro: cada punto cierra una oración." },
+      "corrige-texto": { "descripcion": "Le cuesta revisar y corregir un texto con errores de punto y mayúscula.", "sugerencia": "Escriban juntos una lista de revisión: ¿mayúscula al inicio?, ¿punto al final?, ¿mayúscula después de cada punto? Úsenla con sus propios textos." },
+      "produce-texto": { "descripcion": "Le cuesta escribir dos oraciones seguidas separadas con punto.", "sugerencia": "Pidan que cuente algo en voz alta en dos partes y luego que lo escriba: «primera idea, punto; segunda idea con mayúscula, punto»." }
+    }
+  }
+}

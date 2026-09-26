@@ -1,0 +1,362 @@
+{
+  "id": "mat-5-1",
+  "titulo": "Mitades",
+  "objetivo": "Parto un entero en 2 partes iguales y encuentro la mitad de una cantidad.",
+  "explicacion": [
+    {
+      "texto": "Un **entero** es una cosa completa: una naranja, un pan o una tortilla. Si lo partimos en **2 partes iguales**, cada parte es **una mitad**.",
+      "emoji": "🍊",
+      "visual": { "tipo": "fraccion", "forma": "circulo", "partes": 2, "coloreadas": 1 }
+    },
+    {
+      "texto": "Las mitades deben ser **del mismo tamaño**. Si un pedazo es más grande que el otro, no son mitades. ¡Con mitades, nadie recibe menos!",
+      "emoji": "⚖️",
+      "visual": { "tipo": "fraccion", "forma": "rectangulo", "partes": 2, "iguales": false }
+    },
+    {
+      "texto": "Una mitad también se llama **un medio** y se escribe 1/2: tomamos 1 de 2 partes iguales. Dos mitades juntas forman otra vez el entero.",
+      "audio": "Una mitad también se llama un medio: tomamos una de dos partes iguales. Dos mitades juntas forman otra vez el entero.",
+      "visual": { "tipo": "fraccion", "forma": "barra", "partes": 2, "coloreadas": 1 }
+    },
+    {
+      "texto": "También hay mitades de cantidades. Para hallar la mitad de 8 panes, repártelos en 2 grupos iguales: cada grupo tiene 4. La mitad de 8 es 4.",
+      "emoji": "🍞",
+      "visual": { "tipo": "grupos", "grupos": 2, "porGrupo": 4, "emoji": "🍞" }
+    }
+  ],
+  "ejemplo": {
+    "instruccion": "Mira cómo Nayra comparte una tortilla con su hermano. Después, reparte tú 12 panes en 2 platos y descubre la mitad de 12.",
+    "pasos": [
+      { "texto": "Nayra tiene una tortilla entera.", "visual": { "tipo": "fraccion", "forma": "circulo", "partes": 1, "coloreadas": 1 } },
+      { "texto": "La corta justo por el medio: quedan 2 partes iguales.", "visual": { "tipo": "fraccion", "forma": "circulo", "partes": 2, "coloreadas": 0 } },
+      { "texto": "Nayra le da una mitad a su hermano y ella come la otra mitad. ¡Los dos reciben lo mismo!", "visual": { "tipo": "fraccion", "forma": "circulo", "partes": 2, "coloreadas": 1 } },
+      { "texto": "Si juntan las 2 mitades, vuelven a tener la tortilla entera: 2 mitades forman 1 entero.", "visual": { "tipo": "fraccion", "forma": "circulo", "partes": 2, "coloreadas": 2 } }
+    ],
+    "explorar": { "tipo": "repartir", "total": 12, "grupos": 2, "emoji": "🍞" }
+  },
+  "guiada": {
+    "intro": "Vamos a buscar mitades juntos, paso a paso.",
+    "pasos": [
+      {
+        "id": "g1", "tipo": "manipular",
+        "enunciado": "Pinta la mitad de la tortilla.",
+        "apoyo": "La tortilla ya está partida en 2 partes iguales. La mitad es 1 de esas 2 partes. Toca una parte para pintarla.",
+        "manipulable": { "tipo": "fraccion", "forma": "circulo", "partes": 2, "objetivo": 1 },
+        "pista": "Pinta solo una de las 2 partes.",
+        "explicacion": "La mitad es 1 de las 2 partes iguales. Al pintar una parte, pintaste la mitad de la tortilla.",
+        "error": "pinta-fraccion"
+      },
+      {
+        "id": "g2", "tipo": "opcion",
+        "enunciado": "¿Qué queso está partido en mitades?",
+        "apoyo": "Primero cuenta las partes. Después mira si las 2 partes tienen el mismo tamaño.",
+        "opciones": [
+          { "visual": { "tipo": "fraccion", "forma": "rectangulo", "partes": 2 }, "correcta": true },
+          { "visual": { "tipo": "fraccion", "forma": "rectangulo", "partes": 2, "iguales": false }, "pista": "Este queso tiene 2 partes, pero una es más grande que la otra.", "error": "partes-desiguales" },
+          { "visual": { "tipo": "fraccion", "forma": "rectangulo", "partes": 3 }, "pista": "Este queso tiene 3 partes. Para tener mitades, hacen falta solo 2.", "error": "cuenta-partes" }
+        ],
+        "pista": "Busca un queso con 2 partes del mismo tamaño.",
+        "explicacion": "Las mitades son 2 partes iguales. Solo un queso está partido en 2 partes del mismo tamaño.",
+        "error": "partes-desiguales"
+      },
+      {
+        "id": "g3", "tipo": "manipular",
+        "enunciado": "Reparte las 10 naranjas en 2 platos para encontrar la mitad de 10.",
+        "apoyo": "Pon una naranja en cada plato, por turnos, hasta que no quede ninguna. Los 2 platos deben tener lo mismo.",
+        "manipulable": { "tipo": "repartir", "total": 10, "grupos": 2, "emoji": "🍊" },
+        "pista": "Cuenta las naranjas de cada plato. ¿Tienen la misma cantidad?",
+        "explicacion": "Cada plato tiene 5 naranjas. La mitad de 10 es 5, porque 5 + 5 = 10.",
+        "error": "reparte-desigual"
+      }
+    ]
+  },
+  "practica": [
+    {
+      "id": "p1", "tipo": "generador", "nivel": 1, "generador": "fraccion", "params": { "partes": [2] }
+    },
+    {
+      "id": "p2", "tipo": "manipular", "nivel": 1,
+      "enunciado": "Pinta la mitad de la barra de chocolate.",
+      "manipulable": { "tipo": "fraccion", "forma": "barra", "partes": 2, "objetivo": 1 },
+      "pista": "La barra tiene 2 partes iguales. Pinta solo una.",
+      "explicacion": "1 de 2 partes iguales es la mitad. ¡Pintaste medio chocolate!",
+      "error": "pinta-fraccion"
+    },
+    {
+      "id": "p3", "tipo": "multiple", "nivel": 1,
+      "enunciado": "Elige todas las figuras partidas en 2 partes iguales.",
+      "opciones": [
+        { "visual": { "tipo": "fraccion", "forma": "circulo", "partes": 2 }, "correcta": true },
+        { "visual": { "tipo": "fraccion", "forma": "barra", "partes": 2 }, "correcta": true },
+        { "visual": { "tipo": "fraccion", "forma": "rectangulo", "partes": 2, "iguales": false }, "pista": "Una figura tiene 2 partes que no son del mismo tamaño.", "error": "partes-desiguales" },
+        { "visual": { "tipo": "fraccion", "forma": "circulo", "partes": 3 }, "pista": "Una figura tiene 3 partes, no 2.", "error": "cuenta-partes" }
+      ],
+      "pista": "Mira dos cosas: que haya 2 partes y que sean del mismo tamaño.",
+      "explicacion": "Tienen mitades las figuras con 2 partes del mismo tamaño: el círculo de 2 partes y la barra. La figura de partes distintas y la de 3 partes no.",
+      "error": "partes-desiguales"
+    },
+    {
+      "id": "p4", "tipo": "completar", "nivel": 1,
+      "enunciado": "Completa.",
+      "visual": { "tipo": "fraccion", "forma": "circulo", "partes": 2, "coloreadas": 1 },
+      "texto": "Si parto una naranja en [2] partes iguales, cada parte es una [mitad].",
+      "banco": ["5", "entera"],
+      "pista": "Mira el dibujo: ¿en cuántas partes iguales está partida la naranja?",
+      "explicacion": "Una naranja partida en 2 partes iguales tiene 2 mitades. Cada parte es una mitad.",
+      "error": "vocabulario-fraccion"
+    },
+    {
+      "id": "p5", "tipo": "escribir", "nivel": 1,
+      "enunciado": "Un pan se parte en 2 partes iguales. ¿Cómo se llama cada parte? Escribe la palabra.",
+      "visual": { "tipo": "fraccion", "forma": "rectangulo", "partes": 2, "coloreadas": 1 },
+      "respuestas": ["mitad", "una mitad", "la mitad", "medio", "un medio", "1/2"],
+      "pista": "La palabra empieza con m.",
+      "explicacion": "Cada parte se llama **una mitad**. También se dice **un medio**.",
+      "error": "vocabulario-fraccion"
+    },
+    {
+      "id": "p6", "tipo": "memoria", "nivel": 1,
+      "enunciado": "Encuentra las parejas: la cantidad y su mitad.",
+      "pares": [ ["la mitad de 2", "1"], ["la mitad de 4", "2"], ["la mitad de 6", "3"], ["la mitad de 10", "5"] ],
+      "pista": "La mitad es un número que, sumado dos veces, da la cantidad: 1 + 1 = 2.",
+      "explicacion": "La mitad de 2 es 1, la de 4 es 2, la de 6 es 3 y la de 10 es 5.",
+      "error": "mitad-cantidad"
+    },
+    {
+      "id": "p7", "tipo": "numero", "nivel": 2,
+      "enunciado": "Mateo cosechó 6 choclos. Le da la mitad a su abuela. ¿Cuántos choclos le da?",
+      "visual": { "tipo": "emoji", "valor": "🌽", "cantidad": 6 },
+      "respuesta": 3,
+      "erroresComunes": [
+        { "respuesta": 6, "pista": "Esos son todos los choclos. Repártelos en 2 grupos iguales.", "error": "mitad-cantidad" },
+        { "respuesta": 12, "pista": "12 es el doble de 6. La mitad es más pequeña que 6.", "error": "mitad-doble" }
+      ],
+      "pista": "Reparte los 6 choclos en 2 grupos iguales. ¿Cuántos hay en un grupo?",
+      "explicacion": "6 choclos en 2 grupos iguales: 3 y 3. La mitad de 6 es 3, así que le da 3 choclos.",
+      "error": "mitad-cantidad"
+    },
+    {
+      "id": "p8", "tipo": "manipular", "nivel": 2,
+      "enunciado": "Arami tiene 14 duraznos. Repártelos en 2 platos para hallar la mitad.",
+      "manipulable": { "tipo": "repartir", "total": 14, "grupos": 2, "emoji": "🍑" },
+      "pista": "Pon un durazno en cada plato, por turnos, hasta que no quede ninguno.",
+      "explicacion": "Cada plato tiene 7 duraznos. La mitad de 14 es 7, porque 7 + 7 = 14.",
+      "error": "reparte-desigual"
+    },
+    {
+      "id": "p9", "tipo": "numero", "nivel": 2,
+      "enunciado": "Escucha el problema y escribe la respuesta.",
+      "escuchar": "Rosa tiene 10 mandarinas. Le regala la mitad a su prima. ¿Cuántas mandarinas le regala?",
+      "respuesta": 5,
+      "erroresComunes": [
+        { "respuesta": 10, "pista": "Rosa no regala todas. Busca la mitad de 10.", "error": "mitad-cantidad" },
+        { "respuesta": 20, "pista": "20 es el doble de 10. La mitad es más pequeña.", "error": "mitad-doble" },
+        { "respuesta": 2, "pista": "2 son las partes. ¿Cuántas mandarinas hay en cada parte?", "error": "mitad-cantidad" }
+      ],
+      "pista": "Piensa en 2 grupos iguales que juntos hacen 10. Puedes escuchar otra vez.",
+      "explicacion": "La mitad de 10 es 5, porque 5 + 5 = 10. Rosa le regala 5 mandarinas.",
+      "error": "mitad-cantidad"
+    },
+    {
+      "id": "p10", "tipo": "opcion", "nivel": 2,
+      "enunciado": "Luis partió una sandía así. ¿Cada pedazo es una mitad?",
+      "visual": { "tipo": "fraccion", "forma": "circulo", "partes": 2, "iguales": false },
+      "opciones": [
+        { "texto": "No, porque los pedazos no son iguales.", "correcta": true },
+        { "texto": "Sí, porque hay 2 pedazos.", "pista": "Tener 2 pedazos no basta: mira el tamaño de cada uno.", "error": "partes-desiguales" },
+        { "texto": "Sí, porque es una sandía.", "pista": "No importa qué fruta es. Fíjate en el tamaño de los pedazos.", "error": "partes-desiguales" }
+      ],
+      "pista": "Para ser mitades, los 2 pedazos deben tener el mismo tamaño.",
+      "explicacion": "Un pedazo es más grande que el otro. Por eso no son mitades.",
+      "error": "partes-desiguales"
+    },
+    {
+      "id": "p11", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "Une cada cantidad con su mitad.",
+      "pares": [
+        [ { "texto": "8 panes", "emoji": "🍞" }, "4" ],
+        [ { "texto": "12 huevos", "emoji": "🥚" }, "6" ],
+        [ { "texto": "14 papas", "emoji": "🥔" }, "7" ],
+        [ { "texto": "16 choclos", "emoji": "🌽" }, "8" ]
+      ],
+      "pista": "La mitad sumada dos veces da la cantidad. Por ejemplo, 4 + 4 = 8.",
+      "explicacion": "La mitad de 8 es 4; de 12, 6; de 14, 7; y de 16, 8.",
+      "error": "mitad-cantidad"
+    },
+    {
+      "id": "p12", "tipo": "clasificar", "nivel": 3,
+      "enunciado": "¿Es la mitad o no?",
+      "categorias": [
+        { "id": "si", "texto": "Es la mitad", "emoji": "✅" },
+        { "id": "no", "texto": "No es la mitad", "emoji": "❌" }
+      ],
+      "elementos": [
+        { "texto": "4 de 8 panes", "categoria": "si" },
+        { "texto": "3 de 6 huevos", "categoria": "si" },
+        { "texto": "5 de 10 papas", "categoria": "si" },
+        { "texto": "2 de 8 panes", "categoria": "no" },
+        { "texto": "4 de 6 huevos", "categoria": "no" },
+        { "texto": "6 de 10 papas", "categoria": "no" }
+      ],
+      "pista": "Es la mitad si otra parte igual completa el total. Por ejemplo: 4 + 4 = 8.",
+      "explicacion": "Son mitades 4 de 8, 3 de 6 y 5 de 10, porque 4 + 4 = 8, 3 + 3 = 6 y 5 + 5 = 10. Las otras no.",
+      "error": "mitad-cantidad"
+    },
+    {
+      "id": "p13", "tipo": "pasos", "nivel": 3,
+      "enunciado": "Kusi tiene 12 panes. Pone la mitad en una bolsa para su abuela.",
+      "visual": { "tipo": "emoji", "valor": "🍞", "cantidad": 12 },
+      "pasos": [
+        {
+          "tipo": "numero", "enunciado": "¿Cuántos panes pone en la bolsa?", "respuesta": 6,
+          "erroresComunes": [ { "respuesta": 24, "pista": "24 es el doble de 12. La mitad es más pequeña.", "error": "mitad-doble" } ],
+          "pista": "Reparte los 12 panes en 2 grupos iguales.",
+          "explicacion": "La mitad de 12 es 6, porque 6 + 6 = 12.",
+          "error": "mitad-cantidad"
+        },
+        {
+          "tipo": "numero", "enunciado": "¿Cuántos panes le quedan a Kusi?", "respuesta": 6,
+          "pista": "Tenía 12 panes y puso algunos en la bolsa. ¿Cuántos quedan afuera?",
+          "explicacion": "12 − 6 = 6. A Kusi le quedan 6 panes: la otra mitad.",
+          "error": "problema-mitad"
+        },
+        {
+          "tipo": "numero", "enunciado": "Kusi come la mitad de los panes que le quedan. ¿Cuántos panes come?", "respuesta": 3,
+          "erroresComunes": [ { "respuesta": 6, "pista": "Esos son los panes que le quedan. Kusi come solo la mitad de ellos.", "error": "mitad-cantidad" } ],
+          "pista": "Busca la mitad de los panes que le quedan.",
+          "explicacion": "La mitad de 6 es 3. Kusi come 3 panes.",
+          "error": "mitad-cantidad"
+        }
+      ],
+      "pista": "Resuelve un paso a la vez.",
+      "explicacion": "La mitad de 12 es 6; a Kusi le quedan 6 panes; y la mitad de 6 es 3.",
+      "error": "problema-mitad"
+    },
+    {
+      "id": "p14", "tipo": "numero", "nivel": 3,
+      "enunciado": "La mitad de un número es 7. ¿Cuál es el número?",
+      "respuesta": 14,
+      "erroresComunes": [
+        { "respuesta": 7, "pista": "7 es solo una mitad. El número entero tiene 2 mitades de 7.", "error": "mitad-doble" },
+        { "respuesta": 3, "pista": "Buscaste la mitad de 7. Pero 7 ya es la mitad: busca el número completo.", "error": "mitad-doble" }
+      ],
+      "pista": "Si una mitad es 7, la otra mitad también es 7. Júntalas.",
+      "explicacion": "7 + 7 = 14. La mitad de 14 es 7.",
+      "error": "mitad-doble"
+    },
+    {
+      "id": "p15", "tipo": "manipular", "nivel": 3,
+      "enunciado": "Esta barra de chocolate tiene 8 cuadritos iguales. Pinta la mitad del chocolate.",
+      "manipulable": { "tipo": "fraccion", "forma": "rectangulo", "partes": 8, "objetivo": 4 },
+      "pista": "Piensa: ¿cuánto es la mitad de 8 cuadritos?",
+      "explicacion": "La mitad de 8 es 4. Al pintar 4 de los 8 cuadritos, pintaste la mitad del chocolate.",
+      "error": "mitad-cantidad"
+    }
+  ],
+  "comprobacion": [
+    {
+      "id": "c1", "tipo": "manipular", "nivel": 1,
+      "enunciado": "Pinta la mitad de la hoja.",
+      "manipulable": { "tipo": "fraccion", "forma": "rectangulo", "partes": 2, "objetivo": 1 },
+      "pista": "La hoja tiene 2 partes iguales. La mitad es una de ellas.",
+      "explicacion": "La mitad es 1 de 2 partes iguales: se pinta una sola parte.",
+      "error": "pinta-fraccion"
+    },
+    {
+      "id": "c2", "tipo": "generador", "nivel": 1, "generador": "fraccion", "params": { "partes": [2] }
+    },
+    {
+      "id": "c3", "tipo": "numero", "nivel": 2,
+      "enunciado": "La profesora tiene 16 lápices. Da la mitad al grupo de Inti. ¿Cuántos lápices recibe el grupo?",
+      "visual": { "tipo": "emoji", "valor": "✏️", "cantidad": 16 },
+      "respuesta": 8,
+      "erroresComunes": [
+        { "respuesta": 16, "pista": "Esos son todos los lápices. El grupo recibe solo la mitad.", "error": "mitad-cantidad" },
+        { "respuesta": 32, "pista": "32 es el doble de 16. La mitad es más pequeña.", "error": "mitad-doble" }
+      ],
+      "pista": "Reparte los 16 lápices en 2 grupos iguales.",
+      "explicacion": "La mitad de 16 es 8, porque 8 + 8 = 16. El grupo de Inti recibe 8 lápices.",
+      "error": "mitad-cantidad"
+    },
+    {
+      "id": "c4", "tipo": "manipular", "nivel": 2,
+      "enunciado": "Reparte las 12 galletas en 2 platos para hallar la mitad de 12.",
+      "manipulable": { "tipo": "repartir", "total": 12, "grupos": 2, "emoji": "🍪" },
+      "pista": "Pon una galleta en cada plato, por turnos. Los 2 platos deben quedar iguales.",
+      "explicacion": "Cada plato tiene 6 galletas. La mitad de 12 es 6, porque 6 + 6 = 12.",
+      "error": "reparte-desigual"
+    },
+    {
+      "id": "c5", "tipo": "multiple", "nivel": 2,
+      "enunciado": "Elige todas las figuras que tienen la mitad pintada.",
+      "opciones": [
+        { "visual": { "tipo": "fraccion", "forma": "circulo", "partes": 2, "coloreadas": 1 }, "correcta": true },
+        { "visual": { "tipo": "fraccion", "forma": "barra", "partes": 2, "coloreadas": 1 }, "correcta": true },
+        { "visual": { "tipo": "fraccion", "forma": "rectangulo", "partes": 2, "iguales": false, "coloreadas": 1 }, "pista": "En una figura las partes no son iguales: lo pintado no es la mitad.", "error": "partes-desiguales" },
+        { "visual": { "tipo": "fraccion", "forma": "circulo", "partes": 3, "coloreadas": 1 }, "pista": "Una figura tiene 3 partes: lo pintado no es la mitad.", "error": "cuenta-partes" }
+      ],
+      "pista": "La mitad pintada es 1 de 2 partes iguales.",
+      "explicacion": "Tienen la mitad pintada el círculo de 2 partes y la barra: 1 de 2 partes iguales. En las otras, las partes no son iguales o son 3.",
+      "error": "partes-desiguales"
+    },
+    {
+      "id": "c6", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa.",
+      "visual": { "tipo": "emoji", "valor": "🥔", "cantidad": 10 },
+      "texto": "Tengo 10 papas. La mitad son [5] papas. Si junto las 2 mitades, tengo otra vez [10] papas.",
+      "banco": ["2", "20"],
+      "pista": "La mitad de 10 sumada dos veces vuelve a dar 10.",
+      "explicacion": "La mitad de 10 es 5. Dos mitades forman el entero: 5 + 5 = 10 papas.",
+      "error": "mitad-cantidad"
+    },
+    {
+      "id": "c7", "tipo": "numero", "nivel": 3,
+      "enunciado": "Escucha el problema y escribe la respuesta.",
+      "escuchar": "Juan tenía 18 figuritas. Le regaló la mitad a su hermana. ¿Cuántas figuritas le quedan a Juan?",
+      "respuesta": 9,
+      "erroresComunes": [
+        { "respuesta": 18, "pista": "Juan regaló una parte. ¿Cuántas figuritas le quedan?", "error": "problema-mitad" },
+        { "respuesta": 36, "pista": "36 es el doble de 18. La mitad es más pequeña.", "error": "mitad-doble" }
+      ],
+      "pista": "Si regaló la mitad, le queda la otra mitad. Busca la mitad de 18. Puedes escuchar otra vez.",
+      "explicacion": "La mitad de 18 es 9, porque 9 + 9 = 18. Juan regaló 9 y le quedan 9 figuritas.",
+      "error": "problema-mitad"
+    },
+    {
+      "id": "c8", "tipo": "opcion", "nivel": 3,
+      "enunciado": "Sofía comió la mitad de una tortilla. Luis comió la mitad de otra tortilla del mismo tamaño. ¿Quién comió más?",
+      "opciones": [
+        { "texto": "Comieron lo mismo.", "correcta": true },
+        { "texto": "Sofía comió más.", "pista": "Las tortillas son del mismo tamaño y cada uno comió una mitad.", "error": "compara-mitades" },
+        { "texto": "Luis comió más.", "pista": "Las tortillas son del mismo tamaño y cada uno comió una mitad.", "error": "compara-mitades" }
+      ],
+      "pista": "Piensa: ¿las mitades de dos tortillas iguales son del mismo tamaño?",
+      "explicacion": "Las dos tortillas son iguales y cada uno comió la mitad. Por eso comieron lo mismo.",
+      "error": "compara-mitades"
+    }
+  ],
+  "repaso": {
+    "texto": "La mitad es 1 de 2 partes iguales. Dos mitades forman el entero. Para hallar la mitad de una cantidad, repártela en 2 grupos iguales.",
+    "visual": { "tipo": "fraccion", "forma": "circulo", "partes": 2, "coloreadas": 1 }
+  },
+  "adulto": {
+    "objetivo": "Reconocer la mitad como una de 2 partes iguales de un entero (con objetos, figuras y cantidades), distinguir partes iguales de partes desiguales, entender que 2 mitades forman el entero y hallar la mitad de cantidades pares hasta 20 repartiendo en 2 grupos iguales.",
+    "sugerencias": [
+      "Al partir un pan, una naranja o una tortilla en casa, pidan que diga si las 2 partes son iguales. Si una es más grande, pregunten: «¿son mitades?, ¿por qué?».",
+      "En la feria o la tienda, pidan que reparta 8 papas, 10 huevos o 12 panes en 2 bolsas iguales y que diga cuánto hay en cada bolsa: esa es la mitad.",
+      "Doblen hojas de papel por la mitad de distintas maneras (a lo largo, a lo ancho, en diagonal) y comprueben que las 2 partes quedan exactamente una sobre otra."
+    ],
+    "errores": {
+      "fraccion-reconocer": { "descripcion": "Le cuesta reconocer si una figura está partida en partes iguales o qué parte está pintada.", "sugerencia": "Corten figuras de papel en partes iguales y desiguales, y pregunten cuáles sirven para compartir de forma justa." },
+      "pinta-fraccion": { "descripcion": "Pinta más o menos partes de las que pide la fracción.", "sugerencia": "Partan una tortilla o una hoja en 2 y pidan que muestre con el dedo «una de las 2 partes» antes de pintarla." },
+      "partes-desiguales": { "descripcion": "Acepta como mitades 2 partes de distinto tamaño.", "sugerencia": "Corten un pan en 2 pedazos desiguales y pregunten quién prefiere cada pedazo: así ve que las mitades deben ser iguales." },
+      "cuenta-partes": { "descripcion": "Llama mitades a figuras partidas en 3 o más partes.", "sugerencia": "Recuerden juntos: «mitades = 2 partes iguales». Cuenten las partes antes de nombrarlas." },
+      "vocabulario-fraccion": { "descripcion": "No recuerda las palabras «entero», «mitad» y «medio».", "sugerencia": "Usen esas palabras al servir la comida: «te doy medio pan», «esta es la mitad de la naranja»." },
+      "mitad-cantidad": { "descripcion": "Le cuesta hallar la mitad de una cantidad (por ejemplo, la mitad de 8).", "sugerencia": "Repartan objetos reales (papas, fideos, piedritas) uno a uno en 2 platos y cuenten lo que hay en un plato." },
+      "mitad-doble": { "descripcion": "Confunde la mitad con el doble, o no sabe hallar el número cuando conoce su mitad.", "sugerencia": "Con 2 platos iguales, pregunten: «si en un plato hay 4, ¿cuántos hay en los dos?» y al revés." },
+      "reparte-desigual": { "descripcion": "Al repartir en 2, deja platos con cantidades distintas o sobrantes.", "sugerencia": "Repartan de a uno, diciendo «uno para ti, uno para mí», hasta que no quede nada, y comparen los montones." },
+      "problema-mitad": { "descripcion": "Se pierde en problemas de mitades con más de un paso (lo que regala y lo que le queda).", "sugerencia": "Representen el problema con objetos: separen la mitad que se regala y cuenten lo que queda." },
+      "compara-mitades": { "descripcion": "No reconoce que las mitades de dos enteros iguales tienen el mismo tamaño.", "sugerencia": "Partan dos panes iguales por la mitad y pongan una mitad de cada pan una sobre otra para compararlas." }
+    }
+  }
+}

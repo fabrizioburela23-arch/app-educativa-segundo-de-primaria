@@ -29,11 +29,11 @@
         "visual": { "tipo": "emojis", "items": ["👧", "👩", "👴"], "etiquetas": ["Wara", "mamá", "abuelo"] }
       },
       {
-        "texto": "Mateo vive con su papá, con Rosa y con los dos hijos de Rosa. Ahora son hermanos. Es una familia **ensamblada**.",
-        "visual": { "tipo": "emojis", "items": ["👦", "👨", "👩", "👧", "👦"], "etiquetas": ["Mateo", "papá", "Rosa", "Ana", "Luis"] }
+        "texto": "Mateo vive con su papá, con Rosa y con los hijos de Rosa: Lucía y Tomás. Los tres niños crecen juntos como hermanos. Es una familia **ensamblada**.",
+        "visual": { "tipo": "emojis", "items": ["👦", "👨", "👩", "👧", "👦"], "etiquetas": ["Mateo", "papá", "Rosa", "Lucía", "Tomás"] }
       },
       {
-        "texto": "Kusi llegó a su familia por **adopción** cuando era bebé. Vive en Tarija con su mamá, su papá y su abuela.",
+        "texto": "Kusi llegó a su familia por **adopción** cuando era bebé. Vive en Cochabamba con su mamá, su papá y su abuela.",
         "visual": { "tipo": "emojis", "items": ["👦", "👩", "👨", "👵"], "etiquetas": ["Kusi", "mamá", "papá", "abuela"] }
       },
       {
@@ -102,10 +102,10 @@
     {
       "id": "p1", "tipo": "completar", "nivel": 1,
       "enunciado": "Completa las oraciones.",
-      "texto": "Una familia se une por el [amor]. Cuando Ana está enferma, su papá la [cuida].",
-      "banco": ["enojo", "olvida"],
-      "pista": "¿Qué sentimiento une a una familia? ¿Qué hace un papá cuando su hija está enferma?",
-      "explicacion": "Una familia se une por el amor. Cuando alguien está enfermo, su familia lo cuida.",
+      "texto": "Cuando Ana está enferma, su papá la [cuida]. Cuando su papá llega cansado, Ana le da un [abrazo].",
+      "banco": ["olvida", "zapato"],
+      "pista": "¿Qué hace un papá cuando su hija está enferma? ¿Qué le das a alguien que quieres?",
+      "explicacion": "Su papá la cuida y Ana le da un abrazo. En una familia nos cuidamos y nos mostramos cariño.",
       "error": "valor-familia"
     },
     {
@@ -123,16 +123,16 @@
     },
     {
       "id": "p3", "tipo": "ordenar", "nivel": 1,
-      "enunciado": "Ordena a la familia de Wara, de la persona más joven a la mayor.",
+      "enunciado": "Ordena a la familia de Nayra, de la persona más joven a la mayor.",
       "elementos": [
-        { "texto": "Inti, de 1 año", "emoji": "👶" },
-        { "texto": "Wara, de 7 años", "emoji": "👧" },
-        { "texto": "su mamá, de 32 años", "emoji": "👩" },
-        { "texto": "su abuela, de 61 años", "emoji": "👵" }
+        { "texto": "su hermanito, de 2 años", "emoji": "👶" },
+        { "texto": "Nayra, de 7 años", "emoji": "👧" },
+        { "texto": "su tío, de 25 años", "emoji": "👨" },
+        { "texto": "su abuela, de 63 años", "emoji": "👵" }
       ],
       "vertical": true,
       "pista": "Mira la edad de cada persona. Empieza por el número más pequeño.",
-      "explicacion": "Inti (1 año), Wara (7 años), su mamá (32 años) y su abuela (61 años). La abuela es la mamá de la mamá o del papá.",
+      "explicacion": "Primero su hermanito (2 años), después Nayra (7 años), su tío (25 años) y al final su abuela (63 años), que es la mayor.",
       "error": "miembros-familia"
     },
     {
@@ -140,12 +140,12 @@
       "enunciado": "Elige todos los grupos que son familias.",
       "opciones": [
         { "texto": "Ana vive con su papá.", "emoji": "👨‍👧", "correcta": true },
-        { "texto": "Juan vive con su abuela y su tío.", "emoji": "👵", "correcta": true },
+        { "texto": "Pablo vive con su abuela y su tío.", "emoji": "👵", "correcta": true },
         { "texto": "Sofía vive con su mamá, su papá y su hermano.", "emoji": "👨‍👩‍👧‍👦", "correcta": true },
         { "texto": "Tres niños que se conocieron hoy en la plaza.", "emoji": "⛲", "pista": "Ellos recién se conocen: no viven juntos ni son parientes.", "error": "tipos-familia" }
       ],
       "pista": "Una familia puede ser pequeña o grande, con papá, con mamá o con abuelos. Solo un grupo no es una familia.",
-      "explicacion": "Ana y su papá, Juan con su abuela y su tío, y Sofía con sus papás y su hermano son familias. Los niños que se conocieron hoy son nuevos amigos.",
+      "explicacion": "Ana y su papá, Pablo con su abuela y su tío, y Sofía con sus papás y su hermano son familias. Los niños que se conocieron hoy son nuevos amigos.",
       "error": "tipos-familia"
     },
     {
@@ -205,7 +205,7 @@
       "id": "p9", "tipo": "completar", "nivel": 2,
       "enunciado": "Completa sobre las tareas de la casa.",
       "texto": "Las tareas de la casa no son de niñas ni de niños: son de [todos]. Cada persona ayuda según su [edad].",
-      "banco": ["nadie", "ropa"],
+      "banco": ["nunca", "ropa"],
       "pista": "¿Quiénes pueden barrer, cocinar o lavar? ¿Un bebé puede hacer lo mismo que una niña de 7 años? ¿Por qué?",
       "explicacion": "Las tareas de la casa son de todos, y cada uno ayuda según su edad.",
       "error": "tareas-genero"
@@ -276,7 +276,7 @@
         {
           "tipo": "escribir",
           "enunciado": "¿Quién lava los platos el miércoles?",
-          "respuestas": ["mamá", "la mamá", "su mamá", "la mamá de Kusi"],
+          "respuestas": ["mamá", "la mamá", "su mamá", "la mamá de Kusi", "mami", "su mami"],
           "pista": "Busca la fila que dice «miércoles» y mira a su lado.",
           "explicacion": "El miércoles lava los platos la mamá de Kusi.",
           "error": "lee-tabla"
@@ -314,11 +314,11 @@
       "pares": [
         ["Mateo vive con su papá, con Rosa y con los hijos de Rosa.", "familia ensamblada"],
         ["Una pareja recibió a Kusi como su hijo para siempre.", "familia que adopta"],
-        ["Luis vive solo con su papá.", "familia de papá e hijo"],
-        ["Nayra vive con sus papás, sus abuelos, su tía y sus primos.", "familia grande"]
+        ["Diego vive solo con su papá.", "familia de papá e hijo"],
+        ["Illari vive con sus papás, sus abuelos, su tía y sus primos.", "familia grande con abuelos y tíos"]
       ],
       "pista": "Una familia ensamblada une dos familias. Adoptar es recibir a un hijo para siempre.",
-      "explicacion": "Mateo: familia ensamblada. Kusi: familia que adopta. Luis: familia de papá e hijo. Nayra: familia grande. ¡Todas son familias!",
+      "explicacion": "Mateo: familia ensamblada. Kusi: familia que adopta. Diego: familia de papá e hijo. Illari: familia grande con abuelos y tíos. ¡Todas son familias!",
       "error": "tipos-familia"
     },
     {
@@ -380,15 +380,15 @@
     {
       "id": "c4", "tipo": "escribir", "nivel": 2,
       "enunciado": "Escucha y escribe la palabra que falta.",
-      "escuchar": "El hermano de mi papá es mi...",
-      "respuestas": ["tío", "mi tío"],
-      "pista": "Los hermanos de tus papás son parte de tu familia. ¿Cómo los llamas?",
-      "explicacion": "El hermano de mi papá es mi tío.",
+      "escuchar": "El hijo de la hermana de mi mamá es mi...",
+      "respuestas": ["primo", "mi primo", "primito", "mi primito"],
+      "pista": "La hermana de tu mamá es tu tía. ¿Qué es para ti el hijo de tu tía?",
+      "explicacion": "La hermana de mi mamá es mi tía, y el hijo de mi tía es mi primo.",
       "error": "miembros-familia"
     },
     {
       "id": "c5", "tipo": "opcion", "nivel": 2,
-      "enunciado": "Kusi dice: «Lavar los platos es solo para las niñas». ¿Qué le puedes decir?",
+      "enunciado": "Un compañero dice: «Lavar los platos es solo para las niñas». ¿Qué le puedes decir?",
       "opciones": [
         { "texto": "«Lavar los platos es tarea de todos: niñas y niños.»", "correcta": true },
         { "texto": "«Tienes razón, los niños no lavan platos.»", "pista": "¿Un niño puede lavar platos? Claro que sí.", "error": "tareas-genero" },
@@ -402,35 +402,35 @@
       "id": "c6", "tipo": "multiple", "nivel": 2,
       "enunciado": "Elige las familias donde se reparten las tareas de la casa.",
       "opciones": [
-        { "texto": "Papá cocina el majadito y Wara pone la mesa.", "correcta": true },
-        { "texto": "Mamá lava la ropa y el abuelo riega las plantas.", "correcta": true },
-        { "texto": "La tía hace todo sola y los demás miran la tele.", "pista": "¿Quién ayuda a la tía?", "error": "responsabilidad" },
+        { "texto": "El abuelo cocina el majadito y Wara pone la mesa.", "correcta": true },
+        { "texto": "Mamá arregla una silla y el tío lava la ropa.", "correcta": true },
+        { "texto": "La tía hace todo sola y los demás ven la tele.", "pista": "¿Quién ayuda a la tía?", "error": "responsabilidad" },
         { "texto": "Los niños dejan sus juguetes tirados para que otro los guarde.", "pista": "¿Quién debería guardar esos juguetes?", "error": "responsabilidad" }
       ],
       "pista": "Busca las familias donde más de una persona hace algo.",
-      "explicacion": "Donde papá cocina y Wara pone la mesa, y donde mamá lava y el abuelo riega, las tareas se reparten. En las otras, una sola persona hace el trabajo de todos.",
+      "explicacion": "Donde el abuelo cocina y Wara pone la mesa, y donde mamá arregla la silla y el tío lava la ropa, las tareas se reparten. En las otras, una sola persona hace el trabajo de todos.",
       "error": "responsabilidad"
     },
     {
       "id": "c7", "tipo": "pasos", "nivel": 3,
-      "enunciado": "En el recreo, Arami cuenta que vive con su abuela. Mateo se ríe y dice: «¡Esa no es una familia de verdad!»",
-      "visual": { "tipo": "emojis", "items": ["👧", "👵", "😢"] },
+      "enunciado": "En el recreo, Arami cuenta que vive con sus abuelos. Un compañero se ríe y dice: «¡Esa no es una familia de verdad!»",
+      "visual": { "tipo": "emojis", "items": ["👧", "👵", "👴", "😢"] },
       "pasos": [
         {
           "tipo": "opcion",
-          "enunciado": "¿Tiene razón Mateo?",
+          "enunciado": "¿Tiene razón el compañero?",
           "mezclar": false,
           "opciones": [
-            { "texto": "Sí", "pista": "Arami y su abuela se quieren y se cuidan. ¿Qué forma una familia?", "error": "valor-familia" },
+            { "texto": "Sí", "pista": "Arami y sus abuelos se quieren y se cuidan. ¿Qué forma una familia?", "error": "valor-familia" },
             { "texto": "No", "correcta": true }
           ],
           "pista": "Piensa en lo que hace falta para ser una familia.",
-          "explicacion": "Mateo no tiene razón. Arami y su abuela son una familia de verdad, porque se quieren y se cuidan.",
+          "explicacion": "El compañero no tiene razón. Arami y sus abuelos son una familia de verdad, porque se quieren y se cuidan.",
           "error": "valor-familia"
         },
         {
           "tipo": "opcion",
-          "enunciado": "¿Qué le puedes decir a Mateo?",
+          "enunciado": "¿Qué le puedes decir a tu compañero?",
           "opciones": [
             { "texto": "«Hay muchas formas de familia y todas merecen respeto.»", "correcta": true },
             { "texto": "«Tu familia es más rara.»", "pista": "Responder con otra burla no arregla nada.", "error": "respeto-diversidad" },
@@ -442,7 +442,7 @@
         }
       ],
       "pista": "Recuerda lo que importa en una familia.",
-      "explicacion": "Arami y su abuela son una familia. Todas las formas de familia merecen respeto.",
+      "explicacion": "Arami y sus abuelos son una familia. Todas las formas de familia merecen respeto.",
       "error": "respeto-diversidad"
     },
     {

@@ -1,0 +1,452 @@
+{
+  "id": "soc-3-3",
+  "titulo": "Ayni y mink’a",
+  "objetivo": "Sé qué son el ayni y la mink’a, dos formas de trabajar juntos, y cómo las practicamos hoy.",
+  "explicacion": [
+    {
+      "texto": "En los pueblos andinos, las familias se ayudan en el trabajo desde hace muchísimos años. Dos formas de hacerlo son el **ayni** y la **mink’a**. Son palabras del quechua y del aimara.",
+      "emoji": "🤝",
+      "visual": { "tipo": "emojis", "items": ["👩‍🌾", "🤝", "👨‍🌾"] }
+    },
+    {
+      "texto": "**Ayni** es ayuda que se devuelve: hoy yo ayudo a tu familia y otro día tu familia ayuda a la mía, con el mismo trabajo. Como dice el dicho: «hoy por ti, mañana por mí».",
+      "visual": { "tipo": "emojis", "items": ["🙋‍♀️", "🔁", "🙋‍♂️"], "etiquetas": ["hoy te ayudo", "la ayuda vuelve", "mañana me ayudas"] }
+    },
+    {
+      "texto": "**Mink’a** (también se escribe minka) es trabajo en grupo: una familia o la comunidad invita a muchas personas a trabajar juntas. Se agradece con comida o con productos, como parte de la cosecha.",
+      "visual": { "tipo": "emojis", "items": ["👨‍👩‍👧‍👦", "🌾", "🍲"], "etiquetas": ["muchas personas", "trabajan juntas", "comida para agradecer"] }
+    },
+    {
+      "texto": "La comunidad también hace mink’a para obras de todos: un canal, un camino o la escuela. Hoy, en el campo y en la ciudad, seguimos con el ayni y la mink’a: así vivimos la **solidaridad** y la **reciprocidad**.",
+      "visual": { "tipo": "emojis", "items": ["💧", "🛣️", "🏫"], "etiquetas": ["canal de riego", "camino", "escuela"] }
+    }
+  ],
+  "ejemplo": {
+    "instruccion": "Mira cómo la familia de Nayra trabaja junto con otras familias.",
+    "pasos": [
+      {
+        "texto": "En época de siembra, la familia de Nayra ayudó dos días a la familia de Kusi a sembrar papa.",
+        "visual": { "tipo": "emojis", "items": ["👨‍👩‍👧", "🌱", "🥔"], "etiquetas": ["familia de Nayra", "siembra", "papa"] }
+      },
+      {
+        "texto": "En la cosecha, la familia de Kusi vino dos días a ayudar a la familia de Nayra. La ayuda volvió: ¡eso es **ayni**!",
+        "visual": { "tipo": "emojis", "items": ["🔁", "🥔"], "etiquetas": ["la ayuda vuelve", "cosecha"] }
+      },
+      {
+        "texto": "Después, la comunidad llamó a todas las familias para limpiar el canal de riego. Trabajaron juntas y al final compartieron comida. ¡Eso es una **mink’a**!",
+        "visual": { "tipo": "emojis", "items": ["👨‍👩‍👧‍👦", "💧", "🍲"], "etiquetas": ["todas las familias", "canal de riego", "comida"] }
+      },
+      {
+        "texto": "En la ciudad, la tía de Nayra invitó a sus vecinos a techar su casa y les preparó un almuerzo para agradecerles. ¡También fue una **mink’a**!",
+        "visual": { "tipo": "emojis", "items": ["🏙️", "🏠", "🍽️"], "etiquetas": ["ciudad", "techar la casa", "almuerzo"] }
+      }
+    ]
+  },
+  "guiada": {
+    "intro": "Ahora lo hacemos juntos.",
+    "pasos": [
+      {
+        "id": "g1", "tipo": "completar",
+        "enunciado": "Completa qué es el ayni.",
+        "apoyo": "Recuerda el dicho: «hoy por ti, mañana por mí».",
+        "texto": "En el ayni, hoy yo te [ayudo] y mañana tú me [ayudas]. La ayuda se [devuelve].",
+        "banco": ["olvidas", "vende"],
+        "pista": "En el ayni la ayuda va y vuelve.",
+        "explicacion": "Hoy yo te ayudo y mañana tú me ayudas: en el ayni, la ayuda se devuelve.",
+        "error": "concepto-ayni"
+      },
+      {
+        "id": "g2", "tipo": "clasificar",
+        "enunciado": "¿Es ayni o mink’a?",
+        "apoyo": "¿La misma ayuda se devuelve otro día? Es ayni. ¿Muchas personas trabajan juntas para una familia o para la comunidad? Es mink’a.",
+        "categorias": [
+          { "id": "ayni", "texto": "Ayni", "emoji": "🔁" },
+          { "id": "minka", "texto": "Mink’a", "emoji": "👨‍👩‍👧‍👦" }
+        ],
+        "elementos": [
+          { "texto": "Hoy ayudo a la familia de Kusi a sembrar; en la cosecha, ellos nos ayudarán.", "categoria": "ayni" },
+          { "texto": "Tu familia nos ayudó a hacer adobes; ahora nosotros los ayudamos a ustedes.", "categoria": "ayni" },
+          { "texto": "La comunidad llama a todas las familias para arreglar el camino.", "categoria": "minka" },
+          { "texto": "Doña Rosa invita a muchos vecinos a cosechar papa y les regala una parte.", "categoria": "minka" }
+        ],
+        "pista": "Busca las oraciones donde una familia devuelve la misma ayuda a otra.",
+        "explicacion": "Sembrar y hacer adobes con ayuda que se devuelve es ayni. Arreglar el camino entre todos y cosechar con muchos vecinos que reciben papas es mink’a.",
+        "error": "confunde-ayni-minka"
+      },
+      {
+        "id": "g3", "tipo": "opcion",
+        "enunciado": "Tu vecina Ana te ayudó a juntar las hojas secas del patio. Hoy ella necesita ayuda para regar sus plantas. ¿Qué haces?",
+        "apoyo": "Piensa en el ayni: la ayuda que recibes, la devuelves.",
+        "opciones": [
+          { "texto": "La ayudo, como ella me ayudó a mí.", "correcta": true },
+          { "texto": "Le pido dinero antes de ayudarla.", "pista": "En el ayni no se cobra: la ayuda se devuelve con ayuda.", "error": "situacion-ayuda" },
+          { "texto": "Hago como que no la veo.", "pista": "Ana te ayudó antes. ¿Qué sería justo hacer ahora?", "error": "situacion-ayuda" }
+        ],
+        "pista": "Ana te ayudó primero. Ahora te toca a ti.",
+        "explicacion": "Lo justo es ayudar a Ana, como ella te ayudó a ti. ¡Eso es ayni!",
+        "error": "situacion-ayuda"
+      }
+    ]
+  },
+  "practica": [
+    {
+      "id": "p1", "tipo": "opcion", "nivel": 1,
+      "enunciado": "¿Qué dicho explica mejor el ayni?",
+      "opciones": [
+        { "texto": "«Hoy por ti, mañana por mí.»", "correcta": true },
+        { "texto": "«Cada uno trabaja solo.»", "pista": "En el ayni las familias trabajan juntas y se ayudan.", "error": "concepto-ayni" },
+        { "texto": "«Primero yo y después nadie.»", "pista": "En el ayni se piensa en la otra familia, no solo en uno mismo.", "error": "concepto-ayni" }
+      ],
+      "pista": "En el ayni, la ayuda va y vuelve.",
+      "explicacion": "«Hoy por ti, mañana por mí»: hoy te ayudo y otro día tú me ayudas. Eso es el ayni.",
+      "error": "concepto-ayni"
+    },
+    {
+      "id": "p2", "tipo": "escribir", "nivel": 1,
+      "enunciado": "Escucha y escribe la palabra.",
+      "escuchar": "ayni",
+      "respuestas": ["ayni"],
+      "pista": "Es una palabra corta que quiere decir «ayuda que se devuelve». Empieza con a.",
+      "explicacion": "La palabra es «ayni»: a-y-n-i.",
+      "error": "escritura-terminos"
+    },
+    {
+      "id": "p3", "tipo": "memoria", "nivel": 1,
+      "enunciado": "Encuentra las parejas: cada palabra con su significado.",
+      "pares": [
+        ["ayni", "ayuda que va y vuelve"],
+        ["mink’a", "muchas personas trabajan juntas"],
+        ["siembra", "poner semillas en la tierra"],
+        ["cosecha", "recoger lo que se sembró"]
+      ],
+      "pista": "Primero se siembra y después se cosecha. En el ayni la ayuda regresa.",
+      "explicacion": "Ayni: ayuda que va y vuelve. Mink’a: muchas personas trabajan juntas. Siembra: poner semillas. Cosecha: recoger lo sembrado.",
+      "error": "vocabulario-comunitario"
+    },
+    {
+      "id": "p4", "tipo": "relacionar", "nivel": 1,
+      "enunciado": "Une cada palabra con su significado.",
+      "pares": [
+        ["solidaridad", "ayudar a quien lo necesita"],
+        ["reciprocidad", "devolver la ayuda que recibimos"],
+        ["comunidad", "personas que viven cerca y se organizan"],
+        ["trabajo en equipo", "hacer una tarea entre varias personas"]
+      ],
+      "pista": "La reciprocidad es como el ayni: la ayuda que recibimos, la devolvemos.",
+      "explicacion": "Solidaridad: ayudar a quien lo necesita. Reciprocidad: devolver la ayuda que recibimos. Comunidad: personas que viven cerca y se organizan. Trabajo en equipo: hacer una tarea entre varias personas.",
+      "error": "valores-comunitarios"
+    },
+    {
+      "id": "p5", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "Lee cada situación. ¿Es ayni o mink’a?",
+      "categorias": [
+        { "id": "ayni", "texto": "Ayni", "emoji": "🔁" },
+        { "id": "minka", "texto": "Mink’a", "emoji": "👨‍👩‍👧‍👦" }
+      ],
+      "elementos": [
+        { "texto": "Mi tía cuidó las ovejas de la vecina; otro día, la vecina cuidará las de mi tía.", "categoria": "ayni" },
+        { "texto": "Los papás de Wara ayudaron a Juan con su techo; ahora Juan les devuelve la misma ayuda.", "categoria": "ayni" },
+        { "texto": "Hoy mi papá cocina para la fiesta de la vecina; en nuestra fiesta, la vecina cocinará para nosotros.", "categoria": "ayni" },
+        { "texto": "Don Luis invita a muchas personas a cosechar maíz y les da choclos para llevar.", "categoria": "minka" },
+        { "texto": "Toda la comunidad trabaja junta para construir un aula nueva.", "categoria": "minka" },
+        { "texto": "Una familia invita a sus parientes a techar su casa y les prepara un almuerzo.", "categoria": "minka" }
+      ],
+      "pista": "Fíjate si la misma ayuda vuelve otro día (ayni) o si muchas personas trabajan juntas y se les agradece con comida o productos (mink’a).",
+      "explicacion": "Cuidar ovejas, techar y cocinar devolviendo la misma ayuda es ayni. Cosechar con muchas personas que reciben choclos, construir un aula entre todos y techar con parientes que reciben un almuerzo es mink’a.",
+      "error": "confunde-ayni-minka"
+    },
+    {
+      "id": "p6", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa qué es la mink’a.",
+      "texto": "En la [mink’a], muchas personas trabajan [juntas]. La familia que invita agradece con [comida] o con productos.",
+      "banco": ["ayni", "enojo"],
+      "pista": "La mink’a es trabajo en grupo, y quien invita da las gracias con algo rico.",
+      "explicacion": "En la mink’a muchas personas trabajan juntas, y la familia que invita agradece con comida o con productos.",
+      "error": "concepto-minka"
+    },
+    {
+      "id": "p7", "tipo": "tocar", "nivel": 2,
+      "enunciado": "Toca los tres trabajos que hicieron juntos en la mink’a.",
+      "texto": "El sábado, los vecinos se reunieron para *cosechar* papa, *limpiar* el canal y *techar* la sede. Al final, compartieron un almuerzo.",
+      "pista": "Busca tres acciones de trabajo. Compartir el almuerzo fue para agradecer.",
+      "explicacion": "Los trabajos fueron cosechar, limpiar y techar. Después compartieron un almuerzo para agradecer.",
+      "error": "concepto-minka"
+    },
+    {
+      "id": "p8", "tipo": "ordenar", "nivel": 2,
+      "enunciado": "Ordena cómo fue la mink’a de Ana.",
+      "elementos": [
+        "La familia de Ana necesita cosechar su maíz.",
+        "Ana invita a sus vecinos a una mink’a.",
+        "Todos cosechan juntos el maíz.",
+        "Al final, Ana les agradece con comida y choclos."
+      ],
+      "vertical": true,
+      "pista": "Primero hay una necesidad, después se invita, luego se trabaja y al final se agradece.",
+      "explicacion": "Ana necesita cosechar, invita a sus vecinos, todos cosechan juntos y al final ella agradece con comida y choclos.",
+      "error": "secuencia-trabajo"
+    },
+    {
+      "id": "p9", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Muchas personas trabajan juntas y la familia que invita les agradece con comida. ¿Cómo se llama este trabajo?",
+      "respuestas": ["mink’a", "mink'a", "mink´a", "minka", "minga", "la mink’a", "la mink'a", "la minka", "una mink’a", "una mink'a", "una minka"],
+      "pista": "Empieza con «min». No es el ayni, porque aquí no se devuelve la misma ayuda.",
+      "explicacion": "Se llama mink’a (también se escribe minka): trabajo de muchas personas juntas que se agradece con comida o productos.",
+      "error": "escritura-terminos"
+    },
+    {
+      "id": "p10", "tipo": "pasos", "nivel": 3,
+      "enunciado": "Juan ayudó 3 días a la familia de Sofía a hacer adobes. Es un ayni.",
+      "pasos": [
+        {
+          "tipo": "numero",
+          "enunciado": "¿Cuántos días de ayuda debe devolver la familia de Sofía?",
+          "respuesta": 3,
+          "sufijo": "días",
+          "erroresComunes": [ { "respuesta": 0, "pista": "En el ayni la ayuda se devuelve. ¿Cuántos días ayudó Juan?", "error": "concepto-ayni" } ],
+          "pista": "En el ayni se devuelve la misma ayuda que se recibió.",
+          "explicacion": "Juan ayudó 3 días, así que la familia de Sofía devuelve 3 días de ayuda.",
+          "error": "concepto-ayni"
+        },
+        {
+          "tipo": "opcion",
+          "enunciado": "La familia de Sofía ya ayudó 3 días a Juan. ¿Quién debe ayuda ahora?",
+          "opciones": [
+            { "texto": "Nadie: la ayuda ya se devolvió", "correcta": true },
+            { "texto": "La familia de Sofía debe 3 días más", "pista": "Ya devolvieron los 3 días que recibieron.", "error": "concepto-ayni" },
+            { "texto": "Juan debe 6 días", "pista": "Juan dio 3 días y recibió 3 días. ¿Falta algo?", "error": "concepto-ayni" }
+          ],
+          "pista": "Compara: ¿cuántos días dio Juan y cuántos recibió?",
+          "explicacion": "Juan dio 3 días y recibió 3 días. La ayuda ya se devolvió y nadie debe nada.",
+          "error": "concepto-ayni"
+        }
+      ],
+      "pista": "Resuelve un paso a la vez.",
+      "explicacion": "En el ayni se devuelve la misma ayuda: 3 días por 3 días. Así las dos familias quedan igual y pueden volver a ayudarse.",
+      "error": "concepto-ayni"
+    },
+    {
+      "id": "p11", "tipo": "escribir-libre", "nivel": 3,
+      "enunciado": "Escribe un ejemplo de ayni en tu familia, tu escuela o tu barrio.",
+      "guia": ["Hoy ayudo a... y otro día...", "Mi vecina me ayudó a... y yo la ayudé a..."],
+      "requisitos": [
+        { "tipo": "mayuscula-inicial" },
+        { "tipo": "punto-final" },
+        { "tipo": "min-palabras", "valor": 8 },
+        { "tipo": "incluye", "palabras": ["ayuda", "ayudo", "ayudé"] }
+      ],
+      "modelo": "Hoy ayudo a mi vecina a regar y mañana ella me ayuda a mí.",
+      "pista": "Piensa en una ayuda que das y en cómo te la devuelven otro día.",
+      "explicacion": "Por ejemplo: «Hoy ayudo a mi vecina a regar y mañana ella me ayuda a mí». La ayuda va y vuelve.",
+      "error": "produce-ejemplo"
+    },
+    {
+      "id": "p12", "tipo": "clasificar", "nivel": 3,
+      "enunciado": "¿Es ayni, mink’a o ninguno de los dos?",
+      "categorias": [
+        { "id": "ayni", "texto": "Ayni", "emoji": "🔁" },
+        { "id": "minka", "texto": "Mink’a", "emoji": "👨‍👩‍👧‍👦" },
+        { "id": "ninguno", "texto": "Ni ayni ni mink’a", "emoji": "🚫" }
+      ],
+      "elementos": [
+        { "texto": "Nayra ayuda a Luis a estudiar; otro día, Luis ayuda a Nayra con sus tareas.", "categoria": "ayni" },
+        { "texto": "La familia Mamani ayuda a los Choque a sembrar, y después los Choque ayudan a los Mamani.", "categoria": "ayni" },
+        { "texto": "Los vecinos se juntan para arreglar el camino de todos.", "categoria": "minka" },
+        { "texto": "Una familia invita a muchos parientes a cosechar y les regala papas.", "categoria": "minka" },
+        { "texto": "Cada familia cosecha sola y no ayuda a nadie.", "categoria": "ninguno" },
+        { "texto": "Luis no quiere ayudar a Sofía, aunque ella lo ayudó antes.", "categoria": "ninguno" }
+      ],
+      "pista": "Si nadie ayuda o la ayuda no se devuelve, no es ni ayni ni mink’a.",
+      "explicacion": "Ayni: Nayra y Luis, los Mamani y los Choque. Mink’a: arreglar el camino entre todos y cosechar con muchos parientes. Cosechar sin ayudar y no devolver la ayuda no son ni ayni ni mink’a.",
+      "error": "confunde-ayni-minka"
+    },
+    {
+      "id": "p13", "tipo": "multiple", "nivel": 3,
+      "enunciado": "¿Qué aprendemos con el ayni y la mink’a? Elige todas las respuestas correctas.",
+      "opciones": [
+        { "texto": "a ayudar a quien lo necesita", "emoji": "🤝", "correcta": true },
+        { "texto": "a devolver la ayuda que recibimos", "emoji": "🔁", "correcta": true },
+        { "texto": "a trabajar en equipo", "emoji": "🙌", "correcta": true },
+        { "texto": "a pensar solo en mí", "pista": "El ayni y la mink’a piensan en los demás.", "error": "valores-comunitarios" },
+        { "texto": "a burlarme de quien pide ayuda", "pista": "Pedir ayuda está bien. Nadie debe burlarse.", "error": "valores-comunitarios" }
+      ],
+      "pista": "Hay tres respuestas que hablan de ayudar y trabajar juntos.",
+      "explicacion": "Aprendemos solidaridad (ayudar), reciprocidad (devolver la ayuda) y trabajo en equipo.",
+      "error": "valores-comunitarios"
+    },
+    {
+      "id": "p14", "tipo": "pasos", "nivel": 2,
+      "enunciado": "La junta vecinal invita a todas las familias del barrio a pintar la escuela el sábado.",
+      "pasos": [
+        {
+          "tipo": "opcion",
+          "enunciado": "¿A qué forma de trabajo se parece más?",
+          "opciones": [
+            { "texto": "A la mink’a: muchas personas trabajan juntas en una obra de todos", "correcta": true },
+            { "texto": "Al ayni: una familia devuelve a otra la misma ayuda", "pista": "Aquí no hay una familia que devuelve ayuda: trabaja todo el barrio junto.", "error": "confunde-ayni-minka" }
+          ],
+          "pista": "¿Trabajan muchas familias juntas para algo de todos?",
+          "explicacion": "Se parece a la mink’a: todo el barrio trabaja junto para la escuela.",
+          "error": "confunde-ayni-minka"
+        },
+        {
+          "tipo": "opcion",
+          "enunciado": "¿Qué puedes hacer tú para ayudar?",
+          "opciones": [
+            { "texto": "Ir con mi familia y hacer algo sencillo, como llevar agua o limpiar pinceles", "correcta": true },
+            { "texto": "Rayar las paredes recién pintadas", "pista": "Así se arruina el trabajo de todos.", "error": "situacion-ayuda" },
+            { "texto": "Quejarme de la escuela y no ayudar", "pista": "La escuela es de todos. ¿Cómo puedes colaborar?", "error": "situacion-ayuda" }
+          ],
+          "pista": "Busca una tarea que una niña o un niño puede hacer con cuidado.",
+          "explicacion": "Puedes ir con tu familia y ayudar en algo sencillo. ¡Tu ayuda también cuenta!",
+          "error": "situacion-ayuda"
+        }
+      ],
+      "pista": "Resuelve un paso a la vez.",
+      "explicacion": "Pintar la escuela entre todos es como una mink’a. Hasta las niñas y los niños pueden ayudar con tareas sencillas.",
+      "error": "confunde-ayni-minka"
+    }
+  ],
+  "comprobacion": [
+    {
+      "id": "c1", "tipo": "opcion", "nivel": 1,
+      "enunciado": "¿Qué es el ayni?",
+      "opciones": [
+        { "texto": "Ayuda que se devuelve: hoy te ayudo y otro día tú me ayudas", "correcta": true },
+        { "texto": "Una fiesta con música y baile", "pista": "El ayni no es una fiesta: es una forma de trabajar.", "error": "concepto-ayni" },
+        { "texto": "Una comida del altiplano", "pista": "El ayni no se come: es una forma de ayudarnos.", "error": "concepto-ayni" }
+      ],
+      "pista": "Recuerda el dicho «hoy por ti, mañana por mí».",
+      "explicacion": "El ayni es ayuda que se devuelve: hoy te ayudo y otro día tú me ayudas.",
+      "error": "concepto-ayni"
+    },
+    {
+      "id": "c2", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Toca los nombres de las dos formas de trabajo comunitario.",
+      "texto": "Mi abuela cuenta que en su comunidad hacían *ayni* y *mink’a* para sembrar y cosechar.",
+      "pista": "Son dos palabras del quechua y del aimara.",
+      "explicacion": "Ayni y mink’a son formas de trabajo comunitario. Sembrar y cosechar son los trabajos que hacían.",
+      "error": "vocabulario-comunitario"
+    },
+    {
+      "id": "c3", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "¿Es ayni o mink’a?",
+      "categorias": [
+        { "id": "ayni", "texto": "Ayni", "emoji": "🔁" },
+        { "id": "minka", "texto": "Mink’a", "emoji": "👨‍👩‍👧‍👦" }
+      ],
+      "elementos": [
+        { "texto": "Ana ayudó a Luis a cargar su cosecha; mañana Luis ayudará a Ana con la suya.", "categoria": "ayni" },
+        { "texto": "Los Choque ayudaron a los Rojas a hacer su horno; después, los Rojas ayudaron a los Choque con el suyo.", "categoria": "ayni" },
+        { "texto": "La comunidad llama a todas las familias para arreglar el puente.", "categoria": "minka" },
+        { "texto": "Doña Inés invita a muchos vecinos a cosechar quinua y les da una parte de la cosecha.", "categoria": "minka" },
+        { "texto": "Los vecinos del barrio se juntan para limpiar la plaza de todos.", "categoria": "minka" }
+      ],
+      "pista": "¿La ayuda vuelve a quien ayudó? Es ayni. ¿Trabajan muchas personas juntas para una familia o para todos? Es mink’a.",
+      "explicacion": "Ayni: Ana y Luis, los Choque y los Rojas. Mink’a: arreglar el puente, cosechar quinua con muchos vecinos y limpiar la plaza de todos.",
+      "error": "confunde-ayni-minka"
+    },
+    {
+      "id": "c4", "tipo": "ordenar", "nivel": 2,
+      "enunciado": "Ordena este ayni.",
+      "elementos": [
+        "La familia de Mateo necesita hacer adobes.",
+        "La familia de Rosa va a ayudarla.",
+        "Semanas después, la familia de Rosa necesita techar su casa.",
+        "La familia de Mateo devuelve la ayuda."
+      ],
+      "vertical": true,
+      "pista": "Primero alguien necesita ayuda y la recibe. Después, esa familia devuelve la ayuda.",
+      "explicacion": "Mateo necesita adobes, Rosa ayuda; semanas después Rosa necesita techar y Mateo devuelve la ayuda.",
+      "error": "secuencia-trabajo"
+    },
+    {
+      "id": "c5", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha la situación y escribe cómo se llama este trabajo.",
+      "escuchar": "La comunidad de Kusi llama a todas las familias para limpiar el canal de riego. Trabajan juntas toda la mañana y después comparten comida.",
+      "respuestas": ["mink’a", "mink'a", "mink´a", "minka", "minga", "la mink’a", "la mink'a", "la minka", "una mink’a", "una mink'a", "una minka"],
+      "pista": "Muchas familias trabajan juntas para algo de toda la comunidad.",
+      "explicacion": "Es una mink’a (o minka): toda la comunidad trabaja junta para el canal de riego.",
+      "error": "concepto-minka"
+    },
+    {
+      "id": "c6", "tipo": "pasos", "nivel": 3,
+      "enunciado": "Arami ayudó a su amigo Luis a practicar la lectura. Ahora Arami tiene dudas con las sumas, y Luis es muy bueno sumando.",
+      "pasos": [
+        {
+          "tipo": "opcion",
+          "enunciado": "Si Luis sigue el ayni, ¿qué hará?",
+          "opciones": [
+            { "texto": "Ayudar a Arami con las sumas", "correcta": true },
+            { "texto": "Pedirle a Arami que le pague", "pista": "En el ayni la ayuda se devuelve con ayuda, no con dinero.", "error": "situacion-ayuda" },
+            { "texto": "Decir que está ocupado y no ayudar", "pista": "Arami lo ayudó antes. ¿Qué sería justo?", "error": "situacion-ayuda" }
+          ],
+          "pista": "Arami ayudó primero. ¿Qué le toca hacer a Luis?",
+          "explicacion": "Luis ayuda a Arami con las sumas, porque ella lo ayudó con la lectura.",
+          "error": "situacion-ayuda"
+        },
+        {
+          "tipo": "completar",
+          "enunciado": "Completa la idea.",
+          "texto": "Esto es [ayni], porque la ayuda [vuelve] a quien ayudó primero.",
+          "banco": ["mink’a", "termina"],
+          "pista": "¿Cuál es la forma de trabajo donde la ayuda va y vuelve?",
+          "explicacion": "Es ayni: la ayuda vuelve a quien ayudó primero.",
+          "error": "confunde-ayni-minka"
+        }
+      ],
+      "pista": "Resuelve un paso a la vez.",
+      "explicacion": "Arami ayudó con la lectura y Luis devuelve la ayuda con las sumas: el ayni también se vive en la escuela.",
+      "error": "situacion-ayuda"
+    },
+    {
+      "id": "c7", "tipo": "multiple", "nivel": 3,
+      "enunciado": "¿Cuáles son ejemplos de mink’a? Elige todos.",
+      "opciones": [
+        { "texto": "La comunidad construye junta una sala para la escuela.", "correcta": true },
+        { "texto": "Una familia invita a muchos vecinos a cosechar y les da papas.", "correcta": true },
+        { "texto": "Tú me ayudas a pintar y otro día yo te ayudo a ti.", "pista": "Cuando la misma ayuda se devuelve, es ayni.", "error": "confunde-ayni-minka" },
+        { "texto": "Juego solo en mi cuarto.", "pista": "Jugar solo no es trabajo en grupo.", "error": "concepto-minka" }
+      ],
+      "pista": "En la mink’a muchas personas trabajan juntas para una familia o para la comunidad.",
+      "explicacion": "Son mink’a: construir la sala entre todos y cosechar con muchos vecinos que reciben papas. Ayudarse y devolver la ayuda es ayni.",
+      "error": "concepto-minka"
+    },
+    {
+      "id": "c8", "tipo": "opcion", "nivel": 1,
+      "enunciado": "¿Dónde se practican hoy el ayni y la mink’a?",
+      "opciones": [
+        { "texto": "En el campo y también en la ciudad", "correcta": true },
+        { "texto": "Solo se practicaban hace mucho tiempo", "pista": "Son costumbres antiguas, pero muchas familias las practican hoy.", "error": "ayni-hoy" },
+        { "texto": "Solo en otros países", "pista": "En Bolivia muchas familias y comunidades las practican.", "error": "ayni-hoy" }
+      ],
+      "pista": "Recuerda a la tía de Nayra, que techó su casa en la ciudad con sus vecinos.",
+      "explicacion": "El ayni y la mink’a se practican hoy en el campo y también en la ciudad.",
+      "error": "ayni-hoy"
+    }
+  ],
+  "repaso": {
+    "texto": "Recuerda: **ayni** es ayuda que se devuelve («hoy por ti, mañana por mí»). **Mink’a** es trabajo de muchas personas juntas, que se agradece con comida o productos, o que se hace para obras de todos.",
+    "visual": { "tipo": "emojis", "items": ["🔁", "👨‍👩‍👧‍👦"], "etiquetas": ["ayni", "mink’a"] }
+  },
+  "adulto": {
+    "objetivo": "Comprender dos formas andinas de trabajo comunitario: el ayni (ayuda recíproca entre familias: la ayuda recibida se devuelve con el mismo trabajo) y la mink’a o minka (trabajo colectivo convocado por una familia o por la comunidad, que se agradece con comida o productos, o que se hace para obras comunes). Reconocer ejemplos actuales en el campo y la ciudad y valorar la solidaridad y la reciprocidad, valores que la Constitución reconoce (art. 8).",
+    "sugerencias": [
+      "Hagan un «ayni familiar»: esta semana su hija o hijo ayuda a un familiar en una tarea (regar, ordenar, cocinar) y otro día esa persona le devuelve la misma ayuda. Conversen sobre cómo se sintieron.",
+      "Organicen una pequeña mink’a con la familia o los vecinos: limpiar el patio, la acera o un espacio común entre varios y compartir después un refrigerio. Pregunten: ¿quién invitó?, ¿cómo se agradeció?",
+      "Pregunten a abuelos, abuelas o vecinos si alguna vez hicieron ayni o mink’a (cosechas, techados, construcción de casas, preparación de fiestas) y pidan que cuenten cómo era."
+    ],
+    "errores": {
+      "concepto-ayni": { "descripcion": "No comprende que en el ayni la ayuda recibida se devuelve.", "sugerencia": "Jueguen a «hoy por ti, mañana por mí»: ayúdense en tareas pequeñas y anoten quién ayudó a quién para devolver la ayuda." },
+      "concepto-minka": { "descripcion": "No reconoce la mink’a como trabajo de muchas personas juntas.", "sugerencia": "Recuerden una actividad en la que muchas personas trabajaron juntas (limpieza, cosecha, techado) y conversen sobre quién invitó y cómo se agradeció." },
+      "confunde-ayni-minka": { "descripcion": "Confunde el ayni con la mink’a.", "sugerencia": "Usen dos preguntas: «¿se devuelve la misma ayuda?» (ayni) y «¿trabajan muchas personas juntas para una familia o para todos?» (mink’a)." },
+      "escritura-terminos": { "descripcion": "Le cuesta escribir las palabras ayni y mink’a.", "sugerencia": "Escriban juntos las palabras en tarjetas y digan sus letras en voz alta: a-y-n-i, m-i-n-k-a." },
+      "situacion-ayuda": { "descripcion": "Duda sobre cómo actuar cuando alguien le ayudó o necesita ayuda.", "sugerencia": "Planteen situaciones cotidianas («tu primo te prestó su lápiz, hoy él no tiene») y conversen sobre lo justo." },
+      "valores-comunitarios": { "descripcion": "No reconoce la solidaridad y la reciprocidad como valores del trabajo comunitario.", "sugerencia": "Cuando ayuden a alguien en casa o en el barrio, nombren el valor: «esto es solidaridad», «esto es devolver la ayuda»." },
+      "secuencia-trabajo": { "descripcion": "Ordena mal los pasos de una mink’a o de un ayni.", "sugerencia": "Cuenten la historia con dibujos en tarjetas y pidan que las ordene: necesidad, invitación, trabajo y agradecimiento." },
+      "produce-ejemplo": { "descripcion": "Le cuesta escribir un ejemplo propio de ayni.", "sugerencia": "Pidan primero que cuente oralmente una ayuda que dio y otra que recibió; luego escriban juntos la oración." },
+      "vocabulario-comunitario": { "descripcion": "No recuerda el significado de palabras como ayni, mink’a, cosecha o comunidad.", "sugerencia": "Hagan un pequeño diccionario con dibujos para cada palabra." },
+      "ayni-hoy": { "descripcion": "Cree que el ayni y la mink’a son solo cosas del pasado.", "sugerencia": "Busquen ejemplos actuales en la familia o el barrio: vecinos que ayudan a techar, a preparar una fiesta o a cosechar." }
+    }
+  }
+}

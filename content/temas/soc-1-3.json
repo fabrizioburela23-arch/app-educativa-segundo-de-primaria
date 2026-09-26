@@ -4,8 +4,8 @@
   "objetivo": "Conozco los lugares y servicios de mi barrio o comunidad, sé cómo cuidarlos y cómo los vecinos trabajan juntos para mejorarlos.",
   "explicacion": [
     {
-      "texto": "Mi **barrio** o mi **comunidad** es el lugar donde vivo junto a mis **vecinos**. Puede estar en la ciudad (**urbana**) o en el campo (**rural**). Allí nos saludamos, nos ayudamos y nos respetamos.",
-      "visual": { "tipo": "emojis", "items": ["🏙️", "🏡"], "etiquetas": ["ciudad: urbana", "campo: rural"] }
+      "texto": "Mi **barrio** o mi **comunidad** es el lugar donde vivo con mis vecinos. Puede estar en la ciudad (zona **urbana**) o en el campo (zona **rural**). Allí nos saludamos, nos ayudamos y nos respetamos.",
+      "visual": { "tipo": "emojis", "items": ["🏙️", "🏡"], "etiquetas": ["ciudad: zona urbana", "campo: zona rural"] }
     },
     {
       "texto": "En la comunidad hay **lugares** y **servicios** que todos usamos: la escuela, el centro de salud, el mercado, la plaza, el agua potable, la luz y el recojo de basura.",
@@ -82,10 +82,10 @@
         "id": "g3", "tipo": "completar",
         "enunciado": "Completa sobre los vecinos de Wara.",
         "apoyo": "Recuerda cómo se llama la organización de los vecinos de un barrio.",
-        "texto": "Los vecinos de Wara forman una [junta vecinal]. Se reúnen, conversan y deciden [juntos] cómo mejorar el barrio.",
+        "texto": "Los vecinos de Wara se organizan en una [junta vecinal]. Se reúnen, conversan y deciden [juntos] cómo mejorar el barrio.",
         "banco": ["pelota", "solos"],
         "pista": "Si se reúnen y conversan, ¿deciden solos o con los demás?",
-        "explicacion": "Los vecinos forman una junta vecinal. Se reúnen, conversan y deciden juntos.",
+        "explicacion": "Los vecinos se organizan en una junta vecinal. Se reúnen, conversan y deciden juntos.",
         "error": "trabajo-comunitario"
       }
     ]
@@ -159,7 +159,7 @@
     {
       "id": "p7", "tipo": "tocar", "nivel": 2,
       "enunciado": "Toca las acciones de Kusi que muestran respeto a sus vecinos.",
-      "texto": "Kusi *saluda* a doña Rosa y *ayuda* a don Luis con sus bolsas. Su primo grita de noche y no deja dormir a nadie.",
+      "texto": "Kusi *saluda* a doña Rosa y *ayuda* a don Julio con sus bolsas. Su primo grita de noche y no deja dormir a nadie.",
       "pista": "Busca dos acciones de Kusi que hacen sentir bien a los vecinos.",
       "explicacion": "Kusi saluda y ayuda: así muestra respeto. Gritar de noche molesta a los vecinos que quieren descansar.",
       "error": "respeto-vecinos"
@@ -343,15 +343,16 @@
   "comprobacion": [
     {
       "id": "c1", "tipo": "opcion", "nivel": 1,
-      "enunciado": "¿Dónde compramos papa, fruta y carne?",
+      "enunciado": "Mira el dibujo de esta comunidad del valle. ¿Es urbana o rural?",
+      "visual": { "tipo": "ilustracion", "id": "paisaje-valle" },
+      "mezclar": false,
       "opciones": [
-        { "texto": "en el mercado", "emoji": "🧺", "correcta": true },
-        { "texto": "en el centro de salud", "emoji": "🏥", "pista": "Al centro de salud vamos cuando estamos enfermos.", "error": "servicios-lugares" },
-        { "texto": "en la escuela", "emoji": "🏫", "pista": "A la escuela vamos a aprender.", "error": "servicios-lugares" }
+        { "texto": "urbana: está en la ciudad", "emoji": "🏙️", "pista": "En la ciudad hay muchas calles y edificios. ¿Los ves en el dibujo?", "error": "urbano-rural" },
+        { "texto": "rural: está en el campo", "emoji": "🌾", "correcta": true }
       ],
-      "pista": "Piensa en el lugar con muchos puestos de comida.",
-      "explicacion": "Compramos papa, fruta y carne en el mercado.",
-      "error": "servicios-lugares"
+      "pista": "Mira bien: ¿hay edificios y calles, o chacras, árboles y pocas casas?",
+      "explicacion": "Es una comunidad rural: está en el campo, con chacras, un río y pocas casas.",
+      "error": "urbano-rural"
     },
     {
       "id": "c2", "tipo": "relacionar", "nivel": 1,
@@ -374,21 +375,21 @@
       ],
       "elementos": [
         { "texto": "recoger lo que ensucia mi perro", "emoji": "🐕", "categoria": "cuida" },
-        { "texto": "apagar las luces que no uso", "emoji": "💡", "categoria": "cuida" },
+        { "texto": "cerrar bien el grifo después de usarlo", "emoji": "🚰", "categoria": "cuida" },
         { "texto": "usar el basurero de la plaza", "emoji": "🗑️", "categoria": "cuida" },
         { "texto": "rayar las paredes", "categoria": "dana" },
         { "texto": "arrancar las flores de la plaza", "emoji": "🥀", "categoria": "dana" },
         { "texto": "botar botellas al canal", "categoria": "dana" }
       ],
       "pista": "Pregúntate: ¿así la comunidad queda más limpia y bonita, o más sucia y dañada?",
-      "explicacion": "Recoger lo que ensucia el perro, apagar luces y usar el basurero cuidan la comunidad. Rayar paredes, arrancar flores y botar botellas al canal la dañan.",
+      "explicacion": "Recoger lo que ensucia el perro, cerrar bien el grifo y usar el basurero cuidan la comunidad. Rayar paredes, arrancar flores y botar botellas al canal la dañan.",
       "error": "cuidado-entorno"
     },
     {
       "id": "c4", "tipo": "escribir", "nivel": 2,
       "enunciado": "Escucha la pregunta y escribe la respuesta.",
       "escuchar": "¿Cómo se llama la organización de los vecinos de un barrio de la ciudad?",
-      "respuestas": ["junta vecinal", "la junta vecinal", "junta de vecinos", "la junta de vecinos"],
+      "respuestas": ["junta vecinal", "la junta vecinal", "junta de vecinos", "la junta de vecinos", "juntas vecinales", "las juntas vecinales"],
       "pista": "Son dos palabras. La primera es «junta».",
       "explicacion": "Es la junta vecinal: allí los vecinos se reúnen y deciden cómo mejorar el barrio.",
       "error": "trabajo-comunitario"
@@ -396,24 +397,24 @@
     {
       "id": "c5", "tipo": "completar", "nivel": 2,
       "enunciado": "Completa sobre la basura.",
-      "texto": "La cáscara de plátano es basura [orgánica]. La botella de plástico se puede [reciclar].",
-      "banco": ["de metal", "tirar al río"],
-      "pista": "¿La cáscara viene de una planta? ¿Qué se puede hacer con una botella para usarla otra vez?",
-      "explicacion": "La cáscara de plátano es basura orgánica y la botella de plástico se puede reciclar. Nunca se tira al río.",
+      "texto": "La cáscara de huevo es basura [orgánica]. Las cajas de cartón se pueden [reciclar].",
+      "banco": ["de metal", "comer"],
+      "pista": "¿La cáscara de huevo es un resto de comida? ¿Qué se puede hacer con el cartón para usarlo otra vez?",
+      "explicacion": "La cáscara de huevo es basura orgánica, porque es un resto de comida. Las cajas de cartón se pueden reciclar para hacer cartón o papel nuevo.",
       "error": "basura"
     },
     {
       "id": "c6", "tipo": "multiple", "nivel": 2,
       "enunciado": "Elige lo que muestra respeto entre vecinos.",
       "opciones": [
-        { "texto": "Saludar a los vecinos", "emoji": "👋", "correcta": true },
-        { "texto": "No hacer ruido fuerte de noche", "emoji": "🌙", "correcta": true },
-        { "texto": "Ayudar a una vecina mayor con sus bolsas", "emoji": "👵", "correcta": true },
+        { "texto": "Pedir permiso para sacar la pelota que cayó en su patio", "emoji": "⚽", "correcta": true },
+        { "texto": "Invitar a jugar a la niña que llegó nueva al barrio", "emoji": "👧", "correcta": true },
+        { "texto": "Dar las gracias cuando un vecino nos ayuda", "emoji": "🙏", "correcta": true },
         { "texto": "Dejar la basura en la puerta del vecino", "pista": "¿Te gustaría encontrar basura en tu puerta?", "error": "respeto-vecinos" },
-        { "texto": "Rayar la pared de su casa", "pista": "La pared es de otra familia. ¿Cómo se sentirían?", "error": "respeto-vecinos" }
+        { "texto": "Burlarse de un vecino porque habla otro idioma", "pista": "En Bolivia se hablan muchos idiomas, como el quechua, el aimara y el guaraní. ¿Cómo se sentiría tu vecino?", "error": "respeto-vecinos" }
       ],
       "pista": "Busca las acciones que hacen sentir bien a los vecinos.",
-      "explicacion": "Saludar, respetar el descanso de noche y ayudar muestran respeto. Dejar basura o rayar paredes molesta y daña.",
+      "explicacion": "Pedir permiso, invitar a jugar y dar las gracias muestran respeto. Dejar basura en su puerta o burlarse de cómo habla alguien lastima a los vecinos.",
       "error": "respeto-vecinos"
     },
     {
@@ -455,14 +456,14 @@
       "id": "c8", "tipo": "relacionar", "nivel": 3,
       "enunciado": "Une cada problema del barrio con una buena solución.",
       "pares": [
-        ["Hay basura en la calle.", "Usar el basurero y sacar la basura cuando pasa el carro."],
-        ["El grifo de la plaza gotea.", "Avisar a la junta vecinal para que lo arreglen."],
+        ["Hay papeles y botellas tirados en la cancha.", "Recogerlos entre todos y poner un basurero."],
+        ["El grifo de la plaza gotea.", "Avisar a la junta vecinal para que lo hagan arreglar."],
         ["La plaza no tiene árboles.", "Plantar árboles en un trabajo comunitario."],
         ["Hay música muy fuerte de noche.", "Pedir con respeto que bajen el volumen."]
       ],
       "pista": "Lee cada problema y busca la solución que lo arregla directamente.",
-      "explicacion": "La basura va al basurero, el grifo se arregla avisando a la junta vecinal, los árboles se plantan entre todos y el ruido se resuelve pidiendo con respeto.",
-      "error": "respeto-vecinos"
+      "explicacion": "La basura de la cancha se recoge entre todos, el grifo se arregla avisando a la junta vecinal, los árboles se plantan en un trabajo comunitario y el ruido se resuelve pidiendo con respeto.",
+      "error": "trabajo-comunitario"
     }
   ],
   "repaso": {

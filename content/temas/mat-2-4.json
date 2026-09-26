@@ -1,0 +1,321 @@
+{
+  "id": "mat-2-4",
+  "titulo": "Resta sin prestar",
+  "objetivo": "Resto números de hasta tres cifras sin prestar, para quitar, comparar y saber cuánto falta.",
+  "explicacion": [
+    {
+      "texto": "**Restar** es quitar. Tenías 9 naranjas y regalaste 3. Te quedan 6: 9 − 3 = 6. En la recta, restar es saltar hacia atrás.",
+      "emoji": "🍊",
+      "visual": { "tipo": "recta", "min": 0, "max": 10, "paso": 1, "marcar": [9, 6], "saltos": [[9, 8], [8, 7], [7, 6]] }
+    },
+    {
+      "texto": "Restar también sirve para **comparar**. Wara tiene 8 choclos y Kusi tiene 5. ¿Cuántos más tiene Wara? 8 − 5 = 3. Wara tiene 3 choclos más.",
+      "visual": { "tipo": "pictograma", "titulo": "Choclos", "icono": "🌽", "escala": 1, "datos": [ { "etiqueta": "Wara", "valor": 8, "emoji": "🌽" }, { "etiqueta": "Kusi", "valor": 5, "emoji": "🌽" } ] }
+    },
+    {
+      "texto": "Y sirve para saber **cuánto falta**. Nayra tiene 5 figuritas y quiere tener 9. 9 − 5 = 4: le faltan 4. También puedes contar hacia adelante desde el 5: 6, 7, 8, 9.",
+      "visual": { "tipo": "recta", "min": 0, "max": 10, "paso": 1, "marcar": [5, 9], "saltos": [[5, 6], [6, 7], [7, 8], [8, 9]] }
+    },
+    {
+      "texto": "Con números grandes restamos por columnas: primero las **unidades**, después las **decenas** y al final las **centenas**. En 58 − 23: 8 − 3 = 5 y 5 − 2 = 3. El resultado es 35.",
+      "visual": { "tipo": "tabla", "columnas": ["", "D", "U"], "filas": [["", "5", "8"], ["−", "2", "3"], ["=", "3", "5"]] }
+    }
+  ],
+  "ejemplo": {
+    "instruccion": "Mira cómo restamos 368 − 125 con bloques, empezando por las unidades. Después, juega tú a quitar bloques.",
+    "pasos": [
+      { "texto": "Armamos el 368: 3 placas, 6 barras y 8 cubitos. Hay que quitar 125: 1 placa, 2 barras y 5 cubitos.", "visual": { "tipo": "bloques", "centenas": 3, "decenas": 6, "unidades": 8 } },
+      { "texto": "Quitamos 5 cubitos: 8 − 5 = 3. Quedan 3 unidades.", "visual": { "tipo": "bloques", "centenas": 3, "decenas": 6, "unidades": 3 } },
+      { "texto": "Quitamos 2 barras: 6 − 2 = 4. Quedan 4 decenas.", "visual": { "tipo": "bloques", "centenas": 3, "decenas": 4, "unidades": 3 } },
+      { "texto": "Quitamos 1 placa: 3 − 1 = 2. Quedan 2 centenas. Entonces 368 − 125 = 243.", "visual": { "tipo": "bloques", "centenas": 2, "decenas": 4, "unidades": 3 } }
+    ],
+    "explorar": { "tipo": "bloques" }
+  },
+  "guiada": {
+    "intro": "Ahora restamos juntos, paso a paso.",
+    "pasos": [
+      {
+        "id": "g1", "tipo": "manipular",
+        "enunciado": "Aquí tienes 47 en bloques. Quita 23 y mira cuánto queda.",
+        "apoyo": "23 son 2 barras y 3 cubitos. Primero quita 3 cubitos y después 2 barras.",
+        "manipulable": { "tipo": "bloques", "inicial": { "centenas": 0, "decenas": 4, "unidades": 7 }, "objetivo": 24, "canonico": true },
+        "pista": "Tienes que quitar 3 cubitos y 2 barras. Después cuenta lo que queda.",
+        "explicacion": "7 − 3 = 4 cubitos y 4 − 2 = 2 barras. Quedan 2 barras y 4 cubitos: 47 − 23 = 24.",
+        "error": "resta-bloques"
+      },
+      {
+        "id": "g2", "tipo": "numero",
+        "enunciado": "¿Cuánto es 65 − 32?",
+        "apoyo": "Primero resta las unidades: 5 − 2. Después resta las decenas: 6 − 3.",
+        "visual": { "tipo": "operacion", "numeros": [65, 32], "op": "-", "vertical": true },
+        "respuesta": 33,
+        "erroresComunes": [ { "respuesta": 97, "pista": "Sumaste los dos números. En la resta quitamos: el resultado es menor que 65.", "error": "confunde-operacion" } ],
+        "pista": "Resta columna por columna, empezando por las unidades.",
+        "explicacion": "5 − 2 = 3 unidades y 6 − 3 = 3 decenas. Entonces 65 − 32 = 33.",
+        "error": "resta-columnas"
+      },
+      {
+        "id": "g3", "tipo": "numero",
+        "enunciado": "Arami recogió 9 huevos del gallinero y Luis recogió 6. ¿Cuántos huevos más recogió Arami?",
+        "apoyo": "Compara las dos filas: cuenta los huevos de Arami que quedan después de los 6 de Luis.",
+        "visual": { "tipo": "pictograma", "titulo": "Huevos que recogieron", "icono": "🥚", "escala": 1, "datos": [ { "etiqueta": "Arami", "valor": 9, "emoji": "🥚" }, { "etiqueta": "Luis", "valor": 6, "emoji": "🥚" } ] },
+        "respuesta": 3,
+        "erroresComunes": [ { "respuesta": 15, "pista": "Juntaste los huevos de los dos. La pregunta es cuántos **más** recogió Arami: hay que comparar.", "error": "problema-comparar" } ],
+        "pista": "Para comparar, restamos: al número mayor le quitamos el menor.",
+        "explicacion": "9 − 6 = 3. Arami recogió 3 huevos más que Luis.",
+        "error": "problema-comparar"
+      }
+    ]
+  },
+  "practica": [
+    {
+      "id": "p1", "tipo": "generador", "nivel": 1, "generador": "resta", "params": { "digitos": 1 }
+    },
+    {
+      "id": "p2", "tipo": "manipular", "nivel": 1,
+      "enunciado": "Resuelve 9 − 4 en la recta. Mueve el marcador al resultado.",
+      "manipulable": { "tipo": "recta", "min": 0, "max": 10, "paso": 1, "objetivo": 5 },
+      "pista": "Empieza en el 9 y da 4 saltos hacia la izquierda. No cuentes el 9.",
+      "explicacion": "Desde el 9 saltamos 4 veces hacia atrás: 8, 7, 6, 5. Entonces 9 − 4 = 5.",
+      "error": "cuenta-atras"
+    },
+    {
+      "id": "p3", "tipo": "numero", "nivel": 1,
+      "enunciado": "En la bandeja hay 15 salteñas. Se venden 4. ¿Cuántas salteñas quedan?",
+      "visual": { "tipo": "emoji", "valor": "🥟", "cantidad": 15, "etiqueta": "15 salteñas" },
+      "respuesta": 11,
+      "erroresComunes": [ { "respuesta": 19, "pista": "Si se venden salteñas, en la bandeja quedan menos. ¿Hay que sumar o restar?", "error": "confunde-operacion" } ],
+      "pista": "Quita 4 salteñas de las 15 y cuenta las que quedan.",
+      "explicacion": "15 − 4 = 11. En la bandeja quedan 11 salteñas.",
+      "error": "resta-calculo"
+    },
+    {
+      "id": "p4", "tipo": "relacionar", "nivel": 1,
+      "enunciado": "Une cada resta con su resultado.",
+      "pares": [ ["8 − 3", "5"], ["7 − 7", "0"], ["9 − 1", "8"], ["6 − 0", "6"], ["5 − 3", "2"] ],
+      "pista": "Si quitas todo, queda 0. Si no quitas nada, queda lo mismo.",
+      "explicacion": "8 − 3 = 5, 7 − 7 = 0, 9 − 1 = 8, 6 − 0 = 6 y 5 − 3 = 2.",
+      "error": "resta-calculo"
+    },
+    {
+      "id": "p5", "tipo": "generador", "nivel": 2, "generador": "resta", "params": { "digitos": 2, "prestar": false }
+    },
+    {
+      "id": "p6", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa la resta 86 − 52, columna por columna.",
+      "visual": { "tipo": "operacion", "numeros": [86, 52], "op": "-", "vertical": true },
+      "texto": "Unidades: 6 − 2 = [4]. Decenas: 8 − 5 = [3]. Resultado: 86 − 52 = [34].",
+      "banco": ["138", "7"],
+      "pista": "Resta primero las unidades y después las decenas. El resultado junta las dos cifras.",
+      "explicacion": "6 − 2 = 4 y 8 − 5 = 3. Por eso 86 − 52 = 34.",
+      "error": "resta-columnas"
+    },
+    {
+      "id": "p7", "tipo": "manipular", "nivel": 2,
+      "enunciado": "Aquí tienes 256 en bloques. Quita 134 y deja solo lo que queda.",
+      "manipulable": { "tipo": "bloques", "inicial": { "centenas": 2, "decenas": 5, "unidades": 6 }, "objetivo": 122, "canonico": true },
+      "pista": "134 es 1 placa, 3 barras y 4 cubitos. Quítalos y cuenta lo que queda.",
+      "explicacion": "6 − 4 = 2 cubitos, 5 − 3 = 2 barras y 2 − 1 = 1 placa. Quedan 122: 256 − 134 = 122.",
+      "error": "resta-bloques"
+    },
+    {
+      "id": "p8", "tipo": "numero", "nivel": 2,
+      "enunciado": "En la feria, doña Rosa vendió 47 panes y don Juan vendió 25. ¿Cuántos panes más vendió doña Rosa?",
+      "visual": { "tipo": "tabla", "columnas": ["Nombre", "Panes"], "filas": [["doña Rosa", "47"], ["don Juan", "25"]] },
+      "respuesta": 22,
+      "erroresComunes": [ { "respuesta": 72, "pista": "Juntaste los panes de los dos. La pregunta pide comparar: ¿cuántos **más**?", "error": "problema-comparar" } ],
+      "pista": "Para saber cuántos más, compara: al número mayor le quitas el menor.",
+      "explicacion": "47 − 25 = 22. Doña Rosa vendió 22 panes más que don Juan.",
+      "error": "problema-comparar"
+    },
+    {
+      "id": "p9", "tipo": "numero", "nivel": 2,
+      "enunciado": "Inti quiere juntar 58 Bs en su alcancía. Ya tiene 35 Bs. ¿Cuánto le falta?",
+      "visual": { "tipo": "dinero", "items": ["b20", "b10", "m5"] },
+      "respuesta": 23,
+      "sufijo": "Bs",
+      "erroresComunes": [ { "respuesta": 93, "pista": "Si sumas, te pasas de la meta. Piensa: ¿cuánto hay de 35 a 58?", "error": "problema-completar" } ],
+      "pista": "Lo que falta es la meta menos lo que ya tiene.",
+      "explicacion": "58 − 35 = 23. A Inti le faltan 23 Bs. Compruébalo: 35 + 23 = 58.",
+      "error": "problema-completar"
+    },
+    {
+      "id": "p10", "tipo": "numero", "nivel": 2,
+      "enunciado": "Escucha la resta y escribe el resultado.",
+      "escuchar": "Setenta y nueve menos treinta y cuatro.",
+      "respuesta": 45,
+      "erroresComunes": [ { "respuesta": 113, "pista": "Escuchaste «menos»: hay que quitar, no juntar.", "error": "confunde-operacion" } ],
+      "pista": "Vuelve a escuchar. Resta primero las unidades y después las decenas.",
+      "explicacion": "Setenta y nueve menos treinta y cuatro: 79 − 34 = 45, porque 9 − 4 = 5 y 7 − 3 = 4.",
+      "error": "resta-calculo"
+    },
+    {
+      "id": "p11", "tipo": "memoria", "nivel": 2,
+      "enunciado": "Encuentra las parejas: cada resta con su resultado.",
+      "pares": [ ["68 − 24", "44"], ["57 − 31", "26"], ["99 − 50", "49"], ["75 − 12", "63"] ],
+      "pista": "Resta las unidades y después las decenas antes de voltear la otra carta.",
+      "explicacion": "68 − 24 = 44, 57 − 31 = 26, 99 − 50 = 49 y 75 − 12 = 63.",
+      "error": "resta-calculo"
+    },
+    {
+      "id": "p12", "tipo": "ordenar", "nivel": 2,
+      "enunciado": "Calcula cada resta y ordénalas de menor a mayor resultado.",
+      "elementos": ["39 − 17", "58 − 25", "86 − 42", "97 − 43"],
+      "pista": "Resuelve cada resta en tu mente o en un papel. Después ordena los resultados.",
+      "explicacion": "39 − 17 = 22, 58 − 25 = 33, 86 − 42 = 44 y 97 − 43 = 54. De menor a mayor: 22, 33, 44, 54.",
+      "error": "resta-calculo"
+    },
+    {
+      "id": "p13", "tipo": "generador", "nivel": 3, "generador": "resta", "params": { "digitos": 3, "prestar": false }
+    },
+    {
+      "id": "p14", "tipo": "clasificar", "nivel": 3,
+      "enunciado": "Revisa cada resta. ¿Está bien hecha o tiene un error?",
+      "categorias": [ { "id": "bien", "texto": "Bien hecha", "emoji": "✅" }, { "id": "error", "texto": "Tiene un error", "emoji": "🔎" } ],
+      "elementos": [
+        { "texto": "58 − 23 = 35", "categoria": "bien" },
+        { "texto": "46 − 12 = 58", "categoria": "error" },
+        { "texto": "79 − 35 = 44", "categoria": "bien" },
+        { "texto": "85 − 41 = 34", "categoria": "error" },
+        { "texto": "367 − 142 = 225", "categoria": "bien" },
+        { "texto": "498 − 256 = 252", "categoria": "error" }
+      ],
+      "pista": "Comprueba con una suma: el resultado más el número que quitas debe dar el número de arriba.",
+      "explicacion": "Están bien 58 − 23 = 35, 79 − 35 = 44 y 367 − 142 = 225. Tienen error las otras: 46 − 12 = 34, 85 − 41 = 44 y 498 − 256 = 242.",
+      "error": "revisa-resta"
+    },
+    {
+      "id": "p15", "tipo": "pasos", "nivel": 3,
+      "enunciado": "Resuelve 587 − 243 y comprueba tu resultado con una suma.",
+      "visual": { "tipo": "operacion", "numeros": [587, 243], "op": "-", "vertical": true },
+      "pasos": [
+        {
+          "tipo": "numero", "enunciado": "¿Cuánto es 587 − 243?",
+          "respuesta": 344,
+          "erroresComunes": [ { "respuesta": 830, "pista": "Sumaste. En la resta quitamos: el resultado es menor que 587.", "error": "confunde-operacion" } ],
+          "pista": "Resta las unidades, después las decenas y al final las centenas.",
+          "explicacion": "7 − 3 = 4, 8 − 4 = 4 y 5 − 2 = 3. El resultado es 344.",
+          "error": "resta-columnas"
+        },
+        {
+          "tipo": "numero", "enunciado": "Comprueba: ¿cuánto es 344 + 243?",
+          "respuesta": 587,
+          "pista": "Suma las unidades, las decenas y las centenas.",
+          "explicacion": "344 + 243 = 587. ¡Da el número de arriba! La resta está bien hecha.",
+          "error": "prueba-suma"
+        }
+      ],
+      "pista": "Resuelve un paso a la vez: primero la resta y después la suma.",
+      "explicacion": "587 − 243 = 344, y se comprueba así: 344 + 243 = 587.",
+      "error": "prueba-suma"
+    },
+    {
+      "id": "p16", "tipo": "numero", "nivel": 3,
+      "enunciado": "¿Qué número falta? 76 − ☐ = 42",
+      "audio": "¿Qué número falta? Setenta y seis menos un número es igual a cuarenta y dos.",
+      "respuesta": 34,
+      "erroresComunes": [ { "respuesta": 118, "pista": "Sumaste 76 + 42, y eso da más que 76. Busca cuánto hay que quitarle a 76 para que queden 42.", "error": "numero-faltante" } ],
+      "pista": "¿Cuánto hay que quitarle a 76 para que queden 42? Puedes restar 76 − 42.",
+      "explicacion": "Falta el 34, porque 76 − 34 = 42. Compruébalo: 42 + 34 = 76.",
+      "error": "numero-faltante"
+    }
+  ],
+  "comprobacion": [
+    {
+      "id": "c1", "tipo": "numero", "nivel": 1,
+      "enunciado": "En un árbol hay 8 parabas. Se van volando 3. ¿Cuántas parabas quedan?",
+      "visual": { "tipo": "emoji", "valor": "🦜", "cantidad": 8, "etiqueta": "8 parabas" },
+      "respuesta": 5,
+      "erroresComunes": [ { "respuesta": 11, "pista": "Si se van parabas, en el árbol quedan menos. ¿Hay que sumar o restar?", "error": "confunde-operacion" } ],
+      "pista": "Quita 3 de las 8 parabas y cuenta las que quedan.",
+      "explicacion": "8 − 3 = 5. En el árbol quedan 5 parabas.",
+      "error": "resta-calculo"
+    },
+    {
+      "id": "c2", "tipo": "manipular", "nivel": 1,
+      "enunciado": "Resuelve 17 − 5 en la recta. Mueve el marcador al resultado.",
+      "manipulable": { "tipo": "recta", "min": 0, "max": 20, "paso": 1, "objetivo": 12 },
+      "pista": "Empieza en el 17 y da 5 saltos hacia la izquierda. No cuentes el 17.",
+      "explicacion": "Desde el 17 saltamos 5 veces hacia atrás: 16, 15, 14, 13, 12. Entonces 17 − 5 = 12.",
+      "error": "cuenta-atras"
+    },
+    {
+      "id": "c3", "tipo": "generador", "nivel": 2, "generador": "resta", "params": { "digitos": 2, "prestar": false }
+    },
+    {
+      "id": "c4", "tipo": "manipular", "nivel": 2,
+      "enunciado": "Aquí tienes 78 en bloques. Quita 45 y deja solo lo que queda.",
+      "manipulable": { "tipo": "bloques", "inicial": { "centenas": 0, "decenas": 7, "unidades": 8 }, "objetivo": 33, "canonico": true },
+      "pista": "45 son 4 barras y 5 cubitos. Quítalos y cuenta lo que queda.",
+      "explicacion": "8 − 5 = 3 cubitos y 7 − 4 = 3 barras. Quedan 33: 78 − 45 = 33.",
+      "error": "resta-bloques"
+    },
+    {
+      "id": "c5", "tipo": "opcion", "nivel": 2,
+      "enunciado": "Sofía tiene 27 figuritas y Mateo tiene 13. ¿Cuántas figuritas más tiene Sofía?",
+      "opciones": [
+        { "texto": "14", "correcta": true },
+        { "texto": "40", "pista": "Juntaste las figuritas de los dos. Hay que comparar: resta.", "error": "problema-comparar" },
+        { "texto": "13", "pista": "13 son las figuritas de Mateo. Busca cuántas tiene Sofía de más.", "error": "problema-comparar" }
+      ],
+      "columnas": 3,
+      "pista": "Para saber cuántas más, al número mayor le quitas el menor.",
+      "explicacion": "27 − 13 = 14. Sofía tiene 14 figuritas más que Mateo.",
+      "error": "problema-comparar"
+    },
+    {
+      "id": "c6", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "Calcula y une cada resta con su resultado.",
+      "pares": [ ["87 − 35", "52"], ["64 − 21", "43"], ["96 − 52", "44"], ["59 − 27", "32"] ],
+      "pista": "En cada resta, quita primero las unidades y después las decenas.",
+      "explicacion": "87 − 35 = 52, 64 − 21 = 43, 96 − 52 = 44 y 59 − 27 = 32.",
+      "error": "resta-calculo"
+    },
+    {
+      "id": "c7", "tipo": "numero", "nivel": 3,
+      "enunciado": "Escucha el problema y responde.",
+      "escuchar": "Juan cosechó 365 papas. Vendió 142 papas en la feria. ¿Cuántas papas le quedan?",
+      "respuesta": 223,
+      "erroresComunes": [ { "respuesta": 507, "pista": "Si vendió papas, le quedan menos. Hay que restar.", "error": "confunde-operacion" } ],
+      "pista": "Vuelve a escuchar: ¿cuántas papas tenía y cuántas vendió? Después resta por columnas.",
+      "explicacion": "Juan tenía 365 papas y vendió 142: 365 − 142 = 223. Le quedan 223 papas.",
+      "error": "resta-calculo"
+    },
+    {
+      "id": "c8", "tipo": "numero", "nivel": 3,
+      "enunciado": "La escuela quiere juntar 275 botellas para reciclar. Ya tiene 150. ¿Cuántas botellas le faltan?",
+      "visual": { "tipo": "emoji", "valor": "♻️" },
+      "respuesta": 125,
+      "erroresComunes": [ { "respuesta": 425, "pista": "Si sumas, te pasas de la meta. Piensa: ¿cuánto hay de 150 a 275?", "error": "problema-completar" } ],
+      "pista": "Lo que falta es la meta menos lo que ya tiene.",
+      "explicacion": "275 − 150 = 125. Le faltan 125 botellas. Compruébalo: 150 + 125 = 275.",
+      "error": "problema-completar"
+    }
+  ],
+  "repaso": {
+    "texto": "Restamos para **quitar**, para **comparar** y para saber **cuánto falta**. Resta primero las unidades, después las decenas y al final las centenas.",
+    "visual": { "tipo": "tabla", "columnas": ["", "C", "D", "U"], "filas": [["", "3", "6", "8"], ["−", "1", "2", "5"], ["=", "2", "4", "3"]] }
+  },
+  "adulto": {
+    "objetivo": "Resolver restas de hasta tres cifras sin préstamo (en cada columna, la cifra de arriba es mayor o igual que la de abajo), restando por columnas desde las unidades, y reconocer los tres sentidos de la resta: quitar, comparar («¿cuántos más?») y completar («¿cuánto falta?»).",
+    "sugerencias": [
+      "En la cocina, cuenten 15 papas, habas o fideos; aparten algunos y pregunten cuántos quedan. Escriban juntos la resta en un papel (15 − 4 = 11).",
+      "En la feria o en la tienda, comparen cantidades: «Esta bolsa tiene 24 naranjas y esa tiene 12. ¿Cuántas más tiene la primera?». Pidan que lo resuelva restando y que lo compruebe formando parejas.",
+      "En el patio o la vereda, dibujen con tiza una recta del 0 al 20. Para restar 17 − 5, la niña o el niño se para en el 17 y da 5 saltos hacia atrás contando 16, 15, 14, 13, 12.",
+      "Usen una alcancía: anoten una meta (por ejemplo, 50 Bs) y lo que ya tienen, y calculen cuánto falta contando hacia adelante o restando."
+    ],
+    "errores": {
+      "resta-calculo": { "descripcion": "Se equivoca al calcular una resta (se salta un número al contar o resta mal una columna).", "sugerencia": "Practiquen restas cortas con piedritas o semillas y comprueben cada resultado sumando." },
+      "resta-invierte": { "descripcion": "En alguna columna resta al revés: al número de abajo le quita el de arriba (en 42 − 17 hace 7 − 2). En este tema casi no aparece, porque arriba siempre hay suficiente.", "sugerencia": "Recuérdele: «Arriba está lo que tienes; abajo, lo que quitas». Las restas en que arriba hay menos se trabajan en el tema «Resta prestando»." },
+      "resta-columnas": { "descripcion": "Resta mal por columnas: mezcla unidades con decenas o no sabe por dónde empezar.", "sugerencia": "Escriban la resta en una hoja cuadriculada con las columnas C, D y U, y resten una columna a la vez, empezando por las unidades." },
+      "confunde-operacion": { "descripcion": "Suma cuando la situación pide restar.", "sugerencia": "Antes de calcular, pregunten: «Al final, ¿habrá más o menos?». Si habrá menos, se resta." },
+      "cuenta-atras": { "descripcion": "Al contar hacia atrás, cuenta también el número de partida (en 9 − 4 dice 6).", "sugerencia": "Salten sobre una recta dibujada en el piso: el número donde se empieza no se cuenta; se cuenta cada salto." },
+      "resta-bloques": { "descripcion": "Le cuesta quitar bloques para restar.", "sugerencia": "Con atados de 10 palitos y palitos sueltos, quiten primero los sueltos y después los atados, y cuenten lo que queda." },
+      "problema-comparar": { "descripcion": "No reconoce que «¿cuántos más?» se resuelve restando; suele sumar las dos cantidades.", "sugerencia": "Pongan dos filas de objetos una frente a otra, formen parejas y cuenten los que quedan sin pareja." },
+      "problema-completar": { "descripcion": "No reconoce que «¿cuánto falta?» se resuelve restando o contando hacia adelante.", "sugerencia": "Con monedas o fichas, partan de lo que ya tienen y agreguen de una en una hasta llegar a la meta; cuenten cuántas agregaron." },
+      "revisa-resta": { "descripcion": "No descubre los errores en restas ya resueltas.", "sugerencia": "Pidan que compruebe cada resta sumando el resultado y el número que se quitó: debe dar el número de arriba." },
+      "prueba-suma": { "descripcion": "Le cuesta comprobar una resta con una suma.", "sugerencia": "Muestren con objetos que si de 8 quitan 3 quedan 5, y si devuelven los 3, vuelven a ser 8." },
+      "numero-faltante": { "descripcion": "Le cuesta encontrar el número que falta en una resta (76 − ☐ = 42).", "sugerencia": "Jueguen con 10 fichas: usted esconde algunas y la niña o el niño adivina cuántas escondió mirando las que quedan (si quedan 6, escondió 4)." }
+    }
+  }
+}

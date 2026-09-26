@@ -1,0 +1,381 @@
+{
+  "id": "com-2-1",
+  "titulo": "El abecedario",
+  "objetivo": "Conozco las 27 letras del abecedario y ordeno palabras en orden alfabético.",
+  "explicacion": [
+    {
+      "texto": "El **abecedario** es la lista de todas las letras, en orden. Nuestro abecedario tiene **27 letras**: empieza con la a y termina con la z. Justo después de la n viene la **ñ**.",
+      "emoji": "🔠",
+      "visual": {
+        "tipo": "tabla",
+        "columnas": ["a", "b", "c", "d", "e", "f", "g", "h", "i"],
+        "filas": [
+          ["j", "k", "l", "m", "n", "ñ", "o", "p", "q"],
+          ["r", "s", "t", "u", "v", "w", "x", "y", "z"]
+        ]
+      }
+    },
+    {
+      "texto": "Hay 5 **vocales**: a, e, i, o, u. Las otras 22 letras son **consonantes**, como la b, la m, la ñ o la t. Cada letra tiene mayúscula y minúscula: A a, Ñ ñ.",
+      "visual": { "tipo": "emojis", "items": ["🐝", "🐘", "⛪", "🐻", "🍇"], "etiquetas": ["abeja", "elefante", "iglesia", "oso", "uva"] }
+    },
+    {
+      "texto": "La **ch**, la **ll** y la **rr** no son letras del abecedario: son **dígrafos**, dos letras juntas que hacen un solo sonido. Por eso «chancho» se busca en la c, y «llama», en la l.",
+      "emoji": "🔡",
+      "visual": { "tipo": "emojis", "items": ["🐷", "🦙", "🚗"], "etiquetas": ["chancho", "llama", "carro"] }
+    },
+    {
+      "texto": "En **orden alfabético**, las palabras van según su primera letra, como en el abecedario. Si empiezan igual, miramos la segunda letra. Así están las palabras en el **diccionario**.",
+      "emoji": "📖",
+      "visual": { "tipo": "emojis", "items": ["🐝", "🐈", "🐭"], "etiquetas": ["abeja", "gato", "ratón"] }
+    }
+  ],
+  "ejemplo": {
+    "instruccion": "Mira cómo ordenamos palabras en orden alfabético, como en el diccionario.",
+    "pasos": [
+      {
+        "texto": "Queremos ordenar tres animales: paraba, cóndor y llama. Miramos la **primera letra** de cada uno: p, c y l.",
+        "visual": { "tipo": "emojis", "items": ["🦜", "🦅", "🦙"], "etiquetas": ["paraba", "cóndor", "llama"] }
+      },
+      {
+        "texto": "En el abecedario, la **c** va antes que la **l**, y la **l** va antes que la **p**.",
+        "visual": { "tipo": "secuencia", "items": ["c", "l", "p"] }
+      },
+      {
+        "texto": "Entonces el orden alfabético es: cóndor, llama, paraba. ¡Así aparecen en el diccionario!",
+        "visual": { "tipo": "emojis", "items": ["🦅", "🦙", "🦜"], "etiquetas": ["1. cóndor", "2. llama", "3. paraba"] }
+      },
+      {
+        "texto": "Si dos palabras empiezan igual, miramos la **segunda letra**: papa, pera, piña. Como la a va antes que la e, y la e antes que la i, el orden es papa, pera, piña.",
+        "visual": { "tipo": "emojis", "items": ["🥔", "🍐", "🍍"], "etiquetas": ["papa", "pera", "piña"] }
+      }
+    ]
+  },
+  "guiada": {
+    "intro": "Ahora lo hacemos juntos.",
+    "pasos": [
+      {
+        "id": "g1", "tipo": "clasificar",
+        "enunciado": "¿Es vocal o consonante?",
+        "apoyo": "Las vocales son solo cinco: a, e, i, o, u. Todas las demás letras son consonantes.",
+        "categorias": [
+          { "id": "vocal", "texto": "Vocal" },
+          { "id": "consonante", "texto": "Consonante" }
+        ],
+        "elementos": [
+          { "texto": "a", "categoria": "vocal" },
+          { "texto": "m", "categoria": "consonante" },
+          { "texto": "o", "categoria": "vocal" },
+          { "texto": "s", "categoria": "consonante" },
+          { "texto": "e", "categoria": "vocal" },
+          { "texto": "ñ", "categoria": "consonante" }
+        ],
+        "pista": "Di las vocales en voz alta: a, e, i, o, u. ¿Está la letra en esa lista?",
+        "explicacion": "Vocales: a, o, e. Consonantes: m, s, ñ.",
+        "error": "vocal-consonante"
+      },
+      {
+        "id": "g2", "tipo": "completar",
+        "enunciado": "Completa las letras que faltan.",
+        "apoyo": "Recita el abecedario desde la l. Recuerda que la ñ va justo después de la n.",
+        "texto": "l, m, [n], [ñ], o, p",
+        "banco": ["k", "r"],
+        "pista": "Entre la m y la o hay dos letras que se parecen mucho.",
+        "explicacion": "El orden es l, m, n, ñ, o, p. La ñ va justo después de la n.",
+        "error": "letra-ñ"
+      },
+      {
+        "id": "g3", "tipo": "ordenar",
+        "enunciado": "Ordena los animales en orden alfabético.",
+        "apoyo": "Mira la primera letra de cada nombre y piensa cuál aparece antes en el abecedario.",
+        "elementos": [
+          { "texto": "bufeo", "emoji": "🐬" },
+          { "texto": "cóndor", "emoji": "🦅" },
+          { "texto": "jucumari", "emoji": "🐻" },
+          { "texto": "vicuña", "emoji": "🦙" }
+        ],
+        "pista": "La b está muy al principio del abecedario y la v, casi al final.",
+        "explicacion": "El orden es bufeo (b), cóndor (c), jucumari (j) y vicuña (v).",
+        "error": "orden-primera-letra"
+      }
+    ]
+  },
+  "practica": [
+    {
+      "id": "p1", "tipo": "memoria", "nivel": 1,
+      "enunciado": "Encuentra las parejas: cada mayúscula con su minúscula.",
+      "pares": [["A", "a"], ["Ñ", "ñ"], ["G", "g"], ["B", "b"], ["D", "d"], ["Q", "q"]],
+      "pista": "La mayúscula es la forma grande de la letra. Busca la misma letra en tamaño pequeño.",
+      "explicacion": "A y a, B y b, D y d, G y g, Q y q, Ñ y ñ son la misma letra en mayúscula y en minúscula.",
+      "error": "mayuscula-minuscula"
+    },
+    {
+      "id": "p2", "tipo": "escribir", "nivel": 1,
+      "enunciado": "Escucha la palabra. ¿Con qué vocal empieza? Escribe solo esa letra.",
+      "escuchar": "elefante",
+      "respuestas": ["e"],
+      "pista": "Di la palabra despacio y fíjate en el primer sonido. Es una de estas: a, e, i, o, u.",
+      "explicacion": "«Elefante» empieza con la vocal e.",
+      "error": "sonido-inicial"
+    },
+    {
+      "id": "p3", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Toca las palabras que tienen ñ.",
+      "texto": "El *niño* lleva una *piña* a la *montaña*.",
+      "pista": "Busca la letra que tiene una rayita ondulada encima. Hay tres palabras.",
+      "explicacion": "Niño, piña y montaña se escriben con ñ.",
+      "error": "letra-ñ"
+    },
+    {
+      "id": "p4", "tipo": "completar", "nivel": 1,
+      "enunciado": "Completa el principio del abecedario.",
+      "texto": "a, b, [c], d, [e], f, [g], h",
+      "banco": ["ñ", "k"],
+      "pista": "Recita el abecedario desde el principio, despacio.",
+      "explicacion": "El abecedario empieza así: a, b, c, d, e, f, g, h.",
+      "error": "orden-letras"
+    },
+    {
+      "id": "p5", "tipo": "numero", "nivel": 2,
+      "enunciado": "¿Cuántas letras tiene la palabra «llama»?",
+      "visual": { "tipo": "emoji", "valor": "🦙", "etiqueta": "llama" },
+      "respuesta": 5,
+      "erroresComunes": [
+        { "respuesta": 4, "pista": "La ll hace un solo sonido, pero son dos letras: l y l.", "error": "cuenta-digrafos" }
+      ],
+      "pista": "Toca cada letra con el dedo y cuéntalas una por una.",
+      "explicacion": "«Llama» tiene 5 letras: l, l, a, m, a. La ll es un dígrafo: son dos letras.",
+      "error": "cuenta-digrafos"
+    },
+    {
+      "id": "p6", "tipo": "ordenar", "nivel": 2,
+      "enunciado": "Ordena estas comidas en orden alfabético.",
+      "elementos": ["api", "chuño", "majadito", "yuca"],
+      "pista": "Mira la primera letra de cada palabra. Ojo: «chuño» empieza con c, porque la ch son dos letras.",
+      "explicacion": "El orden es api (a), chuño (c), majadito (m) y yuca (y).",
+      "error": "orden-primera-letra"
+    },
+    {
+      "id": "p7", "tipo": "opcion", "nivel": 2,
+      "enunciado": "Buscas tres palabras en el diccionario. ¿Cuál aparece primero?",
+      "opciones": [
+        { "texto": "rana", "correcta": true },
+        { "texto": "sapo", "pista": "La s va después de la r en el abecedario.", "error": "orden-primera-letra" },
+        { "texto": "tucán", "pista": "La t va después de la r y de la s.", "error": "orden-primera-letra" }
+      ],
+      "pista": "Mira la primera letra de cada palabra. ¿Cuál va antes en el abecedario?",
+      "explicacion": "«Rana» aparece primero, porque la r va antes que la s y la t: r, s, t.",
+      "error": "orden-primera-letra"
+    },
+    {
+      "id": "p8", "tipo": "escribir", "nivel": 2,
+      "enunciado": "¿Qué letra va entre la n y la o? Escríbela.",
+      "respuestas": ["ñ"],
+      "pista": "Es una letra muy parecida a la n, pero con una rayita ondulada encima.",
+      "explicacion": "Entre la n y la o está la ñ: n, ñ, o.",
+      "error": "letra-ñ"
+    },
+    {
+      "id": "p9", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha y escribe la palabra.",
+      "escuchar": "araña",
+      "visual": { "tipo": "emoji", "valor": "🕷️" },
+      "respuestas": ["araña"],
+      "pista": "Es un animal de ocho patas. Al final lleva la letra ñ.",
+      "explicacion": "Se escribe «araña», con ñ.",
+      "error": "dictado-ñ"
+    },
+    {
+      "id": "p10", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "Une cada letra con la que va justo después en el abecedario.",
+      "pares": [["n", "ñ"], ["b", "c"], ["q", "r"], ["y", "z"]],
+      "pista": "Recita el abecedario en voz baja, empezando en cada letra.",
+      "explicacion": "Después de la n va la ñ; después de la b, la c; después de la q, la r; y después de la y, la z.",
+      "error": "orden-letras"
+    },
+    {
+      "id": "p11", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "¿La palabra empieza con vocal o con consonante?",
+      "categorias": [
+        { "id": "vocal", "texto": "Empieza con vocal" },
+        { "id": "consonante", "texto": "Empieza con consonante" }
+      ],
+      "elementos": [
+        { "texto": "abeja", "categoria": "vocal" },
+        { "texto": "mesa", "categoria": "consonante" },
+        { "texto": "isla", "categoria": "vocal" },
+        { "texto": "nube", "categoria": "consonante" },
+        { "texto": "ñandú", "categoria": "consonante" },
+        { "texto": "oveja", "categoria": "vocal" },
+        { "texto": "tatú", "categoria": "consonante" },
+        { "texto": "uva", "categoria": "vocal" }
+      ],
+      "pista": "Mira solo la primera letra. ¿Es a, e, i, o, u?",
+      "explicacion": "Empiezan con vocal: abeja, isla, oveja y uva. Empiezan con consonante: mesa, nube, ñandú y tatú.",
+      "error": "vocal-consonante"
+    },
+    {
+      "id": "p12", "tipo": "ordenar", "nivel": 3,
+      "enunciado": "Todas empiezan con c. Ordénalas en orden alfabético.",
+      "elementos": ["cabra", "cebra", "cisne", "conejo", "cuy"],
+      "pista": "Como la primera letra es igual, mira la segunda letra de cada palabra.",
+      "explicacion": "Las segundas letras son a, e, i, o, u. Por eso el orden es cabra, cebra, cisne, conejo y cuy.",
+      "error": "orden-segunda-letra"
+    },
+    {
+      "id": "p13", "tipo": "ordenar", "nivel": 3,
+      "enunciado": "Ordena en orden alfabético. Recuerda: la ll son dos letras.",
+      "elementos": ["lago", "lana", "llama", "luna"],
+      "pista": "Todas empiezan con l. Mira la segunda letra. Si también es igual, mira la tercera.",
+      "explicacion": "Lago y lana empiezan con «la»; lago va antes porque la g va antes que la n. Llama tiene l + l, y la l va entre la a y la u. Al final, luna.",
+      "error": "orden-digrafos"
+    },
+    {
+      "id": "p14", "tipo": "clasificar", "nivel": 3,
+      "enunciado": "¿Empieza con vocal o con consonante? ¡Ojo con la h!",
+      "categorias": [
+        { "id": "vocal", "texto": "Empieza con vocal" },
+        { "id": "consonante", "texto": "Empieza con consonante" }
+      ],
+      "elementos": [
+        { "texto": "hoja", "categoria": "consonante" },
+        { "texto": "ajo", "categoria": "vocal" },
+        { "texto": "huevo", "categoria": "consonante" },
+        { "texto": "ola", "categoria": "vocal" },
+        { "texto": "hilo", "categoria": "consonante" },
+        { "texto": "uña", "categoria": "vocal" }
+      ],
+      "pista": "La h no suena, pero se escribe. ¿La h es una de las cinco vocales?",
+      "explicacion": "Hoja, huevo e hilo empiezan con h, que es consonante aunque no suene. Ajo, ola y uña empiezan con vocal.",
+      "error": "h-consonante"
+    },
+    {
+      "id": "p15", "tipo": "escribir-libre", "nivel": 3,
+      "enunciado": "Escribe una oración con una o más palabras que lleven ñ.",
+      "guia": ["La niña...", "En la montaña..."],
+      "requisitos": [
+        { "tipo": "mayuscula-inicial" },
+        { "tipo": "punto-final" },
+        { "tipo": "min-palabras", "valor": 4 }
+      ],
+      "modelo": "La niña come piña en la feria.",
+      "pista": "Piensa en palabras como niño, piña, año, uña, araña o montaña.",
+      "explicacion": "Por ejemplo: «La niña come piña en la feria.» Niña y piña llevan ñ.",
+      "error": "produce-oracion"
+    }
+  ],
+  "comprobacion": [
+    {
+      "id": "c1", "tipo": "clasificar", "nivel": 1,
+      "enunciado": "Separa las vocales de las consonantes.",
+      "categorias": [
+        { "id": "vocal", "texto": "Vocal" },
+        { "id": "consonante", "texto": "Consonante" }
+      ],
+      "elementos": [
+        { "texto": "i", "categoria": "vocal" },
+        { "texto": "t", "categoria": "consonante" },
+        { "texto": "u", "categoria": "vocal" },
+        { "texto": "r", "categoria": "consonante" },
+        { "texto": "a", "categoria": "vocal" },
+        { "texto": "d", "categoria": "consonante" }
+      ],
+      "pista": "Las vocales son solo cinco: a, e, i, o, u.",
+      "explicacion": "Vocales: i, u, a. Consonantes: t, r, d.",
+      "error": "vocal-consonante"
+    },
+    {
+      "id": "c2", "tipo": "completar", "nivel": 1,
+      "enunciado": "Completa las letras que faltan.",
+      "texto": "r, [s], t, [u], v, w",
+      "banco": ["ñ", "b"],
+      "pista": "Recita el abecedario desde la r, despacio.",
+      "explicacion": "El orden es r, s, t, u, v, w.",
+      "error": "orden-letras"
+    },
+    {
+      "id": "c3", "tipo": "ordenar", "nivel": 2,
+      "enunciado": "Ordena los nombres como en la lista de la clase: en orden alfabético.",
+      "elementos": ["Ana", "Inti", "Kusi", "Nayra", "Wara"],
+      "pista": "Mira la primera letra de cada nombre y búscala en el abecedario.",
+      "explicacion": "Las primeras letras son a, i, k, n y w. El orden es Ana, Inti, Kusi, Nayra y Wara.",
+      "error": "orden-primera-letra"
+    },
+    {
+      "id": "c4", "tipo": "numero", "nivel": 2,
+      "enunciado": "¿Cuántas letras tiene la palabra «chancho»?",
+      "visual": { "tipo": "emoji", "valor": "🐷", "etiqueta": "chancho" },
+      "respuesta": 7,
+      "erroresComunes": [
+        { "respuesta": 5, "pista": "Cada ch son dos letras: c y h. ¡Y la palabra tiene dos ch!", "error": "cuenta-digrafos" }
+      ],
+      "pista": "Toca cada letra con el dedo y cuéntalas una por una.",
+      "explicacion": "«Chancho» tiene 7 letras: c, h, a, n, c, h, o. Cada ch es un dígrafo de dos letras.",
+      "error": "cuenta-digrafos"
+    },
+    {
+      "id": "c5", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha y escribe la palabra.",
+      "escuchar": "muñeca",
+      "respuestas": ["muñeca"],
+      "pista": "Es un juguete. En el medio lleva la letra ñ.",
+      "explicacion": "Se escribe «muñeca», con ñ.",
+      "error": "dictado-ñ"
+    },
+    {
+      "id": "c6", "tipo": "opcion", "nivel": 2,
+      "enunciado": "¿Qué letra va justo antes de la o?",
+      "opciones": [
+        { "texto": "ñ", "correcta": true },
+        { "texto": "n", "pista": "La n va antes de la o, pero no justo antes: hay una letra entre las dos.", "error": "letra-ñ" },
+        { "texto": "p", "pista": "La p va después de la o.", "error": "orden-letras" }
+      ],
+      "columnas": 3,
+      "pista": "Recita el abecedario desde la m hasta la o.",
+      "explicacion": "Justo antes de la o está la ñ: n, ñ, o.",
+      "error": "letra-ñ"
+    },
+    {
+      "id": "c7", "tipo": "ordenar", "nivel": 3,
+      "enunciado": "Ordena en orden alfabético. Recuerda: la ch son dos letras.",
+      "elementos": ["casa", "chompa", "cuna"],
+      "pista": "Las tres empiezan con c. Compara la segunda letra de cada una.",
+      "explicacion": "Las segundas letras son a (casa), h (chompa) y u (cuna). La h va entre la a y la u, por eso chompa va en el medio.",
+      "error": "orden-digrafos"
+    },
+    {
+      "id": "c8", "tipo": "tocar", "nivel": 3,
+      "enunciado": "Toca las palabras que empiezan con vocal. ¡Ojo con la h!",
+      "texto": "*Ana* toma helado con *Omar* *en* la huerta.",
+      "pista": "Hay tres, y una es muy cortita. Recuerda que la h es consonante.",
+      "explicacion": "Ana, Omar y en empiezan con vocal. Helado y huerta empiezan con h, que es consonante.",
+      "error": "h-consonante"
+    }
+  ],
+  "repaso": {
+    "texto": "El abecedario tiene 27 letras: 5 vocales (a, e, i, o, u) y 22 consonantes. La ñ va después de la n. Para ordenar palabras, mira la primera letra; si es igual, mira la segunda.",
+    "visual": { "tipo": "secuencia", "items": ["l", "m", "n", "ñ", "o"], "oculto": 3 }
+  },
+  "adulto": {
+    "objetivo": "Conocer las 27 letras del abecedario (incluida la ñ), distinguir vocales y consonantes, saber que ch, ll y rr son dígrafos (dos letras que forman un solo sonido) y ordenar palabras alfabéticamente mirando la primera letra y, si hace falta, la segunda. Desde 2010, la RAE y las Academias de la Lengua (entre ellas la Academia Boliviana) cuentan 27 letras; si usted aprendió que ch y ll eran letras, es normal: antes se enseñaba así.",
+    "sugerencias": [
+      "Escriban las 27 letras en tapas de botella o papelitos. Pidan que las ordenen en el piso; luego escondan una y adivinen juntos cuál falta.",
+      "En la feria o la tienda, anoten 4 o 5 productos (papa, choclo, tomate, yuca, arroz) y ordénenlos en orden alfabético en un papel.",
+      "Busquen juntos una palabra en un diccionario de papel o en la lista de contactos del teléfono y comenten por qué está en ese lugar."
+    ],
+    "errores": {
+      "vocal-consonante": { "descripcion": "Confunde vocales y consonantes.", "sugerencia": "Escriban las cinco vocales en tarjetas de un color y algunas consonantes en otro color; jueguen a separarlas." },
+      "letra-ñ": { "descripcion": "Olvida la ñ o no recuerda que va justo después de la n.", "sugerencia": "Recorran juntos el tramo «l, m, n, ñ, o» y busquen objetos de la casa con ñ (uña, pañal, caña, piña)." },
+      "orden-primera-letra": { "descripcion": "Ordena mal palabras que empiezan con letras distintas.", "sugerencia": "Tengan el abecedario escrito a la vista y pidan que marque con el dedo dónde está la primera letra de cada palabra antes de ordenar." },
+      "orden-segunda-letra": { "descripcion": "Cuando dos palabras empiezan igual, no mira la segunda letra.", "sugerencia": "Escriban palabras que empiezan igual (papa, pera, piña) y subrayen juntos la segunda letra antes de ordenarlas." },
+      "orden-digrafos": { "descripcion": "Ordena la ch o la ll como si fueran una letra aparte.", "sugerencia": "Expliquen que hoy la ch se ordena como c + h y la ll como l + l, y busquen «chompa» o «llama» en un diccionario actual." },
+      "orden-letras": { "descripcion": "Duda sobre qué letra va antes o después de otra.", "sugerencia": "Reciten el abecedario a ritmo de palmadas y jueguen a «¿qué letra sigue?» empezando desde letras distintas." },
+      "mayuscula-minuscula": { "descripcion": "No relaciona la mayúscula con su minúscula.", "sugerencia": "Busquen en etiquetas y periódicos la misma letra en mayúscula y en minúscula, y recórtenlas en parejas." },
+      "sonido-inicial": { "descripcion": "Le cuesta reconocer el primer sonido de una palabra que escucha.", "sugerencia": "Jueguen «Veo, veo una cosa que empieza con...» usando las vocales y letras de sonido claro, como m, p o t." },
+      "cuenta-digrafos": { "descripcion": "Cuenta la ch, la ll o la rr como una sola letra.", "sugerencia": "Escriban palabras como «llama» o «chancho» y cuenten las letras tocándolas una por una con el dedo." },
+      "dictado-ñ": { "descripcion": "Olvida la ñ al escribir palabras dictadas.", "sugerencia": "Dicten palabras con ñ (niño, año, caña, uña) y revisen juntos la rayita ondulada sobre la n." },
+      "h-consonante": { "descripcion": "Cree que las palabras con h empiezan con vocal porque la h no suena.", "sugerencia": "Muestren palabras escritas (hoja, huevo, hilo) y pidan que señale la primera letra que ve, no la que escucha." },
+      "produce-oracion": { "descripcion": "Le cuesta escribir una oración completa con mayúscula y punto.", "sugerencia": "Escriban juntos una oración corta sobre algo del día y revisen la mayúscula al inicio y el punto al final." }
+    }
+  }
+}

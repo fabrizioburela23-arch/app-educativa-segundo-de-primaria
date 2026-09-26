@@ -1,0 +1,523 @@
+{
+  "id": "soc-4-2",
+  "titulo": "Mi municipio y mi comunidad",
+  "objetivo": "Sé quién gobierna mi municipio y mi departamento, cómo se organizan los barrios y las comunidades, y cómo participo con mi voz y mi voto.",
+  "explicacion": [
+    {
+      "texto": "Bolivia tiene nueve **departamentos**, y cada uno tiene muchos **municipios**. En cada departamento está la **gobernación**, con una gobernadora o un gobernador y una Asamblea Departamental.",
+      "visual": { "tipo": "emojis", "items": ["🇧🇴", "🗺️", "📍", "🏘️"], "etiquetas": ["Bolivia", "departamento", "municipio", "barrio o comunidad"] }
+    },
+    {
+      "texto": "El **gobierno municipal** tiene dos partes: la **alcaldesa o el alcalde**, que dirige la alcaldía y sus obras, y el **Concejo Municipal**, que hace leyes municipales y controla ese trabajo. El pueblo los elige con su voto.",
+      "emoji": "🗳️",
+      "visual": { "tipo": "emojis", "items": ["👩‍💼", "👥"], "etiquetas": ["alcaldesa o alcalde: dirige", "Concejo Municipal: hace leyes y controla"] }
+    },
+    {
+      "texto": "El municipio da **servicios** que usamos todos: el recojo de basura, el **alumbrado público** (las luces de la calle), el arreglo de calles, escuelas y mercados, y el cuidado de parques y plazas.",
+      "visual": { "tipo": "emojis", "items": ["🚛", "💡", "🛣️", "🏫", "🧺", "🌳"], "etiquetas": ["recojo de basura", "alumbrado público", "calles", "escuelas", "mercados", "parques y plazas"] }
+    },
+    {
+      "texto": "Las personas también se organizan en su barrio o comunidad: juntas vecinales u OTB, sindicatos agrarios, ayllus, capitanías guaraníes, cabildos indigenales... En **asamblea** hablan por turno, se escuchan y deciden juntas.",
+      "emoji": "🤝"
+    }
+  ],
+  "ejemplo": {
+    "instruccion": "Mira cómo se organizan los lugares donde viven cuatro niñas y niños de Bolivia.",
+    "pasos": [
+      {
+        "texto": "Sofía vive en un barrio de El Alto. Su **junta vecinal** se reúne y pide por escrito a la alcaldía que arregle la calle y ponga más luces. En otros lugares, a la organización del barrio le dicen OTB.",
+        "visual": { "tipo": "emojis", "items": ["🏘️", "📝", "💡"], "etiquetas": ["junta vecinal", "carta a la alcaldía", "luces nuevas"] }
+      },
+      {
+        "texto": "Mateo vive en una comunidad de los valles de Chuquisaca. Su **sindicato agrario** se reúne en asamblea, y allí eligen a su secretaria general.",
+        "visual": { "tipo": "ilustracion", "id": "paisaje-valle" }
+      },
+      {
+        "texto": "Nayra vive en un **ayllu** del altiplano de Oruro. Sus autoridades, el mallku y la mama t’alla, sirven a la comunidad por turno y en pareja, mujer y varón: es el chacha-warmi.",
+        "visual": { "tipo": "ilustracion", "id": "paisaje-altiplano" }
+      },
+      {
+        "texto": "Arami es guaraní y vive en Charagua Iyambae, en el Chaco, una **autonomía indígena**: allí su pueblo se gobierna con sus propias normas. Se organiza en **capitanías**, con autoridades llamadas mburuvicha, y decide en asamblea.",
+        "visual": { "tipo": "ilustracion", "id": "paisaje-chaco" }
+      }
+    ]
+  },
+  "guiada": {
+    "intro": "Ahora lo hacemos juntos.",
+    "pasos": [
+      {
+        "id": "g1", "tipo": "relacionar",
+        "enunciado": "Une cada autoridad u organización con lo que hace.",
+        "apoyo": "«Municipal» es del municipio. La gobernación es del departamento. La junta vecinal es del barrio.",
+        "pares": [
+          [ { "texto": "alcaldesa o alcalde", "emoji": "👩‍💼" }, "dirige las obras y los servicios del municipio" ],
+          [ { "texto": "Concejo Municipal", "emoji": "👥" }, "hace leyes municipales y controla a la alcaldía" ],
+          [ { "texto": "gobernadora o gobernador", "emoji": "🗺️" }, "dirige el gobierno del departamento" ],
+          [ { "texto": "junta vecinal", "emoji": "🏘️" }, "reúne a los vecinos para mejorar el barrio" ]
+        ],
+        "pista": "Fíjate en las palabras: municipio, departamento, barrio. ¿Quién dirige y quién controla?",
+        "explicacion": "La alcaldesa o el alcalde dirige las obras y los servicios; el Concejo Municipal hace leyes municipales y controla ese trabajo; la gobernadora o el gobernador dirige el departamento; y la junta vecinal reúne a los vecinos del barrio.",
+        "error": "autoridades-locales"
+      },
+      {
+        "id": "g2", "tipo": "clasificar",
+        "enunciado": "¿Quién se ocupa: el gobierno municipal o los órganos del Estado para todo el país?",
+        "apoyo": "Piensa: ¿es algo de tu barrio y tu municipio, o es para toda Bolivia?",
+        "categorias": [
+          { "id": "municipio", "texto": "Gobierno municipal", "emoji": "🏘️" },
+          { "id": "pais", "texto": "Órganos del Estado (todo el país)", "emoji": "🇧🇴" }
+        ],
+        "elementos": [
+          { "texto": "recoger la basura del barrio", "emoji": "🚛", "categoria": "municipio" },
+          { "texto": "poner luces en las calles", "emoji": "💡", "categoria": "municipio" },
+          { "texto": "cuidar el parque de la zona", "emoji": "🌳", "categoria": "municipio" },
+          { "texto": "aprobar las leyes de toda Bolivia", "emoji": "📜", "categoria": "pais" },
+          { "texto": "organizar la elección de la presidenta o el presidente", "emoji": "🗳️", "categoria": "pais" }
+        ],
+        "pista": "Pregúntate: ¿sirve a las personas de tu municipio o a todo el país?",
+        "explicacion": "El gobierno municipal recoge la basura, pone luces en las calles y cuida los parques. Aprobar leyes para toda Bolivia y organizar la elección presidencial son tareas de los órganos del Estado.",
+        "error": "servicios-municipio"
+      },
+      {
+        "id": "g3", "tipo": "pasos",
+        "enunciado": "El curso de Kusi va a elegir a su delegada o delegado. Se presentan Wara y Luis.",
+        "apoyo": "En democracia, cada persona tiene un voto y todos respetan el resultado.",
+        "visual": { "tipo": "emojis", "items": ["👧", "👦", "🗳️"], "etiquetas": ["Wara", "Luis", "votación"] },
+        "pasos": [
+          {
+            "tipo": "opcion",
+            "enunciado": "¿Cuál es la forma más justa de elegir?",
+            "opciones": [
+              { "texto": "Cada estudiante vota en secreto y se cuentan los votos.", "correcta": true },
+              { "texto": "Decide solo el estudiante más alto del curso.", "pista": "Si decide una sola persona, los demás no participan.", "error": "democracia" },
+              { "texto": "Gana quien grite más fuerte.", "pista": "Gritar no es justo: todas las voces valen lo mismo.", "error": "democracia" }
+            ],
+            "pista": "Busca la forma en que todos participan por igual.",
+            "explicacion": "Lo más justo es que cada estudiante vote en secreto y luego se cuenten los votos.",
+            "error": "democracia"
+          },
+          {
+            "tipo": "numero",
+            "enunciado": "Wara tiene 14 votos y Luis, 11. ¿Cuántos estudiantes votaron?",
+            "respuesta": 25,
+            "erroresComunes": [
+              { "respuesta": 3, "pista": "Te preguntan cuántos votaron en total: suma los votos de los dos.", "error": "calculo" },
+              { "respuesta": 24, "pista": "Revisa las unidades: 4 + 1 = 5.", "error": "calculo" }
+            ],
+            "pista": "Junta los votos de Wara y los de Luis.",
+            "explicacion": "14 + 11 = 25. Votaron 25 estudiantes.",
+            "error": "calculo"
+          },
+          {
+            "tipo": "opcion",
+            "enunciado": "Ganó Wara. ¿Qué hace Luis?",
+            "opciones": [
+              { "texto": "La felicita y la ayuda a trabajar por el curso.", "correcta": true },
+              { "texto": "Se enoja y ya no quiere participar.", "pista": "Perder una votación no es malo. ¿Cómo puede seguir ayudando?", "error": "democracia" },
+              { "texto": "Dice que la votación no vale.", "pista": "Todos votaron de forma justa. Hay que respetar el resultado.", "error": "democracia" }
+            ],
+            "pista": "En democracia se respeta lo que decide la mayoría.",
+            "explicacion": "Luis felicita a Wara y la ayuda: así respeta la decisión de la mayoría y todos siguen trabajando juntos.",
+            "error": "democracia"
+          }
+        ],
+        "pista": "Resuelve un paso a la vez.",
+        "explicacion": "Votan en secreto, cuentan 14 + 11 = 25 votos y respetan el resultado. ¡Así se elige en democracia!",
+        "error": "democracia"
+      }
+    ]
+  },
+  "practica": [
+    {
+      "id": "p1", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Toca las autoridades del gobierno municipal.",
+      "texto": "En la fiesta del nuevo parque estaban la *alcaldesa*, un *concejal*, una vendedora del mercado y un chofer de minibús.",
+      "pista": "Busca a las dos personas que fueron elegidas para gobernar el municipio.",
+      "explicacion": "La alcaldesa y el concejal forman parte del gobierno municipal. La vendedora y el chofer son vecinos con otros trabajos, también muy importantes.",
+      "error": "autoridades-locales"
+    },
+    {
+      "id": "p2", "tipo": "memoria", "nivel": 1,
+      "enunciado": "Encuentra las parejas: quién gobierna u organiza cada lugar.",
+      "pares": [
+        ["presidenta o presidente", "todo el país"],
+        ["gobernadora o gobernador", "el departamento"],
+        ["alcaldesa o alcalde", "el municipio"],
+        ["dirigente vecinal", "el barrio"]
+      ],
+      "pista": "Piensa de lo más grande a lo más pequeño: país, departamento, municipio y barrio.",
+      "explicacion": "La presidenta o el presidente gobierna todo el país; la gobernadora o el gobernador, el departamento; la alcaldesa o el alcalde, el municipio; y la dirigente o el dirigente vecinal organiza a los vecinos del barrio.",
+      "error": "niveles-territoriales"
+    },
+    {
+      "id": "p3", "tipo": "opcion", "nivel": 1,
+      "enunciado": "Escucha y responde.",
+      "escuchar": "De noche, la calle de Rosa está muy oscura porque se quemaron los focos de los postes. ¿A quién le toca arreglar el alumbrado público?",
+      "opciones": [
+        { "texto": "al gobierno municipal", "correcta": true },
+        { "texto": "a la Asamblea Legislativa Plurinacional", "pista": "La Asamblea aprueba leyes para todo el país; no arregla las luces de la calle.", "error": "servicios-municipio" },
+        { "texto": "al centro de salud", "pista": "El centro de salud cuida nuestra salud. ¿Quién se ocupa de las luces de la calle?", "error": "servicios-municipio" }
+      ],
+      "pista": "El alumbrado público es un servicio del lugar donde vives.",
+      "explicacion": "El alumbrado público es un servicio del gobierno municipal. Los vecinos pueden pedir a la alcaldía que cambie los focos.",
+      "error": "escucha-comprension"
+    },
+    {
+      "id": "p4", "tipo": "completar", "nivel": 1,
+      "enunciado": "Completa: ¿quién gobierna cada lugar?",
+      "texto": "En el municipio gobiernan la [alcaldesa] y el [Concejo] Municipal. En el departamento gobiernan la [gobernadora] y la Asamblea Departamental.",
+      "banco": ["maestra", "jueza"],
+      "pista": "La alcaldía es del municipio y la gobernación es del departamento.",
+      "explicacion": "En el municipio gobiernan la alcaldesa (o el alcalde) y el Concejo Municipal. En el departamento gobiernan la gobernadora (o el gobernador) y la Asamblea Departamental.",
+      "error": "autoridades-locales"
+    },
+    {
+      "id": "p5", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "En una asamblea, ¿qué ayuda a decidir bien y qué no ayuda?",
+      "categorias": [
+        { "id": "ayuda", "texto": "Ayuda", "emoji": "✅" },
+        { "id": "noayuda", "texto": "No ayuda", "emoji": "🚫" }
+      ],
+      "elementos": [
+        { "texto": "pedir la palabra y esperar mi turno", "emoji": "✋", "categoria": "ayuda" },
+        { "texto": "escuchar a quien piensa distinto", "emoji": "👂", "categoria": "ayuda" },
+        { "texto": "respetar lo que decide la mayoría", "emoji": "🤝", "categoria": "ayuda" },
+        { "texto": "gritar para que otros no hablen", "categoria": "noayuda" },
+        { "texto": "burlarse de la idea de un vecino", "categoria": "noayuda" },
+        { "texto": "votar dos veces", "categoria": "noayuda" }
+      ],
+      "pista": "Pregúntate: ¿esta acción deja que todas las personas participen por igual?",
+      "explicacion": "Pedir la palabra, escuchar a quien piensa distinto y respetar lo que decide la mayoría ayudan. Gritar, burlarse y votar dos veces no dejan participar a todos por igual.",
+      "error": "democracia"
+    },
+    {
+      "id": "p6", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "Une cada organización con el lugar donde la encontramos.",
+      "pares": [
+        ["junta vecinal", "un barrio de la ciudad"],
+        ["capitanía guaraní", "una comunidad del Chaco"],
+        ["ayllu", "una comunidad del altiplano"]
+      ],
+      "pista": "Recuerda a Sofía, Nayra y Arami. ¿Dónde vive cada una?",
+      "explicacion": "La junta vecinal está en los barrios, como el de Sofía en El Alto. La capitanía guaraní, en el Chaco, como la de Arami. El ayllu, en el altiplano, como el de Nayra.",
+      "error": "organizacion-local"
+    },
+    {
+      "id": "p7", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha la pregunta y escribe la respuesta.",
+      "escuchar": "¿Cómo se llama la persona que dirige el gobierno municipal y sus obras?",
+      "respuestas": [
+        "alcalde", "alcaldesa", "el alcalde", "la alcaldesa",
+        "alcaldesa o alcalde", "alcalde o alcaldesa",
+        "la alcaldesa o el alcalde", "el alcalde o la alcaldesa"
+      ],
+      "pista": "Trabaja en la alcaldía, y su nombre se parece a esa palabra.",
+      "explicacion": "Es la alcaldesa o el alcalde. Dirige el gobierno municipal y sus obras.",
+      "error": "autoridades-locales"
+    },
+    {
+      "id": "p8", "tipo": "ordenar", "nivel": 2,
+      "enunciado": "Ordena de lo más grande a lo más pequeño.",
+      "elementos": [
+        { "texto": "Bolivia", "emoji": "🇧🇴" },
+        { "texto": "departamento", "emoji": "🗺️" },
+        { "texto": "municipio", "emoji": "📍" },
+        { "texto": "barrio o comunidad", "emoji": "🏘️" }
+      ],
+      "pista": "Piensa qué está dentro de qué. ¿Qué es lo más grande de todo?",
+      "explicacion": "Bolivia tiene departamentos; cada departamento tiene municipios; y en cada municipio hay barrios y comunidades.",
+      "error": "niveles-territoriales"
+    },
+    {
+      "id": "p9", "tipo": "tocar", "nivel": 2,
+      "enunciado": "Toca los nombres de organizaciones de barrios y comunidades.",
+      "texto": "Nayra va a la asamblea de su *ayllu*. Su prima Ana vive en La Paz, y su *junta vecinal* pidió arreglar la plaza. Arami, en el Chaco, participa en su *capitanía*.",
+      "pista": "Busca tres organizaciones: una del altiplano, una de la ciudad y una del Chaco.",
+      "explicacion": "Ayllu, junta vecinal y capitanía son organizaciones. La asamblea es la reunión donde deciden; La Paz y el Chaco son lugares.",
+      "error": "organizacion-local"
+    },
+    {
+      "id": "p10", "tipo": "pasos", "nivel": 3,
+      "enunciado": "En la asamblea de la junta vecinal hay 40 vecinos. Deben elegir: arreglar la plaza o arreglar la cancha.",
+      "visual": { "tipo": "emojis", "items": ["⛲", "⚽", "✋"], "etiquetas": ["plaza", "cancha", "votación"] },
+      "pasos": [
+        {
+          "tipo": "numero",
+          "enunciado": "27 vecinos votan por la plaza y el resto, por la cancha. ¿Cuántos votan por la cancha?",
+          "respuesta": 13,
+          "sufijo": "vecinos",
+          "erroresComunes": [
+            { "respuesta": 67, "pista": "No hay que sumar: a los 40 vecinos quítales los 27 que votaron por la plaza.", "error": "calculo" },
+            { "respuesta": 23, "pista": "Cuidado: a 0 no le puedes quitar 7. Presta una decena.", "error": "calculo" }
+          ],
+          "pista": "Resta: 40 − 27.",
+          "explicacion": "40 − 27 = 13. Trece vecinos votan por la cancha.",
+          "error": "calculo"
+        },
+        {
+          "tipo": "opcion",
+          "enunciado": "¿Qué decidió la asamblea?",
+          "opciones": [
+            { "texto": "Arreglar la plaza, porque tuvo más votos.", "correcta": true },
+            { "texto": "Arreglar la cancha, porque tuvo menos votos.", "pista": "Compara 27 y 13. ¿Cuál es mayor?", "error": "democracia" },
+            { "texto": "Nada, porque no todos pensaban igual.", "pista": "No hace falta que todos piensen igual: se decide por mayoría.", "error": "democracia" }
+          ],
+          "pista": "Gana la opción con más votos: la de la mayoría.",
+          "explicacion": "27 es más que 13: la mayoría eligió arreglar la plaza.",
+          "error": "democracia"
+        }
+      ],
+      "pista": "Primero calcula; después piensa qué opción tiene la mayoría.",
+      "explicacion": "40 − 27 = 13 votos para la cancha. La plaza tuvo más votos: la mayoría decidió arreglar la plaza, y todos respetan esa decisión.",
+      "error": "democracia"
+    },
+    {
+      "id": "p11", "tipo": "pasos", "nivel": 3,
+      "enunciado": "En la calle de la escuela de Ana hay un hueco muy grande. Los autos frenan de golpe y es peligroso.",
+      "visual": { "tipo": "emojis", "items": ["🏫", "🕳️", "🚗"] },
+      "pasos": [
+        {
+          "tipo": "opcion",
+          "enunciado": "¿Qué gobierno se ocupa de arreglar las calles de la ciudad?",
+          "opciones": [
+            { "texto": "el gobierno municipal", "correcta": true },
+            { "texto": "la gobernación", "pista": "La gobernación se ocupa de todo el departamento. Las calles de la ciudad las cuida el municipio.", "error": "servicios-municipio" },
+            { "texto": "el Órgano Electoral", "pista": "El Órgano Electoral organiza elecciones; no arregla calles.", "error": "servicios-municipio" }
+          ],
+          "pista": "Piensa en el gobierno más cercano a tu barrio.",
+          "explicacion": "Las calles de la ciudad las arregla el gobierno municipal.",
+          "error": "servicios-municipio"
+        },
+        {
+          "tipo": "opcion",
+          "enunciado": "¿Qué puede hacer la junta vecinal?",
+          "opciones": [
+            { "texto": "Reunirse y pedir por escrito a la alcaldía que arregle la calle.", "correcta": true },
+            { "texto": "Esperar sin decir nada.", "pista": "Si nadie avisa, el problema puede seguir mucho tiempo.", "error": "participacion" },
+            { "texto": "Tapar el hueco con piedras, en medio de los autos.", "pista": "Eso es peligroso. Es mejor pedir ayuda a quien se ocupa de las calles.", "error": "participacion" }
+          ],
+          "pista": "Busca una forma de participar que sea segura y ordenada.",
+          "explicacion": "La junta vecinal se reúne y pide por escrito a la alcaldía que arregle la calle.",
+          "error": "participacion"
+        },
+        {
+          "tipo": "ordenar",
+          "enunciado": "Ordena lo que pasa.",
+          "elementos": [
+            "La junta vecinal se reúne en asamblea.",
+            "Los vecinos escriben una carta a la alcaldía.",
+            "La alcaldía manda a arreglar la calle."
+          ],
+          "vertical": true,
+          "pista": "Primero se ponen de acuerdo. ¿Qué hacen después?",
+          "explicacion": "Primero se reúnen, después escriben la carta y al final la alcaldía manda a arreglar la calle.",
+          "error": "participacion"
+        }
+      ],
+      "pista": "Resuelve un paso a la vez.",
+      "explicacion": "El gobierno municipal arregla las calles. La junta vecinal se reúne y escribe a la alcaldía: así participa para mejorar el barrio.",
+      "error": "participacion"
+    },
+    {
+      "id": "p12", "tipo": "clasificar", "nivel": 3,
+      "enunciado": "¿Es del gobierno municipal o del gobierno departamental?",
+      "categorias": [
+        { "id": "municipal", "texto": "Gobierno municipal", "emoji": "🏘️" },
+        { "id": "departamental", "texto": "Gobierno departamental (gobernación)", "emoji": "🗺️" }
+      ],
+      "elementos": [
+        { "texto": "alcaldesa", "categoria": "municipal" },
+        { "texto": "Concejo Municipal", "categoria": "municipal" },
+        { "texto": "concejala", "categoria": "municipal" },
+        { "texto": "gobernador", "categoria": "departamental" },
+        { "texto": "Asamblea Departamental", "categoria": "departamental" },
+        { "texto": "asambleísta departamental", "categoria": "departamental" }
+      ],
+      "pista": "Recuerda: la alcaldía y su Concejo son del municipio. ¿Quiénes acompañan a la gobernadora o al gobernador?",
+      "explicacion": "Gobierno municipal: alcaldesa, Concejo Municipal y concejala. Gobierno departamental: gobernador, Asamblea Departamental y asambleísta departamental.",
+      "error": "autoridades-locales"
+    },
+    {
+      "id": "p13", "tipo": "completar", "nivel": 3,
+      "enunciado": "Completa sobre el ayllu y la autonomía indígena.",
+      "texto": "En el ayllu, las autoridades sirven por [turno] y en [pareja]: una mujer y un varón. Charagua Iyambae es una autonomía indígena: allí el pueblo guaraní se gobierna con sus propias [normas].",
+      "banco": ["sorpresa", "peleas"],
+      "pista": "En el ayllu, cada familia sirve cuando le toca, y sirven dos personas juntas. ¿Con qué reglas se gobierna un pueblo autónomo?",
+      "explicacion": "En el ayllu, las autoridades sirven por turno y en pareja (chacha-warmi). Charagua Iyambae, en el Chaco, es una autonomía indígena originaria campesina: el pueblo guaraní se gobierna con sus propias normas.",
+      "error": "organizacion-local"
+    },
+    {
+      "id": "p14", "tipo": "escribir-libre", "nivel": 3,
+      "enunciado": "Escribe un pedido a la alcaldía para mejorar tu barrio o tu comunidad.",
+      "guia": ["Pedimos a la alcaldía que...", "Nuestro barrio necesita..."],
+      "requisitos": [
+        { "tipo": "mayuscula-inicial" },
+        { "tipo": "punto-final" },
+        { "tipo": "min-palabras", "valor": 6 }
+      ],
+      "modelo": "Pedimos a la alcaldía más basureros para la plaza.",
+      "pista": "Piensa en un servicio del municipio: luces, basura, calles, parques o mercados. ¿Qué falta cerca de tu casa?",
+      "explicacion": "Por ejemplo: «Pedimos a la alcaldía más basureros para la plaza». Pedir con respeto y por escrito es una forma de participar.",
+      "error": "produce-texto"
+    }
+  ],
+  "comprobacion": [
+    {
+      "id": "c1", "tipo": "opcion", "nivel": 1,
+      "enunciado": "¿Quién dirige el gobierno de un departamento?",
+      "opciones": [
+        { "texto": "la gobernadora o el gobernador", "correcta": true },
+        { "texto": "la alcaldesa o el alcalde", "pista": "Ella o él dirige el municipio, que es más pequeño.", "error": "autoridades-locales" },
+        { "texto": "la delegada o el delegado del curso", "pista": "La delegada o el delegado representa a su curso en la escuela.", "error": "autoridades-locales" }
+      ],
+      "pista": "El gobierno del departamento se llama gobernación.",
+      "explicacion": "La gobernadora o el gobernador dirige el gobierno departamental, junto con la Asamblea Departamental.",
+      "error": "autoridades-locales"
+    },
+    {
+      "id": "c2", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Toca los servicios que don Juan pide al gobierno municipal.",
+      "texto": "Don Juan pide a la alcaldía *alumbrado público* y *recojo de basura* para su zona.",
+      "pista": "Busca dos servicios que el municipio da a todos los vecinos.",
+      "explicacion": "Don Juan pide alumbrado público y recojo de basura: dos servicios del gobierno municipal.",
+      "error": "servicios-municipio"
+    },
+    {
+      "id": "c3", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "¿Es tarea del gobierno municipal o de los órganos del Estado para todo el país?",
+      "categorias": [
+        { "id": "municipio", "texto": "Gobierno municipal", "emoji": "🏘️" },
+        { "id": "pais", "texto": "Órganos del Estado (todo el país)", "emoji": "🇧🇴" }
+      ],
+      "elementos": [
+        { "texto": "arreglar el techo de la escuela fiscal", "categoria": "municipio" },
+        { "texto": "mantener limpio el mercado de la zona", "categoria": "municipio" },
+        { "texto": "tapar los huecos de las calles", "categoria": "municipio" },
+        { "texto": "cambiar una ley de toda Bolivia", "categoria": "pais" },
+        { "texto": "decidir un juicio según las leyes del país", "categoria": "pais" }
+      ],
+      "pista": "Pregúntate: ¿es algo cercano de tu municipio o algo para todo el país?",
+      "explicacion": "El gobierno municipal arregla las escuelas, cuida los mercados y arregla las calles. Cambiar leyes de toda Bolivia y decidir juicios son tareas de los órganos del Estado.",
+      "error": "servicios-municipio"
+    },
+    {
+      "id": "c4", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha y escribe la respuesta.",
+      "escuchar": "Los vecinos se reúnen, hablan por turno, se escuchan y deciden juntos. ¿Cómo se llama esa reunión? Empieza con la letra a.",
+      "respuestas": [
+        "asamblea", "la asamblea", "una asamblea",
+        "asamblea vecinal", "asamblea comunal", "asamblea de vecinos", "asamblea comunitaria"
+      ],
+      "pista": "Es la misma palabra que aparece en «Asamblea Departamental».",
+      "explicacion": "Se llama asamblea: allí todas las personas pueden hablar, escuchar y decidir juntas.",
+      "error": "democracia"
+    },
+    {
+      "id": "c5", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa sobre el Concejo Municipal.",
+      "texto": "El Concejo Municipal hace [leyes] municipales y [controla] el trabajo de la alcaldesa o el alcalde.",
+      "banco": ["canciones", "esconde"],
+      "pista": "El Concejo es como una pequeña asamblea del municipio. ¿Qué hace una asamblea legislativa?",
+      "explicacion": "El Concejo Municipal hace leyes municipales y controla el trabajo de la alcaldesa o el alcalde.",
+      "error": "autoridades-locales"
+    },
+    {
+      "id": "c6", "tipo": "ordenar", "nivel": 2,
+      "enunciado": "Ordena los pasos de una asamblea.",
+      "elementos": [
+        "Los vecinos se reúnen.",
+        "Cada persona da su idea por turno.",
+        "Votan las propuestas.",
+        "Todos cumplen lo que decidió la mayoría."
+      ],
+      "vertical": true,
+      "pista": "Primero hay que reunirse. ¿Qué pasa antes de votar?",
+      "explicacion": "Primero se reúnen, luego cada persona da su idea por turno, después votan y al final todos cumplen lo que decidió la mayoría.",
+      "error": "democracia"
+    },
+    {
+      "id": "c7", "tipo": "pasos", "nivel": 3,
+      "enunciado": "La junta vecinal elige a su nueva presidenta o presidente. Se presentan doña Rosa y don Luis.",
+      "visual": { "tipo": "emojis", "items": ["👩", "👨", "🗳️"], "etiquetas": ["doña Rosa", "don Luis", "votos"] },
+      "pasos": [
+        {
+          "tipo": "numero",
+          "enunciado": "Doña Rosa sacó 36 votos y don Luis, 29. ¿Cuántos votos más sacó doña Rosa?",
+          "respuesta": 7,
+          "sufijo": "votos",
+          "erroresComunes": [
+            { "respuesta": 65, "pista": "No sumes: te preguntan cuántos votos más. Resta 36 − 29.", "error": "calculo" },
+            { "respuesta": 13, "pista": "Cuidado: a 6 no le puedes quitar 9. Presta una decena.", "error": "calculo" }
+          ],
+          "pista": "Para saber cuántos más, resta: 36 − 29.",
+          "explicacion": "36 − 29 = 7. Doña Rosa sacó 7 votos más.",
+          "error": "calculo"
+        },
+        {
+          "tipo": "opcion",
+          "enunciado": "¿Quién será la nueva autoridad de la junta vecinal?",
+          "opciones": [
+            { "texto": "Doña Rosa, porque tiene más votos.", "correcta": true },
+            { "texto": "Don Luis, porque habló más fuerte.", "pista": "En una votación no gana quien habla más fuerte, sino quien tiene más votos.", "error": "democracia" },
+            { "texto": "Nadie, porque no todos votaron igual.", "pista": "No hace falta que todos voten igual: gana la mayoría.", "error": "democracia" }
+          ],
+          "pista": "Gana quien tiene más votos.",
+          "explicacion": "Doña Rosa tiene más votos: la mayoría la eligió.",
+          "error": "democracia"
+        },
+        {
+          "tipo": "multiple",
+          "enunciado": "Don Luis felicita a doña Rosa y le ofrece ayuda. ¿Qué muestra? Elige todas las correctas.",
+          "opciones": [
+            { "texto": "respeto", "correcta": true },
+            { "texto": "ganas de trabajar juntos", "correcta": true },
+            { "texto": "enojo", "pista": "Quien felicita y ofrece ayuda no está enojado.", "error": "democracia" },
+            { "texto": "burla", "pista": "Felicitar de verdad no es burlarse.", "error": "democracia" }
+          ],
+          "pista": "Piensa en cómo se siente doña Rosa cuando la felicitan.",
+          "explicacion": "Don Luis muestra respeto y ganas de trabajar juntos por el barrio.",
+          "error": "democracia"
+        }
+      ],
+      "pista": "Resuelve un paso a la vez.",
+      "explicacion": "Doña Rosa sacó 7 votos más y ganó por mayoría. Don Luis la felicita y la ayuda: así se respeta la decisión de todos.",
+      "error": "democracia"
+    },
+    {
+      "id": "c8", "tipo": "relacionar", "nivel": 3,
+      "enunciado": "Une cada autoridad con su organización.",
+      "pares": [
+        ["mburuvicha", "capitanía guaraní"],
+        ["mallku y mama t’alla", "ayllu"],
+        ["secretaria general", "sindicato agrario"],
+        ["presidenta de la junta", "junta vecinal"]
+      ],
+      "pista": "Recuerda a Mateo, Nayra y Arami: ¿cómo se llaman las autoridades de sus comunidades?",
+      "explicacion": "La o el mburuvicha dirige la capitanía guaraní; el mallku y la mama t’alla sirven en el ayllu; la secretaria general dirige el sindicato agrario; y la presidenta de la junta dirige la junta vecinal.",
+      "error": "organizacion-local"
+    }
+  ],
+  "repaso": {
+    "texto": "Recuerda: en el municipio gobiernan la alcaldesa o el alcalde y el Concejo Municipal; en el departamento, la gobernación. Barrios y comunidades se organizan y deciden en asamblea.",
+    "visual": { "tipo": "emojis", "items": ["🗺️", "📍", "🤝"], "etiquetas": ["departamento: gobernación", "municipio: alcaldía y Concejo", "barrio o comunidad: asamblea"] }
+  },
+  "adulto": {
+    "objetivo": "Reconocer la organización municipal (gobierno autónomo municipal: alcaldesa o alcalde y Concejo Municipal, CPE art. 283) y departamental (gobernación y Asamblea Departamental, art. 277); los servicios que presta el municipio (recojo de basura, alumbrado público, calles, mercados, parques, mantenimiento de escuelas); y formas de organización local de Bolivia (juntas vecinales u OTB, sindicatos agrarios, ayllus, capitanías guaraníes, cabildos indigenales y autonomías indígena originario campesinas como Charagua Iyambae). Se practican valores democráticos: participar, dialogar, votar y respetar a la mayoría y a quienes piensan distinto.",
+    "sugerencias": [
+      "Caminen por el barrio o la comunidad y hagan una lista de los servicios del municipio que ven (postes de luz, basureros, calles, plazas, mercado). Pregunten: «¿Quién lo cuida? ¿Qué pasaría si faltara?».",
+      "Si pueden, asistan juntos a una reunión de la junta vecinal, del sindicato o de la comunidad (o recuerden una a la que fueron). Después conversen: ¿quién pidió la palabra?, ¿cómo decidieron?, ¿se escuchó a todas las personas?",
+      "Hagan una asamblea familiar para decidir un paseo o una comida: cada persona propone y habla por turno, votan con granos de maíz o de poroto en vasos y todos respetan el resultado. Luego escriban juntos una carta corta a la alcaldía pidiendo algo para el barrio."
+    ],
+    "errores": {
+      "autoridades-locales": { "descripcion": "Confunde a las autoridades municipales y departamentales (alcaldesa o alcalde, Concejo Municipal, gobernadora o gobernador, Asamblea Departamental).", "sugerencia": "Dibujen dos casas, «municipio» y «departamento», y pongan en cada una tarjetas con sus autoridades, diciendo qué hace cada una." },
+      "niveles-territoriales": { "descripcion": "No ordena los niveles del territorio (país, departamento, municipio, barrio o comunidad).", "sugerencia": "Usen vasos o cajas que entren uno dentro de otro y escriban en cada uno: Bolivia, su departamento, su municipio y su barrio o comunidad." },
+      "servicios-municipio": { "descripcion": "No reconoce qué servicios da el gobierno municipal.", "sugerencia": "Al ver un poste de luz, un basurero o una plaza, pregunten: «¿Quién lo pone y lo cuida?». Busquen juntos una noticia de obras de su municipio." },
+      "organizacion-local": { "descripcion": "Confunde las organizaciones locales o no sabe cómo se organizan distintos pueblos y comunidades.", "sugerencia": "Conversen sobre cómo se organiza su propio barrio o comunidad y compárenlo, con respeto, con el de otra región: todas las formas de organizarse son valiosas." },
+      "democracia": { "descripcion": "Le cuesta aplicar las reglas de la participación democrática (pedir la palabra, votar una vez, respetar a la mayoría y a quien piensa distinto).", "sugerencia": "En los juegos de la familia, voten para elegir y practiquen felicitar a quien gana y seguir jugando juntos." },
+      "participacion": { "descripcion": "No sabe cómo pueden los vecinos pedir mejoras de forma ordenada y segura.", "sugerencia": "Escriban juntos una carta a la junta vecinal o a la alcaldía sobre algo que quieran mejorar y conversen sobre a quién entregarla." },
+      "calculo": { "descripcion": "Se equivoca al sumar o restar votos (suma cuando debe restar, u olvida prestar).", "sugerencia": "Cuenten votos con granos o palitos, formando atados de 10, antes de escribir la operación." },
+      "escucha-comprension": { "descripcion": "Le cuesta responder después de escuchar un texto.", "sugerencia": "Lean en voz alta situaciones cortas del barrio y pidan que las cuente con sus palabras antes de responder." },
+      "produce-texto": { "descripcion": "Le cuesta escribir un pedido o una opinión en una oración completa.", "sugerencia": "Que primero diga su pedido en voz alta; luego escríbanlo juntos empezando con «Pedimos...» y revisen la mayúscula y el punto." }
+    }
+  }
+}

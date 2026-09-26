@@ -1,0 +1,413 @@
+{
+  "id": "nat-2-1",
+  "titulo": "Recursos naturales",
+  "objetivo": "Sé qué son los recursos naturales, cuáles se renuevan y cuáles se pueden acabar, y conozco los que hay en Bolivia.",
+  "explicacion": [
+    {
+      "texto": "Los **recursos naturales** son lo que la naturaleza nos da y usamos para vivir: el agua, el aire, el suelo, las plantas, los animales, los minerales, la luz del sol y el viento.",
+      "emoji": "🌎",
+      "visual": { "tipo": "emojis", "items": ["💧", "🌱", "🦙", "⛏️", "☀️", "💨"], "etiquetas": ["agua", "plantas", "animales", "minerales", "sol", "viento"] }
+    },
+    {
+      "texto": "Los recursos **renovables** se vuelven a formar si los cuidamos: la lluvia llena otra vez los ríos y nacen nuevas plantas y animales. El suelo se forma muy despacio. El sol y el viento no se acaban.",
+      "visual": { "tipo": "ilustracion", "id": "ciclo-agua" }
+    },
+    {
+      "texto": "Los recursos **no renovables** tardaron muchísimo tiempo en formarse bajo la tierra. Si se acaban, no vuelven. Son los **minerales** (como el estaño, la plata, el zinc y el litio), el **gas natural** y el **petróleo**.",
+      "visual": { "tipo": "emojis", "items": ["⛏️", "🔥", "🛢️"], "etiquetas": ["minerales", "gas natural", "petróleo"] }
+    },
+    {
+      "texto": "Bolivia tiene muchos recursos: plata en Potosí, estaño en Oruro, litio en el salar de Uyuni y gas natural en Tarija. También tiene ríos, bosques, quinua, llamas y mucho sol.",
+      "emoji": "🇧🇴"
+    }
+  ],
+  "ejemplo": {
+    "instruccion": "Acompaña a Kusi. Vamos a descubrir de dónde vienen algunas cosas que usa en su casa.",
+    "pasos": [
+      { "texto": "Kusi toma un vaso de **agua**. El agua viene de ríos, lagos y vertientes, y la lluvia los vuelve a llenar. Por eso el agua es un recurso **renovable**.", "visual": { "tipo": "ilustracion", "id": "ciclo-agua", "resaltar": "precipitacion" } },
+      { "texto": "Su abuelo cocina papa y quinua. Vienen de plantas que las familias del campo vuelven a sembrar cada año. Las plantas son **renovables**.", "visual": { "tipo": "emojis", "items": ["🥔", "🌾", "🌱"], "etiquetas": ["papa", "quinua", "nueva siembra"] } },
+      { "texto": "La cocina funciona con **gas natural**, que llega por una tubería. Ese gas sale de muy abajo de la tierra, por ejemplo en el Chaco de Tarija. Cuando se gasta, no vuelve: es **no renovable**.", "visual": { "tipo": "ilustracion", "id": "paisaje-chaco" } },
+      { "texto": "La batería del celular tiene **litio**, un mineral. En el salar de Uyuni hay muchísimo litio. Los minerales son **no renovables**: hay que usarlos con cuidado.", "visual": { "tipo": "emojis", "items": ["📱", "🔋", "⛏️"], "etiquetas": ["celular", "batería", "litio"] } }
+    ]
+  },
+  "guiada": {
+    "intro": "Ahora lo hacemos juntos. Piensa en lo que descubrió Kusi.",
+    "pasos": [
+      {
+        "id": "g1", "tipo": "clasificar",
+        "enunciado": "¿Es un recurso renovable o no renovable?",
+        "apoyo": "Pregúntate: ¿la naturaleza lo vuelve a formar? Las plantas y los animales nacen otra vez; los minerales, el gas y el petróleo no.",
+        "categorias": [
+          { "id": "ren", "texto": "Renovable", "emoji": "🌱" },
+          { "id": "noren", "texto": "No renovable", "emoji": "⛏️" }
+        ],
+        "elementos": [
+          { "texto": "árbol", "emoji": "🌳", "categoria": "ren" },
+          { "texto": "estaño", "categoria": "noren" },
+          { "texto": "llama", "emoji": "🦙", "categoria": "ren" },
+          { "texto": "petróleo", "emoji": "🛢️", "categoria": "noren" },
+          { "texto": "viento", "emoji": "💨", "categoria": "ren" },
+          { "texto": "gas natural", "categoria": "noren" }
+        ],
+        "pista": "El árbol da semillas y la llama tiene crías. ¿El estaño, el petróleo y el gas pueden volver a formarse pronto?",
+        "explicacion": "Renovables: árbol, llama y viento. No renovables: estaño, petróleo y gas natural, porque tardaron muchísimo en formarse y, si se acaban, no vuelven.",
+        "error": "confunde-renovable"
+      },
+      {
+        "id": "g2", "tipo": "completar",
+        "enunciado": "Mira la parte marcada del dibujo y completa.",
+        "apoyo": "En la parte marcada, el agua cae de las nubes y llega a los ríos.",
+        "visual": { "tipo": "ilustracion", "id": "ciclo-agua", "resaltar": "precipitacion" },
+        "texto": "La [lluvia] vuelve a llenar los ríos y los lagos. Por eso el agua es un recurso [renovable].",
+        "banco": ["no renovable", "petróleo"],
+        "pista": "¿Qué cae de las nubes? Si el agua vuelve a los ríos, ¿se renueva o se acaba para siempre?",
+        "explicacion": "La lluvia vuelve a llenar los ríos y los lagos. Por eso el agua es un recurso renovable. ¡Igual hay que cuidarla y no ensuciarla!",
+        "error": "confunde-renovable"
+      },
+      {
+        "id": "g3", "tipo": "relacionar",
+        "enunciado": "Une cada recurso con algo para lo que lo usamos.",
+        "apoyo": "Piensa en lo que hay en un celular, en unos aretes, en la cocina y en los molinos que giran con el aire.",
+        "pares": [
+          ["litio", { "texto": "baterías de celular", "emoji": "📱" }],
+          ["plata", { "texto": "aretes y anillos", "emoji": "💍" }],
+          ["gas natural", { "texto": "cocinar los alimentos", "emoji": "🍳" }],
+          ["viento", { "texto": "mover molinos que producen electricidad", "emoji": "💡" }]
+        ],
+        "pista": "El litio es el mineral de las baterías. La plata es un metal brillante.",
+        "explicacion": "El litio sirve para hacer baterías, la plata para aretes y anillos, el gas natural para cocinar y el viento mueve molinos que producen electricidad.",
+        "error": "usos-recursos"
+      }
+    ]
+  },
+  "practica": [
+    {
+      "id": "p1", "tipo": "memoria", "nivel": 1,
+      "enunciado": "Encuentra las parejas: el dibujo y el recurso natural.",
+      "pares": [
+        [{ "emoji": "💧" }, "agua"],
+        [{ "emoji": "☀️" }, "sol"],
+        [{ "emoji": "🌳" }, "árbol"],
+        [{ "emoji": "🦙" }, "llama"],
+        [{ "emoji": "🛢️" }, "petróleo"]
+      ],
+      "pista": "Mira cada dibujo y di su nombre en voz alta.",
+      "explicacion": "El agua, el sol, el árbol y la llama son recursos renovables. El petróleo es un recurso no renovable.",
+      "error": "identifica-recurso"
+    },
+    {
+      "id": "p2", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Toca los recursos naturales renovables.",
+      "texto": "La *alpaca* come *pasto* y toma *agua* por la tarde.",
+      "pista": "Hay tres: un animal, una planta y algo que se bebe.",
+      "explicacion": "La alpaca (un animal), el pasto (una planta) y el agua son recursos renovables.",
+      "error": "identifica-recurso"
+    },
+    {
+      "id": "p3", "tipo": "multiple", "nivel": 1,
+      "enunciado": "Elige todo lo que nos da la naturaleza: los recursos naturales.",
+      "opciones": [
+        { "texto": "el agua del lago", "emoji": "💧", "correcta": true },
+        { "texto": "el viento", "emoji": "💨", "correcta": true },
+        { "texto": "la plata del Cerro Rico", "emoji": "⛏️", "correcta": true },
+        { "texto": "una pelota de plástico", "emoji": "⚽", "pista": "La pelota la hicieron las personas en una fábrica.", "error": "identifica-recurso" },
+        { "texto": "un televisor", "emoji": "📺", "pista": "El televisor lo fabricaron las personas.", "error": "identifica-recurso" }
+      ],
+      "pista": "Hay tres. Busca lo que ya existía en la naturaleza antes de que las personas fabricaran cosas.",
+      "explicacion": "El agua, el viento y la plata del Cerro Rico son recursos naturales. La pelota y el televisor los fabricaron las personas.",
+      "error": "identifica-recurso"
+    },
+    {
+      "id": "p4", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha la adivinanza y escribe la respuesta.",
+      "escuchar": "Soy un líquido negro y espeso. Estoy muy abajo de la tierra. Conmigo se hace la gasolina. Si me acabo, no vuelvo. ¿Qué soy?",
+      "respuestas": ["petróleo", "el petróleo", "es el petróleo"],
+      "pista": "Es un recurso no renovable. Empieza con p.",
+      "explicacion": "Es el **petróleo**: con él se hacen la gasolina y el diésel. Es un recurso no renovable.",
+      "error": "identifica-recurso"
+    },
+    {
+      "id": "p5", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "Une cada recurso con el lugar de Bolivia donde hay mucho.",
+      "pares": [
+        ["plata", "Cerro Rico de Potosí"],
+        ["litio", "salar de Uyuni"],
+        ["gas natural", "Chaco de Tarija"],
+        ["estaño", "minas de Oruro"]
+      ],
+      "pista": "El salar es una gran llanura blanca de sal. El Cerro Rico es un cerro con minas muy antiguas y famosas.",
+      "explicacion": "Hay plata en el Cerro Rico de Potosí, litio en el salar de Uyuni, gas natural en el Chaco de Tarija y estaño en las minas de Oruro.",
+      "error": "recursos-bolivia"
+    },
+    {
+      "id": "p6", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa: ¿para qué usamos estos recursos?",
+      "texto": "El [zinc] cubre las calaminas del techo para que no se oxiden. Con la lana de la [alpaca] se tejen chompas.",
+      "banco": ["viento", "sol"],
+      "pista": "Uno es un mineral. El otro es un animal del altiplano.",
+      "explicacion": "El zinc (un mineral no renovable) protege las calaminas. La lana de la alpaca (un recurso renovable) sirve para tejer chompas.",
+      "error": "usos-recursos"
+    },
+    {
+      "id": "p7", "tipo": "multiple", "nivel": 2,
+      "enunciado": "Elige los recursos que se vuelven a formar si los cuidamos.",
+      "opciones": [
+        { "texto": "los árboles del bosque", "emoji": "🌳", "correcta": true },
+        { "texto": "los peces del río", "emoji": "🐟", "correcta": true },
+        { "texto": "el agua de los lagos", "emoji": "💧", "correcta": true },
+        { "texto": "la plata del cerro", "pista": "La plata tardó muchísimo en formarse. Si se acaba, no vuelve.", "error": "confunde-renovable" },
+        { "texto": "el petróleo", "emoji": "🛢️", "pista": "El petróleo es no renovable: cuando se gasta, no vuelve.", "error": "confunde-renovable" }
+      ],
+      "pista": "Hay tres. Busca los seres vivos y el recurso que la lluvia vuelve a llenar.",
+      "explicacion": "Los árboles, los peces y el agua se renuevan si los cuidamos. La plata y el petróleo son no renovables.",
+      "error": "confunde-renovable"
+    },
+    {
+      "id": "p8", "tipo": "ordenar", "nivel": 2,
+      "enunciado": "Ordena cómo doña Rosa ayuda a que el bosque se renueve.",
+      "elementos": [
+        { "texto": "Doña Rosa corta un árbol viejo para hacer una mesa.", "emoji": "🌳" },
+        { "texto": "En su lugar, siembra un arbolito nuevo.", "emoji": "🌱" },
+        { "texto": "Lo riega y lo cuida con su familia.", "emoji": "💧" },
+        { "texto": "Pasan los años y el arbolito se vuelve un árbol grande.", "emoji": "🌲" }
+      ],
+      "vertical": true,
+      "pista": "Primero se corta el árbol viejo. ¿Qué hay que hacer para que vuelva a haber otro?",
+      "explicacion": "Corta un árbol, siembra uno nuevo, lo cuida y, con los años, crece. Así los árboles son un recurso renovable.",
+      "error": "cuidado-recursos"
+    },
+    {
+      "id": "p9", "tipo": "opcion", "nivel": 2,
+      "enunciado": "¿Por qué el gas natural es un recurso no renovable?",
+      "opciones": [
+        { "texto": "Porque tardó muchísimo tiempo en formarse y, si se acaba, no vuelve.", "correcta": true },
+        { "texto": "Porque vuelve a formarse cada año.", "pista": "Si se formara cada año, sería renovable.", "error": "confunde-renovable" },
+        { "texto": "Porque no sirve para nada.", "pista": "El gas natural sirve para cocinar y para producir electricidad.", "error": "confunde-renovable" }
+      ],
+      "columnas": 1,
+      "pista": "Piensa: ¿el gas natural vuelve a formarse pronto?",
+      "explicacion": "El gas natural es no renovable: se formó durante muchísimo tiempo bajo la tierra y, cuando lo gastamos, no vuelve.",
+      "error": "confunde-renovable"
+    },
+    {
+      "id": "p10", "tipo": "numero", "nivel": 2,
+      "enunciado": "¿Cuántos de estos recursos son renovables?",
+      "visual": { "tipo": "emojis", "items": ["💧", "🛢️", "🌳", "☀️", "💍", "🐟", "🔥"], "etiquetas": ["agua", "petróleo", "árboles", "sol", "plata (mineral)", "peces", "gas natural"] },
+      "respuesta": 4,
+      "erroresComunes": [
+        { "respuesta": 3, "pista": "Contaste los no renovables: petróleo, plata y gas natural. Cuenta los otros.", "error": "confunde-renovable" },
+        { "respuesta": 7, "pista": "No todos son renovables. Deja afuera los que se acaban.", "error": "confunde-renovable" }
+      ],
+      "pista": "Primero separa los que se acaban: la plata, el gas natural y el petróleo. Cuenta los demás.",
+      "explicacion": "Son renovables el agua, los árboles, el sol y los peces: 4. El petróleo, la plata y el gas natural son no renovables.",
+      "error": "confunde-renovable"
+    },
+    {
+      "id": "p11", "tipo": "clasificar", "nivel": 3,
+      "enunciado": "¿Es un recurso renovable, un recurso no renovable o algo que hicieron las personas?",
+      "categorias": [
+        { "id": "ren", "texto": "Recurso renovable", "emoji": "🌱" },
+        { "id": "noren", "texto": "Recurso no renovable", "emoji": "⛏️" },
+        { "id": "hecho", "texto": "Lo hicieron las personas", "emoji": "🏭" }
+      ],
+      "elementos": [
+        { "texto": "quinua", "emoji": "🌾", "categoria": "ren" },
+        { "texto": "peces del río", "emoji": "🐟", "categoria": "ren" },
+        { "texto": "zinc", "categoria": "noren" },
+        { "texto": "gas natural", "categoria": "noren" },
+        { "texto": "bolsa de plástico", "emoji": "🛍️", "categoria": "hecho" },
+        { "texto": "bicicleta", "emoji": "🚲", "categoria": "hecho" }
+      ],
+      "pista": "Las cosas de fábrica las hicieron las personas usando recursos naturales. De los recursos, ¿cuáles se vuelven a formar?",
+      "explicacion": "Renovables: quinua y peces. No renovables: zinc y gas natural. La bolsa y la bicicleta las hicieron las personas con recursos naturales (el plástico se hace con petróleo o gas).",
+      "error": "identifica-recurso"
+    },
+    {
+      "id": "p12", "tipo": "pasos", "nivel": 3,
+      "enunciado": "En la casa de Mateo cocinan con gas natural. En el techo tienen un calentador solar: calienta el agua con la luz del sol.",
+      "visual": { "tipo": "emojis", "items": ["🔥", "☀️", "🏠"], "etiquetas": ["gas natural", "sol", "casa de Mateo"] },
+      "pasos": [
+        {
+          "tipo": "opcion",
+          "enunciado": "¿Qué recurso usa el calentador solar?",
+          "opciones": [
+            { "texto": "la luz del sol", "correcta": true },
+            { "texto": "el gas natural", "pista": "El gas natural se usa en la cocina de Mateo.", "error": "usos-recursos" },
+            { "texto": "el litio", "pista": "El litio está en las baterías.", "error": "usos-recursos" }
+          ],
+          "pista": "Su nombre te da una pista: calentador «solar».",
+          "explicacion": "El calentador solar usa la luz del sol, un recurso renovable que no se acaba.",
+          "error": "usos-recursos"
+        },
+        {
+          "tipo": "completar",
+          "enunciado": "Completa.",
+          "texto": "La luz del sol es un recurso [renovable]. El gas natural es un recurso [no renovable].",
+          "pista": "¿Cuál de los dos se puede acabar?",
+          "explicacion": "El sol no se acaba: es renovable. El gas natural se acaba y no vuelve: es no renovable.",
+          "error": "confunde-renovable"
+        },
+        {
+          "tipo": "escribir",
+          "enunciado": "¿Cuál de los dos recursos se puede acabar algún día? Escríbelo.",
+          "respuestas": ["gas natural", "el gas natural", "gas", "el gas"],
+          "pista": "No es el sol: el sol no se acaba.",
+          "explicacion": "El gas natural se puede acabar. Por eso lo usamos con cuidado.",
+          "error": "confunde-renovable"
+        }
+      ],
+      "pista": "Resuelve un paso a la vez.",
+      "explicacion": "El calentador usa la luz del sol, que es renovable. El gas natural es no renovable: algún día se puede acabar.",
+      "error": "confunde-renovable"
+    },
+    {
+      "id": "p13", "tipo": "opcion", "nivel": 3,
+      "enunciado": "Mira el dibujo. Si cortan todos los árboles y no siembran otros, ¿qué pasa?",
+      "visual": { "tipo": "ilustracion", "id": "deforestacion" },
+      "opciones": [
+        { "texto": "El bosque se acaba y los animales pierden su casa.", "correcta": true },
+        { "texto": "Los árboles vuelven a crecer solos enseguida.", "pista": "Un árbol tarda muchos años en crecer. Sin semillas ni cuidado, no vuelve.", "error": "cuidado-recursos" },
+        { "texto": "No pasa nada, porque los árboles son renovables.", "pista": "Los árboles son renovables solo si los cuidamos y sembramos otros.", "error": "cuidado-recursos" }
+      ],
+      "columnas": 1,
+      "pista": "Renovable no quiere decir que nunca se acaba.",
+      "explicacion": "Si cortan todos los árboles y no siembran otros, el bosque se acaba. Los recursos renovables también se tienen que cuidar.",
+      "error": "cuidado-recursos"
+    },
+    {
+      "id": "p14", "tipo": "escribir-libre", "nivel": 3,
+      "enunciado": "Escribe una oración: ¿qué recurso natural usas en tu casa y para qué?",
+      "guia": ["En mi casa usamos agua para...", "Mi familia usa la luz del sol para..."],
+      "requisitos": [
+        { "tipo": "mayuscula-inicial" }, { "tipo": "punto-final" },
+        { "tipo": "min-palabras", "valor": 5 },
+        { "tipo": "incluye", "palabras": ["para"] }
+      ],
+      "modelo": "En mi casa usamos agua para cocinar la sopa.",
+      "pista": "Piensa en el agua, el gas, la luz del sol o los alimentos que vienen de las plantas. Usa la palabra «para».",
+      "explicacion": "Por ejemplo: «En mi casa usamos agua para cocinar la sopa». Empieza con mayúscula y termina con punto.",
+      "error": "produce-oracion"
+    }
+  ],
+  "comprobacion": [
+    {
+      "id": "c1", "tipo": "clasificar", "nivel": 1,
+      "enunciado": "Separa los recursos renovables de los no renovables.",
+      "categorias": [
+        { "id": "ren", "texto": "Renovable", "emoji": "🌱" },
+        { "id": "noren", "texto": "No renovable", "emoji": "⛏️" }
+      ],
+      "elementos": [
+        { "texto": "maíz", "emoji": "🌽", "categoria": "ren" },
+        { "texto": "plata del cerro", "categoria": "noren" },
+        { "texto": "vicuña", "categoria": "ren" },
+        { "texto": "zinc", "categoria": "noren" },
+        { "texto": "sol", "emoji": "☀️", "categoria": "ren" },
+        { "texto": "litio", "categoria": "noren" }
+      ],
+      "pista": "Los seres vivos se renuevan y el sol no se acaba. Los minerales, cuando se acaban, no vuelven.",
+      "explicacion": "Renovables: maíz, vicuña y sol. No renovables: plata, zinc y litio, que son minerales.",
+      "error": "confunde-renovable"
+    },
+    {
+      "id": "c2", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Toca los recursos naturales renovables.",
+      "texto": "El *sol* brilla, sopla el *viento* y cae la *lluvia*.",
+      "pista": "Hay tres. Busca lo que no se acaba o vuelve a llegar.",
+      "explicacion": "El sol, el viento y la lluvia son recursos renovables: no se acaban o vuelven a llegar.",
+      "error": "identifica-recurso"
+    },
+    {
+      "id": "c3", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa con el lugar de Bolivia.",
+      "texto": "El litio está en el salar de [Uyuni]. La plata está en el Cerro Rico de [Potosí].",
+      "banco": ["Titicaca", "Pando"],
+      "pista": "El salar más grande de Bolivia es famoso en el mundo. El Cerro Rico está en una ciudad minera muy antigua.",
+      "explicacion": "El litio está en el salar de Uyuni y la plata, en el Cerro Rico de Potosí.",
+      "error": "recursos-bolivia"
+    },
+    {
+      "id": "c4", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha la adivinanza y escribe la respuesta.",
+      "escuchar": "Soy un mineral no renovable. En el salar de Uyuni hay muchísimo de mí. Me usan para hacer las baterías de los celulares. ¿Qué soy?",
+      "respuestas": ["litio", "el litio", "es el litio"],
+      "pista": "Empieza con l y tiene cinco letras.",
+      "explicacion": "Es el **litio**: un mineral no renovable que se usa en las baterías.",
+      "error": "recursos-bolivia"
+    },
+    {
+      "id": "c5", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "Une cada recurso con un uso.",
+      "pares": [
+        ["agua", { "texto": "beber y regar", "emoji": "🚰" }],
+        ["sol", { "texto": "secar la ropa", "emoji": "👕" }],
+        ["madera de los árboles", { "texto": "hacer muebles", "emoji": "🛏️" }],
+        ["estaño", { "texto": "cubrir las latas de conserva", "emoji": "🥫" }]
+      ],
+      "pista": "El estaño es un mineral. Los otros los usas en casa todos los días.",
+      "explicacion": "El agua sirve para beber y regar, el sol seca la ropa, la madera sirve para hacer muebles y el estaño cubre las latas de conserva.",
+      "error": "usos-recursos"
+    },
+    {
+      "id": "c6", "tipo": "multiple", "nivel": 2,
+      "enunciado": "Elige todos los recursos no renovables.",
+      "opciones": [
+        { "texto": "gas natural", "correcta": true },
+        { "texto": "estaño", "correcta": true },
+        { "texto": "petróleo", "emoji": "🛢️", "correcta": true },
+        { "texto": "agua", "emoji": "💧", "pista": "La lluvia vuelve a llenar los ríos: el agua es renovable.", "error": "confunde-renovable" },
+        { "texto": "quinua", "emoji": "🌾", "pista": "La quinua es una planta: se vuelve a sembrar.", "error": "confunde-renovable" },
+        { "texto": "viento", "emoji": "💨", "pista": "El viento no se acaba: es renovable.", "error": "confunde-renovable" }
+      ],
+      "pista": "Hay tres. Busca los que tardaron muchísimo en formarse bajo la tierra.",
+      "explicacion": "El gas natural, el estaño y el petróleo son no renovables. El agua, la quinua y el viento son renovables.",
+      "error": "confunde-renovable"
+    },
+    {
+      "id": "c7", "tipo": "opcion", "nivel": 3,
+      "enunciado": "Sofía dice: «El agua es renovable, así que podemos ensuciarla y gastarla sin cuidado». ¿Tiene razón?",
+      "opciones": [
+        { "texto": "No. El agua se renueva, pero si la ensuciamos o la desperdiciamos, puede faltar.", "correcta": true },
+        { "texto": "Sí, porque el agua nunca se acaba.", "pista": "En una sequía, el agua limpia puede faltar. ¿Hay que cuidarla?", "error": "cuidado-recursos" },
+        { "texto": "Sí, porque llueve todos los días.", "pista": "No llueve todos los días: en la época seca casi no llueve.", "error": "cuidado-recursos" }
+      ],
+      "columnas": 1,
+      "pista": "Renovable no quiere decir que no hay que cuidarlo.",
+      "explicacion": "Sofía no tiene razón. El agua se renueva, pero si la ensuciamos o la desperdiciamos, el agua limpia puede faltar.",
+      "error": "cuidado-recursos"
+    },
+    {
+      "id": "c8", "tipo": "numero", "nivel": 3,
+      "enunciado": "¿Cuántos de estos recursos son **no renovables**?",
+      "visual": { "tipo": "emojis", "items": ["💧", "🔥", "🌽", "💍", "💨", "🛢️", "🔋"], "etiquetas": ["agua", "gas natural", "maíz", "plata (mineral)", "viento", "petróleo", "litio"] },
+      "respuesta": 4,
+      "erroresComunes": [
+        { "respuesta": 3, "pista": "Contaste los renovables: agua, maíz y viento. Ahora cuenta los otros.", "error": "confunde-renovable" },
+        { "respuesta": 7, "pista": "No todos son no renovables. Deja afuera los que se renuevan.", "error": "confunde-renovable" }
+      ],
+      "pista": "Busca los minerales, el gas natural y el petróleo.",
+      "explicacion": "Son no renovables el gas natural, la plata, el petróleo y el litio: 4. El agua, el maíz y el viento son renovables.",
+      "error": "confunde-renovable"
+    }
+  ],
+  "repaso": {
+    "texto": "**Renovables**: se vuelven a formar si los cuidamos (agua, plantas, animales) o no se acaban (sol, viento). **No renovables**: si se acaban, no vuelven (minerales, gas natural, petróleo).",
+    "visual": { "tipo": "emojis", "items": ["💧", "🌳", "🦙", "☀️", "⛏️", "🔥", "🛢️"], "etiquetas": ["agua", "plantas", "animales", "sol", "minerales", "gas natural", "petróleo"] }
+  },
+  "adulto": {
+    "objetivo": "Reconocer los recursos naturales y distinguir los renovables (agua, suelo, plantas, animales, sol, viento) de los no renovables (minerales como estaño, plata, zinc y litio; gas natural y petróleo), con ejemplos de Bolivia. Comprender que los renovables también se agotan si no se cuidan (el suelo, por ejemplo, se forma muy lentamente).",
+    "sugerencias": [
+      "Recorran la casa buscando de qué recurso natural viene cada cosa: la mesa de madera (árboles), el agua del grifo (ríos y lluvia), la cocina a gas (gas natural), una lata de conserva (metales), una chompa (lana de oveja o alpaca). Hagan dos listas: renovables y no renovables.",
+      "En la feria o el mercado, pregunten a la casera de dónde vienen los productos (quinua del altiplano, plátano de los llanos, castaña de la Amazonía, pescado del lago o del río). Conversen: vienen de plantas y animales, y se renuevan si se siembra, se cría y se pesca con cuidado.",
+      "Siembren juntos unos granos de maíz o de haba en un vaso con tierra y un poco de agua, al lado de una piedra. Obsérvenlos una o dos semanas: la semilla crece y puede dar nuevas semillas; la piedra no cambia. En un día de sol y viento, cuelguen ropa a secar y hagan un molinete de papel: el sol y el viento son recursos que no se acaban."
+    ],
+    "errores": {
+      "identifica-recurso": { "descripcion": "No distingue un recurso natural de un objeto fabricado por las personas.", "sugerencia": "Tomen objetos de la casa y pregunten: «¿esto ya estaba en la naturaleza o lo fabricó alguien?». Luego busquen de qué recurso natural está hecho." },
+      "confunde-renovable": { "descripcion": "Confunde recursos renovables con no renovables.", "sugerencia": "Usen la pregunta clave: «¿la naturaleza lo vuelve a formar pronto?». Las plantas y los animales tienen semillas y crías; los minerales, el gas y el petróleo tardaron muchísimo en formarse." },
+      "usos-recursos": { "descripcion": "No relaciona un recurso con su uso cotidiano.", "sugerencia": "Jueguen a «¿de dónde viene?»: la gasolina (petróleo), la batería del celular (litio), los aretes (plata), la chompa (lana de alpaca u oveja)." },
+      "recursos-bolivia": { "descripcion": "No recuerda dónde hay recursos importantes en Bolivia.", "sugerencia": "Busquen en un mapa de Bolivia Potosí (plata), Oruro (estaño), el salar de Uyuni (litio) y Tarija (gas natural) y dibujen un símbolo en cada lugar." },
+      "cuidado-recursos": { "descripcion": "Cree que los recursos renovables no se acaban aunque no se cuiden.", "sugerencia": "Conversen sobre lo que pasa si se cortan todos los árboles o se ensucia un río. Planten o rieguen juntos una planta y hablen de por qué hay que cuidarla." },
+      "produce-oracion": { "descripcion": "Le cuesta escribir una oración completa con mayúscula y punto.", "sugerencia": "Díganle la idea en voz alta primero, escriban juntos el comienzo («En mi casa usamos...») y revisen la mayúscula inicial y el punto final." }
+    }
+  }
+}

@@ -1,0 +1,483 @@
+{
+  "id": "com-3-6",
+  "titulo": "Escribo oraciones y textos",
+  "objetivo": "Escribo oraciones completas y textos cortos, como un recado, con mis ideas en orden.",
+  "lecturas": [
+    {
+      "id": "recado-abuela",
+      "titulo": "Un recado",
+      "genero": "recado",
+      "emoji": "📝",
+      "parrafos": [
+        "Hola, abuela:",
+        "Mañana voy a tu casa con mi hermano. Llevamos pan para el té.",
+        "Te quiero mucho."
+      ]
+    },
+    {
+      "id": "texto-quinua",
+      "titulo": "La quinua",
+      "genero": "texto informativo",
+      "emoji": "🌾",
+      "parrafos": [
+        "La quinua es un grano pequeño que crece en el altiplano. Antes de cocinarla, hay que lavarla bien. Con ella se preparan sopas y galletas. Mi hermano juega fútbol en la cancha. La quinua es un alimento muy nutritivo."
+      ]
+    },
+    {
+      "id": "texto-titicaca",
+      "titulo": "El lago Titicaca",
+      "genero": "texto informativo",
+      "emoji": "🌊",
+      "parrafos": [
+        "El lago Titicaca está entre Bolivia y Perú. Es muy grande y su agua es fría. En sus orillas crece la totora. A mi gato le gusta dormir en la cama. Mucha gente viaja en bote por el lago."
+      ]
+    }
+  ],
+  "explicacion": [
+    {
+      "texto": "Para escribir una oración clara, responde estas preguntas: **¿Quién?** **¿Qué hace?** **¿Dónde?** **¿Cuándo?**",
+      "emoji": "✏️",
+      "visual": {
+        "tipo": "tabla",
+        "columnas": ["¿Quién?", "¿Qué hace?", "¿Dónde?", "¿Cuándo?"],
+        "filas": [["Inti", "juega fútbol", "en la cancha", "el sábado"]]
+      }
+    },
+    {
+      "texto": "Con esas respuestas armamos la oración: «El sábado, Inti juega fútbol en la cancha.» Empieza con mayúscula y termina con punto.",
+      "visual": { "tipo": "emojis", "items": ["👦", "⚽", "🏟️"], "etiquetas": ["Inti", "fútbol", "cancha"] }
+    },
+    {
+      "texto": "Un **texto breve** tiene varias oraciones sobre un mismo tema, en orden. Las palabras **primero**, **después** y **al final** ayudan a ordenar las ideas.",
+      "visual": {
+        "tipo": "tabla",
+        "columnas": ["Orden", "Oración"],
+        "filas": [["Primero", "Wara lava las papas."], ["Después", "Las cocina en la olla."], ["Al final", "Come con su familia."]]
+      }
+    },
+    {
+      "texto": "Un **recado** es un mensaje corto para alguien. Tiene saludo, mensaje, despedida y firma (el nombre de quien lo escribe).",
+      "visual": {
+        "tipo": "tabla",
+        "columnas": ["Parte", "Ejemplo"],
+        "filas": [
+          ["Saludo", "Hola, mamá:"],
+          ["Mensaje", "Fui a la casa de Ana. Vuelvo a las seis."],
+          ["Despedida", "Un abrazo,"],
+          ["Firma", "Nayra"]
+        ]
+      }
+    }
+  ],
+  "ejemplo": {
+    "instruccion": "Mira cómo una oración corta crece cuando respondemos preguntas.",
+    "pasos": [
+      {
+        "texto": "¿Quién? **La abuela Rosa.** ¿Qué hace? **Teje.** Ya tenemos una oración: «La abuela Rosa teje.»",
+        "visual": { "tipo": "tabla", "columnas": ["¿Quién?", "¿Qué hace?"], "filas": [["La abuela Rosa", "teje"]] }
+      },
+      {
+        "texto": "¿Qué teje? **Una chompa.** Ahora dice más: «La abuela Rosa teje una chompa.»",
+        "visual": { "tipo": "emojis", "items": ["👵", "🧶"], "etiquetas": ["abuela Rosa", "chompa"] }
+      },
+      {
+        "texto": "¿Dónde? **En el patio.** ¿Cuándo? **Por la tarde.**",
+        "visual": {
+          "tipo": "tabla",
+          "columnas": ["¿Quién?", "¿Qué hace?", "¿Dónde?", "¿Cuándo?"],
+          "filas": [["La abuela Rosa", "teje una chompa", "en el patio", "por la tarde"]]
+        }
+      },
+      {
+        "texto": "Juntamos todo: «Por la tarde, la abuela Rosa teje una chompa en el patio.» Al final revisamos la mayúscula del inicio y el punto final.",
+        "visual": { "tipo": "emojis", "items": ["🌇", "👵", "🧶"], "etiquetas": ["por la tarde", "abuela Rosa", "chompa"] }
+      }
+    ]
+  },
+  "guiada": {
+    "intro": "Ahora lo hacemos juntos.",
+    "pasos": [
+      {
+        "id": "g1", "tipo": "completar",
+        "enunciado": "Completa la oración: responde ¿dónde? y ¿cuándo?",
+        "apoyo": "¿Dónde? pide un lugar. ¿Cuándo? pide un momento del día.",
+        "texto": "Kusi nada en el [río] por la [tarde].",
+        "banco": ["cielo", "mochila"],
+        "pista": "Kusi nada en un lugar con agua. Y «por la...» dice un momento del día.",
+        "explicacion": "«Kusi nada en el río por la tarde.» «Río» dice dónde y «tarde» dice cuándo.",
+        "error": "donde-cuando"
+      },
+      {
+        "id": "g2", "tipo": "ordenar",
+        "enunciado": "Ordena las oraciones para armar el texto.",
+        "apoyo": "Busca las palabras primero, después y al final.",
+        "elementos": [
+          "Primero, Luis lava las frutas.",
+          "Después, las corta en pedacitos.",
+          "Al final, sirve la ensalada de frutas."
+        ],
+        "vertical": true,
+        "pista": "¿Qué palabra dice lo que se hace antes que todo?",
+        "explicacion": "Primero lava las frutas, después las corta y al final sirve la ensalada. Las palabras primero, después y al final ordenan el texto.",
+        "error": "orden-texto"
+      },
+      {
+        "id": "g3", "tipo": "escribir-libre",
+        "enunciado": "Escribe una oración que diga quién, qué hace y dónde.",
+        "apoyo": "Responde en orden: ¿Quién? ¿Qué hace? ¿Dónde? Revisa la mayúscula y el punto.",
+        "guia": ["Mi hermana...", "El perro...", "La maestra..."],
+        "requisitos": [
+          { "tipo": "mayuscula-inicial" },
+          { "tipo": "punto-final" },
+          { "tipo": "min-palabras", "valor": 5 }
+        ],
+        "modelo": "Mi hermana canta en la escuela.",
+        "pista": "Empieza por quién. Después di qué hace y termina con el lugar.",
+        "explicacion": "Por ejemplo: «Mi hermana canta en la escuela.» Quién: mi hermana. Qué hace: canta. Dónde: en la escuela.",
+        "error": "produce-oracion"
+      }
+    ]
+  },
+  "practica": [
+    {
+      "id": "p1", "tipo": "clasificar", "nivel": 1,
+      "enunciado": "¿Dice dónde o cuándo?",
+      "categorias": [
+        { "id": "donde", "texto": "¿Dónde?", "emoji": "📍" },
+        { "id": "cuando", "texto": "¿Cuándo?", "emoji": "⏰" }
+      ],
+      "elementos": [
+        { "texto": "en la escuela", "categoria": "donde" },
+        { "texto": "en el mercado", "categoria": "donde" },
+        { "texto": "junto al río", "categoria": "donde" },
+        { "texto": "por la mañana", "categoria": "cuando" },
+        { "texto": "el domingo", "categoria": "cuando" },
+        { "texto": "en la noche", "categoria": "cuando" }
+      ],
+      "pista": "¿Dónde? es un lugar. ¿Cuándo? es un momento o un día.",
+      "explicacion": "Dónde: en la escuela, en el mercado, junto al río. Cuándo: por la mañana, el domingo, en la noche.",
+      "error": "donde-cuando"
+    },
+    {
+      "id": "p2", "tipo": "memoria", "nivel": 1,
+      "enunciado": "Encuentra las parejas: la pregunta y su respuesta.",
+      "pares": [
+        ["¿Quién?", "mi abuela"],
+        ["¿Qué hace?", "cocina sopa"],
+        ["¿Dónde?", "en la cocina"],
+        ["¿Cuándo?", "al mediodía"]
+      ],
+      "pista": "¿Quién? es una persona; ¿qué hace?, una acción; ¿dónde?, un lugar; ¿cuándo?, un momento.",
+      "explicacion": "¿Quién? mi abuela. ¿Qué hace? cocina sopa. ¿Dónde? en la cocina. ¿Cuándo? al mediodía.",
+      "error": "preguntas-oracion"
+    },
+    {
+      "id": "p3", "tipo": "ordenar", "nivel": 1,
+      "enunciado": "Ordena las oraciones para armar el texto.",
+      "elementos": [
+        "Primero, Ana se lava la cara.",
+        "Después, se pone el uniforme.",
+        "Al final, toma su desayuno y va a la escuela."
+      ],
+      "vertical": true,
+      "pista": "Mira la palabra con la que empieza cada oración.",
+      "explicacion": "Primero se lava la cara, después se pone el uniforme y al final desayuna y va a la escuela.",
+      "error": "orden-texto"
+    },
+    {
+      "id": "p4", "tipo": "multiple", "nivel": 1,
+      "enunciado": "¿Qué partes tiene un recado? Elige todas.",
+      "opciones": [
+        { "texto": "saludo", "correcta": true },
+        { "texto": "mensaje", "correcta": true },
+        { "texto": "despedida", "correcta": true },
+        { "texto": "firma", "correcta": true },
+        { "texto": "personajes", "pista": "Los personajes son parte de los cuentos, no de los recados.", "error": "partes-recado" },
+        { "texto": "pistas para adivinar", "pista": "Las pistas son parte de las adivinanzas, no de los recados.", "error": "partes-recado" }
+      ],
+      "pista": "Piensa en un recado: «Hola, mamá: Fui a la casa de Ana. Un abrazo, Nayra».",
+      "explicacion": "Un recado tiene saludo, mensaje, despedida y firma. Los personajes son de los cuentos y las pistas, de las adivinanzas.",
+      "error": "partes-recado"
+    },
+    {
+      "id": "p5", "tipo": "tocar", "nivel": 2,
+      "enunciado": "Toca las palabras que dicen cuándo.",
+      "texto": "*Ayer*, Wara jugó en el patio. *Hoy* va a la escuela y *mañana* visitará a su abuela.",
+      "pista": "Hay tres. Dicen si algo pasó antes, pasa ahora o pasará después.",
+      "explicacion": "«Ayer», «hoy» y «mañana» dicen cuándo pasa cada cosa.",
+      "error": "donde-cuando"
+    },
+    {
+      "id": "p6", "tipo": "opcion", "nivel": 2,
+      "enunciado": "Lee el recado. ¿Qué parte le falta?",
+      "lectura": "recado-abuela",
+      "opciones": [
+        { "texto": "la firma: el nombre de quien lo escribe", "correcta": true },
+        { "texto": "el saludo", "pista": "«Hola, abuela:» es el saludo. Ese sí lo tiene.", "error": "partes-recado" },
+        { "texto": "la despedida", "pista": "«Te quiero mucho.» es la despedida. Esa sí la tiene.", "error": "partes-recado" }
+      ],
+      "columnas": 1,
+      "pista": "Revisa las cuatro partes: saludo, mensaje, despedida y firma.",
+      "explicacion": "Le falta la firma: la abuela no sabe quién escribió el recado. Al final debe ir un nombre, por ejemplo: Kusi.",
+      "error": "partes-recado"
+    },
+    {
+      "id": "p7", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha y escribe la oración. Cuida las mayúsculas y el punto.",
+      "escuchar": "El sábado, Arami fue a la feria con su tía.",
+      "respuestas": ["El sábado, Arami fue a la feria con su tía.", "El sábado Arami fue a la feria con su tía."],
+      "mayusculas": "estricto",
+      "pista": "Son diez palabras. Arami es un nombre: va con mayúscula. No olvides el punto.",
+      "explicacion": "Se escribe «El sábado, Arami fue a la feria con su tía.» Dice cuándo (el sábado), quién (Arami) y dónde (a la feria).",
+      "error": "dictado-oracion"
+    },
+    {
+      "id": "p8", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa el texto con primero, después y al final.",
+      "texto": "[Primero], Ana pone agua en la olla. [Después], echa los fideos. [Al final], sirve la sopa.",
+      "banco": ["Ayer"],
+      "pista": "¿Qué se hace antes que todo? ¿Y qué se hace al terminar?",
+      "explicacion": "Primero pone agua en la olla, después echa los fideos y al final sirve la sopa.",
+      "error": "conectores-orden"
+    },
+    {
+      "id": "p9", "tipo": "ordenar", "nivel": 2,
+      "enunciado": "Ordena las oraciones para contar lo que pasó.",
+      "elementos": [
+        "Rosa hizo un hoyo en la tierra.",
+        "Puso una semilla de maíz en el hoyo.",
+        "La tapó con tierra y la regó.",
+        "Unos días después, salió una plantita."
+      ],
+      "vertical": true,
+      "pista": "Piensa en cómo se siembra: ¿qué se hace antes de poner la semilla?",
+      "explicacion": "Rosa hizo el hoyo, puso la semilla, la tapó y la regó. Unos días después salió la plantita.",
+      "error": "orden-texto"
+    },
+    {
+      "id": "p10", "tipo": "opcion", "nivel": 2,
+      "enunciado": "¿Qué oración responde quién, qué hace, dónde y cuándo?",
+      "opciones": [
+        { "texto": "El lunes, Inti juega en el parque.", "correcta": true },
+        { "texto": "Inti juega en el parque.", "pista": "Dice quién, qué hace y dónde. ¿Dice cuándo?", "error": "preguntas-oracion" },
+        { "texto": "El lunes, Inti juega.", "pista": "Dice cuándo, quién y qué hace. ¿Dice dónde?", "error": "preguntas-oracion" },
+        { "texto": "Inti juega.", "pista": "Solo dice quién y qué hace.", "error": "preguntas-oracion" }
+      ],
+      "columnas": 1,
+      "pista": "Busca la oración que tiene un día y también un lugar.",
+      "explicacion": "«El lunes, Inti juega en el parque.» Quién: Inti. Qué hace: juega. Dónde: en el parque. Cuándo: el lunes.",
+      "error": "preguntas-oracion"
+    },
+    {
+      "id": "p11", "tipo": "escribir-libre", "nivel": 2,
+      "enunciado": "Escribe un recado para alguien de tu familia. Cuéntale adónde fuiste y cuándo vuelves.",
+      "guia": ["Hola, mamá:", "Fui a...", "Vuelvo a las...", "Un abrazo,"],
+      "requisitos": [
+        { "tipo": "mayuscula-inicial" },
+        { "tipo": "incluye", "palabras": ["hola", "querida", "querido"] },
+        { "tipo": "min-palabras", "valor": 10 }
+      ],
+      "modelo": "Hola, papá: Fui a la casa de Ana a hacer la tarea. Vuelvo a las seis. Un abrazo, Nayra",
+      "pista": "Escribe el saludo, el mensaje, la despedida y tu nombre al final.",
+      "explicacion": "Por ejemplo: «Hola, papá: Fui a la casa de Ana a hacer la tarea. Vuelvo a las seis. Un abrazo, Nayra». Tiene saludo, mensaje, despedida y firma.",
+      "error": "escribe-recado"
+    },
+    {
+      "id": "p12", "tipo": "opcion", "nivel": 2,
+      "enunciado": "Lee el texto. ¿Qué oración no va con el tema?",
+      "lectura": "texto-quinua",
+      "opciones": [
+        { "texto": "Mi hermano juega fútbol en la cancha.", "correcta": true },
+        { "texto": "Antes de cocinarla, hay que lavarla bien.", "pista": "Esta oración habla de la quinua. Sí va con el tema.", "error": "tema-texto" },
+        { "texto": "La quinua es un alimento muy nutritivo.", "pista": "Esta oración habla de la quinua. Sí va con el tema.", "error": "tema-texto" }
+      ],
+      "columnas": 1,
+      "pista": "El texto habla de la quinua. Busca la oración que habla de otra cosa.",
+      "explicacion": "«Mi hermano juega fútbol en la cancha» no habla de la quinua. En un texto, todas las oraciones hablan del mismo tema.",
+      "error": "tema-texto"
+    },
+    {
+      "id": "p13", "tipo": "completar", "nivel": 3,
+      "enunciado": "Completa el texto con las palabras que tienen sentido.",
+      "texto": "El [sábado] fue el cumpleaños de Kusi. Sus amigos llegaron a su [casa]. Comieron [torta] y jugaron con [globos]. ¡Fue un día muy feliz!",
+      "banco": ["martillo", "nube"],
+      "pista": "Pregúntate: ¿cuándo fue?, ¿adónde llegaron?, ¿qué comieron?, ¿con qué jugaron?",
+      "explicacion": "«El sábado fue el cumpleaños de Kusi. Sus amigos llegaron a su casa. Comieron torta y jugaron con globos.» Cada palabra responde una pregunta.",
+      "error": "completa-texto"
+    },
+    {
+      "id": "p14", "tipo": "escribir", "nivel": 3,
+      "enunciado": "Une las dos oraciones en una sola con «y»: «Wara canta.» «Wara baila.»",
+      "respuestas": ["Wara canta y baila.", "Wara baila y canta.", "Wara canta y baila", "Wara baila y canta"],
+      "pista": "No repitas «Wara»: escríbelo una sola vez y une las dos acciones con «y».",
+      "explicacion": "Se escribe «Wara canta y baila.» Así no repetimos el nombre y la oración queda más corta.",
+      "error": "une-oraciones"
+    },
+    {
+      "id": "p15", "tipo": "escribir-libre", "nivel": 3,
+      "enunciado": "Escribe tres oraciones sobre lo que hiciste el fin de semana. Usa primero, después y al final.",
+      "guia": ["Primero,...", "Después,...", "Al final,..."],
+      "requisitos": [
+        { "tipo": "mayuscula-inicial" },
+        { "tipo": "punto-final" },
+        { "tipo": "min-oraciones", "valor": 3 },
+        { "tipo": "incluye", "palabras": ["primero"] },
+        { "tipo": "incluye", "palabras": ["después", "luego"] },
+        { "tipo": "incluye", "palabras": ["al final", "finalmente"] }
+      ],
+      "modelo": "Primero, fui a la feria con mi papá. Después, compramos choclos y queso. Al final, comimos juntos en casa.",
+      "pista": "Escribe una oración para cada palabra: primero, después y al final. Pon punto al terminar cada una.",
+      "explicacion": "Por ejemplo: «Primero, fui a la feria con mi papá. Después, compramos choclos y queso. Al final, comimos juntos en casa.»",
+      "error": "produce-texto"
+    },
+    {
+      "id": "p16", "tipo": "escribir-libre", "nivel": 3,
+      "enunciado": "Describe a un animal que te guste en dos oraciones: cómo es y qué hace.",
+      "guia": ["Mi gata...", "La llama..."],
+      "requisitos": [
+        { "tipo": "mayuscula-inicial" },
+        { "tipo": "punto-final" },
+        { "tipo": "min-oraciones", "valor": 2 },
+        { "tipo": "min-palabras", "valor": 10 }
+      ],
+      "modelo": "La vicuña es pequeña y tiene lana fina. Vive libre en el altiplano y come pasto.",
+      "pista": "En la primera oración di cómo es. En la segunda, qué hace o dónde vive.",
+      "explicacion": "Por ejemplo: «La vicuña es pequeña y tiene lana fina. Vive libre en el altiplano y come pasto.»",
+      "error": "produce-texto"
+    }
+  ],
+  "comprobacion": [
+    {
+      "id": "c1", "tipo": "clasificar", "nivel": 1,
+      "enunciado": "¿Qué pregunta responde cada parte?",
+      "categorias": [
+        { "id": "quien", "texto": "¿Quién?", "emoji": "🧑" },
+        { "id": "donde", "texto": "¿Dónde?", "emoji": "📍" },
+        { "id": "cuando", "texto": "¿Cuándo?", "emoji": "⏰" }
+      ],
+      "elementos": [
+        { "texto": "mi tío Juan", "categoria": "quien" },
+        { "texto": "la maestra", "categoria": "quien" },
+        { "texto": "en el lago", "categoria": "donde" },
+        { "texto": "en la plaza", "categoria": "donde" },
+        { "texto": "el viernes", "categoria": "cuando" },
+        { "texto": "en invierno", "categoria": "cuando" }
+      ],
+      "pista": "¿Quién? es una persona. ¿Dónde? es un lugar. ¿Cuándo? es un momento.",
+      "explicacion": "Quién: mi tío Juan, la maestra. Dónde: en el lago, en la plaza. Cuándo: el viernes, en invierno.",
+      "error": "preguntas-oracion"
+    },
+    {
+      "id": "c2", "tipo": "ordenar", "nivel": 1,
+      "enunciado": "Ordena las oraciones para armar el texto.",
+      "elementos": [
+        "Primero, Mateo busca su cepillo.",
+        "Después, se lava los dientes.",
+        "Al final, guarda el cepillo en su lugar."
+      ],
+      "vertical": true,
+      "pista": "Mira la palabra con la que empieza cada oración.",
+      "explicacion": "Primero busca su cepillo, después se lava los dientes y al final guarda el cepillo.",
+      "error": "orden-texto"
+    },
+    {
+      "id": "c3", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa la oración: responde ¿cuándo? y ¿dónde?",
+      "texto": "El [lunes], Ana fue al [mercado] con su abuela.",
+      "banco": ["rápido", "cantar"],
+      "pista": "El primer espacio es un día. El segundo es un lugar.",
+      "explicacion": "«El lunes, Ana fue al mercado con su abuela.» «Lunes» dice cuándo y «mercado» dice dónde.",
+      "error": "donde-cuando"
+    },
+    {
+      "id": "c4", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha y escribe la oración. Cuida las mayúsculas y el punto.",
+      "escuchar": "Mañana, Luis irá al río con su perro.",
+      "respuestas": ["Mañana, Luis irá al río con su perro.", "Mañana Luis irá al río con su perro."],
+      "mayusculas": "estricto",
+      "pista": "Son ocho palabras. Luis es un nombre: va con mayúscula. Termina con punto.",
+      "explicacion": "Se escribe «Mañana, Luis irá al río con su perro.» Dice cuándo (mañana), quién (Luis) y dónde (al río).",
+      "error": "dictado-oracion"
+    },
+    {
+      "id": "c5", "tipo": "opcion", "nivel": 2,
+      "enunciado": "Lee el texto. ¿Qué oración no va con el tema?",
+      "lectura": "texto-titicaca",
+      "opciones": [
+        { "texto": "A mi gato le gusta dormir en la cama.", "correcta": true },
+        { "texto": "En sus orillas crece la totora.", "pista": "Habla de las orillas del lago. Sí va con el tema.", "error": "tema-texto" },
+        { "texto": "Mucha gente viaja en bote por el lago.", "pista": "Habla de lo que se hace en el lago. Sí va con el tema.", "error": "tema-texto" }
+      ],
+      "columnas": 1,
+      "pista": "El texto habla del lago Titicaca. ¿Qué oración habla de otra cosa?",
+      "explicacion": "«A mi gato le gusta dormir en la cama» no habla del lago. Todas las oraciones de un texto deben hablar del mismo tema.",
+      "error": "tema-texto"
+    },
+    {
+      "id": "c6", "tipo": "escribir-libre", "nivel": 3,
+      "enunciado": "Escribe un mensaje para invitar a un amigo o a una amiga a jugar. Di qué van a hacer, dónde y cuándo.",
+      "guia": ["Hola, Mateo:", "Te invito a...", "Te espero el..."],
+      "requisitos": [
+        { "tipo": "mayuscula-inicial" },
+        { "tipo": "incluye", "palabras": ["hola", "querida", "querido"] },
+        { "tipo": "incluye", "palabras": ["lunes", "martes", "miércoles", "jueves", "viernes", "sábado", "domingo", "hoy", "mañana", "tarde", "noche"] },
+        { "tipo": "min-palabras", "valor": 12 }
+      ],
+      "modelo": "Hola, Sofía: Te invito a jugar fútbol en la cancha el sábado por la tarde. Te espero. Mateo",
+      "pista": "Escribe el saludo, di qué van a hacer, dónde y qué día, y firma con tu nombre.",
+      "explicacion": "Por ejemplo: «Hola, Sofía: Te invito a jugar fútbol en la cancha el sábado por la tarde. Te espero. Mateo». Dice qué, dónde y cuándo.",
+      "error": "escribe-recado"
+    },
+    {
+      "id": "c7", "tipo": "escribir", "nivel": 3,
+      "enunciado": "Une las dos oraciones en una sola con «y»: «Kusi come pan.» «Kusi toma api.»",
+      "respuestas": ["Kusi come pan y toma api.", "Kusi toma api y come pan.", "Kusi come pan y toma api", "Kusi toma api y come pan"],
+      "pista": "Escribe «Kusi» una sola vez y une las dos acciones con «y».",
+      "explicacion": "Se escribe «Kusi come pan y toma api.» No repetimos el nombre: unimos las dos acciones con «y».",
+      "error": "une-oraciones"
+    },
+    {
+      "id": "c8", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "Lee: «En invierno, el tío Luis vende api en la plaza.» Une cada pregunta con su respuesta.",
+      "pares": [
+        ["¿Quién?", "el tío Luis"],
+        ["¿Qué hace?", "vende api"],
+        ["¿Dónde?", "en la plaza"],
+        ["¿Cuándo?", "en invierno"]
+      ],
+      "pista": "Busca en la oración una persona, una acción, un lugar y un momento.",
+      "explicacion": "¿Quién? el tío Luis. ¿Qué hace? vende api. ¿Dónde? en la plaza. ¿Cuándo? en invierno.",
+      "error": "preguntas-oracion"
+    }
+  ],
+  "repaso": {
+    "texto": "Para escribir bien: responde ¿quién?, ¿qué hace?, ¿dónde? y ¿cuándo?; ordena tus ideas con primero, después y al final; y revisa la mayúscula y el punto.",
+    "visual": {
+      "tipo": "tabla",
+      "columnas": ["¿Quién?", "¿Qué hace?", "¿Dónde?", "¿Cuándo?"],
+      "filas": [["Nayra", "lee un cuento", "en su cama", "en la noche"]]
+    }
+  },
+  "adulto": {
+    "objetivo": "Producir oraciones completas y claras respondiendo ¿quién?, ¿qué hace?, ¿dónde? y ¿cuándo?, y textos breves con orden (primero, después, al final), un solo tema y el formato de un recado o mensaje (saludo, mensaje, despedida y firma).",
+    "sugerencias": [
+      "Dejen recados de verdad en la casa: peguen una nota en la puerta del refrigerador («Hola, Wara: la sopa está en la olla. Un beso, mamá») y pidan que responda con otro recado que tenga saludo, mensaje, despedida y firma.",
+      "Al volver de la feria o de un paseo, pregunten: ¿quién fue?, ¿qué hicieron?, ¿dónde?, ¿cuándo? Con las respuestas, escriban juntos una oración larga y clara.",
+      "Preparen juntos algo sencillo (un api, una ensalada de frutas). Después, que escriba tres oraciones con primero, después y al final, y léanlas en voz alta para revisar el orden."
+    ],
+    "errores": {
+      "donde-cuando": { "descripcion": "Confunde las palabras que dicen dónde (lugar) con las que dicen cuándo (tiempo).", "sugerencia": "Jueguen a responder rápido: «¿dónde está la olla?» (en la cocina), «¿cuándo almorzamos?» (al mediodía). Señalen el lugar o el reloj." },
+      "orden-texto": { "descripcion": "Le cuesta ordenar las oraciones de un texto corto.", "sugerencia": "Escriban tres oraciones en tiras de papel sobre algo que hicieron juntos, mézclenlas y pidan que las ordene. Luego lean el texto en voz alta." },
+      "produce-oracion": { "descripcion": "Le cuesta escribir una oración completa con mayúscula y punto.", "sugerencia": "Pidan que diga la oración en voz alta antes de escribirla. Después revisen juntos la mayúscula del inicio y el punto final." },
+      "preguntas-oracion": { "descripcion": "Le cuesta reconocer qué parte de la oración responde ¿quién?, ¿qué hace?, ¿dónde? o ¿cuándo?", "sugerencia": "Lean oraciones sencillas y hagan las cuatro preguntas. Marquen cada respuesta con un color distinto." },
+      "partes-recado": { "descripcion": "No reconoce las partes de un recado (saludo, mensaje, despedida y firma).", "sugerencia": "Escriban un recado juntos y marquen cada parte con un color. Pregunten: ¿qué pasaría si falta la firma?" },
+      "dictado-oracion": { "descripcion": "Al escribir oraciones dictadas olvida palabras, la mayúscula o el punto.", "sugerencia": "Dicten oraciones cortas, repitiendo cada parte dos veces. Luego pidan que lea lo que escribió y lo compare con lo que escuchó." },
+      "conectores-orden": { "descripcion": "Usa mal las palabras que ordenan un texto (primero, después, al final).", "sugerencia": "Mientras cocinan o se preparan para salir, narren en voz alta: «primero..., después..., al final...»." },
+      "tema-texto": { "descripcion": "No detecta una oración que no va con el tema del texto.", "sugerencia": "Lean un párrafo corto y agreguen a propósito una oración de otro tema. Pidan que la encuentre y explique por qué no va." },
+      "escribe-recado": { "descripcion": "Le cuesta escribir un recado o un mensaje con todas sus partes.", "sugerencia": "Usen una plantilla en un papel: Hola, ___: / mensaje / Un abrazo, / nombre. Practiquen dejando recados de verdad en casa." },
+      "completa-texto": { "descripcion": "Le cuesta completar un texto con las palabras que tienen sentido.", "sugerencia": "Lean el texto en voz alta con cada palabra posible y pregunten: ¿así tiene sentido? ¿Responde la pregunta?" },
+      "une-oraciones": { "descripcion": "Le cuesta unir dos oraciones sin repetir el nombre de quien hace la acción.", "sugerencia": "Digan dos oraciones con la misma persona («Ana corre. Ana salta.») y pidan que las diga en una sola usando «y»." },
+      "produce-texto": { "descripcion": "Le cuesta escribir un texto breve de dos o tres oraciones sobre un mismo tema.", "sugerencia": "Conversen primero sobre el tema y hagan una lista de ideas. Luego escriban una oración por idea, cada una con mayúscula y punto." }
+    }
+  }
+}

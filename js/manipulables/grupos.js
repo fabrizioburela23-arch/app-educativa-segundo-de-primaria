@@ -22,7 +22,7 @@ export function crear(cfg, opts) {
     return { el, zona, menos, mas };
   });
   const lect = lectura('grm-lectura');
-  b.el.append(h('div', { class: 'grm-grupos' }, tarjetas.map((t) => t.el)), lect);
+  b.el.append(h('div', { class: `grm-grupos grm-n-${G}` }, tarjetas.map((t) => t.el)), lect);
 
   function sumar(i, d) {
     if (b.bloqueado) return;

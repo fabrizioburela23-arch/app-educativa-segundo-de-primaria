@@ -47,8 +47,7 @@ export function crear(cfg, opts) {
 
   const cambios = CAMBIOS.map((c) => ({
     ...c,
-    btn: h('button', { type: 'button', class: 'bqm-cambio', onclick: () => canjear(c) },
-      h('span', { class: 'bqm-cambio-ic', 'aria-hidden': 'true' }, c.juntar ? '⇦' : '⇨'), h('span', {}, c.texto)),
+    btn: h('button', { type: 'button', class: 'bqm-cambio', onclick: () => canjear(c) }, c.texto),
   }));
   const posible = (c) => (c.juntar
     ? st[c.de] >= 10 && st[c.a] < MAX

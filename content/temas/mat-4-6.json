@@ -1,0 +1,378 @@
+{
+  "id": "mat-4-6",
+  "titulo": "Dividir es agrupar",
+  "objetivo": "Formo grupos iguales para dividir y uso la multiplicación para encontrar y comprobar divisiones.",
+  "explicacion": [
+    {
+      "texto": "Juan tiene 12 panes y pone **3 en cada plato**. ¿Cuántos platos llena? Forma grupos de 3 y cuéntalos: llena 4 platos. Formar grupos iguales también es **dividir**: 12 ÷ 3 = 4.",
+      "emoji": "🍞",
+      "visual": { "tipo": "grupos", "grupos": 4, "porGrupo": 3, "emoji": "🍞" }
+    },
+    {
+      "texto": "Otra forma: quita grupos de 3 hasta que no quede nada. 12, 9, 6, 3, 0. ¡Quitaste 4 grupos! Por eso 12 ÷ 3 = 4.",
+      "visual": { "tipo": "recta", "min": 0, "max": 12, "paso": 1, "saltos": [[12, 9], [9, 6], [6, 3], [3, 0]] }
+    },
+    {
+      "texto": "Multiplicar y dividir son **operaciones amigas**. En esta caja hay 3 filas de 4 huevos: 3 × 4 = 12. Al revés: 12 huevos puestos en filas de 4 llenan 3 filas, o sea 12 ÷ 4 = 3.",
+      "emoji": "🥚",
+      "visual": { "tipo": "arreglo", "filas": 3, "columnas": 4, "emoji": "🥚" }
+    },
+    {
+      "texto": "Los números 3, 4 y 12 forman una **familia de operaciones**: 3 × 4 = 12, 4 × 3 = 12, 12 ÷ 3 = 4 y 12 ÷ 4 = 3. ¡Si sabes una multiplicación, ya sabes dos divisiones!",
+      "visual": { "tipo": "tabla", "columnas": ["Multiplicaciones", "Divisiones"], "filas": [["3 × 4 = 12", "12 ÷ 3 = 4"], ["4 × 3 = 12", "12 ÷ 4 = 3"]] }
+    }
+  ],
+  "ejemplo": {
+    "instruccion": "Mira cómo Nayra sirve los panes del té. Después, pon la misma cantidad de panes en cada plato y mira cuántos usas.",
+    "pasos": [
+      { "texto": "Nayra tiene 15 panes para el té. Pone 5 panes en cada plato. ¿Cuántos platos necesita?", "visual": { "tipo": "emoji", "valor": "🍞", "cantidad": 15 } },
+      { "texto": "Llena un plato: quedan 10. Llena otro: quedan 5. Llena otro: quedan 0.", "visual": { "tipo": "recta", "min": 0, "max": 15, "paso": 1, "saltos": [[15, 10], [10, 5], [5, 0]] } },
+      { "texto": "Llenó 3 platos. Entonces 15 ÷ 5 = 3.", "visual": { "tipo": "grupos", "grupos": 3, "porGrupo": 5, "emoji": "🍞" } },
+      { "texto": "Para comprobar, multiplicamos: 3 platos de 5 panes son 3 × 5 = 15. ¡Justo los 15 panes!", "visual": { "tipo": "tabla", "columnas": ["División", "Comprobación"], "filas": [["15 ÷ 5 = 3", "3 × 5 = 15"]] } }
+    ],
+    "explorar": { "tipo": "grupos", "grupos": 4, "emoji": "🍞" }
+  },
+  "guiada": {
+    "intro": "Vamos a formar grupos juntos, paso a paso.",
+    "pasos": [
+      {
+        "id": "g1", "tipo": "numero",
+        "enunciado": "Kusi tiene 10 choclos. Pone 2 choclos en cada bolsa. ¿Cuántas bolsas llena?",
+        "apoyo": "Cuenta de 2 en 2 hasta llegar a 10: 2, 4, 6... ¿Cuántos saltos diste?",
+        "visual": { "tipo": "emoji", "valor": "🌽", "cantidad": 10 },
+        "respuesta": 5,
+        "erroresComunes": [
+          { "respuesta": 2, "pista": "2 es lo que va en cada bolsa. ¿Cuántas bolsas se llenan?", "error": "confunde-grupos" },
+          { "respuesta": 8, "pista": "Quitaste un solo grupo de 2. Sigue quitando grupos hasta que no quede nada.", "error": "resta-repetida" },
+          { "respuesta": 12, "pista": "Sumaste 10 + 2. Forma grupos de 2 choclos.", "error": "operacion-equivocada" }
+        ],
+        "pista": "Haz grupos de 2 choclos y cuenta los grupos, no los choclos.",
+        "explicacion": "2, 4, 6, 8, 10: son 5 grupos de 2. Kusi llena 5 bolsas: 10 ÷ 2 = 5.",
+        "error": "division"
+      },
+      {
+        "id": "g2", "tipo": "manipular",
+        "enunciado": "Quita grupos de 4 hasta llegar al 0. Pon los números que siguen.",
+        "apoyo": "Cada vez quitas 4. Resta 4 al último número: 12 − 4 = ...",
+        "manipulable": { "tipo": "patron", "secuencia": ["20", "16", "12"], "opciones": ["10", "8", "6", "4", "0"], "completar": 3, "solucion": ["8", "4", "0"] },
+        "pista": "Del 20 al 16 bajamos 4. Del 16 al 12 también. Sigue bajando de 4 en 4.",
+        "explicacion": "20, 16, 12, 8, 4, 0. Quitamos 5 grupos de 4 del 20: 20 ÷ 4 = 5.",
+        "error": "resta-repetida"
+      },
+      {
+        "id": "g3", "tipo": "completar",
+        "enunciado": "Completa la familia de operaciones de 2, 5 y 10.",
+        "apoyo": "Usa siempre los mismos tres números: 2, 5 y 10.",
+        "texto": "2 × 5 = [10]; 5 × 2 = [10]; 10 ÷ 2 = [5]; 10 ÷ 5 = [2]",
+        "banco": ["7", "3"],
+        "pista": "El número más grande es el resultado de la multiplicación. En la división, se escribe primero.",
+        "explicacion": "2 × 5 = 10, 5 × 2 = 10, 10 ÷ 2 = 5 y 10 ÷ 5 = 2. Las cuatro usan 2, 5 y 10.",
+        "error": "familia-operaciones"
+      }
+    ]
+  },
+  "practica": [
+    {
+      "id": "p1", "tipo": "generador", "nivel": 1, "generador": "division", "params": { "divisores": [2, 5], "maxCociente": 5, "contexto": "agrupar" }
+    },
+    {
+      "id": "p2", "tipo": "manipular", "nivel": 1,
+      "enunciado": "Quita grupos de 2 hasta llegar al 0. Pon los números que siguen.",
+      "manipulable": { "tipo": "patron", "secuencia": ["10", "8", "6"], "opciones": ["5", "4", "3", "2", "0"], "completar": 3, "solucion": ["4", "2", "0"] },
+      "pista": "Cada vez quitas 2. Resta 2 al último número.",
+      "explicacion": "10, 8, 6, 4, 2, 0. Quitamos 5 grupos de 2: 10 ÷ 2 = 5.",
+      "error": "resta-repetida"
+    },
+    {
+      "id": "p3", "tipo": "numero", "nivel": 1,
+      "enunciado": "Cada gallina tiene 2 patas. En el corral cuento 12 patas de gallina. ¿Cuántas gallinas hay?",
+      "respuesta": 6,
+      "erroresComunes": [
+        { "respuesta": 2, "pista": "2 son las patas de una gallina. ¿Cuántas gallinas hay?", "error": "confunde-grupos" },
+        { "respuesta": 10, "pista": "Quitaste un solo grupo de 2 patas. Sigue formando grupos de 2.", "error": "resta-repetida" },
+        { "respuesta": 24, "pista": "Multiplicaste 12 × 2. Forma grupos de 2 patas y cuéntalos.", "error": "operacion-equivocada" }
+      ],
+      "pista": "Forma grupos de 2 patas: cada grupo es una gallina.",
+      "explicacion": "12 ÷ 2 = 6. Hay 6 gallinas, porque 6 × 2 = 12.",
+      "error": "division"
+    },
+    {
+      "id": "p4", "tipo": "memoria", "nivel": 1,
+      "enunciado": "Encuentra las parejas: cada multiplicación con su división amiga.",
+      "pares": [["2 × 3 = 6", "6 ÷ 2 = 3"], ["2 × 4 = 8", "8 ÷ 2 = 4"], ["5 × 2 = 10", "10 ÷ 5 = 2"], ["5 × 3 = 15", "15 ÷ 5 = 3"]],
+      "pista": "La división amiga usa los mismos tres números que la multiplicación.",
+      "explicacion": "2 × 3 = 6 y 6 ÷ 2 = 3; 2 × 4 = 8 y 8 ÷ 2 = 4; 5 × 2 = 10 y 10 ÷ 5 = 2; 5 × 3 = 15 y 15 ÷ 5 = 3.",
+      "error": "familia-operaciones"
+    },
+    {
+      "id": "p5", "tipo": "numero", "nivel": 1,
+      "enunciado": "Escucha el problema y escribe la respuesta.",
+      "escuchar": "Tengo doce mandarinas. Pongo cuatro mandarinas en cada bolsa. ¿Cuántas bolsas lleno?",
+      "respuesta": 3,
+      "erroresComunes": [
+        { "respuesta": 4, "pista": "4 es lo que va en cada bolsa. ¿Cuántas bolsas se llenan?", "error": "confunde-grupos" },
+        { "respuesta": 8, "pista": "Quitaste un solo grupo de 4. Sigue quitando grupos hasta que no quede nada.", "error": "resta-repetida" },
+        { "respuesta": 16, "pista": "Sumaste 12 + 4. Forma grupos de 4 mandarinas.", "error": "operacion-equivocada" }
+      ],
+      "pista": "Cuenta de 4 en 4 hasta llegar a 12. Escucha otra vez si lo necesitas.",
+      "explicacion": "4, 8, 12: son 3 grupos de 4. Lleno 3 bolsas: 12 ÷ 4 = 3.",
+      "error": "division"
+    },
+    {
+      "id": "p6", "tipo": "generador", "nivel": 2, "generador": "division", "params": { "divisores": [3, 4, 5], "maxCociente": 6, "contexto": "agrupar" }
+    },
+    {
+      "id": "p7", "tipo": "generador", "nivel": 2, "generador": "division-relacion", "params": { "tablas": [2, 3, 4, 5] }
+    },
+    {
+      "id": "p8", "tipo": "pasos", "nivel": 2,
+      "enunciado": "Juan sirve huevos duros para el desayuno. En cada plato pone 3 huevos.",
+      "pasos": [
+        {
+          "tipo": "manipular", "enunciado": "Pon 3 huevos en cada uno de los 4 platos.",
+          "manipulable": { "tipo": "grupos", "grupos": 4, "porGrupo": 3, "emoji": "🥚" },
+          "pista": "Cada plato debe tener 3 huevos, ni más ni menos.",
+          "explicacion": "Ahora hay 4 platos con 3 huevos en cada uno.",
+          "error": "arma-grupos"
+        },
+        {
+          "tipo": "numero", "enunciado": "¿Cuántos huevos usaste en total?", "respuesta": 12,
+          "erroresComunes": [ { "respuesta": 7, "pista": "Sumaste 4 + 3. Son 4 platos con 3 huevos cada uno.", "error": "operacion-equivocada" } ],
+          "pista": "Cuenta de 3 en 3, una vez por cada plato.",
+          "explicacion": "4 × 3 = 12 huevos.",
+          "error": "division-multiplicacion"
+        },
+        {
+          "tipo": "completar", "enunciado": "Entonces, 12 huevos puestos de 3 en 3, ¿cuántos platos llenan?",
+          "texto": "12 ÷ 3 = [4]",
+          "banco": ["3", "9"],
+          "pista": "Mira cuántos platos llenaste con los 12 huevos.",
+          "explicacion": "12 ÷ 3 = 4, porque 4 × 3 = 12.",
+          "error": "division-multiplicacion"
+        }
+      ],
+      "pista": "Llena los platos y usa lo que ves para dividir.",
+      "explicacion": "4 platos de 3 huevos son 4 × 3 = 12. Por eso, 12 huevos de 3 en 3 llenan 4 platos: 12 ÷ 3 = 4.",
+      "error": "division-multiplicacion"
+    },
+    {
+      "id": "p9", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "Une cada división con la multiplicación que la comprueba.",
+      "pares": [["18 ÷ 3 = 6", "3 × 6 = 18"], ["20 ÷ 4 = 5", "4 × 5 = 20"], ["14 ÷ 2 = 7", "2 × 7 = 14"], ["24 ÷ 6 = 4", "6 × 4 = 24"]],
+      "pista": "Busca la multiplicación que usa los mismos tres números.",
+      "explicacion": "18 ÷ 3 = 6 porque 3 × 6 = 18; 20 ÷ 4 = 5 porque 4 × 5 = 20; 14 ÷ 2 = 7 porque 2 × 7 = 14; 24 ÷ 6 = 4 porque 6 × 4 = 24.",
+      "error": "familia-operaciones"
+    },
+    {
+      "id": "p10", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa la familia de operaciones de 4, 6 y 24.",
+      "texto": "4 × 6 = [24]; 6 × 4 = [24]; 24 ÷ 4 = [6]; 24 ÷ 6 = [4]",
+      "banco": ["10", "20"],
+      "pista": "Usa solo los números 4, 6 y 24.",
+      "explicacion": "4 × 6 = 24, 6 × 4 = 24, 24 ÷ 4 = 6 y 24 ÷ 6 = 4.",
+      "error": "familia-operaciones"
+    },
+    {
+      "id": "p11", "tipo": "multiple", "nivel": 2,
+      "enunciado": "Elige todas las operaciones de la familia de 3, 5 y 15.",
+      "opciones": [
+        { "texto": "3 × 5 = 15", "correcta": true },
+        { "texto": "5 × 3 = 15", "correcta": true },
+        { "texto": "15 ÷ 3 = 5", "correcta": true },
+        { "texto": "15 ÷ 5 = 3", "correcta": true },
+        { "texto": "3 + 5 = 8", "pista": "Es una suma y usa el 8: no es de esta familia.", "error": "familia-operaciones" },
+        { "texto": "15 − 5 = 10", "pista": "Es una resta y usa el 10: no es de esta familia.", "error": "familia-operaciones" }
+      ],
+      "columnas": 2,
+      "pista": "La familia usa solo los números 3, 5 y 15, con × o con ÷.",
+      "explicacion": "3 × 5 = 15, 5 × 3 = 15, 15 ÷ 3 = 5 y 15 ÷ 5 = 3 forman la familia. La suma y la resta no son de esta familia.",
+      "error": "familia-operaciones"
+    },
+    {
+      "id": "p12", "tipo": "generador", "nivel": 3, "generador": "division-relacion", "params": { "tablas": [6, 7, 8, 9, 10] }
+    },
+    {
+      "id": "p13", "tipo": "clasificar", "nivel": 3,
+      "enunciado": "¿Qué pregunta cada problema: cuántos hay en cada grupo o cuántos grupos hay?",
+      "categorias": [
+        { "id": "cada", "texto": "¿Cuántos en cada grupo?" },
+        { "id": "grupos", "texto": "¿Cuántos grupos?" }
+      ],
+      "elementos": [
+        { "texto": "12 panes en 3 bolsas iguales. ¿Cuántos en cada bolsa?", "categoria": "cada" },
+        { "texto": "12 panes, 3 en cada bolsa. ¿Cuántas bolsas?", "categoria": "grupos" },
+        { "texto": "20 flores en 4 ramos iguales. ¿Cuántas en cada ramo?", "categoria": "cada" },
+        { "texto": "20 flores, 5 en cada ramo. ¿Cuántos ramos?", "categoria": "grupos" },
+        { "texto": "18 niños en 3 equipos iguales. ¿Cuántos en cada equipo?", "categoria": "cada" },
+        { "texto": "18 niños, 6 en cada equipo. ¿Cuántos equipos?", "categoria": "grupos" }
+      ],
+      "pista": "Si el problema ya dice cuántos van en cada grupo, lo que busca es cuántos grupos se forman.",
+      "explicacion": "Cuando sabes entre cuántos grupos repartes, buscas cuántos hay en cada grupo. Cuando sabes cuántos van en cada grupo, buscas cuántos grupos salen.",
+      "error": "repartir-o-agrupar"
+    },
+    {
+      "id": "p14", "tipo": "numero", "nivel": 3,
+      "enunciado": "Usa la tabla del 8. ¿Cuánto es 40 ÷ 8?",
+      "visual": { "tipo": "operacion", "numeros": [40, 8], "op": "÷" },
+      "respuesta": 5,
+      "erroresComunes": [
+        { "respuesta": 32, "pista": "Restaste 40 − 8. Busca cuántos grupos de 8 caben en 40.", "error": "operacion-equivocada" },
+        { "respuesta": 48, "pista": "Sumaste 40 + 8. Busca cuántos grupos de 8 caben en 40.", "error": "operacion-equivocada" }
+      ],
+      "pista": "Cuenta de 8 en 8 hasta llegar a 40. ¿Cuántos saltos das?",
+      "explicacion": "8, 16, 24, 32, 40: son 5 saltos. 40 ÷ 8 = 5, porque 8 × 5 = 40.",
+      "error": "division-multiplicacion"
+    },
+    {
+      "id": "p15", "tipo": "pasos", "nivel": 3,
+      "enunciado": "Para la feria educativa, 24 estudiantes forman grupos de 4. Cada grupo necesita 3 cartulinas.",
+      "pasos": [
+        {
+          "tipo": "numero", "enunciado": "¿Cuántos grupos se forman?", "respuesta": 6,
+          "erroresComunes": [
+            { "respuesta": 4, "pista": "4 es cuántos estudiantes van en cada grupo. ¿Cuántos grupos salen?", "error": "confunde-grupos" },
+            { "respuesta": 20, "pista": "Quitaste un solo grupo de 4. Sigue formando grupos de 4.", "error": "resta-repetida" }
+          ],
+          "pista": "Cuenta de 4 en 4 hasta llegar a 24.",
+          "explicacion": "24 ÷ 4 = 6 grupos, porque 6 × 4 = 24.",
+          "error": "division"
+        },
+        {
+          "tipo": "numero", "enunciado": "¿Cuántas cartulinas necesitan en total?", "respuesta": 18,
+          "erroresComunes": [ { "respuesta": 9, "pista": "Sumaste 6 + 3. Son 6 grupos y cada uno usa 3 cartulinas.", "error": "operacion-equivocada" } ],
+          "pista": "Cada grupo usa 3 cartulinas. Cuenta de 3 en 3, una vez por cada grupo.",
+          "explicacion": "6 × 3 = 18 cartulinas.",
+          "error": "problema-pasos"
+        }
+      ],
+      "pista": "Primero divide para saber cuántos grupos hay. Después multiplica.",
+      "explicacion": "24 ÷ 4 = 6 grupos. 6 × 3 = 18 cartulinas.",
+      "error": "problema-pasos"
+    }
+  ],
+  "comprobacion": [
+    {
+      "id": "c1", "tipo": "numero", "nivel": 1,
+      "enunciado": "Rosa tiene 14 medias sueltas. Cada par tiene 2 medias. ¿Cuántos pares puede formar?",
+      "visual": { "tipo": "emoji", "valor": "🧦", "cantidad": 14 },
+      "respuesta": 7,
+      "erroresComunes": [
+        { "respuesta": 2, "pista": "2 son las medias de un par. ¿Cuántos pares salen?", "error": "confunde-grupos" },
+        { "respuesta": 12, "pista": "Quitaste un solo par. Sigue formando pares hasta que no quede ninguna media.", "error": "resta-repetida" },
+        { "respuesta": 16, "pista": "Sumaste 14 + 2. Junta las medias de 2 en 2.", "error": "operacion-equivocada" }
+      ],
+      "pista": "Junta las medias de 2 en 2 y cuenta los pares.",
+      "explicacion": "14 ÷ 2 = 7. Rosa forma 7 pares, porque 7 × 2 = 14.",
+      "error": "division"
+    },
+    {
+      "id": "c2", "tipo": "manipular", "nivel": 1,
+      "enunciado": "Quita grupos de 5 hasta llegar al 0. Pon los números que siguen.",
+      "manipulable": { "tipo": "patron", "secuencia": ["20", "15"], "opciones": ["12", "10", "5", "3", "0"], "completar": 3, "solucion": ["10", "5", "0"] },
+      "pista": "Cada vez quitas 5. Resta 5 al último número.",
+      "explicacion": "20, 15, 10, 5, 0. Quitamos 4 grupos de 5: 20 ÷ 5 = 4.",
+      "error": "resta-repetida"
+    },
+    {
+      "id": "c3", "tipo": "generador", "nivel": 2, "generador": "division-relacion", "params": { "tablas": [3, 4, 5, 6] }
+    },
+    {
+      "id": "c4", "tipo": "opcion", "nivel": 2,
+      "enunciado": "¿Qué división es de la familia de 4 × 5 = 20?",
+      "opciones": [
+        { "texto": "20 ÷ 4 = 5", "correcta": true },
+        { "texto": "20 ÷ 2 = 10", "pista": "Es verdad, pero usa el 2 y el 10. La familia usa 4, 5 y 20.", "error": "familia-operaciones" },
+        { "texto": "20 − 5 = 15", "pista": "Es una resta. Busca una división con 4, 5 y 20.", "error": "familia-operaciones" }
+      ],
+      "columnas": 1,
+      "pista": "La división de la familia usa los mismos números: 4, 5 y 20.",
+      "explicacion": "20 ÷ 4 = 5 es de la familia, porque 4 × 5 = 20. Usa los mismos tres números.",
+      "error": "familia-operaciones"
+    },
+    {
+      "id": "c5", "tipo": "numero", "nivel": 2,
+      "enunciado": "Escucha el problema y escribe la respuesta.",
+      "escuchar": "Hay veinte naranjas. Pongo cinco naranjas en cada bolsa. ¿Cuántas bolsas lleno?",
+      "respuesta": 4,
+      "erroresComunes": [
+        { "respuesta": 5, "pista": "5 es lo que va en cada bolsa. ¿Cuántas bolsas se llenan?", "error": "confunde-grupos" },
+        { "respuesta": 15, "pista": "Quitaste un solo grupo de 5. Sigue quitando grupos hasta que no quede nada.", "error": "resta-repetida" },
+        { "respuesta": 25, "pista": "Sumaste 20 + 5. Forma grupos de 5 naranjas.", "error": "operacion-equivocada" }
+      ],
+      "pista": "Cuenta de 5 en 5 hasta llegar a 20. Escucha otra vez si lo necesitas.",
+      "explicacion": "5, 10, 15, 20: son 4 grupos de 5. Lleno 4 bolsas: 20 ÷ 5 = 4.",
+      "error": "division"
+    },
+    {
+      "id": "c6", "tipo": "pasos", "nivel": 2,
+      "enunciado": "Luis quiere pagar 30 Bs solo con monedas de 5 Bs.",
+      "pasos": [
+        {
+          "tipo": "manipular", "enunciado": "Pon monedas de 5 Bs hasta tener 30 Bs.",
+          "manipulable": { "tipo": "dinero", "objetivo": 3000, "disponibles": ["m5"], "mostrarTotal": true },
+          "pista": "Cuenta de 5 en 5 cada vez que pones una moneda.",
+          "explicacion": "¡Ya tienes 30 Bs en monedas de 5 Bs!",
+          "error": "arma-dinero"
+        },
+        {
+          "tipo": "numero", "enunciado": "¿Cuántas monedas de 5 Bs usaste?", "respuesta": 6,
+          "erroresComunes": [
+            { "respuesta": 5, "pista": "5 Bs es lo que vale cada moneda. ¿Cuántas monedas hay?", "error": "confunde-grupos" },
+            { "respuesta": 25, "pista": "Restaste 30 − 5. Cuenta cuántas monedas de 5 Bs forman 30 Bs.", "error": "operacion-equivocada" }
+          ],
+          "pista": "Cuenta las monedas que pusiste, o cuenta de 5 en 5 hasta 30.",
+          "explicacion": "30 ÷ 5 = 6. Usaste 6 monedas, porque 6 × 5 = 30.",
+          "error": "division"
+        }
+      ],
+      "pista": "Primero forma los 30 Bs. Después cuenta las monedas.",
+      "explicacion": "Con 6 monedas de 5 Bs se forman 30 Bs: 30 ÷ 5 = 6, porque 6 × 5 = 30.",
+      "error": "division"
+    },
+    {
+      "id": "c7", "tipo": "numero", "nivel": 3,
+      "enunciado": "En la fiesta, 32 invitados se sientan en mesas de 4. ¿Cuántas mesas necesitan?",
+      "respuesta": 8,
+      "erroresComunes": [
+        { "respuesta": 4, "pista": "4 son las personas de cada mesa. ¿Cuántas mesas hacen falta?", "error": "confunde-grupos" },
+        { "respuesta": 28, "pista": "Restaste 32 − 4. Busca cuántos grupos de 4 hay en 32.", "error": "operacion-equivocada" },
+        { "respuesta": 36, "pista": "Sumaste 32 + 4. Busca cuántos grupos de 4 hay en 32.", "error": "operacion-equivocada" }
+      ],
+      "pista": "Piensa en la tabla del 4: ¿4 por cuánto da 32?",
+      "explicacion": "32 ÷ 4 = 8 mesas, porque 8 × 4 = 32.",
+      "error": "division-multiplicacion"
+    },
+    {
+      "id": "c8", "tipo": "completar", "nivel": 3, "modo": "escribir",
+      "enunciado": "Escribe los números que faltan. Piensa en la tabla del 6.",
+      "texto": "6 × [7] = 42; 42 ÷ 6 = [7]; 42 ÷ [7] = 6",
+      "pista": "Busca en la tabla del 6: ¿6 por cuánto da 42?",
+      "explicacion": "6 × 7 = 42. Por eso 42 ÷ 6 = 7 y 42 ÷ 7 = 6.",
+      "error": "division-multiplicacion"
+    }
+  ],
+  "repaso": {
+    "texto": "Agrupar también es dividir: 12 panes, 3 en cada plato, llenan 4 platos. 12 ÷ 3 = 4. Compruébalo con la multiplicación: 4 × 3 = 12.",
+    "visual": { "tipo": "grupos", "grupos": 4, "porGrupo": 3, "emoji": "🍞" }
+  },
+  "adulto": {
+    "objetivo": "Comprender la división como agrupación (cuántos grupos iguales se forman), resolverla contando de tanto en tanto o quitando grupos, y relacionar la multiplicación con la división mediante familias de operaciones (3 × 4 = 12, 4 × 3 = 12, 12 ÷ 3 = 4, 12 ÷ 4 = 3).",
+    "sugerencias": [
+      "Al guardar huevos, papas o panes, pregunten: «Si ponemos 3 en cada bolsa, ¿cuántas bolsas llenamos?». Dejen que forme los grupos y después escriban juntos la división (12 ÷ 3 = 4) y su multiplicación (4 × 3 = 12).",
+      "En la tienda o la feria, pidan que forme una cantidad solo con monedas iguales (por ejemplo, 20 Bs con monedas de 5 Bs) y que cuente cuántas monedas usó: 20 ÷ 5 = 4.",
+      "Escriban en un papel tres números de una familia (por ejemplo, 4, 6 y 24) y jueguen a escribir las cuatro operaciones: dos multiplicaciones y dos divisiones. Después cambien los números."
+    ],
+    "errores": {
+      "division": { "descripcion": "Se equivoca al calcular cuántos grupos iguales se forman.", "sugerencia": "Formen los grupos con objetos reales y cuenten los grupos, no los objetos." },
+      "division-multiplicacion": { "descripcion": "No usa la multiplicación para encontrar o comprobar una división.", "sugerencia": "Ante 20 ÷ 4, pregunten: «¿4 por cuánto da 20?» y busquen juntos la respuesta en la tabla del 4." },
+      "confunde-grupos": { "descripcion": "Responde con cuántos van en cada grupo en lugar de cuántos grupos se forman.", "sugerencia": "Pregunten dos cosas: «¿Cuántos van en cada bolsa?» y «¿Cuántas bolsas llenamos?», señalando primero una bolsa y después todas." },
+      "operacion-equivocada": { "descripcion": "Suma, resta o multiplica los números del problema en lugar de dividir.", "sugerencia": "Actúen el problema con objetos antes de calcular: si hay que formar grupos iguales y contarlos, es dividir." },
+      "resta-repetida": { "descripcion": "Quita un solo grupo o se equivoca al quitar grupos iguales una y otra vez.", "sugerencia": "Con 20 piedritas, quiten 5 cada vez y anoten cuántas quedan: 15, 10, 5, 0. Al final, cuenten cuántas veces quitaron." },
+      "familia-operaciones": { "descripcion": "No ve que una multiplicación y sus divisiones usan los mismos tres números.", "sugerencia": "Armen 3 filas de 4 tapitas y descubran juntos las cuatro operaciones: 3 × 4 = 12, 4 × 3 = 12, 12 ÷ 3 = 4 y 12 ÷ 4 = 3." },
+      "repartir-o-agrupar": { "descripcion": "Confunde si el problema pregunta cuántos hay en cada grupo o cuántos grupos se forman.", "sugerencia": "Actúen los dos problemas con los mismos objetos: repartir 12 panes en 3 bolsas, y poner 3 panes en cada bolsa. Comparen las preguntas." },
+      "problema-pasos": { "descripcion": "Se pierde en los problemas de varios pasos.", "sugerencia": "Resuelvan un paso a la vez y anoten cada resultado antes de seguir." },
+      "arma-grupos": { "descripcion": "Le cuesta poner la misma cantidad en cada grupo.", "sugerencia": "Usen platos o vasos y cuenten en voz alta al llenar cada uno." },
+      "arma-dinero": { "descripcion": "Le cuesta formar una cantidad con monedas iguales.", "sugerencia": "Cuenten juntos de 5 en 5 (o de 2 en 2) mientras ponen cada moneda sobre la mesa." }
+    }
+  }
+}

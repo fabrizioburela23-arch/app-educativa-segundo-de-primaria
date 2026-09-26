@@ -1,0 +1,470 @@
+{
+  "id": "nat-5-3",
+  "titulo": "Materia prima y transformación",
+  "objetivo": "Sé qué es la materia prima, de dónde viene y cómo las personas la transforman en productos.",
+  "explicacion": [
+    {
+      "texto": "La **materia prima** es lo que tomamos de la naturaleza para fabricar otras cosas. La lana de la alpaca, la leche, el trigo, la madera y la arcilla son materias primas.",
+      "emoji": "🧶",
+      "visual": { "tipo": "emojis", "items": ["🦙", "🥛", "🌾", "🌳"], "etiquetas": ["lana de alpaca", "leche", "trigo", "madera"] }
+    },
+    {
+      "texto": "La materia prima puede ser de origen **animal** (lana, leche, cuero), **vegetal** (trigo, algodón, cacao, madera) o **mineral** (arcilla, arena, sal, plata).",
+      "visual": {
+        "tipo": "tabla",
+        "columnas": ["Animal", "Vegetal", "Mineral"],
+        "filas": [["🦙 lana", "🌾 trigo", "arcilla"], ["🥛 leche", "🌳 madera", "arena"], ["cuero", "algodón", "sal"]]
+      }
+    },
+    {
+      "texto": "**Transformar** es cambiar la materia prima para hacer un **producto**. Las personas cortan, muelen, hilan, tejen, amasan u hornean. Así, el trigo se vuelve harina, y con la harina se hace el pan.",
+      "visual": { "tipo": "emojis", "items": ["🌾", "➡️", "🍞"], "etiquetas": ["materia prima: trigo", "se transforma", "producto: pan"] }
+    },
+    {
+      "texto": "La transforman los **artesanos**, que trabajan a mano en su taller, como los tejedores, las alfareras y las carpinteras. También las **industrias**: fábricas con máquinas que hacen muchos productos iguales.",
+      "visual": { "tipo": "emojis", "items": ["🧶", "🏺", "🏭"], "etiquetas": ["tejido a mano", "vasija de barro", "fábrica"] }
+    }
+  ],
+  "ejemplo": {
+    "instruccion": "Mira cómo la lana de la alpaca se transforma en una chompa.",
+    "pasos": [
+      {
+        "texto": "Doña Wara cría alpacas en el altiplano. Cuando la lana ya creció, la corta con cuidado: eso se llama **esquilar**. A la alpaca no le duele: es como cortarse el pelo.",
+        "visual": { "tipo": "emojis", "items": ["🦙", "✂️"], "etiquetas": ["alpaca", "esquilar"] }
+      },
+      {
+        "texto": "Primero se **lava** la lana para quitarle la tierra. Después se **hila**: se estira y se tuerce hasta formar un hilo largo, que se enrolla en ovillos.",
+        "visual": { "tipo": "emojis", "items": ["💧", "🧶"], "etiquetas": ["lavar", "hilar"] }
+      },
+      {
+        "texto": "Don Inti **teje** el hilo con palillos. Punto a punto, el hilo se vuelve una chompa calentita.",
+        "visual": { "tipo": "emojis", "items": ["🧶", "🧥"], "etiquetas": ["hilo", "tejer"] }
+      },
+      {
+        "texto": "¡Lista la **chompa**! La lana es la **materia prima** y la chompa es el **producto**. Para transformarla hubo que esquilar, lavar, hilar y tejer.",
+        "visual": { "tipo": "emojis", "items": ["🦙", "🧶", "🧥"], "etiquetas": ["lana (materia prima)", "hilo", "chompa (producto)"] }
+      }
+    ]
+  },
+  "guiada": {
+    "intro": "Ahora lo hacemos juntos, paso a paso.",
+    "pasos": [
+      {
+        "id": "g1", "tipo": "relacionar",
+        "enunciado": "Une cada materia prima con el producto que se hace con ella.",
+        "apoyo": "Pregúntate: ¿de qué está hecho cada producto?",
+        "pares": [
+          [{ "texto": "trigo", "emoji": "🌾" }, { "texto": "pan", "emoji": "🍞" }],
+          ["cacao", { "texto": "chocolate", "emoji": "🍫" }],
+          ["arcilla", { "texto": "ladrillo", "emoji": "🧱" }],
+          ["algodón", "tela"]
+        ],
+        "pista": "El chocolate se hace con las semillas de un fruto. Los ladrillos se hacen con una tierra fina.",
+        "explicacion": "Con trigo se hace pan; con cacao, chocolate; con arcilla, ladrillos, y con algodón, tela.",
+        "error": "relaciona-producto"
+      },
+      {
+        "id": "g2", "tipo": "ordenar",
+        "enunciado": "Ordena cómo el trigo se transforma en pan.",
+        "apoyo": "Primero se saca la materia prima del campo. Al final, el pan sale del horno.",
+        "elementos": [
+          { "texto": "Se cosecha el trigo en el campo.", "emoji": "🌾" },
+          { "texto": "Se muelen los granos y sale la harina." },
+          { "texto": "Se amasa la harina con agua, sal y levadura." },
+          { "texto": "Se hornea la masa y sale el pan.", "emoji": "🍞" }
+        ],
+        "vertical": true,
+        "pista": "¿Se puede amasar antes de tener harina?",
+        "explicacion": "Primero se cosecha el trigo; después se muele y sale la harina; luego se amasa y, al final, se hornea el pan.",
+        "error": "orden-transformacion"
+      },
+      {
+        "id": "g3", "tipo": "clasificar",
+        "enunciado": "¿De dónde viene cada materia prima?",
+        "apoyo": "Pregúntate: ¿viene de un animal, de una planta o del suelo?",
+        "categorias": [
+          { "id": "animal", "texto": "Animal", "emoji": "🐑" },
+          { "id": "vegetal", "texto": "Vegetal", "emoji": "🌱" },
+          { "id": "mineral", "texto": "Mineral", "emoji": "⛰️" }
+        ],
+        "elementos": [
+          { "texto": "lana", "emoji": "🦙", "categoria": "animal" },
+          { "texto": "cuero", "categoria": "animal" },
+          { "texto": "algodón", "categoria": "vegetal" },
+          { "texto": "madera", "emoji": "🌳", "categoria": "vegetal" },
+          { "texto": "arcilla", "categoria": "mineral" },
+          { "texto": "arena", "categoria": "mineral" }
+        ],
+        "pista": "El cuero es la piel de un animal. ¿Cuáles crecen en una planta? ¿Cuáles están en el suelo y no son seres vivos?",
+        "explicacion": "Animal: lana y cuero. Vegetal: algodón y madera. Mineral: arcilla y arena.",
+        "error": "origen-materia-prima"
+      }
+    ]
+  },
+  "practica": [
+    {
+      "id": "p1", "tipo": "memoria", "nivel": 1,
+      "enunciado": "Encuentra las parejas: la materia prima y su producto.",
+      "pares": [
+        [{ "texto": "lana", "emoji": "🦙" }, { "texto": "chompa", "emoji": "🧥" }],
+        [{ "texto": "cuero" }, { "texto": "zapatos", "emoji": "👞" }],
+        [{ "texto": "madera", "emoji": "🌳" }, { "texto": "mesa" }],
+        [{ "texto": "leche", "emoji": "🥛" }, { "texto": "queso", "emoji": "🧀" }],
+        [{ "texto": "arena" }, { "texto": "vidrio" }]
+      ],
+      "pista": "Piensa de qué está hecho cada producto.",
+      "explicacion": "La chompa se teje con lana; los zapatos se hacen con cuero; la mesa, con madera; el queso, con leche, y el vidrio, con arena derretida en hornos muy calientes.",
+      "error": "relaciona-producto"
+    },
+    {
+      "id": "p2", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Toca las materias primas.",
+      "texto": "Con *leche* se hace queso y con *trigo* se hace pan.",
+      "pista": "Hay dos. Busca lo que viene directo de un animal y de una planta.",
+      "explicacion": "La leche y el trigo son materias primas. El queso y el pan son productos: los hicieron las personas.",
+      "error": "materia-prima-producto"
+    },
+    {
+      "id": "p3", "tipo": "clasificar", "nivel": 1,
+      "enunciado": "¿Es materia prima o producto?",
+      "categorias": [
+        { "id": "mp", "texto": "Materia prima", "emoji": "🌿" },
+        { "id": "prod", "texto": "Producto", "emoji": "📦" }
+      ],
+      "elementos": [
+        { "texto": "lana", "emoji": "🦙", "categoria": "mp" },
+        { "texto": "chompa", "emoji": "🧥", "categoria": "prod" },
+        { "texto": "cacao", "categoria": "mp" },
+        { "texto": "chocolate", "emoji": "🍫", "categoria": "prod" },
+        { "texto": "arcilla", "categoria": "mp" },
+        { "texto": "vasija", "emoji": "🏺", "categoria": "prod" },
+        { "texto": "madera", "emoji": "🌳", "categoria": "mp" },
+        { "texto": "mesa", "categoria": "prod" }
+      ],
+      "pista": "La materia prima viene de la naturaleza. El producto lo hacen las personas al transformarla.",
+      "explicacion": "Materias primas: lana, cacao, arcilla y madera. Productos: chompa, chocolate, vasija y mesa.",
+      "error": "materia-prima-producto"
+    },
+    {
+      "id": "p4", "tipo": "opcion", "nivel": 1,
+      "enunciado": "¿Qué materia prima usa don Inti para tejer una chompa?",
+      "opciones": [
+        { "texto": "lana", "emoji": "🦙", "correcta": true },
+        { "texto": "arcilla", "pista": "Con la arcilla se hacen ladrillos y vasijas, no chompas.", "error": "relaciona-producto" },
+        { "texto": "trigo", "emoji": "🌾", "pista": "Con el trigo se hace harina. El trigo no se teje.", "error": "relaciona-producto" }
+      ],
+      "columnas": 3,
+      "pista": "Recuerda qué nos da la alpaca.",
+      "explicacion": "Don Inti teje la chompa con hilo de **lana** de alpaca.",
+      "error": "relaciona-producto"
+    },
+    {
+      "id": "p5", "tipo": "ordenar", "nivel": 2,
+      "enunciado": "Ordena cómo se hace el queso.",
+      "elementos": [
+        { "texto": "Se ordeña la vaca y se junta la leche.", "emoji": "🐄" },
+        { "texto": "Se le pone cuajo y la leche se pone espesa.", "emoji": "🥛" },
+        { "texto": "Se aprieta en un molde para sacarle el suero." },
+        { "texto": "Se deja reposar y queda el queso.", "emoji": "🧀" }
+      ],
+      "vertical": true,
+      "pista": "Primero hace falta la materia prima: ¿de dónde sale la leche?",
+      "explicacion": "Se ordeña la vaca, la leche se pone espesa con el cuajo, se aprieta en un molde y se deja reposar. ¡Así la leche se transforma en queso!",
+      "error": "orden-transformacion"
+    },
+    {
+      "id": "p6", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa con la materia prima.",
+      "texto": "Con [arcilla] se hacen ladrillos y vasijas. Con [madera] se hacen mesas y puertas.",
+      "banco": ["leche", "sal"],
+      "pista": "Una es una tierra fina que se amasa con agua. La otra sale del tronco de los árboles.",
+      "explicacion": "Los ladrillos y las vasijas se hacen con arcilla. Las mesas y las puertas, con madera.",
+      "error": "relaciona-producto"
+    },
+    {
+      "id": "p7", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha la adivinanza y escribe la respuesta.",
+      "escuchar": "Soy suave y abrigo mucho. Cubro el cuerpo de la alpaca. Me cortan, me lavan, me hilan y me tejen. Así me vuelvo chompa. ¿Qué soy?",
+      "visual": { "tipo": "emoji", "valor": "🦙" },
+      "respuestas": ["lana", "la lana", "es la lana", "es lana", "lana de alpaca", "la lana de alpaca", "es la lana de alpaca"],
+      "pista": "Es la materia prima de la chompa. Empieza con l.",
+      "explicacion": "Es la **lana**: una materia prima de origen animal.",
+      "error": "identifica-materia-prima"
+    },
+    {
+      "id": "p8", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "Une a cada artesano con la materia prima que transforma.",
+      "pares": [
+        ["carpintera", "madera"],
+        ["alfarero", "arcilla"],
+        ["tejedor", "lana"],
+        ["quesera", "leche"]
+      ],
+      "pista": "Piensa qué hace cada persona: muebles, vasijas, chompas o quesos.",
+      "explicacion": "La carpintera trabaja la madera; el alfarero, la arcilla; el tejedor, la lana, y la quesera, la leche.",
+      "error": "quien-transforma"
+    },
+    {
+      "id": "p9", "tipo": "multiple", "nivel": 2,
+      "enunciado": "Elige los productos que se hacen con leche.",
+      "opciones": [
+        { "texto": "queso", "emoji": "🧀", "correcta": true },
+        { "texto": "yogur", "correcta": true },
+        { "texto": "mantequilla", "correcta": true },
+        { "texto": "harina", "pista": "La harina se hace moliendo trigo.", "error": "relaciona-producto" },
+        { "texto": "chuño", "pista": "El chuño se hace con papa.", "error": "relaciona-producto" }
+      ],
+      "pista": "Hay tres. Piensa en lo que se prepara en una lechería.",
+      "explicacion": "Con leche se hacen queso, yogur y mantequilla. La harina viene del trigo y el chuño, de la papa.",
+      "error": "relaciona-producto"
+    },
+    {
+      "id": "p10", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa: ¿cómo se transforma cada materia prima?",
+      "texto": "El trigo se [muele] y se vuelve harina. La lana se [hila] y se vuelve hilo. La papa se [congela] con la helada, se pisa y se seca al sol: así se vuelve [chuño].",
+      "banco": ["ordeña", "queso"],
+      "pista": "¿Qué pasa con el trigo en el molino? ¿Qué le hace la helada de la noche a la papa?",
+      "explicacion": "El trigo se **muele** y da harina. La lana se **hila** y da hilo. La papa se **congela** con la helada, se pisa y se seca al sol: así se hace el **chuño**.",
+      "error": "procesos-transformacion"
+    },
+    {
+      "id": "p11", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "¿Quién lo hace: un artesano o una industria?",
+      "categorias": [
+        { "id": "art", "texto": "Artesano (a mano)", "emoji": "🤲" },
+        { "id": "ind", "texto": "Industria (con máquinas)", "emoji": "🏭" }
+      ],
+      "elementos": [
+        { "texto": "Tejer un aguayo en el telar de la casa", "categoria": "art" },
+        { "texto": "Moldear una vasija de barro con las manos", "categoria": "art" },
+        { "texto": "Tallar una cuchara de madera", "categoria": "art" },
+        { "texto": "Envasar miles de cajas de leche con máquinas", "categoria": "ind" },
+        { "texto": "Hacer azúcar de la caña en un ingenio con máquinas grandes", "categoria": "ind" },
+        { "texto": "Hacer miles de galletas iguales con máquinas", "categoria": "ind" }
+      ],
+      "pista": "Si alguien lo hace a mano, poco a poco, es artesanía. Si hay máquinas grandes y salen muchísimos productos iguales, es una industria.",
+      "explicacion": "A mano (artesanos): el aguayo, la vasija y la cuchara. Con máquinas (industrias): la leche en caja, el azúcar y las galletas.",
+      "error": "quien-transforma"
+    },
+    {
+      "id": "p12", "tipo": "numero", "nivel": 3,
+      "enunciado": "¿De qué origen es la materia prima de cada producto? Cuenta cuántos hay de cada origen.",
+      "visual": {
+        "tipo": "emojis",
+        "items": ["🍞", "🧀", "🍫", "🧥", "🧱", "👕"],
+        "etiquetas": ["pan (trigo)", "queso (leche)", "chocolate (cacao)", "chompa (lana)", "ladrillo (arcilla)", "polera (algodón)"]
+      },
+      "campos": [
+        { "etiqueta": "Animal", "respuesta": 2 },
+        { "etiqueta": "Vegetal", "respuesta": 3 },
+        { "etiqueta": "Mineral", "respuesta": 1 }
+      ],
+      "pista": "Mira la materia prima de cada producto y pregúntate: ¿viene de un animal, de una planta o del suelo?",
+      "explicacion": "Animal: queso (leche) y chompa (lana) = 2. Vegetal: pan (trigo), chocolate (cacao) y polera (algodón) = 3. Mineral: ladrillo (arcilla) = 1.",
+      "error": "origen-materia-prima"
+    },
+    {
+      "id": "p13", "tipo": "ordenar", "nivel": 3,
+      "enunciado": "Ordena cómo se hace un ladrillo.",
+      "elementos": [
+        { "texto": "Se saca arcilla del suelo." },
+        { "texto": "Se mezcla con agua y se amasa.", "emoji": "💧" },
+        { "texto": "Se pone en moldes para darle forma." },
+        { "texto": "Se deja secar al sol.", "emoji": "☀️" },
+        { "texto": "Se cocina en un horno muy caliente.", "emoji": "🧱" }
+      ],
+      "vertical": true,
+      "pista": "Antes de ir al horno, el ladrillo ya tiene que tener forma y estar seco.",
+      "explicacion": "Se saca la arcilla, se amasa con agua, se pone en moldes, se seca al sol y se cocina en el horno. ¡Así queda duro!",
+      "error": "orden-transformacion"
+    },
+    {
+      "id": "p14", "tipo": "pasos", "nivel": 3,
+      "enunciado": "En el Beni, la familia de Arami cosecha cacao. Con las semillas del cacao se hace el chocolate.",
+      "visual": { "tipo": "emojis", "items": ["🌳", "🍫"], "etiquetas": ["árbol de cacao", "chocolate"] },
+      "pasos": [
+        {
+          "tipo": "opcion",
+          "enunciado": "¿De qué origen es el cacao?",
+          "opciones": [
+            { "texto": "vegetal", "correcta": true },
+            { "texto": "animal", "pista": "El cacao no viene de un animal: crece en un árbol.", "error": "origen-materia-prima" },
+            { "texto": "mineral", "pista": "El cacao no sale del suelo como la arcilla: es el fruto de un árbol.", "error": "origen-materia-prima" }
+          ],
+          "columnas": 3,
+          "pista": "¿Dónde crece el cacao?",
+          "explicacion": "El cacao es el fruto de un árbol: es materia prima de origen **vegetal**.",
+          "error": "origen-materia-prima"
+        },
+        {
+          "tipo": "ordenar",
+          "enunciado": "Ordena cómo el cacao se vuelve chocolate.",
+          "elementos": [
+            "Se cortan los frutos del árbol.",
+            "Se sacan las semillas y se secan al sol.",
+            "Se tuestan y se muelen las semillas.",
+            "Se mezcla la pasta con azúcar y se forma el chocolate."
+          ],
+          "vertical": true,
+          "pista": "Primero hay que cosechar. Al final se forma el chocolate.",
+          "explicacion": "Se cortan los frutos, se sacan y se secan las semillas, se tuestan y se muelen, y la pasta se mezcla con azúcar.",
+          "error": "orden-transformacion"
+        },
+        {
+          "tipo": "completar",
+          "enunciado": "Completa.",
+          "texto": "El cacao es la [materia prima] y el chocolate es el [producto].",
+          "banco": ["herramienta"],
+          "pista": "¿Cuál viene de la naturaleza y cuál hicieron las personas?",
+          "explicacion": "El cacao es la **materia prima** y el chocolate es el **producto**.",
+          "error": "materia-prima-producto"
+        }
+      ],
+      "pista": "Resuelve un paso a la vez.",
+      "explicacion": "El cacao es materia prima vegetal. Se cosecha, se seca, se tuesta, se muele y se mezcla: así se transforma en chocolate, que es un producto.",
+      "error": "orden-transformacion"
+    },
+    {
+      "id": "p15", "tipo": "escribir-libre", "nivel": 3,
+      "enunciado": "Escribe una oración sobre algo que usas. ¿De qué materia prima está hecho?",
+      "guia": ["Mi chompa está hecha de...", "La mesa de mi casa está hecha de..."],
+      "requisitos": [
+        { "tipo": "mayuscula-inicial" }, { "tipo": "punto-final" },
+        { "tipo": "min-palabras", "valor": 5 },
+        { "tipo": "incluye", "palabras": ["hecho", "hecha", "hechos", "hechas"] }
+      ],
+      "modelo": "Mi chompa está hecha de lana de alpaca.",
+      "pista": "Piensa en tu ropa, tus zapatos o los muebles de tu casa. Usa la palabra «hecho» o «hecha».",
+      "explicacion": "Por ejemplo: «Mi chompa está hecha de lana de alpaca». Empieza con mayúscula y termina con punto.",
+      "error": "produce-oracion"
+    }
+  ],
+  "comprobacion": [
+    {
+      "id": "c1", "tipo": "multiple", "nivel": 1,
+      "enunciado": "Elige las cosas que se pueden hacer con madera.",
+      "opciones": [
+        { "texto": "una mesa", "correcta": true },
+        { "texto": "una puerta", "emoji": "🚪", "correcta": true },
+        { "texto": "una cuchara de palo", "emoji": "🥄", "correcta": true },
+        { "texto": "un queso", "emoji": "🧀", "pista": "El queso se hace con leche.", "error": "relaciona-producto" },
+        { "texto": "una botella de vidrio", "pista": "El vidrio se hace con arena.", "error": "relaciona-producto" }
+      ],
+      "pista": "Hay tres. Piensa en lo que hace una carpintera.",
+      "explicacion": "Con madera se hacen mesas, puertas y cucharas de palo. El queso se hace con leche y el vidrio, con arena.",
+      "error": "relaciona-producto"
+    },
+    {
+      "id": "c2", "tipo": "clasificar", "nivel": 1,
+      "enunciado": "¿De qué origen es esta materia prima?",
+      "categorias": [
+        { "id": "animal", "texto": "Animal", "emoji": "🐄" },
+        { "id": "vegetal", "texto": "Vegetal", "emoji": "🌱" },
+        { "id": "mineral", "texto": "Mineral", "emoji": "⛰️" }
+      ],
+      "elementos": [
+        { "texto": "leche", "emoji": "🥛", "categoria": "animal" },
+        { "texto": "lana de oveja", "emoji": "🐑", "categoria": "animal" },
+        { "texto": "cacao", "categoria": "vegetal" },
+        { "texto": "caña de azúcar", "categoria": "vegetal" },
+        { "texto": "sal", "emoji": "🧂", "categoria": "mineral" },
+        { "texto": "plata", "categoria": "mineral" }
+      ],
+      "pista": "¿Viene de un animal, crece en una planta o sale del suelo?",
+      "explicacion": "Animal: leche y lana de oveja. Vegetal: cacao y caña de azúcar. Mineral: sal y plata.",
+      "error": "origen-materia-prima"
+    },
+    {
+      "id": "c3", "tipo": "ordenar", "nivel": 2,
+      "enunciado": "Ordena cómo se hace una mesa de madera.",
+      "elementos": [
+        { "texto": "Se corta un árbol y se siembra otro.", "emoji": "🌳" },
+        { "texto": "En el aserradero, el tronco se corta en tablas." },
+        { "texto": "La carpintera mide, corta y une las tablas." },
+        { "texto": "Se lija y se barniza la mesa." }
+      ],
+      "vertical": true,
+      "pista": "Primero hay que conseguir la madera. Al final, la mesa se deja lisa y brillante.",
+      "explicacion": "Se corta el árbol (¡y se siembra otro!), en el aserradero se hacen tablas, la carpintera arma la mesa y, al final, la lija y la barniza.",
+      "error": "orden-transformacion"
+    },
+    {
+      "id": "c4", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha la adivinanza y escribe la respuesta.",
+      "escuchar": "Soy una tierra fina y pegajosa. Me mezclan con agua, me dan forma y me cocinan en un horno. Así me vuelvo ladrillo o vasija. ¿Qué soy?",
+      "respuestas": ["arcilla", "la arcilla", "es la arcilla", "es arcilla", "barro", "el barro", "es el barro", "es barro"],
+      "pista": "Es una materia prima de origen mineral. Empieza con a.",
+      "explicacion": "Es la **arcilla**: una materia prima de origen mineral. Con ella se hacen ladrillos y vasijas.",
+      "error": "identifica-materia-prima"
+    },
+    {
+      "id": "c5", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "Une cada materia prima con su producto.",
+      "pares": [
+        [{ "texto": "papa", "emoji": "🥔" }, "chuño"],
+        ["caña de azúcar", "azúcar"],
+        ["arena", "vidrio"],
+        ["plata", "aretes"]
+      ],
+      "pista": "Piensa qué se hace con la helada en el altiplano y qué metal brilla en las joyas.",
+      "explicacion": "La papa se vuelve chuño; la caña de azúcar da azúcar; la arena se vuelve vidrio, y con la plata se hacen aretes.",
+      "error": "relaciona-producto"
+    },
+    {
+      "id": "c6", "tipo": "opcion", "nivel": 2,
+      "enunciado": "Doña Rosa hace vasijas de barro con sus manos, en el patio de su casa. ¿Qué es doña Rosa?",
+      "opciones": [
+        { "texto": "una artesana", "correcta": true },
+        { "texto": "una industria", "pista": "Una industria es una fábrica con máquinas que hace muchísimos productos iguales.", "error": "quien-transforma" },
+        { "texto": "una materia prima", "pista": "La materia prima es lo que ella transforma: la arcilla.", "error": "materia-prima-producto" }
+      ],
+      "columnas": 1,
+      "pista": "Fíjate: trabaja a mano, en su casa.",
+      "explicacion": "Doña Rosa es una **artesana**: transforma la arcilla con sus manos, en su propio taller.",
+      "error": "quien-transforma"
+    },
+    {
+      "id": "c7", "tipo": "opcion", "nivel": 3,
+      "enunciado": "¿Por qué los ladrillos se cocinan en un horno muy caliente?",
+      "opciones": [
+        { "texto": "Para que queden duros y no se deshagan con la lluvia.", "correcta": true },
+        { "texto": "Para que se derritan.", "pista": "Si se derritieran, perderían su forma de ladrillo.", "error": "procesos-transformacion" },
+        { "texto": "Para que se pongan blandos.", "pista": "Un ladrillo blando no serviría para construir una pared.", "error": "procesos-transformacion" }
+      ],
+      "columnas": 1,
+      "pista": "Piensa cómo tiene que ser un ladrillo para construir una casa.",
+      "explicacion": "El calor del horno transforma la arcilla: el ladrillo queda duro y resistente, y la lluvia ya no lo deshace.",
+      "error": "procesos-transformacion"
+    },
+    {
+      "id": "c8", "tipo": "tocar", "nivel": 3,
+      "enunciado": "Toca las palabras que dicen cómo se transforma la lana.",
+      "texto": "Nayra *lava* la lana, la *hila* con paciencia y después la *teje* en el telar.",
+      "pista": "Hay tres. Busca las acciones que cambian la lana.",
+      "explicacion": "Lava, hila y teje: son los pasos que transforman la lana en una prenda.",
+      "error": "procesos-transformacion"
+    }
+  ],
+  "repaso": {
+    "texto": "La **materia prima** viene de la naturaleza: de animales, de plantas o del suelo. Las personas la **transforman** en **productos**: la lana se vuelve hilo y el hilo, chompa.",
+    "visual": { "tipo": "emojis", "items": ["🦙", "🧶", "🧥"], "etiquetas": ["lana", "hilo", "chompa"] }
+  },
+  "adulto": {
+    "objetivo": "Comprender que la materia prima es lo que se toma de la naturaleza (de origen animal, vegetal o mineral) y que las personas la transforman en productos siguiendo pasos ordenados (esquilar, lavar, hilar y tejer; moler, amasar y hornear; moldear, secar y cocer). Reconocer que la transforman artesanos, a mano, e industrias, con máquinas.",
+    "sugerencias": [
+      "Preparen juntos una masa de pan o de sopaipillas: miren la harina y conversen que viene del trigo molido; amasen, cocinen y, al final, pidan que cuente los pasos en orden con «primero, después, al final».",
+      "En la feria o el mercado, busquen productos y su materia prima: queso (leche), chompa (lana), vasija (arcilla), pan (trigo), chuño (papa). Si se puede, pregunten a una casera o a un artesano cómo lo hace.",
+      "Hagan una vasija pequeña o unos ladrillos de juguete con barro o con masa de sal (harina, sal y agua). Déjenlos secar al sol unos días y comparen cómo estaban al principio y cómo quedaron. Conversen por qué los ladrillos de verdad se cocinan en un horno."
+    ],
+    "errores": {
+      "materia-prima-producto": { "descripcion": "Confunde la materia prima (lo que viene de la naturaleza) con el producto que hacen las personas.", "sugerencia": "Pongan juntos un producto y su materia prima (un queso y un vaso de leche, una chompa y un poco de lana) y pregunten: «¿cuál estaba primero? ¿Cuál hicieron las personas?»." },
+      "origen-materia-prima": { "descripcion": "Duda si una materia prima es de origen animal, vegetal o mineral.", "sugerencia": "Hagan tres cajas: animal, planta y suelo. Pongan dentro muestras o dibujos: lana, un trozo de madera, algodón, sal, arena, un cinturón de cuero." },
+      "relaciona-producto": { "descripcion": "No relaciona un producto con la materia prima de la que está hecho.", "sugerencia": "Jueguen a «¿de qué está hecho?» con objetos de la casa: la mesa, la chompa, los zapatos, el vaso, el pan." },
+      "orden-transformacion": { "descripcion": "Ordena mal los pasos de una transformación.", "sugerencia": "Dibujen cada paso en una tarjeta (trigo, harina, masa, pan) y pidan que las ordene contando la historia con «primero, después, al final»." },
+      "procesos-transformacion": { "descripcion": "No reconoce las acciones que transforman la materia prima (moler, hilar, tejer, hornear) o para qué sirven.", "sugerencia": "Actúen con mímica: moler, amasar, hilar, tejer. Que adivine la acción y diga qué producto sale." },
+      "quien-transforma": { "descripcion": "Confunde el trabajo de los artesanos (a mano) con el de las industrias (con máquinas), o no sabe qué materia prima trabaja cada artesano.", "sugerencia": "Si pueden, visiten un taller del barrio (carpintería, panadería, tejido) y conversen cómo sería en una fábrica: muchas máquinas y muchos productos iguales." },
+      "identifica-materia-prima": { "descripcion": "Le cuesta reconocer una materia prima por su descripción.", "sugerencia": "Jueguen a las adivinanzas: describan una materia prima (de dónde viene y qué se hace con ella) para que la adivine, y luego cambien de turno." },
+      "produce-oracion": { "descripcion": "Le cuesta escribir una oración completa con mayúscula y punto.", "sugerencia": "Díganle la idea en voz alta primero, escriban juntos el comienzo («Mi chompa está hecha de...») y revisen la mayúscula inicial y el punto final." }
+    }
+  }
+}

@@ -1,0 +1,357 @@
+{
+  "id": "mat-2-1",
+  "titulo": "Suma sin llevar",
+  "objetivo": "Sumo números de hasta tres cifras cuando no necesito llevar.",
+  "explicacion": [
+    {
+      "texto": "**Sumar** es juntar cantidades. Rosa tiene 3 choclos y su tío le da 4 más. Ahora tiene 7 choclos: 3 + 4 = 7.",
+      "emoji": "🌽",
+      "visual": { "tipo": "emoji", "valor": "🌽", "cantidad": 7, "etiqueta": "3 + 4 = 7" }
+    },
+    {
+      "texto": "Los números que juntamos se llaman **sumandos**. El resultado se llama **suma** o **total**. En 3 + 4 = 7, los sumandos son 3 y 4, y el total es 7.",
+      "visual": { "tipo": "tabla", "columnas": ["sumando", "", "sumando", "", "total"], "filas": [["3", "+", "4", "=", "7"]] }
+    },
+    {
+      "texto": "Para sumar 23 + 14, pon unidades debajo de unidades y decenas debajo de decenas. Primero suma las unidades: 3 + 4 = 7. Después, las decenas: 2 + 1 = 3. Total: 37.",
+      "visual": { "tipo": "tabla", "columnas": ["", "D", "U"], "filas": [["", "2", "3"], ["+", "1", "4"], ["Total", "3", "7"]] }
+    },
+    {
+      "texto": "Con centenas se hace igual: 124 + 352. Unidades: 4 + 2 = 6. Decenas: 2 + 5 = 7. Centenas: 1 + 3 = 4. Total: 476. Si cada columna da 9 o menos, no hay que llevar.",
+      "visual": { "tipo": "tabla", "columnas": ["", "C", "D", "U"], "filas": [["", "1", "2", "4"], ["+", "3", "5", "2"], ["Total", "4", "7", "6"]] }
+    }
+  ],
+  "ejemplo": {
+    "instruccion": "Mira cómo sumamos 32 + 25 con bloques. Después, arma tú una suma con los bloques.",
+    "pasos": [
+      { "texto": "Ponemos el 32: 3 barras y 2 cubitos.", "visual": { "tipo": "bloques", "decenas": 3, "unidades": 2 } },
+      { "texto": "Agregamos los 5 cubitos del 25. Unidades: 2 + 5 = 7.", "visual": { "tipo": "bloques", "decenas": 3, "unidades": 7 } },
+      { "texto": "Agregamos las 2 barras del 25. Decenas: 3 + 2 = 5.", "visual": { "tipo": "bloques", "decenas": 5, "unidades": 7 } },
+      { "texto": "Hay 5 barras y 7 cubitos. Entonces 32 + 25 = 57.", "visual": { "tipo": "tabla", "columnas": ["", "D", "U"], "filas": [["", "3", "2"], ["+", "2", "5"], ["Total", "5", "7"]] } }
+    ],
+    "explorar": { "tipo": "bloques" }
+  },
+  "guiada": {
+    "intro": "Vamos a sumar juntos, paso a paso.",
+    "pasos": [
+      {
+        "id": "g1", "tipo": "manipular",
+        "enunciado": "Suma 21 + 13 con bloques. Ya está el 21: agrega los bloques del 13.",
+        "apoyo": "El 13 tiene 1 barra y 3 cubitos. Agrégalos a los bloques que ya están.",
+        "manipulable": { "tipo": "bloques", "objetivo": 34, "canonico": true, "inicial": { "centenas": 0, "decenas": 2, "unidades": 1 } },
+        "pista": "Agrega las barras y los cubitos del 13. Luego cuenta las barras de 10 en 10 y los cubitos de 1 en 1.",
+        "explicacion": "2 barras y 1 barra son 3 barras (30). 1 cubito y 3 cubitos son 4 cubitos. 21 + 13 = 34.",
+        "error": "suma-material"
+      },
+      {
+        "id": "g2", "tipo": "numero",
+        "enunciado": "Suma 45 + 31 por columnas.",
+        "apoyo": "Primero suma las unidades (las cifras de la derecha). Después, las decenas.",
+        "visual": { "tipo": "operacion", "numeros": [45, 31], "op": "+", "vertical": true },
+        "campos": [
+          { "etiqueta": "Unidades: 5 + 1", "respuesta": 6 },
+          { "etiqueta": "Decenas: 4 + 3", "respuesta": 7 },
+          { "etiqueta": "Total", "respuesta": 76 }
+        ],
+        "pista": "Suma cada columna por separado. En el total, las decenas van adelante y las unidades al final.",
+        "explicacion": "Unidades: 5 + 1 = 6. Decenas: 4 + 3 = 7. Entonces 45 + 31 = 76.",
+        "error": "suma-calculo"
+      },
+      {
+        "id": "g3", "tipo": "completar",
+        "enunciado": "Lee el problema y completa.",
+        "apoyo": "El 130 tiene 3 decenas y el 50 tiene 5 decenas. Suma decenas con decenas.",
+        "texto": "Sofía vende 130 panes en la mañana y 50 en la tarde. En total vende [180] panes.",
+        "banco": ["630", "80"],
+        "pista": "Pon el 50 debajo del 130 con el 0 debajo del 0. El 5 va en la columna de las decenas.",
+        "explicacion": "Unidades: 0 + 0 = 0. Decenas: 3 + 5 = 8. Centenas: solo el 1, porque el 50 no tiene centenas. Sofía vende 180 panes.",
+        "error": "alinea-columnas"
+      }
+    ]
+  },
+  "practica": [
+    {
+      "id": "p1", "tipo": "generador", "nivel": 1, "generador": "suma",
+      "params": { "digitos": 1, "llevar": false }
+    },
+    {
+      "id": "p2", "tipo": "numero", "nivel": 1,
+      "enunciado": "En la mañana, Kusi junta 5 huevos en el gallinero. En la tarde junta 4 más. ¿Cuántos huevos junta en total?",
+      "visual": { "tipo": "tabla", "columnas": ["Mañana", "Tarde"], "filas": [["🥚🥚🥚🥚🥚", "🥚🥚🥚🥚"]] },
+      "respuesta": 9,
+      "erroresComunes": [ { "respuesta": 1, "pista": "Los huevos no se quitan: se juntan. Cuando juntamos, sumamos.", "error": "problema-suma" } ],
+      "pista": "Empieza en 5 y cuenta 4 más con los dedos.",
+      "explicacion": "5 + 4 = 9. Kusi junta 9 huevos en total.",
+      "error": "suma-calculo"
+    },
+    {
+      "id": "p3", "tipo": "memoria", "nivel": 1,
+      "enunciado": "Encuentra las parejas: cada suma con su total.",
+      "pares": [ ["3 + 4", "7"], ["5 + 4", "9"], ["20 + 30", "50"], ["40 + 40", "80"] ],
+      "pista": "Para 20 + 30, piensa en decenas: 2 decenas y 3 decenas.",
+      "explicacion": "3 + 4 = 7, 5 + 4 = 9, 20 + 30 = 50 y 40 + 40 = 80.",
+      "error": "suma-calculo"
+    },
+    {
+      "id": "p4", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Toca los sumandos.",
+      "texto": "*12* + *5* = 17",
+      "pista": "Los sumandos son los números que se juntan. El total es lo que resulta al juntarlos.",
+      "explicacion": "Los sumandos son 12 y 5. El 17 es la suma o total.",
+      "error": "partes-suma"
+    },
+    {
+      "id": "p5", "tipo": "manipular", "nivel": 1,
+      "enunciado": "Empieza en el 42 y avanza 5 saltos. Marca dónde llegas: 42 + 5.",
+      "manipulable": { "tipo": "recta", "min": 40, "max": 50, "paso": 1, "objetivo": 47 },
+      "pista": "El 42 no se cuenta: el primer salto te lleva al 43. Sigue hasta dar 5 saltos.",
+      "explicacion": "Desde el 42, cinco saltos: 43, 44, 45, 46, 47. Entonces 42 + 5 = 47.",
+      "error": "cuenta-adelante"
+    },
+    {
+      "id": "p6", "tipo": "generador", "nivel": 2, "generador": "suma",
+      "params": { "digitos": 2, "llevar": false }
+    },
+    {
+      "id": "p7", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa la suma por columnas.",
+      "visual": { "tipo": "operacion", "numeros": [34, 52], "op": "+", "vertical": true },
+      "texto": "34 + 52. Unidades: 4 + 2 = [6]. Decenas: 3 + 5 = [8]. Total: [86].",
+      "banco": ["68", "7"],
+      "pista": "Suma cada columna. En el total, las decenas van adelante y las unidades al final.",
+      "explicacion": "Unidades: 4 + 2 = 6. Decenas: 3 + 5 = 8. Son 8 decenas y 6 unidades: 86.",
+      "error": "alinea-columnas"
+    },
+    {
+      "id": "p8", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "Calcula cada suma y llévala a su total.",
+      "categorias": [
+        { "id": "t48", "texto": "Da 48" },
+        { "id": "t57", "texto": "Da 57" },
+        { "id": "t69", "texto": "Da 69" }
+      ],
+      "elementos": [
+        { "texto": "40 + 8", "categoria": "t48" },
+        { "texto": "24 + 24", "categoria": "t48" },
+        { "texto": "31 + 17", "categoria": "t48" },
+        { "texto": "50 + 7", "categoria": "t57" },
+        { "texto": "33 + 24", "categoria": "t57" },
+        { "texto": "60 + 9", "categoria": "t69" },
+        { "texto": "45 + 24", "categoria": "t69" }
+      ],
+      "pista": "En cada tarjeta, suma primero las unidades y después las decenas.",
+      "explicacion": "Dan 48: 40 + 8, 24 + 24 y 31 + 17. Dan 57: 50 + 7 y 33 + 24. Dan 69: 60 + 9 y 45 + 24.",
+      "error": "suma-calculo"
+    },
+    {
+      "id": "p9", "tipo": "manipular", "nivel": 2,
+      "enunciado": "Luis compra un maple de huevos a 30 Bs y un queso a 18 Bs. Pon el dinero justo para pagar las dos cosas.",
+      "visual": { "tipo": "emojis", "items": ["🥚", "🧀"], "etiquetas": ["30 Bs", "18 Bs"] },
+      "manipulable": { "tipo": "dinero", "objetivo": 4800, "disponibles": ["b20", "b10", "m5", "m2", "m1"], "mostrarTotal": true },
+      "pista": "Primero suma los dos precios. Después arma esa cantidad con billetes y monedas.",
+      "explicacion": "30 + 18 = 48. Puedes pagar con 4 billetes de 10 Bs, una moneda de 5 Bs, una de 2 Bs y una de 1 Bs: 48 Bs.",
+      "error": "suma-material"
+    },
+    {
+      "id": "p10", "tipo": "tocar", "nivel": 2,
+      "enunciado": "Escucha la suma y toca el resultado.",
+      "escuchar": "cuarenta y dos más veintiséis",
+      "texto": "58 *68* 86 64",
+      "pista": "Suma las unidades con las unidades y las decenas con las decenas. Puedes escuchar otra vez.",
+      "explicacion": "42 + 26 = 68: 2 + 6 = 8 unidades y 4 + 2 = 6 decenas.",
+      "error": "suma-calculo"
+    },
+    {
+      "id": "p11", "tipo": "multiple", "nivel": 2,
+      "enunciado": "Elige todas las sumas que dan 59.",
+      "opciones": [
+        { "texto": "35 + 24", "correcta": true },
+        { "texto": "50 + 9", "correcta": true },
+        { "texto": "27 + 32", "correcta": true },
+        { "texto": "33 + 25", "pista": "Revisa las unidades: 3 + 5 no da 9.", "error": "suma-calculo" },
+        { "texto": "50 + 90", "pista": "El 9 del 90 está en las decenas: vale 90, no 9.", "error": "alinea-columnas" }
+      ],
+      "columnas": 2,
+      "pista": "Para dar 59, las unidades deben sumar 9 y las decenas, 5.",
+      "explicacion": "35 + 24, 50 + 9 y 27 + 32 dan 59. En cambio, 33 + 25 da 58 y 50 + 90 da 140.",
+      "error": "suma-calculo"
+    },
+    {
+      "id": "p12", "tipo": "generador", "nivel": 3, "generador": "suma",
+      "params": { "digitos": 3, "llevar": false }
+    },
+    {
+      "id": "p13", "tipo": "numero", "nivel": 3,
+      "enunciado": "¿Qué número falta? 23 + ☐ = 58",
+      "respuesta": 35,
+      "erroresComunes": [ { "respuesta": 81, "pista": "Sumaste 23 + 58, y eso da más que 58. Busca cuánto le falta al 23 para llegar a 58.", "error": "sumando-faltante" } ],
+      "pista": "Piensa por columnas: 3 más ¿cuánto? da 8, y 2 más ¿cuánto? da 5.",
+      "explicacion": "Falta el 35, porque 23 + 35 = 58: en las unidades, 3 + 5 = 8, y en las decenas, 2 + 3 = 5.",
+      "error": "sumando-faltante"
+    },
+    {
+      "id": "p14", "tipo": "ordenar", "nivel": 3,
+      "enunciado": "Calcula cada suma y ordénalas de menor a mayor resultado.",
+      "elementos": ["103 + 4", "130 + 40", "401 + 300", "740 + 50"],
+      "pista": "Pon unidades con unidades, decenas con decenas y centenas con centenas. Luego compara los resultados.",
+      "explicacion": "103 + 4 = 107; 130 + 40 = 170; 401 + 300 = 701; 740 + 50 = 790. De menor a mayor: 107, 170, 701 y 790.",
+      "error": "alinea-columnas"
+    },
+    {
+      "id": "p15", "tipo": "pasos", "nivel": 3,
+      "enunciado": "En la cosecha, la familia de Inti llena 214 bolsas de papa el lunes y 163 bolsas el martes.",
+      "visual": { "tipo": "tabla", "columnas": ["Día", "Bolsas de papa"], "filas": [["lunes", "214"], ["martes", "163"]] },
+      "pasos": [
+        {
+          "tipo": "opcion", "enunciado": "¿Qué operación resuelve el problema?",
+          "opciones": [
+            { "texto": "214 + 163", "correcta": true },
+            { "texto": "214 − 163", "pista": "Las bolsas de los dos días se juntan, no se quitan.", "error": "problema-suma" }
+          ],
+          "pista": "¿Las bolsas de los dos días se juntan o se quitan?",
+          "explicacion": "Juntamos las bolsas de los dos días, así que sumamos: 214 + 163.",
+          "error": "problema-suma"
+        },
+        {
+          "tipo": "numero", "enunciado": "¿Cuántas bolsas de papa llenan en los dos días?",
+          "respuesta": 377,
+          "erroresComunes": [ { "respuesta": 51, "pista": "Eso es lo que da al restar. Aquí se juntan las bolsas: suma.", "error": "problema-suma" } ],
+          "pista": "Suma las unidades, después las decenas y al final las centenas.",
+          "explicacion": "4 + 3 = 7 unidades, 1 + 6 = 7 decenas y 2 + 1 = 3 centenas: 377 bolsas.",
+          "error": "suma-calculo"
+        }
+      ],
+      "pista": "Primero decide la operación y después calcula.",
+      "explicacion": "Las bolsas se juntan: 214 + 163 = 377 bolsas de papa.",
+      "error": "problema-suma"
+    },
+    {
+      "id": "p16", "tipo": "escribir-libre", "nivel": 3,
+      "enunciado": "Inventa un problema de suma sobre la feria. Termina con una pregunta.",
+      "guia": ["Mi tía vende ... y ...", "¿Cuántos ... vende en total?"],
+      "requisitos": [
+        { "tipo": "mayuscula-inicial" },
+        { "tipo": "signos-pregunta" },
+        { "tipo": "min-palabras", "valor": 10 },
+        { "tipo": "incluye", "palabras": ["cuántos", "cuántas", "cuánto", "cuánta"] }
+      ],
+      "modelo": "Ana compra 12 panes y 6 choclos. ¿Cuántas cosas compra en total?",
+      "pista": "Piensa en dos cantidades que se juntan. Después pregunta cuántas hay en total, con ¿ al inicio y ? al final.",
+      "explicacion": "Por ejemplo: «Ana compra 12 panes y 6 choclos. ¿Cuántas cosas compra en total?». Se resuelve con 12 + 6 = 18.",
+      "error": "inventa-problema"
+    }
+  ],
+  "comprobacion": [
+    {
+      "id": "c1", "tipo": "numero", "nivel": 1,
+      "enunciado": "¿Cuánto es 40 + 30?",
+      "visual": { "tipo": "operacion", "numeros": [40, 30], "op": "+" },
+      "respuesta": 70,
+      "erroresComunes": [ { "respuesta": 7, "pista": "4 decenas y 3 decenas son 7 decenas. ¿Cuánto valen 7 decenas?", "error": "suma-decenas" } ],
+      "pista": "Piensa en decenas: 4 decenas más 3 decenas.",
+      "explicacion": "4 decenas + 3 decenas = 7 decenas, y 7 decenas son 70. Entonces 40 + 30 = 70.",
+      "error": "suma-decenas"
+    },
+    {
+      "id": "c2", "tipo": "escribir", "nivel": 1,
+      "enunciado": "En 20 + 7 = 27, ¿cómo se llaman el 20 y el 7? Escribe la palabra.",
+      "respuestas": ["sumandos", "los sumandos", "son sumandos", "sumando"],
+      "pista": "Son los números que juntamos. La palabra se parece a «sumar».",
+      "explicacion": "El 20 y el 7 son los **sumandos**. El 27 es la suma o total.",
+      "error": "partes-suma"
+    },
+    {
+      "id": "c3", "tipo": "generador", "nivel": 2, "generador": "suma",
+      "params": { "digitos": 2, "llevar": false }
+    },
+    {
+      "id": "c4", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa la suma por columnas.",
+      "visual": { "tipo": "operacion", "numeros": [251, 436], "op": "+", "vertical": true },
+      "texto": "251 + 436. Unidades: 1 + 6 = [7]. Decenas: 5 + 3 = [8]. Centenas: 2 + 4 = [6]. Total: [687].",
+      "banco": ["786", "9"],
+      "pista": "Suma cada columna por separado. En el total van primero las centenas, luego las decenas y al final las unidades.",
+      "explicacion": "1 + 6 = 7 unidades, 5 + 3 = 8 decenas y 2 + 4 = 6 centenas: 251 + 436 = 687.",
+      "error": "alinea-columnas"
+    },
+    {
+      "id": "c5", "tipo": "manipular", "nivel": 2,
+      "enunciado": "Ana compra un kilo de manzanas a 12 Bs y una bolsa de pan a 5 Bs. Pon el dinero justo para pagar todo.",
+      "visual": { "tipo": "emojis", "items": ["🍎", "🍞"], "etiquetas": ["12 Bs", "5 Bs"] },
+      "manipulable": { "tipo": "dinero", "objetivo": 1700, "disponibles": ["b10", "m5", "m2", "m1"], "mostrarTotal": true },
+      "pista": "Primero suma los dos precios. Después arma esa cantidad con billetes y monedas.",
+      "explicacion": "12 + 5 = 17. Puedes pagar con un billete de 10 Bs, una moneda de 5 Bs y una de 2 Bs: 17 Bs.",
+      "error": "suma-material"
+    },
+    {
+      "id": "c6", "tipo": "numero", "nivel": 2,
+      "enunciado": "Escucha el problema y escribe la respuesta.",
+      "escuchar": "En el micro van veintitrés personas. En la parada suben catorce personas más. ¿Cuántas personas van ahora en el micro?",
+      "visual": { "tipo": "emoji", "valor": "🚌" },
+      "respuesta": 37,
+      "erroresComunes": [ { "respuesta": 9, "pista": "Cuando suben personas, en el micro hay más, no menos. Junta las dos cantidades.", "error": "problema-suma" } ],
+      "pista": "Junta las personas que ya estaban con las que suben. Puedes escuchar otra vez.",
+      "explicacion": "23 + 14 = 37. Ahora van 37 personas en el micro.",
+      "error": "problema-suma"
+    },
+    {
+      "id": "c7", "tipo": "numero", "nivel": 3,
+      "enunciado": "¿Qué número falta? ☐ + 41 = 96",
+      "respuesta": 55,
+      "erroresComunes": [ { "respuesta": 137, "pista": "Sumaste 96 + 41, y eso da más que 96. Busca qué número, junto con 41, llega a 96.", "error": "sumando-faltante" } ],
+      "pista": "Piensa por columnas: ¿cuánto más 1 da 6? ¿Cuánto más 4 da 9?",
+      "explicacion": "Falta el 55, porque 55 + 41 = 96: en las unidades, 5 + 1 = 6, y en las decenas, 5 + 4 = 9.",
+      "error": "sumando-faltante"
+    },
+    {
+      "id": "c8", "tipo": "pasos", "nivel": 3,
+      "enunciado": "Para la fiesta de la escuela, el curso de Mateo infla 120 globos rojos, 34 amarillos y 5 verdes.",
+      "visual": { "tipo": "tabla", "columnas": ["Rojos", "Amarillos", "Verdes"], "filas": [["120", "34", "5"]] },
+      "pasos": [
+        {
+          "tipo": "numero", "enunciado": "¿Cuántos globos rojos y amarillos hay?",
+          "respuesta": 154,
+          "erroresComunes": [ { "respuesta": 460, "pista": "Parece que pusiste el 3 debajo del 1. Las unidades van con las unidades: el 4 debajo del 0.", "error": "alinea-columnas" } ],
+          "pista": "Pon el 34 debajo del 120 con las unidades en la misma columna.",
+          "explicacion": "120 + 34: 0 + 4 = 4 unidades, 2 + 3 = 5 decenas y 1 centena: 154 globos.",
+          "error": "alinea-columnas"
+        },
+        {
+          "tipo": "numero", "enunciado": "Suma también los verdes. ¿Cuántos globos hay en total?",
+          "respuesta": 159,
+          "erroresComunes": [ { "respuesta": 654, "pista": "El 5 son 5 unidades: va debajo del 4, no debajo del 1.", "error": "alinea-columnas" } ],
+          "pista": "Los 5 globos verdes son unidades: súmalos con las unidades del 154.",
+          "explicacion": "154 + 5: 4 + 5 = 9 unidades. Hay 159 globos en total.",
+          "error": "alinea-columnas"
+        }
+      ],
+      "pista": "Resuelve un paso a la vez: primero dos colores y después el tercero.",
+      "explicacion": "120 + 34 = 154 y 154 + 5 = 159 globos.",
+      "error": "alinea-columnas"
+    }
+  ],
+  "repaso": {
+    "texto": "Para sumar sin llevar, pon las cifras en columnas: unidades con unidades, decenas con decenas y centenas con centenas. Suma cada columna, empezando por las unidades.",
+    "visual": { "tipo": "tabla", "columnas": ["", "D", "U"], "filas": [["", "4", "3"], ["+", "2", "5"], ["Total", "6", "8"]] }
+  },
+  "adulto": {
+    "objetivo": "Sumar números de hasta tres cifras sin llevadas: entender la suma como juntar, reconocer sumandos y total, ubicar las cifras en columnas según su valor y sumar columna por columna empezando por las unidades; resolver problemas sencillos de la vida diaria.",
+    "sugerencias": [
+      "Hagan atados de 10 palitos (de fósforo usados, de helado o fideos largos) con una liga. Armen dos números, por ejemplo 23 y 14, y júntenlos: primero los palitos sueltos y después los atados.",
+      "En la feria o en la tienda, elijan dos productos cuyos precios no necesiten llevar (12 Bs y 5 Bs, 30 Bs y 18 Bs). Pidan que calcule el total y que prepare el dinero justo.",
+      "En el patio o la vereda, dibujen con tiza una recta del 0 al 20. Para sumar 13 + 4, la niña o el niño se para en el 13 y da 4 saltos contando 14, 15, 16, 17."
+    ],
+    "errores": {
+      "suma-calculo": { "descripcion": "Se equivoca al sumar las cifras de una columna.", "sugerencia": "Practiquen sumas de una cifra (hasta 9) con los dedos, piedritas o semillas, y revisen la suma columna por columna." },
+      "suma-olvida-llevar": { "descripcion": "Olvida sumar lo que se lleva. En este tema casi no aparece, porque las sumas no necesitan llevar.", "sugerencia": "Si aparece, repasen con atados de palitos que 10 unidades forman 1 decena. Se trabaja a fondo en el tema «Suma llevando»." },
+      "alinea-columnas": { "descripcion": "Suma cifras de distinto lugar (por ejemplo, 130 + 50 = 630).", "sugerencia": "Escriban las sumas en una hoja cuadriculada con las columnas C, D y U, y ubiquen cada cifra en su columna antes de sumar." },
+      "suma-material": { "descripcion": "Le cuesta representar una suma con bloques o con dinero.", "sugerencia": "Jueguen a la tienda con monedas y billetes (reales o de papel): armen cada precio por separado y después júntenlos." },
+      "partes-suma": { "descripcion": "No recuerda los nombres de las partes de la suma (sumandos y total).", "sugerencia": "Escriban sumas en tarjetas, pinten los sumandos de un color y el total de otro, y pidan que diga el nombre de cada parte." },
+      "problema-suma": { "descripcion": "No reconoce cuándo un problema se resuelve sumando.", "sugerencia": "Actúen el problema con objetos: si las cantidades se juntan o llegan más, se suma." },
+      "sumando-faltante": { "descripcion": "Le cuesta encontrar el número que falta en una suma (23 + ☐ = 58).", "sugerencia": "Usen la recta o los dedos: partan del número conocido y cuenten cuánto falta para llegar al total." },
+      "cuenta-adelante": { "descripcion": "Al contar hacia adelante, cuenta también el número de partida (42 + 5 = 46).", "sugerencia": "Salten sobre una recta dibujada en el piso: el número donde se empieza no se cuenta; se cuenta cada salto." },
+      "suma-decenas": { "descripcion": "Suma decenas completas pero olvida su valor (40 + 30 = 7).", "sugerencia": "Usen billetes de 10 Bs: 4 billetes y 3 billetes son 7 billetes de 10, es decir, 70 Bs." },
+      "inventa-problema": { "descripcion": "Le cuesta inventar un problema de suma con una pregunta.", "sugerencia": "Inventen problemas juntos con lo que ven en la casa o en la feria y escríbanlos con ¿ al inicio y ? al final de la pregunta." }
+    }
+  }
+}

@@ -1,0 +1,363 @@
+{
+  "id": "mat-4-4",
+  "titulo": "Multiplico por 10, 100 y 1000",
+  "objetivo": "Multiplico por 10, 100 y 1000 agregando ceros, y cuento billetes de 10 y de 100 Bs.",
+  "explicacion": [
+    {
+      "texto": "Un billete de 10 Bs vale lo mismo que 10 monedas de 1 Bs. Si tienes 3 billetes de 10 Bs, tienes 10 + 10 + 10 = 30 Bs. Con multiplicación: 3 × 10 = 30.",
+      "visual": { "tipo": "dinero", "items": ["b10", "b10", "b10"] }
+    },
+    {
+      "texto": "Para multiplicar **por 10**, escribe el número y agrégale **un cero** al final: 4 × 10 = 40. También 10 × 4 = 40. ¿Por qué? Porque 4 decenas son 40.",
+      "emoji": "🔟",
+      "visual": { "tipo": "bloques", "decenas": 4 }
+    },
+    {
+      "texto": "Para multiplicar **por 100**, agrega **dos ceros**: 3 × 100 = 300. Con 3 billetes de 100 Bs tienes 300 Bs, porque 3 centenas son 300.",
+      "emoji": "💯",
+      "visual": { "tipo": "dinero", "items": ["b100", "b100", "b100"] }
+    },
+    {
+      "texto": "10 centenas forman **1000** (mil). Para multiplicar **por 1000**, agrega **tres ceros**: 3 × 1000 = 3000. ¡Cuenta los ceros y ponlos al final!",
+      "visual": { "tipo": "tabla", "columnas": ["3 × 1", "3 × 10", "3 × 100", "3 × 1000"], "filas": [["3", "30", "300", "3000"]] }
+    }
+  ],
+  "ejemplo": {
+    "instruccion": "Mira cómo Arami cuenta el dinero de su puesto en la feria. Después, juega tú con billetes de 10 y de 100 Bs.",
+    "pasos": [
+      { "texto": "Arami vendió choclos y juntó 5 billetes de 10 Bs. Cuenta de 10 en 10: 10, 20, 30, 40, 50.", "visual": { "tipo": "dinero", "items": ["b10", "b10", "b10", "b10", "b10"] } },
+      { "texto": "5 billetes de 10 Bs: 5 × 10 = 50 Bs. Al 5 le agregamos un cero.", "visual": { "tipo": "tabla", "columnas": ["Billetes", "Cada uno vale", "En total"], "filas": [["5", "10 Bs", "50 Bs"]] } },
+      { "texto": "También tiene 2 billetes de 100 Bs: 2 × 100 = 200 Bs. Al 2 le agregamos dos ceros.", "visual": { "tipo": "dinero", "items": ["b100", "b100"] } },
+      { "texto": "Juntamos todo: 200 + 50 = 250. ¡Arami tiene 250 Bs!", "visual": { "tipo": "dinero", "items": ["b100", "b100", "b10", "b10", "b10", "b10", "b10"] } }
+    ],
+    "explorar": { "tipo": "dinero", "disponibles": ["b10", "b100"] }
+  },
+  "guiada": {
+    "intro": "Vamos a contar billetes y a multiplicar juntos, paso a paso.",
+    "pasos": [
+      {
+        "id": "g1", "tipo": "numero",
+        "enunciado": "¿Cuánto dinero hay?",
+        "apoyo": "Cada billete vale 10 Bs. Toca cada billete con el dedo y cuenta de 10 en 10: 10, 20, 30...",
+        "visual": { "tipo": "dinero", "items": ["b10", "b10", "b10", "b10", "b10", "b10", "b10"] },
+        "respuesta": 70, "sufijo": "Bs",
+        "erroresComunes": [
+          { "respuesta": 7, "pista": "Contaste los billetes. Cada billete vale 10 Bs, no 1 Bs.", "error": "cuenta-piezas" },
+          { "respuesta": 17, "pista": "Sumaste 7 + 10. Son 7 billetes de 10 Bs: 7 grupos de 10.", "error": "suma-en-vez-de-multiplicar" }
+        ],
+        "pista": "Son 7 billetes de 10 Bs. Cuenta de 10 en 10 una vez por cada billete.",
+        "explicacion": "10, 20, 30, 40, 50, 60, 70. Hay 70 Bs: 7 × 10 = 70.",
+        "error": "cuenta-piezas"
+      },
+      {
+        "id": "g2", "tipo": "completar",
+        "enunciado": "Completa. Mira cuántos ceros tiene el 10, el 100 y el 1000.",
+        "apoyo": "Por 10 agregas un cero; por 100, dos ceros; por 1000, tres ceros.",
+        "texto": "8 × 10 = [80]; 8 × 100 = [800]; 8 × 1000 = [8000]",
+        "banco": ["18", "108"],
+        "pista": "Escribe el 8 y agrega tantos ceros como tiene el otro número.",
+        "explicacion": "8 × 10 = 80 (un cero), 8 × 100 = 800 (dos ceros) y 8 × 1000 = 8000 (tres ceros).",
+        "error": "multiplicar-10-100"
+      },
+      {
+        "id": "g3", "tipo": "manipular",
+        "enunciado": "Kusi ahorra para una bicicleta que cuesta 400 Bs. Pon el dinero justo con billetes de 100 Bs.",
+        "apoyo": "400 = 4 × 100. ¿Cuántos billetes de 100 Bs necesitas?",
+        "manipulable": { "tipo": "dinero", "objetivo": 40000, "disponibles": ["b10", "b100"], "mostrarTotal": true },
+        "pista": "Cada billete de 100 Bs vale 100. Cuenta de 100 en 100 hasta llegar a 400.",
+        "explicacion": "Con 4 billetes de 100 Bs tienes 400 Bs: 4 × 100 = 400.",
+        "error": "arma-dinero"
+      }
+    ]
+  },
+  "practica": [
+    {
+      "id": "p1", "tipo": "generador", "nivel": 1, "generador": "por-10-100-1000", "params": { "factores": [10], "max": 9 }
+    },
+    {
+      "id": "p2", "tipo": "manipular", "nivel": 1,
+      "enunciado": "Forma 60 Bs usando solo billetes de 10 Bs.",
+      "manipulable": { "tipo": "dinero", "objetivo": 6000, "disponibles": ["b10"], "mostrarTotal": true },
+      "pista": "Cuenta de 10 en 10 cada vez que pones un billete.",
+      "explicacion": "6 billetes de 10 Bs son 60 Bs: 6 × 10 = 60.",
+      "error": "arma-dinero"
+    },
+    {
+      "id": "p3", "tipo": "memoria", "nivel": 1,
+      "enunciado": "Encuentra las parejas: la multiplicación y su resultado.",
+      "pares": [["5 × 10", "50"], ["5 × 100", "500"], ["3 × 10", "30"], ["9 × 100", "900"]],
+      "pista": "Por 10 agregas un cero. Por 100 agregas dos ceros.",
+      "explicacion": "5 × 10 = 50, 5 × 100 = 500, 3 × 10 = 30 y 9 × 100 = 900.",
+      "error": "multiplicar-10-100"
+    },
+    {
+      "id": "p4", "tipo": "numero", "nivel": 1,
+      "enunciado": "Escucha la multiplicación y escribe el resultado.",
+      "escuchar": "¿Cuánto es nueve por diez?",
+      "respuesta": 90,
+      "erroresComunes": [
+        { "respuesta": 19, "pista": "Sumaste 9 + 10. Multiplicar es juntar 9 grupos de 10.", "error": "suma-en-vez-de-multiplicar" },
+        { "respuesta": 9, "pista": "Te falta algo: al multiplicar por 10 se agrega un cero.", "error": "multiplicar-10-100" },
+        { "respuesta": 900, "pista": "Agregaste dos ceros. Por 10 se agrega solo uno.", "error": "multiplicar-10-100" }
+      ],
+      "pista": "Piensa en 9 billetes de 10 Bs. Escucha otra vez si lo necesitas.",
+      "explicacion": "9 × 10 = 90: al 9 le agregamos un cero. 9 decenas son 90.",
+      "error": "multiplicar-10-100"
+    },
+    {
+      "id": "p5", "tipo": "generador", "nivel": 2, "generador": "por-10-100-1000", "params": { "factores": [10, 100], "max": 9 }
+    },
+    {
+      "id": "p6", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "Une cada grupo de billetes con lo que vale.",
+      "pares": [["3 billetes de 10 Bs", "30 Bs"], ["3 billetes de 100 Bs", "300 Bs"], ["10 billetes de 10 Bs", "100 Bs"], ["10 billetes de 100 Bs", "1000 Bs"]],
+      "pista": "Multiplica cuántos billetes hay por lo que vale cada uno.",
+      "explicacion": "3 × 10 = 30; 3 × 100 = 300; 10 × 10 = 100; 10 × 100 = 1000. ¡10 billetes de 100 Bs son 1000 Bs!",
+      "error": "multiplicar-10-100"
+    },
+    {
+      "id": "p7", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "¿Cuántos ceros agregas para multiplicar?",
+      "categorias": [
+        { "id": "uno", "texto": "1 cero" },
+        { "id": "dos", "texto": "2 ceros" },
+        { "id": "tres", "texto": "3 ceros" }
+      ],
+      "elementos": [
+        { "texto": "4 × 10", "categoria": "uno" }, { "texto": "10 × 8", "categoria": "uno" },
+        { "texto": "6 × 100", "categoria": "dos" }, { "texto": "100 × 3", "categoria": "dos" },
+        { "texto": "2 × 1000", "categoria": "tres" }, { "texto": "1000 × 7", "categoria": "tres" }
+      ],
+      "pista": "Cuenta los ceros del 10, del 100 o del 1000. El orden de los números no importa.",
+      "explicacion": "Por 10 se agrega 1 cero (10 × 8 = 80); por 100, 2 ceros (6 × 100 = 600); por 1000, 3 ceros (2 × 1000 = 2000).",
+      "error": "multiplicar-10-100"
+    },
+    {
+      "id": "p8", "tipo": "numero", "nivel": 2,
+      "enunciado": "En la tienda, cada paquete trae 10 lápices. La maestra compra 8 paquetes. ¿Cuántos lápices compra?",
+      "visual": { "tipo": "emoji", "valor": "📦", "cantidad": 8, "etiqueta": "10 lápices en cada paquete" },
+      "respuesta": 80,
+      "erroresComunes": [
+        { "respuesta": 18, "pista": "Sumaste 8 + 10. Son 8 paquetes con 10 lápices cada uno.", "error": "suma-en-vez-de-multiplicar" },
+        { "respuesta": 8, "pista": "Esos son los paquetes. ¿Cuántos lápices hay en todos?", "error": "cuenta-piezas" }
+      ],
+      "pista": "Cuenta de 10 en 10, una vez por cada paquete.",
+      "explicacion": "8 × 10 = 80. La maestra compra 80 lápices.",
+      "error": "problema-10-100"
+    },
+    {
+      "id": "p9", "tipo": "numero", "nivel": 2,
+      "enunciado": "Don Luis lleva a la feria 4 cajas con 100 naranjas en cada una. ¿Cuántas naranjas lleva?",
+      "visual": { "tipo": "emoji", "valor": "📦", "cantidad": 4, "etiqueta": "100 naranjas en cada caja" },
+      "respuesta": 400,
+      "erroresComunes": [
+        { "respuesta": 104, "pista": "Sumaste 4 + 100. Son 4 cajas de 100 naranjas: 4 grupos de 100.", "error": "suma-en-vez-de-multiplicar" },
+        { "respuesta": 40, "pista": "Revisa los ceros: 100 tiene dos ceros.", "error": "multiplicar-10-100" }
+      ],
+      "pista": "Cuenta de 100 en 100, una vez por cada caja.",
+      "explicacion": "100, 200, 300, 400. Don Luis lleva 400 naranjas: 4 × 100 = 400.",
+      "error": "problema-10-100"
+    },
+    {
+      "id": "p10", "tipo": "manipular", "nivel": 2,
+      "enunciado": "Salta de 100 en 100 desde el 0 y marca el resultado de 6 × 100.",
+      "manipulable": { "tipo": "recta", "min": 0, "max": 1000, "paso": 100, "objetivo": 600 },
+      "pista": "Cada salto vale 100. Da 6 saltos desde el 0.",
+      "explicacion": "100, 200, 300, 400, 500, 600. Con 6 saltos de 100 llegas al 600: 6 × 100 = 600.",
+      "error": "multiplicar-10-100"
+    },
+    {
+      "id": "p11", "tipo": "generador", "nivel": 3, "generador": "por-10-100-1000", "params": { "factores": [10, 100, 1000], "max": 9 }
+    },
+    {
+      "id": "p12", "tipo": "ordenar", "nivel": 3,
+      "enunciado": "Calcula cada multiplicación y ordénalas de menor a mayor resultado.",
+      "elementos": ["8 × 10", "3 × 100", "50 × 10", "7 × 100", "2 × 1000"],
+      "pista": "Primero calcula cada una agregando los ceros. Después ordena los resultados.",
+      "explicacion": "8 × 10 = 80, 3 × 100 = 300, 50 × 10 = 500, 7 × 100 = 700 y 2 × 1000 = 2000.",
+      "error": "compara-productos"
+    },
+    {
+      "id": "p13", "tipo": "pasos", "nivel": 3,
+      "enunciado": "Inti vende api en la feria. Al final del día tiene 3 billetes de 100 Bs y 6 billetes de 10 Bs.",
+      "visual": { "tipo": "dinero", "items": ["b100", "b100", "b100", "b10", "b10", "b10", "b10", "b10", "b10"] },
+      "pasos": [
+        {
+          "tipo": "numero", "enunciado": "¿Cuánto suman los billetes de 100 Bs?", "respuesta": 300, "sufijo": "Bs",
+          "erroresComunes": [ { "respuesta": 3, "pista": "Contaste los billetes. Cada uno vale 100 Bs.", "error": "cuenta-piezas" } ],
+          "pista": "Cuenta de 100 en 100 los billetes grandes.",
+          "explicacion": "3 × 100 = 300 Bs.",
+          "error": "cuenta-piezas"
+        },
+        {
+          "tipo": "numero", "enunciado": "¿Cuánto suman los billetes de 10 Bs?", "respuesta": 60, "sufijo": "Bs",
+          "erroresComunes": [ { "respuesta": 6, "pista": "Contaste los billetes. Cada uno vale 10 Bs.", "error": "cuenta-piezas" } ],
+          "pista": "Cuenta de 10 en 10 los billetes de 10 Bs.",
+          "explicacion": "6 × 10 = 60 Bs.",
+          "error": "cuenta-piezas"
+        },
+        {
+          "tipo": "numero", "enunciado": "¿Cuánto dinero tiene Inti en total?", "respuesta": 360, "sufijo": "Bs",
+          "erroresComunes": [ { "respuesta": 9, "pista": "Contaste los billetes. Suma lo que valen: 300 + 60.", "error": "cuenta-piezas" } ],
+          "pista": "Suma lo que valen los billetes de 100 y lo que valen los de 10.",
+          "explicacion": "300 + 60 = 360 Bs.",
+          "error": "problema-pasos"
+        }
+      ],
+      "pista": "Cuenta cada tipo de billete por separado y después junta todo.",
+      "explicacion": "3 × 100 = 300 y 6 × 10 = 60. En total, Inti tiene 300 + 60 = 360 Bs.",
+      "error": "problema-pasos"
+    },
+    {
+      "id": "p14", "tipo": "multiple", "nivel": 3,
+      "enunciado": "Elige todas las multiplicaciones que dan 500.",
+      "opciones": [
+        { "texto": "5 × 100", "correcta": true },
+        { "texto": "50 × 10", "correcta": true },
+        { "texto": "100 × 5", "correcta": true },
+        { "texto": "5 × 10", "pista": "5 × 10 = 50. Le falta un cero para llegar a 500.", "error": "multiplicar-10-100" },
+        { "texto": "5 × 1000", "pista": "5 × 1000 = 5000. Tiene un cero de más.", "error": "multiplicar-10-100" }
+      ],
+      "columnas": 2,
+      "pista": "Calcula cada una: escribe el primer número y agrega los ceros del otro.",
+      "explicacion": "5 × 100 = 500, 100 × 5 = 500 y 50 × 10 = 500. En cambio, 5 × 10 = 50 y 5 × 1000 = 5000.",
+      "error": "multiplicar-10-100"
+    },
+    {
+      "id": "p15", "tipo": "completar", "nivel": 3,
+      "enunciado": "Completa con el número que falta.",
+      "texto": "[7] × 10 = 70; 3 × [100] = 300; [4] × 1000 = 4000",
+      "banco": ["70", "10", "40"],
+      "pista": "Prueba cada ficha: escribe el número y agrega los ceros. ¿Cuál da el resultado?",
+      "explicacion": "7 × 10 = 70, 3 × 100 = 300 y 4 × 1000 = 4000.",
+      "error": "factor-faltante"
+    },
+    {
+      "id": "p16", "tipo": "escribir", "nivel": 3,
+      "enunciado": "Escucha la multiplicación y escribe el resultado con cifras.",
+      "escuchar": "¿Cuánto es cuatro por mil?",
+      "respuestas": ["4000", "4 000", "4.000"],
+      "pista": "El mil tiene tres ceros. Escucha otra vez si lo necesitas.",
+      "explicacion": "4 × 1000 = 4000 (cuatro mil): al 4 le agregamos tres ceros.",
+      "error": "multiplicar-10-100"
+    }
+  ],
+  "comprobacion": [
+    {
+      "id": "c1", "tipo": "numero", "nivel": 1,
+      "enunciado": "¿Cuánto dinero hay?",
+      "visual": { "tipo": "dinero", "items": ["b100", "b100", "b100", "b100", "b100"] },
+      "respuesta": 500, "sufijo": "Bs",
+      "erroresComunes": [
+        { "respuesta": 5, "pista": "Contaste los billetes. Cada billete vale 100 Bs.", "error": "cuenta-piezas" },
+        { "respuesta": 50, "pista": "Estos billetes valen 100 Bs, no 10 Bs. Cuenta de 100 en 100.", "error": "multiplicar-10-100" }
+      ],
+      "pista": "Cuenta de 100 en 100: 100, 200...",
+      "explicacion": "100, 200, 300, 400, 500. Hay 500 Bs: 5 × 100 = 500.",
+      "error": "cuenta-piezas"
+    },
+    {
+      "id": "c2", "tipo": "opcion", "nivel": 1,
+      "enunciado": "¿Cuánto es 10 × 6?",
+      "opciones": [
+        { "texto": "60", "correcta": true },
+        { "texto": "16", "pista": "Sumaste 10 + 6. Piensa en 6 billetes de 10 Bs.", "error": "suma-en-vez-de-multiplicar" },
+        { "texto": "600", "pista": "Por 10 se agrega un solo cero.", "error": "multiplicar-10-100" }
+      ],
+      "columnas": 3,
+      "pista": "10 × 6 es lo mismo que 6 × 10: son 6 decenas.",
+      "explicacion": "10 × 6 = 60, porque 6 decenas son 60.",
+      "error": "multiplicar-10-100"
+    },
+    {
+      "id": "c3", "tipo": "generador", "nivel": 2, "generador": "por-10-100-1000", "params": { "factores": [10], "max": 99 }
+    },
+    {
+      "id": "c4", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "Une cada multiplicación con su resultado.",
+      "pares": [["2 × 10", "20"], ["20 × 10", "200"], ["2 × 1000", "2000"], ["4 × 100", "400"]],
+      "pista": "Cuenta los ceros del 10, del 100 o del 1000 y agrégalos al final del otro número.",
+      "explicacion": "2 × 10 = 20; 20 × 10 = 200; 2 × 1000 = 2000; 4 × 100 = 400.",
+      "error": "multiplicar-10-100"
+    },
+    {
+      "id": "c5", "tipo": "numero", "nivel": 2,
+      "enunciado": "Escucha el problema y escribe la respuesta.",
+      "escuchar": "Mateo tiene ocho billetes de cien bolivianos. ¿Cuántos bolivianos tiene?",
+      "respuesta": 800, "sufijo": "Bs",
+      "erroresComunes": [
+        { "respuesta": 8, "pista": "Esos son los billetes. ¿Cuánto valen todos juntos?", "error": "cuenta-piezas" },
+        { "respuesta": 80, "pista": "Cada billete vale 100 Bs, no 10 Bs.", "error": "multiplicar-10-100" },
+        { "respuesta": 108, "pista": "Sumaste 8 + 100. Son 8 billetes de 100 Bs.", "error": "suma-en-vez-de-multiplicar" }
+      ],
+      "pista": "Piensa en 8 billetes de 100 Bs. Escucha otra vez si lo necesitas.",
+      "explicacion": "8 × 100 = 800. Mateo tiene 800 Bs.",
+      "error": "problema-10-100"
+    },
+    {
+      "id": "c6", "tipo": "manipular", "nivel": 2,
+      "enunciado": "Sofía compra una mochila que cuesta 170 Bs. Pon el dinero justo con billetes de 100 Bs y de 10 Bs.",
+      "manipulable": { "tipo": "dinero", "objetivo": 17000, "disponibles": ["b10", "b100"] },
+      "pista": "170 tiene 1 centena y 7 decenas.",
+      "explicacion": "1 billete de 100 Bs y 7 billetes de 10 Bs: 100 + 70 = 170 Bs.",
+      "error": "arma-dinero"
+    },
+    {
+      "id": "c7", "tipo": "pasos", "nivel": 3,
+      "enunciado": "En la feria de la escuela venden platos de majadito a 10 Bs cada uno. Venden 25 platos.",
+      "pasos": [
+        {
+          "tipo": "numero", "enunciado": "¿Cuánto dinero juntan?", "respuesta": 250, "sufijo": "Bs",
+          "erroresComunes": [ { "respuesta": 35, "pista": "Sumaste 25 + 10. Son 25 platos de 10 Bs: 25 × 10.", "error": "suma-en-vez-de-multiplicar" } ],
+          "pista": "Son 25 platos de 10 Bs cada uno. ¿Qué pasa con un número cuando lo multiplicas por 10?",
+          "explicacion": "25 × 10 = 250 Bs.",
+          "error": "multiplicar-10-100"
+        },
+        {
+          "tipo": "numero", "enunciado": "Gastan 100 Bs en premios para los juegos. ¿Cuánto dinero les queda?", "respuesta": 150, "sufijo": "Bs",
+          "erroresComunes": [ { "respuesta": 350, "pista": "Sumaste. Cuando se gasta, el dinero disminuye: resta.", "error": "problema-pasos" } ],
+          "pista": "Al dinero que juntaron, quítale lo que gastaron.",
+          "explicacion": "250 − 100 = 150 Bs.",
+          "error": "problema-pasos"
+        }
+      ],
+      "pista": "Primero multiplica. Después resta lo que gastan.",
+      "explicacion": "25 × 10 = 250 Bs. 250 − 100 = 150 Bs. Les quedan 150 Bs.",
+      "error": "problema-pasos"
+    },
+    {
+      "id": "c8", "tipo": "numero", "nivel": 3,
+      "enunciado": "¿Qué número falta? ☐ × 100 = 700",
+      "respuesta": 7,
+      "erroresComunes": [
+        { "respuesta": 70, "pista": "70 × 100 = 7000. Tapa los dos ceros del 700.", "error": "factor-faltante" },
+        { "respuesta": 600, "pista": "Restaste 700 − 100. Busca qué número por 100 da 700.", "error": "factor-faltante" }
+      ],
+      "pista": "¿Qué número, con dos ceros al final, forma el 700?",
+      "explicacion": "7 × 100 = 700. El número que falta es el 7.",
+      "error": "factor-faltante"
+    }
+  ],
+  "repaso": {
+    "texto": "Para multiplicar por 10 agrega un cero; por 100, dos ceros; por 1000, tres ceros. 6 × 10 = 60, 6 × 100 = 600 y 6 × 1000 = 6000.",
+    "visual": { "tipo": "tabla", "columnas": ["Número", "× 10", "× 100", "× 1000"], "filas": [["6", "60", "600", "6000"]] }
+  },
+  "adulto": {
+    "objetivo": "Multiplicar por 10, 100 y 1000 comprendiendo que se forman decenas, centenas y unidades de mil (por eso se agregan uno, dos o tres ceros), y aplicarlo para contar y formar cantidades con billetes de 10 y de 100 Bs.",
+    "sugerencias": [
+      "Hagan billetes de juguete de 10 y de 100 Bs con papel. Jueguen a la tienda: pidan que pague 70 Bs solo con billetes de 10, o 300 Bs con billetes de 100, y que diga la multiplicación (7 × 10 = 70).",
+      "En la feria o la tienda, busquen cosas que vienen de 10 en 10 o de 100 en 100 (paquetes de 10 lápices, bolsas de 100 hojas). Pregunten: «Si compramos 4 paquetes de 10, ¿cuántos son?».",
+      "Armen atados de 10 palitos (o fideos) con una liga, y luego bolsas con 10 atados (100). Cuenten juntos: 3 atados son 30 y 3 bolsas son 300. Escriban en una hoja 3, 30, 300 y 3000, y conversen sobre los ceros."
+    ],
+    "errores": {
+      "multiplicar-10-100": { "descripcion": "Pone ceros de más o de menos al multiplicar por 10, 100 o 1000 (escribe 50 en lugar de 500).", "sugerencia": "Cuenten juntos los ceros del 10, del 100 o del 1000 señalándolos con el dedo, y agreguen la misma cantidad al final del otro número." },
+      "cuenta-piezas": { "descripcion": "Cuenta los billetes en lugar de lo que valen (dice 7 cuando son 7 billetes de 10 Bs, o sea 70 Bs).", "sugerencia": "Pongan los billetes en fila y cuenten en voz alta de 10 en 10 (o de 100 en 100) tocando cada uno." },
+      "suma-en-vez-de-multiplicar": { "descripcion": "Suma los números (9 + 10 = 19) en lugar de multiplicar.", "sugerencia": "Recuerden que 9 × 10 son 9 grupos de 10: armen 9 atados de 10 palitos y cuéntenlos." },
+      "arma-dinero": { "descripcion": "Le cuesta formar una cantidad exacta con billetes de 10 y de 100 Bs.", "sugerencia": "Separen la cantidad en centenas y decenas (170 = 100 + 70) y pongan primero los billetes de 100 y después los de 10." },
+      "problema-10-100": { "descripcion": "No reconoce en un problema que hay grupos de 10 o de 100.", "sugerencia": "Lean juntos el problema y pregunten: «¿Cuántos grupos hay? ¿Cuántos hay en cada grupo?». Después multipliquen." },
+      "problema-pasos": { "descripcion": "Se pierde en los problemas de varios pasos.", "sugerencia": "Resuelvan un paso a la vez y anoten cada resultado en un papel antes de seguir." },
+      "factor-faltante": { "descripcion": "Le cuesta encontrar el número que falta en una multiplicación como ☐ × 100 = 700.", "sugerencia": "Tapen con el dedo los ceros que agrega el 10, el 100 o el 1000: el número que queda es el que falta (700 → 7)." },
+      "compara-productos": { "descripcion": "Le cuesta ordenar los resultados de multiplicaciones por 10, 100 y 1000.", "sugerencia": "Calculen cada resultado, escríbanlo en un papelito y después ordenen los papelitos de menor a mayor." }
+    }
+  }
+}

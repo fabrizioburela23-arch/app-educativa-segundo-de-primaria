@@ -1,0 +1,448 @@
+{
+  "id": "com-3-3",
+  "titulo": "Diálogos",
+  "objetivo": "Leo diálogos y descubro quién habla, qué dice y por qué lo dice.",
+  "lecturas": [
+    {
+      "id": "yapa",
+      "titulo": "La yapa de don Juan",
+      "genero": "diálogo",
+      "emoji": "🍌",
+      "parrafos": [
+        "Es sábado. Sofía y su papá, Luis, llegan al puesto de frutas de don Juan, en la feria del barrio.",
+        "—¡Buenos días, don Juan! —saluda Sofía.",
+        "—¡Buenos días, Sofía! ¿Qué van a llevar hoy? —pregunta don Juan.",
+        "—Queremos una mano de plátanos. Vamos a hacer un queque para el cumpleaños de mi abuela —responde Sofía.",
+        "—¿Cuánto cuesta la mano? —pregunta el papá.",
+        "—Diez bolivianos —dice don Juan.",
+        "El papá paga con un billete de diez bolivianos. Don Juan pone los plátanos en una bolsa y agrega dos naranjas.",
+        "—Estas naranjas son la yapa, para la abuela. ¡Que tenga un feliz cumpleaños! —dice don Juan.",
+        "—¡Muchas gracias, don Juan! —dicen Sofía y su papá, con una sonrisa."
+      ]
+    },
+    {
+      "id": "planta",
+      "titulo": "¿Quién riega la planta?",
+      "genero": "diálogo",
+      "emoji": "🌱",
+      "parrafos": [
+        "En el curso de segundo hay una planta junto a la ventana. Hoy tiene las hojas caídas.",
+        "—¡Profesora Ana, mire la planta! Tiene las hojas caídas —dice Nayra.",
+        "—¿Por qué estará así? —pregunta la profesora.",
+        "—Creo que tiene sed. Nadie la regó en toda la semana —responde Inti.",
+        "—Tienes razón, Inti. ¿Qué podemos hacer para que no vuelva a pasar? —pregunta la profesora.",
+        "—¡Podemos hacer turnos! Cada día, un compañero o una compañera la riega —propone Nayra.",
+        "—¡Qué buena idea! Hoy empiezo yo —dice Inti, y trae agua en un vaso."
+      ]
+    }
+  ],
+  "explicacion": [
+    {
+      "texto": "Un **diálogo** es una conversación entre dos o más personas. Hablan **por turnos**: una habla y la otra escucha; después, cambian.",
+      "visual": { "tipo": "emojis", "items": ["👧", "💬", "👦"], "etiquetas": ["Wara", "conversan", "Kusi"] }
+    },
+    {
+      "texto": "Cuando escribimos un diálogo, cada vez que alguien habla empezamos un renglón nuevo con una **raya** (—). La raya avisa: aquí habla un personaje.",
+      "visual": { "tipo": "tabla", "columnas": ["Quién habla", "Qué dice"], "filas": [["Wara", "—Hola, Kusi."], ["Kusi", "—¡Hola, Wara! ¿Cómo estás?"]] }
+    },
+    {
+      "texto": "Después de lo que dice el personaje puede ir otra raya con palabras como **dice**, **pregunta** o **responde**. Así sabemos quién habla: —Ya voy —responde Inti.",
+      "emoji": "🗣️"
+    },
+    {
+      "texto": "Los signos nos dicen cómo leer: **¿ ?** encierran una pregunta, y **¡ !** muestran alegría, sorpresa o susto. Así leemos con la voz correcta.",
+      "visual": { "tipo": "emojis", "items": ["❓", "❗"], "etiquetas": ["pregunta", "exclamación"] }
+    }
+  ],
+  "ejemplo": {
+    "instruccion": "Kusi y Wara conversan. Mira cómo se escribe lo que dicen.",
+    "pasos": [
+      {
+        "texto": "Primer turno: —¿Me acompañas a la tienda? —pregunta Kusi.",
+        "visual": { "tipo": "emojis", "items": ["👦", "💬"], "etiquetas": ["Kusi", "pregunta"] }
+      },
+      {
+        "texto": "La primera raya avisa que alguien empieza a hablar. La segunda raya y las palabras «pregunta Kusi» nos dicen quién habla.",
+        "emoji": "🔎"
+      },
+      {
+        "texto": "Segundo turno: —¡Sí, vamos! —responde Wara. Renglón nuevo y raya nueva: ahora habla otra persona.",
+        "visual": { "tipo": "emojis", "items": ["👧", "💬"], "etiquetas": ["Wara", "responde"] }
+      },
+      {
+        "texto": "Kusi hace una pregunta, por eso usa **¿ ?**. Wara está contenta, por eso usa **¡ !**.",
+        "visual": { "tipo": "emojis", "items": ["❓", "❗"], "etiquetas": ["pregunta", "alegría"] }
+      }
+    ]
+  },
+  "guiada": {
+    "intro": "Lee el diálogo «La yapa de don Juan». Después lo trabajamos juntos.",
+    "pasos": [
+      {
+        "id": "g1", "tipo": "tocar",
+        "lectura": "yapa",
+        "enunciado": "¿Quién habla en este turno? Toca su nombre.",
+        "apoyo": "Mira lo que va después de la segunda raya: ahí dice quién habla.",
+        "texto": "—¡Buenos días, don Juan! —saluda *Sofía*.",
+        "pista": "Don Juan es la persona a quien le hablan. ¿Quién saluda?",
+        "explicacion": "Habla Sofía: después de la segunda raya dice «saluda Sofía». Don Juan es la persona a quien ella saluda.",
+        "error": "nombre-mencionado"
+      },
+      {
+        "id": "g2", "tipo": "completar",
+        "enunciado": "Completa lo que dice el papá con los signos que faltan.",
+        "apoyo": "La palabra «pregunta» te da una pista: ¿qué signos usamos para preguntar?",
+        "texto": "—[¿]Cuánto cuesta la mano[?] —pregunta el papá.",
+        "banco": ["¡", "!"],
+        "pista": "Para preguntar usamos un signo al principio y otro al final.",
+        "explicacion": "Es una pregunta: va entre ¿ y ?. Se escribe: —¿Cuánto cuesta la mano? —pregunta el papá.",
+        "error": "signos-dialogo"
+      },
+      {
+        "id": "g3", "tipo": "opcion",
+        "lectura": "yapa",
+        "enunciado": "¿Para qué compran plátanos Sofía y su papá?",
+        "apoyo": "Busca lo que responde Sofía cuando don Juan le pregunta qué van a llevar.",
+        "opciones": [
+          { "texto": "Para hacer un queque para el cumpleaños de la abuela.", "correcta": true },
+          { "texto": "Para venderlos en la feria.", "pista": "Don Juan es el que vende. Sofía y su papá compran. ¿Qué dice Sofía que van a hacer?", "error": "por-que-dice" },
+          { "texto": "Para comerlos en el camino.", "pista": "El diálogo no dice eso. Lee lo que responde Sofía.", "error": "por-que-dice" }
+        ],
+        "columnas": 1,
+        "pista": "Sofía lo cuenta en su segundo turno.",
+        "explicacion": "Sofía dice: «Vamos a hacer un queque para el cumpleaños de mi abuela». Por eso compran plátanos.",
+        "error": "por-que-dice"
+      }
+    ]
+  },
+  "practica": [
+    {
+      "id": "p1", "tipo": "multiple", "nivel": 1,
+      "lectura": "yapa",
+      "enunciado": "Elige a todos los personajes que hablan en el diálogo.",
+      "opciones": [
+        { "texto": "Sofía", "emoji": "👧", "correcta": true },
+        { "texto": "el papá", "emoji": "👨", "correcta": true },
+        { "texto": "don Juan", "emoji": "🍌", "correcta": true },
+        { "texto": "la abuela", "emoji": "👵", "pista": "La abuela se nombra, pero no habla. ¿Hay alguna raya con sus palabras?", "error": "quien-habla" }
+      ],
+      "columnas": 2,
+      "pista": "Busca las rayas (—). Cada raya al comienzo de un renglón es un turno de alguien que habla.",
+      "explicacion": "Hablan Sofía, su papá y don Juan. La abuela se nombra (van a hacerle un queque), pero no dice nada en el diálogo.",
+      "error": "quien-habla"
+    },
+    {
+      "id": "p2", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Toca las palabras que dicen quién habla en cada turno.",
+      "texto": "—¿Quieres api con buñuelo? —pregunta *la abuela*. —¡Sí, por favor! —responde *Mateo*.",
+      "pista": "Mira después de la segunda raya de cada turno: ahí están las palabras «pregunta» y «responde».",
+      "explicacion": "Primero habla la abuela («pregunta la abuela») y después Mateo («responde Mateo»).",
+      "error": "quien-habla"
+    },
+    {
+      "id": "p3", "tipo": "relacionar", "nivel": 1,
+      "enunciado": "Une cada signo o palabra con para qué sirve en un diálogo.",
+      "pares": [
+        ["la raya —", "avisa que alguien empieza a hablar"],
+        ["¿ ?", "encierran una pregunta"],
+        ["¡ !", "muestran alegría, sorpresa o susto"],
+        ["dice, pregunta, responde", "nos cuentan quién habla"]
+      ],
+      "pista": "Piensa en el diálogo de Sofía y don Juan: ¿qué signo va al comienzo de cada turno?",
+      "explicacion": "La raya avisa que alguien habla; ¿ ? encierran preguntas; ¡ ! muestran alegría, sorpresa o susto; y dice, pregunta o responde nos cuentan quién habla.",
+      "error": "signos-dialogo"
+    },
+    {
+      "id": "p4", "tipo": "escribir", "nivel": 1,
+      "enunciado": "Escucha el diálogo. ¿Quién pidió el lápiz? Escribe su nombre.",
+      "escuchar": "Rosa pregunta: ¿Me prestas tu lápiz? Juan responde: ¡Claro! Aquí tienes.",
+      "visual": { "tipo": "emoji", "valor": "✏️" },
+      "respuestas": ["Rosa"],
+      "pista": "Escucha otra vez: ¿quién hace la pregunta?",
+      "explicacion": "Rosa pidió el lápiz: ella pregunta «¿Me prestas tu lápiz?». Juan responde y se lo presta.",
+      "error": "escucha-comprension"
+    },
+    {
+      "id": "p5", "tipo": "clasificar", "nivel": 2,
+      "lectura": "yapa",
+      "enunciado": "¿Quién lo dijo? Pon cada frase con su personaje.",
+      "categorias": [
+        { "id": "sofia", "texto": "Sofía", "emoji": "👧" },
+        { "id": "papa", "texto": "El papá", "emoji": "👨" },
+        { "id": "juan", "texto": "Don Juan", "emoji": "🍌" }
+      ],
+      "elementos": [
+        { "texto": "¡Buenos días, don Juan!", "categoria": "sofia" },
+        { "texto": "Vamos a hacer un queque.", "categoria": "sofia" },
+        { "texto": "¿Cuánto cuesta la mano?", "categoria": "papa" },
+        { "texto": "¿Qué van a llevar hoy?", "categoria": "juan" },
+        { "texto": "Diez bolivianos.", "categoria": "juan" },
+        { "texto": "Estas naranjas son la yapa.", "categoria": "juan" }
+      ],
+      "pista": "Busca cada frase en el diálogo y mira qué nombre aparece después de la segunda raya.",
+      "explicacion": "Sofía saluda y cuenta lo del queque. El papá pregunta el precio. Don Juan pregunta qué van a llevar, dice el precio y regala la yapa.",
+      "error": "quien-habla"
+    },
+    {
+      "id": "p6", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa el diálogo con los signos que faltan.",
+      "texto": "—[¿]Tienes plátanos[?] —pregunta Ana. —[¡]Sí, y están muy dulces[!] —responde don Juan.",
+      "banco": [".", ","],
+      "pista": "Ana pregunta. Don Juan responde con alegría. Recuerda: cada signo tiene su pareja, uno al principio y otro al final.",
+      "explicacion": "Ana pregunta: —¿Tienes plátanos? Don Juan responde con alegría: —¡Sí, y están muy dulces!",
+      "error": "signos-dialogo"
+    },
+    {
+      "id": "p7", "tipo": "ordenar", "nivel": 2,
+      "enunciado": "Ordena los turnos de esta llamada por teléfono.",
+      "elementos": [
+        "—¿Aló? —contesta la abuela Rosa.",
+        "—¡Hola, abuelita! Soy Mateo.",
+        "—¡Mateo! ¿Cómo estás, hijito?",
+        "—Muy bien. Mañana voy a visitarte.",
+        "—¡Qué alegría! Te voy a preparar sopa de maní."
+      ],
+      "vertical": true,
+      "pista": "Cuando suena el teléfono, ¿quién habla primero? Después, cada uno responde a lo que dijo el otro.",
+      "explicacion": "La abuela contesta «¿Aló?», Mateo dice quién es, la abuela le pregunta cómo está, Mateo responde y la abuela se alegra.",
+      "error": "turnos"
+    },
+    {
+      "id": "p8", "tipo": "opcion", "nivel": 2,
+      "lectura": "yapa",
+      "enunciado": "¿Por qué don Juan pone dos naranjas en la bolsa?",
+      "opciones": [
+        { "texto": "Son la yapa: un regalo para la abuela.", "correcta": true },
+        { "texto": "Porque el papá pagó por ellas.", "pista": "El papá pagó diez bolivianos por la mano de plátanos. ¿Qué dice don Juan de las naranjas?", "error": "por-que-dice" },
+        { "texto": "Porque Sofía las pidió.", "pista": "Sofía pidió plátanos. Lee lo que dice don Juan cuando pone las naranjas.", "error": "por-que-dice" }
+      ],
+      "columnas": 1,
+      "pista": "Lee el turno de don Juan que empieza con «Estas naranjas...».",
+      "explicacion": "Don Juan dice: «Estas naranjas son la yapa, para la abuela». La yapa es algo extra que la persona que vende regala a quien compra.",
+      "error": "por-que-dice"
+    },
+    {
+      "id": "p9", "tipo": "memoria", "nivel": 2,
+      "enunciado": "Encuentra las parejas: cada pregunta con su respuesta.",
+      "pares": [
+        ["¿Cómo te llamas?", "Me llamo Inti."],
+        ["¿Cuántos años tienes?", "Tengo ocho años."],
+        ["¿Dónde vives?", "Vivo en Sucre."],
+        ["¿Qué te gusta comer?", "Me gusta el majadito."]
+      ],
+      "pista": "En un diálogo, cada respuesta contesta lo que le preguntaron. «¿Cómo te llamas?» pide un nombre; «¿Dónde vives?», un lugar.",
+      "explicacion": "¿Cómo te llamas? → Me llamo Inti. ¿Cuántos años tienes? → Tengo ocho años. ¿Dónde vives? → Vivo en Sucre. ¿Qué te gusta comer? → Me gusta el majadito.",
+      "error": "turnos"
+    },
+    {
+      "id": "p10", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "¿El personaje pregunta algo o muestra una emoción?",
+      "categorias": [
+        { "id": "pregunta", "texto": "Pregunta algo", "emoji": "❓" },
+        { "id": "exclama", "texto": "Muestra alegría, sorpresa o susto", "emoji": "❗" }
+      ],
+      "elementos": [
+        { "texto": "—¿Dónde está mi gorro?", "categoria": "pregunta" },
+        { "texto": "—¡Qué lindo día!", "categoria": "exclama" },
+        { "texto": "—¿Me ayudas con la tarea?", "categoria": "pregunta" },
+        { "texto": "—¡Ganamos el partido!", "categoria": "exclama" },
+        { "texto": "—¿A qué hora llega la abuela?", "categoria": "pregunta" },
+        { "texto": "—¡Qué susto me diste!", "categoria": "exclama" }
+      ],
+      "pista": "Mira los signos: ¿ ? encierran preguntas; ¡ ! muestran emociones.",
+      "explicacion": "Preguntan: «¿Dónde está mi gorro?», «¿Me ayudas con la tarea?» y «¿A qué hora llega la abuela?». Muestran emoción: «¡Qué lindo día!», «¡Ganamos el partido!» y «¡Qué susto me diste!».",
+      "error": "signos-dialogo"
+    },
+    {
+      "id": "p11", "tipo": "escribir-libre", "nivel": 2,
+      "enunciado": "Inti le pregunta a Nayra: «¿Qué fruta te gusta más?». Escribe lo que le responde Nayra.",
+      "guia": ["Me gusta más...", "Mi fruta favorita es..."],
+      "requisitos": [
+        { "tipo": "mayuscula-inicial" },
+        { "tipo": "punto-final" },
+        { "tipo": "min-palabras", "valor": 3 }
+      ],
+      "modelo": "Me gusta más la piña.",
+      "pista": "La respuesta tiene que contestar la pregunta: di el nombre de una fruta. Empieza con mayúscula y termina con punto.",
+      "explicacion": "Por ejemplo: «Me gusta más la piña.» Una buena respuesta contesta justo lo que le preguntaron.",
+      "error": "produce-texto"
+    },
+    {
+      "id": "p12", "tipo": "tocar", "nivel": 3,
+      "enunciado": "Toca solo los nombres de quienes hablan. ¡Cuidado! Algunos nombres son de la persona a quien le hablan.",
+      "texto": "—¿Vamos a jugar, Ana? —pregunta *Mateo*. —¡Sí, Mateo, vamos! —responde *Ana*.",
+      "pista": "Busca los nombres que van después de «pregunta» y «responde». Los otros nombres son de la persona a quien le hablan.",
+      "explicacion": "Hablan Mateo («pregunta Mateo») y Ana («responde Ana»). El primer «Ana» y el segundo «Mateo» son las personas a quienes les hablan.",
+      "error": "nombre-mencionado"
+    },
+    {
+      "id": "p13", "tipo": "escribir", "nivel": 3,
+      "enunciado": "Escucha la pregunta y escríbela con sus signos ¿ ?. Si no ves el ¿ en el teclado, deja apretado el signo ?.",
+      "escuchar": "¿Cuánto cuesta la papa?",
+      "visual": { "tipo": "emoji", "valor": "🥔" },
+      "respuestas": ["¿Cuánto cuesta la papa?"],
+      "tildes": "estricto",
+      "pista": "Es una pregunta: lleva ¿ al principio y ? al final. «Cuánto» lleva tilde cuando pregunta.",
+      "explicacion": "Se escribe «¿Cuánto cuesta la papa?»: con ¿ al principio, ? al final y tilde en «cuánto», porque pregunta.",
+      "error": "dictado"
+    },
+    {
+      "id": "p14", "tipo": "opcion", "nivel": 3,
+      "lectura": "yapa",
+      "enunciado": "¿Cómo se sienten Sofía y su papá al final del diálogo?",
+      "opciones": [
+        { "texto": "Contentos y agradecidos.", "correcta": true },
+        { "texto": "Enojados con don Juan.", "pista": "Fíjate en lo que dicen: «¡Muchas gracias!». ¿Alguien enojado diría eso con una sonrisa?", "error": "por-que-dice" },
+        { "texto": "Tristes por el precio.", "pista": "El diálogo no dice que el precio los ponga tristes. Lee el último turno.", "error": "por-que-dice" }
+      ],
+      "columnas": 1,
+      "pista": "Lee el último turno. Mira los signos ¡ ! y cómo lo dicen.",
+      "explicacion": "Están contentos y agradecidos: dicen «¡Muchas gracias, don Juan!» con una sonrisa, porque recibieron una yapa para la abuela.",
+      "error": "por-que-dice"
+    },
+    {
+      "id": "p15", "tipo": "escribir-libre", "nivel": 3,
+      "enunciado": "Estás en la feria y quieres comprar papas. Escribe la pregunta que le harías a don Juan.",
+      "guia": ["¿Cuánto cuesta...", "¿Tiene..."],
+      "requisitos": [
+        { "tipo": "mayuscula-inicial" },
+        { "tipo": "signos-pregunta" },
+        { "tipo": "punto-final" },
+        { "tipo": "min-palabras", "valor": 3 }
+      ],
+      "modelo": "¿Cuánto cuesta el kilo de papa, don Juan?",
+      "pista": "Empieza con ¿ y una letra mayúscula, y termina con ?. Puedes tocar una idea para empezar. Si no ves el ¿ en el teclado, deja apretado el ?.",
+      "explicacion": "Por ejemplo: «¿Cuánto cuesta el kilo de papa, don Juan?». Una pregunta empieza con ¿ y termina con ?.",
+      "error": "produce-texto"
+    }
+  ],
+  "comprobacion": [
+    {
+      "id": "c1", "tipo": "multiple", "nivel": 1,
+      "lectura": "planta",
+      "enunciado": "Lee el diálogo. Elige a todos los personajes que hablan.",
+      "opciones": [
+        { "texto": "Nayra", "correcta": true },
+        { "texto": "Inti", "correcta": true },
+        { "texto": "la profesora Ana", "correcta": true },
+        { "texto": "la planta", "pista": "Todos hablan de la planta, pero ella no dice nada. ¿Hay alguna raya con sus palabras?", "error": "quien-habla" }
+      ],
+      "columnas": 2,
+      "pista": "Cada raya al comienzo de un renglón es el turno de alguien. Busca quién habla en cada uno.",
+      "explicacion": "Hablan Nayra, Inti y la profesora Ana. Todos hablan de la planta, pero la planta no habla.",
+      "error": "quien-habla"
+    },
+    {
+      "id": "c2", "tipo": "tocar", "nivel": 1,
+      "enunciado": "¿Quién habla en este turno? Toca su nombre.",
+      "texto": "—Creo que tiene sed. Nadie la regó en toda la semana —responde *Inti*.",
+      "pista": "Mira lo que va después de la segunda raya.",
+      "explicacion": "Habla Inti: después de la segunda raya dice «responde Inti».",
+      "error": "quien-habla"
+    },
+    {
+      "id": "c3", "tipo": "clasificar", "nivel": 2,
+      "lectura": "planta",
+      "enunciado": "¿Quién lo dijo? Pon cada frase con su personaje.",
+      "categorias": [
+        { "id": "nayra", "texto": "Nayra", "emoji": "👧" },
+        { "id": "inti", "texto": "Inti", "emoji": "👦" },
+        { "id": "profe", "texto": "La profesora Ana", "emoji": "👩‍🏫" }
+      ],
+      "elementos": [
+        { "texto": "Tiene las hojas caídas.", "categoria": "nayra" },
+        { "texto": "¡Podemos hacer turnos!", "categoria": "nayra" },
+        { "texto": "Creo que tiene sed.", "categoria": "inti" },
+        { "texto": "Hoy empiezo yo.", "categoria": "inti" },
+        { "texto": "¿Por qué estará así?", "categoria": "profe" },
+        { "texto": "¿Qué podemos hacer?", "categoria": "profe" }
+      ],
+      "pista": "Busca cada frase en el diálogo y mira qué nombre aparece después de la segunda raya.",
+      "explicacion": "Nayra avisa que la planta tiene las hojas caídas y propone turnos. Inti cree que tiene sed y empieza a regarla. La profesora hace las preguntas.",
+      "error": "quien-habla"
+    },
+    {
+      "id": "c4", "tipo": "opcion", "nivel": 2,
+      "lectura": "planta",
+      "enunciado": "Según Inti, ¿por qué la planta tiene las hojas caídas?",
+      "opciones": [
+        { "texto": "Porque nadie la regó en toda la semana.", "correcta": true },
+        { "texto": "Porque hace mucho frío en el curso.", "pista": "El diálogo no habla del frío. ¿Qué responde Inti?", "error": "por-que-dice" },
+        { "texto": "Porque Nayra la cambió de lugar.", "pista": "Nayra solo avisa que la planta está mal. Lee lo que responde Inti.", "error": "por-que-dice" }
+      ],
+      "columnas": 1,
+      "pista": "Lee lo que responde Inti cuando la profesora pregunta por qué está así.",
+      "explicacion": "Inti dice: «Creo que tiene sed. Nadie la regó en toda la semana». Por eso tiene las hojas caídas.",
+      "error": "por-que-dice"
+    },
+    {
+      "id": "c5", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa el diálogo con los signos que faltan.",
+      "texto": "—[¡]Qué linda está la planta[!] —dice Nayra. —[¿]Ya la regaste[?] —pregunta Inti.",
+      "banco": [".", ","],
+      "pista": "Nayra está contenta. Inti pregunta. Cada signo tiene su pareja: uno al principio y otro al final.",
+      "explicacion": "Nayra está contenta: —¡Qué linda está la planta! Inti pregunta: —¿Ya la regaste?",
+      "error": "signos-dialogo"
+    },
+    {
+      "id": "c6", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha el diálogo. ¿Quién no puede ir al parque? Escribe su nombre.",
+      "escuchar": "Luis pregunta: ¿Vamos al parque? Ana responde: Ahora no puedo. Tengo que ayudar a mi hermano con su tarea.",
+      "visual": { "tipo": "emoji", "valor": "🌳" },
+      "respuestas": ["Ana"],
+      "pista": "Luis invita. ¿Quién responde que ahora no puede?",
+      "explicacion": "Ana no puede ir al parque, porque tiene que ayudar a su hermano con su tarea. Luis es quien la invita.",
+      "error": "escucha-comprension"
+    },
+    {
+      "id": "c7", "tipo": "ordenar", "nivel": 3,
+      "enunciado": "Ordena los turnos de este diálogo en la panadería.",
+      "elementos": [
+        "—Buenos días, casera. ¿Tiene marraquetas?",
+        "—Sí, están calientitas. ¿Cuántas quiere?",
+        "—Deme cinco, por favor.",
+        "—Aquí tiene. ¡Que las disfrute!",
+        "—¡Gracias! Hasta mañana."
+      ],
+      "vertical": true,
+      "pista": "Primero se saluda y se pide. Cada turno responde al anterior. La despedida va al final.",
+      "explicacion": "Primero saluda y pregunta si hay marraquetas; la casera dice que sí y pregunta cuántas; el cliente pide cinco; la casera se las da, y al final se despiden.",
+      "error": "turnos"
+    },
+    {
+      "id": "c8", "tipo": "relacionar", "nivel": 3,
+      "lectura": "planta",
+      "enunciado": "Une a cada personaje con lo que hace en el diálogo.",
+      "pares": [
+        ["Nayra", "avisa que la planta está mal y propone turnos"],
+        ["Inti", "explica por qué la planta tiene sed"],
+        ["la profesora Ana", "pregunta qué pueden hacer"]
+      ],
+      "pista": "Lee los turnos de cada personaje. ¿Quién avisa? ¿Quién explica? ¿Quién pregunta?",
+      "explicacion": "Nayra avisa que la planta está mal y propone turnos. Inti explica que tiene sed porque nadie la regó. La profesora pregunta qué pueden hacer.",
+      "error": "por-que-dice"
+    }
+  ],
+  "repaso": {
+    "texto": "En un diálogo, los personajes hablan por turnos. La raya (—) avisa que alguien habla, y «dice», «pregunta» o «responde» nos cuentan quién. Usamos ¿ ? para preguntar y ¡ ! para exclamar.",
+    "visual": { "tipo": "emojis", "items": ["💬", "❓", "❗"], "etiquetas": ["raya —", "¿ ?", "¡ !"] }
+  },
+  "adulto": {
+    "objetivo": "Comprender diálogos escritos: reconocer quién habla en cada turno (gracias a la raya y a palabras como dice, pregunta o responde), distinguir a quien habla de la persona a quien se le habla, leer con la entonación que marcan ¿? y ¡!, y explicar por qué un personaje dice algo.",
+    "sugerencias": [
+      "En la feria o en la tienda, después de comprar, pregunten: «¿Qué le dijiste a la casera? ¿Qué te respondió?». Luego escriban juntos ese diálogo en un papel, con una raya al comienzo de cada turno.",
+      "Lean un diálogo corto con una voz distinta para cada personaje (pueden usar títeres hechos con calcetines). Cambien de papel y exageren la voz en las preguntas y las exclamaciones.",
+      "Jueguen al teléfono de mentira: uno llama y el otro contesta. Después pidan que cuente quién preguntó qué y por qué."
+    ],
+    "errores": {
+      "quien-habla": { "descripcion": "No identifica qué personaje dice cada parte del diálogo.", "sugerencia": "Enséñenle a mirar después de la segunda raya: ahí aparecen «dice», «pregunta» o «responde» con el nombre de quien habla." },
+      "nombre-mencionado": { "descripcion": "Confunde a quien habla con la persona a quien le hablan (por ejemplo, en «—Hola, Ana —dice Mateo», cree que habla Ana).", "sugerencia": "Lean el diálogo actuando: quien «dice» o «responde» es quien tiene la palabra; el otro nombre es a quien le habla." },
+      "signos-dialogo": { "descripcion": "No usa bien la raya ni los signos ¿? y ¡! en un diálogo.", "sugerencia": "Lean frases en voz alta con distinta entonación y pregunten: «¿Esto es una pregunta o una emoción?». Luego escriban juntos los signos al principio y al final." },
+      "turnos": { "descripcion": "Le cuesta ordenar los turnos de una conversación o unir preguntas con respuestas.", "sugerencia": "Jueguen a «pregunta y respuesta»: uno pregunta y el otro contesta. Después escriban cada turno en una tira de papel y ordénenlos." },
+      "por-que-dice": { "descripcion": "No explica por qué un personaje dice o hace algo en el diálogo.", "sugerencia": "Después de leer, pregunten «¿Por qué dijo eso?» y pidan que muestre el turno del diálogo que lo explica." },
+      "escucha-comprension": { "descripcion": "Le cuesta recordar quién dijo qué en un diálogo que escucha.", "sugerencia": "Lean diálogos cortos con dos voces distintas y hagan una sola pregunta al final: «¿Quién preguntó? ¿Quién respondió?»." },
+      "dictado": { "descripcion": "Olvida los signos ¿ ? o la tilde de palabras que preguntan (cuánto, dónde, qué) al escribir una pregunta dictada.", "sugerencia": "Escriban juntos preguntas cortas de la feria («¿Cuánto cuesta?», «¿Dónde está?») y marquen con color los dos signos y la tilde." },
+      "produce-texto": { "descripcion": "Le cuesta escribir un turno de diálogo que responda o pregunte con claridad.", "sugerencia": "Practiquen en voz alta la pregunta o la respuesta antes de escribirla, y revisen juntos la mayúscula y los signos." }
+    }
+  }
+}

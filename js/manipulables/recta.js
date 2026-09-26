@@ -32,11 +32,14 @@ export function crear(cfg, opts) {
   svg.setAttribute('aria-valuemax', String(max));
 
   const lect = lectura('rnm-lectura');
-  const menos = boton(`− ${paso}`, { etiqueta: `Mover ${paso} hacia la izquierda`, onclick: () => mover(-1) });
-  const mas = boton(`+ ${paso}`, { etiqueta: `Mover ${paso} hacia la derecha`, onclick: () => mover(1) });
+  // Flechas grandes para ajustar la marca de a una rayita: las rayitas pueden
+  // quedar muy juntas para un dedo. En modo libre dicen cuánto mueven (± paso);
+  // en modo ejercicio son solo flechas (no dan pistas sobre el número).
+  const menos = boton(b.libre ? `− ${paso}` : '◀', { etiqueta: b.libre ? `Mover ${paso} hacia la izquierda` : 'Mover la marca a la izquierda', onclick: () => mover(-1) });
+  const mas = boton(b.libre ? `+ ${paso}` : '▶', { etiqueta: b.libre ? `Mover ${paso} hacia la derecha` : 'Mover la marca a la derecha', onclick: () => mover(1) });
   b.el.append(
     h('div', { class: 'rnm-caja' }, svg),
-    b.libre ? h('div', { class: 'rnm-libre' }, menos, lect, mas) : lect,
+    h('div', { class: 'rnm-libre' }, menos, lect, mas),
   );
 
   function poner(v, avisar = true) {
@@ -53,21 +56,33 @@ export function crear(cfg, opts) {
     poner(v);
   }
 
-  // puntero: tocar o arrastrar
-  let arrastrando = false;
+  // Puntero: tocar o arrastrar. La marca se mueve al arrastrar en horizontal y
+  // se fija al soltar. Si el navegador usa el gesto para desplazar la página
+  // (dedo en vertical), llega «pointercancel» y la marca vuelve a donde estaba.
+  let toque = null; // { id, x, y, antes, moviendo }
   svg.addEventListener('pointerdown', (e) => {
-    if (b.bloqueado) return;
-    arrastrando = true;
+    if (b.bloqueado || (e.pointerType === 'mouse' && e.button !== 0)) return;
+    toque = { id: e.pointerId, x: e.clientX, y: e.clientY, antes: marca, moviendo: false };
     try { svg.setPointerCapture(e.pointerId); } catch { /* sin captura */ }
-    poner(r.valorEnX(xEnSvg(svg, e, r.W)));
+    // Con el mouse (o lápiz) la marca responde al instante.
+    if (e.pointerType !== 'touch') { toque.moviendo = true; poner(r.valorEnX(xEnSvg(svg, e, r.W))); }
   });
   svg.addEventListener('pointermove', (e) => {
-    if (!arrastrando || b.bloqueado) return;
-    poner(r.valorEnX(xEnSvg(svg, e, r.W)));
+    if (!toque || e.pointerId !== toque.id || b.bloqueado) return;
+    if (!toque.moviendo && Math.abs(e.clientX - toque.x) > 6 && Math.abs(e.clientX - toque.x) >= Math.abs(e.clientY - toque.y)) toque.moviendo = true;
+    if (toque.moviendo) poner(r.valorEnX(xEnSvg(svg, e, r.W)));
   });
-  const soltar = () => { arrastrando = false; };
-  svg.addEventListener('pointerup', soltar);
-  svg.addEventListener('pointercancel', soltar);
+  svg.addEventListener('pointerup', (e) => {
+    if (!toque || e.pointerId !== toque.id) return;
+    toque = null;
+    if (!b.bloqueado) poner(r.valorEnX(xEnSvg(svg, e, r.W)));
+  });
+  svg.addEventListener('pointercancel', () => {
+    if (!toque) return;
+    const { antes } = toque;
+    toque = null;
+    if (!b.bloqueado && marca !== antes) poner(antes);
+  });
   svg.addEventListener('keydown', (e) => {
     if (b.bloqueado) return;
     if (e.key === 'ArrowRight' || e.key === 'ArrowUp') { e.preventDefault(); mover(1); }

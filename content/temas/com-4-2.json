@@ -1,0 +1,397 @@
+{
+  "id": "com-4-2",
+  "titulo": "La coma",
+  "objetivo": "Uso la coma para separar las cosas de una lista y sé que antes de la «y» no va coma.",
+  "explicacion": [
+    {
+      "texto": "La **coma** es un signo parecido al punto, pero con una colita: «,». Al leer, la coma nos pide una pausa corta.",
+      "emoji": "✏️",
+      "visual": { "tipo": "emojis", "items": [",", "."], "etiquetas": ["coma: pausa corta", "punto: pausa más larga"] }
+    },
+    {
+      "texto": "Usamos la coma para separar las cosas de una **lista**. A una lista dentro de una oración se le llama **enumeración**: «Compramos papa, choclo y quinua.»",
+      "visual": { "tipo": "emojis", "items": ["🥔", "🌽", "🌾"], "etiquetas": ["papa,", "choclo", "y quinua."] }
+    },
+    {
+      "texto": "Antes de la **y** que une la última cosa de la lista **no** va coma. Se escribe «Inti, Ana y Kusi», sin coma antes de la «y».",
+      "visual": {
+        "tipo": "tabla",
+        "columnas": ["Así sí ✅", "Así no ❌"],
+        "filas": [["Inti, Ana y Kusi", "Inti, Ana, y Kusi"], ["pan, queso y leche", "pan, queso, y leche"]]
+      }
+    },
+    {
+      "texto": "Cuando respondemos con **sí** o **no** y después decimos algo más, va coma: «Sí, quiero api.» La coma también separa el nombre de la persona a quien le hablamos: «Ana, ven a comer.»",
+      "emoji": "🗣️"
+    }
+  ],
+  "ejemplo": {
+    "instruccion": "Mira cómo Rosa escribe su lista de compras en una oración.",
+    "pasos": [
+      {
+        "texto": "Rosa va a comprar cuatro cosas en la feria: papa, zanahoria, tomate y plátano.",
+        "visual": { "tipo": "emojis", "items": ["🥔", "🥕", "🍅", "🍌"], "etiquetas": ["papa", "zanahoria", "tomate", "plátano"] }
+      },
+      {
+        "texto": "Escribe: «Voy a comprar papa, zanahoria, tomate...». Entre una cosa y la siguiente pone una **coma**.",
+        "visual": { "tipo": "emojis", "items": ["🥔", "🥕", "🍅"], "etiquetas": ["papa,", "zanahoria,", "tomate"] }
+      },
+      {
+        "texto": "Antes de la última cosa escribe **y**, sin coma. Al final pone punto: «Voy a comprar papa, zanahoria, tomate y plátano.»",
+        "visual": { "tipo": "emojis", "items": ["🥔", "🥕", "🍅", "🍌"], "etiquetas": ["papa,", "zanahoria,", "tomate", "y plátano."] }
+      },
+      {
+        "texto": "Rosa llama a su hermano para que la acompañe: «Luis, ven conmigo.» Esta coma separa el nombre de la persona a quien le habla.",
+        "visual": { "tipo": "emojis", "items": ["👧", "👦"], "etiquetas": ["Rosa", "Luis"] }
+      }
+    ]
+  },
+  "guiada": {
+    "intro": "Ahora lo hacemos juntos.",
+    "pasos": [
+      {
+        "id": "g1", "tipo": "tocar",
+        "enunciado": "Toca las cosas de la lista.",
+        "apoyo": "Las cosas de una lista están separadas por comas. La última va después de la «y».",
+        "texto": "En mi mochila llevo un *cuaderno*, un *lápiz* y una *regla*.",
+        "pista": "La mochila no es parte de la lista. Busca lo que llevas dentro de ella.",
+        "explicacion": "La lista es: cuaderno, lápiz y regla. Entre «cuaderno» y «lápiz» hay una coma; antes de «regla» está la «y».",
+        "error": "no-reconoce-lista"
+      },
+      {
+        "id": "g2", "tipo": "completar",
+        "enunciado": "Pon las comas y el punto que faltan.",
+        "apoyo": "Pon una coma entre las cosas de la lista. Antes de la «y» no va coma. Al final, punto.",
+        "texto": "Compramos papa[,] oca[,] haba y choclo[.]",
+        "pista": "Hay cuatro cosas. ¿Cuáles se separan con coma y cuál va después de la «y»?",
+        "explicacion": "«Compramos papa, oca, haba y choclo.» Van comas después de «papa» y de «oca». Antes de la «y» no hay coma, y al final va el punto.",
+        "error": "falta-coma-lista"
+      },
+      {
+        "id": "g3", "tipo": "opcion",
+        "enunciado": "¿Qué oración está bien escrita?",
+        "apoyo": "Mira si hay comas entre las frutas y qué pasa antes de la «y».",
+        "opciones": [
+          { "texto": "Me gustan las uvas, las peras y las frutillas.", "correcta": true },
+          { "texto": "Me gustan las uvas, las peras, y las frutillas.", "pista": "Antes de la «y» no va coma.", "error": "coma-antes-de-y" },
+          { "texto": "Me gustan las uvas las peras y las frutillas.", "pista": "Entre «las uvas» y «las peras» falta algo.", "error": "falta-coma-lista" }
+        ],
+        "columnas": 1,
+        "pista": "Busca la que tiene coma entre las frutas, pero no antes de la «y».",
+        "explicacion": "«Me gustan las uvas, las peras y las frutillas.» Hay coma entre «las uvas» y «las peras», y antes de la «y» no hay coma.",
+        "error": "coma-antes-de-y"
+      }
+    ]
+  },
+  "practica": [
+    {
+      "id": "p1", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Toca los animales de la lista.",
+      "texto": "En el Beni viven *parabas*, *jaguares* y *bufeos*.",
+      "pista": "Busca las palabras separadas por coma y la que va después de la «y».",
+      "explicacion": "La lista de animales es: parabas, jaguares y bufeos. La coma separa los dos primeros y la «y» une el último.",
+      "error": "no-reconoce-lista"
+    },
+    {
+      "id": "p2", "tipo": "memoria", "nivel": 1,
+      "enunciado": "Encuentra las parejas: los dibujos y su lista.",
+      "pares": [
+        [{ "emoji": "🍌🍎🍇" }, "plátano, manzana y uva"],
+        [{ "emoji": "🐕🐈🐔" }, "perro, gato y gallina"],
+        [{ "emoji": "🌽🥕🍅" }, "choclo, zanahoria y tomate"],
+        [{ "emoji": "⚽📕✏️" }, "pelota, libro y lápiz"]
+      ],
+      "pista": "Mira los dibujos en orden y busca la lista que dice lo mismo.",
+      "explicacion": "Cada lista separa las cosas con coma y une la última con «y»: plátano, manzana y uva.",
+      "error": "no-reconoce-lista"
+    },
+    {
+      "id": "p3", "tipo": "completar", "nivel": 1,
+      "enunciado": "Pon la coma que falta en la lista.",
+      "texto": "Wara tiene una llama[,] una alpaca y una oveja.",
+      "banco": ["."],
+      "pista": "La oración no termina después de «llama»: la lista sigue.",
+      "explicacion": "«Wara tiene una llama, una alpaca y una oveja.» La coma separa «una llama» de «una alpaca», y la «y» une la última.",
+      "error": "falta-coma-lista"
+    },
+    {
+      "id": "p4", "tipo": "escribir", "nivel": 1,
+      "enunciado": "Escucha y escribe los colores de la bandera de Bolivia. No olvides la coma.",
+      "escuchar": "rojo, amarillo y verde",
+      "visual": { "tipo": "ilustracion", "id": "bandera-bolivia" },
+      "respuestas": ["rojo, amarillo y verde"],
+      "pista": "Son tres colores. Pon coma entre los dos primeros y «y» antes del último.",
+      "explicacion": "Se escribe «rojo, amarillo y verde». Antes de la «y» no va coma.",
+      "error": "dictado-comas"
+    },
+    {
+      "id": "p5", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "¿La coma está bien usada?",
+      "categorias": [
+        { "id": "bien", "texto": "Bien escrita", "emoji": "✅" },
+        { "id": "corregir", "texto": "Hay que corregir", "emoji": "✏️" }
+      ],
+      "elementos": [
+        { "texto": "Comí arroz, huevo y plátano.", "categoria": "bien" },
+        { "texto": "Comí arroz, huevo, y plátano.", "categoria": "corregir" },
+        { "texto": "Vi un gato, un perro y un loro.", "categoria": "bien" },
+        { "texto": "Vi un gato un perro y un loro.", "categoria": "corregir" },
+        { "texto": "Sí, me gusta el api.", "categoria": "bien" },
+        { "texto": "Traje pan, queso, y leche.", "categoria": "corregir" }
+      ],
+      "pista": "Revisa dos cosas: ¿hay coma entre las cosas de la lista? ¿Hay una coma antes de la «y»?",
+      "explicacion": "Están bien «Comí arroz, huevo y plátano.», «Vi un gato, un perro y un loro.» y «Sí, me gusta el api.». En las otras falta una coma entre las cosas o sobra la coma antes de la «y».",
+      "error": "coma-antes-de-y"
+    },
+    {
+      "id": "p6", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha y escribe la oración con sus comas.",
+      "escuchar": "En la feria compramos papa, choclo y quinua.",
+      "respuestas": ["En la feria compramos papa, choclo y quinua."],
+      "pista": "Escucha las pausas cortas: ahí van las comas. Antes de la «y» no va coma. Termina con punto.",
+      "explicacion": "Se escribe «En la feria compramos papa, choclo y quinua.» La coma separa «papa» y «choclo»; la «y» une «quinua».",
+      "error": "dictado-comas"
+    },
+    {
+      "id": "p7", "tipo": "numero", "nivel": 2,
+      "enunciado": "¿Cuántas comas necesita esta oración? «Luis compró pan leche queso huevos y fruta.»",
+      "respuesta": 3,
+      "erroresComunes": [
+        { "respuesta": 4, "pista": "Antes de la «y» no va coma. Cuenta otra vez.", "error": "coma-antes-de-y" },
+        { "respuesta": 5, "pista": "Contaste las cosas. Cuenta los lugares entre ellas donde va una coma.", "error": "cuenta-comas" }
+      ],
+      "pista": "Di la lista en voz alta haciendo una pausa corta entre las cosas. ¿Cuántas pausas hay antes de llegar a la «y»?",
+      "explicacion": "Se escribe «Luis compró pan, leche, queso, huevos y fruta.»: 3 comas. Antes de la «y» no va coma.",
+      "error": "cuenta-comas"
+    },
+    {
+      "id": "p8", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa la lista con comas, con «y» y con el punto.",
+      "texto": "Mi abuelo cultiva papa[,] oca[,] haba [y] cebada[.]",
+      "pista": "Entre las primeras cosas va coma. La «y» une la última. Al final, punto.",
+      "explicacion": "«Mi abuelo cultiva papa, oca, haba y cebada.» Hay comas entre las primeras cosas, «y» antes de la última y punto al final.",
+      "error": "falta-coma-lista"
+    },
+    {
+      "id": "p9", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "Une cada oración con lo que hace su coma.",
+      "pares": [
+        ["Compré pan, queso y leche.", "separa las cosas de una lista"],
+        ["Sí, ya terminé.", "va después de «sí»"],
+        ["No, gracias.", "va después de «no»"],
+        ["Ana, ven aquí.", "separa el nombre de la persona a quien le hablo"]
+      ],
+      "pista": "Mira qué palabra está justo antes de cada coma.",
+      "explicacion": "En «Compré pan, queso y leche.» la coma separa una lista. En «Sí, ya terminé.» y «No, gracias.» va después de «sí» y de «no». En «Ana, ven aquí.» separa el nombre de Ana, a quien le hablo.",
+      "error": "usos-coma"
+    },
+    {
+      "id": "p10", "tipo": "ordenar", "nivel": 2,
+      "enunciado": "Ordena las palabras para formar la oración.",
+      "elementos": ["Kusi", "come", "arroz,", "huevo", "y", "plátano."],
+      "unir": " ",
+      "pista": "Empieza por quién come y qué hace. Después va la lista: la palabra con coma primero y la que tiene punto al final.",
+      "explicacion": "«Kusi come arroz, huevo y plátano.» La coma separa «arroz» y «huevo», y la «y» une «plátano».",
+      "error": "orden-oracion"
+    },
+    {
+      "id": "p11", "tipo": "escribir-libre", "nivel": 2,
+      "enunciado": "Escribe una oración con los nombres de tres personas de tu familia o de tus amigos.",
+      "guia": ["Mis amigos son...", "En mi casa viven..."],
+      "requisitos": [
+        { "tipo": "mayuscula-inicial" },
+        { "tipo": "punto-final" },
+        { "tipo": "incluye", "palabras": ["y"] },
+        { "tipo": "min-palabras", "valor": 5 }
+      ],
+      "modelo": "Mis amigos son Kusi, Arami y Mateo.",
+      "pista": "Separa los dos primeros nombres con coma y une el último con «y».",
+      "explicacion": "Por ejemplo: «Mis amigos son Kusi, Arami y Mateo.» Hay coma entre los dos primeros nombres y antes del último va «y», sin coma.",
+      "error": "produce-lista"
+    },
+    {
+      "id": "p12", "tipo": "tocar", "nivel": 3,
+      "enunciado": "Faltan las comas. Toca las palabras después de las que va una coma.",
+      "texto": "En la feria venden *papas* *ocas* habas y choclos.",
+      "pista": "La lista tiene cuatro cosas. Recuerda: antes de la «y» no va coma.",
+      "explicacion": "Se escribe «En la feria venden papas, ocas, habas y choclos.» Van comas después de «papas» y de «ocas». Después de «habas» viene la «y», así que no lleva coma.",
+      "error": "falta-coma-lista"
+    },
+    {
+      "id": "p13", "tipo": "escribir", "nivel": 3,
+      "enunciado": "Escribe la oración con la coma que falta: «Mi tía vende api pasteles y buñuelos.»",
+      "respuestas": ["Mi tía vende api, pasteles y buñuelos."],
+      "pista": "La lista tiene tres cosas. ¿Entre cuáles va la coma?",
+      "explicacion": "Se escribe «Mi tía vende api, pasteles y buñuelos.» La coma separa «api» y «pasteles»; la «y» une «buñuelos».",
+      "error": "falta-coma-lista"
+    },
+    {
+      "id": "p14", "tipo": "escribir-libre", "nivel": 3,
+      "enunciado": "Mira la canasta. Escribe una oración que diga todo lo que hay. Usa comas y la «y».",
+      "visual": { "tipo": "emojis", "items": ["🥔", "🌽", "🍌", "🧀"], "etiquetas": ["papa", "choclo", "plátano", "queso"] },
+      "guia": ["En la canasta hay..."],
+      "requisitos": [
+        { "tipo": "mayuscula-inicial" },
+        { "tipo": "punto-final" },
+        { "tipo": "incluye-todas", "palabras": ["papa", "choclo", "plátano", "queso"] },
+        { "tipo": "incluye", "palabras": ["y"] }
+      ],
+      "modelo": "En la canasta hay papas, choclos, plátanos y queso.",
+      "pista": "Son cuatro cosas: coma entre las primeras y «y» antes de la última.",
+      "explicacion": "Por ejemplo: «En la canasta hay papas, choclos, plátanos y queso.» Hay comas entre las tres primeras cosas y «y» antes de la última.",
+      "error": "produce-lista"
+    },
+    {
+      "id": "p15", "tipo": "pasos", "nivel": 3,
+      "enunciado": "Nayra hizo su lista para la feria con dibujos. Ahora la quiere escribir en una oración.",
+      "visual": { "tipo": "emojis", "items": ["🍅", "🥕", "🥚", "🍞"], "etiquetas": ["tomate", "zanahoria", "huevos", "pan"] },
+      "pasos": [
+        {
+          "tipo": "numero",
+          "enunciado": "¿Cuántas cosas hay en la lista?",
+          "respuesta": 4,
+          "pista": "Cuenta los dibujos.",
+          "explicacion": "Hay 4 cosas: tomate, zanahoria, huevos y pan.",
+          "error": "no-reconoce-lista"
+        },
+        {
+          "tipo": "numero",
+          "enunciado": "Si escribes las 4 cosas en una oración con «y», ¿cuántas comas necesitas?",
+          "respuesta": 2,
+          "erroresComunes": [
+            { "respuesta": 3, "pista": "Antes de la «y» no va coma.", "error": "coma-antes-de-y" },
+            { "respuesta": 4, "pista": "No cuentes las cosas: cuenta las comas que van entre ellas.", "error": "cuenta-comas" }
+          ],
+          "pista": "La última cosa se une con «y», sin coma.",
+          "explicacion": "«tomate, zanahoria, huevos y pan»: 2 comas.",
+          "error": "cuenta-comas"
+        },
+        {
+          "tipo": "completar",
+          "enunciado": "Completa la oración de Nayra.",
+          "texto": "Nayra compra tomate[,] zanahoria[,] huevos [y] pan[.]",
+          "pista": "Comas entre las primeras cosas, «y» antes de la última y punto al final.",
+          "explicacion": "«Nayra compra tomate, zanahoria, huevos y pan.»",
+          "error": "falta-coma-lista"
+        }
+      ],
+      "pista": "Resuelve un paso a la vez.",
+      "explicacion": "Nayra compra tomate, zanahoria, huevos y pan: son 4 cosas y 2 comas.",
+      "error": "cuenta-comas"
+    },
+    {
+      "id": "p16", "tipo": "completar", "nivel": 3,
+      "enunciado": "Pon las comas y los puntos que faltan.",
+      "texto": "Ana[,] ven a comer[.] Hay sopa[,] arroz y ensalada[.]",
+      "pista": "Hay dos oraciones. En la primera alguien llama a Ana. En la segunda hay una lista.",
+      "explicacion": "«Ana, ven a comer. Hay sopa, arroz y ensalada.» La coma después de «Ana» separa el nombre de la persona a quien le hablan. La otra coma separa las comidas de la lista.",
+      "error": "usos-coma"
+    }
+  ],
+  "comprobacion": [
+    {
+      "id": "c1", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Toca las frutas de la lista.",
+      "texto": "Rosa compró *mangos*, *piñas* y *papayas* en la feria.",
+      "pista": "Las frutas de la lista están separadas por coma y por la «y».",
+      "explicacion": "Las frutas de la lista son mangos, piñas y papayas.",
+      "error": "no-reconoce-lista"
+    },
+    {
+      "id": "c2", "tipo": "completar", "nivel": 1,
+      "enunciado": "Pon la coma que falta en la lista.",
+      "texto": "En el jardín de la escuela hay kantutas[,] rosas y claveles.",
+      "banco": ["."],
+      "pista": "La oración no termina después de «kantutas»: la lista de flores sigue.",
+      "explicacion": "«En el jardín de la escuela hay kantutas, rosas y claveles.» La coma separa «kantutas» y «rosas»; la «y» une «claveles».",
+      "error": "falta-coma-lista"
+    },
+    {
+      "id": "c3", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha y escribe la oración con sus comas.",
+      "escuchar": "Mi perro juega con Inti, Nayra y Mateo.",
+      "respuestas": ["Mi perro juega con Inti, Nayra y Mateo."],
+      "pista": "Escucha la pausa corta entre los nombres. Antes de la «y» no va coma. Termina con punto.",
+      "explicacion": "Se escribe «Mi perro juega con Inti, Nayra y Mateo.» La coma separa «Inti» y «Nayra»; la «y» une «Mateo».",
+      "error": "dictado-comas"
+    },
+    {
+      "id": "c4", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "¿La coma está bien usada?",
+      "categorias": [
+        { "id": "bien", "texto": "Bien escrita", "emoji": "✅" },
+        { "id": "corregir", "texto": "Hay que corregir", "emoji": "✏️" }
+      ],
+      "elementos": [
+        { "texto": "Llevo pan, queso y agua.", "categoria": "bien" },
+        { "texto": "Llevo pan, queso, y agua.", "categoria": "corregir" },
+        { "texto": "No, gracias.", "categoria": "bien" },
+        { "texto": "Vimos llamas alpacas y vicuñas.", "categoria": "corregir" },
+        { "texto": "Wara, mira el cóndor.", "categoria": "bien" },
+        { "texto": "Tengo lápiz, goma, y regla.", "categoria": "corregir" }
+      ],
+      "pista": "Mira las listas: ¿hay coma entre las cosas? ¿Hay coma antes de la «y»? Recuerda también la coma después de «no» y del nombre de quien escucha.",
+      "explicacion": "Están bien «Llevo pan, queso y agua.», «No, gracias.» y «Wara, mira el cóndor.». En «Vimos llamas, alpacas y vicuñas.» faltaba una coma, y en las otras dos sobra la coma antes de la «y».",
+      "error": "coma-antes-de-y"
+    },
+    {
+      "id": "c5", "tipo": "numero", "nivel": 2,
+      "enunciado": "¿Cuántas comas necesita esta oración? «En el zoológico vimos monos loros tortugas capibaras y jaguares.»",
+      "respuesta": 3,
+      "erroresComunes": [
+        { "respuesta": 4, "pista": "Antes de la «y» no va coma. Cuenta otra vez.", "error": "coma-antes-de-y" },
+        { "respuesta": 5, "pista": "Contaste los animales. Cuenta los lugares entre ellos donde va una coma.", "error": "cuenta-comas" }
+      ],
+      "pista": "Di la lista en voz alta haciendo una pausa corta entre los animales. Antes de la «y» no hay coma.",
+      "explicacion": "Se escribe «En el zoológico vimos monos, loros, tortugas, capibaras y jaguares.»: 3 comas.",
+      "error": "cuenta-comas"
+    },
+    {
+      "id": "c6", "tipo": "ordenar", "nivel": 2,
+      "enunciado": "Ordena las palabras para formar la oración.",
+      "elementos": ["Arami", "dibuja", "soles,", "lunas", "y", "estrellas."],
+      "unir": " ",
+      "pista": "Empieza por quién dibuja. Después va la lista: la palabra con coma primero y la que tiene punto al final.",
+      "explicacion": "«Arami dibuja soles, lunas y estrellas.» La coma separa «soles» y «lunas», y la «y» une «estrellas».",
+      "error": "orden-oracion"
+    },
+    {
+      "id": "c7", "tipo": "tocar", "nivel": 3,
+      "enunciado": "Faltan las comas. Toca las palabras después de las que va una coma.",
+      "texto": "Kusi guarda en su caja *canicas* *lápices* *tizas* botones y cintas.",
+      "pista": "La lista tiene cinco cosas. Antes de la «y» no va coma.",
+      "explicacion": "Se escribe «Kusi guarda en su caja canicas, lápices, tizas, botones y cintas.» Van comas después de «canicas», «lápices» y «tizas». Después de «botones» viene la «y».",
+      "error": "falta-coma-lista"
+    },
+    {
+      "id": "c8", "tipo": "escribir", "nivel": 3,
+      "enunciado": "Escribe la respuesta con las comas que faltan: «Sí ya tengo lápiz cuaderno y goma.»",
+      "respuestas": ["Sí, ya tengo lápiz, cuaderno y goma."],
+      "pista": "Hay una coma después de «Sí» y otra en la lista.",
+      "explicacion": "Se escribe «Sí, ya tengo lápiz, cuaderno y goma.» Una coma va después de «Sí» y la otra separa «lápiz» y «cuaderno».",
+      "error": "usos-coma"
+    }
+  ],
+  "repaso": {
+    "texto": "La coma separa las cosas de una lista: «papa, choclo y quinua». Antes de la «y» no va coma. También va coma después de «sí» o «no» al responder.",
+    "visual": { "tipo": "emojis", "items": ["🥔", "🌽", "🌾"], "etiquetas": ["papa,", "choclo", "y quinua"] }
+  },
+  "adulto": {
+    "objetivo": "Usar la coma para separar los elementos de una enumeración, sin coma antes de la «y» que une el último elemento, y reconocer la coma después de «sí» y «no» cuando son la respuesta y sigue algo más («No, gracias»; en cambio, «No quiero» no lleva coma), y la que separa el nombre de la persona a quien se habla (vocativo).",
+    "sugerencias": [
+      "Antes de ir a la feria o al mercado, dicten la lista de compras como una oración (Compramos papa, cebolla, arroz y fruta.) y pidan que la escriba con comas. En la feria, que marque cada cosa que compran.",
+      "Jueguen a «la canasta»: cada uno repite la lista y agrega algo (En mi canasta hay papa. En mi canasta hay papa y choclo. En mi canasta hay papa, choclo y queso.). Al final escriban la última oración y cuenten las comas.",
+      "Al leer juntos una receta, un cuento o la etiqueta de un producto, busquen listas separadas por comas. Léanlas en voz alta con una pausa corta en cada coma."
+    ],
+    "errores": {
+      "no-reconoce-lista": { "descripcion": "No reconoce qué palabras forman una lista (enumeración) dentro de la oración.", "sugerencia": "Pongan sobre la mesa objetos reales (una papa, un choclo, una naranja) y digan juntos la oración que los nombra: «Hay papa, choclo y naranja.»" },
+      "falta-coma-lista": { "descripcion": "Olvida las comas entre las cosas de una lista.", "sugerencia": "Pidan que lea su lista en voz alta: en cada pausa corta entre una cosa y otra, que ponga una coma." },
+      "coma-antes-de-y": { "descripcion": "Pone coma antes de la «y» que une el último elemento de la lista.", "sugerencia": "Enseñen el truco: «la y reemplaza a la coma». Pidan que tache con un color cualquier coma que esté justo antes de la «y»." },
+      "dictado-comas": { "descripcion": "En los dictados olvida las comas o las pone en otro lugar.", "sugerencia": "Dicten listas cortas de cosas de la casa haciendo una pausa clara en cada coma. Después, que revise contando las cosas y las comas." },
+      "cuenta-comas": { "descripcion": "No sabe cuántas comas necesita una lista (cuenta las cosas en lugar de los espacios entre ellas).", "sugerencia": "Pongan en fila objetos pequeños y coloquen un fideo como coma entre ellos, menos entre los dos últimos, donde va una tarjeta con la «y»." },
+      "usos-coma": { "descripcion": "No reconoce la coma después de «sí» o «no» ni la que separa el nombre de la persona a quien se habla.", "sugerencia": "Jueguen a preguntas y respuestas por escrito: uno pregunta y el otro responde empezando con «Sí,» o «No,». También escriban notitas que empiecen con un nombre: «Mamá, te quiero.»" },
+      "orden-oracion": { "descripcion": "Le cuesta ordenar las palabras de una oración que tiene una lista.", "sugerencia": "Escriban la oración en tiras de papel. Primero armen quién hace qué y después agreguen la lista: coma entre las cosas e «y» antes de la última." },
+      "produce-lista": { "descripcion": "Al escribir sus propias listas, olvida las comas o la «y» del final.", "sugerencia": "Pidan que escriba listas reales: los ingredientes de la sopa, los útiles de la mochila o los nombres de la familia. Revisen juntos comas e «y»." }
+    }
+  }
+}

@@ -1,0 +1,372 @@
+{
+  "id": "mat-4-3",
+  "titulo": "Tablas del 6 al 10",
+  "objetivo": "Aprendo las tablas del 6 al 10 con trucos: cambio el orden, uso el doble, cuento con los dedos y agrego un cero.",
+  "explicacion": [
+    {
+      "texto": "¡Ya sabes muchas multiplicaciones! El orden no cambia el resultado: si sabes que 3 × 7 = 21, también sabes que 7 × 3 = 21. Solo te faltan unas pocas nuevas.",
+      "emoji": "🔄",
+      "visual": { "tipo": "arreglo", "filas": 3, "columnas": 7, "emoji": "🌸" }
+    },
+    {
+      "texto": "**Tabla del 6**: es el doble de la tabla del 3. Para 6 × 4, piensa: 3 × 4 = 12, y el doble de 12 es 24. Entonces 6 × 4 = 24. La tabla del 8 también es el doble de la del 4.",
+      "visual": { "tipo": "tabla", "columnas": ["Tabla del 3", "Tabla del 6 (el doble)"], "filas": [["3 × 2 = 6", "6 × 2 = 12"], ["3 × 4 = 12", "6 × 4 = 24"], ["3 × 5 = 15", "6 × 5 = 30"]] }
+    },
+    {
+      "texto": "**Tabla del 9** con los dedos: abre tus 10 dedos. Para 9 × 4, baja el cuarto dedo desde la izquierda. Quedan 3 dedos a la izquierda y 6 a la derecha: 9 × 4 = 36.",
+      "emoji": "🖐️",
+      "visual": { "tipo": "tabla", "columnas": ["9 × 1", "9 × 2", "9 × 3", "9 × 4", "9 × 5"], "filas": [["9", "18", "27", "36", "45"]] }
+    },
+    {
+      "texto": "**Tabla del 10**: escribe el número y agrégale un 0 al final. 10 × 7 = 70, porque 7 decenas son 70.",
+      "emoji": "🔟",
+      "visual": { "tipo": "bloques", "decenas": 7 }
+    }
+  ],
+  "ejemplo": {
+    "instruccion": "Mira cómo usamos el doble para encontrar 6 × 3. Después, pon la misma cantidad de huevos en los 6 platos y mira el total.",
+    "pasos": [
+      { "texto": "Queremos saber cuánto es 6 × 3. Primero pensamos en la tabla del 3: 3 × 3 = 9.", "visual": { "tipo": "arreglo", "filas": 3, "columnas": 3, "emoji": "🥚" } },
+      { "texto": "6 es el doble de 3. Entonces ponemos al lado otro grupo igual: ahora son 9 + 9.", "visual": { "tipo": "arreglo", "filas": 3, "columnas": 6, "emoji": "🥚" } },
+      { "texto": "9 + 9 = 18. Entonces 6 × 3 = 18: el doble de 9.", "visual": { "tipo": "tabla", "columnas": ["3 × 3", "El doble", "6 × 3"], "filas": [["9", "9 + 9", "18"]] } }
+    ],
+    "explorar": { "tipo": "grupos", "grupos": 6, "emoji": "🥚" }
+  },
+  "guiada": {
+    "intro": "Vamos a usar los trucos juntos.",
+    "pasos": [
+      {
+        "id": "g1", "tipo": "numero",
+        "enunciado": "Usa el doble para calcular 6 × 7.",
+        "apoyo": "6 es el doble de 3. Primero resuelve 3 × 7. Después suma ese resultado dos veces.",
+        "visual": { "tipo": "arreglo", "filas": 7, "columnas": 6, "emoji": "🥚" },
+        "campos": [
+          { "etiqueta": "Paso 1: 3 × 7 =", "respuesta": 21 },
+          { "etiqueta": "Paso 2: el doble, 6 × 7 =", "respuesta": 42 }
+        ],
+        "pista": "3 × 7 es igual a 7 × 3: cuenta de 7 en 7, tres veces. Después suma ese número dos veces.",
+        "explicacion": "3 × 7 = 21. El doble de 21 es 21 + 21 = 42. Entonces 6 × 7 = 42.",
+        "error": "usa-doble"
+      },
+      {
+        "id": "g2", "tipo": "numero",
+        "enunciado": "Usa el truco de los dedos. ¿Cuánto es 9 × 7?",
+        "apoyo": "Abre tus 10 dedos y baja el séptimo desde la izquierda. Los dedos de la izquierda son las decenas y los de la derecha, las unidades.",
+        "visual": { "tipo": "operacion", "numeros": [9, 7], "op": "×" },
+        "respuesta": 63,
+        "erroresComunes": [
+          { "respuesta": 36, "pista": "Tienes las cifras al revés. Primero escribe los dedos de la izquierda.", "error": "truco-nueve" },
+          { "respuesta": 16, "pista": "Sumaste 9 + 7. Usa tus dedos: baja el séptimo.", "error": "suma-en-vez-de-multiplicar" }
+        ],
+        "pista": "Cuenta los dedos que quedan a la izquierda del dedo bajado: esas son las decenas.",
+        "explicacion": "Al bajar el séptimo dedo quedan 6 a la izquierda y 3 a la derecha: 63. Entonces 9 × 7 = 63.",
+        "error": "truco-nueve"
+      },
+      {
+        "id": "g3", "tipo": "completar",
+        "enunciado": "Completa. Para multiplicar por 10, agrega un 0 al final.",
+        "apoyo": "Mira el número que se multiplica por 10 y escríbelo con un 0 al final.",
+        "texto": "10 × 4 = [40]; 10 × 8 = [80]; 10 × 10 = [100]",
+        "banco": ["14", "800"],
+        "pista": "El resultado es el mismo número con un 0 al final. Revisa que tenga un solo 0 más.",
+        "explicacion": "10 × 4 = 40, 10 × 8 = 80 y 10 × 10 = 100. Siempre agregamos un solo 0.",
+        "error": "por-diez"
+      }
+    ]
+  },
+  "practica": [
+    {
+      "id": "p1", "tipo": "generador", "nivel": 1, "generador": "tabla",
+      "params": { "tablas": [6, 10], "visual": true }
+    },
+    {
+      "id": "p2", "tipo": "memoria", "nivel": 1,
+      "enunciado": "Encuentra las parejas: la multiplicación y su resultado.",
+      "pares": [ ["10 × 3", "30"], ["10 × 6", "60"], ["7 × 2", "14"], ["8 × 5", "40"], ["9 × 2", "18"] ],
+      "pista": "Con el 10, agrega un 0. Para 7 × 2, piensa en 2 × 7.",
+      "explicacion": "10 × 3 = 30, 10 × 6 = 60, 7 × 2 = 14, 8 × 5 = 40 y 9 × 2 = 18.",
+      "error": "tabla-multiplicar"
+    },
+    {
+      "id": "p3", "tipo": "relacionar", "nivel": 1,
+      "enunciado": "Une cada multiplicación con la que da el mismo resultado.",
+      "pares": [ ["7 × 3", "3 × 7"], ["8 × 4", "4 × 8"], ["9 × 5", "5 × 9"], ["6 × 2", "2 × 6"] ],
+      "pista": "Busca la multiplicación que tiene los mismos números en otro orden.",
+      "explicacion": "7 × 3 = 3 × 7, 8 × 4 = 4 × 8, 9 × 5 = 5 × 9 y 6 × 2 = 2 × 6. El orden no cambia el resultado.",
+      "error": "orden-factores"
+    },
+    {
+      "id": "p4", "tipo": "numero", "nivel": 1,
+      "enunciado": "Cada hormiga tiene 6 patas. ¿Cuántas patas tienen 3 hormigas?",
+      "visual": { "tipo": "emoji", "valor": "🐜", "cantidad": 3 },
+      "respuesta": 18,
+      "erroresComunes": [ { "respuesta": 9, "pista": "Sumaste 6 + 3. Cuenta 6 patas por cada hormiga.", "error": "suma-en-vez-de-multiplicar" } ],
+      "pista": "Cuenta de 6 en 6, una vez por cada hormiga. O piensa en 6 × 3, que es igual a 3 × 6.",
+      "explicacion": "6, 12, 18. Tres hormigas tienen 18 patas: 3 × 6 = 18.",
+      "error": "tabla-multiplicar"
+    },
+    {
+      "id": "p5", "tipo": "generador", "nivel": 2, "generador": "tabla",
+      "params": { "tablas": [6, 7, 8, 9, 10] }
+    },
+    {
+      "id": "p6", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa los resultados de la tabla del 9.",
+      "texto": "9, 18, 27, [36], [45], [54], 63, [72], 81, 90",
+      "banco": ["35", "56"],
+      "pista": "Mira el patrón: de un resultado al siguiente, las decenas suben 1 y las unidades bajan 1.",
+      "explicacion": "9, 18, 27, 36, 45, 54, 63, 72, 81, 90. ¡Las cifras de cada resultado suman 9!",
+      "error": "truco-nueve"
+    },
+    {
+      "id": "p7", "tipo": "tocar", "nivel": 2,
+      "enunciado": "Toca todos los números que están en la tabla del 8.",
+      "texto": "*16*, 18, *24*, 30, *40*, 42, *56*, 60",
+      "pista": "Cuenta de 8 en 8: 8, 16... Puedes usar el doble de la tabla del 4.",
+      "explicacion": "16, 24, 40 y 56 están en la tabla del 8: 8 × 2, 8 × 3, 8 × 5 y 8 × 7. El 18, el 30, el 42 y el 60 no están.",
+      "error": "multiplos-tabla"
+    },
+    {
+      "id": "p8", "tipo": "numero", "nivel": 2,
+      "enunciado": "Escucha la multiplicación y escribe el resultado.",
+      "escuchar": "¿Cuánto es siete por siete?",
+      "respuesta": 49,
+      "erroresComunes": [
+        { "respuesta": 14, "pista": "Sumaste 7 + 7. Multiplicar 7 × 7 es sumar el 7 siete veces.", "error": "suma-en-vez-de-multiplicar" },
+        { "respuesta": 42, "pista": "Eso es 7 × 6. Te falta sumar un 7 más.", "error": "tabla-multiplicar" }
+      ],
+      "pista": "Si sabes que 7 × 5 = 35, suma dos veces 7 más. Escucha otra vez si lo necesitas.",
+      "explicacion": "7 × 5 = 35; 35 + 7 = 42; 42 + 7 = 49. Entonces 7 × 7 = 49.",
+      "error": "tabla-multiplicar"
+    },
+    {
+      "id": "p9", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "Separa las multiplicaciones según su resultado.",
+      "categorias": [
+        { "id": "d18", "texto": "Dan 18" },
+        { "id": "d24", "texto": "Dan 24" },
+        { "id": "d36", "texto": "Dan 36" }
+      ],
+      "elementos": [
+        { "texto": "6 × 3", "categoria": "d18" }, { "texto": "9 × 2", "categoria": "d18" },
+        { "texto": "6 × 4", "categoria": "d24" }, { "texto": "8 × 3", "categoria": "d24" },
+        { "texto": "6 × 6", "categoria": "d36" }, { "texto": "9 × 4", "categoria": "d36" },
+        { "texto": "4 × 9", "categoria": "d36" }
+      ],
+      "pista": "Calcula cada una. Usa los trucos: el doble, los dedos o cambiar el orden.",
+      "explicacion": "Dan 18: 6 × 3 y 9 × 2. Dan 24: 6 × 4 y 8 × 3. Dan 36: 6 × 6, 9 × 4 y 4 × 9.",
+      "error": "tabla-multiplicar"
+    },
+    {
+      "id": "p10", "tipo": "opcion", "nivel": 2,
+      "enunciado": "Con el truco de los dedos, para 9 × 3 bajas el tercer dedo. ¿Qué número muestran tus manos?",
+      "opciones": [
+        { "texto": "27", "correcta": true },
+        { "texto": "72", "pista": "Tienes las cifras al revés. Primero van los dedos de la izquierda.", "error": "truco-nueve" },
+        { "texto": "12", "pista": "Sumaste 9 + 3. Mira tus dedos: ¿cuántos quedan a cada lado?", "error": "suma-en-vez-de-multiplicar" }
+      ],
+      "columnas": 3,
+      "pista": "Cuenta los dedos a la izquierda del dedo bajado (decenas) y los de la derecha (unidades).",
+      "explicacion": "Al bajar el tercer dedo quedan 2 a la izquierda y 7 a la derecha: 27. Entonces 9 × 3 = 27.",
+      "error": "truco-nueve"
+    },
+    {
+      "id": "p11", "tipo": "manipular", "nivel": 2,
+      "enunciado": "Cuenta de 8 en 8: da 6 saltos desde el 0 y marca dónde llegas.",
+      "manipulable": { "tipo": "recta", "min": 0, "max": 80, "paso": 8, "objetivo": 48 },
+      "pista": "Cada rayita es un salto de 8. Cuenta 6 saltos desde el 0.",
+      "explicacion": "8, 16, 24, 32, 40, 48: con 6 saltos de 8 llegas al 48. Entonces 8 × 6 = 48.",
+      "error": "salta-conteo"
+    },
+    {
+      "id": "p12", "tipo": "generador", "nivel": 3, "generador": "tabla",
+      "params": { "tablas": [7, 8, 9] }
+    },
+    {
+      "id": "p13", "tipo": "pasos", "nivel": 3,
+      "enunciado": "La tabla del 8 es el doble de la tabla del 4. Usa el doble para calcular 8 × 9.",
+      "pasos": [
+        {
+          "tipo": "numero", "enunciado": "¿Cuánto es 4 × 9?", "respuesta": 36,
+          "erroresComunes": [ { "respuesta": 13, "pista": "Sumaste 4 + 9. Piensa en 9 × 4 con el truco de los dedos.", "error": "suma-en-vez-de-multiplicar" } ],
+          "pista": "4 × 9 es igual a 9 × 4. Con los dedos, baja el cuarto dedo.",
+          "explicacion": "4 × 9 = 36.",
+          "error": "tabla-multiplicar"
+        },
+        {
+          "tipo": "numero", "enunciado": "Ahora calcula el doble de 36: 36 + 36.", "respuesta": 72,
+          "erroresComunes": [ { "respuesta": 62, "pista": "6 + 6 = 12: no olvides llevar 1 a las decenas.", "error": "usa-doble" } ],
+          "pista": "Suma primero las unidades: 6 + 6. Después las decenas.",
+          "explicacion": "36 + 36 = 72.",
+          "error": "usa-doble"
+        },
+        {
+          "tipo": "numero", "enunciado": "Entonces, ¿cuánto es 8 × 9?", "respuesta": 72,
+          "pista": "8 × 9 es el doble de 4 × 9.",
+          "explicacion": "8 × 9 = 72, porque es el doble de 36.",
+          "error": "usa-doble"
+        }
+      ],
+      "pista": "Resuelve un paso a la vez.",
+      "explicacion": "4 × 9 = 36 y el doble de 36 es 72. Entonces 8 × 9 = 72.",
+      "error": "usa-doble"
+    },
+    {
+      "id": "p14", "tipo": "manipular", "nivel": 3,
+      "enunciado": "Wara compra 4 salteñas. Cada salteña cuesta 8 Bs. Pon el dinero justo para pagar.",
+      "manipulable": { "tipo": "dinero", "objetivo": 3200, "disponibles": ["b20", "b10", "m5", "m2", "m1"], "mostrarTotal": true },
+      "pista": "Primero calcula 4 × 8. Puedes pensar en el doble de 4 × 4.",
+      "explicacion": "4 × 8 = 32. Wara paga 32 Bs, por ejemplo con un billete de 20 Bs, uno de 10 Bs y una moneda de 2 Bs.",
+      "error": "multiplica-dinero"
+    },
+    {
+      "id": "p15", "tipo": "ordenar", "nivel": 3,
+      "enunciado": "Calcula cada multiplicación y ordénalas de menor a mayor resultado.",
+      "elementos": ["6 × 7", "9 × 6", "7 × 8", "8 × 8"],
+      "pista": "Primero calcula cada una. Después ordena los resultados, del más chico al más grande.",
+      "explicacion": "6 × 7 = 42, 9 × 6 = 54, 7 × 8 = 56 y 8 × 8 = 64. De menor a mayor: 6 × 7, 9 × 6, 7 × 8, 8 × 8.",
+      "error": "tabla-multiplicar"
+    },
+    {
+      "id": "p16", "tipo": "escribir", "nivel": 3,
+      "enunciado": "Escucha la pregunta y escribe la respuesta con números o con palabras.",
+      "escuchar": "Una semana tiene siete días. ¿Cuántos días hay en cuatro semanas?",
+      "respuestas": ["28", "veintiocho", "28 días", "veintiocho días"],
+      "pista": "Cada semana tiene 7 días. Cuenta de 7 en 7, cuatro veces.",
+      "explicacion": "7, 14, 21, 28. En cuatro semanas hay 28 días: 4 × 7 = 28.",
+      "error": "problema-tablas"
+    }
+  ],
+  "comprobacion": [
+    {
+      "id": "c1", "tipo": "numero", "nivel": 1,
+      "enunciado": "Kusi tiene 6 billetes de 10 Bs. ¿Cuánto dinero tiene?",
+      "visual": { "tipo": "dinero", "items": ["b10", "b10", "b10", "b10", "b10", "b10"] },
+      "respuesta": 60,
+      "sufijo": "Bs",
+      "erroresComunes": [ { "respuesta": 16, "pista": "Sumaste 6 + 10. Cuenta de 10 en 10: 10, 20, 30...", "error": "suma-en-vez-de-multiplicar" } ],
+      "pista": "Cuenta de 10 en 10, o escribe el 6 y agrégale un 0.",
+      "explicacion": "10, 20, 30, 40, 50, 60. Seis billetes de 10 Bs son 60 Bs: 6 × 10 = 60.",
+      "error": "por-diez"
+    },
+    {
+      "id": "c2", "tipo": "completar", "nivel": 1,
+      "enunciado": "Completa sin calcular: el orden no cambia el resultado.",
+      "texto": "8 × 3 = 3 × [8]; 7 × 5 = [5] × 7",
+      "banco": ["24", "35"],
+      "pista": "Del otro lado van los mismos números, en otro orden.",
+      "explicacion": "8 × 3 = 3 × 8 y 7 × 5 = 5 × 7. Cambiamos el orden y el resultado es el mismo.",
+      "error": "orden-factores"
+    },
+    {
+      "id": "c3", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "Une cada multiplicación con su resultado.",
+      "pares": [ ["7 × 6", "42"], ["8 × 8", "64"], ["9 × 9", "81"], ["10 × 7", "70"] ],
+      "pista": "Usa los trucos: cambia el orden, usa el doble, los dedos o agrega un 0.",
+      "explicacion": "7 × 6 = 42, 8 × 8 = 64, 9 × 9 = 81 y 10 × 7 = 70.",
+      "error": "tabla-multiplicar"
+    },
+    {
+      "id": "c4", "tipo": "numero", "nivel": 2,
+      "enunciado": "Si 4 × 7 = 28, ¿cuánto es 8 × 7?",
+      "respuesta": 56,
+      "erroresComunes": [
+        { "respuesta": 35, "pista": "Sumaste solo un 7 más. 8 es el doble de 4: suma 28 + 28.", "error": "usa-doble" },
+        { "respuesta": 32, "pista": "Sumaste 28 + 4. 8 × 7 es el doble de 4 × 7.", "error": "usa-doble" }
+      ],
+      "pista": "8 es el doble de 4. ¿Cuál es el doble de 28?",
+      "explicacion": "8 × 7 es el doble de 4 × 7: 28 + 28 = 56.",
+      "error": "usa-doble"
+    },
+    {
+      "id": "c5", "tipo": "multiple", "nivel": 2,
+      "enunciado": "Elige todas las multiplicaciones que dan 36.",
+      "opciones": [
+        { "texto": "6 × 6", "correcta": true },
+        { "texto": "9 × 4", "correcta": true },
+        { "texto": "4 × 9", "correcta": true },
+        { "texto": "7 × 5", "pista": "7 × 5 = 35: le falta 1 para 36.", "error": "tabla-multiplicar" },
+        { "texto": "8 × 4", "pista": "8 × 4 es el doble de 4 × 4: 16 + 16 = 32.", "error": "tabla-multiplicar" },
+        { "texto": "6 × 7", "pista": "6 × 7 es el doble de 3 × 7: 21 + 21 = 42.", "error": "tabla-multiplicar" }
+      ],
+      "columnas": 3,
+      "pista": "Calcula cada una. Recuerda que 9 × 4 y 4 × 9 dan lo mismo.",
+      "explicacion": "6 × 6, 9 × 4 y 4 × 9 dan 36. En cambio, 7 × 5 = 35, 8 × 4 = 32 y 6 × 7 = 42.",
+      "error": "tabla-multiplicar"
+    },
+    {
+      "id": "c6", "tipo": "numero", "nivel": 2,
+      "enunciado": "Escucha la multiplicación y escribe el resultado.",
+      "escuchar": "¿Cuánto es nueve por seis?",
+      "respuesta": 54,
+      "erroresComunes": [
+        { "respuesta": 45, "pista": "Tienes las cifras al revés. Con los dedos: baja el sexto y cuenta primero los de la izquierda.", "error": "truco-nueve" },
+        { "respuesta": 15, "pista": "Sumaste 9 + 6. Usa el truco de los dedos.", "error": "suma-en-vez-de-multiplicar" }
+      ],
+      "pista": "Usa el truco de los dedos: baja el sexto dedo. Escucha otra vez si lo necesitas.",
+      "explicacion": "Al bajar el sexto dedo quedan 5 a la izquierda y 4 a la derecha: 54. Entonces 9 × 6 = 54.",
+      "error": "truco-nueve"
+    },
+    {
+      "id": "c7", "tipo": "pasos", "nivel": 3,
+      "enunciado": "En la fiesta del barrio hay 8 mesas. En cada mesa pueden sentarse 6 personas. Ya llegaron 41 personas.",
+      "pasos": [
+        {
+          "tipo": "numero", "enunciado": "¿Cuántas personas pueden sentarse en total?", "respuesta": 48,
+          "erroresComunes": [ { "respuesta": 14, "pista": "Sumaste 8 + 6. Son 8 mesas con 6 lugares cada una.", "error": "suma-en-vez-de-multiplicar" } ],
+          "pista": "Calcula 8 × 6. Puedes usar el doble: 4 × 6 = 24.",
+          "explicacion": "8 × 6 = 48 lugares, el doble de 24.",
+          "error": "tabla-multiplicar"
+        },
+        {
+          "tipo": "numero", "enunciado": "¿Cuántos lugares quedan libres?", "respuesta": 7,
+          "erroresComunes": [ { "respuesta": 89, "pista": "Sumaste. Algunos lugares ya están ocupados: resta 48 − 41.", "error": "problema-pasos" } ],
+          "pista": "A los lugares que hay, quítales las personas que ya llegaron.",
+          "explicacion": "48 − 41 = 7 lugares libres.",
+          "error": "problema-pasos"
+        }
+      ],
+      "pista": "Primero multiplica. Después resta las personas que ya llegaron.",
+      "explicacion": "8 × 6 = 48 lugares. 48 − 41 = 7 lugares libres.",
+      "error": "problema-pasos"
+    },
+    {
+      "id": "c8", "tipo": "numero", "nivel": 3,
+      "enunciado": "¿Qué número falta? 9 × ☐ = 72",
+      "respuesta": 8,
+      "erroresComunes": [
+        { "respuesta": 63, "pista": "Restaste 72 − 9. Busca cuántos saltos de 9 necesitas para llegar al 72.", "error": "factor-faltante" },
+        { "respuesta": 9, "pista": "9 × 9 = 81, y eso se pasa del 72. Prueba con un número más chico.", "error": "factor-faltante" }
+      ],
+      "pista": "Cuenta de 9 en 9 hasta llegar al 72. ¿Cuántos saltos diste?",
+      "explicacion": "9, 18, 27, 36, 45, 54, 63, 72: son 8 saltos. Entonces 9 × 8 = 72.",
+      "error": "factor-faltante"
+    }
+  ],
+  "repaso": {
+    "texto": "Trucos: la tabla del 6 es el doble de la del 3; la del 9 sale con los dedos; con el 10 agregas un 0. ¡Y el orden no cambia el resultado!",
+    "visual": { "tipo": "tabla", "columnas": ["Tabla", "Truco", "Ejemplo"], "filas": [["6", "El doble de la del 3", "6 × 4 = 12 + 12 = 24"], ["9", "Los dedos", "9 × 4 = 36"], ["10", "Agrega un 0", "10 × 7 = 70"]] }
+  },
+  "adulto": {
+    "objetivo": "Aprender las tablas del 6 al 10 usando estrategias: la propiedad conmutativa (7 × 3 = 3 × 7) para aprovechar lo que ya sabe, el doble (la tabla del 6 es el doble de la del 3 y la del 8, de la del 4), el truco de los dedos para la tabla del 9 y agregar un cero para la del 10.",
+    "sugerencias": [
+      "Practiquen juntos el truco de los dedos para la tabla del 9: digan una multiplicación (por ejemplo, 9 × 6) y que responda mostrando las manos y diciendo el resultado.",
+      "En la feria o la tienda, usen precios de la tabla: «Si una salteña cuesta 8 Bs, ¿cuánto cuestan 3?». Dejen que use el doble: 4 × 3 = 12, y 12 + 12 = 24.",
+      "Dibujen en un papel grande una tabla del 1 al 10 y pinten las multiplicaciones que ya sabe. Muéstrenle que 7 × 3 ya lo sabe porque es igual a 3 × 7, y repasen solo las pocas que faltan (como 7 × 8)."
+    ],
+    "errores": {
+      "tabla-multiplicar": { "descripcion": "Todavía no recuerda algunos resultados de las tablas del 6 al 10.", "sugerencia": "Practiquen 3 o 4 multiplicaciones por día con tarjetas y usen siempre un truco para encontrarlas (el doble, los dedos o cambiar el orden)." },
+      "orden-factores": { "descripcion": "No aprovecha que el orden no cambia el resultado (7 × 3 = 3 × 7).", "sugerencia": "Armen un arreglo con fideos (3 filas de 7), cuéntenlo, gírenlo y vuelvan a contar: el total es el mismo." },
+      "usa-doble": { "descripcion": "Le cuesta usar el doble para calcular la tabla del 6 (desde la del 3) o la del 8 (desde la del 4).", "sugerencia": "Armen 3 grupos de 4 fideos, cuéntenlos y después armen otros 3 grupos iguales al lado: el total es el doble." },
+      "truco-nueve": { "descripcion": "Se confunde con los trucos de la tabla del 9: el de los dedos (por ejemplo, escribe las cifras al revés) o el patrón de los resultados (las decenas suben 1 y las unidades bajan 1).", "sugerencia": "Practiquen con las manos sobre la mesa: primero cuenten los dedos a la izquierda del dedo bajado (decenas) y después los de la derecha (unidades). Escriban la tabla del 9 en una columna para ver el patrón." },
+      "por-diez": { "descripcion": "Le cuesta multiplicar por 10 (olvida el cero o agrega ceros de más).", "sugerencia": "Usen billetes de 10 Bs de juguete: 6 billetes de 10 son 60 Bs. Escriban el número y agreguen un solo 0." },
+      "suma-en-vez-de-multiplicar": { "descripcion": "Suma los dos números (9 + 6 = 15) en lugar de multiplicarlos (9 × 6 = 54).", "sugerencia": "Antes de calcular, pregunten: «¿Cuántos grupos hay y cuántos en cada grupo?». Pueden dibujar los grupos." },
+      "multiplos-tabla": { "descripcion": "No reconoce qué números están en una tabla (por ejemplo, que 56 está en la tabla del 8).", "sugerencia": "Escriban la tabla del 8 en una tira de papel y busquen esos números en calendarios, precios o placas de autos." },
+      "salta-conteo": { "descripcion": "Se equivoca al contar de 6 en 6, de 7 en 7 o de 8 en 8.", "sugerencia": "Cuenten en voz alta con saltos, levantando un dedo por cada salto, y escriban los números en una tira de papel." },
+      "multiplica-dinero": { "descripcion": "Le cuesta calcular cuánto pagar cuando compra varias cosas del mismo precio.", "sugerencia": "Jueguen a la tienda: cada salteña cuesta 8 Bs. Paguen con monedas y billetes de juguete y cuenten juntos." },
+      "problema-pasos": { "descripcion": "Resuelve la multiplicación, pero le cuesta el segundo paso del problema.", "sugerencia": "Anoten el resultado de cada paso en un papel antes de leer la pregunta siguiente." },
+      "problema-tablas": { "descripcion": "Le cuesta reconocer qué multiplicación resuelve un problema escuchado (por ejemplo, 4 semanas de 7 días).", "sugerencia": "Usen un calendario: cuenten los días de cada semana y sumen de 7 en 7." },
+      "factor-faltante": { "descripcion": "Le cuesta encontrar el número que falta en una multiplicación (9 × ☐ = 72).", "sugerencia": "Cuenten de 9 en 9 levantando un dedo por salto hasta llegar al resultado: los dedos levantados son el número que falta." }
+    }
+  }
+}

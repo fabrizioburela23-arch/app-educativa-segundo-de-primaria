@@ -1,0 +1,440 @@
+{
+  "id": "mat-2-6",
+  "titulo": "Problemas de suma y resta",
+  "objetivo": "Leo un problema, busco los datos, elijo si sumo o resto y reviso mi respuesta.",
+  "explicacion": [
+    {
+      "texto": "Para resolver un problema: **lee** con calma, **busca los datos** (los números que necesitas), **piensa** si juntas o quitas, **calcula** y **revisa** si tu respuesta tiene sentido.",
+      "emoji": "🔎",
+      "visual": { "tipo": "emojis", "items": ["📖", "🔎", "🤔", "✏️", "✅"], "etiquetas": ["Leo", "Busco datos", "Pienso", "Calculo", "Reviso"] }
+    },
+    {
+      "texto": "**Sumamos** cuando juntamos o llega algo más. En el micro iban 23 pasajeros y subieron 12. ¿Cuántos van ahora? 23 + 12 = 35 pasajeros.",
+      "emoji": "🚌",
+      "visual": { "tipo": "tabla", "columnas": ["Iban", "Subieron", "Van ahora"], "filas": [["23", "12", "35"]] }
+    },
+    {
+      "texto": "**Restamos** cuando algo se va, se gasta o se come. En la alcancía había 45 Bs y gastaste 20 Bs. ¿Cuánto queda? 45 − 20 = 25 Bs.",
+      "emoji": "🐷",
+      "visual": { "tipo": "dinero", "items": ["b20", "b20", "m5"] }
+    },
+    {
+      "texto": "También restamos para **comparar**: Ana tiene 9 llamas y Luis tiene 6. ¿Cuántas más tiene Ana? 9 − 6 = 3. Y para saber **cuánto falta**: si Luis quiere tener 9 llamas, le faltan 3.",
+      "visual": { "tipo": "pictograma", "titulo": "Llamas", "icono": "🦙", "escala": 1, "datos": [ { "etiqueta": "Ana", "valor": 9, "emoji": "🦙" }, { "etiqueta": "Luis", "valor": 6, "emoji": "🦙" } ] }
+    }
+  ],
+  "ejemplo": {
+    "instruccion": "Mira cómo resolvemos un problema de la cosecha, paso a paso.",
+    "pasos": [
+      { "texto": "Leemos: «Kusi juntó 34 choclos y su prima Nayra juntó 25. ¿Cuántos choclos juntaron entre los dos?».", "visual": { "tipo": "emojis", "items": ["👦", "🌽", "👧", "🌽"], "etiquetas": ["Kusi", "34", "Nayra", "25"] } },
+      { "texto": "Los datos son 34 y 25. «Entre los dos» quiere decir que **juntamos** los choclos. Entonces sumamos.", "visual": { "tipo": "tabla", "columnas": ["Kusi", "Nayra"], "filas": [["34", "25"]] } },
+      { "texto": "Calculamos por columnas: 4 + 5 = 9 unidades y 3 + 2 = 5 decenas. 34 + 25 = 59.", "visual": { "tipo": "tabla", "columnas": ["", "D", "U"], "filas": [["", "3", "4"], ["+", "2", "5"], ["=", "5", "9"]] } },
+      { "texto": "Revisamos: juntos deben tener más que cada uno solo, y 59 es mayor que 34 y que 25. Respuesta: juntaron 59 choclos.", "visual": { "tipo": "emoji", "valor": "✅" } }
+    ]
+  },
+  "guiada": {
+    "intro": "Ahora resolvemos problemas juntos.",
+    "pasos": [
+      {
+        "id": "g1", "tipo": "opcion",
+        "enunciado": "En el micro iban 28 pasajeros. En la parada bajaron 7. ¿Qué operación dice cuántos pasajeros quedan?",
+        "apoyo": "Piensa: cuando la gente baja del micro, ¿quedan más o menos pasajeros?",
+        "visual": { "tipo": "emoji", "valor": "🚌" },
+        "opciones": [
+          { "texto": "28 − 7", "correcta": true },
+          { "texto": "28 + 7", "pista": "Si sumas, en el micro habría más gente. Pero la gente bajó.", "error": "elige-operacion" },
+          { "texto": "7 − 28", "pista": "Empieza por lo que había al principio: 28 pasajeros.", "error": "elige-operacion" }
+        ],
+        "columnas": 3,
+        "pista": "Bajaron pasajeros: en el micro quedan menos.",
+        "explicacion": "Bajaron 7 pasajeros, así que restamos: 28 − 7 = 21. Quedan 21 pasajeros.",
+        "error": "elige-operacion"
+      },
+      {
+        "id": "g2", "tipo": "tocar",
+        "enunciado": "Toca los dos números que necesitas para responder la pregunta.",
+        "apoyo": "La pregunta habla de dinero. Busca los números que van con Bs.",
+        "texto": "Luis tiene 8 años. En su alcancía hay *56* Bs. Gasta *23* Bs en un regalo para su abuela. ¿Cuánto dinero le queda?",
+        "pista": "La edad de Luis no sirve para saber cuánto dinero le queda.",
+        "explicacion": "Necesitas 56 Bs (lo que tenía) y 23 Bs (lo que gastó): le quedan 56 − 23 = 33 Bs. La edad no importa.",
+        "error": "datos-problema"
+      },
+      {
+        "id": "g3", "tipo": "pasos",
+        "enunciado": "En la feria, doña Rosa vendió 45 salteñas y don Mateo vendió 32. ¿Cuántas salteñas más vendió doña Rosa?",
+        "apoyo": "«¿Cuántas más?» nos pide comparar. Para comparar, al número mayor le quitamos el menor.",
+        "visual": { "tipo": "tabla", "columnas": ["Nombre", "Salteñas"], "filas": [["doña Rosa", "45"], ["don Mateo", "32"]] },
+        "pasos": [
+          {
+            "tipo": "opcion", "enunciado": "¿Qué operación resuelve el problema?",
+            "opciones": [
+              { "texto": "45 − 32", "correcta": true },
+              { "texto": "45 + 32", "pista": "No queremos juntar las salteñas de los dos: queremos saber cuántas más vendió doña Rosa.", "error": "problema-comparar" }
+            ],
+            "columnas": 2,
+            "pista": "Para comparar, restamos.",
+            "explicacion": "Para saber cuántas más, restamos: 45 − 32.",
+            "error": "problema-comparar"
+          },
+          {
+            "tipo": "numero", "enunciado": "¿Cuántas salteñas más vendió doña Rosa?",
+            "respuesta": 13,
+            "erroresComunes": [ { "respuesta": 77, "pista": "Sumaste las salteñas de los dos. Hay que restar: 45 − 32.", "error": "problema-comparar" } ],
+            "pista": "Resta las unidades (5 − 2) y después las decenas (4 − 3).",
+            "explicacion": "45 − 32 = 13. Doña Rosa vendió 13 salteñas más que don Mateo.",
+            "error": "calculo-problema"
+          }
+        ],
+        "pista": "Primero elige la operación y después calcula.",
+        "explicacion": "Comparamos restando: 45 − 32 = 13. Doña Rosa vendió 13 salteñas más.",
+        "error": "problema-comparar"
+      }
+    ]
+  },
+  "practica": [
+    {
+      "id": "p1", "tipo": "generador", "nivel": 1, "generador": "dinero-total", "params": { "productos": 2, "maxPrecio": 10 }
+    },
+    {
+      "id": "p2", "tipo": "clasificar", "nivel": 1,
+      "enunciado": "¿Hay que sumar o restar? Pon cada frase en su grupo.",
+      "categorias": [ { "id": "suma", "texto": "Sumo", "emoji": "➕" }, { "id": "resta", "texto": "Resto", "emoji": "➖" } ],
+      "elementos": [
+        { "texto": "Llegan 5 invitados más a la fiesta.", "categoria": "suma" },
+        { "texto": "Nos comemos 4 salteñas.", "categoria": "resta" },
+        { "texto": "Guardo 10 Bs más en la alcancía.", "categoria": "suma" },
+        { "texto": "Bajan 6 pasajeros del micro.", "categoria": "resta" },
+        { "texto": "Nacen 3 llamitas en el corral.", "categoria": "suma" },
+        { "texto": "Se rompen 2 huevos.", "categoria": "resta" }
+      ],
+      "pista": "Pregúntate: al final, ¿habrá más o habrá menos?",
+      "explicacion": "Sumamos cuando llega o se agrega algo: invitados, dinero, llamitas. Restamos cuando algo se va o se pierde: salteñas comidas, pasajeros que bajan, huevos rotos.",
+      "error": "elige-operacion"
+    },
+    {
+      "id": "p3", "tipo": "numero", "nivel": 1,
+      "enunciado": "En el corral hay 7 llamas. Llegan 5 llamas más. ¿Cuántas llamas hay ahora?",
+      "visual": { "tipo": "emoji", "valor": "🦙", "cantidad": 7, "etiqueta": "7 llamas" },
+      "respuesta": 12,
+      "erroresComunes": [ { "respuesta": 2, "pista": "Llegan más llamas: ¿habrá más o menos en el corral?", "error": "elige-operacion" } ],
+      "pista": "Llegan más: hay que juntar. Cuenta 5 más desde el 7.",
+      "explicacion": "7 + 5 = 12. Ahora hay 12 llamas en el corral.",
+      "error": "calculo-problema"
+    },
+    {
+      "id": "p4", "tipo": "numero", "nivel": 1,
+      "enunciado": "En la canasta hay 18 huevos. Se rompen 5. ¿Cuántos huevos sanos quedan?",
+      "visual": { "tipo": "emoji", "valor": "🥚", "cantidad": 18, "etiqueta": "18 huevos" },
+      "respuesta": 13,
+      "erroresComunes": [ { "respuesta": 23, "pista": "Si se rompen huevos, quedan menos sanos. ¿Hay que sumar o restar?", "error": "elige-operacion" } ],
+      "pista": "Quita los 5 huevos rotos de los 18.",
+      "explicacion": "18 − 5 = 13. Quedan 13 huevos sanos.",
+      "error": "calculo-problema"
+    },
+    {
+      "id": "p5", "tipo": "ordenar", "nivel": 1,
+      "enunciado": "Wara tenía 45 Bs y gastó 18 Bs. Ordena los pasos para saber cuánto le queda.",
+      "elementos": [
+        "Leo el problema con calma.",
+        "Pienso: gastó dinero, le queda menos. Resto.",
+        "Calculo: 45 − 18 = 27.",
+        "Reviso: 27 + 18 = 45. ¡Está bien!"
+      ],
+      "vertical": true,
+      "pista": "Antes de calcular hay que leer y pensar qué operación usar. Revisar va al final.",
+      "explicacion": "Primero leo, después pienso qué operación usar, luego calculo (45 − 18 = 27) y al final reviso con una suma (27 + 18 = 45).",
+      "error": "pasos-problema"
+    },
+    {
+      "id": "p6", "tipo": "generador", "nivel": 2, "generador": "dinero-cambio", "params": { "maxPrecio": 20, "pagos": [20, 50] }
+    },
+    {
+      "id": "p7", "tipo": "pasos", "nivel": 2,
+      "enunciado": "Arami quiere comprar una pelota de 65 Bs. En su alcancía tiene 40 Bs. ¿Cuánto dinero le falta?",
+      "visual": { "tipo": "dinero", "items": ["b20", "b20"] },
+      "pasos": [
+        {
+          "tipo": "opcion", "enunciado": "¿Qué operación resuelve el problema?",
+          "opciones": [
+            { "texto": "65 − 40", "correcta": true },
+            { "texto": "65 + 40", "pista": "Si sumas, te da mucho más de lo que cuesta la pelota.", "error": "problema-completar" }
+          ],
+          "columnas": 2,
+          "pista": "Lo que falta es lo que cuesta la pelota menos lo que ya tiene.",
+          "explicacion": "Para saber cuánto falta, restamos: 65 − 40.",
+          "error": "problema-completar"
+        },
+        {
+          "tipo": "numero", "enunciado": "¿Cuánto dinero le falta a Arami?",
+          "respuesta": 25,
+          "sufijo": "Bs",
+          "erroresComunes": [ { "respuesta": 105, "pista": "Sumaste. Para saber cuánto falta, resta: 65 − 40.", "error": "problema-completar" } ],
+          "pista": "También puedes contar desde 40 hasta 65.",
+          "explicacion": "65 − 40 = 25. Le faltan 25 Bs. Compruébalo: 40 + 25 = 65.",
+          "error": "calculo-problema"
+        }
+      ],
+      "pista": "Primero elige la operación y después calcula.",
+      "explicacion": "A Arami le faltan 65 − 40 = 25 Bs.",
+      "error": "problema-completar"
+    },
+    {
+      "id": "p8", "tipo": "tocar", "nivel": 2,
+      "enunciado": "Toca los dos números que necesitas para responder la pregunta.",
+      "texto": "Doña Ana maneja el micro de la línea 2. Lleva *24* pasajeros. En la plaza suben *9* más. ¿Cuántos pasajeros lleva ahora?",
+      "pista": "El número de la línea del micro no dice cuántos pasajeros hay.",
+      "explicacion": "Necesitas 24 (los que iban) y 9 (los que suben): 24 + 9 = 33 pasajeros. El número de la línea no sirve para calcular.",
+      "error": "datos-problema"
+    },
+    {
+      "id": "p9", "tipo": "numero", "nivel": 2,
+      "enunciado": "En la cosecha, don Juan llenó 68 bolsas de papa y doña Wara llenó 45. ¿Cuántas bolsas más llenó don Juan?",
+      "visual": { "tipo": "tabla", "columnas": ["Nombre", "Bolsas de papa"], "filas": [["don Juan", "68"], ["doña Wara", "45"]] },
+      "respuesta": 23,
+      "erroresComunes": [ { "respuesta": 113, "pista": "Sumaste las bolsas de los dos. «¿Cuántas más?» pide comparar: resta.", "error": "problema-comparar" } ],
+      "pista": "Para comparar, al número mayor le quitas el menor.",
+      "explicacion": "68 − 45 = 23. Don Juan llenó 23 bolsas más que doña Wara.",
+      "error": "problema-comparar"
+    },
+    {
+      "id": "p10", "tipo": "numero", "nivel": 2,
+      "enunciado": "Escucha el problema y responde.",
+      "escuchar": "Para la fiesta del curso inflamos 32 globos. Se reventaron 11. ¿Cuántos globos quedan?",
+      "respuesta": 21,
+      "erroresComunes": [ { "respuesta": 43, "pista": "Si se reventaron globos, quedan menos. Hay que restar.", "error": "elige-operacion" } ],
+      "pista": "Vuelve a escuchar: ¿cuántos globos había y cuántos se reventaron?",
+      "explicacion": "Había 32 globos y se reventaron 11: 32 − 11 = 21. Quedan 21 globos.",
+      "error": "calculo-problema"
+    },
+    {
+      "id": "p11", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa con el signo y el resultado correctos.",
+      "texto": "Sofía tenía 27 figuritas y su tío le regaló 15. Ahora tiene 27 [+] 15 = [42] figuritas.",
+      "banco": ["−", "12"],
+      "pista": "Le regalaron figuritas: ¿ahora tiene más o menos que antes?",
+      "explicacion": "Le regalaron más figuritas, entonces sumamos: 27 + 15 = 42. Ahora tiene 42 figuritas.",
+      "error": "elige-operacion"
+    },
+    {
+      "id": "p12", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "Une cada situación con su respuesta.",
+      "pares": [
+        ["Tengo 50 Bs y gasto 20 Bs.", "Me quedan 30 Bs."],
+        ["Tengo 50 Bs y me regalan 20 Bs.", "Ahora tengo 70 Bs."],
+        ["Tengo 50 Bs y quiero juntar 60 Bs.", "Me faltan 10 Bs."],
+        ["Tengo 50 Bs y Ana tiene 45 Bs.", "Tengo 5 Bs más que Ana."]
+      ],
+      "pista": "Lee bien cada frase: ¿gastas, te regalan, te falta algo o comparas?",
+      "explicacion": "50 − 20 = 30; 50 + 20 = 70; 60 − 50 = 10; 50 − 45 = 5.",
+      "error": "elige-operacion"
+    },
+    {
+      "id": "p13", "tipo": "generador", "nivel": 3, "generador": "dinero-cambio", "params": { "maxPrecio": 45, "pagos": [50, 100] }
+    },
+    {
+      "id": "p14", "tipo": "pasos", "nivel": 3,
+      "enunciado": "Kusi tiene 35 Bs en su alcancía. Su abuela le regala 20 Bs. Después compra un libro de 38 Bs. ¿Cuánto dinero le queda?",
+      "visual": { "tipo": "dinero", "items": ["b20", "b10", "m5"] },
+      "pasos": [
+        {
+          "tipo": "numero", "enunciado": "¿Cuánto dinero tiene Kusi después del regalo?",
+          "respuesta": 55,
+          "sufijo": "Bs",
+          "erroresComunes": [ { "respuesta": 15, "pista": "La abuela le regala dinero: ahora tiene más. Suma.", "error": "elige-operacion" } ],
+          "pista": "Le regalan: hay que juntar 35 + 20.",
+          "explicacion": "35 + 20 = 55. Después del regalo tiene 55 Bs.",
+          "error": "problema-dos-pasos"
+        },
+        {
+          "tipo": "numero", "enunciado": "Compra el libro de 38 Bs. ¿Cuánto dinero le queda?",
+          "respuesta": 17,
+          "sufijo": "Bs",
+          "erroresComunes": [
+            { "respuesta": 93, "pista": "Si compra algo, gasta dinero. Hay que restar.", "error": "elige-operacion" },
+            { "respuesta": 23, "pista": "En las unidades, 5 es menor que 8: pide 1 decena prestada.", "error": "resta-invierte" }
+          ],
+          "pista": "Resta 55 − 38. En las unidades tendrás que pedir prestado.",
+          "explicacion": "55 − 38 = 17. A Kusi le quedan 17 Bs.",
+          "error": "problema-dos-pasos"
+        }
+      ],
+      "pista": "Resuelve en orden: primero el regalo y después la compra.",
+      "explicacion": "35 + 20 = 55 y 55 − 38 = 17. A Kusi le quedan 17 Bs.",
+      "error": "problema-dos-pasos"
+    },
+    {
+      "id": "p15", "tipo": "escribir-libre", "nivel": 3,
+      "enunciado": "Mira la tabla. Escribe una pregunta sobre estos datos que se responda restando.",
+      "visual": { "tipo": "tabla", "columnas": ["Nombre", "Ahorro"], "filas": [["Wara", "35 Bs"], ["Luis", "20 Bs"]] },
+      "guia": ["¿Cuántos bolivianos más tiene...?", "¿Cuánto le falta a... para tener...?"],
+      "requisitos": [
+        { "tipo": "mayuscula-inicial" },
+        { "tipo": "signos-pregunta" },
+        { "tipo": "min-palabras", "valor": 5 },
+        { "tipo": "incluye", "palabras": ["más", "menos", "falta", "faltan", "queda", "quedan", "diferencia"] }
+      ],
+      "modelo": "¿Cuántos bolivianos más tiene Wara que Luis?",
+      "pista": "Puedes comparar lo que ahorraron los dos: ¿quién tiene más y cuánto más?",
+      "explicacion": "Por ejemplo: «¿Cuántos bolivianos más tiene Wara que Luis?». Se responde restando: 35 − 20 = 15 Bs.",
+      "error": "inventa-problema"
+    },
+    {
+      "id": "p16", "tipo": "numero", "nivel": 3,
+      "enunciado": "Al salar de Uyuni llegaron 245 visitantes el sábado y 318 el domingo. ¿Cuántos visitantes más llegaron el domingo?",
+      "visual": { "tipo": "tabla", "columnas": ["Día", "Visitantes"], "filas": [["sábado", "245"], ["domingo", "318"]] },
+      "respuesta": 73,
+      "erroresComunes": [
+        { "respuesta": 563, "pista": "Sumaste los visitantes de los dos días. «¿Cuántos más?» pide comparar.", "error": "problema-comparar" },
+        { "respuesta": 133, "pista": "Arriba va el número mayor, 318. En cada columna, si arriba hay menos, pide prestado.", "error": "resta-invierte" }
+      ],
+      "pista": "Al número mayor le quitas el menor: 318 − 245.",
+      "explicacion": "318 − 245 = 73. El domingo llegaron 73 visitantes más. Compruébalo: 245 + 73 = 318.",
+      "error": "problema-comparar"
+    }
+  ],
+  "comprobacion": [
+    {
+      "id": "c1", "tipo": "numero", "nivel": 1,
+      "enunciado": "Para la fiesta, el tío Inti sirvió 14 vasos de api. Después sirvió 5 más. ¿Cuántos vasos de api sirvió?",
+      "visual": { "tipo": "emoji", "valor": "☕", "cantidad": 14, "etiqueta": "14 vasos de api" },
+      "respuesta": 19,
+      "erroresComunes": [ { "respuesta": 9, "pista": "Sirvió más vasos: hay que juntar.", "error": "elige-operacion" } ],
+      "pista": "Sirvió 14 y después 5 más: junta las dos cantidades.",
+      "explicacion": "14 + 5 = 19. El tío Inti sirvió 19 vasos de api.",
+      "error": "calculo-problema"
+    },
+    {
+      "id": "c2", "tipo": "opcion", "nivel": 1,
+      "enunciado": "En el patio hay 16 pollitos. Se esconden 6 detrás de la casa. ¿Qué operación dice cuántos pollitos se ven?",
+      "visual": { "tipo": "emoji", "valor": "🐥", "cantidad": 16 },
+      "opciones": [
+        { "texto": "16 − 6", "correcta": true },
+        { "texto": "16 + 6", "pista": "Si se esconden, se ven menos pollitos, no más.", "error": "elige-operacion" },
+        { "texto": "6 + 6", "pista": "Empieza por todos los pollitos que había: 16.", "error": "datos-problema" }
+      ],
+      "columnas": 3,
+      "pista": "Si se esconden, ¿se ven más o menos pollitos?",
+      "explicacion": "Se esconden 6, así que restamos: 16 − 6 = 10. Se ven 10 pollitos.",
+      "error": "elige-operacion"
+    },
+    {
+      "id": "c3", "tipo": "generador", "nivel": 2, "generador": "dinero-total", "params": { "productos": 3, "maxPrecio": 20 }
+    },
+    {
+      "id": "c4", "tipo": "pasos", "nivel": 2,
+      "enunciado": "El curso de Inti juntó 57 botellas para reciclar y el curso de Sofía juntó 34. ¿Cuántas botellas más juntó el curso de Inti?",
+      "visual": { "tipo": "tabla", "columnas": ["", "Botellas"], "filas": [["Curso de Inti", "57"], ["Curso de Sofía", "34"]] },
+      "pasos": [
+        {
+          "tipo": "opcion", "enunciado": "¿Qué operación resuelve el problema?",
+          "opciones": [
+            { "texto": "57 − 34", "correcta": true },
+            { "texto": "57 + 34", "pista": "No queremos saber el total de botellas: queremos comparar.", "error": "problema-comparar" }
+          ],
+          "columnas": 2,
+          "pista": "«¿Cuántas más?» se resuelve comparando.",
+          "explicacion": "Para comparar, restamos: 57 − 34.",
+          "error": "problema-comparar"
+        },
+        {
+          "tipo": "numero", "enunciado": "¿Cuántas botellas más juntó el curso de Inti?",
+          "respuesta": 23,
+          "erroresComunes": [ { "respuesta": 91, "pista": "Sumaste. Hay que restar: 57 − 34.", "error": "problema-comparar" } ],
+          "pista": "Resta las unidades (7 − 4) y después las decenas (5 − 3).",
+          "explicacion": "57 − 34 = 23. El curso de Inti juntó 23 botellas más.",
+          "error": "calculo-problema"
+        }
+      ],
+      "pista": "Primero elige la operación y después calcula.",
+      "explicacion": "57 − 34 = 23. El curso de Inti juntó 23 botellas más.",
+      "error": "problema-comparar"
+    },
+    {
+      "id": "c5", "tipo": "numero", "nivel": 2,
+      "enunciado": "El micro tiene 30 asientos. Ya hay 18 pasajeros sentados. ¿Cuántos asientos quedan libres?",
+      "visual": { "tipo": "emoji", "valor": "🚌" },
+      "respuesta": 12,
+      "erroresComunes": [
+        { "respuesta": 48, "pista": "Si sumas, te da más asientos de los que tiene el micro. Hay que restar.", "error": "problema-completar" },
+        { "respuesta": 28, "pista": "En las unidades hay 0 arriba: pide 1 decena prestada y resta 10 − 8.", "error": "resta-invierte" }
+      ],
+      "pista": "Los asientos libres son todos los asientos menos los ocupados.",
+      "explicacion": "30 − 18 = 12. Quedan 12 asientos libres.",
+      "error": "problema-completar"
+    },
+    {
+      "id": "c6", "tipo": "tocar", "nivel": 2,
+      "enunciado": "Toca los dos números que necesitas para responder la pregunta.",
+      "texto": "Mateo tiene 7 años. Cosechó *43* mandarinas y regaló *12* a sus vecinos. ¿Cuántas mandarinas le quedan?",
+      "pista": "La edad de Mateo no dice nada sobre las mandarinas.",
+      "explicacion": "Necesitas 43 (las que cosechó) y 12 (las que regaló): le quedan 43 − 12 = 31 mandarinas.",
+      "error": "datos-problema"
+    },
+    {
+      "id": "c7", "tipo": "numero", "nivel": 3,
+      "enunciado": "Un camión llevó 256 sandías al mercado y otro camión llevó 178. ¿Cuántas sandías llevaron entre los dos?",
+      "visual": { "tipo": "emojis", "items": ["🚚", "🚚"], "etiquetas": ["256 sandías", "178 sandías"] },
+      "respuesta": 434,
+      "erroresComunes": [
+        { "respuesta": 324, "pista": "Revisa lo que llevas: 6 + 8 = 14, así que llevas 1 decena.", "error": "suma-olvida-llevar" },
+        { "respuesta": 78, "pista": "«Entre los dos» pide juntar: hay que sumar.", "error": "elige-operacion" }
+      ],
+      "pista": "«Entre los dos» quiere decir juntar. Suma por columnas y no olvides lo que llevas.",
+      "explicacion": "256 + 178 = 434: 6 + 8 = 14 (llevo 1), 5 + 7 + 1 = 13 (llevo 1) y 2 + 1 + 1 = 4.",
+      "error": "calculo-problema"
+    },
+    {
+      "id": "c8", "tipo": "pasos", "nivel": 3,
+      "enunciado": "En el micro iban 25 pasajeros. En una parada bajaron 8 y subieron 12. ¿Cuántos pasajeros van ahora?",
+      "visual": { "tipo": "emoji", "valor": "🚌" },
+      "pasos": [
+        {
+          "tipo": "numero", "enunciado": "Primero bajaron 8. ¿Cuántos pasajeros quedaron?",
+          "respuesta": 17,
+          "erroresComunes": [ { "respuesta": 33, "pista": "Si bajan pasajeros, quedan menos. Hay que restar.", "error": "elige-operacion" } ],
+          "pista": "Resta 25 − 8.",
+          "explicacion": "25 − 8 = 17. Quedaron 17 pasajeros.",
+          "error": "problema-dos-pasos"
+        },
+        {
+          "tipo": "numero", "enunciado": "Después subieron 12. ¿Cuántos pasajeros van ahora?",
+          "respuesta": 29,
+          "erroresComunes": [ { "respuesta": 5, "pista": "Si suben pasajeros, en el micro hay más. Hay que sumar.", "error": "elige-operacion" } ],
+          "pista": "Suma 17 + 12.",
+          "explicacion": "17 + 12 = 29. Ahora van 29 pasajeros.",
+          "error": "problema-dos-pasos"
+        }
+      ],
+      "pista": "Resuelve en orden: primero los que bajan y después los que suben.",
+      "explicacion": "25 − 8 = 17 y 17 + 12 = 29. Ahora van 29 pasajeros.",
+      "error": "problema-dos-pasos"
+    }
+  ],
+  "repaso": {
+    "texto": "Lee con calma y pregúntate: al final, ¿habrá más o menos? Si se junta o llega algo, **sumo**. Si algo se va o se gasta, o si comparo o busco cuánto falta, **resto**.",
+    "visual": { "tipo": "tabla", "columnas": ["Sumo ➕", "Resto ➖"], "filas": [["juntamos", "quitamos"], ["llegan o suben", "se van o bajan"], ["me regalan", "gasto"], ["¿cuántos en total?", "¿cuántos más? ¿cuánto falta?"]] }
+  },
+  "adulto": {
+    "objetivo": "Resolver problemas cotidianos de suma y resta (juntar, agregar, quitar, comparar y completar) con números de hasta tres cifras: identificar los datos útiles, elegir la operación antes de calcular, resolver problemas de uno y dos pasos, y revisar si la respuesta tiene sentido.",
+    "sugerencias": [
+      "En la feria, antes de pagar, pregunten: «¿Cuánto pagamos por las dos cosas?» y «Si pagamos con 20 Bs, ¿cuánto nos devuelven?». Que lo calcule y luego verifiquen con el cambio real.",
+      "En un viaje en micro o trufi, cuenten juntos cuántos pasajeros suben y bajan en algunas paradas, y calculen cuántos van en cada tramo.",
+      "Armen una alcancía con una lata o una botella: anoten una meta (por ejemplo, 30 Bs), lo que van guardando cada semana y cuánto falta para llegar.",
+      "Túrnense para inventar problemas con cosas de la casa (papas, huevos, panes): uno inventa y el otro lo resuelve diciendo si suma o resta y por qué."
+    ],
+    "errores": {
+      "dinero-total": { "descripcion": "Se equivoca al sumar los precios de varios productos.", "sugerencia": "Jueguen a la tiendita con precios pequeños y monedas de verdad o de papel; que sume los precios de dos cosas y pague el total." },
+      "dinero-cambio": { "descripcion": "Le cuesta calcular el cambio (a veces suma el precio y el pago).", "sugerencia": "Al pagar en la tienda, cuenten juntos el cambio desde el precio hasta el billete con que pagaron." },
+      "elige-operacion": { "descripcion": "Elige la operación equivocada: suma cuando debe restar, o al revés.", "sugerencia": "Antes de calcular, pregunten: «Al final, ¿habrá más o menos?». Si habrá más, se suma; si habrá menos, se resta. Actúen el problema con objetos." },
+      "datos-problema": { "descripcion": "No distingue los datos que sirven de los que no sirven para responder.", "sugerencia": "Lean juntos el problema y subrayen solo los números que hablan de lo que se pregunta." },
+      "problema-comparar": { "descripcion": "En problemas de «¿cuántos más?» suma las dos cantidades en lugar de restar.", "sugerencia": "Pongan dos filas de objetos frente a frente, formen parejas y cuenten los que quedan sin pareja." },
+      "problema-completar": { "descripcion": "En problemas de «¿cuánto falta?» suma en lugar de restar o de contar hacia adelante.", "sugerencia": "Con monedas, partan de lo que ya tienen y agreguen de una en una hasta llegar a la meta; cuenten cuántas agregaron." },
+      "problema-dos-pasos": { "descripcion": "Le cuesta resolver problemas de dos pasos.", "sugerencia": "Hagan el problema con objetos, un paso a la vez, y anoten el resultado de cada paso antes de seguir." },
+      "calculo-problema": { "descripcion": "Elige bien la operación, pero se equivoca al calcular.", "sugerencia": "Pidan que revise el cálculo: una resta se comprueba con una suma, y una suma se puede comprobar con una resta." },
+      "pasos-problema": { "descripcion": "No sigue un orden para resolver problemas.", "sugerencia": "Peguen en la pared una tarjeta con los pasos: leo, pienso, calculo y reviso." },
+      "inventa-problema": { "descripcion": "Le cuesta escribir una pregunta que se responda con los datos.", "sugerencia": "Miren juntos una situación de la casa (dos bolsas de pan, dos alcancías) e inventen preguntas con ¿ al inicio y ? al final." },
+      "suma-olvida-llevar": { "descripcion": "Olvida sumar la decena o la centena que lleva.", "sugerencia": "Repasen la suma llevando con atados de 10 palitos: cuando juntan 10 sueltos, forman un atado y lo pasan a la columna de las decenas." },
+      "resta-invierte": { "descripcion": "En la resta, cuando arriba hay menos, resta al revés el número pequeño del grande.", "sugerencia": "Recuérdele: «Arriba está lo que tienes; abajo, lo que quitas». Si arriba no alcanza, hay que pedir prestado." }
+    }
+  }
+}

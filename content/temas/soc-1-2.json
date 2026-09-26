@@ -204,7 +204,7 @@
       "id": "p9", "tipo": "escribir", "nivel": 2,
       "enunciado": "Escucha la pregunta y escribe la respuesta.",
       "escuchar": "¿Qué palabra decimos cuando alguien nos presta algo o nos ayuda?",
-      "respuestas": ["gracias", "muchas gracias"],
+      "respuestas": ["gracias", "muchas gracias", "¡gracias", "¡muchas gracias"],
       "pista": "Es una palabra amable que muestra que agradecemos. Empieza con g.",
       "explicacion": "Decimos «gracias». Es una palabra amable que nos ayuda a convivir.",
       "error": "escucha-comprension"
@@ -359,9 +359,9 @@
     },
     {
       "id": "c3", "tipo": "clasificar", "nivel": 2,
-      "enunciado": "¿Así se resuelve un problema con diálogo o con violencia?",
+      "enunciado": "¿Así se resuelve un problema en paz o con violencia?",
       "categorias": [
-        { "id": "dialogo", "texto": "Con diálogo", "emoji": "🗣️" },
+        { "id": "dialogo", "texto": "En paz", "emoji": "🕊️" },
         { "id": "violencia", "texto": "Con violencia", "emoji": "🚫" }
       ],
       "elementos": [
@@ -372,24 +372,24 @@
         { "texto": "insultar", "categoria": "violencia" },
         { "texto": "romper sus cosas", "categoria": "violencia" }
       ],
-      "pista": "El diálogo usa palabras con respeto. La violencia lastima a las personas o a sus cosas.",
-      "explicacion": "Conversar, pedir disculpas y pedir ayuda son diálogo. Empujar, insultar y romper cosas son violencia.",
+      "pista": "En paz usamos palabras con respeto o pedimos ayuda. La violencia lastima a las personas o a sus cosas.",
+      "explicacion": "Conversar con calma, pedir disculpas y pedir ayuda a la maestra resuelven el problema en paz. Empujar, insultar y romper cosas es violencia.",
       "error": "conflictos"
     },
     {
       "id": "c4", "tipo": "completar", "nivel": 2,
-      "enunciado": "Completa lo que haces si rompes algo sin querer.",
-      "texto": "Si rompo sin querer algo de un compañero, le pido [disculpas] y trato de [arreglarlo].",
-      "banco": ["gritos", "esconderlo"],
-      "pista": "¿Qué palabra usamos para decir «lo siento»? ¿Y qué hacemos con lo que se rompió?",
-      "explicacion": "Le pido disculpas y trato de arreglarlo. Esconderlo no soluciona el problema.",
-      "error": "conflictos"
+      "enunciado": "Completa sobre los libros de la biblioteca.",
+      "texto": "Los libros de la biblioteca son de [todos]. Por eso los [cuidamos] y los devolvemos limpios.",
+      "banco": ["sillas", "rompemos"],
+      "pista": "¿Quiénes leen los libros de la biblioteca? ¿Qué hacemos con lo que usan muchas personas?",
+      "explicacion": "Los libros de la biblioteca son de todos. Por eso los cuidamos y los devolvemos limpios, para que otros niños también los puedan leer.",
+      "error": "cuidado-escuela"
     },
     {
       "id": "c5", "tipo": "escribir", "nivel": 2,
       "enunciado": "Escucha la adivinanza y escribe quién es.",
       "escuchar": "Organizo toda la escuela. Me reúno con las maestras, los maestros y las familias para que todo funcione bien. ¿Quién soy?",
-      "respuestas": ["directora", "director", "la directora", "el director", "la directora o el director", "el director o la directora"],
+      "respuestas": ["directora", "director", "la directora", "el director", "la directora o el director", "el director o la directora", "directora de la escuela", "director de la escuela", "la directora de la escuela", "el director de la escuela"],
       "pista": "Es la persona que dirige la escuela.",
       "explicacion": "Es la directora o el director: organiza la escuela y se reúne con maestros y familias.",
       "error": "roles-escuela"

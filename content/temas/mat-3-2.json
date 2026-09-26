@@ -1,0 +1,462 @@
+{
+  "id": "mat-3-2",
+  "titulo": "La simetría",
+  "objetivo": "Reconozco figuras simétricas, encuentro su eje de simetría y completo figuras como en un espejo.",
+  "explicacion": [
+    {
+      "texto": "Una figura es **simétrica** si una línea la parte en dos mitades iguales, como en un espejo. Esa línea se llama **eje de simetría**.",
+      "visual": {
+        "tipo": "simetria", "filas": 5, "columnas": 6, "completa": true,
+        "celdas": [[0, 2], [0, 3], [1, 1], [1, 2], [1, 3], [1, 4], [2, 0], [2, 1], [2, 2], [2, 3], [2, 4], [2, 5], [3, 1], [3, 2], [3, 3], [3, 4], [4, 2], [4, 3]]
+      }
+    },
+    {
+      "texto": "Si doblas la figura por el eje, las dos mitades quedan una encima de la otra. Cada cuadrito tiene su reflejo del otro lado, a la **misma distancia** del eje.",
+      "visual": {
+        "tipo": "simetria", "filas": 6, "columnas": 8, "completa": true,
+        "celdas": [
+          [0, 0], [0, 1], [0, 6], [0, 7],
+          [1, 0], [1, 1], [1, 2], [1, 3], [1, 4], [1, 5], [1, 6], [1, 7],
+          [2, 1], [2, 2], [2, 3], [2, 4], [2, 5], [2, 6],
+          [3, 1], [3, 2], [3, 3], [3, 4], [3, 5], [3, 6],
+          [4, 0], [4, 1], [4, 2], [4, 3], [4, 4], [4, 5], [4, 6], [4, 7],
+          [5, 0], [5, 1], [5, 6], [5, 7]
+        ]
+      }
+    },
+    {
+      "texto": "En la naturaleza hay mucha simetría. Las alas de una mariposa, muchas hojas y tu cara son **casi** iguales a los dos lados.",
+      "visual": { "tipo": "emojis", "items": ["🦋", "🍁", "🙂"], "etiquetas": ["mariposa", "hoja", "cara"] }
+    },
+    {
+      "texto": "En Chuquisaca, muchos tejidos de Tarabuco tienen dibujos ordenados y simétricos. Los tejidos jalq’a tienen animales fantásticos sin simetría. ¡Los dos son muy hermosos!",
+      "emoji": "🧶"
+    }
+  ],
+  "ejemplo": {
+    "instruccion": "Mira cómo completamos una casita simétrica. Después, pinta tú el otro lado de la flor.",
+    "pasos": [
+      {
+        "texto": "Aquí ves la mitad izquierda de una casita. La línea punteada del medio es el **eje de simetría**.",
+        "visual": {
+          "tipo": "simetria", "filas": 5, "columnas": 6,
+          "celdas": [[0, 2], [1, 1], [1, 2], [2, 0], [2, 1], [2, 2], [3, 0], [3, 1], [4, 0], [4, 1]]
+        }
+      },
+      {
+        "texto": "Empezamos por arriba. El cuadrito de la punta toca el eje. Su reflejo también toca el eje, del otro lado.",
+        "visual": {
+          "tipo": "simetria", "filas": 5, "columnas": 6, "completa": true,
+          "celdas": [[0, 2], [0, 3], [1, 1], [1, 2], [2, 0], [2, 1], [2, 2], [3, 0], [3, 1], [4, 0], [4, 1]]
+        }
+      },
+      {
+        "texto": "Seguimos fila por fila. Cada cuadrito va a la **misma distancia** del eje, como en un espejo. ¡La casita quedó simétrica!",
+        "visual": {
+          "tipo": "simetria", "filas": 5, "columnas": 6, "completa": true,
+          "celdas": [[0, 2], [0, 3], [1, 1], [1, 2], [1, 3], [1, 4], [2, 0], [2, 1], [2, 2], [2, 3], [2, 4], [2, 5], [3, 0], [3, 1], [3, 4], [3, 5], [4, 0], [4, 1], [4, 4], [4, 5]]
+        }
+      }
+    ],
+    "explorar": {
+      "tipo": "simetria", "filas": 6, "columnas": 6,
+      "celdas": [[0, 1], [0, 2], [1, 0], [1, 1], [1, 2], [2, 1], [2, 2], [3, 2], [4, 1], [4, 2], [5, 2]]
+    }
+  },
+  "guiada": {
+    "intro": "Ahora lo hacemos juntos. Recuerda: el eje es como un espejo.",
+    "pasos": [
+      {
+        "id": "g1", "tipo": "manipular",
+        "enunciado": "Pinta el lado derecho para que la figura sea simétrica.",
+        "apoyo": "Trabaja fila por fila. Si un cuadrito toca el eje, su reflejo también lo toca.",
+        "manipulable": { "tipo": "simetria", "filas": 4, "columnas": 4, "celdas": [[0, 1], [1, 0], [1, 1], [2, 1], [3, 1]] },
+        "pista": "Mira la segunda fila: el cuadrito de la orilla también necesita su reflejo en la otra orilla.",
+        "explicacion": "Cada cuadrito se refleja en su misma fila y a la misma distancia del eje. La figura completa parece una cruz.",
+        "error": "completa-simetria"
+      },
+      {
+        "id": "g2", "tipo": "opcion",
+        "enunciado": "¿Cuál de estas figuras es simétrica?",
+        "apoyo": "Imagina que doblas cada figura por la línea punteada. ¿En cuál las dos mitades quedan justito una sobre la otra?",
+        "opciones": [
+          {
+            "visual": { "tipo": "simetria", "filas": 4, "columnas": 4, "completa": true, "celdas": [[0, 1], [0, 2], [1, 0], [1, 3], [2, 0], [2, 3], [3, 1], [3, 2]] },
+            "correcta": true
+          },
+          {
+            "visual": { "tipo": "simetria", "filas": 4, "columnas": 4, "completa": true, "celdas": [[0, 0], [0, 1], [0, 2], [1, 0], [1, 2], [2, 0], [2, 1], [2, 2], [3, 0]] },
+            "pista": "Si doblas esta figura, el lado izquierdo no cae sobre el derecho: los dos lados son distintos.",
+            "error": "reconoce-simetria"
+          },
+          {
+            "visual": { "tipo": "simetria", "filas": 4, "columnas": 4, "completa": true, "celdas": [[0, 3], [1, 3], [2, 3], [3, 1], [3, 2], [3, 3]] },
+            "pista": "Casi todos los cuadritos de esta figura están a la derecha. Sus dos lados no son iguales.",
+            "error": "reconoce-simetria"
+          }
+        ],
+        "columnas": 3,
+        "pista": "Compara los dos lados de cada figura, fila por fila.",
+        "explicacion": "La figura que parece un anillo es simétrica: sus dos mitades son iguales, como en un espejo. Las otras dos tienen lados distintos.",
+        "error": "reconoce-simetria"
+      },
+      {
+        "id": "g3", "tipo": "completar",
+        "enunciado": "Completa las oraciones.",
+        "apoyo": "Recuerda la palabra que aprendiste para la línea del medio.",
+        "texto": "La línea que parte una figura simétrica en dos mitades iguales se llama [eje] de simetría. Las dos mitades son [iguales], como en un espejo.",
+        "banco": ["borde", "distintas"],
+        "pista": "La línea del medio tiene un nombre corto de tres letras.",
+        "explicacion": "La línea se llama eje de simetría, y las dos mitades son iguales.",
+        "error": "eje-simetria"
+      }
+    ]
+  },
+  "practica": [
+    {
+      "id": "p1", "tipo": "manipular", "nivel": 1,
+      "enunciado": "Pinta el otro lado para que la figura sea simétrica.",
+      "manipulable": { "tipo": "simetria", "filas": 4, "columnas": 4, "celdas": [[0, 0], [0, 1], [1, 1], [2, 1], [3, 0], [3, 1]] },
+      "pista": "Fila por fila: pinta a la derecha los mismos cuadritos que a la izquierda, como en un espejo.",
+      "explicacion": "La primera y la última fila quedan llenas. En las filas del medio van los dos cuadritos junto al eje. Parece una letra I.",
+      "error": "completa-simetria"
+    },
+    {
+      "id": "p2", "tipo": "opcion", "nivel": 1,
+      "enunciado": "Mira la línea punteada. ¿Esta figura es simétrica?",
+      "visual": {
+        "tipo": "simetria", "filas": 5, "columnas": 6, "completa": true,
+        "celdas": [[0, 0], [0, 1], [0, 2], [0, 3], [0, 4], [0, 5], [1, 1], [1, 2], [1, 3], [1, 4], [2, 2], [2, 3], [3, 2], [3, 3], [4, 1], [4, 2], [4, 3], [4, 4]]
+      },
+      "opciones": [
+        { "texto": "Sí", "correcta": true },
+        { "texto": "No", "pista": "Compara cada fila a los dos lados de la línea. ¿Encuentras alguna diferencia?", "error": "reconoce-simetria" }
+      ],
+      "mezclar": false,
+      "columnas": 2,
+      "pista": "Imagina que doblas la figura por la línea punteada.",
+      "explicacion": "Sí. Los dos lados de esta copa son iguales, como en un espejo.",
+      "error": "reconoce-simetria"
+    },
+    {
+      "id": "p3", "tipo": "ordenar", "nivel": 1,
+      "enunciado": "Ordena los pasos para hacer una figura simétrica con papel.",
+      "elementos": [
+        { "texto": "Dobla una hoja por la mitad.", "emoji": "📄" },
+        { "texto": "Dibuja media figura junto al doblez.", "emoji": "✏️" },
+        { "texto": "Recorta por la línea que dibujaste.", "emoji": "✂️" },
+        { "texto": "Abre la hoja y mira tu figura simétrica.", "emoji": "🦋" }
+      ],
+      "vertical": true,
+      "pista": "Antes de recortar hay que doblar y dibujar.",
+      "explicacion": "Primero se dobla la hoja, luego se dibuja media figura junto al doblez, después se recorta y al final se abre. El doblez es el eje de simetría.",
+      "error": "simetria-papel"
+    },
+    {
+      "id": "p4", "tipo": "numero", "nivel": 1,
+      "enunciado": "Ves la mitad de una figura simétrica. ¿Cuántos cuadritos debes pintar en el lado derecho?",
+      "visual": { "tipo": "simetria", "filas": 4, "columnas": 6, "celdas": [[0, 2], [1, 1], [1, 2], [2, 0], [3, 1]] },
+      "respuesta": 5,
+      "erroresComunes": [ { "respuesta": 10, "pista": "Eso sería la figura entera. Piensa solo en el lado derecho.", "error": "simetria-cuenta" } ],
+      "pista": "Cada cuadrito de la izquierda tiene su reflejo a la derecha.",
+      "explicacion": "A la izquierda hay 5 cuadritos, así que a la derecha van 5: uno por cada reflejo.",
+      "error": "simetria-cuenta"
+    },
+    {
+      "id": "p5", "tipo": "manipular", "nivel": 2,
+      "enunciado": "Completa la figura para que sea simétrica.",
+      "manipulable": { "tipo": "simetria", "filas": 6, "columnas": 6, "celdas": [[0, 0], [1, 1], [2, 2], [3, 2], [4, 1], [5, 0]] },
+      "pista": "Cuenta cuántos cuadritos hay entre cada cuadrito pintado y el eje. Del otro lado deja la misma cantidad.",
+      "explicacion": "El cuadrito de la orilla va en la otra orilla, y el que toca el eje toca el eje del otro lado. La figura completa es una X.",
+      "error": "reflejo-copia"
+    },
+    {
+      "id": "p6", "tipo": "tocar", "nivel": 2,
+      "enunciado": "Toca las letras que tienen eje de simetría.",
+      "texto": "*A* F *M* L *T* G",
+      "pista": "Imagina una línea de arriba abajo por el medio de cada letra. ¿Quedan dos lados iguales?",
+      "explicacion": "A, M y T tienen eje de simetría: una línea por el medio las parte en dos mitades iguales. F, L y G no tienen.",
+      "error": "simetria-entorno"
+    },
+    {
+      "id": "p7", "tipo": "numero", "nivel": 2,
+      "enunciado": "Esta mariposa es simétrica. En las alas del lado izquierdo tiene 4 manchas. ¿Cuántas manchas tiene en total?",
+      "visual": { "tipo": "emoji", "valor": "🦋" },
+      "respuesta": 8,
+      "erroresComunes": [ { "respuesta": 4, "pista": "Esas son las manchas de un solo lado. ¿Cuántas hay del otro lado?", "error": "simetria-cuenta" } ],
+      "pista": "Si la mariposa es simétrica, el otro lado tiene las mismas manchas.",
+      "explicacion": "Cada lado tiene 4 manchas: 4 + 4 = 8 manchas.",
+      "error": "simetria-cuenta"
+    },
+    {
+      "id": "p8", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha la pregunta y escribe la respuesta.",
+      "escuchar": "¿Cómo se llama la línea que parte una figura simétrica en dos mitades iguales?",
+      "respuestas": ["eje de simetría", "el eje de simetría", "eje", "el eje"],
+      "pista": "Piensa en la línea punteada del medio de las cuadrículas. ¿Qué nombre aprendiste para ella?",
+      "explicacion": "Esa línea se llama eje de simetría.",
+      "error": "eje-simetria"
+    },
+    {
+      "id": "p9", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa la oración.",
+      "texto": "En una figura simétrica, cada cuadrito tiene su reflejo del otro [lado] del eje, a la [misma] distancia.",
+      "banco": ["color", "doble"],
+      "pista": "Piensa en un espejo: tu mano y su reflejo están igual de lejos del espejo.",
+      "explicacion": "Cada cuadrito tiene su reflejo del otro lado del eje, a la misma distancia.",
+      "error": "reflejo-copia"
+    },
+    {
+      "id": "p10", "tipo": "opcion", "nivel": 2,
+      "enunciado": "Kusi mira tejidos en la feria. ¿Todos los tejidos son simétricos?",
+      "visual": { "tipo": "emoji", "valor": "🧶" },
+      "opciones": [
+        { "texto": "No: algunos son simétricos y otros no.", "correcta": true },
+        { "texto": "Sí, todos son simétricos.", "pista": "Recuerda los tejidos jalq’a, con sus animales fantásticos.", "error": "simetria-entorno" }
+      ],
+      "mezclar": false,
+      "columnas": 1,
+      "pista": "Piensa en lo que aprendiste de los tejidos de Chuquisaca.",
+      "explicacion": "Algunos tejidos, como muchos de Tarabuco, son simétricos. Otros, como los jalq’a, no lo son. Todos son valiosos.",
+      "error": "simetria-entorno"
+    },
+    {
+      "id": "p11", "tipo": "multiple", "nivel": 2,
+      "enunciado": "Elige todas las figuras simétricas.",
+      "opciones": [
+        {
+          "visual": { "tipo": "simetria", "filas": 4, "columnas": 4, "completa": true, "celdas": [[0, 0], [0, 3], [1, 1], [1, 2], [2, 1], [2, 2], [3, 0], [3, 3]] },
+          "correcta": true
+        },
+        {
+          "visual": { "tipo": "simetria", "filas": 4, "columnas": 4, "completa": true, "celdas": [[0, 0], [0, 1], [0, 2], [0, 3], [1, 1], [1, 2], [2, 1], [2, 2], [3, 1], [3, 2]] },
+          "correcta": true
+        },
+        {
+          "visual": { "tipo": "simetria", "filas": 4, "columnas": 4, "completa": true, "celdas": [[0, 0], [1, 0], [2, 0], [3, 0], [3, 1], [3, 2]] },
+          "pista": "En esta figura, la columna pintada está solo a la izquierda.",
+          "error": "reconoce-simetria"
+        },
+        {
+          "visual": { "tipo": "simetria", "filas": 4, "columnas": 4, "completa": true, "celdas": [[0, 1], [0, 2], [1, 2], [2, 2], [3, 2], [3, 3]] },
+          "pista": "En esta figura, las filas del medio tienen un cuadrito solo a la derecha.",
+          "error": "reconoce-simetria"
+        }
+      ],
+      "columnas": 2,
+      "pista": "Dobla con la imaginación cada figura por la línea punteada.",
+      "explicacion": "Son simétricas la figura con forma de X y la que parece una T: sus dos lados son iguales. Las otras dos tienen lados distintos.",
+      "error": "reconoce-simetria"
+    },
+    {
+      "id": "p12", "tipo": "manipular", "nivel": 3,
+      "enunciado": "Completa este diseño para que sea simétrico.",
+      "manipulable": {
+        "tipo": "simetria", "filas": 8, "columnas": 8,
+        "celdas": [[0, 3], [1, 2], [2, 1], [2, 3], [3, 0], [3, 2], [4, 0], [4, 2], [5, 1], [5, 3], [6, 2], [7, 3]]
+      },
+      "pista": "Hazlo fila por fila. Cuenta cuántos cuadritos hay entre cada cuadrito pintado y el eje.",
+      "explicacion": "Cada cuadrito tiene su reflejo en su misma fila y a la misma distancia del eje. Se forma un rombo dentro de otro rombo.",
+      "error": "reflejo-copia"
+    },
+    {
+      "id": "p13", "tipo": "pasos", "nivel": 3,
+      "enunciado": "Wara teje una faja con un dibujo simétrico.",
+      "pasos": [
+        {
+          "tipo": "manipular",
+          "enunciado": "Completa el dibujo de Wara para que sea simétrico.",
+          "manipulable": { "tipo": "simetria", "filas": 6, "columnas": 6, "color": "#C0392B", "celdas": [[0, 1], [1, 0], [1, 2], [2, 1], [3, 1], [4, 0], [4, 2], [5, 1]] },
+          "pista": "Fila por fila, pinta cada reflejo a la misma distancia del eje.",
+          "explicacion": "Cada cuadrito se refleja del otro lado del eje, en su misma fila y a la misma distancia.",
+          "error": "reflejo-copia"
+        },
+        {
+          "tipo": "numero",
+          "enunciado": "¿Cuántos cuadritos pintados tiene el dibujo completo?",
+          "respuesta": 16,
+          "erroresComunes": [ { "respuesta": 8, "pista": "Esos son los de una sola mitad. Suma también los que pintaste tú.", "error": "simetria-cuenta" } ],
+          "pista": "Cuenta los de la izquierda. La derecha tiene los mismos.",
+          "explicacion": "Hay 8 cuadritos a cada lado: 8 + 8 = 16.",
+          "error": "simetria-cuenta"
+        }
+      ],
+      "pista": "Primero completa el dibujo. Después cuenta los dos lados.",
+      "explicacion": "El dibujo completo tiene 8 cuadritos a la izquierda y 8 a la derecha: 16 en total.",
+      "error": "simetria-cuenta"
+    },
+    {
+      "id": "p14", "tipo": "escribir-libre", "nivel": 3,
+      "enunciado": "Escribe una oración sobre algo simétrico que conoces.",
+      "guia": ["Las alas de la ... son simétricas.", "Mi ... es casi simétrica."],
+      "requisitos": [
+        { "tipo": "mayuscula-inicial" },
+        { "tipo": "punto-final" },
+        { "tipo": "min-palabras", "valor": 5 },
+        { "tipo": "incluye", "palabras": ["simétrica", "simétrico", "simetría"] }
+      ],
+      "modelo": "Las alas de la mariposa son simétricas.",
+      "pista": "Piensa en algo que tiene dos lados iguales: un animal, una hoja, una letra o un dibujo.",
+      "explicacion": "Por ejemplo: «Las alas de la mariposa son simétricas». Recuerda la mayúscula al inicio y el punto al final.",
+      "error": "escribe-simetria"
+    },
+    {
+      "id": "p15", "tipo": "opcion", "nivel": 3,
+      "enunciado": "¿En qué figura el lado derecho es el reflejo exacto del izquierdo?",
+      "opciones": [
+        {
+          "visual": { "tipo": "simetria", "filas": 4, "columnas": 6, "completa": true, "celdas": [[0, 0], [1, 0], [1, 1], [2, 2], [3, 1], [0, 5], [1, 5], [1, 4], [2, 3], [3, 4]] },
+          "correcta": true
+        },
+        {
+          "visual": { "tipo": "simetria", "filas": 4, "columnas": 6, "completa": true, "celdas": [[0, 0], [1, 0], [1, 1], [2, 2], [3, 1], [0, 3], [1, 3], [1, 4], [2, 5], [3, 4]] },
+          "pista": "Aquí la mitad izquierda se copió igual, sin reflejarla. En un espejo, lo que está lejos del eje queda lejos del eje.",
+          "error": "reflejo-copia"
+        },
+        {
+          "visual": { "tipo": "simetria", "filas": 4, "columnas": 6, "completa": true, "celdas": [[0, 0], [1, 0], [1, 1], [2, 2], [3, 1], [3, 5], [2, 5], [2, 4], [1, 3], [0, 4]] },
+          "pista": "Aquí el reflejo quedó de cabeza. En un espejo, cada cuadrito se queda en su misma fila.",
+          "error": "reflejo-copia"
+        }
+      ],
+      "columnas": 2,
+      "pista": "Mira el cuadrito de la esquina de arriba a la izquierda. ¿Dónde debe estar su reflejo?",
+      "explicacion": "En el reflejo exacto, cada cuadrito está en su misma fila y a la misma distancia del eje. La esquina de arriba a la izquierda se refleja en la esquina de arriba a la derecha.",
+      "error": "reflejo-copia"
+    },
+    {
+      "id": "p16", "tipo": "numero", "nivel": 3,
+      "enunciado": "Una figura simétrica tiene 14 cuadritos pintados. El eje no pasa por ningún cuadrito. ¿Cuántos cuadritos hay en cada mitad?",
+      "respuesta": 7,
+      "erroresComunes": [
+        { "respuesta": 28, "pista": "Ese es el doble de 14. Busca la mitad.", "error": "simetria-cuenta" },
+        { "respuesta": 14, "pista": "14 son todos los cuadritos. Repártelos en dos mitades iguales.", "error": "simetria-cuenta" }
+      ],
+      "pista": "Las dos mitades tienen la misma cantidad. ¿Qué número sumado dos veces da 14?",
+      "explicacion": "7 + 7 = 14. Cada mitad tiene 7 cuadritos.",
+      "error": "simetria-cuenta"
+    }
+  ],
+  "comprobacion": [
+    {
+      "id": "c1", "tipo": "manipular", "nivel": 1,
+      "enunciado": "Pinta el lado derecho para que la figura sea simétrica.",
+      "manipulable": { "tipo": "simetria", "filas": 4, "columnas": 4, "celdas": [[0, 0], [1, 1], [2, 1], [3, 0]] },
+      "pista": "Los cuadritos de la orilla se reflejan en la otra orilla. Los que tocan el eje, tocan el eje del otro lado.",
+      "explicacion": "Arriba y abajo se pintan las dos orillas. En las filas del medio se pintan los cuadritos junto al eje.",
+      "error": "completa-simetria"
+    },
+    {
+      "id": "c2", "tipo": "opcion", "nivel": 1,
+      "enunciado": "Mira la línea punteada. ¿Esta figura es simétrica?",
+      "visual": {
+        "tipo": "simetria", "filas": 5, "columnas": 6, "completa": true,
+        "celdas": [[0, 1], [1, 1], [2, 1], [3, 1], [4, 1], [0, 2], [0, 3], [0, 4], [1, 2], [1, 3], [1, 4]]
+      },
+      "opciones": [
+        { "texto": "Sí", "pista": "Mira el palo de la bandera: ¿tiene su reflejo del otro lado de la línea?", "error": "reconoce-simetria" },
+        { "texto": "No", "correcta": true }
+      ],
+      "mezclar": false,
+      "columnas": 2,
+      "pista": "Imagina que doblas la figura por la línea punteada. ¿Los dos lados quedan justito uno sobre el otro?",
+      "explicacion": "No es simétrica. El palo de la bandera está solo a la izquierda: los dos lados son distintos.",
+      "error": "reconoce-simetria"
+    },
+    {
+      "id": "c3", "tipo": "manipular", "nivel": 2,
+      "enunciado": "Completa la figura para que sea simétrica.",
+      "manipulable": { "tipo": "simetria", "filas": 6, "columnas": 6, "celdas": [[0, 0], [1, 1], [1, 2], [2, 2], [3, 0], [3, 2], [4, 1], [5, 0], [5, 1]] },
+      "pista": "Fila por fila, cuenta la distancia de cada cuadrito al eje y deja la misma distancia del otro lado.",
+      "explicacion": "Cada cuadrito tiene su reflejo en la misma fila y a la misma distancia del eje.",
+      "error": "reflejo-copia"
+    },
+    {
+      "id": "c4", "tipo": "numero", "nivel": 2,
+      "enunciado": "Ves la mitad izquierda de una figura simétrica. ¿Cuántos cuadritos pintados tendrá la figura completa?",
+      "visual": { "tipo": "simetria", "filas": 5, "columnas": 6, "celdas": [[0, 1], [1, 0], [1, 2], [2, 1], [3, 1], [4, 0]] },
+      "respuesta": 12,
+      "erroresComunes": [ { "respuesta": 6, "pista": "Esos son los de una mitad. Falta contar la otra mitad.", "error": "simetria-cuenta" } ],
+      "pista": "La otra mitad tiene los mismos cuadritos que esta.",
+      "explicacion": "La mitad izquierda tiene 6 cuadritos y la derecha también: 6 + 6 = 12.",
+      "error": "simetria-cuenta"
+    },
+    {
+      "id": "c5", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa las oraciones sobre la mariposa.",
+      "texto": "Las alas de la mariposa son casi [iguales] a cada lado de su cuerpo. Su cuerpo está sobre el [eje] de simetría.",
+      "banco": ["distintas", "techo"],
+      "pista": "La mariposa es casi simétrica. ¿Cómo se llama la línea que la parte en dos?",
+      "explicacion": "Las alas son casi iguales, y el cuerpo de la mariposa está sobre el eje de simetría.",
+      "error": "eje-simetria"
+    },
+    {
+      "id": "c6", "tipo": "tocar", "nivel": 2,
+      "enunciado": "Toca las letras que tienen eje de simetría.",
+      "texto": "*U* R *V* J *O* P",
+      "pista": "Imagina una línea de arriba abajo por el medio de cada letra.",
+      "explicacion": "U, V y O tienen eje de simetría: sus dos mitades son iguales. R, J y P no tienen.",
+      "error": "simetria-entorno"
+    },
+    {
+      "id": "c7", "tipo": "opcion", "nivel": 3,
+      "enunciado": "¿En qué figura el lado derecho es el reflejo exacto del izquierdo?",
+      "opciones": [
+        {
+          "visual": { "tipo": "simetria", "filas": 4, "columnas": 6, "completa": true, "celdas": [[0, 1], [1, 0], [2, 0], [2, 2], [3, 1], [0, 4], [1, 5], [2, 5], [2, 3], [3, 4]] },
+          "correcta": true
+        },
+        {
+          "visual": { "tipo": "simetria", "filas": 4, "columnas": 6, "completa": true, "celdas": [[0, 1], [1, 0], [2, 0], [2, 2], [3, 1], [0, 4], [1, 3], [2, 3], [2, 5], [3, 4]] },
+          "pista": "Aquí la mitad izquierda se copió igual, sin reflejarla. Mira la segunda fila: ¿el cuadrito está en la orilla?",
+          "error": "reflejo-copia"
+        },
+        {
+          "visual": { "tipo": "simetria", "filas": 4, "columnas": 6, "completa": true, "celdas": [[0, 1], [1, 0], [2, 0], [2, 2], [3, 1], [0, 4], [1, 5], [2, 5], [3, 4]] },
+          "pista": "A este reflejo le falta un cuadrito. Revisa la tercera fila.",
+          "error": "completa-simetria"
+        }
+      ],
+      "columnas": 2,
+      "pista": "Revisa fila por fila: cada cuadrito debe tener su reflejo a la misma distancia del eje.",
+      "explicacion": "En el reflejo exacto, cada cuadrito está en su misma fila y a la misma distancia del eje, y no falta ninguno.",
+      "error": "reflejo-copia"
+    },
+    {
+      "id": "c8", "tipo": "multiple", "nivel": 3,
+      "enunciado": "Elige todas las oraciones verdaderas.",
+      "opciones": [
+        { "texto": "El eje de simetría parte la figura en dos mitades iguales.", "correcta": true },
+        { "texto": "Las alas de una mariposa son casi iguales a los dos lados.", "correcta": true },
+        { "texto": "Todos los tejidos de Bolivia son simétricos.", "pista": "Recuerda los tejidos jalq’a, con animales fantásticos sin simetría.", "error": "simetria-entorno" },
+        { "texto": "En una figura simétrica, un lado es más grande que el otro.", "pista": "En una figura simétrica, los dos lados son iguales.", "error": "reconoce-simetria" }
+      ],
+      "columnas": 1,
+      "pista": "Piensa: ¿cómo son las dos mitades de una figura simétrica?",
+      "explicacion": "Son verdaderas: el eje parte la figura en dos mitades iguales, y las alas de la mariposa son casi iguales. No todos los tejidos son simétricos, y en una figura simétrica los dos lados son iguales.",
+      "error": "reconoce-simetria"
+    }
+  ],
+  "repaso": {
+    "texto": "Una figura es simétrica si el eje la parte en dos mitades iguales. Cada cuadrito tiene su reflejo del otro lado, a la misma distancia del eje.",
+    "visual": { "tipo": "simetria", "filas": 4, "columnas": 4, "completa": true, "celdas": [[0, 1], [0, 2], [1, 0], [1, 3], [2, 0], [2, 3], [3, 1], [3, 2]] }
+  },
+  "adulto": {
+    "objetivo": "Reconocer figuras simétricas y su eje de simetría, completar figuras simétricas en una cuadrícula (reflejando, no copiando) y descubrir la simetría en la naturaleza, en letras y en algunos tejidos bolivianos, entendiendo que no todo diseño es simétrico.",
+    "sugerencias": [
+      "Doblen una hoja por la mitad, dibujen media mariposa o media casita pegada al doblez, recorten y abran. Muestren que el doblez es el eje de simetría.",
+      "Salgan al patio o al parque y busquen simetría en hojas, flores e insectos. Si tienen un espejo pequeño, pónganlo sobre el eje de una hoja y miren cómo se completa la figura.",
+      "Dibujen una cuadrícula con una línea al medio: uno arma media figura con frijoles o granos de maíz y el otro completa el reflejo. Después miren aguayos o tejidos de la familia o de la feria y conversen: ¿sus dibujos son iguales a los dos lados? Algunos sí y otros no."
+    ],
+    "errores": {
+      "reconoce-simetria": { "descripcion": "No reconoce si una figura es simétrica.", "sugerencia": "Recorten figuras de papel, dóblenlas por la mitad y comprueben juntos si los dos lados coinciden." },
+      "eje-simetria": { "descripcion": "No recuerda qué es el eje de simetría.", "sugerencia": "Marquen con color el doblez de una hoja y llámenlo «eje de simetría» cada vez que lo usen." },
+      "completa-simetria": { "descripcion": "Al completar una figura, faltan o sobran cuadritos del otro lado.", "sugerencia": "Completen la figura fila por fila, contando en voz alta los cuadritos pintados de cada lado." },
+      "reflejo-copia": { "descripcion": "Copia la mitad tal como está en lugar de reflejarla, o no respeta la distancia al eje.", "sugerencia": "Pongan un espejo sobre el eje, o comparen las dos manos: la derecha es el reflejo de la izquierda. Cuenten cuántos cuadritos hay hasta el eje de cada lado." },
+      "simetria-cuenta": { "descripcion": "No usa que las dos mitades tienen la misma cantidad (para duplicar o para sacar la mitad).", "sugerencia": "Pongan 4 piedritas a un lado de una lana estirada y las mismas 4 al otro lado; cuenten cuántas hay en total y cuántas en cada mitad." },
+      "simetria-entorno": { "descripcion": "Le cuesta reconocer la simetría en letras, en la naturaleza o en tejidos.", "sugerencia": "Busquen letras simétricas en carteles (A, M, T) y hojas o flores en el patio, y comparen sus dos lados." },
+      "simetria-papel": { "descripcion": "Le cuesta ordenar los pasos para hacer una figura simétrica con papel.", "sugerencia": "Hagan juntos una figura doblando y recortando, y digan en voz alta cada paso antes de hacerlo." },
+      "escribe-simetria": { "descripcion": "Le cuesta escribir una oración sobre algo simétrico.", "sugerencia": "Conversen primero sobre algo simétrico que vieron y escriban juntos una oración corta con mayúscula y punto." }
+    }
+  }
+}

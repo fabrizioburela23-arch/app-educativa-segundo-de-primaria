@@ -1,0 +1,478 @@
+{
+  "id": "nat-4-2",
+  "titulo": "Alimentación y origen de los alimentos",
+  "objetivo": "Sé cómo alimentarme bien y de dónde vienen los alimentos: de las plantas, de los animales o de los minerales.",
+  "explicacion": [
+    {
+      "texto": "Los **alimentos** nos dan energía para jugar, aprender y crecer. Comemos varias veces al día: el **desayuno**, el **almuerzo**, el **té** o merienda de la tarde, y la **cena**.",
+      "emoji": "🍽️",
+      "visual": { "tipo": "emojis", "items": ["🌅", "☀️", "🌇", "🌙"], "etiquetas": ["desayuno", "almuerzo", "té", "cena"] }
+    },
+    {
+      "texto": "Para estar sanos, comemos **variado**, con frutas y verduras todos los días. Para la sed, tomamos **agua**. Las gaseosas, los dulces y la comida chatarra tienen mucha azúcar, grasa o sal: mejor, **poco** y de vez en cuando.",
+      "visual": { "tipo": "emojis", "items": ["🍎", "🥕", "💧", "🥤", "🍬"], "etiquetas": ["frutas", "verduras", "agua", "gaseosa", "dulces"] }
+    },
+    {
+      "texto": "Los alimentos tienen distinto origen. **Vegetal**: vienen de plantas, como la papa. **Animal**: vienen de animales, como la leche. **Mineral**: no vienen de plantas ni de animales, como el agua y la sal.",
+      "visual": {
+        "tipo": "tabla",
+        "columnas": ["Vegetal", "Animal", "Mineral"],
+        "filas": [["🥔 papa", "🥛 leche", "💧 agua"], ["🍌 plátano", "🥚 huevo", "🧂 sal"]]
+      }
+    },
+    {
+      "texto": "Cada región de Bolivia nos da alimentos. En el **altiplano** hay papa, chuño y quinua. En los **valles**, maíz, durazno y uva. En los **llanos** y la **Amazonía**, yuca, arroz, plátano y castaña.",
+      "visual": {
+        "tipo": "tabla",
+        "columnas": ["Región", "Alimentos"],
+        "filas": [["Altiplano", "papa, chuño, quinua"], ["Valles", "maíz, durazno, uva"], ["Llanos y Amazonía", "yuca, arroz, plátano, castaña"]]
+      }
+    }
+  ],
+  "ejemplo": {
+    "instruccion": "Mira de dónde viene el almuerzo de Wara, en Oruro.",
+    "pasos": [
+      {
+        "texto": "Hoy Wara almuerza sopa de quinua con papa, un pedazo de queso y un vaso de agua.",
+        "visual": { "tipo": "emojis", "items": ["🍲", "🧀", "💧"], "etiquetas": ["sopa de quinua", "queso", "agua"] }
+      },
+      {
+        "texto": "La **quinua** y la **papa** vienen de plantas que se siembran en el altiplano. Su origen es **vegetal**.",
+        "visual": { "tipo": "emojis", "items": ["🌾", "🥔"], "etiquetas": ["quinua", "papa"] }
+      },
+      {
+        "texto": "El **queso** se hace con la leche de la vaca o de la oveja. Su origen es **animal**.",
+        "visual": { "tipo": "emojis", "items": ["🧀", "🐄", "🐑"], "etiquetas": ["queso", "vaca", "oveja"] }
+      },
+      {
+        "texto": "El **agua** y la **sal** de la sopa no vienen de plantas ni de animales. Su origen es **mineral**. ¡En un solo plato hay alimentos de distinto origen!",
+        "visual": { "tipo": "emojis", "items": ["💧", "🧂"], "etiquetas": ["agua", "sal"] }
+      }
+    ]
+  },
+  "guiada": {
+    "intro": "Ahora lo hacemos juntos, paso a paso.",
+    "pasos": [
+      {
+        "id": "g1", "tipo": "clasificar",
+        "enunciado": "¿De dónde viene cada alimento?",
+        "apoyo": "Pregúntate: ¿viene de una planta, de un animal o de ninguno de los dos?",
+        "categorias": [
+          { "id": "vegetal", "texto": "Vegetal", "emoji": "🌱" },
+          { "id": "animal", "texto": "Animal", "emoji": "🐄" },
+          { "id": "mineral", "texto": "Mineral", "emoji": "⛰️" }
+        ],
+        "elementos": [
+          { "texto": "papa", "emoji": "🥔", "categoria": "vegetal" },
+          { "texto": "plátano", "emoji": "🍌", "categoria": "vegetal" },
+          { "texto": "huevo", "emoji": "🥚", "categoria": "animal" },
+          { "texto": "leche", "emoji": "🥛", "categoria": "animal" },
+          { "texto": "sal", "emoji": "🧂", "categoria": "mineral" },
+          { "texto": "agua", "emoji": "💧", "categoria": "mineral" }
+        ],
+        "pista": "Las plantas nos dan tubérculos y frutas. Los animales nos dan leche, carne y huevos. El agua y la sal no son ni plantas ni animales.",
+        "explicacion": "La papa y el plátano son de origen **vegetal**. El huevo y la leche, de origen **animal**. La sal y el agua, de origen **mineral**.",
+        "error": "origen-alimento"
+      },
+      {
+        "id": "g2", "tipo": "opcion",
+        "enunciado": "¿Cuál es la mejor bebida cuando tienes sed?",
+        "apoyo": "Piensa en la bebida que no tiene azúcar y que el cuerpo necesita todos los días.",
+        "opciones": [
+          { "texto": "agua", "emoji": "💧", "correcta": true },
+          { "texto": "gaseosa", "emoji": "🥤", "pista": "La gaseosa tiene mucha azúcar. Es para tomar poco y de vez en cuando.", "error": "alimentacion-saludable" },
+          { "texto": "jugo en cajita", "pista": "Muchos jugos en cajita tienen azúcar agregada.", "error": "alimentacion-saludable" }
+        ],
+        "columnas": 3,
+        "pista": "Es transparente, no tiene azúcar y la necesitamos todos los días.",
+        "explicacion": "El **agua** es la mejor bebida para la sed: no tiene azúcar y el cuerpo la necesita todos los días.",
+        "error": "alimentacion-saludable"
+      },
+      {
+        "id": "g3", "tipo": "ordenar",
+        "enunciado": "Ordena las comidas del día, desde la mañana hasta la noche.",
+        "apoyo": "El día empieza con el desayuno y termina con la cena. Mira los dibujos del cielo.",
+        "elementos": [
+          { "texto": "desayuno", "emoji": "🌅" },
+          { "texto": "almuerzo", "emoji": "☀️" },
+          { "texto": "té de la tarde", "emoji": "🌇" },
+          { "texto": "cena", "emoji": "🌙" }
+        ],
+        "pista": "¿Qué comes apenas te levantas? ¿Y qué comes antes de dormir?",
+        "explicacion": "Primero el **desayuno**; al mediodía, el **almuerzo**; en la tarde, el **té**, y en la noche, la **cena**.",
+        "error": "comidas-del-dia"
+      }
+    ]
+  },
+  "practica": [
+    {
+      "id": "p1", "tipo": "memoria", "nivel": 1,
+      "enunciado": "Encuentra las parejas: el alimento y de dónde viene.",
+      "pares": [
+        [ { "texto": "leche", "emoji": "🥛" }, { "texto": "vaca", "emoji": "🐄" } ],
+        [ { "texto": "huevo", "emoji": "🥚" }, { "texto": "gallina", "emoji": "🐔" } ],
+        [ { "texto": "miel", "emoji": "🍯" }, { "texto": "abeja", "emoji": "🐝" } ],
+        [ { "texto": "pan", "emoji": "🍞" }, { "texto": "trigo", "emoji": "🌾" } ],
+        [ { "texto": "pipocas", "emoji": "🍿" }, { "texto": "maíz", "emoji": "🌽" } ]
+      ],
+      "pista": "Piensa qué animal o qué planta nos da cada alimento.",
+      "explicacion": "La leche viene de la vaca; el huevo, de la gallina; la miel la hacen las abejas; el pan se hace con harina de trigo, y las pipocas son granos de maíz.",
+      "error": "de-donde-viene"
+    },
+    {
+      "id": "p2", "tipo": "clasificar", "nivel": 1,
+      "enunciado": "¿Lo comemos todos los días o solo de vez en cuando?",
+      "categorias": [
+        { "id": "diario", "texto": "Todos los días", "emoji": "📅" },
+        { "id": "aveces", "texto": "De vez en cuando", "emoji": "🎉" }
+      ],
+      "elementos": [
+        { "texto": "una mandarina", "emoji": "🍊", "categoria": "diario" },
+        { "texto": "zanahoria y lechuga", "emoji": "🥕", "categoria": "diario" },
+        { "texto": "agua", "emoji": "💧", "categoria": "diario" },
+        { "texto": "gaseosa", "emoji": "🥤", "categoria": "aveces" },
+        { "texto": "caramelos", "emoji": "🍬", "categoria": "aveces" },
+        { "texto": "papitas de bolsa", "categoria": "aveces" },
+        { "texto": "torta de cumpleaños", "emoji": "🎂", "categoria": "aveces" }
+      ],
+      "pista": "¿Te ayuda a crecer sano o tiene mucha azúcar, grasa o sal?",
+      "explicacion": "Las frutas, las verduras y el agua son para **todos los días**. La gaseosa, los caramelos, las papitas de bolsa y la torta son para **de vez en cuando**, por ejemplo en una fiesta.",
+      "error": "alimentacion-saludable"
+    },
+    {
+      "id": "p3", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Toca los alimentos de origen animal.",
+      "texto": "En el desayuno, Nayra toma *leche* con pan y come un *huevo* con tomate.",
+      "pista": "Busca los alimentos que nos dan la vaca y la gallina. Hay dos.",
+      "explicacion": "La **leche** (de la vaca) y el **huevo** (de la gallina) son de origen animal. El pan y el tomate son de origen vegetal.",
+      "error": "origen-alimento"
+    },
+    {
+      "id": "p4", "tipo": "completar", "nivel": 1,
+      "enunciado": "Completa con el nombre de cada comida.",
+      "texto": "El [desayuno] es la primera comida del día. Al mediodía comemos el [almuerzo], y en la noche, la [cena].",
+      "banco": ["recreo"],
+      "pista": "Piensa en lo que comes al levantarte, al mediodía y antes de dormir.",
+      "explicacion": "El **desayuno** es en la mañana, el **almuerzo** al mediodía y la **cena** en la noche. El recreo es un momento para jugar en la escuela, no una comida.",
+      "error": "comidas-del-dia"
+    },
+    {
+      "id": "p5", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "¿De qué origen es cada alimento?",
+      "categorias": [
+        { "id": "vegetal", "texto": "Vegetal", "emoji": "🌱" },
+        { "id": "animal", "texto": "Animal", "emoji": "🐄" },
+        { "id": "mineral", "texto": "Mineral", "emoji": "⛰️" }
+      ],
+      "elementos": [
+        { "texto": "quinua", "categoria": "vegetal" },
+        { "texto": "yuca", "categoria": "vegetal" },
+        { "texto": "queso", "emoji": "🧀", "categoria": "animal" },
+        { "texto": "carne de llama", "categoria": "animal" },
+        { "texto": "trucha", "emoji": "🐟", "categoria": "animal" },
+        { "texto": "sal del salar de Uyuni", "categoria": "mineral" }
+      ],
+      "pista": "Si viene de una planta, es vegetal. Si viene de un animal, es animal. Si no viene de ninguno de los dos, es mineral.",
+      "explicacion": "La quinua y la yuca son de origen **vegetal**. El queso, la carne de llama y la trucha, de origen **animal**. La sal, de origen **mineral**.",
+      "error": "origen-alimento"
+    },
+    {
+      "id": "p6", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "¿De qué se hace? Une cada alimento con lo que se usa para hacerlo.",
+      "pares": [
+        ["chuño", "papa"],
+        [{ "texto": "queso", "emoji": "🧀" }, "leche"],
+        ["api morado", "maíz morado"],
+        ["charque", "carne"]
+      ],
+      "pista": "Piensa con qué se prepara cada uno, en la cocina o en el campo.",
+      "explicacion": "El chuño se hace con **papa**; el queso, con **leche**; el api morado, con **maíz morado**, y el charque, con **carne** secada con sal.",
+      "error": "de-donde-viene"
+    },
+    {
+      "id": "p7", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha la adivinanza y escribe la respuesta.",
+      "escuchar": "Soy blanca y salada. Me sacan del salar de Uyuni. En la sopa me ponen poquito. No vengo de plantas ni de animales. ¿Quién soy?",
+      "respuestas": ["sal", "la sal"],
+      "pista": "Le da sabor salado a la comida y su origen es mineral.",
+      "explicacion": "Es la **sal**. Su origen es **mineral**. Con un poquito basta para darle sabor a la comida.",
+      "error": "origen-mineral"
+    },
+    {
+      "id": "p8", "tipo": "multiple", "nivel": 2,
+      "enunciado": "¿Qué hábitos son saludables? Elige todos los correctos.",
+      "opciones": [
+        { "texto": "Tomar agua cuando tengo sed.", "correcta": true },
+        { "texto": "Tomar el desayuno antes de ir a la escuela.", "correcta": true },
+        { "texto": "Comer frutas y verduras todos los días.", "correcta": true },
+        { "texto": "Tomar gaseosa en lugar de agua.", "pista": "La gaseosa tiene mucha azúcar. Para la sed, lo mejor es el agua.", "error": "alimentacion-saludable" },
+        { "texto": "Comer solo dulces en el recreo.", "pista": "Los dulces no le dan al cuerpo todo lo que necesita. Una fruta es mejor.", "error": "alimentacion-saludable" }
+      ],
+      "columnas": 1,
+      "pista": "Hay tres hábitos saludables.",
+      "explicacion": "Tomar agua, desayunar y comer frutas y verduras todos los días son hábitos saludables. La gaseosa y los dulces son para de vez en cuando.",
+      "error": "alimentacion-saludable"
+    },
+    {
+      "id": "p9", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa con el origen de cada alimento.",
+      "texto": "El choclo es de origen [vegetal]. La trucha es de origen [animal]. El agua es de origen [mineral].",
+      "banco": ["dulce"],
+      "pista": "El choclo crece en una planta, la trucha es un pez y el agua no es ni planta ni animal.",
+      "explicacion": "El choclo es **vegetal** (viene de la planta de maíz), la trucha es **animal** (es un pez) y el agua es **mineral**.",
+      "error": "origen-alimento"
+    },
+    {
+      "id": "p10", "tipo": "opcion", "nivel": 2,
+      "enunciado": "Hoy Luis tiene clases. ¿Qué desayuno es más saludable?",
+      "opciones": [
+        { "texto": "Leche con quinua, pan y una fruta", "correcta": true },
+        { "texto": "Una gaseosa y galletas rellenas", "pista": "La gaseosa y las galletas rellenas tienen mucha azúcar.", "error": "alimentacion-saludable" },
+        { "texto": "Solo caramelos", "pista": "Los caramelos son solo azúcar. Busca un desayuno variado.", "error": "alimentacion-saludable" }
+      ],
+      "columnas": 1,
+      "pista": "Busca el desayuno más variado, con alimentos de distinto tipo.",
+      "explicacion": "Leche con quinua, pan y una fruta es un desayuno **variado**: le da a Luis energía para aprender y jugar toda la mañana.",
+      "error": "alimentacion-saludable"
+    },
+    {
+      "id": "p11", "tipo": "clasificar", "nivel": 3,
+      "enunciado": "¿De qué región de Bolivia es típico cada alimento?",
+      "categorias": [
+        { "id": "altiplano", "texto": "Altiplano", "emoji": "🏔️" },
+        { "id": "valles", "texto": "Valles", "emoji": "🏞️" },
+        { "id": "llanos", "texto": "Llanos y Amazonía", "emoji": "🌴" }
+      ],
+      "elementos": [
+        { "texto": "chuño", "categoria": "altiplano" },
+        { "texto": "quinua", "categoria": "altiplano" },
+        { "texto": "uva", "emoji": "🍇", "categoria": "valles" },
+        { "texto": "durazno", "categoria": "valles" },
+        { "texto": "yuca", "categoria": "llanos" },
+        { "texto": "castaña", "emoji": "🌰", "categoria": "llanos" },
+        { "texto": "achachairú", "categoria": "llanos" }
+      ],
+      "pista": "El altiplano es alto y frío; los valles son templados; los llanos y la Amazonía son calurosos.",
+      "explicacion": "El chuño y la quinua son del **altiplano**. La uva y el durazno, de los **valles**, como los de Tarija y Cochabamba. La yuca, la castaña y el achachairú, una fruta naranja y agridulce, son de los **llanos y la Amazonía**.",
+      "error": "alimentos-region"
+    },
+    {
+      "id": "p12", "tipo": "opcion", "nivel": 3,
+      "enunciado": "Las abejas visitan las flores y con su néctar hacen la miel. ¿De qué origen es la miel?",
+      "visual": { "tipo": "emojis", "items": ["🌸", "🐝", "🍯"] },
+      "opciones": [
+        { "texto": "animal", "correcta": true },
+        { "texto": "vegetal", "pista": "Es cierto que las abejas visitan flores. Pero ¿quién hace la miel?", "error": "origen-alimento" },
+        { "texto": "mineral", "pista": "La miel no es como el agua o la sal: la hace un ser vivo.", "error": "origen-mineral" }
+      ],
+      "columnas": 3,
+      "pista": "Piensa en quién hace la miel.",
+      "explicacion": "La miel es de origen **animal**, porque la hacen las **abejas**, aunque usan el néctar de las flores.",
+      "error": "origen-alimento"
+    },
+    {
+      "id": "p13", "tipo": "ordenar", "nivel": 3,
+      "enunciado": "¿Cómo se hace el chuño en el altiplano? Ordena los pasos.",
+      "elementos": [
+        "Se cosechan las papas.",
+        "En invierno, se extienden en el suelo y se congelan con la helada de la noche.",
+        "Se pisan para sacarles el agua y la cáscara.",
+        "Se secan al sol varios días."
+      ],
+      "vertical": true,
+      "pista": "Primero hay que tener las papas. Al final, el chuño queda seco.",
+      "explicacion": "Se cosechan las papas, se congelan con la helada, se pisan y se secan al sol. Así las familias del altiplano guardan papa por mucho tiempo.",
+      "error": "de-donde-viene"
+    },
+    {
+      "id": "p14", "tipo": "pasos", "nivel": 3,
+      "enunciado": "Arami vive en Trinidad, en el Beni. Hoy almuerza majadito: arroz con charque, huevo frito, plátano y una pizca de sal.",
+      "visual": { "tipo": "emojis", "items": ["🍚", "🥩", "🍳", "🍌", "🧂"] },
+      "pasos": [
+        {
+          "tipo": "clasificar",
+          "enunciado": "¿De qué origen es cada ingrediente del majadito?",
+          "categorias": [
+            { "id": "vegetal", "texto": "Vegetal", "emoji": "🌱" },
+            { "id": "animal", "texto": "Animal", "emoji": "🐄" },
+            { "id": "mineral", "texto": "Mineral", "emoji": "⛰️" }
+          ],
+          "elementos": [
+            { "texto": "arroz", "categoria": "vegetal" },
+            { "texto": "plátano", "categoria": "vegetal" },
+            { "texto": "charque", "categoria": "animal" },
+            { "texto": "huevo", "categoria": "animal" },
+            { "texto": "sal", "categoria": "mineral" }
+          ],
+          "pista": "El charque es carne secada. El arroz y el plátano crecen en plantas.",
+          "explicacion": "Arroz y plátano: **vegetal**. Charque y huevo: **animal**. Sal: **mineral**.",
+          "error": "origen-alimento"
+        },
+        {
+          "tipo": "opcion",
+          "enunciado": "Trinidad está en una región calurosa, donde crecen el arroz, la yuca y el plátano. ¿Qué región es?",
+          "opciones": [
+            { "texto": "los llanos", "correcta": true },
+            { "texto": "el altiplano", "pista": "El altiplano es alto y frío. Allí crecen la papa y la quinua.", "error": "alimentos-region" },
+            { "texto": "los valles", "pista": "Los valles son templados. Allí crecen el maíz, el durazno y la uva.", "error": "alimentos-region" }
+          ],
+          "columnas": 3,
+          "pista": "Piensa en la región plana y calurosa del oriente de Bolivia.",
+          "explicacion": "Trinidad está en los **llanos**. Allí el majadito es un plato muy típico, igual que en Santa Cruz.",
+          "error": "alimentos-region"
+        }
+      ],
+      "pista": "Resuelve un paso a la vez: primero el origen de cada ingrediente, después la región.",
+      "explicacion": "El majadito tiene arroz y plátano (vegetal), charque y huevo (animal) y sal (mineral). Es un plato típico de los llanos, en el Beni y Santa Cruz.",
+      "error": "origen-alimento"
+    },
+    {
+      "id": "p15", "tipo": "escribir-libre", "nivel": 3,
+      "enunciado": "Escribe una oración sobre un alimento que comes en tu casa y di de qué origen es.",
+      "guia": ["En mi casa comemos...", "La quinua es de origen vegetal."],
+      "requisitos": [
+        { "tipo": "mayuscula-inicial" },
+        { "tipo": "punto-final" },
+        { "tipo": "min-palabras", "valor": 5 },
+        { "tipo": "incluye", "palabras": ["vegetal", "animal", "mineral"] }
+      ],
+      "modelo": "En mi casa comemos quinua, que es de origen vegetal.",
+      "pista": "Piensa en un alimento de tu casa. ¿Viene de una planta, de un animal o de ninguno de los dos?",
+      "explicacion": "Por ejemplo: «En mi casa comemos quinua, que es de origen vegetal». Usa la palabra vegetal, animal o mineral.",
+      "error": "produce-oracion"
+    }
+  ],
+  "comprobacion": [
+    {
+      "id": "c1", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Toca los alimentos de origen vegetal.",
+      "texto": "En la feria, Juan compra *yuca*, queso, *naranjas* y carne.",
+      "pista": "Busca los alimentos que vienen de plantas. Hay dos.",
+      "explicacion": "La **yuca** y las **naranjas** vienen de plantas: son de origen vegetal. El queso y la carne son de origen animal.",
+      "error": "origen-alimento"
+    },
+    {
+      "id": "c2", "tipo": "relacionar", "nivel": 1,
+      "enunciado": "Une cada comida con el momento del día.",
+      "pares": [
+        ["desayuno", { "texto": "en la mañana", "emoji": "🌅" }],
+        ["almuerzo", { "texto": "al mediodía", "emoji": "☀️" }],
+        ["té", { "texto": "en la tarde", "emoji": "🌇" }],
+        ["cena", { "texto": "en la noche", "emoji": "🌙" }]
+      ],
+      "pista": "El día empieza con el desayuno y termina con la cena.",
+      "explicacion": "El desayuno es en la mañana; el almuerzo, al mediodía; el té, en la tarde, y la cena, en la noche.",
+      "error": "comidas-del-dia"
+    },
+    {
+      "id": "c3", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "Clasifica los alimentos según su origen.",
+      "categorias": [
+        { "id": "vegetal", "texto": "Vegetal", "emoji": "🌱" },
+        { "id": "animal", "texto": "Animal", "emoji": "🐄" },
+        { "id": "mineral", "texto": "Mineral", "emoji": "⛰️" }
+      ],
+      "elementos": [
+        { "texto": "haba", "categoria": "vegetal" },
+        { "texto": "arroz", "emoji": "🍚", "categoria": "vegetal" },
+        { "texto": "pescado del río", "emoji": "🐟", "categoria": "animal" },
+        { "texto": "yogur", "categoria": "animal" },
+        { "texto": "agua", "emoji": "💧", "categoria": "mineral" },
+        { "texto": "sal", "emoji": "🧂", "categoria": "mineral" }
+      ],
+      "pista": "El yogur se hace con leche. El agua y la sal no son ni plantas ni animales.",
+      "explicacion": "La haba y el arroz son de origen **vegetal**. El pescado y el yogur (hecho con leche), de origen **animal**. El agua y la sal, de origen **mineral**.",
+      "error": "origen-alimento"
+    },
+    {
+      "id": "c4", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha y escribe la respuesta.",
+      "escuchar": "Nayra toma sopa de maní. El maní crece en una planta, bajo la tierra. ¿De qué origen es el maní?",
+      "respuestas": ["vegetal", "origen vegetal", "de origen vegetal", "es vegetal", "es de origen vegetal"],
+      "pista": "Si un alimento crece en una planta, ¿de qué origen es?",
+      "explicacion": "El maní es de origen **vegetal**, porque viene de una planta.",
+      "error": "origen-alimento"
+    },
+    {
+      "id": "c5", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa los consejos para alimentarte bien.",
+      "texto": "Cuando tengo sed, tomo [agua]. Como frutas y [verduras] todos los días. Los dulces los como [poco].",
+      "banco": ["gaseosa", "mucho"],
+      "pista": "Piensa en la bebida sin azúcar, en lo que acompaña a las frutas y en cuántos dulces conviene comer.",
+      "explicacion": "Para la sed, **agua**. Frutas y **verduras**, todos los días. Los dulces, **poco** y de vez en cuando.",
+      "error": "alimentacion-saludable"
+    },
+    {
+      "id": "c6", "tipo": "opcion", "nivel": 2,
+      "enunciado": "Rosa vive en el altiplano. ¿Qué alimento se hace allí con el frío de las noches de invierno?",
+      "opciones": [
+        { "texto": "chuño", "correcta": true },
+        { "texto": "castaña", "pista": "La castaña crece en los bosques calurosos de la Amazonía.", "error": "alimentos-region" },
+        { "texto": "achachairú", "pista": "El achachairú es una fruta de los llanos, donde hace calor.", "error": "alimentos-region" }
+      ],
+      "columnas": 3,
+      "pista": "Se hace con papas que se congelan con la helada.",
+      "explicacion": "El **chuño** se hace en el altiplano: las papas se congelan con la helada de la noche y después se secan al sol.",
+      "error": "alimentos-region"
+    },
+    {
+      "id": "c7", "tipo": "clasificar", "nivel": 3,
+      "enunciado": "¿De qué origen es? Piensa con qué está hecho cada alimento.",
+      "categorias": [
+        { "id": "vegetal", "texto": "Vegetal", "emoji": "🌱" },
+        { "id": "animal", "texto": "Animal", "emoji": "🐄" },
+        { "id": "mineral", "texto": "Mineral", "emoji": "⛰️" }
+      ],
+      "elementos": [
+        { "texto": "azúcar de caña", "categoria": "vegetal" },
+        { "texto": "pan de trigo", "categoria": "vegetal" },
+        { "texto": "api morado", "categoria": "vegetal" },
+        { "texto": "mantequilla", "categoria": "animal" },
+        { "texto": "charque", "categoria": "animal" },
+        { "texto": "agua de vertiente", "categoria": "mineral" }
+      ],
+      "pista": "El azúcar sale de una planta. La mantequilla se hace con leche. El api, con maíz.",
+      "explicacion": "El azúcar (de la caña), el pan (de trigo) y el api (de maíz morado) son de origen **vegetal**. La mantequilla (de leche) y el charque (de carne), de origen **animal**. El agua, de origen **mineral**.",
+      "error": "origen-alimento"
+    },
+    {
+      "id": "c8", "tipo": "numero", "nivel": 3,
+      "enunciado": "El abuelo de Inti cocina chairo con chuño, carne, verduras, agua y sal. ¿De cuántos orígenes distintos son sus ingredientes?",
+      "visual": { "tipo": "emojis", "items": ["🥔", "🥩", "🥕", "💧", "🧂"], "etiquetas": ["chuño", "carne", "verduras", "agua", "sal"] },
+      "respuesta": 3,
+      "sufijo": "orígenes",
+      "erroresComunes": [
+        { "respuesta": 2, "pista": "¿Te acordaste del agua y la sal? No son ni vegetales ni animales.", "error": "origen-mineral" },
+        { "respuesta": 5, "pista": "Contaste los ingredientes. Ahora agrúpalos: ¿cuáles son vegetales, cuáles animales y cuáles minerales?", "error": "origen-alimento" }
+      ],
+      "pista": "Separa los ingredientes en vegetal, animal y mineral. Después cuenta los grupos.",
+      "explicacion": "Son **3 orígenes**: vegetal (chuño y verduras), animal (carne) y mineral (agua y sal).",
+      "error": "origen-alimento"
+    }
+  ],
+  "repaso": {
+    "texto": "Comemos variado, con frutas y verduras cada día, y tomamos agua. Los alimentos pueden ser de origen vegetal (de plantas), animal (de animales) o mineral (el agua y la sal).",
+    "visual": {
+      "tipo": "tabla",
+      "columnas": ["Vegetal", "Animal", "Mineral"],
+      "filas": [["🥔 papa", "🥛 leche", "💧 agua"], ["🌽 choclo", "🥚 huevo", "🧂 sal"]]
+    }
+  },
+  "adulto": {
+    "objetivo": "Reconocer hábitos de alimentación saludable (comer variado, frutas y verduras cada día, agua para la sed, poca azúcar, sal y comida chatarra), nombrar las comidas del día y clasificar los alimentos según su origen: vegetal, animal o mineral (agua y sal), con alimentos típicos de las regiones de Bolivia. Se habla de energía y salud, nunca del peso ni de la forma del cuerpo.",
+    "sugerencias": [
+      "En la feria o el mercado, jueguen a «¿De dónde viene?»: elijan cinco alimentos y pidan que diga si son de origen vegetal, animal o mineral. Pregunten también a la casera de qué región de Bolivia llegan.",
+      "Armen juntos el plato del almuerzo con alimentos de distinto origen y colores (por ejemplo, arroz o quinua, verduras, huevo o queso y una fruta). Hablen de la energía que dan para jugar y aprender, sin mencionar el peso ni la forma del cuerpo.",
+      "Lean juntos la etiqueta de una gaseosa, un jugo en cajita o un paquete de galletas y busquen la palabra «azúcar». Después preparen juntos un refresco casero con fruta y poca azúcar, o tomen agua."
+    ],
+    "errores": {
+      "origen-alimento": { "descripcion": "Confunde el origen vegetal, animal o mineral de los alimentos.", "sugerencia": "Al cocinar, pregunten por cada ingrediente: «¿viene de una planta, de un animal o de ninguno de los dos?»." },
+      "origen-mineral": { "descripcion": "No reconoce que el agua y la sal son de origen mineral.", "sugerencia": "Muestren la sal y el agua y expliquen que no vienen de plantas ni de animales. Si pueden, miren fotos del salar de Uyuni, de donde se saca sal." },
+      "de-donde-viene": { "descripcion": "No sabe de qué planta o animal se obtiene un alimento (el queso de la leche, el chuño de la papa).", "sugerencia": "Cuando coman queso, pan, chuño o pipocas, conversen de qué están hechos y quién los produce." },
+      "alimentacion-saludable": { "descripcion": "Le cuesta distinguir los alimentos y hábitos de todos los días de los que conviene comer poco.", "sugerencia": "Usen las frases «para todos los días» y «para de vez en cuando» en lugar de «comida buena» y «comida mala»; así la comida no se asocia con culpa." },
+      "comidas-del-dia": { "descripcion": "Confunde el nombre o el orden de las comidas del día.", "sugerencia": "Al sentarse a la mesa, pregunten: «¿qué comida es esta: desayuno, almuerzo, té o cena?»." },
+      "alimentos-region": { "descripcion": "No relaciona alimentos típicos con las regiones de Bolivia.", "sugerencia": "Miren juntos un mapa de Bolivia y ubiquen dónde se producen la quinua, el chuño, la uva, la yuca y la castaña." },
+      "produce-oracion": { "descripcion": "Le cuesta escribir una oración completa con mayúscula inicial y punto final.", "sugerencia": "Pidan que primero diga la oración en voz alta y después la escriba; revisen juntos la mayúscula y el punto." }
+    }
+  }
+}
