@@ -1,0 +1,269 @@
+{
+  "id": "com-1-1",
+  "titulo": "¿Qué es un sustantivo?",
+  "objetivo": "Reconozco las palabras que nombran personas, animales, cosas y lugares.",
+  "explicacion": [
+    {
+      "texto": "Todo lo que nos rodea tiene un nombre. Las palabras que **nombran** se llaman **sustantivos**.",
+      "emoji": "🏷️",
+      "visual": { "tipo": "emojis", "items": ["👧", "🦙", "🥔", "🏫"], "etiquetas": ["niña", "llama", "papa", "escuela"] }
+    },
+    {
+      "texto": "Los sustantivos nombran **personas** (abuela, maestro), **animales** (cóndor, gato), **cosas** (mochila, pelota) y **lugares** (feria, río).",
+      "visual": { "tipo": "emojis", "items": ["👵", "🦅", "🎒", "🏞️"], "etiquetas": ["abuela", "cóndor", "mochila", "río"] }
+    },
+    {
+      "texto": "Un truco: si puedes poner **el**, **la**, **un** o **una** delante, seguramente es un sustantivo. «La mochila» sí. «La corre» no.",
+      "emoji": "💡"
+    }
+  ],
+  "ejemplo": {
+    "instruccion": "Mira cómo encontramos los sustantivos en una oración.",
+    "pasos": [
+      { "texto": "Leemos: «Kusi lleva choclos a la feria».", "visual": { "tipo": "emojis", "items": ["👦", "🌽", "🧺"] } },
+      { "texto": "¿Quién? **Kusi**: es una persona. ¡Es un sustantivo!", "visual": { "tipo": "emojis", "items": ["👦"], "etiquetas": ["Kusi"] } },
+      { "texto": "¿Qué lleva? **choclos**: son cosas. ¿Adónde? A la **feria**: es un lugar.", "visual": { "tipo": "emojis", "items": ["🌽", "🧺"], "etiquetas": ["choclos", "feria"] } },
+      { "texto": "«Lleva» no nombra nada: dice lo que hace Kusi. No es sustantivo.", "emoji": "🚶" }
+    ]
+  },
+  "guiada": {
+    "intro": "Ahora lo hacemos juntos.",
+    "pasos": [
+      {
+        "id": "g1", "tipo": "tocar",
+        "enunciado": "Toca la palabra que nombra un animal.",
+        "apoyo": "Pregúntate: ¿cuál de estas palabras es un animal?",
+        "texto": "La *vicuña* come pasto.",
+        "pista": "Busca un animal del altiplano.",
+        "explicacion": "«Vicuña» nombra a un animal: es un sustantivo. «Pasto» también es sustantivo, pero es una planta.",
+        "error": "no-identifica-sustantivo"
+      },
+      {
+        "id": "g2", "tipo": "clasificar",
+        "enunciado": "¿Qué nombra cada palabra?",
+        "apoyo": "Piensa: ¿es una persona, un animal o una cosa?",
+        "categorias": [
+          { "id": "persona", "texto": "Persona", "emoji": "🧑" },
+          { "id": "animal", "texto": "Animal", "emoji": "🐾" },
+          { "id": "cosa", "texto": "Cosa", "emoji": "📦" }
+        ],
+        "elementos": [
+          { "texto": "doctora", "emoji": "👩‍⚕️", "categoria": "persona" },
+          { "texto": "tatú", "emoji": "🐾", "categoria": "animal" },
+          { "texto": "pelota", "emoji": "⚽", "categoria": "cosa" },
+          { "texto": "abuelo", "emoji": "👴", "categoria": "persona" },
+          { "texto": "paraba", "emoji": "🦜", "categoria": "animal" },
+          { "texto": "sombrero", "emoji": "👒", "categoria": "cosa" }
+        ],
+        "pista": "Las personas pueden hablar contigo; los animales viven en el campo o en la casa; las cosas se usan.",
+        "explicacion": "Personas: doctora, abuelo. Animales: tatú, paraba. Cosas: pelota, sombrero.",
+        "error": "clasifica-sustantivos"
+      },
+      {
+        "id": "g3", "tipo": "opcion",
+        "enunciado": "¿Cuál de estas palabras es un sustantivo?",
+        "apoyo": "Prueba poner «el» o «la» delante de cada palabra.",
+        "opciones": [
+          { "texto": "la escuela", "correcta": true },
+          { "texto": "la salta", "pista": "«Saltar» es una acción, no nombra nada.", "error": "confunde-verbo" },
+          { "texto": "la bonita", "pista": "«Bonita» dice cómo es algo, no lo nombra.", "error": "confunde-adjetivo" }
+        ],
+        "pista": "Una sola palabra nombra un lugar.",
+        "explicacion": "«Escuela» nombra un lugar. Por eso es un sustantivo.",
+        "error": "no-identifica-sustantivo"
+      }
+    ]
+  },
+  "practica": [
+    {
+      "id": "p1", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Toca los sustantivos.",
+      "texto": "El *perro* juega con la *pelota*.",
+      "pista": "Hay un animal y una cosa.",
+      "explicacion": "«Perro» nombra un animal y «pelota» nombra una cosa.",
+      "error": "no-identifica-sustantivo"
+    },
+    {
+      "id": "p2", "tipo": "multiple", "nivel": 1,
+      "enunciado": "Elige todas las palabras que son sustantivos.",
+      "opciones": [
+        { "texto": "mesa", "emoji": "🪑", "correcta": true },
+        { "texto": "gallina", "emoji": "🐔", "correcta": true },
+        { "texto": "comer", "error": "confunde-verbo" },
+        { "texto": "maestra", "emoji": "👩‍🏫", "correcta": true }
+      ],
+      "pista": "Una de las palabras es una acción.",
+      "explicacion": "Mesa, gallina y maestra nombran cosas, animales o personas. «Comer» es una acción.",
+      "error": "no-identifica-sustantivo"
+    },
+    {
+      "id": "p3", "tipo": "memoria", "nivel": 1,
+      "enunciado": "Encuentra las parejas: el dibujo y su nombre.",
+      "pares": [ [ { "emoji": "🦙" }, "llama" ], [ { "emoji": "🌽" }, "choclo" ], [ { "emoji": "🏠" }, "casa" ], [ { "emoji": "👵" }, "abuela" ] ],
+      "pista": "Cada dibujo tiene un nombre: ese nombre es un sustantivo.",
+      "explicacion": "Llama, choclo, casa y abuela son sustantivos.",
+      "error": "no-identifica-sustantivo"
+    },
+    {
+      "id": "p4", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa la oración con un sustantivo.",
+      "texto": "Mi abuela prepara [api] en la mañana.",
+      "banco": ["rápido", "caminar"],
+      "pista": "Falta el nombre de una bebida.",
+      "explicacion": "«Api» es el nombre de una bebida de maíz: es un sustantivo.",
+      "error": "no-identifica-sustantivo"
+    },
+    {
+      "id": "p5", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "¿Es sustantivo o no?",
+      "categorias": [ { "id": "si", "texto": "Sustantivo" }, { "id": "no", "texto": "No es sustantivo" } ],
+      "elementos": [
+        { "texto": "río", "categoria": "si" }, { "texto": "correr", "categoria": "no" },
+        { "texto": "cuaderno", "categoria": "si" }, { "texto": "alegre", "categoria": "no" },
+        { "texto": "tío", "categoria": "si" }, { "texto": "dormir", "categoria": "no" }
+      ],
+      "pista": "Pon «el» o «la» delante: «el río» suena bien, «el correr»... no nombra una cosa.",
+      "explicacion": "Río, cuaderno y tío son sustantivos. Correr y dormir son acciones; alegre dice cómo es alguien.",
+      "error": "clasifica-sustantivos"
+    },
+    {
+      "id": "p6", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha y escribe el sustantivo.",
+      "escuchar": "cóndor",
+      "visual": { "tipo": "emoji", "valor": "🦅" },
+      "respuestas": ["cóndor"],
+      "tildes": "flexible",
+      "pista": "Es un ave grande que vuela alto en los Andes. Empieza con c.",
+      "explicacion": "La palabra es «cóndor». Nombra a un animal.",
+      "error": "escritura-sustantivo"
+    },
+    {
+      "id": "p7", "tipo": "tocar", "nivel": 2,
+      "enunciado": "Toca todos los sustantivos.",
+      "texto": "La *niña* lleva su *mochila* a la *escuela*.",
+      "pista": "Hay tres: una persona, una cosa y un lugar.",
+      "explicacion": "Niña (persona), mochila (cosa) y escuela (lugar).",
+      "error": "no-identifica-sustantivo"
+    },
+    {
+      "id": "p8", "tipo": "relacionar", "nivel": 3,
+      "enunciado": "Une cada sustantivo con lo que nombra.",
+      "pares": [ ["Illimani", "lugar"], ["carpintero", "persona"], ["bufeo", "animal"], ["martillo", "cosa"] ],
+      "pista": "El Illimani es una montaña. El bufeo es un delfín de río.",
+      "explicacion": "Illimani: lugar. Carpintero: persona. Bufeo: animal. Martillo: cosa.",
+      "error": "clasifica-sustantivos"
+    },
+    {
+      "id": "p9", "tipo": "escribir-libre", "nivel": 3,
+      "enunciado": "Escribe una oración con dos sustantivos: un animal y un lugar.",
+      "guia": ["La llama camina por el cerro.", "El pato nada en el lago."],
+      "requisitos": [
+        { "tipo": "mayuscula-inicial" }, { "tipo": "punto-final" }, { "tipo": "min-palabras", "valor": 4 }
+      ],
+      "modelo": "El cóndor vuela sobre la montaña.",
+      "pista": "Piensa en un animal y en el lugar donde vive.",
+      "explicacion": "Por ejemplo: «El cóndor vuela sobre la montaña». Cóndor y montaña son sustantivos.",
+      "error": "produce-oracion"
+    },
+    {
+      "id": "p10", "tipo": "tocar", "nivel": 3,
+      "enunciado": "Toca los sustantivos.",
+      "texto": "En la *feria*, mi *tío* vende *papas* y *quinua*.",
+      "pista": "Hay un lugar, una persona y dos alimentos.",
+      "explicacion": "Feria, tío, papas y quinua son sustantivos.",
+      "error": "no-identifica-sustantivo"
+    },
+    {
+      "id": "p11", "tipo": "ordenar", "nivel": 1,
+      "enunciado": "Ordena las palabras para formar la oración.",
+      "elementos": ["La", "vaca", "da", "leche."],
+      "unir": " ",
+      "pista": "La oración empieza con mayúscula y termina con punto.",
+      "explicacion": "«La vaca da leche.» Vaca y leche son sustantivos.",
+      "error": "orden-oracion"
+    }
+  ],
+  "comprobacion": [
+    {
+      "id": "c1", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Toca el sustantivo que nombra una cosa.",
+      "texto": "Pedro tiene una *bicicleta* nueva.",
+      "pista": "Busca algo que se puede usar.",
+      "explicacion": "«Bicicleta» nombra una cosa. «Pedro» también es un sustantivo, pero nombra a una persona.",
+      "error": "no-identifica-sustantivo"
+    },
+    {
+      "id": "c2", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "Separa los sustantivos de las demás palabras.",
+      "categorias": [ { "id": "si", "texto": "Sustantivo" }, { "id": "no", "texto": "No es sustantivo" } ],
+      "elementos": [
+        { "texto": "lago", "categoria": "si" }, { "texto": "saltar", "categoria": "no" },
+        { "texto": "vecina", "categoria": "si" }, { "texto": "grande", "categoria": "no" },
+        { "texto": "zapato", "categoria": "si" }
+      ],
+      "pista": "Un sustantivo nombra personas, animales, cosas o lugares.",
+      "explicacion": "Lago, vecina y zapato nombran. Saltar es una acción y grande dice cómo es algo.",
+      "error": "clasifica-sustantivos"
+    },
+    {
+      "id": "c3", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa con el sustantivo correcto.",
+      "texto": "El [gallo] canta en la mañana.",
+      "banco": ["canta", "feliz"],
+      "pista": "¿Quién canta? Un animal de la granja.",
+      "explicacion": "«Gallo» nombra a un animal: es un sustantivo.",
+      "error": "no-identifica-sustantivo"
+    },
+    {
+      "id": "c4", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha y escribe el sustantivo.",
+      "escuchar": "mochila",
+      "visual": { "tipo": "emoji", "valor": "🎒" },
+      "respuestas": ["mochila"],
+      "pista": "Es lo que llevas a la escuela con tus cuadernos.",
+      "explicacion": "La palabra es «mochila».",
+      "error": "escritura-sustantivo"
+    },
+    {
+      "id": "c5", "tipo": "opcion", "nivel": 1,
+      "enunciado": "¿Qué palabra NO es un sustantivo?",
+      "opciones": [
+        { "texto": "bailar", "correcta": true },
+        { "texto": "zampoña", "pista": "La zampoña es un instrumento: es una cosa.", "error": "no-identifica-sustantivo" },
+        { "texto": "hermano", "pista": "«Hermano» nombra a una persona.", "error": "no-identifica-sustantivo" }
+      ],
+      "pista": "Busca la palabra que es una acción.",
+      "explicacion": "«Bailar» es una acción. Zampoña y hermano son sustantivos.",
+      "error": "confunde-verbo"
+    },
+    {
+      "id": "c6", "tipo": "tocar", "nivel": 3,
+      "enunciado": "Toca todos los sustantivos.",
+      "texto": "La *cholita* toca el *charango* en la *plaza* con su *nieto*.",
+      "pista": "Hay cuatro: dos personas, una cosa y un lugar.",
+      "explicacion": "Cholita y nieto (personas), charango (cosa) y plaza (lugar).",
+      "error": "no-identifica-sustantivo"
+    }
+  ],
+  "repaso": {
+    "texto": "Los sustantivos son palabras que nombran personas, animales, cosas y lugares. Prueba poner «el» o «la» delante.",
+    "visual": { "tipo": "emojis", "items": ["🧑", "🐕", "⚽", "🏠"], "etiquetas": ["persona", "animal", "cosa", "lugar"] }
+  },
+  "adulto": {
+    "objetivo": "Identificar sustantivos como palabras que nombran personas, animales, cosas y lugares, y distinguirlos de acciones (verbos) y cualidades (adjetivos).",
+    "sugerencias": [
+      "Jueguen «Veo, veo un sustantivo»: en la casa o en el mercado, túrnense para nombrar personas, animales, cosas y lugares que ven.",
+      "Lean juntos una receta o una etiqueta y subrayen con un color las palabras que nombran cosas.",
+      "Hagan tarjetas con palabras (mesa, correr, gato, bonito) y pidan que separe las que nombran algo."
+    ],
+    "errores": {
+      "no-identifica-sustantivo": { "descripcion": "No siempre reconoce qué palabras nombran algo.", "sugerencia": "Pregunten «¿esta palabra nombra a alguien o algo?» y prueben ponerle «el» o «la» delante." },
+      "clasifica-sustantivos": { "descripcion": "Duda al decidir si un sustantivo nombra persona, animal, cosa o lugar.", "sugerencia": "Jueguen a clasificar objetos de la casa y fotos de revistas en cuatro cajas: personas, animales, cosas y lugares." },
+      "confunde-verbo": { "descripcion": "Confunde acciones (verbos) con sustantivos.", "sugerencia": "Actúen palabras: si se puede «hacer» (saltar, comer), es una acción; si se puede señalar (mesa, gato), es un nombre." },
+      "confunde-adjetivo": { "descripcion": "Confunde cualidades (bonito, grande) con sustantivos.", "sugerencia": "Pregunten «¿cómo es?» para las cualidades y «¿qué es?» para los sustantivos." },
+      "escritura-sustantivo": { "descripcion": "Tiene dificultad para escribir palabras dictadas.", "sugerencia": "Dicten palabras cortas separando sílabas con palmadas (mo-chi-la) antes de escribirlas." },
+      "produce-oracion": { "descripcion": "Le cuesta escribir oraciones completas con mayúscula y punto.", "sugerencia": "Escriban juntos oraciones cortas sobre lo que hicieron en el día y revisen la mayúscula inicial y el punto final." },
+      "orden-oracion": { "descripcion": "Le cuesta ordenar palabras para formar una oración.", "sugerencia": "Escriban oraciones en tiras de papel, córtenlas por palabras y armen la oración juntos." }
+    }
+  }
+}
