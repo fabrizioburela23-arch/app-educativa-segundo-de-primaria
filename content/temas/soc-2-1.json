@@ -1,0 +1,477 @@
+{
+  "id": "soc-2-1",
+  "titulo": "Personas que ayudan en mi comunidad",
+  "objetivo": "Conozco a las personas que trabajan en mi comunidad, valoro lo que hacen y descubro historias de personas destacadas.",
+  "explicacion": [
+    {
+      "texto": "En tu comunidad viven y trabajan muchas personas. El trabajo de cada una nos ayuda a todos. Por eso nos necesitamos unos a otros.",
+      "emoji": "🏘️",
+      "visual": { "tipo": "emojis", "items": ["👩‍⚕️", "👨‍🌾", "👩‍🏫", "👨‍🚒"], "etiquetas": ["médica", "agricultor", "maestra", "bombero"] }
+    },
+    {
+      "texto": "La agricultora cultiva papa y quinua. El chofer nos lleva en minibús. La enfermera nos pone vacunas. El barrendero limpia las calles. La dirigente vecinal organiza reuniones para mejorar el barrio.",
+      "visual": { "tipo": "emojis", "items": ["👩‍🌾", "🚐", "💉", "🧹", "🏘️"], "etiquetas": ["agricultora", "chofer", "enfermera", "barrendero", "dirigente vecinal"] }
+    },
+    {
+      "texto": "Todos los trabajos son importantes. Mujeres y varones pueden hacer cualquier trabajo: hay médicas y médicos, bomberas y bomberos. A todas las personas las tratamos con respeto.",
+      "emoji": "🤝"
+    },
+    {
+      "texto": "Algunas personas son **destacadas**: la comunidad las recuerda por algo bueno que hicieron, como ayudar a construir la escuela o crear canciones. Tu familia puede contarte sus historias.",
+      "emoji": "🌟",
+      "visual": { "tipo": "emojis", "items": ["👵", "💬", "👧"], "etiquetas": ["abuela", "cuenta", "nieta"] }
+    }
+  ],
+  "ejemplo": {
+    "instruccion": "Mira cuántas personas trabajan para que tengas pan en el desayuno.",
+    "pasos": [
+      { "texto": "En el campo, una agricultora siembra y cosecha el trigo.", "visual": { "tipo": "emojis", "items": ["👩‍🌾", "🌾"], "etiquetas": ["agricultora", "trigo"] } },
+      { "texto": "En el molino, el trigo se convierte en harina. Un chofer lleva la harina en su camión a la ciudad.", "visual": { "tipo": "emojis", "items": ["🏭", "🚚"], "etiquetas": ["molino", "camión"] } },
+      { "texto": "Muy temprano, el panadero mezcla la harina con agua y hornea el pan.", "visual": { "tipo": "emojis", "items": ["👨‍🍳", "🍞"], "etiquetas": ["panadero", "pan"] } },
+      { "texto": "La vendedora vende el pan en su tienda. ¡Muchas personas trabajaron para tu desayuno!", "visual": { "tipo": "emojis", "items": ["🏪", "🍞", "😋"], "etiquetas": ["tienda", "pan", "desayuno"] } }
+    ]
+  },
+  "guiada": {
+    "intro": "Ahora lo hacemos juntos, paso a paso.",
+    "pasos": [
+      {
+        "id": "g1", "tipo": "relacionar",
+        "enunciado": "Une cada persona con lo que hace.",
+        "apoyo": "Mira el dibujo de cada persona. Piensa: ¿dónde la has visto trabajar?",
+        "pares": [
+          [ { "texto": "médica", "emoji": "👩‍⚕️" }, "cura a las personas enfermas" ],
+          [ { "texto": "bombero", "emoji": "👨‍🚒" }, "apaga incendios" ],
+          [ { "texto": "agricultora", "emoji": "👩‍🌾" }, "cultiva alimentos" ],
+          [ { "texto": "maestro", "emoji": "👨‍🏫" }, "enseña a leer y a escribir" ]
+        ],
+        "pista": "Empieza por la persona que mejor conoces. Después une las demás.",
+        "explicacion": "La médica cura a las personas enfermas, el bombero apaga incendios, la agricultora cultiva alimentos y el maestro enseña a leer y a escribir.",
+        "error": "funcion-oficio"
+      },
+      {
+        "id": "g2", "tipo": "clasificar",
+        "enunciado": "¿Qué cuida cada persona?",
+        "apoyo": "La salud es estar sanos. La seguridad es estar protegidos de peligros, como un incendio.",
+        "categorias": [
+          { "id": "salud", "texto": "Nuestra salud", "emoji": "🏥" },
+          { "id": "seguridad", "texto": "Nuestra seguridad", "emoji": "🛡️" }
+        ],
+        "elementos": [
+          { "texto": "enfermero", "emoji": "💉", "categoria": "salud" },
+          { "texto": "dentista", "emoji": "🦷", "categoria": "salud" },
+          { "texto": "médica", "emoji": "👩‍⚕️", "categoria": "salud" },
+          { "texto": "bombera", "emoji": "👩‍🚒", "categoria": "seguridad" },
+          { "texto": "policía", "emoji": "👮", "categoria": "seguridad" }
+        ],
+        "pista": "¿Quién te atiende cuando te enfermas? ¿Quién te protege de un peligro?",
+        "explicacion": "El enfermero, la dentista y la médica cuidan nuestra salud. La bombera y el policía cuidan nuestra seguridad.",
+        "error": "clasifica-oficios"
+      },
+      {
+        "id": "g3", "tipo": "ordenar",
+        "enunciado": "Kusi quiere conocer la historia de una persona destacada de su barrio. Ordena lo que hace.",
+        "apoyo": "Antes de preguntar, Kusi necesita saber a quién va a preguntar y qué le va a preguntar.",
+        "elementos": [
+          "Elige a la persona que quiere conocer.",
+          "Prepara sus preguntas.",
+          "Pregunta y escucha con atención.",
+          "Cuenta a su familia lo que aprendió."
+        ],
+        "vertical": true,
+        "pista": "¿Qué va primero: hacer las preguntas o pensar qué preguntar?",
+        "explicacion": "Primero elige a la persona, después prepara sus preguntas, luego pregunta y escucha, y al final cuenta lo que aprendió.",
+        "error": "entrevista"
+      }
+    ]
+  },
+  "practica": [
+    {
+      "id": "p1", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Toca las palabras que nombran trabajos.",
+      "texto": "En la feria, la *vendedora* conversa con el *chofer* y con la *enfermera*.",
+      "pista": "Busca las palabras que dicen qué trabajo hace una persona.",
+      "explicacion": "Vendedora, chofer y enfermera son trabajos. «Feria» es un lugar.",
+      "error": "identifica-oficios"
+    },
+    {
+      "id": "p2", "tipo": "memoria", "nivel": 1,
+      "enunciado": "Encuentra las parejas: el dibujo y el trabajo.",
+      "pares": [
+        [ { "emoji": "👩‍🚒" }, "bombera" ],
+        [ { "emoji": "👨‍🌾" }, "agricultor" ],
+        [ { "emoji": "👩‍🏫" }, "maestra" ],
+        [ { "emoji": "👨‍⚕️" }, "médico" ]
+      ],
+      "pista": "Mira bien cada dibujo: ¿qué trabajo está haciendo esa persona?",
+      "explicacion": "Cada dibujo muestra a una persona en su trabajo: bombera, agricultor, maestra y médico.",
+      "error": "identifica-oficios"
+    },
+    {
+      "id": "p3", "tipo": "opcion", "nivel": 1,
+      "enunciado": "¿Quiénes pueden trabajar como bomberos?",
+      "visual": { "tipo": "emoji", "valor": "🚒" },
+      "opciones": [
+        { "texto": "Mujeres y varones", "correcta": true },
+        { "texto": "Solo los varones", "pista": "¿Recuerdas? También hay bomberas.", "error": "estereotipo-trabajo" },
+        { "texto": "Solo las mujeres", "pista": "¿Recuerdas? También hay bomberos.", "error": "estereotipo-trabajo" }
+      ],
+      "pista": "Recuerda lo que aprendiste: ¿los trabajos son solo para mujeres o solo para varones?",
+      "explicacion": "Mujeres y varones pueden ser bomberos. Cualquier persona puede aprender el trabajo que le guste.",
+      "error": "estereotipo-trabajo"
+    },
+    {
+      "id": "p4", "tipo": "completar", "nivel": 1,
+      "enunciado": "Completa con el trabajo de cada persona.",
+      "texto": "La [barrendera] limpia las calles. El [panadero] hace el pan.",
+      "banco": ["dentista"],
+      "pista": "¿Quién usa una escoba? ¿Quién usa un horno?",
+      "explicacion": "La barrendera limpia las calles y el panadero hace el pan. La dentista cuida los dientes.",
+      "error": "funcion-oficio"
+    },
+    {
+      "id": "p5", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "Une cada persona con lo que usa en su trabajo.",
+      "pares": [
+        [ "carpintera", { "texto": "martillo", "emoji": "🔨" } ],
+        [ "barrendero", { "texto": "escoba", "emoji": "🧹" } ],
+        [ "tejedor", { "texto": "lana", "emoji": "🧶" } ],
+        [ "panadero", { "texto": "horno", "emoji": "🔥" } ]
+      ],
+      "pista": "Piensa qué necesita cada persona para hacer su trabajo.",
+      "explicacion": "La carpintera usa un martillo, el barrendero usa una escoba, el tejedor usa lana y el panadero usa un horno.",
+      "error": "herramienta-oficio"
+    },
+    {
+      "id": "p6", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "¿Qué hace cada persona en su trabajo?",
+      "categorias": [
+        { "id": "alimentos", "texto": "Nos da alimentos", "emoji": "🍽️" },
+        { "id": "objetos", "texto": "Hace objetos", "emoji": "🛠️" },
+        { "id": "viajes", "texto": "Nos lleva de un lugar a otro", "emoji": "🚌" }
+      ],
+      "elementos": [
+        { "texto": "agricultor", "emoji": "👨‍🌾", "categoria": "alimentos" },
+        { "texto": "pescadora", "emoji": "🎣", "categoria": "alimentos" },
+        { "texto": "carpintero", "emoji": "🔨", "categoria": "objetos" },
+        { "texto": "tejedora", "emoji": "🧶", "categoria": "objetos" },
+        { "texto": "chofer de trufi", "emoji": "🚕", "categoria": "viajes" },
+        { "texto": "piloto de avión", "emoji": "✈️", "categoria": "viajes" }
+      ],
+      "pista": "Pregúntate: ¿produce comida, fabrica cosas o maneja un vehículo?",
+      "explicacion": "El agricultor y la pescadora nos dan alimentos. El carpintero y la tejedora hacen objetos. El chofer de trufi y la piloto de avión nos llevan de un lugar a otro.",
+      "error": "clasifica-oficios"
+    },
+    {
+      "id": "p7", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha y escribe el nombre del trabajo.",
+      "escuchar": "enfermera",
+      "visual": { "tipo": "emoji", "valor": "💉" },
+      "respuestas": ["enfermera"],
+      "pista": "Empieza con «en». Es la persona que nos cuida en el centro de salud.",
+      "explicacion": "La palabra es «enfermera»: en-fer-me-ra.",
+      "error": "escritura-oficios"
+    },
+    {
+      "id": "p8", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa las oraciones con el trabajo correcto.",
+      "texto": "El [bombero] apaga el incendio. La [dirigente] vecinal organiza las reuniones de la junta de vecinos. La [agricultora] siembra papa en su chacra.",
+      "banco": ["bebé", "turista"],
+      "pista": "Lee cada oración y piensa: ¿qué trabajo es ese?",
+      "explicacion": "El bombero apaga incendios. La dirigente vecinal organiza las reuniones del barrio. La agricultora siembra en su chacra.",
+      "error": "funcion-oficio"
+    },
+    {
+      "id": "p9", "tipo": "multiple", "nivel": 2,
+      "enunciado": "¿Quiénes pueden contarte cómo era tu barrio hace muchos años? Elige todas las respuestas correctas.",
+      "opciones": [
+        { "texto": "una abuela que vive en el barrio desde niña", "emoji": "👵", "correcta": true },
+        { "texto": "un vecino que ayudó a construir la plaza", "emoji": "👴", "correcta": true },
+        { "texto": "una turista que llegó ayer", "emoji": "🧳", "pista": "Llegó ayer: todavía no conoce la historia del barrio.", "error": "fuentes-comunidad" },
+        { "texto": "un bebé recién nacido", "emoji": "👶", "pista": "Un bebé todavía no habla ni conoce el pasado del barrio.", "error": "fuentes-comunidad" }
+      ],
+      "pista": "Busca a las personas que vivieron en el barrio hace mucho tiempo.",
+      "explicacion": "La abuela y el vecino vivieron en el barrio hace muchos años: ellos recuerdan cómo era. La turista y el bebé no conocían el barrio antes.",
+      "error": "fuentes-comunidad"
+    },
+    {
+      "id": "p10", "tipo": "pasos", "nivel": 3,
+      "enunciado": "Estás en la feria con tu tío. De pronto, ya no lo ves. ¿Qué harías?",
+      "visual": { "tipo": "emojis", "items": ["🧺", "👀"] },
+      "pasos": [
+        {
+          "tipo": "opcion",
+          "enunciado": "¿Qué haces primero?",
+          "opciones": [
+            { "texto": "Me quedo en un lugar seguro, cerca de donde lo vi.", "correcta": true },
+            { "texto": "Corro por toda la feria para buscarlo.", "pista": "Si corres de un lado a otro, es más difícil que te encuentren.", "error": "pedir-ayuda" },
+            { "texto": "Me voy a casa sin avisar.", "pista": "Tu tío te buscará y se preocupará. Es mejor quedarte cerca.", "error": "pedir-ayuda" }
+          ],
+          "pista": "Piensa: ¿qué ayuda a que tu tío te encuentre pronto?",
+          "explicacion": "Lo mejor es quedarte cerca de donde lo viste por última vez. Así tu tío te encontrará más rápido.",
+          "error": "pedir-ayuda"
+        },
+        {
+          "tipo": "opcion",
+          "enunciado": "¿A quién le pides ayuda?",
+          "opciones": [
+            { "texto": "A una vendedora en su puesto o a un policía.", "correcta": true },
+            { "texto": "A una persona desconocida que me invita a subir a su auto.", "pista": "Nunca subas al auto de una persona desconocida.", "error": "pedir-ayuda" },
+            { "texto": "A nadie: me escondo debajo de un puesto.", "pista": "Si te escondes, nadie te podrá encontrar.", "error": "pedir-ayuda" }
+          ],
+          "pista": "Busca a alguien que trabaja en la feria y se queda en su lugar.",
+          "explicacion": "Puedes pedir ayuda a una vendedora que está en su puesto o a un policía. Ellos ayudan a que tu familia te encuentre.",
+          "error": "pedir-ayuda"
+        }
+      ],
+      "pista": "Resuelve un paso a la vez. Primero piensa en estar seguro.",
+      "explicacion": "Si te pierdes, quédate cerca de donde estabas y pide ayuda a una persona que trabaja allí, como una vendedora o un policía.",
+      "error": "pedir-ayuda"
+    },
+    {
+      "id": "p11", "tipo": "pasos", "nivel": 3,
+      "enunciado": "Estás jugando en el patio y ves humo que sale de la casa de al lado.",
+      "visual": { "tipo": "emojis", "items": ["🏠", "💨"] },
+      "pasos": [
+        {
+          "tipo": "opcion",
+          "enunciado": "¿Qué haces primero?",
+          "opciones": [
+            { "texto": "Aviso enseguida a una persona adulta.", "correcta": true },
+            { "texto": "Entro a la casa para ver qué pasa.", "pista": "El humo y el fuego son peligrosos. No entres.", "error": "pedir-ayuda" },
+            { "texto": "Sigo jugando como si nada.", "pista": "El humo puede ser señal de un incendio. Hay que avisar.", "error": "pedir-ayuda" }
+          ],
+          "pista": "El humo puede ser peligroso. ¿Quién puede ayudar?",
+          "explicacion": "Primero avisas a una persona adulta. Ella puede llamar a quienes apagan el fuego.",
+          "error": "pedir-ayuda"
+        },
+        {
+          "tipo": "escribir",
+          "enunciado": "¿Qué trabajo tienen las personas que vienen a apagar el fuego? Escribe una palabra.",
+          "respuestas": ["bomberos", "bombero", "bomberas", "bombera", "los bomberos", "las bomberas", "bomberos y bomberas", "bomberas y bomberos"],
+          "pista": "Llegan en un camión con mangueras y escaleras. Empieza con «b».",
+          "explicacion": "Son los bomberos y las bomberas: apagan incendios y rescatan a las personas.",
+          "error": "escritura-oficios"
+        }
+      ],
+      "pista": "Resuelve un paso a la vez.",
+      "explicacion": "Si ves humo, avisas a una persona adulta, y los bomberos vienen a apagar el fuego.",
+      "error": "pedir-ayuda"
+    },
+    {
+      "id": "p12", "tipo": "escribir-libre", "nivel": 2,
+      "enunciado": "Escribe una oración para agradecer a una persona que trabaja en tu comunidad.",
+      "guia": ["Gracias, señora barrendera, por...", "Gracias, doctora, por...", "Gracias, chofer, por..."],
+      "requisitos": [
+        { "tipo": "mayuscula-inicial" },
+        { "tipo": "punto-final" },
+        { "tipo": "min-palabras", "valor": 5 },
+        { "tipo": "incluye", "palabras": ["gracias", "agradezco"] }
+      ],
+      "modelo": "Gracias, señora barrendera, por limpiar nuestra calle.",
+      "pista": "Empieza con «Gracias» y di a quién le agradeces y por qué.",
+      "explicacion": "Por ejemplo: «Gracias, señora barrendera, por limpiar nuestra calle.» Empieza con mayúscula y termina con punto.",
+      "error": "produce-oracion"
+    },
+    {
+      "id": "p13", "tipo": "escribir-libre", "nivel": 3,
+      "enunciado": "Escribe una pregunta para conocer la historia de una persona destacada de tu comunidad.",
+      "guia": ["¿Cómo era el barrio cuando usted era niña?", "¿Qué hizo usted por...?", "¿Por qué la gente recuerda a...?"],
+      "requisitos": [
+        { "tipo": "signos-pregunta" },
+        { "tipo": "mayuscula-inicial" },
+        { "tipo": "min-palabras", "valor": 4 }
+      ],
+      "modelo": "¿Cómo ayudó usted a construir la escuela?",
+      "pista": "Empieza con «¿» y termina con «?». Puedes usar «qué», «cómo» o «por qué».",
+      "explicacion": "Por ejemplo: «¿Cómo ayudó usted a construir la escuela?» Una pregunta lleva ¿ al inicio y ? al final.",
+      "error": "produce-pregunta"
+    },
+    {
+      "id": "p14", "tipo": "ordenar", "nivel": 3,
+      "enunciado": "¿Cómo llega una chompa de lana a la feria? Ordena el trabajo de cada persona.",
+      "elementos": [
+        "Rosa cuida sus alpacas en el altiplano.",
+        "Rosa corta la lana de sus alpacas.",
+        "Luis convierte la lana en hilo.",
+        "Mateo teje una chompa con ese hilo.",
+        "Wara vende la chompa en la feria."
+      ],
+      "vertical": true,
+      "pista": "Piensa: ¿qué se necesita antes de tejer una chompa?",
+      "explicacion": "Primero Rosa cuida sus alpacas y les corta la lana. Luis hace el hilo, Mateo teje la chompa y Wara la vende. ¡Cada trabajo necesita del anterior!",
+      "error": "cadena-trabajo"
+    },
+    {
+      "id": "p15", "tipo": "relacionar", "nivel": 3,
+      "enunciado": "Une cada problema con la persona que puede ayudar.",
+      "pares": [
+        [ "Me duele una muela.", { "texto": "dentista", "emoji": "🦷" } ],
+        [ "Se rompió la pata de la mesa.", { "texto": "carpintero", "emoji": "🔨" } ],
+        [ "Hay un incendio en una casa.", { "texto": "bombera", "emoji": "👩‍🚒" } ],
+        [ "Quiero aprender a leer mejor.", { "texto": "maestra", "emoji": "👩‍🏫" } ],
+        [ "Queremos música para la fiesta del barrio.", { "texto": "músico", "emoji": "🎺" } ]
+      ],
+      "pista": "Lee cada problema y piensa quién sabe resolverlo.",
+      "explicacion": "La muela: dentista. La mesa: carpintero. El incendio: bombera. Aprender a leer: maestra. La música para la fiesta: músico.",
+      "error": "funcion-oficio"
+    }
+  ],
+  "comprobacion": [
+    {
+      "id": "c1", "tipo": "relacionar", "nivel": 1,
+      "enunciado": "Une cada trabajo con lo que hace esa persona.",
+      "pares": [
+        [ { "texto": "panadera", "emoji": "👩‍🍳" }, "hace el pan" ],
+        [ { "texto": "chofer", "emoji": "🚐" }, "maneja el minibús" ],
+        [ { "texto": "dentista", "emoji": "🦷" }, "cuida los dientes" ]
+      ],
+      "pista": "Piensa en lo que ves hacer a cada persona en tu comunidad.",
+      "explicacion": "La panadera hace el pan, el chofer maneja el minibús y la dentista cuida los dientes.",
+      "error": "funcion-oficio"
+    },
+    {
+      "id": "c2", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Toca las palabras que nombran trabajos.",
+      "texto": "Mi tía es *carpintera* y mi tío es *enfermero*.",
+      "pista": "Busca las palabras que dicen en qué trabaja cada persona.",
+      "explicacion": "«Carpintera» y «enfermero» son trabajos. «Tía» y «tío» nombran a familiares.",
+      "error": "identifica-oficios"
+    },
+    {
+      "id": "c3", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "¿Esta persona nos da alimentos o hace objetos?",
+      "categorias": [
+        { "id": "alimentos", "texto": "Nos da alimentos", "emoji": "🍽️" },
+        { "id": "objetos", "texto": "Hace objetos", "emoji": "🛠️" }
+      ],
+      "elementos": [
+        { "texto": "panadera", "emoji": "🍞", "categoria": "alimentos" },
+        { "texto": "cocinero", "emoji": "👨‍🍳", "categoria": "alimentos" },
+        { "texto": "heladero", "emoji": "🍦", "categoria": "alimentos" },
+        { "texto": "zapatera", "emoji": "👞", "categoria": "objetos" },
+        { "texto": "costurero", "emoji": "🧵", "categoria": "objetos" },
+        { "texto": "artesana", "emoji": "🏺", "categoria": "objetos" }
+      ],
+      "pista": "Pregúntate: lo que hace esta persona, ¿se come o se usa?",
+      "explicacion": "La panadera, el cocinero y el heladero nos dan alimentos. La zapatera, el costurero y la artesana hacen objetos, como zapatos, ropa y vasijas.",
+      "error": "clasifica-oficios"
+    },
+    {
+      "id": "c4", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha y escribe el nombre del trabajo.",
+      "escuchar": "agricultor",
+      "visual": { "tipo": "emoji", "valor": "👨‍🌾" },
+      "respuestas": ["agricultor"],
+      "pista": "Es la persona que cultiva la tierra. Empieza con «a»: a-gri-...",
+      "explicacion": "La palabra es «agricultor»: a-gri-cul-tor.",
+      "error": "escritura-oficios"
+    },
+    {
+      "id": "c5", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa lo que cuenta la abuela de Inti sobre una persona destacada.",
+      "texto": "Hace muchos años, en el barrio no había [escuela]. Una vecina reunió a todos y juntos la [construyeron]. Por eso, la comunidad la [recuerda] con cariño.",
+      "banco": ["rompieron", "olvida"],
+      "pista": "Piensa: ¿qué hizo de bueno la vecina por su barrio?",
+      "explicacion": "No había escuela; la vecina reunió a todos y juntos la construyeron. Por eso la comunidad la recuerda con cariño.",
+      "error": "personaje-local"
+    },
+    {
+      "id": "c6", "tipo": "opcion", "nivel": 2,
+      "enunciado": "¿Por qué una comunidad recuerda con cariño a una persona destacada?",
+      "opciones": [
+        { "texto": "Porque hizo algo bueno por la comunidad.", "correcta": true },
+        { "texto": "Porque tiene mucho dinero.", "pista": "Tener dinero no es lo mismo que ayudar a los demás. Piensa en lo que hizo.", "error": "personaje-local" },
+        { "texto": "Porque tiene la casa más grande.", "pista": "El tamaño de una casa no ayuda a la comunidad. Piensa en lo que hizo.", "error": "personaje-local" }
+      ],
+      "pista": "Piensa en la vecina que ayudó a construir la escuela.",
+      "explicacion": "Recordamos a las personas destacadas porque hicieron algo bueno por todos, como construir una escuela o crear canciones.",
+      "error": "personaje-local"
+    },
+    {
+      "id": "c7", "tipo": "pasos", "nivel": 3,
+      "enunciado": "En tu barrio, Rosa barre la plaza cada mañana. Hoy ves que unos niños tiran papeles al suelo.",
+      "visual": { "tipo": "emojis", "items": ["🧹", "🌳", "📄"] },
+      "pasos": [
+        {
+          "tipo": "opcion",
+          "enunciado": "¿Qué puedes hacer?",
+          "opciones": [
+            { "texto": "Pedirles con respeto que usen el basurero.", "correcta": true },
+            { "texto": "Tirar papeles yo también.", "pista": "Si todos ensucian, la plaza se llena de basura.", "error": "respeto-trabajo" },
+            { "texto": "Burlarme de ellos.", "pista": "Burlarse no ayuda. Es mejor hablar con respeto.", "error": "respeto-trabajo" }
+          ],
+          "pista": "Busca la respuesta que cuida la plaza y trata bien a los demás.",
+          "explicacion": "Puedes pedirles con respeto que usen el basurero. Así todos cuidamos la plaza.",
+          "error": "respeto-trabajo"
+        },
+        {
+          "tipo": "opcion",
+          "enunciado": "¿Por qué es importante cuidar la plaza?",
+          "opciones": [
+            { "texto": "Porque es de todos y así cuidamos el trabajo de Rosa.", "correcta": true },
+            { "texto": "Porque así Rosa tiene más trabajo.", "pista": "Si ensuciamos, Rosa tiene más trabajo. ¿Eso la ayuda?", "error": "respeto-trabajo" },
+            { "texto": "Porque la plaza es solo de Rosa.", "pista": "La plaza es de toda la comunidad.", "error": "respeto-trabajo" }
+          ],
+          "pista": "¿De quién es la plaza? ¿Quién la limpia?",
+          "explicacion": "La plaza es de toda la comunidad. Si no la ensuciamos, cuidamos también el trabajo de Rosa.",
+          "error": "respeto-trabajo"
+        },
+        {
+          "tipo": "completar",
+          "enunciado": "Al final, ¿qué le dices a Rosa?",
+          "texto": "¡[Gracias] por cuidar nuestra plaza!",
+          "banco": ["Perdón", "Adiós"],
+          "pista": "Es la palabra que usamos para agradecer.",
+          "explicacion": "Le dices: «¡Gracias por cuidar nuestra plaza!». Agradecer es una forma de valorar su trabajo.",
+          "error": "respeto-trabajo"
+        }
+      ],
+      "pista": "Resuelve un paso a la vez.",
+      "explicacion": "Cuidamos la plaza porque es de todos, hablamos con respeto y agradecemos a Rosa por su trabajo.",
+      "error": "respeto-trabajo"
+    },
+    {
+      "id": "c8", "tipo": "ordenar", "nivel": 3,
+      "enunciado": "¿Cómo llega un api calientito a tu mesa? Ordena el trabajo de cada persona.",
+      "elementos": [
+        "Una agricultora cosecha el maíz morado.",
+        "Un chofer lleva el maíz en su camión al mercado.",
+        "Un cocinero prepara el api con ese maíz.",
+        "Nayra toma un api calientito con su familia."
+      ],
+      "vertical": true,
+      "pista": "Piensa: ¿qué se necesita antes de preparar el api?",
+      "explicacion": "Primero la agricultora cosecha el maíz, el chofer lo lleva al mercado, el cocinero prepara el api y al final Nayra lo toma.",
+      "error": "cadena-trabajo"
+    }
+  ],
+  "repaso": {
+    "texto": "Muchas personas trabajan en tu comunidad y su trabajo nos ayuda a todos. Mujeres y varones pueden hacer cualquier trabajo. Pregunta a tu familia por las personas destacadas de tu comunidad.",
+    "visual": { "tipo": "emojis", "items": ["👩‍⚕️", "👨‍🚒", "👩‍🌾", "👨‍🏫"], "etiquetas": ["médica", "bombero", "agricultora", "maestro"] }
+  },
+  "adulto": {
+    "objetivo": "Reconocer a las personas que trabajan en la comunidad (oficios y servicios), comprender que su trabajo beneficia a todos y que mujeres y varones pueden desempeñar cualquier trabajo, saber a quién pedir ayuda en situaciones cotidianas y conocer a personajes locales (personas recordadas por su aporte a la comunidad) a través de los relatos de la familia y de los vecinos.",
+    "sugerencias": [
+      "En la feria, el mercado o la tienda, observen juntos a las personas que trabajan (vendedoras, cargadores, choferes). Animen a su niña o niño a saludar y agradecer, y pregunten: «¿Qué pasaría si nadie hiciera este trabajo?».",
+      "Pidan a una abuela, un abuelo o una vecina que vive hace muchos años en el barrio que cuente la historia de una persona recordada por la comunidad. Antes, escriban juntos 3 preguntas; después, dibujen lo que aprendieron.",
+      "Hagan tarjetas de trabajos con papel (un dibujo de un lado y el nombre del otro) y jueguen a adivinar con mímica. Incluyan mujeres y varones en todos los trabajos.",
+      "Al caminar por el barrio o la feria, acuerden un punto de encuentro por si se separan y muestren a quién pedir ayuda (un policía, una vendedora en su puesto)."
+    ],
+    "errores": {
+      "identifica-oficios": { "descripcion": "No reconoce las palabras que nombran trabajos u oficios.", "sugerencia": "Al pasear, nombren juntos los trabajos que ven: «ella es vendedora», «él es chofer». Luego pregunten: «¿Qué trabajo es ese?»." },
+      "funcion-oficio": { "descripcion": "Confunde lo que hace cada trabajadora o trabajador.", "sugerencia": "Jueguen a las adivinanzas: describan lo que hace una persona («apaga incendios») y que diga el nombre del trabajo." },
+      "herramienta-oficio": { "descripcion": "No relaciona cada trabajo con los objetos que usa.", "sugerencia": "Busquen en casa objetos como una escoba, un martillo, lana o una cuchara y pregunten quién los usa en su trabajo." },
+      "clasifica-oficios": { "descripcion": "Le cuesta agrupar los trabajos según lo que hacen (salud, seguridad, alimentos, objetos, transporte).", "sugerencia": "Hagan dos o tres cajas con un dibujo cada una y clasifiquen tarjetas de trabajos, explicando por qué va cada una ahí." },
+      "estereotipo-trabajo": { "descripcion": "Piensa que algunos trabajos son solo para mujeres o solo para varones.", "sugerencia": "Muestren ejemplos reales de mujeres y varones en todos los trabajos (choferes, enfermeros, bomberas) y conversen: «¿Quién puede hacer este trabajo? ¡Cualquiera que aprenda!»." },
+      "escritura-oficios": { "descripcion": "Tiene dificultad para escribir nombres de trabajos al escucharlos.", "sugerencia": "Dicten nombres de trabajos separando las sílabas con palmadas (en-fer-me-ra) y escríbanlos juntos." },
+      "fuentes-comunidad": { "descripcion": "No identifica quiénes pueden contar la historia del barrio.", "sugerencia": "Pregunten: «¿Quién vive aquí desde hace más tiempo?» y visiten juntos a esa persona para escuchar sus recuerdos." },
+      "personaje-local": { "descripcion": "No comprende qué hace que una persona sea destacada para su comunidad.", "sugerencia": "Cuéntenle la historia de alguien recordado en su barrio o comunidad y pregunten: «¿Qué hizo de bueno por los demás?»." },
+      "entrevista": { "descripcion": "Le cuesta ordenar los pasos para conocer la historia de una persona.", "sugerencia": "Preparen una entrevista corta a un familiar: elijan a quién, escriban 3 preguntas, pregunten y luego cuenten lo que aprendieron." },
+      "produce-pregunta": { "descripcion": "Le cuesta escribir preguntas con ¿ al inicio y ? al final.", "sugerencia": "Escriban juntos preguntas para un familiar y marquen con color los signos ¿ y ?." },
+      "cadena-trabajo": { "descripcion": "No ordena los trabajos que se necesitan para producir algo.", "sugerencia": "Al comprar pan, queso o una chompa, conversen en orden sobre quiénes trabajaron para que llegue a sus manos." },
+      "pedir-ayuda": { "descripcion": "Duda sobre qué hacer o a quién pedir ayuda si se pierde o ve un peligro.", "sugerencia": "Acuerden un punto de encuentro en la feria y practiquen con juegos de roles: «¿Qué harías si...?»." },
+      "respeto-trabajo": { "descripcion": "No relaciona el cuidado de los espacios comunes con el trabajo de otras personas.", "sugerencia": "Después de jugar en la plaza o el parque, recojan juntos la basura y conversen sobre el trabajo de las barrenderas y los barrenderos." },
+      "produce-oracion": { "descripcion": "Le cuesta escribir una oración completa con mayúscula y punto.", "sugerencia": "Escriban juntos notas cortas de agradecimiento para personas del barrio y revisen la mayúscula inicial y el punto final." }
+    }
+  }
+}

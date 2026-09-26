@@ -1,0 +1,445 @@
+{
+  "id": "nat-1-1",
+  "titulo": "La Madre Tierra y sus componentes",
+  "objetivo": "Reconozco los seres vivos y los elementos no vivos de la Madre Tierra, sé que todos dependemos unos de otros y la cuido.",
+  "explicacion": [
+    {
+      "texto": "La **Madre Tierra** es toda la naturaleza que nos rodea. Nos da el agua, el aire y los alimentos. Muchos pueblos de los Andes la llaman **Pachamama** y le agradecen con respeto.",
+      "emoji": "🌎",
+      "visual": { "tipo": "ilustracion", "id": "paisaje-valle" }
+    },
+    {
+      "texto": "Los **seres vivos** nacen, crecen, se alimentan, respiran y mueren. Son las **plantas**, los **animales** y las **personas**.",
+      "visual": { "tipo": "emojis", "items": ["🌳", "🦙", "🐬", "👧"], "etiquetas": ["árbol", "llama", "bufeo", "niña"] }
+    },
+    {
+      "texto": "Los **elementos no vivos** no nacen, no crecen ni se alimentan. Son el agua, el aire, el suelo, las rocas y también la luz y el calor del sol. ¡Los seres vivos los necesitan!",
+      "visual": { "tipo": "emojis", "items": ["💧", "💨", "⛰️", "☀️"], "etiquetas": ["agua", "aire", "rocas del cerro", "sol"] }
+    },
+    {
+      "texto": "Todo está unido: el pasto crece con agua, suelo y sol; la alpaca come pasto; y las personas usamos su lana. Por eso cuidamos la Madre Tierra: no botamos basura y no desperdiciamos el agua.",
+      "emoji": "🤝"
+    }
+  ],
+  "ejemplo": {
+    "instruccion": "Acompaña a Arami y a su abuelo en un paseo al lago Titicaca. Mira qué encuentran.",
+    "pasos": [
+      { "texto": "Arami ve el agua del lago, las piedras de la orilla y la luz del sol. También siente el viento. Nada de eso nace ni crece: son **elementos no vivos**.", "visual": { "tipo": "emojis", "items": ["💧", "☀️", "💨"], "etiquetas": ["agua del lago", "luz del sol", "viento"] } },
+      { "texto": "También ve totoras, un pato y unos peces. ¡Son **seres vivos**! Nacen, crecen, se alimentan y respiran.", "visual": { "tipo": "emojis", "items": ["🌿", "🦆", "🐟"], "etiquetas": ["totora", "pato", "pez"] } },
+      { "texto": "Todos están unidos: los peces viven en el agua, la totora crece con agua y sol, y el pato hace su nido entre las totoras.", "visual": { "tipo": "emojis", "items": ["🐟", "💧", "🌿", "☀️", "🦆"] } },
+      { "texto": "Antes de volver, Arami y su abuelo guardan su basura en una bolsa para botarla en casa. Así cuidan la Madre Tierra.", "visual": { "tipo": "emojis", "items": ["👧", "👴", "🗑️", "💚"] } }
+    ]
+  },
+  "guiada": {
+    "intro": "Ahora lo hacemos juntos. Piensa en lo que vio Arami en su paseo.",
+    "pasos": [
+      {
+        "id": "g1", "tipo": "clasificar",
+        "enunciado": "¿Es un ser vivo o un elemento no vivo?",
+        "apoyo": "Pregúntate: ¿nace, crece y se alimenta? Si es así, es un ser vivo.",
+        "categorias": [
+          { "id": "vivo", "texto": "Ser vivo", "emoji": "🌱" },
+          { "id": "novivo", "texto": "Elemento no vivo", "emoji": "⛰️" }
+        ],
+        "elementos": [
+          { "texto": "cóndor", "emoji": "🦅", "categoria": "vivo" },
+          { "texto": "piedra", "categoria": "novivo" },
+          { "texto": "planta de quinua", "emoji": "🌾", "categoria": "vivo" },
+          { "texto": "agua", "emoji": "💧", "categoria": "novivo" },
+          { "texto": "niño", "emoji": "👦", "categoria": "vivo" },
+          { "texto": "aire", "emoji": "💨", "categoria": "novivo" }
+        ],
+        "pista": "Moverse no basta para estar vivo: el viento se mueve y no nace ni come. Las plantas no caminan, pero sí nacen y crecen.",
+        "explicacion": "Seres vivos: cóndor, planta de quinua y niño. Elementos no vivos: piedra, agua y aire, porque no nacen, no crecen ni se alimentan.",
+        "error": "confunde-vivo-no-vivo"
+      },
+      {
+        "id": "g2", "tipo": "tocar",
+        "enunciado": "Toca los elementos no vivos.",
+        "apoyo": "Hay tres. Busca lo que no nace ni crece.",
+        "texto": "La vicuña toma *agua*, siente el *viento* y descansa junto a una *roca*.",
+        "pista": "La vicuña es un animal: está viva. Busca las otras cosas que nombra la oración.",
+        "explicacion": "El agua, el viento y la roca son elementos no vivos. La vicuña es un ser vivo.",
+        "error": "confunde-vivo-no-vivo"
+      },
+      {
+        "id": "g3", "tipo": "completar",
+        "enunciado": "¿Qué necesita la papa para crecer? Completa.",
+        "apoyo": "La papa es una planta. Piensa de dónde le llegan la luz y el agua, y dónde tiene sus raíces.",
+        "texto": "Con la luz del [sol] y el agua de la [lluvia], la planta de papa crece en el [suelo].",
+        "banco": ["humo", "basura"],
+        "pista": "La luz llega del cielo de día, el agua cae de las nubes y las raíces están bajo tierra.",
+        "explicacion": "La papa crece con la luz del sol, el agua de la lluvia y el suelo. Son elementos no vivos que ayudan a los seres vivos.",
+        "error": "dependencia"
+      }
+    ]
+  },
+  "practica": [
+    {
+      "id": "p1", "tipo": "multiple", "nivel": 1,
+      "enunciado": "Elige todos los seres vivos.",
+      "opciones": [
+        { "texto": "llama", "emoji": "🦙", "correcta": true },
+        { "texto": "cactus", "emoji": "🌵", "correcta": true },
+        { "texto": "piedra", "pista": "La piedra no nace ni crece.", "error": "confunde-vivo-no-vivo" },
+        { "texto": "niña", "emoji": "👧", "correcta": true },
+        { "texto": "agua", "emoji": "💧", "pista": "El agua se mueve, pero no nace ni se alimenta.", "error": "confunde-vivo-no-vivo" }
+      ],
+      "pista": "Hay tres seres vivos: un animal, una planta y una persona.",
+      "explicacion": "La llama, el cactus y la niña nacen, crecen y se alimentan: son seres vivos. La piedra y el agua no.",
+      "error": "confunde-vivo-no-vivo"
+    },
+    {
+      "id": "p2", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Toca los seres vivos.",
+      "texto": "El *zorro* toma agua del río y el *cóndor* vuela en el cielo.",
+      "pista": "Busca lo que nace, crece y se alimenta. Hay dos.",
+      "explicacion": "El zorro y el cóndor son seres vivos. El agua, el río y el cielo no lo son.",
+      "error": "confunde-vivo-no-vivo"
+    },
+    {
+      "id": "p3", "tipo": "memoria", "nivel": 1,
+      "enunciado": "Encuentra las parejas: el dibujo y su nombre.",
+      "pares": [
+        [ { "emoji": "🦅" }, "cóndor" ],
+        [ { "emoji": "☀️" }, "sol" ],
+        [ { "emoji": "💨" }, "aire" ],
+        [ { "emoji": "🌳" }, "árbol" ],
+        [ { "emoji": "💧" }, "agua" ]
+      ],
+      "pista": "Mira bien cada dibujo y di su nombre en voz alta.",
+      "explicacion": "El cóndor y el árbol son seres vivos. El sol, el aire y el agua son elementos no vivos.",
+      "error": "nombra-componentes"
+    },
+    {
+      "id": "p4", "tipo": "manipular", "nivel": 1,
+      "enunciado": "El Día de la Madre Tierra es el 22 de abril. Tócalo en el calendario.",
+      "manipulable": { "tipo": "calendario", "mes": 4, "anio": 2027, "objetivo": 22 },
+      "pista": "Busca el número 22 en la hoja de abril.",
+      "explicacion": "El 22 de abril es el Día de la Madre Tierra: un día para agradecerle y cuidarla.",
+      "error": "ubica-fecha"
+    },
+    {
+      "id": "p5", "tipo": "escribir", "nivel": 1,
+      "enunciado": "Escucha la adivinanza y escribe la respuesta.",
+      "escuchar": "Soy un elemento no vivo. Estoy en los ríos, en los lagos y en tu vaso. Todos los seres vivos me necesitan. ¿Qué soy?",
+      "respuestas": ["agua", "el agua"],
+      "pista": "Lo tomas cuando tienes sed.",
+      "explicacion": "Es el agua. No está viva, pero todos los seres vivos la necesitan.",
+      "error": "nombra-componentes"
+    },
+    {
+      "id": "p6", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "¿Ser vivo o elemento no vivo? Todos se encuentran en Bolivia.",
+      "categorias": [
+        { "id": "vivo", "texto": "Ser vivo", "emoji": "🌱" },
+        { "id": "novivo", "texto": "Elemento no vivo", "emoji": "⛰️" }
+      ],
+      "elementos": [
+        { "texto": "jucumari", "emoji": "🐻", "categoria": "vivo" },
+        { "texto": "arena", "categoria": "novivo" },
+        { "texto": "paraba", "emoji": "🦜", "categoria": "vivo" },
+        { "texto": "nube", "emoji": "☁️", "categoria": "novivo" },
+        { "texto": "totora", "emoji": "🌿", "categoria": "vivo" },
+        { "texto": "sal del salar", "categoria": "novivo" },
+        { "texto": "tatú", "categoria": "vivo" }
+      ],
+      "pista": "Las plantas también son seres vivos. La nube se mueve, pero ¿nace y se alimenta?",
+      "explicacion": "El jucumari, la paraba, la totora y el tatú son seres vivos. La arena, la nube y la sal son elementos no vivos.",
+      "error": "confunde-vivo-no-vivo"
+    },
+    {
+      "id": "p7", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "¿Qué elemento no vivo usa cada ser vivo? Une.",
+      "pares": [
+        [ { "texto": "el pez", "emoji": "🐟" }, "vive en el agua" ],
+        [ { "texto": "el cóndor", "emoji": "🦅" }, "vuela por el aire" ],
+        [ { "texto": "la raíz del molle", "emoji": "🌳" }, "se agarra al suelo" ],
+        [ { "texto": "la lagartija", "emoji": "🦎" }, "se calienta al sol" ]
+      ],
+      "pista": "Piensa dónde vive o qué hace cada uno.",
+      "explicacion": "El pez vive en el agua, el cóndor vuela por el aire, la raíz se agarra al suelo y la lagartija se calienta al sol.",
+      "error": "dependencia"
+    },
+    {
+      "id": "p8", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa: ¿quién necesita a quién?",
+      "texto": "El sol y la lluvia ayudan a crecer al [pasto]. La [vicuña] come ese pasto.",
+      "banco": ["roca", "nube"],
+      "pista": "Primero piensa en una planta; después, en un animal que come plantas.",
+      "explicacion": "El pasto crece con sol y lluvia, y la vicuña se alimenta de pasto. Los seres vivos dependen unos de otros.",
+      "error": "dependencia"
+    },
+    {
+      "id": "p9", "tipo": "ordenar", "nivel": 2,
+      "enunciado": "Ordena la cadena. Empieza por el sol.",
+      "elementos": [
+        { "texto": "El sol da luz y calor.", "emoji": "☀️" },
+        { "texto": "El pasto crece.", "emoji": "🌱" },
+        { "texto": "La alpaca come el pasto.", "emoji": "🦙" },
+        { "texto": "La familia teje ropa con la lana de la alpaca.", "emoji": "🧶" }
+      ],
+      "vertical": true,
+      "pista": "¿Qué necesita el pasto para crecer? ¿Quién come el pasto? ¿Qué nos da ese animal?",
+      "explicacion": "Sol → pasto → alpaca → lana para la familia. Cada uno necesita del anterior.",
+      "error": "dependencia"
+    },
+    {
+      "id": "p10", "tipo": "opcion", "nivel": 2,
+      "enunciado": "¿Por qué el agua NO es un ser vivo?",
+      "opciones": [
+        { "texto": "Porque no nace, no crece ni se alimenta.", "correcta": true },
+        { "texto": "Porque se mueve.", "pista": "Los animales también se mueven y están vivos. Moverse no es la razón.", "error": "confunde-vivo-no-vivo" },
+        { "texto": "Porque es transparente.", "pista": "El color no dice si algo está vivo. Piensa: ¿el agua nace?, ¿crece?", "error": "confunde-vivo-no-vivo" }
+      ],
+      "columnas": 1,
+      "pista": "Recuerda qué hacen todos los seres vivos.",
+      "explicacion": "El agua no nace, no crece ni se alimenta: por eso es un elemento no vivo, aunque se mueva.",
+      "error": "confunde-vivo-no-vivo"
+    },
+    {
+      "id": "p11", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "¿Esta acción cuida o daña a la Madre Tierra?",
+      "categorias": [
+        { "id": "cuida", "texto": "La cuida", "emoji": "💚" },
+        { "id": "dania", "texto": "La daña", "emoji": "🚫" }
+      ],
+      "elementos": [
+        { "texto": "plantar un árbol", "emoji": "🌳", "categoria": "cuida" },
+        { "texto": "botar basura al río", "categoria": "dania" },
+        { "texto": "cerrar el grifo mientras te cepillas", "emoji": "🚰", "categoria": "cuida" },
+        { "texto": "quemar basura", "emoji": "🔥", "categoria": "dania" },
+        { "texto": "llevar tu basura a casa después del paseo", "categoria": "cuida" },
+        { "texto": "romper las ramas de los árboles", "categoria": "dania" }
+      ],
+      "pista": "Piensa: ¿esa acción ensucia el agua, el aire o el suelo, o lastima a un ser vivo?",
+      "explicacion": "Plantar un árbol, cerrar el grifo y llevar tu basura la cuidan. Botar basura al río, quemar basura y romper ramas la dañan.",
+      "error": "cuidado-madre-tierra"
+    },
+    {
+      "id": "p12", "tipo": "numero", "nivel": 3,
+      "enunciado": "Juan anotó los seres vivos que vio en su patio. ¿Cuántos **animales** vio?",
+      "visual": {
+        "tipo": "pictograma", "titulo": "Seres vivos del patio de Juan", "icono": "🌱", "escala": 1,
+        "datos": [
+          { "etiqueta": "Plantas", "valor": 5, "emoji": "🌱" },
+          { "etiqueta": "Aves", "valor": 3, "emoji": "🐦" },
+          { "etiqueta": "Insectos", "valor": 4, "emoji": "🐞" }
+        ]
+      },
+      "respuesta": 7,
+      "erroresComunes": [
+        { "respuesta": 12, "pista": "Las plantas son seres vivos, pero no son animales. No las cuentes.", "error": "clasifica-seres-vivos" },
+        { "respuesta": 3, "pista": "Los insectos también son animales. Súmalos a las aves.", "error": "clasifica-seres-vivos" },
+        { "respuesta": 4, "pista": "Las aves también son animales. Súmalas a los insectos.", "error": "clasifica-seres-vivos" }
+      ],
+      "pista": "Busca las filas de animales y suma sus dibujos.",
+      "explicacion": "Las aves (3) y los insectos (4) son animales: 3 + 4 = 7. Las plantas son seres vivos, pero no son animales.",
+      "error": "clasifica-seres-vivos"
+    },
+    {
+      "id": "p13", "tipo": "pasos", "nivel": 3,
+      "enunciado": "En el patio de Rosa hay un perro, un molle, tierra, piedras y un balde con agua.",
+      "visual": { "tipo": "emojis", "items": ["🐕", "🌳", "💧"], "etiquetas": ["perro", "molle", "agua"] },
+      "pasos": [
+        {
+          "tipo": "multiple",
+          "enunciado": "¿Cuáles son seres vivos?",
+          "opciones": [
+            { "texto": "el perro", "correcta": true },
+            { "texto": "el molle", "correcta": true },
+            { "texto": "la tierra", "error": "confunde-vivo-no-vivo" },
+            { "texto": "las piedras", "error": "confunde-vivo-no-vivo" },
+            { "texto": "el agua", "error": "confunde-vivo-no-vivo" }
+          ],
+          "pista": "Son dos: un animal y una planta.",
+          "explicacion": "El perro y el molle son seres vivos. La tierra, las piedras y el agua son elementos no vivos.",
+          "error": "confunde-vivo-no-vivo"
+        },
+        {
+          "tipo": "completar",
+          "enunciado": "Mira la parte marcada: es la raíz. Completa la oración.",
+          "visual": { "tipo": "ilustracion", "id": "planta-partes", "resaltar": "raiz" },
+          "texto": "Las raíces del molle toman agua del [suelo].",
+          "banco": ["sol", "perro"],
+          "pista": "Las raíces están bajo tierra.",
+          "explicacion": "Las raíces toman agua del suelo. El molle necesita suelo, agua, aire y luz del sol.",
+          "error": "dependencia"
+        },
+        {
+          "tipo": "opcion",
+          "enunciado": "Rosa quiere cuidar su patio. ¿Qué puede hacer?",
+          "opciones": [
+            { "texto": "Regar el molle y guardar la basura en su lugar.", "correcta": true },
+            { "texto": "Cortar todas las ramas del molle.", "pista": "Sin ramas ni hojas, el molle sufre.", "error": "cuidado-madre-tierra" },
+            { "texto": "Dejar botellas tiradas en la tierra.", "pista": "La basura ensucia el suelo.", "error": "cuidado-madre-tierra" }
+          ],
+          "columnas": 1,
+          "pista": "Busca la acción que ayuda a los seres vivos y deja limpio el suelo.",
+          "explicacion": "Regar el molle y guardar la basura cuidan la vida del patio.",
+          "error": "cuidado-madre-tierra"
+        }
+      ],
+      "pista": "Resuelve un paso a la vez.",
+      "explicacion": "En el patio viven el perro y el molle. El molle toma agua del suelo. Rosa lo cuida regándolo y guardando la basura.",
+      "error": "dependencia"
+    },
+    {
+      "id": "p14", "tipo": "opcion", "nivel": 3,
+      "enunciado": "En un lugar no llueve durante mucho tiempo. ¿Qué pasa con los seres vivos?",
+      "opciones": [
+        { "texto": "Las plantas se secan y los animales tienen menos comida y agua.", "correcta": true },
+        { "texto": "Las plantas crecen más rápido.", "pista": "Las plantas necesitan agua para crecer.", "error": "dependencia" },
+        { "texto": "A los animales no les pasa nada.", "pista": "Los animales beben agua y muchos comen plantas. ¿Qué pasa si faltan?", "error": "dependencia" }
+      ],
+      "columnas": 1,
+      "pista": "Piensa qué necesitan las plantas y qué comen muchos animales.",
+      "explicacion": "Sin lluvia, las plantas se secan y los animales tienen menos agua y comida. Todos dependemos del agua.",
+      "error": "dependencia"
+    },
+    {
+      "id": "p15", "tipo": "tocar", "nivel": 3,
+      "enunciado": "Toca todos los elementos no vivos.",
+      "texto": "Un flamenco camina en el *agua* fría mientras el *sol* calienta las *piedras*.",
+      "pista": "Hay tres. El flamenco es un ave. Busca todo lo demás que nombra la oración.",
+      "explicacion": "El agua, el sol y las piedras son elementos no vivos. El flamenco es un ser vivo.",
+      "error": "confunde-vivo-no-vivo"
+    },
+    {
+      "id": "p16", "tipo": "escribir-libre", "nivel": 3,
+      "enunciado": "Escribe una oración sobre cómo cuidas la Madre Tierra.",
+      "guia": ["Yo cuido la Madre Tierra cuando...", "En mi casa, nosotros..."],
+      "requisitos": [
+        { "tipo": "mayuscula-inicial" }, { "tipo": "punto-final" }, { "tipo": "min-palabras", "valor": 5 }
+      ],
+      "modelo": "Yo cuido la Madre Tierra cuando cierro el grifo.",
+      "pista": "Piensa en algo que haces para cuidar el agua, las plantas o los animales.",
+      "explicacion": "Por ejemplo: «Yo cuido la Madre Tierra cuando cierro el grifo». Empieza con mayúscula y termina con punto.",
+      "error": "produce-oracion"
+    }
+  ],
+  "comprobacion": [
+    {
+      "id": "c1", "tipo": "clasificar", "nivel": 1,
+      "enunciado": "Separa los seres vivos de los elementos no vivos.",
+      "categorias": [
+        { "id": "vivo", "texto": "Ser vivo", "emoji": "🌱" },
+        { "id": "novivo", "texto": "Elemento no vivo", "emoji": "⛰️" }
+      ],
+      "elementos": [
+        { "texto": "alpaca", "emoji": "🦙", "categoria": "vivo" },
+        { "texto": "roca", "categoria": "novivo" },
+        { "texto": "sapo", "emoji": "🐸", "categoria": "vivo" },
+        { "texto": "lluvia", "emoji": "🌧️", "categoria": "novivo" },
+        { "texto": "eucalipto", "emoji": "🌳", "categoria": "vivo" },
+        { "texto": "aire", "emoji": "💨", "categoria": "novivo" }
+      ],
+      "pista": "¿Nace, crece y se alimenta? Entonces es un ser vivo.",
+      "explicacion": "La alpaca, el sapo y el eucalipto son seres vivos. La roca, la lluvia y el aire son elementos no vivos.",
+      "error": "confunde-vivo-no-vivo"
+    },
+    {
+      "id": "c2", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Toca los seres vivos.",
+      "texto": "La *paraba* descansa en un *árbol* junto al río.",
+      "pista": "Busca lo que nace y crece. No te olvides de las plantas.",
+      "explicacion": "La paraba y el árbol son seres vivos. El río es un elemento no vivo.",
+      "error": "planta-no-viva"
+    },
+    {
+      "id": "c3", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa lo que necesitamos de la Madre Tierra.",
+      "texto": "Respiramos [aire], bebemos [agua] y las plantas crecen en el [suelo].",
+      "banco": ["roca", "sal"],
+      "pista": "Piensa qué entra por tu nariz, qué tomas cuando tienes sed y dónde tienen raíces las plantas.",
+      "explicacion": "Respiramos aire, bebemos agua y las plantas crecen en el suelo. Los seres vivos necesitan estos elementos no vivos.",
+      "error": "dependencia"
+    },
+    {
+      "id": "c4", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha la adivinanza y escribe la respuesta.",
+      "escuchar": "Soy un elemento no vivo. Soy duro y pesado. Estoy en los cerros y en la orilla del río. No crezco ni como. ¿Qué soy?",
+      "respuestas": ["roca", "una roca", "la roca", "rocas", "las rocas", "piedra", "una piedra", "la piedra", "piedras", "las piedras"],
+      "pista": "Con esto se hacen muros y pircas.",
+      "explicacion": "Es una roca (o una piedra). Es un elemento no vivo: no nace, no crece ni se alimenta.",
+      "error": "nombra-componentes"
+    },
+    {
+      "id": "c5", "tipo": "opcion", "nivel": 2,
+      "enunciado": "¿Cuál de estas acciones cuida la Madre Tierra?",
+      "opciones": [
+        { "texto": "Recoger la basura después del paseo.", "correcta": true },
+        { "texto": "Tirar botellas al lago.", "pista": "La basura ensucia el agua y daña a los peces y a las aves.", "error": "cuidado-madre-tierra" },
+        { "texto": "Arrancar las flores del parque.", "pista": "Las flores son seres vivos y alimentan a las abejas.", "error": "cuidado-madre-tierra" }
+      ],
+      "columnas": 1,
+      "pista": "Busca la acción que deja limpio el lugar.",
+      "explicacion": "Recoger la basura cuida el suelo, el agua y a los animales.",
+      "error": "cuidado-madre-tierra"
+    },
+    {
+      "id": "c6", "tipo": "ordenar", "nivel": 2,
+      "enunciado": "Ordena la cadena. Empieza por la lluvia.",
+      "elementos": [
+        { "texto": "La lluvia moja el suelo.", "emoji": "🌧️" },
+        { "texto": "El maíz crece en la chacra.", "emoji": "🌽" },
+        { "texto": "Las gallinas comen granos de maíz.", "emoji": "🐔" },
+        { "texto": "La familia come los huevos de las gallinas.", "emoji": "🥚" }
+      ],
+      "vertical": true,
+      "pista": "¿Qué necesita el maíz? ¿Quién come el maíz? ¿Qué nos dan las gallinas?",
+      "explicacion": "Lluvia → maíz → gallinas → huevos para la familia. Todos dependemos unos de otros.",
+      "error": "dependencia"
+    },
+    {
+      "id": "c7", "tipo": "opcion", "nivel": 3,
+      "enunciado": "Kusi dice: «El sol está vivo porque se mueve y da calor». ¿Tiene razón?",
+      "opciones": [
+        { "texto": "No. El sol no se alimenta ni respira: es un elemento no vivo.", "correcta": true },
+        { "texto": "Sí, porque se mueve.", "pista": "El agua del río también se mueve y no está viva.", "error": "confunde-vivo-no-vivo" },
+        { "texto": "Sí, porque da calor.", "pista": "Una estufa también da calor y no está viva.", "error": "confunde-vivo-no-vivo" }
+      ],
+      "columnas": 1,
+      "pista": "Moverse o dar calor no basta para estar vivo. ¿El sol come o respira?",
+      "explicacion": "Kusi no tiene razón: el sol da luz y calor, pero no se alimenta ni respira. Es un elemento no vivo que todos los seres vivos necesitan.",
+      "error": "confunde-vivo-no-vivo"
+    },
+    {
+      "id": "c8", "tipo": "multiple", "nivel": 3,
+      "enunciado": "Elige todo lo que necesita una planta de quinua para vivir.",
+      "opciones": [
+        { "texto": "agua", "emoji": "💧", "correcta": true },
+        { "texto": "luz del sol", "emoji": "☀️", "correcta": true },
+        { "texto": "suelo", "correcta": true },
+        { "texto": "aire", "emoji": "💨", "correcta": true },
+        { "texto": "basura", "pista": "La basura ensucia el suelo; no ayuda a la planta.", "error": "dependencia" },
+        { "texto": "humo", "pista": "El humo ensucia el aire; no ayuda a la planta.", "error": "dependencia" }
+      ],
+      "pista": "Hay cuatro. Piensa en lo que toman sus raíces y sus hojas.",
+      "explicacion": "La quinua necesita agua, luz del sol, suelo y aire. La basura y el humo le hacen daño.",
+      "error": "dependencia"
+    }
+  ],
+  "repaso": {
+    "texto": "Los seres vivos (plantas, animales y personas) nacen, crecen y se alimentan. El agua, el aire, el suelo, las rocas y el sol no están vivos, pero los necesitamos. ¡Cuidemos la Madre Tierra!",
+    "visual": { "tipo": "emojis", "items": ["🌳", "🦙", "👧", "💧", "💨", "☀️"], "etiquetas": ["vivo", "vivo", "vivo", "no vivo", "no vivo", "no vivo"] }
+  },
+  "adulto": {
+    "objetivo": "Reconocer los componentes de la Madre Tierra: seres vivos (plantas, animales y personas) y elementos no vivos (agua, aire, suelo, rocas, luz y calor del sol); comprender que todos dependen unos de otros y proponer acciones sencillas de cuidado. La Madre Tierra (Pachamama para muchos pueblos andinos) se presenta como una referencia cultural de gratitud y respeto.",
+    "sugerencias": [
+      "Salgan al patio, a una plaza o al campo con una hoja dividida en dos columnas: «vivo» y «no vivo». Anoten o dibujen lo que encuentren (hormigas, pasto, piedras, un charco) y pregunten con cada cosa: ¿nace?, ¿crece?, ¿se alimenta?",
+      "Siembren un frejol o una haba en un frasco con algodón húmedo, junto a la ventana. Obsérvenlo cada día y conversen sobre lo que necesita para crecer: agua, aire y luz del sol.",
+      "En la feria o el mercado, pregunten de dónde viene cada alimento (la papa del suelo, la leche de la vaca, el pescado del lago) y conversen sobre cómo dependemos de la Madre Tierra. Si su familia tiene costumbres para agradecerle, compártanlas y expliquen su sentido."
+    ],
+    "errores": {
+      "confunde-vivo-no-vivo": { "descripcion": "Confunde seres vivos con elementos no vivos (por ejemplo, cree que el agua, el viento o el sol están vivos porque se mueven o dan calor).", "sugerencia": "Pregunten con cada cosa: «¿nace?, ¿crece?, ¿se alimenta?, ¿respira?». Si la respuesta es no, es un elemento no vivo, aunque se mueva." },
+      "planta-no-viva": { "descripcion": "No reconoce a las plantas como seres vivos porque no se mueven de lugar.", "sugerencia": "Siembren una semilla y midan juntos cuánto crece cada semana; conversen sobre cómo toma agua y luz." },
+      "dependencia": { "descripcion": "Le cuesta explicar cómo los seres vivos necesitan el agua, el aire, el suelo y el sol, y cómo dependen unos de otros.", "sugerencia": "Armen cadenas con dibujos o fichas (sol → pasto → llama → lana) y pregunten: «¿qué pasaría si faltara uno?»." },
+      "cuidado-madre-tierra": { "descripcion": "No distingue las acciones que cuidan la Madre Tierra de las que la dañan.", "sugerencia": "Durante un paseo, túrnense para señalar algo que la cuida (un basurero, un árbol regado) y algo que la daña (basura tirada, humo)." },
+      "nombra-componentes": { "descripcion": "Le cuesta nombrar o escribir los componentes de la Madre Tierra (agua, aire, suelo, roca, sol...).", "sugerencia": "Jueguen a «Veo, veo» en el patio o en la calle nombrando solo cosas de la naturaleza, y escriban juntos las palabras." },
+      "ubica-fecha": { "descripcion": "Le cuesta ubicar una fecha en el calendario.", "sugerencia": "Marquen en el calendario de la casa las fechas importantes del mes y búsquenlas juntos diciendo el día y el mes." },
+      "clasifica-seres-vivos": { "descripcion": "Confunde los grupos de seres vivos (por ejemplo, no sabe que los insectos y las aves son animales).", "sugerencia": "Cuenten juntos, en un paseo, plantas, animales y personas por separado; recuerden que insectos, aves y peces también son animales." },
+      "produce-oracion": { "descripcion": "Le cuesta escribir oraciones completas con mayúscula y punto.", "sugerencia": "Escriban juntos oraciones cortas sobre lo que hacen para cuidar la naturaleza y revisen la mayúscula inicial y el punto final." }
+    }
+  }
+}

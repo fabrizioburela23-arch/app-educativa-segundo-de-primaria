@@ -297,7 +297,7 @@ tema debe declarar esas etiquetas en `adulto.errores`.
 |---|---|---|
 | `emoji` | `valor`, `cantidad` (1-30), `etiqueta` | Un emoji repetido (agrupado de 5 en 5 o de 10 en 10). |
 | `emojis` | `items` (lista), `etiquetas` (opcional) | Una fila de emojis distintos. |
-| `ilustracion` | `id`, `resaltar` (opcional) | Dibujo de la biblioteca (tabla 4.1). |
+| `ilustracion` | `id`, `resaltar` (opcional), `etiquetas` (bool, opcional) | Dibujo de la biblioteca (tabla 4.1). Muestra los nombres de las partes, salvo cuando hay `resaltar` (para poder preguntar «¿qué parte es?»); `etiquetas` fuerza mostrarlos u ocultarlos. |
 | `bloques` | `centenas`, `decenas`, `unidades` | Bloques base 10. |
 | `recta` | `min`, `max`, `paso`, `marcar` (lista), `saltos` (lista de `[desde, hasta]`), `ocultar` (lista) | Recta numérica. |
 | `fraccion` | `forma` (`circulo`/`rectangulo`/`barra`), `partes`, `coloreadas`, `iguales` (bool, por defecto true) | Figura dividida en partes. |

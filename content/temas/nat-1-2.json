@@ -1,0 +1,446 @@
+{
+  "id": "nat-1-2",
+  "titulo": "El agua y sus estados",
+  "objetivo": "Reconozco el agua en estado sólido, líquido y gaseoso, sé cómo cambia de estado y para qué la usamos.",
+  "explicacion": [
+    {
+      "texto": "El agua está en los ríos, en el lago Titicaca, en la lluvia, en los nevados ¡y hasta en el aire! La usamos para beber, cocinar, lavar y regar. Puede estar en tres **estados**: sólido, líquido y gaseoso.",
+      "emoji": "💧",
+      "visual": { "tipo": "ilustracion", "id": "estados-agua" }
+    },
+    {
+      "texto": "**Sólido**: el agua tiene forma propia y no corre, como el hielo, el granizo y la nieve del Illimani. **Líquido**: el agua corre y toma la forma del recipiente, como la del río y la lluvia.",
+      "visual": { "tipo": "emojis", "items": ["❄️", "🏔️", "🏞️", "🌧️"], "etiquetas": ["nieve", "nevado", "río", "lluvia"] }
+    },
+    {
+      "texto": "**Gaseoso**: es el **vapor de agua**. ¡Es invisible! Lo blanco que sale de una olla caliente no es vapor: son gotitas muy pequeñas, porque el vapor se enfrió al salir.",
+      "emoji": "🍲"
+    },
+    {
+      "texto": "Con **calor**, el hielo se **derrite** y el agua líquida se **evapora**. Con **frío**, el vapor se **condensa** en gotitas y el agua líquida se **congela**.",
+      "visual": {
+        "tipo": "tabla",
+        "columnas": ["Cambio", "Antes", "Después"],
+        "filas": [
+          ["derretir", "sólido", "líquido"],
+          ["congelar", "líquido", "sólido"],
+          ["evaporar", "líquido", "gaseoso"],
+          ["condensar", "gaseoso", "líquido"]
+        ]
+      }
+    }
+  ],
+  "ejemplo": {
+    "instruccion": "Mira el viaje de una gota de agua. Este viaje se llama **ciclo del agua**.",
+    "pasos": [
+      { "texto": "El sol calienta el agua del lago Titicaca. Una parte se **evapora**: se vuelve vapor invisible y sube.", "visual": { "tipo": "ilustracion", "id": "ciclo-agua", "resaltar": "evaporacion", "etiquetas": true } },
+      { "texto": "Arriba hace frío. El vapor se enfría y se **condensa** en gotitas muy pequeñas. Muchas gotitas juntas forman las **nubes**.", "visual": { "tipo": "ilustracion", "id": "ciclo-agua", "resaltar": "condensacion", "etiquetas": true } },
+      { "texto": "Las gotitas se juntan, se hacen pesadas y caen como lluvia, granizo o nieve. Esto se llama **precipitación**.", "visual": { "tipo": "ilustracion", "id": "ciclo-agua", "resaltar": "precipitacion", "etiquetas": true } },
+      { "texto": "El agua llega al suelo, a los ríos y al lago, y el viaje vuelve a empezar. ¡Por eso se llama **ciclo**!", "visual": { "tipo": "ilustracion", "id": "ciclo-agua" } }
+    ]
+  },
+  "guiada": {
+    "intro": "Vamos a hacerlo juntos, paso a paso.",
+    "pasos": [
+      {
+        "id": "g1", "tipo": "clasificar",
+        "enunciado": "¿En qué estado está el agua?",
+        "apoyo": "Sólido: tiene forma propia y no corre. Líquido: corre y se derrama. Gaseoso: no se ve, está en el aire.",
+        "categorias": [
+          { "id": "solido", "texto": "Sólido", "emoji": "❄️" },
+          { "id": "liquido", "texto": "Líquido", "emoji": "💧" },
+          { "id": "gaseoso", "texto": "Gaseoso", "emoji": "💨" }
+        ],
+        "elementos": [
+          { "texto": "cubito de hielo", "categoria": "solido" },
+          { "texto": "agua del río", "emoji": "🏞️", "categoria": "liquido" },
+          { "texto": "vapor de agua del aire", "categoria": "gaseoso" },
+          { "texto": "granizo", "categoria": "solido" },
+          { "texto": "lluvia", "emoji": "🌧️", "categoria": "liquido" },
+          { "texto": "nieve del Sajama", "emoji": "🏔️", "categoria": "solido" }
+        ],
+        "pista": "Pregúntate: ¿lo puedo agarrar y tiene forma? ¿Corre? ¿O no se ve?",
+        "explicacion": "Sólido: cubito de hielo, granizo y nieve. Líquido: agua del río y lluvia. Gaseoso: el vapor de agua, que no se ve.",
+        "error": "estados-agua"
+      },
+      {
+        "id": "g2", "tipo": "relacionar",
+        "enunciado": "Une cada cambio con lo que le pasa al agua.",
+        "apoyo": "Con calor, el hielo se derrite y se vuelve agua. Con frío, el agua se congela y se vuelve hielo.",
+        "pares": [
+          ["derretir", "de sólido a líquido"],
+          ["congelar", "de líquido a sólido"],
+          ["evaporar", "de líquido a gaseoso"],
+          ["condensar", "de gaseoso a líquido"]
+        ],
+        "pista": "Evaporar es lo que le pasa al agua de la ropa que se seca. Condensar es lo que pasa en el espejo del baño.",
+        "explicacion": "Derretir: de sólido a líquido. Congelar: de líquido a sólido. Evaporar: de líquido a gaseoso. Condensar: de gaseoso a líquido.",
+        "error": "cambios-estado"
+      },
+      {
+        "id": "g3", "tipo": "ordenar",
+        "enunciado": "Ordena el viaje de la gota. Empieza cuando el sol calienta el lago.",
+        "apoyo": "Mira el dibujo del ciclo del agua. Piensa: ¿qué hace primero el sol con el agua del lago?",
+        "visual": { "tipo": "ilustracion", "id": "ciclo-agua" },
+        "elementos": [
+          { "texto": "El sol calienta el agua del lago.", "emoji": "☀️" },
+          { "texto": "El agua se evapora y sube como vapor.", "emoji": "💨" },
+          { "texto": "Arriba, el vapor se enfría y forma nubes.", "emoji": "☁️" },
+          { "texto": "Las gotitas caen como lluvia.", "emoji": "🌧️" }
+        ],
+        "vertical": true,
+        "pista": "Después de evaporarse, ¿el agua sube o baja? ¿Dónde hace frío?",
+        "explicacion": "Primero el sol calienta el lago; el agua se evapora y sube; arriba el vapor se enfría y forma nubes; al final cae la lluvia.",
+        "error": "ciclo-agua"
+      }
+    ]
+  },
+  "practica": [
+    {
+      "id": "p1", "tipo": "opcion", "nivel": 1,
+      "enunciado": "Mira la parte marcada del dibujo. ¿En qué estado está el agua ahí?",
+      "visual": { "tipo": "ilustracion", "id": "estados-agua", "resaltar": "solido" },
+      "opciones": [
+        { "texto": "sólido", "correcta": true },
+        { "texto": "líquido", "pista": "Líquido es el agua que corre, como la del río. ¿Es eso lo que está marcado?", "error": "estados-agua" },
+        { "texto": "gaseoso", "pista": "Gaseoso es el vapor de agua, que no se ve. ¿Es eso lo que está marcado?", "error": "estados-agua" }
+      ],
+      "mezclar": false,
+      "columnas": 3,
+      "pista": "Fíjate si la parte marcada es hielo, agua que corre o vapor.",
+      "explicacion": "La parte marcada es agua sólida, como el hielo: tiene forma propia y no corre.",
+      "error": "estados-agua"
+    },
+    {
+      "id": "p2", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Toca las palabras que nombran agua en estado **sólido**.",
+      "texto": "En la mañana había *hielo* en el charco; en la tarde cayó *granizo* y después, lluvia.",
+      "pista": "Busca lo que es duro y frío. Hay dos.",
+      "explicacion": "El hielo y el granizo son agua sólida. La lluvia es agua líquida.",
+      "error": "estados-agua"
+    },
+    {
+      "id": "p3", "tipo": "escribir", "nivel": 1,
+      "enunciado": "Escucha la adivinanza y escribe la respuesta.",
+      "escuchar": "Soy agua en estado sólido. En una tormenta caigo del cielo en bolitas duras y blancas, y hago ruido en el techo. ¿Qué soy?",
+      "respuestas": ["granizo", "el granizo", "granizos"],
+      "pista": "Son bolitas de hielo que caen de las nubes. Empieza con g.",
+      "explicacion": "Es el granizo: bolitas de hielo que caen de las nubes. Es agua en estado sólido.",
+      "error": "estados-agua"
+    },
+    {
+      "id": "p4", "tipo": "multiple", "nivel": 1,
+      "enunciado": "Elige dónde el agua está en estado líquido.",
+      "opciones": [
+        { "texto": "el agua del río", "correcta": true },
+        { "texto": "la lluvia", "correcta": true },
+        { "texto": "el granizo", "pista": "El granizo es duro: es agua sólida.", "error": "estados-agua" },
+        { "texto": "el agua de tu vaso", "correcta": true },
+        { "texto": "la nieve del Sajama", "pista": "La nieve es agua sólida.", "error": "estados-agua" }
+      ],
+      "pista": "El agua líquida corre y se derrama. Hay tres.",
+      "explicacion": "El agua del río, la lluvia y el agua de tu vaso son líquidas. El granizo y la nieve son sólidos.",
+      "error": "estados-agua"
+    },
+    {
+      "id": "p5", "tipo": "memoria", "nivel": 1,
+      "enunciado": "Encuentra las parejas: ¿para qué usamos el agua?",
+      "pares": [
+        [ { "emoji": "🚿" }, "bañarnos" ],
+        [ { "emoji": "🍲" }, "cocinar" ],
+        [ { "emoji": "🌱" }, "regar las plantas" ],
+        [ { "emoji": "🚰" }, "beber" ],
+        [ { "emoji": "👕" }, "lavar la ropa" ]
+      ],
+      "pista": "Mira cada dibujo: ¿qué hacemos ahí con el agua?",
+      "explicacion": "Usamos el agua para bañarnos, cocinar, regar, beber y lavar la ropa. ¡Por eso hay que cuidarla!",
+      "error": "usos-agua"
+    },
+    {
+      "id": "p6", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "Une cada situación con su cambio de estado.",
+      "pares": [
+        ["El granizo se vuelve agua en el patio.", "derretir"],
+        ["La ropa mojada se seca al sol.", "evaporar"],
+        ["El agua en el congelador se vuelve hielo.", "congelar"],
+        ["El espejo del baño se llena de gotitas.", "condensar"]
+      ],
+      "pista": "En cada caso pregúntate: ¿de qué estado a qué estado pasa el agua?",
+      "explicacion": "Granizo que se vuelve agua: se derrite. Ropa que se seca: el agua se evapora. Agua que se vuelve hielo: se congela. Gotitas en el espejo: el vapor se condensa.",
+      "error": "cambios-estado"
+    },
+    {
+      "id": "p7", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa con el estado del agua.",
+      "texto": "El granizo es agua [sólida]. La lluvia es agua [líquida]. El vapor es agua en estado [gaseoso].",
+      "pista": "El granizo es duro, la lluvia corre y el vapor no se ve.",
+      "explicacion": "El granizo es agua sólida, la lluvia es agua líquida y el vapor es agua en estado gaseoso.",
+      "error": "estados-agua"
+    },
+    {
+      "id": "p8", "tipo": "ordenar", "nivel": 2,
+      "enunciado": "Wara deja un cubito de hielo en un plato, al sol. Ordena lo que pasa.",
+      "elementos": [
+        "El cubito de hielo está duro y frío.",
+        "El hielo se derrite y queda un charquito.",
+        "El agua del charquito se evapora poco a poco.",
+        "El plato queda seco."
+      ],
+      "vertical": true,
+      "pista": "¿Qué le pasa primero al hielo con el calor? ¿Y después al agua?",
+      "explicacion": "Con el calor del sol, el hielo se derrite (de sólido a líquido) y luego el agua se evapora (de líquido a gaseoso). Por eso el plato queda seco.",
+      "error": "cambios-estado"
+    },
+    {
+      "id": "p9", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "¿Qué se necesita para que pase: calor o frío?",
+      "categorias": [
+        { "id": "calor", "texto": "Calor", "emoji": "🔥" },
+        { "id": "frio", "texto": "Frío", "emoji": "❄️" }
+      ],
+      "elementos": [
+        { "texto": "derretir el hielo", "categoria": "calor" },
+        { "texto": "hacer cubitos de hielo", "categoria": "frio" },
+        { "texto": "secar la ropa mojada", "categoria": "calor" },
+        { "texto": "que el vapor se vuelva gotitas", "categoria": "frio" },
+        { "texto": "hervir agua para el api", "categoria": "calor" },
+        { "texto": "que el agua del charco se congele", "categoria": "frio" }
+      ],
+      "pista": "Piensa en lo que pasa en el congelador y en la cocina encendida. El vapor forma gotitas cuando toca algo frío.",
+      "explicacion": "Con calor: derretir el hielo, secar la ropa y hervir agua. Con frío: hacer cubitos, que el vapor forme gotitas y que el charco se congele.",
+      "error": "calor-frio"
+    },
+    {
+      "id": "p10", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Mira la parte marcada y escucha. Escribe cómo se llama este cambio.",
+      "visual": { "tipo": "ilustracion", "id": "ciclo-agua", "resaltar": "evaporacion" },
+      "escuchar": "Cuando el agua líquida se calienta y se vuelve vapor, decimos que el agua se...",
+      "respuestas": ["evapora", "se evapora", "evaporar", "evaporarse", "evaporación"],
+      "pista": "Por este cambio se seca la ropa mojada al sol.",
+      "explicacion": "Se llama evaporar: el agua líquida se vuelve vapor. Decimos que el agua se evapora.",
+      "error": "cambios-estado"
+    },
+    {
+      "id": "p11", "tipo": "manipular", "nivel": 2,
+      "enunciado": "El ciclo del agua se repite: lago, nube, lluvia... Completa los dos que siguen.",
+      "manipulable": {
+        "tipo": "patron",
+        "secuencia": ["🌊", "☁️", "🌧️", "🌊", "☁️", "🌧️", "🌊"],
+        "opciones": ["🌊", "☁️", "🌧️", "☀️"],
+        "completar": 2,
+        "solucion": ["☁️", "🌧️"]
+      },
+      "pista": "Mira el principio del patrón: ¿qué viene después del agua del lago?",
+      "explicacion": "Después del lago viene la nube (el agua se evaporó y se condensó) y después la lluvia. Faltaban la nube y la lluvia.",
+      "error": "ciclo-agua"
+    },
+    {
+      "id": "p12", "tipo": "tocar", "nivel": 2,
+      "enunciado": "Toca las palabras que dicen un **cambio de estado** del agua.",
+      "texto": "El hielo se *derrite* en la mesa, el charco se *evapora* con el sol y el vapor se *condensa* en la ventana fría.",
+      "pista": "Busca las palabras que dicen qué le pasa al agua. Hay tres.",
+      "explicacion": "Derrite, evapora y condensa son cambios de estado del agua.",
+      "error": "cambios-estado"
+    },
+    {
+      "id": "p13", "tipo": "opcion", "nivel": 3,
+      "enunciado": "Mateo hierve agua para el api. Sobre la olla ve una nubecita blanca. ¿Qué es?",
+      "visual": { "tipo": "emoji", "valor": "🍲" },
+      "opciones": [
+        { "texto": "Gotitas de agua muy pequeñas.", "correcta": true },
+        { "texto": "Vapor de agua.", "pista": "El vapor de agua es invisible. Lo que Mateo ve ya se enfrió al salir de la olla.", "error": "vapor-visible" },
+        { "texto": "Humo.", "pista": "El humo sale cuando algo se quema. Aquí solo hay agua caliente.", "error": "vapor-visible" }
+      ],
+      "columnas": 1,
+      "pista": "Recuerda: el vapor de agua no se ve. ¿Qué le pasa al vapor cuando se enfría?",
+      "explicacion": "Son gotitas muy pequeñas de agua líquida. El vapor invisible sale de la olla, se enfría en el aire y se condensa en gotitas.",
+      "error": "vapor-visible"
+    },
+    {
+      "id": "p14", "tipo": "pasos", "nivel": 3,
+      "enunciado": "Wara pone hielo en un vaso de vidrio seco. Al rato, el vaso está mojado por fuera.",
+      "pasos": [
+        {
+          "tipo": "opcion",
+          "enunciado": "¿De dónde vienen las gotitas de afuera?",
+          "opciones": [
+            { "texto": "Del vapor de agua del aire, que se enfrió al tocar el vaso frío.", "correcta": true },
+            { "texto": "Del agua de adentro, que atravesó el vidrio.", "pista": "El vidrio no deja pasar el agua. Piensa en el aire que rodea al vaso.", "error": "cambios-estado" },
+            { "texto": "Del hielo, que saltó afuera.", "pista": "El hielo sigue dentro del vaso.", "error": "cambios-estado" }
+          ],
+          "columnas": 1,
+          "pista": "En el aire hay agua que no vemos.",
+          "explicacion": "El aire tiene vapor de agua invisible. Al tocar el vaso frío, se enfría y se condensa en gotitas.",
+          "error": "cambios-estado"
+        },
+        {
+          "tipo": "completar",
+          "enunciado": "Completa la oración.",
+          "texto": "El vapor del aire se [enfría] y se [condensa] en el vaso.",
+          "banco": ["calienta", "derrite"],
+          "pista": "El vaso tiene hielo: está frío.",
+          "explicacion": "El vapor se enfría y se condensa: pasa de gaseoso a líquido.",
+          "error": "cambios-estado"
+        }
+      ],
+      "pista": "Resuelve un paso a la vez.",
+      "explicacion": "El vaso frío enfría el vapor de agua del aire, que se condensa en gotitas por fuera del vaso.",
+      "error": "cambios-estado"
+    },
+    {
+      "id": "p15", "tipo": "opcion", "nivel": 3,
+      "enunciado": "Juan pone agua con sal en un plato y lo deja al sol varios días. El agua desaparece. ¿Qué queda en el plato?",
+      "opciones": [
+        { "texto": "La sal.", "correcta": true },
+        { "texto": "Nada.", "pista": "El agua se evaporó, pero la sal no se evapora.", "error": "cambios-estado" },
+        { "texto": "Hielo.", "pista": "Al sol hace calor: no se forma hielo.", "error": "calor-frio" }
+      ],
+      "columnas": 3,
+      "pista": "¿Qué se fue con el calor del sol: el agua o la sal?",
+      "explicacion": "El agua se evaporó con el calor del sol y la sal se quedó en el plato.",
+      "error": "cambios-estado"
+    },
+    {
+      "id": "p16", "tipo": "escribir-libre", "nivel": 3,
+      "enunciado": "Escribe dos oraciones: ¿para qué usan el agua en tu casa?",
+      "guia": ["Uso el agua para...", "En mi casa..."],
+      "requisitos": [
+        { "tipo": "mayuscula-inicial" }, { "tipo": "punto-final" },
+        { "tipo": "min-oraciones", "valor": 2 },
+        { "tipo": "incluye", "palabras": ["agua"] }
+      ],
+      "modelo": "Uso el agua para bañarme. En mi casa cocinamos sopa de maní con agua.",
+      "pista": "Piensa en la cocina, en el baño y en el patio.",
+      "explicacion": "Por ejemplo: «Uso el agua para bañarme. En mi casa cocinamos sopa de maní con agua». Cada oración empieza con mayúscula y termina con punto.",
+      "error": "produce-oracion"
+    }
+  ],
+  "comprobacion": [
+    {
+      "id": "c1", "tipo": "clasificar", "nivel": 1,
+      "enunciado": "¿Sólido o líquido?",
+      "categorias": [
+        { "id": "solido", "texto": "Sólido", "emoji": "❄️" },
+        { "id": "liquido", "texto": "Líquido", "emoji": "💧" }
+      ],
+      "elementos": [
+        { "texto": "nieve", "categoria": "solido" },
+        { "texto": "agua del lago Titicaca", "categoria": "liquido" },
+        { "texto": "hielo de la helada", "categoria": "solido" },
+        { "texto": "lluvia", "categoria": "liquido" },
+        { "texto": "granizo", "categoria": "solido" },
+        { "texto": "agua del grifo", "categoria": "liquido" }
+      ],
+      "pista": "Lo sólido tiene forma propia y no corre. Lo líquido corre y se derrama.",
+      "explicacion": "Sólido: nieve, hielo y granizo. Líquido: agua del lago, lluvia y agua del grifo.",
+      "error": "estados-agua"
+    },
+    {
+      "id": "c2", "tipo": "opcion", "nivel": 1,
+      "enunciado": "¿Qué parte del ciclo del agua está marcada en el dibujo?",
+      "visual": { "tipo": "ilustracion", "id": "ciclo-agua", "resaltar": "precipitacion" },
+      "opciones": [
+        { "texto": "Precipitación: el agua cae de las nubes.", "correcta": true },
+        { "texto": "Evaporación: el agua sube como vapor.", "pista": "Mira bien: en la parte marcada, ¿el agua sube o cae?", "error": "ciclo-agua" },
+        { "texto": "Condensación: el vapor forma nubes.", "pista": "Mira bien: ¿la parte marcada muestra nubes que se forman o agua que cae?", "error": "ciclo-agua" }
+      ],
+      "columnas": 1,
+      "pista": "Fíjate si en la parte marcada el agua sube, forma nubes o cae.",
+      "explicacion": "Está marcada la precipitación: el agua de las nubes cae como lluvia, granizo o nieve.",
+      "error": "ciclo-agua"
+    },
+    {
+      "id": "c3", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa con el cambio correcto.",
+      "texto": "Con calor, el agua líquida se [evapora]. Con mucho frío, el agua líquida se [congela].",
+      "banco": ["derrite", "condensa"],
+      "pista": "¿En qué se convierte el agua con calor? ¿Y en el congelador?",
+      "explicacion": "Con calor, el agua líquida se evapora: se vuelve vapor. Con frío, se congela: se vuelve hielo.",
+      "error": "cambios-estado"
+    },
+    {
+      "id": "c4", "tipo": "ordenar", "nivel": 2,
+      "enunciado": "Ordena el ciclo del agua. Empieza en la nube.",
+      "elementos": [
+        { "texto": "Las gotitas de la nube se juntan y se hacen pesadas.", "emoji": "☁️" },
+        { "texto": "Cae la lluvia sobre el cerro.", "emoji": "🌧️" },
+        { "texto": "El agua baja por el río hasta el lago.", "emoji": "🏞️" },
+        { "texto": "El sol calienta el lago y el agua se evapora.", "emoji": "☀️" }
+      ],
+      "vertical": true,
+      "pista": "¿Qué pasa cuando las gotitas pesan mucho? ¿Adónde va el agua después?",
+      "explicacion": "Nube → lluvia → río → lago → evaporación. Y el ciclo vuelve a empezar.",
+      "error": "ciclo-agua"
+    },
+    {
+      "id": "c5", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha la pregunta y escribe la respuesta.",
+      "escuchar": "¿Cómo se llama el cambio cuando el vapor de agua se enfría y se vuelve gotitas?",
+      "respuestas": ["condensación", "condensar", "condensa", "se condensa", "condensarse"],
+      "pista": "Pasa en el espejo del baño después de una ducha caliente.",
+      "explicacion": "Se llama condensación: el vapor se enfría y se vuelve agua líquida.",
+      "error": "cambios-estado"
+    },
+    {
+      "id": "c6", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "Une cada estado del agua con un ejemplo.",
+      "pares": [
+        ["sólido", "la nieve del Illimani"],
+        ["líquido", "el agua del río Beni"],
+        ["gaseoso", "el vapor invisible del aire"]
+      ],
+      "pista": "¿Cuál tiene forma propia? ¿Cuál corre? ¿Cuál no se ve?",
+      "explicacion": "Sólido: la nieve. Líquido: el agua del río. Gaseoso: el vapor de agua, que no se ve.",
+      "error": "estados-agua"
+    },
+    {
+      "id": "c7", "tipo": "opcion", "nivel": 3,
+      "enunciado": "Nayra sopla su aliento sobre un espejo frío y el espejo se empaña. ¿Por qué?",
+      "opciones": [
+        { "texto": "El vapor de agua de su aliento se enfrió y se condensó en gotitas.", "correcta": true },
+        { "texto": "El espejo se derritió un poquito.", "pista": "El espejo no se derrite con el aliento. Lo que se ve son gotitas de agua.", "error": "cambios-estado" },
+        { "texto": "Su aliento tiene humo.", "pista": "El aliento no tiene humo; tiene agua que no vemos.", "error": "vapor-visible" }
+      ],
+      "columnas": 1,
+      "pista": "¿Qué hay en tu aliento que no se ve? ¿Qué le pasa al tocar algo frío?",
+      "explicacion": "Nuestro aliento tiene vapor de agua. Al tocar el espejo frío, el vapor se condensa en gotitas y lo empaña.",
+      "error": "cambios-estado"
+    },
+    {
+      "id": "c8", "tipo": "multiple", "nivel": 3,
+      "enunciado": "Elige lo que pasa gracias al calor del sol.",
+      "opciones": [
+        { "texto": "El agua del charco se evapora.", "correcta": true },
+        { "texto": "La ropa mojada se seca.", "correcta": true },
+        { "texto": "Se forman gotitas por fuera de un vaso con hielo.", "pista": "Esas gotitas aparecen porque el vaso está frío.", "error": "calor-frio" },
+        { "texto": "La nieve del cerro se derrite.", "correcta": true },
+        { "texto": "Se forma hielo en el charco.", "pista": "El hielo se forma con frío, no con calor.", "error": "calor-frio" }
+      ],
+      "columnas": 1,
+      "pista": "El calor hace que el hielo se derrita y que el agua se evapore. Hay tres.",
+      "explicacion": "Con el calor del sol, el charco se evapora, la ropa se seca y la nieve se derrite. El hielo del charco y las gotitas del vaso frío se forman con frío.",
+      "error": "calor-frio"
+    }
+  ],
+  "repaso": {
+    "texto": "Sólido: hielo, granizo y nieve. Líquido: ríos, lagos y lluvia. Gaseoso: vapor de agua, que no se ve. Con calor, el hielo se derrite y el agua se evapora; con frío, el vapor se condensa y el agua se congela.",
+    "visual": { "tipo": "ilustracion", "id": "estados-agua" }
+  },
+  "adulto": {
+    "objetivo": "Reconocer el agua en estado sólido (hielo, granizo, nieve), líquido (ríos, lagos, lluvia) y gaseoso (vapor de agua); nombrar los cambios de estado (derretir, congelar, evaporar, condensar) y relacionarlos con el calor y el frío; describir un ciclo del agua sencillo y sus usos. Nota: el vapor de agua es invisible; lo blanco que sale de una olla, la neblina y las nubes están formados por gotitas de agua muy pequeñas (las nubes altas, también por cristalitos de hielo).",
+    "sugerencias": [
+      "Hagan cubitos de hielo en el congelador. Después, dejen uno en un plato al sol y otro a la sombra: observen cuál se derrite primero y si, al rato, el plato del sol queda seco porque el agua se evaporó.",
+      "Con un adulto sosteniendo la tapa y el niño mirando a una distancia segura, pongan una tapa fría sobre una olla con agua caliente: verán gotitas debajo de la tapa (condensación). Otra forma sin calor: echar el aliento sobre un espejo frío.",
+      "Pongan agua con un poco de sal en un plato al sol durante varios días y observen qué queda. Cuando llueva o granice, o si ven un nevado de lejos, pregunten: «¿en qué estado está el agua?». Conversen sobre los usos del agua en casa y cómo no desperdiciarla."
+    ],
+    "errores": {
+      "estados-agua": { "descripcion": "Confunde los estados del agua (sólido, líquido y gaseoso) o no los reconoce en ejemplos (granizo, lluvia, vapor).", "sugerencia": "Muestren un cubito de hielo, un vaso de agua y una olla con agua caliente (sin tocarla) y pregunten: ¿es duro?, ¿corre?, ¿se ve?" },
+      "cambios-estado": { "descripcion": "Confunde los nombres de los cambios de estado (derretir, congelar, evaporar, condensar).", "sugerencia": "Hagan tarjetas con cada cambio y una flecha (hielo → agua, agua → hielo, agua → vapor, vapor → gotitas) y úsenlas mientras observan en la cocina." },
+      "vapor-visible": { "descripcion": "Cree que lo blanco que sale de la olla es humo o vapor, o que el vapor de agua se puede ver.", "sugerencia": "Observen juntos (de lejos) una olla hirviendo: justo encima del agua no se ve nada; un poco más arriba aparece lo blanco, cuando el vapor se enfría y forma gotitas." },
+      "ciclo-agua": { "descripcion": "Le cuesta ordenar las etapas del ciclo del agua (evaporación, condensación, precipitación).", "sugerencia": "Dibujen juntos el ciclo con flechas (lago → vapor → nube → lluvia → río) y cuéntenlo como el viaje de una gota." },
+      "calor-frio": { "descripcion": "No relaciona los cambios de estado con el calor o el frío.", "sugerencia": "Pregunten en la cocina: «¿esto necesita calor o frío?» cuando usen el congelador, hiervan agua o tiendan ropa al sol." },
+      "usos-agua": { "descripcion": "Le cuesta nombrar para qué usamos el agua.", "sugerencia": "Durante un día, anoten juntos cada vez que usan agua en la casa y cuenten al final cuántas veces fueron." },
+      "produce-oracion": { "descripcion": "Le cuesta escribir oraciones completas con mayúscula y punto.", "sugerencia": "Escriban juntos oraciones cortas sobre lo que hicieron con el agua durante el día y revisen la mayúscula inicial y el punto final." }
+    }
+  }
+}

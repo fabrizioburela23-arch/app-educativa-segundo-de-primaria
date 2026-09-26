@@ -1,0 +1,342 @@
+{
+  "id": "com-1-3",
+  "titulo": "Sustantivos comunes y propios",
+  "objetivo": "Distingo los sustantivos comunes de los propios y escribo los propios con mayúscula.",
+  "explicacion": [
+    {
+      "texto": "Hay sustantivos **comunes** y **propios**. Los comunes nombran a cualquiera de un grupo: niña, perro, ciudad, río. Los propios son el nombre especial de uno solo: Wara, Toby, Sucre, Mamoré.",
+      "emoji": "🏷️",
+      "visual": { "tipo": "tabla", "columnas": ["Común", "Propio"], "filas": [["niña", "Wara"], ["perro", "Toby"], ["ciudad", "Sucre"], ["río", "Mamoré"]] }
+    },
+    {
+      "texto": "Los sustantivos propios se escriben siempre con **mayúscula** al inicio, aunque estén en medio de la oración: «Mi gata Misi vive en Potosí».",
+      "visual": { "tipo": "emojis", "items": ["🐈", "🏙️"], "etiquetas": ["Misi", "Potosí"] }
+    },
+    {
+      "texto": "Son propios los nombres de personas, mascotas, ciudades, departamentos, ríos, lagos y montañas: Kusi, Pelusa, Trinidad, Pando, Pilcomayo, Titicaca, Illimani.",
+      "visual": { "tipo": "emojis", "items": ["🧒", "🐶", "🏙️", "🗺️", "🌊", "🏔️"], "etiquetas": ["Kusi", "Pelusa", "Trinidad", "Pando", "Titicaca", "Illimani"] }
+    },
+    {
+      "texto": "Ojo: en «el río Mamoré» o «el lago Titicaca», las palabras «río» y «lago» son comunes y van con minúscula. Solo el nombre propio lleva mayúscula.",
+      "emoji": "👀"
+    }
+  ],
+  "ejemplo": {
+    "instruccion": "Mira cómo encontramos los sustantivos propios en una oración.",
+    "pasos": [
+      { "texto": "Leemos: «Nayra y su perro Rayo pasean junto al río Piraí».", "visual": { "tipo": "emojis", "items": ["👧", "🐕", "🌊"] } },
+      { "texto": "**Nayra** es el nombre de una niña: es propio y lleva mayúscula. «Perro» es común: nombra a cualquier perro.", "visual": { "tipo": "emojis", "items": ["👧", "🐕"], "etiquetas": ["Nayra: propio", "perro: común"] } },
+      { "texto": "**Rayo** es el nombre de ese perro: también es propio y lleva mayúscula.", "visual": { "tipo": "emoji", "valor": "🐕", "etiqueta": "Rayo" } },
+      { "texto": "«Río» es común: hay muchos ríos. **Piraí** es el nombre de ese río, que pasa por Santa Cruz: es propio.", "visual": { "tipo": "emoji", "valor": "🌊", "etiqueta": "río Piraí" } }
+    ]
+  },
+  "guiada": {
+    "intro": "Ahora lo hacemos juntos.",
+    "pasos": [
+      {
+        "id": "g1", "tipo": "tocar",
+        "enunciado": "Toca el sustantivo propio.",
+        "apoyo": "Busca el nombre especial de una persona. Lleva mayúscula aunque esté en medio de la oración.",
+        "texto": "Mi prima *Arami* canta en la escuela.",
+        "pista": "¿Cómo se llama la prima?",
+        "explicacion": "«Arami» es el nombre de una persona: es propio. «Prima» y «escuela» son comunes. «Mi» lleva mayúscula solo porque empieza la oración.",
+        "error": "confunde-comun-propio"
+      },
+      {
+        "id": "g2", "tipo": "clasificar",
+        "enunciado": "¿Es un sustantivo común o propio?",
+        "apoyo": "Pregúntate: ¿nombra a cualquiera o es el nombre especial de uno solo?",
+        "categorias": [
+          { "id": "c", "texto": "Común" },
+          { "id": "p", "texto": "Propio" }
+        ],
+        "elementos": [
+          { "texto": "montaña", "emoji": "🏔️", "categoria": "c" },
+          { "texto": "Illimani", "categoria": "p" },
+          { "texto": "niño", "emoji": "👦", "categoria": "c" },
+          { "texto": "Inti", "categoria": "p" },
+          { "texto": "lago", "emoji": "🌊", "categoria": "c" },
+          { "texto": "Titicaca", "categoria": "p" }
+        ],
+        "pista": "Hay muchas montañas, pero solo una se llama Illimani. Piensa así con cada palabra.",
+        "explicacion": "Comunes: montaña, niño, lago. Propios: Illimani (una montaña), Inti (un niño) y Titicaca (un lago).",
+        "error": "confunde-comun-propio"
+      },
+      {
+        "id": "g3", "tipo": "completar",
+        "enunciado": "Completa con mayúscula o con minúscula.",
+        "apoyo": "Los nombres propios empiezan con mayúscula. Los comunes, dentro de la oración, van con minúscula.",
+        "texto": "Mi gato se llama [M]isi. Vivimos en [O]ruro, cerca de una [m]ontaña.",
+        "banco": ["o"],
+        "pista": "«Misi» y «Oruro» son nombres especiales. «Montaña» nombra a cualquier montaña.",
+        "explicacion": "Misi y Oruro son propios: van con mayúscula. «Montaña» es común: va con minúscula.",
+        "error": "propio-sin-mayuscula"
+      }
+    ]
+  },
+  "practica": [
+    {
+      "id": "p1", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Toca los nombres propios.",
+      "texto": "*Kusi* juega con su perra *Chispa*.",
+      "pista": "Busca el nombre del niño y el nombre de su mascota.",
+      "explicacion": "«Kusi» y «Chispa» son nombres propios: por eso llevan mayúscula. «Perra» es común.",
+      "error": "confunde-comun-propio"
+    },
+    {
+      "id": "p2", "tipo": "clasificar", "nivel": 1,
+      "enunciado": "¿Común o propio?",
+      "categorias": [
+        { "id": "c", "texto": "Común" },
+        { "id": "p", "texto": "Propio" }
+      ],
+      "elementos": [
+        { "texto": "ciudad", "categoria": "c" },
+        { "texto": "Tarija", "categoria": "p" },
+        { "texto": "niña", "categoria": "c" },
+        { "texto": "Sofía", "categoria": "p" },
+        { "texto": "gato", "categoria": "c" },
+        { "texto": "Copito", "categoria": "p" }
+      ],
+      "pista": "¿Es el nombre especial de una sola ciudad, niña o mascota? Entonces es propio.",
+      "explicacion": "Comunes: ciudad, niña, gato. Propios: Tarija, Sofía, Copito.",
+      "error": "confunde-comun-propio"
+    },
+    {
+      "id": "p3", "tipo": "escribir", "nivel": 1,
+      "enunciado": "Escucha el nombre y escríbelo. Recuerda la mayúscula.",
+      "escuchar": "Mateo",
+      "visual": { "tipo": "emoji", "valor": "👦" },
+      "respuestas": ["Mateo"],
+      "mayusculas": "estricto",
+      "pista": "Es el nombre de un niño. ¿Con qué letra empiezan los nombres propios?",
+      "explicacion": "Se escribe «Mateo», con M mayúscula, porque es un nombre propio.",
+      "error": "propio-sin-mayuscula"
+    },
+    {
+      "id": "p4", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "Une cada nombre propio con lo que es.",
+      "pares": [["Illimani", "montaña"], ["Mamoré", "río"], ["Bolivia", "país"], ["Pando", "departamento"], ["Trinidad", "ciudad"]],
+      "pista": "Piensa en el mapa de Bolivia: tiene montañas, ríos, departamentos y ciudades.",
+      "explicacion": "Illimani es una montaña, Mamoré es un río, Bolivia es un país, Pando es un departamento y Trinidad es una ciudad.",
+      "error": "relaciona-propio-comun"
+    },
+    {
+      "id": "p5", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa con mayúscula o con minúscula.",
+      "texto": "[S]ofía vive en [S]ucre con su [p]erro [T]oby.",
+      "banco": ["s", "P", "t"],
+      "pista": "Con cada palabra, pregúntate: ¿es el nombre especial de alguien o de un lugar, o nombra a cualquiera?",
+      "explicacion": "Sofía, Sucre y Toby son propios: van con mayúscula. «Perro» es común: va con minúscula.",
+      "error": "propio-sin-mayuscula"
+    },
+    {
+      "id": "p6", "tipo": "tocar", "nivel": 2,
+      "enunciado": "Toca los sustantivos propios.",
+      "texto": "El sábado, *Juan* y *Rosa* visitaron a su abuela en *Oruro*.",
+      "pista": "Hay tres: dos personas y una ciudad. «El» tiene mayúscula por otra razón.",
+      "explicacion": "Juan, Rosa y Oruro son propios. «El» lleva mayúscula porque empieza la oración. «Sábado» y «abuela» son comunes.",
+      "error": "confunde-comun-propio"
+    },
+    {
+      "id": "p7", "tipo": "opcion", "nivel": 2,
+      "enunciado": "¿Qué oración está bien escrita?",
+      "opciones": [
+        { "texto": "Mi amigo Luis vive en Santa Cruz.", "correcta": true },
+        { "texto": "Mi amigo luis vive en Santa Cruz.", "pista": "Revisa el nombre del amigo.", "error": "propio-sin-mayuscula" },
+        { "texto": "Mi Amigo Luis vive en Santa Cruz.", "pista": "«Amigo» es un sustantivo común: va con minúscula.", "error": "mayuscula-en-comun" }
+      ],
+      "columnas": 1,
+      "pista": "Solo llevan mayúscula la primera palabra y los nombres propios.",
+      "explicacion": "«Mi amigo Luis vive en Santa Cruz.» Luis y Santa Cruz son propios; «amigo» es común.",
+      "error": "propio-sin-mayuscula"
+    },
+    {
+      "id": "p8", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha y escribe el nombre de la ciudad.",
+      "escuchar": "Cochabamba",
+      "visual": { "tipo": "emoji", "valor": "🏙️" },
+      "respuestas": ["Cochabamba"],
+      "mayusculas": "estricto",
+      "pista": "Es un nombre propio: empieza con mayúscula. Y recuerda: antes de b se escribe m.",
+      "explicacion": "Se escribe «Cochabamba», con C mayúscula porque es el nombre de una ciudad. Co-cha-bam-ba.",
+      "error": "escritura-nombres"
+    },
+    {
+      "id": "p9", "tipo": "ordenar", "nivel": 2,
+      "enunciado": "Ordena las palabras para formar la oración.",
+      "elementos": ["Wara", "vive", "cerca", "del", "lago", "Titicaca."],
+      "unir": " ",
+      "pista": "La oración empieza con el nombre de la niña y termina con el nombre del lago.",
+      "explicacion": "«Wara vive cerca del lago Titicaca.» Wara y Titicaca son nombres propios.",
+      "error": "orden-oracion"
+    },
+    {
+      "id": "p10", "tipo": "memoria", "nivel": 2,
+      "enunciado": "Encuentra las parejas: el sustantivo común y el nombre propio.",
+      "pares": [["salar", "Uyuni"], ["montaña", "Tunari"], ["río", "Piraí"], ["ciudad", "Cobija"]],
+      "pista": "Piensa en cada lugar: ¿es blanco de sal, es alto, tiene agua que corre o tiene casas y calles?",
+      "explicacion": "El salar de Uyuni, el cerro Tunari (una montaña), el río Piraí y la ciudad de Cobija.",
+      "error": "relaciona-propio-comun"
+    },
+    {
+      "id": "p11", "tipo": "tocar", "nivel": 3,
+      "enunciado": "Toca solo los sustantivos propios.",
+      "texto": "El río *Mamoré* pasa cerca de la ciudad de *Trinidad*.",
+      "pista": "«Río» y «ciudad» nombran a cualquiera. Busca los nombres especiales.",
+      "explicacion": "Mamoré (el nombre del río) y Trinidad (el nombre de la ciudad) son propios. «Río» y «ciudad» son comunes.",
+      "error": "confunde-comun-propio"
+    },
+    {
+      "id": "p12", "tipo": "tocar", "nivel": 3,
+      "enunciado": "Toca el nombre propio. ¡Hay dos palabras que se parecen!",
+      "texto": "Mi perra *Luna* le ladra a la luna.",
+      "pista": "Una luna está en el cielo y la otra es una mascota. ¿Cuál es el nombre especial?",
+      "explicacion": "«Luna», con mayúscula, es el nombre de la perra: es propio. «La luna» del cielo es un sustantivo común.",
+      "error": "confunde-comun-propio"
+    },
+    {
+      "id": "p13", "tipo": "escribir", "nivel": 3,
+      "enunciado": "Escribe bien esta oración, con las mayúsculas que faltan: «ana vive en tarija.»",
+      "respuestas": ["Ana vive en Tarija.", "Ana vive en Tarija"],
+      "mayusculas": "estricto",
+      "pista": "Busca el nombre de una persona y el de una ciudad.",
+      "explicacion": "Se escribe «Ana vive en Tarija.»: Ana y Tarija son nombres propios.",
+      "error": "propio-sin-mayuscula"
+    },
+    {
+      "id": "p14", "tipo": "escribir-libre", "nivel": 3,
+      "enunciado": "Escribe una oración sobre una mascota. Dale un nombre.",
+      "guia": ["Mi gato se llama...", "La perrita de Juan..."],
+      "requisitos": [
+        { "tipo": "mayuscula-inicial" },
+        { "tipo": "punto-final" },
+        { "tipo": "min-palabras", "valor": 5 }
+      ],
+      "modelo": "Mi gato Tomás duerme en la cama.",
+      "pista": "Piensa en un animal y en su nombre. El nombre lleva mayúscula.",
+      "explicacion": "Por ejemplo: «Mi gato Tomás duerme en la cama». «Tomás» es un nombre propio: lleva mayúscula.",
+      "error": "produce-oracion"
+    },
+    {
+      "id": "p15", "tipo": "multiple", "nivel": 1,
+      "enunciado": "Elige todos los nombres propios.",
+      "opciones": [
+        { "texto": "Nayra", "correcta": true },
+        { "texto": "escuela", "pista": "Hay muchas escuelas: «escuela» es común.", "error": "confunde-comun-propio" },
+        { "texto": "Potosí", "correcta": true },
+        { "texto": "perro", "pista": "«Perro» nombra a cualquier perro: es común.", "error": "confunde-comun-propio" }
+      ],
+      "pista": "Busca el nombre de una persona y el de un lugar.",
+      "explicacion": "Nayra (una niña) y Potosí (una ciudad) son propios. «Escuela» y «perro» son comunes.",
+      "error": "confunde-comun-propio"
+    }
+  ],
+  "comprobacion": [
+    {
+      "id": "c1", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Toca los nombres propios.",
+      "texto": "*Inti* come salteñas con su tía *Julia*.",
+      "pista": "Busca los nombres de las personas.",
+      "explicacion": "«Inti» y «Julia» son nombres propios. «Salteñas» y «tía» son comunes.",
+      "error": "confunde-comun-propio"
+    },
+    {
+      "id": "c2", "tipo": "clasificar", "nivel": 1,
+      "enunciado": "¿Es un sustantivo común o propio?",
+      "categorias": [
+        { "id": "c", "texto": "Común" },
+        { "id": "p", "texto": "Propio" }
+      ],
+      "elementos": [
+        { "texto": "gata", "categoria": "c" },
+        { "texto": "Pelusa", "categoria": "p" },
+        { "texto": "maestra", "categoria": "c" },
+        { "texto": "Beni", "categoria": "p" },
+        { "texto": "río", "categoria": "c" },
+        { "texto": "Juan", "categoria": "p" }
+      ],
+      "pista": "Los propios son nombres especiales de una sola persona, mascota o lugar.",
+      "explicacion": "Comunes: gata, maestra, río. Propios: Pelusa, Beni, Juan.",
+      "error": "confunde-comun-propio"
+    },
+    {
+      "id": "c3", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha y escribe el nombre del departamento.",
+      "escuchar": "Potosí",
+      "respuestas": ["Potosí"],
+      "mayusculas": "estricto",
+      "pista": "Es un nombre propio. ¿Con qué tipo de letra empieza?",
+      "explicacion": "Se escribe «Potosí», con P mayúscula porque es un nombre propio, y con tilde en la í.",
+      "error": "propio-sin-mayuscula"
+    },
+    {
+      "id": "c4", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa con mayúscula o con minúscula.",
+      "texto": "Mi hermano [J]uan pesca en el [l]ago [T]iticaca.",
+      "banco": ["j", "L", "t"],
+      "pista": "Hay dos nombres especiales y una palabra que nombra a cualquiera. ¿Cuál es cuál?",
+      "explicacion": "Juan y Titicaca son propios: van con mayúscula. «Lago» es común: va con minúscula.",
+      "error": "propio-sin-mayuscula"
+    },
+    {
+      "id": "c5", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "Une cada nombre propio con lo que es.",
+      "pares": [["Sajama", "montaña"], ["Pilcomayo", "río"], ["Sucre", "ciudad"], ["Chuquisaca", "departamento"]],
+      "pista": "Uno tiene agua que corre y otro tiene nieve en la punta. Sucre está dentro de Chuquisaca.",
+      "explicacion": "Sajama es una montaña (la más alta de Bolivia), Pilcomayo es un río, Sucre es una ciudad y Chuquisaca es un departamento.",
+      "error": "relaciona-propio-comun"
+    },
+    {
+      "id": "c6", "tipo": "opcion", "nivel": 2,
+      "enunciado": "¿Qué palabra es un sustantivo propio?",
+      "opciones": [
+        { "texto": "Amazonía", "correcta": true },
+        { "texto": "selva", "pista": "Hay muchas selvas: «selva» es común.", "error": "confunde-comun-propio" },
+        { "texto": "árbol", "pista": "«Árbol» nombra a cualquier árbol: es común.", "error": "confunde-comun-propio" }
+      ],
+      "columnas": 3,
+      "pista": "Busca el nombre especial de un lugar.",
+      "explicacion": "«Amazonía» es el nombre de un lugar muy grande de Bolivia y de otros países: es propio. «Selva» y «árbol» son comunes.",
+      "error": "confunde-comun-propio"
+    },
+    {
+      "id": "c7", "tipo": "tocar", "nivel": 3,
+      "enunciado": "Toca solo los sustantivos propios.",
+      "texto": "Cerca del lago *Titicaca* vive mi amiga *Nayra* con su alpaca *Nube*.",
+      "pista": "Hay tres: el nombre de un lago, el de una niña y el de una mascota.",
+      "explicacion": "Titicaca, Nayra y Nube son propios. «Cerca» lleva mayúscula porque empieza la oración. «Lago», «amiga» y «alpaca» son comunes.",
+      "error": "confunde-comun-propio"
+    },
+    {
+      "id": "c8", "tipo": "escribir", "nivel": 3,
+      "enunciado": "Escribe bien esta oración, con las mayúsculas que faltan: «el perro de luis se llama bruno.»",
+      "respuestas": ["El perro de Luis se llama Bruno.", "El perro de Luis se llama Bruno"],
+      "mayusculas": "estricto",
+      "pista": "Tres palabras necesitan mayúscula: la primera de la oración y dos nombres propios.",
+      "explicacion": "Se escribe «El perro de Luis se llama Bruno.»: «El» empieza la oración; Luis y Bruno son nombres propios.",
+      "error": "propio-sin-mayuscula"
+    }
+  ],
+  "repaso": {
+    "texto": "Común: nombra a cualquiera (ciudad, perro, montaña). Propio: es el nombre especial de uno solo (Sucre, Toby, Illimani). Los propios llevan mayúscula.",
+    "visual": { "tipo": "tabla", "columnas": ["Común", "Propio"], "filas": [["ciudad", "Sucre"], ["perro", "Toby"], ["montaña", "Illimani"]] }
+  },
+  "adulto": {
+    "objetivo": "Distinguir sustantivos comunes (nombran a cualquiera de un grupo) de sustantivos propios (nombre particular de una persona, mascota o lugar) y escribir los propios con mayúscula inicial, también en medio de la oración.",
+    "sugerencias": [
+      "Con un mapa de Bolivia, busquen juntos ciudades, ríos, lagos y montañas. El niño dice «el Mamoré es un río», «Sucre es una ciudad» y escribe esos nombres con mayúscula.",
+      "En la feria o en la calle, lean letreros, nombres de tiendas, de buses y de calles. Pregunten si cada palabra es un nombre común o un nombre propio y por qué lleva mayúscula.",
+      "Hagan una lista con la familia, los vecinos y las mascotas: al lado de cada nombre propio escriban el sustantivo común (Rosa, abuela; Toby, perro)."
+    ],
+    "errores": {
+      "confunde-comun-propio": { "descripcion": "Confunde sustantivos comunes y propios, o cree que toda palabra con mayúscula es un nombre propio.", "sugerencia": "Pregunten: «¿hay muchos o es el nombre de uno solo?». Hay muchas ciudades, pero una sola se llama Oruro." },
+      "propio-sin-mayuscula": { "descripcion": "Escribe nombres propios con minúscula (sofía, tarija).", "sugerencia": "Cuando escriba su nombre o el de su ciudad, pidan que revise la primera letra. Marquen juntos las mayúsculas en una carta o una tarjeta." },
+      "mayuscula-en-comun": { "descripcion": "Pone mayúscula a sustantivos comunes dentro de la oración (el Río, mi Amigo).", "sugerencia": "Lean juntos una oración y pregunten, palabra por palabra: «¿es el nombre de alguien o de un lugar especial?». Si no lo es, va con minúscula." },
+      "relaciona-propio-comun": { "descripcion": "No sabe a qué grupo pertenece un nombre propio (que el Illimani es una montaña o que Pando es un departamento).", "sugerencia": "Miren un mapa o fotos de Bolivia y armen frases como «el Titicaca es un lago» o «Cobija es una ciudad»." },
+      "escritura-nombres": { "descripcion": "Escribe con errores de letras los nombres de lugares dictados.", "sugerencia": "Escriban juntos los nombres de los departamentos y ciudades en tarjetas, léanlos varias veces y fíjense en las letras difíciles (mb, tilde)." },
+      "orden-oracion": { "descripcion": "Le cuesta ordenar palabras para formar una oración.", "sugerencia": "Escriban oraciones en tiras de papel, córtenlas por palabras y armen la oración juntos: la que tiene mayúscula va primero y la del punto, al final." },
+      "produce-oracion": { "descripcion": "Le cuesta escribir oraciones completas con mayúscula, nombre propio y punto.", "sugerencia": "Escriban juntos oraciones sobre las mascotas o los vecinos del barrio y revisen las mayúsculas y el punto final." }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "aprendo-segundo-primaria",
+  "version": "1.0.0",
+  "private": true,
+  "description": "App educativa web (PWA) para segundo de primaria en Bolivia. Sin dependencias en tiempo de ejecución.",
+  "type": "module",
+  "scripts": {
+    "validar": "node tools/validar-contenido.mjs",
+    "precache": "node tools/generar-precache.mjs",
+    "servir": "npx http-server . -p 8080 -c-1",
+    "test": "node --test tests/unit/*.test.mjs",
+    "test:e2e": "node tests/e2e/recorrido.mjs"
+  },
+  "license": "UNLICENSED"
+}

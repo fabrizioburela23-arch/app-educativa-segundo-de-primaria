@@ -1,0 +1,492 @@
+{
+  "id": "soc-1-3",
+  "titulo": "Mi barrio y mi comunidad",
+  "objetivo": "Conozco los lugares y servicios de mi barrio o comunidad, sé cómo cuidarlos y cómo los vecinos trabajan juntos para mejorarlos.",
+  "explicacion": [
+    {
+      "texto": "Mi **barrio** o mi **comunidad** es el lugar donde vivo junto a mis **vecinos**. Puede estar en la ciudad (**urbana**) o en el campo (**rural**). Allí nos saludamos, nos ayudamos y nos respetamos.",
+      "visual": { "tipo": "emojis", "items": ["🏙️", "🏡"], "etiquetas": ["ciudad: urbana", "campo: rural"] }
+    },
+    {
+      "texto": "En la comunidad hay **lugares** y **servicios** que todos usamos: la escuela, el centro de salud, el mercado, la plaza, el agua potable, la luz y el recojo de basura.",
+      "visual": { "tipo": "emojis", "items": ["🏫", "🏥", "🧺", "⛲", "🚰", "💡"], "etiquetas": ["escuela", "centro de salud", "mercado", "plaza", "agua potable", "luz"] }
+    },
+    {
+      "texto": "Cuidamos nuestro **entorno**: botamos la basura en el basurero, no ensuciamos los ríos ni los canales, cerramos el grifo y cuidamos las plantas y los árboles.",
+      "visual": { "tipo": "emojis", "items": ["🗑️", "💧", "🌳"], "etiquetas": ["basura en su lugar", "cuidar el agua", "cuidar las plantas"] }
+    },
+    {
+      "texto": "Los vecinos se organizan: en la ciudad, en la **junta vecinal**; en el campo, en la organización de la comunidad, que se reúne en asamblea. Conversan, deciden juntos y hacen **trabajo comunitario**.",
+      "emoji": "🤝"
+    }
+  ],
+  "ejemplo": {
+    "instruccion": "Mira cómo los vecinos del barrio de Kusi mejoraron su plaza.",
+    "pasos": [
+      {
+        "texto": "La plaza del barrio de Kusi estaba sucia y sus plantas estaban secas.",
+        "visual": { "tipo": "emojis", "items": ["⛲", "🗑️", "🥀"] }
+      },
+      {
+        "texto": "La **junta vecinal** hizo una reunión. Los vecinos conversaron y decidieron arreglar la plaza juntos el sábado.",
+        "visual": { "tipo": "emojis", "items": ["🗣️", "👂", "🤝"], "etiquetas": ["proponen", "escuchan", "deciden"] }
+      },
+      {
+        "texto": "El sábado, niñas, niños y personas adultas recogieron la basura, pintaron las bancas y plantaron árboles. ¡Eso es **trabajo comunitario**! En algunos lugares le dicen faena.",
+        "visual": { "tipo": "emojis", "items": ["🧹", "🎨", "🌱"], "etiquetas": ["limpiar", "pintar", "plantar"] }
+      },
+      {
+        "texto": "Ahora la plaza está limpia y todos la cuidan. Cuando trabajamos juntos, la comunidad mejora para todos: eso es **desarrollo comunitario**.",
+        "visual": { "tipo": "emojis", "items": ["⛲", "🌳", "😊"] }
+      }
+    ]
+  },
+  "guiada": {
+    "intro": "Vamos a recorrer juntos la comunidad.",
+    "pasos": [
+      {
+        "id": "g1", "tipo": "relacionar",
+        "enunciado": "Une cada lugar con lo que hacemos allí.",
+        "apoyo": "Piensa: ¿para qué vas a cada lugar con tu familia?",
+        "pares": [
+          [ { "texto": "centro de salud", "emoji": "🏥" }, "nos curan cuando estamos enfermos" ],
+          [ { "texto": "mercado", "emoji": "🧺" }, "compramos alimentos" ],
+          [ { "texto": "escuela", "emoji": "🏫" }, "aprendemos a leer y a contar" ],
+          [ { "texto": "cancha", "emoji": "⚽" }, "jugamos y hacemos deporte" ]
+        ],
+        "pista": "Empieza por el lugar que visitas más seguido.",
+        "explicacion": "En el centro de salud nos curan, en el mercado compramos alimentos, en la escuela aprendemos y en la cancha hacemos deporte.",
+        "error": "servicios-lugares"
+      },
+      {
+        "id": "g2", "tipo": "clasificar",
+        "enunciado": "¿Esta acción cuida o daña el entorno?",
+        "apoyo": "Pregúntate: ¿así la comunidad queda más limpia y sana?",
+        "categorias": [
+          { "id": "cuida", "texto": "Cuida el entorno", "emoji": "💚" },
+          { "id": "dana", "texto": "Daña el entorno", "emoji": "🚫" }
+        ],
+        "elementos": [
+          { "texto": "plantar un árbol", "emoji": "🌳", "categoria": "cuida" },
+          { "texto": "recoger la basura del parque", "emoji": "🗑️", "categoria": "cuida" },
+          { "texto": "regar las plantas de la plaza", "emoji": "🌱", "categoria": "cuida" },
+          { "texto": "botar basura al río", "categoria": "dana" },
+          { "texto": "quemar basura", "emoji": "🔥", "categoria": "dana" },
+          { "texto": "dejar el grifo abierto", "emoji": "🚰", "categoria": "dana" }
+        ],
+        "pista": "Quemar basura ensucia el aire. El agua que se pierde ya no la puede usar nadie.",
+        "explicacion": "Plantar árboles, recoger basura y regar cuidan el entorno. Botar basura al río, quemarla y dejar el grifo abierto lo dañan.",
+        "error": "cuidado-entorno"
+      },
+      {
+        "id": "g3", "tipo": "completar",
+        "enunciado": "Completa sobre los vecinos de Wara.",
+        "apoyo": "Recuerda cómo se llama la organización de los vecinos de un barrio.",
+        "texto": "Los vecinos de Wara forman una [junta vecinal]. Se reúnen, conversan y deciden [juntos] cómo mejorar el barrio.",
+        "banco": ["pelota", "solos"],
+        "pista": "Si se reúnen y conversan, ¿deciden solos o con los demás?",
+        "explicacion": "Los vecinos forman una junta vecinal. Se reúnen, conversan y deciden juntos.",
+        "error": "trabajo-comunitario"
+      }
+    ]
+  },
+  "practica": [
+    {
+      "id": "p1", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Toca los lugares que ve Luis.",
+      "texto": "Luis sale a caminar y ve una *plaza*, un *mercado*, una *escuela* y un *centro de salud*.",
+      "pista": "Busca cuatro lugares que todos los vecinos pueden usar.",
+      "explicacion": "Luis ve una plaza, un mercado, una escuela y un centro de salud: lugares de su comunidad.",
+      "error": "servicios-lugares"
+    },
+    {
+      "id": "p2", "tipo": "opcion", "nivel": 1,
+      "enunciado": "Escucha la adivinanza. ¿Qué lugar es?",
+      "escuchar": "Aquí vamos cuando estamos enfermos o para vacunarnos. Una doctora o un enfermero nos atiende. ¿Qué lugar es?",
+      "opciones": [
+        { "texto": "el centro de salud", "emoji": "🏥", "correcta": true },
+        { "texto": "la cancha", "emoji": "⚽", "pista": "En la cancha jugamos. ¿Dónde nos atiende una doctora?", "error": "servicios-lugares" },
+        { "texto": "el mercado", "emoji": "🧺", "pista": "En el mercado compramos alimentos. ¿Dónde nos vacunan?", "error": "servicios-lugares" }
+      ],
+      "pista": "Piensa en el lugar donde trabajan doctoras, doctores, enfermeras y enfermeros.",
+      "explicacion": "Es el centro de salud: allí nos curan y nos vacunan.",
+      "error": "escucha-comprension"
+    },
+    {
+      "id": "p3", "tipo": "memoria", "nivel": 1,
+      "enunciado": "Encuentra las parejas: el dibujo y el lugar o servicio.",
+      "pares": [
+        [ { "emoji": "🚰" }, "agua potable" ],
+        [ { "emoji": "💡" }, "luz" ],
+        [ { "emoji": "🏥" }, "centro de salud" ],
+        [ { "emoji": "🏫" }, "escuela" ]
+      ],
+      "pista": "Mira bien cada dibujo: un grifo con agua, un foco, un edificio donde nos curan y una escuela.",
+      "explicacion": "El grifo es el agua potable, el foco es la luz, el edificio donde nos curan es el centro de salud y el otro edificio es la escuela.",
+      "error": "servicios-lugares"
+    },
+    {
+      "id": "p4", "tipo": "completar", "nivel": 1,
+      "enunciado": "Completa la oración.",
+      "texto": "La basura se bota en el [basurero], no en la calle ni en el [río].",
+      "banco": ["plato", "sombrero"],
+      "pista": "¿Dónde va la basura? ¿Y qué lugar con agua no debemos ensuciar?",
+      "explicacion": "La basura va en el basurero. En la calle o en el río ensucia y hace daño a las personas, las plantas y los animales.",
+      "error": "cuidado-entorno"
+    },
+    {
+      "id": "p5", "tipo": "completar", "nivel": 2,
+      "enunciado": "¿Urbano o rural? Completa las oraciones.",
+      "texto": "Kusi vive en la ciudad de Cochabamba: su barrio es [urbano]. Nayra vive en el campo, cerca del lago Titicaca: su comunidad es [rural].",
+      "pista": "Urbano viene de ciudad. Rural viene de campo.",
+      "explicacion": "El barrio de Kusi está en la ciudad: es urbano. La comunidad de Nayra está en el campo: es rural.",
+      "error": "urbano-rural"
+    },
+    {
+      "id": "p6", "tipo": "multiple", "nivel": 2,
+      "enunciado": "¿Qué hacen los vecinos en un trabajo comunitario? Elige todas las correctas.",
+      "opciones": [
+        { "texto": "Limpian juntos la plaza", "emoji": "🧹", "correcta": true },
+        { "texto": "Plantan árboles en la calle", "emoji": "🌳", "correcta": true },
+        { "texto": "Arreglan el camino o el canal de agua", "emoji": "🛠️", "correcta": true },
+        { "texto": "Cada uno se queda en su casa", "pista": "Trabajo comunitario quiere decir trabajar juntos.", "error": "trabajo-comunitario" },
+        { "texto": "Ensucian la cancha", "pista": "El trabajo comunitario sirve para mejorar los lugares, no para dañarlos.", "error": "trabajo-comunitario" }
+      ],
+      "pista": "En el trabajo comunitario, los vecinos trabajan juntos para mejorar su lugar.",
+      "explicacion": "Limpiar la plaza, plantar árboles y arreglar caminos o canales es trabajo comunitario. Quedarse en casa o ensuciar, no.",
+      "error": "trabajo-comunitario"
+    },
+    {
+      "id": "p7", "tipo": "tocar", "nivel": 2,
+      "enunciado": "Toca las acciones de Kusi que muestran respeto a sus vecinos.",
+      "texto": "Kusi *saluda* a doña Rosa y *ayuda* a don Luis con sus bolsas. Su primo grita de noche y no deja dormir a nadie.",
+      "pista": "Busca dos acciones de Kusi que hacen sentir bien a los vecinos.",
+      "explicacion": "Kusi saluda y ayuda: así muestra respeto. Gritar de noche molesta a los vecinos que quieren descansar.",
+      "error": "respeto-vecinos"
+    },
+    {
+      "id": "p8", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha la adivinanza y escribe qué lugar es.",
+      "escuchar": "Aquí las vendedoras y los vendedores ofrecen papa, fruta, carne y verduras, y las familias compran sus alimentos. ¿Qué lugar es?",
+      "respuestas": ["mercado", "el mercado", "feria", "la feria"],
+      "pista": "Es el lugar adonde vas con tu familia a comprar la comida de la semana.",
+      "explicacion": "Es el mercado (o la feria): allí compramos los alimentos.",
+      "error": "servicios-lugares"
+    },
+    {
+      "id": "p9", "tipo": "manipular", "nivel": 2,
+      "enunciado": "En el trabajo comunitario, el grupo 1 juntó 4 bolsas de basura; el grupo 2, 3 bolsas; y el grupo 3, 5 bolsas. Arma el pictograma.",
+      "manipulable": {
+        "tipo": "pictograma",
+        "icono": "🗑️",
+        "escala": 1,
+        "categorias": [
+          { "etiqueta": "Grupo 1", "objetivo": 4 },
+          { "etiqueta": "Grupo 2", "objetivo": 3 },
+          { "etiqueta": "Grupo 3", "objetivo": 5 }
+        ]
+      },
+      "pista": "Pon un dibujo por cada bolsa. Revisa cada fila: grupo 1, 4; grupo 2, 3; grupo 3, 5.",
+      "explicacion": "Grupo 1: 4 bolsas. Grupo 2: 3 bolsas. Grupo 3: 5 bolsas. ¡Entre todos juntaron 12 bolsas!",
+      "error": "pictograma"
+    },
+    {
+      "id": "p10", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "¿Qué tipo de basura es?",
+      "categorias": [
+        { "id": "organica", "texto": "Orgánica: restos de comida y plantas", "emoji": "🍂" },
+        { "id": "reciclable", "texto": "Reciclable: plástico, papel y latas", "emoji": "♻️" }
+      ],
+      "elementos": [
+        { "texto": "cáscara de plátano", "emoji": "🍌", "categoria": "organica" },
+        { "texto": "cáscara de papa", "emoji": "🥔", "categoria": "organica" },
+        { "texto": "hojas secas", "categoria": "organica" },
+        { "texto": "botella de plástico", "categoria": "reciclable" },
+        { "texto": "periódico viejo", "emoji": "📰", "categoria": "reciclable" },
+        { "texto": "lata vacía", "emoji": "🥫", "categoria": "reciclable" }
+      ],
+      "pista": "Lo que viene de una planta o de la comida es orgánico. El plástico, el papel y el metal se pueden reciclar.",
+      "explicacion": "Las cáscaras y las hojas secas son basura orgánica. La botella, el periódico y la lata se pueden reciclar.",
+      "error": "basura"
+    },
+    {
+      "id": "p11", "tipo": "clasificar", "nivel": 3,
+      "enunciado": "¿Lo encuentras en la ciudad, en el campo o en los dos?",
+      "categorias": [
+        { "id": "urbana", "texto": "Ciudad (urbana)", "emoji": "🏙️" },
+        { "id": "rural", "texto": "Campo (rural)", "emoji": "🌾" },
+        { "id": "ambas", "texto": "En los dos", "emoji": "🤝" }
+      ],
+      "elementos": [
+        { "texto": "edificios muy altos", "categoria": "urbana" },
+        { "texto": "semáforos en las esquinas", "emoji": "🚦", "categoria": "urbana" },
+        { "texto": "sembradíos junto a las casas", "categoria": "rural" },
+        { "texto": "casas lejos unas de otras", "categoria": "rural" },
+        { "texto": "escuelas", "emoji": "🏫", "categoria": "ambas" },
+        { "texto": "vecinos que se ayudan", "categoria": "ambas" }
+      ],
+      "pista": "Piensa en lo que ves en una ciudad grande y en una comunidad del campo. Hay cosas que están en los dos lugares.",
+      "explicacion": "Los edificios altos y los semáforos son de la ciudad. Los sembradíos junto a las casas y las casas lejanas, del campo. Hay escuelas y vecinos que se ayudan en los dos lugares.",
+      "error": "urbano-rural"
+    },
+    {
+      "id": "p12", "tipo": "pasos", "nivel": 3,
+      "enunciado": "El canal de riego de la comunidad de Nayra está tapado con basura y tierra. El agua no llega a los sembradíos.",
+      "visual": { "tipo": "emojis", "items": ["💧", "🗑️", "🌾"] },
+      "pasos": [
+        {
+          "tipo": "opcion",
+          "enunciado": "¿Qué hace primero la comunidad?",
+          "opciones": [
+            { "texto": "Se reúne en asamblea para organizarse.", "correcta": true },
+            { "texto": "Espera a que el canal se limpie solo.", "pista": "La basura no se va sola. ¿Qué pueden hacer los vecinos?", "error": "trabajo-comunitario" },
+            { "texto": "Bota más basura al canal.", "pista": "Eso taparía más el canal.", "error": "cuidado-entorno" }
+          ],
+          "pista": "Para trabajar juntos, primero hay que ponerse de acuerdo.",
+          "explicacion": "Primero la comunidad se reúne en asamblea para organizarse.",
+          "error": "trabajo-comunitario"
+        },
+        {
+          "tipo": "numero",
+          "enunciado": "En la mañana limpian 12 metros de canal y en la tarde, 15 metros. ¿Cuántos metros limpian en total?",
+          "respuesta": 27,
+          "sufijo": "metros",
+          "erroresComunes": [
+            { "respuesta": 3, "pista": "Te piden el total: hay que sumar, no restar.", "error": "calculo" },
+            { "respuesta": 17, "pista": "Revisa la suma de las decenas: 10 + 10 = 20.", "error": "calculo" }
+          ],
+          "pista": "Suma los metros de la mañana y los de la tarde.",
+          "explicacion": "12 + 15 = 27 metros de canal limpio.",
+          "error": "calculo"
+        },
+        {
+          "tipo": "opcion",
+          "enunciado": "¿Por qué es bueno trabajar juntos?",
+          "opciones": [
+            { "texto": "Porque el trabajo es más rápido y todos se benefician.", "correcta": true },
+            { "texto": "Porque así una sola familia hace todo.", "pista": "En el trabajo comunitario participan muchas familias.", "error": "trabajo-comunitario" },
+            { "texto": "Porque así nadie usa el agua.", "pista": "Limpian el canal justamente para que el agua llegue a todos.", "error": "trabajo-comunitario" }
+          ],
+          "pista": "Piensa en cuántas manos ayudan y quién recibe el agua después.",
+          "explicacion": "Entre muchos, el trabajo es más rápido y el agua llega a los sembradíos de todos.",
+          "error": "trabajo-comunitario"
+        }
+      ],
+      "pista": "Resuelve una pregunta a la vez.",
+      "explicacion": "La comunidad se organiza, limpia 27 metros de canal y todos se benefician del agua.",
+      "error": "trabajo-comunitario"
+    },
+    {
+      "id": "p13", "tipo": "pasos", "nivel": 3,
+      "enunciado": "Un vecino saca su basura a la esquina cuando todavía no pasa el carro basurero. Los perros rompen las bolsas.",
+      "visual": { "tipo": "emojis", "items": ["🗑️", "🐕", "🚛"] },
+      "pasos": [
+        {
+          "tipo": "opcion",
+          "enunciado": "¿Qué problema causa?",
+          "opciones": [
+            { "texto": "La calle se ensucia y huele mal.", "correcta": true },
+            { "texto": "La calle queda más limpia.", "pista": "Si los perros rompen las bolsas, ¿dónde queda la basura?", "error": "basura" },
+            { "texto": "Ninguno, no pasa nada.", "pista": "Imagina la esquina con la basura regada.", "error": "basura" }
+          ],
+          "pista": "Piensa en lo que pasa cuando la basura se riega por la calle.",
+          "explicacion": "La basura regada ensucia la calle, huele mal y puede enfermar a las personas.",
+          "error": "basura"
+        },
+        {
+          "tipo": "opcion",
+          "enunciado": "¿Qué pueden hacer los vecinos?",
+          "opciones": [
+            { "texto": "Sacar la basura solo cuando pasa el carro basurero.", "correcta": true },
+            { "texto": "Quemar la basura en la esquina.", "pista": "El humo de la basura quemada ensucia el aire y hace daño.", "error": "cuidado-entorno" },
+            { "texto": "Botar la basura en el terreno baldío.", "pista": "Así la basura solo cambia de lugar y ensucia otro sitio.", "error": "basura" }
+          ],
+          "pista": "Busca una solución que no ensucie la calle, el aire ni otro lugar.",
+          "explicacion": "Lo mejor es sacar la basura cuando pasa el carro basurero. Así la calle queda limpia.",
+          "error": "basura"
+        }
+      ],
+      "pista": "Piensa primero en el problema y después en una buena solución.",
+      "explicacion": "La basura regada ensucia la calle. Sacarla cuando pasa el carro basurero la mantiene limpia.",
+      "error": "basura"
+    },
+    {
+      "id": "p14", "tipo": "ordenar", "nivel": 3,
+      "enunciado": "Ordena cómo los vecinos arreglaron la cancha.",
+      "elementos": [
+        "Los vecinos ven que la cancha está sucia y rota.",
+        "Se reúnen y conversan.",
+        "Deciden un día para trabajar juntos.",
+        "Ese día limpian y pintan la cancha.",
+        "Ahora todos juegan en una cancha bonita."
+      ],
+      "vertical": true,
+      "pista": "Primero ven el problema. ¿Qué hacen antes de trabajar?",
+      "explicacion": "Ven el problema, se reúnen, deciden un día, trabajan juntos y al final todos disfrutan la cancha.",
+      "error": "trabajo-comunitario"
+    },
+    {
+      "id": "p15", "tipo": "escribir-libre", "nivel": 3,
+      "enunciado": "Escribe una idea para mejorar tu barrio o tu comunidad.",
+      "guia": ["Podemos plantar...", "Los vecinos pueden...", "Yo puedo ayudar a..."],
+      "requisitos": [
+        { "tipo": "mayuscula-inicial" },
+        { "tipo": "punto-final" },
+        { "tipo": "min-palabras", "valor": 5 }
+      ],
+      "modelo": "Podemos plantar árboles en la plaza.",
+      "pista": "Piensa en algo de tu barrio que podría estar más limpio, más verde o más seguro.",
+      "explicacion": "Por ejemplo: «Podemos plantar árboles en la plaza». Una buena idea mejora el lugar para todos.",
+      "error": "produce-texto"
+    }
+  ],
+  "comprobacion": [
+    {
+      "id": "c1", "tipo": "opcion", "nivel": 1,
+      "enunciado": "¿Dónde compramos papa, fruta y carne?",
+      "opciones": [
+        { "texto": "en el mercado", "emoji": "🧺", "correcta": true },
+        { "texto": "en el centro de salud", "emoji": "🏥", "pista": "Al centro de salud vamos cuando estamos enfermos.", "error": "servicios-lugares" },
+        { "texto": "en la escuela", "emoji": "🏫", "pista": "A la escuela vamos a aprender.", "error": "servicios-lugares" }
+      ],
+      "pista": "Piensa en el lugar con muchos puestos de comida.",
+      "explicacion": "Compramos papa, fruta y carne en el mercado.",
+      "error": "servicios-lugares"
+    },
+    {
+      "id": "c2", "tipo": "relacionar", "nivel": 1,
+      "enunciado": "Une cada servicio con para qué sirve.",
+      "pares": [
+        [ { "texto": "agua potable", "emoji": "🚰" }, "para tomar, cocinar y lavarnos" ],
+        [ { "texto": "luz", "emoji": "💡" }, "para alumbrar la casa de noche" ],
+        [ { "texto": "recojo de basura", "emoji": "🚛" }, "para que la basura no se quede en las calles" ]
+      ],
+      "pista": "Piensa en qué pasaría en tu casa si faltara cada servicio.",
+      "explicacion": "El agua potable sirve para tomar y cocinar; la luz, para alumbrar; y el recojo de basura mantiene limpias las calles.",
+      "error": "servicios-lugares"
+    },
+    {
+      "id": "c3", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "¿Esta acción cuida o daña la comunidad?",
+      "categorias": [
+        { "id": "cuida", "texto": "Cuida la comunidad", "emoji": "💚" },
+        { "id": "dana", "texto": "Daña la comunidad", "emoji": "🚫" }
+      ],
+      "elementos": [
+        { "texto": "recoger lo que ensucia mi perro", "emoji": "🐕", "categoria": "cuida" },
+        { "texto": "apagar las luces que no uso", "emoji": "💡", "categoria": "cuida" },
+        { "texto": "usar el basurero de la plaza", "emoji": "🗑️", "categoria": "cuida" },
+        { "texto": "rayar las paredes", "categoria": "dana" },
+        { "texto": "arrancar las flores de la plaza", "emoji": "🥀", "categoria": "dana" },
+        { "texto": "botar botellas al canal", "categoria": "dana" }
+      ],
+      "pista": "Pregúntate: ¿así la comunidad queda más limpia y bonita, o más sucia y dañada?",
+      "explicacion": "Recoger lo que ensucia el perro, apagar luces y usar el basurero cuidan la comunidad. Rayar paredes, arrancar flores y botar botellas al canal la dañan.",
+      "error": "cuidado-entorno"
+    },
+    {
+      "id": "c4", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha la pregunta y escribe la respuesta.",
+      "escuchar": "¿Cómo se llama la organización de los vecinos de un barrio de la ciudad?",
+      "respuestas": ["junta vecinal", "la junta vecinal", "junta de vecinos", "la junta de vecinos"],
+      "pista": "Son dos palabras. La primera es «junta».",
+      "explicacion": "Es la junta vecinal: allí los vecinos se reúnen y deciden cómo mejorar el barrio.",
+      "error": "trabajo-comunitario"
+    },
+    {
+      "id": "c5", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa sobre la basura.",
+      "texto": "La cáscara de plátano es basura [orgánica]. La botella de plástico se puede [reciclar].",
+      "banco": ["de metal", "tirar al río"],
+      "pista": "¿La cáscara viene de una planta? ¿Qué se puede hacer con una botella para usarla otra vez?",
+      "explicacion": "La cáscara de plátano es basura orgánica y la botella de plástico se puede reciclar. Nunca se tira al río.",
+      "error": "basura"
+    },
+    {
+      "id": "c6", "tipo": "multiple", "nivel": 2,
+      "enunciado": "Elige lo que muestra respeto entre vecinos.",
+      "opciones": [
+        { "texto": "Saludar a los vecinos", "emoji": "👋", "correcta": true },
+        { "texto": "No hacer ruido fuerte de noche", "emoji": "🌙", "correcta": true },
+        { "texto": "Ayudar a una vecina mayor con sus bolsas", "emoji": "👵", "correcta": true },
+        { "texto": "Dejar la basura en la puerta del vecino", "pista": "¿Te gustaría encontrar basura en tu puerta?", "error": "respeto-vecinos" },
+        { "texto": "Rayar la pared de su casa", "pista": "La pared es de otra familia. ¿Cómo se sentirían?", "error": "respeto-vecinos" }
+      ],
+      "pista": "Busca las acciones que hacen sentir bien a los vecinos.",
+      "explicacion": "Saludar, respetar el descanso de noche y ayudar muestran respeto. Dejar basura o rayar paredes molesta y daña.",
+      "error": "respeto-vecinos"
+    },
+    {
+      "id": "c7", "tipo": "pasos", "nivel": 3,
+      "enunciado": "En la comunidad de Inti, el camino a la escuela tiene muchos huecos y se llena de barro.",
+      "visual": { "tipo": "emojis", "items": ["🏫", "🛣️", "💧"] },
+      "pasos": [
+        {
+          "tipo": "opcion",
+          "enunciado": "¿Qué pueden hacer las familias?",
+          "opciones": [
+            { "texto": "Reunirse, organizarse y arreglar el camino con trabajo comunitario.", "correcta": true },
+            { "texto": "Esperar a que el camino se arregle solo.", "pista": "Los huecos no se tapan solos.", "error": "trabajo-comunitario" },
+            { "texto": "Dejar de ir a la escuela.", "pista": "Las niñas y los niños necesitan ir a la escuela. Busca una solución para el camino.", "error": "trabajo-comunitario" }
+          ],
+          "pista": "Piensa en cómo los vecinos mejoran su comunidad juntos.",
+          "explicacion": "Las familias se reúnen, se organizan y arreglan el camino con trabajo comunitario.",
+          "error": "trabajo-comunitario"
+        },
+        {
+          "tipo": "numero",
+          "enunciado": "Trabajan 8 mamás, 7 papás y 9 jóvenes. ¿Cuántas personas trabajan?",
+          "respuesta": 24,
+          "sufijo": "personas",
+          "erroresComunes": [
+            { "respuesta": 15, "pista": "Sumaste solo a las mamás y los papás. Faltan los jóvenes.", "error": "calculo" },
+            { "respuesta": 23, "pista": "Revisa la suma: 8 + 7 = 15, y 15 + 9 = ...", "error": "calculo" }
+          ],
+          "pista": "Suma los tres grupos: 8 + 7 + 9.",
+          "explicacion": "8 + 7 = 15, y 15 + 9 = 24 personas.",
+          "error": "calculo"
+        }
+      ],
+      "pista": "Primero piensa en la solución; después cuenta a las personas.",
+      "explicacion": "Las familias arreglan el camino con trabajo comunitario: 24 personas trabajan juntas.",
+      "error": "trabajo-comunitario"
+    },
+    {
+      "id": "c8", "tipo": "relacionar", "nivel": 3,
+      "enunciado": "Une cada problema del barrio con una buena solución.",
+      "pares": [
+        ["Hay basura en la calle.", "Usar el basurero y sacar la basura cuando pasa el carro."],
+        ["El grifo de la plaza gotea.", "Avisar a la junta vecinal para que lo arreglen."],
+        ["La plaza no tiene árboles.", "Plantar árboles en un trabajo comunitario."],
+        ["Hay música muy fuerte de noche.", "Pedir con respeto que bajen el volumen."]
+      ],
+      "pista": "Lee cada problema y busca la solución que lo arregla directamente.",
+      "explicacion": "La basura va al basurero, el grifo se arregla avisando a la junta vecinal, los árboles se plantan entre todos y el ruido se resuelve pidiendo con respeto.",
+      "error": "respeto-vecinos"
+    }
+  ],
+  "repaso": {
+    "texto": "En mi barrio o comunidad hay lugares y servicios que todos usamos. Los cuidamos: basura al basurero, agua sin desperdiciar y plantas cuidadas. Los vecinos se organizan y trabajan juntos para mejorar.",
+    "visual": { "tipo": "emojis", "items": ["🏫", "🏥", "🗑️", "🌳", "🤝"], "etiquetas": ["escuela", "centro de salud", "basurero", "plantas", "trabajo juntos"] }
+  },
+  "adulto": {
+    "objetivo": "Reconocer el barrio y la comunidad (urbana y rural), sus lugares y servicios, practicar el cuidado del entorno (basura, agua, plantas) y el respeto entre vecinos, y comprender cómo la organización vecinal (junta vecinal, asamblea comunal) y el trabajo comunitario contribuyen al desarrollo de la comunidad.",
+    "sugerencias": [
+      "Caminen por el barrio o la comunidad y hagan juntos una lista con dibujos de los lugares y servicios que ven (plaza, mercado, centro de salud, cancha, grifo público, postes de luz). Pregunten para qué sirve cada uno.",
+      "En casa, separen la basura en dos bolsas: restos de comida y cáscaras (orgánica) y botellas, papel y latas (reciclable). Averigüen juntos qué días pasa el carro basurero y saquen la basura solo a esa hora.",
+      "Si hay una reunión de la junta vecinal o un trabajo comunitario (limpieza, plantación de árboles), vayan juntos y denle una tarea segura, como regar o juntar papeles con guantes. Después conversen sobre cómo mejoró el lugar."
+    ],
+    "errores": {
+      "servicios-lugares": { "descripcion": "Confunde los lugares y servicios de la comunidad o para qué sirve cada uno.", "sugerencia": "Al pasar por cada lugar (mercado, centro de salud, plaza), pregunten «¿para qué venimos aquí?» y que lo explique con sus palabras." },
+      "cuidado-entorno": { "descripcion": "No distingue acciones que cuidan el entorno de las que lo dañan (quemar basura, desperdiciar agua, dañar plantas).", "sugerencia": "Durante el día, señalen juntos acciones que ven en la calle y pregunten: «¿Esto cuida o daña nuestro barrio? ¿Por qué?»." },
+      "basura": { "descripcion": "Le cuesta separar la basura o manejarla bien (sacarla a destiempo, botarla en la calle).", "sugerencia": "Pónganle la tarea de separar la basura de la cocina en orgánica y reciclable durante una semana." },
+      "trabajo-comunitario": { "descripcion": "No comprende qué es la junta vecinal o el trabajo comunitario, ni por qué sirve trabajar juntos.", "sugerencia": "Cuéntenle de alguna mejora del barrio o la comunidad hecha entre vecinos (una cancha, un canal, un camino) y visiten ese lugar juntos." },
+      "urbano-rural": { "descripcion": "Confunde comunidad urbana (ciudad) y rural (campo), o cree que en uno de los lugares no hay escuelas ni servicios.", "sugerencia": "Miren fotos o recuerden viajes a la ciudad y al campo. Busquen diferencias (edificios, sembradíos) y también lo que tienen en común (escuelas, familias, vecinos que se ayudan)." },
+      "respeto-vecinos": { "descripcion": "Le cuesta reconocer acciones de respeto y buena convivencia con los vecinos.", "sugerencia": "Saluden juntos a los vecinos, respeten los horarios de descanso y ayuden cuando alguien lo necesite; conversen sobre cómo eso mejora la convivencia." },
+      "pictograma": { "descripcion": "Le cuesta armar un pictograma con los datos dados.", "sugerencia": "Registren con dibujos o fichas algo del barrio (por ejemplo, cuántos autos o minibuses pasan) y cuenten juntos cada fila." },
+      "calculo": { "descripcion": "Se equivoca al sumar los datos de un problema de la comunidad.", "sugerencia": "Resuelvan sumas con objetos reales (piedritas, tapas) antes de escribirlas, y revisen juntos el resultado." },
+      "escucha-comprension": { "descripcion": "Le cuesta responder adivinanzas o preguntas que escucha.", "sugerencia": "Jueguen a describir lugares del barrio sin decir su nombre para que los adivine." },
+      "produce-texto": { "descripcion": "Le cuesta escribir una idea completa con mayúscula inicial y punto final.", "sugerencia": "Pidan que primero diga su idea en voz alta y luego la escriba; revisen juntos la mayúscula y el punto." }
+    }
+  }
+}

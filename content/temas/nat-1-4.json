@@ -1,0 +1,454 @@
+{
+  "id": "nat-1-4",
+  "titulo": "Paisajes de Bolivia",
+  "objetivo": "Conozco los paisajes de Bolivia, nombro sus elementos y sé si un paisaje es natural o modificado.",
+  "explicacion": [
+    {
+      "texto": "Un **paisaje** es todo lo que ves al mirar a tu alrededor: la tierra, el agua, las plantas y el cielo. Tiene elementos como montañas, ríos, lagos, llanuras y bosques.",
+      "emoji": "👀",
+      "visual": { "tipo": "emojis", "items": ["🏔️", "🏞️", "🌳"], "etiquetas": ["montaña", "río", "bosque"] }
+    },
+    {
+      "texto": "La montaña es tierra muy alta. El río es agua que corre sin parar. El lago es mucha agua rodeada de tierra. La llanura es tierra plana. El bosque tiene muchos árboles juntos.",
+      "emoji": "🔎"
+    },
+    {
+      "texto": "Bolivia tiene paisajes muy distintos: el altiplano, los valles, los llanos con la Amazonía y el Chaco. En cada uno, el clima, las plantas y los animales son diferentes.",
+      "visual": {
+        "tipo": "tabla",
+        "columnas": ["Paisaje", "¿Cómo es?"],
+        "filas": [
+          ["Altiplano", "alto y frío"],
+          ["Valles", "templado, entre montañas"],
+          ["Llanos y Amazonía", "tierra baja y calurosa, con ríos y selva"],
+          ["Chaco", "caluroso y seco, con plantas espinosas"]
+        ]
+      }
+    },
+    {
+      "texto": "Un paisaje **natural** está como lo formó la naturaleza: un bosque, un río. Un paisaje **modificado** fue cambiado por las personas: una ciudad, una chacra o un camino.",
+      "visual": { "tipo": "emojis", "items": ["🌳", "🏞️", "🏙️", "🛣️"], "etiquetas": ["bosque", "río", "ciudad", "camino"] }
+    }
+  ],
+  "ejemplo": {
+    "instruccion": "Viajemos por Bolivia. Mira cómo es cada paisaje.",
+    "pasos": [
+      {
+        "texto": "El **altiplano** es una llanura alta entre montañas. Hace frío, sobre todo de noche. Allí están Oruro, el lago Titicaca y el salar de Uyuni, una gran llanura de sal. Es el hogar de llamas, alpacas y vicuñas.",
+        "visual": { "tipo": "ilustracion", "id": "paisaje-altiplano" }
+      },
+      {
+        "texto": "Los **valles** están entre montañas, más abajo que el altiplano. El clima es templado: ni muy frío ni muy caluroso. Allí están Cochabamba, Sucre y Tarija, y se cultivan maíz, duraznos y uvas.",
+        "visual": { "tipo": "ilustracion", "id": "paisaje-valle" }
+      },
+      {
+        "texto": "Los **llanos** y la **Amazonía** son tierras bajas y planas, donde están Santa Cruz y Trinidad. Hace calor y hay mucha agua: lagunas, selva y ríos grandes, como el Mamoré. Allí viven el jaguar, la paraba y el bufeo.",
+        "visual": { "tipo": "ilustracion", "id": "paisaje-llanos" }
+      },
+      {
+        "texto": "El **Chaco** es caluroso y pasa gran parte del año seco. Tiene un bosque bajo con plantas espinosas y cactus. Allí viven el tatú y el chancho de monte.",
+        "visual": { "tipo": "ilustracion", "id": "paisaje-chaco" }
+      }
+    ]
+  },
+  "guiada": {
+    "intro": "Ahora lo hacemos juntos, paso a paso.",
+    "pasos": [
+      {
+        "id": "g1", "tipo": "tocar",
+        "enunciado": "Toca los elementos naturales del paisaje.",
+        "apoyo": "Los elementos naturales los formó la naturaleza: montañas, ríos, lagos, llanuras y bosques.",
+        "texto": "Desde la *montaña*, Inti mira un *río*, un *bosque* y un camino.",
+        "pista": "Hay tres elementos que formó la naturaleza. Uno de los lugares lo hicieron las personas.",
+        "explicacion": "La montaña, el río y el bosque son elementos naturales. El camino lo hicieron las personas.",
+        "error": "elementos-paisaje"
+      },
+      {
+        "id": "g2", "tipo": "relacionar",
+        "enunciado": "Une cada paisaje de Bolivia con cómo es.",
+        "apoyo": "Arriba, en las tierras altas, hace frío. Abajo, en las tierras bajas, hace calor. El Chaco es el más seco.",
+        "pares": [
+          ["altiplano", "alto y frío"],
+          ["valles", "templado, entre montañas"],
+          ["llanos y Amazonía", "caluroso, con ríos y selva"],
+          ["Chaco", "caluroso y seco, con espinos"]
+        ],
+        "pista": "Empieza por el altiplano: es el paisaje más alto de todos.",
+        "explicacion": "El altiplano es alto y frío. Los valles son templados. Los llanos y la Amazonía son calurosos, con ríos y selva. El Chaco es caluroso y seco.",
+        "error": "regiones-bolivia"
+      },
+      {
+        "id": "g3", "tipo": "completar",
+        "enunciado": "Completa con la palabra correcta.",
+        "apoyo": "«Natural» viene de naturaleza. «Modificado» quiere decir que algo fue cambiado.",
+        "texto": "Un paisaje [natural] lo formó la naturaleza. Un paisaje [modificado] fue cambiado por las personas.",
+        "banco": ["montaña"],
+        "pista": "Piensa: ¿qué palabra quiere decir «cambiado»? La otra se parece a «naturaleza».",
+        "explicacion": "Un paisaje natural lo formó la naturaleza. Un paisaje modificado fue cambiado por las personas, por ejemplo con casas o chacras.",
+        "error": "natural-modificado"
+      }
+    ]
+  },
+  "practica": [
+    {
+      "id": "p1", "tipo": "memoria", "nivel": 1,
+      "enunciado": "Encuentra las parejas: cada elemento del paisaje con lo que es.",
+      "pares": [
+        ["montaña", "tierra muy alta"],
+        ["río", "agua que corre"],
+        ["lago", "agua rodeada de tierra"],
+        ["llanura", "tierra plana"],
+        ["bosque", "muchos árboles juntos"]
+      ],
+      "pista": "Lee bien cada carta: ¿habla de tierra, de agua o de plantas?",
+      "explicacion": "Montaña: tierra muy alta. Río: agua que corre. Lago: agua rodeada de tierra. Llanura: tierra plana. Bosque: muchos árboles juntos.",
+      "error": "elementos-paisaje"
+    },
+    {
+      "id": "p2", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Toca los elementos del paisaje que son de agua.",
+      "texto": "Mateo cruza el *río* por un puente y llega a un *lago* grande.",
+      "pista": "Hay dos: uno tiene agua que corre y el otro, agua rodeada de tierra.",
+      "explicacion": "El río y el lago son elementos de agua. El puente lo construyeron las personas.",
+      "error": "elementos-paisaje"
+    },
+    {
+      "id": "p3", "tipo": "escribir", "nivel": 1,
+      "enunciado": "Escucha la adivinanza y escribe la respuesta.",
+      "escuchar": "Soy agua que corre sin parar. Bajo de las montañas y cruzo valles y llanos. ¿Qué soy?",
+      "respuestas": ["río", "un río", "el río", "es un río", "es el río"],
+      "pista": "Piensa en el agua del paisaje que siempre se está moviendo.",
+      "explicacion": "Es el **río**: su agua corre sin parar desde las montañas.",
+      "error": "elementos-paisaje"
+    },
+    {
+      "id": "p4", "tipo": "clasificar", "nivel": 1,
+      "enunciado": "¿Lo formó la naturaleza o lo hicieron las personas?",
+      "categorias": [
+        { "id": "natural", "texto": "La naturaleza", "emoji": "🌿" },
+        { "id": "personas", "texto": "Las personas", "emoji": "🏗️" }
+      ],
+      "elementos": [
+        { "texto": "río", "emoji": "🏞️", "categoria": "natural" },
+        { "texto": "casa", "emoji": "🏠", "categoria": "personas" },
+        { "texto": "montaña", "emoji": "🏔️", "categoria": "natural" },
+        { "texto": "puente", "emoji": "🌉", "categoria": "personas" },
+        { "texto": "bosque", "emoji": "🌳", "categoria": "natural" },
+        { "texto": "escuela", "emoji": "🏫", "categoria": "personas" }
+      ],
+      "pista": "Pregúntate con cada uno: ¿esto lo construyó alguien?",
+      "explicacion": "El río, la montaña y el bosque los formó la naturaleza. La casa, el puente y la escuela los hicieron las personas.",
+      "error": "natural-modificado"
+    },
+    {
+      "id": "p5", "tipo": "opcion", "nivel": 1,
+      "enunciado": "Este dibujo muestra los llanos. ¿Cómo es su clima?",
+      "visual": { "tipo": "ilustracion", "id": "paisaje-llanos" },
+      "opciones": [
+        { "texto": "caluroso, con mucha agua", "correcta": true },
+        { "texto": "frío, con heladas", "pista": "Las heladas son del altiplano, que es muy alto. Los llanos son tierras bajas.", "error": "regiones-bolivia" },
+        { "texto": "templado, ni frío ni caluroso", "pista": "Así es el clima de los valles. Los llanos son más bajos.", "error": "regiones-bolivia" }
+      ],
+      "pista": "Los llanos son tierras bajas. ¿En los lugares bajos hace frío o calor?",
+      "explicacion": "En los llanos el clima es caluroso y hay mucha agua: ríos grandes, lagunas y selva.",
+      "error": "regiones-bolivia"
+    },
+    {
+      "id": "p6", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "Une cada paisaje con algo que se cultiva allí.",
+      "pares": [
+        ["altiplano", { "texto": "quinua", "emoji": "🌾" }],
+        ["valles", { "texto": "duraznos", "emoji": "🍑" }],
+        ["llanos", { "texto": "plátano y yuca", "emoji": "🍌" }]
+      ],
+      "pista": "Piensa en el clima de cada paisaje: frío, templado o caluroso. ¿Qué planta aguanta el frío?",
+      "explicacion": "La quinua crece en el altiplano frío, los duraznos en los valles templados, y el plátano y la yuca en los llanos calurosos.",
+      "error": "seres-region"
+    },
+    {
+      "id": "p7", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa con las palabras correctas.",
+      "texto": "El lago Titicaca y el salar de Uyuni están en el [altiplano]. Allí viven [llamas] y vicuñas.",
+      "banco": ["Chaco", "jaguares"],
+      "pista": "Piensa en el paisaje alto y frío de Bolivia, y en los animales que aguantan el frío.",
+      "explicacion": "El lago Titicaca y el salar de Uyuni están en el altiplano, donde viven llamas y vicuñas. Los jaguares viven en tierras calurosas.",
+      "error": "regiones-bolivia"
+    },
+    {
+      "id": "p8", "tipo": "multiple", "nivel": 2,
+      "enunciado": "¿Qué puedes encontrar en los llanos y la Amazonía? Elige todas las respuestas correctas.",
+      "opciones": [
+        { "texto": "ríos grandes", "emoji": "🏞️", "correcta": true },
+        { "texto": "selva con muchos árboles", "emoji": "🌳", "correcta": true },
+        { "texto": "parabas", "emoji": "🦜", "correcta": true },
+        { "texto": "el salar de Uyuni", "pista": "El salar de Uyuni está en el altiplano.", "error": "regiones-bolivia" },
+        { "texto": "vicuñas", "pista": "Las vicuñas viven en el altiplano, donde hace frío.", "error": "seres-region" }
+      ],
+      "pista": "Los llanos y la Amazonía son calurosos y tienen mucha agua. Hay tres respuestas correctas.",
+      "explicacion": "En los llanos y la Amazonía hay ríos grandes, selva y parabas. El salar de Uyuni y las vicuñas están en el altiplano.",
+      "error": "regiones-bolivia"
+    },
+    {
+      "id": "p9", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "¿Dónde vive cada animal: en el altiplano o en los llanos?",
+      "categorias": [
+        { "id": "altiplano", "texto": "Altiplano", "emoji": "🏔️" },
+        { "id": "llanos", "texto": "Llanos y Amazonía", "emoji": "🌴" }
+      ],
+      "elementos": [
+        { "texto": "llama", "emoji": "🦙", "categoria": "altiplano" },
+        { "texto": "bufeo", "emoji": "🐬", "categoria": "llanos" },
+        { "texto": "vicuña", "categoria": "altiplano" },
+        { "texto": "caimán", "emoji": "🐊", "categoria": "llanos" },
+        { "texto": "alpaca", "categoria": "altiplano" },
+        { "texto": "capibara", "categoria": "llanos" },
+        { "texto": "jaguar", "emoji": "🐆", "categoria": "llanos" }
+      ],
+      "pista": "Los animales con lana gruesa aguantan el frío. Los que viven en ríos y selvas calurosas están en los llanos.",
+      "explicacion": "La llama, la vicuña y la alpaca viven en el altiplano. El bufeo, el caimán, la capibara y el jaguar viven en los llanos y la Amazonía.",
+      "error": "seres-region"
+    },
+    {
+      "id": "p10", "tipo": "ordenar", "nivel": 2,
+      "enunciado": "Ordena del lugar más alto al más bajo.",
+      "elementos": ["la cumbre del Illimani", "el altiplano", "un valle", "los llanos"],
+      "pista": "Las cumbres de las montañas nevadas son lo más alto. Los llanos son tierras bajas.",
+      "explicacion": "Primero la cumbre del Illimani, después el altiplano, luego un valle y al final los llanos, que son tierras bajas.",
+      "error": "altura-clima"
+    },
+    {
+      "id": "p11", "tipo": "numero", "nivel": 2,
+      "enunciado": "¿Cuántas de estas cosas hicieron las personas?",
+      "visual": { "tipo": "emojis", "items": ["🏔️", "🏠", "🌳", "🌉", "🏞️", "🌵"], "etiquetas": ["montaña", "casa", "árbol", "puente", "río", "cactus"] },
+      "respuesta": 2,
+      "erroresComunes": [
+        { "respuesta": 4, "pista": "Contaste lo que formó la naturaleza. Cuenta solo lo que construyeron las personas.", "error": "natural-modificado" },
+        { "respuesta": 6, "pista": "Contaste todo. Cuenta solo lo que construyeron las personas.", "error": "natural-modificado" }
+      ],
+      "pista": "Pregúntate con cada dibujo: ¿esto lo construyó alguien?",
+      "explicacion": "Las personas hicieron 2 cosas: la casa y el puente. La montaña, el árbol, el río y el cactus son de la naturaleza.",
+      "error": "natural-modificado"
+    },
+    {
+      "id": "p12", "tipo": "pasos", "nivel": 3,
+      "enunciado": "Arami viaja en bus desde Oruro. Pasa por Cochabamba y llega a Santa Cruz.",
+      "visual": { "tipo": "emojis", "items": ["🏔️", "🚌", "🌴"] },
+      "pasos": [
+        {
+          "tipo": "relacionar",
+          "enunciado": "Une cada ciudad con su paisaje.",
+          "pares": [["Oruro", "altiplano"], ["Cochabamba", "valles"], ["Santa Cruz", "llanos"]],
+          "pista": "Recuerda el viaje por Bolivia: ¿en qué paisaje estaban Oruro, Cochabamba y Santa Cruz?",
+          "explicacion": "Oruro está en el altiplano, Cochabamba en los valles y Santa Cruz en los llanos.",
+          "error": "regiones-bolivia"
+        },
+        {
+          "tipo": "opcion",
+          "enunciado": "En el viaje, el bus baja del altiplano a los llanos. ¿Qué pasa con el clima?",
+          "opciones": [
+            { "texto": "Hace cada vez más calor.", "correcta": true },
+            { "texto": "Hace cada vez más frío.", "pista": "Los lugares altos son fríos. ¿Cómo son los lugares bajos?", "error": "altura-clima" },
+            { "texto": "El clima no cambia.", "pista": "El altiplano y los llanos tienen climas muy distintos.", "error": "altura-clima" }
+          ],
+          "pista": "Recuerda: mientras más alto es un lugar, más frío hace.",
+          "explicacion": "Mientras el bus baja, hace cada vez más calor. Los llanos son tierras bajas y calurosas.",
+          "error": "altura-clima"
+        },
+        {
+          "tipo": "opcion",
+          "enunciado": "Arami llega a Santa Cruz en un día de calor. ¿Qué ropa le conviene?",
+          "opciones": [
+            { "texto": "Ropa fresca, como una polera.", "emoji": "👕", "correcta": true },
+            { "texto": "Chompa gruesa, chullo y guantes.", "pista": "Esa ropa abriga mucho. Sirve para el frío del altiplano.", "error": "altura-clima" }
+          ],
+          "pista": "Piensa en el clima de los llanos en un día de calor.",
+          "explicacion": "En un día de calor en Santa Cruz conviene ropa fresca, como una polera.",
+          "error": "altura-clima"
+        }
+      ],
+      "pista": "Resuelve un paso a la vez. Piensa en la altura de cada lugar.",
+      "explicacion": "Oruro está en el altiplano (frío), Cochabamba en los valles (templado) y Santa Cruz en los llanos (caluroso). Al bajar, hace más calor.",
+      "error": "regiones-bolivia"
+    },
+    {
+      "id": "p13", "tipo": "clasificar", "nivel": 3,
+      "enunciado": "¿Es un paisaje natural o un paisaje modificado por las personas?",
+      "categorias": [
+        { "id": "natural", "texto": "Natural", "emoji": "🌿" },
+        { "id": "modificado", "texto": "Modificado", "emoji": "🏗️" }
+      ],
+      "elementos": [
+        { "texto": "una chacra de maíz", "emoji": "🌽", "categoria": "modificado" },
+        { "texto": "el salar de Uyuni", "categoria": "natural" },
+        { "texto": "terrazas de cultivo en un cerro", "categoria": "modificado" },
+        { "texto": "el lago Titicaca", "categoria": "natural" },
+        { "texto": "una represa de agua", "categoria": "modificado" },
+        { "texto": "el nevado Illimani", "emoji": "🏔️", "categoria": "natural" }
+      ],
+      "pista": "Si las personas sembraron o construyeron algo allí, el paisaje está modificado, aunque tenga plantas o agua.",
+      "explicacion": "La chacra, las terrazas y la represa fueron hechas por las personas: son paisajes modificados. El salar de Uyuni, el lago Titicaca y el Illimani los formó la naturaleza.",
+      "error": "natural-modificado"
+    },
+    {
+      "id": "p14", "tipo": "opcion", "nivel": 3,
+      "enunciado": "El sol brilla fuerte en el altiplano, pero allí hace frío. ¿Por qué?",
+      "opciones": [
+        { "texto": "Porque está muy alto: mientras más alto es un lugar, más frío hace.", "correcta": true },
+        { "texto": "Porque está más lejos del Sol que los llanos.", "pista": "Todos los lugares de Bolivia están casi a la misma distancia del Sol. Busca otra razón.", "error": "altura-clima" },
+        { "texto": "Porque en el altiplano nunca sale el sol.", "pista": "Lee otra vez: el sol brilla fuerte en el altiplano. Busca otra razón.", "error": "altura-clima" }
+      ],
+      "pista": "Compara el altiplano con los llanos: ¿en qué son muy distintos?",
+      "explicacion": "El altiplano es frío porque está muy alto. Mientras más alto es un lugar, más frío es el aire, aunque brille el sol.",
+      "error": "altura-clima"
+    },
+    {
+      "id": "p15", "tipo": "escribir-libre", "nivel": 3,
+      "enunciado": "Escribe una oración sobre un paisaje de Bolivia. Usa un elemento: montaña, río, lago, llanura o bosque.",
+      "guia": ["En el altiplano hay...", "Cerca de mi casa hay un río..."],
+      "requisitos": [
+        { "tipo": "mayuscula-inicial" },
+        { "tipo": "punto-final" },
+        { "tipo": "min-palabras", "valor": 5 },
+        { "tipo": "incluye", "palabras": ["montaña", "río", "lago", "laguna", "llanura", "bosque", "cerro", "selva", "salar", "valle"] }
+      ],
+      "modelo": "En el altiplano hay un lago muy grande.",
+      "pista": "Piensa en un paisaje que conoces o que viste en una foto. ¿Qué elementos tiene?",
+      "explicacion": "Por ejemplo: «En el altiplano hay un lago muy grande». Empieza con mayúscula, nombra un elemento del paisaje y termina con punto.",
+      "error": "produce-oracion"
+    }
+  ],
+  "comprobacion": [
+    {
+      "id": "c1", "tipo": "opcion", "nivel": 1,
+      "enunciado": "¿Cuál de estos es un paisaje modificado por las personas?",
+      "opciones": [
+        { "texto": "una ciudad con calles y casas", "emoji": "🏙️", "correcta": true },
+        { "texto": "un bosque en la Amazonía", "emoji": "🌳", "pista": "Ese bosque lo formó la naturaleza. Busca un lugar que construyeron las personas.", "error": "natural-modificado" },
+        { "texto": "un lago entre montañas", "emoji": "🏔️", "pista": "El lago y las montañas los formó la naturaleza. Busca un lugar que construyeron las personas.", "error": "natural-modificado" }
+      ],
+      "pista": "Busca el lugar donde las personas construyeron cosas.",
+      "explicacion": "La ciudad es un paisaje modificado: las personas construyeron calles y casas.",
+      "error": "natural-modificado"
+    },
+    {
+      "id": "c2", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Toca los elementos del paisaje que son de tierra.",
+      "texto": "Desde la *montaña* se ve una *llanura* verde y un lago.",
+      "pista": "Hay dos: uno es muy alto y el otro es plano.",
+      "explicacion": "La montaña (tierra muy alta) y la llanura (tierra plana) son de tierra. El lago es de agua.",
+      "error": "elementos-paisaje"
+    },
+    {
+      "id": "c3", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa con las palabras correctas.",
+      "texto": "En los [valles] el clima es templado y se cultivan [duraznos].",
+      "banco": ["llanos", "vicuñas"],
+      "pista": "Piensa en el paisaje que está entre montañas, ni muy frío ni muy caluroso.",
+      "explicacion": "En los valles el clima es templado y se cultivan duraznos. Los llanos son calurosos, y las vicuñas son animales, no se cultivan.",
+      "error": "regiones-bolivia"
+    },
+    {
+      "id": "c4", "tipo": "multiple", "nivel": 2,
+      "enunciado": "¿Qué hay en el altiplano? Elige todas las respuestas correctas.",
+      "opciones": [
+        { "texto": "el lago Titicaca", "correcta": true },
+        { "texto": "el salar de Uyuni", "correcta": true },
+        { "texto": "llamas y vicuñas", "emoji": "🦙", "correcta": true },
+        { "texto": "selva con parabas", "emoji": "🦜", "pista": "La selva está en los llanos y la Amazonía, donde hace calor.", "error": "regiones-bolivia" },
+        { "texto": "bosque seco con espinos", "pista": "Ese bosque es del Chaco, que es caluroso y seco.", "error": "regiones-bolivia" }
+      ],
+      "pista": "El altiplano es alto y frío. Hay tres respuestas correctas.",
+      "explicacion": "En el altiplano están el lago Titicaca y el salar de Uyuni, y viven llamas y vicuñas. La selva es de los llanos y el bosque con espinos, del Chaco.",
+      "error": "regiones-bolivia"
+    },
+    {
+      "id": "c5", "tipo": "ordenar", "nivel": 2,
+      "enunciado": "Ordena los paisajes del más frío al más caluroso.",
+      "elementos": ["altiplano", "valles", "llanos"],
+      "pista": "El paisaje más alto es el más frío.",
+      "explicacion": "El altiplano es el más frío, los valles son templados y los llanos son los más calurosos.",
+      "error": "altura-clima"
+    },
+    {
+      "id": "c6", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha y escribe qué paisaje es.",
+      "escuchar": "Es una llanura alta entre montañas. Hace frío, sobre todo de noche, y allí viven llamas, alpacas y vicuñas. ¿Qué paisaje es?",
+      "respuestas": ["altiplano", "el altiplano", "es el altiplano"],
+      "pista": "Su nombre tiene dos partes: «alto» y «plano».",
+      "explicacion": "Es el **altiplano**: una llanura muy alta, entre montañas, donde hace frío.",
+      "error": "regiones-bolivia"
+    },
+    {
+      "id": "c7", "tipo": "relacionar", "nivel": 3,
+      "enunciado": "Une cada elemento del paisaje con un ejemplo de Bolivia.",
+      "pares": [
+        ["montaña", "Illimani"],
+        ["lago", "Titicaca"],
+        ["río", "Mamoré"],
+        ["salar", "Uyuni"]
+      ],
+      "pista": "Recuerda lo que viste en el viaje por Bolivia: un nevado, un lago, un río de los llanos y una llanura de sal.",
+      "explicacion": "El Illimani es una montaña, el Titicaca es un lago, el Mamoré es un río y Uyuni es un salar.",
+      "error": "elementos-paisaje"
+    },
+    {
+      "id": "c8", "tipo": "opcion", "nivel": 3,
+      "enunciado": "Kusi dice: «Un campo de quinua es un paisaje natural, porque tiene plantas». ¿Tiene razón?",
+      "opciones": [
+        { "texto": "No. Es un paisaje modificado, porque las personas sembraron la quinua.", "correcta": true },
+        { "texto": "Sí. Todo lugar con plantas es un paisaje natural.", "pista": "¿Quién sembró la quinua en ese campo?", "error": "natural-modificado" },
+        { "texto": "Sí. Los campos de quinua crecen solos, sin ayuda.", "pista": "Piensa en el trabajo de las familias: preparan la tierra y siembran.", "error": "natural-modificado" }
+      ],
+      "pista": "Pregúntate: ¿las personas cambiaron ese lugar?",
+      "explicacion": "Kusi no tiene razón. Las familias prepararon la tierra y sembraron la quinua, así que el campo es un paisaje modificado.",
+      "error": "natural-modificado"
+    }
+  ],
+  "repaso": {
+    "texto": "Recuerda: el altiplano es alto y frío; los valles, templados; los llanos y la Amazonía, calurosos y con mucha agua; el Chaco, caluroso y seco. Si las personas lo cambiaron, el paisaje es modificado.",
+    "visual": {
+      "tipo": "tabla",
+      "columnas": ["Paisaje", "¿Cómo es?"],
+      "filas": [
+        ["Altiplano", "alto y frío"],
+        ["Valles", "templado, entre montañas"],
+        ["Llanos y Amazonía", "tierra baja y calurosa, con ríos y selva"],
+        ["Chaco", "caluroso y seco, con plantas espinosas"]
+      ]
+    }
+  },
+  "adulto": {
+    "objetivo": "Reconocer los elementos del paisaje (montaña, río, lago, llanura, bosque), describir los grandes paisajes de Bolivia (altiplano, valles, llanos y Amazonía, Chaco) con su clima, sus plantas y sus animales, y distinguir un paisaje natural de uno modificado por las personas. Idea clave: mientras más alto es un lugar, más frío hace.",
+    "sugerencias": [
+      "Miren juntos por la ventana o salgan a caminar. Nombren los elementos del paisaje que ven (cerros, río, árboles) y hagan dos listas: lo que formó la naturaleza y lo que hicieron las personas (casas, calles, puentes, chacras).",
+      "En la feria o el mercado, busquen productos de distintos paisajes: quinua y chuño del altiplano, duraznos o uvas de los valles, plátano y yuca de los llanos. Pregunten a la casera de dónde vienen.",
+      "Armen una maqueta en una bandeja con tierra, piedras y ramitas: una montaña, un río (un surco con un poco de agua), un lago (una tapa con agua) y un bosque. Después agreguen una casita o un camino y conversen: ¿el paisaje sigue siendo natural o ya está modificado?"
+    ],
+    "errores": {
+      "elementos-paisaje": {
+        "descripcion": "Confunde los elementos del paisaje (por ejemplo, río y lago, o montaña y llanura).",
+        "sugerencia": "En una bandeja con tierra, hagan correr agua por un surco (río) y llenen un hoyo (lago). Comparen: ¿cuál se mueve y cuál se queda?"
+      },
+      "regiones-bolivia": {
+        "descripcion": "Confunde cómo son el altiplano, los valles, los llanos y el Chaco.",
+        "sugerencia": "Miren fotos de cada paisaje (en libros, calendarios o internet) y descríbanlas juntos: ¿hace frío o calor?, ¿hay mucha agua o está seco?, ¿es alto o bajo?"
+      },
+      "seres-region": {
+        "descripcion": "Ubica mal a los animales, las plantas o los cultivos en su paisaje.",
+        "sugerencia": "Jueguen a «¿Dónde vivo?»: una persona nombra un animal o un alimento de la feria y la otra dice si es del altiplano, de los valles o de los llanos."
+      },
+      "natural-modificado": {
+        "descripcion": "Confunde un paisaje natural con uno modificado (por ejemplo, cree que un campo sembrado es natural porque tiene plantas).",
+        "sugerencia": "Ante cada lugar, pregunten: «¿Alguien construyó o sembró algo aquí?». Si la respuesta es sí, el paisaje está modificado."
+      },
+      "altura-clima": {
+        "descripcion": "No relaciona la altura de un lugar con su clima (mientras más alto, más frío) o no ordena los lugares por su altura.",
+        "sugerencia": "Recuerden juntos un viaje entre lugares altos y bajos y la ropa que usaron. También pueden mirar un nevado: la nieve se queda en las cumbres, donde hace más frío."
+      },
+      "produce-oracion": {
+        "descripcion": "Le cuesta escribir una oración completa sobre un paisaje.",
+        "sugerencia": "Primero digan la oración en voz alta, luego escríbanla juntos y revisen la mayúscula inicial y el punto final."
+      }
+    }
+  }
+}

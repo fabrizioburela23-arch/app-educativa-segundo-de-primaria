@@ -1,0 +1,406 @@
+{
+  "id": "com-1-6",
+  "titulo": "La oración y las mayúsculas",
+  "objetivo": "Escribo oraciones que dicen una idea completa, con mayúscula al inicio y punto al final.",
+  "lecturas": [
+    {
+      "id": "sabado-nayra",
+      "titulo": "El sábado de Nayra",
+      "genero": "relato",
+      "emoji": "🧺",
+      "parrafos": [
+        "Nayra vive en Oruro. El sábado fue a la feria con su abuelo Juan. Compraron papas, habas y queso. Después tomaron api con pastel."
+      ]
+    }
+  ],
+  "explicacion": [
+    {
+      "texto": "Una **oración** es un grupo de palabras que dice una **idea completa**. «El gato duerme.» es una oración. «el gato de» no es una oración: le falta algo.",
+      "emoji": "💬",
+      "visual": { "tipo": "emojis", "items": ["🐈", "💤"], "etiquetas": ["El gato", "duerme."] }
+    },
+    {
+      "texto": "En una oración decimos **de quién** se habla y **qué se dice** de él o de ella. En «La llama come pasto.», hablamos de la llama y decimos que come pasto.",
+      "visual": {
+        "tipo": "tabla",
+        "columnas": ["¿De quién se habla?", "¿Qué se dice?"],
+        "filas": [["La llama", "come pasto."], ["Wara", "canta en la escuela."]]
+      }
+    },
+    {
+      "texto": "Toda oración empieza con **mayúscula** y termina con **punto**. Mira: «El cóndor vuela alto.» La primera letra es mayúscula y al final hay un punto.",
+      "emoji": "✍️",
+      "visual": { "tipo": "emoji", "valor": "🦅", "etiqueta": "El cóndor vuela alto." }
+    },
+    {
+      "texto": "También va mayúscula **después de un punto** y en los **nombres propios**. Mira: «Mi prima Ana vive en Sucre. Ella tiene un gato.»",
+      "visual": {
+        "tipo": "tabla",
+        "columnas": ["Palabra", "¿Por qué va con mayúscula?"],
+        "filas": [
+          ["Mi", "empieza la oración"],
+          ["Ana", "es un nombre propio"],
+          ["Sucre", "es un nombre propio"],
+          ["Ella", "va después de un punto"]
+        ]
+      }
+    }
+  ],
+  "ejemplo": {
+    "instruccion": "Mira cómo armamos una oración con palabras sueltas.",
+    "pasos": [
+      {
+        "texto": "Tenemos tres palabras sueltas: pan, Inti, come. Así, solas, no dicen una idea completa.",
+        "visual": { "tipo": "emojis", "items": ["🍞", "👦", "😋"], "etiquetas": ["pan", "Inti", "come"] }
+      },
+      {
+        "texto": "¿De quién hablamos? De **Inti**. ¿Qué se dice de él? Que **come pan**.",
+        "visual": { "tipo": "tabla", "columnas": ["¿De quién se habla?", "¿Qué se dice?"], "filas": [["Inti", "come pan"]] }
+      },
+      {
+        "texto": "Ordenamos las palabras: «Inti come pan.» Empieza con mayúscula y termina con punto. ¡Ya es una oración!",
+        "visual": { "tipo": "emojis", "items": ["👦", "😋", "🍞"], "etiquetas": ["Inti", "come", "pan."] }
+      },
+      {
+        "texto": "Si escribimos otra oración, después del punto va mayúscula: «Inti come pan. **L**uego toma api.»",
+        "visual": { "tipo": "emojis", "items": ["🍞", "☕"], "etiquetas": ["Inti come pan.", "Luego toma api."] }
+      }
+    ]
+  },
+  "guiada": {
+    "intro": "Ahora lo hacemos juntos.",
+    "pasos": [
+      {
+        "id": "g1", "tipo": "opcion",
+        "enunciado": "¿Cuál de estas dice una idea completa?",
+        "apoyo": "Una idea completa dice de quién se habla y qué se dice de él o de ella.",
+        "opciones": [
+          { "texto": "la paraba vuela alto", "correcta": true },
+          { "texto": "la paraba de", "pista": "Sabemos de quién se habla, pero no qué se dice de la paraba.", "error": "no-reconoce-oracion" },
+          { "texto": "vuela alto sobre", "pista": "No sabemos de quién se habla, y la idea queda cortada.", "error": "no-reconoce-oracion" }
+        ],
+        "columnas": 1,
+        "pista": "Busca la que dice quién y qué hace.",
+        "explicacion": "«la paraba vuela alto» dice de quién se habla (la paraba) y qué se dice (vuela alto). Con mayúscula y punto es una oración: «La paraba vuela alto.»",
+        "error": "no-reconoce-oracion"
+      },
+      {
+        "id": "g2", "tipo": "ordenar",
+        "enunciado": "Ordena las palabras para formar la oración.",
+        "apoyo": "Empieza con la palabra que tiene mayúscula y termina con la que tiene punto.",
+        "elementos": ["Wara", "toma", "api", "caliente."],
+        "unir": " ",
+        "pista": "¿De quién se habla? Esa palabra va primero.",
+        "explicacion": "«Wara toma api caliente.» Hablamos de Wara y decimos que toma api caliente.",
+        "error": "orden-oracion"
+      },
+      {
+        "id": "g3", "tipo": "tocar",
+        "enunciado": "Alguien olvidó las mayúsculas. Toca las palabras que deben llevar mayúscula.",
+        "apoyo": "Revisa tres lugares: el inicio, la palabra que va después del punto y los nombres propios.",
+        "texto": "*la* llama de *kusi* es blanca. *come* pasto en el cerro.",
+        "pista": "Hay tres: una empieza el texto, otra es un nombre y otra va después del punto.",
+        "explicacion": "«La» empieza la oración, «Kusi» es un nombre propio y «Come» va después del punto: «La llama de Kusi es blanca. Come pasto en el cerro.»",
+        "error": "mayuscula-despues-punto"
+      }
+    ]
+  },
+  "practica": [
+    {
+      "id": "p1", "tipo": "clasificar", "nivel": 1,
+      "enunciado": "¿Dice una idea completa o le falta algo?",
+      "categorias": [
+        { "id": "completa", "texto": "Idea completa", "emoji": "✅" },
+        { "id": "falta", "texto": "Le falta algo", "emoji": "🧩" }
+      ],
+      "elementos": [
+        { "texto": "el sol brilla", "categoria": "completa" },
+        { "texto": "en la casa", "categoria": "falta" },
+        { "texto": "mi hermana canta", "categoria": "completa" },
+        { "texto": "el perro grande", "categoria": "falta" },
+        { "texto": "el perro ladra", "categoria": "completa" },
+        { "texto": "y después", "categoria": "falta" }
+      ],
+      "pista": "Pregúntate: ¿dice de quién se habla y qué se dice de él o de ella?",
+      "explicacion": "«el sol brilla», «mi hermana canta» y «el perro ladra» dicen una idea completa. «el perro grande» dice cómo es el perro, pero no qué hace; «en la casa» y «y después» están cortadas.",
+      "error": "no-reconoce-oracion"
+    },
+    {
+      "id": "p2", "tipo": "ordenar", "nivel": 1,
+      "enunciado": "Ordena las palabras para formar la oración.",
+      "elementos": ["Mi", "abuelo", "teje", "una", "chompa."],
+      "unir": " ",
+      "pista": "La palabra con mayúscula va primero y la que tiene punto va al final.",
+      "explicacion": "«Mi abuelo teje una chompa.» Hablamos del abuelo y decimos que teje una chompa.",
+      "error": "orden-oracion"
+    },
+    {
+      "id": "p3", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Alguien olvidó las mayúsculas. Toca las palabras que deben llevar mayúscula.",
+      "texto": "*el* tren llega a *oruro*.",
+      "pista": "Mira cómo empieza la oración y busca el nombre de una ciudad.",
+      "explicacion": "«El» empieza la oración y «Oruro» es el nombre de una ciudad: «El tren llega a Oruro.»",
+      "error": "mayuscula-inicio"
+    },
+    {
+      "id": "p4", "tipo": "escribir", "nivel": 1,
+      "enunciado": "Escucha y escribe la oración. Empieza con mayúscula y termina con punto.",
+      "escuchar": "Ana come pan.",
+      "respuestas": ["Ana come pan."],
+      "mayusculas": "estricto",
+      "pista": "Son tres palabras. ¿Pusiste la mayúscula al inicio y el punto al final?",
+      "explicacion": "Se escribe «Ana come pan.»: mayúscula al inicio (Ana también es un nombre propio) y punto al final.",
+      "error": "dictado-oracion"
+    },
+    {
+      "id": "p5", "tipo": "completar", "nivel": 2,
+      "enunciado": "Elige mayúscula o minúscula para cada espacio.",
+      "texto": "[H]oy vamos a [P]otosí. [L]a abuela nos espera.",
+      "banco": ["h", "p", "l"],
+      "pista": "Revisa: ¿empieza una oración? ¿Es un nombre propio? ¿Va después de un punto?",
+      "explicacion": "«Hoy» empieza la oración, «Potosí» es el nombre de una ciudad y «La» va después del punto. Las tres van con mayúscula.",
+      "error": "mayuscula-despues-punto"
+    },
+    {
+      "id": "p6", "tipo": "tocar", "nivel": 2,
+      "enunciado": "Alguien olvidó las mayúsculas. Toca las palabras que deben llevar mayúscula.",
+      "texto": "*mi* tía se llama *ana*. *ella* vive en *cobija*.",
+      "pista": "Hay cuatro: el inicio, un nombre de persona, la palabra después del punto y un nombre de ciudad.",
+      "explicacion": "«Mi tía se llama Ana. Ella vive en Cobija.» Mi (inicio), Ana (nombre propio), Ella (después del punto) y Cobija (nombre propio).",
+      "error": "mayuscula-despues-punto"
+    },
+    {
+      "id": "p7", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "Une de quién se habla con lo que se dice, para formar oraciones.",
+      "pares": [
+        ["El bufeo", "nada en el río."],
+        ["La vicuña", "come pasto en el altiplano."],
+        ["La paraba", "tiene plumas de muchos colores."],
+        ["El cóndor", "tiene plumas negras y un collar blanco."]
+      ],
+      "pista": "Piensa en cada animal: ¿vive en el agua? ¿Tiene plumas? ¿De qué color son?",
+      "explicacion": "El bufeo nada en el río. La vicuña come pasto en el altiplano. La paraba tiene plumas de muchos colores. El cóndor tiene plumas negras y un collar blanco.",
+      "error": "quien-y-que"
+    },
+    {
+      "id": "p8", "tipo": "escribir-libre", "nivel": 2,
+      "enunciado": "Escribe una oración sobre alguien de tu familia.",
+      "guia": ["Mi abuela...", "Mi hermano..."],
+      "requisitos": [
+        { "tipo": "mayuscula-inicial" },
+        { "tipo": "punto-final" },
+        { "tipo": "min-palabras", "valor": 4 }
+      ],
+      "modelo": "Mi papá prepara sopa de maní.",
+      "pista": "Primero di de quién hablas. Después cuenta qué hace o cómo es.",
+      "explicacion": "Por ejemplo: «Mi papá prepara sopa de maní.» Empieza con mayúscula, termina con punto y dice una idea completa.",
+      "error": "produce-oracion"
+    },
+    {
+      "id": "p9", "tipo": "opcion", "nivel": 2,
+      "enunciado": "Lee: «La abuela Rosa vende quinua en la feria.» ¿De quién se habla?",
+      "opciones": [
+        { "texto": "de la abuela Rosa", "correcta": true },
+        { "texto": "de la quinua", "pista": "La quinua es lo que se vende. ¿Quién la vende?", "error": "quien-y-que" },
+        { "texto": "de la feria", "pista": "La feria es el lugar. ¿Quién está en la feria?", "error": "quien-y-que" }
+      ],
+      "columnas": 1,
+      "pista": "Pregúntate: ¿quién vende quinua?",
+      "explicacion": "Se habla de la abuela Rosa. Lo que se dice de ella es que vende quinua en la feria.",
+      "error": "quien-y-que"
+    },
+    {
+      "id": "p10", "tipo": "numero", "nivel": 2,
+      "enunciado": "Lee el texto. ¿Cuántas oraciones tiene?",
+      "lectura": "sabado-nayra",
+      "respuesta": 4,
+      "erroresComunes": [
+        { "respuesta": 1, "pista": "El texto es un solo párrafo, pero tiene varias oraciones. Cuenta los puntos.", "error": "cuenta-oraciones" },
+        { "respuesta": 5, "pista": "El título no es una oración del texto. Cuenta solo las que terminan con punto.", "error": "cuenta-oraciones" }
+      ],
+      "pista": "Cada oración termina con un punto. Cuenta los puntos.",
+      "explicacion": "El texto tiene 4 oraciones, porque tiene 4 puntos. Cada una empieza con mayúscula.",
+      "error": "cuenta-oraciones"
+    },
+    {
+      "id": "p11", "tipo": "escribir", "nivel": 3,
+      "enunciado": "Escribe bien esta oración, con mayúsculas y punto: nayra vive en oruro",
+      "respuestas": ["Nayra vive en Oruro."],
+      "mayusculas": "estricto",
+      "pista": "Hay dos nombres propios. Uno de ellos también empieza la oración. No olvides el punto.",
+      "explicacion": "Se escribe «Nayra vive en Oruro.»: Nayra y Oruro son nombres propios, y la oración termina con punto.",
+      "error": "corrige-oracion"
+    },
+    {
+      "id": "p12", "tipo": "ordenar", "nivel": 3,
+      "enunciado": "Ordena las palabras para formar la oración.",
+      "elementos": ["Las", "parabas", "viven", "en", "los", "bosques", "del", "Beni."],
+      "unir": " ",
+      "pista": "Primero di de quién se habla. Después, qué hacen y dónde.",
+      "explicacion": "«Las parabas viven en los bosques del Beni.» Hablamos de las parabas y decimos dónde viven.",
+      "error": "orden-oracion"
+    },
+    {
+      "id": "p13", "tipo": "escribir-libre", "nivel": 3,
+      "enunciado": "Escribe dos oraciones sobre un lugar de Bolivia que conozcas o que te guste.",
+      "guia": ["El lago Titicaca es...", "En Santa Cruz hay..."],
+      "requisitos": [
+        { "tipo": "mayuscula-inicial" },
+        { "tipo": "punto-final" },
+        { "tipo": "min-oraciones", "valor": 2 },
+        { "tipo": "min-palabras", "valor": 8 }
+      ],
+      "modelo": "El lago Titicaca es muy grande. En sus orillas crecen las totoras.",
+      "pista": "Escribe una oración, pon punto y empieza la segunda con mayúscula.",
+      "explicacion": "Por ejemplo: «El lago Titicaca es muy grande. En sus orillas crecen las totoras.» Son dos oraciones: cada una empieza con mayúscula y termina con punto.",
+      "error": "produce-oracion"
+    },
+    {
+      "id": "p14", "tipo": "clasificar", "nivel": 3,
+      "enunciado": "Lee el texto. ¿Por qué llevan mayúscula estas palabras?",
+      "lectura": "sabado-nayra",
+      "categorias": [
+        { "id": "inicio", "texto": "Empieza una oración", "emoji": "▶️" },
+        { "id": "propio", "texto": "Es un nombre propio", "emoji": "🏷️" }
+      ],
+      "elementos": [
+        { "texto": "Oruro", "categoria": "propio" },
+        { "texto": "El", "categoria": "inicio" },
+        { "texto": "Juan", "categoria": "propio" },
+        { "texto": "Compraron", "categoria": "inicio" },
+        { "texto": "Después", "categoria": "inicio" }
+      ],
+      "pista": "Busca cada palabra en el texto. ¿Va después de un punto o es el nombre de alguien o de un lugar?",
+      "explicacion": "«El», «Compraron» y «Después» empiezan una oración (van después de un punto). «Oruro» y «Juan» son nombres propios.",
+      "error": "motivo-mayuscula"
+    },
+    {
+      "id": "p15", "tipo": "escribir", "nivel": 3,
+      "enunciado": "Escucha y escribe. Son dos oraciones: cuida las mayúsculas y los puntos.",
+      "escuchar": "Mateo es de Tarija. Le gusta nadar en el río.",
+      "respuestas": ["Mateo es de Tarija. Le gusta nadar en el río."],
+      "mayusculas": "estricto",
+      "pista": "Revisa: mayúscula al inicio, en el nombre de la ciudad y después del primer punto.",
+      "explicacion": "Se escribe «Mateo es de Tarija. Le gusta nadar en el río.» Mateo y Tarija son nombres propios, y «Le» va después del punto.",
+      "error": "dictado-oracion"
+    }
+  ],
+  "comprobacion": [
+    {
+      "id": "c1", "tipo": "ordenar", "nivel": 1,
+      "enunciado": "Ordena las palabras para formar la oración.",
+      "elementos": ["El", "gato", "toma", "leche."],
+      "unir": " ",
+      "pista": "La palabra con mayúscula va primero y la que tiene punto va al final.",
+      "explicacion": "«El gato toma leche.» Hablamos del gato y decimos que toma leche.",
+      "error": "orden-oracion"
+    },
+    {
+      "id": "c2", "tipo": "multiple", "nivel": 1,
+      "enunciado": "Elige todas las que dicen una idea completa.",
+      "opciones": [
+        { "texto": "el río suena", "correcta": true },
+        { "texto": "las vicuñas corren", "correcta": true },
+        { "texto": "la lluvia moja el patio", "correcta": true },
+        { "texto": "la mesa de", "pista": "Se nombra la mesa, pero no se dice nada de ella.", "error": "no-reconoce-oracion" },
+        { "texto": "con mi tío", "pista": "No sabemos de quién se habla ni qué pasa.", "error": "no-reconoce-oracion" }
+      ],
+      "pista": "Una idea completa dice de quién se habla y qué se dice de él o de ella.",
+      "explicacion": "«el río suena», «las vicuñas corren» y «la lluvia moja el patio» son ideas completas. Con mayúscula y punto son oraciones: «El río suena.»",
+      "error": "no-reconoce-oracion"
+    },
+    {
+      "id": "c3", "tipo": "opcion", "nivel": 2,
+      "enunciado": "¿Qué oración está bien escrita?",
+      "opciones": [
+        { "texto": "Rosa vive en Sucre.", "correcta": true },
+        { "texto": "rosa vive en Sucre.", "pista": "Mira la primera letra de la oración.", "error": "mayuscula-inicio" },
+        { "texto": "Rosa vive en sucre.", "pista": "Sucre es el nombre de una ciudad.", "error": "mayuscula-nombre-propio" },
+        { "texto": "Rosa vive en Sucre", "pista": "Mira el final de la oración.", "error": "olvida-punto" }
+      ],
+      "columnas": 1,
+      "pista": "Revisa tres cosas: la mayúscula al inicio, los nombres propios y el punto final.",
+      "explicacion": "«Rosa vive en Sucre.» está bien: Rosa y Sucre son nombres propios con mayúscula, y al final hay punto.",
+      "error": "mayuscula-nombre-propio"
+    },
+    {
+      "id": "c4", "tipo": "completar", "nivel": 2,
+      "enunciado": "Elige mayúscula o minúscula para cada espacio.",
+      "texto": "[A]yer [K]usi fue al lago [T]iticaca. [V]io muchas totoras.",
+      "banco": ["a", "k", "t", "v"],
+      "pista": "Revisa: el inicio, los nombres propios y la palabra después del punto.",
+      "explicacion": "«Ayer» empieza la oración, «Kusi» y «Titicaca» son nombres propios y «Vio» va después del punto. Todas van con mayúscula.",
+      "error": "mayuscula-despues-punto"
+    },
+    {
+      "id": "c5", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha y escribe la oración. Empieza con mayúscula y termina con punto.",
+      "escuchar": "Inti juega con su perro.",
+      "respuestas": ["Inti juega con su perro."],
+      "mayusculas": "estricto",
+      "pista": "Revisa la mayúscula del inicio y el punto final.",
+      "explicacion": "Se escribe «Inti juega con su perro.»: mayúscula al inicio (Inti también es un nombre propio) y punto al final.",
+      "error": "dictado-oracion"
+    },
+    {
+      "id": "c6", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "Une de quién se habla con lo que se dice, para formar oraciones.",
+      "pares": [
+        ["El tren", "corre sobre los rieles."],
+        ["La lluvia", "moja las calles."],
+        ["El panadero", "hornea marraquetas."],
+        ["La gallina", "pone huevos."]
+      ],
+      "pista": "Lee cada oración completa y pregúntate si tiene sentido.",
+      "explicacion": "El tren corre sobre los rieles. La lluvia moja las calles. El panadero hornea marraquetas. La gallina pone huevos.",
+      "error": "quien-y-que"
+    },
+    {
+      "id": "c7", "tipo": "escribir", "nivel": 3,
+      "enunciado": "Escribe bien esta oración, con mayúsculas y punto: el cóndor vive en los andes",
+      "respuestas": ["El cóndor vive en los Andes."],
+      "mayusculas": "estricto",
+      "pista": "Revisa la primera palabra y el nombre de las montañas. No olvides el punto.",
+      "explicacion": "Se escribe «El cóndor vive en los Andes.»: «El» empieza la oración, «Andes» es un nombre propio y al final va punto.",
+      "error": "corrige-oracion"
+    },
+    {
+      "id": "c8", "tipo": "tocar", "nivel": 3,
+      "enunciado": "Alguien olvidó las mayúsculas. Toca las palabras que deben llevar mayúscula.",
+      "texto": "*el* sábado *luis* fue a *uyuni*. *allí* vio el salar con su prima *rosa*.",
+      "pista": "Hay cinco: el inicio, la palabra después del punto y tres nombres propios.",
+      "explicacion": "«El sábado Luis fue a Uyuni. Allí vio el salar con su prima Rosa.» Los días de la semana, como «sábado», van con minúscula.",
+      "error": "mayuscula-nombre-propio"
+    }
+  ],
+  "repaso": {
+    "texto": "Una oración dice una idea completa: de quién se habla y qué se dice. Empieza con mayúscula y termina con punto. También va mayúscula después del punto y en los nombres propios.",
+    "visual": {
+      "tipo": "tabla",
+      "columnas": ["¿De quién se habla?", "¿Qué se dice?"],
+      "filas": [["Kusi", "juega en el patio."]]
+    }
+  },
+  "adulto": {
+    "objetivo": "Reconocer la oración como un grupo de palabras con sentido completo (de quién se habla y qué se dice: más adelante, sujeto y predicado), ordenar palabras para formarla y usar la mayúscula al inicio, después del punto y en los nombres propios.",
+    "sugerencias": [
+      "Escriban oraciones cortas en tiras de papel (Mi abuelo teje una chompa.), córtenlas por palabras y pidan que las ordene. Revisen juntos la mayúscula del inicio y el punto final.",
+      "Al caminar por la calle o en el mercado, lean carteles, etiquetas y nombres de tiendas. Busquen palabras con mayúscula y pregunten: ¿empieza una oración o es un nombre propio?",
+      "Jueguen a «oraciones incompletas»: digan el comienzo (La llama...) y que el niño o la niña lo complete. Después escriban juntos dos oraciones sobre algo que hicieron en el día."
+    ],
+    "errores": {
+      "no-reconoce-oracion": { "descripcion": "No distingue una idea completa de un grupo de palabras cortado (en la casa, el perro grande).", "sugerencia": "Pregunten siempre: «¿de quién se habla?» y «¿qué se dice?». Si falta una respuesta, la idea está incompleta." },
+      "orden-oracion": { "descripcion": "Le cuesta ordenar palabras para formar una oración.", "sugerencia": "Usen tiras de papel con palabras sueltas. Pidan que busque primero de quién se habla y que deje al final la palabra con punto." },
+      "quien-y-que": { "descripcion": "Confunde de quién se habla con lo que se dice en la oración.", "sugerencia": "Lean oraciones sencillas y túrnense para subrayar con un color de quién se habla y con otro lo que se dice." },
+      "mayuscula-inicio": { "descripcion": "Olvida la mayúscula al empezar una oración.", "sugerencia": "Antes de escribir, pidan que diga en voz alta: «empiezo con mayúscula». Al revisar, que marque con un círculo la primera letra." },
+      "mayuscula-despues-punto": { "descripcion": "Después de un punto sigue escribiendo con minúscula.", "sugerencia": "Revisen juntos un texto corto: cada vez que encuentre un punto, que mire si la palabra siguiente empieza con mayúscula." },
+      "mayuscula-nombre-propio": { "descripcion": "Escribe con minúscula nombres de personas, ciudades o lugares.", "sugerencia": "Hagan una lista con los nombres de la familia, su ciudad y lugares que conocen, y escríbanlos con mayúscula." },
+      "olvida-punto": { "descripcion": "Olvida poner el punto al final de la oración.", "sugerencia": "Al terminar cada oración, pidan que «cierre la puerta» con un punto y que lo señale con el dedo." },
+      "motivo-mayuscula": { "descripcion": "No sabe explicar por qué una palabra lleva mayúscula.", "sugerencia": "En un cuento o periódico, busquen palabras con mayúscula y clasifíquenlas: ¿empieza una oración o es un nombre propio?" },
+      "cuenta-oraciones": { "descripcion": "Le cuesta saber cuántas oraciones hay en un texto.", "sugerencia": "Lean un párrafo corto y den una palmada en cada punto. Cada palmada es una oración." },
+      "dictado-oracion": { "descripcion": "Al escribir una oración dictada, olvida la mayúscula inicial o el punto final.", "sugerencia": "Dicten oraciones cortas y pidan que revise siempre dos cosas al terminar: la mayúscula del inicio y el punto final." },
+      "corrige-oracion": { "descripcion": "Le cuesta corregir una oración escrita sin mayúsculas ni punto.", "sugerencia": "Escriban una oración con errores a propósito y jueguen a ser «detectives»: que encuentre las mayúsculas y el punto que faltan." },
+      "produce-oracion": { "descripcion": "Le cuesta escribir sus propias oraciones completas.", "sugerencia": "Primero que diga la oración en voz alta; luego que la escriba y revise que tenga mayúscula, punto y una idea completa." }
+    }
+  }
+}

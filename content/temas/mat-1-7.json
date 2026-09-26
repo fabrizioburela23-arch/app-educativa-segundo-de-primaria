@@ -1,0 +1,310 @@
+{
+  "id": "mat-1-7",
+  "titulo": "Números romanos",
+  "objetivo": "Leo y escribo números romanos con I, V y X, y sé dónde los puedo encontrar.",
+  "explicacion": [
+    {
+      "texto": "Hace mucho tiempo, en la antigua Roma, los números se escribían con letras. Hoy los vemos en algunos relojes, en los capítulos de los libros y en los siglos.",
+      "emoji": "🏛️",
+      "visual": { "tipo": "emojis", "items": ["🕰️", "📖", "📅"], "etiquetas": ["relojes", "capítulos", "siglos"] }
+    },
+    {
+      "texto": "Tres letras importantes: **I** vale 1, **V** vale 5 y **X** vale 10.",
+      "audio": "Tres letras importantes: la i vale uno, la uve vale cinco y la equis vale diez.",
+      "visual": { "tipo": "tabla", "columnas": ["I", "V", "X"], "filas": [["1", "5", "10"]] }
+    },
+    {
+      "texto": "**Para sumar:** si una letra igual o menor va a la derecha, se suma: VI = 6 y XII = 12. La I y la X se repiten hasta 3 veces: III = 3, XXX = 30. La V nunca se repite.",
+      "audio": "Para sumar: si una letra igual o menor va a la derecha, se suma. Uve, i es seis. Equis, i, i es doce. La i y la equis se repiten hasta tres veces: tres íes es tres y tres equis es treinta. La uve nunca se repite.",
+      "visual": { "tipo": "tabla", "columnas": ["II", "VI", "XII", "XXX"], "filas": [["2", "6", "12", "30"]] }
+    },
+    {
+      "texto": "**Para restar:** si la I va antes de la V o de la X, se resta: IV = 5 − 1 = 4 y IX = 10 − 1 = 9. Por eso el 4 se escribe IV y no IIII.",
+      "audio": "Para restar: si la i va antes de la uve o de la equis, se resta. I, uve es cuatro, porque cinco menos uno es cuatro. I, equis es nueve, porque diez menos uno es nueve. Por eso el cuatro se escribe i, uve, y no con cuatro íes.",
+      "emoji": "💡",
+      "visual": { "tipo": "tabla", "columnas": ["IV", "IX", "XIV", "XIX"], "filas": [["4", "9", "14", "19"]] }
+    }
+  ],
+  "ejemplo": {
+    "instruccion": "Mira cómo leemos el número romano XXIV, parte por parte.",
+    "pasos": [
+      {
+        "texto": "Empezamos por la izquierda. XX son dos X: 10 + 10 = 20.",
+        "visual": { "tipo": "tabla", "columnas": ["X", "X"], "filas": [["10", "10"]] }
+      },
+      {
+        "texto": "Después viene IV. La I está antes de la V, entonces se resta: 5 − 1 = 4.",
+        "visual": { "tipo": "tabla", "columnas": ["I", "V"], "filas": [["resta 1", "5"]] }
+      },
+      {
+        "texto": "Juntamos las partes: 20 + 4 = 24. ¡XXIV es 24!",
+        "visual": { "tipo": "tabla", "columnas": ["XX", "IV", "XXIV"], "filas": [["20", "4", "24"]] }
+      },
+      {
+        "texto": "Para escribir 24, hacemos al revés: 24 = 20 + 4. El 20 es XX y el 4 es IV. Juntos: XXIV.",
+        "visual": { "tipo": "tabla", "columnas": ["20", "4", "24"], "filas": [["XX", "IV", "XXIV"]] }
+      }
+    ]
+  },
+  "guiada": {
+    "intro": "Vamos a hacerlo juntos, paso a paso.",
+    "pasos": [
+      {
+        "id": "g1", "tipo": "numero",
+        "enunciado": "¿Qué número es VII?",
+        "audio": "¿Qué número es uve, i, i?",
+        "apoyo": "La V vale 5. Cada I que está a la derecha suma 1.",
+        "visual": { "tipo": "tabla", "columnas": ["V", "I", "I"], "filas": [["5", "1", "1"]] },
+        "respuesta": 7,
+        "erroresComunes": [ { "respuesta": 3, "pista": "Contaste las letras. Suma lo que vale cada una: la V vale 5.", "error": "valor-letras" } ],
+        "pista": "Suma el valor de cada letra.",
+        "explicacion": "VII = 5 + 1 + 1 = 7.",
+        "error": "valor-letras"
+      },
+      {
+        "id": "g2", "tipo": "relacionar",
+        "enunciado": "Une cada número romano con su valor.",
+        "apoyo": "Mira dónde está la I: si está antes, resta; si está después, suma.",
+        "pares": [ ["III", "3"], ["IV", "4"], ["VI", "6"], ["IX", "9"] ],
+        "pista": "IV y VI tienen las mismas letras, pero la I cambia de lugar.",
+        "explicacion": "III = 1 + 1 + 1 = 3. IV = 5 − 1 = 4. VI = 5 + 1 = 6. IX = 10 − 1 = 9.",
+        "error": "regla-resta"
+      },
+      {
+        "id": "g3", "tipo": "escribir",
+        "enunciado": "Escribe el número 12 con números romanos.",
+        "apoyo": "12 = 10 + 2. Escribe primero la letra que vale 10 y después dos I.",
+        "respuestas": ["XII"],
+        "pista": "¿Qué letra vale 10?",
+        "explicacion": "12 = 10 + 1 + 1, entonces se escribe XII.",
+        "error": "escribe-romanos"
+      }
+    ]
+  },
+  "practica": [
+    {
+      "id": "p1", "tipo": "relacionar", "nivel": 1,
+      "enunciado": "Une cada número romano con su valor.",
+      "pares": [ ["I", "1"], ["II", "2"], ["V", "5"], ["X", "10"] ],
+      "pista": "Recuerda las tres letras importantes: I, V y X. ¿Cuánto vale cada una?",
+      "explicacion": "I = 1, II = 1 + 1 = 2, V = 5 y X = 10.",
+      "error": "valor-letras"
+    },
+    {
+      "id": "p2", "tipo": "generador", "nivel": 1, "generador": "romano", "params": { "max": 10, "modo": "a-cifras" }
+    },
+    {
+      "id": "p3", "tipo": "manipular", "nivel": 1,
+      "enunciado": "Completa la serie de números romanos.",
+      "manipulable": { "tipo": "patron", "secuencia": ["I", "II", "III", "IV"], "opciones": ["V", "VI", "IIII", "VV"], "completar": 2, "solucion": ["V", "VI"] },
+      "pista": "La serie cuenta 1, 2, 3, 4... ¿Qué números siguen?",
+      "explicacion": "I, II, III, IV, V, VI: son 1, 2, 3, 4, 5 y 6.",
+      "error": "secuencia-romanos"
+    },
+    {
+      "id": "p4", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Toca los números romanos.",
+      "texto": "El libro tiene 80 páginas. Sofía lee el capítulo *III* y Juan, el capítulo *VII*.",
+      "pista": "Los números romanos se escriben con letras como I, V y X.",
+      "explicacion": "III y VII son números romanos: son el capítulo 3 y el capítulo 7. El 80 está escrito con cifras.",
+      "error": "reconoce-romanos"
+    },
+    {
+      "id": "p5", "tipo": "generador", "nivel": 2, "generador": "romano", "params": { "max": 39, "modo": "a-cifras" }
+    },
+    {
+      "id": "p6", "tipo": "generador", "nivel": 2, "generador": "romano", "params": { "max": 39, "modo": "a-romano" }
+    },
+    {
+      "id": "p7", "tipo": "manipular", "nivel": 2,
+      "enunciado": "El reloj de la plaza tiene números romanos. Pon las agujas a las IX en punto.",
+      "audio": "El reloj de la plaza tiene números romanos. Pon las agujas en la hora i, equis, en punto.",
+      "manipulable": { "tipo": "reloj", "objetivo": { "hora": 9, "minutos": 0 }, "paso": 30, "inicial": { "hora": 12, "minutos": 0 } },
+      "pista": "Primero descubre qué número es IX: la I está antes de la X.",
+      "explicacion": "IX = 10 − 1 = 9. A las 9 en punto, la aguja corta señala el 9 y la larga, el 12.",
+      "error": "regla-resta"
+    },
+    {
+      "id": "p8", "tipo": "manipular", "nivel": 2,
+      "enunciado": "Mueve el marcador al número XIV.",
+      "audio": "Mueve el marcador al número romano equis, i, uve.",
+      "manipulable": { "tipo": "recta", "min": 0, "max": 20, "paso": 1, "objetivo": 14 },
+      "pista": "Lee por partes: primero X y después IV.",
+      "explicacion": "XIV = X + IV = 10 + 4 = 14.",
+      "error": "regla-resta"
+    },
+    {
+      "id": "p9", "tipo": "memoria", "nivel": 2,
+      "enunciado": "Encuentra las parejas: número romano y su valor.",
+      "pares": [ ["IV", "4"], ["VI", "6"], ["IX", "9"], ["XI", "11"], ["XX", "20"] ],
+      "pista": "Fíjate si la I está antes o después de la otra letra.",
+      "explicacion": "IV = 4, VI = 6, IX = 9, XI = 11 y XX = 20.",
+      "error": "regla-resta"
+    },
+    {
+      "id": "p10", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha el número y escríbelo con números romanos.",
+      "escuchar": "diecisiete",
+      "respuestas": ["XVII"],
+      "pista": "Piensa: 17 es 10 + 7. ¿Cómo se escribe cada parte?",
+      "explicacion": "17 = 10 + 5 + 1 + 1, entonces se escribe XVII.",
+      "error": "escribe-romanos"
+    },
+    {
+      "id": "p11", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa para escribir el 23 con números romanos.",
+      "texto": "20 es [XX] y 3 es [III]. Juntos forman el 23.",
+      "banco": ["VV", "IIII"],
+      "pista": "Recuerda: la V nunca se repite y la I se repite hasta 3 veces.",
+      "explicacion": "20 = XX (10 + 10) y 3 = III. Juntos: XXIII.",
+      "error": "regla-repetir"
+    },
+    {
+      "id": "p12", "tipo": "clasificar", "nivel": 3,
+      "enunciado": "¿Está bien escrito o mal escrito?",
+      "categorias": [ { "id": "bien", "texto": "Bien escrito", "emoji": "✅" }, { "id": "mal", "texto": "Mal escrito", "emoji": "❌" } ],
+      "elementos": [
+        { "texto": "VI", "categoria": "bien" }, { "texto": "IIII", "categoria": "mal" },
+        { "texto": "XXXIII", "categoria": "bien" }, { "texto": "VV", "categoria": "mal" },
+        { "texto": "IX", "categoria": "bien" }, { "texto": "XIIII", "categoria": "mal" }
+      ],
+      "pista": "Revisa: ¿alguna letra se repite más de 3 veces? ¿Se repite la V?",
+      "explicacion": "Están bien VI, IX y XXXIII. IIII y XIIII repiten la I 4 veces: se escriben IV y XIV. VV repite la V: el 10 se escribe X.",
+      "error": "regla-repetir"
+    },
+    {
+      "id": "p13", "tipo": "generador", "nivel": 3, "generador": "romano", "params": { "max": 50, "modo": "a-cifras" }
+    },
+    {
+      "id": "p14", "tipo": "pasos", "nivel": 3,
+      "enunciado": "Sofía lee un libro sobre el lago Titicaca. Hoy terminó el capítulo IX.",
+      "audio": "Sofía lee un libro sobre el lago Titicaca. Hoy terminó el capítulo i, equis.",
+      "visual": { "tipo": "emoji", "valor": "📖" },
+      "pasos": [
+        {
+          "tipo": "numero", "enunciado": "¿Qué número es IX?",
+          "audio": "¿Qué número es i, equis?",
+          "respuesta": 9,
+          "erroresComunes": [ { "respuesta": 11, "pista": "La I está antes de la X: se resta, no se suma.", "error": "regla-resta" } ],
+          "pista": "Mira dónde está la I: ¿antes o después de la X?",
+          "explicacion": "IX = 10 − 1 = 9.",
+          "error": "regla-resta"
+        },
+        {
+          "tipo": "escribir", "enunciado": "Mañana leerá el capítulo siguiente. ¿Cómo se escribe en números romanos?",
+          "respuestas": ["X"],
+          "pista": "Suma 1 al capítulo 9. ¿Qué letra vale ese número?",
+          "explicacion": "El capítulo siguiente es el 10, y el 10 se escribe X.",
+          "error": "escribe-romanos"
+        }
+      ],
+      "pista": "Primero descubre qué número es IX.",
+      "explicacion": "IX es 9. El capítulo siguiente es el 10, que se escribe X.",
+      "error": "escribe-romanos"
+    },
+    {
+      "id": "p15", "tipo": "relacionar", "nivel": 3,
+      "enunciado": "¡Desafío! La L vale 50. Une cada número romano con su valor.",
+      "pares": [ ["XL", "40"], ["L", "50"], ["XLV", "45"], ["XXXIX", "39"] ],
+      "pista": "Si la X está antes de la L, se resta: 50 − 10.",
+      "explicacion": "XL = 50 − 10 = 40, L = 50, XLV = 40 + 5 = 45 y XXXIX = 30 + 9 = 39.",
+      "error": "romanos-desafio"
+    }
+  ],
+  "comprobacion": [
+    {
+      "id": "c1", "tipo": "numero", "nivel": 1,
+      "enunciado": "¿Qué número es VIII?",
+      "audio": "¿Qué número es uve, i, i, i?",
+      "respuesta": 8,
+      "erroresComunes": [ { "respuesta": 4, "pista": "Contaste las letras. Suma lo que vale cada una.", "error": "valor-letras" } ],
+      "pista": "La V vale 5 y cada I de la derecha suma 1.",
+      "explicacion": "VIII = 5 + 1 + 1 + 1 = 8.",
+      "error": "valor-letras"
+    },
+    {
+      "id": "c2", "tipo": "escribir", "nivel": 1,
+      "enunciado": "Escribe el número 3 con números romanos.",
+      "respuestas": ["III"],
+      "pista": "¿Cuántas I necesitas?",
+      "explicacion": "3 = 1 + 1 + 1, entonces se escribe III.",
+      "error": "escribe-romanos"
+    },
+    {
+      "id": "c3", "tipo": "ordenar", "nivel": 2,
+      "enunciado": "Ordena de menor a mayor.",
+      "elementos": ["II", "IV", "V", "IX", "X"],
+      "pista": "Primero descubre qué número es cada uno.",
+      "explicacion": "II = 2, IV = 4, V = 5, IX = 9 y X = 10.",
+      "error": "regla-resta"
+    },
+    {
+      "id": "c4", "tipo": "generador", "nivel": 2, "generador": "romano", "params": { "max": 30, "modo": "a-cifras" }
+    },
+    {
+      "id": "c5", "tipo": "manipular", "nivel": 2,
+      "enunciado": "El reloj de la iglesia tiene números romanos. Pon las agujas a las IV en punto.",
+      "audio": "El reloj de la iglesia tiene números romanos. Pon las agujas en la hora i, uve, en punto.",
+      "manipulable": { "tipo": "reloj", "objetivo": { "hora": 4, "minutos": 0 }, "paso": 30, "inicial": { "hora": 12, "minutos": 0 } },
+      "pista": "La I está antes de la V: se resta.",
+      "explicacion": "IV = 5 − 1 = 4. A las 4 en punto, la aguja corta señala el 4 y la larga, el 12.",
+      "error": "regla-resta"
+    },
+    {
+      "id": "c6", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha el número y escríbelo con números romanos.",
+      "escuchar": "veinticuatro",
+      "respuestas": ["XXIV"],
+      "pista": "24 = 20 + 4. ¿Cómo se escribe cada parte?",
+      "explicacion": "20 es XX y 4 es IV: el 24 se escribe XXIV.",
+      "error": "escribe-romanos"
+    },
+    {
+      "id": "c7", "tipo": "numero", "nivel": 3,
+      "enunciado": "Bolivia nació en 1825, en el siglo XIX. ¿Qué número es XIX?",
+      "audio": "Bolivia nació en el año mil ochocientos veinticinco. Mira cómo está escrito el siglo en números romanos. ¿Qué número es?",
+      "respuesta": 19,
+      "erroresComunes": [ { "respuesta": 21, "pista": "La I está antes de la segunda X: esa parte se resta.", "error": "regla-resta" } ],
+      "pista": "Lee por partes: primero X y después IX.",
+      "explicacion": "XIX = X + IX = 10 + 9 = 19. Bolivia nació en el siglo XIX.",
+      "error": "regla-resta"
+    },
+    {
+      "id": "c8", "tipo": "multiple", "nivel": 3,
+      "enunciado": "Elige los números romanos que están bien escritos.",
+      "opciones": [
+        { "texto": "XIV", "correcta": true },
+        { "texto": "VIIII", "pista": "La I no se repite 4 veces seguidas. El 9 se escribe de otra forma.", "error": "regla-repetir" },
+        { "texto": "XXIX", "correcta": true },
+        { "texto": "XXXX", "pista": "La X no se repite más de 3 veces.", "error": "regla-repetir" },
+        { "texto": "XXXVIII", "correcta": true },
+        { "texto": "VV", "pista": "La V nunca se repite.", "error": "regla-repetir" }
+      ],
+      "pista": "Revisa si alguna letra se repite demasiadas veces.",
+      "explicacion": "XIV (14), XXIX (29) y XXXVIII (38) están bien escritos. VIIII, XXXX y VV no cumplen la regla de repetir.",
+      "error": "regla-repetir"
+    }
+  ],
+  "repaso": {
+    "texto": "I = 1, V = 5, X = 10. Si la I va después, se suma: VI = 6. Si la I va antes de V o X, se resta: IV = 4, IX = 9. La I y la X se repiten hasta 3 veces; la V, nunca.",
+    "visual": { "tipo": "tabla", "columnas": ["I", "V", "X", "IV", "IX"], "filas": [["1", "5", "10", "4", "9"]] }
+  },
+  "adulto": {
+    "objetivo": "Leer y escribir números romanos sencillos con I, V y X hasta XXXIX (39), aplicando las reglas de sumar (VI), restar (IV, IX) y repetir (hasta 3 veces la I y la X; la V nunca), y reconocer dónde se usan: relojes, capítulos de libros y siglos. La L (50) y el XL (40) son solo un desafío.",
+    "sugerencias": [
+      "Busquen números romanos en la casa o en la calle: relojes, capítulos de libros, placas de edificios o iglesias. Pidan que diga qué número es. Algunos relojes muestran IIII en lugar de IV: es una costumbre antigua de los relojeros.",
+      "Armen números romanos con palitos de fósforo usados, fideos largos o ramitas: la I con un palito, la V con dos y la X con dos cruzados. Túrnense para armar un número y leerlo.",
+      "Escriban la fecha de hoy con el mes en números romanos (por ejemplo, 26-IX para el 26 de septiembre) o numeren con romanos los capítulos de un cuento que inventen juntos."
+    ],
+    "errores": {
+      "romanos": { "descripcion": "Se equivoca al leer o escribir números romanos.", "sugerencia": "Repasen el valor de cada letra y lean los números por partes, de izquierda a derecha." },
+      "valor-letras": { "descripcion": "No recuerda cuánto vale cada letra, o cuenta las letras en lugar de sumar su valor (dice que VIII es 4).", "sugerencia": "Hagan tarjetas con I = 1, V = 5 y X = 10 y úsenlas para armar números sumando." },
+      "regla-resta": { "descripcion": "Suma cuando la I está antes de la V o de la X (lee IV como 6 o IX como 11).", "sugerencia": "Comparen IV y VI con palitos: si la I va antes, se quita 1; si va después, se agrega 1." },
+      "regla-repetir": { "descripcion": "Repite la I o la X más de 3 veces, o repite la V (escribe IIII o VV).", "sugerencia": "Repitan juntos la regla: «la I y la X, hasta 3 veces; la V, nunca»." },
+      "escribe-romanos": { "descripcion": "Le cuesta escribir un número con números romanos.", "sugerencia": "Separen el número en decenas y unidades (24 = 20 + 4) y escriban cada parte por separado." },
+      "secuencia-romanos": { "descripcion": "Se confunde al continuar una serie de números romanos.", "sugerencia": "Escriban juntos del I al XX en una tira de papel, como una recta numérica, y léanla en voz alta." },
+      "reconoce-romanos": { "descripcion": "No distingue los números romanos de las palabras o de los números escritos con cifras.", "sugerencia": "Busquen números romanos en libros o relojes y rodéenlos con un lápiz o señálenlos." },
+      "romanos-desafio": { "descripcion": "Le cuestan la L (50) y el XL (40), que son un desafío.", "sugerencia": "No es obligatorio en este grado. Con billetes de juguete de 10 y 50, muestren que XL es 50 − 10 = 40." }
+    }
+  }
+}

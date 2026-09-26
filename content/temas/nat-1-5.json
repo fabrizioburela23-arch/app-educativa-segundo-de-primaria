@@ -1,0 +1,482 @@
+{
+  "id": "nat-1-5",
+  "titulo": "Las estaciones del año",
+  "objetivo": "Conozco las cuatro estaciones y cómo cambian el tiempo, la ropa, los cultivos y lo que hacemos en Bolivia.",
+  "explicacion": [
+    {
+      "texto": "El año tiene cuatro **estaciones**: verano, otoño, invierno y primavera. Cada una dura unos tres meses. Después de la primavera vuelve el verano, y así cada año.",
+      "emoji": "🔄",
+      "visual": { "tipo": "ilustracion", "id": "estaciones" }
+    },
+    {
+      "texto": "En Bolivia, cada estación empieza cerca del día 21 de un mes: el verano en diciembre, el otoño en marzo, el invierno en junio y la primavera en septiembre.",
+      "visual": {
+        "tipo": "tabla",
+        "columnas": ["Estación", "Empieza cerca del"],
+        "filas": [
+          ["☀️ Verano", "21 de diciembre"],
+          ["🍂 Otoño", "21 de marzo"],
+          ["🧣 Invierno", "21 de junio"],
+          ["🌸 Primavera", "21 de septiembre"]
+        ]
+      }
+    },
+    {
+      "texto": "Las estaciones cambian porque la Tierra está un poco **inclinada** mientras da la vuelta al Sol, no porque se acerque o se aleje de él. Cuando en Bolivia es verano, en el norte del mundo es invierno.",
+      "visual": { "tipo": "ilustracion", "id": "tierra-traslacion" }
+    },
+    {
+      "texto": "En Bolivia hay dos épocas. La **época de lluvias** va más o menos de noviembre a marzo: incluye el verano. La **época seca** va más o menos de mayo a octubre: incluye el invierno.",
+      "visual": { "tipo": "emojis", "items": ["🌧️", "☀️"], "etiquetas": ["época de lluvias", "época seca"] }
+    }
+  ],
+  "ejemplo": {
+    "instruccion": "Recorramos el año en Bolivia, estación por estación.",
+    "pasos": [
+      {
+        "texto": "**Verano** (de diciembre a marzo): hace calor y llueve mucho. Los ríos crecen y los cultivos están verdes. Usamos ropa fresca y paraguas. Hay vacaciones largas y Carnaval.",
+        "visual": { "tipo": "ilustracion", "id": "estaciones", "resaltar": "verano" }
+      },
+      {
+        "texto": "**Otoño** (de marzo a junio): las lluvias se van y el aire se enfría. Algunos árboles pierden sus hojas. En el altiplano y los valles se cosechan la papa y el maíz.",
+        "visual": { "tipo": "ilustracion", "id": "estaciones", "resaltar": "otono" }
+      },
+      {
+        "texto": "**Invierno** (de junio a septiembre): es época seca. Las noches son muy frías y en el altiplano hay heladas, que sirven para hacer chuño. Usamos chompa, chullo y guantes.",
+        "visual": { "tipo": "ilustracion", "id": "estaciones", "resaltar": "invierno" }
+      },
+      {
+        "texto": "**Primavera** (de septiembre a diciembre): los días se vuelven más cálidos y muchas plantas florecen. Llegan las primeras lluvias y es tiempo de sembrar la papa.",
+        "visual": { "tipo": "ilustracion", "id": "estaciones", "resaltar": "primavera" }
+      }
+    ]
+  },
+  "guiada": {
+    "intro": "Ahora lo hacemos juntos, paso a paso.",
+    "pasos": [
+      {
+        "id": "g1", "tipo": "numero",
+        "enunciado": "¿Cuántas estaciones tiene el año?",
+        "apoyo": "Nómbralas y cuenta con tus dedos: verano, otoño, invierno, primavera.",
+        "respuesta": 4,
+        "erroresComunes": [
+          { "respuesta": 2, "pista": "No solo hay verano e invierno. Hay dos estaciones más.", "error": "estaciones-orden" },
+          { "respuesta": 12, "pista": "12 son los meses del año. ¿Cuántas estaciones hay?", "error": "estaciones-orden" }
+        ],
+        "pista": "Levanta un dedo por cada estación que nombras.",
+        "explicacion": "El año tiene 4 estaciones: verano, otoño, invierno y primavera.",
+        "error": "estaciones-orden"
+      },
+      {
+        "id": "g2", "tipo": "ordenar",
+        "enunciado": "Ordena las estaciones. Empieza por el verano.",
+        "apoyo": "Después del calor del verano, el aire se enfría poco a poco. Después del frío, llegan las flores.",
+        "elementos": [
+          { "texto": "verano", "emoji": "☀️" },
+          { "texto": "otoño", "emoji": "🍂" },
+          { "texto": "invierno", "emoji": "🧣" },
+          { "texto": "primavera", "emoji": "🌸" }
+        ],
+        "pista": "Entre el verano y el invierno está el otoño.",
+        "explicacion": "El orden es verano, otoño, invierno y primavera. Después vuelve el verano.",
+        "error": "estaciones-orden"
+      },
+      {
+        "id": "g3", "tipo": "clasificar",
+        "enunciado": "¿Qué ropa usas en un día de calor y cuál en una noche fría?",
+        "apoyo": "Piensa: ¿esta ropa te refresca o te abriga?",
+        "categorias": [
+          { "id": "calor", "texto": "Día de calor", "emoji": "☀️" },
+          { "id": "frio", "texto": "Noche fría", "emoji": "🥶" }
+        ],
+        "elementos": [
+          { "texto": "polera", "emoji": "👕", "categoria": "calor" },
+          { "texto": "chompa", "categoria": "frio" },
+          { "texto": "sombrero para el sol", "emoji": "👒", "categoria": "calor" },
+          { "texto": "guantes", "emoji": "🧤", "categoria": "frio" },
+          { "texto": "sandalias", "emoji": "👡", "categoria": "calor" },
+          { "texto": "bufanda", "emoji": "🧣", "categoria": "frio" }
+        ],
+        "pista": "La ropa gruesa y de lana te abriga. La ropa liviana te refresca.",
+        "explicacion": "Para el calor: polera, sombrero para el sol y sandalias. Para el frío: chompa, guantes y bufanda.",
+        "error": "ropa-clima"
+      }
+    ]
+  },
+  "practica": [
+    {
+      "id": "p1", "tipo": "memoria", "nivel": 1,
+      "enunciado": "Encuentra las parejas: cada estación con algo que la recuerda.",
+      "pares": [
+        ["verano", { "texto": "calor", "emoji": "☀️" }],
+        ["otoño", { "texto": "hojas secas", "emoji": "🍂" }],
+        ["invierno", { "texto": "frío", "emoji": "🧣" }],
+        ["primavera", { "texto": "flores", "emoji": "🌸" }]
+      ],
+      "pista": "Recuerda qué pasa con el tiempo y con las plantas en cada estación.",
+      "explicacion": "Verano: calor. Otoño: hojas secas. Invierno: frío. Primavera: flores.",
+      "error": "cambios-estacion"
+    },
+    {
+      "id": "p2", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Toca los nombres de las estaciones.",
+      "texto": "Después del *otoño* llega el *invierno*, y luego viene la *primavera* con sus flores.",
+      "pista": "Hay tres nombres de estaciones en la oración.",
+      "explicacion": "Otoño, invierno y primavera son estaciones. La cuarta estación es el verano.",
+      "error": "estaciones-orden"
+    },
+    {
+      "id": "p3", "tipo": "opcion", "nivel": 1,
+      "enunciado": "Mira el calendario. ¿En qué estación está este mes en Bolivia?",
+      "visual": { "tipo": "calendario", "mes": 7, "anio": 2026, "titulo": "Julio" },
+      "opciones": [
+        { "texto": "invierno", "emoji": "🧣", "correcta": true },
+        { "texto": "verano", "emoji": "☀️", "pista": "Piensa: en julio, ¿hace frío o calor en Bolivia?", "error": "meses-estaciones" },
+        { "texto": "primavera", "emoji": "🌸", "pista": "La primavera empieza recién en septiembre.", "error": "meses-estaciones" }
+      ],
+      "pista": "Recuerda en qué mes empieza cada estación.",
+      "explicacion": "En Bolivia, julio es invierno: el invierno empieza cerca del 21 de junio y dura hasta septiembre.",
+      "error": "meses-estaciones"
+    },
+    {
+      "id": "p4", "tipo": "manipular", "nivel": 1,
+      "enunciado": "El Año Nuevo Andino Amazónico se celebra el 21 de junio, cerca del inicio del invierno. Toca ese día.",
+      "manipulable": { "tipo": "calendario", "mes": 6, "anio": 2026, "objetivo": 21 },
+      "pista": "Busca el número 21 en el calendario de junio.",
+      "explicacion": "El 21 de junio es el Año Nuevo Andino Amazónico y del Chaco. Por esos días empieza el invierno.",
+      "error": "ubica-fecha"
+    },
+    {
+      "id": "p5", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "Une cada estación con el mes en que empieza.",
+      "pares": [
+        ["verano", "diciembre"],
+        ["otoño", "marzo"],
+        ["invierno", "junio"],
+        ["primavera", "septiembre"]
+      ],
+      "pista": "Todas empiezan cerca del día 21. El invierno empieza a la mitad del año.",
+      "explicacion": "El verano empieza en diciembre, el otoño en marzo, el invierno en junio y la primavera en septiembre.",
+      "error": "meses-estaciones"
+    },
+    {
+      "id": "p6", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "¿Este mes es de la época de lluvias o de la época seca?",
+      "categorias": [
+        { "id": "lluvias", "texto": "Época de lluvias", "emoji": "🌧️" },
+        { "id": "seca", "texto": "Época seca", "emoji": "☀️" }
+      ],
+      "elementos": [
+        { "texto": "enero", "categoria": "lluvias" },
+        { "texto": "julio", "categoria": "seca" },
+        { "texto": "febrero", "categoria": "lluvias" },
+        { "texto": "junio", "categoria": "seca" },
+        { "texto": "diciembre", "categoria": "lluvias" },
+        { "texto": "agosto", "categoria": "seca" }
+      ],
+      "pista": "La época de lluvias va más o menos de noviembre a marzo. La época seca, de mayo a octubre.",
+      "explicacion": "Diciembre, enero y febrero son de la época de lluvias. Junio, julio y agosto son de la época seca.",
+      "error": "lluvias-seca"
+    },
+    {
+      "id": "p7", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa con las palabras correctas.",
+      "texto": "En verano llueve mucho y los [ríos] crecen. En invierno, en el altiplano, hay [heladas] por la noche.",
+      "banco": ["cerros", "mangos"],
+      "pista": "Piensa qué pasa con el agua cuando llueve mucho, y qué pasa en las noches muy frías.",
+      "explicacion": "Con las lluvias del verano, los ríos crecen. En las noches frías del invierno hay heladas en el altiplano.",
+      "error": "cambios-estacion"
+    },
+    {
+      "id": "p8", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha y escribe qué estación es.",
+      "escuchar": "Es época seca. Las noches son muy frías y en el altiplano hay heladas. Usamos chompa y chullo. ¿Qué estación es?",
+      "respuestas": ["invierno", "el invierno", "es invierno", "es el invierno"],
+      "pista": "Es la estación más fría del año.",
+      "explicacion": "Es el **invierno**: la estación más fría, con heladas en el altiplano.",
+      "error": "cambios-estacion"
+    },
+    {
+      "id": "p9", "tipo": "opcion", "nivel": 2,
+      "enunciado": "Mira la parte marcada del dibujo. ¿Qué estación es?",
+      "visual": { "tipo": "ilustracion", "id": "estaciones", "resaltar": "otono" },
+      "opciones": [
+        { "texto": "otoño", "emoji": "🍂", "correcta": true },
+        { "texto": "primavera", "emoji": "🌸", "pista": "En primavera las plantas se llenan de flores. Mira otra vez la parte marcada.", "error": "cambios-estacion" },
+        { "texto": "invierno", "emoji": "🧣", "pista": "Mira otra vez la parte marcada: fíjate en los árboles y en sus hojas.", "error": "cambios-estacion" }
+      ],
+      "pista": "Fíjate en las plantas y en los colores de la parte marcada.",
+      "explicacion": "La parte marcada es el **otoño**: el aire se enfría y algunos árboles pierden sus hojas.",
+      "error": "cambios-estacion"
+    },
+    {
+      "id": "p10", "tipo": "multiple", "nivel": 2,
+      "enunciado": "¿Qué pasa en invierno en el altiplano? Elige todas las respuestas correctas.",
+      "opciones": [
+        { "texto": "Las noches son muy frías.", "emoji": "🥶", "correcta": true },
+        { "texto": "Hay heladas.", "emoji": "❄️", "correcta": true },
+        { "texto": "Se hace chuño.", "emoji": "🥔", "correcta": true },
+        { "texto": "Llueve casi todos los días.", "pista": "El invierno es época seca. Las lluvias fuertes vienen en verano.", "error": "lluvias-seca" },
+        { "texto": "Los ríos crecen mucho.", "pista": "Los ríos crecen con las lluvias del verano.", "error": "lluvias-seca" }
+      ],
+      "pista": "Recuerda: el invierno es frío y seco. Hay tres respuestas correctas.",
+      "explicacion": "En invierno las noches son muy frías, hay heladas y con ellas se hace chuño. Las lluvias y los ríos crecidos son del verano.",
+      "error": "cambios-estacion"
+    },
+    {
+      "id": "p11", "tipo": "manipular", "nivel": 2,
+      "enunciado": "Las estaciones se repiten cada año. Completa la serie.",
+      "manipulable": {
+        "tipo": "patron",
+        "secuencia": ["☀️", "🍂", "🧣", "🌸", "☀️", "🍂"],
+        "opciones": ["☀️", "🍂", "🧣", "🌸"],
+        "completar": 2,
+        "solucion": ["🧣", "🌸"]
+      },
+      "pista": "☀️ es verano y 🍂 es otoño. ¿Qué estación viene después del otoño?",
+      "explicacion": "Después del otoño 🍂 viene el invierno 🧣 y luego la primavera 🌸. Así se repiten las estaciones.",
+      "error": "estaciones-orden"
+    },
+    {
+      "id": "p12", "tipo": "ordenar", "nivel": 3,
+      "enunciado": "Ordena lo que pasa con la papa en el altiplano durante el año. Empieza por la primavera.",
+      "elementos": [
+        { "texto": "Primavera: se siembra la papa.", "emoji": "🌱" },
+        { "texto": "Verano: la planta crece con las lluvias.", "emoji": "🌧️" },
+        { "texto": "Otoño: se cosecha la papa.", "emoji": "🥔" },
+        { "texto": "Invierno: con las heladas se hace chuño.", "emoji": "❄️" }
+      ],
+      "vertical": true,
+      "pista": "Primero hay que sembrar. ¿Qué necesita la planta para crecer?",
+      "explicacion": "En primavera se siembra la papa, en verano crece con las lluvias, en otoño se cosecha y en invierno, con las heladas, se hace chuño.",
+      "error": "cambios-estacion"
+    },
+    {
+      "id": "p13", "tipo": "pasos", "nivel": 3,
+      "enunciado": "Hoy es 15 de julio. Luis vive en El Alto y sale temprano a la escuela.",
+      "visual": { "tipo": "calendario", "mes": 7, "anio": 2026, "marcar": [15], "titulo": "Julio" },
+      "pasos": [
+        {
+          "tipo": "opcion",
+          "enunciado": "¿En qué estación está Luis?",
+          "opciones": [
+            { "texto": "invierno", "correcta": true },
+            { "texto": "verano", "pista": "En Bolivia, julio no es verano. ¿Qué estación empieza en junio?", "error": "meses-estaciones" },
+            { "texto": "primavera", "pista": "La primavera empieza recién en septiembre.", "error": "meses-estaciones" }
+          ],
+          "pista": "Recuerda en qué mes empieza cada estación.",
+          "explicacion": "El invierno empieza cerca del 21 de junio y dura hasta septiembre. El 15 de julio es invierno.",
+          "error": "meses-estaciones"
+        },
+        {
+          "tipo": "opcion",
+          "enunciado": "¿Es época de lluvias o época seca?",
+          "mezclar": false,
+          "opciones": [
+            { "texto": "época de lluvias", "pista": "La época de lluvias va más o menos de noviembre a marzo.", "error": "lluvias-seca" },
+            { "texto": "época seca", "correcta": true }
+          ],
+          "pista": "El invierno está dentro de una de las dos épocas.",
+          "explicacion": "Julio es parte de la época seca, que va más o menos de mayo a octubre.",
+          "error": "lluvias-seca"
+        },
+        {
+          "tipo": "opcion",
+          "enunciado": "Al salir temprano, ¿qué puede ver Luis sobre el pasto?",
+          "opciones": [
+            { "texto": "escarcha blanca de la helada", "emoji": "❄️", "correcta": true },
+            { "texto": "charcos grandes de lluvia", "pista": "En la época seca casi no llueve.", "error": "lluvias-seca" },
+            { "texto": "muchas flores nuevas", "pista": "Las plantas florecen más en primavera.", "error": "cambios-estacion" }
+          ],
+          "pista": "Piensa en las noches muy frías del altiplano en invierno.",
+          "explicacion": "En las mañanas de invierno, el pasto amanece blanco por la helada. Esa capa blanca es la escarcha: agua congelada.",
+          "error": "cambios-estacion"
+        }
+      ],
+      "pista": "Resuelve un paso a la vez. Empieza por el mes.",
+      "explicacion": "El 15 de julio es invierno y época seca. En El Alto las noches son muy frías y en la mañana hay helada.",
+      "error": "meses-estaciones"
+    },
+    {
+      "id": "p14", "tipo": "opcion", "nivel": 3,
+      "enunciado": "¿Por qué hay estaciones en el año?",
+      "visual": { "tipo": "ilustracion", "id": "tierra-traslacion" },
+      "opciones": [
+        { "texto": "Porque la Tierra está inclinada mientras da la vuelta al Sol.", "correcta": true },
+        { "texto": "Porque la Tierra se acerca y se aleja mucho del Sol.", "pista": "Si fuera así, todo el mundo tendría verano al mismo tiempo. Pero cuando aquí es verano, en el norte es invierno.", "error": "causa-estaciones" },
+        { "texto": "Porque el Sol se apaga un poco en invierno.", "pista": "El Sol es una estrella que brilla siempre. Busca otra razón.", "error": "causa-estaciones" }
+      ],
+      "pista": "Recuerda cómo está la Tierra mientras da la vuelta al Sol.",
+      "explicacion": "La Tierra está un poco inclinada. Mientras da la vuelta al Sol en un año, sus rayos nos llegan más directos en verano y más inclinados en invierno.",
+      "error": "causa-estaciones"
+    },
+    {
+      "id": "p15", "tipo": "numero", "nivel": 3,
+      "enunciado": "Un año tiene 12 meses y 4 estaciones. Si todas duran lo mismo, ¿cuántos meses dura cada estación?",
+      "visual": { "tipo": "emoji", "valor": "📅", "cantidad": 12, "etiqueta": "12 meses" },
+      "respuesta": 3,
+      "sufijo": "meses",
+      "erroresComunes": [
+        { "respuesta": 4, "pista": "4 es el número de estaciones. Reparte los 12 meses en 4 grupos iguales.", "error": "meses-estaciones" },
+        { "respuesta": 8, "pista": "No se resta. Reparte los 12 meses en 4 grupos iguales.", "error": "meses-estaciones" },
+        { "respuesta": 16, "pista": "No se suma. Reparte los 12 meses en 4 grupos iguales.", "error": "meses-estaciones" }
+      ],
+      "pista": "Reparte los 12 meses en 4 grupos iguales. Puedes dibujar 12 palitos.",
+      "explicacion": "3 + 3 + 3 + 3 = 12. Cada estación dura unos 3 meses.",
+      "error": "meses-estaciones"
+    },
+    {
+      "id": "p16", "tipo": "escribir-libre", "nivel": 3,
+      "enunciado": "Escribe una oración sobre lo que haces en tu estación favorita.",
+      "guia": ["En verano me gusta...", "En invierno mi familia..."],
+      "requisitos": [
+        { "tipo": "mayuscula-inicial" },
+        { "tipo": "punto-final" },
+        { "tipo": "min-palabras", "valor": 5 },
+        { "tipo": "incluye", "palabras": ["verano", "otoño", "invierno", "primavera"] }
+      ],
+      "modelo": "En invierno tomo api caliente con mi abuela.",
+      "pista": "Elige una estación y piensa qué haces, qué ropa usas o qué comes en ella.",
+      "explicacion": "Por ejemplo: «En invierno tomo api caliente con mi abuela». Empieza con mayúscula, nombra la estación y termina con punto.",
+      "error": "produce-oracion"
+    }
+  ],
+  "comprobacion": [
+    {
+      "id": "c1", "tipo": "opcion", "nivel": 1,
+      "enunciado": "¿En qué estación hace más frío en Bolivia?",
+      "opciones": [
+        { "texto": "invierno", "emoji": "🧣", "correcta": true },
+        { "texto": "verano", "emoji": "☀️", "pista": "En verano hace calor y llueve mucho.", "error": "cambios-estacion" },
+        { "texto": "primavera", "emoji": "🌸", "pista": "En primavera los días se vuelven más cálidos.", "error": "cambios-estacion" }
+      ],
+      "pista": "Piensa en la estación de las heladas y de la chompa.",
+      "explicacion": "En invierno hace más frío: hay heladas en el altiplano y usamos chompa.",
+      "error": "cambios-estacion"
+    },
+    {
+      "id": "c2", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Toca la ropa que te abriga del frío.",
+      "texto": "Sofía guarda su polera y saca su *chompa*, su *chullo* y sus *guantes*.",
+      "pista": "Hay tres prendas para el frío.",
+      "explicacion": "La chompa, el chullo y los guantes abrigan. La polera es para el calor.",
+      "error": "ropa-clima"
+    },
+    {
+      "id": "c3", "tipo": "manipular", "nivel": 1,
+      "enunciado": "El 21 de septiembre es el Día del Estudiante y de la Primavera. Toca ese día.",
+      "manipulable": { "tipo": "calendario", "mes": 9, "anio": 2026, "objetivo": 21 },
+      "pista": "Busca el número 21 en el calendario de septiembre.",
+      "explicacion": "El 21 de septiembre celebramos el Día del Estudiante y de la Primavera, porque por esos días empieza la primavera.",
+      "error": "ubica-fecha"
+    },
+    {
+      "id": "c4", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "Une cada mes con su estación en Bolivia.",
+      "pares": [
+        ["enero", "verano"],
+        ["abril", "otoño"],
+        ["julio", "invierno"],
+        ["octubre", "primavera"]
+      ],
+      "pista": "Recuerda en qué mes empieza cada estación: diciembre, marzo, junio y septiembre.",
+      "explicacion": "Enero es verano, abril es otoño, julio es invierno y octubre es primavera.",
+      "error": "meses-estaciones"
+    },
+    {
+      "id": "c5", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa con las palabras correctas.",
+      "texto": "En la época de [lluvias], los ríos crecen y los campos se ponen verdes. En la época [seca], casi no llueve.",
+      "banco": ["heladas", "lluviosa"],
+      "pista": "Una época trae mucha agua y la otra casi nada.",
+      "explicacion": "En la época de lluvias los ríos crecen y los campos están verdes. En la época seca casi no llueve.",
+      "error": "lluvias-seca"
+    },
+    {
+      "id": "c6", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha y escribe qué estación es.",
+      "escuchar": "Hace calor y llueve mucho. Los ríos crecen. Hay vacaciones largas y Carnaval. ¿Qué estación es?",
+      "respuestas": ["verano", "el verano", "es verano", "es el verano"],
+      "pista": "Es la estación que empieza en diciembre.",
+      "explicacion": "Es el **verano**: hace calor, es época de lluvias y llega el Carnaval.",
+      "error": "cambios-estacion"
+    },
+    {
+      "id": "c7", "tipo": "opcion", "nivel": 3,
+      "enunciado": "Cuando en Bolivia es verano, ¿qué estación es en el norte del mundo, por ejemplo en México?",
+      "opciones": [
+        { "texto": "invierno", "correcta": true },
+        { "texto": "verano", "pista": "El norte y el sur del mundo no tienen la misma estación al mismo tiempo.", "error": "causa-estaciones" },
+        { "texto": "primavera", "pista": "Piensa en la estación contraria al verano.", "error": "causa-estaciones" }
+      ],
+      "pista": "La Tierra está inclinada: cuando el sur recibe la luz del Sol más directa, el norte la recibe más inclinada.",
+      "explicacion": "Cuando en Bolivia es verano, en México es invierno. Por eso sabemos que las estaciones no dependen de la distancia al Sol, sino de la inclinación de la Tierra.",
+      "error": "causa-estaciones"
+    },
+    {
+      "id": "c8", "tipo": "clasificar", "nivel": 3,
+      "enunciado": "¿Pasa en la época de lluvias o en la época seca?",
+      "categorias": [
+        { "id": "lluvias", "texto": "Época de lluvias", "emoji": "🌧️" },
+        { "id": "seca", "texto": "Época seca", "emoji": "☀️" }
+      ],
+      "elementos": [
+        { "texto": "Llevo paraguas a la escuela.", "emoji": "☂️", "categoria": "lluvias" },
+        { "texto": "Se hace chuño con las heladas.", "categoria": "seca" },
+        { "texto": "Los ríos crecen mucho.", "categoria": "lluvias" },
+        { "texto": "Los campos se ven secos y amarillos.", "categoria": "seca" },
+        { "texto": "Jugamos con agua en Carnaval.", "categoria": "lluvias" },
+        { "texto": "Tenemos vacaciones de invierno.", "categoria": "seca" }
+      ],
+      "pista": "La época de lluvias incluye el verano. La época seca incluye el invierno.",
+      "explicacion": "En la época de lluvias llevamos paraguas, los ríos crecen y llega el Carnaval. En la época seca se hace chuño, los campos se secan y hay vacaciones de invierno.",
+      "error": "lluvias-seca"
+    }
+  ],
+  "repaso": {
+    "texto": "Recuerda: el verano empieza en diciembre, el otoño en marzo, el invierno en junio y la primavera en septiembre. En Bolivia, el verano es época de lluvias y el invierno es época seca.",
+    "visual": { "tipo": "ilustracion", "id": "estaciones" }
+  },
+  "adulto": {
+    "objetivo": "Nombrar las cuatro estaciones en orden, saber en qué mes empieza cada una en Bolivia (hemisferio sur), reconocer la época de lluvias y la época seca, y relacionar cada estación con cambios en el tiempo, la ropa, los cultivos y las actividades. Las estaciones se deben a la inclinación de la Tierra, no a su distancia al Sol. El día exacto de inicio cambia un poco cada año (entre el 20 y el 23), por eso decimos «cerca del 21».",
+    "sugerencias": [
+      "Hagan juntos un calendario del año en una hoja grande: pinten los meses de cada estación con un color, dibujen nubes en los meses de lluvias y marquen el cumpleaños de cada persona de la familia. Pregunten: ¿en qué estación cae tu cumpleaños?",
+      "Ordenen el ropero juntos: separen la ropa para días de calor, para días de frío y para la lluvia. Conversen sobre en qué meses usan más cada una.",
+      "En la feria, fíjense qué frutas y verduras hay en cada época (por ejemplo, duraznos en verano) y pregunten a la casera en qué meses llegan. Anoten o dibujen lo que descubran en el calendario de la familia."
+    ],
+    "errores": {
+      "estaciones-orden": {
+        "descripcion": "No recuerda cuáles son las cuatro estaciones o en qué orden vienen.",
+        "sugerencia": "Digan las estaciones en voz alta mientras dan cuatro pasos en círculo: verano, otoño, invierno, primavera… y otra vez verano."
+      },
+      "meses-estaciones": {
+        "descripcion": "No relaciona los meses con su estación en Bolivia (por ejemplo, cree que julio es verano, como en películas del norte del mundo).",
+        "sugerencia": "En el calendario de la casa, marquen el 21 de diciembre, de marzo, de junio y de septiembre, y pinten los meses de cada estación con un color distinto."
+      },
+      "lluvias-seca": {
+        "descripcion": "Confunde la época de lluvias con la época seca.",
+        "sugerencia": "Durante unas semanas, dibujen cada día en el calendario un sol o una nube con lluvia. Comparen con lo que recuerdan de enero y de julio."
+      },
+      "cambios-estacion": {
+        "descripcion": "No relaciona cada estación con los cambios en el tiempo, las plantas, los cultivos o las actividades.",
+        "sugerencia": "Conversen sobre lo que hace la familia en cada estación: qué ropa usan, qué se siembra o se cosecha, y qué fiestas hay (Carnaval en verano, vacaciones de invierno en julio)."
+      },
+      "ropa-clima": {
+        "descripcion": "Elige ropa que no corresponde al calor o al frío.",
+        "sugerencia": "Antes de salir, pregunten: «¿Hoy hace frío o calor? ¿Qué ropa conviene?». Dejen que elija y explique por qué."
+      },
+      "causa-estaciones": {
+        "descripcion": "Cree que las estaciones se deben a que la Tierra se acerca o se aleja del Sol.",
+        "sugerencia": "Con una linterna, alumbren una hoja de frente y luego inclinada: de frente la mancha de luz es más pequeña y más fuerte. Expliquen que, por la inclinación de la Tierra, en verano la luz del Sol nos llega más directa."
+      },
+      "ubica-fecha": {
+        "descripcion": "Le cuesta encontrar una fecha en el calendario.",
+        "sugerencia": "Busquen juntos fechas importantes en el calendario de la casa: primero el mes y después el día."
+      },
+      "produce-oracion": {
+        "descripcion": "Le cuesta escribir una oración completa sobre su estación favorita.",
+        "sugerencia": "Primero digan la oración en voz alta, luego escríbanla juntos y revisen la mayúscula inicial y el punto final."
+      }
+    }
+  }
+}

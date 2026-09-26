@@ -1,0 +1,424 @@
+{
+  "id": "com-1-5",
+  "titulo": "Adjetivos y concordancia",
+  "objetivo": "Uso palabras que dicen cómo son las cosas y las pongo de acuerdo con el sustantivo.",
+  "explicacion": [
+    {
+      "texto": "Los **adjetivos** son palabras que dicen **cómo es** alguien o algo. En «la llama blanca», la palabra «blanca» dice cómo es la llama.",
+      "emoji": "🌈",
+      "visual": { "tipo": "emojis", "items": ["🦙", "🌽", "🍋"], "etiquetas": ["llama blanca", "choclo grande", "limón ácido"] }
+    },
+    {
+      "texto": "Un adjetivo puede decir el **color** (rojo), el **tamaño** (grande), la **forma** (redonda), el **sabor** (dulce) o el **carácter**, es decir, cómo es alguien por dentro (alegre, valiente).",
+      "visual": { "tipo": "emojis", "items": ["🍅", "🍉", "⚽", "🍯", "😄"], "etiquetas": ["tomate rojo", "sandía grande", "pelota redonda", "miel dulce", "niño alegre"] }
+    },
+    {
+      "texto": "El adjetivo se pone de acuerdo con el sustantivo: eso es la **concordancia**. Si el sustantivo es masculino, el adjetivo también: **gato negro**. Si es femenino, también: **gata negra**.",
+      "emoji": "🤝",
+      "visual": { "tipo": "emojis", "items": ["🐓", "🐔"], "etiquetas": ["gallo blanco", "gallina blanca"] }
+    },
+    {
+      "texto": "También concuerdan en **número**: la papa grande, las papas grandes. Algunos adjetivos tienen una sola forma para masculino y femenino: el pasto **verde**, la hoja **verde**.",
+      "visual": { "tipo": "emoji", "valor": "🥔", "cantidad": 3, "etiqueta": "las papas grandes" }
+    }
+  ],
+  "ejemplo": {
+    "instruccion": "Mira cómo cambia el adjetivo cuando cambia el sustantivo.",
+    "pasos": [
+      {
+        "texto": "Wara tiene una llama. ¿Cómo es? Es blanca: «la llama **blanca**».",
+        "visual": { "tipo": "emoji", "valor": "🦙", "cantidad": 1, "etiqueta": "la llama blanca" }
+      },
+      {
+        "texto": "Ahora tiene tres llamas. El sustantivo va en plural: «las llamas». El adjetivo también: «las llamas **blancas**».",
+        "visual": { "tipo": "emoji", "valor": "🦙", "cantidad": 3, "etiqueta": "las llamas blancas" }
+      },
+      {
+        "texto": "Si el sustantivo es masculino, «negro» termina en **-o**: «el cóndor **negro**», «los cóndores **negros**».",
+        "visual": { "tipo": "emoji", "valor": "🦅", "cantidad": 2, "etiqueta": "los cóndores negros" }
+      },
+      {
+        "texto": "Si el adjetivo termina en consonante, para el plural agregamos **-es**: «el botón azul», «los botones **azules**».",
+        "visual": { "tipo": "emoji", "valor": "🔵", "cantidad": 2, "etiqueta": "los botones azules" }
+      }
+    ]
+  },
+  "guiada": {
+    "intro": "Vamos a hacerlo juntos, paso a paso.",
+    "pasos": [
+      {
+        "id": "g1", "tipo": "tocar",
+        "enunciado": "Toca la palabra que dice cómo es el choclo.",
+        "apoyo": "Pregúntate: ¿cómo es el choclo que compró Kusi?",
+        "texto": "Kusi compró un choclo *grande*.",
+        "pista": "La palabra que buscas dice el tamaño del choclo.",
+        "explicacion": "«Grande» dice cómo es el choclo: es un adjetivo. «Choclo» es el sustantivo.",
+        "error": "no-identifica-adjetivo"
+      },
+      {
+        "id": "g2", "tipo": "completar",
+        "enunciado": "Completa con el adjetivo que concuerda.",
+        "apoyo": "Mira el sustantivo: ¿es femenino o masculino? ¿Es uno solo o son varios?",
+        "texto": "La gata [negra] duerme. El gato [negro] juega.",
+        "banco": ["negras", "negros"],
+        "pista": "«Gata» es femenino y es una sola. «Gato» es masculino y es uno solo.",
+        "explicacion": "La gata negra (femenino, una) y el gato negro (masculino, uno).",
+        "error": "concordancia-genero"
+      },
+      {
+        "id": "g3", "tipo": "escribir",
+        "enunciado": "Hay muchas naranjas. Escribe «dulce» en plural: «las naranjas ___».",
+        "apoyo": "Si el sustantivo está en plural, el adjetivo también. «Dulce» termina en vocal: se le agrega -s.",
+        "visual": { "tipo": "emoji", "valor": "🍊", "cantidad": 4, "etiqueta": "las naranjas" },
+        "respuestas": ["dulces", "las naranjas dulces"],
+        "pista": "Agrega una letra al final de «dulce».",
+        "explicacion": "Se escribe «las naranjas dulces»: el sustantivo y el adjetivo están en plural.",
+        "error": "concordancia-numero"
+      }
+    ]
+  },
+  "practica": [
+    {
+      "id": "p1", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Toca la palabra que dice cómo es la llama.",
+      "texto": "La llama *blanca* come pasto.",
+      "pista": "¿De qué color es la llama?",
+      "explicacion": "«Blanca» dice cómo es la llama: es un adjetivo. «Llama» y «pasto» son sustantivos.",
+      "error": "no-identifica-adjetivo"
+    },
+    {
+      "id": "p2", "tipo": "memoria", "nivel": 1,
+      "enunciado": "Encuentra las parejas: cada cosa con la palabra que dice cómo es.",
+      "pares": [
+        [ { "texto": "limón", "emoji": "🍋" }, "ácido" ],
+        [ { "texto": "miel", "emoji": "🍯" }, "dulce" ],
+        [ { "texto": "nieve", "emoji": "❄️" }, "fría" ],
+        [ { "texto": "tortuga", "emoji": "🐢" }, "lenta" ],
+        [ { "texto": "fuego", "emoji": "🔥" }, "caliente" ]
+      ],
+      "pista": "Piensa: ¿cómo es la miel cuando la pruebas? ¿Cómo es la nieve cuando la tocas?",
+      "explicacion": "Limón ácido, miel dulce, nieve fría, tortuga lenta y fuego caliente. Ácido, dulce, fría, lenta y caliente son adjetivos.",
+      "error": "no-identifica-adjetivo"
+    },
+    {
+      "id": "p3", "tipo": "clasificar", "nivel": 1,
+      "enunciado": "¿El adjetivo dice el color o el sabor?",
+      "categorias": [
+        { "id": "color", "texto": "Color", "emoji": "🎨" },
+        { "id": "sabor", "texto": "Sabor", "emoji": "😋" }
+      ],
+      "elementos": [
+        { "texto": "rojo", "categoria": "color" },
+        { "texto": "dulce", "categoria": "sabor" },
+        { "texto": "amarillo", "categoria": "color" },
+        { "texto": "salado", "categoria": "sabor" },
+        { "texto": "azul", "categoria": "color" },
+        { "texto": "ácido", "categoria": "sabor" }
+      ],
+      "pista": "El color se ve con los ojos. El sabor se siente con la lengua.",
+      "explicacion": "Dicen el color: rojo, amarillo y azul. Dicen el sabor: dulce, salado y ácido.",
+      "error": "clase-adjetivo"
+    },
+    {
+      "id": "p4", "tipo": "escribir", "nivel": 1,
+      "enunciado": "Escucha y escribe lo que oyes. Fíjate cómo termina cada palabra.",
+      "escuchar": "las gatas negras",
+      "respuestas": ["las gatas negras"],
+      "pista": "Son varias gatas. Escucha el final de las tres palabras.",
+      "explicacion": "Se escribe «las gatas negras». Las tres palabras terminan en -s porque son varias.",
+      "error": "escucha-concordancia"
+    },
+    {
+      "id": "p5", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa con la forma correcta de «alto».",
+      "texto": "El eucalipto es [alto]. Las montañas son [altas]. Mi tía es [alta].",
+      "banco": ["altos"],
+      "pista": "Mira cada sustantivo: ¿es masculino o femenino? ¿Es uno o son varios?",
+      "explicacion": "El eucalipto es alto (masculino, uno). Las montañas son altas (femenino, varias). Mi tía es alta (femenino, una).",
+      "error": "concordancia"
+    },
+    {
+      "id": "p6", "tipo": "multiple", "nivel": 2,
+      "enunciado": "Elige todas las frases donde el adjetivo concuerda con el sustantivo.",
+      "opciones": [
+        { "texto": "la sopa caliente", "correcta": true },
+        { "texto": "los ríos largos", "correcta": true },
+        { "texto": "el cerro alto", "correcta": true },
+        { "texto": "la casa pequeño", "pista": "«Casa» es femenino. ¿En qué letra debe terminar el adjetivo?", "error": "concordancia-genero" },
+        { "texto": "las flores amarillo", "pista": "Son varias flores y son femeninas. Mira el final del adjetivo.", "error": "concordancia" },
+        { "texto": "los perros juguetón", "pista": "Son varios perros. El adjetivo también debe ir en plural.", "error": "concordancia-numero" }
+      ],
+      "pista": "Revisa si el sustantivo y el adjetivo son los dos femeninos o masculinos, y los dos de uno o de varios.",
+      "explicacion": "Concuerdan: la sopa caliente, los ríos largos y el cerro alto. Las otras se corrigen así: la casa pequeña, las flores amarillas, los perros juguetones.",
+      "error": "concordancia"
+    },
+    {
+      "id": "p7", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "Une cada sustantivo con el adjetivo que concuerda.",
+      "pares": [
+        [ { "texto": "el poncho", "emoji": "🧥" }, "nuevo" ],
+        [ { "texto": "la pollera", "emoji": "👗" }, "nueva" ],
+        [ { "texto": "los ponchos", "emoji": "🧥" }, "nuevos" ],
+        [ { "texto": "las polleras", "emoji": "👗" }, "nuevas" ]
+      ],
+      "pista": "Fíjate en el artículo: el, la, los, las. Te dice si es masculino o femenino, y si es uno o son varios.",
+      "explicacion": "El poncho nuevo, la pollera nueva, los ponchos nuevos y las polleras nuevas.",
+      "error": "concordancia"
+    },
+    {
+      "id": "p8", "tipo": "tocar", "nivel": 2,
+      "enunciado": "Toca las dos palabras que dicen cómo es el perro.",
+      "texto": "Nayra tiene un perro *pequeño* y *juguetón*.",
+      "pista": "Pregúntate: ¿cómo es el perro de Nayra? Hay una palabra de tamaño y otra de carácter.",
+      "explicacion": "«Pequeño» (tamaño) y «juguetón» (carácter) dicen cómo es el perro. Son adjetivos.",
+      "error": "no-identifica-adjetivo"
+    },
+    {
+      "id": "p9", "tipo": "ordenar", "nivel": 2,
+      "enunciado": "Ordena las palabras para formar la oración.",
+      "elementos": ["El", "jucumari", "tiene", "pelo", "oscuro."],
+      "unir": " ",
+      "pista": "Empieza con la palabra que tiene mayúscula. El adjetivo va después de lo que describe.",
+      "explicacion": "«El jucumari tiene pelo oscuro.» El adjetivo «oscuro» dice cómo es el pelo.",
+      "error": "orden-frase"
+    },
+    {
+      "id": "p10", "tipo": "completar", "nivel": 3, "modo": "escribir",
+      "enunciado": "Escribe el adjetivo en plural.",
+      "texto": "Tengo un lápiz azul y dos lápices [azules]. Vi una vizcacha gris y tres vizcachas [grises].",
+      "pista": "«Azul» y «gris» terminan en consonante. Para el plural no basta con -s.",
+      "explicacion": "azul → azules y gris → grises. Cuando el adjetivo termina en consonante, en plural se agrega -es.",
+      "error": "plural-adjetivo"
+    },
+    {
+      "id": "p11", "tipo": "escribir-libre", "nivel": 3,
+      "enunciado": "Describe un animal con dos adjetivos. Escribe una oración.",
+      "guia": ["La paraba es...", "El tatú es... y..."],
+      "requisitos": [
+        { "tipo": "mayuscula-inicial" },
+        { "tipo": "punto-final" },
+        { "tipo": "min-palabras", "valor": 5 }
+      ],
+      "modelo": "La vicuña es delgada y muy rápida.",
+      "pista": "Elige un animal. Luego piensa: ¿de qué color es? ¿Es grande o pequeño? ¿Cómo se mueve?",
+      "explicacion": "Por ejemplo: «La vicuña es delgada y muy rápida». «Delgada» y «rápida» son adjetivos femeninos, como «vicuña».",
+      "error": "describe"
+    },
+    {
+      "id": "p12", "tipo": "pasos", "nivel": 3,
+      "enunciado": "Transforma «el gato travieso» en dos pasos.",
+      "visual": { "tipo": "emoji", "valor": "🐈" },
+      "pasos": [
+        {
+          "tipo": "escribir",
+          "enunciado": "Escríbelo en femenino: «la gata ___».",
+          "respuestas": ["traviesa", "la gata traviesa"],
+          "pista": "Si es gata, el adjetivo también termina como ella.",
+          "explicacion": "La gata traviesa: femenino con femenino.",
+          "error": "concordancia-genero"
+        },
+        {
+          "tipo": "completar",
+          "enunciado": "Ahora son varias gatas. Completa.",
+          "texto": "las gatas [traviesas]",
+          "banco": ["traviesa", "traviesos"],
+          "pista": "Son varias y son femeninas.",
+          "explicacion": "Las gatas traviesas: femenino y plural, igual que el sustantivo.",
+          "error": "concordancia-numero"
+        }
+      ],
+      "pista": "Primero cambia el género y después el número.",
+      "explicacion": "el gato travieso → la gata traviesa → las gatas traviesas.",
+      "error": "concordancia"
+    },
+    {
+      "id": "p13", "tipo": "opcion", "nivel": 2,
+      "enunciado": "¿Qué palabra completa bien la oración? «La vicuña es muy ___.»",
+      "opciones": [
+        { "texto": "rápida", "correcta": true },
+        { "texto": "rápido", "pista": "«Vicuña» es femenino. ¿En qué letra debe terminar el adjetivo?", "error": "concordancia-genero" },
+        { "texto": "rápidas", "pista": "Es una sola vicuña. El adjetivo va en singular.", "error": "concordancia-numero" }
+      ],
+      "columnas": 3,
+      "pista": "«La vicuña» es femenino y es una sola.",
+      "explicacion": "«La vicuña es muy rápida»: vicuña es femenino y singular, y rápida también.",
+      "error": "concordancia-genero"
+    },
+    {
+      "id": "p14", "tipo": "clasificar", "nivel": 3,
+      "enunciado": "¿El adjetivo cambia para el femenino o tiene una sola forma?",
+      "categorias": [
+        { "id": "cambia", "texto": "Cambia (-o / -a)" },
+        { "id": "igual", "texto": "Una sola forma" }
+      ],
+      "elementos": [
+        { "texto": "rojo", "categoria": "cambia" },
+        { "texto": "verde", "categoria": "igual" },
+        { "texto": "pequeño", "categoria": "cambia" },
+        { "texto": "grande", "categoria": "igual" },
+        { "texto": "redondo", "categoria": "cambia" },
+        { "texto": "alegre", "categoria": "igual" },
+        { "texto": "bonito", "categoria": "cambia" },
+        { "texto": "azul", "categoria": "igual" }
+      ],
+      "pista": "Prueba con «el gato» y «la gata»: el gato rojo, la gata roja. ¿Cambió el adjetivo?",
+      "explicacion": "Rojo, pequeño, redondo y bonito cambian (roja, pequeña, redonda, bonita). Verde, grande, alegre y azul sirven igual para los dos.",
+      "error": "forma-invariable"
+    },
+    {
+      "id": "p15", "tipo": "escribir", "nivel": 3,
+      "enunciado": "Escucha y escríbelo en plural, como si fueran muchas.",
+      "escuchar": "la flor amarilla",
+      "respuestas": ["las flores amarillas"],
+      "pista": "Cambian las tres palabras. «Flor» termina en consonante: en plural se agrega -es.",
+      "explicacion": "Se escribe «las flores amarillas»: el artículo, el sustantivo y el adjetivo van en plural.",
+      "error": "concordancia-numero"
+    },
+    {
+      "id": "p16", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "¿Qué dice cada adjetivo: el tamaño, la forma o el carácter?",
+      "categorias": [
+        { "id": "tamano", "texto": "Tamaño", "emoji": "📏" },
+        { "id": "forma", "texto": "Forma", "emoji": "🔷" },
+        { "id": "caracter", "texto": "Carácter", "emoji": "🙂" }
+      ],
+      "elementos": [
+        { "texto": "grande", "categoria": "tamano" },
+        { "texto": "pequeño", "categoria": "tamano" },
+        { "texto": "redondo", "categoria": "forma" },
+        { "texto": "cuadrado", "categoria": "forma" },
+        { "texto": "alegre", "categoria": "caracter" },
+        { "texto": "valiente", "categoria": "caracter" },
+        { "texto": "amable", "categoria": "caracter" }
+      ],
+      "pista": "El carácter dice cómo es alguien por dentro, cómo se porta.",
+      "explicacion": "Tamaño: grande y pequeño. Forma: redondo y cuadrado. Carácter: alegre, valiente y amable.",
+      "error": "clase-adjetivo"
+    }
+  ],
+  "comprobacion": [
+    {
+      "id": "c1", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Toca la palabra que dice cómo es el sombrero.",
+      "texto": "El abuelo lleva un sombrero *negro*.",
+      "pista": "¿De qué color es el sombrero?",
+      "explicacion": "«Negro» dice cómo es el sombrero: es un adjetivo.",
+      "error": "no-identifica-adjetivo"
+    },
+    {
+      "id": "c2", "tipo": "multiple", "nivel": 1,
+      "enunciado": "Elige todos los adjetivos: las palabras que dicen cómo es algo.",
+      "opciones": [
+        { "texto": "dulce", "correcta": true },
+        { "texto": "suave", "correcta": true },
+        { "texto": "redondo", "correcta": true },
+        { "texto": "mesa", "pista": "«Mesa» nombra una cosa: es un sustantivo.", "error": "confunde-sustantivo" },
+        { "texto": "saltar", "pista": "«Saltar» es algo que hacemos: es una acción.", "error": "confunde-verbo" }
+      ],
+      "pista": "Pregúntate con cada palabra: ¿dice cómo es algo?",
+      "explicacion": "Dulce, suave y redondo son adjetivos: dicen cómo es algo. «Mesa» es un sustantivo y «saltar» es una acción.",
+      "error": "no-identifica-adjetivo"
+    },
+    {
+      "id": "c3", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa con la forma correcta de «blanco».",
+      "texto": "La nieve es [blanca]. El algodón es [blanco]. Las nubes son [blancas].",
+      "banco": ["blancos"],
+      "pista": "Mira cada sustantivo: ¿es masculino o femenino? ¿Es uno o son varios?",
+      "explicacion": "La nieve es blanca (femenino, una). El algodón es blanco (masculino, uno). Las nubes son blancas (femenino, varias).",
+      "error": "concordancia"
+    },
+    {
+      "id": "c4", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha la oración. Escribe el adjetivo que dice cómo está la sopa.",
+      "escuchar": "La sopa de maní está muy caliente.",
+      "respuestas": ["caliente", "muy caliente"],
+      "pista": "Escucha otra vez: ¿cómo está la sopa?",
+      "explicacion": "El adjetivo es «caliente»: dice cómo está la sopa de maní.",
+      "error": "no-identifica-adjetivo"
+    },
+    {
+      "id": "c5", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "Une cada sustantivo con el adjetivo que concuerda.",
+      "pares": [
+        [ { "texto": "el pollito", "emoji": "🐤" }, "amarillo" ],
+        [ { "texto": "la flor", "emoji": "🌼" }, "amarilla" ],
+        [ { "texto": "los pollitos", "emoji": "🐤" }, "amarillos" ],
+        [ { "texto": "las flores", "emoji": "🌼" }, "amarillas" ]
+      ],
+      "pista": "El artículo te ayuda: el, la, los, las.",
+      "explicacion": "El pollito amarillo, la flor amarilla, los pollitos amarillos y las flores amarillas.",
+      "error": "concordancia"
+    },
+    {
+      "id": "c6", "tipo": "ordenar", "nivel": 2,
+      "enunciado": "Ordena las palabras para formar la oración.",
+      "elementos": ["Las", "salteñas", "están", "calientes."],
+      "unir": " ",
+      "pista": "La palabra con mayúscula va primero y la que tiene punto va al final.",
+      "explicacion": "«Las salteñas están calientes.» «Salteñas» y «calientes» están en plural.",
+      "error": "orden-frase"
+    },
+    {
+      "id": "c7", "tipo": "escribir", "nivel": 3,
+      "enunciado": "Escucha y escríbelo en plural, como si fueran muchos.",
+      "escuchar": "el árbol verde",
+      "respuestas": ["los árboles verdes"],
+      "pista": "Cambian las tres palabras. «Árbol» termina en consonante; «verde» termina en vocal.",
+      "explicacion": "Se escribe «los árboles verdes»: árbol → árboles (se agrega -es) y verde → verdes (se agrega -s).",
+      "error": "concordancia-numero"
+    },
+    {
+      "id": "c8", "tipo": "clasificar", "nivel": 3,
+      "enunciado": "¿El adjetivo concuerda con el sustantivo o no?",
+      "categorias": [
+        { "id": "si", "texto": "Concuerda", "emoji": "✅" },
+        { "id": "no", "texto": "No concuerda", "emoji": "✏️" }
+      ],
+      "elementos": [
+        { "texto": "la llama blanca", "categoria": "si" },
+        { "texto": "los gatos negra", "categoria": "no" },
+        { "texto": "las casas grandes", "categoria": "si" },
+        { "texto": "el cerro alta", "categoria": "no" },
+        { "texto": "la niña feliz", "categoria": "si" },
+        { "texto": "el río largos", "categoria": "no" }
+      ],
+      "pista": "Revisa el género (masculino o femenino) y el número (uno o varios) de las dos palabras.",
+      "explicacion": "Concuerdan: la llama blanca, las casas grandes y la niña feliz. Se corrigen así: los gatos negros, el cerro alto, el río largo.",
+      "error": "concordancia"
+    }
+  ],
+  "repaso": {
+    "texto": "El adjetivo dice cómo es el sustantivo y concuerda con él en género y número: gato negro, gata negra, gatos negros, gatas negras.",
+    "visual": {
+      "tipo": "tabla",
+      "columnas": ["Género", "Uno", "Varios"],
+      "filas": [
+        ["Masculino", "gato negro", "gatos negros"],
+        ["Femenino", "gata negra", "gatas negras"]
+      ]
+    }
+  },
+  "adulto": {
+    "objetivo": "Reconocer adjetivos calificativos (color, tamaño, forma, sabor, carácter) y hacerlos concordar en género y número con el sustantivo, incluidos los adjetivos de una sola forma (verde, grande) y los plurales en -es (azules).",
+    "sugerencias": [
+      "En la feria o la tienda, describan juntos lo que ven: «una papa grande y redonda», «un plátano amarillo». Después pidan que lo diga en plural: «unas papas grandes y redondas».",
+      "Pongan en una bolsa objetos de la casa (una cuchara, una esponja, una piedra, una mandarina). Sin mirar, que toque uno y diga dos adjetivos: suave, duro, frío, liso, redondo...",
+      "En el patio, la plaza o el campo, jueguen «Veo, veo»: den pistas solo con adjetivos (veo algo verde, alto y con hojas) hasta que adivine. Luego cambien los papeles."
+    ],
+    "errores": {
+      "no-identifica-adjetivo": { "descripcion": "No siempre reconoce la palabra que dice cómo es algo.", "sugerencia": "Pregunten «¿cómo es?» señalando un objeto y anoten las respuestas: esas palabras son adjetivos." },
+      "confunde-sustantivo": { "descripcion": "Confunde el adjetivo con el sustantivo (cree que «mesa» dice cómo es algo).", "sugerencia": "Usen dos preguntas: «¿qué es?» para el sustantivo (una mesa) y «¿cómo es?» para el adjetivo (grande, de madera)." },
+      "confunde-verbo": { "descripcion": "Confunde acciones (saltar, comer) con adjetivos.", "sugerencia": "Actúen las palabras: si se puede hacer, es una acción; si dice cómo es algo, es un adjetivo." },
+      "clase-adjetivo": { "descripcion": "Duda si un adjetivo habla del color, el tamaño, la forma, el sabor o el carácter.", "sugerencia": "Describan un mismo objeto con los cinco sentidos: ¿de qué color es?, ¿de qué tamaño?, ¿qué forma tiene?, ¿a qué sabe?" },
+      "concordancia-genero": { "descripcion": "No cambia el adjetivo según el género (escribe «la casa pequeño»).", "sugerencia": "Digan en voz alta pares como «el gato negro / la gata negra» y pidan que escuche si «suena bien»." },
+      "concordancia-numero": { "descripcion": "Olvida poner el adjetivo en plural (escribe «los perros juguetón» o «las naranjas dulce»).", "sugerencia": "Con objetos reales, pasen de uno a varios: «una piedra lisa → tres piedras lisas», marcando cada -s con una palmada." },
+      "concordancia": { "descripcion": "Mezcla género y número al unir sustantivo y adjetivo.", "sugerencia": "Hagan tarjetas con sustantivos (el poncho, las polleras) y adjetivos (nuevo, nuevas) y armen parejas que concuerden." },
+      "forma-invariable": { "descripcion": "Cree que todos los adjetivos cambian a -a en femenino (escribe «la hoja verda» o «la casa granda»).", "sugerencia": "Prueben adjetivos con «el gato» y «la gata»: si el adjetivo no cambia (alegre, verde, grande), tiene una sola forma." },
+      "plural-adjetivo": { "descripcion": "Forma mal el plural de adjetivos que terminan en consonante (escribe «azuls»).", "sugerencia": "Recuerden la regla: si termina en vocal se agrega -s (verde → verdes); si termina en consonante, -es (azul → azules, gris → grises)." },
+      "escucha-concordancia": { "descripcion": "Al escribir lo que escucha, olvida la -s final de alguna palabra.", "sugerencia": "Dicten frases cortas (las papas grandes) y pidan que cuente con los dedos cuántas palabras terminan en -s." },
+      "orden-frase": { "descripcion": "Le cuesta ordenar palabras para formar una oración con adjetivo.", "sugerencia": "Escriban la oración en tiras de papel, córtenlas y armen la oración juntos, empezando por la mayúscula." },
+      "describe": { "descripcion": "Le cuesta describir con sus propias palabras usando adjetivos.", "sugerencia": "Miren una foto o un animal y hagan una lista de adjetivos juntos; después elijan dos para escribir una oración." }
+    }
+  }
+}

@@ -1,0 +1,499 @@
+{
+  "id": "soc-1-1",
+  "titulo": "Mi familia",
+  "objetivo": "Sé que hay muchas formas de familia, que todas merecen respeto y que en casa todos ayudamos.",
+  "explicacion": [
+    {
+      "texto": "Una **familia** es un grupo de personas que se quieren, se cuidan y se respetan. Puede ser grande o pequeña.",
+      "emoji": "🏠",
+      "visual": { "tipo": "emojis", "items": ["❤️", "🤗", "🤝"], "etiquetas": ["amor", "cuidado", "respeto"] }
+    },
+    {
+      "texto": "Hay **muchas formas** de familia. Algunos niños viven con mamá y papá. Otros, solo con mamá o solo con papá. Otros viven con sus abuelos, o con abuelos, tíos y primos.",
+      "visual": { "tipo": "emojis", "items": ["👨‍👩‍👧", "👩‍👦", "👨‍👧", "👵👴👦"], "etiquetas": ["mamá y papá", "solo mamá", "solo papá", "con abuelos"] }
+    },
+    {
+      "texto": "Algunas familias **adoptan**: reciben a una niña o a un niño como su hija o su hijo para siempre. En una familia **ensamblada**, dos familias se unen en una. ¡Ninguna familia es mejor que otra!",
+      "emoji": "💞"
+    },
+    {
+      "texto": "En casa **todos ayudan**, cada uno según su edad. Las tareas no son de niñas ni de niños: mamás, papás, abuelos, hijas e hijos pueden barrer, cocinar o lavar.",
+      "visual": { "tipo": "emojis", "items": ["🧹", "🍽️", "🧺", "🌱"], "etiquetas": ["barrer", "poner la mesa", "doblar la ropa", "regar"] }
+    }
+  ],
+  "ejemplo": {
+    "instruccion": "Conoce a tres familias del curso de Wara. Después, arma el pictograma de tu familia.",
+    "pasos": [
+      {
+        "texto": "Wara vive con su mamá y su abuelo en Oruro. Los domingos cocinan juntos una sopa de quinua.",
+        "visual": { "tipo": "emojis", "items": ["👧", "👩", "👴"], "etiquetas": ["Wara", "mamá", "abuelo"] }
+      },
+      {
+        "texto": "Mateo vive con su papá, con Rosa y con los dos hijos de Rosa. Ahora son hermanos. Es una familia **ensamblada**.",
+        "visual": { "tipo": "emojis", "items": ["👦", "👨", "👩", "👧", "👦"], "etiquetas": ["Mateo", "papá", "Rosa", "Ana", "Luis"] }
+      },
+      {
+        "texto": "Kusi llegó a su familia por **adopción** cuando era bebé. Vive en Tarija con su mamá, su papá y su abuela.",
+        "visual": { "tipo": "emojis", "items": ["👦", "👩", "👨", "👵"], "etiquetas": ["Kusi", "mamá", "papá", "abuela"] }
+      },
+      {
+        "texto": "Las tres familias son distintas, pero en todas hay amor, cuidado y respeto. Y en todas, cada uno ayuda en casa.",
+        "visual": { "tipo": "emojis", "items": ["❤️", "🤗", "🤝"], "etiquetas": ["amor", "cuidado", "respeto"] }
+      }
+    ],
+    "explorar": {
+      "tipo": "pictograma",
+      "icono": "🙂",
+      "categorias": [
+        { "etiqueta": "Personas adultas" },
+        { "etiqueta": "Niñas y niños" }
+      ]
+    }
+  },
+  "guiada": {
+    "intro": "Vamos a pensar juntos en las familias.",
+    "pasos": [
+      {
+        "id": "g1", "tipo": "tocar",
+        "enunciado": "Toca las personas con quienes vive Nayra.",
+        "apoyo": "Lee despacio. Busca tres personas de su familia.",
+        "texto": "Nayra vive con su *abuela*, su *tío* y su *hermanito*. También tienen un gato.",
+        "pista": "Son tres personas. El gato vive con ellos, pero es un animal.",
+        "explicacion": "Nayra vive con su abuela, su tío y su hermanito. ¡Es una familia llena de cariño!",
+        "error": "miembros-familia"
+      },
+      {
+        "id": "g2", "tipo": "relacionar",
+        "enunciado": "Une cada familia con las personas que la forman.",
+        "apoyo": "Mira quiénes aparecen en cada dibujo: ¿hay una mamá, un papá, abuelos?",
+        "pares": [
+          [ { "emoji": "👨‍👩‍👧" }, "mamá, papá e hija" ],
+          [ { "emoji": "👩‍👦" }, "mamá e hijo" ],
+          [ { "emoji": "👨‍👧" }, "papá e hija" ],
+          [ { "emoji": "👵👴👦" }, "abuela, abuelo y nieto" ]
+        ],
+        "pista": "Cuenta las personas de cada dibujo y fíjate si son grandes o pequeñas.",
+        "explicacion": "Son cuatro familias distintas: mamá, papá e hija; mamá e hijo; papá e hija; y abuelos con su nieto. Todas son familias.",
+        "error": "tipos-familia"
+      },
+      {
+        "id": "g3", "tipo": "clasificar",
+        "enunciado": "¿Quién puede hacer esta tarea?",
+        "apoyo": "Piensa: ¿es seguro para una niña o un niño de 7 años? Si hay fuego o algo peligroso, es tarea de una persona adulta.",
+        "categorias": [
+          { "id": "nino", "texto": "Una niña o un niño de 7 años", "emoji": "🧒" },
+          { "id": "adulto", "texto": "Una persona adulta", "emoji": "🧑" }
+        ],
+        "elementos": [
+          { "texto": "poner la mesa", "emoji": "🍽️", "categoria": "nino" },
+          { "texto": "tender su cama", "emoji": "🛏️", "categoria": "nino" },
+          { "texto": "guardar sus juguetes", "emoji": "🧸", "categoria": "nino" },
+          { "texto": "prender la cocina a gas", "emoji": "🔥", "categoria": "adulto" },
+          { "texto": "cortar carne con un cuchillo grande", "emoji": "🔪", "categoria": "adulto" },
+          { "texto": "pagar la cuenta de la luz", "emoji": "💡", "categoria": "adulto" }
+        ],
+        "pista": "El fuego y los cuchillos grandes son peligrosos. ¿Quién debe usarlos?",
+        "explicacion": "Tú puedes poner la mesa, tender tu cama y guardar tus juguetes. Prender la cocina, usar cuchillos grandes y pagar la luz son tareas de una persona adulta.",
+        "error": "tareas-edad"
+      }
+    ]
+  },
+  "practica": [
+    {
+      "id": "p1", "tipo": "completar", "nivel": 1,
+      "enunciado": "Completa las oraciones.",
+      "texto": "Una familia se une por el [amor]. Cuando Ana está enferma, su papá la [cuida].",
+      "banco": ["enojo", "olvida"],
+      "pista": "¿Qué sentimiento une a una familia? ¿Qué hace un papá cuando su hija está enferma?",
+      "explicacion": "Una familia se une por el amor. Cuando alguien está enfermo, su familia lo cuida.",
+      "error": "valor-familia"
+    },
+    {
+      "id": "p2", "tipo": "opcion", "nivel": 1,
+      "enunciado": "Escucha cómo ayuda la familia de Inti. ¿Qué hace Inti?",
+      "escuchar": "En la casa de Inti, todos ayudan. Su abuela cocina una sopa de maní, su papá lava la ropa e Inti riega las plantas.",
+      "opciones": [
+        { "texto": "Riega las plantas", "emoji": "🌱", "correcta": true },
+        { "texto": "Lava la ropa", "emoji": "🧺", "pista": "Eso lo hace su papá. Escucha otra vez qué hace Inti.", "error": "escucha-comprension" },
+        { "texto": "Cocina la sopa", "emoji": "🍲", "pista": "Eso lo hace su abuela. Escucha otra vez qué hace Inti.", "error": "escucha-comprension" }
+      ],
+      "pista": "Escucha con atención el final: ahí se dice qué hace Inti.",
+      "explicacion": "Inti riega las plantas. Su abuela cocina y su papá lava la ropa: ¡todos ayudan!",
+      "error": "escucha-comprension"
+    },
+    {
+      "id": "p3", "tipo": "ordenar", "nivel": 1,
+      "enunciado": "Ordena a la familia de Wara, de la persona más joven a la mayor.",
+      "elementos": [
+        { "texto": "Inti, de 1 año", "emoji": "👶" },
+        { "texto": "Wara, de 7 años", "emoji": "👧" },
+        { "texto": "su mamá, de 32 años", "emoji": "👩" },
+        { "texto": "su abuela, de 61 años", "emoji": "👵" }
+      ],
+      "vertical": true,
+      "pista": "Mira la edad de cada persona. Empieza por el número más pequeño.",
+      "explicacion": "Inti (1 año), Wara (7 años), su mamá (32 años) y su abuela (61 años). La abuela es la mamá de la mamá o del papá.",
+      "error": "miembros-familia"
+    },
+    {
+      "id": "p4", "tipo": "multiple", "nivel": 1,
+      "enunciado": "Elige todos los grupos que son familias.",
+      "opciones": [
+        { "texto": "Ana vive con su papá.", "emoji": "👨‍👧", "correcta": true },
+        { "texto": "Juan vive con su abuela y su tío.", "emoji": "👵", "correcta": true },
+        { "texto": "Sofía vive con su mamá, su papá y su hermano.", "emoji": "👨‍👩‍👧‍👦", "correcta": true },
+        { "texto": "Tres niños que se conocieron hoy en la plaza.", "emoji": "⛲", "pista": "Ellos recién se conocen: no viven juntos ni son parientes.", "error": "tipos-familia" }
+      ],
+      "pista": "Una familia puede ser pequeña o grande, con papá, con mamá o con abuelos. Solo un grupo no es una familia.",
+      "explicacion": "Ana y su papá, Juan con su abuela y su tío, y Sofía con sus papás y su hermano son familias. Los niños que se conocieron hoy son nuevos amigos.",
+      "error": "tipos-familia"
+    },
+    {
+      "id": "p5", "tipo": "memoria", "nivel": 2,
+      "enunciado": "Encuentra las parejas: ¿quién es quién en la familia?",
+      "pares": [
+        ["la mamá de mi papá", "mi abuela"],
+        ["el papá de mi mamá", "mi abuelo"],
+        ["el hermano de mi mamá", "mi tío"],
+        ["la hija de mi tío", "mi prima"]
+      ],
+      "pista": "Los papás de tus papás son tus abuelos. Los hermanos de tus papás son tus tíos.",
+      "explicacion": "La mamá de mi papá es mi abuela; el papá de mi mamá es mi abuelo; el hermano de mi mamá es mi tío y la hija de mi tío es mi prima.",
+      "error": "miembros-familia"
+    },
+    {
+      "id": "p6", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "¿Esta acción muestra cariño y respeto en la familia?",
+      "categorias": [
+        { "id": "si", "texto": "Muestra cariño y respeto", "emoji": "💞" },
+        { "id": "no", "texto": "No muestra respeto", "emoji": "💔" }
+      ],
+      "elementos": [
+        { "texto": "escuchar a la abuela cuando habla", "categoria": "si" },
+        { "texto": "decir gracias por la comida", "categoria": "si" },
+        { "texto": "ayudar a mi hermanito a vestirse", "categoria": "si" },
+        { "texto": "burlarse de mi primo", "categoria": "no" },
+        { "texto": "dejar todo el trabajo a una sola persona", "categoria": "no" },
+        { "texto": "gritar para pedir las cosas", "categoria": "no" }
+      ],
+      "pista": "Pregúntate: ¿cómo se siente la otra persona cuando hago eso?",
+      "explicacion": "Escuchar, agradecer y ayudar muestran cariño. Burlarse, gritar o dejar todo el trabajo a una persona la hacen sentir mal.",
+      "error": "convivencia-familiar"
+    },
+    {
+      "id": "p7", "tipo": "opcion", "nivel": 2,
+      "enunciado": "¿Qué familia es mejor?",
+      "opciones": [
+        { "texto": "Ninguna: todas las familias valen igual.", "correcta": true },
+        { "texto": "La que tiene mamá y papá.", "pista": "Hay familias con solo mamá, solo papá o con abuelos. ¿Se quieren menos?", "error": "valor-familia" },
+        { "texto": "La que tiene más personas.", "pista": "Una familia pequeña también se quiere y se cuida mucho.", "error": "valor-familia" }
+      ],
+      "pista": "Recuerda lo que importa en una familia: el amor, el cuidado y el respeto.",
+      "explicacion": "Ninguna familia es mejor que otra. Todas valen igual cuando hay amor, cuidado y respeto.",
+      "error": "valor-familia"
+    },
+    {
+      "id": "p8", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha y completa con una palabra.",
+      "escuchar": "La mamá de tu mamá es tu...",
+      "respuestas": ["abuela", "mi abuela", "la abuela", "abuelita", "mi abuelita", "la abuelita"],
+      "pista": "Piensa en los papás de tus papás. ¿Cómo les dices?",
+      "explicacion": "La mamá de tu mamá es tu abuela.",
+      "error": "miembros-familia"
+    },
+    {
+      "id": "p9", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa sobre las tareas de la casa.",
+      "texto": "Las tareas de la casa no son de niñas ni de niños: son de [todos]. Cada persona ayuda según su [edad].",
+      "banco": ["nadie", "ropa"],
+      "pista": "¿Quiénes pueden barrer, cocinar o lavar? ¿Un bebé puede hacer lo mismo que una niña de 7 años? ¿Por qué?",
+      "explicacion": "Las tareas de la casa son de todos, y cada uno ayuda según su edad.",
+      "error": "tareas-genero"
+    },
+    {
+      "id": "p10", "tipo": "manipular", "nivel": 2,
+      "enunciado": "Juan lavó los platos 2 días; su hermana Ana, 2 días; y su papá, 3 días. Arma el pictograma.",
+      "manipulable": {
+        "tipo": "pictograma",
+        "icono": "🍽️",
+        "escala": 1,
+        "categorias": [
+          { "etiqueta": "Juan", "objetivo": 2 },
+          { "etiqueta": "Ana", "objetivo": 2 },
+          { "etiqueta": "Papá", "objetivo": 3 }
+        ]
+      },
+      "pista": "Pon un plato por cada día. Revisa cada fila: Juan 2, Ana 2, papá 3.",
+      "explicacion": "Juan: 2 platos. Ana: 2 platos. Papá: 3 platos. ¡Entre los tres cubrieron los 7 días de la semana!",
+      "error": "pictograma"
+    },
+    {
+      "id": "p11", "tipo": "pasos", "nivel": 3,
+      "enunciado": "Hoy a Sofía le toca poner la mesa, pero ella quiere seguir jugando.",
+      "visual": { "tipo": "emojis", "items": ["👧", "🍽️", "⚽"] },
+      "pasos": [
+        {
+          "tipo": "opcion",
+          "enunciado": "¿Qué es lo mejor que puede hacer Sofía?",
+          "opciones": [
+            { "texto": "Poner la mesa y después seguir jugando.", "correcta": true },
+            { "texto": "Esconderse para que otra persona lo haga.", "pista": "Si se esconde, otra persona tendrá que hacer su parte.", "error": "responsabilidad" },
+            { "texto": "Pedir que su hermano lo haga siempre.", "pista": "¿Es justo que una sola persona haga siempre la misma tarea?", "error": "responsabilidad" }
+          ],
+          "pista": "Piensa en una opción donde Sofía cumple su tarea y también puede jugar.",
+          "explicacion": "Lo mejor es poner la mesa y después seguir jugando. Así cumple su parte.",
+          "error": "responsabilidad"
+        },
+        {
+          "tipo": "opcion",
+          "enunciado": "¿Por qué es importante que Sofía ayude?",
+          "opciones": [
+            { "texto": "Porque en la familia todos colaboran.", "correcta": true },
+            { "texto": "Porque así le dan un premio.", "pista": "Ayudamos porque somos parte de la familia, no solo por un premio.", "error": "responsabilidad" },
+            { "texto": "Porque los demás no saben poner la mesa.", "pista": "Los demás sí saben. ¿Por qué ayudamos todos?", "error": "responsabilidad" }
+          ],
+          "pista": "Piensa en lo que pasa cuando cada uno hace su parte.",
+          "explicacion": "Sofía ayuda porque en la familia todos colaboran. Así el trabajo es más liviano para todos.",
+          "error": "responsabilidad"
+        }
+      ],
+      "pista": "Resuelve una pregunta a la vez.",
+      "explicacion": "Sofía pone la mesa y después juega. Cuando todos colaboran, la casa funciona mejor.",
+      "error": "responsabilidad"
+    },
+    {
+      "id": "p12", "tipo": "pasos", "nivel": 3,
+      "enunciado": "La familia de Kusi hizo una tabla de turnos para lavar los platos.",
+      "visual": {
+        "tipo": "tabla",
+        "columnas": ["Día", "Lava los platos"],
+        "filas": [
+          ["lunes", "papá"], ["martes", "Kusi"], ["miércoles", "mamá"], ["jueves", "Kusi"],
+          ["viernes", "abuela"], ["sábado", "papá"], ["domingo", "mamá"]
+        ]
+      },
+      "pasos": [
+        {
+          "tipo": "escribir",
+          "enunciado": "¿Quién lava los platos el miércoles?",
+          "respuestas": ["mamá", "la mamá", "su mamá", "la mamá de Kusi"],
+          "pista": "Busca la fila que dice «miércoles» y mira a su lado.",
+          "explicacion": "El miércoles lava los platos la mamá de Kusi.",
+          "error": "lee-tabla"
+        },
+        {
+          "tipo": "numero",
+          "enunciado": "¿Cuántos días le toca a Kusi?",
+          "respuesta": 2,
+          "sufijo": "días",
+          "erroresComunes": [ { "respuesta": 1, "pista": "Busca «Kusi» en toda la tabla, hasta el final.", "error": "lee-tabla" } ],
+          "pista": "Cuenta cuántas veces aparece «Kusi» en la tabla.",
+          "explicacion": "A Kusi le toca el martes y el jueves: 2 días.",
+          "error": "lee-tabla"
+        },
+        {
+          "tipo": "opcion",
+          "enunciado": "¿Para qué hace turnos la familia?",
+          "opciones": [
+            { "texto": "Para que todos ayuden y nadie haga todo solo.", "correcta": true },
+            { "texto": "Para que Kusi no ayude nunca.", "pista": "Mira la tabla: Kusi también tiene sus días.", "error": "responsabilidad" },
+            { "texto": "Para que solo las mujeres laven.", "pista": "En la tabla también lavan papá y Kusi.", "error": "tareas-genero" }
+          ],
+          "pista": "Mira cuántas personas distintas aparecen en la tabla.",
+          "explicacion": "Los turnos sirven para que todos ayuden: papá, mamá, la abuela y Kusi. Así nadie hace todo solo.",
+          "error": "responsabilidad"
+        }
+      ],
+      "pista": "Lee la tabla con calma: a la izquierda están los días y a la derecha, quién lava.",
+      "explicacion": "El miércoles lava mamá, a Kusi le tocan 2 días y los turnos sirven para que todos ayuden.",
+      "error": "lee-tabla"
+    },
+    {
+      "id": "p13", "tipo": "relacionar", "nivel": 3,
+      "enunciado": "Une cada historia con su tipo de familia.",
+      "pares": [
+        ["Mateo vive con su papá, con Rosa y con los hijos de Rosa.", "familia ensamblada"],
+        ["Una pareja recibió a Kusi como su hijo para siempre.", "familia que adopta"],
+        ["Luis vive solo con su papá.", "familia de papá e hijo"],
+        ["Nayra vive con sus papás, sus abuelos, su tía y sus primos.", "familia grande"]
+      ],
+      "pista": "Una familia ensamblada une dos familias. Adoptar es recibir a un hijo para siempre.",
+      "explicacion": "Mateo: familia ensamblada. Kusi: familia que adopta. Luis: familia de papá e hijo. Nayra: familia grande. ¡Todas son familias!",
+      "error": "tipos-familia"
+    },
+    {
+      "id": "p14", "tipo": "escribir-libre", "nivel": 3,
+      "enunciado": "Escribe dos oraciones: con quiénes vives y cómo ayudas en casa.",
+      "guia": ["Vivo con...", "En mi casa, yo ayudo a..."],
+      "requisitos": [
+        { "tipo": "mayuscula-inicial" },
+        { "tipo": "punto-final" },
+        { "tipo": "min-oraciones", "valor": 2 },
+        { "tipo": "min-palabras", "valor": 8 }
+      ],
+      "modelo": "Vivo con mi abuela y mi tío. En mi casa, yo riego las plantas y pongo la mesa.",
+      "pista": "Primero di con quiénes vives. Después cuenta una tarea que haces.",
+      "explicacion": "Por ejemplo: «Vivo con mi abuela y mi tío. En mi casa, yo riego las plantas y pongo la mesa.» Cada oración empieza con mayúscula y termina con punto.",
+      "error": "produce-texto"
+    }
+  ],
+  "comprobacion": [
+    {
+      "id": "c1", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Toca las personas que cuidan a Arami.",
+      "texto": "Arami vive con su *abuela* y su *abuelo* en Potosí. Cada mañana le preparan api y la llevan a la escuela.",
+      "pista": "Busca a las dos personas con quienes vive Arami.",
+      "explicacion": "La abuela y el abuelo cuidan a Arami. Una niña que vive con sus abuelos también tiene una familia.",
+      "error": "miembros-familia"
+    },
+    {
+      "id": "c2", "tipo": "opcion", "nivel": 1,
+      "enunciado": "¿Qué une a las personas de una familia?",
+      "opciones": [
+        { "texto": "El amor y el cuidado.", "emoji": "❤️", "correcta": true },
+        { "texto": "Vivir en una casa grande.", "emoji": "🏠", "pista": "Hay familias en casas grandes y en casas pequeñas. ¿Qué tienen todas?", "error": "valor-familia" },
+        { "texto": "Usar la misma ropa.", "emoji": "👕", "pista": "La ropa no une a una familia. Piensa en lo que sienten.", "error": "valor-familia" }
+      ],
+      "pista": "Piensa en lo que hay en todas las familias, sean grandes o pequeñas.",
+      "explicacion": "A una familia la unen el amor y el cuidado entre sus personas.",
+      "error": "valor-familia"
+    },
+    {
+      "id": "c3", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "¿Quién puede hacer esta tarea?",
+      "categorias": [
+        { "id": "nino", "texto": "Una niña o un niño de 7 años", "emoji": "🧒" },
+        { "id": "adulto", "texto": "Una persona adulta", "emoji": "🧑" }
+      ],
+      "elementos": [
+        { "texto": "regar las plantas", "emoji": "🌱", "categoria": "nino" },
+        { "texto": "doblar su ropa", "emoji": "👕", "categoria": "nino" },
+        { "texto": "dar de comer al gato", "emoji": "🐈", "categoria": "nino" },
+        { "texto": "planchar la ropa", "categoria": "adulto" },
+        { "texto": "cortar leña con un hacha", "categoria": "adulto" },
+        { "texto": "manejar el auto", "emoji": "🚗", "categoria": "adulto" }
+      ],
+      "pista": "Las planchas calientes, las hachas y los autos pueden ser peligrosos.",
+      "explicacion": "Tú puedes regar, doblar tu ropa y dar de comer al gato. Planchar, cortar leña con hacha y manejar son tareas de personas adultas.",
+      "error": "tareas-edad"
+    },
+    {
+      "id": "c4", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha y escribe la palabra que falta.",
+      "escuchar": "El hermano de mi papá es mi...",
+      "respuestas": ["tío", "mi tío"],
+      "pista": "Los hermanos de tus papás son parte de tu familia. ¿Cómo los llamas?",
+      "explicacion": "El hermano de mi papá es mi tío.",
+      "error": "miembros-familia"
+    },
+    {
+      "id": "c5", "tipo": "opcion", "nivel": 2,
+      "enunciado": "Kusi dice: «Lavar los platos es solo para las niñas». ¿Qué le puedes decir?",
+      "opciones": [
+        { "texto": "«Lavar los platos es tarea de todos: niñas y niños.»", "correcta": true },
+        { "texto": "«Tienes razón, los niños no lavan platos.»", "pista": "¿Un niño puede lavar platos? Claro que sí.", "error": "tareas-genero" },
+        { "texto": "«Nadie tiene que lavar los platos.»", "pista": "Si nadie los lava, ¿cómo comemos mañana?", "error": "responsabilidad" }
+      ],
+      "pista": "Recuerda: las tareas de la casa no son de niñas ni de niños.",
+      "explicacion": "Lavar los platos es tarea de todos. Niñas y niños pueden ayudar por igual.",
+      "error": "tareas-genero"
+    },
+    {
+      "id": "c6", "tipo": "multiple", "nivel": 2,
+      "enunciado": "Elige las familias donde se reparten las tareas de la casa.",
+      "opciones": [
+        { "texto": "Papá cocina el majadito y Wara pone la mesa.", "correcta": true },
+        { "texto": "Mamá lava la ropa y el abuelo riega las plantas.", "correcta": true },
+        { "texto": "La tía hace todo sola y los demás miran la tele.", "pista": "¿Quién ayuda a la tía?", "error": "responsabilidad" },
+        { "texto": "Los niños dejan sus juguetes tirados para que otro los guarde.", "pista": "¿Quién debería guardar esos juguetes?", "error": "responsabilidad" }
+      ],
+      "pista": "Busca las familias donde más de una persona hace algo.",
+      "explicacion": "Donde papá cocina y Wara pone la mesa, y donde mamá lava y el abuelo riega, las tareas se reparten. En las otras, una sola persona hace el trabajo de todos.",
+      "error": "responsabilidad"
+    },
+    {
+      "id": "c7", "tipo": "pasos", "nivel": 3,
+      "enunciado": "En el recreo, Arami cuenta que vive con su abuela. Mateo se ríe y dice: «¡Esa no es una familia de verdad!»",
+      "visual": { "tipo": "emojis", "items": ["👧", "👵", "😢"] },
+      "pasos": [
+        {
+          "tipo": "opcion",
+          "enunciado": "¿Tiene razón Mateo?",
+          "mezclar": false,
+          "opciones": [
+            { "texto": "Sí", "pista": "Arami y su abuela se quieren y se cuidan. ¿Qué forma una familia?", "error": "valor-familia" },
+            { "texto": "No", "correcta": true }
+          ],
+          "pista": "Piensa en lo que hace falta para ser una familia.",
+          "explicacion": "Mateo no tiene razón. Arami y su abuela son una familia de verdad, porque se quieren y se cuidan.",
+          "error": "valor-familia"
+        },
+        {
+          "tipo": "opcion",
+          "enunciado": "¿Qué le puedes decir a Mateo?",
+          "opciones": [
+            { "texto": "«Hay muchas formas de familia y todas merecen respeto.»", "correcta": true },
+            { "texto": "«Tu familia es más rara.»", "pista": "Responder con otra burla no arregla nada.", "error": "respeto-diversidad" },
+            { "texto": "«Arami, mejor no hables de tu familia.»", "pista": "Arami puede hablar de su familia con orgullo.", "error": "respeto-diversidad" }
+          ],
+          "pista": "Busca una respuesta que sea respetuosa con todas las familias.",
+          "explicacion": "Puedes decirle con calma: «Hay muchas formas de familia y todas merecen respeto».",
+          "error": "respeto-diversidad"
+        }
+      ],
+      "pista": "Recuerda lo que importa en una familia.",
+      "explicacion": "Arami y su abuela son una familia. Todas las formas de familia merecen respeto.",
+      "error": "respeto-diversidad"
+    },
+    {
+      "id": "c8", "tipo": "numero", "nivel": 3,
+      "enunciado": "La familia de Luis anotó las tareas que hizo cada uno esta semana. ¿Cuántas tareas hicieron entre todos?",
+      "visual": {
+        "tipo": "pictograma",
+        "titulo": "Tareas de la semana",
+        "icono": "⭐",
+        "escala": 1,
+        "datos": [
+          { "etiqueta": "Mamá", "valor": 4 },
+          { "etiqueta": "Papá", "valor": 4 },
+          { "etiqueta": "Luis", "valor": 3 },
+          { "etiqueta": "Abuela", "valor": 2 }
+        ]
+      },
+      "respuesta": 13,
+      "erroresComunes": [
+        { "respuesta": 11, "pista": "¿Contaste también las tareas de la abuela?", "error": "pictograma" },
+        { "respuesta": 4, "pista": "Esas son las tareas de una sola persona. Suma las de todos.", "error": "pictograma" }
+      ],
+      "pista": "Cuenta las estrellas de cada fila y súmalas.",
+      "explicacion": "4 + 4 + 3 + 2 = 13 tareas. ¡Todos ayudaron!",
+      "error": "pictograma"
+    }
+  ],
+  "repaso": {
+    "texto": "Hay muchas formas de familia y ninguna es mejor que otra. Lo que importa es el amor, el cuidado y el respeto. En casa, todos ayudan según su edad.",
+    "visual": { "tipo": "emojis", "items": ["👨‍👩‍👧", "👩‍👦", "👨‍👧", "👵👴👦"] }
+  },
+  "adulto": {
+    "objetivo": "Reconocer la familia como un grupo unido por el afecto, el cuidado y el respeto; valorar con igual respeto las distintas formas de familia (con mamá y papá, monoparentales, con abuelos, extendidas, adoptivas y ensambladas) y asumir responsabilidades en el hogar según la edad, sin distinguir tareas por género.",
+    "sugerencias": [
+      "Dibujen juntos a las personas con quienes viven y a los parientes que los visitan. Conversen sobre cómo se cuidan unos a otros y recuerden que las familias de sus compañeros pueden ser distintas, y todas valen igual.",
+      "Armen en una hoja un cuadro de tareas de la semana: cada persona de la casa elige tareas según su edad (poner la mesa, regar, doblar ropa, dar de comer a la mascota) y marca los días que cumplió.",
+      "Al volver de la feria, repartan el trabajo: guardar las verduras, lavar la fruta, doblar las bolsas. Procuren que niñas, niños, mamás y papás hagan de todo, sin tareas «de hombres» o «de mujeres»."
+    ],
+    "errores": {
+      "miembros-familia": { "descripcion": "Confunde los parentescos (abuelo, tía, primo) o a los miembros de una familia.", "sugerencia": "Miren fotos familiares y pregunten: «¿Quién es la mamá de tu papá?», «¿Quién es el hijo de tu tía?»." },
+      "tipos-familia": { "descripcion": "No reconoce como familia a grupos distintos de «mamá, papá e hijos».", "sugerencia": "Nombren familias que conocen (vecinos, parientes, compañeros) y observen juntos que todas se quieren y se cuidan aunque sean distintas." },
+      "valor-familia": { "descripcion": "Cree que una forma de familia es mejor, o no identifica el amor, el cuidado y el respeto como lo que une a una familia.", "sugerencia": "Pregunten «¿Qué hace que una familia sea familia?» y ayúdenle a llegar a la idea de cariño y cuidado, más allá de quiénes la forman." },
+      "tareas-edad": { "descripcion": "Duda sobre qué tareas son seguras para su edad y cuáles son de personas adultas.", "sugerencia": "Recorran la cocina y la casa señalando qué puede hacer sin peligro (poner la mesa, regar) y qué necesita a un adulto (fuego, cuchillos, electricidad)." },
+      "tareas-genero": { "descripcion": "Asigna tareas según si la persona es mujer o varón.", "sugerencia": "Muestren con el ejemplo que en casa todos cocinan, lavan y arreglan cosas, y conversen si alguien dice que una tarea es «de niñas» o «de niños»." },
+      "responsabilidad": { "descripcion": "No reconoce la importancia de cumplir su parte en las tareas compartidas.", "sugerencia": "Denle una tarea fija y sencilla cada día y agradezcan su ayuda, explicando cómo facilita el trabajo de todos." },
+      "convivencia-familiar": { "descripcion": "Le cuesta distinguir acciones que muestran respeto y cariño de las que lastiman.", "sugerencia": "Cuando surja una situación en casa, pregunten «¿cómo se sintió tu hermano cuando...?» y busquen juntos una forma respetuosa de actuar." },
+      "respeto-diversidad": { "descripcion": "No sabe cómo responder con respeto ante burlas sobre las formas de familia.", "sugerencia": "Jueguen a representar la situación: una persona se burla y el niño practica una respuesta tranquila y respetuosa, o pedir ayuda a la maestra." },
+      "escucha-comprension": { "descripcion": "Le cuesta recordar lo que escucha en un relato corto.", "sugerencia": "Lean o cuenten historias breves y hagan preguntas como «¿quién hizo qué?» al terminar." },
+      "lee-tabla": { "descripcion": "Le cuesta encontrar información en una tabla de turnos.", "sugerencia": "Hagan en casa una tabla real de turnos con días y nombres, y pidan que diga a quién le toca cada día." },
+      "pictograma": { "descripcion": "Le cuesta armar o leer un pictograma.", "sugerencia": "Registren con dibujos o fichas cuántas veces ayuda cada persona en la semana y cuenten juntos cada fila." },
+      "produce-texto": { "descripcion": "Le cuesta escribir oraciones sobre su familia con mayúscula y punto.", "sugerencia": "Pidan que primero lo diga en voz alta y luego lo escriba; revisen juntos la mayúscula inicial y el punto final." }
+    }
+  }
+}

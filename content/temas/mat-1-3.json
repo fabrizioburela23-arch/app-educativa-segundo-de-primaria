@@ -1,0 +1,350 @@
+{
+  "id": "mat-1-3",
+  "titulo": "La recta numérica",
+  "objetivo": "Ubico números en la recta numérica y encuentro el número anterior y el siguiente.",
+  "explicacion": [
+    {
+      "texto": "La **recta numérica** es una línea con los números en orden. Hacia la derecha, los números son cada vez mayores. Hacia la izquierda, cada vez menores.",
+      "emoji": "📏",
+      "visual": { "tipo": "recta", "min": 0, "max": 10, "paso": 1 }
+    },
+    {
+      "texto": "El número **anterior** está justo antes, a la izquierda: es 1 menos. El **siguiente** está justo después, a la derecha: es 1 más. Para el 48: el anterior es 47 y el siguiente es 49.",
+      "visual": { "tipo": "recta", "min": 44, "max": 52, "paso": 1, "marcar": [48], "saltos": [[48, 47], [48, 49]] }
+    },
+    {
+      "texto": "Algunas rectas avanzan de 10 en 10 o de 100 en 100. Antes de contar, mira cuánto vale cada **salto** entre dos marcas.",
+      "visual": { "tipo": "recta", "min": 300, "max": 400, "paso": 10, "saltos": [[330, 340], [340, 350]] }
+    },
+    {
+      "texto": "¡Atención cuando cambia la decena o la centena! Después de 39 viene 40. Después de 399 viene **400**. Antes de 500 va **499**.",
+      "emoji": "👀",
+      "visual": { "tipo": "recta", "min": 395, "max": 405, "paso": 1, "marcar": [399, 400], "saltos": [[399, 400]] }
+    }
+  ],
+  "ejemplo": {
+    "instruccion": "Mira cómo buscamos el número anterior y el siguiente al 250. Después, mueve tú el marcador por la recta.",
+    "pasos": [
+      { "texto": "Buscamos el 250 en la recta.", "visual": { "tipo": "recta", "min": 246, "max": 254, "paso": 1, "marcar": [250] } },
+      { "texto": "Un salto a la izquierda llega al 249. Es el **anterior**: 1 menos.", "visual": { "tipo": "recta", "min": 246, "max": 254, "paso": 1, "marcar": [249], "saltos": [[250, 249]] } },
+      { "texto": "Un salto a la derecha llega al 251. Es el **siguiente**: 1 más.", "visual": { "tipo": "recta", "min": 246, "max": 254, "paso": 1, "marcar": [251], "saltos": [[250, 251]] } },
+      { "texto": "Si contamos de 10 en 10, antes de 250 va 240 y después va 260.", "visual": { "tipo": "recta", "min": 220, "max": 280, "paso": 10, "marcar": [250], "saltos": [[250, 240], [250, 260]] } }
+    ],
+    "explorar": { "tipo": "recta", "min": 190, "max": 210, "paso": 1 }
+  },
+  "guiada": {
+    "intro": "Ahora lo hacemos juntos, paso a paso.",
+    "pasos": [
+      {
+        "id": "g1", "tipo": "numero",
+        "enunciado": "Mira el 36. Escribe el número anterior y el siguiente.",
+        "apoyo": "El anterior está a la izquierda: es 1 menos. El siguiente está a la derecha: es 1 más.",
+        "visual": { "tipo": "recta", "min": 33, "max": 39, "paso": 1, "marcar": [36], "ocultar": [35, 37] },
+        "campos": [ { "etiqueta": "Anterior", "respuesta": 35 }, { "etiqueta": "Siguiente", "respuesta": 37 } ],
+        "pista": "Cuenta un número hacia atrás y un número hacia adelante.",
+        "explicacion": "Antes de 36 va 35 y después va 37.",
+        "error": "anterior-siguiente"
+      },
+      {
+        "id": "g2", "tipo": "manipular",
+        "enunciado": "Mueve el marcador hasta el 70.",
+        "apoyo": "En esta recta, cada salto vale 10. Cuenta: 0, 10, 20, 30...",
+        "manipulable": { "tipo": "recta", "min": 0, "max": 100, "paso": 10, "objetivo": 70 },
+        "pista": "Cuenta de 10 en 10 desde el 0 hasta llegar al 70.",
+        "explicacion": "El 70 está después del 60 y antes del 80.",
+        "error": "salto-recta"
+      },
+      {
+        "id": "g3", "tipo": "numero",
+        "enunciado": "¿Qué número falta en la recta?",
+        "apoyo": "Mira cuánto vale cada salto: de 200 a 210 hay 10.",
+        "visual": { "tipo": "recta", "min": 200, "max": 260, "paso": 10, "marcar": [230], "ocultar": [230] },
+        "respuesta": 230,
+        "erroresComunes": [
+          { "respuesta": 203, "pista": "Esta recta avanza de 10 en 10, no de 1 en 1.", "error": "salto-recta" },
+          { "respuesta": 221, "pista": "Cada salto suma 10. ¿Qué número va después del 220?", "error": "salto-recta" }
+        ],
+        "pista": "Mira qué número está antes del espacio vacío y cuál está después.",
+        "explicacion": "Después de 220 y antes de 240 va el 230: la recta avanza de 10 en 10.",
+        "error": "salto-recta"
+      }
+    ]
+  },
+  "practica": [
+    {
+      "id": "p1", "tipo": "numero", "nivel": 1,
+      "enunciado": "Mira el 19. Escribe el número anterior y el siguiente.",
+      "visual": { "tipo": "recta", "min": 15, "max": 23, "paso": 1, "marcar": [19], "ocultar": [18, 20] },
+      "campos": [ { "etiqueta": "Anterior", "respuesta": 18 }, { "etiqueta": "Siguiente", "respuesta": 20 } ],
+      "pista": "Después del 19 se completa una decena.",
+      "explicacion": "Antes de 19 va 18 y después va 20: 19 + 1 completa 2 decenas.",
+      "error": "cambio-decena"
+    },
+    {
+      "id": "p2", "tipo": "manipular", "nivel": 1,
+      "enunciado": "Mueve el marcador hasta el 13.",
+      "manipulable": { "tipo": "recta", "min": 0, "max": 20, "paso": 1, "objetivo": 13 },
+      "pista": "Busca el 10 y avanza 3 saltos más.",
+      "explicacion": "El 13 está 3 marcas después del 10.",
+      "error": "ubica-recta"
+    },
+    {
+      "id": "p3", "tipo": "generador", "nivel": 1, "generador": "anterior-siguiente", "params": { "max": 99, "salto": 1 }
+    },
+    {
+      "id": "p4", "tipo": "completar", "nivel": 1,
+      "enunciado": "Completa los números que faltan en la recta.",
+      "visual": { "tipo": "recta", "min": 45, "max": 51, "paso": 1, "ocultar": [48, 50] },
+      "texto": "45, 46, 47, [48], 49, [50], 51",
+      "banco": ["58", "40"],
+      "pista": "Cada número es 1 más que el que está antes.",
+      "explicacion": "Después de 47 va 48, y después de 49 va 50.",
+      "error": "anterior-siguiente"
+    },
+    {
+      "id": "p5", "tipo": "opcion", "nivel": 1,
+      "enunciado": "¿Qué número viene después del 59?",
+      "opciones": [
+        { "texto": "60", "correcta": true },
+        { "texto": "58", "pista": "58 va antes de 59. El siguiente va después.", "error": "anterior-siguiente" },
+        { "texto": "50", "pista": "50 está antes que 59. Busca el que va justo después.", "error": "cambio-decena" },
+        { "texto": "69", "pista": "69 es 10 más. El siguiente es solo 1 más.", "error": "salto-recta" }
+      ],
+      "columnas": 4,
+      "pista": "El siguiente es 1 más. Después del 9 se completa una decena.",
+      "explicacion": "Después del 59 viene el 60, porque 59 + 1 = 60.",
+      "error": "cambio-decena"
+    },
+    {
+      "id": "p6", "tipo": "generador", "nivel": 2, "generador": "anterior-siguiente", "params": { "max": 999, "salto": 1 }
+    },
+    {
+      "id": "p7", "tipo": "generador", "nivel": 2, "generador": "anterior-siguiente", "params": { "max": 999, "salto": 10 }
+    },
+    {
+      "id": "p8", "tipo": "manipular", "nivel": 2,
+      "enunciado": "Mueve el marcador hasta el 370.",
+      "manipulable": { "tipo": "recta", "min": 300, "max": 400, "paso": 10, "objetivo": 370 },
+      "pista": "Esta recta va de 10 en 10: 300, 310, 320...",
+      "explicacion": "El 370 está entre el 360 y el 380.",
+      "error": "salto-recta"
+    },
+    {
+      "id": "p9", "tipo": "numero", "nivel": 2,
+      "enunciado": "¿Qué número está marcado en la recta?",
+      "visual": { "tipo": "recta", "min": 500, "max": 600, "paso": 10, "marcar": [540], "ocultar": [540] },
+      "respuesta": 540,
+      "erroresComunes": [
+        { "respuesta": 504, "pista": "La recta salta de 10 en 10. Cuenta las marcas desde el 500: 510, 520...", "error": "salto-recta" },
+        { "respuesta": 54, "pista": "Esta recta está entre 500 y 600. El número tiene 5 centenas.", "error": "ubica-recta" }
+      ],
+      "pista": "Cuenta de 10 en 10 desde el 500 hasta la marca.",
+      "explicacion": "Desde el 500 hay 4 saltos de 10: 510, 520, 530, 540.",
+      "error": "salto-recta"
+    },
+    {
+      "id": "p10", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "Une cada número con su siguiente.",
+      "pares": [["109", "110"], ["299", "300"], ["459", "460"], ["690", "691"]],
+      "pista": "Suma 1. Si las unidades son 9, cambia la decena.",
+      "explicacion": "Después de 109 viene 110; después de 299, 300; después de 459, 460; y después de 690, 691.",
+      "error": "cambio-decena"
+    },
+    {
+      "id": "p11", "tipo": "tocar", "nivel": 2,
+      "enunciado": "Escucha la pregunta y toca la respuesta.",
+      "escuchar": "¿Qué número va justo después del doscientos nueve?",
+      "texto": "208 *210* 219 2010 200",
+      "pista": "El siguiente es 1 más. Después del 9, cambia la decena.",
+      "explicacion": "Después del 209 va el 210, porque 209 + 1 = 210.",
+      "error": "cambio-decena"
+    },
+    {
+      "id": "p12", "tipo": "completar", "nivel": 2,
+      "enunciado": "Cuenta de 100 en 100 y completa.",
+      "visual": { "tipo": "recta", "min": 0, "max": 700, "paso": 100, "ocultar": [300, 600] },
+      "texto": "0, 100, 200, [300], 400, 500, [600], 700",
+      "banco": ["310", "610"],
+      "pista": "Cada salto suma 1 centena.",
+      "explicacion": "De 100 en 100: después de 200 va 300, y después de 500 va 600.",
+      "error": "salto-recta"
+    },
+    {
+      "id": "p13", "tipo": "generador", "nivel": 3, "generador": "anterior-siguiente", "params": { "max": 999, "salto": 100 }
+    },
+    {
+      "id": "p14", "tipo": "pasos", "nivel": 3,
+      "enunciado": "En la salteñería, cada persona saca una ficha. Mateo tiene la ficha 199. Sofía tiene la anterior y Juan, la siguiente.",
+      "visual": { "tipo": "emoji", "valor": "🥟", "cantidad": 3 },
+      "pasos": [
+        {
+          "tipo": "numero",
+          "enunciado": "¿Qué ficha tiene Sofía?",
+          "respuesta": 198,
+          "erroresComunes": [ { "respuesta": 200, "pista": "Ese es el siguiente. Sofía tiene el anterior: 1 menos.", "error": "anterior-siguiente" } ],
+          "pista": "El anterior es 1 menos que 199.",
+          "explicacion": "199 − 1 = 198. Sofía tiene la ficha 198.",
+          "error": "anterior-siguiente"
+        },
+        {
+          "tipo": "numero",
+          "enunciado": "¿Qué ficha tiene Juan?",
+          "respuesta": 200,
+          "erroresComunes": [
+            { "respuesta": 1910, "pista": "No pegues un 10 al final. Suma 1 a 199.", "error": "cambio-decena" },
+            { "respuesta": 190, "pista": "El siguiente es mayor que 199, no menor.", "error": "cambio-decena" },
+            { "respuesta": 198, "pista": "Ese es el anterior. Juan tiene el siguiente.", "error": "anterior-siguiente" }
+          ],
+          "pista": "Suma 1 a 199. Fíjate qué pasa con las decenas y las centenas.",
+          "explicacion": "199 + 1 = 200: se completan 2 centenas. Juan tiene la ficha 200.",
+          "error": "cambio-decena"
+        },
+        {
+          "tipo": "numero",
+          "enunciado": "Rosa tiene la ficha que está 10 lugares después de la de Mateo. ¿Qué ficha tiene?",
+          "respuesta": 209,
+          "erroresComunes": [
+            { "respuesta": 200, "pista": "Eso es solo 1 más. Rosa está 10 lugares después.", "error": "salto-recta" },
+            { "respuesta": 299, "pista": "Eso es 100 más. Suma solo 10.", "error": "salto-recta" }
+          ],
+          "pista": "Suma 10 a 199. Puedes pensar: 199 + 1 = 200, y faltan 9 más.",
+          "explicacion": "199 + 10 = 209. Rosa tiene la ficha 209.",
+          "error": "salto-recta"
+        }
+      ],
+      "pista": "Resuelve un paso a la vez. Si te ayuda, imagina las fichas en una recta.",
+      "explicacion": "Sofía tiene la ficha 198, Juan la 200 y Rosa la 209.",
+      "error": "anterior-siguiente"
+    },
+    {
+      "id": "p15", "tipo": "numero", "nivel": 3,
+      "enunciado": "¿Qué número marca el punto en la recta?",
+      "visual": { "tipo": "recta", "min": 400, "max": 500, "paso": 10, "marcar": [470], "ocultar": [410, 420, 430, 440, 450, 460, 470, 480, 490] },
+      "respuesta": 470,
+      "erroresComunes": [
+        { "respuesta": 407, "pista": "Entre 400 y 500 hay 10 saltos. Cada salto vale 10, no 1.", "error": "salto-recta" },
+        { "respuesta": 47, "pista": "El punto está entre 400 y 500: el número tiene 4 centenas.", "error": "ubica-recta" }
+      ],
+      "pista": "Entre 400 y 500 hay 10 saltos iguales. ¿Cuánto vale cada salto?",
+      "explicacion": "Cada salto vale 10. El punto está 7 saltos después del 400: 470.",
+      "error": "salto-recta"
+    },
+    {
+      "id": "p16", "tipo": "numero", "nivel": 3,
+      "enunciado": "Esta recta va de 10 en 10. ¿Qué número va antes y cuál va después de 395?",
+      "visual": { "tipo": "recta", "min": 375, "max": 415, "paso": 10, "marcar": [395], "ocultar": [385, 405] },
+      "campos": [ { "etiqueta": "Antes", "respuesta": 385 }, { "etiqueta": "Después", "respuesta": 405 } ],
+      "pista": "Resta 10 y suma 10. Al sumar, fíjate que cambia la centena.",
+      "explicacion": "395 − 10 = 385 y 395 + 10 = 405.",
+      "error": "salto-recta"
+    }
+  ],
+  "comprobacion": [
+    {
+      "id": "c1", "tipo": "numero", "nivel": 1,
+      "enunciado": "Mira el 64. Escribe el número anterior y el siguiente.",
+      "visual": { "tipo": "recta", "min": 61, "max": 67, "paso": 1, "marcar": [64], "ocultar": [63, 65] },
+      "campos": [ { "etiqueta": "Anterior", "respuesta": 63 }, { "etiqueta": "Siguiente", "respuesta": 65 } ],
+      "pista": "El anterior es 1 menos y el siguiente es 1 más.",
+      "explicacion": "Antes de 64 va 63 y después va 65.",
+      "error": "anterior-siguiente"
+    },
+    {
+      "id": "c2", "tipo": "manipular", "nivel": 1,
+      "enunciado": "Mueve el marcador hasta el 32.",
+      "manipulable": { "tipo": "recta", "min": 20, "max": 40, "paso": 1, "objetivo": 32 },
+      "pista": "Busca el 30 y avanza 2 saltos.",
+      "explicacion": "El 32 está 2 marcas después del 30.",
+      "error": "ubica-recta"
+    },
+    {
+      "id": "c3", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa con el número anterior y el siguiente.",
+      "texto": "Para el 380: el anterior es [379] y el siguiente es [381].",
+      "banco": ["370", "390"],
+      "pista": "Aquí contamos de 1 en 1, no de 10 en 10.",
+      "explicacion": "380 − 1 = 379 y 380 + 1 = 381.",
+      "error": "cambio-decena"
+    },
+    {
+      "id": "c4", "tipo": "generador", "nivel": 2, "generador": "anterior-siguiente", "params": { "max": 999, "salto": 10 }
+    },
+    {
+      "id": "c5", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "Une cada número con su anterior.",
+      "pares": [["300", "299"], ["150", "149"], ["801", "800"], ["410", "409"]],
+      "pista": "Resta 1. Si el número termina en 0, cambia la decena.",
+      "explicacion": "Antes de 300 va 299; antes de 150, 149; antes de 801, 800; y antes de 410, 409.",
+      "error": "cambio-decena"
+    },
+    {
+      "id": "c6", "tipo": "manipular", "nivel": 2,
+      "enunciado": "Mueve el marcador hasta el 640.",
+      "manipulable": { "tipo": "recta", "min": 500, "max": 700, "paso": 10, "objetivo": 640 },
+      "pista": "Cada marca vale 10. Busca primero el 600.",
+      "explicacion": "El 640 está 4 saltos de 10 después del 600.",
+      "error": "salto-recta"
+    },
+    {
+      "id": "c7", "tipo": "pasos", "nivel": 3,
+      "enunciado": "En la feria, los puestos tienen números. Ana vende quinua en el puesto 109.",
+      "visual": { "tipo": "emoji", "valor": "🌾" },
+      "pasos": [
+        {
+          "tipo": "numero",
+          "enunciado": "¿Qué número tiene el puesto que está justo antes?",
+          "respuesta": 108,
+          "erroresComunes": [
+            { "respuesta": 110, "pista": "Ese es el siguiente. Busca el de antes.", "error": "anterior-siguiente" },
+            { "respuesta": 99, "pista": "Eso es 10 menos. Justo antes es solo 1 menos.", "error": "salto-recta" }
+          ],
+          "pista": "Justo antes es 1 menos.",
+          "explicacion": "109 − 1 = 108.",
+          "error": "anterior-siguiente"
+        },
+        {
+          "tipo": "numero",
+          "enunciado": "Kusi vende papas 10 puestos más adelante que Ana. ¿En qué puesto está?",
+          "respuesta": 119,
+          "erroresComunes": [
+            { "respuesta": 110, "pista": "Eso es solo 1 más. Kusi está 10 puestos más adelante.", "error": "salto-recta" },
+            { "respuesta": 209, "pista": "Eso es 100 más. Suma solo 10.", "error": "salto-recta" }
+          ],
+          "pista": "Suma 10 a 109: cambia la cifra de las decenas.",
+          "explicacion": "109 + 10 = 119. Kusi está en el puesto 119.",
+          "error": "salto-recta"
+        }
+      ],
+      "pista": "Resuelve un paso a la vez. Imagina los puestos en una recta.",
+      "explicacion": "El puesto de antes es el 108 y el de Kusi es el 119.",
+      "error": "anterior-siguiente"
+    },
+    {
+      "id": "c8", "tipo": "tocar", "nivel": 3,
+      "enunciado": "Escucha la pregunta y toca la respuesta.",
+      "escuchar": "¿Qué número va justo antes del cuatrocientos?",
+      "texto": "410 *399* 401 390 499",
+      "pista": "El anterior es 1 menos. Al restar 1 a 400, cambian las centenas y las decenas.",
+      "explicacion": "400 − 1 = 399. Justo antes del 400 va el 399.",
+      "error": "cambio-decena"
+    }
+  ],
+  "repaso": {
+    "texto": "En la recta, el **anterior** está a la izquierda (1 menos) y el **siguiente** está a la derecha (1 más). Mira siempre cuánto vale cada salto.",
+    "visual": { "tipo": "recta", "min": 96, "max": 104, "paso": 1, "marcar": [100], "saltos": [[100, 99], [100, 101]] }
+  },
+  "adulto": {
+    "objetivo": "Usar la recta numérica para ubicar números hasta el 999 y encontrar el número anterior y el siguiente (también llamados antecesor y sucesor), contando de 1 en 1, de 10 en 10 y de 100 en 100.",
+    "sugerencias": [
+      "Dibujen con tiza una recta del 0 al 20 en el patio o en la vereda. Jueguen a saltar: «párate en el 12; salta al anterior; ahora al siguiente». Luego escriban números más grandes, como del 190 al 210.",
+      "Cuando hagan fila con fichas numeradas (en el banco, en el centro de salud o en una salteñería), pregunten qué número salió justo antes del suyo y cuál saldrá justo después.",
+      "Cuelguen un hilo con tarjetas numeradas de 10 en 10 (100, 110, 120...) sujetas con ganchos de ropa. Escondan una tarjeta y pídanle que diga cuál falta; después, hagan lo mismo de 100 en 100."
+    ],
+    "errores": {
+      "anterior-siguiente": { "descripcion": "Confunde el anterior con el siguiente, o suma o resta más de 1.", "sugerencia": "En una recta dibujada en el piso, pídanle que dé un paso hacia atrás (anterior) y un paso hacia adelante (siguiente) diciendo el número en voz alta." },
+      "cambio-decena": { "descripcion": "Se equivoca cuando cambia la decena o la centena (por ejemplo, después de 199 escribe 1910 o 190).", "sugerencia": "Cuenten en voz alta cruzando decenas y centenas (197, 198, 199, 200...). Usen dinero de juguete: 10 monedas de 1 Bs se cambian por un billete de 10 Bs." },
+      "ubica-recta": { "descripcion": "Le cuesta ubicar un número en la recta numérica.", "sugerencia": "Usen una cinta métrica de costura como recta: busquen juntos primero la decena más cercana y después avancen de uno en uno." },
+      "salto-recta": { "descripcion": "No se fija en cuánto vale cada salto de la recta (cuenta de 1 en 1 cuando la recta va de 10 en 10 o de 100 en 100).", "sugerencia": "Cuenten de 10 en 10 con billetes de juguete de 10 Bs y de 100 en 100 con billetes de 100 Bs, tocando cada marca de una recta dibujada." }
+    }
+  }
+}
