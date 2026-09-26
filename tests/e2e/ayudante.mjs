@@ -68,8 +68,13 @@ export async function responder(page, ej, bien, manipular = null) {
         for (let i = 0; i < respuestas.length; i++) await inputs.nth(i).fill(bien ? respuestas[i] : 'x');
         return;
       }
-      const orden = bien ? respuestas : [...(ej.banco && ej.banco.length ? [ej.banco[0]] : [respuestas[respuestas.length - 1]]), ...respuestas.slice(1)];
-      if (!bien && respuestas.length === 1 && orden[0] === respuestas[0]) orden[0] = ej.banco[0];
+      let orden = respuestas.slice();
+      if (!bien) {
+        const k = respuestas.findIndex((r, i) => i > 0 && r !== respuestas[0]);
+        if (ej.banco && ej.banco.length && !respuestas.includes(ej.banco[0])) orden[0] = ej.banco[0];
+        else if (k > 0) { orden[0] = respuestas[k]; orden[k] = respuestas[0]; }
+        else orden = [...respuestas].reverse();
+      }
       const huecos = page.locator('.texto-completar .hueco');
       for (let i = 0; i < orden.length; i++) {
         const cls = (await huecos.nth(i).getAttribute('class')) || '';
