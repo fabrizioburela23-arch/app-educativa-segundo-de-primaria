@@ -353,6 +353,7 @@ function tabAjustes(zona, { navegar }) {
 // ---------- contenido ----------
 function tabContenido(zona, { navegar }) {
   zona.appendChild(h('p', { class: 'nota' }, 'Puedes revisar las lecciones antes de que el niño las use y corregir fechas o textos. Los cambios quedan como borrador hasta que los publiques, y siempre puedes volver al original.'));
+  zona.appendChild(h('p', { class: 'nota' }, 'Conviene confirmar con el texto escolar algunos datos que no se pudieron volver a verificar en línea: los colores de las banderas departamentales, las descripciones de las fechas cívicas y algunos datos de transporte y ciencias. Puedes corregirlos aquí mismo.'));
   editorFechas(zona, { navegar });
   editorTemas(zona, { navegar });
   verificacion(zona);

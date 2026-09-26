@@ -89,6 +89,10 @@ node tools/validar-contenido.mjs mat-1-2 --avisos
 
 El mismo validador se usa en el panel del adulto («Verificar todo el contenido»).
 
+En **[docs/REVISION-PENDIENTE.md](docs/REVISION-PENDIENTE.md)** está la lista de datos que
+conviene que un adulto o docente confirme (por ejemplo, los colores de las banderas
+departamentales), porque no se pudieron volver a verificar contra una fuente en línea.
+
 ## Pruebas
 
 ```bash
