@@ -4,12 +4,12 @@
   "objetivo": "Reconozco la palanca, la polea, la rueda y eje y el plano inclinado en mi barrio, sé cómo nos ayudan y las uso con cuidado.",
   "explicacion": [
     {
-      "texto": "Las **máquinas simples** tienen pocas partes y no necesitan motor. Nos ayudan a mover cosas con **menos fuerza** o más fácil. La **palanca** es una barra que gira sobre un **punto de apoyo**.",
+      "texto": "Las **máquinas simples** no usan motor y nos ayudan a hacer trabajos con menos fuerza o más cómodos. La **palanca** es una barra que gira sobre un **punto de apoyo**: el balancín (sube y baja) y el abridor de botellas son palancas.",
       "emoji": "⚙️",
       "visual": { "tipo": "ilustracion", "id": "palanca" }
     },
     {
-      "texto": "El balancín (sube y baja) y el abridor de botellas son palancas. La **polea** es una rueda por donde pasa una cuerda. En el pozo, jalas la cuerda hacia abajo y el balde sube: ¡es más cómodo!",
+      "texto": "La **polea** es una rueda por donde pasa una cuerda. En el pozo, jalas la cuerda hacia abajo y el balde sube: ¡es más cómodo! Varias poleas juntas, como las de una grúa, ayudan a levantar cosas muy pesadas.",
       "visual": { "tipo": "ilustracion", "id": "polea" }
     },
     {
@@ -37,7 +37,7 @@
         "visual": { "tipo": "ilustracion", "id": "rueda-eje" }
       },
       {
-        "texto": "La casa de Nayra está en el cerro. Suben por un camino en **zigzag**: es un **plano inclinado**. El camino es más largo, pero se cansan menos que subiendo derecho.",
+        "texto": "La casa de Nayra está en el cerro. Suben por un camino en **zigzag**: es un **plano inclinado**. El camino es más largo, pero cada paso cuesta menos fuerza que subir derecho.",
         "visual": { "tipo": "ilustracion", "id": "plano-inclinado" }
       }
     ]
@@ -265,7 +265,7 @@
           "enunciado": "Completa.",
           "texto": "Para que el balancín quede parejo, el papá se sienta más [cerca] del punto de apoyo.",
           "banco": ["lejos"],
-          "pista": "Quien se sienta lejos del punto de apoyo empuja con más fuerza hacia abajo. ¿Dónde conviene que se siente el papá?",
+          "pista": "Mientras más lejos del punto de apoyo se sienta alguien, más hace bajar su lado. ¿Dónde conviene que se siente el papá?",
           "explicacion": "El papá se sienta más **cerca** del punto de apoyo. Así Kusi, sentado lejos, lo puede equilibrar.",
           "error": "funcion-maquina"
         }
@@ -415,7 +415,7 @@
         { "texto": "Encima de la piedra.", "pista": "Si empujas la piedra con las manos, no usas la palanca.", "error": "funcion-maquina" }
       ],
       "columnas": 1,
-      "pista": "El tronco es el punto de apoyo. Recuerda el balancín: quien se sienta lejos del medio empuja con más fuerza.",
+      "pista": "El tronco es el punto de apoyo. Recuerda el balancín: quien se sienta lejos del punto de apoyo hace bajar más su lado.",
       "explicacion": "Debe empujar en la punta, **lejos** del punto de apoyo. Así la palanca le ayuda a mover la piedra con menos fuerza.",
       "error": "funcion-maquina"
     }
@@ -435,10 +435,10 @@
     }
   },
   "adulto": {
-    "objetivo": "Reconocer las máquinas simples del entorno (palanca, polea, rueda y eje, plano inclinado y cuña) y comprender cómo ayudan: permiten hacer un trabajo con menos fuerza o de forma más cómoda. Ojo: la polea sola del pozo no reduce la fuerza, pero permite jalar hacia abajo; varias poleas juntas sí la reducen. También se trabaja cómo usarlas con cuidado.",
+    "objetivo": "Reconocer las máquinas simples del entorno (palanca, polea, rueda y eje, plano inclinado y cuña) y comprender cómo ayudan: permiten hacer un trabajo con menos fuerza o de forma más cómoda. Importante: una sola polea, como la del pozo, no reduce la fuerza, pero permite jalar hacia abajo; varias poleas juntas sí la reducen. También se trabaja cómo usarlas con cuidado.",
     "sugerencias": [
       "Salgan a caminar por el barrio y busquen máquinas simples: el balancín y el resbalín del parque, la rampa de una tienda, la carretilla de una obra, la polea de un pozo o del mástil de la escuela. En cada una pregunten: «¿cómo nos ayuda?».",
-      "Hagan una rampa con una tabla o un cartón grueso apoyado en unos libros. Aten una liga a un autito cargado con piedritas: súbanlo derecho, colgando de la liga, y después por la rampa. Comparen cuánto se estira la liga en cada caso: ¡por la rampa se estira menos!",
+      "Hagan una rampa con una tabla o un cartón grueso apoyado en unos libros. Aten una liga (elástico) a un autito cargado con piedritas: súbanlo derecho, colgando de la liga, y después por la rampa. Comparen cuánto se estira la liga en cada caso: ¡por la rampa se estira menos!",
       "Con una regla apoyada sobre un lápiz, armen una palanca pequeña: pongan una goma de borrar en una punta y presionen la otra. Muevan el lápiz más cerca o más lejos de la goma y comparen la fuerza. Aprovechen para repasar las reglas de seguridad: avisar antes de bajarse del balancín, no meter los dedos en poleas ni cadenas, y dejar los cuchillos y el hacha a los adultos."
     ],
     "errores": {
