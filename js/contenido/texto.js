@@ -65,7 +65,7 @@ export function tokenizarTocar(texto) {
     let m;
     while ((m = reTok.exec(parte))) {
       if (m[1]) tokens.push({ texto: m[1], palabra: true, correcta: false });
-      else if (m[2]) tokens.push({ texto: ' ', espacio: true });
+      else if (m[2]) tokens.push(m[2].includes('\n') ? { texto: '\n', espacio: true, salto: true } : { texto: ' ', espacio: true });
       else tokens.push({ texto: m[3], palabra: false });
     }
   });
@@ -103,7 +103,7 @@ export function analizarCompletar(texto) {
 }
 
 function normalizarEspacios(s) {
-  return String(s ?? '').replace(/\s+/g, ' ').trim();
+  return String(s ?? '').replace(/\s+/g, ' ').replace(/\s+([.,;:!?»)])/g, '$1').replace(/([¿¡«(])\s+/g, '$1').trim();
 }
 
 // Compara una respuesta escrita con las aceptadas.
@@ -127,7 +127,9 @@ export function compararEscrito(resp, aceptadas, { mayusculas = 'flexible', tild
     if (base(r) === base(a)) {
       const soloMayus = mayusculas === 'estricto' && quitarTildes(r) !== quitarTildes(a) && minus(quitarTildes(r)) === minus(quitarTildes(a));
       if (tildes === 'estricto' || soloMayus) return { correcto: false, motivo: 'tildes', esperada: a };
-      return { correcto: true, nota: `¡Muy bien! Recuerda que se escribe «${a}», con tilde.` };
+      const faltaTilde = /[áéíóú]/i.test(a) && quitarTildes(r) === r;
+      const nota = faltaTilde ? `¡Muy bien! Recuerda que se escribe «${a}», con tilde.` : `¡Muy bien! Fíjate: se escribe «${a}».`;
+      return { correcto: true, nota };
     }
   }
   return { correcto: false };
@@ -141,7 +143,7 @@ export const MENSAJES_REQUISITO = {
   'min-palabras': (q) => `Escribe al menos ${q.valor} palabras.`,
   'max-palabras': (q) => `Usa como máximo ${q.valor} palabras.`,
   'min-oraciones': (q) => `Escribe al menos ${q.valor} oraciones.`,
-  incluye: (q) => (q.palabras.length === 1 ? `Usa la palabra «${q.palabras[0]}».` : `Usa alguna de estas palabras: ${q.palabras.join(', ')}.`),
+  incluye: (q) => (q.palabras.length === 1 ? `Usa la palabra «${q.palabras[0]}»${q.exacto ? ', con su tilde' : ''}.` : `Usa alguna de estas palabras${q.exacto ? ' (con su tilde)' : ''}: ${q.palabras.join(', ')}.`),
   'incluye-todas': (q) => `Usa estas palabras: ${q.palabras.join(', ')}.`,
   'signos-pregunta': () => 'Escribe una pregunta con ¿ al inicio y ? al final.',
   'signos-exclamacion': () => 'Usa ¡ al inicio y ! al final.',
@@ -152,6 +154,8 @@ export function revisarRequisitos(texto, requisitos) {
   const palabras = palabrasDe(t);
   const norm = (x) => quitarTildes(String(x).toLocaleLowerCase('es'));
   const palabrasN = palabras.map(norm);
+  const minus = (x) => String(x).toLocaleLowerCase('es');
+  const tieneExacto = (p) => palabras.map(minus).includes(minus(p)) || minus(t).includes(minus(p));
   const tiene = (p) => {
     const objetivo = norm(p).split(/\s+/);
     if (objetivo.length > 1) return norm(t).includes(objetivo.join(' '));
@@ -173,8 +177,8 @@ export function revisarRequisitos(texto, requisitos) {
         ok = oraciones.length >= q.valor && /[.!?…]["»”)]?$/.test(t);
         break;
       }
-      case 'incluye': ok = q.palabras.some(tiene); break;
-      case 'incluye-todas': ok = q.palabras.every(tiene); break;
+      case 'incluye': ok = q.palabras.some(q.exacto ? tieneExacto : tiene); break;
+      case 'incluye-todas': ok = q.palabras.every(q.exacto ? tieneExacto : tiene); break;
       case 'signos-pregunta': ok = /¿[^?]+\?/.test(t); break;
       case 'signos-exclamacion': ok = /¡[^!]+!/.test(t); break;
       default: ok = false;

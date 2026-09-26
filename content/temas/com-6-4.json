@@ -71,7 +71,7 @@
     "pasos": [
       {
         "id": "g1", "tipo": "completar",
-        "enunciado": "Nayra escribe sobre ella misma. Completa con las palabras que usa ella.",
+        "enunciado": "Nayra escribe sobre sí misma. Completa con las palabras que usa ella.",
         "apoyo": "Pon «yo» delante de cada ficha y léela en voz alta. ¿Cuál suena bien?",
         "texto": "Yo [nací] en Oruro y [vivo] con mi familia.",
         "banco": ["nació", "vive"],
@@ -166,10 +166,10 @@
     },
     {
       "id": "p5", "tipo": "tocar", "nivel": 1,
-      "enunciado": "Toca las palabras que dicen en qué orden pasó cada cosa.",
+      "enunciado": "Toca las palabras que dicen cuándo pasó cada cosa.",
       "texto": "*Primero* aprendí a gatear. *Después* aprendí a caminar. *Ahora* corro en el patio.",
-      "pista": "Son tres palabras. Pregúntate: ¿qué pasó antes, qué pasó luego y qué pasa hoy?",
-      "explicacion": "**Primero**, **después** y **ahora** ordenan lo que pasó. Te ayudan a contar tu vida en orden.",
+      "pista": "Son tres palabras, una al comienzo de cada oración. Pregúntate: ¿qué pasó antes, qué pasó luego y qué pasa hoy?",
+      "explicacion": "**Primero**, **después** y **ahora** dicen cuándo pasó cada cosa. Te ayudan a contar tu vida en orden.",
       "error": "palabras-tiempo"
     },
     {
@@ -195,9 +195,9 @@
       "id": "p7", "tipo": "completar", "nivel": 2,
       "enunciado": "Completa la autobiografía de Luis. Él la escribe con «yo».",
       "texto": "Me llamo Luis. [Nací] en Cobija. A los seis años [entré] a la escuela. Ahora [tengo] siete años.",
-      "banco": ["Nacerá", "entrarás", "tienes"],
-      "pista": "Luis habla de él mismo. Prueba cada ficha con «yo» delante: ¿suena bien?",
-      "explicacion": "Me llamo Luis. **Nací** en Cobija. A los seis años **entré** a la escuela. Ahora **tengo** siete años.",
+      "banco": ["Nació", "entró", "tiene"],
+      "pista": "Luis habla de sí mismo. Prueba cada ficha con «yo» delante: ¿suena bien?",
+      "explicacion": "Me llamo Luis. **Nací** en Cobija. A los seis años **entré** a la escuela. Ahora **tengo** siete años. «Nació», «entró» y «tiene» sirven para hablar de otra persona.",
       "error": "primera-persona"
     },
     {
@@ -246,7 +246,8 @@
         { "tipo": "mayuscula-inicial" },
         { "tipo": "punto-final" },
         { "tipo": "min-palabras", "valor": 6 },
-        { "tipo": "incluye", "palabras": ["tengo", "gusta", "encanta"] }
+        { "tipo": "incluye", "palabras": ["tengo"] },
+        { "tipo": "incluye", "palabras": ["gusta", "encanta"] }
       ],
       "modelo": "Ahora tengo ocho años y me gusta pintar.",
       "pista": "Empieza con «Ahora tengo...» y después cuenta algo que te guste hacer.",
@@ -291,7 +292,7 @@
         "Aprendí a tocar el charango",
         "Yo aprendí a tocar el charango"
       ],
-      "pista": "Kusi habla de sí. Cambia «aprendió» por la palabra que usarías tú para hablar de ti.",
+      "pista": "Kusi habla de su propia vida. Cambia «aprendió» por la palabra que usarías tú para hablar de ti.",
       "explicacion": "Kusi escribiría: «Aprendí a tocar el charango.» (o «Yo aprendí...»). «Aprendí» es la palabra que va con «yo».",
       "error": "primera-persona"
     },
@@ -304,7 +305,8 @@
         { "tipo": "punto-final" },
         { "tipo": "min-oraciones", "valor": 3 },
         { "tipo": "min-palabras", "valor": 15 },
-        { "tipo": "incluye-todas", "palabras": ["nací", "ahora"] }
+        { "tipo": "incluye-todas", "palabras": ["nací", "ahora"] },
+        { "tipo": "incluye", "palabras": ["grande", "futuro", "quiero", "seré"] }
       ],
       "modelo": "Me llamo Kusi. Nací en Potosí. Cuando era bebé, dormía mucho. Ahora tengo ocho años y me gusta leer. Cuando sea grande, quiero ser astronauta.",
       "pista": "Sigue la guía, una oración para cada parte de tu vida. Cada oración empieza con mayúscula y termina con punto.",
@@ -315,15 +317,15 @@
   "comprobacion": [
     {
       "id": "c1", "tipo": "opcion", "nivel": 1,
-      "enunciado": "¿Qué oración puede ir en una autobiografía?",
+      "enunciado": "Kusi escribe su autobiografía. ¿Qué oración cuenta algo de su propia vida?",
       "opciones": [
         { "texto": "Yo aprendí a andar en bicicleta.", "correcta": true },
         { "texto": "Ana aprendió a andar en bicicleta.", "pista": "Esta oración habla de Ana, no de quien escribe.", "error": "primera-persona" },
         { "texto": "La bicicleta tiene dos ruedas.", "pista": "Esta oración no cuenta nada de la vida de quien escribe.", "error": "concepto-autobiografia" }
       ],
       "columnas": 1,
-      "pista": "Busca la oración en la que alguien cuenta algo de su propia vida.",
-      "explicacion": "«Yo aprendí a andar en bicicleta» cuenta algo de la propia vida, con «yo». Por eso puede ir en una autobiografía.",
+      "pista": "Busca la oración en la que Kusi habla de su propia vida, con «yo».",
+      "explicacion": "«Yo aprendí a andar en bicicleta» cuenta algo de la propia vida de Kusi, con «yo». Eso es lo que se escribe en una autobiografía.",
       "error": "concepto-autobiografia"
     },
     {
@@ -371,24 +373,27 @@
     {
       "id": "c5", "tipo": "completar", "nivel": 2,
       "enunciado": "Completa la autobiografía de Juan con las palabras que dicen cuándo.",
-      "texto": "[Cuando era bebé], dormía en una cuna. [A los seis años], entré a la escuela. [Ahora] estoy en segundo.",
+      "texto": "[Cuando era bebé], dormía en una cuna. [A los seis años] entré a la escuela. [Ahora] estoy en segundo.",
       "banco": ["En el futuro"],
       "pista": "Lee cada oración: ¿habla de un bebé, de la escuela o de hoy?",
-      "explicacion": "**Cuando era bebé**, dormía en una cuna. **A los seis años**, entré a la escuela. **Ahora** estoy en segundo. «En el futuro» es para lo que todavía no pasó.",
+      "explicacion": "**Cuando era bebé**, dormía en una cuna. **A los seis años** entré a la escuela. **Ahora** estoy en segundo. «En el futuro» es para lo que todavía no pasó.",
       "error": "palabras-tiempo"
     },
     {
-      "id": "c6", "tipo": "opcion", "nivel": 2,
-      "enunciado": "Escucha lo que cuenta Mateo. ¿De qué parte de su vida habla?",
-      "escuchar": "A los seis años entré a la escuela y conocí a mi maestra.",
+      "id": "c6", "tipo": "multiple", "nivel": 2,
+      "enunciado": "Escucha a Mateo. ¿De qué partes de su vida habla? Elige todas.",
+      "escuchar": "Me llamo Mateo. Nací en Sucre. Cuando era bebé, me gustaba jugar con agua. Cuando sea grande, quiero ser enfermero.",
       "opciones": [
-        { "texto": "De cuando entró a la escuela", "emoji": "🎒", "correcta": true },
-        { "texto": "De cuando era bebé", "emoji": "🍼", "pista": "¿Un bebé va a la escuela? Escucha otra vez.", "error": "palabras-tiempo" },
-        { "texto": "Del futuro", "emoji": "🌟", "pista": "¿Habla de algo que ya pasó o de algo que va a pasar? Fíjate en «entré».", "error": "palabras-tiempo" }
+        { "texto": "De cuando nació", "emoji": "👶", "correcta": true },
+        { "texto": "De cuando era bebé", "emoji": "🍼", "correcta": true },
+        { "texto": "De cuando entró a la escuela", "emoji": "🎒", "pista": "¿Mateo dijo algo de la escuela? Escucha otra vez.", "error": "palabras-tiempo" },
+        { "texto": "De cómo es ahora", "emoji": "🧒", "pista": "¿Mateo contó cómo es hoy? Escucha otra vez.", "error": "palabras-tiempo" },
+        { "texto": "Del futuro", "emoji": "🌟", "correcta": true }
       ],
+      "mezclar": false,
       "columnas": 1,
-      "pista": "Escucha con atención: ¿cuántos años tenía Mateo y adónde entró?",
-      "explicacion": "Mateo cuenta que a los seis años entró a la escuela y conoció a su maestra. Habla de cuando entró a la escuela.",
+      "pista": "Escucha otra vez y fíjate en las palabras que dicen cuándo pasa cada cosa. Mateo no habla de todas las partes.",
+      "explicacion": "Mateo habla de cuando nació («Nací en Sucre»), de cuando era bebé («me gustaba jugar con agua») y del futuro («quiero ser enfermero»). No habla de la escuela ni de cómo es ahora.",
       "error": "palabras-tiempo"
     },
     {
@@ -429,7 +434,7 @@
   "adulto": {
     "objetivo": "Comprender qué es una autobiografía (la historia de la propia vida, escrita por uno mismo y en primera persona), ordenar hechos de la propia vida en el tiempo (nacimiento, primeros años, escuela, presente y futuro) y escribir oraciones autobiográficas sencillas, cuidando los datos personales.",
     "sugerencias": [
-      "En casa, miren juntos fotos o recuerdos de la familia y ordénenlos desde que nació hasta hoy. Si no hay fotos, cuéntenle anécdotas o hagan dibujos: toda historia vale.",
+      "En casa, miren juntos fotos o recuerdos de la familia y ordénenlos desde que nació hasta hoy. Si no hay fotos, cuéntenle anécdotas o hagan dibujos: toda historia vale. Si hay datos que no conocen o que prefieren no contar (por ejemplo, dónde nació), puede elegir otros recuerdos.",
       "Hagan una «línea de la vida» con una cuerda o una tira de papel y cuelguen tarjetas con dibujos: «nací», «bebé», «escuela», «ahora» y «cuando sea grande».",
       "En el camino a la feria o al mercado, pídanle que cuente con «yo» algo que aprendió de más pequeño o pequeña. Al volver, escriban juntos esa oración.",
       "Al revisar sus textos, verifiquen que use solo su nombre o apodo y que no aparezcan la dirección, el teléfono ni el nombre de la escuela. Expliquen por qué esos datos se cuidan."

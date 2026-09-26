@@ -177,6 +177,7 @@ Igual que `opcion`, pero con **una o más** opciones correctas (2 a 6 opciones).
 { "id": "p2", "tipo": "tocar", "nivel": 2, "enunciado": "Toca los sustantivos propios.",
   "texto": "*Wara* vive en *Oruro* con su gato *Misi*.", ... }
 ```
+En `tocar` y `completar` se puede usar `\n` para cambiar de línea (por ejemplo, turnos de un diálogo).
 Las palabras correctas van entre asteriscos simples `*...*` (pueden ser dos palabras:
 `*La Paz*`). Todas las demás palabras también se pueden tocar (son distractores).
 
@@ -254,7 +255,7 @@ palabra, `" "` como oración. `vertical: true` para listas largas (secuencias de
 ```
 Requisitos disponibles: `mayuscula-inicial`, `punto-final` (acepta `.`, `?`, `!`),
 `min-palabras` (`valor`), `max-palabras` (`valor`), `min-oraciones` (`valor`),
-`incluye` (`palabras`, basta **una**), `incluye-todas` (`palabras`),
+`incluye` (`palabras`, basta **una**), `incluye-todas` (`palabras`) —ambos aceptan `"exacto": true` para exigir las tildes—,
 `signos-pregunta` (abre `¿` y cierra `?`), `signos-exclamacion` (`¡...!`).
 La app revisa solo lo verificable (forma), y el adulto puede leer los textos.
 

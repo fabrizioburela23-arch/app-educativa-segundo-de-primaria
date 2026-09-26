@@ -9,7 +9,7 @@
       "visual": { "tipo": "emojis", "items": ["🐈", "💧", "🐛"], "etiquetas": ["ga-to", "go-ta", "gu-sa-no"] }
     },
     {
-      "texto": "Con la **e** y con la **i**, la g suena fuerte: **ge**nte, **gi**rasol. Para que suene suave, ponemos una **u** en el medio: **gue**, **gui**. ¡Esa u no suena! Ju**gue**te, **gui**tarra.",
+      "texto": "Con la **e** y con la **i**, la g suena fuerte, como la j: **ge**nte, **gi**rasol. Para que suene suave, ponemos una **u** en el medio: **gue**, **gui**. ¡Esa u no suena! Ju**gue**te, **gui**tarra.",
       "visual": { "tipo": "emojis", "items": ["🧸", "🎸"], "etiquetas": ["ju-gue-te", "gui-ta-rra"] }
     },
     {
@@ -204,21 +204,20 @@
     },
     {
       "id": "p12", "tipo": "ordenar", "nivel": 3,
-      "enunciado": "Ordena las sílabas: es el mueble donde se guardan los paraguas.",
-      "visual": { "tipo": "emoji", "valor": "☂️" },
-      "elementos": ["pa", "ra", "güe", "ro"],
+      "enunciado": "Ordena las sílabas: así llamamos a un pingüino pequeñito.",
+      "visual": { "tipo": "emoji", "valor": "🐧" },
+      "elementos": ["pin", "güi", "ni", "to"],
       "unir": "",
-      "pista": "Es de la familia de «paraguas» y empieza igual.",
-      "explicacion": "Pa-ra-güe-ro forma «paragüero». Lleva ü porque la u suena, como en paraguas.",
+      "pista": "Empieza igual que «pingüino». Después viene la parte que lo hace pequeñito.",
+      "explicacion": "Pin-güi-ni-to forma «pingüinito». Es de la familia de pingüino: la u sigue sonando, por eso lleva ü.",
       "error": "arma-palabra"
     },
     {
       "id": "p13", "tipo": "completar", "nivel": 3,
       "enunciado": "Completa con g, gu o gü.",
-      "texto": "Wara es bilin[gü]e: habla aimara y castellano. Dibuja un pin[gü]ino con su ami[g]o.",
-      "banco": ["gu"],
-      "pista": "Lee en voz alta. ¿En qué palabras se oye la u?",
-      "explicacion": "Bilingüe y pingüino llevan gü porque la u suena. Amigo lleva la g sola, porque sigue una o.",
+      "texto": "Wara dibuja un pin[gü]ino, un [g]ato, una hormi[gu]ita y una ci[gü]eña.",
+      "pista": "Lee cada palabra en voz alta. ¿Qué vocal sigue a la g? ¿Se oye la u?",
+      "explicacion": "Pingüino y cigüeña llevan gü porque la u suena. Hormiguita lleva gu: la u no suena. Gato lleva la g sola, porque sigue una a.",
       "error": "olvida-dieresis"
     },
     {
@@ -229,7 +228,7 @@
         { "tipo": "mayuscula-inicial" },
         { "tipo": "punto-final" },
         { "tipo": "min-palabras", "valor": 4 },
-        { "tipo": "incluye", "palabras": ["pingüino", "cigüeña", "agüita", "paragüero", "bilingüe", "lengüita", "yegüita"] }
+        { "tipo": "incluye", "palabras": ["pingüino", "pingüinito", "cigüeña", "agüita", "paragüero", "bilingüe", "lengüita", "yegüita"] }
       ],
       "modelo": "El pingüino nada en el agua fría.",
       "pista": "Elige una palabra con ü, por ejemplo pingüino o cigüeña, y cuenta algo sobre ella.",
@@ -288,10 +287,11 @@
     {
       "id": "c4", "tipo": "completar", "nivel": 2,
       "enunciado": "Completa con gu o gü.",
-      "texto": "Miguel dibuja una ci[gü]eña al lado de una [gu]itarra.",
+      "visual": { "tipo": "emojis", "items": ["💧", "🐴"] },
+      "texto": "Mi[gu]el le da a[gü]ita a su ye[gü]ita.",
       "banco": ["g"],
-      "pista": "¿En qué palabra se oye la u? Esa lleva los dos puntitos.",
-      "explicacion": "Cigüeña lleva gü porque la u suena. Guitarra lleva gu porque la u no suena.",
+      "pista": "Lee en voz alta. ¿En qué palabras se oye la u? Esas llevan los dos puntitos.",
+      "explicacion": "Agüita y yegüita llevan gü porque la u suena, como en agua y yegua. Miguel lleva gu: ahí la u no suena.",
       "error": "olvida-dieresis"
     },
     {
@@ -331,12 +331,12 @@
       "elementos": ["bi", "lin", "güe"],
       "unir": "",
       "pista": "Empieza con bi, como bicicleta, que tiene dos ruedas.",
-      "explicacion": "Bi-lin-güe forma «bilingüe». En Bolivia, muchas personas son bilingües.",
+      "explicacion": "Bi-lin-güe forma «bilingüe»: la u suena, por eso lleva ü. Wara habla aimara y castellano: es bilingüe, como muchas personas en Bolivia.",
       "error": "arma-palabra"
     }
   ],
   "repaso": {
-    "texto": "ga, go, gu: la g suena suave. gue, gui: la u no suena (guitarra). güe, güi: la u suena y lleva diéresis (pingüino).",
+    "texto": "En ga, go y gu, la g suena suave. En gue y gui, la u no suena: guitarra. En güe y güi, la u suena y lleva diéresis: pingüino.",
     "visual": { "tipo": "emojis", "items": ["🐈", "🎸", "🐧"], "etiquetas": ["ga-to", "gui-ta-rra", "pin-güi-no"] }
   },
   "adulto": {

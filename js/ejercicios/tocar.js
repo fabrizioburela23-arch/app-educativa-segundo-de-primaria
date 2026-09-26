@@ -9,7 +9,7 @@ export default function tocar(cont, ej, ctx) {
   const elegidas = new Set();
 
   tokens.forEach((t, i) => {
-    if (t.espacio) { caja.appendChild(document.createTextNode(' ')); return; }
+    if (t.espacio) { caja.appendChild(t.salto ? h('br') : document.createTextNode(' ')); return; }
     if (!t.palabra) { caja.appendChild(h('span', { class: 'signo' }, t.texto)); return; }
     const b = h('button', { class: 'palabra', type: 'button', 'aria-pressed': 'false', onclick: () => alternar(i) }, t.texto);
     b.dataset.i = String(i);

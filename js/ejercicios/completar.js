@@ -16,7 +16,10 @@ export default function completar(cont, ej, ctx) {
   let fichaElegida = null;
 
   partes.forEach((p) => {
-    if (p.texto !== undefined) { caja.appendChild(document.createTextNode(p.texto)); return; }
+    if (p.texto !== undefined) {
+      p.texto.split('\n').forEach((linea, k) => { if (k) caja.appendChild(h('br')); caja.appendChild(document.createTextNode(linea)); });
+      return;
+    }
     const i = p.hueco;
     let el;
     if (escribir) {
@@ -113,8 +116,16 @@ export default function completar(cont, ej, ctx) {
     evaluar() {
       const malos = huecos.map((_, i) => i).filter((i) => !correcto(i));
       const respuesta = huecos.map((_, i) => texto(i)).join(' | ');
-      if (!malos.length) return { correcto: true, respuesta };
-      const extra = huecos.length > 1 ? (malos.length === 1 ? 'Revisa el espacio marcado.' : `Revisa los ${malos.length} espacios marcados.`) : '';
+      if (!malos.length) {
+        const nota = escribir ? huecos.map((hu, i) => compararEscrito(valores[i], hu.aceptadas, { mayusculas: ej.mayusculas, tildes: ej.tildes }).nota).find(Boolean) : undefined;
+        return { correcto: true, respuesta, nota };
+      }
+      let extra = huecos.length > 1 ? (malos.length === 1 ? 'Revisa el espacio marcado.' : `Revisa los ${malos.length} espacios marcados.`) : '';
+      if (escribir) {
+        const motivos = malos.map((i) => compararEscrito(valores[i], huecos[i].aceptadas, { mayusculas: ej.mayusculas, tildes: ej.tildes }).motivo);
+        if (motivos.includes('tildes')) extra = `Casi: revisa las tildes. ${extra}`;
+        else if (motivos.includes('mayusculas')) extra = `Casi: revisa las mayúsculas. ${extra}`;
+      }
       return { correcto: false, pista: `${extra} ${ej.pista}`.trim(), error: ej.error, respuesta };
     },
     prepararReintento() {

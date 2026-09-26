@@ -27,7 +27,7 @@
     "pasos": [
       { "texto": "Empezamos con **pa**: **pa**-to. El pato nada en la laguna.", "visual": { "tipo": "emojis", "items": ["🦆"], "etiquetas": ["pa-to"] } },
       { "texto": "Ponemos una **l** después de la p: p + l + a = **pla**. ¡Ahora dice **pla**-to!", "visual": { "tipo": "emojis", "items": ["🍽️"], "etiquetas": ["pla-to"] } },
-      { "texto": "Si ponemos una **r**: p + r + a = **pra**. Así decimos **pra**-do, un campo con pasto verde.", "visual": { "tipo": "emojis", "items": ["🌿"], "etiquetas": ["pra-do"] } },
+      { "texto": "Si en lugar de la l ponemos una **r**: p + r + a = **pra**. Así decimos **pra**-do, un campo con pasto verde.", "visual": { "tipo": "emojis", "items": ["🌿"], "etiquetas": ["pra-do"] } },
       {
         "texto": "Con la misma idea armamos muchas palabras: **plu**-ma, **pla**-za, **pri**-mo, **pre**-cio.",
         "visual": { "tipo": "tabla", "columnas": ["Con pl", "Con pr"], "filas": [["plu-ma", "pri-mo"], ["pla-za", "pre-cio"]] }
@@ -80,9 +80,9 @@
     {
       "id": "p1", "tipo": "tocar", "nivel": 1,
       "enunciado": "Toca las palabras que empiezan con p.",
-      "texto": "*Pedro* le da *pan* al *pato* y queso a su *perro* Bobi.",
-      "pista": "La p tiene el palito hacia abajo y la pancita a la derecha. No la confundas con la q ni con la b.",
-      "explicacion": "Pedro, pan, pato y perro empiezan con p. «Queso» empieza con q y «Bobi», con b.",
+      "texto": "*Pedro* le da maíz al *pato* y un *poco* de queso a su *perro* Bobi.",
+      "pista": "La p tiene el palito hacia abajo y la pancita a la derecha. No la confundas con la q, la b ni la d.",
+      "explicacion": "Pedro, pato, poco y perro empiezan con p. «Queso» empieza con q, «Bobi» con b y «de» con d.",
       "error": "confunde-p-b-q"
     },
     {
@@ -184,13 +184,13 @@
       "opciones": [
         { "texto": "plaza", "correcta": true },
         { "texto": "planeta", "correcta": true },
-        { "texto": "plancha", "correcta": true },
+        { "texto": "cumpleaños", "correcta": true },
         { "texto": "palo", "pista": "En «palo» hay una vocal entre la p y la l.", "error": "identifica-pl-pr" },
         { "texto": "pelota", "pista": "En «pelota» la p y la l no están juntas: hay una e en el medio.", "error": "identifica-pl-pr" },
         { "texto": "prado", "pista": "«Prado» tiene pr, no pl.", "error": "confunde-pl-pr" }
       ],
-      "pista": "Busca la p y la l juntas, sin una vocal en el medio.",
-      "explicacion": "Plaza, planeta y plancha tienen pl. En palo y pelota hay una vocal entre la p y la l. Prado tiene pr.",
+      "pista": "Busca la p y la l juntas, sin una vocal en el medio. Mira también en el medio de la palabra.",
+      "explicacion": "Plaza, planeta y cumpleaños (cum-**ple**-a-ños) tienen pl. En palo y pelota hay una vocal entre la p y la l. Prado tiene pr.",
       "error": "identifica-pl-pr"
     },
     {
@@ -206,9 +206,9 @@
     {
       "id": "p12", "tipo": "relacionar", "nivel": 3,
       "enunciado": "Si agregas una l o una r después de la p, sale otra palabra. Une cada palabra con la nueva.",
-      "pares": [["pato", "plato"], ["pan", "plan"], ["pisa", "prisa"]],
+      "pares": [["pato", "plato"], ["pan", "plan"], ["puma", "pluma"], ["pisa", "prisa"]],
       "pista": "Tapa con el dedo la l o la r de la palabra nueva: ¿qué palabra queda?",
-      "explicacion": "Pato → plato, pan → plan, pisa → prisa. ¡Una letra cambia la palabra!",
+      "explicacion": "Pato → plato, pan → plan, puma → pluma, pisa → prisa. ¡Una letra cambia la palabra!",
       "error": "identifica-pl-pr"
     },
     {
@@ -246,8 +246,8 @@
         { "tipo": "mayuscula-inicial" },
         { "tipo": "punto-final" },
         { "tipo": "min-palabras", "valor": 5 },
-        { "tipo": "incluye", "palabras": ["plato", "plátano", "pluma", "planta", "plaza", "planeta", "plancha", "aplaude", "aplauso"] },
-        { "tipo": "incluye", "palabras": ["primo", "prima", "precio", "prado", "pradera", "premio", "primavera", "pronto", "prepara", "sorpresa", "compra", "siempre"] }
+        { "tipo": "incluye", "palabras": ["plato", "plátano", "pluma", "planta", "plaza", "planeta", "plancha", "playa", "aplaude", "aplauso", "sopla", "cumpleaños", "completo"] },
+        { "tipo": "incluye", "palabras": ["primo", "prima", "precio", "prado", "pradera", "premio", "primavera", "primero", "pronto", "prepara", "profesor", "profesora", "pregunta", "princesa", "sorpresa", "compra", "aprende", "siempre"] }
       ],
       "modelo": "Mi prima come un plátano en la plaza.",
       "pista": "Elige una palabra con pl (plato, plaza) y otra con pr (primo, precio). Luego júntalas en una oración.",
@@ -269,9 +269,9 @@
     {
       "id": "c2", "tipo": "tocar", "nivel": 1,
       "enunciado": "Toca las palabras que tienen pl.",
-      "texto": "Kusi *aplaude* en la *plaza* con su papá.",
-      "pista": "Hay dos palabras. Una tiene pl en el medio.",
-      "explicacion": "A**plau**de y **pla**za tienen pl. «Papá» tiene p, pero no pl.",
+      "texto": "Kusi *sopla* las velas de la torta y su papá *aplaude*.",
+      "pista": "Hay dos palabras. Busca la p y la l juntas, también en el medio de la palabra.",
+      "explicacion": "So**pla** y a**plau**de tienen pl. «Papá» tiene p, pero no pl. «Velas» y «las» tienen l, pero no p.",
       "error": "identifica-pl-pr"
     },
     {
@@ -292,23 +292,24 @@
         { "id": "p", "texto": "p + vocal" }
       ],
       "elementos": [
-        { "texto": "aplauso", "categoria": "pl" },
-        { "texto": "plaza", "categoria": "pl" },
+        { "texto": "playa", "categoria": "pl" },
+        { "texto": "completo", "categoria": "pl" },
         { "texto": "sorpresa", "categoria": "pr" },
         { "texto": "prado", "categoria": "pr" },
-        { "texto": "pollo", "categoria": "p" },
-        { "texto": "puma", "categoria": "p" }
+        { "texto": "sopa", "categoria": "p" },
+        { "texto": "puerta", "categoria": "p" }
       ],
-      "pista": "Mira qué letra va justo después de la p.",
-      "explicacion": "pl: aplauso, plaza. pr: sorpresa, prado. p + vocal: pollo, puma.",
+      "pista": "Busca la p en cada palabra y mira qué letra va justo después.",
+      "explicacion": "Con pl: playa y completo. Con pr: sorpresa y prado. P con vocal: sopa y puerta.",
       "error": "identifica-pl-pr"
     },
     {
       "id": "c5", "tipo": "completar", "nivel": 2,
       "enunciado": "Completa con pl o pr.",
-      "texto": "La [pr]ofesora [pl]anta un árbol en la [pl]aza.",
+      "visual": { "tipo": "emojis", "items": ["👩‍🏫", "🦜"] },
+      "texto": "La [pr]ofesora muestra una [pl]uma de paraba en la [pl]aza.",
       "pista": "Lee cada palabra en voz alta. ¿Después de la p suena una l o una r?",
-      "explicacion": "«Profesora» lleva pr. «Planta» y «plaza» llevan pl.",
+      "explicacion": "«Profesora» lleva pr. «Pluma» y «plaza» llevan pl.",
       "error": "confunde-pl-pr"
     },
     {
@@ -323,11 +324,11 @@
     {
       "id": "c7", "tipo": "escribir", "nivel": 3,
       "enunciado": "Escucha y escribe la palabra.",
-      "escuchar": "plátano",
-      "respuestas": ["plátano"],
-      "pista": "Tiene tres sílabas. Escucha bien la primera: ¿qué suena después de la p?",
-      "explicacion": "Se escribe «plátano»: plá-ta-no, con pl y con tilde en la primera a.",
-      "error": "omite-l"
+      "escuchar": "aprender",
+      "respuestas": ["aprender"],
+      "pista": "Tiene tres sílabas. Escucha bien la del medio: ¿qué suena entre la p y la e?",
+      "explicacion": "Se escribe «aprender»: a-**pren**-der, con pr en el medio de la palabra.",
+      "error": "omite-r"
     },
     {
       "id": "c8", "tipo": "escribir", "nivel": 3,
@@ -339,7 +340,7 @@
     }
   ],
   "repaso": {
-    "texto": "pa, pe, pi, po, pu: la p con una vocal. En pl y pr, la p va pegada a la l o a la r en la misma sílaba: pla-to, pri-mo.",
+    "texto": "Con una vocal, la p forma pa, pe, pi, po y pu. En pl y pr, la p va pegada a la l o a la r en la misma sílaba: pla-to, pri-mo.",
     "visual": {
       "tipo": "tabla",
       "columnas": ["p", "pl", "pr"],

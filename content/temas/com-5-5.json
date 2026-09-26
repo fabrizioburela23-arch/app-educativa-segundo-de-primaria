@@ -9,7 +9,7 @@
       "visual": { "tipo": "emojis", "items": ["🐆", "🦒", "👁️", "🥤"], "etiquetas": ["ja-guar", "ji-ra-fa", "o-jo", "ju-go"] }
     },
     {
-      "texto": "¡Ojo! **ge** y **gi** suenan igual que **je** y **ji**. Unas palabras van con j: **ji**rafa, te**ji**do. Otras van con g: **ge**nte, **gi**rasol, **gi**gante. ¡Míralas bien para recordarlas!",
+      "texto": "¡Ojo! Las sílabas **ge** y **gi** suenan igual que **je** y **ji**. Unas palabras van con j: **ji**rafa, te**ji**do. Otras van con g: **ge**nte, **gi**rasol, **gi**gante. ¡Míralas bien para recordarlas!",
       "emoji": "👀",
       "visual": {
         "tipo": "tabla",
@@ -30,7 +30,7 @@
   "ejemplo": {
     "instruccion": "Mira cómo pensamos antes de escribir.",
     "pasos": [
-      { "texto": "Queremos escribir «ojito». Es de la familia de «ojo», que lleva j. ¡La familia se queda con la j! o-**ji**-to.", "visual": { "tipo": "emojis", "items": ["👁️"], "etiquetas": ["ojo → ojito"] } },
+      { "texto": "Queremos escribir «ojito». Es de la familia de «ojo», que lleva j. ¡La familia se queda con la j! Escribimos o-**ji**-to.", "visual": { "tipo": "emojis", "items": ["👁️"], "etiquetas": ["ojo → ojito"] } },
       { "texto": "Ahora «girasol». Suena «ji», pero esta palabra va con g: **gi**-ra-sol. Es de las que hay que recordar.", "visual": { "tipo": "emojis", "items": ["🌻"], "etiquetas": ["gi-ra-sol"] } },
       { "texto": "«Perro»: la r suena fuerte y está entre dos vocales, la e y la o. Escribimos rr: pe-**rro**.", "visual": { "tipo": "emojis", "items": ["🐕"], "etiquetas": ["pe-rro"] } },
       { "texto": "«Ratón»: la r suena fuerte, pero está al inicio. Va una sola r: **ra**-tón.", "visual": { "tipo": "emojis", "items": ["🐭"], "etiquetas": ["ra-tón"] } }
@@ -74,9 +74,9 @@
         "id": "g3", "tipo": "completar",
         "enunciado": "Completa con r o rr.",
         "apoyo": "Al inicio de la palabra va una sola r. Entre vocales: r para el sonido suave y rr para el fuerte.",
-        "texto": "El [r]atón se esconde en la tie[rr]a y come una pe[r]a.",
+        "texto": "El [r]atón se esconde en la tie[rr]a y come queso ama[r]illo.",
         "pista": "Di cada palabra en voz alta. ¿Dónde está la r y cómo suena?",
-        "explicacion": "«Ratón» lleva una r porque está al inicio. «Tierra» lleva rr: suena fuerte entre vocales. «Pera» lleva r: suena suave.",
+        "explicacion": "«Ratón» lleva una r porque está al inicio. «Tierra» lleva rr: suena fuerte entre vocales. «Amarillo» lleva r: suena suave.",
         "error": "confunde-r-rr"
       }
     ]
@@ -245,8 +245,8 @@
         { "tipo": "mayuscula-inicial" },
         { "tipo": "punto-final" },
         { "tipo": "min-palabras", "valor": 5 },
-        { "tipo": "incluye", "palabras": ["perro", "perrito", "carro", "burro", "zorro", "tierra", "cerro", "gorro", "torre", "arroz", "jarra", "corre", "guitarra", "cotorra"] },
-        { "tipo": "incluye", "palabras": ["jaguar", "jirafa", "jugo", "jugar", "juega", "ojo", "caja", "hoja", "abeja", "conejo", "roja", "rojo", "ají", "ajo", "dibujo"] }
+        { "tipo": "incluye", "palabras": ["perro", "perrito", "carro", "carrito", "burro", "burrito", "zorro", "tierra", "cerro", "gorro", "torre", "arroz", "jarra", "corre", "barro", "arriba", "guitarra", "cotorra", "pizarra"] },
+        { "tipo": "incluye", "palabras": ["jaguar", "jirafa", "jugo", "jugar", "juega", "juguete", "ojo", "ojito", "caja", "hoja", "abeja", "conejo", "oreja", "roja", "rojo", "ají", "ajo", "naranja", "dibujo", "dibuja", "trabajo", "tejido", "jardín", "Juan"] }
       ],
       "modelo": "Mi perro corre detrás del conejo.",
       "pista": "Piensa en un animal con rr (perro, burro, zorro) y en algo con j (conejo, jugo, hoja).",
@@ -288,12 +288,12 @@
     },
     {
       "id": "c3", "tipo": "escribir", "nivel": 2,
-      "enunciado": "Escucha y escribe. Es una palabra de la familia de «caja».",
-      "escuchar": "cajita",
-      "visual": { "tipo": "emoji", "valor": "📦" },
-      "respuestas": ["cajita"],
-      "pista": "«Caja» se escribe con j. ¿Qué pasa en su familia?",
-      "explicacion": "Se escribe «cajita», con j, igual que «caja».",
+      "enunciado": "Escucha y escribe. Es una palabra de la familia de «oreja».",
+      "escuchar": "orejita",
+      "visual": { "tipo": "emoji", "valor": "👂" },
+      "respuestas": ["orejita"],
+      "pista": "«Oreja» se escribe con j. ¿Qué pasa en su familia?",
+      "explicacion": "Se escribe «orejita», con j, igual que «oreja». La familia se queda con la j.",
       "error": "familia-j"
     },
     {
@@ -319,13 +319,13 @@
       "enunciado": "¿Qué palabras se completan con j? Elige todas.",
       "opciones": [
         { "texto": "☐aguar", "emoji": "🐆", "correcta": true },
-        { "texto": "o☐ito", "emoji": "👁️", "correcta": true },
+        { "texto": "a☐í", "emoji": "🌶️", "correcta": true },
         { "texto": "☐irafa", "emoji": "🦒", "correcta": true },
         { "texto": "☐irasol", "emoji": "🌻", "pista": "«Girasol» es de las palabras que van con g.", "error": "confunde-ge-je" },
         { "texto": "☐ente", "emoji": "👥", "pista": "«Gente» va con g. ¡Es de las que hay que recordar!", "error": "confunde-ge-je" }
       ],
       "pista": "Ja, jo y ju van con j. Para je y ji, recuerda las palabras de la lista.",
-      "explicacion": "Con j: jaguar, ojito y jirafa. Con g: girasol y gente.",
+      "explicacion": "Con j: jaguar, ají y jirafa. Con g: girasol y gente.",
       "error": "confunde-ge-je"
     },
     {
@@ -348,7 +348,7 @@
     }
   ],
   "repaso": {
-    "texto": "ja, jo, ju van con j. je y ji pueden ir con j o con g (jirafa, gente). La r fuerte va con rr solo entre vocales: perro. Al inicio y después de n, l o s va una sola r: ratón, sonrisa.",
+    "texto": "El sonido fuerte con a, o y u se escribe con j: jugo. Con e y con i puede ir j o g: jirafa, gente. La rr va solo entre vocales: perro. Al inicio y después de n, l o s va una sola r: ratón, sonrisa.",
     "visual": {
       "tipo": "tabla",
       "columnas": ["Sonido", "Se escribe", "Ejemplo"],
