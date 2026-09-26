@@ -322,12 +322,12 @@
     },
     {
       "id": "c3", "tipo": "escribir", "nivel": 2,
-      "enunciado": "Escucha la palabra: termina en z. Escríbela en plural.",
-      "escuchar": "luz",
+      "enunciado": "Escucha la oración y escríbela. Recuerda: «luz» se escribe con z.",
+      "escuchar": "Inti prende las luces.",
       "visual": { "tipo": "emoji", "valor": "💡", "cantidad": 3 },
-      "respuestas": ["luces"],
-      "pista": "Para el plural agregas «es». ¿Qué le pasa a la z cuando le sigue una e?",
-      "explicacion": "Luz → **luces**. La z cambia a c porque después viene la e.",
+      "respuestas": ["Inti prende las luces.", "Inti prende las luces"],
+      "pista": "Son cuatro palabras y la primera es un nombre. «Luces» es el plural de «luz»: ¿qué le pasa a la z cuando le sigue una e?",
+      "explicacion": "Se escribe «Inti prende las luces.» Luz → **luces**: la z cambia a c porque después viene la e.",
       "error": "plural-z"
     },
     {

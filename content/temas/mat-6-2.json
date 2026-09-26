@@ -91,7 +91,7 @@
         { "texto": "un lápiz", "emoji": "✏️", "categoria": "liviano" },
         { "texto": "una pluma", "categoria": "liviano" }
       ],
-      "pista": "Lo pesado cuesta mucho levantarlo. Lo liviano lo levantas fácil.",
+      "pista": "Lo pesado cuesta mucho levantarlo. Lo liviano lo levantas sin esfuerzo.",
       "explicacion": "Pesados: el micro, la llama, el tractor y el ropero. Livianos: la hoja, el globo, el lápiz y la pluma.",
       "error": "pesado-liviano"
     },
@@ -131,7 +131,7 @@
         { "texto": "un costal de papas", "emoji": "🥔" },
         { "texto": "una vaca", "emoji": "🐄" }
       ],
-      "pista": "Piensa cuál es más fácil de levantar y cuál es imposible de levantar.",
+      "pista": "Imagina que levantas cada cosa. ¿Cuál pesa menos? ¿Cuál pesa muchísimo?",
       "explicacion": "El limón es el más liviano; después, la piña; luego, el costal de papas; y la vaca es la más pesada.",
       "error": "ordena-pesos"
     },

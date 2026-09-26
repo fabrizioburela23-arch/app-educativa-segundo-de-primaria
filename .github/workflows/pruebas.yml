@@ -1,0 +1,22 @@
+name: Pruebas y validación del contenido
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  pruebas:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Validar el contenido (106 temas)
+        run: node tools/validar-contenido.mjs
+      - name: Pruebas unitarias (lógica adaptativa, textos, generadores, contenido)
+        run: node --test tests/unit/*.test.mjs
+      - name: Lista de archivos para uso sin conexión al día
+        run: |
+          node tools/generar-precache.mjs
+          git diff --exit-code precache.json sw.js || (echo "Ejecuta: node tools/generar-precache.mjs" && exit 1)

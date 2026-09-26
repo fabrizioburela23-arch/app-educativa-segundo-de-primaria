@@ -335,15 +335,16 @@
     },
     {
       "id": "c5", "tipo": "opcion", "nivel": 2,
-      "enunciado": "Escucha la oración. ¿Qué palabra oíste?",
-      "escuchar": "El pato flota en la laguna.",
+      "enunciado": "Escucha la palabra. ¿Cuál está bien escrita?",
+      "escuchar": "granizo",
       "opciones": [
-        { "texto": "flota", "correcta": true },
-        { "texto": "frota", "pista": "Escucha otra vez: después de la f, ¿suena r o l? Piensa también en lo que hace el pato en el agua.", "error": "confunde-r-l" }
+        { "texto": "granizo", "correcta": true },
+        { "texto": "glanizo", "pista": "Escucha otra vez: después de la g, ¿suena r o l?", "error": "confunde-r-l" },
+        { "texto": "garnizo", "pista": "Mira el orden: la r va pegada a la g, sin vocal en medio.", "error": "invierte-grupo" }
       ],
-      "columnas": 2,
-      "pista": "Escucha con atención la palabra que dice lo que hace el pato.",
-      "explicacion": "Oíste «flota», con fl: el pato se queda sobre el agua. «Frota», con fr, es pasar algo apretando.",
+      "columnas": 3,
+      "pista": "Escucha la primera sílaba: tiene dos consonantes amigas.",
+      "explicacion": "Se escribe **granizo**: **gra**-ni-zo, con gr. El granizo son bolitas de hielo que caen de las nubes.",
       "error": "confunde-r-l"
     },
     {
