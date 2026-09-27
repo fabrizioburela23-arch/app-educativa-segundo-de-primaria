@@ -124,9 +124,10 @@ try {
     await page.locator('button', { hasText: 'Para adultos' }).click();
     await page.waitForTimeout(500);
     ok('Panel de adultos: pide el PIN al volver', (await page.locator('.teclado').count()) === 1);
-    // 5b. «Cambiar el PIN» no borra el anterior hasta confirmar el nuevo.
-    for (const d of '1357') await page.locator('.teclado button', { hasText: new RegExp(`^${d}$`) }).click();
-    await page.waitForSelector('.pestanas');
+    // 5b. Un PIN equivocado seguido rápido del correcto: ningún número se pierde.
+    for (const d of '00001357') await page.locator('.teclado button', { hasText: new RegExp(`^${d}$`) }).click();
+    ok('PIN escrito rápido tras un error: entra igual', await page.waitForSelector('.pestanas', { timeout: 5000 }).then(() => true).catch(() => false));
+    // 5c. «Cambiar el PIN» no borra el anterior hasta confirmar el nuevo.
     await page.goto(`${BASE}#/adulto/ajustes`);
     await page.locator('button', { hasText: 'Cambiar el PIN' }).click();
     await page.waitForTimeout(300);

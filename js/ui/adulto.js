@@ -41,15 +41,25 @@ async function hashPin(pin) {
   }
 }
 
+// Un solo teclado para todos los intentos: si el adulto escribe rápido, ningún número se pierde.
 function tecladoPin(alCompletar, largo = 4) {
   let valor = '';
+  let espera = null;
   const puntos = h('div', { class: 'pin-puntos', 'aria-live': 'polite', 'aria-label': 'Números ingresados' });
-  const pintar = () => { vaciar(puntos); for (let i = 0; i < largo; i++) puntos.appendChild(h('span', { class: i < valor.length ? 'lleno' : '' })); };
+  const pintar = (llenos = valor.length) => { vaciar(puntos); for (let i = 0; i < largo; i++) puntos.appendChild(h('span', { class: i < llenos ? 'lleno' : '' })); };
   const pulsar = (t) => {
+    clearTimeout(espera);
     if (t === '⌫') valor = valor.slice(0, -1);
     else if (valor.length < largo) valor += t;
+    if (valor.length === largo) {
+      const v = valor;
+      valor = '';
+      pintar(largo);
+      espera = setTimeout(() => pintar(), 150);
+      alCompletar(v);
+      return;
+    }
     pintar();
-    if (valor.length === largo) { const v = valor; valor = ''; setTimeout(() => { pintar(); alCompletar(v); }, 150); }
   };
   const teclado = h('div', { class: 'teclado' }, ['1', '2', '3', '4', '5', '6', '7', '8', '9', '', '0', '⌫'].map((t) => t ? h('button', { type: 'button', 'aria-label': t === '⌫' ? 'Borrar' : t, onclick: () => pulsar(t) }, t) : h('span')));
   pintar();
@@ -73,36 +83,26 @@ export function pantallaAdulto(raiz, { navegar, pestana = 'progreso' }) {
     let primero = null;
     const titulo = h('h2', {}, estado.ajustes.pin ? 'Crea un PIN nuevo de 4 números' : 'Crea un PIN de 4 números');
     const nota = h('p', { class: 'nota' }, 'El PIN evita que el niño cambie los ajustes por accidente. No es una contraseña segura: no uses un PIN que uses en otro lugar.');
-    const zona = h('div');
-    const pedir = () => {
-      vaciar(zona);
-      zona.appendChild(tecladoPin(async (v) => {
-        if (!primero) { primero = v; titulo.textContent = 'Escribe el PIN otra vez'; pedir(); return; }
-        if (v !== primero) { primero = null; titulo.textContent = 'No coinciden. Crea un PIN de 4 números'; pedir(); return; }
-        estado.ajustes.pin = await hashPin(v);
-        creandoPin = false;
-        guardar(true);
-        desbloquear();
-        panel(raiz, { navegar, pestana });
-      }));
-    };
+    const zona = tecladoPin(async (v) => {
+      if (!primero) { primero = v; titulo.textContent = 'Escribe el PIN otra vez'; return; }
+      if (v !== primero) { primero = null; titulo.textContent = 'No coinciden. Crea un PIN de 4 números'; return; }
+      estado.ajustes.pin = await hashPin(v);
+      creandoPin = false;
+      guardar(true);
+      desbloquear();
+      panel(raiz, { navegar, pestana });
+    });
     caja.append(titulo, nota, zona);
-    pedir();
     return;
   }
 
   const titulo = h('h2', {}, 'Escribe el PIN de adultos');
-  const zona = h('div');
-  const pedir = () => {
-    vaciar(zona);
-    zona.appendChild(tecladoPin(async (v) => {
-      if ((await hashPin(v)) === estado.ajustes.pin) { desbloquear(); panel(raiz, { navegar, pestana }); }
-      else { titulo.textContent = 'PIN incorrecto. Intenta otra vez'; pedir(); }
-    }));
-  };
+  const zona = tecladoPin(async (v) => {
+    if ((await hashPin(v)) === estado.ajustes.pin) { desbloquear(); panel(raiz, { navegar, pestana }); }
+    else titulo.textContent = 'PIN incorrecto. Intenta otra vez';
+  });
   const olvido = h('button', { class: 'boton suave pequeno', type: 'button', style: 'margin-top:16px', onclick: () => restablecer() }, '¿Olvidaste el PIN?');
   caja.append(titulo, zona, olvido);
-  pedir();
 
   function restablecer() {
     const a = 23 + Math.floor(Math.random() * 60), b = 13 + Math.floor(Math.random() * 20);

@@ -570,3 +570,5 @@ button.cal-dia.elegido { background: var(--primario); border-color: var(--primar
 /* En filas ordenadas, los nombres no se cortan a mitad de palabra (pueden asomar sobre el vecino). */
 .emojis-parcial .emojis-etq { white-space: nowrap; overflow-wrap: normal; hyphens: none; font-size: .8rem; }
 .emojis-parcial .emojis-item { flex: 1 1 0; max-width: 96px; }
+/* El patrón para completar (secuencia + casillas) sí puede bajar a otra línea: son muchas cajas. */
+.sec-fila.pat-fila { flex-wrap: wrap; justify-content: center; }
