@@ -96,9 +96,15 @@ departamentales), porque no se pudieron volver a verificar contra una fuente en 
 ## Pruebas
 
 ```bash
-npm test                # lógica adaptativa, textos, generadores y validación de todo el contenido
-npm run test:e2e        # recorrido en tamaño de celular con Playwright (ver tests/e2e)
+npm test                  # lógica adaptativa, textos, generadores y validación de todo el contenido
+npm run test:e2e          # recorrido en celular: una lección por materia (respuestas correctas e
+                          # incorrectas), guardado, panel del adulto y uso sin conexión
+npm run test:robustez     # doble toque, botón Atrás, dos ventanas, sin voz en español, PIN, service worker
+npm run test:ejercicios   # responde CADA ejercicio de los 106 temas (mal y bien) desde la interfaz
+npm run test:visuales     # dibuja los ~1500 visuales del contenido a 360 px y busca errores o desbordes
 ```
+
+Las pruebas de navegador usan Playwright con Chromium (`npm i -D playwright` si no está instalado).
 
 ## Estructura
 
