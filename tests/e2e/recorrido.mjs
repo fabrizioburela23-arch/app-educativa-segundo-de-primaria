@@ -45,6 +45,15 @@ const erroresPagina = [];
 page.on('pageerror', (e) => erroresPagina.push(e.message));
 page.on('console', (m) => { if (m.type() === 'error') erroresPagina.push(m.text()); });
 const foto = async (n) => { await page.waitForTimeout(200); await page.screenshot({ path: `${SALIDA}/${n}.png` }); };
+// Entra al área de adultos (la app vuelve a pedir el PIN cada vez que se sale de ella).
+async function entrarAdulto(ruta) {
+  await page.goto(`${BASE}${ruta}`);
+  await page.waitForSelector('.teclado, .pestanas, main.adulto');
+  if (await page.locator('.teclado').count()) {
+    for (const d of '2468') await page.locator('.teclado button', { hasText: new RegExp(`^${d}$`) }).click();
+    await page.waitForSelector('.pestanas, h2:has-text("Revisar"), text=4. Practico', { timeout: 10000 }).catch(() => {});
+  }
+}
 const sinDesborde = async () => page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth + 1);
 
 try {
@@ -127,6 +136,7 @@ try {
   // ajustes: nivel inicial y tarea asignada
   await page.goto(`${BASE}#/adulto/ajustes`);
   await page.waitForSelector('.selector-nivel');
+  ok('Adulto: navegar entre pestañas no vuelve a pedir el PIN', (await page.locator('.teclado').count()) === 0);
   await page.locator('.selector-nivel').nth(1).locator('button', { hasText: 'Con más repaso' }).click();
   await page.selectOption('select[aria-label="Tema para asignar"]', 'mat-1-3');
   await page.fill('input[placeholder^="Ej.:"]', 'Practica la recta numérica');
@@ -146,6 +156,8 @@ try {
 
   // contenido: editar una fecha cívica como borrador y publicarla
   await page.goto(`${BASE}#/adulto/contenido`);
+  ok('Adulto: al volver después de salir, la app pide el PIN otra vez', (await page.locator('.teclado').count()) === 1);
+  await entrarAdulto('#/adulto/contenido');
   await page.waitForSelector('text=Fechas cívicas');
   await page.locator('.fila-tema', { hasText: 'Día del Mar' }).locator('button').click();
   await page.fill('.modal textarea', 'Recordamos a Eduardo Abaroa. (Texto revisado por el adulto.)');
@@ -162,6 +174,7 @@ try {
   // revisar y probar un ejercicio sin que cuente
   await page.goto(`${BASE}#/revisar/nat-1-2`);
   await page.waitForSelector('text=4. Practico');
+  ok('Adulto: «Revisar» muestra las respuestas de los manipulables', !(await page.locator('main').innerText()).includes('Respuesta: pictograma: ""'));
   await foto('25-adulto-revisar');
   const antes = await page.evaluate(() => JSON.parse(localStorage.getItem('aprendo2:v1')).temas['nat-1-2'].intentos);
   await page.locator('button', { hasText: '▶ Probar' }).first().click();

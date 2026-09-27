@@ -109,11 +109,12 @@ export function practicaAgotada(sesion) {
 }
 
 // Progreso aproximado hacia el objetivo de la práctica (0..1), solo para mostrar ánimo.
+// Solo cuentan los aciertos: responder por responder no hace subir el medidor.
 export function avancePractica(sesion) {
-  const n = sesion.resultados.length;
+  const aciertos = sesion.resultados.filter((x) => x.r >= 0.5).length;
   const ventana = sesion.resultados.slice(-CONFIG.ventana);
-  const buenos = ventana.filter((x) => x.r >= 0.5 && x.nivel >= 2).length;
-  return Math.min(1, (Math.min(n, CONFIG.minPractica) / CONFIG.minPractica) * 0.5 + (buenos / CONFIG.ventana) * 0.5);
+  const buenos = ventana.reduce((a, x) => a + (x.nivel >= 2 ? x.r : 0), 0);
+  return Math.min(1, (Math.min(aciertos, CONFIG.minPractica) / CONFIG.minPractica) * 0.4 + Math.min(1, buenos / CONFIG.aciertosVentana) * 0.6);
 }
 
 function azar(rng) { return rng ? rng() : Math.random(); }
@@ -156,14 +157,16 @@ export function elegirPractica(tema, prog, sesion, rng) {
 }
 
 // Comprobación final: 5 ejercicios según CONFIG.nivelesComprobacion, de fácil a difícil.
-export function elegirComprobacion(tema, rng) {
+export function elegirComprobacion(tema, rng, evitar = []) {
   const banco = (tema.comprobacion || []).slice();
   const mezcla = (arr) => {
     const r = arr.slice();
     for (let i = r.length - 1; i > 0; i--) { const j = Math.floor(azar(rng) * (i + 1)); [r[i], r[j]] = [r[j], r[i]]; }
     return r;
   };
-  const disponibles = mezcla(banco);
+  // Los del intento anterior van al final: se usan solo si faltan otros del mismo nivel.
+  const evitarSet = new Set(evitar);
+  const disponibles = [...mezcla(banco.filter((e) => !evitarSet.has(e.id))), ...mezcla(banco.filter((e) => evitarSet.has(e.id)))];
   const elegidos = [];
   for (const nivel of CONFIG.nivelesComprobacion) {
     if (!disponibles.length) break;
@@ -253,9 +256,15 @@ export function recomendar(indice, temas, ajustes, ultimoTema, hoy) {
   for (const m of indice.materias) for (const u of m.unidades) for (const t of u.temas) lista.push({ ...t, materia: m.id });
   const existe = (id) => lista.find((t) => t.id === id);
   const asignado = ajustes.temaAsignado && existe(ajustes.temaAsignado.id);
-  if (asignado && (temas[asignado.id]?.estado !== 'logrado')) return { tema: asignado, motivo: 'asignado' };
+  if (asignado) {
+    const pr = temas[asignado.id];
+    // Un tema ya logrado también puede asignarse: se muestra hasta que lo repase después de la asignación.
+    if (pr?.estado !== 'logrado') return { tema: asignado, motivo: 'asignado' };
+    if (!pr.ultimaVez || pr.ultimaVez < (ajustes.temaAsignado.fecha || '')) return { tema: asignado, motivo: 'asignado', repaso: true };
+  }
   const ultimo = ultimoTema && existe(ultimoTema);
-  if (ultimo && ['en-curso', 'repasar'].includes(temas[ultimo.id]?.estado)) return { tema: ultimo, motivo: 'continuar' };
+  // El último tema abierto, si todavía no está logrado, es el que se continúa.
+  if (ultimo && temas[ultimo.id] && temas[ultimo.id].estado !== 'logrado') return { tema: ultimo, motivo: temas[ultimo.id].estado === 'repasar' ? 'reforzar' : 'continuar' };
   const repasar = lista.find((t) => temas[t.id]?.estado === 'repasar');
   if (repasar) return { tema: repasar, motivo: 'reforzar' };
   const repasoDebido = lista.find((t) => repasoPendiente(temas[t.id], hoy));

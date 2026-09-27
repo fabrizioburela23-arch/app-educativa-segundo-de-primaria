@@ -543,3 +543,30 @@ button.cal-dia.elegido { background: var(--primario); border-color: var(--primar
 .opcion .rj-aguja-min line { stroke-width: 7; }
 .opcion .op-vertical, .opcion .op-division { font-size: 1.6rem; }
 .opcion .op-horizontal { font-size: 1.4rem; }
+
+/* ---------- ajustes para celulares de 360 px (auditoría final) ---------- */
+/* Filas con orden (colas, patrones, días): en una sola línea, achicando si hace falta. */
+.emojis-fila { flex-wrap: nowrap; gap: 6px 8px; }
+.emojis-p { flex-wrap: wrap; }
+.emojis-item { min-width: 0; flex: 0 1 auto; }
+.emojis-fila:has(.emojis-etq) .emojis-item { flex: 1 1 0; max-width: 96px; }
+.emojis-etq { overflow-wrap: anywhere; hyphens: auto; }
+.sec-fila.sec-larga { flex-wrap: wrap; justify-content: flex-start; }
+.emojis-fila.emojis-conjunto { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px 6px; justify-items: center; }
+.emojis-conjunto .emojis-item { max-width: none; width: 100%; }
+.emojis-g .emojis-item .emo { font-size: clamp(26px, 11vw, 46px); }
+.emojis-m .emojis-item .emo { font-size: clamp(22px, 8.5vw, 38px); }
+.emojis-p .emojis-item .emo { font-size: clamp(20px, 7vw, 30px); }
+.emojis-m .emojis-etq { font-size: .85rem; max-width: 100%; }
+.emojis-g .emojis-etq { max-width: 100%; }
+.sec-fila { flex-wrap: nowrap; gap: 6px; }
+.sec-caja { min-width: min(52px, 12.5vw); padding: 4px min(10px, 1.6vw); font-size: min(1.4rem, 5.4vw); }
+.sec-emoji { font-size: min(32px, 7.5vw); }
+@media (max-width: 480px) {
+  .tabla-visual { font-size: .95rem; }
+  .tabla-visual th, .tabla-visual td { min-width: 0; padding: 6px 7px; }
+  .cal-grid { gap: 2px; }
+}
+/* En filas ordenadas, los nombres no se cortan a mitad de palabra (pueden asomar sobre el vecino). */
+.emojis-parcial .emojis-etq { white-space: nowrap; overflow-wrap: normal; hyphens: none; font-size: .8rem; }
+.emojis-parcial .emojis-item { flex: 1 1 0; max-width: 96px; }

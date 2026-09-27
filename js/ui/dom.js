@@ -65,12 +65,21 @@ export function aviso(msg, ms = 3200) {
 }
 
 // Diálogo modal simple. botones: [{ texto, clase, valor }]
-export function dialogo({ titulo, contenido, botones = [{ texto: 'Aceptar', valor: true }] }) {
+// validar(valor) → texto de error (el diálogo sigue abierto) o nada (se cierra).
+export function dialogo({ titulo, contenido, botones = [{ texto: 'Aceptar', valor: true }], validar = null }) {
   return new Promise((resolver) => {
-    const cerrar = (v) => { fondo.remove(); resolver(v); };
+    const errorEl = h('p', { class: 'lista-errores oculto', role: 'alert', style: 'margin:10px 0 0' });
+    const cerrar = (v) => {
+      if (validar && v) {
+        const msg = validar(v);
+        if (msg) { errorEl.textContent = msg; errorEl.classList.remove('oculto'); return; }
+      }
+      fondo.remove(); resolver(v);
+    };
     const caja = h('div', { class: 'modal', role: 'dialog', 'aria-modal': 'true', 'aria-label': titulo || 'Mensaje' },
       titulo ? h('h2', {}, titulo) : null,
       typeof contenido === 'string' ? rico(contenido, 'p') : contenido,
+      errorEl,
       h('div', { class: 'acciones', style: botones.length === 1 ? 'grid-template-columns:1fr' : '' },
         botones.map((b) => h('button', { class: `boton ${b.clase || ''}`, onclick: () => cerrar(b.valor) }, b.texto))));
     const fondo = h('div', { class: 'modal-fondo', onclick: (e) => { if (e.target === fondo) cerrar(undefined); } }, caja);
@@ -78,6 +87,17 @@ export function dialogo({ titulo, contenido, botones = [{ texto: 'Aceptar', valo
     const primero = caja.querySelector('button');
     if (primero) primero.focus();
   });
+}
+
+// Evita dobles toques: ignora los toques de los primeros ms y los que siguen al primero.
+export function clicSeguro(fn, espera = 380) {
+  const t0 = performance.now();
+  let hecho = false;
+  return (e) => {
+    if (hecho || performance.now() - t0 < espera) return;
+    hecho = true;
+    fn(e);
+  };
 }
 
 export function emojiDe(o) {
@@ -149,6 +169,7 @@ export function hacerArrastrable(el, { alSoltar, alTocar, destinos }) {
   };
   el.addEventListener('pointerup', terminar);
   el.addEventListener('pointercancel', terminar);
+  el.addEventListener('lostpointercapture', (e) => { if (movido && clon) terminar({ ...e, type: 'pointercancel', clientX: e.clientX, clientY: e.clientY }); });
   el.addEventListener('click', (e) => {
     if (movido) { e.preventDefault(); movido = false; return; }
     alTocar();

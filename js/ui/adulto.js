@@ -11,15 +11,19 @@ import {
   datosContenido,
 } from '../contenido/cargar.js';
 import { validarTema } from '../contenido/validar.js';
-import { MESES } from '../contenido/catalogo.js';
+import { MESES, formatoBs } from '../contenido/catalogo.js';
 import { renderVisual } from '../visuales/visual.js';
 import { hayVoz, hayVozEspanol, listaVoces, hablar, configurarVoz } from '../audio/voz.js';
 import { nombreFase } from '../motor/leccion.js';
 import { repasoPendiente } from '../motor/adaptativo.js';
 
 let desbloqueadoHasta = 0;
+// Al cambiar o restablecer el PIN, el anterior se conserva hasta que el nuevo quede confirmado.
+let creandoPin = false;
 export const adultoDesbloqueado = () => Date.now() < desbloqueadoHasta;
+export const bloquearAdulto = () => { desbloqueadoHasta = 0; creandoPin = false; };
 const desbloquear = () => { desbloqueadoHasta = Date.now() + 20 * 60 * 1000; };
+const avisarDespues = (msg) => setTimeout(() => aviso(msg), 60);
 
 const ESTADO_TXT = { nuevo: 'Sin empezar', 'en-curso': 'Practicando', logrado: 'Logrado', repasar: 'Para reforzar' };
 const ESTADO_CHIP = { nuevo: '', 'en-curso': 'ayuda', logrado: 'exito', repasar: 'aviso' };
@@ -65,9 +69,9 @@ export function pantallaAdulto(raiz, { navegar, pestana = 'progreso' }) {
   const caja = h('div', { class: 'tarjeta', style: 'text-align:center' });
   p.appendChild(caja);
 
-  if (!estado.ajustes.pin) {
+  if (!estado.ajustes.pin || creandoPin) {
     let primero = null;
-    const titulo = h('h2', {}, 'Crea un PIN de 4 números');
+    const titulo = h('h2', {}, estado.ajustes.pin ? 'Crea un PIN nuevo de 4 números' : 'Crea un PIN de 4 números');
     const nota = h('p', { class: 'nota' }, 'El PIN evita que el niño cambie los ajustes por accidente. No es una contraseña segura: no uses un PIN que uses en otro lugar.');
     const zona = h('div');
     const pedir = () => {
@@ -76,6 +80,7 @@ export function pantallaAdulto(raiz, { navegar, pestana = 'progreso' }) {
         if (!primero) { primero = v; titulo.textContent = 'Escribe el PIN otra vez'; pedir(); return; }
         if (v !== primero) { primero = null; titulo.textContent = 'No coinciden. Crea un PIN de 4 números'; pedir(); return; }
         estado.ajustes.pin = await hashPin(v);
+        creandoPin = false;
         guardar(true);
         desbloquear();
         panel(raiz, { navegar, pestana });
@@ -108,7 +113,7 @@ export function pantallaAdulto(raiz, { navegar, pestana = 'progreso' }) {
       botones: [{ texto: 'Cancelar', clase: 'secundario', valor: false }, { texto: 'Confirmar', valor: true }],
     }).then((ok) => {
       if (!ok) return;
-      if (Number(input.value) === a * b) { estado.ajustes.pin = null; guardar(true); pantallaAdulto(raiz, { navegar, pestana }); }
+      if (Number(input.value) === a * b) { creandoPin = true; pantallaAdulto(raiz, { navegar, pestana }); }
       else aviso('El resultado no es correcto.');
     });
   }
@@ -120,7 +125,8 @@ function panel(raiz, { navegar, pestana }) {
   raiz.appendChild(h('div', { class: 'barra' },
     h('button', { class: 'icono-boton', type: 'button', 'aria-label': 'Volver al inicio', onclick: () => navegar('#/inicio') }, '←'),
     h('span', { class: 'barra-titulo' }, 'Panel para adultos'),
-    h('button', { class: 'boton suave pequeno', type: 'button', onclick: () => { desbloqueadoHasta = 0; navegar('#/inicio'); } }, 'Cerrar 🔒')));
+    h('button', { class: 'boton suave pequeno', type: 'button', onclick: () => { bloquearAdulto(); navegar('#/inicio'); } }, 'Cerrar 🔒')));
+  if (!almacenamientoDisponible()) raiz.appendChild(h('p', { class: 'aviso-audio', role: 'alert', style: 'margin:8px 16px' }, '⚠️ Este navegador no permite guardar datos: el progreso y los ajustes se perderán al cerrar. Revisa la pestaña Datos.'));
   const p = h('main', { class: 'pantalla adulto', id: 'contenido' });
   raiz.appendChild(p);
   const PESTANAS = [['progreso', 'Progreso'], ['ajustes', 'Ajustes'], ['contenido', 'Contenido'], ['datos', 'Datos']];
@@ -160,14 +166,19 @@ async function tabProgreso(zona, { navegar }) {
   const reforzar = conProgreso.filter((t) => {
     const pr = progresoSiExiste(t.id);
     const tasa = pr.intentos ? pr.primer / pr.intentos : 1;
-    return pr.estado === 'repasar' || (pr.estado === 'en-curso' && pr.intentos >= 6 && tasa < 0.6) || repasoPendiente(pr, hoy);
+    const ultimaComp = pr.comprobaciones.length ? pr.comprobaciones[pr.comprobaciones.length - 1].puntaje : null;
+    return pr.estado === 'repasar' || (pr.estado === 'en-curso' && pr.intentos >= 6 && tasa < 0.6) || (pr.estado === 'en-curso' && ultimaComp !== null && ultimaComp < 0.8) || repasoPendiente(pr, hoy);
   });
   const cajaRef = h('div', { class: 'tarjeta' }, h('h2', {}, 'Qué conviene practicar'));
   if (!reforzar.length) cajaRef.appendChild(h('p', { class: 'nota' }, conProgreso.length ? 'Por ahora no hay temas que necesiten refuerzo especial.' : 'Todavía no hay actividad. Cuando el niño practique, aquí aparecerán sugerencias.'));
   reforzar.forEach((t) => {
     const pr = progresoSiExiste(t.id);
     const tema = cache.get(t.id);
-    const motivo = pr.estado === 'repasar' ? 'Le costó en el último repaso o comprobación.' : repasoPendiente(pr, hoy) ? 'Le toca un repaso para no olvidarlo.' : 'Está practicando y todavía necesita varios intentos.';
+    const nComp = pr.comprobaciones.length;
+    const motivo = pr.estado === 'repasar' ? 'Le costó en el último repaso o comprobación.'
+      : repasoPendiente(pr, hoy) ? 'Le toca un repaso para no olvidarlo.'
+        : nComp && pr.comprobaciones[nComp - 1].puntaje < 0.8 ? `Intentó la comprobación final ${nComp === 1 ? 'una vez' : `${nComp} veces`} y todavía no llega al 80 %.`
+          : 'Está practicando y todavía necesita varios intentos.';
     cajaRef.appendChild(h('div', { class: 'detalle-tema' },
       h('strong', {}, `${t.emoji} ${t.titulo}`), h('span', { class: 'nota' }, ` · ${t.materiaNombre}`),
       h('p', { style: 'margin:4px 0' }, motivo),
@@ -249,14 +260,21 @@ async function tabProgreso(zona, { navegar }) {
     h('div', { class: 'nota' }, `${fechaCorta(e.fecha)} · ${buscarTema(e.tema)?.titulo || e.tema}`),
     h('div', { style: 'font-style:italic;margin:2px 0' }, e.enunciado),
     h('div', {}, e.texto),
-    h('button', { class: 'boton pequeno suave', type: 'button', style: 'margin-top:6px', onclick: () => { estado.escritos.splice(i, 1); guardar(true); navegar('#/adulto/progreso', true); } }, 'Borrar'))));
-  if (estado.escritos.length) cajaEsc.appendChild(h('button', { class: 'boton pequeno secundario', type: 'button', onclick: () => { estado.escritos = []; guardar(true); navegar('#/adulto/progreso', true); } }, 'Borrar todos los textos'));
+    h('button', { class: 'boton pequeno suave', type: 'button', style: 'margin-top:6px', onclick: async () => {
+      const ok = await dialogo({ titulo: 'Borrar texto', contenido: 'Se borrará este texto que escribió el niño. No se puede deshacer. ¿Continuar?', botones: [{ texto: 'Cancelar', clase: 'secundario', valor: false }, { texto: 'Borrar', clase: 'peligro', valor: true }] });
+      if (ok) { estado.escritos.splice(i, 1); guardar(true); navegar('#/adulto/progreso', true); }
+    } }, 'Borrar'))));
+  if (estado.escritos.length) cajaEsc.appendChild(h('button', { class: 'boton pequeno secundario', type: 'button', onclick: async () => {
+    const ok = await dialogo({ titulo: 'Borrar todos los textos', contenido: 'Se borrarán todos los textos que escribió el niño. No se puede deshacer. ¿Continuar?', botones: [{ texto: 'Cancelar', clase: 'secundario', valor: false }, { texto: 'Borrar todos', clase: 'peligro', valor: true }] });
+    if (ok) { estado.escritos = []; guardar(true); navegar('#/adulto/progreso', true); }
+  } }, 'Borrar todos los textos'));
   zona.appendChild(cajaEsc);
 
   function asignar(id) {
     estado.ajustes.temaAsignado = { id, nota: '', fecha: new Date().toISOString() };
     guardar(true);
-    aviso(`Tema asignado: ${buscarTema(id)?.titulo}. Aparecerá primero en la pantalla de inicio.`);
+    const logrado = progresoSiExiste(id)?.estado === 'logrado';
+    aviso(`Tema asignado: ${buscarTema(id)?.titulo}. Aparecerá primero en la pantalla de inicio${logrado ? ' como repaso, porque ya está logrado' : ''}.`);
   }
 }
 
@@ -324,13 +342,15 @@ function tabAjustes(zona, { navegar }) {
       : '⚠️ No se detectó una voz en español. El audio podría sonar en otro idioma o no sonar. En Android: Ajustes → Sistema → Idioma → Salida de texto a voz → instala «Español» en el motor de Google.';
   const selVoz = h('select', { 'aria-label': 'Voz' }, h('option', { value: '' }, 'Automática (español)'), voces.map((v) => h('option', { value: v.uri, selected: estado.ajustes.voz.uri === v.uri }, `${v.nombre} (${v.idioma})${v.local ? '' : ' · en línea'}`)));
   const vel = h('input', { type: 'range', min: '0.6', max: '1.2', step: '0.05', value: String(estado.ajustes.voz.velocidad) });
+  const velTexto = h('output', { style: 'font-weight:700' }, `${String(estado.ajustes.voz.velocidad).replace('.', ',')}×`);
+  vel.addEventListener('input', () => { velTexto.textContent = `${vel.value.replace('.', ',')}×`; });
   const auto = h('input', { type: 'checkbox', checked: estado.ajustes.voz.leerAuto });
   zona.appendChild(h('div', { class: 'tarjeta' }, h('h2', {}, 'Audio'),
     h('p', {}, estadoVoz),
-    h('p', { class: 'nota' }, 'La app usa la voz del teléfono; no incluye grabaciones. Algunas voces necesitan internet.'),
+    h('p', { class: 'nota' }, 'La app usa la voz del teléfono; no incluye grabaciones. En «Automática» se prefieren las voces instaladas en el teléfono. Las marcadas «en línea» necesitan internet y envían el texto de la lección al servicio de voz (nunca datos del niño).'),
     h('div', { class: 'formulario' },
       h('label', {}, 'Voz', selVoz),
-      h('label', {}, 'Velocidad', vel),
+      h('label', {}, h('span', {}, 'Velocidad ', velTexto), vel),
       h('label', { style: 'display:flex;gap:10px;align-items:center;font-weight:400' }, auto, 'Leer en voz alta cada instrucción automáticamente')),
     h('div', { class: 'fila-botones' },
       h('button', { class: 'boton pequeno', type: 'button', onclick: () => {
@@ -347,7 +367,8 @@ function tabAjustes(zona, { navegar }) {
 
   // PIN
   zona.appendChild(h('div', { class: 'tarjeta' }, h('h2', {}, 'PIN de adultos'),
-    h('button', { class: 'boton pequeno secundario', type: 'button', onclick: () => { estado.ajustes.pin = null; guardar(true); desbloqueadoHasta = 0; navegar('#/adulto/ajustes', true); } }, 'Cambiar el PIN')));
+    h('p', { class: 'nota' }, 'El PIN actual sigue valiendo hasta que confirmes el nuevo.'),
+    h('button', { class: 'boton pequeno secundario', type: 'button', onclick: () => { desbloqueadoHasta = 0; creandoPin = true; navegar('#/adulto/ajustes', true); } }, 'Cambiar el PIN')));
 }
 
 // ---------- contenido ----------
@@ -410,6 +431,15 @@ function editorFechas(zona, { navegar }) {
         ...(i >= 0 && String(f.id).startsWith('local-') ? [{ texto: 'Eliminar', clase: 'peligro', valor: 'borrar' }] : []),
         { texto: 'Cancelar', clase: 'secundario', valor: false }, { texto: 'Guardar borrador', valor: true },
       ],
+      validar: (v) => {
+        if (v !== true) return null;
+        const d = Math.round(Number(dia.value)), m = Number(mes.value);
+        const maxDia = new Date(2024, m, 0).getDate();
+        if (!(d >= 1 && d <= maxDia)) return `El día debe estar entre 1 y ${maxDia} para ${MESES[m - 1]}.`;
+        if (!nombre.value.trim()) return 'Escribe el nombre de la fecha.';
+        if (!desc.value.trim()) return 'Escribe una descripción corta para el niño.';
+        return null;
+      },
     }).then((v) => {
       if (v === 'borrar') { lista.splice(i, 1); guardarBorrador(); return; }
       if (!v) return;
@@ -424,14 +454,27 @@ function editorFechas(zona, { navegar }) {
   }
 
   async function publicar() {
-    const ok = await dialogo({ titulo: 'Publicar fechas', contenido: 'El niño verá estas fechas en las lecciones y en los ejercicios de fechas. ¿Publicar?', botones: [{ texto: 'Cancelar', clase: 'secundario', valor: false }, { texto: 'Publicar', valor: true }] });
+    const ok = await dialogo({
+      titulo: 'Publicar fechas',
+      contenido: 'Se actualizarán la lista de fechas que ve el niño y los ejercicios de fechas que crea la app. Los textos y ejercicios fijos de los temas no cambian solos: después te mostraremos cuáles mencionan una fecha que cambiaste, para que los revises. ¿Publicar?',
+      botones: [{ texto: 'Cancelar', clase: 'secundario', valor: false }, { texto: 'Publicar', valor: true }],
+    });
     if (!ok) return;
+    const antes = Array.isArray(c.publicado) ? c.publicado : fechasOriginales();
     c.publicado = lista.map((f) => ({ ...f }));
     c.borrador = null;
     c.fechaPublicado = new Date().toISOString();
     guardar(true);
-    aviso('Fechas publicadas.');
     pintar();
+    const afectados = await ejerciciosConFechasCambiadas(antes, c.publicado);
+    if (!afectados.length) { aviso('Fechas publicadas.'); return; }
+    dialogo({
+      titulo: 'Fechas publicadas',
+      contenido: h('div', {},
+        h('p', {}, 'Estos temas tienen textos o ejercicios fijos que mencionan una fecha que cambiaste u ocultaste. Revísalos y corrígelos en «Lecciones → Editar texto» si hace falta:'),
+        h('ul', {}, afectados.map((a) => h('li', {}, h('strong', {}, `${a.tema}: `), `${a.fecha} → ${a.lugares.join(', ')}`)))),
+      botones: [{ texto: 'Entendido', valor: true }],
+    });
   }
 
   async function restaurar() {
@@ -450,6 +493,8 @@ function editorFechas(zona, { navegar }) {
   void navegar;
 }
 
+let temaEditado = null;
+
 function editorTemas(zona, { navegar }) {
   const estado = obtener();
   const indice = obtenerIndice();
@@ -464,6 +509,8 @@ function editorTemas(zona, { navegar }) {
       h('button', { class: 'boton pequeno secundario', type: 'button', onclick: () => abrirEditor() }, '✏️ Editar texto (avanzado)')),
     area);
   zona.appendChild(caja);
+  if (temaEditado) sel.value = temaEditado;
+  sel.addEventListener('change', () => { temaEditado = sel.value; });
   const pintarInfo = () => {
     const ov = estado.contenido.temas[sel.value];
     info.textContent = !ov ? 'Versión original.' : ov.borrador ? '✏️ Tiene un borrador sin publicar.' : ov.publicado ? `✅ Publicada tu versión (${fechaCorta(ov.fechaPublicado)}).` : 'Versión original.';
@@ -473,6 +520,7 @@ function editorTemas(zona, { navegar }) {
 
   async function abrirEditor() {
     const id = sel.value;
+    temaEditado = id;
     vaciar(area);
     const ov = estado.contenido.temas[id] || {};
     let texto;
@@ -562,8 +610,8 @@ function tabDatos(zona, { navegar }) {
       const ok = await dialogo({ titulo: 'Restaurar copia', contenido: 'Se reemplazará el progreso actual por el de la copia. ¿Continuar?', botones: [{ texto: 'Cancelar', clase: 'secundario', valor: false }, { texto: 'Restaurar', valor: true }] });
       if (!ok) return;
       importar(texto);
-      aviso('Copia restaurada.');
       navegar('#/adulto/datos', true);
+      avisarDespues('Copia restaurada.');
     } catch (e) { aviso(`No se pudo restaurar: ${e.message}`); }
   } });
   zona.appendChild(h('div', { class: 'tarjeta' }, h('h2', {}, '💾 Copia de seguridad'),
@@ -601,11 +649,11 @@ function tabDatos(zona, { navegar }) {
     h('div', { class: 'fila-botones' },
       h('button', { class: 'boton pequeno secundario', type: 'button', onclick: async () => {
         const ok = await dialogo({ titulo: 'Borrar el progreso', contenido: 'Se borrará el avance de todos los temas, la actividad y los textos. Los ajustes se conservan. ¿Continuar?', botones: [{ texto: 'Cancelar', clase: 'secundario', valor: false }, { texto: 'Borrar progreso', clase: 'peligro', valor: true }] });
-        if (ok) { borrarProgreso(); aviso('Progreso borrado.'); navegar('#/adulto/datos', true); }
+        if (ok) { borrarProgreso(); navegar('#/adulto/datos', true); avisarDespues('Progreso borrado.'); }
       } }, 'Borrar el progreso'),
       h('button', { class: 'boton pequeno peligro', type: 'button', onclick: async () => {
         const ok = await dialogo({ titulo: 'Borrar todo', contenido: 'Se borrará todo: progreso, ajustes, PIN y contenidos editados. ¿Continuar?', botones: [{ texto: 'Cancelar', clase: 'secundario', valor: false }, { texto: 'Borrar todo', clase: 'peligro', valor: true }] });
-        if (ok) { borrarTodo(); desbloqueadoHasta = 0; navegar('#/inicio'); }
+        if (ok) { borrarTodo(); bloquearAdulto(); navegar('#/inicio'); }
       } }, 'Borrar todo'))));
   zona.appendChild(h('p', { class: 'nota', style: 'text-align:center' }, h('a', { href: '#/acerca' }, 'Acerca de la app y sus limitaciones')));
   void estado;
@@ -649,6 +697,52 @@ export async function pantallaRevisar(raiz, { id, fuente, navegar, ejecutarEjerc
   p.appendChild(h('div', { class: 'tarjeta' }, h('h2', {}, 'Repaso'), rico(tema.repaso.texto, 'p')));
 }
 
+function resumenManipulable(m) {
+  const lista = (x) => (Array.isArray(x) ? x.join(' ') : '');
+  switch (m.tipo) {
+    case 'bloques': return `armar ${m.objetivo}`;
+    case 'recta': return `marcar el ${m.objetivo}`;
+    case 'fraccion': return `pintar ${m.objetivo} de ${m.partes} partes`;
+    case 'dinero': return `juntar ${formatoBs(m.objetivo)}`;
+    case 'reloj': return `poner las ${m.objetivo.hora}:${String(m.objetivo.minutos).padStart(2, '0')}`;
+    case 'grupos': return `${m.grupos} grupos de ${m.porGrupo}`;
+    case 'repartir': return `${m.total / m.grupos} en cada uno de los ${m.grupos} grupos`;
+    case 'simetria': return 'pintar el reflejo exacto de las celdas del lado izquierdo';
+    case 'calendario': return `tocar el día ${m.objetivo} de ${MESES[m.mes - 1]} de ${m.anio}`;
+    case 'pictograma': return (m.categorias || []).map((c) => `${c.etiqueta}: ${c.objetivo}`).join('; ');
+    case 'patron': return `completar con ${lista(m.solucion)}`;
+    default: return m.tipo;
+  }
+}
+
+// Busca en los temas los textos y ejercicios fijos que mencionan fechas cambiadas u ocultas.
+async function ejerciciosConFechasCambiadas(antes, despues) {
+  const porId = new Map(despues.map((f) => [f.id, f]));
+  const cambios = [];
+  for (const f of antes) {
+    const n = porId.get(f.id);
+    const oculta = !n || n.publicada === false;
+    const movida = n && (n.dia !== f.dia || n.mes !== f.mes || n.nombre !== f.nombre);
+    if ((oculta && f.publicada !== false) || movida) cambios.push({ texto: `${f.dia} de ${MESES[f.mes - 1]}`, nombre: f.nombre });
+  }
+  if (!cambios.length) return [];
+  const resultado = [];
+  for (const t of listaTemas()) {
+    let tema;
+    try { tema = await cargarTema(t.id); } catch { continue; }
+    const partes = [
+      ...tema.explicacion.map((x, i) => [`tarjeta ${i + 1}`, x]),
+      ...(tema.ejemplo.pasos || []).map((x, i) => [`ejemplo ${i + 1}`, x]),
+      ...[...tema.guiada.pasos, ...tema.practica, ...tema.comprobacion].map((x) => [x.id, x]),
+    ];
+    for (const c of cambios) {
+      const lugares = partes.filter(([, x]) => { const j = JSON.stringify(x); return j.includes(c.texto) || j.includes(c.nombre); }).map(([k]) => k);
+      if (lugares.length) resultado.push({ tema: `${t.id} ${t.titulo}`, fecha: `${c.nombre} (${c.texto})`, lugares });
+    }
+  }
+  return resultado;
+}
+
 function resumenRespuesta(ej) {
   switch (ej.tipo) {
     case 'opcion': case 'multiple': return ej.opciones.filter((o) => o.correcta).map((o) => o.texto || o.emoji).join(', ');
@@ -660,7 +754,7 @@ function resumenRespuesta(ej) {
     case 'relacionar': case 'memoria': return ej.pares.map((p) => p.map((x) => (typeof x === 'string' ? x : x.texto || x.emoji)).join('–')).join(', ');
     case 'clasificar': return ej.categorias.map((c) => `${c.texto}: ${ej.elementos.filter((e) => e.categoria === c.id).map((e) => e.texto || e.emoji).join(', ')}`).join(' | ');
     case 'escribir-libre': return `revisa: ${ej.requisitos.map((q) => q.tipo).join(', ')}. Ejemplo: ${ej.modelo}`;
-    case 'manipular': return `${ej.manipulable.tipo}: ${JSON.stringify(ej.manipulable.objetivo ?? ej.manipulable.solucion ?? ej.manipulable.porGrupo ?? '')}`;
+    case 'manipular': return resumenManipulable(ej.manipulable);
     case 'pasos': return ej.pasos.map((s, i) => `${i + 1}) ${resumenRespuesta(s)}`).join('  ');
     case 'generador': return 'la calcula la app';
     default: return '';

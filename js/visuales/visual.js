@@ -131,7 +131,12 @@ function vEmojis(v, c) {
   const items = lista(v.items).slice(0, 12).map(textoDe);
   const et = lista(v.etiquetas).map(textoDe);
   const tam = items.length <= 4 ? 'g' : items.length <= 8 ? 'm' : 'p';
-  c.append(h('div', { class: `emojis-fila emojis-${tam}` },
+  // Conjuntos con nombre en cada dibujo (más de 5): en cuadrícula. Filas ordenadas (colas): en una sola línea.
+  const conjunto = items.length > 5 && et.length === items.length && et.every((x) => x !== '');
+  // Solo algunos dibujos con nombre (por ejemplo, una cola donde se señala a una persona).
+  const conNombre = et.filter((x) => x !== '' && x !== undefined).length;
+  const parcial = conNombre > 0 && conNombre < items.length;
+  c.append(h('div', { class: `emojis-fila emojis-${tam} ${conjunto ? 'emojis-conjunto' : ''} ${parcial ? 'emojis-parcial' : ''}` },
     items.map((it, i) => h('div', { class: 'emojis-item' },
       h('span', { class: esEmoji(it) ? 'emo' : 'emojis-texto' }, it),
       et[i] !== undefined && et[i] !== '' ? h('span', { class: 'emojis-etq' }, et[i]) : null))));
@@ -933,7 +938,9 @@ export function cajaSecuencia(it, { oculto = false, clase = '' } = {}) {
 function vSecuencia(v, c) {
   const items = Array.isArray(v.items) ? v.items.slice(0, 12) : [];
   const oc = v.oculto === undefined ? -1 : Number(v.oculto);
-  c.append(h('div', { class: 'sec-fila' }, items.map((it, i) => cajaSecuencia(it, { oculto: i === oc }))));
+  // Secuencias con palabras largas (días, meses) pueden pasar de línea; las de números o dibujos no.
+  const largo = items.reduce((acc, it) => acc + String(typeof it === 'object' && it ? it.texto || it.emoji || '' : it ?? '').length, 0);
+  c.append(h('div', { class: `sec-fila ${largo > 22 ? 'sec-larga' : ''}` }, items.map((it, i) => cajaSecuencia(it, { oculto: i === oc }))));
 }
 
 // ---------------------------------------------------------------------------

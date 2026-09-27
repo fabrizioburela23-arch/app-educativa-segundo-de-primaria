@@ -22,6 +22,7 @@ function estadoNuevo() {
     ultimoTema: null,
     registro: [], // resúmenes de sesiones: { fecha, tema, modo, aciertos, total }
     escritos: [], // textos libres: { fecha, tema, enunciado, texto }
+    sesionAbierta: null, // práctica a medias (se anota en el registro si la app se cierra)
     contenido: {
       fechas: { borrador: null, publicado: null, fechaPublicado: null },
       temas: {}, // id → { borrador, publicado, fechaPublicado }
@@ -32,17 +33,38 @@ function estadoNuevo() {
 let estado = null;
 let almacenOk = true;
 let temporizador = null;
+let sucio = false;
 const oyentes = new Set();
+const externos = new Set();
+// Tema con una lección abierta en esta ventana: su progreso se conserva si otra ventana guarda.
+let abierto = null;
+
+function leerGuardado() {
+  const crudo = localStorage.getItem(CLAVE);
+  return crudo ? migrar(JSON.parse(crudo)) : null;
+}
 
 export function cargarEstado() {
   try {
-    const crudo = localStorage.getItem(CLAVE);
-    estado = crudo ? migrar(JSON.parse(crudo)) : estadoNuevo();
+    estado = leerGuardado() || estadoNuevo();
+    // prueba de escritura: si falla, el adulto y el niño verán un aviso
+    localStorage.setItem(`${CLAVE}:prueba`, '1');
+    localStorage.removeItem(`${CLAVE}:prueba`);
   } catch (e) {
     almacenOk = false;
-    estado = estadoNuevo();
+    if (!estado) estado = estadoNuevo();
   }
   return estado;
+}
+
+function temaValido(v) {
+  if (!v || typeof v !== 'object') return null;
+  const base = progresoInicial(Number.isInteger(v.nivel) ? v.nivel : 2);
+  const r = { ...base, ...v, vistos: { ...base.vistos, ...(v.vistos || {}) } };
+  if (!['nuevo', 'en-curso', 'logrado', 'repasar'].includes(r.estado)) r.estado = 'nuevo';
+  for (const k of ['errores', 'vistosEj']) if (!r[k] || typeof r[k] !== 'object') r[k] = {};
+  for (const k of ['recientes', 'comprobaciones']) if (!Array.isArray(r[k])) r[k] = [];
+  return r;
 }
 
 function migrar(e) {
@@ -55,7 +77,9 @@ function migrar(e) {
   r.contenido = { ...base.contenido, ...(e.contenido || {}) };
   r.contenido.fechas = { ...base.contenido.fechas, ...((e.contenido || {}).fechas || {}) };
   r.contenido.temas = { ...((e.contenido || {}).temas || {}) };
-  r.temas = e.temas || {};
+  const temas = e.temas && typeof e.temas === 'object' ? e.temas : {};
+  r.temas = {};
+  for (const [k, v] of Object.entries(temas)) { const t = temaValido(v); if (t) r.temas[k] = t; }
   r.registro = Array.isArray(e.registro) ? e.registro : [];
   r.escritos = Array.isArray(e.escritos) ? e.escritos : [];
   r.version = VERSION;
@@ -65,28 +89,53 @@ function migrar(e) {
 export const obtener = () => estado;
 export const almacenamientoDisponible = () => almacenOk;
 
+function escribir() {
+  try {
+    localStorage.setItem(CLAVE, JSON.stringify(estado));
+    almacenOk = true;
+    sucio = false;
+  } catch (e) {
+    almacenOk = false;
+  }
+  oyentes.forEach((f) => f(estado));
+}
+
 export function guardar(inmediato = false) {
+  sucio = true;
   clearTimeout(temporizador);
-  const escribir = () => {
-    try {
-      localStorage.setItem(CLAVE, JSON.stringify(estado));
-      almacenOk = true;
-    } catch (e) {
-      almacenOk = false;
-    }
-    oyentes.forEach((f) => f(estado));
-  };
   if (inmediato) escribir();
   else temporizador = setTimeout(escribir, 250);
 }
 
 export function alCambiar(f) { oyentes.add(f); return () => oyentes.delete(f); }
+export function alCambiarDesdeOtraVentana(f) { externos.add(f); return () => externos.delete(f); }
 
-// Guarda antes de que el sistema cierre la pestaña o la app.
-if (typeof document !== 'undefined') {
-  document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'hidden') guardar(true); });
-  window.addEventListener('pagehide', () => guardar(true));
+// Otra ventana de la app (por ejemplo, la app instalada y una pestaña) guardó cambios:
+// se adoptan para no pisarlos, conservando el progreso del tema abierto aquí si es más nuevo.
+function alGuardarOtraVentana(e) {
+  if (e.key !== CLAVE || !e.newValue) return;
+  let nuevo;
+  try { nuevo = migrar(JSON.parse(e.newValue)); } catch { return; }
+  if (abierto && estado.temas[abierto]) {
+    const mio = estado.temas[abierto];
+    const suyo = nuevo.temas[abierto];
+    if (!suyo || (mio.ultimaVez || '') >= (suyo.ultimaVez || '')) nuevo.temas[abierto] = mio;
+    nuevo.ultimoTema = estado.ultimoTema;
+  }
+  estado = nuevo;
+  if (sucio && abierto) escribir();
+  externos.forEach((f) => f(estado));
 }
+
+if (typeof window !== 'undefined') {
+  window.addEventListener('storage', alGuardarOtraVentana);
+  // Guarda antes de que el sistema cierre la pestaña o la app (solo si hay cambios pendientes).
+  document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'hidden' && sucio) { clearTimeout(temporizador); escribir(); } });
+  window.addEventListener('pagehide', () => { if (sucio) { clearTimeout(temporizador); escribir(); } });
+}
+
+// El tema abierto en una lección: su objeto de progreso se sigue usando aunque otra ventana guarde.
+export function marcarAbierto(temaId) { abierto = temaId; }
 
 export function progresoDe(temaId, materiaId) {
   if (!estado.temas[temaId]) {
@@ -106,6 +155,21 @@ export function anotarRegistro(entrada) {
   guardar();
 }
 
+// Práctica en curso: si la app se cierra o se recarga, queda anotada al volver a abrirla.
+export function anotarSesionAbierta(entrada) {
+  estado.sesionAbierta = entrada ? { fecha: new Date().toISOString(), ...entrada } : null;
+  guardar();
+}
+
+export function recuperarSesionAbierta() {
+  const s = estado.sesionAbierta;
+  if (s && s.total) {
+    estado.registro.unshift(s);
+    if (estado.registro.length > 300) estado.registro.length = 300;
+  }
+  if (s) { estado.sesionAbierta = null; guardar(true); }
+}
+
 export function anotarEscrito(entrada) {
   estado.escritos.unshift({ fecha: new Date().toISOString(), ...entrada });
   if (estado.escritos.length > 40) estado.escritos.length = 40;
@@ -119,7 +183,7 @@ export function exportar() {
 export function importar(texto) {
   const datos = JSON.parse(texto);
   const e = datos && datos.app === 'aprendo2' ? datos.estado : datos;
-  if (!e || typeof e !== 'object' || !e.temas) throw new Error('El archivo no parece una copia de esta app.');
+  if (!e || typeof e !== 'object' || !e.temas || typeof e.temas !== 'object') throw new Error('El archivo no parece una copia de esta app.');
   estado = migrar(e);
   guardar(true);
   return estado;
@@ -130,6 +194,7 @@ export function borrarProgreso() {
   estado.registro = [];
   estado.escritos = [];
   estado.ultimoTema = null;
+  estado.sesionAbierta = null;
   guardar(true);
 }
 

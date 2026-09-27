@@ -54,7 +54,8 @@ export default function memoria(cont, ej, ctx) {
       abiertas.length = 0;
       const faltan = (cartas.length - hechas.size) / 2;
       info.textContent = faltan ? `¡Pareja encontrada! Faltan ${faltan}.` : '¡Encontraste todas las parejas!';
-      if (!faltan) setTimeout(() => ctx.alTerminar({ r: 1, respuesta: `${intentos} intentos` }), 500);
+      // Con pocos intentos cuenta como acierto; si fue más al azar, como acierto con ayuda.
+      if (!faltan) setTimeout(() => ctx.alTerminar({ r: intentos <= ej.pares.length * 2 + 1 ? 1 : 0.5, respuesta: `${intentos} intentos` }), 500);
     } else {
       esperando = true;
       info.textContent = 'No son pareja. ¡Recuerda dónde están!';

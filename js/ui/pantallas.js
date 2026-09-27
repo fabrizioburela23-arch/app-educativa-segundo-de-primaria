@@ -1,6 +1,6 @@
 // Pantallas del niño: inicio, mapa de la materia y presentación del tema.
 import { h, vaciar, rico, hoyISO } from './dom.js';
-import { obtener, progresoSiExiste, guardar } from '../estado.js';
+import { obtener, progresoSiExiste, guardar, almacenamientoDisponible } from '../estado.js';
 import { obtenerIndice, listaTemas, buscarMateria, buscarTema } from '../contenido/cargar.js';
 import { recomendar, repasoPendiente, FASES } from '../motor/adaptativo.js';
 import { nombreFase } from '../motor/leccion.js';
@@ -54,7 +54,7 @@ export function pantallaInicio(raiz, { navegar, enLinea }) {
   if (rec && rec.tema) {
     const t = temas.find((x) => x.id === rec.tema.id);
     const prog = progresoSiExiste(t.id);
-    const modo = rec.motivo === 'repaso' ? 'repaso' : 'normal';
+    const modo = rec.motivo === 'repaso' || rec.repaso ? 'repaso' : 'normal';
     const detalle = prog && prog.estado !== 'nuevo' && rec.motivo !== 'repaso' ? `Sigue en: ${nombreFase(prog.fase)}` : t.materiaNombre;
     const b = h('button', { class: 'continuar', type: 'button', style: `background:${t.color};box-shadow:0 5px 0 rgba(0,0,0,.25)`, onclick: () => navegar(modo === 'repaso' ? `#/leccion/${t.id}/repaso` : `#/tema/${t.id}`) },
       h('span', { class: 'grande-emoji', 'aria-hidden': 'true' }, t.emoji),
@@ -63,8 +63,10 @@ export function pantallaInicio(raiz, { navegar, enLinea }) {
       h('span', { class: 'flecha', 'aria-hidden': 'true' }, '➜'));
     p.appendChild(b);
     if (rec.motivo === 'asignado' && estado.ajustes.temaAsignado?.nota) {
-      p.appendChild(h('div', { class: 'tarjeta aviso-asignado', style: 'margin-top:12px' },
-        h('strong', {}, '📝 Mensaje del adulto: '), estado.ajustes.temaAsignado.nota));
+      const nota = estado.ajustes.temaAsignado.nota;
+      p.appendChild(h('div', { class: 'tarjeta aviso-asignado', style: 'margin-top:12px;display:flex;gap:10px;align-items:center' },
+        h('div', { style: 'flex:1' }, h('strong', {}, '📝 Mensaje del adulto: '), nota),
+        botonAudio(() => `Mensaje del adulto: ${nota}`, 'Escuchar el mensaje')));
     }
   }
 
@@ -88,8 +90,13 @@ export function pantallaInicio(raiz, { navegar, enLinea }) {
       h('span', { class: 'barra-progreso', role: 'progressbar', 'aria-valuenow': String(pct), 'aria-valuemin': '0', 'aria-valuemax': '100', 'aria-label': `Progreso en ${m.nombre}` }, h('span', { style: `width:${pct}%` })));
   })));
 
+  if (!almacenamientoDisponible()) {
+    p.appendChild(h('p', { class: 'aviso-audio', role: 'alert', style: 'margin-top:18px' },
+      '⚠️ Este navegador no deja guardar el avance. Pide a un adulto que revise el panel para adultos (pestaña Datos).'));
+  }
+  const sinCopia = !(navigator.serviceWorker && navigator.serviceWorker.controller);
   p.appendChild(h('div', { class: 'pie-inicio' },
-    h('span', { class: 'estado-red' }, enLinea() ? '' : '📴 Sin conexión: puedes seguir aprendiendo.'),
+    h('span', { class: 'estado-red' }, enLinea() ? '' : sinCopia ? '📴 Sin conexión. Para abrir lecciones nuevas hace falta internet la primera vez.' : '📴 Sin conexión: puedes seguir aprendiendo.'),
     h('button', { class: 'enlace-adulto', type: 'button', onclick: () => navegar('#/adulto') }, '🔒 Para adultos')));
 }
 
@@ -127,7 +134,7 @@ export function pantallaMateria(raiz, { id, navegar }) {
   }
 }
 
-export function pantallaTema(raiz, { id, navegar, temaCargado }) {
+export function pantallaTema(raiz, { id, navegar, temaCargado, sinConexion = false }) {
   const info = buscarTema(id);
   if (!info) { navegar('#/inicio'); return; }
   const prog = progresoSiExiste(id);
@@ -145,7 +152,9 @@ export function pantallaTema(raiz, { id, navegar, temaCargado }) {
     h('p', { style: 'margin-top:8px' }, h('span', { class: `chip ${e === 'logrado' ? 'exito' : e === 'repasar' ? 'aviso' : e === 'en-curso' ? 'ayuda' : ''}` }, `${ICONO_ESTADO[e] || '○'} ${TEXTO_ESTADO[e]}`))));
 
   if (!temaCargado) {
-    p.appendChild(h('div', { class: 'tarjeta' }, h('p', {}, 'Este tema todavía no tiene lecciones cargadas.'), h('p', { class: 'nota' }, 'Pide a un adulto que revise el contenido de la app.')));
+    p.appendChild(sinConexion
+      ? h('div', { class: 'tarjeta' }, h('p', {}, '📴 Necesitas internet para abrir este tema la primera vez.'), h('p', { class: 'nota' }, 'Cuando haya conexión, abre la app unos segundos y las lecciones quedarán guardadas en el teléfono.'))
+      : h('div', { class: 'tarjeta' }, h('p', {}, 'Este tema todavía no tiene lecciones cargadas.'), h('p', { class: 'nota' }, 'Pide a un adulto que revise el contenido de la app.')));
     return;
   }
 

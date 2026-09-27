@@ -1,7 +1,7 @@
 // Recorrido de una lección: Aprendo → Observo → Hacemos juntos → Practico → Demuestro.
 // También los modos «repaso» (repaso espaciado) y «desafio» (tema ya logrado).
 
-import { h, vaciar, rico, aviso, hoyISO } from '../ui/dom.js';
+import { h, vaciar, rico, aviso, hoyISO, clicSeguro } from '../ui/dom.js';
 import { renderVisual } from '../visuales/visual.js';
 import { crearManipulable } from '../manipulables/index.js';
 import { ejecutarEjercicio, botonAudio, mostrarRetro } from './ejecutar.js';
@@ -10,7 +10,7 @@ import {
   practicaAgotada, elegirPractica, elegirComprobacion, aplicarComprobacion, elegirRepaso, aplicarRepaso,
   elegirDesafio, avancePractica,
 } from './adaptativo.js';
-import { obtener, progresoDe, guardar, anotarRegistro, anotarEscrito } from '../estado.js';
+import { obtener, progresoDe, guardar, anotarRegistro, anotarEscrito, anotarSesionAbierta, marcarAbierto } from '../estado.js';
 import { datosGeneradores, fechasPublicadas } from '../contenido/cargar.js';
 import { detener, hayVoz, hablar } from '../audio/voz.js';
 
@@ -31,14 +31,19 @@ export async function abrirLeccion(raiz, { tema, info, modo = 'normal', navegar 
   const estado = obtener();
   const prog = progresoDe(tema.id, info.materia);
   estado.ultimoTema = tema.id;
+  marcarAbierto(tema.id);
   guardar();
   let vivo = true;
   let registroPendiente = null; // práctica a medias: se anota si el niño sale
   const anotarPendiente = () => {
     if (registroPendiente && registroPendiente.total) anotarRegistro(registroPendiente);
     registroPendiente = null;
+    anotarSesionAbierta(null);
   };
-  const alSalir = () => { vivo = false; anotarPendiente(); window.removeEventListener('pantalla-cambia', alSalir); };
+  const alSalir = () => { vivo = false; anotarPendiente(); marcarAbierto(null); window.removeEventListener('pantalla-cambia', alSalir); };
+  // Las fases solo avanzan: repasar la explicación no borra lo ya hecho.
+  const avanzarFase = (f) => { if (FASES.indexOf(f) > FASES.indexOf(prog.fase)) prog.fase = f; };
+  const salidaDe = (hash) => navegar(hash, { reemplazar: true });
   window.addEventListener('pantalla-cambia', alSalir);
 
   // ---------- esqueleto de pantalla ----------
@@ -61,6 +66,7 @@ export async function abrirLeccion(raiz, { tema, info, modo = 'normal', navegar 
     datosVisual: { fechas: fechasPublicadas() },
     lecturas: tema.lecturas || [],
     leerAuto: estado.ajustes.voz.leerAuto,
+    materia: info.materia,
     guardarEscrito: (texto, ej) => anotarEscrito({ tema: tema.id, enunciado: ej.enunciado, texto }),
   });
 
@@ -68,7 +74,7 @@ export async function abrirLeccion(raiz, { tema, info, modo = 'normal', navegar 
     alSalir();
     detener();
     document.querySelectorAll('.retro').forEach((x) => x.remove());
-    navegar(`#/tema/${tema.id}`);
+    salidaDe(`#/tema/${tema.id}`);
   }
   const sigueViva = () => vivo && raiz.isConnected && contenedor.isConnected;
 
@@ -84,7 +90,7 @@ export async function abrirLeccion(raiz, { tema, info, modo = 'normal', navegar 
   function botonPie(texto, clase = '') {
     return new Promise((resolver) => {
       vaciar(pie);
-      const b = h('button', { class: `boton grande ${clase}`, type: 'button', onclick: () => resolver() }, texto);
+      const b = h('button', { class: `boton grande ${clase}`, type: 'button', onclick: clicSeguro(() => resolver()) }, texto);
       pie.appendChild(b);
     });
   }
@@ -93,9 +99,14 @@ export async function abrirLeccion(raiz, { tema, info, modo = 'normal', navegar 
   function elegir(contenido, botones) {
     return new Promise((resolver) => {
       vaciar(cuerpo); vaciar(pie);
+      window.scrollTo(0, 0);
       cuerpo.appendChild(contenido);
+      // Audio del título y el mensaje de la pantalla de resultado
+      const leer = [...contenido.querySelectorAll('h2, p')].map((x) => x.textContent).join('. ');
+      if (leer) contenido.appendChild(h('div', { class: 'fila-audio', style: 'display:flex;justify-content:center;margin-top:8px' }, botonAudio(() => leer)));
+      const elegido = clicSeguro((v) => resolver(v));
       const col = h('div', { class: 'acciones', style: 'width:100%' },
-        botones.map((b) => h('button', { class: `boton grande ${b.clase || ''}`, type: 'button', onclick: () => resolver(b.valor) }, b.texto)));
+        botones.map((b) => h('button', { class: `boton grande ${b.clase || ''}`, type: 'button', onclick: () => elegido(b.valor) }, b.texto)));
       pie.appendChild(col);
       pie.parentElement.style.position = botones.length > 2 ? 'static' : '';
     });
@@ -123,9 +134,11 @@ export async function abrirLeccion(raiz, { tema, info, modo = 'normal', navegar 
       if (estado.ajustes.voz.leerAuto && hayVoz()) hablar(items[i].audio || items[i].texto);
       const accion = await new Promise((resolver) => {
         vaciar(pie);
-        if (i > 0) pie.appendChild(h('button', { class: 'boton secundario', type: 'button', style: 'flex:0 0 35%', onclick: () => resolver(-1) }, '← Atrás'));
-        pie.appendChild(h('button', { class: 'boton grande', type: 'button', onclick: () => resolver(1) }, i === items.length - 1 ? textoFinal : 'Siguiente →'));
+        const una = clicSeguro((v) => resolver(v));
+        if (i > 0) pie.appendChild(h('button', { class: 'boton secundario', type: 'button', style: 'flex:0 0 auto;white-space:nowrap;padding-left:14px;padding-right:14px', onclick: () => una(-1) }, '← Atrás'));
+        pie.appendChild(h('button', { class: 'boton grande', type: 'button', onclick: () => una(1) }, i === items.length - 1 ? textoFinal : 'Siguiente →'));
       });
+      window.scrollTo(0, 0);
       detener();
       if (accion < 0) i--;
       else if (i === items.length - 1) return;
@@ -137,29 +150,38 @@ export async function abrirLeccion(raiz, { tema, info, modo = 'normal', navegar 
   async function faseExplicacion() {
     marcarFase('explicacion');
     await carrusel(tema.explicacion, '¡Entendido!');
+    if (!sigueViva()) return;
     prog.vistos.explicacion = true;
-    prog.fase = 'ejemplo';
+    if (prog.estado === 'nuevo') prog.estado = 'en-curso';
+    avanzarFase('ejemplo');
     guardar();
   }
 
   async function faseEjemplo() {
     marcarFase('ejemplo');
     const ej = tema.ejemplo;
+    // «Mira cómo… Después, explora…»: la primera parte va con los pasos; la segunda, con el manipulable.
+    const [verTexto, ...resto] = String(ej.instruccion).split(/\s*Después,\s*/);
+    const luego = resto.join(' ').trim();
+    const consignaExplorar = !ej.pasos || !ej.pasos.length ? ej.instruccion
+      : luego ? luego.charAt(0).toUpperCase() + luego.slice(1) : '¡Ahora explora tú! Mueve, agrega y quita.';
     if (ej.pasos && ej.pasos.length) {
-      const items = ej.pasos.map((p, k) => ({ ...p, texto: k === 0 ? `${ej.instruccion}\n\n${p.texto}` : p.texto }));
-      items[0].texto = items[0].texto.replace('\n\n', ' ');
+      const primero = ej.explorar && luego ? verTexto : ej.instruccion;
+      const items = ej.pasos.map((p, k) => ({ ...p, texto: k === 0 ? `${primero} ${p.texto}` : p.texto }));
       await carrusel(items, ej.explorar ? 'Ahora yo →' : '¡Ya vi el ejemplo!');
     }
     if (ej.explorar && sigueViva()) {
       vaciar(cuerpo);
+      window.scrollTo(0, 0);
       const m = crearManipulable(ej.explorar, { libre: true, alCambiar: () => {} });
       cuerpo.append(
-        h('div', { class: 'enunciado' }, rico(ej.pasos ? '¡Ahora explora tú! Mueve, agrega y quita.' : ej.instruccion, 'div', { class: 'texto' }), botonAudio(() => ej.pasos ? 'Ahora explora tú. Mueve, agrega y quita.' : ej.instruccion)),
+        h('div', { class: 'enunciado' }, rico(consignaExplorar, 'div', { class: 'texto' }), botonAudio(() => consignaExplorar)),
         m.el);
       await botonPie('Terminé de explorar');
     }
+    if (!sigueViva()) return;
     prog.vistos.ejemplo = true;
-    prog.fase = 'guiada';
+    avanzarFase('guiada');
     guardar();
   }
 
@@ -178,7 +200,7 @@ export async function abrirLeccion(raiz, { tema, info, modo = 'normal', navegar 
       guardar();
     }
     prog.vistos.guiada = true;
-    prog.fase = 'practica';
+    avanzarFase('practica');
     guardar();
     anotarRegistro({ tema: tema.id, modo: 'guiada', aciertos, total: g.pasos.length });
   }
@@ -207,13 +229,14 @@ export async function abrirLeccion(raiz, { tema, info, modo = 'normal', navegar 
         registrarResultado(prog, { r: res.r, errores: res.errores, ejercicioId: sel.ejercicio.id, fase: 'practica' });
         aciertos += res.r;
         registroPendiente = { tema: tema.id, modo: 'practica', aciertos, total: sesion.resultados.length + 1 };
+        anotarSesionAbierta(registroPendiente);
         const { evento, mostrarRepaso: rep } = aplicarResultadoPractica(sesion, prog, { id: sel.ejercicio.id, nivel: sel.ejercicio.nivel, r: res.r });
         guardar();
-        if (evento === 'sube') aviso('⭐ ¡Vienen ejercicios un poco más desafiantes!');
+        if (evento === 'sube' && !practicaSuficiente(sesion)) aviso('⭐ ¡Vienen ejercicios un poco más desafiantes!');
         if (rep) await mostrarRepaso();
         if (practicaSuficiente(sesion)) {
           prog.vistos.practica = true;
-          prog.fase = 'comprobacion';
+          avanzarFase('comprobacion');
           guardar();
           const v = await elegir(
             h('div', { class: 'resultado' }, h('div', { class: 'grande celebra', 'aria-hidden': 'true' }, '🙌'),
@@ -268,9 +291,11 @@ export async function abrirLeccion(raiz, { tema, info, modo = 'normal', navegar 
 
   async function faseComprobacion() {
     marcarFase('comprobacion');
-    const items = elegirComprobacion(tema);
+    // Si ya la intentó, se prefieren ejercicios distintos a los del intento anterior.
+    const items = elegirComprobacion(tema, undefined, prog.ultimaComprobacion || []);
     const res = await correrSerie(items, 'comprobacion', `¡Demuestra lo que aprendiste! Son ${items.length} preguntas. Si te equivocas, tendrás una pista.`);
     if (!res) return 'salir';
+    prog.ultimaComprobacion = items.filter((e) => e.tipo !== 'generador').map((e) => e.id);
     const hoy = hoyISO();
     const { logrado, enfoque } = aplicarComprobacion(prog, res, hoy);
     guardar(true);
@@ -308,7 +333,7 @@ export async function abrirLeccion(raiz, { tema, info, modo = 'normal', navegar 
         h('p', {}, bien ? 'Este tema volverá más adelante para otro repaso.' : 'Practicar un poco más te ayudará a recordarlo.')),
       bien ? [{ texto: 'Volver al inicio', valor: 'inicio' }] : [{ texto: 'Practicar', valor: 'practicar' }, { texto: 'Más tarde', valor: 'inicio', clase: 'secundario' }]);
     if (v === 'practicar') { await flujoDesde('practica'); return; }
-    navegar('#/inicio');
+    salidaDe('#/inicio');
   }
 
   async function correerOrNull(items, titulo, intro) {
@@ -329,7 +354,7 @@ export async function abrirLeccion(raiz, { tema, info, modo = 'normal', navegar 
         h('h2', {}, '¡Completaste el desafío!'), estrellas(res)),
       [{ texto: 'Otro desafío', valor: 'otro' }, { texto: 'Ir al mapa de temas', valor: 'mapa', clase: 'secundario' }]);
     if (v === 'otro') return modoDesafio();
-    navegar(`#/materia/${info.materia}`);
+    salidaDe(`#/materia/${info.materia}`);
   }
 
   // Recorre las fases desde «inicio».
@@ -337,14 +362,18 @@ export async function abrirLeccion(raiz, { tema, info, modo = 'normal', navegar 
     let fase = inicio;
     while (sigueViva()) {
       if (fase === 'explicacion') { await faseExplicacion(); fase = 'ejemplo'; continue; }
-      if (fase === 'ejemplo') { await faseEjemplo(); fase = prog.vistos.guiada ? 'practica' : 'guiada'; continue; }
+      if (fase === 'ejemplo') {
+        await faseEjemplo();
+        fase = prog.fase === 'comprobacion' && prog.estado !== 'logrado' ? 'comprobacion' : prog.vistos.guiada ? 'practica' : 'guiada';
+        continue;
+      }
       if (fase === 'guiada') { await faseGuiada(); fase = 'practica'; continue; }
       if (fase === 'practica') {
         const r = await fasePractica(enfoque);
         enfoque = [];
         if (r === 'comprobar') { fase = 'comprobacion'; continue; }
         if (r === 'explicacion') { fase = 'explicacion'; continue; }
-        if (sigueViva()) navegar(`#/tema/${tema.id}`);
+        if (sigueViva()) salidaDe(`#/tema/${tema.id}`);
         return;
       }
       if (fase === 'comprobacion') {
@@ -352,7 +381,7 @@ export async function abrirLeccion(raiz, { tema, info, modo = 'normal', navegar 
         if (r && r.practicar) { enfoque = r.practicar; fase = 'practica'; continue; }
         if (r === 'explicacion') { fase = 'explicacion'; continue; }
         if (r === 'desafio') { await modoDesafio(); return; }
-        if (sigueViva()) navegar(`#/materia/${info.materia}`);
+        if (sigueViva()) salidaDe(`#/materia/${info.materia}`);
         return;
       }
       return;
@@ -371,9 +400,9 @@ export async function abrirLeccion(raiz, { tema, info, modo = 'normal', navegar 
     console.error(e);
     if (sigueViva()) {
       vaciar(cuerpo);
-      cuerpo.appendChild(h('div', { class: 'tarjeta' }, h('h2', {}, 'Algo no funcionó'), h('p', {}, 'Tu avance está guardado. Vuelve a intentarlo.'), h('p', { class: 'nota' }, String(e.message || e))));
+      cuerpo.appendChild(h('div', { class: 'tarjeta' }, h('h2', {}, 'Algo no funcionó'), h('p', {}, 'Tu avance está guardado. Vuelve a intentarlo.')));
       vaciar(pie);
-      pie.appendChild(h('button', { class: 'boton grande', onclick: () => navegar('#/inicio') }, 'Ir al inicio'));
+      pie.appendChild(h('button', { class: 'boton grande', onclick: () => salidaDe('#/inicio') }, 'Ir al inicio'));
     }
   }
   void mostrarRetro;

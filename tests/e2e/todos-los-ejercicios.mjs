@@ -40,6 +40,7 @@ async function retro(page) {
   const r = page.locator('.retro');
   await r.waitFor({ state: 'visible', timeout: 6000 });
   const t = norm(await r.innerText());
+  await page.waitForTimeout(480);
   await r.locator('button.boton').click();
   await r.waitFor({ state: 'detached', timeout: 4000 }).catch(() => {});
   return t;

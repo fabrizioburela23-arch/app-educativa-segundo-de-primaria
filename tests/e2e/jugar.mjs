@@ -16,6 +16,7 @@ export async function jugar(page, { politica = () => true, fallarReintento = () 
       const t = norm(await retro.innerText());
       registro.push({ tipo: 'retro', texto: t.slice(0, 160) });
       reintento = t.startsWith('💡') || t.includes('Casi');
+      await page.waitForTimeout(480); // la app ignora toques en los primeros 450 ms (evita dobles toques)
       await retro.locator('button.boton').click();
       await page.waitForTimeout(120);
       continue;
@@ -59,6 +60,7 @@ export async function jugar(page, { politica = () => true, fallarReintento = () 
       for (let i = 0; i < k; i++) textos.push(norm(await botones.nth(i).innerText()));
       const t = elegir(textos.filter((x) => x !== '← Atrás'));
       registro.push({ tipo: 'boton', texto: t });
+      await page.waitForTimeout(400);
       await botones.filter({ hasText: t }).first().click();
       await page.waitForTimeout(150);
       continue;

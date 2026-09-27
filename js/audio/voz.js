@@ -38,9 +38,13 @@ function elegirVoz() {
     const v = voces.find((x) => x.voiceURI === ajustes.uri);
     if (v) return v;
   }
-  for (const pref of PREFERENCIA) {
-    const v = voces.find((x) => x.lang.replace('_', '-').toLowerCase().startsWith(pref.toLowerCase()));
-    if (v) return v;
+  // Primero las voces instaladas en el teléfono (funcionan sin conexión y no envían el texto a internet).
+  const coincide = (x, pref) => x.lang.replace('_', '-').toLowerCase().startsWith(pref.toLowerCase());
+  for (const soloLocales of [true, false]) {
+    for (const pref of PREFERENCIA) {
+      const v = voces.find((x) => (!soloLocales || x.localService) && coincide(x, pref));
+      if (v) return v;
+    }
   }
   return voces[0] || null;
 }

@@ -112,7 +112,9 @@ Para explorar (manipulable libre, sin puntaje):
   "explorar": { "tipo": "bloques" } }
 ```
 
-Puede tener `pasos` y `explorar` a la vez (primero se muestran los pasos).
+Puede tener `pasos` y `explorar` a la vez (primero se muestran los pasos). En ese caso, si la
+`instruccion` tiene la forma «Mira cómo… Después, …», la primera parte acompaña a los pasos y
+la parte que sigue a «Después,» se muestra (y se lee) en la pantalla del manipulable.
 
 ### 2.4 Lecturas
 
@@ -165,7 +167,9 @@ un aviso honesto y el texto queda oculto detrás de «Pide a un adulto que lo le
   "error": "no-identifica-sustantivo" }
 ```
 2 a 4 opciones, **exactamente una** con `"correcta": true`. La app **mezcla** las opciones
-(salvo que el ejercicio tenga `"mezclar": false`, útil para «Sí/No» o para «>, <, =»). Cada opción incorrecta puede
+(salvo que el ejercicio tenga `"mezclar": false`, útil para «Sí/No» o para «>, <, =»).
+El botón 🔊 del enunciado lee también las opciones, excepto en Comunicación (donde leerlas
+puede ser parte de lo que se evalúa). `"leerOpciones": true` o `false` cambia ese comportamiento. Cada opción incorrecta puede
 tener su propia `pista` y `error` (más precisos que los generales). Una opción puede
 tener `visual` en lugar de (o además de) `texto`. `columnas` opcional (1-4).
 

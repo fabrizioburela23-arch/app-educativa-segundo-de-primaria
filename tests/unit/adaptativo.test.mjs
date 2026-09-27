@@ -120,3 +120,29 @@ test('registrarResultado cuenta errores y aciertos', () => {
   assert.equal(prog.errores.x, 2);
   assert.equal(prog.estado, 'en-curso');
 });
+
+test('la comprobación repetida prefiere ejercicios distintos a los del intento anterior', () => {
+  const temaG = { comprobacion: [1, 1, 2, 2, 2, 2, 2, 2, 3, 3].map((n, i) => ({ id: `c${i}`, nivel: n, tipo: 'numero' })) };
+  const primera = elegirComprobacion(temaG, crearRng(7));
+  const segunda = elegirComprobacion(temaG, crearRng(8), primera.map((e) => e.id));
+  const repetidos = segunda.filter((e) => primera.some((p) => p.id === e.id)).length;
+  assert.ok(repetidos <= 1, `se repitieron ${repetidos}`);
+});
+
+test('un tema logrado que el adulto asigna aparece como repaso hasta que lo practica', () => {
+  const indice = { materias: [{ id: 'm', unidades: [{ temas: [{ id: 't1' }, { id: 't2' }] }] }] };
+  const temas = { t1: { ...progresoInicial(2), estado: 'logrado', ultimaVez: '2026-09-01T10:00:00Z' } };
+  const r = recomendar(indice, temas, { temaAsignado: { id: 't1', fecha: '2026-09-20T10:00:00Z' } }, null, '2026-09-26');
+  assert.equal(r.tema.id, 't1');
+  assert.equal(r.repaso, true);
+  temas.t1.ultimaVez = '2026-09-21T10:00:00Z';
+  assert.notEqual(recomendar(indice, temas, { temaAsignado: { id: 't1', fecha: '2026-09-20T10:00:00Z' } }, null, '2026-09-26').tema.id, 't1');
+});
+
+test('el medidor de práctica no sube si todas las respuestas son incorrectas', async () => {
+  const { avancePractica } = await import('../../js/motor/adaptativo.js');
+  const prog = progresoInicial(2);
+  const s = nuevaSesionPractica(prog);
+  for (let i = 0; i < 8; i++) aplicarResultadoPractica(s, prog, { id: `x${i}`, nivel: 2, r: 0 });
+  assert.equal(avancePractica(s), 0);
+});

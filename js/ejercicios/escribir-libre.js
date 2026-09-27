@@ -29,7 +29,10 @@ export default function escribirLibre(cont, ej, ctx) {
   cont.appendChild(lista);
   const modelo = h('div', { class: 'apoyo oculto' });
   cont.appendChild(modelo);
-  let guardado = false;
+  let ultimoGuardado = null;
+  const guardarSiCambio = () => {
+    if (area.value.trim() && area.value !== ultimoGuardado) { ctx.guardarEscrito(area.value); ultimoGuardado = area.value; }
+  };
 
   function marcar(res) {
     [...lista.children].forEach((li, i) => {
@@ -44,10 +47,7 @@ export default function escribirLibre(cont, ej, ctx) {
       const res = revisarRequisitos(area.value, ej.requisitos);
       marcar(res);
       const faltan = res.filter((x) => !x.ok);
-      if (!guardado || !faltan.length) {
-        ctx.guardarEscrito(area.value);
-        guardado = true;
-      }
+      guardarSiCambio();
       if (!faltan.length) return { correcto: true, respuesta: area.value };
       return { correcto: false, pista: `${faltan.map((f) => f.mensaje).join(' ')} ${ej.pista}`, error: ej.error, respuesta: area.value };
     },
@@ -56,7 +56,7 @@ export default function escribirLibre(cont, ej, ctx) {
       modelo.classList.remove('oculto');
       modelo.textContent = '';
       modelo.append(h('span', { class: 'ic', 'aria-hidden': 'true' }, '📝'), h('span', {}, 'Un ejemplo: ', h('em', {}, ej.modelo)));
-      ctx.guardarEscrito(area.value);
+      guardarSiCambio();
     },
     bloquear() { area.disabled = true; cont.querySelectorAll('.guia-escritura button').forEach((b) => { b.disabled = true; }); },
   };

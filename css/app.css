@@ -316,7 +316,7 @@ strong { font-weight: 700; }
 .texto-tocar { font-size: 1.4rem; line-height: 2.2; background: var(--superficie); border-radius: var(--radio); padding: 14px; box-shadow: var(--sombra); }
 .palabra {
   display: inline-block; border: 2px solid transparent; border-radius: 10px;
-  padding: 0 6px; margin: 0 1px; background: var(--fondo-2); font-weight: 700; line-height: 1.6; min-height: 44px;
+  padding: 0 6px; margin: 0 1px; background: var(--fondo-2); font-weight: 700; line-height: 1.6; min-height: 44px; min-width: 44px; text-align: center;
 }
 .palabra.elegida { background: var(--primario); color: #fff; }
 .palabra.correcta { background: var(--exito); color: #fff; }
@@ -454,7 +454,7 @@ textarea.campo-texto { min-height: 140px; font-weight: 400; line-height: 1.5; re
 @keyframes celebra { 0% { transform: scale(.6); opacity: 0; } 70% { transform: scale(1.08); } 100% { transform: none; opacity: 1; } }
 
 /* ---------- avisos (toast) y modal ---------- */
-.toast { position: fixed; left: 50%; bottom: calc(100px + env(safe-area-inset-bottom)); transform: translateX(-50%); background: #2B2A33; color: #fff; padding: 12px 18px; border-radius: 14px; z-index: 200; max-width: calc(100% - 32px); font-size: 1rem; box-shadow: 0 6px 18px rgba(0, 0, 0, .25); }
+.toast { position: fixed; left: 50%; top: calc(64px + env(safe-area-inset-top)); transform: translateX(-50%); pointer-events: none; background: #2B2A33; color: #fff; padding: 12px 18px; border-radius: 14px; z-index: 200; max-width: calc(100% - 32px); font-size: 1rem; box-shadow: 0 6px 18px rgba(0, 0, 0, .25); }
 .modal-fondo { position: fixed; inset: 0; background: rgba(20, 20, 30, .45); z-index: 150; display: grid; place-items: center; padding: 16px; }
 .modal { background: var(--superficie); border-radius: 22px; padding: 20px; max-width: 460px; width: 100%; box-shadow: 0 20px 50px rgba(0, 0, 0, .3); max-height: 90vh; overflow: auto; }
 .modal h2 { margin-top: 0; }
@@ -463,8 +463,8 @@ textarea.campo-texto { min-height: 140px; font-weight: 400; line-height: 1.5; re
 /* ---------- adulto ---------- */
 .adulto { --c: #3C4A6B; }
 .adulto body, .adulto { font-size: 17px; }
-.pestanas { display: flex; gap: 6px; overflow-x: auto; padding-bottom: 4px; margin: 8px 0 14px; scrollbar-width: none; }
-.pestanas button { flex: 0 0 auto; border: 0; border-radius: 999px; padding: 10px 16px; background: var(--superficie); box-shadow: var(--sombra); font-weight: 700; min-height: 44px; }
+.pestanas { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6px; padding-bottom: 4px; margin: 8px 0 14px; }
+.pestanas button { border: 0; border-radius: 999px; padding: 10px 6px; font-size: .95rem; background: var(--superficie); box-shadow: var(--sombra); font-weight: 700; min-height: 44px; }
 .pestanas button[aria-selected='true'] { background: #3C4A6B; color: #fff; }
 .adulto .tarjeta { padding: 16px; overflow-wrap: anywhere; }
 .adulto select { max-width: 100%; }
@@ -475,7 +475,7 @@ textarea.campo-texto { min-height: 140px; font-weight: 400; line-height: 1.5; re
 .fila-tema .t { flex: 1; min-width: 0; }
 .fila-tema .t .n { font-weight: 700; line-height: 1.2; }
 .fila-tema .t .d { font-size: .88rem; color: var(--tinta-suave); }
-.fila-tema button.mas { border: 0; background: var(--fondo-2); border-radius: 10px; min-height: 40px; padding: 6px 10px; }
+.fila-tema button.mas { border: 0; background: var(--fondo-2); border-radius: 10px; min-height: 44px; min-width: 44px; padding: 6px 10px; }
 .detalle-tema { background: var(--fondo); border-radius: 12px; padding: 10px 12px; margin: 4px 0 10px; font-size: .95rem; }
 .formulario { display: grid; gap: 12px; }
 .formulario label { display: grid; gap: 4px; font-weight: 700; font-size: .95rem; }
@@ -501,8 +501,15 @@ textarea.campo-texto { min-height: 140px; font-weight: 400; line-height: 1.5; re
 .avatares button[aria-pressed='true'] { border-color: var(--primario); }
 .vista-ejercicio { border: 2px dashed var(--borde); border-radius: 16px; padding: 12px; margin: 10px 0; background: var(--fondo); }
 .tabla-simple { width: 100%; border-collapse: collapse; font-size: .92rem; }
-.tabla-simple th, .tabla-simple td { text-align: left; padding: 6px 4px; border-bottom: 1px solid var(--borde); vertical-align: top; }
+.tabla-simple th, .tabla-simple td { text-align: left; padding: 6px 4px; border-bottom: 1px solid var(--borde); vertical-align: top; overflow-wrap: normal; word-break: normal; hyphens: auto; }
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: .001ms !important; animation-iteration-count: 1 !important; transition-duration: .001ms !important; }
+}
+
+/* Pantallas bajas (360×740): el teclado numérico entra sobre la barra «Comprobar». */
+@media (max-height: 800px) {
+  .teclado { gap: 7px; margin-top: 10px; }
+  .teclado button { min-height: 48px; font-size: 1.45rem; }
+  .caja-numero { min-height: 56px; }
 }

@@ -1,6 +1,6 @@
 // Service worker: guarda la app y todas las lecciones para usarlas sin conexión.
 // VERSION la actualiza tools/generar-precache.mjs cuando cambia algún archivo.
-const VERSION = '7e6f83f1e9a8';
+const VERSION = '424b2e1d4c99';
 const CACHE = `aprendo2-${VERSION}`;
 
 self.addEventListener('install', (event) => {
@@ -31,15 +31,21 @@ self.addEventListener('fetch', (event) => {
   if (url.origin !== self.location.origin) return;
 
   if (req.mode === 'navigate') {
+    // La app es una sola página: se sirve la guardada si la red tarda más de 3 s o falla,
+    // y solo se guarda una respuesta correcta de la página principal.
+    const esShell = url.pathname.endsWith('/') || url.pathname.endsWith('/index.html');
     event.respondWith((async () => {
-      try {
-        const red = await fetch(req);
-        const cache = await caches.open(CACHE);
-        cache.put('index.html', red.clone());
+      const cache = await caches.open(CACHE);
+      const guardada = esShell ? await cache.match('index.html') : null;
+      const deRed = fetch(req).then((red) => {
+        if (red && red.ok && esShell) cache.put('index.html', red.clone());
         return red;
-      } catch {
-        return (await caches.match('index.html', { ignoreSearch: true })) || Response.error();
-      }
+      }).catch(() => null);
+      if (!guardada) return (await deRed) || (await cache.match('index.html')) || Response.error();
+      event.waitUntil(deRed);
+      const espera = new Promise((r) => setTimeout(() => r(null), 3000));
+      const red = await Promise.race([deRed, espera]);
+      return red && red.ok ? red : guardada;
     })());
     return;
   }

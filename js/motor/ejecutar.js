@@ -6,7 +6,8 @@ import { h, vaciar, rico, aviso } from '../ui/dom.js';
 import { renderEjercicio } from '../ejercicios/index.js';
 import { renderVisual } from '../visuales/visual.js';
 import { generar } from '../contenido/generadores.js';
-import { hablar, hayVoz, detener } from '../audio/voz.js';
+import { hablar, hayVoz, hayVozEspanol, detener } from '../audio/voz.js';
+import { textoOpcion } from '../contenido/texto.js';
 
 const BIEN = ['¡Muy bien!', '¡Excelente!', '¡Lo lograste!', '¡Así se hace!', '¡Bien pensado!', '¡Genial!'];
 const BIEN_2 = ['¡Bien! Lo corregiste.', '¡Muy bien! Lo pensaste otra vez y lo lograste.', '¡Eso es! Aprender es intentar de nuevo.'];
@@ -35,27 +36,65 @@ export function mostrarRetro({ clase, icono, titulo, mensaje, boton }) {
         h('div', { class: 'titulo' }, h('span', { class: 'ic', 'aria-hidden': 'true' }, icono), titulo),
         mensaje ? h('div', { class: 'mensaje' }, rico(mensaje, 'div', { class: 'txt' }), botonAudio(() => `${titulo}. ${mensaje}`)) : null,
         b));
-    b.addEventListener('click', () => { detener(); caja.remove(); resolver(); });
+    const t0 = performance.now();
+    const cuerpo = document.querySelector('.leccion-cuerpo');
+    b.addEventListener('click', () => {
+      // Un doble toque en «Comprobar» no debe cerrar la pista antes de verla.
+      if (performance.now() - t0 < 450) return;
+      detener();
+      caja.remove();
+      if (cuerpo) cuerpo.style.paddingBottom = '';
+      resolver();
+    });
     document.body.appendChild(caja);
     b.focus({ preventScroll: true });
+    // Que el panel no tape la respuesta: se deja espacio debajo y se sube lo necesario.
+    if (cuerpo) {
+      const alto = caja.offsetHeight;
+      cuerpo.style.paddingBottom = `${alto + 16}px`;
+      const zona = cuerpo.querySelector('.zona-ejercicio');
+      if (zona) {
+        const r = zona.getBoundingClientRect();
+        const tope = window.innerHeight - alto - 8;
+        if (r.bottom > tope) window.scrollBy({ top: Math.min(r.bottom - tope, Math.max(0, r.top - 70)), behavior: 'smooth' });
+      }
+    }
   });
 }
 
+function avisoSinVoz(texto, titulo = '🔇 Este teléfono no tiene voz en español para leer. ') {
+  const det = h('details', {}, h('summary', {}, 'Mostrar el texto (para que un adulto lo lea en voz alta)'), h('p', { style: 'font-size:1.3rem;font-weight:700;margin-top:6px' }, texto));
+  return h('div', { class: 'aviso-audio', role: 'note' },
+    h('strong', {}, titulo),
+    'Pide a un adulto que te lea el texto sin mostrártelo.', det);
+}
+
 function cajaEscuchar(texto) {
-  if (!hayVoz()) {
-    const det = h('details', {}, h('summary', {}, 'Mostrar el texto (para que un adulto lo lea en voz alta)'), h('p', { style: 'font-size:1.3rem;font-weight:700;margin-top:6px' }, texto));
-    return h('div', { class: 'aviso-audio', role: 'note' },
-      h('strong', {}, '🔇 Este teléfono no tiene voz para leer. '),
-      'Pide a un adulto que te lea el texto sin mostrártelo.', det);
-  }
-  const b = h('button', { class: 'boton suave', type: 'button' }, h('span', { class: 'emoji', 'aria-hidden': 'true' }, '🔊'), 'Escuchar');
-  b.addEventListener('click', async () => {
-    const ok = await hablar(texto, { boton: b, velocidad: 0.8 });
-    if (!ok && b.isConnected) aviso('No se pudo reproducir el audio en este teléfono. Pide a un adulto que te lo lea.');
-  });
-  const lento = h('button', { class: 'boton secundario pequeno', type: 'button' }, '🐢 Más despacio');
-  lento.addEventListener('click', () => hablar(texto, { boton: b, velocidad: 0.6 }));
-  return h('div', { class: 'escuchar-caja' }, b, lento);
+  if (!hayVoz() || !hayVozEspanol()) return avisoSinVoz(texto);
+  const caja = h('div', { class: 'escuchar-caja' });
+  let avisado = false;
+  const reproducir = async (boton, velocidad) => {
+    const ok = await hablar(texto, { boton, velocidad });
+    if (!ok && caja.isConnected && !avisado) {
+      avisado = true;
+      caja.appendChild(avisoSinVoz(texto, '🔇 No se pudo reproducir el audio. '));
+    }
+  };
+  const b = h('button', { class: 'boton suave', type: 'button', onclick: () => reproducir(b, 0.8) }, h('span', { class: 'emoji', 'aria-hidden': 'true' }, '🔊'), 'Escuchar');
+  const lento = h('button', { class: 'boton secundario pequeno', type: 'button', onclick: () => reproducir(b, 0.6) }, '🐢 Más despacio');
+  caja.append(b, lento);
+  return caja;
+}
+
+// Texto que lee el 🔊 del enunciado. En opciones con frases, se leen también las opciones
+// (salvo en Comunicación, donde leer las opciones puede ser parte de lo que se evalúa).
+function textoAudioEnunciado(ej, materia) {
+  const base = ej.audio || ej.enunciado;
+  if (!['opcion', 'multiple'].includes(ej.tipo) || ej.escuchar) return base;
+  const leer = ej.leerOpciones === true || (ej.leerOpciones !== false && materia !== 'comunicacion');
+  const textos = (ej.opciones || []).map(textoOpcion).filter((t) => t && t.length > 1);
+  if (!leer || textos.length < 2) return base;
+  return `${base} Opciones: ${textos.join('. ')}.`;
 }
 
 function cajaLectura(lectura) {
@@ -85,7 +124,8 @@ async function ejecutarPasos(opts, ej) {
     if (res.cancelado) return res;
     suma += res.r;
     errores.push(...res.errores);
-    hechos.push(`Paso ${i + 1}: ${res.r > 0 ? 'resuelto' : 'revisado juntos'}`);
+    const valor = paso.tipo === 'numero' && res.respuesta ? `${paso.prefijo || ''}${res.respuesta}${paso.sufijo ? ` ${paso.sufijo}` : ''}` : '';
+    hechos.push(`Paso ${i + 1}: ${res.r > 0 ? (valor || 'resuelto') : `lo revisamos juntos${valor ? ` (${valor})` : ''}`}`);
   }
   const r = suma / ej.pasos.length;
   return { r: r >= 1 ? 1 : r >= 0.5 ? 0.5 : 0, errores, respuesta: hechos.join('; '), ejercicio: ej };
@@ -96,6 +136,8 @@ function ejecutarSimple(opts, ej, { contexto, numero, total, hechos }) {
   vaciar(cuerpo);
   vaciar(pie);
   document.querySelectorAll('.retro').forEach((x) => x.remove());
+  cuerpo.style.paddingBottom = '';
+  window.scrollTo(0, 0);
 
   if (contexto) {
     cuerpo.appendChild(h('div', { class: 'contexto-problema' },
@@ -105,13 +147,13 @@ function ejecutarSimple(opts, ej, { contexto, numero, total, hechos }) {
     if (hechos && hechos.length) cuerpo.appendChild(h('div', { class: 'pasos-hechos' }, hechos.map((x) => h('div', {}, `✓ ${x}`))));
   }
   if (opts.desafio && !contexto) cuerpo.appendChild(h('div', { class: 'insignia-desafio' }, '⭐ Desafío'));
-  if (ej.apoyo) cuerpo.appendChild(h('div', { class: 'apoyo' }, h('span', { class: 'ic', 'aria-hidden': 'true' }, '💡'), rico(ej.apoyo, 'div')));
+  if (ej.apoyo) cuerpo.appendChild(h('div', { class: 'apoyo' }, h('span', { class: 'ic', 'aria-hidden': 'true' }, '💡'), rico(ej.apoyo, 'div', { style: 'flex:1' }), botonAudio(() => ej.apoyo, 'Escuchar la ayuda')));
+  const textoEnunciado = textoAudioEnunciado(ej, opts.materia);
+  cuerpo.appendChild(h('div', { class: 'enunciado' }, rico(ej.enunciado, 'div', { class: 'texto' }), botonAudio(() => textoEnunciado)));
   if (ej.lectura && opts.lecturas) {
     const lec = opts.lecturas.find((l) => l.id === ej.lectura);
     if (lec) cuerpo.appendChild(cajaLectura(lec));
   }
-  const textoEnunciado = ej.audio || ej.enunciado;
-  cuerpo.appendChild(h('div', { class: 'enunciado' }, rico(ej.enunciado, 'div', { class: 'texto' }), botonAudio(() => textoEnunciado)));
   if (ej.escuchar) cuerpo.appendChild(cajaEscuchar(ej.escuchar));
   if (ej.visual) cuerpo.appendChild(h('div', { class: 'visual-caja' }, renderVisual(ej.visual, opts.datosVisual)));
   const zona = h('div', { class: 'zona-ejercicio' });

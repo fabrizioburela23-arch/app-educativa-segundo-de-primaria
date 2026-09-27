@@ -183,6 +183,7 @@ export async function textoRetro(page) {
 }
 
 export async function cerrarRetro(page) {
+  await page.waitForTimeout(480);
   const b = page.locator('.retro button.boton');
   await b.click();
   await page.locator('.retro').waitFor({ state: 'detached', timeout: 5000 }).catch(() => {});
