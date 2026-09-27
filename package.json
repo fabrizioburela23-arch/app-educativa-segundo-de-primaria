@@ -12,7 +12,8 @@
     "test:e2e": "node tests/e2e/recorrido.mjs",
     "test:robustez": "node tests/e2e/robustez.mjs",
     "test:ejercicios": "node tests/e2e/todos-los-ejercicios.mjs",
-    "test:visuales": "node tests/e2e/todos-los-visuales.mjs"
+    "test:visuales": "node tests/e2e/todos-los-visuales.mjs",
+    "test:publicado": "node tests/e2e/publicado.mjs"
   },
   "license": "UNLICENSED"
 }

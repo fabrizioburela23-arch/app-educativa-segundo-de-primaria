@@ -20,3 +20,5 @@ jobs:
         run: |
           node tools/generar-precache.mjs
           git diff --exit-code precache.json sw.js || (echo "Ejecuta: node tools/generar-precache.mjs" && exit 1)
+      - name: El sitio para publicar se arma sin archivos faltantes
+        run: node tools/preparar-sitio.mjs _sitio

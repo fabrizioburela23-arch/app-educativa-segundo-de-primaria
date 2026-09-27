@@ -1,5 +1,6 @@
 # Publica la app en GitHub Pages cada vez que se actualiza la rama principal.
-# Requiere activar Pages en Settings → Pages → Source: «GitHub Actions».
+# Requiere activar Pages en Settings → Pages → Source: «GitHub Actions», y que el repositorio sea
+# público (o un plan de pago). Paso a paso: docs/PUBLICAR.md
 name: Publicar en GitHub Pages
 
 on:
@@ -29,10 +30,12 @@ jobs:
           node-version: 22
       - name: Validar contenido antes de publicar
         run: node tools/validar-contenido.mjs
+      # Si se editó contenido directamente en GitHub, la lista para uso sin conexión y la
+      # versión del service worker se actualizan aquí, así los teléfonos reciben los cambios.
+      - name: Actualizar la lista para uso sin conexión
+        run: node tools/generar-precache.mjs
       - name: Preparar archivos
-        run: |
-          mkdir -p _sitio
-          cp -r index.html manifest.webmanifest sw.js precache.json css js fonts icons content _sitio/
+        run: node tools/preparar-sitio.mjs _sitio
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

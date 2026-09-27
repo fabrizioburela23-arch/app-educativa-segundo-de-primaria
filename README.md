@@ -62,7 +62,8 @@ npm run servir          # o: npx http-server . -p 8080 -c-1
 # abrir http://localhost:8080
 ```
 
-Para publicarla (por ejemplo en GitHub Pages) basta con subir los archivos del
+Para publicarla y abrirla en el celular, sigue **[docs/PUBLICAR.md](docs/PUBLICAR.md)**: GitHub
+Pages (ya configurado en `.github/workflows/publicar.yml`) u otra opción que mantenga privado el
 repositorio. El modo sin conexión requiere HTTPS (o `localhost`).
 
 Después de cambiar código o contenido, regenera la lista de archivos para uso sin
@@ -102,6 +103,7 @@ npm run test:e2e          # recorrido en celular: una lección por materia (resp
 npm run test:robustez     # doble toque, botón Atrás, dos ventanas, sin voz en español, PIN, service worker
 npm run test:ejercicios   # responde CADA ejercicio de los 106 temas (mal y bien) desde la interfaz
 npm run test:visuales     # dibuja los ~1500 visuales del contenido a 360 px y busca errores o desbordes
+npm run test:publicado    # arma el sitio como GitHub Pages (en su subruta): instalable y sin conexión
 ```
 
 Las pruebas de navegador usan Playwright con Chromium (`npm i -D playwright` si no está instalado).
