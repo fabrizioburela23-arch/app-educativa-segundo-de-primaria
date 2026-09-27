@@ -1,0 +1,459 @@
+{
+  "id": "soc-3-2",
+  "titulo": "Pueblos originarios y diversidad",
+  "objetivo": "Sé que en Bolivia viven muchos pueblos, con distintos idiomas y costumbres, y que todas las personas valemos lo mismo.",
+  "explicacion": [
+    {
+      "texto": "Bolivia es un **Estado Plurinacional**: aquí viven muchas naciones y pueblos. Cada uno tiene su historia, su idioma y sus costumbres. ¡Todos juntos formamos Bolivia!",
+      "emoji": "🤝",
+      "visual": { "tipo": "emojis", "items": ["🏔️", "🌄", "🌴", "🌵"], "etiquetas": ["altiplano", "valles", "llanos y Amazonía", "Chaco"] }
+    },
+    {
+      "texto": "La Constitución nombra **36 idiomas** de pueblos originarios; de ellos, los más hablados son el quechua y el aimara (también se escribe aymara). Todos son **idiomas oficiales**, igual que el castellano.",
+      "emoji": "🗣️",
+      "visual": {
+        "tipo": "tabla",
+        "columnas": ["Pueblo", "Su idioma"],
+        "filas": [
+          ["quechua", "quechua"],
+          ["aimara", "aimara"],
+          ["guaraní", "guaraní"],
+          ["chiquitano", "bésiro"],
+          ["ayoreo", "zamuco (ayoreo)"]
+        ]
+      }
+    },
+    {
+      "texto": "Algunos pueblos originarios son el aimara, el quechua, el uru, el guaraní, el chiquitano, el mojeño, el tacana y el ayoreo, entre muchos más. La Constitución también reconoce al **pueblo afroboliviano**.",
+      "emoji": "🌎"
+    },
+    {
+      "texto": "Somos diversos: hay distintas músicas, comidas, ropas y fiestas. Nadie vale más ni menos: todas las personas tenemos la misma **dignidad** y los mismos **derechos**. Por eso nos respetamos.",
+      "visual": { "tipo": "emojis", "items": ["🎶", "🍲", "👗", "🎉"], "etiquetas": ["música", "comidas", "ropa", "fiestas"] }
+    }
+  ],
+  "ejemplo": {
+    "instruccion": "Viaja por Bolivia y conoce dónde viven muchas familias de cada pueblo.",
+    "pasos": [
+      {
+        "texto": "Muchas familias **aimaras** y **quechuas** viven en el altiplano. En los valles, como los de Cochabamba y Chuquisaca, viven muchas familias quechuas. Los **urus** viven junto a lagos y ríos del altiplano.",
+        "visual": { "tipo": "ilustracion", "id": "paisaje-altiplano" }
+      },
+      {
+        "texto": "En los llanos y la Amazonía viven, entre otros, los **mojeños** (Beni), los **tacanas** (norte de La Paz) y, en Santa Cruz, los **chiquitanos** y los **ayoreos**. En San Ignacio de Moxos se celebra la **Ichapekene Piesta**.",
+        "visual": { "tipo": "ilustracion", "id": "paisaje-llanos" }
+      },
+      {
+        "texto": "En el Chaco viven los **guaraníes** y los **weenhayek**, entre otros. Los guaraníes celebran el **Arete Guasu**, su fiesta grande. En los Yungas de La Paz hay muchas comunidades **afrobolivianas**; su música es la **saya**, con tambores.",
+        "visual": { "tipo": "ilustracion", "id": "paisaje-chaco" }
+      },
+      {
+        "texto": "Hoy, personas de todos estos pueblos viven en el campo y también en las ciudades. Son estudiantes, doctoras, agricultores, maestras, artistas y mucho más. ¡En cada pueblo hay de todo!",
+        "visual": { "tipo": "emojis", "items": ["🧒", "👩‍⚕️", "👨‍🌾", "👩‍🏫", "👨‍🎨"], "etiquetas": ["estudiante", "doctora", "agricultor", "maestra", "artista"] }
+      }
+    ]
+  },
+  "guiada": {
+    "intro": "Vamos a pensarlo juntos.",
+    "pasos": [
+      {
+        "id": "g1", "tipo": "relacionar",
+        "enunciado": "Une cada pueblo con una región donde viven muchas de sus familias.",
+        "apoyo": "Recuerda el viaje por Bolivia del ejemplo: altiplano, llanos, Chaco y Yungas.",
+        "pares": [
+          ["aimaras", "altiplano"],
+          ["guaraníes", "Chaco"],
+          ["mojeños", "llanos del Beni"],
+          ["afrobolivianos", "Yungas de La Paz"]
+        ],
+        "pista": "Los mojeños viven en el Beni. Los guaraníes celebran el Arete Guasu en el Chaco.",
+        "explicacion": "Muchas familias aimaras viven en el altiplano, las guaraníes en el Chaco, las mojeñas en los llanos del Beni y las afrobolivianas en los Yungas. ¡Y todos viven también en ciudades!",
+        "error": "pueblos-regiones"
+      },
+      {
+        "id": "g2", "tipo": "completar",
+        "enunciado": "Completa sobre los idiomas de Bolivia.",
+        "apoyo": "Mira la segunda tarjeta: habla de los idiomas de Bolivia.",
+        "texto": "La Constitución nombra [36] idiomas de pueblos originarios. Todos son idiomas [oficiales], igual que el [castellano].",
+        "banco": ["9", "inglés"],
+        "pista": "Bolivia tiene 9 departamentos, pero muchos más idiomas originarios. El inglés se habla en otros países.",
+        "explicacion": "La Constitución nombra 36 idiomas de pueblos originarios, y todos son oficiales, igual que el castellano.",
+        "error": "idiomas-oficiales"
+      },
+      {
+        "id": "g3", "tipo": "pasos",
+        "enunciado": "En el recreo, un niño se ríe de Kusi porque habla quechua con su abuela.",
+        "apoyo": "Piensa cómo te sentirías si alguien se burlara de tu forma de hablar.",
+        "pasos": [
+          {
+            "tipo": "opcion",
+            "enunciado": "¿Qué harías tú?",
+            "opciones": [
+              { "texto": "Decirle con calma que no se burle, porque todos los idiomas valen", "correcta": true },
+              { "texto": "Reírme yo también", "pista": "¿Cómo se sentiría Kusi si todos se ríen de él?", "error": "respeto-diversidad" },
+              { "texto": "Decirle a Kusi que ya no hable quechua", "pista": "El quechua es un idioma oficial de Bolivia. Kusi tiene derecho a hablarlo.", "error": "respeto-diversidad" }
+            ],
+            "pista": "Busca la respuesta que cuida a Kusi y respeta su idioma.",
+            "explicacion": "Lo mejor es hablar con calma y respeto: todos los idiomas valen y nadie debe burlarse.",
+            "error": "respeto-diversidad"
+          },
+          {
+            "tipo": "escribir-libre",
+            "enunciado": "Escribe algo amable que le dirías a Kusi.",
+            "guia": ["Kusi, me gusta...", "Kusi, ¿me enseñas...?"],
+            "requisitos": [
+              { "tipo": "mayuscula-inicial" },
+              { "tipo": "punto-final" },
+              { "tipo": "min-palabras", "valor": 4 }
+            ],
+            "modelo": "Kusi, enséñame a saludar en quechua.",
+            "pista": "Puedes decirle algo que te guste de su idioma o pedirle que te enseñe una palabra.",
+            "explicacion": "Por ejemplo: «Kusi, enséñame a saludar en quechua». Así le muestras respeto y cariño.",
+            "error": "respeto-diversidad"
+          }
+        ],
+        "pista": "Resuelve un paso a la vez.",
+        "explicacion": "Cuando alguien se burla de otro por su idioma, podemos hablar con respeto y apoyar a quien fue molestado.",
+        "error": "respeto-diversidad"
+      }
+    ]
+  },
+  "practica": [
+    {
+      "id": "p1", "tipo": "clasificar", "nivel": 1,
+      "enunciado": "¿Es música, comida o ropa?",
+      "categorias": [
+        { "id": "musica", "texto": "Música", "emoji": "🎶" },
+        { "id": "comida", "texto": "Comida", "emoji": "🍲" },
+        { "id": "ropa", "texto": "Ropa y tejidos", "emoji": "👗" }
+      ],
+      "elementos": [
+        { "texto": "saya", "emoji": "🥁", "categoria": "musica" },
+        { "texto": "taquirari", "emoji": "💃", "categoria": "musica" },
+        { "texto": "sopa de maní", "emoji": "🥜", "categoria": "comida" },
+        { "texto": "majadito", "emoji": "🍚", "categoria": "comida" },
+        { "texto": "chuño", "emoji": "🥔", "categoria": "comida" },
+        { "texto": "tipoy", "emoji": "👗", "categoria": "ropa" },
+        { "texto": "poncho", "emoji": "🧥", "categoria": "ropa" },
+        { "texto": "aguayo", "emoji": "🧶", "categoria": "ropa" }
+      ],
+      "pista": "Pregúntate: ¿se escucha y se baila, se come o se usa para vestirse? Mira también los dibujos.",
+      "explicacion": "Música: saya y taquirari, que se bailan. Comida: sopa de maní, majadito y chuño. Ropa y tejidos: el tipoy (un vestido largo del oriente), el poncho y el aguayo.",
+      "error": "expresiones-culturales"
+    },
+    {
+      "id": "p2", "tipo": "multiple", "nivel": 1,
+      "enunciado": "¿Qué idiomas son oficiales en Bolivia? Elige todos los correctos.",
+      "opciones": [
+        { "texto": "quechua", "correcta": true },
+        { "texto": "aimara", "correcta": true },
+        { "texto": "guaraní", "correcta": true },
+        { "texto": "castellano", "correcta": true },
+        { "texto": "inglés", "pista": "El inglés se habla en otros países. No es un idioma oficial de Bolivia.", "error": "idiomas-oficiales" },
+        { "texto": "japonés", "pista": "El japonés es el idioma de Japón, un país muy lejano.", "error": "idiomas-oficiales" }
+      ],
+      "pista": "Son oficiales el castellano y los idiomas de los pueblos originarios de Bolivia.",
+      "explicacion": "El quechua, el aimara, el guaraní y el castellano son idiomas oficiales. El inglés y el japonés son idiomas de otros países.",
+      "error": "idiomas-oficiales"
+    },
+    {
+      "id": "p3", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Toca las palabras que nombran pueblos originarios.",
+      "texto": "En la feria de Sucre, Luis conversó con una familia *quechua*, una familia *guaraní* y una familia *aimara*.",
+      "pista": "Hay tres nombres de pueblos. Sucre es una ciudad y Luis es un niño.",
+      "explicacion": "Quechua, guaraní y aimara son nombres de pueblos originarios.",
+      "error": "reconoce-pueblos"
+    },
+    {
+      "id": "p4", "tipo": "opcion", "nivel": 1,
+      "enunciado": "¿Qué quiere decir que todas las personas tenemos la misma dignidad?",
+      "opciones": [
+        { "texto": "Que todas las personas valemos lo mismo y merecemos respeto", "correcta": true },
+        { "texto": "Que algunas personas valen más que otras", "pista": "La dignidad es igual para todas las personas, sin excepción.", "error": "igualdad-dignidad" },
+        { "texto": "Que todos debemos vestirnos igual", "pista": "Podemos vestirnos distinto. La dignidad no depende de la ropa.", "error": "igualdad-dignidad" }
+      ],
+      "pista": "Dignidad quiere decir que cada persona tiene valor.",
+      "explicacion": "Tener la misma dignidad quiere decir que todas las personas valemos lo mismo y merecemos respeto.",
+      "error": "igualdad-dignidad"
+    },
+    {
+      "id": "p5", "tipo": "ordenar", "nivel": 1,
+      "enunciado": "Ordena las palabras para formar la oración.",
+      "elementos": ["Todas", "las", "culturas", "merecen", "respeto."],
+      "unir": " ",
+      "pista": "La oración empieza con mayúscula y termina con punto.",
+      "explicacion": "«Todas las culturas merecen respeto.»",
+      "error": "orden-oracion"
+    },
+    {
+      "id": "p6", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "Une cada pueblo con su idioma.",
+      "pares": [
+        ["chiquitano", "bésiro"],
+        ["ayoreo", "zamuco"],
+        ["uru", "uru-chipaya"],
+        ["mojeño", "mojeño-trinitario y mojeño-ignaciano"]
+      ],
+      "pista": "Mira la tabla de los idiomas: el idioma chiquitano se llama bésiro.",
+      "explicacion": "Los chiquitanos hablan bésiro; los ayoreos, zamuco; los urus, uru-chipaya; y los mojeños, mojeño-trinitario y mojeño-ignaciano.",
+      "error": "pueblo-idioma"
+    },
+    {
+      "id": "p7", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa con el nombre de cada fiesta.",
+      "texto": "En San Ignacio de Moxos, en el Beni, se celebra la [Ichapekene Piesta]. En el Chaco, los guaraníes celebran el [Arete Guasu], su fiesta grande.",
+      "banco": ["Carnaval de Oruro"],
+      "pista": "Una de las fiestas tiene un nombre en guaraní. El Carnaval de Oruro se celebra en Oruro.",
+      "explicacion": "En San Ignacio de Moxos se celebra la Ichapekene Piesta, y los guaraníes celebran el Arete Guasu.",
+      "error": "expresiones-culturales"
+    },
+    {
+      "id": "p8", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "¿Esta acción respeta la diversidad?",
+      "categorias": [
+        { "id": "si", "texto": "Respeta", "emoji": "💚" },
+        { "id": "no", "texto": "No respeta", "emoji": "🚫" }
+      ],
+      "elementos": [
+        { "texto": "aprender palabras en guaraní de una compañera", "categoria": "si" },
+        { "texto": "invitar a todos a jugar", "categoria": "si" },
+        { "texto": "probar comidas de otras regiones", "categoria": "si" },
+        { "texto": "burlarse de la ropa de alguien", "categoria": "no" },
+        { "texto": "decir que un idioma vale menos", "categoria": "no" },
+        { "texto": "no dejar jugar a un niño porque es de otro lugar", "categoria": "no" }
+      ],
+      "pista": "Pregúntate: ¿así todas las personas se sienten bienvenidas y valoradas?",
+      "explicacion": "Aprender otros idiomas, invitar a todos y probar otras comidas es respetar. Burlarse, decir que un idioma vale menos o dejar a alguien fuera no respeta.",
+      "error": "respeto-diversidad"
+    },
+    {
+      "id": "p9", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha y escribe el nombre del idioma.",
+      "escuchar": "guaraní",
+      "respuestas": ["guaraní"],
+      "tildes": "flexible",
+      "pista": "Es el idioma de un pueblo del Chaco. Empieza con «gua».",
+      "explicacion": "Se escribe «guaraní», con tilde en la í. Es un idioma oficial de Bolivia.",
+      "error": "escritura-idiomas"
+    },
+    {
+      "id": "p10", "tipo": "memoria", "nivel": 2,
+      "enunciado": "Encuentra las parejas.",
+      "pares": [
+        ["saya", "música afroboliviana"],
+        ["Arete Guasu", "fiesta guaraní"],
+        ["Ichapekene Piesta", "fiesta de San Ignacio de Moxos"],
+        ["bésiro", "idioma chiquitano"]
+      ],
+      "pista": "Recuerda el viaje por Bolivia: la saya se toca con tambores en los Yungas.",
+      "explicacion": "La saya es música afroboliviana, el Arete Guasu es la fiesta grande guaraní, la Ichapekene Piesta es de San Ignacio de Moxos y el bésiro es el idioma chiquitano.",
+      "error": "expresiones-culturales"
+    },
+    {
+      "id": "p11", "tipo": "pasos", "nivel": 3,
+      "enunciado": "La Constitución nombra 36 idiomas de pueblos originarios. El castellano también es un idioma oficial.",
+      "pasos": [
+        {
+          "tipo": "numero",
+          "enunciado": "¿Cuántos idiomas oficiales hay en total?",
+          "respuesta": 37,
+          "erroresComunes": [ { "respuesta": 36, "pista": "No olvides sumar el castellano.", "error": "idiomas-oficiales" } ],
+          "pista": "Suma los 36 idiomas originarios y el castellano.",
+          "explicacion": "36 + 1 = 37 idiomas oficiales.",
+          "error": "idiomas-oficiales"
+        },
+        {
+          "tipo": "numero",
+          "enunciado": "Nayra habla aimara y castellano. En la escuela aprende guaraní. ¿Cuántos idiomas sabrá?",
+          "respuesta": 3,
+          "erroresComunes": [ { "respuesta": 2, "pista": "Cuenta también el idioma que aprende en la escuela.", "error": "idiomas-oficiales" } ],
+          "pista": "Cuenta: aimara, castellano y el que aprende en la escuela.",
+          "explicacion": "Aimara, castellano y guaraní: Nayra sabrá 3 idiomas.",
+          "error": "idiomas-oficiales"
+        }
+      ],
+      "pista": "Resuelve un paso a la vez.",
+      "explicacion": "En Bolivia hay 37 idiomas oficiales (36 originarios y el castellano). ¡Muchas personas hablan más de uno!",
+      "error": "idiomas-oficiales"
+    },
+    {
+      "id": "p12", "tipo": "escribir-libre", "nivel": 3,
+      "enunciado": "Escribe una oración sobre una costumbre de tu familia o de tu región: una comida, una música, una fiesta o un idioma.",
+      "guia": ["En mi familia comemos...", "En mi región bailamos...", "Mi abuela habla..."],
+      "requisitos": [
+        { "tipo": "mayuscula-inicial" },
+        { "tipo": "punto-final" },
+        { "tipo": "min-palabras", "valor": 6 }
+      ],
+      "modelo": "En mi familia comemos sopa de maní los domingos.",
+      "pista": "Piensa en algo que hace tu familia en una fiesta, en la cocina o al hablar.",
+      "explicacion": "Por ejemplo: «En mi familia comemos sopa de maní los domingos». Cada familia tiene costumbres valiosas.",
+      "error": "produce-oracion"
+    },
+    {
+      "id": "p13", "tipo": "clasificar", "nivel": 3,
+      "enunciado": "¿Es verdadero o falso?",
+      "categorias": [
+        { "id": "v", "texto": "Verdadero", "emoji": "✅" },
+        { "id": "f", "texto": "Falso", "emoji": "❌" }
+      ],
+      "elementos": [
+        { "texto": "Hay personas aimaras que son doctoras, maestras o ingenieras.", "categoria": "v" },
+        { "texto": "El pueblo afroboliviano está reconocido en la Constitución.", "categoria": "v" },
+        { "texto": "Todas las culturas merecen respeto.", "categoria": "v" },
+        { "texto": "Los pueblos originarios solo viven en el campo.", "categoria": "f" },
+        { "texto": "Solo el castellano es idioma oficial.", "categoria": "f" },
+        { "texto": "Una cultura vale más que otra.", "categoria": "f" }
+      ],
+      "pista": "Recuerda: en cada pueblo hay personas de todos los trabajos, en el campo y en la ciudad.",
+      "explicacion": "Son verdaderas las tres primeras. Los pueblos originarios viven en el campo y en la ciudad, hay 37 idiomas oficiales y ninguna cultura vale más que otra.",
+      "error": "estereotipos"
+    },
+    {
+      "id": "p14", "tipo": "opcion", "nivel": 3,
+      "enunciado": "Escucha y elige de qué pueblo se habla.",
+      "escuchar": "Muchas de nuestras familias viven en los Yungas de La Paz. Nuestra música, la saya, se toca con tambores. La Constitución nos reconoce como pueblo.",
+      "opciones": [
+        { "texto": "pueblo afroboliviano", "correcta": true },
+        { "texto": "pueblo uru", "pista": "Los urus viven junto a lagos y ríos del altiplano.", "error": "pueblos-regiones" },
+        { "texto": "pueblo guaraní", "pista": "Los guaraníes viven sobre todo en el Chaco.", "error": "pueblos-regiones" }
+      ],
+      "pista": "Piensa en quién toca la saya en los Yungas.",
+      "explicacion": "Es el pueblo afroboliviano: muchas de sus familias viven en los Yungas de La Paz y su música es la saya.",
+      "error": "pueblos-regiones"
+    }
+  ],
+  "comprobacion": [
+    {
+      "id": "c1", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Toca los nombres de los idiomas.",
+      "texto": "En una radio de Potosí hay programas en *quechua* y en *castellano*.",
+      "pista": "Hay dos idiomas. Potosí es un departamento.",
+      "explicacion": "Quechua y castellano son idiomas. Los dos son oficiales en Bolivia.",
+      "error": "escritura-idiomas"
+    },
+    {
+      "id": "c2", "tipo": "opcion", "nivel": 1,
+      "enunciado": "¿Qué quiere decir que Bolivia es un Estado Plurinacional?",
+      "opciones": [
+        { "texto": "Que en Bolivia viven muchas naciones y pueblos", "correcta": true },
+        { "texto": "Que en Bolivia se habla un solo idioma", "pista": "En Bolivia hay muchos idiomas oficiales.", "error": "concepto-plurinacional" },
+        { "texto": "Que Bolivia tiene muchos ríos", "pista": "«Plurinacional» habla de naciones y pueblos, no de ríos.", "error": "concepto-plurinacional" }
+      ],
+      "pista": "Recuerda la primera tarjeta: ¿quiénes viven en Bolivia? «Pluri» quiere decir «muchos».",
+      "explicacion": "Estado Plurinacional quiere decir que en Bolivia viven muchas naciones y pueblos juntos.",
+      "error": "concepto-plurinacional"
+    },
+    {
+      "id": "c3", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "Une cada pueblo con una región donde viven muchas de sus familias.",
+      "pares": [
+        ["chiquitanos", "Chiquitanía, en Santa Cruz"],
+        ["urus", "lagos y ríos del altiplano"],
+        ["tacanas", "Amazonía del norte de La Paz"],
+        ["quechuas", "valles de Cochabamba y Chuquisaca"]
+      ],
+      "pista": "El nombre de los chiquitanos se parece al de su región. Los urus viven cerca del agua.",
+      "explicacion": "Chiquitanos: la Chiquitanía. Urus: lagos y ríos del altiplano. Tacanas: la Amazonía del norte de La Paz. Quechuas: los valles, entre otros lugares.",
+      "error": "pueblos-regiones"
+    },
+    {
+      "id": "c4", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa la oración.",
+      "texto": "Todas las personas tenemos la misma [dignidad] y los mismos [derechos], hablemos el idioma que hablemos.",
+      "banco": ["ropa", "juguetes"],
+      "pista": "Piensa en lo que nos hace valer lo mismo a todas las personas.",
+      "explicacion": "Todas las personas tenemos la misma dignidad y los mismos derechos, sin importar nuestro idioma.",
+      "error": "igualdad-dignidad"
+    },
+    {
+      "id": "c5", "tipo": "numero", "nivel": 2,
+      "enunciado": "Escucha. ¿Cuántos idiomas de pueblos originarios nombra la Constitución?",
+      "escuchar": "La Constitución de Bolivia nombra treinta y seis idiomas de pueblos originarios. Todos son idiomas oficiales, igual que el castellano.",
+      "respuesta": 36,
+      "erroresComunes": [ { "respuesta": 37, "pista": "Así cuentas también el castellano. Solo los idiomas de pueblos originarios.", "error": "idiomas-oficiales" } ],
+      "pista": "Escucha otra vez el número que dice al principio.",
+      "explicacion": "La Constitución nombra 36 idiomas de pueblos originarios. Con el castellano, son 37 idiomas oficiales.",
+      "error": "idiomas-oficiales"
+    },
+    {
+      "id": "c6", "tipo": "pasos", "nivel": 3,
+      "enunciado": "A tu curso llega Rosa, una niña del pueblo ayoreo. En su casa habla el idioma de su pueblo y ahora aprende castellano.",
+      "pasos": [
+        {
+          "tipo": "opcion",
+          "enunciado": "¿Qué puedes hacer para que Rosa se sienta bien?",
+          "opciones": [
+            { "texto": "Invitarla a jugar y pedirle que te enseñe palabras de su idioma", "correcta": true },
+            { "texto": "Pedirle que ya no hable su idioma", "pista": "El idioma de Rosa es parte de su cultura y es oficial en Bolivia.", "error": "respeto-diversidad" },
+            { "texto": "No jugar con ella porque habla diferente", "pista": "¿Cómo te sentirías tú si nadie jugara contigo?", "error": "respeto-diversidad" }
+          ],
+          "pista": "Busca la opción que hace sentir bienvenida a Rosa.",
+          "explicacion": "Invitarla a jugar y aprender de su idioma la hace sentir bienvenida y respetada.",
+          "error": "respeto-diversidad"
+        },
+        {
+          "tipo": "completar",
+          "enunciado": "Completa sobre el idioma de Rosa.",
+          "texto": "En la Constitución, el idioma del pueblo ayoreo se llama [zamuco]. Es un idioma [oficial] de Bolivia, igual que el castellano.",
+          "banco": ["bésiro", "extranjero"],
+          "pista": "Recuerda la tabla de pueblos e idiomas: busca al pueblo ayoreo. El bésiro es de otro pueblo.",
+          "explicacion": "El idioma del pueblo ayoreo se llama zamuco en la Constitución. Es un idioma oficial de Bolivia, igual que el castellano.",
+          "error": "pueblo-idioma"
+        }
+      ],
+      "pista": "Resuelve un paso a la vez.",
+      "explicacion": "Rosa merece respeto. Su idioma (el zamuco o ayoreo) es oficial en Bolivia y podemos aprender de él.",
+      "error": "respeto-diversidad"
+    },
+    {
+      "id": "c7", "tipo": "multiple", "nivel": 3,
+      "enunciado": "Elige todas las oraciones verdaderas.",
+      "opciones": [
+        { "texto": "El bésiro es el idioma del pueblo chiquitano.", "correcta": true },
+        { "texto": "Hay familias guaraníes que viven en el campo y otras en la ciudad.", "correcta": true },
+        { "texto": "La saya es música del pueblo afroboliviano.", "correcta": true },
+        { "texto": "Las personas de un pueblo originario no pueden ser doctoras.", "pista": "En cada pueblo hay personas de todos los trabajos, también doctoras.", "error": "estereotipos" },
+        { "texto": "El quechua no es un idioma oficial.", "pista": "El quechua es uno de los idiomas oficiales de Bolivia.", "error": "idiomas-oficiales" }
+      ],
+      "pista": "Hay tres oraciones verdaderas.",
+      "explicacion": "Son verdaderas: el bésiro es el idioma chiquitano, hay familias guaraníes en el campo y en la ciudad, y la saya es música afroboliviana.",
+      "error": "estereotipos"
+    },
+    {
+      "id": "c8", "tipo": "completar", "nivel": 1,
+      "enunciado": "Completa la oración.",
+      "texto": "En Bolivia se hablan muchos [idiomas]: quechua, aimara, guaraní, bésiro y muchos más.",
+      "banco": ["colores"],
+      "pista": "Quechua, aimara y guaraní son formas de hablar.",
+      "explicacion": "En Bolivia se hablan muchos idiomas.",
+      "error": "idiomas-oficiales"
+    }
+  ],
+  "repaso": {
+    "texto": "Recuerda: Bolivia es un Estado Plurinacional. Hay 36 idiomas originarios oficiales, además del castellano. Somos diversos y todas las personas tenemos la misma dignidad y los mismos derechos.",
+    "visual": { "tipo": "emojis", "items": ["🗣️", "🎶", "🍲", "🤝"], "etiquetas": ["idiomas", "música", "comidas", "respeto"] }
+  },
+  "adulto": {
+    "objetivo": "Reconocer que Bolivia es un Estado Plurinacional (Constitución de 2009, art. 1), que la Constitución nombra 36 idiomas de las naciones y pueblos indígena originario campesinos como oficiales junto con el castellano (art. 5) y que reconoce al pueblo afroboliviano (arts. 3 y 32). Conocer ejemplos de pueblos y de su diversidad (idiomas, música, comida, ropa, fiestas) y valorar que todas las personas tienen igual dignidad y derechos, sin estereotipos. Nota: suele decirse «36 naciones» porque la Constitución enumera 36 idiomas originarios.",
+    "sugerencias": [
+      "Pregunten en la familia qué idiomas hablan o hablaban los abuelos y aprendan juntos a decir «hola» y «gracias» en uno de ellos.",
+      "En la feria o el mercado, busquen alimentos de distintas regiones (chuño del altiplano, yuca y plátano de los llanos, maní de los valles) y conversen sobre quiénes los producen y cómo se cocinan en cada lugar.",
+      "Escuchen juntos una saya, un taquirari y un huayño, o miren fotos de fiestas como el Arete Guasu o la Ichapekene Piesta. Cuiden de presentar a las personas de cada pueblo en todos los trabajos y en el campo y la ciudad, no solo con ropa de fiesta."
+    ],
+    "errores": {
+      "pueblos-regiones": { "descripcion": "No ubica dónde viven muchas familias de cada pueblo.", "sugerencia": "Usen un mapa de Bolivia y ubiquen juntos algunos pueblos: aimaras en el altiplano, guaraníes en el Chaco, mojeños en el Beni. Recuerden que también viven en las ciudades." },
+      "idiomas-oficiales": { "descripcion": "No sabe que los idiomas originarios son oficiales junto con el castellano.", "sugerencia": "Cuenten juntos con los dedos: 36 idiomas originarios y el castellano; comenten que todos son oficiales." },
+      "respeto-diversidad": { "descripcion": "Duda sobre cómo actuar con respeto ante la diversidad o ante una burla.", "sugerencia": "Hagan juego de roles: una persona se burla y la otra responde con calma y respeto. Luego cambien de papel." },
+      "expresiones-culturales": { "descripcion": "Confunde músicas, comidas, ropas y fiestas de distintas culturas.", "sugerencia": "Hagan tarjetas con dibujos (saya, sopa de maní, tipoy, aguayo) y clasifíquenlas juntos en música, comida y ropa." },
+      "reconoce-pueblos": { "descripcion": "No distingue los nombres de los pueblos de otras palabras.", "sugerencia": "Lean una lista de pueblos (aimara, quechua, guaraní, chiquitano, mojeño) y pidan que la repita y la escriba." },
+      "igualdad-dignidad": { "descripcion": "No comprende que todas las personas tienen la misma dignidad.", "sugerencia": "Conversen: «¿Alguien vale más por su idioma o su ropa?». Den ejemplos cotidianos de trato justo." },
+      "orden-oracion": { "descripcion": "Le cuesta ordenar palabras para formar una oración.", "sugerencia": "Escriban la oración en tiras de papel, córtenlas por palabras y ármenla juntos." },
+      "pueblo-idioma": { "descripcion": "No relaciona algunos pueblos con su idioma (por ejemplo, chiquitano con bésiro).", "sugerencia": "Hagan una tabla sencilla de dos columnas, «pueblo» e «idioma», y léanla en voz alta." },
+      "escritura-idiomas": { "descripcion": "Le cuesta reconocer o escribir los nombres de los idiomas.", "sugerencia": "Dicten nombres de idiomas separando sílabas (gua-ra-ní, que-chua) y revisen juntos la tilde." },
+      "estereotipos": { "descripcion": "Cree ideas falsas, como que los pueblos originarios solo viven en el campo o solo tienen ciertos trabajos.", "sugerencia": "Muestren ejemplos reales de personas de distintos pueblos en muchas profesiones y lugares; eviten los chistes o imágenes que ridiculizan." },
+      "concepto-plurinacional": { "descripcion": "No comprende qué significa «Estado Plurinacional».", "sugerencia": "Expliquen que «pluri» significa «muchos»: en Bolivia conviven muchas naciones y pueblos. Recuerden el 22 de enero, Día del Estado Plurinacional." },
+      "produce-oracion": { "descripcion": "Le cuesta escribir una oración completa sobre una costumbre.", "sugerencia": "Conversen primero en voz alta sobre una costumbre familiar y luego escriban juntos la oración con mayúscula y punto." }
+    }
+  }
+}

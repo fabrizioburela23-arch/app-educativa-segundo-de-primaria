@@ -1,0 +1,441 @@
+{
+  "id": "com-2-2",
+  "titulo": "Las sílabas",
+  "objetivo": "Separo palabras en sílabas, las cuento y sé si son monosílabas, bisílabas, trisílabas o polisílabas.",
+  "explicacion": [
+    {
+      "texto": "Una **sílaba** es cada golpe de voz que damos al decir una palabra. Da una palmada en cada golpe: ma-ri-po-sa. ¡4 palmadas, 4 sílabas!",
+      "emoji": "👏",
+      "visual": { "tipo": "emoji", "valor": "👏", "cantidad": 4, "etiqueta": "ma-ri-po-sa" }
+    },
+    {
+      "texto": "Toda sílaba tiene al menos una **vocal**. A veces, una vocal sola ya es una sílaba: **a**-pi, **o**-so, **u**-va.",
+      "visual": { "tipo": "emojis", "items": ["☕", "🐻", "🍇"], "etiquetas": ["a-pi", "o-so", "u-va"] }
+    },
+    {
+      "texto": "Según cuántas sílabas tienen, las palabras son **monosílabas** (1), **bisílabas** (2), **trisílabas** (3) o **polisílabas** (4 o más).",
+      "visual": {
+        "tipo": "tabla",
+        "columnas": ["Sílabas", "Nombre", "Ejemplo"],
+        "filas": [
+          ["1", "monosílaba", "sol"],
+          ["2", "bisílaba", "lla-ma"],
+          ["3", "trisílaba", "vi-cu-ña"],
+          ["4 o más", "polisílaba", "ca-pi-ba-ra"]
+        ]
+      }
+    },
+    {
+      "texto": "Al separar, la **ch**, la **ll** y la **rr** no se parten: chan-cho, ga-lli-na, pe-rro. Tampoco se parten grupos como **bl**, **br**, **cl** o **tr**: li-bro, cho-clo.",
+      "emoji": "✂️",
+      "visual": { "tipo": "emojis", "items": ["🐷", "🐔", "🐕", "🌽"], "etiquetas": ["chan-cho", "ga-lli-na", "pe-rro", "cho-clo"] }
+    }
+  ],
+  "ejemplo": {
+    "instruccion": "Mira cómo separamos palabras en sílabas, con palmadas.",
+    "pasos": [
+      {
+        "texto": "Decimos «paraba» despacio y damos una palmada en cada golpe de voz: pa... ra... ba.",
+        "visual": { "tipo": "emoji", "valor": "👏", "cantidad": 3 }
+      },
+      {
+        "texto": "Escribimos las sílabas con un guion (-) entre una y otra: pa-ra-ba. Cada sílaba tiene su vocal.",
+        "visual": { "tipo": "emojis", "items": ["🦜"], "etiquetas": ["pa-ra-ba"] }
+      },
+      {
+        "texto": "Contamos: 1, 2, 3. «Paraba» tiene 3 sílabas: es una palabra **trisílaba**.",
+        "visual": { "tipo": "tabla", "columnas": ["pa", "ra", "ba"], "filas": [["1", "2", "3"]] }
+      },
+      {
+        "texto": "Ahora «carro»: ca-rro. La rr no se parte. Tiene 2 sílabas: es **bisílaba**.",
+        "visual": { "tipo": "emojis", "items": ["🚗"], "etiquetas": ["ca-rro"] }
+      }
+    ]
+  },
+  "guiada": {
+    "intro": "Ahora lo hacemos juntos. ¡Prepara tus manos para dar palmadas!",
+    "pasos": [
+      {
+        "id": "g1", "tipo": "numero",
+        "enunciado": "¿Cuántas sílabas tiene la palabra «pelota»?",
+        "apoyo": "Di «pelota» despacio y da una palmada en cada golpe de voz: pe... lo... ta.",
+        "visual": { "tipo": "emoji", "valor": "⚽", "etiqueta": "pelota" },
+        "respuesta": 3,
+        "erroresComunes": [
+          { "respuesta": 6, "pista": "Contaste las letras. Cuenta las palmadas.", "error": "cuenta-letras" }
+        ],
+        "pista": "Cuenta las palmadas, no las letras.",
+        "explicacion": "Pe-lo-ta: 3 golpes de voz, 3 sílabas.",
+        "error": "cuenta-silabas"
+      },
+      {
+        "id": "g2", "tipo": "ordenar",
+        "enunciado": "Ordena las sílabas para formar el nombre de una comida.",
+        "apoyo": "Es una comida jugosa que se come a media mañana. Empieza con «sal».",
+        "visual": { "tipo": "emoji", "valor": "🥟" },
+        "elementos": ["sal", "te", "ña"],
+        "unir": "",
+        "pista": "Di las sílabas en voz alta en distinto orden hasta que suene una palabra.",
+        "explicacion": "Sal-te-ña forma «salteña».",
+        "error": "arma-palabra"
+      },
+      {
+        "id": "g3", "tipo": "clasificar",
+        "enunciado": "¿Cuántas sílabas tiene cada palabra?",
+        "apoyo": "Da palmadas con cada palabra y cuéntalas.",
+        "categorias": [
+          { "id": "s1", "texto": "1 sílaba" },
+          { "id": "s2", "texto": "2 sílabas" },
+          { "id": "s3", "texto": "3 sílabas" }
+        ],
+        "elementos": [
+          { "texto": "sol", "categoria": "s1" },
+          { "texto": "pan", "categoria": "s1" },
+          { "texto": "luna", "categoria": "s2" },
+          { "texto": "sapo", "categoria": "s2" },
+          { "texto": "tomate", "categoria": "s3" },
+          { "texto": "gusano", "categoria": "s3" }
+        ],
+        "pista": "Di cada palabra despacio y cuenta las palmadas.",
+        "explicacion": "1 sílaba: sol, pan. 2 sílabas: lu-na, sa-po. 3 sílabas: to-ma-te, gu-sa-no.",
+        "error": "cuenta-silabas"
+      }
+    ]
+  },
+  "practica": [
+    {
+      "id": "p1", "tipo": "numero", "nivel": 1,
+      "enunciado": "Escucha la palabra y da palmadas. ¿Cuántas sílabas tiene?",
+      "escuchar": "tortuga",
+      "respuesta": 3,
+      "erroresComunes": [
+        { "respuesta": 7, "pista": "Contaste letras. Cuenta los golpes de voz.", "error": "cuenta-letras" }
+      ],
+      "pista": "Escúchala otra vez y da una palmada en cada golpe de voz.",
+      "explicacion": "Tor-tu-ga: 3 sílabas.",
+      "error": "cuenta-silabas"
+    },
+    {
+      "id": "p2", "tipo": "ordenar", "nivel": 1,
+      "enunciado": "Ordena las sílabas para formar el nombre del animal.",
+      "visual": { "tipo": "emoji", "valor": "🐔" },
+      "elementos": ["ga", "lli", "na"],
+      "unir": "",
+      "pista": "Mira el dibujo y di su nombre despacio. ¿Con qué sílaba empieza?",
+      "explicacion": "Ga-lli-na forma «gallina». La ll no se parte.",
+      "error": "arma-palabra"
+    },
+    {
+      "id": "p3", "tipo": "memoria", "nivel": 1,
+      "enunciado": "Encuentra las parejas: cada palabra con sus sílabas.",
+      "pares": [["llama", "lla-ma"], ["chuño", "chu-ño"], ["carro", "ca-rro"], ["pelota", "pe-lo-ta"]],
+      "pista": "Lee la palabra junta y búscala separada con guiones.",
+      "explicacion": "Llama: lla-ma. Chuño: chu-ño. Carro: ca-rro. Pelota: pe-lo-ta.",
+      "error": "separa-silabas"
+    },
+    {
+      "id": "p4", "tipo": "completar", "nivel": 1,
+      "enunciado": "Completa cada palabra con la sílaba que falta.",
+      "texto": "vi[cu]ña, to[ma]te, ca[ba]llo",
+      "banco": ["ri", "pe"],
+      "pista": "Di cada palabra despacio y escucha qué sílaba falta en el medio.",
+      "explicacion": "Las palabras son vi-cu-ña, to-ma-te y ca-ba-llo.",
+      "error": "silaba-falta"
+    },
+    {
+      "id": "p5", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "Animales de Bolivia: ¿cuántas sílabas tiene cada nombre?",
+      "categorias": [
+        { "id": "bi", "texto": "Bisílaba (2)" },
+        { "id": "tri", "texto": "Trisílaba (3)" },
+        { "id": "poli", "texto": "Polisílaba (4 o más)" }
+      ],
+      "elementos": [
+        { "texto": "llama", "categoria": "bi" },
+        { "texto": "tatú", "categoria": "bi" },
+        { "texto": "paraba", "categoria": "tri" },
+        { "texto": "alpaca", "categoria": "tri" },
+        { "texto": "jucumari", "categoria": "poli" },
+        { "texto": "capibara", "categoria": "poli" }
+      ],
+      "pista": "Da palmadas con cada nombre y cuéntalas. Polisílaba quiere decir 4 sílabas o más.",
+      "explicacion": "2 sílabas: lla-ma, ta-tú. 3 sílabas: pa-ra-ba, al-pa-ca. 4 sílabas: ju-cu-ma-ri, ca-pi-ba-ra.",
+      "error": "clasifica-silabas"
+    },
+    {
+      "id": "p6", "tipo": "tocar", "nivel": 2,
+      "enunciado": "Toca las palabras monosílabas (las que tienen una sola sílaba).",
+      "texto": "casa, *sol*, luna, *pan*, tomate, *flor*",
+      "pista": "Una palabra monosílaba se dice con un solo golpe de voz: una sola palmada.",
+      "explicacion": "Sol, pan y flor tienen una sola sílaba. Ca-sa, lu-na y to-ma-te tienen más.",
+      "error": "clasifica-silabas"
+    },
+    {
+      "id": "p7", "tipo": "opcion", "nivel": 2,
+      "enunciado": "¿Cuál está bien separada en sílabas?",
+      "opciones": [
+        { "texto": "pe-rro", "correcta": true },
+        { "texto": "per-ro", "pista": "La rr es un dígrafo: sus dos letras van juntas.", "error": "separa-digrafo" },
+        { "texto": "pe-r-ro", "pista": "Cada sílaba necesita al menos una vocal. ¿La tiene la «r» sola?", "error": "silaba-sin-vocal" }
+      ],
+      "columnas": 3,
+      "pista": "Recuerda: la rr no se parte.",
+      "explicacion": "Se separa pe-rro: la rr va junta en la misma sílaba.",
+      "error": "separa-digrafo"
+    },
+    {
+      "id": "p8", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha la palabra y escríbela separada en sílabas, con guiones (-).",
+      "escuchar": "tomate",
+      "respuestas": ["to-ma-te", "to - ma - te"],
+      "pista": "Da una palmada en cada golpe de voz y pon un guion entre sílaba y sílaba.",
+      "explicacion": "Se separa así: to-ma-te.",
+      "error": "dictado-silabas"
+    },
+    {
+      "id": "p9", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "Une cada palabra con su nombre según sus sílabas.",
+      "pares": [["pan", "monosílaba"], ["sopa", "bisílaba"], ["plátano", "trisílaba"], ["majadito", "polisílaba"]],
+      "pista": "Cuenta las sílabas. Mono = 1, bi = 2, tri = 3 y poli = 4 o más.",
+      "explicacion": "Pan (1): monosílaba. So-pa (2): bisílaba. Plá-ta-no (3): trisílaba. Ma-ja-di-to (4): polisílaba.",
+      "error": "clasifica-silabas"
+    },
+    {
+      "id": "p10", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha las sílabas y escribe la palabra que forman.",
+      "escuchar": "chu... ño",
+      "respuestas": ["chuño"],
+      "pista": "Junta las sílabas en una sola palabra, sin guiones. Es un alimento hecho con papa.",
+      "explicacion": "Chu + ño = chuño.",
+      "error": "dictado-silabas"
+    },
+    {
+      "id": "p11", "tipo": "pasos", "nivel": 3,
+      "enunciado": "Piensa en «Titicaca», el nombre de un lago que está entre Bolivia y Perú.",
+      "pasos": [
+        {
+          "tipo": "numero",
+          "enunciado": "¿Cuántas sílabas tiene «Titicaca»?",
+          "respuesta": 4,
+          "erroresComunes": [
+            { "respuesta": 8, "pista": "Contaste letras. Cuenta los golpes de voz.", "error": "cuenta-letras" }
+          ],
+          "pista": "Dila despacio y da una palmada en cada golpe de voz.",
+          "explicacion": "Ti-ti-ca-ca: 4 sílabas.",
+          "error": "cuenta-silabas"
+        },
+        {
+          "tipo": "opcion",
+          "enunciado": "Entonces, ¿qué clase de palabra es «Titicaca»?",
+          "opciones": [
+            { "texto": "polisílaba", "correcta": true },
+            { "texto": "trisílaba", "pista": "Las trisílabas tienen 3 sílabas. ¿Cuántas contaste?", "error": "clasifica-silabas" },
+            { "texto": "bisílaba", "pista": "Las bisílabas tienen solo 2 sílabas.", "error": "clasifica-silabas" }
+          ],
+          "pista": "Recuerda: mono = 1, bi = 2, tri = 3 y poli = 4 o más.",
+          "explicacion": "Con 4 sílabas, «Titicaca» es polisílaba.",
+          "error": "clasifica-silabas"
+        }
+      ],
+      "pista": "Primero cuenta las sílabas; después elige el nombre.",
+      "explicacion": "Ti-ti-ca-ca tiene 4 sílabas: es una palabra polisílaba.",
+      "error": "clasifica-silabas"
+    },
+    {
+      "id": "p12", "tipo": "ordenar", "nivel": 3,
+      "enunciado": "Ordena las 5 sílabas para formar el nombre de lo que ves en el dibujo.",
+      "visual": { "tipo": "emoji", "valor": "💻" },
+      "elementos": ["com", "pu", "ta", "do", "ra"],
+      "unir": "",
+      "pista": "Di el nombre del dibujo muy despacio, con una palmada en cada golpe de voz. ¿Qué sílaba suena primero?",
+      "explicacion": "Com-pu-ta-do-ra forma «computadora». Tiene 5 sílabas: es polisílaba.",
+      "error": "arma-palabra"
+    },
+    {
+      "id": "p13", "tipo": "multiple", "nivel": 3,
+      "enunciado": "Elige todas las palabras que están bien separadas en sílabas.",
+      "opciones": [
+        { "texto": "ca-lle", "correcta": true },
+        { "texto": "cho-clo", "correcta": true },
+        { "texto": "al-pa-ca", "correcta": true },
+        { "texto": "car-ro", "pista": "Mira la rr: ¿se puede partir?", "error": "separa-digrafo" },
+        { "texto": "lib-ro", "pista": "Mira la br: ¿va junta o separada?", "error": "separa-grupo" }
+      ],
+      "pista": "Recuerda: ch, ll y rr no se parten, y grupos como br o cl van juntos.",
+      "explicacion": "Están bien: ca-lle, cho-clo y al-pa-ca. Lo correcto es ca-rro (la rr no se parte) y li-bro (la br va junta).",
+      "error": "separa-silabas"
+    },
+    {
+      "id": "p14", "tipo": "escribir-libre", "nivel": 3,
+      "enunciado": "Escribe una oración con uno de estos animales de 3 sílabas: paraba, vicuña, alpaca o tortuga.",
+      "guia": ["La paraba...", "La alpaca..."],
+      "requisitos": [
+        { "tipo": "mayuscula-inicial" },
+        { "tipo": "punto-final" },
+        { "tipo": "min-palabras", "valor": 4 },
+        { "tipo": "incluye", "palabras": ["paraba", "vicuña", "alpaca", "tortuga"] }
+      ],
+      "modelo": "La alpaca come pasto en el altiplano.",
+      "pista": "Elige un animal de la lista y cuenta qué hace o cómo es.",
+      "explicacion": "Por ejemplo: «La alpaca come pasto en el altiplano.» Al-pa-ca tiene 3 sílabas.",
+      "error": "produce-oracion"
+    },
+    {
+      "id": "p15", "tipo": "numero", "nivel": 3,
+      "enunciado": "¿Cuántas sílabas tiene la palabra «hipopótamo»?",
+      "visual": { "tipo": "emoji", "valor": "🦛", "etiqueta": "hipopótamo" },
+      "respuesta": 5,
+      "erroresComunes": [
+        { "respuesta": 10, "pista": "Contaste letras. Cuenta los golpes de voz.", "error": "cuenta-letras" },
+        { "respuesta": 4, "pista": "Te faltó una. La h no suena, pero la sílaba «hi» sí cuenta.", "error": "cuenta-silabas" }
+      ],
+      "pista": "Es una palabra larga. Dila muy despacio y da una palmada en cada golpe.",
+      "explicacion": "Hi-po-pó-ta-mo: 5 sílabas. Es una palabra polisílaba.",
+      "error": "cuenta-silabas"
+    }
+  ],
+  "comprobacion": [
+    {
+      "id": "c1", "tipo": "numero", "nivel": 1,
+      "enunciado": "¿Cuántas sílabas tiene la palabra «zapato»?",
+      "visual": { "tipo": "emoji", "valor": "👞", "etiqueta": "zapato" },
+      "respuesta": 3,
+      "erroresComunes": [
+        { "respuesta": 6, "pista": "Contaste las letras. Cuenta las palmadas.", "error": "cuenta-letras" }
+      ],
+      "pista": "Di «zapato» despacio y da una palmada en cada golpe de voz.",
+      "explicacion": "Za-pa-to: 3 sílabas.",
+      "error": "cuenta-silabas"
+    },
+    {
+      "id": "c2", "tipo": "ordenar", "nivel": 1,
+      "enunciado": "Ordena las sílabas para formar el nombre de una fruta.",
+      "visual": { "tipo": "emoji", "valor": "🍓" },
+      "elementos": ["fru", "ti", "lla"],
+      "unir": "",
+      "pista": "Mira el dibujo y di su nombre despacio. ¿Con qué sílaba empieza?",
+      "explicacion": "Fru-ti-lla forma «frutilla». La fr y la ll van juntas.",
+      "error": "arma-palabra"
+    },
+    {
+      "id": "c3", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "En la feria: ¿cuántas sílabas tiene cada palabra?",
+      "categorias": [
+        { "id": "s1", "texto": "1 sílaba" },
+        { "id": "s2", "texto": "2 sílabas" },
+        { "id": "s3", "texto": "3 sílabas" }
+      ],
+      "elementos": [
+        { "texto": "pan", "categoria": "s1" },
+        { "texto": "sal", "categoria": "s1" },
+        { "texto": "papa", "categoria": "s2" },
+        { "texto": "yuca", "categoria": "s2" },
+        { "texto": "manzana", "categoria": "s3" },
+        { "texto": "naranja", "categoria": "s3" }
+      ],
+      "pista": "Di cada palabra despacio y cuenta las palmadas.",
+      "explicacion": "1 sílaba: pan, sal. 2 sílabas: pa-pa, yu-ca. 3 sílabas: man-za-na, na-ran-ja.",
+      "error": "clasifica-silabas"
+    },
+    {
+      "id": "c4", "tipo": "opcion", "nivel": 2,
+      "enunciado": "¿Cuál está bien separada en sílabas?",
+      "visual": { "tipo": "emoji", "valor": "🚲" },
+      "opciones": [
+        { "texto": "bi-ci-cle-ta", "correcta": true },
+        { "texto": "bi-cic-le-ta", "pista": "La cl va junta, como en «clavo».", "error": "separa-grupo" },
+        { "texto": "bi-ci-c-le-ta", "pista": "Cada sílaba necesita al menos una vocal. ¿La tiene la «c» sola?", "error": "silaba-sin-vocal" }
+      ],
+      "columnas": 1,
+      "pista": "Da una palmada en cada golpe de voz. Recuerda: la cl va junta.",
+      "explicacion": "Se separa bi-ci-cle-ta: 4 sílabas, y la cl va junta en la misma sílaba.",
+      "error": "separa-grupo"
+    },
+    {
+      "id": "c5", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha la palabra y escríbela separada en sílabas, con guiones (-).",
+      "escuchar": "vicuña",
+      "respuestas": ["vi-cu-ña", "vi - cu - ña"],
+      "pista": "Da una palmada en cada golpe de voz. La última sílaba lleva ñ.",
+      "explicacion": "Se separa así: vi-cu-ña.",
+      "error": "dictado-silabas"
+    },
+    {
+      "id": "c6", "tipo": "tocar", "nivel": 2,
+      "enunciado": "Toca las palabras trisílabas (las que tienen 3 sílabas).",
+      "texto": "llama, *paraba*, sol, *conejo*, mariposa, *helado*",
+      "pista": "Da palmadas con cada palabra. Busca las que tienen 3 golpes de voz.",
+      "explicacion": "Pa-ra-ba, co-ne-jo y he-la-do tienen 3 sílabas. Lla-ma tiene 2, sol tiene 1 y ma-ri-po-sa tiene 4.",
+      "error": "clasifica-silabas"
+    },
+    {
+      "id": "c7", "tipo": "multiple", "nivel": 3,
+      "enunciado": "Elige las palabras polisílabas (las que tienen 4 sílabas o más).",
+      "opciones": [
+        { "texto": "cocodrilo", "correcta": true },
+        { "texto": "chocolate", "correcta": true },
+        { "texto": "escalera", "correcta": true },
+        { "texto": "salteña", "pista": "Cuenta otra vez las palmadas de «salteña».", "error": "clasifica-silabas" },
+        { "texto": "cóndor", "pista": "«Cóndor» se dice con pocos golpes de voz. Cuéntalos.", "error": "clasifica-silabas" }
+      ],
+      "pista": "Da palmadas con cada palabra. Solo sirven las que tienen 4 o más.",
+      "explicacion": "Co-co-dri-lo, cho-co-la-te y es-ca-le-ra tienen 4 sílabas: son polisílabas. Sal-te-ña tiene 3 y cón-dor, 2.",
+      "error": "clasifica-silabas"
+    },
+    {
+      "id": "c8", "tipo": "pasos", "nivel": 3,
+      "enunciado": "Piensa en la palabra «perrito».",
+      "visual": { "tipo": "emoji", "valor": "🐶", "etiqueta": "perrito" },
+      "pasos": [
+        {
+          "tipo": "escribir",
+          "enunciado": "Escribe «perrito» separada en sílabas, con guiones (-).",
+          "respuestas": ["pe-rri-to", "pe - rri - to"],
+          "pista": "Recuerda que la rr no se parte.",
+          "explicacion": "Se separa pe-rri-to: la rr va junta.",
+          "error": "separa-digrafo"
+        },
+        {
+          "tipo": "opcion",
+          "enunciado": "¿Qué clase de palabra es «perrito»?",
+          "opciones": [
+            { "texto": "trisílaba", "correcta": true },
+            { "texto": "bisílaba", "pista": "Cuenta otra vez las sílabas que escribiste.", "error": "clasifica-silabas" },
+            { "texto": "polisílaba", "pista": "Las polisílabas tienen 4 sílabas o más.", "error": "clasifica-silabas" }
+          ],
+          "pista": "Cuenta las sílabas que escribiste en el paso anterior.",
+          "explicacion": "Pe-rri-to tiene 3 sílabas: es trisílaba.",
+          "error": "clasifica-silabas"
+        }
+      ],
+      "pista": "Primero sepárala; después cuenta sus sílabas.",
+      "explicacion": "Pe-rri-to tiene 3 sílabas: es trisílaba. La rr no se parte.",
+      "error": "separa-digrafo"
+    }
+  ],
+  "repaso": {
+    "texto": "Una sílaba es un golpe de voz: da una palmada por cada una. Toda sílaba tiene una vocal. La ch, la ll y la rr no se parten: chan-cho, ga-lli-na, pe-rro.",
+    "visual": { "tipo": "emoji", "valor": "👏", "cantidad": 3, "etiqueta": "ga-lli-na" }
+  },
+  "adulto": {
+    "objetivo": "Separar palabras en sílabas (golpes de voz), contarlas y clasificar las palabras en monosílabas (1), bisílabas (2), trisílabas (3) y polisílabas (4 o más). También aprende que ch, ll y rr no se separan (pe-rro) y que grupos como br, bl, cl o tr van juntos (li-bro, cho-clo).",
+    "sugerencias": [
+      "Aplaudan los nombres de la familia sílaba por sílaba (Ma-te-o, Ro-sa, Ku-si, In-ti) y comparen quién tiene el nombre con más sílabas.",
+      "En la feria, digan los productos dando un saltito por sílaba (pa-pa, cho-clo, man-za-na) y agrúpenlos en palabras de 1, 2, 3 o más sílabas.",
+      "Escriban palabras en tiras de papel, córtenlas por sílabas, mezclen los pedazos y armen de nuevo las palabras."
+    ],
+    "errores": {
+      "cuenta-silabas": { "descripcion": "Cuenta mal los golpes de voz de una palabra.", "sugerencia": "Digan la palabra muy despacio mientras dan palmadas juntos; también pueden poner la mano bajo el mentón y contar cuántas veces baja." },
+      "cuenta-letras": { "descripcion": "Cuenta letras en lugar de sílabas.", "sugerencia": "Escriban la palabra, sepárenla con rayitas (to-ma-te) y cuenten los pedazos, no las letras." },
+      "arma-palabra": { "descripcion": "Le cuesta ordenar sílabas para formar una palabra.", "sugerencia": "Usen tarjetas con sílabas: digan la palabra en voz alta y pidan que ponga primero la sílaba con que empieza." },
+      "separa-silabas": { "descripcion": "Duda al reconocer una palabra separada en sílabas.", "sugerencia": "Lean juntos palabras separadas con guiones (ga-lli-na) y luego díganlas de corrido." },
+      "silaba-falta": { "descripcion": "No identifica la sílaba que falta en una palabra.", "sugerencia": "Digan una palabra con palmadas y, en una de ellas, quédense callados: que adivine qué sílaba faltó." },
+      "clasifica-silabas": { "descripcion": "Confunde los nombres monosílaba, bisílaba, trisílaba y polisílaba.", "sugerencia": "Relacionen mono = 1, bi = 2 (como la bicicleta, con 2 ruedas), tri = 3 (como el triciclo) y poli = muchas." },
+      "separa-digrafo": { "descripcion": "Separa la ch, la ll o la rr al dividir en sílabas (per-ro).", "sugerencia": "Recuerden que ch, ll y rr son «letras amigas» que siempre van juntas; márquenlas con un color antes de separar." },
+      "silaba-sin-vocal": { "descripcion": "Forma sílabas sin vocal.", "sugerencia": "Pidan que encierre en un círculo las vocales de la palabra: cada sílaba necesita al menos una." },
+      "separa-grupo": { "descripcion": "Separa grupos como br, bl, cl o tr (lib-ro).", "sugerencia": "Practiquen palabras como li-bro, cho-clo y tri-go diciendo el grupo pegado, sin cortar el sonido." },
+      "dictado-silabas": { "descripcion": "Le cuesta escribir palabras dictadas o separarlas en sílabas por escrito.", "sugerencia": "Dicten palabras cortas con palmadas: primero que diga las sílabas en voz alta y después que las escriba." },
+      "produce-oracion": { "descripcion": "Le cuesta escribir una oración completa con mayúscula y punto.", "sugerencia": "Escriban juntos oraciones cortas sobre animales que conocen y revisen la mayúscula inicial y el punto final." }
+    }
+  }
+}

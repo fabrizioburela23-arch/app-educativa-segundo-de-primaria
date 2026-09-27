@@ -1,0 +1,448 @@
+{
+  "id": "nat-2-2",
+  "titulo": "Uso responsable",
+  "objetivo": "Cuido los recursos: ahorro agua y energía, reduzco, reutilizo y reciclo, separo la basura y protejo a las plantas y a los animales.",
+  "explicacion": [
+    {
+      "texto": "Usar los recursos con **responsabilidad** es usar solo lo que necesitamos, sin desperdiciar ni ensuciar, y cuidar a las plantas y a los animales. Así los recursos alcanzan para todos, hoy y mañana.",
+      "emoji": "💚",
+      "visual": { "tipo": "emojis", "items": ["💧", "💡", "🌳", "🐦"], "etiquetas": ["agua", "energía", "plantas", "animales"] }
+    },
+    {
+      "texto": "**Ahorramos agua**: cerramos el grifo al cepillarnos y nos bañamos rápido. **Ahorramos energía**: apagamos la luz y la tele si nadie las usa, y tapamos la olla al cocinar para gastar menos gas.",
+      "visual": { "tipo": "emojis", "items": ["🚰", "🚿", "💡", "📺", "🍲"], "etiquetas": ["cerrar el grifo", "bañarse rápido", "apagar la luz", "apagar la tele", "tapar la olla"] }
+    },
+    {
+      "texto": "Las **3 R**: **reducir** es usar menos, como pedir menos bolsas de plástico. **Reutilizar** es usar otra vez, como una lata vacía para guardar lápices. **Reciclar** es transformar lo usado en algo nuevo.",
+      "visual": { "tipo": "emojis", "items": ["🛍️", "🥫", "♻️"], "etiquetas": ["reducir", "reutilizar", "reciclar"] }
+    },
+    {
+      "texto": "**Separamos la basura**: las cáscaras y los restos de comida son basura **orgánica** y sirven para hacer abono. El papel, el cartón, las botellas y las latas limpias se pueden **reciclar**.",
+      "visual": { "tipo": "emojis", "items": ["🍌", "🥕", "📰", "📦", "🧴", "🥫"], "etiquetas": ["cáscara", "restos de verdura", "papel", "cartón", "botella", "lata"] }
+    }
+  ],
+  "ejemplo": {
+    "instruccion": "Mira un día en la casa de Arami. ¿Cómo cuida los recursos su familia?",
+    "pasos": [
+      { "texto": "En la mañana, Arami moja su cepillo y **cierra el grifo** mientras se cepilla los dientes. Después se enjuaga con un vaso de agua.", "visual": { "tipo": "emojis", "items": ["🚰", "🦷"], "etiquetas": ["cierra el grifo", "se cepilla"] } },
+      { "texto": "Su papá lava las verduras en una fuente. Con esa agua, Arami **riega** las plantas del patio. ¡El agua se usó dos veces!", "visual": { "tipo": "emojis", "items": ["🥕", "💧", "🌻"] } },
+      { "texto": "Van a la feria con su aguayo y una bolsa de tela. Así piden menos bolsas de plástico: ¡eso es **reducir**!", "visual": { "tipo": "emojis", "items": ["🧺", "🥔", "🌽"] } },
+      { "texto": "En la noche separan la basura: las cáscaras van al abono y las botellas limpias, a reciclar. Antes de dormir, **apagan las luces**.", "visual": { "tipo": "emojis", "items": ["🍌", "🧴", "💡"], "etiquetas": ["al abono", "a reciclar", "apagan las luces"] } }
+    ]
+  },
+  "guiada": {
+    "intro": "Ahora lo hacemos juntos. Piensa en lo que hizo la familia de Arami.",
+    "pasos": [
+      {
+        "id": "g1", "tipo": "clasificar",
+        "enunciado": "¿Esta acción ahorra o desperdicia?",
+        "apoyo": "Pregúntate: ¿se usa solo lo necesario, o se pierde agua o energía sin que nadie la aproveche?",
+        "categorias": [
+          { "id": "ahorra", "texto": "Ahorra", "emoji": "💚" },
+          { "id": "desperdicia", "texto": "Desperdicia", "emoji": "🚫" }
+        ],
+        "elementos": [
+          { "texto": "cerrar el grifo al cepillarte", "emoji": "🚰", "categoria": "ahorra" },
+          { "texto": "dejar la luz prendida en un cuarto vacío", "emoji": "💡", "categoria": "desperdicia" },
+          { "texto": "bañarte rápido", "emoji": "🚿", "categoria": "ahorra" },
+          { "texto": "jugar con el agua del grifo", "categoria": "desperdicia" },
+          { "texto": "apagar la tele si nadie la mira", "emoji": "📺", "categoria": "ahorra" },
+          { "texto": "lavar el patio con la manguera abierta mucho rato", "categoria": "desperdicia" }
+        ],
+        "pista": "Si el agua corre o la luz está prendida sin que nadie la use, se desperdicia.",
+        "explicacion": "Ahorran: cerrar el grifo, bañarte rápido y apagar la tele. Desperdician: la luz prendida en un cuarto vacío, jugar con el agua y la manguera abierta mucho rato.",
+        "error": "ahorro"
+      },
+      {
+        "id": "g2", "tipo": "relacionar",
+        "enunciado": "Une cada R con un ejemplo.",
+        "apoyo": "Reducir = usar menos. Reutilizar = usar otra vez. Reciclar = transformar en algo nuevo.",
+        "pares": [
+          [{ "texto": "Reducir", "emoji": "⬇️" }, "pedir menos bolsas en la tienda"],
+          [{ "texto": "Reutilizar", "emoji": "🔁" }, "usar un frasco vacío para guardar semillas"],
+          [{ "texto": "Reciclar", "emoji": "♻️" }, "llevar papel usado para hacer papel nuevo"]
+        ],
+        "pista": "¿En cuál se usa menos? ¿En cuál se usa lo mismo otra vez? ¿En cuál se hace algo nuevo?",
+        "explicacion": "Reducir: pedir menos bolsas. Reutilizar: usar el frasco otra vez. Reciclar: transformar el papel usado en papel nuevo.",
+        "error": "tres-r"
+      },
+      {
+        "id": "g3", "tipo": "completar",
+        "enunciado": "Completa sobre la basura.",
+        "apoyo": "Lo que viene de plantas o de animales y se pudre es orgánico.",
+        "texto": "Las cáscaras de papa son basura [orgánica]: sirven para hacer abono. Las botellas de plástico limpias se pueden [reciclar].",
+        "banco": ["de vidrio", "apagar"],
+        "pista": "Las cáscaras vienen de una planta. Las botellas se pueden transformar en cosas nuevas.",
+        "explicacion": "Las cáscaras son basura orgánica y sirven para hacer abono. Las botellas limpias se pueden reciclar.",
+        "error": "separa-residuos"
+      }
+    ]
+  },
+  "practica": [
+    {
+      "id": "p1", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Toca las cosas que usan electricidad.",
+      "texto": "Juan limpia la *lámpara*, el *televisor*, la mesa, el *refrigerador* y la silla.",
+      "pista": "Busca lo que se enchufa o se prende. Hay tres.",
+      "explicacion": "La lámpara, el televisor y el refrigerador usan electricidad. Por eso apagamos la lámpara y la tele si nadie las usa, y cerramos bien el refrigerador.",
+      "error": "ahorro"
+    },
+    {
+      "id": "p2", "tipo": "memoria", "nivel": 1,
+      "enunciado": "Encuentra las parejas: cada palabra y lo que quiere decir.",
+      "pares": [
+        ["reducir", "usar menos"],
+        ["reutilizar", "usar otra vez"],
+        ["reciclar", "transformar en algo nuevo"],
+        ["ahorrar agua", "cerrar el grifo"]
+      ],
+      "pista": "«Re-utilizar» tiene la palabra «utilizar», que es usar. Piensa cuál es usar otra vez.",
+      "explicacion": "Reducir es usar menos, reutilizar es usar otra vez, reciclar es transformar en algo nuevo y cerrar el grifo ahorra agua.",
+      "error": "tres-r"
+    },
+    {
+      "id": "p3", "tipo": "multiple", "nivel": 1,
+      "enunciado": "¿Qué ayuda a ahorrar energía? Elige todas las correctas.",
+      "opciones": [
+        { "texto": "Apagar la luz al salir del cuarto", "emoji": "💡", "correcta": true },
+        { "texto": "Leer junto a la ventana con la luz del sol", "emoji": "☀️", "correcta": true },
+        { "texto": "Desenchufar el cargador cuando no lo usas", "emoji": "🔌", "correcta": true },
+        { "texto": "Dejar la tele prendida toda la noche", "emoji": "📺", "pista": "Si nadie la mira, la tele gasta energía sin razón.", "error": "ahorro" },
+        { "texto": "Abrir el refrigerador muchas veces sin sacar nada", "pista": "Cada vez que lo abres, entra aire caliente y el refrigerador gasta más energía para volver a enfriar.", "error": "ahorro" }
+      ],
+      "pista": "Hay tres. Busca las acciones que apagan algo o que aprovechan el sol.",
+      "explicacion": "Apagar la luz, leer con la luz del sol y desenchufar el cargador ahorran energía. La tele prendida sin nadie y abrir mucho el refrigerador la desperdician.",
+      "error": "ahorro"
+    },
+    {
+      "id": "p4", "tipo": "escribir", "nivel": 1,
+      "enunciado": "Escucha y escribe la palabra.",
+      "escuchar": "reciclar",
+      "respuestas": ["reciclar"],
+      "pista": "Tiene tres sílabas: re-ci-clar. La sílaba «ci» se escribe con c.",
+      "explicacion": "La palabra es «reciclar»: transformar lo usado en algo nuevo.",
+      "error": "escritura-palabra"
+    },
+    {
+      "id": "p5", "tipo": "manipular", "nivel": 1,
+      "enunciado": "El 22 de marzo es el Día Mundial del Agua. Tócalo en el calendario.",
+      "manipulable": { "tipo": "calendario", "mes": 3, "anio": 2027, "objetivo": 22 },
+      "pista": "Busca el número 22 en la hoja de marzo.",
+      "explicacion": "El 22 de marzo es el Día Mundial del Agua: un día para recordar que el agua es valiosa y que debemos cuidarla.",
+      "error": "ubica-fecha"
+    },
+    {
+      "id": "p6", "tipo": "ordenar", "nivel": 1,
+      "enunciado": "Ordena cómo Kusi se cepilla los dientes sin desperdiciar agua.",
+      "elementos": [
+        { "texto": "Moja el cepillo con un poco de agua.", "emoji": "💧" },
+        { "texto": "Cierra el grifo.", "emoji": "🚰" },
+        { "texto": "Se cepilla los dientes.", "emoji": "🦷" },
+        { "texto": "Se enjuaga con un vaso de agua.", "emoji": "💦" }
+      ],
+      "vertical": true,
+      "pista": "Primero necesita mojar el cepillo. ¿Qué hace para que no se escape el agua mientras se cepilla?",
+      "explicacion": "Moja el cepillo, cierra el grifo, se cepilla y se enjuaga con un vaso de agua. ¡Así no se desperdicia agua!",
+      "error": "ahorro"
+    },
+    {
+      "id": "p7", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "¿Es basura orgánica o reciclable?",
+      "categorias": [
+        { "id": "org", "texto": "Orgánica (para abono)", "emoji": "🍂" },
+        { "id": "rec", "texto": "Reciclable", "emoji": "♻️" }
+      ],
+      "elementos": [
+        { "texto": "cáscara de naranja", "emoji": "🍊", "categoria": "org" },
+        { "texto": "periódico", "emoji": "📰", "categoria": "rec" },
+        { "texto": "restos de pan", "emoji": "🍞", "categoria": "org" },
+        { "texto": "botella de plástico", "emoji": "🧴", "categoria": "rec" },
+        { "texto": "hojas secas", "categoria": "org" },
+        { "texto": "lata vacía", "emoji": "🥫", "categoria": "rec" }
+      ],
+      "pista": "Pregúntate: ¿se pudre como la comida, o se puede llevar a una fábrica para hacer algo nuevo?",
+      "explicacion": "Orgánica: cáscara de naranja, restos de pan y hojas secas. Reciclable: periódico, botella de plástico y lata.",
+      "error": "separa-residuos"
+    },
+    {
+      "id": "p8", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa para ahorrar agua.",
+      "texto": "Para ahorrar agua, me baño [rápido] y dejo el grifo [cerrado] mientras enjabono los platos.",
+      "banco": ["lento", "abierto"],
+      "pista": "¿Cómo gastas menos agua en la ducha? ¿Cómo debe estar el grifo mientras no lo usas?",
+      "explicacion": "Me baño rápido y dejo el grifo cerrado mientras enjabono los platos. Así el agua no se va sin que nadie la use.",
+      "error": "ahorro"
+    },
+    {
+      "id": "p9", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "¿Cómo podemos reutilizar cada cosa? Une.",
+      "pares": [
+        [{ "texto": "botella de plástico", "emoji": "🧴" }, "maceta para una planta"],
+        [{ "texto": "caja de cartón", "emoji": "📦" }, "guardar juguetes"],
+        [{ "texto": "hoja escrita de un lado", "emoji": "📄" }, "dibujar en el otro lado"],
+        [{ "texto": "ropa que ya no me queda", "emoji": "👕" }, "regalarla a una prima más pequeña"]
+      ],
+      "pista": "¿Cuál puede tener tierra adentro? ¿Cuál es grande y guarda muchas cosas? ¿Cuál tiene un lado en blanco?",
+      "explicacion": "La botella sirve de maceta, la caja para guardar juguetes, la hoja para dibujar del otro lado y la ropa para otra niña. ¡Eso es reutilizar!",
+      "error": "tres-r"
+    },
+    {
+      "id": "p10", "tipo": "manipular", "nivel": 2,
+      "enunciado": "El curso de Luis juntó botellas para reciclar: 4 el lunes, 6 el martes y 3 el miércoles. Arma el pictograma.",
+      "manipulable": {
+        "tipo": "pictograma", "icono": "🧴", "escala": 1,
+        "categorias": [
+          { "etiqueta": "Lunes", "objetivo": 4 },
+          { "etiqueta": "Martes", "objetivo": 6 },
+          { "etiqueta": "Miércoles", "objetivo": 3 }
+        ]
+      },
+      "pista": "Pon un dibujo por cada botella. Revisa cada día: lunes, martes y miércoles.",
+      "explicacion": "Lunes: 4 botellas. Martes: 6. Miércoles: 3. ¡Entre todos juntaron 13 botellas para reciclar!",
+      "error": "pictograma"
+    },
+    {
+      "id": "p11", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha y escribe qué R hizo Wara.",
+      "escuchar": "Wara lavó un frasco vacío de mermelada y ahora lo usa para guardar sus botones. ¿Qué hizo: reducir, reutilizar o reciclar?",
+      "respuestas": ["reutilizar", "reutilizó", "reutiliza", "lo reutilizó", "lo reutiliza", "reutilizar el frasco", "reutilizó el frasco"],
+      "pista": "Wara no hizo algo nuevo con el frasco: lo usa otra vez tal como es.",
+      "explicacion": "Wara **reutilizó** el frasco: lo usa otra vez para otra cosa.",
+      "error": "tres-r"
+    },
+    {
+      "id": "p12", "tipo": "multiple", "nivel": 2,
+      "enunciado": "¿Cómo cuidamos a las plantas y a los animales? Elige todas las correctas.",
+      "opciones": [
+        { "texto": "Regar las plantas del patio", "emoji": "🌻", "correcta": true },
+        { "texto": "Dejar agua limpia para el perro", "emoji": "🐕", "correcta": true },
+        { "texto": "Mirar a los pájaros sin molestar su nido", "emoji": "🐦", "correcta": true },
+        { "texto": "Arrancar flores del parque para jugar", "pista": "Las flores son parte de una planta viva y dan alimento a las abejas.", "error": "cuida-seres-vivos" },
+        { "texto": "Llevar una paraba del bosque a la casa", "emoji": "🦜", "pista": "Las parabas son animales silvestres: viven libres en el bosque, no en una casa.", "error": "cuida-seres-vivos" }
+      ],
+      "pista": "Hay tres acciones que ayudan a los seres vivos.",
+      "explicacion": "Regar las plantas, dar agua limpia al perro y mirar sin molestar cuidan a los seres vivos. Arrancar flores o sacar a una paraba del bosque les hace daño.",
+      "error": "cuida-seres-vivos"
+    },
+    {
+      "id": "p13", "tipo": "numero", "nivel": 3,
+      "enunciado": "Un grifo gotea. Mateo pone un balde debajo y en un día junta 8 litros. Si nadie lo arregla, ¿cuántos litros se pierden en 3 días?",
+      "respuesta": 24,
+      "sufijo": "litros",
+      "erroresComunes": [
+        { "respuesta": 11, "pista": "Sumaste 8 + 3. Cada día se pierden 8 litros: suma 8 tres veces.", "error": "problema-ahorro" },
+        { "respuesta": 16, "pista": "Eso es lo que se pierde en 2 días. Falta un día más.", "error": "problema-ahorro" }
+      ],
+      "pista": "Cada día se pierden 8 litros. Suma los litros de los 3 días.",
+      "explicacion": "8 + 8 + 8 = 24 litros. Por eso, si un grifo gotea, hay que avisar a una persona adulta para arreglarlo.",
+      "error": "problema-ahorro"
+    },
+    {
+      "id": "p14", "tipo": "pasos", "nivel": 3,
+      "enunciado": "La familia de Nayra pagaba 60 Bs de luz cada mes. Ahora apagan las luces que no usan y pagan 45 Bs.",
+      "visual": { "tipo": "dinero", "items": ["b20", "b20", "m5"] },
+      "pasos": [
+        {
+          "tipo": "numero",
+          "enunciado": "¿Cuántos bolivianos ahorran cada mes?",
+          "respuesta": 15, "sufijo": "Bs",
+          "erroresComunes": [ { "respuesta": 105, "pista": "Sumaste. Para saber cuánto ahorran, resta: 60 − 45.", "error": "problema-ahorro" } ],
+          "pista": "Resta lo que pagan ahora de lo que pagaban antes.",
+          "explicacion": "60 − 45 = 15. Ahorran 15 Bs cada mes.",
+          "error": "problema-ahorro"
+        },
+        {
+          "tipo": "numero",
+          "enunciado": "Si ahorran lo mismo cada mes, ¿cuánto ahorran en 2 meses?",
+          "respuesta": 30, "sufijo": "Bs",
+          "erroresComunes": [ { "respuesta": 17, "pista": "Sumaste 15 + 2. Ahorran 15 Bs en cada mes: suma 15 + 15.", "error": "problema-ahorro" } ],
+          "pista": "Suma dos veces lo que ahorran en un mes.",
+          "explicacion": "15 + 15 = 30. Ahorran 30 Bs en dos meses.",
+          "error": "problema-ahorro"
+        },
+        {
+          "tipo": "multiple",
+          "enunciado": "¿Qué más pueden hacer para ahorrar energía?",
+          "opciones": [
+            { "texto": "Desenchufar los cargadores que no usan", "correcta": true },
+            { "texto": "Aprovechar la luz del sol durante el día", "correcta": true },
+            { "texto": "Dejar la radio prendida cuando salen", "pista": "Si nadie la escucha, la radio gasta energía sin razón.", "error": "ahorro" }
+          ],
+          "pista": "Busca las acciones que no gastan energía sin necesidad.",
+          "explicacion": "Desenchufar los cargadores y aprovechar la luz del sol ahorran energía.",
+          "error": "ahorro"
+        }
+      ],
+      "pista": "Resuelve un paso a la vez.",
+      "explicacion": "Ahorran 15 Bs al mes y 30 Bs en dos meses. Apagar y desenchufar lo que no usamos cuida la energía y también el dinero de la familia.",
+      "error": "problema-ahorro"
+    },
+    {
+      "id": "p15", "tipo": "clasificar", "nivel": 3,
+      "enunciado": "¿Es reducir, reutilizar o reciclar?",
+      "categorias": [
+        { "id": "reducir", "texto": "Reducir", "emoji": "⬇️" },
+        { "id": "reutilizar", "texto": "Reutilizar", "emoji": "🔁" },
+        { "id": "reciclar", "texto": "Reciclar", "emoji": "♻️" }
+      ],
+      "elementos": [
+        { "texto": "comprar solo lo que vas a usar", "categoria": "reducir" },
+        { "texto": "pedir menos bolsas de plástico", "categoria": "reducir" },
+        { "texto": "usar una lata vacía para guardar lápices", "categoria": "reutilizar" },
+        { "texto": "ponerte la chompa que le quedó chica a tu primo", "categoria": "reutilizar" },
+        { "texto": "llevar latas a una fábrica que hace latas nuevas", "categoria": "reciclar" },
+        { "texto": "transformar botellas usadas en botellas nuevas", "categoria": "reciclar" }
+      ],
+      "pista": "Reducir: usar menos. Reutilizar: usar otra vez la misma cosa. Reciclar: una fábrica la transforma en algo nuevo.",
+      "explicacion": "Reducir: comprar solo lo necesario y pedir menos bolsas. Reutilizar: la lata para guardar lápices y la chompa de tu primo. Reciclar: hacer latas y botellas nuevas con las usadas.",
+      "error": "tres-r"
+    },
+    {
+      "id": "p16", "tipo": "escribir-libre", "nivel": 3,
+      "enunciado": "Escribe un compromiso para cuidar el agua o la energía en tu casa.",
+      "guia": ["Yo me comprometo a...", "En mi casa vamos a..."],
+      "requisitos": [
+        { "tipo": "mayuscula-inicial" }, { "tipo": "punto-final" },
+        { "tipo": "min-palabras", "valor": 5 }
+      ],
+      "modelo": "Yo me comprometo a apagar la luz cuando salgo del cuarto.",
+      "pista": "Piensa en algo que puedes hacer todos los días: con el grifo, la ducha, la luz o la tele.",
+      "explicacion": "Por ejemplo: «Yo me comprometo a apagar la luz cuando salgo del cuarto». Empieza con mayúscula y termina con punto.",
+      "error": "produce-oracion"
+    }
+  ],
+  "comprobacion": [
+    {
+      "id": "c1", "tipo": "clasificar", "nivel": 1,
+      "enunciado": "¿Ahorra o desperdicia?",
+      "categorias": [
+        { "id": "ahorra", "texto": "Ahorra", "emoji": "💚" },
+        { "id": "desperdicia", "texto": "Desperdicia", "emoji": "🚫" }
+      ],
+      "elementos": [
+        { "texto": "avisar a un adulto si un grifo gotea", "categoria": "ahorra" },
+        { "texto": "dejar la ducha abierta mientras te enjabonas", "emoji": "🚿", "categoria": "desperdicia" },
+        { "texto": "apagar el foco al salir", "emoji": "💡", "categoria": "ahorra" },
+        { "texto": "dejar abierta la puerta del refrigerador", "categoria": "desperdicia" },
+        { "texto": "regar con el agua de lavar las verduras", "emoji": "🌻", "categoria": "ahorra" },
+        { "texto": "dejar el cargador enchufado sin el celular", "emoji": "🔌", "categoria": "desperdicia" }
+      ],
+      "pista": "Si se escapa agua, frío o electricidad sin que nadie la use, se desperdicia.",
+      "explicacion": "Ahorran: avisar del grifo que gotea, apagar el foco y regar con el agua de las verduras. Desperdician: la ducha abierta, la puerta del refrigerador abierta y el cargador enchufado sin usar.",
+      "error": "ahorro"
+    },
+    {
+      "id": "c2", "tipo": "escribir", "nivel": 1,
+      "enunciado": "Escucha y escribe la palabra.",
+      "escuchar": "reducir",
+      "respuestas": ["reducir"],
+      "pista": "Tiene tres sílabas: re-du-cir. La última sílaba se escribe con c.",
+      "explicacion": "La palabra es «reducir»: usar menos.",
+      "error": "escritura-palabra"
+    },
+    {
+      "id": "c3", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa con reduce, reutiliza o recicla.",
+      "texto": "Juan lleva su merienda en una lonchera y no en bolsitas: así [reduce] la basura. Ana arregla su mochila y la usa otro año: la [reutiliza]. Una fábrica usa papel viejo para hacer cuadernos nuevos: lo [recicla].",
+      "pista": "Reducir es usar menos. Reutilizar es usar otra vez la misma cosa. Reciclar es hacer algo nuevo con lo usado.",
+      "explicacion": "Juan reduce: usa menos bolsitas. Ana reutiliza: usa otra vez su mochila. La fábrica recicla: con papel viejo hace cuadernos nuevos.",
+      "error": "tres-r"
+    },
+    {
+      "id": "c4", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "¿Qué recurso cuidamos con cada acción? Une.",
+      "pares": [
+        ["cerrar el grifo", { "texto": "agua", "emoji": "💧" }],
+        ["apagar la luz", { "texto": "energía eléctrica", "emoji": "💡" }],
+        ["tapar la olla al cocinar", { "texto": "gas", "emoji": "🔥" }],
+        ["escribir en los dos lados de la hoja", { "texto": "papel", "emoji": "📄" }]
+      ],
+      "pista": "Piensa qué se gasta en cada caso: ¿sale del grifo, del foco, de la cocina o del cuaderno?",
+      "explicacion": "Cerrar el grifo cuida el agua, apagar la luz cuida la energía, tapar la olla ahorra gas y usar los dos lados de la hoja ahorra papel.",
+      "error": "ahorro"
+    },
+    {
+      "id": "c5", "tipo": "ordenar", "nivel": 2,
+      "enunciado": "Ordena cómo la familia de Inti hace abono con la basura orgánica.",
+      "elementos": [
+        { "texto": "Juntan cáscaras y restos de verduras.", "emoji": "🥕" },
+        { "texto": "Los ponen en un hoyo con tierra.", "emoji": "🕳️" },
+        { "texto": "Esperan algunos meses y lo mezclan de vez en cuando.", "emoji": "⏳" },
+        { "texto": "Se forma abono y lo ponen a sus plantas.", "emoji": "🌱" }
+      ],
+      "vertical": true,
+      "pista": "Primero hay que juntar la basura orgánica. ¿Qué pasa al final con el abono?",
+      "explicacion": "Juntan las cáscaras, las ponen en un hoyo con tierra, esperan y mezclan, y así se forma abono para las plantas.",
+      "error": "separa-residuos"
+    },
+    {
+      "id": "c6", "tipo": "opcion", "nivel": 2,
+      "enunciado": "Hace días que no llueve y el molle que plantó la familia de Sofía tiene las hojas secas. ¿Qué es lo mejor?",
+      "opciones": [
+        { "texto": "Regarlo con el agua que guardaron de lavar las verduras.", "correcta": true },
+        { "texto": "Dejar la manguera abierta junto al árbol toda la tarde.", "pista": "El árbol necesita agua, pero así se desperdicia mucha. ¿Hay una forma de regarlo sin gastar agua limpia?", "error": "ahorro" },
+        { "texto": "Cortarlo, porque ya no sirve.", "pista": "El molle tiene sed, pero sigue vivo. Si lo riegas, se puede recuperar.", "error": "cuida-seres-vivos" }
+      ],
+      "columnas": 1,
+      "pista": "Busca la opción que cuida al árbol y también cuida el agua.",
+      "explicacion": "Lo mejor es regarlo con el agua que guardaron de lavar las verduras. Así cuidan al árbol y no desperdician agua.",
+      "error": "cuida-seres-vivos"
+    },
+    {
+      "id": "c7", "tipo": "numero", "nivel": 3,
+      "enunciado": "Ana usaba 5 bolsas de plástico cada semana. Ahora lleva su aguayo y usa solo 1. ¿Cuántas bolsas menos usa en 2 semanas?",
+      "respuesta": 8,
+      "erroresComunes": [
+        { "respuesta": 4, "pista": "Eso es en una semana. Piensa en las 2 semanas.", "error": "problema-ahorro" },
+        { "respuesta": 10, "pista": "Esas son las bolsas que usaba antes en 2 semanas. Ahora usa 1 cada semana: réstalas.", "error": "problema-ahorro" },
+        { "respuesta": 2, "pista": "Esas son las bolsas que usa ahora en 2 semanas. La pregunta es cuántas bolsas menos usa.", "error": "problema-ahorro" }
+      ],
+      "pista": "Primero piensa cuántas bolsas menos usa en una semana.",
+      "explicacion": "En una semana usa 5 − 1 = 4 bolsas menos. En 2 semanas: 4 + 4 = 8 bolsas menos.",
+      "error": "problema-ahorro"
+    },
+    {
+      "id": "c8", "tipo": "clasificar", "nivel": 3,
+      "enunciado": "¿A qué grupo va cada basura?",
+      "categorias": [
+        { "id": "org", "texto": "Orgánica", "emoji": "🍂" },
+        { "id": "rec", "texto": "Reciclable", "emoji": "♻️" },
+        { "id": "no", "texto": "No se recicla", "emoji": "🗑️" }
+      ],
+      "elementos": [
+        { "texto": "cáscara de plátano", "emoji": "🍌", "categoria": "org" },
+        { "texto": "restos de arroz", "emoji": "🍚", "categoria": "org" },
+        { "texto": "botella de vidrio", "categoria": "rec" },
+        { "texto": "caja de cartón", "emoji": "📦", "categoria": "rec" },
+        { "texto": "pañal usado", "categoria": "no" },
+        { "texto": "curita usada", "categoria": "no" }
+      ],
+      "pista": "Lo que se pudre es orgánico. El vidrio y el cartón se reciclan. Lo sucio de uso personal va al basurero.",
+      "explicacion": "Orgánica: cáscara de plátano y restos de arroz. Reciclable: botella de vidrio y caja de cartón. No se recicla: el pañal y la curita usados.",
+      "error": "separa-residuos"
+    }
+  ],
+  "repaso": {
+    "texto": "Cuidar los recursos es ahorrar agua y energía, **reducir**, **reutilizar**, **reciclar** y separar la basura. ¡Y también cuidar a las plantas y a los animales!",
+    "visual": { "tipo": "emojis", "items": ["🚰", "💡", "♻️", "🍌", "🌻"], "etiquetas": ["ahorrar agua", "ahorrar energía", "3 R", "abono", "cuidar plantas"] }
+  },
+  "adulto": {
+    "objetivo": "Practicar el uso responsable de los recursos en la vida diaria: ahorrar agua, energía eléctrica y gas; aplicar las 3 R (reducir, reutilizar, reciclar); separar residuos orgánicos, reciclables y no reciclables; y cuidar a las plantas y a los animales.",
+    "sugerencias": [
+      "Sean «detectives del agua y la luz»: revisen juntos si algún grifo gotea y pongan un vaso debajo durante una hora para ver cuánta agua se pierde. Antes de dormir, recorran la casa apagando luces y desenchufando cargadores. Guarden el agua de lavar verduras para regar las plantas.",
+      "Separen la basura en casa: una bolsa o balde para lo orgánico (cáscaras, restos de comida), otra para lo reciclable limpio (botellas, papel, cartón, latas) y otra para lo demás. Si tienen patio o maceta, hagan abono en un hoyo con tierra. Las pilas usadas van aparte: averigüen si su municipio tiene un punto de recojo.",
+      "Lleven el aguayo o una bolsa de tela a la feria y cuenten cuántas bolsas de plástico no usaron. En casa, reutilicen juntos algo: una botella como maceta o una caja como juguetero (una persona adulta corta el plástico o la lata y revisa que no queden bordes filosos)."
+    ],
+    "errores": {
+      "ahorro": { "descripcion": "No reconoce qué acciones ahorran o desperdician agua, energía o gas.", "sugerencia": "Durante el día, pregunten en voz alta: «¿esto ahorra o desperdicia?» (el grifo abierto, la luz prendida, la olla sin tapa) y dejen que el niño o la niña proponga cómo arreglarlo." },
+      "tres-r": { "descripcion": "Confunde reducir, reutilizar y reciclar.", "sugerencia": "Usen tres frases con gestos: reducir = «usar menos» (juntar las manos), reutilizar = «usar otra vez» (girar un objeto), reciclar = «hacer algo nuevo» (dar vueltas a las manos). Busquen un ejemplo de cada una en casa." },
+      "separa-residuos": { "descripcion": "Le cuesta separar la basura orgánica de la reciclable.", "sugerencia": "Al terminar de comer, clasifiquen juntos los restos: lo que se pudre va a lo orgánico; lo limpio de papel, plástico, vidrio o lata va a lo reciclable." },
+      "cuida-seres-vivos": { "descripcion": "No reconoce acciones que dañan a las plantas o a los animales.", "sugerencia": "Rieguen juntos una planta y observen aves o insectos desde lejos. Conversen: los animales silvestres viven libres en su hábitat y no se llevan a casa." },
+      "escritura-palabra": { "descripcion": "Tiene dificultad para escribir palabras dictadas (reciclar, reducir).", "sugerencia": "Dicten la palabra separando sílabas con palmadas (re-ci-clar) y fíjense en las sílabas con c: ci, cir." },
+      "ubica-fecha": { "descripcion": "Le cuesta encontrar una fecha en el calendario.", "sugerencia": "Busquen juntos el mes en un calendario de la casa y cuenten los días hasta llegar al número pedido." },
+      "pictograma": { "descripcion": "Se equivoca al armar un pictograma con los datos.", "sugerencia": "Cuenten objetos reales (botellas, tapitas) y pongan un dibujo o una tapita por cada uno en una fila." },
+      "problema-ahorro": { "descripcion": "Le cuesta resolver problemas de ahorro con sumas o restas.", "sugerencia": "Representen el problema con objetos (tapitas como litros o monedas de juguete) y resuelvan paso a paso: primero un día o un mes, después los demás." },
+      "produce-oracion": { "descripcion": "Le cuesta escribir una oración completa con mayúscula y punto.", "sugerencia": "Digan juntos el compromiso en voz alta, escríbanlo en un papel y péguenlo en la cocina o junto al grifo para recordarlo." }
+    }
+  }
+}

@@ -1,0 +1,484 @@
+{
+  "id": "soc-1-2",
+  "titulo": "Mi escuela",
+  "objetivo": "Conozco a las personas de mi escuela, cumplo las normas de convivencia y resuelvo los problemas conversando.",
+  "explicacion": [
+    {
+      "texto": "En la **escuela** aprendemos, jugamos y hacemos amigos. Allí trabajan muchas personas, y cada una tiene una tarea importante.",
+      "emoji": "🏫",
+      "visual": { "tipo": "emojis", "items": ["📚", "⚽", "🤝"], "etiquetas": ["aprender", "jugar", "hacer amigos"] }
+    },
+    {
+      "texto": "La **directora** o el **director** organiza la escuela. Las maestras y los maestros enseñan. El **portero** o la **portera** abre la puerta y cuida el edificio. Las familias también ayudan.",
+      "visual": { "tipo": "emojis", "items": ["👩‍💼", "👨‍🏫", "🔑", "👪"], "etiquetas": ["directora", "maestro", "portero", "familias"] }
+    },
+    {
+      "texto": "Las **normas de convivencia** nos ayudan a estar bien juntos: saludar, levantar la mano y esperar el turno, escuchar a quien habla y cuidar los materiales y los espacios de la escuela.",
+      "visual": { "tipo": "emojis", "items": ["👋", "✋", "👂", "📚"], "etiquetas": ["saludar", "levantar la mano", "escuchar", "cuidar los libros"] }
+    },
+    {
+      "texto": "Si hay un problema, lo resolvemos **conversando**: nos calmamos, decimos lo que sentimos, escuchamos al otro y buscamos juntos una solución. Nunca con golpes ni insultos.",
+      "emoji": "🗣️"
+    }
+  ],
+  "ejemplo": {
+    "instruccion": "Mira cómo Luis y Ana resuelven un problema en el recreo.",
+    "pasos": [
+      {
+        "texto": "Luis y Ana quieren la misma pelota. Los dos la jalan y se enojan.",
+        "visual": { "tipo": "emojis", "items": ["👦", "😠", "⚽", "😠", "👧"] }
+      },
+      {
+        "texto": "Primero se **calman**: respiran hondo tres veces.",
+        "visual": { "tipo": "emojis", "items": ["😌", "😌"], "etiquetas": ["Luis", "Ana"] }
+      },
+      {
+        "texto": "Después **conversan**. Ana dice: «Yo la tenía primero». Luis dice: «Yo quería jugar también». Cada uno escucha al otro.",
+        "visual": { "tipo": "emojis", "items": ["🗣️", "👂"], "etiquetas": ["hablo", "escucho"] }
+      },
+      {
+        "texto": "Buscan una **solución**: juegan juntos a pasarse la pelota. ¡Problema resuelto sin golpes ni gritos!",
+        "visual": { "tipo": "emojis", "items": ["👦", "⚽", "👧", "🤝"] }
+      }
+    ]
+  },
+  "guiada": {
+    "intro": "Ahora lo hacemos juntos.",
+    "pasos": [
+      {
+        "id": "g1", "tipo": "relacionar",
+        "enunciado": "Une cada persona de la escuela con lo que hace.",
+        "apoyo": "Piensa en tu escuela: ¿quién te enseña? ¿Quién abre la puerta en la mañana?",
+        "pares": [
+          [ { "texto": "directora", "emoji": "👩‍💼" }, "organiza la escuela" ],
+          [ { "texto": "maestro", "emoji": "👨‍🏫" }, "enseña en el aula" ],
+          [ { "texto": "portera", "emoji": "🔑" }, "abre la puerta y cuida el edificio" ],
+          [ { "texto": "estudiantes", "emoji": "🎒" }, "aprenden y hacen sus tareas" ]
+        ],
+        "pista": "Cada persona tiene una tarea distinta. Empieza por la que conoces mejor.",
+        "explicacion": "La directora organiza la escuela, el maestro enseña, la portera abre la puerta y cuida el edificio, y las y los estudiantes aprenden.",
+        "error": "roles-escuela"
+      },
+      {
+        "id": "g2", "tipo": "clasificar",
+        "enunciado": "¿Nos ayuda a convivir en la escuela?",
+        "apoyo": "Pregúntate: ¿esto hace que todos estemos bien?",
+        "categorias": [
+          { "id": "si", "texto": "Nos ayuda a convivir", "emoji": "😊" },
+          { "id": "no", "texto": "No nos ayuda", "emoji": "😟" }
+        ],
+        "elementos": [
+          { "texto": "esperar mi turno", "categoria": "si" },
+          { "texto": "levantar la mano para hablar", "categoria": "si" },
+          { "texto": "saludar al llegar", "categoria": "si" },
+          { "texto": "empujar en la fila", "categoria": "no" },
+          { "texto": "rayar las mesas", "categoria": "no" },
+          { "texto": "interrumpir a quien habla", "categoria": "no" }
+        ],
+        "pista": "Las normas de convivencia cuidan a las personas y a las cosas de la escuela.",
+        "explicacion": "Esperar el turno, levantar la mano y saludar nos ayudan a convivir. Empujar, rayar las mesas e interrumpir molestan a los demás.",
+        "error": "normas-convivencia"
+      },
+      {
+        "id": "g3", "tipo": "ordenar",
+        "enunciado": "Ordena cómo Nayra y Juan resolvieron su problema.",
+        "apoyo": "Recuerda los pasos: primero hay un problema, después se calman, conversan y al final buscan una solución.",
+        "elementos": [
+          "Nayra y Juan quieren el mismo libro de la biblioteca.",
+          "Se enojan y alzan la voz.",
+          "Respiran hondo y se calman.",
+          "Cada uno dice lo que siente y escucha al otro.",
+          "Deciden leer el libro juntos."
+        ],
+        "vertical": true,
+        "pista": "¿Qué pasó primero: el problema o la solución?",
+        "explicacion": "Primero querían el mismo libro y se enojaron. Luego se calmaron, conversaron y decidieron leerlo juntos.",
+        "error": "conflictos"
+      }
+    ]
+  },
+  "practica": [
+    {
+      "id": "p1", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Toca las personas que trabajan en la escuela.",
+      "texto": "En la escuela de Kusi trabajan la *directora*, los *maestros*, la *secretaria* y el *portero*.",
+      "pista": "Hay cuatro personas que trabajan allí. Kusi es estudiante: va a aprender.",
+      "explicacion": "En la escuela trabajan la directora, los maestros, la secretaria y el portero.",
+      "error": "roles-escuela"
+    },
+    {
+      "id": "p2", "tipo": "opcion", "nivel": 1,
+      "enunciado": "Escucha la adivinanza. ¿Quién es?",
+      "escuchar": "Llego temprano y abro la puerta de la escuela. Cuido el edificio y ayudo a que esté limpio. ¿Quién soy?",
+      "opciones": [
+        { "texto": "la portera", "emoji": "🔑", "correcta": true },
+        { "texto": "el director", "emoji": "👨‍💼", "pista": "El director organiza la escuela. ¿Quién abre la puerta?", "error": "roles-escuela" },
+        { "texto": "una estudiante", "emoji": "👧", "pista": "Las estudiantes van a aprender. ¿Quién cuida el edificio?", "error": "roles-escuela" }
+      ],
+      "pista": "Piensa en quién abre la puerta de tu escuela en la mañana.",
+      "explicacion": "Es la portera (o el portero): abre la puerta y cuida el edificio de la escuela.",
+      "error": "escucha-comprension"
+    },
+    {
+      "id": "p3", "tipo": "clasificar", "nivel": 1,
+      "enunciado": "¿En qué lugar de la escuela lo hacemos?",
+      "categorias": [
+        { "id": "aula", "texto": "Aula", "emoji": "✏️" },
+        { "id": "patio", "texto": "Patio", "emoji": "⚽" },
+        { "id": "biblioteca", "texto": "Biblioteca", "emoji": "📖" }
+      ],
+      "elementos": [
+        { "texto": "copiar la tarea de la pizarra", "categoria": "aula" },
+        { "texto": "sentarme en mi pupitre", "categoria": "aula" },
+        { "texto": "jugar en el recreo", "categoria": "patio" },
+        { "texto": "hacer la formación", "categoria": "patio" },
+        { "texto": "pedir un libro prestado", "categoria": "biblioteca" },
+        { "texto": "devolver un libro que leí", "categoria": "biblioteca" }
+      ],
+      "pista": "El aula tiene pizarra y pupitres. El patio es grande y al aire libre. La biblioteca guarda libros.",
+      "explicacion": "En el aula copiamos de la pizarra y nos sentamos en el pupitre. En el patio jugamos y hacemos la formación. En la biblioteca pedimos y devolvemos libros.",
+      "error": "espacios-escuela"
+    },
+    {
+      "id": "p4", "tipo": "completar", "nivel": 1,
+      "enunciado": "Completa la norma del aula.",
+      "texto": "Para hablar en clase, [levanto] la mano y [espero] mi turno.",
+      "banco": ["escondo", "grito"],
+      "pista": "¿Qué haces con la mano cuando quieres hablar? ¿Y qué haces mientras otro habla?",
+      "explicacion": "Para hablar en clase, levanto la mano y espero mi turno. Así todos podemos escucharnos.",
+      "error": "normas-convivencia"
+    },
+    {
+      "id": "p5", "tipo": "memoria", "nivel": 1,
+      "enunciado": "Encuentra las parejas: el dibujo y la norma.",
+      "pares": [
+        [ { "emoji": "👋" }, "saludar" ],
+        [ { "emoji": "✋" }, "levantar la mano" ],
+        [ { "emoji": "🗑️" }, "botar la basura al basurero" ],
+        [ { "emoji": "👂" }, "escuchar a quien habla" ]
+      ],
+      "pista": "Mira bien cada dibujo: una mano que saluda, una mano levantada, un basurero y una oreja.",
+      "explicacion": "Saludar, levantar la mano, botar la basura al basurero y escuchar son normas que nos ayudan a convivir.",
+      "error": "normas-convivencia"
+    },
+    {
+      "id": "p6", "tipo": "multiple", "nivel": 2,
+      "enunciado": "¿Cómo cuidamos los materiales y los espacios de la escuela? Elige todas las correctas.",
+      "opciones": [
+        { "texto": "Guardar los libros en su lugar", "emoji": "📚", "correcta": true },
+        { "texto": "Tapar los marcadores después de usarlos", "emoji": "🖍️", "correcta": true },
+        { "texto": "Cerrar el grifo después de lavarme las manos", "emoji": "🚰", "correcta": true },
+        { "texto": "Rayar las mesas con el lápiz", "pista": "Si rayamos las mesas, se arruinan para todos.", "error": "cuidado-escuela" },
+        { "texto": "Arrancar hojas de los libros de la biblioteca", "pista": "Los libros de la biblioteca los leen muchos niños. ¿Qué pasa si les faltan hojas?", "error": "cuidado-escuela" }
+      ],
+      "pista": "Hay tres acciones que cuidan y dos que dañan.",
+      "explicacion": "Cuidamos la escuela cuando guardamos los libros, tapamos los marcadores y cerramos el grifo. Rayar mesas y arrancar hojas daña lo que es de todos.",
+      "error": "cuidado-escuela"
+    },
+    {
+      "id": "p7", "tipo": "opcion", "nivel": 2,
+      "enunciado": "En el recreo, Mateo se cae y se lastima la rodilla. ¿Qué haces?",
+      "opciones": [
+        { "texto": "Aviso a la maestra o a otra persona adulta de la escuela.", "correcta": true },
+        { "texto": "Me río y sigo jugando.", "pista": "¿Cómo se sentiría Mateo si se ríen de él?", "error": "convivencia" },
+        { "texto": "Lo dejo solo porque no es mi amigo.", "pista": "En la escuela nos cuidamos entre todos, aunque no seamos amigos.", "error": "convivencia" }
+      ],
+      "pista": "Mateo necesita ayuda. ¿Quién lo puede curar?",
+      "explicacion": "Lo mejor es avisar a la maestra o a una persona adulta de la escuela. En la escuela nos cuidamos entre todos.",
+      "error": "convivencia"
+    },
+    {
+      "id": "p8", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "Une cada problema con una buena solución.",
+      "pares": [
+        ["Los dos queremos el mismo columpio.", "Nos turnamos: primero uno y después el otro."],
+        ["Rompí sin querer el lápiz de Ana.", "Le pido disculpas y le presto uno mío."],
+        ["Una compañera se burla de mí.", "Le digo que me hace sentir mal y aviso a la maestra."],
+        ["Somos dos y hay una sola galleta.", "La partimos por la mitad y compartimos."]
+      ],
+      "pista": "Lee cada problema y piensa: ¿qué solución lo arregla sin pelear?",
+      "explicacion": "El columpio se usa por turnos, el lápiz roto se arregla con disculpas, la burla se habla y se avisa a la maestra, y la galleta se comparte.",
+      "error": "conflictos"
+    },
+    {
+      "id": "p9", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha la pregunta y escribe la respuesta.",
+      "escuchar": "¿Qué palabra decimos cuando alguien nos presta algo o nos ayuda?",
+      "respuestas": ["gracias", "muchas gracias", "¡gracias", "¡muchas gracias"],
+      "pista": "Es una palabra amable que muestra que agradecemos. Empieza con g.",
+      "explicacion": "Decimos «gracias». Es una palabra amable que nos ayuda a convivir.",
+      "error": "escucha-comprension"
+    },
+    {
+      "id": "p10", "tipo": "tocar", "nivel": 2,
+      "enunciado": "Toca las acciones que cuidan la escuela.",
+      "texto": "Después de clases, Wara *barre* el aula, Kusi *riega* las plantas y Juan raya la pared.",
+      "pista": "Busca dos acciones que dejan la escuela limpia y bonita.",
+      "explicacion": "Wara barre y Kusi riega: así cuidan la escuela. Rayar la pared la daña.",
+      "error": "cuidado-escuela"
+    },
+    {
+      "id": "p11", "tipo": "pasos", "nivel": 3,
+      "enunciado": "En la fila del kiosco, un niño más grande se mete delante de Inti.",
+      "visual": { "tipo": "emojis", "items": ["🧒", "🧒", "👦", "🧒"] },
+      "pasos": [
+        {
+          "tipo": "opcion",
+          "enunciado": "¿Cómo se siente Inti?",
+          "opciones": [
+            { "texto": "Molesto", "emoji": "😠", "correcta": true },
+            { "texto": "Orgulloso", "emoji": "😎", "pista": "¿Te sentirías orgulloso si alguien se mete delante de ti?", "error": "emociones" },
+            { "texto": "Feliz", "emoji": "😄", "pista": "Nadie se pone feliz cuando le quitan su lugar.", "error": "emociones" }
+          ],
+          "pista": "Imagina que te pasa a ti. ¿Cómo te sentirías?",
+          "explicacion": "Inti se siente molesto, porque no es justo que alguien se meta en la fila.",
+          "error": "emociones"
+        },
+        {
+          "tipo": "opcion",
+          "enunciado": "¿Qué puede hacer Inti?",
+          "opciones": [
+            { "texto": "Decirle con calma: «Por favor, haz la fila como todos».", "correcta": true },
+            { "texto": "Empujarlo para sacarlo de la fila.", "pista": "Empujar puede lastimar a alguien. Busca una forma sin violencia.", "error": "conflictos" },
+            { "texto": "Meterse él también delante de otros.", "pista": "Si Inti hace lo mismo, el problema crece.", "error": "conflictos" }
+          ],
+          "pista": "Busca la respuesta que usa palabras, no golpes.",
+          "explicacion": "Inti puede decirle con calma que haga la fila. Hablar con respeto es la mejor forma de empezar.",
+          "error": "conflictos"
+        },
+        {
+          "tipo": "opcion",
+          "enunciado": "El niño no le hace caso. ¿Qué hace Inti ahora?",
+          "opciones": [
+            { "texto": "Pide ayuda a una maestra o a un maestro.", "correcta": true },
+            { "texto": "Le pega.", "pista": "Pegar nunca resuelve un problema.", "error": "conflictos" },
+            { "texto": "Le grita insultos.", "pista": "Los insultos lastiman y empeoran el problema.", "error": "conflictos" }
+          ],
+          "pista": "Cuando no podemos resolver un problema solos, ¿a quién acudimos?",
+          "explicacion": "Si el problema sigue, Inti pide ayuda a una persona adulta de la escuela.",
+          "error": "conflictos"
+        }
+      ],
+      "pista": "Resuelve una pregunta a la vez.",
+      "explicacion": "Inti se siente molesto, habla con calma y, si no le hacen caso, pide ayuda a una maestra o a un maestro.",
+      "error": "conflictos"
+    },
+    {
+      "id": "p12", "tipo": "pasos", "nivel": 3,
+      "enunciado": "El curso de Sofía eligió encargados para cuidar el aula.",
+      "visual": {
+        "tipo": "tabla",
+        "columnas": ["Tarea", "Responsable"],
+        "filas": [
+          ["borrar la pizarra", "Luis"],
+          ["repartir los cuadernos", "Wara"],
+          ["regar las plantas", "Kusi"],
+          ["ordenar los libros del aula", "Sofía"]
+        ]
+      },
+      "pasos": [
+        {
+          "tipo": "escribir",
+          "enunciado": "¿Quién reparte los cuadernos?",
+          "respuestas": ["Wara"],
+          "pista": "Busca la fila que dice «repartir los cuadernos».",
+          "explicacion": "Wara es la encargada de repartir los cuadernos.",
+          "error": "lee-tabla"
+        },
+        {
+          "tipo": "opcion",
+          "enunciado": "Hoy Kusi faltó. ¿Qué es lo mejor?",
+          "opciones": [
+            { "texto": "Otra compañera o compañero riega las plantas por hoy.", "correcta": true },
+            { "texto": "Las plantas se quedan sin agua hasta que vuelva Kusi.", "pista": "¿Qué les pasa a las plantas si no reciben agua?", "error": "cuidado-escuela" },
+            { "texto": "Nadie hace ninguna tarea hoy.", "pista": "Las otras tareas también son importantes.", "error": "cuidado-escuela" }
+          ],
+          "pista": "Piensa en cómo cuidar las plantas aunque falte Kusi.",
+          "explicacion": "Lo mejor es que alguien más riegue las plantas por hoy. Así cuidamos el aula entre todos.",
+          "error": "cuidado-escuela"
+        }
+      ],
+      "pista": "Lee la tabla con calma: a la izquierda está la tarea y a la derecha, quién la hace.",
+      "explicacion": "Wara reparte los cuadernos y, si alguien falta, otra persona hace su tarea por ese día.",
+      "error": "lee-tabla"
+    },
+    {
+      "id": "p13", "tipo": "clasificar", "nivel": 3,
+      "enunciado": "¿Esta acción cuida la escuela o la daña?",
+      "categorias": [
+        { "id": "cuida", "texto": "Cuida la escuela", "emoji": "💚" },
+        { "id": "dana", "texto": "Daña la escuela", "emoji": "🚫" }
+      ],
+      "elementos": [
+        { "texto": "apagar la luz al salir del aula", "categoria": "cuida" },
+        { "texto": "forrar mis cuadernos y libros", "categoria": "cuida" },
+        { "texto": "avisar si un baño está roto", "categoria": "cuida" },
+        { "texto": "dejar el grifo abierto", "categoria": "dana" },
+        { "texto": "pegar chicle debajo del pupitre", "categoria": "dana" },
+        { "texto": "jugar a la pelota dentro del aula", "categoria": "dana" }
+      ],
+      "pista": "Piensa: ¿esta acción ahorra, protege o arregla algo? ¿O lo gasta, lo ensucia o lo puede romper?",
+      "explicacion": "Apagar la luz, forrar los cuadernos y avisar de un baño roto cuidan la escuela. Dejar el grifo abierto, pegar chicle y jugar a la pelota en el aula la dañan.",
+      "error": "cuidado-escuela"
+    },
+    {
+      "id": "p14", "tipo": "escribir-libre", "nivel": 3,
+      "enunciado": "Escribe una norma de convivencia para tu aula.",
+      "guia": ["Escuchamos cuando...", "Cuidamos...", "Pedimos las cosas..."],
+      "requisitos": [
+        { "tipo": "mayuscula-inicial" },
+        { "tipo": "punto-final" },
+        { "tipo": "min-palabras", "valor": 4 }
+      ],
+      "modelo": "Escuchamos con atención a quien está hablando.",
+      "pista": "Piensa en algo que ayuda a que todos estén bien en el aula.",
+      "explicacion": "Por ejemplo: «Escuchamos con atención a quien está hablando». Una norma dice cómo convivir bien.",
+      "error": "produce-texto"
+    }
+  ],
+  "comprobacion": [
+    {
+      "id": "c1", "tipo": "opcion", "nivel": 1,
+      "enunciado": "¿Quién enseña en el aula?",
+      "opciones": [
+        { "texto": "la maestra", "emoji": "👩‍🏫", "correcta": true },
+        { "texto": "la secretaria", "emoji": "📋", "pista": "La secretaria atiende en la oficina de la escuela. ¿Quién está contigo en el aula?", "error": "roles-escuela" },
+        { "texto": "el portero", "emoji": "🔑", "pista": "El portero abre la puerta y cuida el edificio.", "error": "roles-escuela" }
+      ],
+      "pista": "Piensa en quién te explica las lecciones cada día.",
+      "explicacion": "La maestra (o el maestro) enseña en el aula.",
+      "error": "roles-escuela"
+    },
+    {
+      "id": "c2", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Toca las palabras amables que usa Wara.",
+      "texto": "Wara dice: «*Hola*, ¿me prestas tu borrador, *por favor*? *Gracias*».",
+      "pista": "Busca un saludo, una forma de pedir y una forma de agradecer.",
+      "explicacion": "«Hola», «por favor» y «gracias» son palabras amables que nos ayudan a convivir.",
+      "error": "normas-convivencia"
+    },
+    {
+      "id": "c3", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "¿Así se resuelve un problema en paz o con violencia?",
+      "categorias": [
+        { "id": "dialogo", "texto": "En paz", "emoji": "🕊️" },
+        { "id": "violencia", "texto": "Con violencia", "emoji": "🚫" }
+      ],
+      "elementos": [
+        { "texto": "conversar con calma", "categoria": "dialogo" },
+        { "texto": "pedir disculpas", "categoria": "dialogo" },
+        { "texto": "pedir ayuda a la maestra", "categoria": "dialogo" },
+        { "texto": "empujar", "categoria": "violencia" },
+        { "texto": "insultar", "categoria": "violencia" },
+        { "texto": "romper sus cosas", "categoria": "violencia" }
+      ],
+      "pista": "En paz usamos palabras con respeto o pedimos ayuda. La violencia lastima a las personas o a sus cosas.",
+      "explicacion": "Conversar con calma, pedir disculpas y pedir ayuda a la maestra resuelven el problema en paz. Empujar, insultar y romper cosas es violencia.",
+      "error": "conflictos"
+    },
+    {
+      "id": "c4", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa sobre los libros de la biblioteca.",
+      "texto": "Los libros de la biblioteca son de [todos]. Por eso los [cuidamos] y los devolvemos limpios.",
+      "banco": ["sillas", "rompemos"],
+      "pista": "¿Quiénes leen los libros de la biblioteca? ¿Qué hacemos con lo que usan muchas personas?",
+      "explicacion": "Los libros de la biblioteca son de todos. Por eso los cuidamos y los devolvemos limpios, para que otros niños también los puedan leer.",
+      "error": "cuidado-escuela"
+    },
+    {
+      "id": "c5", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha la adivinanza y escribe quién es.",
+      "escuchar": "Organizo toda la escuela. Me reúno con las maestras, los maestros y las familias para que todo funcione bien. ¿Quién soy?",
+      "respuestas": ["directora", "director", "la directora", "el director", "la directora o el director", "el director o la directora", "directora de la escuela", "director de la escuela", "la directora de la escuela", "el director de la escuela"],
+      "pista": "Es la persona que dirige la escuela.",
+      "explicacion": "Es la directora o el director: organiza la escuela y se reúne con maestros y familias.",
+      "error": "roles-escuela"
+    },
+    {
+      "id": "c6", "tipo": "multiple", "nivel": 2,
+      "enunciado": "Elige las normas que nos ayudan a convivir en el aula.",
+      "opciones": [
+        { "texto": "Escuchar cuando otra persona habla", "correcta": true },
+        { "texto": "Compartir los materiales", "correcta": true },
+        { "texto": "Burlarse de quien se equivoca", "pista": "Todos nos equivocamos al aprender. ¿Cómo se siente alguien si se burlan?", "error": "normas-convivencia" },
+        { "texto": "Tirar papeles al piso", "pista": "Si tiramos papeles, el aula queda sucia para todos.", "error": "cuidado-escuela" }
+      ],
+      "pista": "Hay dos normas que ayudan y dos acciones que molestan.",
+      "explicacion": "Escuchar a quien habla y compartir los materiales nos ayudan a convivir. Burlarse y tirar papeles, no.",
+      "error": "normas-convivencia"
+    },
+    {
+      "id": "c7", "tipo": "pasos", "nivel": 3,
+      "enunciado": "En el trabajo en grupo, Juan quiere pintar el dibujo de azul y Sofía, de verde. Empiezan a discutir.",
+      "visual": { "tipo": "emojis", "items": ["👦", "🎨", "👧"] },
+      "pasos": [
+        {
+          "tipo": "opcion",
+          "enunciado": "¿Qué deben hacer primero?",
+          "opciones": [
+            { "texto": "Calmarse y respirar hondo.", "correcta": true },
+            { "texto": "Gritar más fuerte.", "pista": "Si gritan, se enojan más y no se escuchan.", "error": "conflictos" },
+            { "texto": "Romper el dibujo.", "pista": "Si rompen el dibujo, pierden el trabajo del grupo.", "error": "conflictos" }
+          ],
+          "pista": "Antes de conversar, hay que estar tranquilos.",
+          "explicacion": "Primero se calman. Con calma es más fácil escucharse.",
+          "error": "conflictos"
+        },
+        {
+          "tipo": "opcion",
+          "enunciado": "¿Cuál es una buena solución para los dos?",
+          "opciones": [
+            { "texto": "Pintar una parte de azul y otra de verde.", "correcta": true },
+            { "texto": "Que Juan decida solo porque es más alto.", "pista": "Ser más alto no da más derechos. ¿Qué pasa con la idea de Sofía?", "error": "conflictos" },
+            { "texto": "Dejar de hablarse para siempre.", "pista": "Así el problema no se resuelve y pierden un amigo.", "error": "conflictos" }
+          ],
+          "pista": "Busca una solución en la que los dos queden contentos.",
+          "explicacion": "Pueden pintar una parte de azul y otra de verde. Así se respetan las ideas de los dos.",
+          "error": "conflictos"
+        }
+      ],
+      "pista": "Primero se calman; después buscan una solución justa.",
+      "explicacion": "Juan y Sofía se calman y deciden usar los dos colores. ¡Resolvieron el problema conversando!",
+      "error": "conflictos"
+    },
+    {
+      "id": "c8", "tipo": "ordenar", "nivel": 3,
+      "enunciado": "Ordena lo que pasó entre Kusi y Arami.",
+      "elementos": [
+        "Kusi pisó sin querer el dibujo de Arami.",
+        "Arami se puso triste.",
+        "Kusi vio que Arami estaba triste y le pidió disculpas.",
+        "Arami aceptó las disculpas.",
+        "Juntos limpiaron el dibujo."
+      ],
+      "vertical": true,
+      "pista": "Primero pasa el problema. ¿Qué hace Kusi después? ¿Y Arami?",
+      "explicacion": "Kusi pisó el dibujo y Arami se puso triste. Kusi lo vio y le pidió disculpas, Arami las aceptó y juntos limpiaron el dibujo.",
+      "error": "conflictos"
+    }
+  ],
+  "repaso": {
+    "texto": "En la escuela cada persona tiene una tarea. Cumplimos las normas: saludamos, esperamos el turno, escuchamos y cuidamos los materiales. Si hay un problema: nos calmamos, conversamos y buscamos una solución.",
+    "visual": { "tipo": "emojis", "items": ["😌", "🗣️", "👂", "🤝"], "etiquetas": ["me calmo", "digo lo que siento", "escucho", "buscamos una solución"] }
+  },
+  "adulto": {
+    "objetivo": "Reconocer a las personas que forman la comunidad escolar y sus funciones, practicar normas de convivencia, resolver conflictos de forma pacífica (calmarse, dialogar, escuchar, buscar soluciones, pedir ayuda) y cuidar los materiales y espacios de la escuela.",
+    "sugerencias": [
+      "Pidan que les cuente quiénes trabajan en su escuela y qué hace cada persona. Al llegar o al salir, saluden juntos por su nombre a la portera o al portero, a la maestra o al maestro y a la directora o al director.",
+      "Practiquen en casa los pasos para resolver un problema con un juego de roles: dos personas quieren el mismo juguete o el mismo lugar en el sofá. Se calman, dicen lo que sienten, escuchan y buscan una solución.",
+      "Cada fin de semana revisen juntos la mochila: forren y arreglen los cuadernos, tajen los lápices y tapen los marcadores. Conversen sobre cuidar también los libros, los pupitres y los baños de la escuela."
+    ],
+    "errores": {
+      "roles-escuela": { "descripcion": "Confunde las tareas de las personas que trabajan en la escuela.", "sugerencia": "Jueguen a «¿Quién soy?»: describan lo que hace una persona de la escuela y pidan que adivine quién es." },
+      "espacios-escuela": { "descripcion": "Confunde para qué se usa cada espacio de la escuela (aula, patio, biblioteca).", "sugerencia": "Al pasar por la escuela, pregunten qué se hace en cada lugar y dibujen juntos un plano sencillo." },
+      "normas-convivencia": { "descripcion": "No identifica las normas que ayudan a convivir (saludar, esperar turno, escuchar, pedir por favor).", "sugerencia": "Acuerden dos o tres normas para la casa, escríbanlas en una hoja y revisen cada noche si se cumplieron." },
+      "convivencia": { "descripcion": "Le cuesta reconocer cómo ayudar o cuidar a un compañero en una situación difícil.", "sugerencia": "Cuando lean un cuento o vean una situación en la calle, pregunten: «¿Cómo se siente? ¿Qué podríamos hacer para ayudar?»." },
+      "conflictos": { "descripcion": "Elige responder con golpes, gritos o evitando el problema en lugar de dialogar.", "sugerencia": "Enseñen los pasos: me calmo, digo lo que siento, escucho, buscamos una solución y, si no se puede, pido ayuda a un adulto. Practíquenlos cuando surja un desacuerdo en casa." },
+      "emociones": { "descripcion": "Le cuesta reconocer cómo se sienten las personas en una situación.", "sugerencia": "Nombren emociones en situaciones cotidianas («estás molesto porque...») y usen caras dibujadas para que las señale." },
+      "cuidado-escuela": { "descripcion": "No distingue acciones que cuidan los materiales y espacios de las que los dañan.", "sugerencia": "En casa, cuiden juntos los útiles: guardar, tapar, forrar y cerrar el grifo. Conversen sobre por qué lo que es de todos también se cuida." },
+      "lee-tabla": { "descripcion": "Le cuesta encontrar información en una tabla de encargados.", "sugerencia": "Hagan una tabla de encargados para la casa (quién riega, quién pone la mesa) y consúltenla cada día." },
+      "escucha-comprension": { "descripcion": "Le cuesta responder preguntas que escucha.", "sugerencia": "Hagan adivinanzas orales cortas sobre personas y lugares de la escuela y pidan que responda con una palabra." },
+      "produce-texto": { "descripcion": "Le cuesta escribir una norma con mayúscula inicial y punto final.", "sugerencia": "Pidan que diga la norma en voz alta y luego la escriba; revisen juntos la mayúscula inicial y el punto final." }
+    }
+  }
+}

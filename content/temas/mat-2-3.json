@@ -1,0 +1,378 @@
+{
+  "id": "mat-2-3",
+  "titulo": "Propiedades de la suma",
+  "objetivo": "Uso los trucos de la suma: cambio el orden, agrupo los números y sé que sumar 0 no cambia nada.",
+  "explicacion": [
+    {
+      "texto": "**Propiedad conmutativa**: si cambias el orden de los sumandos, el total no cambia. 3 + 5 = 8 y 5 + 3 = 8.",
+      "emoji": "🔄",
+      "visual": { "tipo": "balanza", "izquierda": ["🥔", "🥔", "🥔", "🌽", "🌽", "🌽", "🌽", "🌽"], "derecha": ["🌽", "🌽", "🌽", "🌽", "🌽", "🥔", "🥔", "🥔"], "inclinada": "no" }
+    },
+    {
+      "texto": "Un truco: empieza por el número mayor. Para sumar 2 + 9, piensa 9 + 2. Desde el 9 cuentas 2 más: 10, 11. ¡Llegas más rápido!",
+      "visual": { "tipo": "recta", "min": 0, "max": 12, "paso": 1, "marcar": [9, 11], "saltos": [[9, 10], [10, 11]] }
+    },
+    {
+      "texto": "**Propiedad asociativa**: con tres sumandos, puedes agrupar como quieras y el total no cambia. Los paréntesis ( ) dicen qué suma haces primero.",
+      "visual": { "tipo": "tabla", "columnas": ["Agrupo así", "Primero", "Total"], "filas": [["(4 + 6) + 3", "4 + 6 = 10", "13"], ["4 + (6 + 3)", "6 + 3 = 9", "13"]] }
+    },
+    {
+      "texto": "**Elemento neutro**: es el 0. Si sumas 0, el número no cambia: 7 + 0 = 7 y 0 + 7 = 7. Sumar 0 es no agregar nada.",
+      "visual": { "tipo": "emoji", "valor": "🍊", "cantidad": 7, "etiqueta": "7 + 0 = 7" }
+    }
+  ],
+  "ejemplo": {
+    "instruccion": "Mira cómo usamos las propiedades para sumar rápido 7 + 5 + 3.",
+    "pasos": [
+      { "texto": "Buscamos dos números que juntos den 10: el 7 y el 3.", "visual": { "tipo": "operacion", "numeros": [7, 5, 3], "op": "+" } },
+      { "texto": "Cambiamos el orden (propiedad conmutativa): 7 + 5 + 3 = 7 + 3 + 5.", "visual": { "tipo": "operacion", "numeros": [7, 3, 5], "op": "+" } },
+      { "texto": "Agrupamos (propiedad asociativa): (7 + 3) + 5 = 10 + 5.", "visual": { "tipo": "bloques", "decenas": 1, "unidades": 5 } },
+      { "texto": "10 + 5 = 15. ¡El mismo total, pero lo encontramos más rápido!", "visual": { "tipo": "tabla", "columnas": ["Suma", "Total"], "filas": [["7 + 5 + 3", "15"], ["(7 + 3) + 5", "15"]] } }
+    ]
+  },
+  "guiada": {
+    "intro": "Vamos a usar las propiedades juntos.",
+    "pasos": [
+      {
+        "id": "g1", "tipo": "completar",
+        "enunciado": "Completa sin sumar.",
+        "apoyo": "Mira los sumandos: son los mismos, solo cambian de lugar.",
+        "texto": "8 + 5 = 5 + [8]",
+        "banco": ["13", "3"],
+        "pista": "Del otro lado ya está el 5. ¿Qué sumando falta?",
+        "explicacion": "8 + 5 = 5 + 8. Cambiamos el orden y el total sigue siendo 13.",
+        "error": "conmutativa"
+      },
+      {
+        "id": "g2", "tipo": "numero",
+        "enunciado": "Suma 6 + 9 + 4. Junta primero los números que dan 10.",
+        "apoyo": "6 + 4 = 10. Después sumas el 9 que queda.",
+        "visual": { "tipo": "operacion", "numeros": [6, 9, 4], "op": "+" },
+        "campos": [
+          { "etiqueta": "6 + 4", "respuesta": 10 },
+          { "etiqueta": "10 + 9", "respuesta": 19 }
+        ],
+        "pista": "Primero junta los dos números que dan 10. Después suma el número que falta.",
+        "explicacion": "6 + 4 = 10 y 10 + 9 = 19. Entonces 6 + 9 + 4 = 19.",
+        "error": "busca-diez"
+      },
+      {
+        "id": "g3", "tipo": "relacionar",
+        "enunciado": "Une cada propiedad con su ejemplo.",
+        "apoyo": "Conmutativa: cambia el orden. Asociativa: cambian los paréntesis. Elemento neutro: se suma 0.",
+        "pares": [
+          ["Conmutativa", "4 + 9 = 9 + 4"],
+          ["Asociativa", "(2 + 8) + 5 = 2 + (8 + 5)"],
+          ["Elemento neutro", "12 + 0 = 12"]
+        ],
+        "pista": "En cada ejemplo, fíjate: ¿cambia el orden, cambian los paréntesis o aparece un 0?",
+        "explicacion": "Conmutativa: 4 + 9 = 9 + 4. Asociativa: (2 + 8) + 5 = 2 + (8 + 5). Elemento neutro: 12 + 0 = 12.",
+        "error": "nombra-propiedad"
+      }
+    ]
+  },
+  "practica": [
+    {
+      "id": "p1", "tipo": "generador", "nivel": 1, "generador": "suma-propiedad",
+      "params": { "propiedad": "neutro" }
+    },
+    {
+      "id": "p2", "tipo": "completar", "nivel": 1,
+      "enunciado": "Completa las sumas.",
+      "texto": "15 + [0] = 15. También: 0 + 23 = [23].",
+      "banco": ["1", "230"],
+      "pista": "¿Qué número puedes sumar sin que el número cambie? ¿Y qué pasa cuando sumas ese número?",
+      "explicacion": "15 + 0 = 15 y 0 + 23 = 23. Sumar 0 no cambia el número.",
+      "error": "neutro"
+    },
+    {
+      "id": "p3", "tipo": "memoria", "nivel": 1,
+      "enunciado": "Encuentra las parejas que dan el mismo total.",
+      "pares": [ ["3 + 8", "8 + 3"], ["5 + 0", "5"], ["6 + 7", "7 + 6"], ["0 + 9", "9"], ["4 + 10", "10 + 4"] ],
+      "pista": "Cambiar el orden no cambia el total. Sumar 0 tampoco.",
+      "explicacion": "3 + 8 = 8 + 3, 6 + 7 = 7 + 6, 4 + 10 = 10 + 4, 5 + 0 = 5 y 0 + 9 = 9.",
+      "error": "conmutativa"
+    },
+    {
+      "id": "p4", "tipo": "escribir", "nivel": 1,
+      "enunciado": "Escucha la pregunta y escribe la respuesta, con número o con palabra.",
+      "escuchar": "¿Qué número puedes sumar a cualquier número sin que ese número cambie?",
+      "respuestas": ["0", "cero", "el cero", "el 0", "es el cero", "es el 0", "es cero"],
+      "pista": "Prueba: 8 + 1 = 9, y el 8 ya cambió. ¿Qué número podrías sumarle al 8 para que siga siendo 8?",
+      "explicacion": "Es el **0** (cero): 8 + 0 = 8. Por eso el 0 se llama elemento neutro de la suma.",
+      "error": "neutro"
+    },
+    {
+      "id": "p5", "tipo": "manipular", "nivel": 1,
+      "enunciado": "Para sumar 2 + 8, empieza en el 8 y salta 2. Marca dónde llegas.",
+      "manipulable": { "tipo": "recta", "min": 0, "max": 15, "paso": 1, "objetivo": 10 },
+      "pista": "2 + 8 da lo mismo que 8 + 2. Párate en el 8 y da 2 saltos.",
+      "explicacion": "8 + 2 = 10, y también 2 + 8 = 10. Empezar por el número mayor es más rápido.",
+      "error": "conmutativa"
+    },
+    {
+      "id": "p6", "tipo": "generador", "nivel": 2, "generador": "suma-propiedad",
+      "params": { "propiedad": "conmutativa" }
+    },
+    {
+      "id": "p7", "tipo": "tocar", "nivel": 2,
+      "enunciado": "Toca los dos números que juntos dan 10.",
+      "texto": "*2* + 7 + *8*",
+      "pista": "Prueba juntar los números de dos en dos.",
+      "explicacion": "2 + 8 = 10. Después: 10 + 7 = 17.",
+      "error": "busca-diez"
+    },
+    {
+      "id": "p8", "tipo": "numero", "nivel": 2,
+      "enunciado": "En el corral hay 3 llamas blancas, 8 de color café y 7 negras. ¿Cuántas llamas hay en total?",
+      "visual": { "tipo": "emoji", "valor": "🦙" },
+      "respuesta": 18,
+      "erroresComunes": [
+        { "respuesta": 11, "pista": "Te faltaron las llamas negras. Suma los tres grupos.", "error": "busca-diez" },
+        { "respuesta": 15, "pista": "Te faltaron las llamas blancas. Suma los tres grupos.", "error": "busca-diez" },
+        { "respuesta": 10, "pista": "3 + 7 = 10 es solo una parte. Suma también las llamas de color café.", "error": "busca-diez" }
+      ],
+      "pista": "Junta primero dos grupos que den 10 y después suma el otro.",
+      "explicacion": "3 + 7 = 10 y 10 + 8 = 18. En el corral hay 18 llamas.",
+      "error": "busca-diez"
+    },
+    {
+      "id": "p9", "tipo": "completar", "nivel": 2,
+      "enunciado": "Agrupa para sumar rápido y completa.",
+      "texto": "(3 + 7) + 6 = [10] + 6 = [16]",
+      "banco": ["13", "9", "37"],
+      "pista": "Suma primero lo que está entre paréntesis.",
+      "explicacion": "3 + 7 = 10 y 10 + 6 = 16.",
+      "error": "asociativa"
+    },
+    {
+      "id": "p10", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "¿Da lo mismo que 5 + 8?",
+      "categorias": [
+        { "id": "si", "texto": "Da lo mismo que 5 + 8" },
+        { "id": "no", "texto": "No da lo mismo" }
+      ],
+      "elementos": [
+        { "texto": "8 + 5", "categoria": "si" },
+        { "texto": "5 + 8 + 0", "categoria": "si" },
+        { "texto": "0 + 13", "categoria": "si" },
+        { "texto": "8 + 0 + 5", "categoria": "si" },
+        { "texto": "5 + 9", "categoria": "no" },
+        { "texto": "3 + 8", "categoria": "no" },
+        { "texto": "50 + 8", "categoria": "no" }
+      ],
+      "pista": "Cambiar el orden o sumar 0 no cambia el total. Cambiar un número, sí.",
+      "explicacion": "8 + 5, 5 + 8 + 0, 0 + 13 y 8 + 0 + 5 dan 13, igual que 5 + 8. En 5 + 9, 3 + 8 y 50 + 8 cambió un número.",
+      "error": "conmutativa"
+    },
+    {
+      "id": "p11", "tipo": "relacionar", "nivel": 3,
+      "enunciado": "Une cada suma con su total. Truco: suma primero los dos números que forman una decena exacta.",
+      "pares": [
+        ["17 + 9 + 3", "29"],
+        ["25 + 8 + 5", "38"],
+        ["44 + 7 + 6", "57"],
+        ["31 + 4 + 9", "44"]
+      ],
+      "pista": "En cada suma, busca el número que le falta al primero para llegar a la decena siguiente. Por ejemplo, al 17 le faltan 3 para llegar a 20.",
+      "explicacion": "17 + 3 = 20 y 20 + 9 = 29. 25 + 5 = 30 y 30 + 8 = 38. 44 + 6 = 50 y 50 + 7 = 57. 31 + 9 = 40 y 40 + 4 = 44.",
+      "error": "busca-diez"
+    },
+    {
+      "id": "p12", "tipo": "numero", "nivel": 2,
+      "enunciado": "Escucha y responde sin volver a sumar.",
+      "escuchar": "Cuarenta y siete más treinta y dos es igual a setenta y nueve. ¿Cuánto es treinta y dos más cuarenta y siete?",
+      "respuesta": 79,
+      "pista": "Los sumandos son los mismos, solo cambió el orden. Puedes escuchar otra vez.",
+      "explicacion": "32 + 47 = 79, igual que 47 + 32. Cambiar el orden de los sumandos no cambia el total.",
+      "error": "conmutativa"
+    },
+    {
+      "id": "p13", "tipo": "generador", "nivel": 3, "generador": "suma-propiedad",
+      "params": { "propiedad": "asociativa" }
+    },
+    {
+      "id": "p14", "tipo": "numero", "nivel": 3,
+      "enunciado": "Calcula rápido: 25 + 38 + 75.",
+      "visual": { "tipo": "operacion", "numeros": [25, 38, 75], "op": "+" },
+      "respuesta": 138,
+      "erroresComunes": [ { "respuesta": 128, "pista": "Casi. Revisa 25 + 75: 5 + 5 = 10, así que llevas 1.", "error": "suma-calculo" } ],
+      "pista": "Busca dos números que juntos den 100. Súmalos primero.",
+      "explicacion": "25 + 75 = 100 y 100 + 38 = 138. Agrupar los números que dan 100 hace la suma más rápida.",
+      "error": "asociativa"
+    },
+    {
+      "id": "p15", "tipo": "pasos", "nivel": 3,
+      "enunciado": "Para la fiesta del curso, Luis lleva 18 vasos, Sofía lleva 7 y Juan lleva 2.",
+      "visual": { "tipo": "tabla", "columnas": ["Luis", "Sofía", "Juan"], "filas": [["18", "7", "2"]] },
+      "pasos": [
+        {
+          "tipo": "numero", "enunciado": "Junta primero los vasos de Luis y de Juan: 18 + 2. ¿Cuánto da?",
+          "respuesta": 20,
+          "pista": "Al 18 le faltan 2 para llegar a la decena siguiente.",
+          "explicacion": "18 + 2 = 20.",
+          "error": "busca-diez"
+        },
+        {
+          "tipo": "numero", "enunciado": "Ahora suma los vasos de Sofía. ¿Cuántos vasos hay en total?",
+          "respuesta": 27,
+          "erroresComunes": [ { "respuesta": 25, "pista": "Parece que sumaste 18 + 7 y olvidaste los 2 vasos de Juan.", "error": "asociativa" } ],
+          "pista": "Ya tienes 20 vasos. Súmales los de Sofía.",
+          "explicacion": "20 + 7 = 27 vasos. Da lo mismo que 18 + 7 + 2, pero es más rápido.",
+          "error": "asociativa"
+        }
+      ],
+      "pista": "Agrupa primero los números que forman una decena exacta.",
+      "explicacion": "(18 + 2) + 7 = 20 + 7 = 27 vasos.",
+      "error": "asociativa"
+    },
+    {
+      "id": "p16", "tipo": "multiple", "nivel": 3,
+      "enunciado": "Elige todas las sumas que dan lo mismo que 26 + 14.",
+      "opciones": [
+        { "texto": "14 + 26", "correcta": true },
+        { "texto": "26 + 0 + 14", "correcta": true },
+        { "texto": "0 + 40", "correcta": true },
+        { "texto": "26 + 41", "pista": "Mira bien: 41 no es 14. Las cifras cambiaron de lugar.", "error": "conmutativa" },
+        { "texto": "62 + 14", "pista": "Mira bien: 62 no es 26. Las cifras cambiaron de lugar.", "error": "conmutativa" }
+      ],
+      "columnas": 2,
+      "pista": "Si cambias el orden de los sumandos o sumas 0, el total no cambia. Si cambias un número, sí.",
+      "explicacion": "26 + 14 = 40. También dan 40: 14 + 26, 26 + 0 + 14 y 0 + 40. En 26 + 41 y 62 + 14 cambió un número.",
+      "error": "conmutativa"
+    }
+  ],
+  "comprobacion": [
+    {
+      "id": "c1", "tipo": "opcion", "nivel": 1,
+      "enunciado": "¿Qué suma da lo mismo que 5 + 9?",
+      "opciones": [
+        { "texto": "9 + 5", "correcta": true },
+        { "texto": "5 + 8", "pista": "Cambió un sumando: el 9 ya no está.", "error": "conmutativa" },
+        { "texto": "9 + 9", "pista": "El 5 ya no está. Busca los mismos sumandos.", "error": "conmutativa" }
+      ],
+      "columnas": 3,
+      "pista": "Busca los mismos sumandos en otro orden.",
+      "explicacion": "9 + 5 = 5 + 9 = 14. Cambiar el orden no cambia el total.",
+      "error": "conmutativa"
+    },
+    {
+      "id": "c2", "tipo": "completar", "nivel": 1,
+      "enunciado": "Completa las sumas.",
+      "texto": "0 + 48 = [48]. También: 6 + 3 = 3 + [6].",
+      "banco": ["0", "9", "480"],
+      "pista": "Sumar 0 no cambia el número. Cambiar el orden de los sumandos tampoco cambia el total.",
+      "explicacion": "0 + 48 = 48 (elemento neutro) y 6 + 3 = 3 + 6 (conmutativa).",
+      "error": "neutro"
+    },
+    {
+      "id": "c3", "tipo": "generador", "nivel": 2, "generador": "suma-propiedad",
+      "params": { "propiedad": "conmutativa" }
+    },
+    {
+      "id": "c4", "tipo": "tocar", "nivel": 2,
+      "enunciado": "Toca los dos números que juntos dan 10.",
+      "texto": "*9* + 5 + 3 + *1*",
+      "pista": "Prueba juntar los números de dos en dos, hasta encontrar los que dan 10.",
+      "explicacion": "9 + 1 = 10. Después: 10 + 5 + 3 = 18.",
+      "error": "busca-diez"
+    },
+    {
+      "id": "c5", "tipo": "numero", "nivel": 2,
+      "enunciado": "Nayra junta 8 huevos el lunes, 5 el martes y 2 el miércoles. ¿Cuántos huevos junta en los tres días?",
+      "visual": { "tipo": "emoji", "valor": "🥚" },
+      "respuesta": 15,
+      "erroresComunes": [
+        { "respuesta": 13, "pista": "Te faltaron los huevos de un día. Suma los tres números.", "error": "busca-diez" },
+        { "respuesta": 10, "pista": "8 + 2 = 10 es solo una parte. Suma también los huevos del martes.", "error": "busca-diez" }
+      ],
+      "pista": "Junta primero los dos números que dan 10.",
+      "explicacion": "8 + 2 = 10 y 10 + 5 = 15. Nayra junta 15 huevos.",
+      "error": "busca-diez"
+    },
+    {
+      "id": "c6", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "¿Qué propiedad muestra cada ejemplo?",
+      "categorias": [
+        { "id": "conm", "texto": "Conmutativa", "emoji": "🔄" },
+        { "id": "asoc", "texto": "Asociativa" },
+        { "id": "neutro", "texto": "Elemento neutro" }
+      ],
+      "elementos": [
+        { "texto": "7 + 2 = 2 + 7", "categoria": "conm" },
+        { "texto": "0 + 15 = 15", "categoria": "neutro" },
+        { "texto": "(4 + 1) + 3 = 4 + (1 + 3)", "categoria": "asoc" },
+        { "texto": "10 + 30 = 30 + 10", "categoria": "conm" },
+        { "texto": "99 + 0 = 99", "categoria": "neutro" },
+        { "texto": "(5 + 5) + 2 = 5 + (5 + 2)", "categoria": "asoc" }
+      ],
+      "pista": "En cada ejemplo, fíjate: ¿cambia el orden, cambian los paréntesis o se suma 0?",
+      "explicacion": "Conmutativa: 7 + 2 = 2 + 7 y 10 + 30 = 30 + 10. Asociativa: (4 + 1) + 3 = 4 + (1 + 3) y (5 + 5) + 2 = 5 + (5 + 2). Elemento neutro: 0 + 15 = 15 y 99 + 0 = 99.",
+      "error": "nombra-propiedad"
+    },
+    {
+      "id": "c7", "tipo": "numero", "nivel": 3,
+      "enunciado": "Calcula rápido: 36 + 45 + 14.",
+      "visual": { "tipo": "operacion", "numeros": [36, 45, 14], "op": "+" },
+      "respuesta": 95,
+      "erroresComunes": [
+        { "respuesta": 50, "pista": "36 + 14 = 50 es solo una parte. Suma también el 45.", "error": "busca-diez" },
+        { "respuesta": 81, "pista": "Te faltó sumar el 14. Suma los tres números.", "error": "busca-diez" },
+        { "respuesta": 85, "pista": "Casi. Revisa 36 + 14: 6 + 4 = 10, así que llevas 1.", "error": "suma-calculo" }
+      ],
+      "pista": "Busca dos números cuyas unidades juntas den 10. Súmalos primero.",
+      "explicacion": "36 + 14 = 50 y 50 + 45 = 95. Juntar primero los números que forman una decena exacta hace la suma más rápida.",
+      "error": "asociativa"
+    },
+    {
+      "id": "c8", "tipo": "pasos", "nivel": 3,
+      "enunciado": "En la feria, Juan compra un queso a 17 Bs, una piña a 9 Bs y una lechuga a 3 Bs.",
+      "visual": { "tipo": "emojis", "items": ["🧀", "🍍", "🥬"], "etiquetas": ["17 Bs", "9 Bs", "3 Bs"] },
+      "pasos": [
+        {
+          "tipo": "tocar", "enunciado": "Toca los dos precios que juntos dan 20 Bs.",
+          "texto": "*17* Bs, 9 Bs y *3* Bs",
+          "pista": "Prueba juntar los precios de dos en dos. ¿Cuál completa la decena del 17?",
+          "explicacion": "17 Bs + 3 Bs = 20 Bs.",
+          "error": "busca-diez"
+        },
+        {
+          "tipo": "numero", "enunciado": "¿Cuánto paga Juan en total?",
+          "respuesta": 29, "sufijo": "Bs",
+          "erroresComunes": [
+            { "respuesta": 20, "pista": "Esos son el queso y la lechuga. Suma también la piña.", "error": "busca-diez" },
+            { "respuesta": 26, "pista": "Te faltó la lechuga. Suma los tres precios.", "error": "busca-diez" },
+            { "respuesta": 12, "pista": "Te faltó el queso. Suma los tres precios.", "error": "busca-diez" }
+          ],
+          "pista": "Ya tienes 20 Bs. Súmale el precio de la piña.",
+          "explicacion": "(17 + 3) + 9 = 20 + 9 = 29 Bs.",
+          "error": "asociativa"
+        }
+      ],
+      "pista": "Busca primero los dos precios que juntos forman una decena exacta.",
+      "explicacion": "17 + 3 = 20 y 20 + 9 = 29. Juan paga 29 Bs.",
+      "error": "asociativa"
+    }
+  ],
+  "repaso": {
+    "texto": "Cambiar el orden no cambia el total (conmutativa). Agrupar de otra forma tampoco (asociativa). Sumar 0 no cambia el número (elemento neutro).",
+    "visual": { "tipo": "tabla", "columnas": ["Propiedad", "Ejemplo"], "filas": [["Conmutativa", "3 + 5 = 5 + 3"], ["Asociativa", "(2 + 8) + 4 = 2 + (8 + 4)"], ["Elemento neutro", "7 + 0 = 7"]] }
+  },
+  "adulto": {
+    "objetivo": "Conocer y usar las propiedades conmutativa y asociativa de la suma y el elemento neutro (el 0), y aprovecharlas para calcular mentalmente; por ejemplo, buscar parejas que suman 10: 7 + 5 + 3 = 7 + 3 + 5 = 10 + 5 = 15.",
+    "sugerencias": [
+      "Con dos montones de piedritas o semillas (3 y 5), pregunten cuántas hay en total. Luego cambien los montones de lugar y pregunten otra vez: el total no cambia.",
+      "En la feria, cuando compren tres cosas, busquen primero dos precios que juntos den 10 (8 Bs y 2 Bs) y después sumen el tercero.",
+      "Jueguen con los dedos a encontrar las parejas que suman 10 (1 y 9, 2 y 8, 3 y 7, 4 y 6, 5 y 5). Después, digan un número y súmenle 0: la niña o el niño explica por qué el número no cambia."
+    ],
+    "errores": {
+      "propiedades-suma": { "descripcion": "Duda al aplicar las propiedades de la suma en ejercicios nuevos.", "sugerencia": "Hagan sumas con objetos reales: cambien el orden de los montones o agrúpenlos de otra forma y cuenten otra vez para ver que el total no cambia." },
+      "conmutativa": { "descripcion": "Cree que el total cambia si se cambia el orden de los sumandos, o vuelve a sumar todo sin necesidad.", "sugerencia": "Pongan 3 papas y 5 choclos en fila, cuenten, y luego den vuelta la fila: pregunten si cambió la cantidad." },
+      "asociativa": { "descripcion": "Le cuesta agrupar tres sumandos de otra forma o entender qué indican los paréntesis.", "sugerencia": "Usen tres montones de semillas: junten primero dos y después el tercero; luego júntenlos en otro orden y comparen el total." },
+      "neutro": { "descripcion": "Piensa que sumar 0 da 0, o le agrega un cero al número (7 + 0 = 70).", "sugerencia": "Muestren una bolsa con 7 frutas y otra vacía: juntar las dos bolsas no agrega nada." },
+      "suma-calculo": { "descripcion": "Se equivoca al sumar, por ejemplo olvida llevar en 25 + 75.", "sugerencia": "Repasen la suma llevando con billetes de 10 Bs y monedas de 1 Bs: al juntar 10 monedas, se cambian por un billete." },
+      "busca-diez": { "descripcion": "No busca las parejas que suman 10 (o que forman una decena exacta, como 17 + 3) para calcular más rápido, o se olvida de un sumando.", "sugerencia": "Practiquen las parejas del 10 con los dedos y, al sumar tres números, pidan que tache cada número que ya sumó." },
+      "nombra-propiedad": { "descripcion": "Confunde los nombres de las propiedades.", "sugerencia": "Hagan tres tarjetas: «cambio el orden» (conmutativa), «cambio los paréntesis» (asociativa) y «sumo 0» (elemento neutro), y úsenlas para clasificar ejemplos." }
+    }
+  }
+}

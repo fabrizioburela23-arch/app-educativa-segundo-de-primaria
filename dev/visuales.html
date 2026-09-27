@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Galería de visuales</title>
+  <link rel="stylesheet" href="../css/app.css">
+  <link rel="stylesheet" href="../css/visuales.css">
+  <style>
+    .galeria h1 { font-size: 1.4rem; }
+    .galeria h2 { margin-top: 28px; padding-top: 8px; border-top: 3px solid var(--borde); }
+    .galeria .indice { display: flex; flex-wrap: wrap; gap: 6px; font-size: .85rem; }
+    .galeria .indice a { background: var(--superficie); border-radius: 999px; padding: 4px 10px; color: var(--primario-oscuro); text-decoration: none; box-shadow: var(--sombra); }
+    .galeria .muestra { margin-top: 14px; }
+    .galeria .muestra h3 { font-size: 1rem; margin-bottom: 6px; display: flex; gap: 8px; align-items: baseline; flex-wrap: wrap; }
+    .galeria .muestra h3 .modo { font-size: .8rem; font-weight: 700; padding: 2px 8px; border-radius: 99px; background: var(--ayuda-claro); color: var(--ayuda); }
+    .galeria .muestra h3 .modo.libre { background: var(--exito-claro); color: var(--exito); }
+    .galeria details { font-size: .8rem; color: var(--tinta-suave); margin: 0 0 8px; }
+    .galeria details pre { white-space: pre-wrap; word-break: break-word; margin: 4px 0 0; background: var(--fondo); border-radius: 8px; padding: 6px 8px; }
+    .galeria .alt { font-size: .82rem; color: var(--tinta-suave); margin-top: 6px; font-style: italic; }
+    .galeria .controles { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+    /* Las muestras usan el mismo ancho que el cuerpo de una lección (pantalla − 32 px). */
+    .galeria section.tarjeta { margin: 0 -16px; padding: 14px 16px; border-radius: 0; }
+    .galeria .salida { display: block; margin-top: 8px; font-size: .85rem; background: var(--fondo); border-radius: 10px; padding: 8px 10px; white-space: pre-wrap; word-break: break-word; min-height: 2.4em; }
+  </style>
+</head>
+<body>
+  <main class="pantalla galeria" id="galeria">
+    <h1>Galería de visuales y manipulables</h1>
+    <p class="nota">Página de desarrollo: muestra cada visual con varias configuraciones y cada manipulable en modo ejercicio y en modo libre.</p>
+    <nav class="indice" id="indice" aria-label="Índice"></nav>
+    <div id="contenido"><p>Cargando…</p></div>
+  </main>
+  <script type="module" src="visuales.js"></script>
+</body>
+</html>

@@ -1,0 +1,424 @@
+{
+  "id": "nat-2-3",
+  "titulo": "Prevenimos riesgos",
+  "objetivo": "Conozco los fenómenos naturales que pueden pasar en Bolivia y sé qué hacer antes, durante y después para estar a salvo con mi familia.",
+  "explicacion": [
+    {
+      "texto": "En Bolivia pueden pasar inundaciones, sequías, granizadas, heladas, tormentas con rayos, sismos y mazamorras (barro y piedras que bajan del cerro). También incendios, casi siempre causados por personas. ¡Podemos **prepararnos**!",
+      "emoji": "⛑️",
+      "visual": { "tipo": "emojis", "items": ["🌊", "🏜️", "❄️", "⛈️", "🔥"], "etiquetas": ["inundación", "sequía", "helada", "tormenta", "incendio"] }
+    },
+    {
+      "texto": "**Antes**: arma un **plan** con tu familia: ¿por dónde salimos?, ¿dónde nos encontramos?, ¿a quién llamamos? Ayuda a preparar la **mochila de emergencia** y aprende con tu familia los números de emergencia.",
+      "visual": { "tipo": "emojis", "items": ["🚪", "📍", "🎒", "📞"], "etiquetas": ["salida", "punto de encuentro", "mochila", "números de emergencia"] }
+    },
+    {
+      "texto": "**Durante**: mantén la calma y escucha a las personas adultas. Si tiembla, **agáchate, cúbrete y sujétate**. Si el agua sube, ve con tu familia a un lugar alto. Si hay rayos, entra a una casa.",
+      "visual": { "tipo": "emojis", "items": ["😌", "👂", "⛰️", "🏠"], "etiquetas": ["calma", "escucha", "lugar alto", "bajo techo"] }
+    },
+    {
+      "texto": "**Después**: espera a que las personas adultas digan que ya es seguro. No toques cables caídos ni tomes agua sucia. Ayudarnos y cuidarnos entre todos nos hace más fuertes.",
+      "emoji": "🤝"
+    }
+  ],
+  "ejemplo": {
+    "instruccion": "Mira cómo la familia de Inti, en el Beni, se prepara para la época de lluvias.",
+    "pasos": [
+      { "texto": "Es verano y llueve mucho. Los ríos de los llanos pueden crecer y salirse. La familia de Inti escucha los avisos del tiempo en la radio.", "visual": { "tipo": "ilustracion", "id": "paisaje-llanos" } },
+      { "texto": "**Antes**: arman su plan. Eligen un lugar alto y seguro como **punto de encuentro** y preparan la mochila de emergencia.", "visual": { "tipo": "emojis", "items": ["🎒", "🔦", "💧", "📻"], "etiquetas": ["mochila", "linterna", "agua", "radio"] } },
+      { "texto": "**Durante**: el agua empieza a subir. Inti mantiene la calma y va con su familia al lugar alto, de la mano de su abuela. No caminan por el agua que corre.", "visual": { "tipo": "emojis", "items": ["🌊", "👵", "👦", "⛰️"] } },
+      { "texto": "**Después**: vuelven a casa solo cuando las autoridades dicen que es seguro. Toman agua hervida o embotellada y ayudan a limpiar.", "visual": { "tipo": "emojis", "items": ["🏠", "💧", "🧹"], "etiquetas": ["volver con permiso", "agua segura", "limpiar"] } }
+    ]
+  },
+  "guiada": {
+    "intro": "Ahora lo hacemos juntos. Tú también puedes aprender a cuidarte.",
+    "pasos": [
+      {
+        "id": "g1", "tipo": "ordenar",
+        "enunciado": "Ordena lo que pasa en el simulacro de sismo de la escuela de Kusi.",
+        "apoyo": "Primero va lo de ANTES, después lo de DURANTE y al final lo de DESPUÉS.",
+        "elementos": [
+          { "texto": "La maestra explica por dónde salir y dónde es el punto de encuentro.", "emoji": "👩‍🏫" },
+          { "texto": "Suena la alarma: Kusi se agacha, se cubre debajo de la mesa y se sujeta.", "emoji": "🔔" },
+          { "texto": "Cuando la maestra lo indica, sale en fila, sin correr y con calma.", "emoji": "🚶" },
+          { "texto": "Llega al punto de encuentro del patio.", "emoji": "📍" }
+        ],
+        "vertical": true,
+        "pista": "Antes de la alarma hay que saber el plan. ¿Qué se hace mientras suena la alarma? ¿Y cuando termina?",
+        "explicacion": "Antes: la maestra explica el plan. Durante: Kusi se agacha, se cubre y se sujeta. Después: sale con calma y llega al punto de encuentro.",
+        "error": "antes-durante-despues"
+      },
+      {
+        "id": "g2", "tipo": "clasificar",
+        "enunciado": "¿Va en la mochila de emergencia?",
+        "apoyo": "Piensa: ¿es liviano? ¿Te ayuda a estar a salvo, a abrigarte o a pedir ayuda?",
+        "categorias": [
+          { "id": "si", "texto": "Sí va", "emoji": "🎒" },
+          { "id": "no", "texto": "No va", "emoji": "🚫" }
+        ],
+        "elementos": [
+          { "texto": "agua embotellada", "emoji": "💧", "categoria": "si" },
+          { "texto": "linterna", "emoji": "🔦", "categoria": "si" },
+          { "texto": "televisor", "emoji": "📺", "categoria": "no" },
+          { "texto": "silbato", "categoria": "si" },
+          { "texto": "botiquín", "emoji": "💊", "categoria": "si" },
+          { "texto": "espejo grande", "categoria": "no" },
+          { "texto": "abrigo", "emoji": "🧥", "categoria": "si" }
+        ],
+        "pista": "Imagina que tienes que salir rápido cargando la mochila. ¿Qué te ayudaría y qué sería muy pesado?",
+        "explicacion": "Sí van: agua, linterna, silbato, botiquín y abrigo. El televisor y el espejo grande pesan mucho y no ayudan en una emergencia.",
+        "error": "mochila-emergencia"
+      },
+      {
+        "id": "g3", "tipo": "relacionar",
+        "enunciado": "¿Qué hacemos en cada caso? Une.",
+        "apoyo": "Piensa qué te protege en cada caso: de lo que se cae, del agua, de los rayos o del frío.",
+        "pares": [
+          ["sismo", "agáchate, cúbrete y sujétate"],
+          ["inundación", "ve a un lugar alto"],
+          ["tormenta con rayos", "entra a una casa o a un edificio"],
+          ["helada", "abrígate con chompa, chullo y guantes"]
+        ],
+        "pista": "Si el agua sube, buscamos lo alto. Si hace mucho frío, nos abrigamos.",
+        "explicacion": "Sismo: agáchate, cúbrete y sujétate. Inundación: ve a un lugar alto. Rayos: entra a una casa o a un edificio. Helada: abrígate bien.",
+        "error": "accion-segura"
+      }
+    ]
+  },
+  "practica": [
+    {
+      "id": "p1", "tipo": "memoria", "nivel": 1,
+      "enunciado": "Encuentra las parejas: el dibujo y su nombre.",
+      "pares": [
+        [{ "emoji": "🌊" }, "inundación"],
+        [{ "emoji": "❄️" }, "helada"],
+        [{ "emoji": "🔥" }, "incendio"],
+        [{ "emoji": "🏜️" }, "sequía"],
+        [{ "emoji": "⚡" }, "rayo"]
+      ],
+      "pista": "Mira cada dibujo: agua, frío, fuego, tierra seca y luz de tormenta.",
+      "explicacion": "Inundación (mucha agua), helada (mucho frío), incendio (fuego), sequía (falta de lluvia) y rayo (tormenta eléctrica).",
+      "error": "identifica-fenomeno"
+    },
+    {
+      "id": "p2", "tipo": "completar", "nivel": 1,
+      "enunciado": "Completa lo que haces si la tierra tiembla.",
+      "texto": "Si la tierra tiembla: [agáchate], [cúbrete] y [sujétate].",
+      "banco": ["corre", "asómate a la ventana"],
+      "pista": "Primero te pones abajo, luego te proteges la cabeza y al final te agarras fuerte.",
+      "explicacion": "Agáchate, cúbrete y sujétate: así te proteges de lo que se puede caer. Correr o asomarte a la ventana es peligroso.",
+      "error": "accion-segura"
+    },
+    {
+      "id": "p3", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Toca lo que sí sirve en una mochila de emergencia.",
+      "texto": "Rosa encontró en su cuarto un *silbato*, un espejo grande, una *linterna*, una maceta y una *frazada*.",
+      "pista": "Hay tres cosas livianas: una para pedir ayuda, una para ver en la oscuridad y una para abrigarse.",
+      "explicacion": "El silbato sirve para pedir ayuda, la linterna para ver de noche y la frazada para abrigarse. El espejo grande y la maceta no sirven en una emergencia.",
+      "error": "mochila-emergencia"
+    },
+    {
+      "id": "p4", "tipo": "opcion", "nivel": 1,
+      "enunciado": "Ves humo y fuego en el pastizal cerca de tu casa. ¿Qué haces?",
+      "opciones": [
+        { "texto": "Me alejo del humo y aviso enseguida a una persona adulta.", "correcta": true },
+        { "texto": "Me acerco para mirar el fuego.", "pista": "El humo y el fuego pueden hacerte daño. Es mejor estar lejos.", "error": "accion-segura" },
+        { "texto": "Trato de apagarlo sin ayuda.", "pista": "Apagar un incendio es trabajo de personas adultas y de los bomberos.", "error": "accion-segura" }
+      ],
+      "columnas": 1,
+      "pista": "Lo más importante es que tú estés a salvo y que alguien adulto lo sepa.",
+      "explicacion": "Te alejas del humo y avisas enseguida a una persona adulta. Así estás a salvo y pueden llamar a los bomberos.",
+      "error": "accion-segura"
+    },
+    {
+      "id": "p5", "tipo": "manipular", "nivel": 1,
+      "enunciado": "En la familia de Juan son 4 personas. Guardan 2 botellas de agua por persona en la mochila. Pon 2 botellas en cada grupo.",
+      "manipulable": { "tipo": "grupos", "grupos": 4, "porGrupo": 2, "emoji": "💧" },
+      "pista": "Cada grupo es una persona. Pon 2 botellas en cada uno.",
+      "explicacion": "4 grupos de 2 botellas: 2 + 2 + 2 + 2 = 8 botellas de agua para la mochila.",
+      "error": "cantidades"
+    },
+    {
+      "id": "p6", "tipo": "manipular", "nivel": 1,
+      "enunciado": "El 13 de octubre es el Día Internacional para la Reducción del Riesgo de Desastres. Tócalo en el calendario.",
+      "manipulable": { "tipo": "calendario", "mes": 10, "anio": 2026, "objetivo": 13 },
+      "pista": "Busca el número 13 en la hoja de octubre.",
+      "explicacion": "El 13 de octubre recordamos que prepararnos nos ayuda a estar más seguros cuando la naturaleza trae fenómenos fuertes.",
+      "error": "ubica-fecha"
+    },
+    {
+      "id": "p7", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "Une cada fenómeno con lo que pasa.",
+      "pares": [
+        ["inundación", "el agua del río se sale y cubre calles y chacras"],
+        ["sequía", "pasa mucho tiempo sin llover"],
+        ["helada", "de noche hace tanto frío que el agua se congela"],
+        ["mazamorra", "barro, agua y piedras bajan por el cerro"],
+        ["granizada", "caen muchas bolitas de hielo"]
+      ],
+      "pista": "Busca primero los que tienen que ver con agua: ¿cuál es por falta de agua y cuál por demasiada?",
+      "explicacion": "Inundación: el río se sale. Sequía: no llueve por mucho tiempo. Helada: el agua se congela de noche. Mazamorra: barro y piedras bajan del cerro. Granizada: caen bolitas de hielo.",
+      "error": "identifica-fenomeno"
+    },
+    {
+      "id": "p8", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "Si el río crece, ¿cuándo se hace cada cosa: antes, durante o después?",
+      "categorias": [
+        { "id": "antes", "texto": "Antes", "emoji": "📋" },
+        { "id": "durante", "texto": "Durante", "emoji": "🌊" },
+        { "id": "despues", "texto": "Después", "emoji": "🧹" }
+      ],
+      "elementos": [
+        { "texto": "armar el plan familiar", "categoria": "antes" },
+        { "texto": "preparar la mochila de emergencia", "categoria": "antes" },
+        { "texto": "salir de la casa con la familia cuando sube el agua", "categoria": "durante" },
+        { "texto": "ir con calma al lugar alto", "categoria": "durante" },
+        { "texto": "volver a casa cuando las autoridades lo permiten", "categoria": "despues" },
+        { "texto": "ayudar a limpiar el barro de la casa", "categoria": "despues" }
+      ],
+      "pista": "Antes: nos preparamos. Durante: nos protegemos. Después: volvemos y arreglamos.",
+      "explicacion": "Antes: el plan y la mochila. Durante: salir cuando sube el agua e ir al lugar alto. Después: volver con permiso y ayudar a limpiar.",
+      "error": "antes-durante-despues"
+    },
+    {
+      "id": "p9", "tipo": "opcion", "nivel": 2,
+      "enunciado": "Estás jugando en una cancha del campo y empiezan los truenos y los rayos. ¿Qué haces?",
+      "opciones": [
+        { "texto": "Entro a una casa o a un edificio con una persona adulta.", "correcta": true },
+        { "texto": "Me pongo debajo de un árbol que está solo en el campo.", "pista": "Los rayos suelen caer en lo más alto, como un árbol solo en el campo.", "error": "accion-segura" },
+        { "texto": "Sigo jugando hasta que llueva fuerte.", "pista": "Si oyes truenos, los rayos pueden estar cerca. Busca refugio enseguida.", "error": "accion-segura" }
+      ],
+      "columnas": 1,
+      "pista": "Afuera, en un lugar abierto, no estás protegido de los rayos.",
+      "explicacion": "Entras a una casa o a un edificio. Bajo techo estás protegido de los rayos. Un árbol solo en el campo no es un buen refugio.",
+      "error": "accion-segura"
+    },
+    {
+      "id": "p10", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha y escribe qué fenómeno es.",
+      "escuchar": "De pronto, la tierra se mueve. Las lámparas se balancean y las ventanas vibran. ¿Qué fenómeno es?",
+      "respuestas": ["sismo", "un sismo", "el sismo", "es un sismo", "terremoto", "un terremoto", "el terremoto", "es un terremoto", "temblor", "un temblor", "el temblor", "es un temblor"],
+      "pista": "Cuando pasa, nos agachamos, nos cubrimos y nos sujetamos.",
+      "explicacion": "Es un **sismo** (también le decimos temblor o terremoto): la tierra se mueve.",
+      "error": "identifica-fenomeno"
+    },
+    {
+      "id": "p11", "tipo": "opcion", "nivel": 2,
+      "enunciado": "En la estación marcada llueve mucho en Bolivia y los ríos pueden crecer. ¿Qué estación es?",
+      "visual": { "tipo": "ilustracion", "id": "estaciones", "resaltar": "verano" },
+      "opciones": [
+        { "texto": "verano", "correcta": true },
+        { "texto": "invierno", "pista": "En invierno casi no llueve: es época seca y hay heladas.", "error": "estaciones-riesgo" },
+        { "texto": "otoño", "pista": "En otoño las lluvias se van. Busca la estación más calurosa.", "error": "estaciones-riesgo" }
+      ],
+      "columnas": 3,
+      "pista": "Es la estación del calor, de las lluvias y del Carnaval.",
+      "explicacion": "Es el **verano**: la época de lluvias. Por eso en verano puede haber inundaciones y granizadas.",
+      "error": "estaciones-riesgo"
+    },
+    {
+      "id": "p12", "tipo": "ordenar", "nivel": 2,
+      "enunciado": "Ordena cómo empezó un incendio en el campo.",
+      "elementos": [
+        { "texto": "Unas personas dejan una fogata encendida.", "emoji": "🏕️" },
+        { "texto": "El viento lleva chispas al pasto seco.", "emoji": "💨" },
+        { "texto": "El fuego crece y se vuelve un incendio.", "emoji": "🔥" },
+        { "texto": "Los bomberos y los vecinos trabajan juntos para apagarlo.", "emoji": "🚒" }
+      ],
+      "vertical": true,
+      "pista": "¿De dónde salieron las chispas? Empieza por ahí.",
+      "explicacion": "Quedó una fogata encendida, el viento llevó chispas al pasto seco, el fuego creció y los bomberos y vecinos lo apagaron. Por eso nunca dejamos una fogata encendida.",
+      "error": "prevencion"
+    },
+    {
+      "id": "p13", "tipo": "pasos", "nivel": 3,
+      "enunciado": "Es invierno en el altiplano. La radio avisa que esta noche habrá una helada fuerte.",
+      "visual": { "tipo": "ilustracion", "id": "paisaje-altiplano" },
+      "pasos": [
+        {
+          "tipo": "opcion",
+          "enunciado": "¿Qué hace la familia de Wara antes de la noche?",
+          "opciones": [
+            { "texto": "Cubre las plantas y guarda a las alpacas en un corral con techo.", "correcta": true },
+            { "texto": "Deja a las alpacas afuera, sin protección.", "pista": "El frío muy fuerte puede enfermar a los animales.", "error": "prevencion" },
+            { "texto": "Deja las plantas sin cubrir.", "pista": "La helada puede quemar las hojas de las plantas.", "error": "prevencion" }
+          ],
+          "columnas": 1,
+          "pista": "Piensa cómo proteger del frío a los animales y a las plantas.",
+          "explicacion": "Cubren las plantas y guardan a las alpacas en un corral con techo para protegerlas de la helada.",
+          "error": "prevencion"
+        },
+        {
+          "tipo": "completar",
+          "enunciado": "Completa.",
+          "texto": "Para no enfermarse con el frío, Wara se pone su [chullo] en la cabeza y sus [guantes] en las manos.",
+          "banco": ["sandalias"],
+          "pista": "¿Qué abriga la cabeza? ¿Y qué abriga las manos?",
+          "explicacion": "El chullo abriga la cabeza y los guantes abrigan las manos.",
+          "error": "accion-segura"
+        },
+        {
+          "tipo": "escribir",
+          "enunciado": "¿En qué estación del año hay más heladas en el altiplano?",
+          "respuestas": ["invierno", "en invierno", "el invierno", "en el invierno"],
+          "pista": "Es la estación más fría del año.",
+          "explicacion": "En **invierno** las noches son muy frías y hay más heladas.",
+          "error": "estaciones-riesgo"
+        }
+      ],
+      "pista": "Resuelve un paso a la vez.",
+      "explicacion": "Antes de la helada, la familia protege a sus plantas y animales, y todos se abrigan bien. Las heladas son más comunes en invierno.",
+      "error": "prevencion"
+    },
+    {
+      "id": "p14", "tipo": "numero", "nivel": 3,
+      "enunciado": "En la época seca, la familia de Arami guarda agua en 3 bidones de 20 litros cada uno. ¿Cuántos litros guardan?",
+      "respuesta": 60,
+      "sufijo": "litros",
+      "erroresComunes": [
+        { "respuesta": 23, "pista": "Sumaste 3 + 20. Cada bidón tiene 20 litros: suma 20 + 20 + 20.", "error": "cantidades" },
+        { "respuesta": 40, "pista": "Contaste solo 2 bidones. Son 3.", "error": "cantidades" }
+      ],
+      "pista": "Suma 20 litros por cada bidón.",
+      "explicacion": "20 + 20 + 20 = 60 litros. En una sequía ayuda mucho guardar el agua limpia en bidones tapados y no desperdiciarla.",
+      "error": "cantidades"
+    },
+    {
+      "id": "p15", "tipo": "escribir-libre", "nivel": 3,
+      "enunciado": "Escribe una oración: ¿qué pondrías en tu mochila de emergencia y para qué?",
+      "guia": ["En mi mochila pondría...", "Llevaría una linterna para..."],
+      "requisitos": [
+        { "tipo": "mayuscula-inicial" }, { "tipo": "punto-final" },
+        { "tipo": "min-palabras", "valor": 6 }
+      ],
+      "modelo": "En mi mochila pondría agua y una linterna para ver de noche.",
+      "pista": "Piensa en algo para beber, para ver en la oscuridad, para abrigarte o para pedir ayuda.",
+      "explicacion": "Por ejemplo: «En mi mochila pondría agua y una linterna para ver de noche». Empieza con mayúscula y termina con punto.",
+      "error": "produce-oracion"
+    }
+  ],
+  "comprobacion": [
+    {
+      "id": "c1", "tipo": "clasificar", "nivel": 1,
+      "enunciado": "¿Es seguro o no es seguro?",
+      "categorias": [
+        { "id": "seguro", "texto": "Es seguro", "emoji": "✅" },
+        { "id": "peligro", "texto": "No es seguro", "emoji": "⚠️" }
+      ],
+      "elementos": [
+        { "texto": "entrar a una casa cuando hay rayos", "categoria": "seguro" },
+        { "texto": "jugar cerca del río crecido", "categoria": "peligro" },
+        { "texto": "tocar un cable caído", "categoria": "peligro" },
+        { "texto": "alejarse del humo", "categoria": "seguro" },
+        { "texto": "caminar por el agua que corre", "categoria": "peligro" },
+        { "texto": "agacharse y cubrirse si tiembla", "categoria": "seguro" }
+      ],
+      "pista": "Pregúntate: ¿esto me aleja del peligro o me acerca a él?",
+      "explicacion": "Es seguro: entrar a una casa si hay rayos, alejarse del humo y agacharse y cubrirse si tiembla. No es seguro: jugar cerca del río crecido, tocar un cable caído ni caminar por el agua que corre.",
+      "error": "accion-segura"
+    },
+    {
+      "id": "c2", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Toca las prendas que abrigan a Kusi en una mañana de helada.",
+      "texto": "Esta mañana hubo helada. Kusi se pone su *chompa*, su *poncho* y su *chullo* para ir a la escuela.",
+      "pista": "Hay tres prendas de ropa que dan calor.",
+      "explicacion": "La chompa, el poncho y el chullo abrigan a Kusi. En las mañanas de helada hace mucho frío y hay que abrigarse bien.",
+      "error": "accion-segura"
+    },
+    {
+      "id": "c3", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa qué hacemos para estar seguros.",
+      "texto": "Si el río crece, vamos a un lugar [alto]. Si hay rayos, entramos a una [casa].",
+      "banco": ["bajo", "piscina"],
+      "pista": "El agua no llega a los lugares altos. Los rayos no te alcanzan bajo techo.",
+      "explicacion": "Si el río crece, vamos a un lugar alto. Si hay rayos, entramos a una casa.",
+      "error": "accion-segura"
+    },
+    {
+      "id": "c4", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha la pregunta y escribe la respuesta.",
+      "escuchar": "En una emergencia, la familia sale de la casa. ¿Cómo se llama el lugar seguro, que eligieron antes, donde todos se juntan?",
+      "respuestas": ["punto de encuentro", "el punto de encuentro", "un punto de encuentro"],
+      "pista": "Son tres palabras. La primera es «punto».",
+      "explicacion": "Es el **punto de encuentro**: el lugar seguro donde se junta la familia. Se elige antes, al armar el plan.",
+      "error": "plan-familiar"
+    },
+    {
+      "id": "c5", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "¿Qué hacemos antes para estar preparados? Une.",
+      "pares": [
+        ["incendio", "no dejar fogatas encendidas"],
+        ["sequía", "guardar agua y no desperdiciarla"],
+        ["sismo", "practicar «agáchate, cúbrete y sujétate»"],
+        ["helada", "abrigar a los animales en un corral con techo"]
+      ],
+      "pista": "Piensa qué problema trae cada uno: fuego, falta de agua, la tierra que se mueve o mucho frío.",
+      "explicacion": "Incendio: no dejar fogatas encendidas. Sequía: guardar agua y no desperdiciarla. Sismo: practicar «agáchate, cúbrete y sujétate». Helada: abrigar a los animales.",
+      "error": "prevencion"
+    },
+    {
+      "id": "c6", "tipo": "opcion", "nivel": 2,
+      "enunciado": "Estás en la calle y cae una granizada fuerte. ¿Qué haces?",
+      "opciones": [
+        { "texto": "Me protejo bajo un techo y me alejo de las calles donde corre mucha agua.", "correcta": true },
+        { "texto": "Me quedo en la calle para juntar granizo.", "pista": "El granizo fuerte puede golpearte. Busca un techo.", "error": "accion-segura" },
+        { "texto": "Camino por la calle llena de agua.", "pista": "El agua que corre por la calle puede arrastrarte.", "error": "accion-segura" }
+      ],
+      "columnas": 1,
+      "pista": "Busca la opción que te protege del granizo y del agua que corre.",
+      "explicacion": "Te proteges bajo un techo y te alejas del agua que corre por las calles. Así estás a salvo hasta que pase la granizada.",
+      "error": "accion-segura"
+    },
+    {
+      "id": "c7", "tipo": "ordenar", "nivel": 3,
+      "enunciado": "Llueve muchos días en el barrio de Mateo, que está junto a un cerro. Ordena lo que hace su familia.",
+      "elementos": [
+        { "texto": "La radio avisa que del cerro puede bajar una mazamorra.", "emoji": "📻" },
+        { "texto": "La familia toma su mochila de emergencia.", "emoji": "🎒" },
+        { "texto": "Se alejan del cerro y del río, y van con calma al lugar seguro de su plan.", "emoji": "🚶" },
+        { "texto": "Vuelven a casa cuando las autoridades dicen que ya no hay peligro.", "emoji": "🏠" }
+      ],
+      "vertical": true,
+      "pista": "Primero se enteran del peligro. ¿Qué toman antes de salir? ¿Cuándo pueden volver?",
+      "explicacion": "Escuchan el aviso, toman la mochila, se alejan del cerro y del río hasta el lugar seguro, y vuelven solo cuando ya no hay peligro.",
+      "error": "antes-durante-despues"
+    },
+    {
+      "id": "c8", "tipo": "opcion", "nivel": 3,
+      "enunciado": "Luis está en su cuarto, en el segundo piso, y empieza a temblar. ¿Qué debe hacer?",
+      "opciones": [
+        { "texto": "Agacharse, cubrirse bajo una mesa firme y sujetarse hasta que pare.", "correcta": true },
+        { "texto": "Bajar corriendo por las gradas mientras tiembla.", "pista": "Mientras tiembla, correr es peligroso: te puedes caer o te puede golpear algo.", "error": "accion-segura" },
+        { "texto": "Pararse junto a la ventana para mirar.", "pista": "Los vidrios de la ventana se pueden romper.", "error": "accion-segura" }
+      ],
+      "columnas": 1,
+      "pista": "Recuerda las tres palabras: agáchate, cúbrete y sujétate.",
+      "explicacion": "Luis debe agacharse, cubrirse bajo una mesa firme y sujetarse hasta que pare de temblar. Después sale con calma, con una persona adulta.",
+      "error": "accion-segura"
+    }
+  ],
+  "repaso": {
+    "texto": "**Antes**: plan familiar y mochila de emergencia. **Durante**: calma, escucha a las personas adultas y protégete. **Después**: espera el aviso de que todo es seguro.",
+    "visual": { "tipo": "emojis", "items": ["🎒", "😌", "✅"], "etiquetas": ["antes", "durante", "después"] }
+  },
+  "adulto": {
+    "objetivo": "Reconocer amenazas naturales frecuentes en Bolivia (inundaciones, sequías, granizadas, heladas, incendios forestales, mazamorras y deslizamientos, sismos y tormentas eléctricas) y saber qué hacer antes, durante y después: plan familiar, mochila de emergencia y acciones seguras. El tono es tranquilo: prepararse da seguridad, y las personas adultas siempre acompañan.",
+    "sugerencias": [
+      "Armen juntos el plan familiar: recorran la casa, ubiquen las salidas y un lugar seguro en cada cuarto (junto a una mesa firme, lejos de ventanas), elijan un punto de encuentro afuera y averigüen los números de emergencia de su ciudad o municipio (Policía, bomberos, ambulancia). Anótenlos y péguenlos cerca de la puerta.",
+      "Preparen la mochila de emergencia con cosas de la casa: agua embotellada, alimentos que no se malogran, linterna y radio a pilas, botiquín, silbato, abrigo, medicamentos y copias de documentos en una bolsa plástica. Déjenla en un lugar fácil de alcanzar y revísenla cada seis meses.",
+      "Hagan un simulacro corto en casa: practiquen «agáchate, cúbrete y sujétate» y salgan con calma al punto de encuentro. Escuchen juntos los avisos del tiempo (por ejemplo, del SENAMHI) en la radio o la tele. En noches de helada, abríguense bien y no usen braseros ni fuego de carbón o leña en cuartos cerrados: el humo es peligroso. Respondan sus preguntas con calma, sin asustar."
+    ],
+    "errores": {
+      "identifica-fenomeno": { "descripcion": "No reconoce o confunde los fenómenos naturales (inundación, sequía, helada, granizada, mazamorra, sismo).", "sugerencia": "Cuando escuchen una noticia del tiempo, pregunten con calma: «¿qué fenómeno es?, ¿qué pasa cuando llega?». Relaciónenlo con lo que ven: lluvia fuerte, escarcha en la mañana, tierra seca." },
+      "accion-segura": { "descripcion": "Duda sobre qué hacer para protegerse durante un fenómeno (sismo, inundación, rayos, humo, frío).", "sugerencia": "Practiquen frases cortas con gestos: «si tiembla: agáchate, cúbrete y sujétate», «si el agua sube: lugar alto», «si hay rayos: bajo techo», «si hay humo: me alejo y aviso»." },
+      "antes-durante-despues": { "descripcion": "Confunde lo que se hace antes, durante y después de una emergencia.", "sugerencia": "Dibujen tres columnas (antes, durante, después) y peguen o dibujen acciones en cada una, usando el plan de su familia." },
+      "mochila-emergencia": { "descripcion": "No sabe qué cosas sirven en una mochila de emergencia.", "sugerencia": "Armen la mochila juntos: que el niño o la niña elija cada objeto y explique para qué sirve." },
+      "plan-familiar": { "descripcion": "No recuerda las partes del plan familiar (salidas, punto de encuentro, a quién llamar).", "sugerencia": "Caminen juntos hasta el punto de encuentro y repasen el plan una vez al mes, como un juego." },
+      "prevencion": { "descripcion": "No reconoce las acciones que previenen riesgos (no dejar fogatas, cuidar el agua, proteger animales y plantas del frío).", "sugerencia": "Conversen sobre lo que hace su familia o su comunidad para prepararse: guardar agua, abrigar a los animales, no quemar basura ni pasto." },
+      "estaciones-riesgo": { "descripcion": "No relaciona las estaciones con los fenómenos (lluvias e inundaciones en verano, heladas en invierno).", "sugerencia": "En un calendario, marquen con dibujos los meses de lluvias y los meses de heladas de su región." },
+      "ubica-fecha": { "descripcion": "Le cuesta encontrar una fecha en el calendario.", "sugerencia": "Busquen juntos el mes en un calendario de la casa y cuenten los días hasta llegar al número pedido." },
+      "cantidades": { "descripcion": "Le cuesta calcular cantidades de agua o de objetos para la emergencia.", "sugerencia": "Usen botellas o tapitas reales: armen grupos iguales y cuenten juntos el total." },
+      "produce-oracion": { "descripcion": "Le cuesta escribir una oración completa con mayúscula y punto.", "sugerencia": "Mientras arman la mochila, pidan que diga en voz alta para qué sirve cada cosa y luego escriban juntos una oración." }
+    }
+  }
+}

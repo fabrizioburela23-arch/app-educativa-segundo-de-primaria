@@ -1,0 +1,490 @@
+{
+  "id": "mat-3-3",
+  "titulo": "Cuerpos geométricos",
+  "objetivo": "Reconozco el cubo, el prisma, la pirámide, la esfera, el cilindro y el cono, y los encuentro en las cosas de todos los días.",
+  "explicacion": [
+    {
+      "texto": "Los **cuerpos geométricos** no son planos como un dibujo: tienen largo, ancho y alto. Muchas cosas que tomas con la mano tienen su forma, como un dado, una pelota o una lata.",
+      "visual": { "tipo": "emojis", "items": ["🎲", "⚽", "🥫"], "etiquetas": ["dado", "pelota", "lata"] }
+    },
+    {
+      "texto": "El **cubo** tiene 6 **caras** planas: son cuadrados iguales. Dos caras se juntan en una **arista**. Las aristas se juntan en un **vértice**, que es una punta.",
+      "visual": { "tipo": "ilustracion", "id": "cubo" }
+    },
+    {
+      "texto": "Algunos cuerpos tienen una **superficie curva** y por eso **ruedan**. La **esfera** es curva por todas partes: no tiene caras planas ni vértices.",
+      "visual": { "tipo": "ilustracion", "id": "esfera" }
+    },
+    {
+      "texto": "Los cuerpos están en todas partes. Un dado tiene forma de cubo y una caja, forma de prisma. Una pelota tiene forma de esfera. Mira la tabla y descubre más.",
+      "visual": {
+        "tipo": "tabla",
+        "columnas": ["Cuerpo", "Objeto"],
+        "filas": [["cubo", "dado 🎲"], ["prisma", "caja 📦"], ["esfera", "pelota ⚽"], ["cilindro", "turril 🛢️"], ["cono", "cucurucho 🍦"]]
+      }
+    }
+  ],
+  "ejemplo": {
+    "instruccion": "Conoce más cuerpos geométricos. Después, busca en tu casa un objeto parecido a cada uno.",
+    "pasos": [
+      {
+        "texto": "Este es un **prisma**. Se parece a una caja de fósforos. Este prisma tiene 6 caras planas y no rueda.",
+        "visual": { "tipo": "ilustracion", "id": "prisma" }
+      },
+      {
+        "texto": "Esta es una **pirámide**. Su base es un cuadrado y sus 4 caras triangulares se juntan arriba, en un vértice.",
+        "visual": { "tipo": "ilustracion", "id": "piramide" }
+      },
+      {
+        "texto": "Este es un **cilindro**, como una lata o un turril. Tiene 2 caras planas redondas y una superficie curva. Acostado, rueda.",
+        "visual": { "tipo": "ilustracion", "id": "cilindro" }
+      },
+      {
+        "texto": "Este es un **cono**, como un cucurucho de helado. Tiene 1 cara plana redonda, una superficie curva y un vértice: su punta.",
+        "visual": { "tipo": "ilustracion", "id": "cono" }
+      }
+    ]
+  },
+  "guiada": {
+    "intro": "Vamos a mirar y tocar cuerpos juntos. Imagina que los tienes en la mano.",
+    "pasos": [
+      {
+        "id": "g1", "tipo": "opcion",
+        "enunciado": "¿Qué cuerpo geométrico es este?",
+        "apoyo": "Mira: tiene una cara plana redonda arriba, otra abajo y una superficie curva alrededor.",
+        "visual": { "tipo": "ilustracion", "id": "cilindro" },
+        "opciones": [
+          { "texto": "cilindro", "correcta": true },
+          { "texto": "cono", "pista": "El cono tiene una sola cara plana y una punta. ¿Ves alguna punta?", "error": "nombra-cuerpo" },
+          { "texto": "esfera", "pista": "La esfera no tiene caras planas. Este cuerpo sí tiene.", "error": "nombra-cuerpo" }
+        ],
+        "columnas": 3,
+        "pista": "Piensa en una lata o en un turril.",
+        "explicacion": "Es un cilindro: tiene 2 caras planas redondas y una superficie curva, como una lata.",
+        "error": "nombra-cuerpo"
+      },
+      {
+        "id": "g2", "tipo": "clasificar",
+        "enunciado": "¿Rueda o no rueda?",
+        "apoyo": "Imagina que lo empujas suavemente sobre la mesa. Si tiene una parte curva, rueda.",
+        "categorias": [
+          { "id": "rueda", "texto": "Rueda" },
+          { "id": "no", "texto": "No rueda" }
+        ],
+        "elementos": [
+          { "texto": "pelota", "emoji": "⚽", "categoria": "rueda" },
+          { "texto": "dado", "emoji": "🎲", "categoria": "no" },
+          { "texto": "lata", "emoji": "🥫", "categoria": "rueda" },
+          { "texto": "caja", "emoji": "📦", "categoria": "no" },
+          { "texto": "naranja", "emoji": "🍊", "categoria": "rueda" },
+          { "texto": "libro", "emoji": "📕", "categoria": "no" }
+        ],
+        "pista": "Las cosas con superficie curva ruedan. Las que tienen solo caras planas se deslizan.",
+        "explicacion": "La pelota, la lata y la naranja ruedan porque tienen una superficie curva. El dado, la caja y el libro tienen solo caras planas: no ruedan.",
+        "error": "plana-curva"
+      },
+      {
+        "id": "g3", "tipo": "relacionar",
+        "enunciado": "Une cada objeto con su cuerpo geométrico.",
+        "apoyo": "Imagina el objeto en tu mano. ¿Tiene puntas? ¿Rueda? ¿Sus caras son cuadrados?",
+        "pares": [
+          [{ "texto": "dado", "emoji": "🎲" }, "cubo"],
+          [{ "texto": "pelota", "emoji": "⚽" }, "esfera"],
+          [{ "texto": "lata", "emoji": "🥫" }, "cilindro"],
+          [{ "texto": "cucurucho", "emoji": "🍦" }, "cono"]
+        ],
+        "pista": "El cucurucho tiene una punta. La lata tiene dos caras planas redondas.",
+        "explicacion": "Dado: cubo. Pelota: esfera. Lata: cilindro. Cucurucho: cono.",
+        "error": "cuerpo-objeto"
+      }
+    ]
+  },
+  "practica": [
+    {
+      "id": "p1", "tipo": "opcion", "nivel": 1,
+      "enunciado": "¿Cómo se llama este cuerpo geométrico?",
+      "visual": { "tipo": "ilustracion", "id": "piramide" },
+      "opciones": [
+        { "texto": "pirámide", "correcta": true },
+        { "texto": "cono", "pista": "El cono tiene una base redonda y una superficie curva. Este cuerpo tiene solo caras planas.", "error": "nombra-cuerpo" },
+        { "texto": "prisma", "pista": "El prisma es como una caja: no termina en una punta. Este cuerpo sí.", "error": "nombra-cuerpo" }
+      ],
+      "columnas": 3,
+      "pista": "Mira las caras de los lados: son triángulos que se juntan arriba, en una punta.",
+      "explicacion": "Es una pirámide: su base es un cuadrado y sus 4 caras triangulares se juntan arriba, en un vértice.",
+      "error": "nombra-cuerpo"
+    },
+    {
+      "id": "p2", "tipo": "memoria", "nivel": 1,
+      "enunciado": "Encuentra las parejas: el objeto y su cuerpo geométrico.",
+      "pares": [
+        [{ "emoji": "🎲" }, "cubo"],
+        [{ "emoji": "⚽" }, "esfera"],
+        [{ "emoji": "🥫" }, "cilindro"],
+        [{ "emoji": "🍦" }, "cono"],
+        [{ "emoji": "📦" }, "prisma"]
+      ],
+      "pista": "Piensa en la forma de cada objeto: ¿tiene puntas?, ¿rueda?",
+      "explicacion": "Dado: cubo. Pelota: esfera. Lata: cilindro. Cucurucho: cono. Caja: prisma.",
+      "error": "cuerpo-objeto"
+    },
+    {
+      "id": "p3", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Toca los objetos que tienen forma de cilindro.",
+      "texto": "En el patio de la escuela hay un *turril* azul, una pelota, un dado grande y una *lata* de pintura.",
+      "pista": "Busca objetos con dos caras planas redondas y una parte curva.",
+      "explicacion": "El turril y la lata son cilindros. La pelota es una esfera y el dado es un cubo.",
+      "error": "cuerpo-objeto"
+    },
+    {
+      "id": "p4", "tipo": "multiple", "nivel": 1,
+      "enunciado": "Elige todos los objetos que tienen forma de esfera.",
+      "opciones": [
+        { "texto": "pelota", "emoji": "⚽", "correcta": true },
+        { "texto": "naranja", "emoji": "🍊", "correcta": true },
+        { "texto": "dado", "emoji": "🎲", "pista": "El dado tiene caras planas y puntas: es un cubo.", "error": "cuerpo-objeto" },
+        { "texto": "lata", "emoji": "🥫", "pista": "La lata tiene dos caras planas: es un cilindro.", "error": "cuerpo-objeto" },
+        { "texto": "caja", "emoji": "📦", "pista": "La caja tiene caras planas: es un prisma.", "error": "cuerpo-objeto" }
+      ],
+      "pista": "Una esfera es redonda por todas partes y no tiene caras planas.",
+      "explicacion": "La pelota y la naranja tienen forma de esfera. El dado, la lata y la caja tienen caras planas.",
+      "error": "cuerpo-objeto"
+    },
+    {
+      "id": "p5", "tipo": "numero", "nivel": 2,
+      "enunciado": "¿Cuántas caras tiene un cubo? Cuenta también las que no se ven.",
+      "visual": { "tipo": "ilustracion", "id": "cubo" },
+      "respuesta": 6,
+      "erroresComunes": [ { "respuesta": 3, "pista": "Contaste solo las caras que se ven. También hay caras atrás, abajo y al otro lado.", "error": "cuenta-caras" } ],
+      "pista": "Imagina el cubo en tu mano. Cuenta la cara de arriba y la de abajo, la de adelante y la de atrás, y las de los lados.",
+      "explicacion": "El cubo tiene 6 caras: arriba, abajo, adelante, atrás, izquierda y derecha. Por eso un dado muestra del 1 al 6: un número en cada cara.",
+      "error": "cuenta-caras"
+    },
+    {
+      "id": "p6", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha la adivinanza. Escribe el nombre del cuerpo geométrico.",
+      "escuchar": "Soy redonda por todas partes. No tengo caras planas ni puntas. Ruedo para cualquier lado. ¿Quién soy?",
+      "respuestas": ["esfera", "la esfera", "una esfera"],
+      "pista": "No es un objeto: es el nombre de un cuerpo. Una pelota tiene esa forma.",
+      "explicacion": "Es la esfera: es curva por todas partes, como una pelota.",
+      "error": "nombra-cuerpo"
+    },
+    {
+      "id": "p7", "tipo": "multiple", "nivel": 2,
+      "enunciado": "Elige todos los cuerpos que pueden rodar.",
+      "opciones": [
+        { "texto": "esfera", "correcta": true },
+        { "texto": "cilindro", "correcta": true },
+        { "texto": "cono", "correcta": true },
+        { "texto": "cubo", "pista": "El cubo tiene solo caras planas: se desliza, no rueda.", "error": "plana-curva" },
+        { "texto": "pirámide", "pista": "La pirámide tiene solo caras planas: no rueda.", "error": "plana-curva" }
+      ],
+      "pista": "Ruedan los cuerpos que tienen una superficie curva. Son tres.",
+      "explicacion": "La esfera, el cilindro y el cono tienen superficie curva y ruedan. El cono rueda dando vueltas en círculo. El cubo y la pirámide no ruedan.",
+      "error": "plana-curva"
+    },
+    {
+      "id": "p8", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "¿Qué forma tiene cada objeto?",
+      "categorias": [
+        { "id": "esfera", "texto": "Esfera" },
+        { "id": "cilindro", "texto": "Cilindro" },
+        { "id": "cono", "texto": "Cono" }
+      ],
+      "elementos": [
+        { "texto": "pelota", "emoji": "⚽", "categoria": "esfera" },
+        { "texto": "naranja", "emoji": "🍊", "categoria": "esfera" },
+        { "texto": "lata", "emoji": "🥫", "categoria": "cilindro" },
+        { "texto": "turril", "emoji": "🛢️", "categoria": "cilindro" },
+        { "texto": "vela", "emoji": "🕯️", "categoria": "cilindro" },
+        { "texto": "cucurucho", "emoji": "🍦", "categoria": "cono" },
+        { "texto": "gorro de cumpleaños", "categoria": "cono" }
+      ],
+      "pista": "La esfera no tiene caras planas. El cilindro tiene dos. El cono tiene una y una punta.",
+      "explicacion": "Esferas: pelota y naranja. Cilindros: lata, turril y vela. Conos: cucurucho y gorro de cumpleaños.",
+      "error": "cuerpo-objeto"
+    },
+    {
+      "id": "p9", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa con el nombre del cuerpo.",
+      "texto": "El [cilindro] tiene dos caras planas redondas y una superficie curva. La [esfera] no tiene ninguna cara plana.",
+      "banco": ["cubo", "pirámide"],
+      "pista": "Piensa en una lata y en una pelota.",
+      "explicacion": "El cilindro tiene 2 caras planas redondas y una superficie curva. La esfera es toda curva: no tiene caras planas.",
+      "error": "plana-curva"
+    },
+    {
+      "id": "p10", "tipo": "numero", "nivel": 2,
+      "enunciado": "Esta pirámide tiene una base cuadrada. ¿Cuántas caras triangulares tiene?",
+      "visual": { "tipo": "ilustracion", "id": "piramide" },
+      "respuesta": 4,
+      "erroresComunes": [
+        { "respuesta": 2, "pista": "Esas son las que se ven. Cada lado de la base tiene su cara triangular.", "error": "cuenta-caras" },
+        { "respuesta": 5, "pista": "La base es un cuadrado, no un triángulo. Cuenta solo los triángulos.", "error": "cuenta-caras" }
+      ],
+      "pista": "¿Cuántos lados tiene la base cuadrada? Sobre cada lado se levanta un triángulo.",
+      "explicacion": "La base cuadrada tiene 4 lados, y sobre cada lado hay una cara triangular: 4 caras triangulares.",
+      "error": "cuenta-caras"
+    },
+    {
+      "id": "p11", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "¿Tiene solo caras planas o tiene una superficie curva?",
+      "categorias": [
+        { "id": "planas", "texto": "Solo caras planas" },
+        { "id": "curva", "texto": "Tiene superficie curva" }
+      ],
+      "elementos": [
+        { "texto": "cubo", "categoria": "planas" },
+        { "texto": "prisma", "categoria": "planas" },
+        { "texto": "pirámide", "categoria": "planas" },
+        { "texto": "esfera", "categoria": "curva" },
+        { "texto": "cilindro", "categoria": "curva" },
+        { "texto": "cono", "categoria": "curva" }
+      ],
+      "pista": "Los cuerpos con superficie curva son los que ruedan.",
+      "explicacion": "El cubo, el prisma y la pirámide tienen solo caras planas. La esfera, el cilindro y el cono tienen superficie curva.",
+      "error": "plana-curva"
+    },
+    {
+      "id": "p12", "tipo": "numero", "nivel": 3,
+      "enunciado": "Cuenta en este cubo sus caras, sus aristas y sus vértices.",
+      "visual": { "tipo": "ilustracion", "id": "cubo" },
+      "campos": [
+        { "etiqueta": "Caras", "respuesta": 6 },
+        { "etiqueta": "Aristas", "respuesta": 12 },
+        { "etiqueta": "Vértices", "respuesta": 8 }
+      ],
+      "pista": "Las aristas son las líneas donde se juntan dos caras. Los vértices son las puntas. Las líneas punteadas están escondidas atrás: cuéntalas también.",
+      "explicacion": "El cubo tiene 6 caras, 12 aristas (4 arriba, 4 abajo y 4 de pie) y 8 vértices (4 arriba y 4 abajo).",
+      "error": "vertices-aristas"
+    },
+    {
+      "id": "p13", "tipo": "pasos", "nivel": 3,
+      "enunciado": "Don Juan guarda agua en 3 turriles iguales.",
+      "visual": { "tipo": "emoji", "valor": "🛢️", "cantidad": 3 },
+      "pasos": [
+        {
+          "tipo": "opcion",
+          "enunciado": "¿Qué cuerpo geométrico es un turril?",
+          "opciones": [
+            { "texto": "cilindro", "correcta": true },
+            { "texto": "cubo", "pista": "El cubo no tiene superficie curva, y el turril sí.", "error": "nombra-cuerpo" },
+            { "texto": "cono", "pista": "El cono tiene una punta, y el turril no.", "error": "nombra-cuerpo" }
+          ],
+          "pista": "Un turril tiene forma de lata grande.",
+          "explicacion": "Un turril es un cilindro: tiene 2 caras planas redondas y una superficie curva.",
+          "error": "nombra-cuerpo"
+        },
+        {
+          "tipo": "numero",
+          "enunciado": "¿Cuántas caras planas tiene un turril?",
+          "respuesta": 2,
+          "erroresComunes": [ { "respuesta": 3, "pista": "La parte curva no es plana. Cuenta solo la tapa de arriba y la de abajo.", "error": "plana-curva" } ],
+          "pista": "Busca las partes planas: arriba y abajo.",
+          "explicacion": "Un turril tiene 2 caras planas: la de arriba y la de abajo.",
+          "error": "cuenta-caras"
+        },
+        {
+          "tipo": "numero",
+          "enunciado": "¿Cuántas caras planas tienen los 3 turriles juntos?",
+          "respuesta": 6,
+          "erroresComunes": [ { "respuesta": 2, "pista": "Esas son las de un solo turril. Don Juan tiene 3 turriles.", "error": "problema-cuerpos" } ],
+          "pista": "Cada turril tiene 2 caras planas. Suma las de los 3 turriles.",
+          "explicacion": "2 + 2 + 2 = 6 caras planas.",
+          "error": "problema-cuerpos"
+        }
+      ],
+      "pista": "Primero piensa qué cuerpo es un turril.",
+      "explicacion": "Un turril es un cilindro con 2 caras planas. Tres turriles tienen 2 + 2 + 2 = 6 caras planas.",
+      "error": "problema-cuerpos"
+    },
+    {
+      "id": "p14", "tipo": "escribir-libre", "nivel": 3,
+      "enunciado": "Busca un objeto en tu casa. Escribe qué objeto es y a qué cuerpo geométrico se parece.",
+      "guia": ["La ... tiene forma de cilindro.", "Mi ... se parece a un cubo."],
+      "requisitos": [
+        { "tipo": "mayuscula-inicial" },
+        { "tipo": "punto-final" },
+        { "tipo": "min-palabras", "valor": 5 },
+        { "tipo": "incluye", "palabras": ["cubo", "prisma", "pirámide", "esfera", "cilindro", "cono"] }
+      ],
+      "modelo": "La lata de leche tiene forma de cilindro.",
+      "pista": "Mira las cosas de la cocina o de tu cuarto: una caja, una lata, una pelota...",
+      "explicacion": "Por ejemplo: «La lata de leche tiene forma de cilindro». Recuerda la mayúscula al inicio y el punto al final.",
+      "error": "describe-cuerpo"
+    },
+    {
+      "id": "p15", "tipo": "opcion", "nivel": 3,
+      "enunciado": "Tengo una cara plana redonda, una superficie curva y un vértice. ¿Qué cuerpo soy?",
+      "opciones": [
+        { "texto": "cono", "correcta": true },
+        { "texto": "cilindro", "pista": "El cilindro tiene 2 caras planas y ningún vértice.", "error": "nombra-cuerpo" },
+        { "texto": "pirámide", "pista": "La pirámide no tiene superficie curva: todas sus caras son planas.", "error": "plana-curva" },
+        { "texto": "esfera", "pista": "La esfera no tiene caras planas ni vértices.", "error": "plana-curva" }
+      ],
+      "columnas": 2,
+      "pista": "Piensa en un cucurucho de helado.",
+      "explicacion": "Es el cono: tiene 1 cara plana redonda, una superficie curva y un vértice en la punta.",
+      "error": "nombra-cuerpo"
+    },
+    {
+      "id": "p16", "tipo": "ordenar", "nivel": 3,
+      "enunciado": "Ordena los cuerpos de menos a más caras planas.",
+      "elementos": ["esfera", "cono", "cilindro", "pirámide", "cubo"],
+      "pista": "La esfera no tiene caras planas y el cono tiene una sola. Cuenta las de los demás.",
+      "explicacion": "Esfera (0), cono (1), cilindro (2), pirámide (5) y cubo (6).",
+      "error": "cuenta-caras"
+    }
+  ],
+  "comprobacion": [
+    {
+      "id": "c1", "tipo": "opcion", "nivel": 1,
+      "enunciado": "¿Qué cuerpo geométrico es este?",
+      "visual": { "tipo": "ilustracion", "id": "cono" },
+      "opciones": [
+        { "texto": "cono", "correcta": true },
+        { "texto": "pirámide", "pista": "La pirámide no tiene superficie curva. Este cuerpo sí tiene.", "error": "nombra-cuerpo" },
+        { "texto": "cilindro", "pista": "El cilindro no tiene punta. Este cuerpo sí tiene.", "error": "nombra-cuerpo" }
+      ],
+      "columnas": 3,
+      "pista": "Tiene una base redonda y una punta, como un cucurucho de helado.",
+      "explicacion": "Es un cono: tiene 1 cara plana redonda, una superficie curva y un vértice.",
+      "error": "nombra-cuerpo"
+    },
+    {
+      "id": "c2", "tipo": "relacionar", "nivel": 1,
+      "enunciado": "Une cada objeto con su cuerpo geométrico.",
+      "pares": [
+        [{ "texto": "caja de zapatos", "emoji": "📦" }, "prisma"],
+        [{ "texto": "pelota de básquet", "emoji": "🏀" }, "esfera"],
+        [{ "texto": "turril", "emoji": "🛢️" }, "cilindro"],
+        [{ "texto": "gorro de cumpleaños" }, "cono"]
+      ],
+      "pista": "El gorro de cumpleaños tiene una punta. El turril tiene dos caras planas redondas.",
+      "explicacion": "Caja de zapatos: prisma. Pelota de básquet: esfera. Turril: cilindro. Gorro de cumpleaños: cono.",
+      "error": "cuerpo-objeto"
+    },
+    {
+      "id": "c3", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "¿El objeto tiene solo caras planas o tiene una superficie curva?",
+      "categorias": [
+        { "id": "planas", "texto": "Solo caras planas" },
+        { "id": "curva", "texto": "Tiene superficie curva" }
+      ],
+      "elementos": [
+        { "texto": "caja de fósforos", "categoria": "planas" },
+        { "texto": "dado", "emoji": "🎲", "categoria": "planas" },
+        { "texto": "caja de regalo", "emoji": "🎁", "categoria": "planas" },
+        { "texto": "vela", "emoji": "🕯️", "categoria": "curva" },
+        { "texto": "naranja", "emoji": "🍊", "categoria": "curva" },
+        { "texto": "cucurucho", "emoji": "🍦", "categoria": "curva" }
+      ],
+      "pista": "Si el objeto puede rodar, tiene una superficie curva.",
+      "explicacion": "La caja de fósforos, el dado y la caja de regalo tienen solo caras planas. La vela, la naranja y el cucurucho tienen superficie curva.",
+      "error": "plana-curva"
+    },
+    {
+      "id": "c4", "tipo": "numero", "nivel": 2,
+      "enunciado": "¿Cuántos vértices tiene esta pirámide de base cuadrada?",
+      "visual": { "tipo": "ilustracion", "id": "piramide" },
+      "respuesta": 5,
+      "erroresComunes": [
+        { "respuesta": 4, "pista": "Contaste las puntas de la base. ¡Falta la punta de arriba!", "error": "vertices-aristas" },
+        { "respuesta": 1, "pista": "La punta de arriba es un vértice, pero la base también tiene puntas.", "error": "vertices-aristas" }
+      ],
+      "pista": "Los vértices son las puntas. Cuenta las de la base y la de arriba.",
+      "explicacion": "La base cuadrada tiene 4 vértices y arriba hay 1 más: 4 + 1 = 5 vértices.",
+      "error": "vertices-aristas"
+    },
+    {
+      "id": "c5", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha la adivinanza. Escribe el nombre del cuerpo geométrico.",
+      "escuchar": "Tengo seis caras planas. Todas mis caras son cuadrados del mismo tamaño. No ruedo. ¿Quién soy?",
+      "respuestas": ["cubo", "el cubo", "un cubo"],
+      "pista": "Un dado tiene esta forma. ¿Cómo se llama el cuerpo?",
+      "explicacion": "Es el cubo: tiene 6 caras planas y todas son cuadrados iguales.",
+      "error": "nombra-cuerpo"
+    },
+    {
+      "id": "c6", "tipo": "tocar", "nivel": 2,
+      "enunciado": "Toca los objetos que tienen forma de prisma.",
+      "texto": "Kusi ve un *libro*, una naranja, una *caja* grande y una lata.",
+      "pista": "Un prisma tiene solo caras planas, como una caja de fósforos.",
+      "explicacion": "El libro y la caja tienen forma de prisma. La naranja es una esfera y la lata es un cilindro.",
+      "error": "cuerpo-objeto"
+    },
+    {
+      "id": "c7", "tipo": "pasos", "nivel": 3,
+      "enunciado": "Nayra guarda sus lápices en una lata y sus cuadernos en una caja.",
+      "visual": { "tipo": "emojis", "items": ["🥫", "📦"], "etiquetas": ["lata", "caja"] },
+      "pasos": [
+        {
+          "tipo": "opcion",
+          "enunciado": "¿Qué cuerpo geométrico es la lata?",
+          "opciones": [
+            { "texto": "cilindro", "correcta": true },
+            { "texto": "esfera", "pista": "La esfera no tiene caras planas, y la lata sí tiene.", "error": "nombra-cuerpo" },
+            { "texto": "prisma", "pista": "El prisma no tiene superficie curva, y la lata sí.", "error": "plana-curva" }
+          ],
+          "pista": "La lata tiene 2 caras planas redondas y una superficie curva.",
+          "explicacion": "La lata es un cilindro.",
+          "error": "nombra-cuerpo"
+        },
+        {
+          "tipo": "numero",
+          "enunciado": "¿Cuántas caras planas tiene la caja?",
+          "respuesta": 6,
+          "erroresComunes": [ { "respuesta": 3, "pista": "Contaste solo las que se ven. La caja también tiene caras atrás, abajo y al otro lado.", "error": "cuenta-caras" } ],
+          "pista": "La caja es un prisma: cuenta arriba, abajo, adelante, atrás y los dos lados.",
+          "explicacion": "La caja tiene 6 caras planas.",
+          "error": "cuenta-caras"
+        },
+        {
+          "tipo": "numero",
+          "enunciado": "¿Cuántas caras planas tienen la lata y la caja juntas?",
+          "respuesta": 8,
+          "erroresComunes": [ { "respuesta": 6, "pista": "Esas son las de la caja. Suma también las caras planas de la lata.", "error": "problema-cuerpos" } ],
+          "pista": "Suma las caras planas de la lata y las de la caja.",
+          "explicacion": "La lata tiene 2 caras planas y la caja tiene 6: 2 + 6 = 8.",
+          "error": "problema-cuerpos"
+        }
+      ],
+      "pista": "Resuelve un paso a la vez: primero la lata, después la caja.",
+      "explicacion": "La lata es un cilindro con 2 caras planas; la caja es un prisma con 6. Juntas tienen 8 caras planas.",
+      "error": "problema-cuerpos"
+    },
+    {
+      "id": "c8", "tipo": "ordenar", "nivel": 3,
+      "enunciado": "Ordena los cuerpos de más a menos vértices.",
+      "elementos": ["cubo", "pirámide", "cono", "esfera"],
+      "pista": "El cubo tiene 8 vértices y la esfera no tiene ninguno. Cuenta los de la pirámide y el cono.",
+      "explicacion": "Cubo (8), pirámide (5), cono (1) y esfera (0).",
+      "error": "vertices-aristas"
+    }
+  ],
+  "repaso": {
+    "texto": "Cubo, prisma y pirámide tienen solo caras planas y no ruedan. Esfera, cilindro y cono tienen superficie curva y ruedan.",
+    "visual": {
+      "tipo": "tabla",
+      "columnas": ["Solo caras planas", "Superficie curva"],
+      "filas": [["cubo 🎲", "esfera ⚽"], ["prisma 📦", "cilindro 🥫"], ["pirámide", "cono 🍦"]]
+    }
+  },
+  "adulto": {
+    "objetivo": "Reconocer y nombrar cuerpos geométricos (cubo, prisma, pirámide, esfera, cilindro y cono); distinguir los que tienen solo caras planas de los que tienen superficie curva y ruedan; relacionarlos con objetos cotidianos, y contar a nivel básico caras, aristas y vértices del cubo y de la pirámide.",
+    "sugerencias": [
+      "Busquen en la cocina objetos con forma de cuerpos geométricos: una lata (cilindro), una caja de fósforos o de té (prisma), una naranja (esfera). Pongan una tabla inclinada y prueben cuáles ruedan y cuáles se deslizan.",
+      "En la feria o en la tienda, jueguen «Veo, veo un cuerpo»: «veo un cilindro» (una lata o un turril), «veo un prisma» (una caja), «veo un cono» (un cucurucho de helado).",
+      "Armen un cubo con 12 fideos largos o palitos (las aristas) y 8 bolitas de plastilina (los vértices). Cuenten juntos las aristas, los vértices y las caras."
+    ],
+    "errores": {
+      "nombra-cuerpo": { "descripcion": "Confunde los nombres de los cuerpos geométricos.", "sugerencia": "Pongan etiquetas con el nombre (cubo, cilindro, esfera...) a objetos de la casa y repasen los nombres jugando a «¿Qué es?»." },
+      "cuerpo-objeto": { "descripcion": "Le cuesta relacionar objetos de todos los días con su cuerpo geométrico.", "sugerencia": "Junten objetos de la casa y clasifíquenlos en cajas o montones: cubos, prismas, esferas, cilindros y conos." },
+      "plana-curva": { "descripcion": "Confunde caras planas y superficie curva, o no sabe qué cuerpos ruedan.", "sugerencia": "Pasen la mano por los objetos: lo plano se siente liso y parejo; lo curvo se siente redondeado. Después prueben si ruedan." },
+      "cuenta-caras": { "descripcion": "Cuenta solo las caras que se ven y olvida las de atrás o de abajo.", "sugerencia": "Tomen una caja y marquen cada cara con un sticker o un punto de color mientras la giran; al final cuenten las marcas." },
+      "vertices-aristas": { "descripcion": "Confunde vértices (puntas) y aristas (bordes), o los cuenta mal.", "sugerencia": "Con una caja, pasen el dedo por los bordes (aristas) y toquen las puntas (vértices). Marquen con tiza cada uno mientras cuentan." },
+      "describe-cuerpo": { "descripcion": "Le cuesta escribir una oración sobre un objeto y su forma.", "sugerencia": "Tomen un objeto, digan en voz alta «La ... tiene forma de ...» y escriban juntos la oración con mayúscula y punto." },
+      "problema-cuerpos": { "descripcion": "Le cuesta resolver problemas de varios pasos con cuerpos geométricos.", "sugerencia": "Usen objetos reales (latas y cajas) y resuelvan cada paso tocando y contando las caras." }
+    }
+  }
+}

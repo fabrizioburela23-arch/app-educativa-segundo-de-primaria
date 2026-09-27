@@ -1,0 +1,319 @@
+{
+  "id": "mat-1-1",
+  "titulo": "Leo y escribo números",
+  "objetivo": "Leo y escribo números hasta el 999 con cifras y con palabras.",
+  "explicacion": [
+    {
+      "texto": "Un número se puede escribir con **cifras** o con **palabras**. 243 y «doscientos cuarenta y tres» dicen lo mismo. Para leerlo, empieza por las centenas.",
+      "emoji": "✏️",
+      "visual": { "tipo": "bloques", "centenas": 2, "decenas": 4, "unidades": 3 }
+    },
+    {
+      "texto": "Del 11 al 15 hay nombres especiales: once, doce, trece, catorce y quince. Del 16 al 29, cada número se escribe en **una sola palabra**: dieciséis, veintidós, veintiocho.",
+      "visual": { "tipo": "tabla", "columnas": ["Con cifras", "Con palabras"], "filas": [["15", "quince"], ["16", "dieciséis"], ["22", "veintidós"], ["28", "veintiocho"]] }
+    },
+    {
+      "texto": "Desde el 31, las decenas y las unidades se unen con **y**: treinta y uno, cuarenta y cinco. La y va solo entre las decenas y las unidades: 305 es «trescientos cinco».",
+      "visual": { "tipo": "tabla", "columnas": ["Con cifras", "Con palabras"], "filas": [["45", "cuarenta y cinco"], ["87", "ochenta y siete"], ["305", "trescientos cinco"]] }
+    },
+    {
+      "texto": "Las centenas son: cien, doscientos, trescientos, cuatrocientos, **quinientos**, seiscientos, **setecientos**, ochocientos y **novecientos**. El 100 se dice «cien», pero 135 se dice «ciento treinta y cinco».",
+      "visual": { "tipo": "tabla", "columnas": ["Con cifras", "Con palabras"], "filas": [["100", "cien"], ["135", "ciento treinta y cinco"], ["500", "quinientos"], ["700", "setecientos"], ["900", "novecientos"]] }
+    }
+  ],
+  "ejemplo": {
+    "instruccion": "Mira cómo leemos el número 468. Después, arma tú números con bloques y léelos en voz alta.",
+    "pasos": [
+      { "texto": "Primero las centenas: 4 centenas son 400. Se dice «cuatrocientos».", "visual": { "tipo": "bloques", "centenas": 4 } },
+      { "texto": "Después las decenas: 6 decenas son 60. Se dice «sesenta».", "visual": { "tipo": "bloques", "centenas": 4, "decenas": 6 } },
+      { "texto": "Al final las unidades: 8 unidades. Se dice «ocho». Entre las decenas y las unidades va la **y**.", "visual": { "tipo": "bloques", "centenas": 4, "decenas": 6, "unidades": 8 } },
+      { "texto": "Todo junto: 468 se lee «cuatrocientos sesenta y ocho».", "visual": { "tipo": "tabla", "columnas": ["Con cifras", "Con palabras"], "filas": [["468", "cuatrocientos sesenta y ocho"]] } }
+    ],
+    "explorar": { "tipo": "bloques" }
+  },
+  "guiada": {
+    "intro": "Ahora lo hacemos juntos, paso a paso.",
+    "pasos": [
+      {
+        "id": "g1", "tipo": "numero",
+        "enunciado": "Escribe con cifras: trescientos veinticinco.",
+        "apoyo": "Trescientos son 3 centenas. Veinticinco son 2 decenas y 5 unidades.",
+        "respuesta": 325,
+        "erroresComunes": [
+          { "respuesta": 30025, "pista": "Escribiste cada parte por separado. Este número tiene solo tres cifras: centenas, decenas y unidades.", "error": "escribe-por-partes" },
+          { "respuesta": 3025, "pista": "Sobra un 0. Pon una sola cifra en cada lugar: centenas, decenas y unidades.", "error": "escribe-por-partes" }
+        ],
+        "pista": "Piensa cuántas centenas, decenas y unidades tiene. Escribe una cifra para cada una.",
+        "explicacion": "«Trescientos veinticinco» son 3 centenas, 2 decenas y 5 unidades: se escribe 325.",
+        "error": "lectura-numeros"
+      },
+      {
+        "id": "g2", "tipo": "completar",
+        "enunciado": "Completa cómo se lee el número 736.",
+        "apoyo": "Lee por partes: primero 700, después 30 y al final 6.",
+        "texto": "736 se lee [setecientos] [treinta] y [seis].",
+        "banco": ["setenta", "tres", "sesenta"],
+        "pista": "El 7 está en las centenas: vale 700, no 70.",
+        "explicacion": "736 se lee «setecientos treinta y seis»: 700 + 30 + 6.",
+        "error": "lectura-numeros"
+      },
+      {
+        "id": "g3", "tipo": "escribir",
+        "enunciado": "Escribe con palabras el número 16.",
+        "apoyo": "Del 16 al 19, cada número se escribe en una sola palabra, como diecisiete o dieciocho.",
+        "respuestas": ["dieciséis"],
+        "pista": "Se forma con «diez» y «seis», juntos en una sola palabra.",
+        "explicacion": "16 se escribe «dieciséis»: una sola palabra, con tilde en la é.",
+        "error": "palabras-16-29"
+      }
+    ]
+  },
+  "practica": [
+    {
+      "id": "p1", "tipo": "relacionar", "nivel": 1,
+      "enunciado": "Une cada número con su nombre.",
+      "pares": [["12", "doce"], ["15", "quince"], ["60", "sesenta"], ["70", "setenta"]],
+      "pista": "Fíjate en el comienzo: «sesenta» suena parecido a «seis» y «setenta», a «siete».",
+      "explicacion": "12 es doce, 15 es quince, 60 es sesenta y 70 es setenta.",
+      "error": "nombres-decenas"
+    },
+    {
+      "id": "p2", "tipo": "numero", "nivel": 1,
+      "enunciado": "Escucha el número y escríbelo con cifras.",
+      "escuchar": "cuarenta y siete",
+      "respuesta": 47,
+      "erroresComunes": [
+        { "respuesta": 407, "pista": "Cuarenta son 4 decenas. No hace falta un 0 en medio.", "error": "escribe-por-partes" },
+        { "respuesta": 74, "pista": "¿Qué oíste primero? Las decenas se escriben primero.", "error": "invierte-cifras" },
+        { "respuesta": 67, "pista": "Escucha otra vez con atención la primera palabra.", "error": "nombres-decenas" }
+      ],
+      "pista": "Primero escribe la cifra de las decenas y después la de las unidades.",
+      "explicacion": "«Cuarenta y siete» son 4 decenas y 7 unidades: se escribe 47.",
+      "error": "lectura-numeros"
+    },
+    {
+      "id": "p3", "tipo": "generador", "nivel": 1, "generador": "leer-numero", "params": { "max": 99, "modo": "a-palabras" }
+    },
+    {
+      "id": "p4", "tipo": "memoria", "nivel": 1,
+      "enunciado": "Encuentra las parejas: el número y su nombre.",
+      "pares": [["20", "veinte"], ["30", "treinta"], ["50", "cincuenta"], ["80", "ochenta"], ["90", "noventa"]],
+      "pista": "Cuenta de 10 en 10 en voz alta: diez, veinte, treinta...",
+      "explicacion": "20 es veinte, 30 es treinta, 50 es cincuenta, 80 es ochenta y 90 es noventa.",
+      "error": "nombres-decenas"
+    },
+    {
+      "id": "p5", "tipo": "ordenar", "nivel": 2,
+      "enunciado": "Ordena las palabras para leer el número 385.",
+      "elementos": ["trescientos", "ochenta", "y", "cinco"],
+      "unir": " ",
+      "pista": "Empieza por las centenas. La y va entre las decenas y las unidades.",
+      "explicacion": "385 se lee «trescientos ochenta y cinco».",
+      "error": "uso-de-y"
+    },
+    {
+      "id": "p6", "tipo": "generador", "nivel": 2, "generador": "leer-numero", "params": { "max": 999, "modo": "a-cifras" }
+    },
+    {
+      "id": "p7", "tipo": "generador", "nivel": 2, "generador": "leer-numero", "params": { "max": 999, "modo": "a-palabras" }
+    },
+    {
+      "id": "p8", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha el número y escríbelo con palabras.",
+      "escuchar": "quinientos cuarenta y tres",
+      "respuestas": ["quinientos cuarenta y tres"],
+      "pista": "Empieza por las centenas: el nombre del 500 no empieza con «cinco». Después escribe las decenas, la y y las unidades.",
+      "explicacion": "Se escribe «quinientos cuarenta y tres» (543). El 500 es quinientos, con qu, y la y va entre el cuarenta y el tres.",
+      "error": "nombres-centenas"
+    },
+    {
+      "id": "p9", "tipo": "manipular", "nivel": 2,
+      "enunciado": "Arma con bloques el número doscientos seis.",
+      "manipulable": { "tipo": "bloques", "objetivo": 206, "canonico": true },
+      "pista": "Piensa cuántas centenas, decenas y unidades tiene doscientos seis. ¿Hay alguna decena?",
+      "explicacion": "Doscientos seis es 206: 2 placas, ninguna barra y 6 cubitos.",
+      "error": "cero-intermedio"
+    },
+    {
+      "id": "p10", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa el nombre de cada número.",
+      "texto": "100 es [cien]. 105 es [ciento] cinco. 500 es [quin]ientos. 700 es [sete]cientos.",
+      "banco": ["cinco", "siete"],
+      "pista": "Cuando el 100 va solito, se dice «cien»; si le siguen más números, cambia. El 500 y el 700 tienen nombres especiales.",
+      "explicacion": "100 es cien, 105 es ciento cinco, 500 es quinientos y 700 es setecientos.",
+      "error": "nombres-centenas"
+    },
+    {
+      "id": "p11", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "¿Cómo se escribe su nombre: en una sola palabra o con «y»?",
+      "categorias": [ { "id": "una", "texto": "Una sola palabra" }, { "id": "y", "texto": "Con «y»" } ],
+      "elementos": [
+        { "texto": "17", "categoria": "una" }, { "texto": "36", "categoria": "y" },
+        { "texto": "26", "categoria": "una" }, { "texto": "52", "categoria": "y" },
+        { "texto": "40", "categoria": "una" }, { "texto": "85", "categoria": "y" }
+      ],
+      "pista": "Di cada nombre en voz alta. Recuerda: del 16 al 29 todo va junto, en una sola palabra.",
+      "explicacion": "17 (diecisiete), 26 (veintiséis) y 40 (cuarenta) son una sola palabra. 36, 52 y 85 llevan y: treinta y seis, cincuenta y dos, ochenta y cinco.",
+      "error": "palabras-16-29"
+    },
+    {
+      "id": "p12", "tipo": "tocar", "nivel": 2,
+      "enunciado": "Escucha y toca el número que oyes.",
+      "escuchar": "trescientos cinco",
+      "texto": "350 *305* 335 503 35",
+      "pista": "Piensa cuántas centenas, decenas y unidades oíste. ¿Oíste alguna decena?",
+      "explicacion": "«Trescientos cinco» es 305: 3 centenas, 0 decenas y 5 unidades.",
+      "error": "cero-intermedio"
+    },
+    {
+      "id": "p13", "tipo": "escribir", "nivel": 3,
+      "enunciado": "Escribe con palabras el número 614.",
+      "respuestas": ["seiscientos catorce"],
+      "pista": "Primero di las centenas. Después piensa: el 14 tiene un nombre especial.",
+      "explicacion": "614 se escribe «seiscientos catorce». No lleva y, porque el 14 tiene su propio nombre.",
+      "error": "uso-de-y"
+    },
+    {
+      "id": "p14", "tipo": "pasos", "nivel": 3,
+      "enunciado": "Arami espera el micro de la línea «ciento ocho». Su amigo Luis espera el micro de la línea 180.",
+      "visual": { "tipo": "emoji", "valor": "🚌", "cantidad": 2 },
+      "pasos": [
+        {
+          "tipo": "numero",
+          "enunciado": "Escribe con cifras la línea de Arami: ciento ocho.",
+          "respuesta": 108,
+          "erroresComunes": [
+            { "respuesta": 1008, "pista": "Ciento ocho es 100 y 8. Tiene solo tres cifras.", "error": "escribe-por-partes" },
+            { "respuesta": 180, "pista": "El ocho está en las unidades, no en las decenas.", "error": "cero-intermedio" }
+          ],
+          "pista": "Ciento ocho tiene 1 centena, 0 decenas y 8 unidades.",
+          "explicacion": "«Ciento ocho» se escribe 108.",
+          "error": "cero-intermedio"
+        },
+        {
+          "tipo": "opcion",
+          "enunciado": "¿Cómo se lee 180, la línea de Luis?",
+          "opciones": [
+            { "texto": "ciento ochenta", "correcta": true },
+            { "texto": "ciento ocho", "pista": "Ese es el 108. En 180, el 8 está en las decenas.", "error": "cero-intermedio" },
+            { "texto": "cien ochenta", "pista": "Cuando al 100 le siguen otros números, se dice «ciento».", "error": "nombres-centenas" }
+          ],
+          "columnas": 1,
+          "pista": "En 180, el 8 está en las decenas: vale 80.",
+          "explicacion": "180 se lee «ciento ochenta»: 100 + 80.",
+          "error": "lectura-numeros"
+        }
+      ],
+      "pista": "Resuelve un paso a la vez. Fíjate bien en qué lugar está el 8.",
+      "explicacion": "La línea de Arami es la 108 (ciento ocho) y la de Luis es la 180 (ciento ochenta). ¡Son micros distintos!",
+      "error": "lectura-numeros"
+    },
+    {
+      "id": "p15", "tipo": "escribir", "nivel": 3,
+      "enunciado": "Escucha el número y escríbelo con palabras.",
+      "escuchar": "novecientos veintidós",
+      "respuestas": ["novecientos veintidós"],
+      "pista": "Tiene 9 centenas. Recuerda: del 16 al 29 todo va en una sola palabra.",
+      "explicacion": "Se escribe «novecientos veintidós». El 900 es novecientos (no «nuevecientos») y el 22 va junto y con tilde.",
+      "error": "nombres-centenas"
+    },
+    {
+      "id": "p16", "tipo": "generador", "nivel": 3, "generador": "leer-numero", "params": { "max": 999, "modo": "a-cifras" }
+    }
+  ],
+  "comprobacion": [
+    {
+      "id": "c1", "tipo": "numero", "nivel": 1,
+      "enunciado": "Escribe con cifras: sesenta y tres.",
+      "respuesta": 63,
+      "erroresComunes": [
+        { "respuesta": 603, "pista": "Sesenta son 6 decenas. No hace falta un 0.", "error": "escribe-por-partes" },
+        { "respuesta": 36, "pista": "¿Qué dice primero? Las decenas se escriben primero.", "error": "invierte-cifras" },
+        { "respuesta": 73, "pista": "Sesenta se parece a seis. Setenta es otro número.", "error": "nombres-decenas" }
+      ],
+      "pista": "Primero escribe la cifra de las decenas y después la de las unidades.",
+      "explicacion": "«Sesenta y tres» son 6 decenas y 3 unidades: se escribe 63.",
+      "error": "lectura-numeros"
+    },
+    {
+      "id": "c2", "tipo": "relacionar", "nivel": 1,
+      "enunciado": "Une cada número con su nombre.",
+      "pares": [["11", "once"], ["14", "catorce"], ["19", "diecinueve"], ["80", "ochenta"]],
+      "pista": "Once y catorce tienen nombres especiales. Diecinueve se forma con «diez» y «nueve».",
+      "explicacion": "11 es once, 14 es catorce, 19 es diecinueve y 80 es ochenta.",
+      "error": "nombres-decenas"
+    },
+    {
+      "id": "c3", "tipo": "numero", "nivel": 2,
+      "enunciado": "Escucha el número y escríbelo con cifras.",
+      "escuchar": "cuatrocientos ocho",
+      "respuesta": 408,
+      "erroresComunes": [
+        { "respuesta": 48, "pista": "Falta el lugar de las decenas. Cuando no hay decenas, escribe un 0.", "error": "cero-intermedio" },
+        { "respuesta": 4008, "pista": "Cuatrocientos ocho tiene solo tres cifras.", "error": "escribe-por-partes" },
+        { "respuesta": 480, "pista": "El ocho está en las unidades, no en las decenas.", "error": "cero-intermedio" }
+      ],
+      "pista": "¿Cuántas centenas oíste? ¿Hay decenas?",
+      "explicacion": "«Cuatrocientos ocho» son 4 centenas, 0 decenas y 8 unidades: se escribe 408.",
+      "error": "cero-intermedio"
+    },
+    {
+      "id": "c4", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escribe con palabras el número 26.",
+      "respuestas": ["veintiséis"],
+      "pista": "Del 16 al 29, cada número se escribe en una sola palabra.",
+      "explicacion": "26 se escribe «veintiséis»: una sola palabra, con tilde en la é.",
+      "error": "palabras-16-29"
+    },
+    {
+      "id": "c5", "tipo": "manipular", "nivel": 2,
+      "enunciado": "Arma con bloques el número ciento cuarenta.",
+      "manipulable": { "tipo": "bloques", "objetivo": 140, "canonico": true },
+      "pista": "¿Cuántas centenas hay en «ciento»? ¿Cuántas decenas hay en «cuarenta»? ¿Hay unidades sueltas?",
+      "explicacion": "Ciento cuarenta es 140: 1 placa y 4 barras, sin cubitos.",
+      "error": "lectura-numeros"
+    },
+    {
+      "id": "c6", "tipo": "generador", "nivel": 2, "generador": "leer-numero", "params": { "max": 999, "modo": "a-palabras" }
+    },
+    {
+      "id": "c7", "tipo": "escribir", "nivel": 3,
+      "enunciado": "Escribe con palabras el número 716.",
+      "respuestas": ["setecientos dieciséis"],
+      "pista": "Piensa en el nombre del 700 y en el nombre del 16.",
+      "explicacion": "716 se escribe «setecientos dieciséis». El 700 es setecientos (no «sietecientos») y el 16 va en una sola palabra.",
+      "error": "nombres-centenas"
+    },
+    {
+      "id": "c8", "tipo": "tocar", "nivel": 3,
+      "enunciado": "Escucha y toca el número que oyes.",
+      "escuchar": "ciento diecisiete",
+      "texto": "170 *117* 1017 107 711",
+      "pista": "Ciento es 1 centena. ¿Cuántas decenas y cuántas unidades tiene diecisiete?",
+      "explicacion": "«Ciento diecisiete» es 117: 100 + 10 + 7.",
+      "error": "lectura-numeros"
+    }
+  ],
+  "repaso": {
+    "texto": "Para leer un número, empieza por las centenas, sigue con las decenas y termina con las unidades. La y va solo entre las decenas y las unidades.",
+    "visual": { "tipo": "tabla", "columnas": ["Con cifras", "Con palabras"], "filas": [["345", "trescientos cuarenta y cinco"], ["516", "quinientos dieciséis"]] }
+  },
+  "adulto": {
+    "objetivo": "Leer y escribir números del 1 al 999 con cifras y con palabras, incluidos los nombres especiales (once a quince, dieciséis a veintinueve, quinientos, setecientos, novecientos), el uso de «cien» y «ciento» y el lugar de la «y».",
+    "sugerencias": [
+      "En la feria, en la tienda o en el micro, lean juntos los números de los precios, los letreros y las líneas. Pídanle que diga cada número en voz alta y que escriba dos o tres con palabras en su cuaderno.",
+      "Jueguen al dictado de números: ustedes dicen un número (por ejemplo, «cuatrocientos ocho») y la niña o el niño lo escribe con cifras. Después cambien de papel y revisen juntos.",
+      "Hagan tarjetas de cartón: en unas escriban números con cifras y en otras sus nombres (incluyan dieciséis, veintidós, quinientos, setecientos y novecientos). Pónganlas boca abajo y jueguen a encontrar las parejas."
+    ],
+    "errores": {
+      "lectura-numeros": { "descripcion": "Se equivoca al leer un número de hasta tres cifras o al escribir con cifras un número que escucha o lee en palabras.", "sugerencia": "Lean números por partes, señalando cada cifra con el dedo: primero las centenas, después las decenas y al final las unidades." },
+      "escribe-por-partes": { "descripcion": "Escribe cada parte del número por separado (trescientos veinticinco → 30025).", "sugerencia": "Dibujen una tabla C-D-U: cada cifra ocupa una sola casilla. Recuerden que los números hasta el 999 tienen como máximo tres cifras." },
+      "cero-intermedio": { "descripcion": "Olvida el 0 cuando no hay decenas (cuatrocientos ocho → 48) o confunde el lugar de las cifras cuando hay un cero (108 y 180).", "sugerencia": "Formen el número con billetes de juguete de 100 Bs, 10 Bs y monedas de 1 Bs. Si no hay billetes de 10, escriban 0 en el lugar de las decenas." },
+      "invierte-cifras": { "descripcion": "Escribe las cifras al revés (cuarenta y siete → 74).", "sugerencia": "Recuerden que se escribe en el mismo orden en que se dice: lo que se dice primero se escribe primero. Díctenle números de dos cifras y revisen juntos." },
+      "nombres-decenas": { "descripcion": "Confunde los nombres de las decenas o de los números del 11 al 19 (sesenta y setenta, catorce y cuarenta).", "sugerencia": "Cuenten de 10 en 10 en voz alta mientras suben gradas o dan pasos, y relacionen seis con sesenta y siete con setenta." },
+      "palabras-16-29": { "descripcion": "Escribe separados o sin tilde los números del 16 al 29 (diez y seis, veintidos).", "sugerencia": "Escriban juntos una lista del 16 al 29 y marquen con color las tildes de dieciséis, veintidós, veintitrés y veintiséis." },
+      "nombres-centenas": { "descripcion": "Se equivoca en los nombres de las centenas (cincocientos, sietecientos, nuevecientos) o confunde «cien» con «ciento».", "sugerencia": "Hagan un cartel con las nueve centenas y léanlo en voz alta; destaquen quinientos, setecientos y novecientos, y comparen cien (100) con ciento cinco (105)." },
+      "uso-de-y": { "descripcion": "Pone la «y» donde no va (ciento y cinco, seiscientos y catorce) o la olvida (cuarenta siete).", "sugerencia": "Recuerden la regla: la «y» va solo entre las decenas y las unidades, desde el 31. Lean precios juntos y den una palmada cada vez que suene la «y»." }
+    }
+  }
+}

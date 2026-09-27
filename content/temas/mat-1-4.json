@@ -1,0 +1,376 @@
+{
+  "id": "mat-1-4",
+  "titulo": "Comparo y ordeno números",
+  "objetivo": "Comparo números con los signos de mayor, menor e igual, y los ordeno de menor a mayor y de mayor a menor.",
+  "explicacion": [
+    {
+      "texto": "Para comparar usamos tres signos: **=** es «igual a», **>** es «mayor que» y **<** es «menor que». La parte abierta del signo mira siempre al número mayor.",
+      "audio": "Para comparar usamos tres signos: el signo igual, el signo mayor que y el signo menor que. La parte abierta del signo mira siempre al número mayor.",
+      "emoji": "⚖️",
+      "visual": { "tipo": "tabla", "columnas": ["Escribimos", "Leemos"], "filas": [["4 = 4", "4 es igual a 4"], ["8 > 5", "8 es mayor que 5"], ["3 < 7", "3 es menor que 7"]] }
+    },
+    {
+      "texto": "Primero mira cuántas cifras tiene cada número. El que tiene más cifras es mayor: 105 > 98. Si tienen igual cantidad de cifras, compara las **centenas**: 452 > 387.",
+      "audio": "Primero mira cuántas cifras tiene cada número. El que tiene más cifras es mayor: 105 es mayor que 98. Si tienen igual cantidad de cifras, compara las centenas: 452 es mayor que 387, porque 4 centenas son más que 3.",
+      "visual": { "tipo": "tabla", "columnas": ["C", "D", "U"], "filas": [[4, 5, 2], [3, 8, 7]] }
+    },
+    {
+      "texto": "Si las centenas son iguales, mira las **decenas**: 562 < 581. Si también las decenas son iguales, mira las **unidades**: 347 > 343.",
+      "audio": "Si las centenas son iguales, mira las decenas: 562 es menor que 581. Si también las decenas son iguales, mira las unidades: 347 es mayor que 343.",
+      "visual": { "tipo": "tabla", "columnas": ["C", "D", "U"], "filas": [[5, 6, 2], [5, 8, 1]] }
+    },
+    {
+      "texto": "**Ordenar** es poner los números en fila según su valor. De menor a mayor: 100, 250, 400. De mayor a menor: 400, 250, 100. En la recta, el menor está más a la izquierda.",
+      "emoji": "📶",
+      "visual": { "tipo": "recta", "min": 0, "max": 500, "paso": 50, "marcar": [100, 250, 400] }
+    }
+  ],
+  "ejemplo": {
+    "instruccion": "Mira cómo comparamos 356 y 362, cifra por cifra.",
+    "pasos": [
+      { "texto": "Los dos tienen tres cifras. Miramos las centenas: 3 y 3. Son iguales.", "visual": { "tipo": "tabla", "columnas": ["C", "D", "U"], "filas": [[3, 5, 6], [3, 6, 2]] } },
+      { "texto": "Miramos las decenas: 5 decenas son menos que 6 decenas. ¡Ya sabemos cuál es menor!", "visual": { "tipo": "tabla", "columnas": ["Número", "Decenas"], "filas": [["356", "5"], ["362", "6"]] } },
+      { "texto": "Entonces 356 es menor que 362. La parte abierta del signo mira al 362, que es el mayor.", "visual": { "tipo": "secuencia", "items": ["356", "<", "362"] } },
+      { "texto": "En la recta, 356 está a la izquierda de 362. El que está más a la izquierda es el menor.", "visual": { "tipo": "recta", "min": 350, "max": 365, "paso": 1, "marcar": [356, 362] } }
+    ]
+  },
+  "guiada": {
+    "intro": "Ahora lo hacemos juntos, paso a paso.",
+    "pasos": [
+      {
+        "id": "g1", "tipo": "opcion",
+        "enunciado": "Elige el signo correcto: 45 ☐ 54",
+        "audio": "Elige el signo correcto para comparar 45 y 54.",
+        "apoyo": "Compara las decenas: 45 tiene 4 decenas y 54 tiene 5 decenas.",
+        "visual": { "tipo": "secuencia", "items": ["45", "☐", "54"] },
+        "opciones": [
+          { "texto": ">", "pista": "¿45 es mayor que 54? Mira otra vez las decenas.", "error": "comparar-signo" },
+          { "texto": "<", "correcta": true },
+          { "texto": "=", "pista": "Tienen las mismas cifras, pero en distinto lugar. No son iguales.", "error": "compara-posicion" }
+        ],
+        "columnas": 3,
+        "mezclar": false,
+        "pista": "La parte abierta del signo mira al número mayor.",
+        "explicacion": "45 es menor que 54, porque 4 decenas son menos que 5 decenas: 45 < 54.",
+        "error": "comparar-signo"
+      },
+      {
+        "id": "g2", "tipo": "ordenar",
+        "enunciado": "Ordena de menor a mayor.",
+        "apoyo": "Mira primero las centenas. Si son iguales, mira las decenas.",
+        "elementos": ["203", "230", "302", "320"],
+        "pista": "Hay dos números con 2 centenas y dos con 3 centenas.",
+        "explicacion": "De menor a mayor: 203, 230, 302, 320.",
+        "error": "orden-numeros"
+      },
+      {
+        "id": "g3", "tipo": "completar",
+        "enunciado": "Completa con el signo correcto.",
+        "audio": "Completa con el signo correcto para comparar 708 y 699.",
+        "apoyo": "708 tiene 7 centenas y 699 tiene 6 centenas.",
+        "texto": "708 [>] 699",
+        "banco": ["<", "="],
+        "pista": "Compara primero las centenas.",
+        "explicacion": "708 es mayor que 699, porque 7 centenas son más que 6: 708 > 699.",
+        "error": "comparar-signo"
+      }
+    ]
+  },
+  "practica": [
+    {
+      "id": "p1", "tipo": "generador", "nivel": 1, "generador": "comparar", "params": { "max": 99 }
+    },
+    {
+      "id": "p2", "tipo": "opcion", "nivel": 1,
+      "enunciado": "En la cosecha, Wara juntó 38 papas y Kusi juntó 83. ¿Quién juntó más papas?",
+      "visual": { "tipo": "tabla", "columnas": ["Nombre", "Papas"], "filas": [["Wara", "38"], ["Kusi", "83"]] },
+      "opciones": [
+        { "texto": "Kusi", "correcta": true },
+        { "texto": "Wara", "pista": "38 tiene 3 decenas y 83 tiene 8 decenas. ¿Cuál tiene más?", "error": "compara-posicion" },
+        { "texto": "Juntaron lo mismo", "pista": "Los dos números tienen un 3 y un 8, pero en distinto lugar.", "error": "compara-posicion" }
+      ],
+      "columnas": 1,
+      "pista": "Compara las decenas de 38 y de 83.",
+      "explicacion": "Kusi juntó más: 83 es mayor que 38, porque 8 decenas son más que 3 decenas.",
+      "error": "problema-comparar"
+    },
+    {
+      "id": "p3", "tipo": "relacionar", "nivel": 1,
+      "enunciado": "Une cada signo con cómo se lee.",
+      "pares": [[">", "mayor que"], ["<", "menor que"], ["=", "igual a"]],
+      "pista": "El signo igual tiene dos rayitas. En los otros dos, la parte abierta mira al número mayor.",
+      "explicacion": "El signo > se lee «mayor que»; el signo <, «menor que»; y el signo =, «igual a».",
+      "error": "comparar-signo"
+    },
+    {
+      "id": "p4", "tipo": "ordenar", "nivel": 1,
+      "enunciado": "Ordena de menor a mayor.",
+      "elementos": ["7", "19", "40", "64", "91"],
+      "pista": "El número de una sola cifra es el menor. Después, compara las decenas.",
+      "explicacion": "De menor a mayor: 7, 19, 40, 64, 91.",
+      "error": "orden-numeros"
+    },
+    {
+      "id": "p5", "tipo": "manipular", "nivel": 1,
+      "enunciado": "Mueve el marcador al número que está entre 45 y 47.",
+      "manipulable": { "tipo": "recta", "min": 40, "max": 50, "paso": 1, "objetivo": 46 },
+      "pista": "Busca el 45 y el 47. ¿Qué número queda en medio?",
+      "explicacion": "Entre 45 y 47 está el 46: es mayor que 45 y menor que 47.",
+      "error": "entre-numeros"
+    },
+    {
+      "id": "p6", "tipo": "generador", "nivel": 2, "generador": "comparar", "params": { "max": 999 }
+    },
+    {
+      "id": "p7", "tipo": "generador", "nivel": 2, "generador": "ordenar-numeros", "params": { "max": 999, "cantidad": 4, "orden": "asc" }
+    },
+    {
+      "id": "p8", "tipo": "multiple", "nivel": 2,
+      "enunciado": "Elige todos los números mayores que 500.",
+      "opciones": [
+        { "texto": "499", "pista": "499 va justo antes de 500: es menor.", "error": "compara-posicion" },
+        { "texto": "505", "correcta": true },
+        { "texto": "500", "pista": "500 es igual a 500, no mayor.", "error": "igual-mayor" },
+        { "texto": "850", "correcta": true },
+        { "texto": "409", "pista": "409 tiene solo 4 centenas.", "error": "compara-posicion" },
+        { "texto": "510", "correcta": true }
+      ],
+      "columnas": 3,
+      "pista": "Un número mayor que 500 está a la derecha del 500 en la recta.",
+      "explicacion": "505, 510 y 850 son mayores que 500. El 500 es igual, y 499 y 409 son menores.",
+      "error": "compara-posicion"
+    },
+    {
+      "id": "p9", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa con «mayor» o «menor».",
+      "texto": "612 es [menor] que 621. 890 es [mayor] que 809.",
+      "banco": ["igual"],
+      "pista": "En cada pareja, las centenas son iguales. Compara las decenas.",
+      "explicacion": "612 es menor que 621, porque 1 decena es menos que 2. 890 es mayor que 809, porque 9 decenas son más que 0 decenas.",
+      "error": "compara-posicion"
+    },
+    {
+      "id": "p10", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "¿Es menor o mayor que 250?",
+      "categorias": [ { "id": "menor", "texto": "Menor que 250" }, { "id": "mayor", "texto": "Mayor que 250" } ],
+      "elementos": [
+        { "texto": "205", "categoria": "menor" }, { "texto": "520", "categoria": "mayor" },
+        { "texto": "249", "categoria": "menor" }, { "texto": "251", "categoria": "mayor" },
+        { "texto": "99", "categoria": "menor" }, { "texto": "300", "categoria": "mayor" }
+      ],
+      "pista": "Compara cada número con 250: primero cuenta las cifras, después mira las centenas y las decenas.",
+      "explicacion": "Menores que 250: 99, 205 y 249. Mayores que 250: 251, 300 y 520.",
+      "error": "compara-posicion"
+    },
+    {
+      "id": "p11", "tipo": "tocar", "nivel": 2,
+      "enunciado": "Toca los números menores que 300.",
+      "texto": "En la fiesta de la escuela se vendieron *260* salteñas, 312 buñuelos, *98* vasos de api y 450 empanadas.",
+      "pista": "Compara cada número con 300: mira cuántas cifras tiene y después las centenas.",
+      "explicacion": "260 y 98 son menores que 300. En cambio, 312 y 450 son mayores.",
+      "error": "compara-posicion"
+    },
+    {
+      "id": "p12", "tipo": "numero", "nivel": 2,
+      "enunciado": "Escucha los dos números y escribe con cifras el mayor.",
+      "escuchar": "Los números son: cuatrocientos siete, cuatrocientos setenta.",
+      "respuesta": 470,
+      "erroresComunes": [ { "respuesta": 407, "pista": "Ese es el menor. Compara las decenas: 0 decenas y 7 decenas.", "error": "compara-posicion" } ],
+      "pista": "Los dos tienen 4 centenas. Compara las decenas.",
+      "explicacion": "470 es mayor que 407, porque 7 decenas son más que 0 decenas.",
+      "error": "compara-posicion"
+    },
+    {
+      "id": "p13", "tipo": "generador", "nivel": 3, "generador": "ordenar-numeros", "params": { "max": 999, "cantidad": 5, "orden": "desc" }
+    },
+    {
+      "id": "p14", "tipo": "pasos", "nivel": 3,
+      "enunciado": "Para reciclar, tres grupos juntaron tapitas: el grupo de Wara juntó 305, el de Mateo 350 y el de Nayra 298.",
+      "visual": { "tipo": "tabla", "columnas": ["Grupo", "Tapitas"], "filas": [["Wara", "305"], ["Mateo", "350"], ["Nayra", "298"]] },
+      "pasos": [
+        {
+          "tipo": "opcion",
+          "enunciado": "¿Qué grupo juntó más tapitas?",
+          "opciones": [
+            { "texto": "El grupo de Mateo", "correcta": true },
+            { "texto": "El grupo de Wara", "pista": "305 y 350 tienen 3 centenas. Compara las decenas.", "error": "compara-posicion" },
+            { "texto": "El grupo de Nayra", "pista": "298 tiene 2 centenas: es el que tiene menos centenas.", "error": "compara-posicion" }
+          ],
+          "columnas": 1,
+          "pista": "Compara primero las centenas. Si son iguales, mira las decenas.",
+          "explicacion": "El grupo de Mateo juntó más: 350 es el mayor.",
+          "error": "problema-comparar"
+        },
+        {
+          "tipo": "completar",
+          "enunciado": "Completa con el signo correcto.",
+          "audio": "Completa con el signo correcto para comparar 305 y 350.",
+          "texto": "305 [<] 350",
+          "banco": [">", "="],
+          "pista": "Las centenas son iguales. Compara las decenas: 0 y 5.",
+          "explicacion": "305 es menor que 350: 305 < 350.",
+          "error": "comparar-signo"
+        },
+        {
+          "tipo": "ordenar",
+          "enunciado": "Ordena las cantidades de mayor a menor.",
+          "elementos": ["350", "305", "298"],
+          "pista": "Empieza por el mayor.",
+          "explicacion": "De mayor a menor: 350, 305, 298.",
+          "error": "orden-numeros"
+        }
+      ],
+      "pista": "Resuelve un paso a la vez.",
+      "explicacion": "El grupo de Mateo juntó más (350) y el de Nayra, menos (298). De mayor a menor: 350, 305, 298.",
+      "error": "problema-comparar"
+    },
+    {
+      "id": "p15", "tipo": "completar", "nivel": 3,
+      "enunciado": "Primero calcula cada suma. Después completa con el signo correcto.",
+      "texto": "400 + 50 [>] 405. 300 + 7 [<] 370. 200 + 60 + 1 [=] 261.",
+      "pista": "Calcula primero cada suma. Después compara el resultado con el otro número: centenas, decenas y unidades.",
+      "explicacion": "400 + 50 = 450, que es mayor que 405. 300 + 7 = 307, que es menor que 370. 200 + 60 + 1 = 261: son iguales.",
+      "error": "comparar-signo"
+    },
+    {
+      "id": "p16", "tipo": "numero", "nivel": 3,
+      "enunciado": "Con las cifras 4, 7 y 2, forma el número más grande de tres cifras. Usa cada cifra una sola vez.",
+      "visual": { "tipo": "secuencia", "items": ["4", "7", "2"] },
+      "respuesta": 742,
+      "erroresComunes": [
+        { "respuesta": 247, "pista": "Ese es el número más pequeño. Busca el más grande.", "error": "forma-numeros" },
+        { "respuesta": 724, "pista": "Casi. Compara las decenas: ¿qué cifra es mayor, 2 o 4?", "error": "forma-numeros" },
+        { "respuesta": 472, "pista": "Pon la cifra más grande en el lugar de las centenas.", "error": "forma-numeros" }
+      ],
+      "pista": "La cifra más grande va en las centenas.",
+      "explicacion": "El mayor es 742: el 7 va en las centenas, el 4 en las decenas y el 2 en las unidades.",
+      "error": "forma-numeros"
+    }
+  ],
+  "comprobacion": [
+    {
+      "id": "c1", "tipo": "ordenar", "nivel": 1,
+      "enunciado": "Ordena de mayor a menor.",
+      "elementos": ["87", "78", "41", "14"],
+      "pista": "Compara las decenas de cada número.",
+      "explicacion": "De mayor a menor: 87, 78, 41, 14.",
+      "error": "orden-numeros"
+    },
+    {
+      "id": "c2", "tipo": "opcion", "nivel": 1,
+      "enunciado": "Elige el signo correcto: 91 ☐ 19",
+      "audio": "Elige el signo correcto para comparar 91 y 19.",
+      "visual": { "tipo": "secuencia", "items": ["91", "☐", "19"] },
+      "opciones": [
+        { "texto": ">", "correcta": true },
+        { "texto": "<", "pista": "91 tiene 9 decenas y 19 tiene 1 decena. ¿Cuál es mayor?", "error": "comparar-signo" },
+        { "texto": "=", "pista": "Tienen las mismas cifras, pero en distinto lugar. No son iguales.", "error": "compara-posicion" }
+      ],
+      "columnas": 3,
+      "mezclar": false,
+      "pista": "Compara las decenas: 9 y 1.",
+      "explicacion": "91 es mayor que 19, porque 9 decenas son más que 1 decena: 91 > 19.",
+      "error": "comparar-signo"
+    },
+    {
+      "id": "c3", "tipo": "generador", "nivel": 2, "generador": "ordenar-numeros", "params": { "max": 999, "cantidad": 4, "orden": "asc" }
+    },
+    {
+      "id": "c4", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa con los signos correctos.",
+      "audio": "Completa con los signos correctos. Compara 530 con 535, y 480 con 400 más 80.",
+      "texto": "530 [<] 535. 480 [=] 400 + 80.",
+      "banco": [">"],
+      "pista": "En 530 y 535, las centenas y las decenas son iguales: mira las unidades. En el otro, primero suma 400 + 80.",
+      "explicacion": "530 es menor que 535, porque 0 unidades son menos que 5. Y 400 + 80 = 480: son iguales.",
+      "error": "comparar-signo"
+    },
+    {
+      "id": "c5", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "En la recta, ¿va antes o después del 600?",
+      "categorias": [ { "id": "antes", "texto": "Antes del 600" }, { "id": "despues", "texto": "Después del 600" } ],
+      "elementos": [
+        { "texto": "599", "categoria": "antes" }, { "texto": "610", "categoria": "despues" },
+        { "texto": "160", "categoria": "antes" }, { "texto": "906", "categoria": "despues" },
+        { "texto": "60", "categoria": "antes" }, { "texto": "601", "categoria": "despues" }
+      ],
+      "pista": "Los números menores que 600 van antes. Los mayores van después.",
+      "explicacion": "Antes del 600 (menores): 60, 160 y 599. Después del 600 (mayores): 601, 610 y 906.",
+      "error": "compara-posicion"
+    },
+    {
+      "id": "c6", "tipo": "manipular", "nivel": 2,
+      "enunciado": "Mueve el marcador al número que está justo en medio de 390 y 410.",
+      "manipulable": { "tipo": "recta", "min": 350, "max": 450, "paso": 10, "objetivo": 400 },
+      "pista": "Busca el 390 y el 410. ¿Qué marca queda entre los dos?",
+      "explicacion": "El 400 está justo en medio: es 10 más que 390 y 10 menos que 410.",
+      "error": "entre-numeros"
+    },
+    {
+      "id": "c7", "tipo": "numero", "nivel": 3,
+      "enunciado": "Con las cifras 5, 0 y 8, forma el número más pequeño de tres cifras. Usa cada cifra una sola vez.",
+      "visual": { "tipo": "secuencia", "items": ["5", "0", "8"] },
+      "respuesta": 508,
+      "erroresComunes": [
+        { "respuesta": 58, "pista": "Así queda un número de dos cifras. Un número de tres cifras no empieza con 0.", "error": "forma-numeros" },
+        { "respuesta": 805, "pista": "Ese es el número más grande. Busca el más pequeño.", "error": "forma-numeros" },
+        { "respuesta": 580, "pista": "Casi. ¿Puedes poner una cifra más pequeña en las decenas?", "error": "forma-numeros" }
+      ],
+      "pista": "Un número de tres cifras no puede empezar con 0. ¿Qué cifra pequeña pones en las centenas?",
+      "explicacion": "El menor es 508: el 5 va en las centenas, el 0 en las decenas y el 8 en las unidades.",
+      "error": "forma-numeros"
+    },
+    {
+      "id": "c8", "tipo": "pasos", "nivel": 3,
+      "enunciado": "En la feria, doña Rosa vendió 182 naranjas, don Luis vendió 128 y doña Ana vendió 218.",
+      "visual": { "tipo": "tabla", "columnas": ["Puesto", "Naranjas"], "filas": [["Rosa", "182"], ["Luis", "128"], ["Ana", "218"]] },
+      "pasos": [
+        {
+          "tipo": "opcion",
+          "enunciado": "¿Quién vendió menos naranjas?",
+          "opciones": [
+            { "texto": "Don Luis", "correcta": true },
+            { "texto": "Doña Rosa", "pista": "182 y 128 tienen 1 centena. Compara sus decenas: 8 y 2.", "error": "compara-posicion" },
+            { "texto": "Doña Ana", "pista": "218 tiene 2 centenas: es la que vendió más.", "error": "compara-posicion" }
+          ],
+          "columnas": 1,
+          "pista": "Compara primero las centenas. Si son iguales, mira las decenas.",
+          "explicacion": "Don Luis vendió menos: 128 y 182 tienen 1 centena, pero 128 tiene solo 2 decenas.",
+          "error": "problema-comparar"
+        },
+        {
+          "tipo": "ordenar",
+          "enunciado": "Ordena las cantidades de menor a mayor.",
+          "elementos": ["128", "182", "218"],
+          "pista": "Empieza por el menor. Dos números tienen 1 centena: compara sus decenas.",
+          "explicacion": "De menor a mayor: 128, 182, 218.",
+          "error": "orden-numeros"
+        }
+      ],
+      "pista": "Resuelve un paso a la vez.",
+      "explicacion": "Don Luis vendió menos naranjas (128) y doña Ana, más (218). De menor a mayor: 128, 182, 218.",
+      "error": "problema-comparar"
+    }
+  ],
+  "repaso": {
+    "texto": "Para comparar, cuenta primero las cifras. Si tienen igual cantidad de cifras, compara las centenas, después las decenas y al final las unidades. La parte abierta del signo mira al número mayor.",
+    "visual": { "tipo": "secuencia", "items": ["452", ">", "387"] }
+  },
+  "adulto": {
+    "objetivo": "Comparar números de hasta tres cifras con los signos > (mayor que), < (menor que) e = (igual a), y ordenar grupos de números de menor a mayor y de mayor a menor, comparando cifra por cifra: centenas, decenas y unidades.",
+    "sugerencias": [
+      "En la feria, comparen los precios de dos productos (por ejemplo, un queso de 18 Bs y un kilo de arroz de 9 Bs). Pregunten cuál cuesta más y pídanle que lo escriba en un papel con el signo > o <.",
+      "Jueguen con papelitos numerados del 0 al 9: cada jugador saca tres, forma el número más grande que pueda y gana quien tenga el mayor. En otra ronda, gana quien forme el menor.",
+      "Junten montones de semillas, tapitas o piedritas. Cuenten cuántas hay en cada montón, escriban cada cantidad en un papel y ordénenlos de menor a mayor y de mayor a menor."
+    ],
+    "errores": {
+      "comparar-signo": { "descripcion": "Elige el signo al revés (escribe 45 > 54) o confunde > con <.", "sugerencia": "Recuerden que la parte abierta del signo mira al número mayor. Pongan dos montones de semillas y dibujen el signo con la abertura hacia el montón más grande." },
+      "orden-numeros": { "descripcion": "Le cuesta ordenar varios números de menor a mayor o de mayor a menor.", "sugerencia": "Escriban los números en papelitos y ordénenlos sobre la mesa, comparando primero las centenas, después las decenas y al final las unidades." },
+      "compara-posicion": { "descripcion": "Compara las cifras sin fijarse en su lugar (cree que 98 es mayor que 105 porque 9 es mayor que 1, o que 38 y 83 son iguales).", "sugerencia": "Representen los números con billetes de juguete de 100 Bs y 10 Bs y monedas de 1 Bs: gana quien tenga más billetes de 100; si empatan, quien tenga más de 10." },
+      "igual-mayor": { "descripcion": "Cuenta como mayor un número que es igual (dice que 500 es mayor que 500).", "sugerencia": "Pregunten: «¿500 es más que 500 o es lo mismo?» y usen el signo = para lo que es igual." },
+      "entre-numeros": { "descripcion": "Le cuesta encontrar el número que está entre otros dos.", "sugerencia": "En una recta dibujada con tiza, marquen dos números y pídanle que se pare en el número que queda en medio." },
+      "forma-numeros": { "descripcion": "Al formar el número mayor o el menor con tres cifras, no pone cada cifra en el lugar que corresponde, o empieza con 0.", "sugerencia": "Jueguen con tres tarjetas de cifras: muévanlas, lean cada número que se forma y pregunten cuál es el más grande y cuál el más pequeño." },
+      "problema-comparar": { "descripcion": "Le cuesta decidir quién tiene más o menos en un problema.", "sugerencia": "Cuenten objetos reales de dos personas (papas, naranjas, tapitas) y pregunten quién tiene más; después escriban los números y compárenlos." }
+    }
+  }
+}

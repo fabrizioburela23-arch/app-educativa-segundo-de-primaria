@@ -1,0 +1,25 @@
+{
+  "nota": "Precios de ejemplo para practicar. El adulto puede ajustarlos a los de su feria.",
+  "feria": [
+    { "nombre": "un kilo de papa", "emoji": "🥔", "precio": 6 },
+    { "nombre": "un kilo de tomate", "emoji": "🍅", "precio": 7 },
+    { "nombre": "un choclo", "emoji": "🌽", "precio": 3 },
+    { "nombre": "un kilo de arroz", "emoji": "🍚", "precio": 9 },
+    { "nombre": "una bolsa de pan", "emoji": "🍞", "precio": 5 },
+    { "nombre": "un kilo de quinua", "emoji": "🌾", "precio": 16 },
+    { "nombre": "una mano de plátanos", "emoji": "🍌", "precio": 10 },
+    { "nombre": "una piña", "emoji": "🍍", "precio": 8 },
+    { "nombre": "un kilo de naranjas", "emoji": "🍊", "precio": 6 },
+    { "nombre": "un queso", "emoji": "🧀", "precio": 18 },
+    { "nombre": "un maple de huevos", "emoji": "🥚", "precio": 30 },
+    { "nombre": "un kilo de zanahoria", "emoji": "🥕", "precio": 5 },
+    { "nombre": "una sandía", "emoji": "🍉", "precio": 15 },
+    { "nombre": "un kilo de manzanas", "emoji": "🍎", "precio": 12 },
+    { "nombre": "un litro de leche", "emoji": "🥛", "precio": 7 },
+    { "nombre": "una bolsa de maní", "emoji": "🥜", "precio": 6 },
+    { "nombre": "una lechuga", "emoji": "🥬", "precio": 3 },
+    { "nombre": "una salteña", "emoji": "🥟", "precio": 8 },
+    { "nombre": "un kilo de uvas", "emoji": "🍇", "precio": 15 },
+    { "nombre": "un kilo de carne", "emoji": "🥩", "precio": 45 }
+  ]
+}

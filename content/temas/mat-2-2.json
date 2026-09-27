@@ -1,0 +1,371 @@
+{
+  "id": "mat-2-2",
+  "titulo": "Suma llevando",
+  "objetivo": "Sumo llevando: cuando una columna da 10 o más, hago el canje y llevo 1 a la columna siguiente.",
+  "explicacion": [
+    {
+      "texto": "Si juntas 8 cubitos y 5 cubitos, tienes 13 cubitos. ¡Son más de 9! Con 10 cubitos armamos 1 barra. Entonces 13 unidades son 1 decena y 3 unidades.",
+      "emoji": "🧱",
+      "visual": { "tipo": "bloques", "unidades": 13 }
+    },
+    {
+      "texto": "Cambiar 10 unidades por 1 decena se llama hacer un **canje**. La cantidad no cambia: 13 cubitos valen lo mismo que 1 barra y 3 cubitos.",
+      "visual": { "tipo": "bloques", "decenas": 1, "unidades": 3 }
+    },
+    {
+      "texto": "Sumemos 28 + 15. Unidades: 8 + 5 = 13. Escribimos el 3 y **llevamos 1** a las decenas. Decenas: 1 + 2 + 1 = 4. Total: 43.",
+      "emoji": "🎒",
+      "visual": { "tipo": "tabla", "columnas": ["", "D", "U"], "filas": [["llevo", "1", ""], ["", "2", "8"], ["+", "1", "5"], ["Total", "4", "3"]] }
+    },
+    {
+      "texto": "Con las decenas pasa lo mismo: 10 decenas forman 1 **centena**. En 75 + 52, las unidades dan 5 + 2 = 7. Las decenas dan 7 + 5 = 12: escribimos 2 y llevamos 1 a las centenas. Total: 127.",
+      "visual": { "tipo": "tabla", "columnas": ["", "C", "D", "U"], "filas": [["llevo", "1", "", ""], ["", "", "7", "5"], ["+", "", "5", "2"], ["Total", "1", "2", "7"]] }
+    }
+  ],
+  "ejemplo": {
+    "instruccion": "Mira cómo sumamos 36 + 27 con bloques. Después, junta tú más de 9 cubitos y haz el canje.",
+    "pasos": [
+      { "texto": "Juntamos los bloques del 36 y del 27: hay 5 barras y 13 cubitos.", "visual": { "tipo": "bloques", "decenas": 5, "unidades": 13 } },
+      { "texto": "¡13 cubitos son más de 9! Tomamos 10 cubitos y los cambiamos por 1 barra. Quedan 3 cubitos.", "visual": { "tipo": "bloques", "decenas": 6, "unidades": 3 } },
+      { "texto": "Ahora hay 6 barras y 3 cubitos: 36 + 27 = 63. En columnas: 6 + 7 = 13, escribo 3 y llevo 1. Luego 1 + 3 + 2 = 6.", "visual": { "tipo": "tabla", "columnas": ["", "D", "U"], "filas": [["llevo", "1", ""], ["", "3", "6"], ["+", "2", "7"], ["Total", "6", "3"]] } }
+    ],
+    "explorar": { "tipo": "bloques" }
+  },
+  "guiada": {
+    "intro": "Vamos a hacer canjes y a sumar llevando, paso a paso.",
+    "pasos": [
+      {
+        "id": "g1", "tipo": "manipular",
+        "enunciado": "Hay 2 barras y 14 cubitos. Haz el canje: cambia 10 cubitos por 1 barra.",
+        "apoyo": "Quita 10 cubitos y agrega 1 barra. La cantidad no cambia, solo queda mejor ordenada.",
+        "manipulable": { "tipo": "bloques", "objetivo": 34, "canonico": true, "inicial": { "centenas": 0, "decenas": 2, "unidades": 14 } },
+        "pista": "Cuenta 10 cubitos, quítalos y pon 1 barra en su lugar. Al final deben quedar menos de 10 cubitos.",
+        "explicacion": "2 decenas y 14 unidades es lo mismo que 3 decenas y 4 unidades: 34.",
+        "error": "canje"
+      },
+      {
+        "id": "g2", "tipo": "numero",
+        "enunciado": "Suma 47 + 35 paso a paso.",
+        "apoyo": "7 + 5 = 12: escribes el 2 y llevas 1 decena. Esa decena se suma con las otras decenas.",
+        "visual": { "tipo": "operacion", "numeros": [47, 35], "op": "+", "vertical": true },
+        "campos": [
+          { "etiqueta": "Unidades: 7 + 5", "respuesta": 12 },
+          { "etiqueta": "Decenas: 1 + 4 + 3", "respuesta": 8 },
+          { "etiqueta": "Total", "respuesta": 82 }
+        ],
+        "pista": "En las decenas, suma también la decena que llevas.",
+        "explicacion": "Unidades: 7 + 5 = 12, escribes 2 y llevas 1. Decenas: 1 + 4 + 3 = 8. Total: 82.",
+        "error": "suma-olvida-llevar"
+      },
+      {
+        "id": "g3", "tipo": "completar",
+        "enunciado": "Completa la suma 38 + 26.",
+        "apoyo": "De 14 unidades, 10 forman 1 decena que se lleva. Las otras 4 se quedan en las unidades.",
+        "visual": { "tipo": "operacion", "numeros": [38, 26], "op": "+", "vertical": true },
+        "texto": "Unidades: 8 + 6 = 14. Escribo [4] y llevo [1]. Decenas: 1 + 3 + 2 = [6]. Total: [64].",
+        "banco": ["14", "54"],
+        "pista": "En cada columna se escribe una sola cifra. La decena que sobra se lleva a las decenas.",
+        "explicacion": "8 + 6 = 14: escribo 4 y llevo 1. Decenas: 1 + 3 + 2 = 6. Total: 64.",
+        "error": "no-canjea"
+      }
+    ]
+  },
+  "practica": [
+    {
+      "id": "p1", "tipo": "manipular", "nivel": 1,
+      "enunciado": "Hay 1 barra y 12 cubitos. Haz el canje para que queden menos de 10 cubitos.",
+      "manipulable": { "tipo": "bloques", "objetivo": 22, "canonico": true, "inicial": { "centenas": 0, "decenas": 1, "unidades": 12 } },
+      "pista": "Con 10 cubitos se arma 1 barra. Quita 10 cubitos y agrega 1 barra.",
+      "explicacion": "12 cubitos son 1 barra y 2 cubitos. Ahora hay 2 barras y 2 cubitos: 22.",
+      "error": "canje"
+    },
+    {
+      "id": "p2", "tipo": "relacionar", "nivel": 1,
+      "enunciado": "Une cada cantidad de unidades con su canje.",
+      "pares": [
+        ["11 unidades", "1 decena y 1 unidad"],
+        ["15 unidades", "1 decena y 5 unidades"],
+        ["10 unidades", "1 decena"],
+        ["18 unidades", "1 decena y 8 unidades"]
+      ],
+      "pista": "Separa 10 unidades: forman 1 decena. Después mira cuántas quedan sueltas.",
+      "explicacion": "11 = 1 decena y 1 unidad; 15 = 1 decena y 5 unidades; 10 = 1 decena; 18 = 1 decena y 8 unidades.",
+      "error": "canje"
+    },
+    {
+      "id": "p3", "tipo": "generador", "nivel": 1, "generador": "suma",
+      "params": { "digitos": 1, "llevar": true }
+    },
+    {
+      "id": "p4", "tipo": "numero", "nivel": 1,
+      "enunciado": "¿Qué número forman estos bloques? Haz el canje en tu cabeza.",
+      "visual": { "tipo": "bloques", "decenas": 3, "unidades": 12 },
+      "respuesta": 42,
+      "erroresComunes": [
+        { "respuesta": 312, "pista": "No escribas el 12 al lado del 3. 12 cubitos son 1 barra y 2 cubitos.", "error": "no-canjea" },
+        { "respuesta": 32, "pista": "Con 10 de los cubitos se forma otra barra. ¿Cuántas barras hay entonces?", "error": "canje" }
+      ],
+      "pista": "Con 10 cubitos se forma 1 barra más. Cuenta las barras otra vez.",
+      "explicacion": "12 cubitos son 1 barra y 2 cubitos. Entonces hay 4 barras y 2 cubitos: 42.",
+      "error": "canje"
+    },
+    {
+      "id": "p5", "tipo": "memoria", "nivel": 1,
+      "enunciado": "Encuentra las parejas: cada suma con su total.",
+      "pares": [ ["8 + 5", "13"], ["9 + 7", "16"], ["6 + 6", "12"], ["7 + 4", "11"] ],
+      "pista": "Completa primero el 10. Por ejemplo, 8 + 5: 8 + 2 = 10 y te quedan 3 más.",
+      "explicacion": "8 + 5 = 13, 9 + 7 = 16, 6 + 6 = 12 y 7 + 4 = 11.",
+      "error": "suma-calculo"
+    },
+    {
+      "id": "p6", "tipo": "generador", "nivel": 2, "generador": "suma",
+      "params": { "digitos": 2, "llevar": true }
+    },
+    {
+      "id": "p7", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "Mira solo las unidades. ¿Hay que llevar?",
+      "categorias": [
+        { "id": "si", "texto": "Hay que llevar", "emoji": "🎒" },
+        { "id": "no", "texto": "No hay que llevar" }
+      ],
+      "elementos": [
+        { "texto": "27 + 45", "categoria": "si" },
+        { "texto": "31 + 26", "categoria": "no" },
+        { "texto": "58 + 34", "categoria": "si" },
+        { "texto": "42 + 53", "categoria": "no" },
+        { "texto": "19 + 19", "categoria": "si" },
+        { "texto": "64 + 25", "categoria": "no" }
+      ],
+      "pista": "Suma las unidades de cada tarjeta. Si dan 10 o más, hay que llevar.",
+      "explicacion": "Hay que llevar en 27 + 45 (7 + 5 = 12), 58 + 34 (8 + 4 = 12) y 19 + 19 (9 + 9 = 18). En las demás, las unidades dan 9 o menos.",
+      "error": "cuando-llevar"
+    },
+    {
+      "id": "p8", "tipo": "numero", "nivel": 2,
+      "enunciado": "Una mañana, Nayra vende 38 salteñas de pollo y 25 de carne. ¿Cuántas salteñas vende en total?",
+      "visual": { "tipo": "operacion", "numeros": [38, 25], "op": "+", "vertical": true },
+      "respuesta": 63,
+      "erroresComunes": [
+        { "respuesta": 53, "pista": "Casi. ¿Sumaste la decena que llevabas?", "error": "suma-olvida-llevar" },
+        { "respuesta": 513, "pista": "En las unidades se escribe una sola cifra: 13 son 1 decena y 3 unidades.", "error": "no-canjea" }
+      ],
+      "pista": "Suma primero las unidades. Si pasan de 9, lleva 1 a las decenas.",
+      "explicacion": "8 + 5 = 13: escribes 3 y llevas 1. Decenas: 1 + 3 + 2 = 6. Nayra vende 63 salteñas.",
+      "error": "suma-calculo"
+    },
+    {
+      "id": "p9", "tipo": "manipular", "nivel": 2,
+      "enunciado": "Mateo compra un kilo de quinua a 16 Bs y un kilo de arroz a 9 Bs. Paga justo con billetes de 10 Bs y monedas de 1 Bs.",
+      "visual": { "tipo": "emojis", "items": ["🌾", "🍚"], "etiquetas": ["16 Bs", "9 Bs"] },
+      "manipulable": { "tipo": "dinero", "objetivo": 2500, "disponibles": ["b10", "m1"], "mostrarTotal": true },
+      "pista": "Suma los precios. Recuerda: 10 monedas de 1 Bs valen lo mismo que 1 billete de 10 Bs.",
+      "explicacion": "16 + 9 = 25: 6 + 9 = 15, escribo 5 y llevo 1; 1 + 1 = 2. Paga con 2 billetes de 10 Bs y 5 monedas de 1 Bs.",
+      "error": "suma-dinero"
+    },
+    {
+      "id": "p10", "tipo": "ordenar", "nivel": 2,
+      "enunciado": "Ordena los pasos para sumar 28 + 45.",
+      "elementos": [
+        "Sumo las unidades: 8 + 5 = 13.",
+        "Escribo 3 y llevo 1 a las decenas.",
+        "Sumo las decenas: 1 + 2 + 4 = 7.",
+        "El resultado es 73."
+      ],
+      "vertical": true,
+      "pista": "Siempre se empieza por las unidades, la columna de la derecha.",
+      "explicacion": "Primero las unidades (8 + 5 = 13); escribo 3 y llevo 1; después las decenas (1 + 2 + 4 = 7). El resultado es 73.",
+      "error": "pasos-llevar"
+    },
+    {
+      "id": "p11", "tipo": "tocar", "nivel": 2,
+      "enunciado": "Escucha la suma y toca el resultado.",
+      "escuchar": "cincuenta y seis más veintinueve",
+      "texto": "75 *85* 715 95",
+      "pista": "Suma primero las unidades. Si pasan de 9, lleva 1 a las decenas. Puedes escuchar otra vez.",
+      "explicacion": "56 + 29: 6 + 9 = 15, escribo 5 y llevo 1; 1 + 5 + 2 = 8. El resultado es 85.",
+      "error": "suma-olvida-llevar"
+    },
+    {
+      "id": "p12", "tipo": "generador", "nivel": 3, "generador": "suma",
+      "params": { "digitos": 3, "llevar": true }
+    },
+    {
+      "id": "p13", "tipo": "manipular", "nivel": 3,
+      "enunciado": "Hay 1 placa, 12 barras y 3 cubitos. Cambia 10 barras por 1 placa.",
+      "manipulable": { "tipo": "bloques", "objetivo": 223, "canonico": true, "inicial": { "centenas": 1, "decenas": 12, "unidades": 3 } },
+      "pista": "10 barras de 10 forman 1 placa de 100. Quita 10 barras y agrega 1 placa.",
+      "explicacion": "12 decenas son 1 centena y 2 decenas. Quedan 2 placas, 2 barras y 3 cubitos: 223.",
+      "error": "canje"
+    },
+    {
+      "id": "p14", "tipo": "pasos", "nivel": 3,
+      "enunciado": "Para la kermés de la escuela, el curso de Arami prepara 148 buñuelos y el curso de Luis, 136.",
+      "visual": { "tipo": "operacion", "numeros": [148, 136], "op": "+", "vertical": true },
+      "pasos": [
+        {
+          "tipo": "numero", "enunciado": "Suma las unidades: 8 + 6. ¿Cuánto da?",
+          "respuesta": 14,
+          "pista": "Completa el 10: 8 + 2 = 10. ¿Cuánto te queda del 6?",
+          "explicacion": "8 + 6 = 14.",
+          "error": "suma-calculo"
+        },
+        {
+          "tipo": "opcion", "enunciado": "¿Qué haces con el 14?",
+          "opciones": [
+            { "texto": "Escribo 4 y llevo 1 a las decenas", "correcta": true },
+            { "texto": "Escribo 14 debajo de las unidades", "pista": "En cada columna cabe una sola cifra.", "error": "no-canjea" },
+            { "texto": "Escribo 4 y no llevo nada", "pista": "¿Y la decena que se formó con 10 unidades?", "error": "suma-olvida-llevar" }
+          ],
+          "pista": "14 unidades son 1 decena y 4 unidades.",
+          "explicacion": "Escribo 4 en las unidades y llevo 1 decena a la columna de las decenas.",
+          "error": "no-canjea"
+        },
+        {
+          "tipo": "numero", "enunciado": "¿Cuántos buñuelos preparan entre los dos cursos?",
+          "respuesta": 284,
+          "erroresComunes": [
+            { "respuesta": 274, "pista": "Casi. ¿Sumaste la decena que llevabas?", "error": "suma-olvida-llevar" },
+            { "respuesta": 2714, "pista": "En las unidades va solo el 4; el 1 se lleva a las decenas.", "error": "no-canjea" }
+          ],
+          "pista": "En las decenas suma 1 + 4 + 3. Después suma las centenas.",
+          "explicacion": "Unidades: escribo 4 y llevo 1. Decenas: 1 + 4 + 3 = 8. Centenas: 1 + 1 = 2. Total: 284 buñuelos.",
+          "error": "suma-calculo"
+        }
+      ],
+      "pista": "Resuelve un paso a la vez, empezando por las unidades.",
+      "explicacion": "148 + 136 = 284 buñuelos.",
+      "error": "problema-suma"
+    },
+    {
+      "id": "p15", "tipo": "completar", "nivel": 3,
+      "enunciado": "Completa la cifra que falta.",
+      "texto": "3[8] + 25 = 63",
+      "banco": ["7", "9", "3"],
+      "pista": "Mira las unidades: ¿qué número más 5 da un número que termina en 3? No olvides que se lleva 1.",
+      "explicacion": "38 + 25 = 63: 8 + 5 = 13, escribo 3 y llevo 1; en las decenas, 1 + 3 + 2 = 6.",
+      "error": "cifra-faltante"
+    },
+    {
+      "id": "p16", "tipo": "multiple", "nivel": 3,
+      "enunciado": "Elige todas las sumas que dan 100.",
+      "opciones": [
+        { "texto": "65 + 35", "correcta": true },
+        { "texto": "48 + 52", "correcta": true },
+        { "texto": "73 + 27", "correcta": true },
+        { "texto": "56 + 54", "pista": "Revisa las decenas: 1 + 5 + 5 = 11 decenas. Da más que 100.", "error": "suma-calculo" },
+        { "texto": "39 + 51", "pista": "Revisa las decenas: 1 + 3 + 5 = 9 decenas. Da menos que 100.", "error": "suma-calculo" }
+      ],
+      "columnas": 2,
+      "pista": "Suma las unidades y lleva 1. Para llegar a 100, las decenas, junto con la que llevas, deben dar 10.",
+      "explicacion": "65 + 35, 48 + 52 y 73 + 27 dan 100. En cambio, 56 + 54 da 110 y 39 + 51 da 90.",
+      "error": "suma-olvida-llevar"
+    }
+  ],
+  "comprobacion": [
+    {
+      "id": "c1", "tipo": "relacionar", "nivel": 1,
+      "enunciado": "Une cada suma con su total.",
+      "pares": [ ["9 + 4", "13"], ["6 + 8", "14"], ["7 + 9", "16"], ["5 + 6", "11"] ],
+      "pista": "Completa el 10 con uno de los números y suma lo que sobra.",
+      "explicacion": "9 + 4 = 13, 6 + 8 = 14, 7 + 9 = 16 y 5 + 6 = 11.",
+      "error": "suma-calculo"
+    },
+    {
+      "id": "c2", "tipo": "manipular", "nivel": 1,
+      "enunciado": "Suma 18 + 7 con bloques. Ya está el 18: agrega 7 cubitos y haz el canje.",
+      "manipulable": { "tipo": "bloques", "objetivo": 25, "canonico": true, "inicial": { "centenas": 0, "decenas": 1, "unidades": 8 } },
+      "pista": "Cuando tengas 10 cubitos o más, cambia 10 cubitos por 1 barra.",
+      "explicacion": "8 + 7 = 15 cubitos, que son 1 barra y 5 cubitos. Con la barra del 18 hay 2 barras y 5 cubitos: 25.",
+      "error": "canje"
+    },
+    {
+      "id": "c3", "tipo": "generador", "nivel": 2, "generador": "suma",
+      "params": { "digitos": 2, "llevar": true }
+    },
+    {
+      "id": "c4", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa la suma 57 + 36.",
+      "visual": { "tipo": "operacion", "numeros": [57, 36], "op": "+", "vertical": true },
+      "texto": "Unidades: 7 + 6 = 13. Escribo [3] y llevo [1]. Decenas: 1 + 5 + 3 = [9]. Total: [93].",
+      "banco": ["13", "83"],
+      "pista": "En las unidades se escribe una sola cifra. La decena se lleva y se suma con las decenas.",
+      "explicacion": "7 + 6 = 13: escribo 3 y llevo 1. Decenas: 1 + 5 + 3 = 9. Total: 93.",
+      "error": "no-canjea"
+    },
+    {
+      "id": "c5", "tipo": "numero", "nivel": 2,
+      "enunciado": "En el valle, Kusi cosecha 46 duraznos y su hermano cosecha 38. ¿Cuántos duraznos cosechan entre los dos?",
+      "visual": { "tipo": "emoji", "valor": "🍑" },
+      "respuesta": 84,
+      "erroresComunes": [
+        { "respuesta": 74, "pista": "Casi. ¿Sumaste la decena que llevabas?", "error": "suma-olvida-llevar" },
+        { "respuesta": 714, "pista": "En las unidades va una sola cifra: 14 son 1 decena y 4 unidades.", "error": "no-canjea" }
+      ],
+      "pista": "Suma primero las unidades. Si pasan de 9, lleva 1 a las decenas.",
+      "explicacion": "6 + 8 = 14: escribo 4 y llevo 1. Decenas: 1 + 4 + 3 = 8. Cosechan 84 duraznos.",
+      "error": "suma-calculo"
+    },
+    {
+      "id": "c6", "tipo": "tocar", "nivel": 2,
+      "enunciado": "Escucha la suma y toca el resultado.",
+      "escuchar": "treinta y cuatro más cuarenta y siete",
+      "texto": "71 *81* 711 82",
+      "pista": "Suma primero las unidades y no olvides la decena que llevas. Puedes escuchar otra vez.",
+      "explicacion": "34 + 47: 4 + 7 = 11, escribo 1 y llevo 1; 1 + 3 + 4 = 8. El resultado es 81.",
+      "error": "suma-olvida-llevar"
+    },
+    {
+      "id": "c7", "tipo": "generador", "nivel": 3, "generador": "suma",
+      "params": { "digitos": 3, "llevar": true }
+    },
+    {
+      "id": "c8", "tipo": "pasos", "nivel": 3,
+      "enunciado": "Para un cumpleaños, el papá de Inti compra una sandía a 15 Bs, una piña a 8 Bs y un queso a 18 Bs.",
+      "visual": { "tipo": "emojis", "items": ["🍉", "🍍", "🧀"], "etiquetas": ["15 Bs", "8 Bs", "18 Bs"] },
+      "pasos": [
+        {
+          "tipo": "numero", "enunciado": "¿Cuánto cuestan la sandía y la piña juntas?",
+          "respuesta": 23, "sufijo": "Bs",
+          "erroresComunes": [ { "respuesta": 13, "pista": "Casi. 5 + 8 = 13: escribes 3 y llevas 1 a las decenas.", "error": "suma-olvida-llevar" } ],
+          "pista": "Unidades: 5 + 8. Si pasan de 9, lleva 1.",
+          "explicacion": "15 + 8 = 23 Bs: 5 + 8 = 13, escribo 3 y llevo 1; 1 + 1 = 2.",
+          "error": "suma-calculo"
+        },
+        {
+          "tipo": "numero", "enunciado": "Suma también el queso. ¿Cuánto paga en total?",
+          "respuesta": 41, "sufijo": "Bs",
+          "erroresComunes": [ { "respuesta": 31, "pista": "Casi. ¿Sumaste la decena que llevabas?", "error": "suma-olvida-llevar" } ],
+          "pista": "Suma 23 + 18. Las unidades dan más de 9.",
+          "explicacion": "23 + 18 = 41 Bs: 3 + 8 = 11, escribo 1 y llevo 1; 1 + 2 + 1 = 4.",
+          "error": "suma-calculo"
+        }
+      ],
+      "pista": "Suma primero dos precios y después el tercero.",
+      "explicacion": "15 + 8 = 23 y 23 + 18 = 41. El papá de Inti paga 41 Bs.",
+      "error": "problema-suma"
+    }
+  ],
+  "repaso": {
+    "texto": "Si una columna suma 10 o más, haz el canje: escribe las unidades abajo y lleva 1 a la columna siguiente. ¡No olvides sumar lo que llevas!",
+    "visual": { "tipo": "tabla", "columnas": ["", "D", "U"], "filas": [["llevo", "1", ""], ["", "2", "8"], ["+", "1", "5"], ["Total", "4", "3"]] }
+  },
+  "adulto": {
+    "objetivo": "Sumar números de hasta tres cifras con llevadas: comprender el canje de 10 unidades por 1 decena (y de 10 decenas por 1 centena), anotar la cifra que se lleva y sumarla en la columna siguiente; resolver problemas cotidianos.",
+    "sugerencias": [
+      "Jueguen al banco con monedas de 1 Bs y billetes de 10 Bs (reales o de papel): cada vez que junten 10 monedas, las cambian por un billete. Luego sumen dos precios, por ejemplo 16 Bs + 9 Bs.",
+      "Con atados de 10 palitos y palitos sueltos, sumen 27 + 15: junten los sueltos, armen un atado nuevo al llegar a 10 y cuenten todo.",
+      "En la feria, pidan que calcule el total de dos compras que necesiten llevar (38 Bs + 25 Bs) y que explique en voz alta qué lleva y a qué columna. Puede anotar el 1 que lleva, pequeñito, arriba de la columna."
+    ],
+    "errores": {
+      "suma-olvida-llevar": { "descripcion": "Olvida sumar la decena (o la centena) que se lleva: 38 + 25 = 53.", "sugerencia": "Pidan que escriba un 1 pequeño arriba de la columna siguiente cada vez que lleva, y que lo tache cuando ya lo sumó." },
+      "suma-calculo": { "descripcion": "Se equivoca en las sumas básicas de una columna (por ejemplo, 8 + 6).", "sugerencia": "Practiquen sumas hasta 18 completando el 10: 8 + 6 = 8 + 2 + 4 = 14. Usen los dedos o semillas." },
+      "canje": { "descripcion": "Le cuesta cambiar 10 unidades por 1 decena o 10 decenas por 1 centena.", "sugerencia": "Jueguen al canje con palitos y atados, o con monedas de 1 Bs y billetes de 10 Bs." },
+      "no-canjea": { "descripcion": "Escribe las dos cifras de la suma de una columna (38 + 25 = 513).", "sugerencia": "Usen una hoja cuadriculada: en cada cuadrito va una sola cifra, y la decena se lleva a la columna de al lado." },
+      "cuando-llevar": { "descripcion": "No reconoce cuándo hay que llevar.", "sugerencia": "Antes de sumar, pidan que mire las unidades y diga si juntan 10 o más." },
+      "pasos-llevar": { "descripcion": "Confunde el orden de los pasos de la suma llevando (por ejemplo, empieza por las decenas).", "sugerencia": "Recuérdenle que siempre se empieza por la derecha, por las unidades. Pueden marcar esa columna con un color." },
+      "suma-dinero": { "descripcion": "Le cuesta sumar precios y pagar el total con billetes y monedas.", "sugerencia": "Jueguen a la tienda con cosas de la casa con precio y pidan que pague justo con billetes de 10 Bs y monedas de 1 Bs." },
+      "problema-suma": { "descripcion": "Le cuesta organizar un problema de suma en pasos.", "sugerencia": "Lean el problema juntos, subrayen los números y pregunten: «¿se juntan cantidades?». Resuelvan una parte a la vez." },
+      "cifra-faltante": { "descripcion": "Le cuesta encontrar una cifra que falta en una suma llevando.", "sugerencia": "Prueben con distintas cifras y comprueben sumando. Conversen: ¿qué número más 5 termina en 3?" }
+    }
+  }
+}

@@ -1,0 +1,476 @@
+{
+  "id": "nat-6-2",
+  "titulo": "Vertebrados e invertebrados",
+  "objetivo": "Sé qué animales tienen columna vertebral y huesos por dentro, y cuáles no los tienen.",
+  "explicacion": [
+    {
+      "texto": "Tócate el centro de la espalda: sientes una fila de huesitos. Es tu **columna vertebral**. Tus huesos forman un **esqueleto** que está por dentro y sostiene tu cuerpo.",
+      "emoji": "🦴",
+      "visual": { "tipo": "ilustracion", "id": "esqueleto", "resaltar": "columna", "etiquetas": true }
+    },
+    {
+      "texto": "Los animales **vertebrados** tienen columna vertebral y esqueleto por dentro. Hay cinco grupos: peces, anfibios, reptiles, aves y mamíferos, como tú.",
+      "visual": {
+        "tipo": "emojis",
+        "items": ["🐟", "🐸", "🐊", "🦅", "🦙"],
+        "etiquetas": ["peces: aletas", "anfibios: piel húmeda", "reptiles: escamas secas", "aves: plumas", "mamíferos: pelo"]
+      }
+    },
+    {
+      "texto": "Los animales **invertebrados** no tienen columna vertebral ni huesos. Unos tienen el cuerpo blando, como la lombriz y el pulpo. Otros tienen concha, como el caracol, o una cubierta dura por fuera, como el escarabajo.",
+      "visual": { "tipo": "emojis", "items": ["🐙", "🐌", "🐞", "🦀"], "etiquetas": ["pulpo", "caracol", "escarabajo", "cangrejo"] }
+    },
+    {
+      "texto": "¡Hay muchos más invertebrados que vertebrados! Los **insectos**, como la hormiga y la mariposa, tienen 6 patas. Las **arañas** tienen 8 patas: no son insectos, pero también son invertebrados.",
+      "visual": { "tipo": "emojis", "items": ["🐜", "🦋", "🕷️"], "etiquetas": ["hormiga: 6 patas", "mariposa: 6 patas", "araña: 8 patas"] }
+    }
+  ],
+  "ejemplo": {
+    "instruccion": "Mira cómo descubrimos si un animal es vertebrado o invertebrado.",
+    "pasos": [
+      {
+        "texto": "Hacemos una pregunta: ¿tiene columna vertebral y huesos por dentro? Si los tiene, es **vertebrado**. Si no, es **invertebrado**.",
+        "visual": { "tipo": "emojis", "items": ["🦙", "🐌"], "etiquetas": ["con columna: vertebrado", "sin columna: invertebrado"] }
+      },
+      {
+        "texto": "Cuando comes **trucha**, ves una espina larga en el centro. ¡Es su columna vertebral! La trucha es un pez **vertebrado**.",
+        "visual": { "tipo": "emoji", "valor": "🐟", "etiqueta": "trucha" }
+      },
+      {
+        "texto": "La **lombriz** que sale de la tierra después de la lluvia es blanda y se estira. No tiene ningún hueso: es **invertebrada**.",
+        "emoji": "🌧️"
+      },
+      {
+        "texto": "¡Ojo! La tortuga y el caracol tienen algo duro encima. Pero solo la **tortuga** tiene huesos y columna por dentro: es vertebrada. El **caracol** es invertebrado.",
+        "visual": { "tipo": "emojis", "items": ["🐢", "🐌"], "etiquetas": ["tortuga: vertebrada", "caracol: invertebrado"] }
+      }
+    ]
+  },
+  "guiada": {
+    "intro": "Ahora lo hacemos juntos, paso a paso.",
+    "pasos": [
+      {
+        "id": "g1", "tipo": "clasificar",
+        "enunciado": "¿Tiene columna vertebral o no?",
+        "apoyo": "Piensa: ¿este animal tiene huesos por dentro, como tú? Si los tiene, es vertebrado.",
+        "categorias": [
+          { "id": "vert", "texto": "Vertebrado", "emoji": "🦴" },
+          { "id": "inv", "texto": "Invertebrado", "emoji": "🐛" }
+        ],
+        "elementos": [
+          { "texto": "llama", "emoji": "🦙", "categoria": "vert" },
+          { "texto": "hormiga", "emoji": "🐜", "categoria": "inv" },
+          { "texto": "cóndor", "emoji": "🦅", "categoria": "vert" },
+          { "texto": "mariposa", "emoji": "🦋", "categoria": "inv" },
+          { "texto": "trucha", "emoji": "🐟", "categoria": "vert" },
+          { "texto": "caracol", "emoji": "🐌", "categoria": "inv" }
+        ],
+        "pista": "Recuerda la trucha: tiene espinas por dentro. ¿Tendrán huesos una hormiga o un caracol?",
+        "explicacion": "Vertebrados: la llama, el cóndor y la trucha. Invertebrados: la hormiga, la mariposa y el caracol.",
+        "error": "clasifica-vert-invert"
+      },
+      {
+        "id": "g2", "tipo": "relacionar",
+        "enunciado": "Une cada grupo de vertebrados con un animal de Bolivia.",
+        "apoyo": "Los peces tienen aletas; los anfibios, piel húmeda; los reptiles, escamas secas; las aves, plumas; y los mamíferos, pelo.",
+        "pares": [
+          ["peces", { "texto": "surubí", "emoji": "🐟" }],
+          ["anfibios", { "texto": "rana", "emoji": "🐸" }],
+          ["reptiles", { "texto": "caimán", "emoji": "🐊" }],
+          ["aves", { "texto": "paraba", "emoji": "🦜" }],
+          ["mamíferos", { "texto": "jaguar", "emoji": "🐆" }]
+        ],
+        "pista": "Mira qué cubre el cuerpo de cada animal: aletas, piel húmeda, escamas, plumas o pelo.",
+        "explicacion": "Peces: surubí. Anfibios: rana. Reptiles: caimán. Aves: paraba. Mamíferos: jaguar.",
+        "error": "grupos-vertebrados"
+      },
+      {
+        "id": "g3", "tipo": "completar",
+        "enunciado": "Completa con la palabra correcta.",
+        "apoyo": "Si tiene columna vertebral, es vertebrado. Si no tiene huesos, es invertebrado.",
+        "texto": "La lombriz no tiene huesos: es [invertebrada]. La vicuña tiene columna vertebral: es [vertebrada].",
+        "banco": ["planta", "piedra"],
+        "pista": "«In» al comienzo de una palabra puede querer decir «sin». ¿Cuál de los dos animales no tiene vértebras?",
+        "explicacion": "La lombriz es **invertebrada** porque no tiene huesos. La vicuña es **vertebrada**: tiene columna y esqueleto por dentro.",
+        "error": "vocabulario-vert-invert"
+      }
+    ]
+  },
+  "practica": [
+    {
+      "id": "p1", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Toca los animales invertebrados.",
+      "texto": "En la huerta de Ana hay una *hormiga*, un *caracol*, un gato y una *mariposa*.",
+      "pista": "Busca los animales que no tienen huesos por dentro. Hay tres.",
+      "explicacion": "La **hormiga**, el **caracol** y la **mariposa** son invertebrados. El gato tiene columna vertebral: es vertebrado.",
+      "error": "clasifica-vert-invert"
+    },
+    {
+      "id": "p2", "tipo": "opcion", "nivel": 1,
+      "enunciado": "¿Qué animal tiene columna vertebral?",
+      "opciones": [
+        { "texto": "perro", "emoji": "🐕", "correcta": true },
+        { "texto": "lombriz", "pista": "La lombriz es blanda: no tiene ningún hueso.", "error": "clasifica-vert-invert" },
+        { "texto": "mariposa", "emoji": "🦋", "pista": "La mariposa es un insecto: no tiene huesos.", "error": "clasifica-vert-invert" }
+      ],
+      "columnas": 3,
+      "pista": "Busca al animal que tiene un esqueleto por dentro, como tú.",
+      "explicacion": "El **perro** es vertebrado: tiene columna vertebral y esqueleto. La lombriz y la mariposa son invertebradas.",
+      "error": "clasifica-vert-invert"
+    },
+    {
+      "id": "p3", "tipo": "escribir", "nivel": 1,
+      "enunciado": "Escucha y escribe el nombre de la parte marcada.",
+      "escuchar": "columna",
+      "visual": { "tipo": "ilustracion", "id": "esqueleto", "resaltar": "columna" },
+      "respuestas": ["columna", "columna vertebral", "la columna", "la columna vertebral"],
+      "pista": "Separa la palabra en sílabas con palmadas y escribe una sílaba a la vez.",
+      "explicacion": "Se escribe «columna»: co-lum-na. La columna vertebral está en tu espalda.",
+      "error": "escritura-tema"
+    },
+    {
+      "id": "p4", "tipo": "clasificar", "nivel": 1,
+      "enunciado": "¿Tiene huesos por dentro?",
+      "categorias": [
+        { "id": "si", "texto": "Tiene huesos", "emoji": "🦴" },
+        { "id": "no", "texto": "No tiene huesos", "emoji": "🐛" }
+      ],
+      "elementos": [
+        { "texto": "niña", "emoji": "👧", "categoria": "si" },
+        { "texto": "abeja", "emoji": "🐝", "categoria": "no" },
+        { "texto": "caballo", "emoji": "🐎", "categoria": "si" },
+        { "texto": "araña", "emoji": "🕷️", "categoria": "no" },
+        { "texto": "gallina", "emoji": "🐔", "categoria": "si" },
+        { "texto": "lombriz", "categoria": "no" }
+      ],
+      "pista": "Piensa en cada animal: ¿tiene huesos por dentro, como los de tu brazo?",
+      "explicacion": "Tienen huesos: la niña, el caballo y la gallina (son vertebrados). No tienen huesos: la abeja, la araña y la lombriz (son invertebrados).",
+      "error": "clasifica-vert-invert"
+    },
+    {
+      "id": "p5", "tipo": "memoria", "nivel": 2,
+      "enunciado": "Encuentra las parejas: el animal y su grupo.",
+      "pares": [
+        [ { "emoji": "🦅" }, "ave" ],
+        [ { "emoji": "🐟" }, "pez" ],
+        [ { "emoji": "🐸" }, "anfibio" ],
+        [ { "emoji": "🐊" }, "reptil" ],
+        [ { "emoji": "🦙" }, "mamífero" ],
+        [ { "emoji": "🐜" }, "insecto" ]
+      ],
+      "pista": "Fíjate en su cuerpo: ¿tiene plumas, aletas, piel húmeda, escamas secas, pelo o seis patas?",
+      "explicacion": "🦅 ave, 🐟 pez, 🐸 anfibio, 🐊 reptil, 🦙 mamífero y 🐜 insecto. Los cinco primeros son vertebrados; el insecto es invertebrado.",
+      "error": "grupos-vertebrados"
+    },
+    {
+      "id": "p6", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "Une cada grupo de vertebrados con lo que lo hace especial.",
+      "pares": [
+        ["peces", "tienen aletas y viven en el agua"],
+        ["anfibios", "tienen la piel húmeda y sin escamas"],
+        ["reptiles", "tienen escamas secas o caparazón"],
+        ["aves", "tienen plumas y pico"],
+        ["mamíferos", "tienen pelo y sus crías toman leche"]
+      ],
+      "pista": "Piensa en un animal de cada grupo: la trucha, la rana, el caimán, el cóndor y la llama.",
+      "explicacion": "Peces: aletas. Anfibios: piel húmeda. Reptiles: escamas secas o caparazón. Aves: plumas y pico. Mamíferos: pelo y leche para sus crías.",
+      "error": "grupos-vertebrados"
+    },
+    {
+      "id": "p7", "tipo": "multiple", "nivel": 2,
+      "enunciado": "Elige todos los invertebrados.",
+      "opciones": [
+        { "texto": "araña", "emoji": "🕷️", "correcta": true },
+        { "texto": "rana", "emoji": "🐸", "pista": "La rana es un anfibio: tiene huesos y columna.", "error": "clasifica-vert-invert" },
+        { "texto": "pulpo", "emoji": "🐙", "correcta": true },
+        { "texto": "murciélago", "emoji": "🦇", "pista": "El murciélago es un mamífero: tiene esqueleto por dentro.", "error": "clasifica-vert-invert" },
+        { "texto": "mosquito", "emoji": "🦟", "correcta": true }
+      ],
+      "pista": "Hay tres. Busca a los que no tienen ningún hueso.",
+      "explicacion": "La araña, el pulpo y el mosquito son invertebrados. La rana y el murciélago son vertebrados.",
+      "error": "clasifica-vert-invert"
+    },
+    {
+      "id": "p8", "tipo": "numero", "nivel": 2,
+      "enunciado": "¿Cuántas patas tiene un insecto, como la hormiga?",
+      "visual": { "tipo": "emoji", "valor": "🐜", "etiqueta": "hormiga" },
+      "respuesta": 6,
+      "sufijo": "patas",
+      "erroresComunes": [
+        { "respuesta": 8, "pista": "8 patas tiene la araña, y la araña no es un insecto.", "error": "insecto-arana" },
+        { "respuesta": 4, "pista": "Son más de 4. Imagina una hormiga caminando.", "error": "insecto-arana" }
+      ],
+      "pista": "Los insectos tienen menos patas que las arañas.",
+      "explicacion": "Los insectos tienen **6 patas**. Las arañas tienen 8: por eso no son insectos.",
+      "error": "insecto-arana"
+    },
+    {
+      "id": "p9", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa con el grupo de cada animal.",
+      "texto": "La paraba es un [ave] y tiene plumas. El caimán es un [reptil] y tiene escamas secas. La vicuña es un [mamífero] y tiene pelo.",
+      "banco": ["insecto", "planta"],
+      "pista": "Lee el final de cada oración: plumas, escamas secas o pelo.",
+      "explicacion": "La paraba es un **ave** (plumas). El caimán es un **reptil** (escamas secas). La vicuña es un **mamífero** (pelo).",
+      "error": "grupos-vertebrados"
+    },
+    {
+      "id": "p10", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha la pregunta y escribe la respuesta.",
+      "escuchar": "La lombriz, la araña y el caracol no tienen columna vertebral. ¿Cómo se llaman los animales que no tienen columna vertebral?",
+      "respuestas": ["invertebrados", "los invertebrados", "invertebrado", "animales invertebrados", "los animales invertebrados", "invertebradas", "invertebrada"],
+      "pista": "La palabra empieza con «in», que aquí quiere decir «sin».",
+      "explicacion": "Se llaman **invertebrados**: animales sin columna vertebral.",
+      "error": "vocabulario-vert-invert"
+    },
+    {
+      "id": "p11", "tipo": "manipular", "nivel": 2,
+      "enunciado": "En el patio, Arami vio 5 hormigas, 2 caracoles, 3 palomas y 1 gato. Arma el pictograma de vertebrados e invertebrados.",
+      "visual": { "tipo": "emojis", "items": ["🐜", "🐜", "🐜", "🐜", "🐜", "🐌", "🐌", "🕊️", "🕊️", "🕊️", "🐈"] },
+      "manipulable": {
+        "tipo": "pictograma", "icono": "🐾", "escala": 1,
+        "categorias": [
+          { "etiqueta": "Vertebrados", "emoji": "🦴", "objetivo": 4 },
+          { "etiqueta": "Invertebrados", "emoji": "🐛", "objetivo": 7 }
+        ]
+      },
+      "pista": "Primero piensa quiénes tienen huesos. Después cuenta cada grupo.",
+      "explicacion": "Vertebrados: 3 palomas + 1 gato = 4. Invertebrados: 5 hormigas + 2 caracoles = 7.",
+      "error": "cuenta-clasifica"
+    },
+    {
+      "id": "p12", "tipo": "opcion", "nivel": 3,
+      "enunciado": "La serpiente no tiene patas. ¿Es un animal vertebrado?",
+      "visual": { "tipo": "emoji", "valor": "🐍", "etiqueta": "serpiente" },
+      "opciones": [
+        { "texto": "Sí: por dentro tiene una columna muy larga.", "correcta": true },
+        { "texto": "No: no tiene patas, así que no tiene huesos.", "pista": "No tener patas no quiere decir no tener huesos. ¿Qué hay dentro de su cuerpo largo?", "error": "sin-patas-sin-huesos" },
+        { "texto": "No: es un gusano muy grande.", "pista": "La serpiente tiene escamas secas: es un reptil, no un gusano.", "error": "sin-patas-sin-huesos" }
+      ],
+      "pista": "La serpiente es un reptil, como el caimán.",
+      "explicacion": "La serpiente es un reptil **vertebrado**: por dentro tiene una columna vertebral larguísima, con muchas vértebras.",
+      "error": "sin-patas-sin-huesos"
+    },
+    {
+      "id": "p13", "tipo": "tocar", "nivel": 3,
+      "enunciado": "Toca los vertebrados. Ayuda: el karachi es un pez y el zambullidor es un ave.",
+      "texto": "En el lago Titicaca viven la *rana gigante*, el *karachi*, el *zambullidor* y muchos caracoles pequeños.",
+      "pista": "Hay tres vertebrados: un anfibio, un pez y un ave.",
+      "explicacion": "La **rana gigante** (anfibio), el **karachi** (pez) y el **zambullidor** (ave) son vertebrados. Los caracoles son invertebrados.",
+      "error": "clasifica-vert-invert"
+    },
+    {
+      "id": "p14", "tipo": "escribir-libre", "nivel": 3,
+      "enunciado": "Escribe una oración sobre un animal invertebrado. Explica por qué no es vertebrado.",
+      "guia": ["La hormiga es invertebrada porque...", "El caracol no tiene..."],
+      "requisitos": [
+        { "tipo": "mayuscula-inicial" },
+        { "tipo": "punto-final" },
+        { "tipo": "min-palabras", "valor": 6 },
+        { "tipo": "incluye", "palabras": ["hueso", "columna", "esqueleto", "vértebra"] }
+      ],
+      "modelo": "La mariposa es invertebrada porque no tiene huesos.",
+      "pista": "Piensa en un animal sin huesos: un insecto, una araña, un caracol o una lombriz.",
+      "explicacion": "Por ejemplo: «El caracol es invertebrado porque no tiene columna vertebral». Revisa la mayúscula al inicio y el punto al final.",
+      "error": "produce-oracion"
+    },
+    {
+      "id": "p15", "tipo": "pasos", "nivel": 3,
+      "enunciado": "Después de la lluvia, Kusi vio un animal que salía de la tierra del jardín. Es blando, largo y delgado como un fideo, y no tiene patas.",
+      "pasos": [
+        {
+          "tipo": "escribir",
+          "enunciado": "¿Qué animal vio Kusi?",
+          "respuestas": ["lombriz", "la lombriz", "una lombriz", "lombriz de tierra", "una lombriz de tierra", "la lombriz de tierra", "gusano", "un gusano", "el gusano", "gusano de tierra", "un gusano de tierra"],
+          "pista": "Vive bajo la tierra y sale cuando llueve mucho.",
+          "explicacion": "Es una **lombriz** de tierra.",
+          "error": "escritura-tema"
+        },
+        {
+          "tipo": "opcion",
+          "enunciado": "¿La lombriz es vertebrada o invertebrada?",
+          "opciones": [
+            { "texto": "vertebrada", "pista": "La lombriz es blanda: ¿tiene huesos por dentro?", "error": "clasifica-vert-invert" },
+            { "texto": "invertebrada", "correcta": true }
+          ],
+          "mezclar": false,
+          "pista": "¿Tiene columna vertebral?",
+          "explicacion": "La lombriz es **invertebrada**: no tiene columna ni huesos.",
+          "error": "clasifica-vert-invert"
+        },
+        {
+          "tipo": "opcion",
+          "enunciado": "¿Qué otro animal tampoco tiene huesos?",
+          "opciones": [
+            { "texto": "caracol", "emoji": "🐌", "correcta": true },
+            { "texto": "sapo", "emoji": "🐸", "pista": "El sapo es un anfibio: tiene esqueleto.", "error": "clasifica-vert-invert" },
+            { "texto": "lagartija", "emoji": "🦎", "pista": "La lagartija es un reptil: tiene columna.", "error": "clasifica-vert-invert" }
+          ],
+          "columnas": 3,
+          "pista": "Busca otro animal que no tiene esqueleto por dentro.",
+          "explicacion": "El **caracol** tampoco tiene huesos: es invertebrado, como la lombriz. El sapo y la lagartija son vertebrados.",
+          "error": "clasifica-vert-invert"
+        }
+      ],
+      "pista": "Resuelve un paso a la vez.",
+      "explicacion": "Kusi encontró una lombriz. No tiene huesos, así que es invertebrada, como el caracol.",
+      "error": "clasifica-vert-invert"
+    },
+    {
+      "id": "p16", "tipo": "clasificar", "nivel": 3,
+      "enunciado": "¡Cuidado con las apariencias! ¿Vertebrado o invertebrado?",
+      "categorias": [
+        { "id": "vert", "texto": "Vertebrado", "emoji": "🦴" },
+        { "id": "inv", "texto": "Invertebrado", "emoji": "🐛" }
+      ],
+      "elementos": [
+        { "texto": "tortuga", "emoji": "🐢", "categoria": "vert" },
+        { "texto": "caracol", "emoji": "🐌", "categoria": "inv" },
+        { "texto": "murciélago", "emoji": "🦇", "categoria": "vert" },
+        { "texto": "pulpo", "emoji": "🐙", "categoria": "inv" },
+        { "texto": "bufeo", "emoji": "🐬", "categoria": "vert" },
+        { "texto": "alacrán", "emoji": "🦂", "categoria": "inv" }
+      ],
+      "pista": "No mires si es duro por fuera o si vuela o nada: piensa si tiene huesos por dentro.",
+      "explicacion": "Vertebrados: la tortuga, el murciélago y el bufeo. Invertebrados: el caracol, el pulpo y el alacrán. La concha y la cubierta dura no son huesos.",
+      "error": "caparazon-concha"
+    }
+  ],
+  "comprobacion": [
+    {
+      "id": "c1", "tipo": "opcion", "nivel": 1,
+      "enunciado": "¿Qué animal **no** tiene huesos?",
+      "opciones": [
+        { "texto": "abeja", "emoji": "🐝", "correcta": true },
+        { "texto": "gallina", "emoji": "🐔", "pista": "La gallina es un ave: tiene esqueleto.", "error": "clasifica-vert-invert" },
+        { "texto": "vaca", "emoji": "🐄", "pista": "La vaca es un mamífero: tiene columna vertebral.", "error": "clasifica-vert-invert" }
+      ],
+      "columnas": 3,
+      "pista": "Recuerda: las aves y los mamíferos tienen esqueleto por dentro.",
+      "explicacion": "La **abeja** es un insecto: no tiene huesos, es invertebrada. La gallina y la vaca son vertebradas.",
+      "error": "clasifica-vert-invert"
+    },
+    {
+      "id": "c2", "tipo": "clasificar", "nivel": 1,
+      "enunciado": "¿Vertebrado o invertebrado? Pon cada animal en su grupo.",
+      "categorias": [
+        { "id": "vert", "texto": "Vertebrado", "emoji": "🦴" },
+        { "id": "inv", "texto": "Invertebrado", "emoji": "🐛" }
+      ],
+      "elementos": [
+        { "texto": "pato", "emoji": "🦆", "categoria": "vert" },
+        { "texto": "grillo", "emoji": "🦗", "categoria": "inv" },
+        { "texto": "conejo", "emoji": "🐇", "categoria": "vert" },
+        { "texto": "cangrejo", "emoji": "🦀", "categoria": "inv" },
+        { "texto": "lagartija", "emoji": "🦎", "categoria": "vert" },
+        { "texto": "escarabajo", "emoji": "🐞", "categoria": "inv" }
+      ],
+      "pista": "¿Tiene huesos por dentro, como tú?",
+      "explicacion": "Vertebrados: el pato, el conejo y la lagartija. Invertebrados: el grillo, el cangrejo y el escarabajo.",
+      "error": "clasifica-vert-invert"
+    },
+    {
+      "id": "c3", "tipo": "tocar", "nivel": 2,
+      "enunciado": "Toca los animales invertebrados.",
+      "texto": "Después de la lluvia, Juan vio en el patio un *ciempiés*, un sapo, una *babosa*, una paloma y una *lombriz*.",
+      "pista": "Busca a los animales que no tienen huesos. Hay tres.",
+      "explicacion": "El **ciempiés**, la **babosa** y la **lombriz** son invertebrados. El sapo (anfibio) y la paloma (ave) son vertebrados.",
+      "error": "clasifica-vert-invert"
+    },
+    {
+      "id": "c4", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "Une cada animal con lo que tiene su cuerpo.",
+      "pares": [
+        ["paraba", "plumas"],
+        ["jucumari", "pelo"],
+        ["pacú", "aletas"],
+        ["caimán", "escamas secas"],
+        ["lombriz", "cuerpo blando, sin huesos"]
+      ],
+      "pista": "El pacú es un pez de río. El jucumari es un oso.",
+      "explicacion": "La paraba tiene plumas; el jucumari, pelo; el pacú, aletas; el caimán, escamas secas; y la lombriz, un cuerpo blando sin huesos.",
+      "error": "grupos-vertebrados"
+    },
+    {
+      "id": "c5", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha la adivinanza y escribe la respuesta.",
+      "escuchar": "Tengo ocho patas y tejo una tela para atrapar insectos. No tengo huesos. ¿Quién soy?",
+      "respuestas": ["araña", "la araña", "una araña"],
+      "pista": "No es un insecto: tiene dos patas más que ellos.",
+      "explicacion": "Es la **araña**: tiene 8 patas y es invertebrada.",
+      "error": "escritura-tema"
+    },
+    {
+      "id": "c6", "tipo": "numero", "nivel": 2,
+      "enunciado": "¿Cuántos animales vertebrados hay?",
+      "visual": {
+        "tipo": "emojis",
+        "items": ["🐸", "🐝", "🦜", "🐌", "🐟", "🕷️", "🐻"],
+        "etiquetas": ["rana", "abeja", "paraba", "caracol", "trucha", "araña", "jucumari"]
+      },
+      "respuesta": 4,
+      "erroresComunes": [
+        { "respuesta": 3, "pista": "Contaste los invertebrados. Cuenta los que tienen huesos.", "error": "cuenta-clasifica" },
+        { "respuesta": 7, "pista": "Contaste todos. Cuenta solo los que tienen columna vertebral.", "error": "cuenta-clasifica" }
+      ],
+      "pista": "Tapa con el dedo los animales sin huesos y cuenta los demás.",
+      "explicacion": "Son 4 vertebrados: la rana, la paraba, la trucha y el jucumari. La abeja, el caracol y la araña son invertebrados.",
+      "error": "cuenta-clasifica"
+    },
+    {
+      "id": "c7", "tipo": "opcion", "nivel": 3,
+      "enunciado": "La tortuga tiene caparazón y el caracol tiene concha. ¿Cuál es vertebrado?",
+      "visual": { "tipo": "emojis", "items": ["🐢", "🐌"], "etiquetas": ["tortuga", "caracol"] },
+      "opciones": [
+        { "texto": "solo la tortuga", "correcta": true },
+        { "texto": "solo el caracol", "pista": "La concha del caracol no es un hueso. ¿Quién tiene columna por dentro?", "error": "caparazon-concha" },
+        { "texto": "los dos", "pista": "Algo duro por fuera no es un esqueleto por dentro.", "error": "caparazon-concha" },
+        { "texto": "ninguno", "pista": "Uno de los dos es un reptil.", "error": "caparazon-concha" }
+      ],
+      "mezclar": false,
+      "columnas": 2,
+      "pista": "Piensa qué hay dentro de su cuerpo, no encima.",
+      "explicacion": "Solo la **tortuga** es vertebrada: es un reptil con columna y huesos, y su caparazón está unido a su esqueleto. El caracol es invertebrado.",
+      "error": "caparazon-concha"
+    },
+    {
+      "id": "c8", "tipo": "multiple", "nivel": 3,
+      "enunciado": "Elige todas las oraciones verdaderas.",
+      "opciones": [
+        { "texto": "El murciélago vuela y es vertebrado.", "correcta": true },
+        { "texto": "La araña es un insecto.", "pista": "Cuenta sus patas: la araña tiene 8 y los insectos, 6.", "error": "insecto-arana" },
+        { "texto": "El pulpo no tiene huesos: es invertebrado.", "correcta": true },
+        { "texto": "La serpiente no tiene columna vertebral.", "pista": "La serpiente es un reptil: por dentro tiene una columna muy larga.", "error": "sin-patas-sin-huesos" },
+        { "texto": "El bufeo es un pez.", "pista": "El bufeo toma leche de su mamá: es un mamífero.", "error": "agua-pez" }
+      ],
+      "columnas": 1,
+      "pista": "Hay dos oraciones verdaderas. Lee cada una con calma.",
+      "explicacion": "Son verdaderas: el murciélago es vertebrado y el pulpo es invertebrado. La araña no es un insecto, la serpiente sí tiene columna y el bufeo es un mamífero.",
+      "error": "clasifica-vert-invert"
+    }
+  ],
+  "repaso": {
+    "texto": "**Vertebrados**: tienen columna vertebral y esqueleto por dentro (peces, anfibios, reptiles, aves y mamíferos). **Invertebrados**: no tienen columna ni huesos (insectos, arañas, caracoles, lombrices y pulpos).",
+    "visual": { "tipo": "emojis", "items": ["🦙", "🐌"], "etiquetas": ["vertebrado", "invertebrado"] }
+  },
+  "adulto": {
+    "objetivo": "Distinguir animales vertebrados (con columna vertebral y esqueleto interno: peces, anfibios, reptiles, aves y mamíferos) de invertebrados (sin columna ni huesos: insectos, arañas, gusanos, caracoles, pulpos), con ejemplos de Bolivia, y evitar confusiones frecuentes: una cubierta dura (caparazón o concha) no es lo mismo que un esqueleto interno, y no tener patas no significa no tener huesos.",
+    "sugerencias": [
+      "Cuando coman pescado (trucha, pejerrey, sábalo) o sopa de pollo, observen juntos la espina central del pescado y los huesitos del cuello del pollo: son vértebras, parte de la columna vertebral. Coman con cuidado por las espinas.",
+      "Después de la lluvia, salgan al patio, a la plaza o al huerto a buscar invertebrados: hormigas, lombrices, caracoles, arañas. Mírenlos con una lupa sin tocarlos ni lastimarlos y cuenten sus patas (6 los insectos, 8 las arañas). Al volver, lávense las manos.",
+      "Jueguen «¿Tiene columna?»: una persona dice un animal y la otra se toca la espalda si es vertebrado o mueve el dedo como un gusanito si es invertebrado. Incluyan casos que confunden: tortuga, serpiente y murciélago (vertebrados); pulpo, caracol y cangrejo (invertebrados).",
+      "En el mercado, pregunten de qué animal viene cada producto: el pescado, el pollo y la carne de res vienen de vertebrados; los camarones vienen de invertebrados, y la miel la hacen las abejas, que también son invertebrados."
+    ],
+    "errores": {
+      "clasifica-vert-invert": { "descripcion": "Duda al decidir si un animal es vertebrado o invertebrado.", "sugerencia": "Pregunten siempre: «¿tiene huesos por dentro, como tú?». Toquen juntos su propia espalda para sentir la columna antes de clasificar." },
+      "vocabulario-vert-invert": { "descripcion": "Confunde las palabras «vertebrado» e «invertebrado».", "sugerencia": "Expliquen que «in» al inicio puede significar «sin»: invertebrado es «sin vértebras». Escriban las dos palabras en tarjetas con un dibujo." },
+      "grupos-vertebrados": { "descripcion": "Confunde los cinco grupos de vertebrados o sus características.", "sugerencia": "Hagan una tabla con cinco columnas (peces, anfibios, reptiles, aves, mamíferos) y peguen dibujos de animales según lo que cubre su cuerpo: aletas, piel húmeda, escamas, plumas o pelo." },
+      "insecto-arana": { "descripcion": "Cree que la araña es un insecto o no recuerda cuántas patas tienen los insectos.", "sugerencia": "Dibujen juntos una hormiga (6 patas) y una araña (8 patas) y cuenten las patas en voz alta." },
+      "sin-patas-sin-huesos": { "descripcion": "Cree que un animal sin patas (como la serpiente) no tiene huesos.", "sugerencia": "Cuéntenle que la serpiente tiene una columna larguísima con muchas vértebras, y comparen con la espina del pescado, que tampoco tiene patas." },
+      "caparazon-concha": { "descripcion": "Confunde una cubierta dura por fuera (concha, caparazón) con un esqueleto interno.", "sugerencia": "Comparen la tortuga (tiene huesos por dentro, unidos a su caparazón) con el caracol (su concha no es hueso y por dentro es blando)." },
+      "agua-pez": { "descripcion": "Cree que todo animal que vive en el agua es un pez (por ejemplo, el bufeo).", "sugerencia": "Expliquen que el bufeo sube a respirar aire y toma leche de su mamá: es un mamífero, aunque viva en el río." },
+      "cuenta-clasifica": { "descripcion": "Clasifica, pero se equivoca al contar los animales de cada grupo.", "sugerencia": "Pidan que marque con un color los vertebrados y con otro los invertebrados antes de contar cada grupo." },
+      "escritura-tema": { "descripcion": "Tiene dificultad para escribir las palabras del tema que escucha.", "sugerencia": "Dicten palabras del tema separando sílabas con palmadas (co-lum-na, lom-briz) y revisen juntos cómo se escriben." },
+      "produce-oracion": { "descripcion": "Le cuesta escribir una oración completa que explique por qué un animal es invertebrado.", "sugerencia": "Usen el molde «El/La ___ es invertebrado/a porque no tiene ___» y digan oraciones en voz alta antes de escribirlas." }
+    }
+  }
+}

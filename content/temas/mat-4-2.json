@@ -1,0 +1,339 @@
+{
+  "id": "mat-4-2",
+  "titulo": "Tablas del 2 al 5",
+  "objetivo": "Cuento de 2 en 2, de 3 en 3, de 4 en 4 y de 5 en 5, y aprendo las tablas del 2 al 5.",
+  "explicacion": [
+    {
+      "texto": "Una **tabla de multiplicar** se aprende contando con saltos. La tabla del 2 es contar de 2 en 2: 2, 4, 6, 8, 10. Cada número tiene 2 más que el anterior.",
+      "emoji": "🐸",
+      "visual": { "tipo": "recta", "min": 0, "max": 10, "paso": 1, "marcar": [2, 4, 6, 8, 10], "saltos": [[0, 2], [2, 4], [4, 6], [6, 8], [8, 10]] }
+    },
+    {
+      "texto": "3 × 4 son 3 grupos de 4, y 4 × 3 son 4 grupos de 3: ¡los dos dan 12! El orden no cambia el resultado. Por eso, 3 × 4 también se puede contar de 3 en 3, cuatro veces: 3, 6, 9, 12.",
+      "visual": { "tipo": "arreglo", "filas": 4, "columnas": 3, "emoji": "🍊" }
+    },
+    {
+      "texto": "Las tablas tienen trucos. En la tabla del 2, todos los resultados son pares. En la del 5, terminan en 0 o en 5. Y la tabla del 4 es el doble de la del 2.",
+      "emoji": "💡",
+      "visual": { "tipo": "tabla", "columnas": ["×", "1", "2", "3", "4", "5"], "filas": [["2", "2", "4", "6", "8", "10"], ["4", "4", "8", "12", "16", "20"], ["5", "5", "10", "15", "20", "25"]] }
+    },
+    {
+      "texto": "Cada mano tiene 5 dedos. Cuenta los dedos de 5 en 5: una mano, 5; dos manos, 10; tres manos, 15. Contaste de 5 en 5, tres veces: 5 × 3 = 15.",
+      "visual": { "tipo": "emojis", "items": ["✋", "✋", "✋"], "etiquetas": ["5", "10", "15"] }
+    }
+  ],
+  "ejemplo": {
+    "instruccion": "Mira cómo armamos la tabla del 3 saltando en la recta. Después, salta tú de 3 en 3 con los botones.",
+    "pasos": [
+      { "texto": "Empezamos en el 0 y saltamos de 3 en 3: 3, 6, 9.", "visual": { "tipo": "recta", "min": 0, "max": 15, "paso": 1, "marcar": [3, 6, 9], "saltos": [[0, 3], [3, 6], [6, 9]] } },
+      { "texto": "Cada salto suma 3. Con 1 salto llegamos al 3: 3 × 1 = 3. Con 2 saltos, al 6: 3 × 2 = 6. Con 3 saltos, al 9: 3 × 3 = 9.", "visual": { "tipo": "tabla", "columnas": ["Saltos", "Multiplicación", "Llegamos al"], "filas": [["1", "3 × 1", "3"], ["2", "3 × 2", "6"], ["3", "3 × 3", "9"]] } },
+      { "texto": "Con 5 saltos llegamos al 15. Entonces 3 × 5 = 15.", "visual": { "tipo": "recta", "min": 0, "max": 15, "paso": 1, "marcar": [15], "saltos": [[0, 3], [3, 6], [6, 9], [9, 12], [12, 15]] } }
+    ],
+    "explorar": { "tipo": "recta", "min": 0, "max": 30, "paso": 3 }
+  },
+  "guiada": {
+    "intro": "Vamos a contar con saltos y a usar las tablas juntos.",
+    "pasos": [
+      {
+        "id": "g1", "tipo": "manipular",
+        "enunciado": "Cuenta de 2 en 2 desde el 0. Da 6 saltos y marca el número al que llegas.",
+        "apoyo": "Di en voz alta un número por cada salto: 2, 4, 6... Levanta un dedo en cada salto para no perder la cuenta.",
+        "manipulable": { "tipo": "recta", "min": 0, "max": 20, "paso": 1, "objetivo": 12 },
+        "pista": "Cuenta tus dedos levantados: deben ser 6 saltos de 2.",
+        "explicacion": "2, 4, 6, 8, 10, 12: con 6 saltos de 2 llegas al 12. Entonces 2 × 6 = 12.",
+        "error": "salta-conteo"
+      },
+      {
+        "id": "g2", "tipo": "completar",
+        "enunciado": "Completa la tabla del 5.",
+        "apoyo": "Cada resultado tiene 5 más que el anterior. Todos terminan en 0 o en 5.",
+        "texto": "5 × 1 = 5; 5 × 2 = 10; 5 × 3 = [15]; 5 × 4 = [20]; 5 × 5 = [25]",
+        "banco": ["16", "24"],
+        "pista": "Suma 5 al resultado anterior cada vez.",
+        "explicacion": "5 × 3 = 15, 5 × 4 = 20 y 5 × 5 = 25. Cada vez sumamos 5.",
+        "error": "tabla-multiplicar"
+      },
+      {
+        "id": "g3", "tipo": "numero",
+        "enunciado": "¿Cuánto es 4 × 3?",
+        "apoyo": "Cada fila tiene 4 papas. Cuenta de 4 en 4, fila por fila: 4, 8...",
+        "visual": { "tipo": "arreglo", "filas": 3, "columnas": 4, "emoji": "🥔" },
+        "respuesta": 12,
+        "erroresComunes": [ { "respuesta": 7, "pista": "Sumaste 4 + 3. Hay 3 filas de 4: cuenta de 4 en 4.", "error": "suma-en-vez-de-multiplicar" } ],
+        "pista": "Cuenta de 4 en 4, tres veces.",
+        "explicacion": "4, 8, 12: tres filas de 4 son 12. Entonces 4 × 3 = 12.",
+        "error": "tabla-multiplicar"
+      }
+    ]
+  },
+  "practica": [
+    {
+      "id": "p1", "tipo": "generador", "nivel": 1, "generador": "tabla",
+      "params": { "tablas": [2, 3], "visual": true }
+    },
+    {
+      "id": "p2", "tipo": "manipular", "nivel": 1,
+      "enunciado": "Cuenta de 2 en 2. Pon los dos números que siguen.",
+      "manipulable": { "tipo": "patron", "secuencia": ["2", "4", "6", "8"], "opciones": ["9", "10", "11", "12"], "completar": 2, "solucion": ["10", "12"] },
+      "pista": "Cada número tiene 2 más que el anterior. ¿Qué número está 2 después del 8?",
+      "explicacion": "2, 4, 6, 8, 10, 12. Es la tabla del 2: siempre sumamos 2.",
+      "error": "salta-conteo"
+    },
+    {
+      "id": "p3", "tipo": "numero", "nivel": 1,
+      "enunciado": "Rosa tiene 5 pares de medias. Cada par tiene 2 medias. ¿Cuántas medias tiene?",
+      "visual": { "tipo": "emoji", "valor": "🧦", "cantidad": 5, "etiqueta": "5 pares" },
+      "respuesta": 10,
+      "erroresComunes": [ { "respuesta": 7, "pista": "Sumaste 5 + 2. Cuenta 2 medias por cada par: 2, 4...", "error": "suma-en-vez-de-multiplicar" } ],
+      "pista": "Cuenta de 2 en 2, una vez por cada par.",
+      "explicacion": "2, 4, 6, 8, 10. Son 5 pares de 2: 5 × 2 = 10 medias.",
+      "error": "tabla-multiplicar"
+    },
+    {
+      "id": "p4", "tipo": "memoria", "nivel": 1,
+      "enunciado": "Encuentra las parejas: la multiplicación y su resultado.",
+      "pares": [ ["2 × 3", "6"], ["5 × 2", "10"], ["2 × 7", "14"], ["5 × 5", "25"], ["3 × 3", "9"] ],
+      "pista": "Cuenta de 2 en 2, de 3 en 3 o de 5 en 5 para encontrar cada resultado.",
+      "explicacion": "2 × 3 = 6, 5 × 2 = 10, 2 × 7 = 14, 5 × 5 = 25 y 3 × 3 = 9.",
+      "error": "tabla-multiplicar"
+    },
+    {
+      "id": "p5", "tipo": "generador", "nivel": 2, "generador": "tabla",
+      "params": { "tablas": [4, 5] }
+    },
+    {
+      "id": "p6", "tipo": "tocar", "nivel": 2,
+      "enunciado": "Toca todos los números que están en la tabla del 5.",
+      "texto": "*15*, 12, *35*, 22, *40*, 18, *5*, 33",
+      "pista": "Los resultados de la tabla del 5 terminan en 0 o en 5.",
+      "explicacion": "15, 35, 40 y 5 están en la tabla del 5: 5 × 3, 5 × 7, 5 × 8 y 5 × 1. Los otros números no terminan en 0 ni en 5.",
+      "error": "multiplos-tabla"
+    },
+    {
+      "id": "p7", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "Une cada multiplicación con su resultado.",
+      "pares": [ ["3 × 6", "18"], ["4 × 7", "28"], ["3 × 9", "27"], ["4 × 4", "16"] ],
+      "pista": "Para 3 × 6, cuenta de 3 en 3 seis veces. Para 4 × 7, cuenta de 4 en 4 siete veces.",
+      "explicacion": "3 × 6 = 18, 4 × 7 = 28, 3 × 9 = 27 y 4 × 4 = 16.",
+      "error": "tabla-multiplicar"
+    },
+    {
+      "id": "p8", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "Separa las multiplicaciones según su resultado.",
+      "categorias": [
+        { "id": "d10", "texto": "Dan 10" },
+        { "id": "d12", "texto": "Dan 12" },
+        { "id": "d20", "texto": "Dan 20" }
+      ],
+      "elementos": [
+        { "texto": "5 × 2", "categoria": "d10" }, { "texto": "2 × 5", "categoria": "d10" },
+        { "texto": "3 × 4", "categoria": "d12" }, { "texto": "4 × 3", "categoria": "d12" },
+        { "texto": "2 × 6", "categoria": "d12" }, { "texto": "4 × 5", "categoria": "d20" },
+        { "texto": "5 × 4", "categoria": "d20" }, { "texto": "2 × 10", "categoria": "d20" }
+      ],
+      "pista": "Calcula cada multiplicación. Recuerda: 3 × 4 y 4 × 3 dan lo mismo.",
+      "explicacion": "Dan 10: 5 × 2 y 2 × 5. Dan 12: 3 × 4, 4 × 3 y 2 × 6. Dan 20: 4 × 5, 5 × 4 y 2 × 10.",
+      "error": "tabla-multiplicar"
+    },
+    {
+      "id": "p9", "tipo": "numero", "nivel": 2,
+      "enunciado": "Escucha la multiplicación y escribe el resultado.",
+      "escuchar": "¿Cuánto es cuatro por seis?",
+      "respuesta": 24,
+      "erroresComunes": [
+        { "respuesta": 10, "pista": "Sumaste 4 + 6. Cuenta de 4 en 4, seis veces.", "error": "suma-en-vez-de-multiplicar" },
+        { "respuesta": 20, "pista": "Eso es 4 × 5. Te falta un salto de 4 más.", "error": "tabla-multiplicar" }
+      ],
+      "pista": "Cuenta de 4 en 4 y da 6 saltos. Escucha otra vez si lo necesitas.",
+      "explicacion": "4, 8, 12, 16, 20, 24. Entonces 4 × 6 = 24.",
+      "error": "tabla-multiplicar"
+    },
+    {
+      "id": "p10", "tipo": "completar", "nivel": 2,
+      "enunciado": "Cuenta de 4 en 4 y completa.",
+      "texto": "4, 8, [12], 16, [20], [24], 28",
+      "banco": ["14", "18"],
+      "pista": "Suma 4 cada vez.",
+      "explicacion": "4, 8, 12, 16, 20, 24, 28: es la tabla del 4.",
+      "error": "salta-conteo"
+    },
+    {
+      "id": "p11", "tipo": "numero", "nivel": 2,
+      "enunciado": "Cada canasta tiene 5 naranjas. ¿Cuántas naranjas vendió cada uno?",
+      "visual": { "tipo": "pictograma", "titulo": "Naranjas vendidas", "icono": "🧺", "escala": 5, "datos": [ { "etiqueta": "Wara", "valor": 20 }, { "etiqueta": "Luis", "valor": 15 }, { "etiqueta": "Ana", "valor": 10 } ] },
+      "campos": [
+        { "etiqueta": "Wara", "respuesta": 20 },
+        { "etiqueta": "Luis", "respuesta": 15 },
+        { "etiqueta": "Ana", "respuesta": 10 }
+      ],
+      "pista": "Cuenta de 5 en 5 las canastas de cada fila.",
+      "explicacion": "Wara: 4 canastas, 5 × 4 = 20. Luis: 3 canastas, 5 × 3 = 15. Ana: 2 canastas, 5 × 2 = 10.",
+      "error": "pictograma-escala"
+    },
+    {
+      "id": "p12", "tipo": "generador", "nivel": 3, "generador": "tabla",
+      "params": { "tablas": [2, 3, 4, 5] }
+    },
+    {
+      "id": "p13", "tipo": "pasos", "nivel": 3,
+      "enunciado": "Kusi compra 3 bolsas con 4 panes cada una y 2 bolsas con 5 panes cada una.",
+      "pasos": [
+        {
+          "tipo": "numero", "enunciado": "¿Cuántos panes hay en las 3 bolsas de 4?", "respuesta": 12,
+          "erroresComunes": [ { "respuesta": 7, "pista": "Sumaste 3 + 4. Son 3 bolsas de 4 panes.", "error": "suma-en-vez-de-multiplicar" } ],
+          "pista": "Cuenta de 4 en 4, tres veces.",
+          "explicacion": "3 × 4 = 12 panes.",
+          "error": "tabla-multiplicar"
+        },
+        {
+          "tipo": "numero", "enunciado": "¿Cuántos panes hay en las 2 bolsas de 5?", "respuesta": 10,
+          "erroresComunes": [ { "respuesta": 7, "pista": "Sumaste 2 + 5. Son 2 bolsas de 5 panes.", "error": "suma-en-vez-de-multiplicar" } ],
+          "pista": "Cuenta de 5 en 5, dos veces.",
+          "explicacion": "2 × 5 = 10 panes.",
+          "error": "tabla-multiplicar"
+        },
+        {
+          "tipo": "numero", "enunciado": "¿Cuántos panes compra Kusi en total?", "respuesta": 22,
+          "pista": "Suma los panes de las dos clases de bolsas.",
+          "explicacion": "12 + 10 = 22 panes.",
+          "error": "problema-pasos"
+        }
+      ],
+      "pista": "Resuelve un paso a la vez.",
+      "explicacion": "3 × 4 = 12 y 2 × 5 = 10. En total: 12 + 10 = 22 panes.",
+      "error": "problema-pasos"
+    },
+    {
+      "id": "p14", "tipo": "manipular", "nivel": 3,
+      "enunciado": "Un cuaderno cuesta 5 Bs. Mateo compra 6 cuadernos. Pon el dinero justo para pagar.",
+      "manipulable": { "tipo": "dinero", "objetivo": 3000, "disponibles": ["b20", "b10", "m5", "m2", "m1"], "mostrarTotal": true },
+      "pista": "Primero calcula 6 × 5: cuenta de 5 en 5, seis veces.",
+      "explicacion": "6 × 5 = 30. Mateo paga 30 Bs, por ejemplo con un billete de 20 Bs y uno de 10 Bs.",
+      "error": "multiplica-dinero"
+    },
+    {
+      "id": "p15", "tipo": "ordenar", "nivel": 3,
+      "enunciado": "Calcula cada multiplicación y ordénalas de menor a mayor resultado.",
+      "elementos": ["5 × 2", "4 × 4", "2 × 9", "3 × 7"],
+      "pista": "Primero calcula cada una. Después ordena los resultados, del más chico al más grande.",
+      "explicacion": "5 × 2 = 10, 4 × 4 = 16, 2 × 9 = 18 y 3 × 7 = 21. De menor a mayor: 5 × 2, 4 × 4, 2 × 9, 3 × 7.",
+      "error": "tabla-multiplicar"
+    }
+  ],
+  "comprobacion": [
+    {
+      "id": "c1", "tipo": "numero", "nivel": 1,
+      "enunciado": "Cada llama tiene 4 patas. ¿Cuántas patas tienen 5 llamas?",
+      "visual": { "tipo": "emoji", "valor": "🦙", "cantidad": 5 },
+      "respuesta": 20,
+      "erroresComunes": [ { "respuesta": 9, "pista": "Sumaste 5 + 4. Cuenta 4 patas por cada llama: 4, 8...", "error": "suma-en-vez-de-multiplicar" } ],
+      "pista": "Cuenta de 4 en 4, una vez por cada llama.",
+      "explicacion": "4, 8, 12, 16, 20. Son 5 llamas de 4 patas: 5 × 4 = 20 patas.",
+      "error": "tabla-multiplicar"
+    },
+    {
+      "id": "c2", "tipo": "completar", "nivel": 1,
+      "enunciado": "Completa estas multiplicaciones de la tabla del 2.",
+      "texto": "2 × 6 = [12]; 2 × 8 = [16]; 2 × 9 = [18]",
+      "banco": ["14", "17"],
+      "pista": "Cuenta de 2 en 2: 2, 4, 6... Da tantos saltos como dice el segundo número.",
+      "explicacion": "2 × 6 = 12, 2 × 8 = 16 y 2 × 9 = 18. Contando de 2 en 2: 2, 4, 6, 8, 10, 12, 14, 16, 18.",
+      "error": "tabla-multiplicar"
+    },
+    {
+      "id": "c3", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "Une cada multiplicación con su resultado.",
+      "pares": [ ["5 × 7", "35"], ["4 × 9", "36"], ["3 × 8", "24"], ["2 × 8", "16"] ],
+      "pista": "Cuenta con saltos: de 5 en 5, de 4 en 4, de 3 en 3 o de 2 en 2.",
+      "explicacion": "5 × 7 = 35, 4 × 9 = 36, 3 × 8 = 24 y 2 × 8 = 16.",
+      "error": "tabla-multiplicar"
+    },
+    {
+      "id": "c4", "tipo": "multiple", "nivel": 2,
+      "enunciado": "Elige todos los números que están en la tabla del 3.",
+      "opciones": [
+        { "texto": "9", "correcta": true },
+        { "texto": "12", "correcta": true },
+        { "texto": "14", "pista": "14 está en la tabla del 2. Cuenta de 3 en 3: 3, 6, 9, 12, 15... ¿Aparece el 14?", "error": "multiplos-tabla" },
+        { "texto": "21", "correcta": true },
+        { "texto": "25", "pista": "25 está en la tabla del 5. Cuenta de 3 en 3 y verás que no aparece.", "error": "multiplos-tabla" },
+        { "texto": "30", "correcta": true }
+      ],
+      "columnas": 3,
+      "pista": "Cuenta de 3 en 3 desde el 3 hasta el 30 y mira qué números aparecen.",
+      "explicacion": "9 (3 × 3), 12 (3 × 4), 21 (3 × 7) y 30 (3 × 10) están en la tabla del 3. El 14 y el 25 no.",
+      "error": "multiplos-tabla"
+    },
+    {
+      "id": "c5", "tipo": "numero", "nivel": 2,
+      "enunciado": "Escucha el problema y escribe la respuesta.",
+      "escuchar": "Arami dibuja 7 estrellas. Cada estrella tiene 5 puntas. ¿Cuántas puntas dibujó en total?",
+      "respuesta": 35,
+      "erroresComunes": [ { "respuesta": 12, "pista": "Sumaste 7 + 5. Cuenta 5 puntas por cada estrella.", "error": "suma-en-vez-de-multiplicar" } ],
+      "pista": "Cuenta de 5 en 5, siete veces. Escucha otra vez si lo necesitas.",
+      "explicacion": "5, 10, 15, 20, 25, 30, 35. Son 7 estrellas de 5 puntas: 7 × 5 = 35.",
+      "error": "tabla-multiplicar"
+    },
+    {
+      "id": "c6", "tipo": "generador", "nivel": 2, "generador": "tabla",
+      "params": { "tablas": [3, 4], "visual": true }
+    },
+    {
+      "id": "c7", "tipo": "pasos", "nivel": 3,
+      "enunciado": "En la fiesta de Nayra hay 5 mesas con 4 sillas en cada una. Llegan 23 invitados.",
+      "pasos": [
+        {
+          "tipo": "numero", "enunciado": "¿Cuántas sillas hay?", "respuesta": 20,
+          "erroresComunes": [ { "respuesta": 9, "pista": "Sumaste 5 + 4. Hay 5 mesas con 4 sillas cada una.", "error": "suma-en-vez-de-multiplicar" } ],
+          "pista": "Cuenta de 4 en 4, una vez por cada mesa.",
+          "explicacion": "5 × 4 = 20 sillas.",
+          "error": "tabla-multiplicar"
+        },
+        {
+          "tipo": "numero", "enunciado": "¿Cuántos invitados se quedan sin silla?", "respuesta": 3,
+          "erroresComunes": [ { "respuesta": 43, "pista": "Sumaste. Hay más invitados que sillas: resta 23 − 20.", "error": "problema-pasos" } ],
+          "pista": "Compara los invitados con las sillas. ¿Cuántos invitados sobran?",
+          "explicacion": "23 − 20 = 3. Tres invitados se quedan sin silla.",
+          "error": "problema-pasos"
+        }
+      ],
+      "pista": "Primero calcula cuántas sillas hay. Después compara con los invitados.",
+      "explicacion": "5 × 4 = 20 sillas. 23 − 20 = 3 invitados se quedan sin silla.",
+      "error": "problema-pasos"
+    },
+    {
+      "id": "c8", "tipo": "numero", "nivel": 3,
+      "enunciado": "¿Qué número falta? 3 × ☐ = 27",
+      "respuesta": 9,
+      "erroresComunes": [
+        { "respuesta": 24, "pista": "Restaste 27 − 3. Busca cuántos saltos de 3 necesitas para llegar al 27.", "error": "factor-faltante" },
+        { "respuesta": 10, "pista": "3 × 10 = 30, y eso se pasa del 27. Prueba con un número más chico.", "error": "factor-faltante" }
+      ],
+      "pista": "Cuenta de 3 en 3 hasta llegar al 27. ¿Cuántos saltos diste?",
+      "explicacion": "3, 6, 9, 12, 15, 18, 21, 24, 27: son 9 saltos. Entonces 3 × 9 = 27.",
+      "error": "factor-faltante"
+    }
+  ],
+  "repaso": {
+    "texto": "Una tabla es contar con saltos. La tabla del 3: 3, 6, 9, 12, 15... Para 3 × 5, da 5 saltos de 3.",
+    "visual": { "tipo": "recta", "min": 0, "max": 15, "paso": 1, "marcar": [15], "saltos": [[0, 3], [3, 6], [6, 9], [9, 12], [12, 15]] }
+  },
+  "adulto": {
+    "objetivo": "Aprender las tablas de multiplicar del 2 al 5: contar de 2 en 2, de 3 en 3, de 4 en 4 y de 5 en 5, reconocer patrones (pares, terminaciones en 0 y 5, la del 4 es el doble de la del 2), memorizar los resultados y usarlos en problemas cotidianos.",
+    "sugerencias": [
+      "Al subir una escalera o caminar por la vereda, cuenten los pasos de 2 en 2 o de 3 en 3 en voz alta. Al final, digan la multiplicación: «Dimos 5 saltos de 3: 3 × 5 = 15».",
+      "En la feria, usen monedas de 2 Bs y de 5 Bs: «Si pagas con 4 monedas de 5 Bs, ¿cuánto pagas?». Dejen que cuente de 5 en 5 con las monedas en la mano.",
+      "Hagan tarjetas con la multiplicación de un lado y el resultado del otro. Jueguen 5 minutos al día, empezando por las tablas del 2 y del 5, y guarden aparte las que todavía cuestan para repasarlas."
+    ],
+    "errores": {
+      "tabla-multiplicar": { "descripcion": "Todavía no recuerda algunos resultados de las tablas del 2 al 5.", "sugerencia": "Practiquen pocas multiplicaciones por día, contando de n en n con los dedos, y repitan las que cuestan hasta que salgan rápido." },
+      "salta-conteo": { "descripcion": "Se equivoca al contar de 2 en 2, de 3 en 3, de 4 en 4 o de 5 en 5 (se salta o repite números).", "sugerencia": "Dibujen una recta en el piso con tiza y salten de 3 en 3 diciendo cada número en voz alta." },
+      "suma-en-vez-de-multiplicar": { "descripcion": "Suma los dos números (4 + 3 = 7) en lugar de multiplicarlos (4 × 3 = 12).", "sugerencia": "Dibujen la multiplicación como grupos (3 platos con 4 papas) antes de calcular." },
+      "multiplos-tabla": { "descripcion": "No reconoce qué números están en una tabla (por ejemplo, que 35 está en la tabla del 5).", "sugerencia": "Escriban los resultados de una tabla en una tira de papel y jueguen a buscar esos números en precios, calendarios o placas." },
+      "pictograma-escala": { "descripcion": "En un pictograma, cuenta los dibujos sin tener en cuenta cuánto vale cada uno.", "sugerencia": "Pongan 5 fideos dentro de cada vaso y pregunten cuántos fideos hay en total, no cuántos vasos." },
+      "problema-pasos": { "descripcion": "Resuelve las multiplicaciones, pero le cuesta juntar los pasos de un problema.", "sugerencia": "Anoten el resultado de cada paso en un papel antes de seguir con la pregunta siguiente." },
+      "multiplica-dinero": { "descripcion": "Le cuesta calcular cuánto pagar cuando compra varias cosas del mismo precio.", "sugerencia": "Jueguen a la tienda con monedas de juguete: cada cosa cuesta 5 Bs y pagan contando de 5 en 5." },
+      "factor-faltante": { "descripcion": "Le cuesta encontrar el número que falta en una multiplicación (3 × ☐ = 27).", "sugerencia": "Cuenten juntos de 3 en 3 levantando un dedo por salto hasta llegar al resultado: los dedos levantados son el número que falta." }
+    }
+  }
+}

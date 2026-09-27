@@ -1,0 +1,468 @@
+{
+  "id": "nat-5-1",
+  "titulo": "La planta y sus partes",
+  "objetivo": "Conozco las partes de la planta y lo que hace cada una, sé qué necesita una planta para vivir y cómo crece desde la semilla.",
+  "lecturas": [
+    {
+      "id": "plantas-bolivia", "titulo": "Plantas de mi Bolivia", "genero": "texto informativo", "emoji": "🌿",
+      "parrafos": [
+        "En el **altiplano** hace frío. Allí crecen la quinua y la papa. En los cerros altos crece la **queñua**, un árbol de tronco rojizo que aguanta el frío.",
+        "En los **valles** no hace tanto frío. Allí crecen el **molle**, un árbol de frutitos rosados, y la **kantuta**, con flores que cuelgan como campanitas.",
+        "En los **llanos** y la **Amazonía** hace calor y llueve mucho. Allí crecen el **cacao**, el árbol de **castaña** y el **patujú**, una flor roja y amarilla."
+      ]
+    }
+  ],
+  "explicacion": [
+    {
+      "texto": "Las plantas son **seres vivos**: nacen, crecen, se alimentan, se reproducen y mueren. Necesitan agua, luz del sol, aire y un suelo con nutrientes. Muchas tienen **raíz**, **tallo**, **hojas**, **flores**, **frutos** y **semillas**.",
+      "emoji": "🌱",
+      "visual": { "tipo": "ilustracion", "id": "planta-partes" }
+    },
+    {
+      "texto": "La **raíz** sujeta la planta al suelo y toma el agua. El **tallo** la sostiene y lleva el agua hasta las hojas. Las **hojas** fabrican el alimento de la planta con la luz del sol, el agua y el aire.",
+      "visual": { "tipo": "emojis", "items": ["💧", "☀️", "💨", "🍃"], "etiquetas": ["agua", "luz del sol", "aire", "hojas"] }
+    },
+    {
+      "texto": "De la **flor** nace el **fruto**. El fruto guarda y protege las **semillas**. De una semilla nace una planta nueva, que crece, florece y da frutos otra vez. Ese es su **ciclo de vida**.",
+      "visual": { "tipo": "ilustracion", "id": "ciclo-planta" }
+    },
+    {
+      "texto": "Comemos muchas partes de las plantas: la raíz de la zanahoria, las hojas de la lechuga, el fruto del tomate y las semillas del maní. ¡Y la papa es un **tallo** que crece bajo la tierra!",
+      "visual": { "tipo": "emojis", "items": ["🥕", "🥬", "🍅", "🥜", "🥔"], "etiquetas": ["raíz", "hojas", "fruto", "semillas", "tallo"] }
+    }
+  ],
+  "ejemplo": {
+    "instruccion": "Mira cómo crece la planta de haba que Wara sembró en su patio.",
+    "pasos": [
+      { "texto": "Wara pone una semilla de haba en tierra húmeda. Adentro, la semilla guarda una plantita muy pequeña y comida para ella.", "visual": { "tipo": "emojis", "items": ["🌰", "💧"], "etiquetas": ["semilla", "agua"] } },
+      { "texto": "Con el agua, la semilla se hincha y se abre. Primero sale la **raíz**, que crece hacia abajo. Después sale un tallito que sube buscando la luz: es el **brote**.", "visual": { "tipo": "emoji", "valor": "🌱", "etiqueta": "brote" } },
+      { "texto": "La planta crece y le salen muchas hojas. Sus hojas fabrican el alimento con la luz del sol. Un día aparecen **flores**, y las abejas llegan a visitarlas.", "visual": { "tipo": "emojis", "items": ["🌿", "☀️", "🌼", "🐝"], "etiquetas": ["hojas", "luz", "flores", "abeja"] } },
+      { "texto": "Las flores se transforman en **vainas**: la vaina es el **fruto** del haba. Adentro hay habas nuevas: ¡son las **semillas**! Con ellas, el ciclo empieza otra vez.", "visual": { "tipo": "ilustracion", "id": "ciclo-planta" } }
+    ]
+  },
+  "guiada": {
+    "intro": "Ahora lo hacemos juntos. Recuerda la planta de haba de Wara.",
+    "pasos": [
+      {
+        "id": "g1", "tipo": "opcion",
+        "enunciado": "¿Cómo se llama la parte marcada?",
+        "apoyo": "Fíjate dónde está: debajo de la tierra. Esa parte sujeta la planta para que no se caiga.",
+        "visual": { "tipo": "ilustracion", "id": "planta-partes", "resaltar": "raiz" },
+        "opciones": [
+          { "texto": "raíz", "correcta": true },
+          { "texto": "tallo", "pista": "El tallo está encima de la tierra y sostiene las hojas. Mira más abajo.", "error": "nombra-partes" },
+          { "texto": "hoja", "pista": "Las hojas son verdes y están arriba, en el tallo. Mira debajo de la tierra.", "error": "nombra-partes" }
+        ],
+        "columnas": 3,
+        "pista": "Esta parte está escondida debajo de la tierra.",
+        "explicacion": "Es la **raíz**. Está debajo de la tierra, sujeta la planta y toma el agua del suelo.",
+        "error": "nombra-partes"
+      },
+      {
+        "id": "g2", "tipo": "relacionar",
+        "enunciado": "Une cada parte de la planta con su trabajo.",
+        "apoyo": "Piensa: ¿qué parte toma el agua?, ¿cuál la lleva hacia arriba?, ¿cuál usa la luz del sol?, ¿de cuál nace el fruto?",
+        "pares": [
+          ["raíz", "toma el agua del suelo"],
+          ["tallo", "lleva el agua hasta las hojas"],
+          [{ "texto": "hojas", "emoji": "🍃" }, "fabrican el alimento con la luz del sol"],
+          [{ "texto": "flor", "emoji": "🌸" }, "de ella nace el fruto"]
+        ],
+        "pista": "La raíz está en la tierra, el tallo es el camino del agua y las hojas reciben la luz.",
+        "explicacion": "La raíz toma el agua del suelo, el tallo la lleva hasta las hojas, las hojas fabrican el alimento con la luz del sol y de la flor nace el fruto.",
+        "error": "funcion-partes"
+      },
+      {
+        "id": "g3", "tipo": "ordenar",
+        "enunciado": "Ordena el ciclo de vida de una planta. Empieza por la semilla.",
+        "apoyo": "Primero la semilla se abre y sale un brote. Al final aparece el fruto, que guarda semillas nuevas.",
+        "elementos": [
+          { "texto": "semilla", "emoji": "🌰" },
+          { "texto": "brote", "emoji": "🌱" },
+          { "texto": "planta con hojas", "emoji": "🌿" },
+          { "texto": "planta con flores", "emoji": "🌼" },
+          { "texto": "fruto con semillas", "emoji": "🍅" }
+        ],
+        "vertical": true,
+        "pista": "¿Qué tiene que aparecer antes que el fruto? El fruto nace de otra parte.",
+        "explicacion": "Semilla, brote, planta con hojas, planta con flores y fruto con semillas. Con esas semillas, el ciclo empieza otra vez.",
+        "error": "ciclo-planta"
+      }
+    ]
+  },
+  "practica": [
+    {
+      "id": "p1", "tipo": "escribir", "nivel": 1,
+      "enunciado": "Escribe el nombre de la parte marcada.",
+      "visual": { "tipo": "ilustracion", "id": "planta-partes", "resaltar": "flor" },
+      "respuestas": ["flor", "la flor", "una flor", "flores"],
+      "pista": "Es la parte de colores que visitan las abejas.",
+      "explicacion": "Es la **flor**. De la flor nace el fruto.",
+      "error": "nombra-partes"
+    },
+    {
+      "id": "p2", "tipo": "memoria", "nivel": 1,
+      "enunciado": "Encuentra las parejas: el dibujo y su nombre.",
+      "pares": [
+        [{ "emoji": "🍃" }, "hojas"],
+        [{ "emoji": "🌸" }, "flor"],
+        [{ "emoji": "🌱" }, "brote"],
+        [{ "emoji": "🍊" }, "fruto"]
+      ],
+      "pista": "El brote es una planta muy pequeña que recién sale de la tierra. La naranja es un fruto.",
+      "explicacion": "Las hojas son verdes, la flor tiene pétalos de colores, el brote es la plantita que recién nace y la naranja es un fruto.",
+      "error": "nombra-partes"
+    },
+    {
+      "id": "p3", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Toca las partes de la planta.",
+      "texto": "La kantuta de Nayra tiene *raíz*, *tallo*, *hojas* y *flores* rojas.",
+      "pista": "Hay cuatro partes. «Kantuta» es el nombre de toda la planta, no de una parte.",
+      "explicacion": "Raíz, tallo, hojas y flores son partes de la planta. «Kantuta» es su nombre y «rojas» dice cómo son sus flores.",
+      "error": "nombra-partes"
+    },
+    {
+      "id": "p4", "tipo": "clasificar", "nivel": 1,
+      "enunciado": "¿La planta lo necesita para vivir?",
+      "categorias": [
+        { "id": "si", "texto": "Lo necesita", "emoji": "✅" },
+        { "id": "no", "texto": "No lo necesita", "emoji": "🚫" }
+      ],
+      "elementos": [
+        { "texto": "agua", "emoji": "💧", "categoria": "si" },
+        { "texto": "luz del sol", "emoji": "☀️", "categoria": "si" },
+        { "texto": "aire", "emoji": "💨", "categoria": "si" },
+        { "texto": "suelo con nutrientes", "categoria": "si" },
+        { "texto": "humo", "categoria": "no" },
+        { "texto": "basura", "emoji": "🗑️", "categoria": "no" },
+        { "texto": "dulces", "emoji": "🍬", "categoria": "no" }
+      ],
+      "pista": "Piensa en lo que ayuda a la planta a fabricar su alimento y a crecer. Lo que ensucia no la ayuda.",
+      "explicacion": "La planta necesita agua, luz del sol, aire y suelo con nutrientes. El humo y la basura la dañan, y los dulces no le sirven.",
+      "error": "necesidades-planta"
+    },
+    {
+      "id": "p5", "tipo": "escribir", "nivel": 1,
+      "enunciado": "Escucha y escribe la palabra.",
+      "escuchar": "semilla",
+      "respuestas": ["semilla"],
+      "pista": "Separa la palabra en sílabas con palmadas. La última sílaba se escribe con «ll».",
+      "explicacion": "La palabra es «semilla»: se-mi-lla. De una semilla nace una planta nueva.",
+      "error": "escritura-palabra"
+    },
+    {
+      "id": "p6", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "Une cada alimento con la parte de la planta que comemos.",
+      "pares": [
+        [{ "texto": "zanahoria", "emoji": "🥕" }, "raíz"],
+        [{ "texto": "lechuga", "emoji": "🥬" }, "hojas"],
+        [{ "texto": "tomate", "emoji": "🍅" }, "fruto"],
+        [{ "texto": "maní", "emoji": "🥜" }, "semillas"],
+        ["coliflor", "flores"]
+      ],
+      "pista": "Piensa en lo que ves al comer cada uno: ¿guarda semillas adentro?, ¿es verde y delgado como una hoja?, ¿es la semilla misma? El nombre «coliflor» también te ayuda.",
+      "explicacion": "Zanahoria: raíz. Lechuga: hojas. Tomate: fruto, porque guarda semillas. Maní: semillas. Coliflor: flores que todavía no se abrieron.",
+      "error": "partes-comestibles"
+    },
+    {
+      "id": "p7", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa lo que hace cada parte.",
+      "texto": "La [raíz] toma el agua del suelo. El [tallo] lleva el agua hasta las hojas. Las [hojas] fabrican el alimento con la luz del sol.",
+      "banco": ["flor", "fruto"],
+      "pista": "Piensa qué parte está en la tierra, cuál es el camino del agua y cuál recibe la luz.",
+      "explicacion": "La raíz toma el agua, el tallo la lleva hasta las hojas y las hojas fabrican el alimento con la luz del sol.",
+      "error": "funcion-partes"
+    },
+    {
+      "id": "p8", "tipo": "ordenar", "nivel": 2,
+      "enunciado": "Ordena cómo crece la quinua en la chacra de doña Rosa.",
+      "elementos": [
+        { "texto": "Doña Rosa siembra semillas de quinua." },
+        { "texto": "Con la lluvia, brotan plantitas.", "emoji": "🌱" },
+        { "texto": "Las plantas crecen y tienen muchas hojas.", "emoji": "🌿" },
+        { "texto": "En lo alto de cada planta salen flores pequeñitas.", "emoji": "🌼" },
+        { "texto": "Se forman los granos de quinua y doña Rosa los cosecha.", "emoji": "🌾" }
+      ],
+      "vertical": true,
+      "pista": "Todo empieza con las semillas. Los granos se forman después de las flores.",
+      "explicacion": "Doña Rosa siembra, brotan las plantitas, crecen con muchas hojas, salen las flores y al final se forman los granos que ella cosecha.",
+      "error": "ciclo-planta"
+    },
+    {
+      "id": "p9", "tipo": "opcion", "nivel": 2,
+      "enunciado": "¿Cómo consigue su alimento una planta de maíz?",
+      "opciones": [
+        { "texto": "Lo fabrica en sus hojas con la luz del sol, el agua y el aire.", "correcta": true },
+        { "texto": "Come tierra con su raíz.", "pista": "La raíz toma agua y nutrientes del suelo, pero no come tierra. ¿Qué parte usa la luz del sol?", "error": "alimento-planta" },
+        { "texto": "Se lo dan las personas que la riegan.", "pista": "Las personas le dan agua, pero la comida la hace la misma planta. ¿Con qué parte?", "error": "alimento-planta" }
+      ],
+      "columnas": 1,
+      "pista": "Recuerda el trabajo de las hojas.",
+      "explicacion": "La planta de maíz fabrica su propio alimento en las hojas, con la luz del sol, el agua y el aire. La raíz toma agua y nutrientes del suelo, pero no come tierra.",
+      "error": "alimento-planta"
+    },
+    {
+      "id": "p10", "tipo": "numero", "nivel": 2,
+      "enunciado": "La vaina es el fruto del haba. Kusi abrió 3 vainas: una tenía 4 habas, otra 5 y otra 3. ¿Cuántas semillas encontró?",
+      "visual": { "tipo": "tabla", "columnas": ["Vaina", "Habas"], "filas": [["primera", 4], ["segunda", 5], ["tercera", 3]] },
+      "respuesta": 12,
+      "erroresComunes": [
+        { "respuesta": 3, "pista": "3 es la cantidad de vainas, es decir, de frutos. Cuenta las habas de adentro: son las semillas.", "error": "fruto-semilla" },
+        { "respuesta": 9, "pista": "Parece que sumaste solo dos vainas. Suma también la tercera.", "error": "suma-datos" },
+        { "respuesta": 8, "pista": "Parece que sumaste solo dos vainas. Suma también la primera.", "error": "suma-datos" },
+        { "respuesta": 7, "pista": "Parece que sumaste solo dos vainas. Suma también la segunda.", "error": "suma-datos" }
+      ],
+      "pista": "Las semillas son las habas de adentro. Suma las habas de las tres vainas.",
+      "explicacion": "4 + 5 + 3 = 12. Kusi encontró 12 semillas dentro de 3 frutos.",
+      "error": "suma-datos"
+    },
+    {
+      "id": "p11", "tipo": "multiple", "nivel": 2,
+      "enunciado": "¿Qué hace la raíz? Elige todas las correctas.",
+      "opciones": [
+        { "texto": "Sujeta la planta al suelo.", "correcta": true },
+        { "texto": "Toma el agua del suelo.", "correcta": true },
+        { "texto": "Fabrica el alimento con la luz del sol.", "pista": "Eso lo hacen las hojas. La raíz está bajo la tierra, donde no llega la luz.", "error": "funcion-partes" },
+        { "texto": "Forma las flores de colores.", "pista": "Las flores salen arriba, en el tallo. La raíz está bajo la tierra.", "error": "funcion-partes" }
+      ],
+      "pista": "Hay dos correctas. Piensa qué puede hacer una parte que vive debajo de la tierra.",
+      "explicacion": "La raíz sujeta la planta al suelo y toma el agua. El alimento lo fabrican las hojas, y las flores salen arriba, en el tallo.",
+      "error": "funcion-partes"
+    },
+    {
+      "id": "p12", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa sobre la castaña, que crece en la Amazonía de Bolivia.",
+      "texto": "El árbol de castaña es muy alto. Su [fruto] es un coco duro y redondo. Adentro guarda muchas [semillas]: ¡son las castañas que comemos!",
+      "banco": ["raíz", "hojas"],
+      "pista": "Lo que guarda las semillas nace de la flor. Y lo que está adentro puede dar un árbol nuevo.",
+      "explicacion": "El coco es el **fruto** del árbol de castaña, y las castañas que comemos son sus **semillas**. De cada una puede nacer un árbol nuevo.",
+      "error": "fruto-semilla"
+    },
+    {
+      "id": "p13", "tipo": "clasificar", "nivel": 3,
+      "enunciado": "Lee el texto. ¿Dónde crece cada planta en Bolivia?",
+      "lectura": "plantas-bolivia",
+      "categorias": [
+        { "id": "andes", "texto": "Altiplano y valles", "emoji": "🏔️" },
+        { "id": "llanos", "texto": "Llanos y Amazonía", "emoji": "🌴" }
+      ],
+      "elementos": [
+        { "texto": "quinua", "emoji": "🌾", "categoria": "andes" },
+        { "texto": "queñua", "categoria": "andes" },
+        { "texto": "molle", "categoria": "andes" },
+        { "texto": "kantuta", "categoria": "andes" },
+        { "texto": "cacao", "categoria": "llanos" },
+        { "texto": "castaña", "emoji": "🌰", "categoria": "llanos" },
+        { "texto": "patujú", "categoria": "llanos" }
+      ],
+      "pista": "Busca cada planta en el texto. ¿Está en la parte del altiplano y los valles, o en la de los llanos y la Amazonía?",
+      "explicacion": "En el altiplano y los valles crecen la quinua, la queñua, el molle y la kantuta. En los llanos y la Amazonía, que son calientes y húmedos, crecen el cacao, la castaña y el patujú.",
+      "error": "plantas-bolivia"
+    },
+    {
+      "id": "p14", "tipo": "opcion", "nivel": 3,
+      "enunciado": "La papa crece debajo de la tierra y tiene «ojitos» de donde salen brotes. ¿Qué parte de la planta es la papa?",
+      "visual": { "tipo": "emoji", "valor": "🥔" },
+      "opciones": [
+        { "texto": "un tallo", "correcta": true },
+        { "texto": "una raíz", "pista": "Crece bajo la tierra, pero no es una raíz. Recuerda lo que aprendiste sobre la papa en la lección.", "error": "partes-comestibles" },
+        { "texto": "un fruto", "pista": "Los frutos nacen de las flores y guardan semillas. La papa crece bajo la tierra.", "error": "partes-comestibles" }
+      ],
+      "columnas": 3,
+      "pista": "¡Es una sorpresa! No todo lo que crece bajo la tierra es una raíz.",
+      "explicacion": "La papa es un **tallo** que crece bajo la tierra y guarda comida para la planta. De sus ojitos salen brotes: por eso, con una papa se puede sembrar una planta nueva.",
+      "error": "partes-comestibles"
+    },
+    {
+      "id": "p15", "tipo": "pasos", "nivel": 3,
+      "enunciado": "El cacao es un árbol de la Amazonía. Sus flores y sus frutos, las mazorcas, crecen pegados al tronco y a las ramas gruesas.",
+      "visual": { "tipo": "emojis", "items": ["🌳", "🍫"], "etiquetas": ["árbol de cacao", "chocolate"] },
+      "pasos": [
+        {
+          "tipo": "opcion",
+          "enunciado": "El tronco sostiene al árbol y lleva el agua hacia arriba. ¿Qué parte de la planta es el tronco?",
+          "opciones": [
+            { "texto": "el tallo", "correcta": true },
+            { "texto": "la raíz", "pista": "La raíz está bajo la tierra. El tronco está afuera y sostiene al árbol.", "error": "funcion-partes" },
+            { "texto": "la hoja", "pista": "Las hojas son delgadas y reciben la luz. El tronco es grueso y duro.", "error": "funcion-partes" }
+          ],
+          "pista": "¿Qué parte sostiene la planta y lleva el agua hasta las hojas?",
+          "explicacion": "El tronco es el **tallo** de un árbol: es grueso y duro, pero hace el mismo trabajo.",
+          "error": "funcion-partes"
+        },
+        {
+          "tipo": "opcion",
+          "enunciado": "Dentro de cada mazorca hay muchas pepas. Con ellas se hace el chocolate. ¿Qué son esas pepas?",
+          "opciones": [
+            { "texto": "semillas", "correcta": true },
+            { "texto": "flores", "pista": "Las flores están afuera, en el tronco. Dentro del fruto se guarda otra cosa.", "error": "fruto-semilla" },
+            { "texto": "raíces", "pista": "Las raíces están bajo la tierra, no dentro del fruto.", "error": "fruto-semilla" }
+          ],
+          "pista": "¿Qué guarda y protege el fruto?",
+          "explicacion": "Las pepas de cacao son **semillas**. El fruto, la mazorca, las guarda, y con ellas se hace el chocolate.",
+          "error": "fruto-semilla"
+        },
+        {
+          "tipo": "numero",
+          "enunciado": "Una mazorca tiene 30 semillas y otra tiene 40. ¿Cuántas semillas hay en las dos?",
+          "respuesta": 70,
+          "erroresComunes": [
+            { "respuesta": 7, "pista": "Sumaste 3 + 4, pero son 3 decenas y 4 decenas: 30 + 40.", "error": "suma-datos" }
+          ],
+          "pista": "Suma de 10 en 10: 30 + 40.",
+          "explicacion": "30 + 40 = 70 semillas.",
+          "error": "suma-datos"
+        }
+      ],
+      "pista": "Resuelve un paso a la vez.",
+      "explicacion": "El tronco del cacao es su tallo, las pepas de la mazorca son sus semillas y en las dos mazorcas hay 70 semillas.",
+      "error": "fruto-semilla"
+    },
+    {
+      "id": "p16", "tipo": "escribir-libre", "nivel": 3,
+      "enunciado": "Escribe una oración sobre una planta de Bolivia. Nombra una de sus partes.",
+      "guia": ["La quinua tiene...", "El molle tiene...", "Con las semillas del cacao..."],
+      "requisitos": [
+        { "tipo": "mayuscula-inicial" },
+        { "tipo": "punto-final" },
+        { "tipo": "min-palabras", "valor": 5 },
+        { "tipo": "incluye", "palabras": ["raíz", "raíces", "tallo", "tronco", "hoja", "flor", "fruto", "semilla"] }
+      ],
+      "modelo": "La kantuta tiene flores rojas.",
+      "pista": "Elige una planta, como la quinua, el molle o la kantuta, y cuenta cómo es una de sus partes.",
+      "explicacion": "Por ejemplo: «La kantuta tiene flores rojas». Empieza con mayúscula, termina con punto y nombra una parte de la planta.",
+      "error": "produce-oracion"
+    }
+  ],
+  "comprobacion": [
+    {
+      "id": "c1", "tipo": "opcion", "nivel": 1,
+      "enunciado": "¿Cómo se llama la parte marcada?",
+      "visual": { "tipo": "ilustracion", "id": "planta-partes", "resaltar": "fruto" },
+      "opciones": [
+        { "texto": "fruto", "correcta": true },
+        { "texto": "flor", "pista": "La flor tiene pétalos. La parte marcada es redonda y nace de la flor.", "error": "nombra-partes" },
+        { "texto": "raíz", "pista": "La raíz está debajo de la tierra. La parte marcada está arriba.", "error": "nombra-partes" }
+      ],
+      "columnas": 3,
+      "pista": "Esta parte nace de la flor y guarda las semillas.",
+      "explicacion": "Es el **fruto**. Nace de la flor y guarda las semillas.",
+      "error": "nombra-partes"
+    },
+    {
+      "id": "c2", "tipo": "completar", "nivel": 1,
+      "enunciado": "Completa lo que necesita una planta para vivir.",
+      "texto": "La planta necesita [agua], [luz] del sol, aire y un suelo con nutrientes.",
+      "banco": ["humo", "basura"],
+      "pista": "Piensa en lo que toma la raíz y en lo que reciben las hojas desde el cielo.",
+      "explicacion": "La planta necesita agua, luz del sol, aire y un suelo con nutrientes. El humo y la basura la dañan.",
+      "error": "necesidades-planta"
+    },
+    {
+      "id": "c3", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha la adivinanza y escribe qué parte de la planta es.",
+      "escuchar": "Vivo escondida debajo de la tierra. Sujeto a la planta para que no se caiga y tomo el agua del suelo. ¿Quién soy?",
+      "respuestas": ["raíz", "la raíz", "una raíz", "raíces", "las raíces"],
+      "pista": "Esta parte no se ve, porque está bajo la tierra.",
+      "explicacion": "Es la **raíz**: vive bajo la tierra, sujeta la planta y toma el agua del suelo.",
+      "error": "funcion-partes"
+    },
+    {
+      "id": "c4", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "¿Qué parte de la planta comemos? Une cada alimento con su parte.",
+      "pares": [
+        ["yuca", "raíz"],
+        ["acelga", "hojas"],
+        [{ "texto": "locoto", "emoji": "🌶️" }, "fruto"],
+        ["habas", "semillas"]
+      ],
+      "pista": "Piensa dónde crece cada alimento y si guarda semillas adentro.",
+      "explicacion": "Yuca: raíz, crece bajo la tierra. Acelga: hojas. Locoto: fruto, porque guarda semillas. Habas: semillas, que crecen dentro de la vaina.",
+      "error": "partes-comestibles"
+    },
+    {
+      "id": "c5", "tipo": "ordenar", "nivel": 2,
+      "enunciado": "Ordena cómo crece una planta de maíz desde la semilla.",
+      "elementos": [
+        { "texto": "Inti siembra un grano de maíz en tierra húmeda." },
+        { "texto": "El grano se hincha y sale la raíz." },
+        { "texto": "Sale un brote verde que sube buscando la luz.", "emoji": "🌱" },
+        { "texto": "La planta crece, florece y da choclos.", "emoji": "🌽" }
+      ],
+      "vertical": true,
+      "pista": "Recuerda: cuando la semilla se abre, ¿qué sale primero, la raíz o el brote?",
+      "explicacion": "Inti siembra el grano, el grano se hincha y sale la raíz, después sube el brote y al final la planta crece, florece y da choclos.",
+      "error": "ciclo-planta"
+    },
+    {
+      "id": "c6", "tipo": "clasificar", "nivel": 3,
+      "enunciado": "¿Es un fruto o una semilla?",
+      "categorias": [
+        { "id": "fruto", "texto": "Fruto" },
+        { "id": "semilla", "texto": "Semilla" }
+      ],
+      "elementos": [
+        { "texto": "palta", "emoji": "🥑", "categoria": "fruto" },
+        { "texto": "pepa de la palta", "categoria": "semilla" },
+        { "texto": "sandía", "emoji": "🍉", "categoria": "fruto" },
+        { "texto": "pepitas de la sandía", "categoria": "semilla" },
+        { "texto": "naranja", "emoji": "🍊", "categoria": "fruto" },
+        { "texto": "poroto", "categoria": "semilla" }
+      ],
+      "pista": "El fruto guarda las semillas. La semilla está adentro, y de ella puede nacer una planta nueva.",
+      "explicacion": "La palta, la sandía y la naranja son frutos. La pepa de la palta, las pepitas de la sandía y el poroto son semillas: de ellas puede nacer una planta nueva.",
+      "error": "fruto-semilla"
+    },
+    {
+      "id": "c7", "tipo": "opcion", "nivel": 3,
+      "enunciado": "Luis dejó una planta de maíz muchos días en un cuarto oscuro. Sus hojas se pusieron amarillas y débiles. ¿Por qué?",
+      "opciones": [
+        { "texto": "Le faltó luz: sin luz, las hojas no pueden fabricar su alimento.", "correcta": true },
+        { "texto": "Le sobró aire en el cuarto.", "pista": "Las plantas necesitan aire. ¿Qué es lo que falta en un cuarto oscuro?", "error": "necesidades-planta" },
+        { "texto": "Porque las plantas de maíz siempre tienen hojas amarillas.", "pista": "Una planta de maíz sana tiene hojas verdes. Algo le faltó en el cuarto.", "error": "necesidades-planta" }
+      ],
+      "columnas": 1,
+      "pista": "¿Qué necesitan las hojas para fabricar el alimento? ¿Eso había en el cuarto?",
+      "explicacion": "Le faltó **luz**. Sin luz, las hojas no pueden fabricar el alimento y la planta se debilita. Junto a una ventana, con luz, puede recuperarse.",
+      "error": "necesidades-planta"
+    },
+    {
+      "id": "c8", "tipo": "multiple", "nivel": 3,
+      "enunciado": "Wara sembró un molle pequeño. ¿Qué debe hacer para que crezca sano? Elige todas las correctas.",
+      "opciones": [
+        { "texto": "Regarlo cuando la tierra está seca.", "correcta": true },
+        { "texto": "Dejarlo donde le llegue la luz del sol.", "correcta": true },
+        { "texto": "Arrancarle las hojas para que crezca más rápido.", "pista": "Las hojas fabrican el alimento del molle. Sin ellas, no puede alimentarse.", "error": "funcion-partes" },
+        { "texto": "Echar bolsas y botellas en su tierra.", "pista": "La basura ensucia el suelo y no le da nutrientes.", "error": "necesidades-planta" }
+      ],
+      "pista": "Hay dos correctas. Piensa en lo que el molle necesita y en el trabajo de sus hojas.",
+      "explicacion": "Wara debe regarlo y dejarlo donde le llegue la luz del sol. Sin hojas no puede fabricar su alimento, y la basura ensucia su suelo.",
+      "error": "necesidades-planta"
+    }
+  ],
+  "repaso": {
+    "texto": "Raíz: sujeta y toma el agua. Tallo: sostiene y lleva el agua. Hojas: fabrican el alimento con la luz. Flor: de ella nace el fruto. Fruto: guarda las semillas. Semilla: de ella nace una planta nueva.",
+    "visual": { "tipo": "ilustracion", "id": "planta-partes" }
+  },
+  "adulto": {
+    "objetivo": "Reconocer las partes de la planta (raíz, tallo, hojas, flor, fruto y semilla) y lo que hace cada una; saber que las plantas necesitan agua, luz, aire y suelo con nutrientes, y que fabrican su propio alimento en las hojas; ordenar su ciclo de vida (semilla, brote, planta, flor, fruto con semillas) y conocer plantas de Bolivia y las partes que comemos (por ejemplo, que la papa es un tallo y no una raíz).",
+    "sugerencias": [
+      "Armen un germinador: pongan algodón o papel húmedo en un frasco de vidrio y coloquen 3 o 4 porotos o habas entre el algodón y el vidrio. Manténganlo húmedo, sin inundarlo, y observen cada día: primero sale la raíz hacia abajo y después el tallito hacia arriba. Dibujen juntos lo que cambia.",
+      "En la feria o en la cocina, jueguen a «¿qué parte de la planta comemos?»: zanahoria y yuca (raíz), papa (tallo que crece bajo la tierra), acelga y lechuga (hojas), coliflor (flores), tomate, locoto y palta (frutos), habas, maní y castaña (semillas). Abran un tomate o una palta y busquen las semillas.",
+      "Pongan un clavel blanco, con su tallo, en un vaso con agua y unas gotas de colorante de repostería. Al día siguiente verán el color en los pétalos: el tallo llevó el agua hacia arriba. En un paseo por la plaza o el campo, busquen raíces, tallos, hojas, flores y frutos en árboles como el molle."
+    ],
+    "errores": {
+      "nombra-partes": { "descripcion": "No reconoce o no nombra algunas partes de la planta.", "sugerencia": "Arranquen con cuidado una hierba del patio, con su raíz, y nombren juntos cada parte, de abajo hacia arriba. Después busquen una planta que tenga flores y frutos." },
+      "funcion-partes": { "descripcion": "Confunde lo que hace cada parte (por ejemplo, cree que la raíz fabrica el alimento o no sabe que el tronco es un tallo).", "sugerencia": "Comparen la planta con el cuerpo: la raíz «toma» el agua, el tallo es el «camino» del agua y las hojas son la «cocina» donde se fabrica el alimento con la luz." },
+      "necesidades-planta": { "descripcion": "No reconoce lo que una planta necesita para vivir (agua, luz, aire y suelo con nutrientes).", "sugerencia": "Cuiden juntos una planta de la casa: decidan dónde le llega luz, cuándo regarla y revisen si la tierra está seca tocándola con el dedo." },
+      "ciclo-planta": { "descripcion": "Le cuesta ordenar el ciclo de vida de la planta.", "sugerencia": "Dibujen en tarjetas la semilla, el brote, la planta con hojas, la flor y el fruto; mézclenlas y ordénenlas en círculo." },
+      "fruto-semilla": { "descripcion": "Confunde el fruto con la semilla.", "sugerencia": "Abran frutos en la cocina (tomate, palta, naranja, vaina de habas) y separen «lo que guarda» (fruto) de «lo que está guardado» (semillas)." },
+      "partes-comestibles": { "descripcion": "No reconoce qué parte de la planta comemos (por ejemplo, cree que la papa es una raíz).", "sugerencia": "Dejen una papa unas semanas en un lugar fresco y oscuro y miren cómo brotan sus ojitos: así se nota que es un tallo que guarda comida. Esa papa brotada ya no se come, pero pueden sembrarla en una maceta." },
+      "alimento-planta": { "descripcion": "Cree que las plantas «comen» tierra o que las personas les dan su comida.", "sugerencia": "Expliquen que la raíz toma agua y nutrientes, pero que el alimento lo fabrican las hojas con la luz del sol, el agua y el aire." },
+      "plantas-bolivia": { "descripcion": "No ubica dónde crecen algunas plantas de Bolivia.", "sugerencia": "Busquen fotos o un mapa de Bolivia y ubiquen juntos la quinua en el altiplano, el molle en los valles y el cacao y la castaña en la Amazonía." },
+      "escritura-palabra": { "descripcion": "Tiene dificultad para escribir palabras dictadas.", "sugerencia": "Dicten palabras de la lección (semilla, raíz, tallo, hoja) separando las sílabas con palmadas antes de escribirlas." },
+      "produce-oracion": { "descripcion": "Le cuesta escribir una oración completa con mayúscula y punto.", "sugerencia": "Miren juntos una planta y digan en voz alta una oración sobre una de sus partes antes de escribirla." },
+      "suma-datos": { "descripcion": "Se equivoca al sumar los datos de un problema.", "sugerencia": "Cuenten semillas reales (habas o porotos) en grupos y súmenlos juntos, primero con objetos y después por escrito." }
+    }
+  }
+}

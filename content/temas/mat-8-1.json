@@ -1,0 +1,669 @@
+{
+  "id": "mat-8-1",
+  "titulo": "Leo pictogramas",
+  "objetivo": "Leo un pictograma: su título, su clave y cuánto hay en cada fila.",
+  "explicacion": [
+    {
+      "texto": "Un **pictograma** muestra datos con dibujos. Cada fila habla de una cosa distinta. Si cuentas los dibujos de una fila, sabes cuántos hay.",
+      "emoji": "📊",
+      "visual": {
+        "tipo": "pictograma", "titulo": "Animales que vimos en la comunidad", "icono": "🐾", "escala": 1,
+        "datos": [
+          { "etiqueta": "llama", "valor": 6, "emoji": "🦙" },
+          { "etiqueta": "oveja", "valor": 4, "emoji": "🐑" },
+          { "etiqueta": "gallina", "valor": 7, "emoji": "🐔" },
+          { "etiqueta": "vaca", "valor": 2, "emoji": "🐄" }
+        ]
+      }
+    },
+    {
+      "texto": "Arriba está el **título**: dice de qué trata el pictograma. Abajo está la **clave**: dice cuánto vale cada dibujo. ¡Léelos siempre primero!",
+      "emoji": "🔑",
+      "visual": {
+        "tipo": "pictograma", "titulo": "Comida favorita del curso", "icono": "✋", "escala": 1,
+        "datos": [
+          { "etiqueta": "salteña", "valor": 8, "emoji": "🥟" },
+          { "etiqueta": "sopa de maní", "valor": 5, "emoji": "🍲" },
+          { "etiqueta": "majadito", "valor": 6, "emoji": "🍚" },
+          { "etiqueta": "pollo frito", "valor": 3, "emoji": "🍗" }
+        ]
+      }
+    },
+    {
+      "texto": "A veces cada dibujo vale 2. Aquí la clave dice: cada 📦 vale 2 cajas. El mango tiene 3 📦. Contamos de 2 en 2: 2, 4, 6. ¡Son 6 cajas de mango!",
+      "audio": "A veces cada dibujo vale 2. Aquí la clave dice que cada caja dibujada vale 2 cajas. El mango tiene 3 cajas dibujadas. Contamos de 2 en 2: 2, 4, 6. ¡Son 6 cajas de mango!",
+      "visual": {
+        "tipo": "pictograma", "titulo": "Cajas de fruta vendidas en la feria", "icono": "📦", "escala": 2,
+        "datos": [
+          { "etiqueta": "plátano", "valor": 8, "emoji": "🍌" },
+          { "etiqueta": "naranja", "valor": 12, "emoji": "🍊" },
+          { "etiqueta": "mango", "valor": 6, "emoji": "🥭" },
+          { "etiqueta": "piña", "valor": 4, "emoji": "🍍" }
+        ]
+      }
+    },
+    {
+      "texto": "Si cada dibujo vale 2, **medio dibujo** vale 1. Las uvas tienen 2 📦 y medio: 2 + 2 + 1 = 5 cajas de uva.",
+      "audio": "Si cada dibujo vale 2, medio dibujo vale 1. Las uvas tienen 2 cajas dibujadas y media: 2 más 2 más 1 es igual a 5 cajas de uva.",
+      "visual": {
+        "tipo": "pictograma", "titulo": "Cajas de fruta vendidas el sábado", "icono": "📦", "escala": 2,
+        "datos": [
+          { "etiqueta": "uva", "valor": 5, "emoji": "🍇" },
+          { "etiqueta": "manzana", "valor": 4, "emoji": "🍎" },
+          { "etiqueta": "sandía", "valor": 3, "emoji": "🍉" }
+        ]
+      }
+    }
+  ],
+  "ejemplo": {
+    "instruccion": "Mira cómo Sofía lee el pictograma de su curso. Después, juega con un pictograma donde cada caja dibujada vale 2 cajas.",
+    "pasos": [
+      {
+        "texto": "Sofía lee el título: «Comida favorita del curso». Ahora sabe de qué trata el pictograma.",
+        "visual": {
+          "tipo": "pictograma", "titulo": "Comida favorita del curso", "icono": "✋", "escala": 1,
+          "datos": [
+            { "etiqueta": "salteña", "valor": 8, "emoji": "🥟" },
+            { "etiqueta": "sopa de maní", "valor": 5, "emoji": "🍲" },
+            { "etiqueta": "majadito", "valor": 6, "emoji": "🍚" },
+            { "etiqueta": "pollo frito", "valor": 3, "emoji": "🍗" }
+          ]
+        }
+      },
+      {
+        "texto": "Después lee la clave, abajo: cada mano vale 1 voto.",
+        "visual": {
+          "tipo": "pictograma", "titulo": "Comida favorita del curso", "icono": "✋", "escala": 1,
+          "datos": [
+            { "etiqueta": "salteña", "valor": 8, "emoji": "🥟" },
+            { "etiqueta": "sopa de maní", "valor": 5, "emoji": "🍲" },
+            { "etiqueta": "majadito", "valor": 6, "emoji": "🍚" },
+            { "etiqueta": "pollo frito", "valor": 3, "emoji": "🍗" }
+          ]
+        }
+      },
+      {
+        "texto": "Al final cuenta las manos de cada fila. La salteña tiene 8 manos: 8 estudiantes votaron por la salteña. El pollo frito tiene 3 votos.",
+        "visual": {
+          "tipo": "pictograma", "titulo": "Comida favorita del curso", "icono": "✋", "escala": 1,
+          "datos": [
+            { "etiqueta": "salteña", "valor": 8, "emoji": "🥟" },
+            { "etiqueta": "sopa de maní", "valor": 5, "emoji": "🍲" },
+            { "etiqueta": "majadito", "valor": 6, "emoji": "🍚" },
+            { "etiqueta": "pollo frito", "valor": 3, "emoji": "🍗" }
+          ]
+        }
+      }
+    ],
+    "explorar": {
+      "tipo": "pictograma", "icono": "📦", "escala": 2,
+      "categorias": [ { "etiqueta": "plátano" }, { "etiqueta": "naranja" }, { "etiqueta": "mango" } ]
+    }
+  },
+  "guiada": {
+    "intro": "Vamos a leer pictogramas juntos, paso a paso.",
+    "pasos": [
+      {
+        "id": "g1", "tipo": "opcion",
+        "enunciado": "¿Cuál es el título de este pictograma?",
+        "apoyo": "El título está arriba de todo y dice de qué trata el pictograma.",
+        "visual": {
+          "tipo": "pictograma", "titulo": "Animales que vimos en la comunidad", "icono": "🐾", "escala": 1,
+          "datos": [
+            { "etiqueta": "llama", "valor": 6, "emoji": "🦙" },
+            { "etiqueta": "oveja", "valor": 4, "emoji": "🐑" },
+            { "etiqueta": "gallina", "valor": 7, "emoji": "🐔" },
+            { "etiqueta": "vaca", "valor": 2, "emoji": "🐄" }
+          ]
+        },
+        "opciones": [
+          { "texto": "Animales que vimos en la comunidad", "correcta": true },
+          { "texto": "Cada 🐾 vale 1", "pista": "Esa es la clave: está abajo y dice cuánto vale cada dibujo.", "error": "partes-pictograma" },
+          { "texto": "gallina", "pista": "Ese es el nombre de una fila. El título está arriba.", "error": "partes-pictograma" }
+        ],
+        "columnas": 1,
+        "pista": "Busca el texto que está arriba de todo.",
+        "explicacion": "El título es «Animales que vimos en la comunidad». Nos dice de qué trata el pictograma.",
+        "error": "partes-pictograma"
+      },
+      {
+        "id": "g2", "tipo": "numero",
+        "enunciado": "¿Cuántos votos tiene cada comida?",
+        "apoyo": "La clave dice que cada mano vale 1 voto. Cuenta las manos de cada fila.",
+        "visual": {
+          "tipo": "pictograma", "titulo": "Comida favorita del curso", "icono": "✋", "escala": 1,
+          "datos": [
+            { "etiqueta": "salteña", "valor": 8, "emoji": "🥟" },
+            { "etiqueta": "sopa de maní", "valor": 5, "emoji": "🍲" },
+            { "etiqueta": "majadito", "valor": 6, "emoji": "🍚" },
+            { "etiqueta": "pollo frito", "valor": 3, "emoji": "🍗" }
+          ]
+        },
+        "campos": [
+          { "etiqueta": "Salteña", "respuesta": 8 },
+          { "etiqueta": "Sopa de maní", "respuesta": 5 },
+          { "etiqueta": "Majadito", "respuesta": 6 },
+          { "etiqueta": "Pollo frito", "respuesta": 3 }
+        ],
+        "pista": "Toca cada mano con tu dedo mientras cuentas. Revisa que estés en la fila correcta.",
+        "explicacion": "Salteña: 8 votos. Sopa de maní: 5. Majadito: 6. Pollo frito: 3.",
+        "error": "cuenta-iconos"
+      },
+      {
+        "id": "g3", "tipo": "numero",
+        "enunciado": "¿Cuántas cajas de naranja se vendieron?",
+        "apoyo": "Mira la clave: cada caja dibujada vale 2 cajas. Cuenta de 2 en 2: 2, 4, 6...",
+        "visual": {
+          "tipo": "pictograma", "titulo": "Cajas de fruta vendidas en la feria", "icono": "📦", "escala": 2,
+          "datos": [
+            { "etiqueta": "plátano", "valor": 8, "emoji": "🍌" },
+            { "etiqueta": "naranja", "valor": 12, "emoji": "🍊" },
+            { "etiqueta": "mango", "valor": 6, "emoji": "🥭" },
+            { "etiqueta": "piña", "valor": 4, "emoji": "🍍" }
+          ]
+        },
+        "respuesta": 12,
+        "erroresComunes": [ { "respuesta": 6, "pista": "Contaste 6 dibujos, pero cada caja dibujada vale 2 cajas. Cuenta de 2 en 2.", "error": "ignora-escala" } ],
+        "pista": "Da un salto de 2 por cada caja dibujada.",
+        "explicacion": "La naranja tiene 6 cajas dibujadas. De 2 en 2: 2, 4, 6, 8, 10, 12. Se vendieron 12 cajas de naranja.",
+        "error": "ignora-escala"
+      }
+    ]
+  },
+  "practica": [
+    {
+      "id": "p1", "tipo": "numero", "nivel": 1,
+      "enunciado": "¿Cuántas gallinas vimos?",
+      "visual": {
+        "tipo": "pictograma", "titulo": "Animales que vimos en la comunidad", "icono": "🐾", "escala": 1,
+        "datos": [
+          { "etiqueta": "llama", "valor": 6, "emoji": "🦙" },
+          { "etiqueta": "oveja", "valor": 4, "emoji": "🐑" },
+          { "etiqueta": "gallina", "valor": 7, "emoji": "🐔" },
+          { "etiqueta": "vaca", "valor": 2, "emoji": "🐄" }
+        ]
+      },
+      "respuesta": 7,
+      "erroresComunes": [ { "respuesta": 6, "pista": "6 es la fila de la llama. Busca la fila de la gallina.", "error": "confunde-fila" } ],
+      "pista": "Busca la fila de la gallina y cuenta sus huellas.",
+      "explicacion": "La fila de la gallina tiene 7 huellas. Cada huella vale 1: vimos 7 gallinas.",
+      "error": "cuenta-iconos"
+    },
+    {
+      "id": "p2", "tipo": "relacionar", "nivel": 1,
+      "enunciado": "Une cada animal con cuántos hay en la granja.",
+      "visual": {
+        "tipo": "pictograma", "titulo": "Animales de la granja de Nayra", "icono": "🐾", "escala": 1,
+        "datos": [
+          { "etiqueta": "pato", "valor": 3, "emoji": "🦆" },
+          { "etiqueta": "conejo", "valor": 5, "emoji": "🐇" },
+          { "etiqueta": "cabra", "valor": 2, "emoji": "🐐" },
+          { "etiqueta": "gallina", "valor": 4, "emoji": "🐔" }
+        ]
+      },
+      "pares": [
+        [ { "texto": "pato", "emoji": "🦆" }, "3" ],
+        [ { "texto": "conejo", "emoji": "🐇" }, "5" ],
+        [ { "texto": "cabra", "emoji": "🐐" }, "2" ],
+        [ { "texto": "gallina", "emoji": "🐔" }, "4" ]
+      ],
+      "pista": "Cada huella vale 1. Cuenta las huellas de cada fila.",
+      "explicacion": "Pato: 3. Conejo: 5. Cabra: 2. Gallina: 4.",
+      "error": "cuenta-iconos"
+    },
+    {
+      "id": "p3", "tipo": "opcion", "nivel": 1,
+      "enunciado": "¿Qué parte del pictograma te dice cuánto vale cada dibujo?",
+      "opciones": [
+        { "texto": "la clave", "correcta": true },
+        { "texto": "el título", "pista": "El título dice de qué trata el pictograma.", "error": "partes-pictograma" },
+        { "texto": "la primera fila", "pista": "Una fila muestra los datos de una sola cosa.", "error": "partes-pictograma" }
+      ],
+      "pista": "Es la parte que está abajo del pictograma.",
+      "explicacion": "La clave dice cuánto vale cada dibujo. Por ejemplo: «Cada mano vale 1».",
+      "error": "partes-pictograma"
+    },
+    {
+      "id": "p4", "tipo": "escribir", "nivel": 1,
+      "enunciado": "¿De qué animal vimos 4? Escribe su nombre.",
+      "visual": {
+        "tipo": "pictograma", "titulo": "Animales que vimos en la comunidad", "icono": "🐾", "escala": 1,
+        "datos": [
+          { "etiqueta": "llama", "valor": 6, "emoji": "🦙" },
+          { "etiqueta": "oveja", "valor": 4, "emoji": "🐑" },
+          { "etiqueta": "gallina", "valor": 7, "emoji": "🐔" },
+          { "etiqueta": "vaca", "valor": 2, "emoji": "🐄" }
+        ]
+      },
+      "respuestas": ["oveja", "ovejas", "la oveja", "las ovejas"],
+      "pista": "Busca la fila que tiene 4 huellas.",
+      "explicacion": "La fila de la oveja tiene 4 huellas: vimos 4 ovejas.",
+      "error": "busca-valor"
+    },
+    {
+      "id": "p5", "tipo": "numero", "nivel": 2,
+      "enunciado": "¿Cuántas cajas de plátano se vendieron?",
+      "visual": {
+        "tipo": "pictograma", "titulo": "Cajas de fruta vendidas en la feria", "icono": "📦", "escala": 2,
+        "datos": [
+          { "etiqueta": "plátano", "valor": 8, "emoji": "🍌" },
+          { "etiqueta": "naranja", "valor": 12, "emoji": "🍊" },
+          { "etiqueta": "mango", "valor": 6, "emoji": "🥭" },
+          { "etiqueta": "piña", "valor": 4, "emoji": "🍍" }
+        ]
+      },
+      "respuesta": 8,
+      "erroresComunes": [ { "respuesta": 4, "pista": "Contaste 4 dibujos, pero cada caja dibujada vale 2 cajas.", "error": "ignora-escala" } ],
+      "pista": "Lee la clave. Cuenta de 2 en 2.",
+      "explicacion": "El plátano tiene 4 cajas dibujadas: 2, 4, 6, 8. Se vendieron 8 cajas de plátano.",
+      "error": "ignora-escala"
+    },
+    {
+      "id": "p6", "tipo": "completar", "nivel": 2,
+      "enunciado": "Mira el pictograma y completa.",
+      "visual": {
+        "tipo": "pictograma", "titulo": "Cajas de fruta vendidas en la feria", "icono": "📦", "escala": 2,
+        "datos": [
+          { "etiqueta": "plátano", "valor": 8, "emoji": "🍌" },
+          { "etiqueta": "naranja", "valor": 12, "emoji": "🍊" },
+          { "etiqueta": "mango", "valor": 6, "emoji": "🥭" },
+          { "etiqueta": "piña", "valor": 4, "emoji": "🍍" }
+        ]
+      },
+      "texto": "Se vendieron [6] cajas de mango y [4] cajas de piña.",
+      "banco": ["3", "2"],
+      "pista": "Cada caja dibujada vale 2 cajas. Cuenta de 2 en 2.",
+      "explicacion": "El mango tiene 3 cajas dibujadas: 6 cajas. La piña tiene 2: 4 cajas.",
+      "error": "ignora-escala"
+    },
+    {
+      "id": "p7", "tipo": "memoria", "nivel": 2,
+      "enunciado": "Cada 📦 vale 2 cajas. Encuentra las parejas: los dibujos y las cajas que valen.",
+      "audio": "Cada caja dibujada vale 2 cajas. Encuentra las parejas: los dibujos y las cajas que valen.",
+      "pares": [ ["📦", "2 cajas"], ["📦📦", "4 cajas"], ["📦📦📦", "6 cajas"], ["📦📦📦📦📦", "10 cajas"] ],
+      "pista": "Cuenta de 2 en 2: un salto por cada caja dibujada.",
+      "explicacion": "1 caja dibujada vale 2 cajas; 2 valen 4; 3 valen 6; y 5 valen 10.",
+      "error": "ignora-escala"
+    },
+    {
+      "id": "p8", "tipo": "numero", "nivel": 2,
+      "enunciado": "Mira el pictograma. Escucha la pregunta y responde.",
+      "escuchar": "¿Cuántos estudiantes votaron por el majadito?",
+      "visual": {
+        "tipo": "pictograma", "titulo": "Comida favorita del curso", "icono": "✋", "escala": 1,
+        "datos": [
+          { "etiqueta": "salteña", "valor": 8, "emoji": "🥟" },
+          { "etiqueta": "sopa de maní", "valor": 5, "emoji": "🍲" },
+          { "etiqueta": "majadito", "valor": 6, "emoji": "🍚" },
+          { "etiqueta": "pollo frito", "valor": 3, "emoji": "🍗" }
+        ]
+      },
+      "respuesta": 6,
+      "erroresComunes": [ { "respuesta": 8, "pista": "8 es la fila de la salteña. Busca la fila del majadito.", "error": "confunde-fila" } ],
+      "pista": "Busca la fila del majadito y cuenta sus manos. Puedes escuchar otra vez.",
+      "explicacion": "El majadito tiene 6 manos. Cada mano vale 1 voto: 6 estudiantes votaron por el majadito.",
+      "error": "cuenta-iconos"
+    },
+    {
+      "id": "p9", "tipo": "numero", "nivel": 2,
+      "enunciado": "¿Cuántas llamas tiene la familia de cada estudiante?",
+      "visual": {
+        "tipo": "pictograma", "titulo": "Llamas de la familia de cada estudiante", "icono": "🦙", "escala": 2,
+        "datos": [
+          { "etiqueta": "Wara", "valor": 10 },
+          { "etiqueta": "Inti", "valor": 6 },
+          { "etiqueta": "Nayra", "valor": 8 }
+        ]
+      },
+      "campos": [
+        { "etiqueta": "Familia de Wara", "respuesta": 10 },
+        { "etiqueta": "Familia de Inti", "respuesta": 6 },
+        { "etiqueta": "Familia de Nayra", "respuesta": 8 }
+      ],
+      "pista": "Mira la clave: cada llama dibujada vale 2 llamas. Cuenta de 2 en 2.",
+      "explicacion": "Wara: 5 llamas dibujadas = 10 llamas. Inti: 3 = 6 llamas. Nayra: 4 = 8 llamas.",
+      "error": "ignora-escala"
+    },
+    {
+      "id": "p10", "tipo": "multiple", "nivel": 3,
+      "enunciado": "¿Qué comidas tienen 6 votos? Elige todas.",
+      "visual": {
+        "tipo": "pictograma", "titulo": "Votos para la comida de la fiesta", "icono": "✋", "escala": 2,
+        "datos": [
+          { "etiqueta": "salteña", "valor": 6, "emoji": "🥟" },
+          { "etiqueta": "sopa de maní", "valor": 12, "emoji": "🍲" },
+          { "etiqueta": "majadito", "valor": 6, "emoji": "🍚" },
+          { "etiqueta": "pollo frito", "valor": 4, "emoji": "🍗" }
+        ]
+      },
+      "opciones": [
+        { "texto": "salteña", "emoji": "🥟", "correcta": true },
+        { "texto": "sopa de maní", "emoji": "🍲", "pista": "La sopa de maní tiene 6 manos, pero cada mano vale 2 votos.", "error": "ignora-escala" },
+        { "texto": "majadito", "emoji": "🍚", "correcta": true },
+        { "texto": "pollo frito", "emoji": "🍗", "pista": "El pollo frito tiene 2 manos: 2 + 2 = 4 votos.", "error": "busca-valor" }
+      ],
+      "pista": "Mira la clave. ¿Cuántas manos hacen falta para tener 6 votos?",
+      "explicacion": "Cada mano vale 2, así que 6 votos son 3 manos: la salteña y el majadito. La sopa de maní tiene 6 manos, que son 12 votos.",
+      "error": "ignora-escala"
+    },
+    {
+      "id": "p11", "tipo": "numero", "nivel": 3,
+      "enunciado": "¿Cuántos votos tiene la sopa de maní?",
+      "visual": {
+        "tipo": "pictograma", "titulo": "Comida favorita del curso de Wara", "icono": "✋", "escala": 2,
+        "datos": [
+          { "etiqueta": "salteña", "valor": 9, "emoji": "🥟" },
+          { "etiqueta": "sopa de maní", "valor": 5, "emoji": "🍲" },
+          { "etiqueta": "majadito", "valor": 7, "emoji": "🍚" },
+          { "etiqueta": "pollo frito", "valor": 4, "emoji": "🍗" }
+        ]
+      },
+      "respuesta": 5,
+      "erroresComunes": [
+        { "respuesta": 6, "pista": "La última mano está cortada: media mano vale 1, no 2.", "error": "medio-icono" },
+        { "respuesta": 4, "pista": "No olvides la media mano del final: vale 1.", "error": "medio-icono" },
+        { "respuesta": 3, "pista": "Contaste los dibujos. Cada mano entera vale 2 votos.", "error": "ignora-escala" }
+      ],
+      "pista": "Cada mano entera vale 2 y media mano vale 1.",
+      "explicacion": "La sopa de maní tiene 2 manos y media: 2 + 2 + 1 = 5 votos.",
+      "error": "medio-icono"
+    },
+    {
+      "id": "p12", "tipo": "opcion", "nivel": 3,
+      "enunciado": "¿Qué comida tiene 7 votos?",
+      "visual": {
+        "tipo": "pictograma", "titulo": "Comida favorita del curso de Wara", "icono": "✋", "escala": 2,
+        "datos": [
+          { "etiqueta": "salteña", "valor": 9, "emoji": "🥟" },
+          { "etiqueta": "sopa de maní", "valor": 5, "emoji": "🍲" },
+          { "etiqueta": "majadito", "valor": 7, "emoji": "🍚" },
+          { "etiqueta": "pollo frito", "valor": 4, "emoji": "🍗" }
+        ]
+      },
+      "opciones": [
+        { "texto": "majadito", "emoji": "🍚", "correcta": true },
+        { "texto": "salteña", "emoji": "🥟", "pista": "La salteña tiene 4 manos y media: 2 + 2 + 2 + 2 + 1 = 9 votos.", "error": "busca-valor" },
+        { "texto": "sopa de maní", "emoji": "🍲", "pista": "La sopa de maní tiene 2 manos y media: 5 votos.", "error": "busca-valor" },
+        { "texto": "pollo frito", "emoji": "🍗", "pista": "El pollo frito tiene 2 manos: 4 votos.", "error": "busca-valor" }
+      ],
+      "pista": "En cada fila, cuenta de 2 en 2 y suma 1 si hay media mano.",
+      "explicacion": "El majadito tiene 3 manos y media: 2 + 2 + 2 + 1 = 7 votos.",
+      "error": "busca-valor"
+    },
+    {
+      "id": "p13", "tipo": "numero", "nivel": 3,
+      "enunciado": "¿Cuántas cajas de cada fruta se vendieron el domingo?",
+      "visual": {
+        "tipo": "pictograma", "titulo": "Cajas de fruta vendidas el domingo", "icono": "📦", "escala": 2,
+        "datos": [
+          { "etiqueta": "uva", "valor": 7, "emoji": "🍇" },
+          { "etiqueta": "manzana", "valor": 3, "emoji": "🍎" },
+          { "etiqueta": "sandía", "valor": 10, "emoji": "🍉" }
+        ]
+      },
+      "campos": [
+        { "etiqueta": "Uva", "respuesta": 7 },
+        { "etiqueta": "Manzana", "respuesta": 3 },
+        { "etiqueta": "Sandía", "respuesta": 10 }
+      ],
+      "pista": "Cada caja dibujada vale 2 y media caja vale 1.",
+      "explicacion": "Uva: 3 cajas dibujadas y media = 2 + 2 + 2 + 1 = 7. Manzana: 1 y media = 2 + 1 = 3. Sandía: 5 = 10.",
+      "error": "medio-icono"
+    },
+    {
+      "id": "p14", "tipo": "pasos", "nivel": 3,
+      "enunciado": "Doña Ana hizo un pictograma con los sacos de papa que cosechó cada semana.",
+      "visual": {
+        "tipo": "pictograma", "titulo": "Sacos de papa cosechados", "icono": "🥔", "escala": 2,
+        "datos": [
+          { "etiqueta": "semana 1", "valor": 6 },
+          { "etiqueta": "semana 2", "valor": 9 },
+          { "etiqueta": "semana 3", "valor": 4 }
+        ]
+      },
+      "pasos": [
+        {
+          "tipo": "numero", "enunciado": "¿Cuánto vale media papa dibujada?", "respuesta": 1,
+          "erroresComunes": [ { "respuesta": 2, "pista": "2 vale una papa dibujada entera. ¿Cuánto vale la mitad?", "error": "medio-icono" } ],
+          "pista": "Mira la clave: una papa dibujada vale 2. Media papa vale la mitad.",
+          "explicacion": "Una papa dibujada vale 2 sacos, así que media papa vale 1 saco.",
+          "error": "medio-icono"
+        },
+        {
+          "tipo": "numero", "enunciado": "¿Cuántos sacos cosechó en la semana 2?", "respuesta": 9,
+          "erroresComunes": [
+            { "respuesta": 10, "pista": "La última papa es media: vale 1, no 2.", "error": "medio-icono" },
+            { "respuesta": 5, "pista": "Contaste los dibujos. Cada papa dibujada vale 2 sacos.", "error": "ignora-escala" }
+          ],
+          "pista": "Cuenta de 2 en 2 y al final suma 1 por la media papa.",
+          "explicacion": "La semana 2 tiene 4 papas y media: 2 + 2 + 2 + 2 + 1 = 9 sacos.",
+          "error": "medio-icono"
+        },
+        {
+          "tipo": "opcion", "enunciado": "¿En qué semana cosechó 4 sacos?",
+          "opciones": [
+            { "texto": "semana 1", "pista": "La semana 1 tiene 3 papas dibujadas: 6 sacos.", "error": "busca-valor" },
+            { "texto": "semana 2", "pista": "En la semana 2 cosechó 9 sacos.", "error": "busca-valor" },
+            { "texto": "semana 3", "correcta": true }
+          ],
+          "mezclar": false,
+          "columnas": 3,
+          "pista": "Busca la fila que vale 2 + 2.",
+          "explicacion": "La semana 3 tiene 2 papas dibujadas: 2 + 2 = 4 sacos.",
+          "error": "busca-valor"
+        }
+      ],
+      "pista": "Mira la clave antes de cada paso.",
+      "explicacion": "Media papa dibujada vale 1 saco. En la semana 2 cosechó 9 sacos, y en la semana 3, 4 sacos.",
+      "error": "problema-pictograma"
+    },
+    {
+      "id": "p15", "tipo": "opcion", "nivel": 1,
+      "enunciado": "Lee el título. ¿De qué trata este pictograma?",
+      "visual": {
+        "tipo": "pictograma", "titulo": "Cómo llegamos a la escuela", "icono": "🧒", "escala": 1,
+        "datos": [
+          { "etiqueta": "a pie", "valor": 7, "emoji": "🚶" },
+          { "etiqueta": "micro", "valor": 5, "emoji": "🚌" },
+          { "etiqueta": "bicicleta", "valor": 3, "emoji": "🚲" },
+          { "etiqueta": "auto", "valor": 2, "emoji": "🚗" }
+        ]
+      },
+      "opciones": [
+        { "texto": "De cómo llegan los estudiantes a la escuela.", "correcta": true },
+        { "texto": "De los animales de la comunidad.", "pista": "En este pictograma no hay animales. Lee el título, arriba.", "error": "partes-pictograma" },
+        { "texto": "De la fruta vendida en la feria.", "pista": "En este pictograma no hay fruta. Lee el título, arriba.", "error": "partes-pictograma" }
+      ],
+      "columnas": 1,
+      "pista": "El título está arriba de todo y dice de qué trata el pictograma.",
+      "explicacion": "El título dice «Cómo llegamos a la escuela». Las filas muestran cuántos estudiantes llegan a pie, en micro, en bicicleta o en auto.",
+      "error": "partes-pictograma"
+    }
+  ],
+  "comprobacion": [
+    {
+      "id": "c1", "tipo": "numero", "nivel": 1,
+      "enunciado": "¿Cuántas parabas vimos?",
+      "visual": {
+        "tipo": "pictograma", "titulo": "Animales que vimos en el paseo al río", "icono": "⭐", "escala": 1,
+        "datos": [
+          { "etiqueta": "paraba", "valor": 5, "emoji": "🦜" },
+          { "etiqueta": "tortuga", "valor": 3, "emoji": "🐢" },
+          { "etiqueta": "bufeo", "valor": 2, "emoji": "🐬" },
+          { "etiqueta": "mono", "valor": 6, "emoji": "🐒" }
+        ]
+      },
+      "respuesta": 5,
+      "erroresComunes": [ { "respuesta": 6, "pista": "6 es la fila del mono. Busca la fila de la paraba.", "error": "confunde-fila" } ],
+      "pista": "Busca la fila de la paraba y cuenta sus estrellas.",
+      "explicacion": "La paraba tiene 5 estrellas y cada estrella vale 1: vimos 5 parabas.",
+      "error": "cuenta-iconos"
+    },
+    {
+      "id": "c2", "tipo": "opcion", "nivel": 1,
+      "enunciado": "En este pictograma, ¿cuánto vale cada mano?",
+      "visual": {
+        "tipo": "pictograma", "titulo": "Fruta favorita del curso", "icono": "✋", "escala": 2,
+        "datos": [
+          { "etiqueta": "plátano", "valor": 8, "emoji": "🍌" },
+          { "etiqueta": "mandarina", "valor": 4, "emoji": "🍊" },
+          { "etiqueta": "uva", "valor": 6, "emoji": "🍇" }
+        ]
+      },
+      "opciones": [
+        { "texto": "1 voto", "pista": "En este pictograma no es 1. Lee la clave, abajo.", "error": "partes-pictograma" },
+        { "texto": "2 votos", "correcta": true },
+        { "texto": "3 votos", "pista": "Lee otra vez la clave: está abajo del pictograma.", "error": "partes-pictograma" }
+      ],
+      "mezclar": false,
+      "columnas": 3,
+      "pista": "La respuesta está en la clave, abajo del pictograma.",
+      "explicacion": "La clave dice que cada mano vale 2. Cada mano cuenta como 2 votos.",
+      "error": "partes-pictograma"
+    },
+    {
+      "id": "c3", "tipo": "numero", "nivel": 2,
+      "enunciado": "¿Cuántos votos tiene la uva?",
+      "visual": {
+        "tipo": "pictograma", "titulo": "Fruta favorita del curso", "icono": "✋", "escala": 2,
+        "datos": [
+          { "etiqueta": "plátano", "valor": 8, "emoji": "🍌" },
+          { "etiqueta": "mandarina", "valor": 4, "emoji": "🍊" },
+          { "etiqueta": "uva", "valor": 6, "emoji": "🍇" }
+        ]
+      },
+      "respuesta": 6,
+      "erroresComunes": [ { "respuesta": 3, "pista": "Contaste 3 manos, pero cada mano vale 2 votos.", "error": "ignora-escala" } ],
+      "pista": "Lee la clave y cuenta de 2 en 2.",
+      "explicacion": "La uva tiene 3 manos: 2, 4, 6. Tiene 6 votos.",
+      "error": "ignora-escala"
+    },
+    {
+      "id": "c4", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "Une cada animal con cuántos hay en la granja de la escuela.",
+      "visual": {
+        "tipo": "pictograma", "titulo": "Animales de la granja de la escuela", "icono": "🐾", "escala": 2,
+        "datos": [
+          { "etiqueta": "conejo", "valor": 6, "emoji": "🐇" },
+          { "etiqueta": "pato", "valor": 4, "emoji": "🦆" },
+          { "etiqueta": "gallina", "valor": 10, "emoji": "🐔" }
+        ]
+      },
+      "pares": [
+        [ { "texto": "conejo", "emoji": "🐇" }, "6" ],
+        [ { "texto": "pato", "emoji": "🦆" }, "4" ],
+        [ { "texto": "gallina", "emoji": "🐔" }, "10" ]
+      ],
+      "pista": "Cada huella vale 2. Cuenta de 2 en 2 en cada fila.",
+      "explicacion": "Conejo: 3 huellas = 6. Pato: 2 huellas = 4. Gallina: 5 huellas = 10.",
+      "error": "ignora-escala"
+    },
+    {
+      "id": "c5", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Mira el pictograma. Escucha la pregunta y escribe el nombre de la fruta.",
+      "escuchar": "¿De qué fruta vendió 6 cajas don Luis?",
+      "visual": {
+        "tipo": "pictograma", "titulo": "Cajas de fruta que vendió don Luis", "icono": "📦", "escala": 2,
+        "datos": [
+          { "etiqueta": "uva", "valor": 8, "emoji": "🍇" },
+          { "etiqueta": "sandía", "valor": 6, "emoji": "🍉" },
+          { "etiqueta": "manzana", "valor": 10, "emoji": "🍎" },
+          { "etiqueta": "piña", "valor": 4, "emoji": "🍍" }
+        ]
+      },
+      "respuestas": ["sandía", "la sandía", "sandías", "las sandías"],
+      "pista": "Cada caja dibujada vale 2. ¿Cuántas cajas dibujadas hacen 6 cajas? Puedes escuchar otra vez.",
+      "explicacion": "La sandía tiene 3 cajas dibujadas: 2, 4, 6. Don Luis vendió 6 cajas de sandía.",
+      "error": "busca-valor"
+    },
+    {
+      "id": "c6", "tipo": "completar", "nivel": 2,
+      "enunciado": "Mira el pictograma y completa.",
+      "visual": {
+        "tipo": "pictograma", "titulo": "Animales que vimos en el paseo al río", "icono": "⭐", "escala": 1,
+        "datos": [
+          { "etiqueta": "paraba", "valor": 5, "emoji": "🦜" },
+          { "etiqueta": "tortuga", "valor": 3, "emoji": "🐢" },
+          { "etiqueta": "bufeo", "valor": 2, "emoji": "🐬" },
+          { "etiqueta": "mono", "valor": 6, "emoji": "🐒" }
+        ]
+      },
+      "texto": "El pictograma muestra los [animales] que vimos en el paseo. Cada estrella vale [1]. Vimos [6] monos.",
+      "banco": ["frutas", "2", "5"],
+      "pista": "Lee el título arriba y la clave abajo. Después busca la fila del mono y cuenta sus estrellas.",
+      "explicacion": "El título habla de los animales que vimos en el paseo al río. La clave dice que cada estrella vale 1. La fila del mono tiene 6 estrellas: vimos 6 monos.",
+      "error": "partes-pictograma"
+    },
+    {
+      "id": "c7", "tipo": "numero", "nivel": 3,
+      "enunciado": "¿Cuántos votos tiene el majadito?",
+      "visual": {
+        "tipo": "pictograma", "titulo": "Comida favorita del curso de Sofía", "icono": "✋", "escala": 2,
+        "datos": [
+          { "etiqueta": "salteña", "valor": 7, "emoji": "🥟" },
+          { "etiqueta": "sopa de maní", "valor": 4, "emoji": "🍲" },
+          { "etiqueta": "majadito", "valor": 9, "emoji": "🍚" }
+        ]
+      },
+      "respuesta": 9,
+      "erroresComunes": [
+        { "respuesta": 10, "pista": "La última mano está cortada: media mano vale 1, no 2.", "error": "medio-icono" },
+        { "respuesta": 8, "pista": "No olvides la media mano del final: vale 1.", "error": "medio-icono" },
+        { "respuesta": 5, "pista": "Contaste los dibujos. Cada mano entera vale 2 votos.", "error": "ignora-escala" }
+      ],
+      "pista": "Cada mano entera vale 2 y media mano vale 1.",
+      "explicacion": "El majadito tiene 4 manos y media: 2 + 2 + 2 + 2 + 1 = 9 votos.",
+      "error": "medio-icono"
+    },
+    {
+      "id": "c8", "tipo": "multiple", "nivel": 3,
+      "enunciado": "¿De qué animales vimos 5 en el cerro? Elige todos.",
+      "visual": {
+        "tipo": "pictograma", "titulo": "Animales que vimos en el cerro", "icono": "🐾", "escala": 2,
+        "datos": [
+          { "etiqueta": "llama", "valor": 5, "emoji": "🦙" },
+          { "etiqueta": "oveja", "valor": 10, "emoji": "🐑" },
+          { "etiqueta": "vaca", "valor": 5, "emoji": "🐄" },
+          { "etiqueta": "chancho", "valor": 6, "emoji": "🐖" }
+        ]
+      },
+      "opciones": [
+        { "texto": "llama", "emoji": "🦙", "correcta": true },
+        { "texto": "oveja", "emoji": "🐑", "pista": "La oveja tiene 5 huellas, pero cada huella vale 2: son 10 ovejas.", "error": "ignora-escala" },
+        { "texto": "vaca", "emoji": "🐄", "correcta": true },
+        { "texto": "chancho", "emoji": "🐖", "pista": "El chancho tiene 3 huellas: 2 + 2 + 2 = 6.", "error": "busca-valor" }
+      ],
+      "pista": "Cada huella vale 2 y media huella vale 1. ¿Cómo se forma 5?",
+      "explicacion": "5 es 2 + 2 + 1: dos huellas y media. Así están la llama y la vaca. La oveja tiene 5 huellas, que son 10.",
+      "error": "medio-icono"
+    }
+  ],
+  "repaso": {
+    "texto": "Para leer un pictograma: lee el título, mira la clave y cuenta los dibujos de cada fila. Si cada dibujo vale 2, cuenta de 2 en 2. Medio dibujo vale 1.",
+    "visual": {
+      "tipo": "pictograma", "titulo": "Cajas de fruta vendidas el sábado", "icono": "📦", "escala": 2,
+      "datos": [
+        { "etiqueta": "uva", "valor": 5, "emoji": "🍇" },
+        { "etiqueta": "manzana", "valor": 4, "emoji": "🍎" },
+        { "etiqueta": "sandía", "valor": 3, "emoji": "🍉" }
+      ]
+    }
+  },
+  "adulto": {
+    "objetivo": "Leer pictogramas: reconocer el título, la clave y las filas; leer la cantidad de cada categoría cuando cada dibujo vale 1 o vale 2 (incluido medio dibujo) y encontrar la categoría que tiene una cantidad dada.",
+    "sugerencias": [
+      "Hagan juntos un pictograma en una hoja con las frutas que hay en casa (un dibujo por fruta) y pregunten cuántas hay de cada una. Luego cambien la clave: «cada dibujo vale 2».",
+      "En la feria, anoten cuántos puestos venden papa, fruta o verdura. En casa, dibujen ustedes el pictograma y pidan que lo lea: título, clave y cuántos hay en cada fila.",
+      "Busquen gráficos con dibujos en periódicos, libros o carteles y pidan que lea primero el título y la clave, y después diga cuánto hay en cada fila."
+    ],
+    "errores": {
+      "partes-pictograma": { "descripcion": "Confunde el título, la clave y las filas del pictograma.", "sugerencia": "Señalen juntos cada parte en un pictograma hecho a mano y pregunten: «¿qué nos dice esta parte?»." },
+      "cuenta-iconos": { "descripcion": "Se equivoca al contar los dibujos de una fila.", "sugerencia": "Pidan que toque cada dibujo con el dedo mientras cuenta en voz alta, sin saltarse ninguno." },
+      "confunde-fila": { "descripcion": "Lee los datos de otra fila (la de arriba o la de abajo).", "sugerencia": "Usen una regla o una tira de papel debajo de la fila que están leyendo." },
+      "ignora-escala": { "descripcion": "Cuenta los dibujos sin mirar la clave cuando cada dibujo vale 2.", "sugerencia": "Antes de contar, pregunten siempre «¿cuánto vale cada dibujo?» y cuenten juntos de 2 en 2." },
+      "medio-icono": { "descripcion": "No sabe cuánto vale medio dibujo cuando cada dibujo vale 2.", "sugerencia": "Dibujen una fruta, córtenla por la mitad y recuerden: «si la entera vale 2, la mitad vale 1»." },
+      "busca-valor": { "descripcion": "Le cuesta encontrar la fila que tiene una cantidad dada.", "sugerencia": "Pidan que escriba al lado de cada fila cuánto vale y después busque el número pedido." },
+      "problema-pictograma": { "descripcion": "Se pierde cuando tiene que responder varias preguntas sobre el mismo pictograma.", "sugerencia": "Lean una pregunta a la vez y pidan que muestre con el dedo la fila que necesita antes de responder." }
+    }
+  }
+}

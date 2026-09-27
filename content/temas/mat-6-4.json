@@ -1,0 +1,350 @@
+{
+  "id": "mat-6-4",
+  "titulo": "Semana, meses y calendario",
+  "objetivo": "Conozco los días de la semana y los meses del año, y leo fechas en el calendario.",
+  "explicacion": [
+    {
+      "texto": "Una **semana** tiene 7 días: lunes, martes, miércoles, jueves, viernes, sábado y domingo. Si hoy es martes, **ayer** fue lunes y **mañana** será miércoles.",
+      "emoji": "📅",
+      "visual": { "tipo": "tabla", "columnas": ["ayer", "hoy", "mañana"], "filas": [["lunes", "martes", "miércoles"]] }
+    },
+    {
+      "texto": "Un **año** tiene 12 meses: enero, febrero, marzo, abril, mayo, junio, julio, agosto, septiembre, octubre, noviembre y diciembre.",
+      "emoji": "🗓️"
+    },
+    {
+      "texto": "No todos los meses tienen la misma cantidad de días. Siete meses tienen **31** días, cuatro tienen **30** y febrero tiene **28**. En los años **bisiestos**, como 2028, febrero tiene 29.",
+      "visual": {
+        "tipo": "tabla",
+        "columnas": ["31 días", "30 días", "28 o 29 días"],
+        "filas": [
+          ["enero", "abril", "febrero"],
+          ["marzo", "junio", ""],
+          ["mayo", "septiembre", ""],
+          ["julio", "noviembre", ""],
+          ["agosto", "", ""],
+          ["octubre", "", ""],
+          ["diciembre", "", ""]
+        ]
+      }
+    },
+    {
+      "texto": "El **calendario** muestra los días de un mes. Cada columna es un día de la semana. El 1 de septiembre de 2026 está en la columna «Ma»: es martes.",
+      "visual": { "tipo": "calendario", "mes": 9, "anio": 2026, "marcar": [1] }
+    }
+  ],
+  "ejemplo": {
+    "instruccion": "Mira cómo Wara usa el calendario y qué truco tiene para los meses. Después, explora tú el calendario.",
+    "pasos": [
+      { "texto": "Wara cumple años el 15 de octubre. Buscamos octubre de 2026 y el número 15. Subimos por su columna hasta arriba: dice «Ju». ¡Es jueves!", "visual": { "tipo": "calendario", "mes": 10, "anio": 2026, "marcar": [15], "titulo": "Cumpleaños de Wara" } },
+      { "texto": "Si hoy es el jueves 15, ayer fue el miércoles 14 y mañana será el viernes 16.", "visual": { "tipo": "calendario", "mes": 10, "anio": 2026, "marcar": [14, 15, 16] } },
+      { "texto": "Si contamos 7 días desde el jueves 15, llegamos al jueves 22. Cada 7 días se repite el mismo día de la semana.", "visual": { "tipo": "calendario", "mes": 10, "anio": 2026, "marcar": [15, 22] } },
+      { "texto": "El truco del puño: Wara nombra los meses tocando nudillo, hueco, nudillo... Julio cae en el último nudillo y agosto vuelve a empezar en el primero. Nudillo: 31 días. Hueco: 30 días. ¡Pero febrero tiene 28 o 29!", "emoji": "✊" }
+    ],
+    "explorar": { "tipo": "calendario", "mes": 10, "anio": 2026 }
+  },
+  "guiada": {
+    "intro": "Vamos a trabajar con la semana y el calendario, paso a paso.",
+    "pasos": [
+      {
+        "id": "g1", "tipo": "ordenar",
+        "enunciado": "Ordena los días de la semana, empezando por el lunes.",
+        "apoyo": "Empieza con lunes. Los dos últimos días son el fin de semana: sábado y domingo.",
+        "elementos": ["lunes", "martes", "miércoles", "jueves", "viernes", "sábado", "domingo"],
+        "pista": "Dilo en voz alta: lunes, martes... ¿Qué día sigue?",
+        "explicacion": "El orden es: lunes, martes, miércoles, jueves, viernes, sábado y domingo.",
+        "error": "orden-dias"
+      },
+      {
+        "id": "g2", "tipo": "completar",
+        "enunciado": "Completa con el día correcto.",
+        "apoyo": "Ayer es el día que ya pasó, justo antes de hoy. Mañana es el día que viene después de hoy.",
+        "texto": "Hoy es jueves. Ayer fue [miércoles] y mañana será [viernes].",
+        "banco": ["lunes", "domingo"],
+        "pista": "¿Qué día está antes del jueves? ¿Y cuál viene después?",
+        "explicacion": "Antes del jueves está el miércoles, y después viene el viernes. Ayer fue miércoles y mañana será viernes.",
+        "error": "ayer-hoy-manana"
+      },
+      {
+        "id": "g3", "tipo": "manipular",
+        "enunciado": "La feria del libro de la escuela es el sábado 14 de noviembre. Tócalo en el calendario.",
+        "apoyo": "Busca la columna «Sá» (sábado) y baja hasta encontrar el 14.",
+        "manipulable": { "tipo": "calendario", "mes": 11, "anio": 2026, "objetivo": 14 },
+        "pista": "Busca el número 14. Debe estar en la columna del sábado.",
+        "explicacion": "El 14 de noviembre de 2026 está en la columna «Sá»: es sábado.",
+        "error": "lee-calendario"
+      }
+    ]
+  },
+  "practica": [
+    {
+      "id": "p1", "tipo": "generador", "nivel": 1, "generador": "calendario", "params": { "pregunta": "dia-siguiente" }
+    },
+    {
+      "id": "p2", "tipo": "numero", "nivel": 1,
+      "enunciado": "¿Cuántos días tiene una semana?",
+      "respuesta": 7,
+      "sufijo": "días",
+      "erroresComunes": [ { "respuesta": 5, "pista": "Esos son los días de lunes a viernes. Suma también el sábado y el domingo.", "error": "cantidades-tiempo" } ],
+      "pista": "Cuenta con los dedos: lunes, martes, miércoles...",
+      "explicacion": "Una semana tiene 7 días: de lunes a domingo.",
+      "error": "cantidades-tiempo"
+    },
+    {
+      "id": "p3", "tipo": "memoria", "nivel": 1,
+      "enunciado": "En el calendario, los días están escritos cortitos. Encuentra las parejas.",
+      "pares": [ ["Ma", "martes"], ["Mi", "miércoles"], ["Ju", "jueves"], ["Vi", "viernes"], ["Sá", "sábado"], ["Do", "domingo"] ],
+      "pista": "Cada palabra corta tiene las dos primeras letras del día. Ojo: «Ma» y «Mi» son distintos.",
+      "explicacion": "Ma = martes, Mi = miércoles, Ju = jueves, Vi = viernes, Sá = sábado y Do = domingo.",
+      "error": "lee-calendario"
+    },
+    {
+      "id": "p4", "tipo": "ordenar", "nivel": 1,
+      "enunciado": "Ordena los primeros seis meses del año.",
+      "elementos": ["enero", "febrero", "marzo", "abril", "mayo", "junio"],
+      "pista": "El año empieza en enero. ¿Qué mes sigue?",
+      "explicacion": "Los primeros seis meses son: enero, febrero, marzo, abril, mayo y junio.",
+      "error": "orden-meses"
+    },
+    {
+      "id": "p5", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Toca los días del fin de semana.",
+      "texto": "Inti va a la escuela de lunes a viernes. El *sábado* ayuda a su abuelo en la chacra y el *domingo* pasea con su familia por la plaza.",
+      "pista": "El fin de semana son los dos últimos días de la semana.",
+      "explicacion": "El fin de semana son el sábado y el domingo. Lunes y viernes son días de escuela.",
+      "error": "orden-dias"
+    },
+    {
+      "id": "p6", "tipo": "generador", "nivel": 2, "generador": "calendario", "params": { "pregunta": "mes-siguiente" }
+    },
+    {
+      "id": "p7", "tipo": "ordenar", "nivel": 2,
+      "enunciado": "Ordena estos meses como vienen en el año, de enero a diciembre.",
+      "elementos": ["febrero", "abril", "junio", "agosto", "octubre", "diciembre"],
+      "pista": "Recita los meses en orden y ve tocando cada uno cuando lo nombres.",
+      "explicacion": "En el año van así: febrero, abril, junio, agosto, octubre y diciembre.",
+      "error": "orden-meses"
+    },
+    {
+      "id": "p8", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa con los días que tiene cada mes.",
+      "texto": "Enero tiene [31] días. Abril tiene [30] días. Febrero de 2026 tiene [28] días.",
+      "banco": ["12", "7"],
+      "pista": "Usa el truco del puño: los meses de los nudillos tienen 31 días y los de los huecos, 30. Y 2026 no es año bisiesto.",
+      "explicacion": "Enero tiene 31 días, abril tiene 30 y febrero de 2026 tiene 28, porque 2026 no es bisiesto.",
+      "error": "dias-del-mes"
+    },
+    {
+      "id": "p9", "tipo": "manipular", "nivel": 2,
+      "enunciado": "Hoy es miércoles 7 de octubre. Toca en el calendario el día de mañana.",
+      "manipulable": { "tipo": "calendario", "mes": 10, "anio": 2026, "objetivo": 8 },
+      "pista": "Busca el 7. Mañana es el día que viene justo después.",
+      "explicacion": "Si hoy es miércoles 7, mañana será jueves 8.",
+      "error": "ayer-hoy-manana"
+    },
+    {
+      "id": "p10", "tipo": "opcion", "nivel": 2,
+      "enunciado": "Rosa cumple años el 25 de noviembre. ¿Qué día de la semana es?",
+      "visual": { "tipo": "calendario", "mes": 11, "anio": 2026, "marcar": [25], "titulo": "Cumpleaños de Rosa" },
+      "opciones": [
+        { "texto": "miércoles", "correcta": true },
+        { "texto": "martes", "pista": "«Ma» es martes y «Mi» es miércoles. Mira bien las letras de arriba de la columna del 25.", "error": "lee-calendario" },
+        { "texto": "jueves", "pista": "Sube por la columna del 25 hasta las letras de arriba.", "error": "lee-calendario" }
+      ],
+      "columnas": 1,
+      "pista": "Busca el 25 y sube por su columna hasta las letras de arriba.",
+      "explicacion": "El 25 de noviembre de 2026 está en la columna «Mi»: es miércoles.",
+      "error": "lee-calendario"
+    },
+    {
+      "id": "p11", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha la pregunta y escribe el nombre del mes.",
+      "escuchar": "¿Qué mes está entre febrero y abril?",
+      "respuestas": ["marzo"],
+      "pista": "Recita los meses desde enero: enero, febrero...",
+      "explicacion": "Después de febrero viene marzo, y después de marzo viene abril. La respuesta es «marzo».",
+      "error": "orden-meses"
+    },
+    {
+      "id": "p12", "tipo": "generador", "nivel": 3, "generador": "calendario", "params": { "pregunta": "dias-semana" }
+    },
+    {
+      "id": "p13", "tipo": "numero", "nivel": 3,
+      "enunciado": "¿Cuántos lunes tiene agosto de 2026?",
+      "visual": { "tipo": "calendario", "mes": 8, "anio": 2026 },
+      "respuesta": 5,
+      "erroresComunes": [ { "respuesta": 4, "pista": "Revisa hasta la última fila del calendario: ¿hay otro lunes al final del mes?", "error": "lee-calendario" } ],
+      "pista": "Busca la columna «Lu» y cuenta todos los números que tiene.",
+      "explicacion": "En agosto de 2026 los lunes son el 3, el 10, el 17, el 24 y el 31: son 5 lunes.",
+      "error": "lee-calendario"
+    },
+    {
+      "id": "p14", "tipo": "multiple", "nivel": 3,
+      "enunciado": "Elige todos los meses que tienen 30 días.",
+      "opciones": [
+        { "texto": "abril", "correcta": true },
+        { "texto": "junio", "correcta": true },
+        { "texto": "septiembre", "correcta": true },
+        { "texto": "noviembre", "correcta": true },
+        { "texto": "mayo", "pista": "Mayo tiene 31 días.", "error": "dias-del-mes" },
+        { "texto": "febrero", "pista": "Febrero es el mes más corto: tiene 28 días, o 29 en los años bisiestos.", "error": "dias-del-mes" }
+      ],
+      "pista": "Solo cuatro meses tienen 30 días. Usa el truco del puño: son los meses de los huecos, menos febrero.",
+      "explicacion": "Tienen 30 días abril, junio, septiembre y noviembre. Mayo tiene 31 y febrero, 28 o 29.",
+      "error": "dias-del-mes"
+    },
+    {
+      "id": "p15", "tipo": "pasos", "nivel": 3,
+      "enunciado": "Kusi va con su abuelo a la feria cada domingo. Hoy es jueves 10 de septiembre.",
+      "visual": { "tipo": "calendario", "mes": 9, "anio": 2026, "marcar": [10], "titulo": "Hoy" },
+      "pasos": [
+        {
+          "tipo": "numero",
+          "enunciado": "¿Cuántos días faltan para el domingo?",
+          "respuesta": 3,
+          "sufijo": "días",
+          "erroresComunes": [ { "respuesta": 4, "pista": "No cuentes hoy. Empieza a contar desde mañana: viernes, sábado...", "error": "cuenta-dias" } ],
+          "pista": "No cuentes hoy. Empieza a contar desde mañana, que es viernes, hasta llegar al domingo.",
+          "explicacion": "Viernes, sábado y domingo: faltan 3 días.",
+          "error": "cuenta-dias"
+        },
+        {
+          "tipo": "manipular",
+          "enunciado": "Toca en el calendario el domingo de la feria.",
+          "manipulable": { "tipo": "calendario", "mes": 9, "anio": 2026, "objetivo": 13 },
+          "pista": "Busca el 10 y avanza 3 días. Debe estar en la columna «Do».",
+          "explicacion": "El domingo de la feria es el 13 de septiembre.",
+          "error": "lee-calendario"
+        },
+        {
+          "tipo": "numero",
+          "enunciado": "¿Qué fecha será el domingo siguiente, una semana después?",
+          "respuesta": 20,
+          "erroresComunes": [ { "respuesta": 14, "pista": "El 14 es lunes, el día después del domingo. Una semana son 7 días.", "error": "cuenta-dias" } ],
+          "pista": "Una semana tiene 7 días. Suma 7 al 13, o baja una fila en la columna «Do».",
+          "explicacion": "13 + 7 = 20. El domingo siguiente es el 20 de septiembre.",
+          "error": "cuenta-dias"
+        }
+      ],
+      "pista": "Resuelve un paso a la vez y mira el calendario.",
+      "explicacion": "Faltan 3 días para el domingo 13. Una semana después, la feria es el domingo 20.",
+      "error": "cuenta-dias"
+    },
+    {
+      "id": "p16", "tipo": "escribir-libre", "nivel": 3,
+      "enunciado": "Escribe una oración que cuente algo que hiciste ayer.",
+      "guia": ["Ayer fui a...", "Ayer comí...", "Ayer jugué con..."],
+      "requisitos": [
+        { "tipo": "mayuscula-inicial" }, { "tipo": "punto-final" },
+        { "tipo": "min-palabras", "valor": 4 },
+        { "tipo": "incluye", "palabras": ["ayer"] }
+      ],
+      "modelo": "Ayer fui a la feria con mi abuela.",
+      "pista": "Piensa en el día de antes de hoy. ¿Qué hiciste?",
+      "explicacion": "Por ejemplo: «Ayer fui a la feria con mi abuela». Empieza con mayúscula y termina con punto.",
+      "error": "escribe-oracion"
+    }
+  ],
+  "comprobacion": [
+    {
+      "id": "c1", "tipo": "numero", "nivel": 1,
+      "enunciado": "Escucha la pregunta y responde con un número.",
+      "escuchar": "¿Cuántos meses tiene un año?",
+      "respuesta": 12,
+      "erroresComunes": [ { "respuesta": 7, "pista": "7 son los días de la semana. La pregunta es por los meses del año.", "error": "cantidades-tiempo" } ],
+      "pista": "Cuenta los meses desde enero hasta diciembre.",
+      "explicacion": "Un año tiene 12 meses, de enero a diciembre.",
+      "error": "cantidades-tiempo"
+    },
+    {
+      "id": "c2", "tipo": "escribir", "nivel": 1,
+      "enunciado": "¿Qué día de la semana falta? Escríbelo.",
+      "visual": { "tipo": "secuencia", "items": ["lunes", "martes", "?", "jueves", "viernes"] },
+      "respuestas": ["miércoles"],
+      "pista": "¿Qué día viene después del martes?",
+      "explicacion": "Entre el martes y el jueves está el miércoles.",
+      "error": "orden-dias"
+    },
+    {
+      "id": "c3", "tipo": "generador", "nivel": 2, "generador": "calendario", "params": { "pregunta": "mes-anterior" }
+    },
+    {
+      "id": "c4", "tipo": "manipular", "nivel": 2,
+      "enunciado": "Hoy es lunes 21 de diciembre. Toca en el calendario el día de ayer.",
+      "manipulable": { "tipo": "calendario", "mes": 12, "anio": 2026, "objetivo": 20 },
+      "pista": "Busca el 21. Ayer es el número de antes. Si el 21 está al comienzo de una fila, mira al final de la fila de arriba.",
+      "explicacion": "Si hoy es lunes 21, ayer fue domingo 20. Está al final de la fila de arriba, en la columna «Do».",
+      "error": "ayer-hoy-manana"
+    },
+    {
+      "id": "c5", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "Une cada uno con los días o meses que tiene.",
+      "pares": [ ["una semana", "7 días"], ["un año", "12 meses"], ["marzo", "31 días"], ["junio", "30 días"], ["febrero de 2026", "28 días"] ],
+      "pista": "Febrero es el mes más corto. Junio es uno de los cuatro meses de 30 días.",
+      "explicacion": "Una semana tiene 7 días y un año, 12 meses. Marzo tiene 31 días, junio tiene 30 y febrero de 2026 tiene 28.",
+      "error": "dias-del-mes"
+    },
+    {
+      "id": "c6", "tipo": "multiple", "nivel": 2,
+      "enunciado": "Luis juega fútbol todos los sábados. Mira marzo de 2026 y elige todas las fechas en que juega.",
+      "visual": { "tipo": "calendario", "mes": 3, "anio": 2026 },
+      "opciones": [
+        { "texto": "7", "correcta": true },
+        { "texto": "14", "correcta": true },
+        { "texto": "21", "correcta": true },
+        { "texto": "28", "correcta": true },
+        { "texto": "8", "pista": "El 8 está en la columna «Do»: es domingo.", "error": "lee-calendario" },
+        { "texto": "13", "pista": "El 13 está en la columna «Vi»: es viernes.", "error": "lee-calendario" }
+      ],
+      "pista": "Busca la columna «Sá» y mira todos los números que tiene.",
+      "explicacion": "En marzo de 2026, los sábados son el 7, el 14, el 21 y el 28: están en la columna «Sá». El 8 es domingo y el 13 es viernes.",
+      "error": "lee-calendario"
+    },
+    {
+      "id": "c7", "tipo": "numero", "nivel": 3,
+      "enunciado": "El año 2028 será bisiesto. ¿Cuántos días tendrá febrero de 2028?",
+      "respuesta": 29,
+      "sufijo": "días",
+      "erroresComunes": [
+        { "respuesta": 28, "pista": "Esos son los días de febrero en un año que no es bisiesto. En un año bisiesto, febrero tiene un día más.", "error": "dias-del-mes" },
+        { "respuesta": 30, "pista": "Febrero nunca llega a 30 días. En un año bisiesto tiene solo un día más que de costumbre.", "error": "dias-del-mes" }
+      ],
+      "pista": "Febrero suele tener 28 días. ¿Qué pasa en un año bisiesto?",
+      "explicacion": "En los años bisiestos, febrero tiene un día más: 28 + 1 = 29 días.",
+      "error": "dias-del-mes"
+    },
+    {
+      "id": "c8", "tipo": "completar", "nivel": 3,
+      "enunciado": "Hoy es miércoles 30 de septiembre. Completa la fecha de mañana.",
+      "visual": { "tipo": "calendario", "mes": 9, "anio": 2026, "marcar": [30], "titulo": "Hoy" },
+      "texto": "Septiembre tiene 30 días. Mañana será jueves [1] de [octubre].",
+      "banco": ["31", "septiembre"],
+      "pista": "Mira el calendario: después del 30 ya no hay más días en septiembre. ¿Qué mes viene después?",
+      "explicacion": "Septiembre termina el 30. Mañana empieza un mes nuevo: será el jueves 1 de octubre.",
+      "error": "dias-del-mes"
+    }
+  ],
+  "repaso": {
+    "texto": "La semana tiene 7 días y el año, 12 meses. Ayer es el día de antes y mañana, el de después. En el calendario, cada columna es un día de la semana.",
+    "visual": { "tipo": "calendario", "mes": 10, "anio": 2026, "marcar": [14, 15, 16] }
+  },
+  "adulto": {
+    "objetivo": "Conocer el orden de los días de la semana y de los meses del año, saber cuántos días tiene cada mes (30, 31, y 28 o 29 en febrero), usar «ayer», «hoy» y «mañana», y leer un calendario: encontrar una fecha, saber qué día de la semana es y contar días.",
+    "sugerencias": [
+      "Pongan un calendario de pared (o el almanaque de la tienda) a la altura de la niña o el niño. Cada mañana tachen el día anterior y pregunten: «¿Qué día fue ayer? ¿Qué día es hoy? ¿Qué día será mañana?».",
+      "Practiquen el truco del puño: con el puño cerrado, digan los meses tocando nudillos y huecos desde enero. Los meses que caen en un nudillo tienen 31 días; los que caen en un hueco, 30 (febrero, 28 o 29). Después de julio, vuelvan a empezar en el primer nudillo con agosto.",
+      "Marquen en el calendario los cumpleaños de la familia y los días de feria. Pregunten qué día de la semana cae cada uno y cuántos días faltan."
+    ],
+    "errores": {
+      "calendario": { "descripcion": "Le cuesta decir qué día o qué mes viene antes o después de otro.", "sugerencia": "Reciten juntos los días de la semana y los meses del año hacia adelante y hacia atrás, con palmadas." },
+      "orden-dias": { "descripcion": "No recuerda el orden de los días de la semana o cuáles forman el fin de semana.", "sugerencia": "Escriban los 7 días en tarjetas, mézclenlas y pidan que las ordene. Pinten de otro color el sábado y el domingo." },
+      "orden-meses": { "descripcion": "Confunde el orden de los meses del año.", "sugerencia": "Hagan una tira con los 12 meses y marquen en cada uno algo de la familia (un cumpleaños, una fiesta, las vacaciones)." },
+      "dias-del-mes": { "descripcion": "No recuerda cuántos días tiene cada mes.", "sugerencia": "Usen el truco del puño y comprueben en un calendario de pared cuál es el último día de cada mes." },
+      "lee-calendario": { "descripcion": "Le cuesta encontrar una fecha en el calendario o saber qué día de la semana es.", "sugerencia": "Con un calendario de pared, pidan que ponga el dedo en el número y lo suba por la columna hasta el nombre del día." },
+      "ayer-hoy-manana": { "descripcion": "Confunde «ayer» y «mañana».", "sugerencia": "Cada noche, conversen sobre lo que hicieron hoy y lo que harán mañana; cada mañana, recuerden lo que hicieron ayer." },
+      "cuenta-dias": { "descripcion": "Se equivoca al contar cuántos días faltan o qué fecha será una semana después (cuenta también el día de hoy).", "sugerencia": "Cuenten saltos en el calendario empezando por el día siguiente. Muestren que una semana después es el número de abajo en la misma columna." },
+      "cantidades-tiempo": { "descripcion": "No recuerda cuántos días tiene una semana o cuántos meses tiene un año.", "sugerencia": "Cuenten con los dedos los días de la semana (7) y los meses del año (12) mientras los nombran." },
+      "escribe-oracion": { "descripcion": "Le cuesta escribir una oración que use «ayer», «hoy» o «mañana».", "sugerencia": "Pidan que cuente en voz alta lo que hizo ayer y escriban juntos la oración, revisando la mayúscula y el punto." }
+    }
+  }
+}

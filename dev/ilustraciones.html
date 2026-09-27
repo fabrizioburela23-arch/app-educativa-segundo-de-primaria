@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Galería de ilustraciones</title>
+  <link rel="stylesheet" href="../css/app.css">
+  <style>
+    body { background: var(--fondo); }
+    .galeria { max-width: 760px; margin: 0 auto; padding: 16px; }
+    .galeria h1 { font-size: 1.4rem; }
+    .ayuda { color: var(--tinta-suave); font-size: .95rem; }
+    .ayuda code { overflow-wrap: anywhere; }
+    .controles { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin: 12px 0 18px; }
+    .controles label { display: flex; flex-direction: column; gap: 4px; font-size: .9rem; color: var(--tinta-suave); flex: 1 1 200px; min-width: 0; }
+    .controles select {
+      min-height: 48px; width: 100%; padding: 8px 12px; border: 2px solid var(--borde); border-radius: var(--radio-sm);
+      background: var(--superficie); color: var(--tinta); font-size: 1rem;
+    }
+    .controles a {
+      display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 8px 16px;
+      border-radius: var(--radio-sm); background: var(--fondo-2); color: var(--tinta); text-decoration: none; font-weight: 700; align-self: flex-end;
+    }
+    .muestra { background: var(--superficie); border-radius: var(--radio); box-shadow: var(--sombra); padding: 14px 12px; margin-bottom: 16px; }
+    .muestra h2 { font-size: 1.05rem; margin: 0 0 8px; display: flex; gap: 8px; align-items: baseline; flex-wrap: wrap; }
+    .muestra h2 code { font-size: .8rem; color: var(--tinta-suave); font-weight: 400; overflow-wrap: anywhere; }
+    .variantes { display: grid; gap: 14px; }
+    .variante figcaption { font-size: .85rem; color: var(--tinta-suave); text-align: center; margin-top: 4px; }
+    figure.variante { margin: 0; }
+    .resumen { font-size: .9rem; padding: 10px 12px; border-radius: 12px; background: var(--exito-claro); color: var(--exito); margin-bottom: 14px; }
+    .resumen.mal { background: #FBE3DE; color: #9C2F1E; }
+  </style>
+</head>
+<body>
+  <main class="galeria">
+    <h1>Galería de ilustraciones</h1>
+    <p class="ayuda">Cada dibujo se muestra normal (con etiquetas), con cada parte resaltada (sin etiquetas),
+      con una parte resaltada y <code>etiquetas: true</code>, y con <code>etiquetas: false</code>.
+      Usa <code>?solo=id</code> para ver uno solo y <code>?variantes=no</code> para ver solo la versión normal.</p>
+    <div id="resumen" class="resumen" role="status"></div>
+    <div class="controles">
+      <label>Ilustración
+        <select id="elegir"></select>
+      </label>
+      <a id="variantes" href="?variantes=no"></a>
+    </div>
+    <div id="lista"></div>
+  </main>
+  <script type="module" src="./ilustraciones.js"></script>
+</body>
+</html>

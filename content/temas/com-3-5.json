@@ -1,0 +1,460 @@
+{
+  "id": "com-3-5",
+  "titulo": "Adivinanzas",
+  "objetivo": "Leo y escucho adivinanzas, busco sus pistas y descubro la respuesta.",
+  "lecturas": [
+    {
+      "id": "adiv-selva",
+      "titulo": "Adivinanza de la selva",
+      "genero": "adivinanza",
+      "emoji": "🌳",
+      "parrafos": [
+        "Mi pelo es amarillo con manchas negras.",
+        "Camino sin hacer ruido entre los árboles de la selva.",
+        "No le tengo miedo al agua: sé nadar muy bien.",
+        "Soy el gato salvaje más grande de América.",
+        "¿Quién soy?"
+      ]
+    }
+  ],
+  "explicacion": [
+    {
+      "texto": "Una **adivinanza** es un juego: describe algo sin decir su nombre, y tú lo tienes que descubrir. Muchas terminan con una pregunta: ¿Qué soy? o ¿Quién soy?",
+      "emoji": "❓",
+      "visual": { "tipo": "emojis", "items": ["👂", "🤔", "💡"], "etiquetas": ["escucho", "pienso", "¡descubro!"] }
+    },
+    {
+      "texto": "Las adivinanzas dan **pistas**: detalles que te ayudan. Pueden decir cómo es, dónde vive, qué hace o para qué sirve.",
+      "visual": {
+        "tipo": "tabla",
+        "columnas": ["La pista dice...", "Ejemplo"],
+        "filas": [
+          ["cómo es", "Tengo plumas negras."],
+          ["dónde vive", "Vivo en el río."],
+          ["qué hace", "Canto en la mañana."],
+          ["para qué sirve", "Te abrigo la cabeza."]
+        ]
+      }
+    },
+    {
+      "texto": "Una pista sola no alcanza: «Tengo lana» puede ser la llama o la oveja. La respuesta correcta debe cumplir **todas** las pistas.",
+      "visual": { "tipo": "emojis", "items": ["🦙", "🐑"], "etiquetas": ["llama", "oveja"] }
+    },
+    {
+      "texto": "Muchas adivinanzas **riman**, como los poemas. Así son más fáciles de recordar y más divertidas de decir.",
+      "emoji": "🎵"
+    }
+  ],
+  "ejemplo": {
+    "instruccion": "Mira cómo resolvemos una adivinanza paso a paso.",
+    "pasos": [
+      {
+        "texto": "Leemos: «Soy un ave muy pequeña. Muevo las alas tan rápido que zumban. Con mi pico largo tomo el jugo dulce de las flores. ¿Quién soy?»",
+        "visual": { "tipo": "emojis", "items": ["🐦", "🌺"] }
+      },
+      {
+        "texto": "Buscamos las pistas: es un **ave muy pequeña**, mueve las alas **muy rápido** y toma el jugo de las **flores**.",
+        "visual": {
+          "tipo": "tabla",
+          "columnas": ["Pista", "¿Qué nos dice?"],
+          "filas": [["ave muy pequeña", "cómo es"], ["alas muy rápidas", "qué hace"], ["jugo de las flores", "qué come"]]
+        }
+      },
+      {
+        "texto": "¿Será la paloma? Es un ave, pero no es tan pequeña ni toma jugo de flores. ¿El cóndor? Es muy grande. No cumplen todas las pistas.",
+        "visual": { "tipo": "emojis", "items": ["🕊️", "🦅"], "etiquetas": ["paloma", "cóndor"] }
+      },
+      {
+        "texto": "¡El **picaflor** (o colibrí) cumple todas las pistas! Así se resuelve: leo, busco las pistas, pienso y reviso.",
+        "visual": { "tipo": "emojis", "items": ["🐦", "🌸"], "etiquetas": ["picaflor", "flor"] }
+      }
+    ]
+  },
+  "guiada": {
+    "intro": "Ahora lo hacemos juntos.",
+    "pasos": [
+      {
+        "id": "g1", "tipo": "tocar",
+        "enunciado": "Lee la adivinanza. Toca las palabras que dicen de qué color es.",
+        "apoyo": "Los colores son palabras como rojo, verde o amarillo.",
+        "texto": "Tengo plumas *negras* y un collar *blanco*. Vuelo muy alto sobre las montañas. ¿Quién soy?",
+        "pista": "Hay dos palabras de colores.",
+        "explicacion": "«Negras» y «blanco» son las pistas de color. Con ellas y el vuelo alto, la respuesta es el cóndor.",
+        "error": "identifica-pistas"
+      },
+      {
+        "id": "g2", "tipo": "opcion",
+        "enunciado": "Lee: «Tengo lana, vivo en el altiplano y cargo bultos en los viajes. ¿Quién soy?»",
+        "apoyo": "Revisa cada respuesta con las tres pistas: lana, altiplano y cargar bultos.",
+        "opciones": [
+          { "texto": "la llama", "emoji": "🦙", "correcta": true },
+          { "texto": "la oveja", "emoji": "🐑", "pista": "La oveja tiene lana, pero no carga bultos en los viajes.", "error": "no-usa-todas-pistas" },
+          { "texto": "la vicuña", "pista": "La vicuña tiene lana y vive en el altiplano, pero es silvestre: no carga bultos.", "error": "no-usa-todas-pistas" }
+        ],
+        "pista": "¿Cuál de estos animales ayuda a las familias a cargar bultos?",
+        "explicacion": "Es la llama: tiene lana, vive en el altiplano y carga bultos. La oveja y la vicuña no cargan bultos.",
+        "error": "no-usa-todas-pistas"
+      },
+      {
+        "id": "g3", "tipo": "escribir",
+        "enunciado": "Escucha la adivinanza y escribe la respuesta.",
+        "apoyo": "Piensa: ¿qué alimento crece bajo la tierra y se convierte en chuño?",
+        "escuchar": "Crezco escondida bajo la tierra. De mis ojitos salen brotes nuevos. Con la helada y el sol me convierto en chuño. ¿Qué soy?",
+        "respuestas": ["papa", "la papa", "una papa", "papas", "las papas"],
+        "pista": "Es un alimento que se cosecha en el altiplano y en los valles. Empieza con p.",
+        "explicacion": "Es la papa: crece bajo la tierra, tiene «ojitos» de donde salen brotes y con ella se hace el chuño.",
+        "error": "escucha-adivinanza"
+      }
+    ]
+  },
+  "practica": [
+    {
+      "id": "p1", "tipo": "memoria", "nivel": 1,
+      "enunciado": "Encuentra las parejas: la pista y el animal.",
+      "pares": [
+        ["plumas de colores", { "texto": "paraba", "emoji": "🦜" }],
+        ["caparazón duro", { "texto": "tatú" }],
+        ["delfín del río", { "texto": "bufeo", "emoji": "🐬" }],
+        ["collar blanco", { "texto": "cóndor", "emoji": "🦅" }]
+      ],
+      "pista": "Piensa en cómo es cada animal.",
+      "explicacion": "Paraba: plumas de colores. Tatú: caparazón duro. Bufeo: delfín del río. Cóndor: collar blanco.",
+      "error": "relaciona-pistas"
+    },
+    {
+      "id": "p2", "tipo": "opcion", "nivel": 1,
+      "enunciado": "Escucha la adivinanza. ¿Qué es?",
+      "escuchar": "Soy largo y amarillo. Crezco en racimos en los Yungas. Me pelas antes de comerme. ¿Qué soy?",
+      "opciones": [
+        { "texto": "el plátano", "emoji": "🍌", "correcta": true },
+        { "texto": "el choclo", "emoji": "🌽", "pista": "El choclo es amarillo, pero no crece en racimos.", "error": "no-usa-todas-pistas" },
+        { "texto": "la piña", "emoji": "🍍", "pista": "La piña es amarilla por dentro, pero no es larga ni crece en racimos.", "error": "no-usa-todas-pistas" }
+      ],
+      "pista": "Escucha otra vez las pistas: largo, amarillo, en racimos y se pela.",
+      "explicacion": "Es el plátano: es largo y amarillo, crece en racimos y lo pelamos antes de comerlo.",
+      "error": "escucha-adivinanza"
+    },
+    {
+      "id": "p3", "tipo": "ordenar", "nivel": 1,
+      "enunciado": "Ordena los pasos para resolver una adivinanza.",
+      "elementos": [
+        "Leo o escucho la adivinanza.",
+        "Busco las pistas.",
+        "Pienso qué cumple todas las pistas.",
+        "Digo mi respuesta y la reviso."
+      ],
+      "vertical": true,
+      "pista": "Primero hay que conocer la adivinanza. Al final, se revisa la respuesta.",
+      "explicacion": "Primero leo o escucho, después busco las pistas, luego pienso qué cumple todas y al final digo mi respuesta y la reviso.",
+      "error": "estrategia-adivinanza"
+    },
+    {
+      "id": "p4", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Lee la adivinanza. Toca la palabra que dice dónde vive este animal.",
+      "texto": "Soy gris o rosado. Nado en el *río* y salgo a respirar aire. No soy un pez. ¿Quién soy?",
+      "pista": "Busca un lugar con agua.",
+      "explicacion": "La pista de lugar es «río». Con las otras pistas, la respuesta es el bufeo, el delfín de los ríos de Bolivia.",
+      "error": "identifica-pistas"
+    },
+    {
+      "id": "p5", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "¿De qué animal es cada pista?",
+      "categorias": [
+        { "id": "llama", "texto": "llama", "emoji": "🦙" },
+        { "id": "paraba", "texto": "paraba", "emoji": "🦜" },
+        { "id": "tatu", "texto": "tatú" }
+      ],
+      "elementos": [
+        { "texto": "Tengo lana.", "categoria": "llama" },
+        { "texto": "Cargo bultos en los viajes.", "categoria": "llama" },
+        { "texto": "Tengo plumas de colores.", "categoria": "paraba" },
+        { "texto": "Vuelo de árbol en árbol.", "categoria": "paraba" },
+        { "texto": "Tengo un caparazón duro.", "categoria": "tatu" },
+        { "texto": "Cavo huecos en la tierra.", "categoria": "tatu" }
+      ],
+      "pista": "Piensa en cómo es cada animal y en lo que sabe hacer.",
+      "explicacion": "Llama: tiene lana y carga bultos. Paraba: tiene plumas de colores y vuela de árbol en árbol. Tatú: tiene caparazón duro y cava huecos.",
+      "error": "relaciona-pistas"
+    },
+    {
+      "id": "p6", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha la adivinanza y escribe la respuesta.",
+      "escuchar": "Soy un oso de los Andes. Tengo manchas claras alrededor de los ojos, como si usara anteojos. Vivo en los bosques de los cerros y trepo a los árboles. ¿Quién soy?",
+      "respuestas": [
+        "jucumari", "el jucumari", "un jucumari", "jukumari", "el jukumari",
+        "oso jucumari", "el oso jucumari", "oso jukumari", "el oso jukumari",
+        "oso andino", "el oso andino",
+        "oso de anteojos", "el oso de anteojos"
+      ],
+      "pista": "Es el oso que vive en Bolivia. Su nombre empieza con «ju».",
+      "explicacion": "Es el jucumari, también llamado oso andino u oso de anteojos, por las manchas claras de su cara.",
+      "error": "escucha-adivinanza"
+    },
+    {
+      "id": "p7", "tipo": "multiple", "nivel": 2,
+      "enunciado": "Elige las pistas que son verdad para la salteña.",
+      "visual": { "tipo": "emoji", "valor": "🥟" },
+      "opciones": [
+        { "texto": "Por fuera tengo masa dorada.", "correcta": true },
+        { "texto": "Por dentro tengo jugo.", "correcta": true },
+        { "texto": "Me comen en la mañana.", "correcta": true },
+        { "texto": "Soy una bebida morada.", "pista": "Esa pista es del api, no de la salteña.", "error": "identifica-pistas" },
+        { "texto": "Crezco bajo la tierra.", "pista": "La salteña no crece en la tierra: se prepara y se hornea.", "error": "identifica-pistas" }
+      ],
+      "pista": "Piensa en una salteña: ¿cómo es por fuera y por dentro? ¿Cuándo la comemos?",
+      "explicacion": "La salteña tiene masa dorada por fuera, jugo por dentro y se come en la mañana. La bebida morada es el api.",
+      "error": "identifica-pistas"
+    },
+    {
+      "id": "p8", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa la adivinanza con las palabras que faltan.",
+      "texto": "Soy un ave de la selva. Tengo plumas de muchos [colores] y una cola muy [larga]. ¿Quién soy? La [paraba].",
+      "banco": ["cóndor", "lana"],
+      "pista": "Lee la oración completa con cada ficha. ¿Cuál tiene sentido?",
+      "explicacion": "«Tengo plumas de muchos colores y una cola muy larga. ¿Quién soy? La paraba.» El cóndor no vive en la selva ni tiene plumas de colores.",
+      "error": "completa-adivinanza"
+    },
+    {
+      "id": "p9", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "Une cada adivinanza con su respuesta.",
+      "pares": [
+        ["Grano pequeño del altiplano. Me lavan antes de cocinarme.", { "texto": "quinua", "emoji": "🌾" }],
+        ["Bebida caliente y morada. Me tomas con pastel.", "api"],
+        ["Papa seca y oscura. Me hicieron la helada y el sol.", "chuño"],
+        ["Crezco bajo tierra, en una cáscara. Conmigo hacen sopa.", { "texto": "maní", "emoji": "🥜" }]
+      ],
+      "pista": "Lee cada adivinanza y piensa en los alimentos que conoces.",
+      "explicacion": "Quinua: grano que se lava antes de cocinar. Api: bebida caliente y morada. Chuño: papa seca hecha con la helada y el sol. Maní: crece bajo tierra en su cáscara y con él se hace sopa.",
+      "error": "relaciona-pistas"
+    },
+    {
+      "id": "p10", "tipo": "pasos", "nivel": 3,
+      "enunciado": "Lee la «Adivinanza de la selva» y resuélvela paso a paso.",
+      "pasos": [
+        {
+          "tipo": "opcion",
+          "lectura": "adiv-selva",
+          "enunciado": "¿Cómo es su pelo?",
+          "opciones": [
+            { "texto": "amarillo con manchas negras", "correcta": true },
+            { "texto": "negro con un collar blanco", "pista": "Busca en la adivinanza la oración que habla de su pelo.", "error": "identifica-pistas" },
+            { "texto": "gris o rosado", "pista": "Busca en la adivinanza la oración que habla de su pelo.", "error": "identifica-pistas" }
+          ],
+          "columnas": 1,
+          "pista": "Lee la primera oración de la adivinanza.",
+          "explicacion": "La adivinanza dice: «Mi pelo es amarillo con manchas negras».",
+          "error": "identifica-pistas"
+        },
+        {
+          "tipo": "multiple",
+          "lectura": "adiv-selva",
+          "enunciado": "¿Qué sabe hacer? Elige todas las respuestas.",
+          "opciones": [
+            { "texto": "nadar muy bien", "correcta": true },
+            { "texto": "caminar sin hacer ruido", "correcta": true },
+            { "texto": "volar muy alto", "pista": "La adivinanza no dice que vuela.", "error": "identifica-pistas" },
+            { "texto": "cargar bultos", "pista": "La adivinanza no dice que carga bultos.", "error": "identifica-pistas" }
+          ],
+          "pista": "Busca en la adivinanza lo que hace este animal.",
+          "explicacion": "Sabe nadar muy bien y camina sin hacer ruido entre los árboles.",
+          "error": "identifica-pistas"
+        },
+        {
+          "tipo": "escribir",
+          "lectura": "adiv-selva",
+          "enunciado": "¿Quién es? Escribe la respuesta.",
+          "respuestas": ["jaguar", "el jaguar", "un jaguar", "yaguar", "el yaguar", "yaguareté", "el yaguareté"],
+          "pista": "Es un felino de la selva de Bolivia. Su nombre empieza con j.",
+          "explicacion": "Es el jaguar. En algunos lugares de Bolivia le dicen «tigre», pero el tigre es otro animal que vive en Asia.",
+          "error": "escribe-respuesta"
+        }
+      ],
+      "pista": "Resuelve un paso a la vez. Vuelve a leer la adivinanza cuando lo necesites.",
+      "explicacion": "Pelo amarillo con manchas negras, camina sin ruido, nada muy bien y es el gato salvaje más grande de América: es el jaguar.",
+      "error": "identifica-pistas"
+    },
+    {
+      "id": "p11", "tipo": "escribir-libre", "nivel": 3,
+      "enunciado": "Inventa una adivinanza sobre un animal. Da dos pistas o más y termina con una pregunta.",
+      "guia": ["Tengo...", "Vivo en...", "¿Quién soy?"],
+      "requisitos": [
+        { "tipo": "mayuscula-inicial" },
+        { "tipo": "min-oraciones", "valor": 3 },
+        { "tipo": "min-palabras", "valor": 10 },
+        { "tipo": "signos-pregunta" }
+      ],
+      "modelo": "Soy verde y salto mucho. Vivo cerca del agua y digo croac. ¿Quién soy?",
+      "pista": "Piensa en un animal. Di cómo es, dónde vive o qué hace, sin decir su nombre. Al final pregunta ¿Quién soy?",
+      "explicacion": "Por ejemplo: «Soy verde y salto mucho. Vivo cerca del agua y digo croac. ¿Quién soy?» (la rana). ¡Léele tu adivinanza a alguien de tu casa!",
+      "error": "inventa-adivinanza"
+    },
+    {
+      "id": "p12", "tipo": "opcion", "nivel": 3,
+      "enunciado": "Lee: «Tengo lana muy fina. Vivo libre en el altiplano. Soy pariente de la llama, pero más pequeña. ¿Quién soy?»",
+      "opciones": [
+        { "texto": "la vicuña", "correcta": true },
+        { "texto": "la alpaca", "pista": "La alpaca tiene lana fina, pero no vive libre: las familias la crían y la cuidan.", "error": "no-usa-todas-pistas" },
+        { "texto": "la oveja", "emoji": "🐑", "pista": "La oveja no es de la familia de la llama, y las familias la crían y la cuidan.", "error": "no-usa-todas-pistas" }
+      ],
+      "pista": "Busca la pista que dice cómo vive: ¿libre o cuidada por las familias?",
+      "explicacion": "Es la vicuña: tiene lana muy fina, vive libre (es silvestre) y es más pequeña que la llama.",
+      "error": "no-usa-todas-pistas"
+    },
+    {
+      "id": "p13", "tipo": "tocar", "nivel": 2,
+      "enunciado": "Esta adivinanza rima. Toca las dos palabras del final de los versos que riman.",
+      "texto": "Soy de lana de colores, / tengo orejas y no *escucho*; / cuando hace frío en el campo, / tu cabeza abrigo *mucho*.",
+      "pista": "Mira la palabra que está antes de cada barra / y la del final.",
+      "explicacion": "«Escucho» y «mucho» riman: terminan en «ucho». ¿Y la respuesta? Es el chullo (o lluchu), el gorro de lana con orejeras.",
+      "error": "rima-adivinanza"
+    },
+    {
+      "id": "p14", "tipo": "escribir", "nivel": 1,
+      "enunciado": "Lee y escribe la respuesta: «Tengo plumas y una cresta roja. En la granja canto temprano: ¡quiquiriquí! ¿Quién soy?»",
+      "respuestas": ["gallo", "el gallo", "un gallo", "gallito", "el gallito"],
+      "pista": "Es el papá de los pollitos. Empieza con g.",
+      "explicacion": "Es el gallo: tiene cresta roja y canta «quiquiriquí» temprano en la mañana.",
+      "error": "escribe-respuesta"
+    },
+    {
+      "id": "p15", "tipo": "escribir-libre", "nivel": 3,
+      "enunciado": "«Soy dulce y amarilla por dentro. Tengo una corona de hojas verdes. ¿Qué soy?» Escribe la respuesta y la pista que te ayudó.",
+      "guia": ["Es la...", "porque..."],
+      "requisitos": [
+        { "tipo": "mayuscula-inicial" },
+        { "tipo": "punto-final" },
+        { "tipo": "incluye", "palabras": ["piña", "ananá"] },
+        { "tipo": "incluye", "palabras": ["porque", "pista", "ayudó"] },
+        { "tipo": "min-palabras", "valor": 6 }
+      ],
+      "modelo": "Es la piña porque tiene una corona de hojas verdes.",
+      "pista": "¿Qué fruta de la feria tiene una «corona»? Escribe «Es la...» y después «porque...».",
+      "explicacion": "Es la piña. La pista que más ayuda es la corona de hojas verdes. Por ejemplo: «Es la piña porque tiene una corona de hojas verdes.»",
+      "error": "justifica-respuesta"
+    }
+  ],
+  "comprobacion": [
+    {
+      "id": "c1", "tipo": "opcion", "nivel": 1,
+      "enunciado": "Escucha la adivinanza. ¿Qué es?",
+      "escuchar": "Tengo tubos de caña, uno al lado del otro. Sueno cuando soplas en mí. ¿Qué soy?",
+      "opciones": [
+        { "texto": "la zampoña", "correcta": true },
+        { "texto": "el charango", "pista": "El charango tiene cuerdas: no se sopla.", "error": "no-usa-todas-pistas" },
+        { "texto": "el tambor", "emoji": "🥁", "pista": "El tambor se toca con golpes: no se sopla.", "error": "no-usa-todas-pistas" }
+      ],
+      "pista": "Escucha otra vez: ¿cómo se toca este instrumento?",
+      "explicacion": "Es la zampoña (también llamada siku): tiene tubos de caña en fila y suena cuando soplas.",
+      "error": "escucha-adivinanza"
+    },
+    {
+      "id": "c2", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Lee la adivinanza. Toca la palabra que dice qué come este animal.",
+      "texto": "Soy un ave de la granja. Como *maíz* y pongo huevos. ¿Quién soy?",
+      "pista": "Busca un alimento que este animal come. Ojo: los huevos no los come, los pone.",
+      "explicacion": "La pista de comida es «maíz». La respuesta es la gallina: come maíz y pone huevos.",
+      "error": "identifica-pistas"
+    },
+    {
+      "id": "c3", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha la adivinanza y escribe la respuesta.",
+      "escuchar": "Tengo granos amarillos en filas. Me visto con hojas verdes y tengo pelitos en la punta. Me comes con queso. ¿Qué soy?",
+      "respuestas": ["choclo", "el choclo", "un choclo", "choclos", "los choclos", "mazorca", "la mazorca", "maíz", "el maíz"],
+      "pista": "Se vende en la feria y se come hervido con queso. Empieza con «ch».",
+      "explicacion": "Es el choclo: tiene granos amarillos en filas, hojas verdes y pelitos en la punta.",
+      "error": "escucha-adivinanza"
+    },
+    {
+      "id": "c4", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "¿De qué animal es cada pista?",
+      "categorias": [
+        { "id": "condor", "texto": "cóndor", "emoji": "🦅" },
+        { "id": "jucumari", "texto": "jucumari", "emoji": "🐻" },
+        { "id": "bufeo", "texto": "bufeo", "emoji": "🐬" }
+      ],
+      "elementos": [
+        { "texto": "Vuelo sobre las montañas.", "categoria": "condor" },
+        { "texto": "Tengo plumas negras.", "categoria": "condor" },
+        { "texto": "Tengo manchas claras alrededor de los ojos.", "categoria": "jucumari" },
+        { "texto": "Trepo a los árboles del bosque.", "categoria": "jucumari" },
+        { "texto": "Nado en los ríos del Beni.", "categoria": "bufeo" },
+        { "texto": "No soy pez, pero vivo en el agua.", "categoria": "bufeo" }
+      ],
+      "pista": "Piensa en cada animal: ¿vuela, trepa o nada?",
+      "explicacion": "Cóndor: vuela sobre las montañas y tiene plumas negras. Jucumari: tiene manchas claras alrededor de los ojos y trepa a los árboles. Bufeo: nada en los ríos del Beni y no es pez.",
+      "error": "relaciona-pistas"
+    },
+    {
+      "id": "c5", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "Une cada adivinanza con su respuesta.",
+      "pares": [
+        ["Tela tejida de colores. Te ayudo a cargar en la espalda.", "aguayo"],
+        ["Hago tic tac y te digo la hora.", { "texto": "reloj", "emoji": "⏰" }],
+        ["Tengo un palo largo y barro el patio.", { "texto": "escoba", "emoji": "🧹" }],
+        ["Soy de lana y te abrigo la cabeza.", "chullo"]
+      ],
+      "pista": "Lee cada adivinanza y piensa para qué sirve cada cosa.",
+      "explicacion": "Aguayo: tela de colores para cargar en la espalda. Reloj: hace tic tac y marca la hora. Escoba: tiene palo largo y barre. Chullo: es de lana y abriga la cabeza.",
+      "error": "relaciona-pistas"
+    },
+    {
+      "id": "c6", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa la adivinanza con las palabras que faltan.",
+      "texto": "Vivo en el [Chaco]. Tengo un caparazón muy [duro] y cavo huecos en la [tierra]. ¿Quién soy? El [tatú].",
+      "banco": ["plumas", "cóndor"],
+      "pista": "Lee la adivinanza completa con cada ficha. ¿Qué animal tiene caparazón?",
+      "explicacion": "«Vivo en el Chaco. Tengo un caparazón muy duro y cavo huecos en la tierra. ¿Quién soy? El tatú.» El cóndor tiene plumas, no caparazón.",
+      "error": "completa-adivinanza"
+    },
+    {
+      "id": "c7", "tipo": "opcion", "nivel": 3,
+      "enunciado": "Lee: «Soy larga y tengo cáscara café y gruesa. Por dentro soy blanca. En los llanos me comen hervida o frita.» ¿Qué soy?",
+      "opciones": [
+        { "texto": "la yuca", "correcta": true },
+        { "texto": "la papa", "emoji": "🥔", "pista": "La papa es más redonda y su cáscara es delgada.", "error": "no-usa-todas-pistas" },
+        { "texto": "la zanahoria", "emoji": "🥕", "pista": "La zanahoria es larga, pero por dentro es anaranjada.", "error": "no-usa-todas-pistas" }
+      ],
+      "pista": "Revisa todas las pistas: la forma, la cáscara y el color de adentro.",
+      "explicacion": "Es la yuca: es larga, tiene cáscara café y gruesa, y por dentro es blanca.",
+      "error": "no-usa-todas-pistas"
+    },
+    {
+      "id": "c8", "tipo": "escribir", "nivel": 3,
+      "enunciado": "Escucha la adivinanza y escribe la respuesta.",
+      "escuchar": "Parezco un cuy gigante y tengo pelo café. Vivo en grupo cerca de los ríos del Beni y nado muy bien. Como pasto. ¿Quién soy?",
+      "respuestas": [
+        "capiguara", "la capiguara", "el capiguara",
+        "capibara", "la capibara", "el capibara",
+        "capihuara", "la capihuara", "el capihuara",
+        "carpincho", "el carpincho"
+      ],
+      "pista": "Es el roedor más grande del mundo. En el Beni su nombre empieza con «capi».",
+      "explicacion": "Es la capiguara, también llamada capibara o carpincho. Es el roedor más grande del mundo y vive cerca del agua.",
+      "error": "escucha-adivinanza"
+    }
+  ],
+  "repaso": {
+    "texto": "En una adivinanza, busca las pistas: cómo es, dónde vive, qué hace o para qué sirve. La respuesta debe cumplir todas las pistas.",
+    "visual": { "tipo": "emojis", "items": ["🔍", "✅"], "etiquetas": ["busco las pistas", "reviso todas"] }
+  },
+  "adulto": {
+    "objetivo": "Comprender adivinanzas leídas y escuchadas: identificar las pistas (detalles de forma, color, lugar, alimentación o uso), comprobar que la respuesta cumpla todas y escribirla. También inventar adivinanzas propias, con pistas y una pregunta final.",
+    "sugerencias": [
+      "Jueguen a «¿Qué hay en la bolsa?»: escondan un objeto de la casa (una cuchara, una papa, un chullo) y den tres pistas: cómo es, para qué sirve y dónde se guarda. Luego cambien los papeles.",
+      "En la feria o el mercado, túrnense para inventar adivinanzas de lo que ven («Soy roja y redonda, y me ponen en la ensalada. ¿Qué soy?»). Quien adivina señala el producto.",
+      "Al pasear por el campo, el parque o la plaza, elijan un animal que vean y escriban juntos una adivinanza de tres oraciones que termine con «¿Quién soy?». Léanla a otra persona de la familia."
+    ],
+    "errores": {
+      "identifica-pistas": { "descripcion": "Le cuesta encontrar las pistas (detalles) dentro de la adivinanza.", "sugerencia": "Lean la adivinanza despacio y subrayen juntos cada pista con un color: cómo es, dónde vive, qué hace." },
+      "no-usa-todas-pistas": { "descripcion": "Responde con la primera idea sin revisar si cumple todas las pistas (dice «oveja» porque tiene lana).", "sugerencia": "Pidan que revise su respuesta pista por pista, levantando un dedo por cada pista que sí cumple." },
+      "escucha-adivinanza": { "descripcion": "Le cuesta resolver adivinanzas que solo escucha.", "sugerencia": "Díganle adivinanzas cortas en voz alta y pidan que repita las pistas que recuerda antes de responder." },
+      "relaciona-pistas": { "descripcion": "Le cuesta unir cada pista con el animal, alimento u objeto correcto.", "sugerencia": "Hagan tarjetas con dibujos de animales y alimentos, y otras con pistas; jueguen a juntarlas." },
+      "estrategia-adivinanza": { "descripcion": "No sigue un orden para resolver: responde sin leer ni buscar pistas.", "sugerencia": "Repitan juntos los pasos: leo, busco las pistas, pienso qué cumple todas y reviso mi respuesta." },
+      "completa-adivinanza": { "descripcion": "Le cuesta completar una adivinanza con las palabras que faltan.", "sugerencia": "Lean en voz alta la oración con cada palabra posible y pregunten: ¿así tiene sentido?" },
+      "inventa-adivinanza": { "descripcion": "Le cuesta inventar una adivinanza propia.", "sugerencia": "Elijan un animal y respondan juntos tres preguntas: ¿cómo es?, ¿dónde vive?, ¿qué hace? Luego escriban las respuestas y agreguen «¿Quién soy?»." },
+      "rima-adivinanza": { "descripcion": "No reconoce las palabras que riman en una adivinanza.", "sugerencia": "Lean la adivinanza señalando la última palabra de cada renglón y comparen cómo terminan." },
+      "escribe-respuesta": { "descripcion": "Adivina la respuesta, pero le cuesta escribirla.", "sugerencia": "Pidan que diga la palabra en sílabas con palmadas antes de escribirla, y revisen juntos letra por letra." },
+      "justifica-respuesta": { "descripcion": "Le cuesta explicar qué pista le ayudó a adivinar.", "sugerencia": "Después de cada adivinanza pregunten: «¿cómo lo supiste?». Ayúdenle a responder con «porque...»." }
+    }
+  }
+}

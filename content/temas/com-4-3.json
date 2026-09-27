@@ -1,0 +1,451 @@
+{
+  "id": "com-4-3",
+  "titulo": "Signos de interrogación y exclamación",
+  "objetivo": "Escribo preguntas con ¿ ? y exclamaciones con ¡ !, y las reconozco cuando leo y cuando escucho.",
+  "lecturas": [
+    {
+      "id": "salar",
+      "titulo": "En el salar",
+      "genero": "relato",
+      "emoji": "📷",
+      "parrafos": [
+        "Rosa y su papá llegan al salar de Uyuni. Todo brilla con el sol.",
+        "—¡Qué blanco es todo! —dice Rosa.",
+        "—¿Sabes de qué está hecho el salar? —pregunta su papá.",
+        "—¿Es nieve? —pregunta Rosa.",
+        "—No, es sal. ¡Es el salar más grande del mundo! —responde su papá.",
+        "—¡Qué increíble! ¿Podemos tomar una foto? —dice Rosa."
+      ]
+    },
+    {
+      "id": "feria",
+      "titulo": "Domingo de feria",
+      "genero": "relato",
+      "emoji": "🧺",
+      "parrafos": [
+        "Kusi y su abuela van a la feria el domingo.",
+        "—¡Qué ricas se ven las frutas! —dice Kusi.",
+        "—¿Qué quieres llevar? —pregunta su abuela.",
+        "—¡Quiero mangos! ¿Me compras dos? —pide Kusi.",
+        "—¡Claro que sí! —responde la abuela.",
+        "La vendedora les regala una mandarina. ¡Qué suerte!"
+      ]
+    }
+  ],
+  "explicacion": [
+    {
+      "texto": "Cuando **preguntamos**, usamos los signos de **interrogación**: ¿ al inicio y ? al final. «¿Dónde vives?» es una pregunta.",
+      "audio": "Cuando preguntamos, usamos los signos de interrogación: uno que abre al inicio y otro que cierra al final. ¿Dónde vives? es una pregunta.",
+      "visual": { "tipo": "emojis", "items": ["¿", "🤔", "?"], "etiquetas": ["abre", "pregunta", "cierra"] }
+    },
+    {
+      "texto": "Cuando decimos algo con **emoción** (alegría, sorpresa, susto) o damos un aviso, usamos los signos de **exclamación**: ¡ al inicio y ! al final. «¡Qué lindo!» y «¡Cuidado!» son exclamaciones.",
+      "audio": "Cuando decimos algo con emoción, como alegría, sorpresa o susto, o damos un aviso, usamos los signos de exclamación: uno que abre al inicio y otro que cierra al final. ¡Qué lindo! y ¡Cuidado! son exclamaciones.",
+      "visual": { "tipo": "emojis", "items": ["¡", "😃", "!"], "etiquetas": ["abre", "emoción", "cierra"] }
+    },
+    {
+      "texto": "En castellano siempre escribimos **dos** signos: uno abre y otro cierra. Después de ? o de ! no se pone punto.",
+      "audio": "En castellano siempre escribimos dos signos: uno abre y otro cierra. Después del signo que cierra no se pone punto.",
+      "visual": {
+        "tipo": "tabla",
+        "columnas": ["Así sí ✅", "Así no ❌"],
+        "filas": [["¿Cómo estás?", "Cómo estás?"], ["¡Qué frío!", "Qué frío!"], ["¿Vienes?", "¿Vienes?."]]
+      }
+    },
+    {
+      "texto": "Al leer en voz alta, la voz cambia. En muchas preguntas, como «¿Vienes?», la voz **sube** al final. Las exclamaciones, como «¡Ganamos!», se dicen con **fuerza** y emoción.",
+      "emoji": "🗣️"
+    }
+  ],
+  "ejemplo": {
+    "instruccion": "Mira cómo Inti y Wara usan los signos cuando se escriben mensajes.",
+    "pasos": [
+      {
+        "texto": "Inti quiere saber adónde va Wara. Le escribe la pregunta «¿Adónde vas?» en un mensaje.",
+        "visual": { "tipo": "emojis", "items": ["👦"], "etiquetas": ["¿Adónde vas?"] }
+      },
+      {
+        "texto": "Primero pone el signo ¿ que abre la pregunta. Después escribe «Adónde» con **mayúscula**. Al final pone el signo ? que la cierra, sin punto después.",
+        "audio": "Primero pone el signo que abre la pregunta. Después escribe Adónde con mayúscula. Al final pone el signo que la cierra, sin punto después.",
+        "visual": { "tipo": "tabla", "columnas": ["Abre", "Pregunta", "Cierra"], "filas": [["¿", "Adónde vas", "?"]] }
+      },
+      {
+        "texto": "Wara está muy contenta y responde «¡Voy a la feria!» con emoción. Por eso usa ¡ al inicio y ! al final.",
+        "audio": "Wara está muy contenta y responde con emoción: ¡Voy a la feria! Por eso usa el signo de exclamación que abre al inicio y el que cierra al final.",
+        "visual": { "tipo": "emojis", "items": ["👧"], "etiquetas": ["¡Voy a la feria!"] }
+      },
+      {
+        "texto": "Inti le contesta con una exclamación y con una pregunta. Cada una lleva sus dos signos: uno al inicio y otro al final.",
+        "visual": { "tipo": "tabla", "columnas": ["Inti dice", "Signos"], "filas": [["¡Qué bien!", "¡ !"], ["¿Puedo ir contigo?", "¿ ?"]] }
+      }
+    ]
+  },
+  "guiada": {
+    "intro": "Ahora lo hacemos juntos.",
+    "pasos": [
+      {
+        "id": "g1", "tipo": "opcion",
+        "enunciado": "Escucha. ¿Es una pregunta o una exclamación?",
+        "apoyo": "Si la persona quiere saber algo, es una pregunta. Si lo dice con emoción, es una exclamación.",
+        "escuchar": "¿Cómo se llama tu perro?",
+        "opciones": [
+          { "texto": "Pregunta: ¿ ?", "correcta": true },
+          { "texto": "Exclamación: ¡ !", "pista": "¿La persona quiere saber algo? Escucha otra vez.", "error": "confunde-pregunta-exclamacion" }
+        ],
+        "mezclar": false,
+        "columnas": 2,
+        "pista": "Escucha otra vez: ¿la persona quiere saber algo?",
+        "explicacion": "Es una pregunta: la persona quiere saber el nombre del perro. Por eso lleva ¿ al inicio y ? al final.",
+        "error": "confunde-pregunta-exclamacion"
+      },
+      {
+        "id": "g2", "tipo": "completar",
+        "enunciado": "Pon los signos que faltan.",
+        "apoyo": "Cada pregunta y cada exclamación lleva un signo al inicio y otro al final.",
+        "texto": "[¿]Cómo te llamas[?] [¡]Qué nombre tan bonito[!]",
+        "pista": "La primera oración quiere saber algo. La segunda muestra alegría.",
+        "explicacion": "«¿Cómo te llamas?» lleva ¿ ? porque quiere saber algo. «¡Qué nombre tan bonito!» lleva ¡ ! porque muestra alegría.",
+        "error": "confunde-pregunta-exclamacion"
+      },
+      {
+        "id": "g3", "tipo": "escribir",
+        "enunciado": "Escucha la pregunta y escríbela con ¿ al inicio y ? al final.",
+        "audio": "Escucha la pregunta y escríbela con el signo que abre al inicio y el signo que cierra al final.",
+        "apoyo": "Si no ves el signo ¿ en el teclado, mantén apretado el signo ? un momento.",
+        "escuchar": "¿Dónde está el gato?",
+        "respuestas": ["¿Dónde está el gato?"],
+        "pista": "Pon ¿ pegado a la primera palabra y ? pegado a la última.",
+        "explicacion": "Se escribe «¿Dónde está el gato?», con ¿ al inicio y ? al final.",
+        "error": "dictado-signos"
+      }
+    ]
+  },
+  "practica": [
+    {
+      "id": "p1", "tipo": "memoria", "nivel": 1,
+      "enunciado": "Encuentra las parejas: cada signo con su nombre.",
+      "pares": [
+        ["¿ ?", "interrogación"],
+        ["¡ !", "exclamación"],
+        [".", "punto"],
+        [",", "coma"]
+      ],
+      "pista": "Los signos ¿ ? sirven para preguntar y los signos ¡ ! sirven para mostrar emoción.",
+      "explicacion": "Los signos ¿ ? son de interrogación y los signos ¡ ! son de exclamación. El punto es «.» y la coma es «,».",
+      "error": "nombres-signos"
+    },
+    {
+      "id": "p2", "tipo": "clasificar", "nivel": 1,
+      "enunciado": "¿Es una pregunta o una exclamación? Mira los signos.",
+      "categorias": [
+        { "id": "pregunta", "texto": "Pregunta", "emoji": "❓" },
+        { "id": "exclamacion", "texto": "Exclamación", "emoji": "❗" }
+      ],
+      "elementos": [
+        { "texto": "¿Tienes hambre?", "categoria": "pregunta" },
+        { "texto": "¡Qué rico!", "categoria": "exclamacion" },
+        { "texto": "¿Dónde vives?", "categoria": "pregunta" },
+        { "texto": "¡Cuidado!", "categoria": "exclamacion" },
+        { "texto": "¿Quién llamó?", "categoria": "pregunta" },
+        { "texto": "¡Feliz cumpleaños!", "categoria": "exclamacion" }
+      ],
+      "pista": "Los signos ¿ ? son para preguntar. Los signos ¡ ! son para mostrar emoción o dar un aviso.",
+      "explicacion": "«¿Tienes hambre?», «¿Dónde vives?» y «¿Quién llamó?» son preguntas. «¡Qué rico!», «¡Cuidado!» y «¡Feliz cumpleaños!» son exclamaciones.",
+      "error": "confunde-pregunta-exclamacion"
+    },
+    {
+      "id": "p3", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Toca las palabras que sirven para preguntar.",
+      "texto": "¿*Dónde* está mi gorra? ¿*Quién* la tiene?",
+      "pista": "Piensa: ¿qué palabra pregunta por un lugar? ¿Cuál pregunta por una persona?",
+      "explicacion": "«Dónde» pregunta por un lugar y «Quién» pregunta por una persona. Cuando preguntan, estas palabras llevan tilde.",
+      "error": "palabras-pregunta"
+    },
+    {
+      "id": "p4", "tipo": "escribir", "nivel": 1,
+      "enunciado": "Escucha la exclamación y escríbela con ¡ al inicio y ! al final.",
+      "audio": "Escucha la exclamación y escríbela con el signo que abre al inicio y el signo que cierra al final.",
+      "escuchar": "¡Qué rico!",
+      "respuestas": ["¡Qué rico!"],
+      "pista": "Pon ¡ pegado a la primera palabra y ! pegado a la última. Si no ves el signo ¡, mantén apretado el signo ! un momento.",
+      "explicacion": "Se escribe «¡Qué rico!», con ¡ al inicio y ! al final.",
+      "error": "dictado-signos"
+    },
+    {
+      "id": "p5", "tipo": "completar", "nivel": 2,
+      "enunciado": "Pon los signos que faltan.",
+      "texto": "[¡]Qué susto[!] [¿]Quién tocó la puerta[?]",
+      "pista": "Una oración muestra una emoción y la otra quiere saber algo.",
+      "explicacion": "«¡Qué susto!» lleva ¡ ! porque muestra una emoción. «¿Quién tocó la puerta?» lleva ¿ ? porque quiere saber algo.",
+      "error": "confunde-pregunta-exclamacion"
+    },
+    {
+      "id": "p6", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "Estas oraciones perdieron sus signos. ¿Qué signos necesita cada una?",
+      "categorias": [
+        { "id": "interrogacion", "texto": "¿ ?" },
+        { "id": "exclamacion", "texto": "¡ !" }
+      ],
+      "elementos": [
+        { "texto": "Dónde vive el jucumari", "categoria": "interrogacion" },
+        { "texto": "Qué bonito es el lago", "categoria": "exclamacion" },
+        { "texto": "Cómo se llama tu hermana", "categoria": "interrogacion" },
+        { "texto": "Cuidado con el fuego", "categoria": "exclamacion" },
+        { "texto": "Cuándo vuelve la abuela", "categoria": "interrogacion" },
+        { "texto": "Qué rica está la sopa", "categoria": "exclamacion" }
+      ],
+      "pista": "Pregúntate: ¿quiere saber algo o muestra una emoción? Si quiere saber algo, es una pregunta. Si muestra emoción o da un aviso, es una exclamación.",
+      "explicacion": "«¿Dónde vive el jucumari?», «¿Cómo se llama tu hermana?» y «¿Cuándo vuelve la abuela?» son preguntas. «¡Qué bonito es el lago!», «¡Cuidado con el fuego!» y «¡Qué rica está la sopa!» son exclamaciones.",
+      "error": "confunde-pregunta-exclamacion"
+    },
+    {
+      "id": "p7", "tipo": "opcion", "nivel": 2,
+      "enunciado": "Escucha. ¿Qué signos lleva lo que escuchaste?",
+      "escuchar": "¡Qué grande es el lago Titicaca!",
+      "opciones": [
+        { "texto": "¡ !", "correcta": true },
+        { "texto": "¿ ?", "pista": "¿La persona quiere saber algo o dice algo con sorpresa?", "error": "confunde-pregunta-exclamacion" }
+      ],
+      "mezclar": false,
+      "columnas": 2,
+      "pista": "Escucha otra vez. ¿La persona pregunta algo o se sorprende?",
+      "explicacion": "Es una exclamación: la persona se sorprende de lo grande que es el lago. Por eso lleva ¡ al inicio y ! al final.",
+      "error": "confunde-pregunta-exclamacion"
+    },
+    {
+      "id": "p8", "tipo": "ordenar", "nivel": 2,
+      "enunciado": "Ordena las palabras para formar la pregunta.",
+      "elementos": ["¿Cuándo", "es", "tu", "cumpleaños?"],
+      "unir": " ",
+      "pista": "La palabra que tiene ¿ va primero y la que tiene ? va al final.",
+      "explicacion": "Se forma «¿Cuándo es tu cumpleaños?», con la palabra que tiene ¿ al inicio y la que tiene ? al final.",
+      "error": "orden-pregunta"
+    },
+    {
+      "id": "p9", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha y escribe la pregunta con sus signos.",
+      "escuchar": "¿Cuántas patas tiene una araña?",
+      "respuestas": ["¿Cuántas patas tiene una araña?"],
+      "mayusculas": "estricto",
+      "pista": "Pon ¿ al inicio, empieza con mayúscula y pon ? al final.",
+      "explicacion": "Se escribe «¿Cuántas patas tiene una araña?», con ¿ al inicio y ? al final. Por cierto, ¡la araña tiene ocho patas!",
+      "error": "dictado-signos"
+    },
+    {
+      "id": "p10", "tipo": "multiple", "nivel": 2,
+      "enunciado": "Elige todas las oraciones bien escritas.",
+      "opciones": [
+        { "texto": "¿Cómo estás?", "correcta": true },
+        { "texto": "¡Qué frío hace!", "correcta": true },
+        { "texto": "Cómo estás?", "pista": "Falta el signo que abre la pregunta.", "error": "apertura-cierre" },
+        { "texto": "¡Qué calor hace.", "pista": "Mira el final: ¿con qué signo se cierra una exclamación?", "error": "apertura-cierre" },
+        { "texto": "¿Vienes conmigo?.", "pista": "Después del ? no va punto.", "error": "punto-tras-signo" }
+      ],
+      "columnas": 1,
+      "pista": "Revisa que cada una tenga su signo de apertura, su signo de cierre y nada más.",
+      "explicacion": "«¿Cómo estás?» y «¡Qué frío hace!» están bien escritas. A «Cómo estás?» le falta el signo que abre, a «¡Qué calor hace.» le falta el signo que cierra y a «¿Vienes conmigo?.» le sobra el punto.",
+      "error": "apertura-cierre"
+    },
+    {
+      "id": "p11", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "Une cada situación con lo que dirías.",
+      "pares": [
+        ["Quieres saber la hora.", "¿Qué hora es?"],
+        ["Ves un arcoíris muy lindo.", "¡Qué lindo arcoíris!"],
+        ["Quieres saber el nombre de una niña.", "¿Cómo te llamas?"],
+        ["Tu equipo ganó el partido.", "¡Ganamos el partido!"]
+      ],
+      "pista": "Si quieres saber algo, eliges una pregunta. Si sientes una emoción, eliges una exclamación.",
+      "explicacion": "«¿Qué hora es?» y «¿Cómo te llamas?» son preguntas: sirven para saber algo. «¡Qué lindo arcoíris!» y «¡Ganamos el partido!» son exclamaciones: muestran emoción.",
+      "error": "confunde-pregunta-exclamacion"
+    },
+    {
+      "id": "p12", "tipo": "escribir-libre", "nivel": 2,
+      "enunciado": "Escribe una pregunta para alguien de tu familia.",
+      "guia": ["¿Qué comida...", "¿Cuándo..."],
+      "requisitos": [
+        { "tipo": "signos-pregunta" },
+        { "tipo": "mayuscula-inicial" },
+        { "tipo": "min-palabras", "valor": 3 }
+      ],
+      "modelo": "¿Qué comida te gusta más?",
+      "pista": "Piensa en algo que quieres saber. Pon ¿ al inicio y ? al final.",
+      "explicacion": "Por ejemplo, «¿Qué comida te gusta más?» lleva ¿ al inicio y ? al final.",
+      "error": "produce-pregunta-exclamacion"
+    },
+    {
+      "id": "p13", "tipo": "tocar", "nivel": 3,
+      "enunciado": "A las preguntas les falta el signo ¿ del inicio. Toca la palabra donde empieza cada pregunta.",
+      "audio": "A las preguntas les falta el signo que abre. Toca la palabra donde empieza cada pregunta.",
+      "texto": "Mi tía vive en Potosí. *Tiene* una llama? Mi primo dice que sí. *Cómo* se llama?",
+      "pista": "Busca cada signo ? y mira hacia atrás: la pregunta empieza justo después del punto o del signo anterior.",
+      "explicacion": "Las preguntas son «¿Tiene una llama?» y «¿Cómo se llama?», así que el signo ¿ va antes de «Tiene» y antes de «Cómo».",
+      "error": "apertura-cierre"
+    },
+    {
+      "id": "p14", "tipo": "escribir", "nivel": 3,
+      "enunciado": "Escribe la pregunta con sus signos y con mayúscula: cuántos hermanos tienes",
+      "respuestas": ["¿Cuántos hermanos tienes?"],
+      "mayusculas": "estricto",
+      "pista": "Pon ¿ al inicio, empieza con mayúscula y pon ? al final.",
+      "explicacion": "Se escribe «¿Cuántos hermanos tienes?», con ¿ al inicio, «Cuántos» con mayúscula y ? al final.",
+      "error": "corrige-signos"
+    },
+    {
+      "id": "p15", "tipo": "escribir-libre", "nivel": 3,
+      "enunciado": "Escribe dos oraciones para una amiga que vive en Pando: una pregunta y una exclamación.",
+      "guia": ["¿Cómo es...", "¡Qué lindo..."],
+      "requisitos": [
+        { "tipo": "signos-pregunta" },
+        { "tipo": "signos-exclamacion" },
+        { "tipo": "mayuscula-inicial" },
+        { "tipo": "min-oraciones", "valor": 2 }
+      ],
+      "modelo": "¿Cómo es el río de tu pueblo? ¡Quiero visitarte pronto!",
+      "pista": "Primero escribe algo que quieres saber, con ¿ al inicio y ? al final. Después escribe algo que sientes, con ¡ al inicio y ! al final.",
+      "explicacion": "Un ejemplo es «¿Cómo es el río de tu pueblo? ¡Quiero visitarte pronto!», con una pregunta y una exclamación, cada una con sus dos signos.",
+      "error": "produce-pregunta-exclamacion"
+    },
+    {
+      "id": "p16", "tipo": "numero", "nivel": 3,
+      "enunciado": "Lee el texto. ¿Cuántas preguntas hay?",
+      "lectura": "salar",
+      "respuesta": 3,
+      "erroresComunes": [
+        { "respuesta": 2, "pista": "Revisa bien el último turno de Rosa: dice dos cosas.", "error": "lee-signos" },
+        { "respuesta": 6, "pista": "Contaste también las exclamaciones. Cuenta solo las oraciones que tienen ¿ al inicio y ? al final.", "error": "confunde-pregunta-exclamacion" }
+      ],
+      "pista": "Busca los signos ¿ ? en el texto y cuenta las preguntas.",
+      "explicacion": "«¿Sabes de qué está hecho el salar?», «¿Es nieve?» y «¿Podemos tomar una foto?» son las 3 preguntas del texto.",
+      "error": "lee-signos"
+    }
+  ],
+  "comprobacion": [
+    {
+      "id": "c1", "tipo": "opcion", "nivel": 1,
+      "enunciado": "Escucha. ¿Es una pregunta o una exclamación?",
+      "escuchar": "¡Qué alegría verte!",
+      "opciones": [
+        { "texto": "Pregunta: ¿ ?", "pista": "¿La persona quiere saber algo o dice algo con alegría?", "error": "confunde-pregunta-exclamacion" },
+        { "texto": "Exclamación: ¡ !", "correcta": true }
+      ],
+      "mezclar": false,
+      "columnas": 2,
+      "pista": "Escucha otra vez. ¿La persona pregunta algo o está contenta?",
+      "explicacion": "Es una exclamación: la persona está feliz de ver a alguien. Por eso lleva ¡ al inicio y ! al final.",
+      "error": "confunde-pregunta-exclamacion"
+    },
+    {
+      "id": "c2", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Toca las palabras que sirven para preguntar.",
+      "texto": "¿*Quién* trajo las salteñas? ¿*Cuántas* hay?",
+      "pista": "Busca la palabra que pregunta por una persona y la que pregunta por una cantidad.",
+      "explicacion": "«Quién» pregunta por una persona y «Cuántas» pregunta por una cantidad. Cuando preguntan, estas palabras llevan tilde.",
+      "error": "palabras-pregunta"
+    },
+    {
+      "id": "c3", "tipo": "completar", "nivel": 2,
+      "enunciado": "Pon los signos que faltan en estas tres oraciones.",
+      "texto": "[¡]Qué calor hace[!] [¿]Dónde hay sombra[?] Hay un árbol cerca[.]",
+      "banco": [","],
+      "pista": "Una oración muestra lo que siente alguien, otra quiere saber algo y la última solo cuenta algo.",
+      "explicacion": "«¡Qué calor hace!» muestra una emoción, «¿Dónde hay sombra?» quiere saber un lugar y «Hay un árbol cerca.» solo cuenta algo, por eso termina con punto.",
+      "error": "confunde-pregunta-exclamacion"
+    },
+    {
+      "id": "c4", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha y escribe la pregunta con sus signos.",
+      "escuchar": "¿A qué hora empieza la fiesta?",
+      "respuestas": ["¿A qué hora empieza la fiesta?"],
+      "mayusculas": "estricto",
+      "pista": "Pon ¿ al inicio, empieza con mayúscula y pon ? al final.",
+      "explicacion": "Se escribe «¿A qué hora empieza la fiesta?», con ¿ al inicio y ? al final.",
+      "error": "dictado-signos"
+    },
+    {
+      "id": "c5", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "Estas oraciones no tienen signos. ¿Cuáles son preguntas y cuáles son exclamaciones?",
+      "categorias": [
+        { "id": "interrogacion", "texto": "Pregunta ¿ ?" },
+        { "id": "exclamacion", "texto": "Exclamación ¡ !" }
+      ],
+      "elementos": [
+        { "texto": "Dónde duerme la paraba", "categoria": "interrogacion" },
+        { "texto": "Qué bonito canta el gallo", "categoria": "exclamacion" },
+        { "texto": "Cuándo vamos a la feria", "categoria": "interrogacion" },
+        { "texto": "Auxilio", "categoria": "exclamacion" },
+        { "texto": "Quién ganó la carrera", "categoria": "interrogacion" },
+        { "texto": "Qué rápido corre el tren", "categoria": "exclamacion" }
+      ],
+      "pista": "Pregúntate: ¿quiere saber algo o muestra una emoción? Pedir ayuda con fuerza también es una exclamación.",
+      "explicacion": "«¿Dónde duerme la paraba?», «¿Cuándo vamos a la feria?» y «¿Quién ganó la carrera?» son preguntas. «¡Qué bonito canta el gallo!», «¡Auxilio!» y «¡Qué rápido corre el tren!» son exclamaciones.",
+      "error": "confunde-pregunta-exclamacion"
+    },
+    {
+      "id": "c6", "tipo": "multiple", "nivel": 2,
+      "enunciado": "Elige todas las oraciones bien escritas.",
+      "opciones": [
+        { "texto": "¿Dónde está Ana?", "correcta": true },
+        { "texto": "¡Feliz cumpleaños!", "correcta": true },
+        { "texto": "Qué rico!", "pista": "Falta el signo que abre la exclamación.", "error": "apertura-cierre" },
+        { "texto": "¿Tienes sed?.", "pista": "Después del ? no va punto.", "error": "punto-tras-signo" },
+        { "texto": "¡Bravo¡", "pista": "Mira el signo del final. ¿Abre o cierra?", "error": "apertura-cierre" }
+      ],
+      "columnas": 1,
+      "pista": "Revisa que cada una tenga su signo de apertura, su signo de cierre y nada más.",
+      "explicacion": "«¿Dónde está Ana?» y «¡Feliz cumpleaños!» están bien escritas. A «Qué rico!» le falta el signo que abre, a «¿Tienes sed?.» le sobra el punto y en «¡Bravo¡» el último signo está al revés.",
+      "error": "apertura-cierre"
+    },
+    {
+      "id": "c7", "tipo": "numero", "nivel": 3,
+      "enunciado": "Lee el texto. ¿Cuántas exclamaciones hay?",
+      "lectura": "feria",
+      "respuesta": 4,
+      "erroresComunes": [
+        { "respuesta": 3, "pista": "Revisa todo el texto: algunos párrafos tienen dos oraciones, y el último párrafo no es parte de la conversación.", "error": "lee-signos" },
+        { "respuesta": 2, "pista": "Esas son las preguntas. Cuenta las oraciones que empiezan con ¡ y terminan con el signo de cierre.", "error": "confunde-pregunta-exclamacion" },
+        { "respuesta": 6, "pista": "Contaste también las preguntas. Cuenta solo las oraciones que tienen ¡ al inicio y ! al final.", "error": "confunde-pregunta-exclamacion" }
+      ],
+      "pista": "Busca cada signo ¡ en el texto y cuenta cuántas exclamaciones empiezan con él.",
+      "explicacion": "«¡Qué ricas se ven las frutas!», «¡Quiero mangos!», «¡Claro que sí!» y «¡Qué suerte!» son las 4 exclamaciones del texto.",
+      "error": "lee-signos"
+    },
+    {
+      "id": "c8", "tipo": "escribir", "nivel": 3,
+      "enunciado": "Escribe la exclamación con sus signos y con mayúscula: qué grande es el cóndor",
+      "respuestas": ["¡Qué grande es el cóndor!"],
+      "mayusculas": "estricto",
+      "pista": "Pon ¡ al inicio, empieza con mayúscula y pon ! al final.",
+      "explicacion": "Se escribe «¡Qué grande es el cóndor!», con ¡ al inicio, «Qué» con mayúscula y ! al final.",
+      "error": "corrige-signos"
+    }
+  ],
+  "repaso": {
+    "texto": "Para preguntar: ¿ al inicio y ? al final. Para mostrar emoción o dar un aviso: ¡ al inicio y ! al final. Siempre se escriben los dos signos, y después de ? o ! no va punto.",
+    "visual": {
+      "tipo": "tabla",
+      "columnas": ["Signos", "Sirven para", "Ejemplo"],
+      "filas": [["¿ ?", "preguntar", "¿Dónde vives?"], ["¡ !", "mostrar emoción", "¡Qué lindo!"]]
+    }
+  },
+  "adulto": {
+    "objetivo": "Reconocer y escribir preguntas (signos de interrogación ¿ ?) y exclamaciones (signos de exclamación ¡ !), recordando que en castellano se escriben los dos signos, que la primera palabra va con mayúscula cuando empieza la oración y que después de ? o ! no se pone punto. También distinguir preguntas y exclamaciones por la entonación al escuchar.",
+    "sugerencias": [
+      "Jueguen a «¿pregunta o exclamación?»: digan en voz alta frases como «¿Tienes frío?» o «¡Qué frío!» y que el niño o la niña levante un dedo si es pregunta o toda la mano si es exclamación.",
+      "En la feria o en el mercado, pidan que escriba en un papel tres preguntas para hacerle a quien vende (¿Cuánto cuesta el queso?) y que después las haga en voz alta. En muchos teclados de teléfono, el ¿ y el ¡ aparecen al mantener apretados los signos ? y ! del teclado.",
+      "Al leer un cuento o una historieta, busquen juntos los signos ¿ ? y ¡ !, y lean esas partes con la voz que corresponde: preguntando o con emoción."
+    ],
+    "errores": {
+      "confunde-pregunta-exclamacion": { "descripcion": "Confunde las preguntas con las exclamaciones.", "sugerencia": "Pregunten siempre: «¿quiere saber algo?» (pregunta) o «¿dice algo con emoción?» (exclamación). Practiquen diciendo la misma palabra de las dos formas, «¿Llueve?» y «¡Llueve!», y escuchen cómo cambia la voz." },
+      "dictado-signos": { "descripcion": "En los dictados olvida los signos de apertura (¿ ¡) o los de cierre (? !).", "sugerencia": "Antes de escribir, que diga en voz alta si lo que escuchó es una pregunta o una exclamación y que escriba primero el signo de apertura." },
+      "nombres-signos": { "descripcion": "No recuerda el nombre de los signos de puntuación.", "sugerencia": "Hagan tarjetas grandes con ¿ ?, ¡ !, el punto y la coma, y jueguen a mostrar una tarjeta y decir su nombre." },
+      "palabras-pregunta": { "descripcion": "No reconoce las palabras que sirven para preguntar (qué, quién, dónde, cómo, cuándo, cuántos).", "sugerencia": "Jueguen a hacer preguntas sobre un dibujo o una foto usando cada vez una palabra distinta: ¿quién?, ¿dónde?, ¿cómo?, ¿cuántos?" },
+      "orden-pregunta": { "descripcion": "Le cuesta ordenar las palabras de una pregunta.", "sugerencia": "Escriban preguntas cortas en tiras de papel, córtenlas por palabras y pidan que las ordene: primero la palabra que lleva ¿ y al final la que lleva el signo de cierre." },
+      "apertura-cierre": { "descripcion": "Olvida el signo de apertura (¿ ¡) o el de cierre (? !), o los escribe al revés.", "sugerencia": "Muestren que los signos son como paréntesis: uno abre y otro cierra. Al revisar, que marque con color el signo del inicio y el del final." },
+      "punto-tras-signo": { "descripcion": "Pone un punto después del signo de cierre (? o !).", "sugerencia": "Recuérdenle que ? y ! ya tienen su propio punto abajo: no necesitan otro." },
+      "corrige-signos": { "descripcion": "Le cuesta escribir una pregunta o exclamación con sus signos y su mayúscula.", "sugerencia": "Escriban juntos frases sin signos y pidan que las corrija: signo de apertura, mayúscula y signo de cierre." },
+      "produce-pregunta-exclamacion": { "descripcion": "Le cuesta escribir sus propias preguntas y exclamaciones.", "sugerencia": "Escríbanse notitas: el adulto hace una pregunta por escrito (¿Qué quieres cenar?) y el niño o la niña responde y hace otra pregunta o una exclamación." },
+      "lee-signos": { "descripcion": "Al leer un texto no identifica todas las preguntas o exclamaciones, sobre todo cuando hay dos oraciones juntas.", "sugerencia": "Lean un diálogo y pidan que subraye con un color las preguntas y con otro las exclamaciones antes de contarlas." }
+    }
+  }
+}

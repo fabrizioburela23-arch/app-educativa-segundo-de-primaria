@@ -1,0 +1,402 @@
+{
+  "id": "mat-1-5",
+  "titulo": "Pares e impares",
+  "objetivo": "Sé si un número es par o impar formando parejas y mirando su última cifra.",
+  "explicacion": [
+    {
+      "texto": "Un número es **par** si puedes formar parejas y no sobra nada. Con 8 medias formas 4 parejas. ¡8 es par!",
+      "emoji": "🧦",
+      "visual": { "tipo": "grupos", "grupos": 4, "porGrupo": 2, "emoji": "🧦" }
+    },
+    {
+      "texto": "Un número es **impar** si, al formar parejas, sobra uno solito. Con 7 medias formas 3 parejas y sobra 1. ¡7 es impar!",
+      "visual": { "tipo": "tabla", "columnas": ["Pareja 1", "Pareja 2", "Pareja 3", "Sobra"], "filas": [["🧦🧦", "🧦🧦", "🧦🧦", "🧦"]] }
+    },
+    {
+      "texto": "Con números grandes, mira solo la **última cifra**. Si es 0, 2, 4, 6 u 8, el número es par. Si es 1, 3, 5, 7 o 9, es impar. 358 es par porque termina en 8.",
+      "emoji": "💡",
+      "visual": { "tipo": "tabla", "columnas": ["Par: termina en", "Impar: termina en"], "filas": [["0, 2, 4, 6, 8", "1, 3, 5, 7, 9"]] }
+    },
+    {
+      "texto": "Los pares y los impares se turnan: impar, par, impar, par... Los pares van de 2 en 2: 2, 4, 6, 8, 10. Los impares también: 1, 3, 5, 7, 9.",
+      "visual": { "tipo": "recta", "min": 0, "max": 10, "paso": 1, "marcar": [2, 4, 6, 8, 10] }
+    }
+  ],
+  "ejemplo": {
+    "instruccion": "Mira cómo sabemos si un número es par o impar. Después, intenta repartir 9 naranjas en 2 grupos iguales. ¿Sobra alguna?",
+    "pasos": [
+      {
+        "texto": "Arami tiene 10 choclos. Los junta de 2 en 2: forma 5 parejas y no sobra ninguno. ¡10 es par!",
+        "visual": { "tipo": "grupos", "grupos": 5, "porGrupo": 2, "emoji": "🌽" }
+      },
+      {
+        "texto": "Su abuelo le regala 1 choclo más. Ahora tiene 11. Forma 5 parejas y sobra 1. ¡11 es impar!",
+        "visual": { "tipo": "tabla", "columnas": ["Parejas", "Sobra"], "filas": [["🌽🌽 🌽🌽 🌽🌽 🌽🌽 🌽🌽", "🌽"]] }
+      },
+      {
+        "texto": "Con números grandes no hace falta formar parejas. Miramos la última cifra: 11 termina en 1 y es impar. 346 termina en 6 y es par.",
+        "visual": { "tipo": "tabla", "columnas": ["Número", "Última cifra", "Es..."], "filas": [["11", "1", "impar"], ["346", "6", "par"]] }
+      }
+    ],
+    "explorar": { "tipo": "repartir", "total": 9, "grupos": 2, "emoji": "🍊" }
+  },
+  "guiada": {
+    "intro": "Vamos a hacerlo juntos, paso a paso.",
+    "pasos": [
+      {
+        "id": "g1", "tipo": "manipular",
+        "enunciado": "Reparte 12 naranjas entre 2 niños: pon la misma cantidad en cada plato.",
+        "apoyo": "Pon una naranja en cada plato, por turnos, hasta que no quede ninguna.",
+        "manipulable": { "tipo": "repartir", "total": 12, "grupos": 2, "emoji": "🍊" },
+        "pista": "Cuenta las naranjas de cada plato. ¿Tienen lo mismo los dos? ¿Queda alguna sin repartir?",
+        "explicacion": "Cada niño recibe 6 naranjas y no sobra ninguna. Por eso 12 es par.",
+        "error": "forma-parejas"
+      },
+      {
+        "id": "g2", "tipo": "clasificar",
+        "enunciado": "¿Es par o impar? Mira la última cifra.",
+        "apoyo": "Tapa con tu dedo las otras cifras y mira solo la última.",
+        "categorias": [ { "id": "par", "texto": "Par" }, { "id": "impar", "texto": "Impar" } ],
+        "elementos": [
+          { "texto": "14", "categoria": "par" }, { "texto": "27", "categoria": "impar" },
+          { "texto": "30", "categoria": "par" }, { "texto": "45", "categoria": "impar" },
+          { "texto": "58", "categoria": "par" }, { "texto": "63", "categoria": "impar" }
+        ],
+        "pista": "Los pares terminan en 0, 2, 4, 6 u 8.",
+        "explicacion": "14, 30 y 58 son pares: terminan en 4, 0 y 8. 27, 45 y 63 son impares: terminan en 7, 5 y 3.",
+        "error": "ultima-cifra"
+      },
+      {
+        "id": "g3", "tipo": "numero",
+        "enunciado": "¿Cuál es el número par que viene justo después de 37?",
+        "apoyo": "Los pares y los impares se turnan. Mira en la recta qué número sigue a 37.",
+        "visual": { "tipo": "recta", "min": 30, "max": 40, "paso": 1, "marcar": [37] },
+        "respuesta": 38,
+        "erroresComunes": [
+          { "respuesta": 39, "pista": "39 termina en 9: es impar. Busca uno que termine en 0, 2, 4, 6 u 8.", "error": "anterior-siguiente-par" },
+          { "respuesta": 36, "pista": "36 es par, pero está antes de 37. Busca el que viene después.", "error": "anterior-siguiente-par" }
+        ],
+        "pista": "Justo después de un número impar viene un número par.",
+        "explicacion": "Después de 37 viene 38. Termina en 8, así que es par.",
+        "error": "anterior-siguiente-par"
+      }
+    ]
+  },
+  "practica": [
+    {
+      "id": "p1", "tipo": "manipular", "nivel": 1,
+      "enunciado": "Arma 5 parejas de guantes: pon 2 guantes en cada grupo.",
+      "manipulable": { "tipo": "grupos", "grupos": 5, "porGrupo": 2, "emoji": "🧤" },
+      "pista": "Una pareja tiene 2 guantes.",
+      "explicacion": "5 parejas de 2 guantes son 10 guantes, y no sobra ninguno: 10 es par.",
+      "error": "forma-parejas"
+    },
+    {
+      "id": "p2", "tipo": "opcion", "nivel": 1,
+      "enunciado": "Nayra junta estos huevos de 2 en 2. ¿Sobra alguno?",
+      "visual": { "tipo": "emoji", "valor": "🥚", "cantidad": 7 },
+      "opciones": [
+        { "texto": "Sí, sobra 1.", "correcta": true },
+        { "texto": "No, no sobra ninguno.", "pista": "Junta los huevos de 2 en 2 con tu dedo. ¿Queda uno sin pareja?", "error": "forma-parejas" }
+      ],
+      "mezclar": false,
+      "columnas": 2,
+      "pista": "Cuenta los huevos de 2 en 2: 2, 4, 6...",
+      "explicacion": "Hay 7 huevos: se forman 3 parejas y sobra 1. Por eso 7 es impar.",
+      "error": "forma-parejas"
+    },
+    {
+      "id": "p3", "tipo": "generador", "nivel": 1, "generador": "par-impar", "params": { "max": 20 }
+    },
+    {
+      "id": "p4", "tipo": "completar", "nivel": 1,
+      "enunciado": "Completa contando de 2 en 2.",
+      "texto": "2, 4, [6], 8, [10], [12], 14",
+      "banco": ["7", "11"],
+      "pista": "Suma 2 cada vez.",
+      "explicacion": "De 2 en 2: 2, 4, 6, 8, 10, 12, 14. Todos son pares.",
+      "error": "secuencia-pares"
+    },
+    {
+      "id": "p5", "tipo": "generador", "nivel": 2, "generador": "par-impar", "params": { "max": 999 }
+    },
+    {
+      "id": "p6", "tipo": "tocar", "nivel": 2,
+      "enunciado": "Toca los números pares.",
+      "texto": "En la calle Junín hay casas con los números 15, *28*, 31, *46*, *70* y 83.",
+      "pista": "Mira la última cifra de cada número.",
+      "explicacion": "28, 46 y 70 son pares: terminan en 8, 6 y 0. 15, 31 y 83 son impares.",
+      "error": "ultima-cifra"
+    },
+    {
+      "id": "p7", "tipo": "numero", "nivel": 2,
+      "enunciado": "Mira el 45 en la recta. Escribe el número par que está antes y el que está después.",
+      "visual": { "tipo": "recta", "min": 40, "max": 50, "paso": 1, "marcar": [45] },
+      "campos": [
+        { "etiqueta": "Par anterior", "respuesta": 44 },
+        { "etiqueta": "Par siguiente", "respuesta": 46 }
+      ],
+      "pista": "45 es impar. Sus dos vecinos en la recta son pares.",
+      "explicacion": "Antes de 45 está 44 y después está 46. Los dos son pares.",
+      "error": "anterior-siguiente-par"
+    },
+    {
+      "id": "p8", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha el número. ¿Es par o impar? Escribe la palabra.",
+      "escuchar": "doscientos treinta y siete",
+      "respuestas": ["impar", "es impar"],
+      "pista": "Escucha otra vez el final del número. ¿En qué cifra termina?",
+      "explicacion": "Escuchaste 237. Termina en 7, por eso es impar.",
+      "error": "par-impar"
+    },
+    {
+      "id": "p9", "tipo": "pasos", "nivel": 2,
+      "enunciado": "En la fiesta de la escuela, 16 estudiantes bailan en parejas.",
+      "visual": { "tipo": "emoji", "valor": "🧒", "cantidad": 16 },
+      "pasos": [
+        {
+          "tipo": "numero", "enunciado": "¿Cuántas parejas forman?",
+          "respuesta": 8,
+          "erroresComunes": [ { "respuesta": 32, "pista": "Cada pareja tiene 2 estudiantes. Agrupa los 16 de 2 en 2 y cuenta los grupos.", "error": "forma-parejas" } ],
+          "pista": "Agrupa los 16 de 2 en 2 y cuenta los grupos.",
+          "explicacion": "16 estudiantes forman 8 parejas: 8 + 8 = 16.",
+          "error": "forma-parejas"
+        },
+        {
+          "tipo": "numero", "enunciado": "Llegan 3 estudiantes más. ¿Cuántos estudiantes hay ahora?",
+          "respuesta": 19,
+          "pista": "Suma 16 + 3.",
+          "explicacion": "16 + 3 = 19 estudiantes.",
+          "error": "problema-pares"
+        },
+        {
+          "tipo": "opcion", "enunciado": "¿Pueden bailar todos en parejas, sin que nadie quede solo?",
+          "opciones": [
+            { "texto": "No, sobra 1.", "correcta": true },
+            { "texto": "Sí, no sobra nadie.", "pista": "19 termina en 9. ¿Es par o impar?", "error": "par-impar" }
+          ],
+          "mezclar": false,
+          "pista": "Mira si 19 es par o impar.",
+          "explicacion": "19 es impar: se forman 9 parejas y sobra 1 estudiante.",
+          "error": "par-impar"
+        }
+      ],
+      "pista": "Resuelve un paso a la vez.",
+      "explicacion": "16 estudiantes forman 8 parejas. Con 3 más son 19, y 19 es impar: sobra 1.",
+      "error": "problema-pares"
+    },
+    {
+      "id": "p10", "tipo": "memoria", "nivel": 2,
+      "enunciado": "Encuentra las parejas: cuántas medias hay y cuántas parejas forman.",
+      "pares": [
+        [ { "texto": "8 medias", "emoji": "🧦" }, "4 parejas" ],
+        [ { "texto": "12 medias", "emoji": "🧦" }, "6 parejas" ],
+        [ { "texto": "6 medias", "emoji": "🧦" }, "3 parejas" ],
+        [ { "texto": "10 medias", "emoji": "🧦" }, "5 parejas" ]
+      ],
+      "pista": "Cada pareja tiene 2 medias. Cuenta de 2 en 2.",
+      "explicacion": "8 medias forman 4 parejas, 12 forman 6, 6 forman 3 y 10 forman 5.",
+      "error": "forma-parejas"
+    },
+    {
+      "id": "p11", "tipo": "ordenar", "nivel": 2,
+      "enunciado": "Ordena estos números impares de menor a mayor.",
+      "elementos": ["95", "97", "99", "101", "103"],
+      "pista": "Van de 2 en 2. Fíjate bien: 101 es mayor que 99.",
+      "explicacion": "95, 97, 99, 101, 103: cada impar es 2 más que el anterior.",
+      "error": "secuencia-pares"
+    },
+    {
+      "id": "p12", "tipo": "multiple", "nivel": 3,
+      "enunciado": "¿Qué sumas dan un número par? Elige todas.",
+      "opciones": [
+        { "texto": "4 + 6", "correcta": true },
+        { "texto": "3 + 5", "correcta": true },
+        { "texto": "2 + 7", "pista": "Resuelve 2 + 7 y mira la última cifra del resultado.", "error": "suma-paridad" },
+        { "texto": "12 + 20", "correcta": true },
+        { "texto": "5 + 4", "pista": "Resuelve 5 + 4 y mira la última cifra del resultado.", "error": "suma-paridad" }
+      ],
+      "pista": "Resuelve cada suma y mira la última cifra del resultado.",
+      "explicacion": "4 + 6 = 10, 3 + 5 = 8 y 12 + 20 = 32 son pares. 2 + 7 = 9 y 5 + 4 = 9 son impares. Par + par da par, e impar + impar también.",
+      "error": "suma-paridad"
+    },
+    {
+      "id": "p13", "tipo": "numero", "nivel": 3,
+      "enunciado": "Con las cifras 3, 8 y 5, forma el número par más grande. Usa cada cifra una vez.",
+      "respuesta": 538,
+      "erroresComunes": [
+        { "respuesta": 853, "pista": "853 es el más grande, pero termina en 3: es impar.", "error": "ultima-cifra" },
+        { "respuesta": 835, "pista": "835 termina en 5: es impar. ¿Qué cifra par tiene que ir al final?", "error": "ultima-cifra" },
+        { "respuesta": 358, "pista": "358 es par, pero puedes formar uno más grande.", "error": "compone-numero" }
+      ],
+      "pista": "Para que sea par, ¿qué cifra tiene que ir al final?",
+      "explicacion": "Para que sea par, el 8 va al final. Con el 5 y el 3 adelante, el más grande es 538.",
+      "error": "compone-numero"
+    },
+    {
+      "id": "p14", "tipo": "pasos", "nivel": 3,
+      "enunciado": "Rosa hornea 36 salteñas de pollo y 42 de carne para vender en la feria.",
+      "visual": { "tipo": "operacion", "numeros": [36, 42], "op": "+", "vertical": true },
+      "pasos": [
+        {
+          "tipo": "numero", "enunciado": "¿Cuántas salteñas hornea en total?",
+          "respuesta": 78,
+          "pista": "Suma 36 + 42: primero las unidades y después las decenas.",
+          "explicacion": "36 + 42 = 78 salteñas.",
+          "error": "problema-pares"
+        },
+        {
+          "tipo": "opcion", "enunciado": "¿78 es par o impar?",
+          "opciones": [
+            { "texto": "Par", "correcta": true },
+            { "texto": "Impar", "pista": "Mira la última cifra de 78.", "error": "par-impar" }
+          ],
+          "mezclar": false,
+          "columnas": 2,
+          "pista": "Mira la última cifra.",
+          "explicacion": "78 termina en 8, así que es par.",
+          "error": "par-impar"
+        },
+        {
+          "tipo": "opcion", "enunciado": "¿Puede poner todas las salteñas en bolsitas de 2, sin que sobre ninguna?",
+          "opciones": [
+            { "texto": "Sí", "correcta": true },
+            { "texto": "No", "pista": "Si el número es par, se forman parejas y no sobra nada.", "error": "forma-parejas" }
+          ],
+          "mezclar": false,
+          "columnas": 2,
+          "pista": "Piensa: ¿78 es par o impar?",
+          "explicacion": "Sí. 78 es par: al formar parejas no sobra ninguna salteña.",
+          "error": "forma-parejas"
+        }
+      ],
+      "pista": "Resuelve un paso a la vez.",
+      "explicacion": "36 + 42 = 78. Par + par da par, y con un número par no sobra nada al formar parejas.",
+      "error": "problema-pares"
+    },
+    {
+      "id": "p15", "tipo": "escribir-libre", "nivel": 3,
+      "enunciado": "¿Cómo sabes que 574 es par? Escribe una oración para explicarlo.",
+      "guia": ["El número 574 es par porque...", "Sé que es par porque su última cifra es..."],
+      "requisitos": [
+        { "tipo": "mayuscula-inicial" },
+        { "tipo": "punto-final" },
+        { "tipo": "min-palabras", "valor": 5 },
+        { "tipo": "incluye", "palabras": ["termina", "última", "cifra", "4", "cuatro", "parejas", "sobra"] }
+      ],
+      "modelo": "El número 574 es par porque termina en 4.",
+      "pista": "Piensa en la última cifra de 574.",
+      "explicacion": "Por ejemplo: «El número 574 es par porque termina en 4». Los números que terminan en 0, 2, 4, 6 u 8 son pares.",
+      "error": "explica-par"
+    },
+    {
+      "id": "p16", "tipo": "generador", "nivel": 3, "generador": "patron-numerico",
+      "params": { "paso": 2, "max": 999, "operacion": "resta" }
+    }
+  ],
+  "comprobacion": [
+    {
+      "id": "c1", "tipo": "manipular", "nivel": 1,
+      "enunciado": "Reparte 14 panes entre 2 niños: pon la misma cantidad en cada plato.",
+      "manipulable": { "tipo": "repartir", "total": 14, "grupos": 2, "emoji": "🍞" },
+      "pista": "Pon un pan en cada plato, por turnos. Los dos platos tienen que tener lo mismo.",
+      "explicacion": "Cada niño recibe 7 panes y no sobra ninguno. Por eso 14 es par.",
+      "error": "forma-parejas"
+    },
+    {
+      "id": "c2", "tipo": "completar", "nivel": 1,
+      "enunciado": "Completa contando los números impares.",
+      "texto": "11, 13, [15], 17, [19], [21], 23",
+      "banco": ["16", "20"],
+      "pista": "Los impares van de 2 en 2 y terminan en 1, 3, 5, 7 o 9.",
+      "explicacion": "11, 13, 15, 17, 19, 21, 23: cada uno es 2 más que el anterior, y todos son impares.",
+      "error": "secuencia-pares"
+    },
+    {
+      "id": "c3", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "¿Par o impar? Mira la última cifra de cada número.",
+      "categorias": [ { "id": "par", "texto": "Par" }, { "id": "impar", "texto": "Impar" } ],
+      "elementos": [
+        { "texto": "132", "categoria": "par" }, { "texto": "245", "categoria": "impar" },
+        { "texto": "508", "categoria": "par" }, { "texto": "777", "categoria": "impar" },
+        { "texto": "690", "categoria": "par" }, { "texto": "861", "categoria": "impar" }
+      ],
+      "pista": "Solo importa la última cifra.",
+      "explicacion": "132, 508 y 690 son pares: terminan en 2, 8 y 0. 245, 777 y 861 son impares: terminan en 5, 7 y 1.",
+      "error": "ultima-cifra"
+    },
+    {
+      "id": "c4", "tipo": "numero", "nivel": 2,
+      "enunciado": "¿Cuál es el número impar que está justo antes de 300?",
+      "respuesta": 299,
+      "erroresComunes": [
+        { "respuesta": 298, "pista": "298 termina en 8: es par. Busca uno que termine en 1, 3, 5, 7 o 9.", "error": "anterior-siguiente-par" },
+        { "respuesta": 301, "pista": "301 es impar, pero está después de 300. Busca el de antes.", "error": "anterior-siguiente-par" }
+      ],
+      "pista": "300 es par. ¿Qué número está justo antes de 300?",
+      "explicacion": "Justo antes de 300 está 299. Termina en 9, así que es impar.",
+      "error": "anterior-siguiente-par"
+    },
+    {
+      "id": "c5", "tipo": "generador", "nivel": 2, "generador": "par-impar", "params": { "max": 999 }
+    },
+    {
+      "id": "c6", "tipo": "tocar", "nivel": 2,
+      "enunciado": "Toca los números impares.",
+      "texto": "Hoy, Luis vendió *15* choclos, 20 piñas, *37* naranjas y 48 plátanos.",
+      "pista": "Los impares terminan en 1, 3, 5, 7 o 9.",
+      "explicacion": "15 y 37 son impares: terminan en 5 y 7. 20 y 48 son pares.",
+      "error": "ultima-cifra"
+    },
+    {
+      "id": "c7", "tipo": "numero", "nivel": 3,
+      "enunciado": "Con las cifras 4, 7 y 2, forma el número impar más grande. Usa cada cifra una vez.",
+      "respuesta": 427,
+      "erroresComunes": [
+        { "respuesta": 742, "pista": "742 es el más grande, pero termina en 2: es par.", "error": "ultima-cifra" },
+        { "respuesta": 724, "pista": "724 termina en 4: es par. ¿Qué cifra impar tiene que ir al final?", "error": "ultima-cifra" },
+        { "respuesta": 247, "pista": "247 es impar, pero puedes formar uno más grande.", "error": "compone-numero" }
+      ],
+      "pista": "Para que sea impar, ¿qué cifra tiene que ir al final?",
+      "explicacion": "Para que sea impar, el 7 va al final. Con el 4 y el 2 adelante, el más grande es 427.",
+      "error": "compone-numero"
+    },
+    {
+      "id": "c8", "tipo": "opcion", "nivel": 3,
+      "enunciado": "Kusi suma dos números impares: 15 + 13. ¿El resultado es par o impar?",
+      "opciones": [
+        { "texto": "Par", "correcta": true },
+        { "texto": "Impar", "pista": "Resuelve 15 + 13. ¿En qué cifra termina el resultado?", "error": "suma-paridad" }
+      ],
+      "mezclar": false,
+      "columnas": 2,
+      "pista": "Haz la suma y mira la última cifra.",
+      "explicacion": "15 + 13 = 28, que termina en 8: es par. Impar + impar siempre da par.",
+      "error": "suma-paridad"
+    }
+  ],
+  "repaso": {
+    "texto": "**Par**: formas parejas y no sobra nada; termina en 0, 2, 4, 6 u 8. **Impar**: sobra uno; termina en 1, 3, 5, 7 o 9.",
+    "visual": { "tipo": "tabla", "columnas": ["Par: termina en", "Impar: termina en"], "filas": [["0, 2, 4, 6, 8", "1, 3, 5, 7, 9"]] }
+  },
+  "adulto": {
+    "objetivo": "Reconocer números pares e impares hasta 999: primero formando parejas o repartiendo entre dos (par: no sobra nada; impar: sobra uno) y luego con la regla de la última cifra. También contar de 2 en 2, hallar el par o impar anterior y siguiente, y anticipar si una suma será par o impar.",
+    "sugerencias": [
+      "Al doblar la ropa, junten medias o zapatos en parejas. Cuenten cuántos hay y pregunten: «¿sobra alguno?». Si no sobra ninguno, el número es par.",
+      "En la feria o en la cocina, repartan frutas, panes o choclos entre dos personas en partes iguales. Si sobra uno, el número era impar.",
+      "Al caminar por la calle, fíjense en los números de las casas o de las líneas de micro y túrnense para decir si son pares o impares mirando la última cifra. Al subir gradas, cuenten de 2 en 2."
+    ],
+    "errores": {
+      "par-impar": { "descripcion": "Confunde los números pares con los impares.", "sugerencia": "Recuerden juntos la regla (los pares terminan en 0, 2, 4, 6 u 8) y comprueben con piedritas o fichas formando parejas." },
+      "forma-parejas": { "descripcion": "Le cuesta formar parejas o repartir entre dos para ver si sobra uno.", "sugerencia": "Usen medias, tapas o piedritas: formen filas de 2 en 2 y miren si alguna queda sola." },
+      "ultima-cifra": { "descripcion": "Mira la primera cifra (o todo el número) en lugar de la última para decidir si es par o impar.", "sugerencia": "Pidan que tape con el dedo todas las cifras menos la última y decida solo con ella." },
+      "secuencia-pares": { "descripcion": "Se equivoca al contar de 2 en 2, con pares o con impares.", "sugerencia": "Salten de 2 en 2 en las gradas o en las baldosas del patio diciendo los números en voz alta." },
+      "anterior-siguiente-par": { "descripcion": "Se confunde al buscar el número par o impar que está justo antes o después de otro.", "sugerencia": "Dibujen una recta del 30 al 40 y pinten los pares de un color y los impares de otro." },
+      "suma-paridad": { "descripcion": "No anticipa si una suma de dos números será par o impar.", "sugerencia": "Junten dos grupos de fichas y formen parejas: prueben par + par, impar + impar y par + impar, y vean cuándo sobra una." },
+      "compone-numero": { "descripcion": "Forma un número con las cifras dadas, pero no el mayor posible o no cumple la condición de par o impar.", "sugerencia": "Escriban cada cifra en un papelito: primero decidan cuál va al final y después pongan la mayor adelante." },
+      "explica-par": { "descripcion": "Le cuesta explicar con palabras por qué un número es par.", "sugerencia": "Pidan que lo diga en voz alta antes de escribir: «es par porque termina en...»." },
+      "problema-pares": { "descripcion": "Le cuesta resolver problemas de varios pasos con pares e impares.", "sugerencia": "Lean el problema en voz alta, subrayen los números y resuelvan un paso a la vez con objetos." },
+      "patron-numerico": { "descripcion": "Le cuesta continuar series que suben o bajan de 2 en 2.", "sugerencia": "Cuenten hacia atrás de 2 en 2 con monedas o piedritas, quitando 2 cada vez." }
+    }
+  }
+}

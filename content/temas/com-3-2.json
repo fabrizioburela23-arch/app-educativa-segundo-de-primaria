@@ -1,0 +1,453 @@
+{
+  "id": "com-3-2",
+  "titulo": "Leyendas: idea principal y detalles",
+  "objetivo": "Sé qué es una leyenda y encuentro su idea principal y sus detalles.",
+  "lecturas": [
+    {
+      "id": "arcoiris",
+      "titulo": "El arcoíris que pintó la quinua",
+      "genero": "leyenda",
+      "emoji": "🌈",
+      "parrafos": [
+        "Esta es una leyenda creada para esta app, al estilo de las historias que los abuelos cuentan a sus nietos.",
+        "Dicen que hace mucho tiempo, en el altiplano, todas las plantas de quinua eran verdes. Los campos se veían siempre iguales.",
+        "Un año no llovió. La tierra estaba seca y la quinua tenía sed. Una niña llamada Nayra subía al cerro cada mañana a mirar el cielo y a esperar la lluvia.",
+        "Por fin, un día llovió mucho. Después de la lluvia apareció un arcoíris enorme. Estaba tan cansado que se acostó sobre el campo de quinua de Nayra.",
+        "Nayra no lo espantó. Le llevó agua fresca y le cantó una canción. El arcoíris durmió toda la noche sobre las plantas.",
+        "Al amanecer, el arcoíris se levantó y le dijo: «Gracias por cuidarme, Nayra. Te dejo un regalo». Y se fue volando hacia las montañas.",
+        "Cuando Nayra miró su campo, las plantas de quinua estaban pintadas de rojo, amarillo, naranja y morado. Desde entonces, dicen, los campos de quinua del altiplano se visten de colores."
+      ]
+    },
+    {
+      "id": "condor",
+      "titulo": "El collar blanco del cóndor",
+      "genero": "leyenda",
+      "emoji": "🦅",
+      "parrafos": [
+        "Esta también es una leyenda creada para esta app.",
+        "Dicen que antes el cóndor era todo negro. Volaba muy alto sobre los cerros y miraba todo desde el cielo.",
+        "Un día, una nube pequeña se perdió. No encontraba a sus hermanas y lloraba gotitas sobre los cerros.",
+        "El cóndor la vio y la llevó en su espalda hasta lo más alto del cielo, donde estaban las otras nubes.",
+        "Para darle las gracias, la nube le regaló un pedazo de su algodón blanco. El cóndor se lo puso en el cuello. Desde entonces, dicen, el cóndor lleva un collar blanco."
+      ]
+    }
+  ],
+  "explicacion": [
+    {
+      "texto": "Una **leyenda** es una historia que la gente cuenta **de generación en generación**: pasa de los abuelos a los papás, y de los papás a los hijos.",
+      "visual": { "tipo": "emojis", "items": ["👵", "👩", "👧"], "etiquetas": ["abuela", "mamá", "hija"] }
+    },
+    {
+      "texto": "Muchas leyendas explican **el origen** de algo: por qué un animal es como es, cómo nació un lago o de dónde salió una planta.",
+      "emoji": "🌄",
+      "visual": { "tipo": "emojis", "items": ["🦅", "🏞️", "🌱"], "etiquetas": ["un animal", "un lago", "una planta"] }
+    },
+    {
+      "texto": "En una leyenda se mezclan cosas **reales**, que existen de verdad (un cerro, la lluvia, un animal), y cosas **fantásticas**, que no pueden pasar (un cerro que habla, una nube que llora).",
+      "visual": { "tipo": "emojis", "items": ["⛰️", "✨"], "etiquetas": ["real", "fantástico"] }
+    },
+    {
+      "texto": "La **idea principal** es lo más importante que cuenta el texto. Los **detalles** son datos más pequeños: nombres, colores, lugares. Si quitas un detalle, la historia se entiende igual.",
+      "visual": { "tipo": "emojis", "items": ["🌳", "🍃"], "etiquetas": ["idea principal", "detalles"] }
+    }
+  ],
+  "ejemplo": {
+    "instruccion": "Mira cómo leemos una leyenda muy corta, creada para esta app.",
+    "pasos": [
+      {
+        "texto": "Leemos: «Dicen que, hace mucho tiempo, la vicuña tenía frío en las noches del altiplano. Su amigo el viento le tejió una lana finita y suave. Desde entonces, la vicuña está siempre abrigada».",
+        "visual": { "tipo": "emojis", "items": ["🦙", "🌬️", "🧶"], "etiquetas": ["vicuña", "viento", "lana"] }
+      },
+      {
+        "texto": "¿Qué **origen** explica? Por qué la vicuña tiene una lana tan fina. Las palabras «Desde entonces» nos dan la pista.",
+        "emoji": "🌄"
+      },
+      {
+        "texto": "¿Qué es **real**? La vicuña, el altiplano y sus noches frías. ¿Qué es **fantástico**? Un viento que teje lana.",
+        "visual": { "tipo": "emojis", "items": ["⛰️", "✨"], "etiquetas": ["real", "fantástico"] }
+      },
+      {
+        "texto": "**Idea principal:** la vicuña tiene una lana fina porque el viento se la tejió. **Detalles:** pasa en el altiplano, era de noche, el viento era su amigo.",
+        "visual": { "tipo": "emojis", "items": ["🌳", "🍃"], "etiquetas": ["idea principal", "detalles"] }
+      }
+    ]
+  },
+  "guiada": {
+    "intro": "Lee la leyenda «El arcoíris que pintó la quinua». Después la trabajamos juntos.",
+    "pasos": [
+      {
+        "id": "g1", "tipo": "opcion",
+        "lectura": "arcoiris",
+        "enunciado": "¿Qué origen explica esta leyenda?",
+        "apoyo": "Busca el final. Muchas leyendas terminan con «Desde entonces...».",
+        "opciones": [
+          { "texto": "Por qué los campos de quinua tienen colores.", "correcta": true },
+          { "texto": "Por qué llueve en el altiplano.", "pista": "La lluvia aparece en la leyenda, pero no es lo que explica. Lee la última oración.", "error": "origen" },
+          { "texto": "Cómo nació el lago Titicaca.", "pista": "Esta leyenda no habla de un lago. Lee la última oración.", "error": "origen" }
+        ],
+        "columnas": 1,
+        "pista": "Lee la última oración, la que empieza con «Desde entonces».",
+        "explicacion": "La leyenda explica por qué los campos de quinua del altiplano tienen colores: un arcoíris los pintó.",
+        "error": "origen"
+      },
+      {
+        "id": "g2", "tipo": "multiple",
+        "lectura": "arcoiris",
+        "enunciado": "Elige las cosas fantásticas de la leyenda: las que no pueden pasar de verdad.",
+        "apoyo": "Pregúntate con cada una: ¿esto puede pasar en la vida real?",
+        "opciones": [
+          { "texto": "El arcoíris habla con Nayra.", "correcta": true },
+          { "texto": "El arcoíris pinta las plantas.", "correcta": true },
+          { "texto": "Después de la lluvia puede salir un arcoíris.", "pista": "Eso sí pasa de verdad: después de la lluvia, a veces vemos un arcoíris.", "error": "real-fantastico" },
+          { "texto": "La quinua crece en el altiplano.", "pista": "Eso es real: en el altiplano hay muchos campos de quinua.", "error": "real-fantastico" }
+        ],
+        "columnas": 1,
+        "pista": "Hay dos. Piensa en lo que hace el arcoíris en la leyenda. ¿Un arcoíris de verdad puede hacer eso?",
+        "explicacion": "Son fantásticas: el arcoíris habla y pinta las plantas. Es real que después de la lluvia puede salir un arcoíris y que la quinua crece en el altiplano.",
+        "error": "real-fantastico"
+      },
+      {
+        "id": "g3", "tipo": "clasificar",
+        "lectura": "arcoiris",
+        "enunciado": "¿Es la idea principal de la leyenda o es un detalle?",
+        "apoyo": "La idea principal dice lo más importante de toda la leyenda. Los detalles son datos más pequeños.",
+        "categorias": [
+          { "id": "idea", "texto": "Idea principal", "emoji": "🌳" },
+          { "id": "detalle", "texto": "Detalle", "emoji": "🍃" }
+        ],
+        "elementos": [
+          { "texto": "Un arcoíris pintó la quinua de colores para agradecer a Nayra.", "categoria": "idea" },
+          { "texto": "Nayra le cantó una canción.", "categoria": "detalle" },
+          { "texto": "El arcoíris durmió toda la noche.", "categoria": "detalle" },
+          { "texto": "Nayra subía al cerro cada mañana.", "categoria": "detalle" }
+        ],
+        "pista": "Solo una oración cuenta lo más importante de toda la leyenda. Si la quitas, la leyenda ya no se entiende.",
+        "explicacion": "La idea principal es: un arcoíris pintó la quinua de colores para agradecer a Nayra. Lo demás son detalles: la canción, la noche, el cerro.",
+        "error": "idea-principal"
+      }
+    ]
+  },
+  "practica": [
+    {
+      "id": "p1", "tipo": "multiple", "nivel": 1,
+      "enunciado": "Elige todo lo que es verdad sobre las leyendas.",
+      "opciones": [
+        { "texto": "Se cuentan de generación en generación.", "correcta": true },
+        { "texto": "Muchas explican el origen de algo.", "correcta": true },
+        { "texto": "Mezclan cosas reales y cosas fantásticas.", "correcta": true },
+        { "texto": "Cuentan solo lo que pasó hoy.", "pista": "Las leyendas son historias que vienen de hace mucho tiempo, no noticias de hoy.", "error": "que-es-leyenda" },
+        { "texto": "Nunca tienen personajes.", "pista": "Las leyendas sí tienen personajes, como Nayra y el arcoíris.", "error": "que-es-leyenda" }
+      ],
+      "columnas": 1,
+      "pista": "Recuerda lo que aprendiste: una leyenda pasa de los abuelos a los nietos, explica algo y mezcla lo real con lo fantástico.",
+      "explicacion": "Las leyendas se cuentan de generación en generación, muchas explican el origen de algo y mezclan cosas reales y fantásticas. Además, tienen personajes.",
+      "error": "que-es-leyenda"
+    },
+    {
+      "id": "p2", "tipo": "tocar", "nivel": 1,
+      "lectura": "arcoiris",
+      "enunciado": "Busca este detalle: toca los colores con que el arcoíris pintó la quinua.",
+      "texto": "Las plantas de quinua estaban pintadas de *rojo*, *amarillo*, *naranja* y *morado*.",
+      "pista": "Busca las palabras que nombran colores. Hay cuatro.",
+      "explicacion": "Los colores son rojo, amarillo, naranja y morado. Es un detalle: nos dice cómo quedaron las plantas.",
+      "error": "detalles"
+    },
+    {
+      "id": "p3", "tipo": "memoria", "nivel": 1,
+      "enunciado": "Encuentra las parejas: el dibujo y su palabra en la leyenda.",
+      "pares": [
+        [{ "emoji": "🌈" }, "arcoíris"],
+        [{ "emoji": "🌾" }, "quinua"],
+        [{ "emoji": "⛰️" }, "cerro"],
+        [{ "emoji": "🌧️" }, "lluvia"],
+        [{ "emoji": "👧" }, "niña"]
+      ],
+      "pista": "Mira bien cada dibujo y di su nombre en voz alta.",
+      "explicacion": "Arcoíris, quinua, cerro, lluvia y niña son palabras de la leyenda.",
+      "error": "vocabulario"
+    },
+    {
+      "id": "p4", "tipo": "escribir", "nivel": 1,
+      "enunciado": "Escucha y escribe la palabra.",
+      "escuchar": "leyenda",
+      "visual": { "tipo": "emoji", "valor": "📜" },
+      "respuestas": ["leyenda"],
+      "pista": "Piensa en «leyó» y «leyendo»: esta palabra se escribe con la misma letra.",
+      "explicacion": "Se escribe «leyenda», con y, igual que «leyó» y «leyendo».",
+      "error": "dictado"
+    },
+    {
+      "id": "p5", "tipo": "clasificar", "nivel": 2,
+      "lectura": "arcoiris",
+      "enunciado": "¿Es real o es fantástico?",
+      "categorias": [
+        { "id": "real", "texto": "Real", "emoji": "⛰️" },
+        { "id": "fantastico", "texto": "Fantástico", "emoji": "✨" }
+      ],
+      "elementos": [
+        { "texto": "Hay campos de quinua en el altiplano.", "categoria": "real" },
+        { "texto": "La quinua necesita agua para crecer.", "categoria": "real" },
+        { "texto": "Una niña sube a un cerro.", "categoria": "real" },
+        { "texto": "Un arcoíris se acuesta a dormir.", "categoria": "fantastico" },
+        { "texto": "Un arcoíris da las gracias.", "categoria": "fantastico" },
+        { "texto": "Un arcoíris deja las plantas pintadas.", "categoria": "fantastico" }
+      ],
+      "pista": "Pregúntate: ¿esto puede pasar en la vida real? Un arcoíris de verdad no duerme, no habla y no pinta.",
+      "explicacion": "Real: los campos de quinua, que la quinua necesita agua y que una niña sube a un cerro. Fantástico: un arcoíris que duerme, da las gracias y pinta.",
+      "error": "real-fantastico"
+    },
+    {
+      "id": "p6", "tipo": "opcion", "nivel": 2,
+      "lectura": "arcoiris",
+      "enunciado": "¿Qué oración resume mejor toda la leyenda?",
+      "opciones": [
+        { "texto": "La quinua tiene colores porque un arcoíris la pintó para agradecer a Nayra.", "correcta": true },
+        { "texto": "Un año no llovió en el altiplano.", "pista": "Es un detalle del comienzo. ¿Qué es lo más importante que cuenta la leyenda?", "error": "idea-principal" },
+        { "texto": "Nayra le llevó agua fresca al arcoíris.", "pista": "Es un detalle. Si lo quitas, la leyenda se entiende igual.", "error": "idea-principal" }
+      ],
+      "columnas": 1,
+      "pista": "La idea principal cuenta lo más importante de toda la leyenda, no solo una parte.",
+      "explicacion": "La idea principal es: la quinua tiene colores porque un arcoíris la pintó para agradecer a Nayra. Lo demás son detalles.",
+      "error": "idea-principal"
+    },
+    {
+      "id": "p7", "tipo": "completar", "nivel": 2,
+      "lectura": "arcoiris",
+      "enunciado": "Completa con los detalles de la leyenda.",
+      "texto": "Nayra subía al [cerro] cada mañana. Le llevó [agua] fresca al arcoíris y le cantó una [canción].",
+      "banco": ["río", "leche", "carta"],
+      "pista": "Busca adónde subía Nayra cada mañana y qué hizo para cuidar al arcoíris.",
+      "explicacion": "Nayra subía al cerro cada mañana. Le llevó agua fresca al arcoíris y le cantó una canción.",
+      "error": "detalles"
+    },
+    {
+      "id": "p8", "tipo": "relacionar", "nivel": 2,
+      "lectura": "arcoiris",
+      "enunciado": "Une cada pregunta con el detalle de la leyenda que la responde.",
+      "pares": [
+        ["¿Dónde pasó?", "en el altiplano"],
+        ["¿Quién cuidó al arcoíris?", "Nayra"],
+        ["¿Cuándo se levantó el arcoíris?", "al amanecer"],
+        ["¿De qué color eran antes las plantas?", "verdes"]
+      ],
+      "pista": "«¿Dónde?» pide un lugar; «¿quién?», una persona; «¿cuándo?», un momento; «¿de qué color?», un color.",
+      "explicacion": "Pasó en el altiplano. Nayra cuidó al arcoíris. El arcoíris se levantó al amanecer. Antes, las plantas eran verdes.",
+      "error": "detalles"
+    },
+    {
+      "id": "p9", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha y escribe la oración.",
+      "escuchar": "Dicen que hace mucho tiempo la quinua era verde.",
+      "visual": { "tipo": "emoji", "valor": "🌾" },
+      "respuestas": ["Dicen que hace mucho tiempo la quinua era verde.", "Dicen que hace mucho tiempo la quinua era verde", "Dicen que, hace mucho tiempo, la quinua era verde.", "Dicen que hace mucho tiempo, la quinua era verde."],
+      "pista": "«Hace» es de la familia de «hacer». «Quinua» empieza igual que «quince» y «quiero». Empieza con mayúscula y termina con punto.",
+      "explicacion": "Se escribe: «Dicen que hace mucho tiempo la quinua era verde.» Muchas leyendas empiezan así: «Dicen que hace mucho tiempo...».",
+      "error": "dictado"
+    },
+    {
+      "id": "p10", "tipo": "ordenar", "nivel": 2,
+      "lectura": "arcoiris",
+      "enunciado": "Ordena lo que pasó en la leyenda.",
+      "elementos": [
+        "Un año no llovió y la quinua tenía sed.",
+        "Por fin llovió y apareció un arcoíris.",
+        "El arcoíris se acostó sobre el campo de Nayra.",
+        "Nayra le llevó agua y le cantó una canción.",
+        "Al amanecer, el arcoíris le dio las gracias y se fue.",
+        "Nayra vio sus plantas pintadas de colores."
+      ],
+      "vertical": true,
+      "pista": "Primero hubo un problema: no llovía. ¿Qué pasó cuando por fin llovió?",
+      "explicacion": "Primero no llovió; después llovió y salió el arcoíris; se acostó sobre el campo; Nayra lo cuidó; al amanecer se fue, y Nayra vio sus plantas de colores.",
+      "error": "secuencia"
+    },
+    {
+      "id": "p11", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "Une cada palabra con su significado.",
+      "pares": [
+        ["leyenda", "historia que se cuenta de generación en generación"],
+        ["origen", "cómo empezó algo"],
+        ["real", "que existe o puede pasar de verdad"],
+        ["fantástico", "que no puede pasar de verdad"]
+      ],
+      "pista": "Real y fantástico son contrarios. El origen es el comienzo de algo.",
+      "explicacion": "Una leyenda se cuenta de generación en generación. El origen es cómo empezó algo. Lo real existe de verdad; lo fantástico no puede pasar de verdad.",
+      "error": "vocabulario"
+    },
+    {
+      "id": "p12", "tipo": "opcion", "nivel": 3,
+      "enunciado": "Escucha esta leyenda inventada. ¿Qué origen explica?",
+      "escuchar": "Dicen que hace mucho tiempo las luciérnagas no tenían luz y volaban a oscuras. Una noche, una estrella pequeña bajó al monte a jugar con ellas. Antes de volver al cielo, les regaló un poquito de su brillo. Desde entonces, las luciérnagas brillan en la noche.",
+      "visual": { "tipo": "emoji", "valor": "✨" },
+      "opciones": [
+        { "texto": "Por qué las luciérnagas brillan en la noche.", "correcta": true },
+        { "texto": "Por qué las estrellas bajan al monte.", "pista": "La estrella bajó una sola vez, pero eso no es lo que explica. ¿Qué pasó «desde entonces»?", "error": "origen" },
+        { "texto": "Dónde viven las luciérnagas.", "pista": "La leyenda no explica dónde viven. Escucha otra vez el final.", "error": "origen" }
+      ],
+      "columnas": 1,
+      "pista": "Escucha con atención la última oración: empieza con «Desde entonces».",
+      "explicacion": "La leyenda explica por qué las luciérnagas brillan en la noche: una estrella les regaló un poquito de su brillo.",
+      "error": "origen"
+    },
+    {
+      "id": "p13", "tipo": "completar", "nivel": 3,
+      "lectura": "arcoiris",
+      "enunciado": "Completa la idea principal de la leyenda.",
+      "texto": "La leyenda explica por qué la [quinua] tiene [colores]: un [arcoíris] la pintó para agradecer a [Nayra].",
+      "banco": ["papa", "espinas", "cóndor"],
+      "pista": "Piensa: ¿qué planta cambió?, ¿qué le pasó?, ¿quién la pintó? y ¿a quién le dio las gracias?",
+      "explicacion": "La idea principal es: la quinua tiene colores porque un arcoíris la pintó para agradecer a Nayra.",
+      "error": "idea-principal"
+    },
+    {
+      "id": "p14", "tipo": "escribir-libre", "nivel": 3,
+      "enunciado": "Inventa el comienzo de una leyenda: ¿por qué la llama tiene el cuello largo? Escribe dos oraciones.",
+      "guia": ["Dicen que hace mucho tiempo...", "Un día, la llama..."],
+      "requisitos": [
+        { "tipo": "mayuscula-inicial" },
+        { "tipo": "punto-final" },
+        { "tipo": "min-oraciones", "valor": 2 },
+        { "tipo": "incluye-todas", "palabras": ["llama"] }
+      ],
+      "modelo": "Dicen que hace mucho tiempo la llama tenía el cuello corto. Un día quiso ver el lago detrás del cerro y estiró tanto el cuello que se le quedó largo.",
+      "pista": "Empieza con «Dicen que hace mucho tiempo...». Cuenta cómo era la llama antes y qué le pasó un día.",
+      "explicacion": "Por ejemplo: «Dicen que hace mucho tiempo la llama tenía el cuello corto. Un día quiso ver el lago detrás del cerro y estiró tanto el cuello que se le quedó largo.» Mezcla lo real (la llama) con lo fantástico.",
+      "error": "produce-texto"
+    }
+  ],
+  "comprobacion": [
+    {
+      "id": "c1", "tipo": "escribir", "nivel": 1,
+      "lectura": "condor",
+      "enunciado": "Lee la leyenda. ¿De qué color era antes el cóndor? Escribe la palabra.",
+      "respuestas": ["negro", "todo negro", "era negro", "era todo negro", "el cóndor era negro", "el cóndor era todo negro"],
+      "pista": "Busca al comienzo de la leyenda: «Dicen que antes el cóndor era...».",
+      "explicacion": "Antes, el cóndor era todo negro. Es un detalle de la leyenda.",
+      "error": "detalles"
+    },
+    {
+      "id": "c2", "tipo": "escribir", "nivel": 1,
+      "enunciado": "Escucha y escribe la oración.",
+      "escuchar": "El cóndor tiene un collar blanco.",
+      "visual": { "tipo": "emoji", "valor": "🦅" },
+      "respuestas": ["El cóndor tiene un collar blanco.", "El cóndor tiene un collar blanco"],
+      "pista": "Escucha otra vez, palabra por palabra. «Collar» es de la familia de «cuello»: se escriben con la misma letra. ¿Qué palabra lleva tilde?",
+      "explicacion": "Se escribe: «El cóndor tiene un collar blanco.» Es verdad: los cóndores adultos tienen plumas blancas alrededor del cuello.",
+      "error": "dictado"
+    },
+    {
+      "id": "c3", "tipo": "clasificar", "nivel": 2,
+      "lectura": "condor",
+      "enunciado": "¿Es real o es fantástico?",
+      "categorias": [
+        { "id": "real", "texto": "Real", "emoji": "⛰️" },
+        { "id": "fantastico", "texto": "Fantástico", "emoji": "✨" }
+      ],
+      "elementos": [
+        { "texto": "El cóndor vuela sobre los cerros.", "categoria": "real" },
+        { "texto": "El cóndor tiene plumas negras.", "categoria": "real" },
+        { "texto": "Las nubes están en el cielo.", "categoria": "real" },
+        { "texto": "Una nube llora porque se perdió.", "categoria": "fantastico" },
+        { "texto": "Una nube regala un pedazo de algodón.", "categoria": "fantastico" },
+        { "texto": "Un cóndor lleva una nube en la espalda.", "categoria": "fantastico" }
+      ],
+      "pista": "Pregúntate: ¿esto puede pasar en la vida real? Las nubes de verdad no lloran ni regalan cosas.",
+      "explicacion": "Real: el cóndor vuela sobre los cerros, tiene plumas negras y las nubes están en el cielo. Fantástico: una nube que llora, que regala algodón o que viaja en la espalda de un cóndor.",
+      "error": "real-fantastico"
+    },
+    {
+      "id": "c4", "tipo": "opcion", "nivel": 2,
+      "lectura": "condor",
+      "enunciado": "¿Cuál es la idea principal de esta leyenda?",
+      "opciones": [
+        { "texto": "El cóndor tiene un collar blanco porque ayudó a una nube perdida y ella se lo regaló.", "correcta": true },
+        { "texto": "Una nube pequeña lloraba gotitas.", "pista": "Es un detalle. ¿Qué es lo más importante que explica la leyenda?", "error": "idea-principal" },
+        { "texto": "El cóndor miraba todo desde el cielo.", "pista": "Es un detalle del comienzo. Si lo quitas, la leyenda se entiende igual.", "error": "idea-principal" }
+      ],
+      "columnas": 1,
+      "pista": "La idea principal dice lo más importante de toda la leyenda. Fíjate en el título.",
+      "explicacion": "La idea principal es: el cóndor tiene un collar blanco porque ayudó a una nube perdida y ella se lo regaló. Lo demás son detalles.",
+      "error": "idea-principal"
+    },
+    {
+      "id": "c5", "tipo": "ordenar", "nivel": 2,
+      "lectura": "condor",
+      "enunciado": "Ordena lo que pasó en la leyenda del cóndor.",
+      "elementos": [
+        "El cóndor era todo negro.",
+        "Una nube pequeña se perdió.",
+        "El cóndor llevó a la nube en su espalda.",
+        "La nube le regaló un pedazo de algodón.",
+        "El cóndor se puso el algodón en el cuello."
+      ],
+      "vertical": true,
+      "pista": "¿Cómo era el cóndor antes? ¿Qué problema tuvo la nube? ¿Qué pasó después?",
+      "explicacion": "Primero el cóndor era negro; una nube se perdió; el cóndor la llevó en su espalda; la nube le regaló algodón, y el cóndor se lo puso en el cuello.",
+      "error": "secuencia"
+    },
+    {
+      "id": "c6", "tipo": "completar", "nivel": 2,
+      "lectura": "condor",
+      "enunciado": "Completa con los detalles de la leyenda.",
+      "texto": "La nube pequeña no encontraba a sus [hermanas]. El cóndor la llevó en su [espalda]. Desde entonces, el cóndor lleva un collar [blanco].",
+      "banco": ["zapatos", "pico", "verde"],
+      "pista": "Busca los detalles en la leyenda. El título te ayuda con el color.",
+      "explicacion": "La nube no encontraba a sus hermanas. El cóndor la llevó en su espalda. Desde entonces, lleva un collar blanco.",
+      "error": "detalles"
+    },
+    {
+      "id": "c7", "tipo": "escribir-libre", "nivel": 3,
+      "lectura": "condor",
+      "enunciado": "Escribe con tus palabras la idea principal de la leyenda del cóndor.",
+      "guia": ["El cóndor tiene un collar blanco porque...", "Una nube..."],
+      "requisitos": [
+        { "tipo": "mayuscula-inicial" },
+        { "tipo": "punto-final" },
+        { "tipo": "min-palabras", "valor": 6 },
+        { "tipo": "incluye-todas", "palabras": ["cóndor", "collar"] }
+      ],
+      "modelo": "Una nube perdida le regaló al cóndor su collar blanco, porque él la ayudó.",
+      "pista": "Cuenta en una oración lo más importante: ¿qué tiene el cóndor y por qué?",
+      "explicacion": "Por ejemplo: «Una nube perdida le regaló al cóndor su collar blanco, porque él la ayudó.» Esa es la idea principal; lo demás son detalles.",
+      "error": "idea-principal"
+    },
+    {
+      "id": "c8", "tipo": "multiple", "nivel": 3,
+      "lectura": "condor",
+      "enunciado": "¿Por qué «El collar blanco del cóndor» es una leyenda? Elige las dos razones.",
+      "opciones": [
+        { "texto": "Explica el origen de algo: por qué el cóndor tiene un collar blanco.", "correcta": true },
+        { "texto": "Mezcla cosas reales, como el cóndor y los cerros, con cosas fantásticas, como una nube que llora.", "correcta": true },
+        { "texto": "Cuenta lo que pasó ayer en la escuela.", "pista": "La leyenda no habla de la escuela ni de ayer: pasa «antes», hace mucho tiempo.", "error": "que-es-leyenda" },
+        { "texto": "Enseña los pasos para hacer un collar.", "pista": "La leyenda no da pasos para hacer un collar. ¿Qué explica al final, con «Desde entonces»?", "error": "origen" }
+      ],
+      "columnas": 1,
+      "pista": "Recuerda lo que tienen las leyendas: explican el origen de algo y mezclan lo real con lo fantástico.",
+      "explicacion": "Es una leyenda porque explica el origen del collar blanco del cóndor y porque mezcla cosas reales (el cóndor, los cerros) con cosas fantásticas (una nube que llora y regala su algodón).",
+      "error": "que-es-leyenda"
+    }
+  ],
+  "repaso": {
+    "texto": "Una leyenda se cuenta de generación en generación, explica el origen de algo y mezcla lo real con lo fantástico. La idea principal es lo más importante; los detalles la acompañan.",
+    "visual": { "tipo": "emojis", "items": ["🌳", "🍃"], "etiquetas": ["idea principal", "detalles"] }
+  },
+  "adulto": {
+    "objetivo": "Reconocer qué es una leyenda (se transmite de generación en generación, explica el origen de algo y mezcla elementos reales y fantásticos) y distinguir la idea principal de los detalles. Las leyendas de este tema fueron creadas para la app: no son tradiciones de un pueblo en particular.",
+    "sugerencias": [
+      "Pidan a un abuelo, una abuela o un vecino que cuente una leyenda de su comunidad o región. Después pregunten: «¿Qué explica esta historia? ¿Qué partes podrían ser reales y cuáles fantásticas?».",
+      "Al terminar un cuento o una noticia corta, jueguen a «decirlo en una sola oración» (la idea principal) y después a «encontrar tres detalles» (nombres, lugares, colores).",
+      "En una caminata o en la feria, elijan algo (una planta, un animal, un cerro) e inventen juntos una leyenda corta que empiece con «Dicen que hace mucho tiempo...»."
+    ],
+    "errores": {
+      "que-es-leyenda": { "descripcion": "No recuerda las características de una leyenda.", "sugerencia": "Repasen las tres pistas: se cuenta de abuelos a nietos, explica el origen de algo y mezcla lo real con lo fantástico." },
+      "origen": { "descripcion": "No identifica qué explica la leyenda (el origen de qué).", "sugerencia": "Busquen juntos la frase «Desde entonces...» o «Por eso...» al final de la leyenda: ahí suele estar lo que explica." },
+      "real-fantastico": { "descripcion": "Confunde los elementos reales con los fantásticos.", "sugerencia": "Por cada hecho, pregunten: «¿Esto puede pasar de verdad? ¿Lo has visto alguna vez?»." },
+      "idea-principal": { "descripcion": "Confunde la idea principal con un detalle.", "sugerencia": "Pidan que cuente la historia en una sola oración. Luego tapen un detalle y pregunten si la historia se sigue entendiendo." },
+      "detalles": { "descripcion": "No encuentra o no recuerda los detalles del texto.", "sugerencia": "Hagan preguntas con ¿quién?, ¿dónde?, ¿cuándo? y ¿de qué color?, y pidan que señale en el texto la parte que responde." },
+      "secuencia": { "descripcion": "Le cuesta ordenar los hechos de una leyenda.", "sugerencia": "Escriban los hechos en tiras de papel y ordénenlos juntos preguntando «¿qué pasó antes?»." },
+      "dictado": { "descripcion": "Comete errores al escribir palabras u oraciones dictadas.", "sugerencia": "Dicten despacio y revisen juntos las letras que no se oyen (como la h) y las que se escriben por familia de palabras (leyenda, leyó, leyendo)." },
+      "vocabulario": { "descripcion": "No conoce el significado de algunas palabras del tema (origen, real, fantástico).", "sugerencia": "Usen esas palabras en la vida diaria: «¿Esto es real o fantástico?», «¿Cuál es el origen de este queso?»." },
+      "produce-texto": { "descripcion": "Le cuesta inventar y escribir el comienzo de una leyenda.", "sugerencia": "Primero invéntenla en voz alta. Después escriban juntos dos oraciones: cómo era el animal antes y qué le pasó un día." }
+    }
+  }
+}

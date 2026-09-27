@@ -1,0 +1,467 @@
+{
+  "id": "soc-5-1",
+  "titulo": "Símbolos patrios",
+  "objetivo": "Conozco los siete símbolos de Bolivia, sé qué recuerdan los colores de la bandera y cómo mostrar respeto en un acto cívico.",
+  "explicacion": [
+    {
+      "texto": "Un **símbolo** es algo que nos representa. La Constitución de Bolivia nombra **siete símbolos del Estado**, que también llamamos **símbolos patrios**. ¡Son de todas y de todos!",
+      "emoji": "🇧🇴",
+      "visual": {
+        "tipo": "tabla",
+        "columnas": ["Símbolo", "¿Qué es?"],
+        "filas": [
+          ["bandera tricolor", "una bandera"],
+          ["himno boliviano", "una canción"],
+          ["escudo de armas", "un escudo con dibujos"],
+          ["wiphala", "una bandera de cuadraditos"],
+          ["escarapela", "una cinta de tres colores"],
+          ["kantuta", "una flor de los Andes"],
+          ["patujú", "una flor del oriente"]
+        ]
+      }
+    },
+    {
+      "texto": "La **bandera** tiene tres franjas iguales: **roja** arriba, **amarilla** al centro y **verde** abajo. El rojo recuerda a los héroes que dieron su vida por la patria; el amarillo, nuestras riquezas; el verde, la naturaleza y la esperanza.",
+      "visual": { "tipo": "ilustracion", "id": "bandera-bolivia" }
+    },
+    {
+      "texto": "El **himno** es la canción de Bolivia: lo cantamos de pie y con respeto. En el **escudo** hay un cóndor, el Cerro Rico de Potosí, el sol y una llama.",
+      "emoji": "🎶",
+      "visual": { "tipo": "emojis", "items": ["🦅", "⛰️", "☀️", "🦙"], "etiquetas": ["cóndor", "Cerro Rico", "sol", "llama"] }
+    },
+    {
+      "texto": "La **wiphala** tiene 49 cuadraditos de siete colores. La **escarapela** es una cinta roja, amarilla y verde. La **kantuta** y el **patujú** son flores con esos mismos tres colores.",
+      "visual": { "tipo": "ilustracion", "id": "wiphala" }
+    }
+  ],
+  "ejemplo": {
+    "instruccion": "Mira lo que hacemos en un acto cívico de la escuela.",
+    "pasos": [
+      {
+        "texto": "Nos formamos en orden y en silencio. Wara lleva la **escarapela** en el lado izquierdo del pecho.",
+        "visual": { "tipo": "ilustracion", "id": "escarapela" }
+      },
+      {
+        "texto": "Izan la **bandera**. Estamos de pie, quietos, y la miramos con respeto.",
+        "visual": { "tipo": "ilustracion", "id": "bandera-bolivia" }
+      },
+      {
+        "texto": "Cantamos el **himno** con atención: sin jugar y sin conversar.",
+        "visual": { "tipo": "emoji", "valor": "🎶" }
+      },
+      {
+        "texto": "En muchos actos, junto a la tricolor también está la **wiphala**. Cuidamos los símbolos: no los rompemos, no los ensuciamos y no los tiramos al suelo.",
+        "visual": { "tipo": "ilustracion", "id": "wiphala" }
+      }
+    ]
+  },
+  "guiada": {
+    "intro": "Vamos a hacerlo juntos, paso a paso.",
+    "pasos": [
+      {
+        "id": "g1", "tipo": "ordenar",
+        "enunciado": "Ordena las franjas de la bandera, de arriba abajo.",
+        "apoyo": "Piensa en la bandera de tu escuela. Arriba va el color que recuerda a los héroes.",
+        "elementos": ["roja", "amarilla", "verde"],
+        "vertical": true,
+        "pista": "La franja verde, la de la naturaleza, va abajo.",
+        "explicacion": "De arriba abajo, la bandera es roja, amarilla y verde.",
+        "error": "orden-colores"
+      },
+      {
+        "id": "g2", "tipo": "relacionar",
+        "enunciado": "Une cada color de la bandera con lo que recuerda.",
+        "apoyo": "Piensa: ¿de qué color son las plantas? ¿Y los minerales como el oro?",
+        "pares": [
+          ["rojo", "los héroes que dieron su vida por la patria"],
+          ["amarillo", "nuestras riquezas, como los minerales"],
+          ["verde", "la naturaleza y la esperanza"]
+        ],
+        "pista": "El verde es el color de las plantas. El amarillo brilla como el oro.",
+        "explicacion": "El rojo recuerda a los héroes; el amarillo, nuestras riquezas; y el verde, la naturaleza y la esperanza.",
+        "error": "significado-colores"
+      },
+      {
+        "id": "g3", "tipo": "clasificar",
+        "enunciado": "¿Esta acción muestra respeto en el acto cívico?",
+        "apoyo": "Recuerda el acto cívico del ejemplo: en orden, quietos y atentos.",
+        "categorias": [
+          { "id": "si", "texto": "Muestra respeto", "emoji": "👍" },
+          { "id": "no", "texto": "No muestra respeto", "emoji": "✋" }
+        ],
+        "elementos": [
+          { "texto": "estar de pie y quieto durante el himno", "categoria": "si" },
+          { "texto": "mirar la bandera cuando la izan", "categoria": "si" },
+          { "texto": "llevar la escarapela con cuidado", "categoria": "si" },
+          { "texto": "conversar durante el himno", "categoria": "no" },
+          { "texto": "jugar con la bandera como si fuera una capa", "categoria": "no" },
+          { "texto": "tirar la escarapela al suelo", "categoria": "no" }
+        ],
+        "pista": "Pregúntate: ¿así cuidamos los símbolos y prestamos atención?",
+        "explicacion": "Estar quieto en el himno, mirar la bandera y cuidar la escarapela muestran respeto. Conversar, jugar con la bandera o tirar la escarapela no.",
+        "error": "respeto-simbolos"
+      }
+    ]
+  },
+  "practica": [
+    {
+      "id": "p1", "tipo": "opcion", "nivel": 1,
+      "enunciado": "¿Cuál es la bandera de Bolivia?",
+      "opciones": [
+        { "visual": { "tipo": "bandera", "franjas": ["rojo", "amarillo", "verde"], "orientacion": "horizontal" }, "correcta": true },
+        { "visual": { "tipo": "bandera", "franjas": ["verde", "amarillo", "rojo"], "orientacion": "horizontal" }, "pista": "Los colores están, pero mira el orden: ¿qué color va arriba en nuestra bandera?", "error": "orden-colores" },
+        { "visual": { "tipo": "bandera", "franjas": ["rojo", "azul", "verde"], "orientacion": "horizontal" }, "pista": "Nuestra bandera no tiene azul. ¿Qué color va en el centro?", "error": "colores-bandera" }
+      ],
+      "columnas": 3,
+      "pista": "Arriba va el color de los héroes y en el centro, el de las riquezas.",
+      "explicacion": "La bandera de Bolivia tiene tres franjas iguales: roja arriba, amarilla al centro y verde abajo.",
+      "error": "colores-bandera"
+    },
+    {
+      "id": "p2", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Toca los nombres de los símbolos del Estado.",
+      "texto": "En el acto cívico, Wara llevó la *escarapela*, cantó el *himno* y miró la *bandera*.",
+      "pista": "Busca lo que Wara llevó, lo que cantó y lo que miró.",
+      "explicacion": "Escarapela, himno y bandera son símbolos del Estado. El acto cívico es el momento en que los honramos.",
+      "error": "reconoce-simbolos"
+    },
+    {
+      "id": "p3", "tipo": "clasificar", "nivel": 1,
+      "enunciado": "¿Es un símbolo del Estado?",
+      "categorias": [
+        { "id": "si", "texto": "Es símbolo del Estado", "emoji": "🇧🇴" },
+        { "id": "no", "texto": "No es símbolo del Estado" }
+      ],
+      "elementos": [
+        { "texto": "wiphala", "categoria": "si" },
+        { "texto": "escudo", "emoji": "🛡️", "categoria": "si" },
+        { "texto": "kantuta", "categoria": "si" },
+        { "texto": "himno", "emoji": "🎶", "categoria": "si" },
+        { "texto": "salteña", "emoji": "🥟", "categoria": "no" },
+        { "texto": "lago Titicaca", "emoji": "🏞️", "categoria": "no" },
+        { "texto": "pelota", "emoji": "⚽", "categoria": "no" }
+      ],
+      "pista": "Recuerda los siete: dos banderas, una canción, un escudo, una cinta y dos flores.",
+      "explicacion": "Wiphala, escudo, kantuta e himno son símbolos del Estado. La salteña es una comida y el lago Titicaca es un lugar muy lindo, pero no son símbolos del Estado; la pelota, tampoco.",
+      "error": "reconoce-simbolos"
+    },
+    {
+      "id": "p4", "tipo": "ordenar", "nivel": 1,
+      "enunciado": "Ordena las palabras para formar la oración.",
+      "elementos": ["Cantamos", "el", "himno", "de", "pie."],
+      "unir": " ",
+      "pista": "Empieza con la palabra que tiene mayúscula y termina con la que tiene punto.",
+      "explicacion": "«Cantamos el himno de pie.» Así mostramos respeto.",
+      "error": "orden-oracion"
+    },
+    {
+      "id": "p5", "tipo": "multiple", "nivel": 1,
+      "enunciado": "Elige los símbolos del Estado que son flores.",
+      "opciones": [
+        { "texto": "kantuta", "correcta": true },
+        { "texto": "patujú", "correcta": true },
+        { "texto": "escarapela", "pista": "La escarapela es redonda, pero es una cinta, no una flor.", "error": "flores-simbolos" },
+        { "texto": "himno", "pista": "El himno es una canción.", "error": "reconoce-simbolos" }
+      ],
+      "pista": "Hay dos flores: una de los Andes y otra del oriente.",
+      "explicacion": "La kantuta y el patujú son las dos flores símbolo del Estado. La escarapela es una cinta y el himno es una canción.",
+      "error": "flores-simbolos"
+    },
+    {
+      "id": "p6", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "Une cada símbolo con lo que lo describe.",
+      "pares": [
+        ["escudo", "tiene un cóndor y el Cerro Rico"],
+        ["wiphala", "tiene 49 cuadraditos de siete colores"],
+        ["escarapela", "se lleva en el pecho"],
+        ["himno", "se canta de pie"]
+      ],
+      "pista": "La wiphala es de muchos colores. El himno es una canción. La escarapela es una cinta.",
+      "explicacion": "El escudo tiene un cóndor y el Cerro Rico; la wiphala, 49 cuadraditos; la escarapela se lleva en el pecho y el himno se canta de pie.",
+      "error": "describe-simbolos"
+    },
+    {
+      "id": "p7", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa lo que recuerda cada color de la bandera.",
+      "texto": "El rojo recuerda a los [héroes]. El amarillo, nuestras [riquezas]. El verde, la naturaleza y la [esperanza].",
+      "banco": ["tristeza", "juguetes"],
+      "pista": "¿Quiénes lucharon por la patria? ¿Qué sentimos cuando esperamos algo bueno?",
+      "explicacion": "El rojo recuerda a los héroes; el amarillo, nuestras riquezas; y el verde, la naturaleza y la esperanza.",
+      "error": "significado-colores"
+    },
+    {
+      "id": "p8", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha la adivinanza y escribe el nombre del símbolo.",
+      "escuchar": "Soy una flor del oriente de Bolivia. Mi planta tiene hojas grandes, como las del plátano. Mis colores son rojo, amarillo y verde.",
+      "respuestas": ["patujú", "el patujú", "flor del patujú", "la flor del patujú"],
+      "tildes": "flexible",
+      "pista": "No es la kantuta, que crece en los Andes. Empieza con «pa».",
+      "explicacion": "Es el **patujú**, la flor del oriente que tiene los colores de la bandera. Se escribe con tilde en la ú.",
+      "error": "flores-simbolos"
+    },
+    {
+      "id": "p9", "tipo": "opcion", "nivel": 2,
+      "enunciado": "¿Cómo se llama esta flor, símbolo de Bolivia?",
+      "visual": { "tipo": "ilustracion", "id": "kantuta" },
+      "opciones": [
+        { "texto": "kantuta", "correcta": true },
+        { "texto": "patujú", "pista": "El patujú es una flor del oriente y crece en zigzag. Esta flor cuelga como una campanita.", "error": "flores-simbolos" },
+        { "texto": "girasol", "pista": "El girasol es amarillo y no es un símbolo del Estado.", "error": "flores-simbolos" }
+      ],
+      "pista": "Es la flor de los Andes que cuelga como una campanita.",
+      "explicacion": "Es la **kantuta**: cuelga como una campanita y tiene rojo, amarillo y verde.",
+      "error": "flores-simbolos"
+    },
+    {
+      "id": "p10", "tipo": "memoria", "nivel": 2,
+      "enunciado": "Encuentra las parejas: el símbolo y lo que es.",
+      "pares": [
+        ["himno", "canción"],
+        ["kantuta", "flor de los Andes"],
+        ["patujú", "flor del oriente"],
+        ["escarapela", "cinta tricolor"],
+        ["wiphala", "bandera de cuadraditos"]
+      ],
+      "pista": "Hay una canción, dos flores, una cinta y una bandera.",
+      "explicacion": "El himno es una canción; la kantuta y el patujú, flores; la escarapela, una cinta; y la wiphala, una bandera de cuadraditos.",
+      "error": "describe-simbolos"
+    },
+    {
+      "id": "p11", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa lo que hay en el escudo de Bolivia.",
+      "texto": "En el escudo hay un [cóndor], el [Cerro Rico] de Potosí, el sol y una llama.",
+      "banco": ["pez", "barco"],
+      "pista": "Arriba del escudo hay un ave grande de los Andes. En el centro hay una montaña.",
+      "explicacion": "En el escudo de Bolivia hay un cóndor, el Cerro Rico de Potosí, el sol y una llama.",
+      "error": "describe-simbolos"
+    },
+    {
+      "id": "p12", "tipo": "pasos", "nivel": 3,
+      "enunciado": "Durante el himno, tu amigo Luis saca una pelota y empieza a jugar.",
+      "pasos": [
+        {
+          "tipo": "opcion",
+          "enunciado": "¿Qué puedes hacer?",
+          "opciones": [
+            { "texto": "Seguir cantando y, al terminar el himno, decirle con amabilidad que guarde la pelota", "correcta": true },
+            { "texto": "Gritarle fuerte que se quede quieto", "pista": "Si gritas, también interrumpes el himno. ¿Cuándo puedes hablar con Luis?", "error": "respeto-simbolos" },
+            { "texto": "Ponerme a jugar con él", "pista": "Durante el himno estamos quietos y atentos.", "error": "respeto-simbolos" }
+          ],
+          "pista": "Busca la forma de ayudar a Luis sin interrumpir el himno.",
+          "explicacion": "Lo mejor es seguir cantando y, cuando termine el himno, hablar con Luis con amabilidad. Así respetas el himno y ayudas a tu amigo.",
+          "error": "respeto-simbolos"
+        },
+        {
+          "tipo": "escribir-libre",
+          "enunciado": "Escribe por qué cantamos el himno de pie.",
+          "guia": ["Cantamos de pie porque...", "El himno representa..."],
+          "requisitos": [
+            { "tipo": "mayuscula-inicial" },
+            { "tipo": "punto-final" },
+            { "tipo": "min-palabras", "valor": 5 }
+          ],
+          "modelo": "Cantamos de pie para mostrar respeto a Bolivia.",
+          "pista": "Piensa en lo que representa el himno.",
+          "explicacion": "Por ejemplo: «Cantamos de pie para mostrar respeto a Bolivia».",
+          "error": "respeto-simbolos"
+        }
+      ],
+      "pista": "Resuelve un paso a la vez.",
+      "explicacion": "Durante el himno estamos de pie, quietos y atentos. Si alguien se distrae, le avisamos con amabilidad.",
+      "error": "respeto-simbolos"
+    },
+    {
+      "id": "p13", "tipo": "numero", "nivel": 3,
+      "enunciado": "La wiphala tiene 7 filas y cada fila tiene 7 cuadraditos. ¿Cuántos cuadraditos tiene en total?",
+      "visual": { "tipo": "ilustracion", "id": "wiphala" },
+      "respuesta": 49,
+      "erroresComunes": [
+        { "respuesta": 14, "pista": "Sumaste 7 + 7, pero son 7 filas. Suma 7 siete veces.", "error": "cuenta-wiphala" }
+      ],
+      "pista": "Puedes sumar 7 + 7 + 7 + 7 + 7 + 7 + 7 o usar la tabla del 7.",
+      "explicacion": "Son 7 filas de 7 cuadraditos: 7 × 7 = 49. La wiphala tiene 49 cuadraditos.",
+      "error": "cuenta-wiphala"
+    },
+    {
+      "id": "p14", "tipo": "clasificar", "nivel": 3,
+      "enunciado": "¿Es verdadero o falso?",
+      "categorias": [
+        { "id": "v", "texto": "Verdadero", "emoji": "✅" },
+        { "id": "f", "texto": "Falso", "emoji": "❌" }
+      ],
+      "elementos": [
+        { "texto": "La bandera tiene tres franjas del mismo tamaño.", "categoria": "v" },
+        { "texto": "La wiphala es un símbolo del Estado.", "categoria": "v" },
+        { "texto": "La kantuta y el patujú tienen los colores de la bandera.", "categoria": "v" },
+        { "texto": "La franja verde de la bandera va arriba.", "categoria": "f" },
+        { "texto": "Bolivia tiene un solo símbolo.", "categoria": "f" },
+        { "texto": "El himno se canta sentado y conversando.", "categoria": "f" }
+      ],
+      "pista": "Recuerda el orden de las franjas y cuántos símbolos nombra la Constitución.",
+      "explicacion": "Son verdaderas: las tres franjas son iguales, la wiphala es un símbolo del Estado y las dos flores tienen los colores de la bandera. Las otras son falsas, porque la franja verde va abajo, Bolivia tiene siete símbolos del Estado y el himno se canta de pie y con atención.",
+      "error": "datos-simbolos"
+    },
+    {
+      "id": "p15", "tipo": "escribir-libre", "nivel": 3,
+      "enunciado": "Escribe una oración sobre tu símbolo favorito: di cuál es y cómo es.",
+      "guia": ["Mi símbolo favorito es...", "La kantuta tiene...", "La wiphala tiene..."],
+      "requisitos": [
+        { "tipo": "mayuscula-inicial" },
+        { "tipo": "punto-final" },
+        { "tipo": "min-palabras", "valor": 6 },
+        { "tipo": "incluye", "palabras": ["bandera", "himno", "escudo", "wiphala", "escarapela", "kantuta", "patujú"] }
+      ],
+      "modelo": "Mi símbolo favorito es la kantuta porque tiene tres colores.",
+      "pista": "Nombra uno de los siete símbolos y di algo de él: sus colores, su forma o dónde lo ves.",
+      "explicacion": "Por ejemplo: «Mi símbolo favorito es la kantuta porque tiene tres colores».",
+      "error": "produce-oracion"
+    }
+  ],
+  "comprobacion": [
+    {
+      "id": "c1", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Toca los colores que tiene la bandera de Bolivia.",
+      "texto": "Sofía pintó el cielo de azul y la bandera con *rojo*, *amarillo* y *verde*.",
+      "pista": "Busca los tres colores de las franjas. El cielo no es parte de la bandera.",
+      "explicacion": "La bandera de Bolivia es roja, amarilla y verde. El azul lo usó Sofía para el cielo.",
+      "error": "colores-bandera"
+    },
+    {
+      "id": "c2", "tipo": "opcion", "nivel": 1,
+      "enunciado": "Mira el dibujo. ¿Qué símbolo es?",
+      "visual": { "tipo": "ilustracion", "id": "escarapela" },
+      "opciones": [
+        { "texto": "escarapela", "correcta": true },
+        { "texto": "kantuta", "pista": "La kantuta es una flor que cuelga como una campanita. Esto es una cinta redonda.", "error": "describe-simbolos" },
+        { "texto": "wiphala", "pista": "La wiphala es una bandera de cuadraditos de siete colores. Aquí hay solo tres colores.", "error": "describe-simbolos" }
+      ],
+      "pista": "Es una cinta redonda de tres colores. En los actos cívicos la llevamos en el pecho.",
+      "explicacion": "Es la **escarapela**: una cinta roja, amarilla y verde que llevamos en el pecho en los actos cívicos.",
+      "error": "describe-simbolos"
+    },
+    {
+      "id": "c3", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "Agrupa los siete símbolos: ¿es una bandera, una flor u otro símbolo?",
+      "categorias": [
+        { "id": "bandera", "texto": "Bandera", "emoji": "🚩" },
+        { "id": "flor", "texto": "Flor", "emoji": "🌸" },
+        { "id": "otro", "texto": "Otro símbolo", "emoji": "⭐" }
+      ],
+      "elementos": [
+        { "texto": "tricolor", "categoria": "bandera" },
+        { "texto": "wiphala", "categoria": "bandera" },
+        { "texto": "kantuta", "categoria": "flor" },
+        { "texto": "patujú", "categoria": "flor" },
+        { "texto": "himno", "categoria": "otro" },
+        { "texto": "escudo", "categoria": "otro" },
+        { "texto": "escarapela", "categoria": "otro" }
+      ],
+      "pista": "Hay dos banderas y dos flores. El himno, el escudo y la escarapela van juntos.",
+      "explicacion": "Banderas: la tricolor y la wiphala. Flores: la kantuta y el patujú. Otros símbolos: el himno, el escudo y la escarapela.",
+      "error": "reconoce-simbolos"
+    },
+    {
+      "id": "c4", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa la oración sobre el acto cívico.",
+      "texto": "En el acto cívico cantamos el [himno] de pie y llevamos la [escarapela] en el pecho.",
+      "banco": ["pelota", "mochila"],
+      "pista": "¿Qué símbolo se canta? ¿Qué cinta de tres colores se lleva en el pecho?",
+      "explicacion": "Cantamos el himno de pie y llevamos la escarapela en el pecho.",
+      "error": "describe-simbolos"
+    },
+    {
+      "id": "c5", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha la adivinanza y escribe el nombre del símbolo.",
+      "escuchar": "Soy un símbolo de Bolivia. No soy bandera ni flor. Arriba tengo un cóndor con las alas abiertas y en el centro, un cerro y un sol. ¿Quién soy?",
+      "respuestas": ["escudo", "el escudo", "escudo de armas", "el escudo de armas", "escudo de Bolivia", "el escudo de Bolivia", "escudo boliviano", "el escudo boliviano", "escudo nacional", "el escudo nacional"],
+      "pista": "Tiene dibujos adentro. Su nombre empieza con «es», pero no es la escarapela.",
+      "explicacion": "Es el **escudo** de Bolivia. Arriba tiene un cóndor y en el centro, el Cerro Rico de Potosí y el sol.",
+      "error": "describe-simbolos"
+    },
+    {
+      "id": "c6", "tipo": "numero", "nivel": 2,
+      "enunciado": "¿Cuántos símbolos del Estado nombra la Constitución de Bolivia?",
+      "respuesta": 7,
+      "erroresComunes": [
+        { "respuesta": 3, "pista": "3 son los colores de la bandera. Ahora cuenta los símbolos.", "error": "datos-simbolos" }
+      ],
+      "pista": "Cuenta: dos banderas, dos flores, una canción, un escudo y una cinta.",
+      "explicacion": "Son 7: la bandera tricolor, el himno, el escudo, la wiphala, la escarapela, la kantuta y el patujú.",
+      "error": "datos-simbolos"
+    },
+    {
+      "id": "c7", "tipo": "pasos", "nivel": 3,
+      "enunciado": "Arami encuentra la bandera del curso tirada en un rincón, sucia y arrugada.",
+      "pasos": [
+        {
+          "tipo": "opcion",
+          "enunciado": "¿Qué puede hacer Arami?",
+          "opciones": [
+            { "texto": "Avisar a la maestra y ayudar a limpiarla y doblarla", "correcta": true },
+            { "texto": "Usarla para limpiar la mesa", "pista": "La bandera nos representa a todos. No se usa como trapo.", "error": "respeto-simbolos" },
+            { "texto": "Dejarla ahí, porque no es suya", "pista": "La bandera es de todo el curso. ¿Cómo puede ayudar a cuidarla?", "error": "respeto-simbolos" }
+          ],
+          "pista": "Busca la opción que cuida la bandera.",
+          "explicacion": "Arami puede avisar a la maestra y ayudar a limpiarla y doblarla con cuidado.",
+          "error": "respeto-simbolos"
+        },
+        {
+          "tipo": "completar",
+          "enunciado": "Completa por qué la cuidamos.",
+          "texto": "La bandera [representa] a Bolivia. Por eso la [cuidamos].",
+          "banco": ["rompemos", "ensucia"],
+          "pista": "Piensa en lo que hacemos con las cosas que queremos.",
+          "explicacion": "La bandera representa a Bolivia. Por eso la cuidamos.",
+          "error": "respeto-simbolos"
+        }
+      ],
+      "pista": "Resuelve un paso a la vez.",
+      "explicacion": "La bandera representa a Bolivia y a todas las personas que vivimos aquí. Por eso la cuidamos y la guardamos limpia y doblada.",
+      "error": "respeto-simbolos"
+    },
+    {
+      "id": "c8", "tipo": "clasificar", "nivel": 3,
+      "enunciado": "¿Es verdadero o falso?",
+      "categorias": [
+        { "id": "v", "texto": "Verdadero", "emoji": "✅" },
+        { "id": "f", "texto": "Falso", "emoji": "❌" }
+      ],
+      "elementos": [
+        { "texto": "El amarillo de la bandera recuerda nuestras riquezas.", "categoria": "v" },
+        { "texto": "El verde recuerda la naturaleza y la esperanza.", "categoria": "v" },
+        { "texto": "La franja amarilla va en el centro de la bandera.", "categoria": "v" },
+        { "texto": "La kantuta es un animal de los Andes.", "categoria": "f" },
+        { "texto": "Durante el himno podemos jugar si cantamos bajito.", "categoria": "f" },
+        { "texto": "La wiphala tiene tres franjas.", "categoria": "f" }
+      ],
+      "pista": "Piensa en los colores de la bandera, en qué es la kantuta, en cómo es la wiphala y en cómo estamos durante el himno.",
+      "explicacion": "Son verdaderas: el amarillo recuerda nuestras riquezas, el verde recuerda la naturaleza y la esperanza, y la franja amarilla va en el centro. Las otras son falsas, porque la kantuta es una flor, durante el himno no jugamos y la wiphala tiene 49 cuadraditos, no franjas.",
+      "error": "datos-simbolos"
+    }
+  ],
+  "repaso": {
+    "texto": "Bolivia tiene siete símbolos del Estado. La bandera es roja, amarilla y verde, de arriba abajo. En el acto cívico estamos de pie, quietos y atentos.",
+    "visual": { "tipo": "ilustracion", "id": "bandera-bolivia" }
+  },
+  "adulto": {
+    "objetivo": "Reconocer los siete símbolos del Estado que nombra la Constitución Política del Estado (art. 6.II): la bandera tricolor, el himno boliviano, el escudo de armas, la wiphala, la escarapela, la flor de la kantuta y la flor del patujú. Conocer el orden y el significado de los colores de la bandera (según el DS 27630 de 2004: rojo, la sangre de los héroes; amarillo, las riquezas y recursos naturales; verde, la riqueza de la naturaleza y la esperanza) y practicar actitudes de respeto en los actos cívicos.",
+    "sugerencias": [
+      "Salgan a caminar por el barrio o la plaza y busquen la bandera, la wiphala o el escudo en edificios públicos y en la escuela. Pregunten: «¿qué símbolo es?, ¿qué colores tiene?, ¿en qué orden van?».",
+      "Dibujen juntos la bandera en una hoja, con tres franjas del mismo ancho, y píntenla. Mientras pintan, conversen sobre lo que recuerda cada color; después pinten una kantuta o un patujú con los mismos colores.",
+      "Escuchen juntos el himno (en la radio, la televisión o un video) y practiquen cómo estar en un acto cívico: de pie, quietos y atentos. Si en un jardín, una plaza o un mercado de flores ven kantutas o patujús, obsérvenlos y cuenten sus colores."
+    ],
+    "errores": {
+      "colores-bandera": { "descripcion": "No recuerda los colores de la bandera o los confunde con otros.", "sugerencia": "Pinten la bandera juntos y nombren cada color en voz alta mientras pintan." },
+      "orden-colores": { "descripcion": "Recuerda los colores, pero no el orden de las franjas (rojo arriba, amarillo al centro, verde abajo).", "sugerencia": "Usen una frase para recordar: «arriba los héroes, al centro las riquezas, abajo la naturaleza». Observen la bandera de la escuela o de un edificio público." },
+      "significado-colores": { "descripcion": "Confunde lo que recuerda cada color de la bandera.", "sugerencia": "Relacionen cada color con algo concreto: el verde con las plantas, el amarillo con el oro y los minerales, el rojo con los héroes que dieron su vida por la patria." },
+      "reconoce-simbolos": { "descripcion": "No distingue cuáles son los siete símbolos del Estado.", "sugerencia": "Hagan siete tarjetas con el nombre y un dibujo de cada símbolo y jueguen a nombrarlos y contarlos." },
+      "describe-simbolos": { "descripcion": "Confunde cómo es cada símbolo (qué es la escarapela, qué hay en el escudo, cómo es la wiphala).", "sugerencia": "Miren juntos la bandera, el escudo y la wiphala en el texto escolar o en una fuente oficial, y describan en voz alta lo que ven." },
+      "flores-simbolos": { "descripcion": "Confunde la kantuta con el patujú.", "sugerencia": "Recuerden: la kantuta es de los Andes y cuelga como una campanita; el patujú es del oriente y sus flores crecen en zigzag. Busquen fotos o flores reales para compararlas." },
+      "respeto-simbolos": { "descripcion": "Le cuesta reconocer las actitudes de respeto hacia los símbolos en un acto cívico.", "sugerencia": "Conversen sobre cómo se comportan en la hora cívica de la escuela y por qué. Practiquen en casa estar de pie, quietos y atentos mientras escuchan el himno." },
+      "datos-simbolos": { "descripcion": "Duda con datos básicos: cuántos símbolos hay, el orden de las franjas o qué es cada símbolo.", "sugerencia": "Repasen con la tabla de la primera tarjeta de la lección y hagan preguntas de verdadero o falso en voz alta." },
+      "cuenta-wiphala": { "descripcion": "Le cuesta contar los 49 cuadraditos de la wiphala (7 filas de 7).", "sugerencia": "Dibujen una cuadrícula de 7 × 7, cuenten fila por fila de 7 en 7 (7, 14, 21...) y pinten los cuadraditos." },
+      "orden-oracion": { "descripcion": "Le cuesta ordenar palabras para formar una oración.", "sugerencia": "Escriban oraciones cortas en tiras de papel, córtenlas por palabras y ármenlas juntos, empezando por la mayúscula." },
+      "produce-oracion": { "descripcion": "Le cuesta escribir oraciones completas con mayúscula y punto.", "sugerencia": "Conversen primero la idea en voz alta, luego escríbanla juntos y revisen la mayúscula inicial y el punto final." }
+    }
+  }
+}

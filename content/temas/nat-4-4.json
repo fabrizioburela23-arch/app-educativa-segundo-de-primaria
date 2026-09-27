@@ -1,0 +1,424 @@
+{
+  "id": "nat-4-4",
+  "titulo": "El aparato digestivo",
+  "objetivo": "Conozco las partes del aparato digestivo, el camino que sigue la comida en mi cuerpo y cómo cuidar mi digestión.",
+  "explicacion": [
+    {
+      "texto": "Tu cuerpo **digiere** la comida: la deshace en partes pequeñitas, los **nutrientes**, que te dan energía para jugar y crecer. Este trabajo lo hace el **aparato digestivo**.",
+      "emoji": "🍽️",
+      "visual": { "tipo": "ilustracion", "id": "aparato-digestivo" }
+    },
+    {
+      "texto": "En la **boca**, los **dientes** cortan y muelen la comida, la **saliva** la moja y la **lengua** la mueve para tragarla. Después, un tubo llamado **esófago** la lleva al **estómago**.",
+      "visual": { "tipo": "emojis", "items": ["🦷", "💧", "👅"], "etiquetas": ["dientes", "saliva", "lengua"] }
+    },
+    {
+      "texto": "El **estómago** mezcla la comida con sus jugos y la vuelve papilla. En el **intestino delgado** los nutrientes pasan a la sangre. El **intestino grueso** saca el agua de los restos y forma las **heces**.",
+      "visual": { "tipo": "ilustracion", "id": "aparato-digestivo", "resaltar": "intestino-delgado", "etiquetas": true }
+    },
+    {
+      "texto": "El **hígado** ayuda desde afuera: la comida no pasa por él, pero prepara la **bilis**, un jugo que ayuda a digerir las grasas. Tú ayudas si **masticas bien**, comes **con calma**, tomas **agua** y comes frutas y verduras (tienen **fibra**).",
+      "emoji": "🥕",
+      "visual": { "tipo": "emojis", "items": ["🦷", "🍽️", "💧", "🍎"], "etiquetas": ["masticar bien", "comer con calma", "tomar agua", "fibra"] }
+    }
+  ],
+  "ejemplo": {
+    "instruccion": "Acompaña a una cucharada de majadito en su viaje por el cuerpo de Kusi.",
+    "pasos": [
+      {
+        "texto": "Kusi mastica bien: sus dientes de adelante cortan el charque y sus muelas muelen el arroz, como un **batán**. La saliva moja el bocado y la lengua forma una bolita para tragarla.",
+        "visual": { "tipo": "ilustracion", "id": "aparato-digestivo", "resaltar": "boca", "etiquetas": true }
+      },
+      {
+        "texto": "La bolita baja por el **esófago**, que la empuja hacia abajo. En el **estómago** se mezcla con jugos durante unas horas y se vuelve una papilla.",
+        "visual": { "tipo": "ilustracion", "id": "aparato-digestivo", "resaltar": "estomago", "etiquetas": true }
+      },
+      {
+        "texto": "La papilla sigue al **intestino delgado**. Ahí llega la bilis del hígado, y los nutrientes pasan a la sangre, que los lleva a todo el cuerpo de Kusi.",
+        "visual": { "tipo": "ilustracion", "id": "aparato-digestivo", "resaltar": "intestino-delgado", "etiquetas": true }
+      },
+      {
+        "texto": "Lo que el cuerpo no usa llega al **intestino grueso**. Allí se le saca el agua y se forman las heces, que salen cuando Kusi va al baño.",
+        "visual": { "tipo": "ilustracion", "id": "aparato-digestivo", "resaltar": "intestino-grueso", "etiquetas": true }
+      }
+    ]
+  },
+  "guiada": {
+    "intro": "Ahora lo hacemos juntos. Recuerda el viaje del majadito de Kusi.",
+    "pasos": [
+      {
+        "id": "g1", "tipo": "ordenar",
+        "enunciado": "Ordena el camino de la comida, desde que entra hasta el final.",
+        "apoyo": "Mira el dibujo y empieza por donde entra la comida. Ojo: el intestino delgado es el tubo enrollado del centro, y la comida pasa por él antes que por el grueso.",
+        "visual": { "tipo": "ilustracion", "id": "aparato-digestivo" },
+        "elementos": ["boca", "esófago", "estómago", "intestino delgado", "intestino grueso"],
+        "vertical": true,
+        "pista": "La comida entra por la boca. El intestino grueso es la última parte.",
+        "explicacion": "El camino es: boca, esófago, estómago, intestino delgado e intestino grueso.",
+        "error": "camino-comida"
+      },
+      {
+        "id": "g2", "tipo": "relacionar",
+        "enunciado": "Une cada parte con lo que hace.",
+        "apoyo": "Piensa en lo que le pasó al majadito en cada parte del cuerpo de Kusi.",
+        "pares": [
+          ["boca", "mastica y moja la comida"],
+          ["esófago", "lleva la comida al estómago"],
+          ["estómago", "mezcla la comida con jugos"],
+          ["intestino delgado", "pasa los nutrientes a la sangre"]
+        ],
+        "pista": "La boca es el comienzo. El esófago es un tubo que une la boca con el estómago.",
+        "explicacion": "La boca mastica y moja la comida; el esófago la lleva al estómago; el estómago la mezcla con jugos, y en el intestino delgado los nutrientes pasan a la sangre.",
+        "error": "funcion-partes"
+      },
+      {
+        "id": "g3", "tipo": "completar",
+        "enunciado": "Completa lo que pasa en la boca.",
+        "apoyo": "Unos son duros y blancos; otra es un líquido; la otra se mueve dentro de tu boca.",
+        "texto": "Los [dientes] cortan y muelen la comida, la [saliva] la moja y la [lengua] la mueve.",
+        "banco": ["orejas", "rodilla"],
+        "pista": "Abre la boca frente a un espejo: ¿qué muele, qué moja y qué se mueve?",
+        "explicacion": "Los **dientes** cortan y muelen, la **saliva** moja la comida y la **lengua** la mueve para tragarla.",
+        "error": "funcion-partes"
+      }
+    ]
+  },
+  "practica": [
+    {
+      "id": "p1", "tipo": "opcion", "nivel": 1,
+      "enunciado": "¿Cómo se llama la parte marcada?",
+      "visual": { "tipo": "ilustracion", "id": "aparato-digestivo", "resaltar": "estomago" },
+      "opciones": [
+        { "texto": "estómago", "correcta": true },
+        { "texto": "esófago", "pista": "El esófago es el tubo delgado que baja desde la boca. La parte marcada es más ancha.", "error": "partes-digestivo" },
+        { "texto": "intestino grueso", "pista": "El intestino grueso está más abajo, rodeando al intestino delgado.", "error": "partes-digestivo" }
+      ],
+      "columnas": 3,
+      "pista": "Es como una bolsa que está al final del esófago.",
+      "explicacion": "Es el **estómago**: una bolsa que mezcla la comida con sus jugos.",
+      "error": "partes-digestivo"
+    },
+    {
+      "id": "p2", "tipo": "memoria", "nivel": 1,
+      "enunciado": "Encuentra las parejas: la parte y lo que hace.",
+      "pares": [
+        [ { "texto": "dientes", "emoji": "🦷" }, "cortan y muelen" ],
+        [ { "texto": "lengua", "emoji": "👅" }, "mueve la comida" ],
+        [ { "texto": "saliva", "emoji": "💧" }, "moja la comida" ],
+        [ "estómago", "mezcla con jugos" ]
+      ],
+      "pista": "Piensa en lo que pasa con la comida en tu boca y después en tu estómago.",
+      "explicacion": "Los dientes cortan y muelen, la lengua mueve la comida, la saliva la moja y el estómago la mezcla con jugos.",
+      "error": "funcion-partes"
+    },
+    {
+      "id": "p3", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Toca las partes del aparato digestivo.",
+      "texto": "La comida pasa por la *boca*, el *esófago* y el *estómago*. El aire entra a los pulmones.",
+      "pista": "Hay tres. Busca las partes por donde pasa la comida.",
+      "explicacion": "La **boca**, el **esófago** y el **estómago** son partes del aparato digestivo. Los pulmones sirven para respirar.",
+      "error": "confunde-aparatos"
+    },
+    {
+      "id": "p4", "tipo": "escribir", "nivel": 1,
+      "enunciado": "Escucha y escribe la palabra.",
+      "escuchar": "estómago",
+      "respuestas": ["estómago"],
+      "pista": "Es la bolsa que mezcla la comida. Empieza con «es».",
+      "explicacion": "Se escribe «estómago», con tilde en la **ó**: es-**tó**-ma-go.",
+      "error": "escritura-tema"
+    },
+    {
+      "id": "p5", "tipo": "ordenar", "nivel": 2,
+      "enunciado": "Ordena el viaje de un bocado de chuño.",
+      "elementos": [
+        "Los dientes muelen el chuño y la saliva lo moja.",
+        "El esófago empuja el bocado hacia abajo.",
+        "El estómago lo mezcla con jugos.",
+        "En el intestino delgado, los nutrientes pasan a la sangre.",
+        "El intestino grueso forma las heces con los restos."
+      ],
+      "vertical": true,
+      "pista": "Empieza en la boca y termina en el intestino grueso.",
+      "explicacion": "Boca (dientes y saliva), esófago, estómago, intestino delgado e intestino grueso.",
+      "error": "camino-comida"
+    },
+    {
+      "id": "p6", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa qué pasa con la comida.",
+      "texto": "El [estómago] mezcla la comida con jugos. En el intestino delgado, los nutrientes pasan a la [sangre].",
+      "banco": ["pulmón", "hueso"],
+      "pista": "Una palabra nombra la bolsa que está después del esófago. La otra es el líquido rojo que recorre todo tu cuerpo.",
+      "explicacion": "El **estómago** mezcla la comida con jugos, y en el intestino delgado los nutrientes pasan a la **sangre**.",
+      "error": "funcion-partes"
+    },
+    {
+      "id": "p7", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "Une cada tipo de diente con su trabajo.",
+      "pares": [
+        ["incisivos (los de adelante)", "cortan la comida, como tijeras"],
+        ["colmillos", "desgarran la comida"],
+        ["muelas", "muelen la comida, como un batán"]
+      ],
+      "pista": "Toca tus dientes con la lengua: los de adelante tienen un borde fino, los colmillos tienen punta y las muelas son anchas.",
+      "explicacion": "Los incisivos cortan, los colmillos desgarran con su punta y las muelas muelen la comida, como un batán.",
+      "error": "funcion-partes"
+    },
+    {
+      "id": "p8", "tipo": "multiple", "nivel": 2,
+      "enunciado": "¿Qué ayuda a tu digestión? Elige todo lo correcto.",
+      "opciones": [
+        { "texto": "masticar bien", "correcta": true },
+        { "texto": "comer con calma, sin apuro", "correcta": true },
+        { "texto": "tomar agua durante el día", "emoji": "💧", "correcta": true },
+        { "texto": "comer frutas y verduras", "emoji": "🍎", "correcta": true },
+        { "texto": "tragar pedazos sin masticar", "pista": "Los pedazos grandes le dan más trabajo al estómago.", "error": "cuidado-digestion" },
+        { "texto": "comer corriendo mientras juegas", "pista": "Si comes apurado, masticas poco y te puedes atorar.", "error": "cuidado-digestion" }
+      ],
+      "pista": "Hay cuatro respuestas correctas. Piensa en cómo comes, qué tomas y qué alimentos tienen fibra.",
+      "explicacion": "Ayudan a tu digestión: masticar bien, comer con calma, tomar agua y comer frutas y verduras. Tragar sin masticar y comer corriendo no ayudan.",
+      "error": "cuidado-digestion"
+    },
+    {
+      "id": "p9", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escribe el nombre de la parte marcada.",
+      "visual": { "tipo": "ilustracion", "id": "aparato-digestivo", "resaltar": "esofago" },
+      "respuestas": ["esófago", "el esófago"],
+      "pista": "Es un tubo que lleva la comida desde la boca hasta el estómago.",
+      "explicacion": "Es el **esófago**: un tubo que empuja la comida desde la boca hasta el estómago.",
+      "error": "partes-digestivo"
+    },
+    {
+      "id": "p10", "tipo": "numero", "nivel": 2,
+      "enunciado": "Un niño o una niña tiene 20 dientes de leche. Una persona adulta, con todos sus dientes, tiene 32. ¿Cuántos dientes más tiene?",
+      "visual": { "tipo": "emojis", "items": ["🧒", "🧑"], "etiquetas": ["20 dientes", "32 dientes"] },
+      "respuesta": 12,
+      "sufijo": "dientes",
+      "erroresComunes": [
+        { "respuesta": 52, "pista": "Sumaste. Para saber cuántos más tiene, resta: 32 − 20.", "error": "calculo" }
+      ],
+      "pista": "Busca la diferencia: 32 − 20.",
+      "explicacion": "32 − 20 = **12**. Una persona adulta tiene 12 dientes más. ¡Tus dientes de leche se caen y salen dientes nuevos más grandes!",
+      "error": "calculo"
+    },
+    {
+      "id": "p11", "tipo": "clasificar", "nivel": 3,
+      "enunciado": "¿Es parte del aparato digestivo o no?",
+      "categorias": [
+        { "id": "si", "texto": "Es del aparato digestivo", "emoji": "🍽️" },
+        { "id": "no", "texto": "No es del aparato digestivo", "emoji": "🚫" }
+      ],
+      "elementos": [
+        { "texto": "estómago", "categoria": "si" },
+        { "texto": "esófago", "categoria": "si" },
+        { "texto": "intestino grueso", "categoria": "si" },
+        { "texto": "hígado", "categoria": "si" },
+        { "texto": "pulmones", "categoria": "no" },
+        { "texto": "corazón", "categoria": "no" },
+        { "texto": "cráneo", "categoria": "no" }
+      ],
+      "pista": "Pregúntate: ¿esta parte ayuda a digerir la comida? Una de ellas ayuda desde afuera, sin que la comida pase por dentro.",
+      "explicacion": "Son del aparato digestivo el estómago, el esófago, el intestino grueso y el hígado, que ayuda con la bilis. Los pulmones sirven para respirar, el corazón mueve la sangre y el cráneo es un hueso.",
+      "error": "confunde-aparatos"
+    },
+    {
+      "id": "p12", "tipo": "opcion", "nivel": 3,
+      "enunciado": "Cuando Arami huele un rico api con buñuelos, «se le hace agua la boca». ¿Por qué pasa eso?",
+      "opciones": [
+        { "texto": "Su boca prepara saliva para empezar a digerir.", "correcta": true },
+        { "texto": "Le entra agua por la nariz.", "pista": "Por la nariz entra el olor, no el agua. Piensa en el líquido que hay en tu boca.", "error": "funcion-partes" },
+        { "texto": "Su estómago manda agua a la boca.", "pista": "El estómago está lejos, al final del esófago. Ese líquido se forma en la boca.", "error": "funcion-partes" }
+      ],
+      "columnas": 1,
+      "pista": "¿Qué líquido moja la comida en la boca?",
+      "explicacion": "La boca prepara **saliva** cuando huele algo rico. La saliva moja la comida y empieza a deshacerla: ¡la digestión empieza en la boca!",
+      "error": "funcion-partes"
+    },
+    {
+      "id": "p13", "tipo": "pasos", "nivel": 3,
+      "enunciado": "Luis almorzó muy rápido: casi no masticó y tragó pedazos grandes. Después le dolió la barriga.",
+      "visual": { "tipo": "emoji", "valor": "🍽️" },
+      "pasos": [
+        {
+          "tipo": "opcion",
+          "enunciado": "¿Qué le faltó hacer a Luis?",
+          "opciones": [
+            { "texto": "masticar bien", "correcta": true },
+            { "texto": "comer más rápido", "pista": "Luis ya comió rápido y eso no lo ayudó.", "error": "cuidado-digestion" },
+            { "texto": "tomar una gaseosa", "pista": "La gaseosa no ayuda a deshacer los pedazos grandes.", "error": "cuidado-digestion" }
+          ],
+          "columnas": 3,
+          "pista": "Mira otra vez qué hizo Luis con los pedazos de comida.",
+          "explicacion": "A Luis le faltó **masticar bien**.",
+          "error": "cuidado-digestion"
+        },
+        {
+          "tipo": "completar",
+          "enunciado": "Completa.",
+          "texto": "Si masticas bien, los pedazos quedan más [pequeños] y el [estómago] trabaja más fácil.",
+          "banco": ["grandes", "pulmón"],
+          "pista": "Masticar es romper la comida. ¿Qué parte recibe la comida después del esófago?",
+          "explicacion": "Al masticar bien, los pedazos quedan más **pequeños** y el **estómago** trabaja más fácil.",
+          "error": "cuidado-digestion"
+        }
+      ],
+      "pista": "Resuelve un paso a la vez.",
+      "explicacion": "Luis debe masticar bien y comer con calma. Así los pedazos quedan pequeños y su estómago trabaja más fácil.",
+      "error": "cuidado-digestion"
+    },
+    {
+      "id": "p14", "tipo": "clasificar", "nivel": 3,
+      "enunciado": "La fibra ayuda a tus intestinos. ¿Este alimento tiene fibra o no?",
+      "categorias": [
+        { "id": "si", "texto": "Tiene fibra", "emoji": "✅" },
+        { "id": "no", "texto": "No tiene fibra", "emoji": "❌" }
+      ],
+      "elementos": [
+        { "texto": "quinua", "emoji": "🌾", "categoria": "si" },
+        { "texto": "manzana con cáscara", "emoji": "🍎", "categoria": "si" },
+        { "texto": "zanahoria", "emoji": "🥕", "categoria": "si" },
+        { "texto": "habas", "categoria": "si" },
+        { "texto": "leche", "emoji": "🥛", "categoria": "no" },
+        { "texto": "caramelos", "emoji": "🍬", "categoria": "no" },
+        { "texto": "gaseosa", "categoria": "no" }
+      ],
+      "pista": "La fibra está en frutas, verduras, granos y semillas. ¿Cuáles de estos alimentos son frutas, verduras o granos?",
+      "explicacion": "Tienen fibra la quinua, la manzana con cáscara, la zanahoria y las habas. La leche, los caramelos y la gaseosa no tienen fibra.",
+      "error": "cuidado-digestion"
+    },
+    {
+      "id": "p15", "tipo": "escribir-libre", "nivel": 3,
+      "enunciado": "Escribe un consejo para cuidar tu digestión.",
+      "guia": ["Cuando comas...", "Para que tus intestinos trabajen bien..."],
+      "requisitos": [
+        { "tipo": "mayuscula-inicial" },
+        { "tipo": "punto-final" },
+        { "tipo": "min-palabras", "valor": 5 },
+        { "tipo": "incluye", "palabras": ["mastica", "mastique", "agua", "despacio", "lento", "lenta", "calma", "tranquilo", "tranquila", "apuro", "fruta", "verdura", "fibra"] }
+      ],
+      "modelo": "Mastica bien la comida y toma agua.",
+      "pista": "Piensa en cómo comes, qué tomas y qué alimentos tienen fibra.",
+      "explicacion": "Por ejemplo: «Mastica bien la comida y toma agua». Empieza con mayúscula y termina con punto.",
+      "error": "produce-oracion"
+    }
+  ],
+  "comprobacion": [
+    {
+      "id": "c1", "tipo": "opcion", "nivel": 1,
+      "enunciado": "¿Dónde empieza la digestión?",
+      "opciones": [
+        { "texto": "en la boca", "emoji": "👄", "correcta": true },
+        { "texto": "en el estómago", "pista": "Antes de llegar al estómago, la comida ya se empieza a deshacer. ¿Dónde la masticas?", "error": "camino-comida" },
+        { "texto": "en el intestino grueso", "pista": "El intestino grueso está casi al final del camino.", "error": "camino-comida" }
+      ],
+      "columnas": 1,
+      "pista": "Piensa por dónde entra la comida a tu cuerpo.",
+      "explicacion": "La digestión empieza en la **boca**: los dientes muelen la comida y la saliva empieza a deshacerla.",
+      "error": "camino-comida"
+    },
+    {
+      "id": "c2", "tipo": "completar", "nivel": 1,
+      "enunciado": "Mira la parte marcada en el dibujo y completa.",
+      "visual": { "tipo": "ilustracion", "id": "aparato-digestivo", "resaltar": "intestino-grueso" },
+      "texto": "La parte marcada es el intestino [grueso]. Es la [última] parte del camino de la comida.",
+      "banco": ["delgado", "primera"],
+      "pista": "Compara los dos tubos de la barriga: ¿el marcado es el más ancho o el más fino? La comida llega ahí después de pasar por todas las otras partes.",
+      "explicacion": "Es el **intestino grueso**, el tubo más ancho. Es la **última** parte del camino: ahí se forman las heces.",
+      "error": "partes-digestivo"
+    },
+    {
+      "id": "c3", "tipo": "ordenar", "nivel": 2,
+      "enunciado": "La comida ya salió de la boca. Ordena por dónde pasa después.",
+      "elementos": ["esófago", "estómago", "intestino delgado", "intestino grueso"],
+      "pista": "Después de la boca viene un tubo. El intestino grueso es la última parte.",
+      "explicacion": "Después de la boca, la comida pasa por el esófago, el estómago, el intestino delgado y el intestino grueso.",
+      "error": "camino-comida"
+    },
+    {
+      "id": "c4", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha la adivinanza y escribe la respuesta.",
+      "escuchar": "Vivo dentro de tu boca. Muevo la comida de un lado a otro y la empujo hacia atrás para que la tragues. También siento los sabores. ¿Quién soy?",
+      "respuestas": ["lengua", "la lengua"],
+      "pista": "Está dentro de tu boca, detrás de los dientes. Puedes sacarla frente al espejo.",
+      "explicacion": "Es la **lengua**: mueve la comida dentro de la boca, la empuja para tragarla y siente los sabores.",
+      "error": "partes-digestivo"
+    },
+    {
+      "id": "c5", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "Une cada parte con la frase que habla de ella.",
+      "pares": [
+        ["el esófago", "empuja la comida hacia el estómago"],
+        ["el hígado", "prepara la bilis"],
+        ["el intestino delgado", "es el tubo más largo y está enrollado"],
+        ["el intestino grueso", "saca el agua de los restos"]
+      ],
+      "pista": "El esófago une la boca con el estómago. El hígado ayuda desde afuera con un jugo. Uno de los intestinos es muy largo; el otro está al final del camino.",
+      "explicacion": "El esófago empuja la comida hacia el estómago, el hígado prepara la bilis, el intestino delgado es el tubo más largo y enrollado, y el intestino grueso saca el agua de los restos.",
+      "error": "funcion-partes"
+    },
+    {
+      "id": "c6", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "¿Ayuda a tu digestión o no ayuda?",
+      "categorias": [
+        { "id": "si", "texto": "Ayuda", "emoji": "👍" },
+        { "id": "no", "texto": "No ayuda", "emoji": "👎" }
+      ],
+      "elementos": [
+        { "texto": "comer en bocados pequeños", "emoji": "🥄", "categoria": "si" },
+        { "texto": "comer una sopa con verduras", "emoji": "🥕", "categoria": "si" },
+        { "texto": "tomar agua en vez de gaseosa", "emoji": "💧", "categoria": "si" },
+        { "texto": "sentarme a la mesa y comer sin prisa", "emoji": "🍽️", "categoria": "si" },
+        { "texto": "llenarme la boca con un bocado enorme", "categoria": "no" },
+        { "texto": "comer muy rápido para salir a jugar", "categoria": "no" },
+        { "texto": "comer solo dulces todo el día", "emoji": "🍭", "categoria": "no" }
+      ],
+      "pista": "Piensa si el hábito deja trabajar tranquilo a tu aparato digestivo: bocados pequeños, calma, agua y fibra.",
+      "explicacion": "Ayudan: los bocados pequeños, la sopa con verduras (tiene fibra), el agua y comer con calma. No ayudan: los bocados enormes, comer muy rápido y comer solo dulces.",
+      "error": "cuidado-digestion"
+    },
+    {
+      "id": "c7", "tipo": "opcion", "nivel": 3,
+      "enunciado": "Mateo dice: «La comida pasa por dentro del hígado». ¿Tiene razón?",
+      "opciones": [
+        { "texto": "No. El hígado ayuda con la bilis, pero la comida no pasa por él.", "correcta": true },
+        { "texto": "Sí. El hígado está entre la boca y el esófago.", "pista": "La boca se une directamente con el esófago. El hígado no está en el camino.", "error": "higado" },
+        { "texto": "Sí. El hígado es el final del camino de la comida.", "pista": "El camino termina en el intestino grueso. El hígado ayuda desde afuera.", "error": "higado" }
+      ],
+      "columnas": 1,
+      "pista": "Recuerda el camino de la comida: boca, esófago, estómago, intestino delgado e intestino grueso. ¿Está el hígado?",
+      "explicacion": "Mateo no tiene razón: la comida no pasa por el hígado. El hígado ayuda desde afuera: prepara la bilis, que llega al intestino delgado para digerir las grasas.",
+      "error": "higado"
+    },
+    {
+      "id": "c8", "tipo": "escribir", "nivel": 3,
+      "enunciado": "¿En qué parte del aparato digestivo pasan los nutrientes a la sangre? Escribe su nombre.",
+      "respuestas": ["intestino delgado", "el intestino delgado", "en el intestino delgado"],
+      "pista": "Es la parte que recibe la papilla cuando sale del estómago.",
+      "explicacion": "En el **intestino delgado** los nutrientes pasan a la sangre, que los lleva a todo el cuerpo.",
+      "error": "funcion-partes"
+    }
+  ],
+  "repaso": {
+    "texto": "El camino de la comida: boca, esófago, estómago, intestino delgado e intestino grueso. El hígado ayuda desde afuera. Mastica bien, come con calma y toma agua.",
+    "visual": { "tipo": "ilustracion", "id": "aparato-digestivo" }
+  },
+  "adulto": {
+    "objetivo": "Conocer las partes principales del aparato digestivo (boca con dientes, lengua y saliva; esófago, estómago, intestino delgado e intestino grueso; el hígado de forma básica), ordenar el camino de la comida y reconocer hábitos que ayudan a la digestión: masticar bien, comer con calma, tomar agua y comer alimentos con fibra.",
+    "sugerencias": [
+      "Den a su hijo o hija un pedacito de pan (por ejemplo, marraqueta) y pídanle que lo mastique mucho rato sin tragarlo. Poco a poco se sentirá más dulce: es la saliva, que empieza a deshacer el pan. Así se nota que la digestión empieza en la boca.",
+      "Hagan un «esófago» con una media vieja y una pelotita o una naranja pequeña: aprieten la media por detrás de la pelotita para empujarla hacia abajo, como hace el esófago con cada bocado.",
+      "Midan con una lana unos 4 metros y compárenla con la estatura de una persona adulta: el intestino delgado de un adulto mide varios metros y cabe en la barriga porque está enrollado. En la feria, elijan juntos alimentos con fibra (quinua, habas, frutas y verduras)."
+    ],
+    "errores": {
+      "camino-comida": { "descripcion": "Le cuesta ordenar el camino de la comida o recordar dónde empieza la digestión.", "sugerencia": "Dibujen juntos el camino en una hoja grande y recórranlo con el dedo diciendo: boca, esófago, estómago, intestino delgado, intestino grueso." },
+      "partes-digestivo": { "descripcion": "No reconoce o no nombra algunas partes del aparato digestivo.", "sugerencia": "Mientras comen, señalen dónde está cada parte en el cuerpo (el esófago en el cuello y el pecho, el estómago arriba en la barriga) y nómbrenla." },
+      "funcion-partes": { "descripcion": "Confunde lo que hace cada parte (por ejemplo, dónde pasan los nutrientes a la sangre o para qué sirve la saliva).", "sugerencia": "Cuenten el viaje de un bocado como un cuento, dejando que el niño o la niña diga qué le pasa en cada parada." },
+      "cuidado-digestion": { "descripcion": "No reconoce los hábitos que ayudan a la digestión o qué alimentos tienen fibra.", "sugerencia": "En las comidas, jueguen a contar despacio mientras mastican y a descubrir qué alimentos del plato tienen fibra." },
+      "confunde-aparatos": { "descripcion": "Mezcla partes de otros aparatos del cuerpo (pulmones, corazón, huesos) con las del aparato digestivo.", "sugerencia": "Pregunten «¿por aquí pasa la comida o el aire?» señalando el cuello, el pecho y la barriga." },
+      "higado": { "descripcion": "Cree que la comida pasa por dentro del hígado.", "sugerencia": "Expliquen que el hígado es como una cocina vecina que manda un jugo (la bilis) al intestino, pero la comida no entra en él." },
+      "escritura-tema": { "descripcion": "Tiene dificultad para escribir palabras del tema, como «estómago».", "sugerencia": "Separen la palabra en sílabas con palmadas (es-tó-ma-go) y marquen la sílaba que suena más fuerte, que lleva tilde." },
+      "produce-oracion": { "descripcion": "Le cuesta escribir una oración completa con mayúscula y punto.", "sugerencia": "Digan el consejo en voz alta, escríbanlo juntos y péguenlo cerca de la mesa donde comen." },
+      "calculo": { "descripcion": "Se equivoca al restar en los problemas con dientes.", "sugerencia": "Usen fichas o palitos: pongan 32, quiten 20 y cuenten los que quedan." }
+    }
+  }
+}

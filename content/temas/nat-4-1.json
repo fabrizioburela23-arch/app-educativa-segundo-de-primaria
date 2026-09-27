@@ -1,0 +1,458 @@
+{
+  "id": "nat-4-1",
+  "titulo": "Los cinco sentidos",
+  "objetivo": "Conozco mis cinco sentidos, sé qué siento con cada uno y cómo cuidarlos.",
+  "explicacion": [
+    {
+      "texto": "Conocemos el mundo con los **cinco sentidos**: vista, oído, olfato, gusto y tacto. Cada sentido tiene su órgano: los ojos, los oídos, la nariz, la lengua y la piel.",
+      "emoji": "👀",
+      "visual": { "tipo": "ilustracion", "id": "sentidos" }
+    },
+    {
+      "texto": "Con los **ojos** vemos colores, formas y tamaños. Con los **oídos** escuchamos sonidos fuertes y suaves. Con la **nariz** sentimos olores, como el del pan recién horneado o el del humo.",
+      "visual": { "tipo": "emojis", "items": ["👀", "👂", "👃"], "etiquetas": ["vista", "oído", "olfato"] }
+    },
+    {
+      "texto": "Con la **lengua** sentimos sabores, como el dulce, el salado, el ácido y el amargo. Con la **piel** sentimos el frío y el calor, lo suave y lo áspero, y también el dolor. ¡La piel cubre todo el cuerpo!",
+      "visual": { "tipo": "emojis", "items": ["👅", "✋"], "etiquetas": ["gusto", "tacto"] }
+    },
+    {
+      "texto": "Algunas personas ven u oyen poco, o nada. Usan otros sentidos y ayudas: lentes, audífonos para oír mejor, el **braille** (letras de puntitos que se leen con los dedos) y la **lengua de señas**. ¡Todos merecemos respeto!",
+      "emoji": "🤝"
+    }
+  ],
+  "ejemplo": {
+    "instruccion": "Mira cómo Inti cuida sus sentidos durante un día en El Alto.",
+    "pasos": [
+      {
+        "texto": "En El Alto el sol es muy fuerte. Inti se pone gorra y lentes de sol, y nunca mira el sol directamente. Así cuida sus **ojos**.",
+        "visual": { "tipo": "ilustracion", "id": "sentidos", "resaltar": "vista" }
+      },
+      {
+        "texto": "Inti escucha música con volumen bajo y nunca mete lápices ni palitos en sus oídos. Así cuida sus **oídos**.",
+        "visual": { "tipo": "ilustracion", "id": "sentidos", "resaltar": "oido" }
+      },
+      {
+        "texto": "Se suena la nariz con un pañuelo y no huele de cerca los productos de limpieza. Después de comer, se cepilla los dientes y la lengua. Así cuida su **nariz** y su **lengua**.",
+        "visual": { "tipo": "emojis", "items": ["👃", "👅"], "etiquetas": ["nariz", "lengua"] }
+      },
+      {
+        "texto": "Inti se baña, se pone bloqueador cuando hay mucho sol y tiene cuidado con las ollas calientes. Así cuida su **piel**.",
+        "visual": { "tipo": "ilustracion", "id": "sentidos", "resaltar": "tacto" }
+      }
+    ]
+  },
+  "guiada": {
+    "intro": "Ahora lo hacemos juntos, paso a paso.",
+    "pasos": [
+      {
+        "id": "g1", "tipo": "relacionar",
+        "enunciado": "Une cada sentido con su órgano.",
+        "apoyo": "Mira el dibujo: el nombre de cada sentido está junto a la parte del cuerpo que lo usa.",
+        "visual": { "tipo": "ilustracion", "id": "sentidos" },
+        "pares": [
+          ["vista", { "texto": "ojos", "emoji": "👀" }],
+          ["oído", { "texto": "oídos", "emoji": "👂" }],
+          ["olfato", { "texto": "nariz", "emoji": "👃" }],
+          ["gusto", { "texto": "lengua", "emoji": "👅" }],
+          ["tacto", { "texto": "piel", "emoji": "✋" }]
+        ],
+        "pista": "Piensa: ¿con qué parte del cuerpo miras? ¿Con cuál hueles? ¿Con cuál pruebas la comida?",
+        "explicacion": "La vista usa los ojos; el oído, los oídos; el olfato, la nariz; el gusto, la lengua, y el tacto, la piel.",
+        "error": "sentido-organo"
+      },
+      {
+        "id": "g2", "tipo": "tocar",
+        "enunciado": "Toca las dos palabras que dicen cómo siente Mateo las cosas con la piel.",
+        "apoyo": "Con la piel sentimos si algo está frío o caliente, y si es suave o áspero.",
+        "texto": "Mateo mete la mano en el agua del río y la siente *fría*. Después acaricia a su perro y siente su pelo *suave*.",
+        "pista": "Busca palabras que digan cómo se siente algo al tocarlo.",
+        "explicacion": "«Fría» y «suave» son sensaciones del tacto: Mateo las siente con la piel de sus manos.",
+        "error": "tacto-sensaciones"
+      },
+      {
+        "id": "g3", "tipo": "completar",
+        "enunciado": "Completa cómo cuidamos los sentidos.",
+        "apoyo": "Piensa en lo que puede lastimar cada órgano.",
+        "texto": "Para cuidar mis ojos, nunca miro el [sol] directamente. Para cuidar mis oídos, escucho música con volumen [bajo].",
+        "banco": ["libro", "alto"],
+        "pista": "Hay algo en el cielo que brilla tanto que puede dañar los ojos. Y los sonidos muy fuertes lastiman los oídos.",
+        "explicacion": "Nunca miramos el **sol** directamente, porque su luz daña los ojos. Escuchamos música con volumen **bajo** para cuidar los oídos.",
+        "error": "cuidado-sentidos"
+      }
+    ]
+  },
+  "practica": [
+    {
+      "id": "p1", "tipo": "memoria", "nivel": 1,
+      "enunciado": "Encuentra las parejas: el órgano y su sentido.",
+      "pares": [
+        [ { "emoji": "👀" }, "vista" ],
+        [ { "emoji": "👂" }, "oído" ],
+        [ { "emoji": "👃" }, "olfato" ],
+        [ { "emoji": "👅" }, "gusto" ],
+        [ { "emoji": "✋" }, "tacto" ]
+      ],
+      "pista": "Piensa qué haces con cada parte: ¿miras, escuchas, hueles, pruebas o tocas?",
+      "explicacion": "Los ojos son de la vista; los oídos, del oído; la nariz, del olfato; la lengua, del gusto, y la piel de la mano, del tacto.",
+      "error": "sentido-organo"
+    },
+    {
+      "id": "p2", "tipo": "numero", "nivel": 1,
+      "enunciado": "¿Cuántos sentidos tenemos?",
+      "visual": { "tipo": "ilustracion", "id": "sentidos" },
+      "respuesta": 5,
+      "sufijo": "sentidos",
+      "erroresComunes": [
+        { "respuesta": 4, "pista": "Te falta uno. Mira el dibujo otra vez: ¿contaste también la mano?", "error": "sentido-organo" }
+      ],
+      "pista": "Cuenta los nombres que hay en el dibujo, o nombra los sentidos con los dedos de una mano.",
+      "explicacion": "Tenemos **5 sentidos**: vista, oído, olfato, gusto y tacto.",
+      "error": "sentido-organo"
+    },
+    {
+      "id": "p3", "tipo": "opcion", "nivel": 1,
+      "enunciado": "¿Qué sentido usa la parte marcada del dibujo?",
+      "visual": { "tipo": "ilustracion", "id": "sentidos", "resaltar": "olfato" },
+      "opciones": [
+        { "texto": "olfato", "correcta": true },
+        { "texto": "gusto", "pista": "El gusto está en la boca, en la lengua. La parte marcada está un poco más arriba.", "error": "sentido-organo" },
+        { "texto": "oído", "pista": "Las orejas están a los lados de la cabeza. Mira otra vez la parte marcada.", "error": "sentido-organo" }
+      ],
+      "columnas": 3,
+      "pista": "La parte marcada está en el centro de la cara. ¿Qué haces con ella?",
+      "explicacion": "La parte marcada es la **nariz**. Con ella usamos el **olfato** para sentir los olores.",
+      "error": "sentido-organo"
+    },
+    {
+      "id": "p4", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Toca las partes del cuerpo con las que sentimos.",
+      "texto": "Sofía mira las nubes con sus *ojos*, oye la lluvia con sus *oídos* y huele las flores con su *nariz*.",
+      "pista": "Hay tres partes del cuerpo en la oración.",
+      "explicacion": "Los **ojos**, los **oídos** y la **nariz** son órganos de los sentidos: vista, oído y olfato.",
+      "error": "sentido-organo"
+    },
+    {
+      "id": "p5", "tipo": "clasificar", "nivel": 1,
+      "enunciado": "¿Cómo se siente al tocarlo: suave o áspero?",
+      "categorias": [
+        { "id": "suave", "texto": "Suave", "emoji": "🧸" },
+        { "id": "aspero", "texto": "Áspero", "emoji": "🧱" }
+      ],
+      "elementos": [
+        { "texto": "la lana de la alpaca", "categoria": "suave" },
+        { "texto": "un pétalo de rosa", "emoji": "🌹", "categoria": "suave" },
+        { "texto": "un copo de algodón", "categoria": "suave" },
+        { "texto": "una lija", "categoria": "aspero" },
+        { "texto": "la corteza de un árbol", "emoji": "🌳", "categoria": "aspero" },
+        { "texto": "un ladrillo", "categoria": "aspero" }
+      ],
+      "pista": "Imagina que pasas los dedos por encima. ¿Se deslizan fácil o sientes que raspa?",
+      "explicacion": "La lana de alpaca, el pétalo y el algodón son **suaves**. La lija, la corteza y el ladrillo son **ásperos**: raspan un poco.",
+      "error": "tacto-sensaciones"
+    },
+    {
+      "id": "p6", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "¿Qué sentido usas? Une cada acción con su sentido.",
+      "pares": [
+        ["escuchar el charango", "oído"],
+        [{ "texto": "mirar el arcoíris", "emoji": "🌈" }, "vista"],
+        [{ "texto": "oler el pan recién horneado", "emoji": "🍞" }, "olfato"],
+        ["probar un api dulce", "gusto"],
+        ["sentir el agua fría del río", "tacto"]
+      ],
+      "pista": "Fíjate en la acción: ¿escuchar, mirar, oler, probar o sentir con la piel?",
+      "explicacion": "Escuchamos con el **oído**, miramos con la **vista**, olemos con el **olfato**, probamos con el **gusto** y sentimos el frío con el **tacto**.",
+      "error": "que-percibe"
+    },
+    {
+      "id": "p7", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "¿Qué sabor tiene: dulce, salado o ácido?",
+      "categorias": [
+        { "id": "dulce", "texto": "Dulce", "emoji": "🍯" },
+        { "id": "salado", "texto": "Salado", "emoji": "🧂" },
+        { "id": "acido", "texto": "Ácido", "emoji": "🍋" }
+      ],
+      "elementos": [
+        { "texto": "la miel", "categoria": "dulce" },
+        { "texto": "un plátano maduro", "categoria": "dulce" },
+        { "texto": "el charque", "categoria": "salado" },
+        { "texto": "las pipocas con sal", "categoria": "salado" },
+        { "texto": "el limón", "categoria": "acido" },
+        { "texto": "el jugo de tumbo sin azúcar", "categoria": "acido" }
+      ],
+      "pista": "Imagina que lo pruebas. ¿Sabe como el azúcar, como la sal o como el limón?",
+      "explicacion": "La miel y el plátano maduro son **dulces**. El charque y las pipocas con sal son **salados**. El limón y el jugo de tumbo sin azúcar son **ácidos**.",
+      "error": "sabores"
+    },
+    {
+      "id": "p8", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha la adivinanza y escribe la respuesta.",
+      "escuchar": "Estoy en el centro de tu cara y tengo dos agujeritos. Gracias a mí sientes el olor de las flores y del pan. ¿Quién soy?",
+      "respuestas": ["nariz", "la nariz", "es la nariz", "eres la nariz"],
+      "pista": "Con ella usamos el olfato. Empieza con «na».",
+      "explicacion": "Es la **nariz**: el órgano del olfato. Se escribe con **z** al final.",
+      "error": "vocabulario-tema"
+    },
+    {
+      "id": "p9", "tipo": "multiple", "nivel": 2,
+      "enunciado": "¿Qué cosas cuidan tus oídos? Elige todas las correctas.",
+      "opciones": [
+        { "texto": "Escuchar música con volumen bajo.", "correcta": true },
+        { "texto": "No meter lápices ni palitos en el oído.", "correcta": true },
+        { "texto": "Limpiar solo la parte de afuera de la oreja.", "correcta": true },
+        { "texto": "Gritar muy cerca de la oreja de un amigo.", "pista": "Un grito muy cerca puede lastimar el oído de tu amigo.", "error": "cuidado-sentidos" },
+        { "texto": "Poner la radio muy, muy fuerte.", "pista": "Los sonidos muy fuertes pueden dañar los oídos.", "error": "cuidado-sentidos" }
+      ],
+      "columnas": 1,
+      "pista": "Hay tres acciones que cuidan los oídos.",
+      "explicacion": "Cuidamos los oídos con volumen bajo, sin meter nada adentro y limpiando solo la parte de afuera de la oreja. Los gritos cerca y la radio muy fuerte los pueden lastimar.",
+      "error": "cuidado-sentidos"
+    },
+    {
+      "id": "p10", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "¿Cuida o daña los órganos de los sentidos?",
+      "categorias": [
+        { "id": "cuida", "texto": "Los cuida", "emoji": "✅" },
+        { "id": "dana", "texto": "Los puede dañar", "emoji": "⚠️" }
+      ],
+      "elementos": [
+        { "texto": "sonarse la nariz con un pañuelo", "categoria": "cuida" },
+        { "texto": "cepillarse los dientes y la lengua", "categoria": "cuida" },
+        { "texto": "ponerse bloqueador cuando hay mucho sol", "categoria": "cuida" },
+        { "texto": "mirar el sol directamente", "categoria": "dana" },
+        { "texto": "oler de cerca un producto de limpieza", "categoria": "dana" },
+        { "texto": "agarrar una olla caliente sin trapo", "categoria": "dana" }
+      ],
+      "pista": "Pregúntate: ¿esto protege mi cuerpo o lo puede lastimar?",
+      "explicacion": "Sonarse la nariz, cepillarse y usar bloqueador **cuidan** los sentidos. Mirar el sol, oler productos de limpieza y agarrar una olla caliente sin trapo los **pueden dañar**.",
+      "error": "cuidado-sentidos"
+    },
+    {
+      "id": "p11", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa con el órgano correcto.",
+      "texto": "Con la [lengua] sentimos los sabores, y con la [piel] sentimos el frío y el calor.",
+      "banco": ["oreja", "ceja"],
+      "pista": "¿Qué parte de tu boca toca la comida? ¿Qué parte cubre todo tu cuerpo?",
+      "explicacion": "Con la **lengua** sentimos los sabores (gusto) y con la **piel** sentimos el frío y el calor (tacto).",
+      "error": "sentido-organo"
+    },
+    {
+      "id": "p12", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "Los sentidos nos avisan de peligros. Une cada aviso con el sentido que lo nota.",
+      "pares": [
+        [{ "texto": "olor a humo en la cocina", "emoji": "💨" }, "olfato"],
+        [{ "texto": "la bocina de un auto", "emoji": "🚗" }, "oído"],
+        [{ "texto": "el calor de una olla al acercar la mano", "emoji": "🍲" }, "tacto"],
+        [{ "texto": "la luz roja del semáforo", "emoji": "🚦" }, "vista"],
+        ["un sabor raro en la leche", "gusto"]
+      ],
+      "pista": "Piensa: ¿el aviso se ve, se oye, se huele, se prueba o se siente con la piel?",
+      "explicacion": "El humo se nota con el **olfato**; la bocina, con el **oído**; el calor de la olla, con el **tacto**; la luz roja, con la **vista**, y el sabor raro, con el **gusto** (y esa leche ya no se toma). ¡Los sentidos nos protegen!",
+      "error": "que-percibe"
+    },
+    {
+      "id": "p13", "tipo": "opcion", "nivel": 3,
+      "enunciado": "Kusi tiene resfrío y la nariz tapada. Su familia dice que la sopa de maní está muy rica, pero Kusi casi no siente su sabor. ¿Por qué?",
+      "visual": { "tipo": "emojis", "items": ["🤧", "🍲"] },
+      "opciones": [
+        { "texto": "Porque el olfato ayuda al gusto, y con la nariz tapada no siente bien los olores.", "correcta": true },
+        { "texto": "Porque a la sopa le falta sal.", "pista": "Su familia dice que la sopa está rica. Lo que cambió está en Kusi.", "error": "sentidos-juntos" },
+        { "texto": "Porque los sabores se sienten con la nariz y no con la lengua.", "pista": "Los sabores se sienten con la lengua. Pero hay otro sentido que la ayuda.", "error": "sentido-organo" }
+      ],
+      "columnas": 1,
+      "pista": "Piensa qué sentido no funciona bien por el resfrío y cómo ayuda cuando comemos.",
+      "explicacion": "El **olfato** ayuda al **gusto**. Con la nariz tapada, Kusi no siente bien el olor de la sopa, y por eso le parece que casi no tiene sabor.",
+      "error": "sentidos-juntos"
+    },
+    {
+      "id": "p14", "tipo": "relacionar", "nivel": 3,
+      "enunciado": "Une cada ayuda con lo que hace.",
+      "pares": [
+        [{ "texto": "lentes", "emoji": "👓" }, "ayudan a ver con más claridad"],
+        ["audífono", "ayuda a oír mejor"],
+        ["braille", "letras de puntitos que se leen con los dedos"],
+        ["lengua de señas", "se habla con las manos, la cara y el cuerpo"],
+        ["bastón blanco", "ayuda a una persona ciega a sentir el camino"]
+      ],
+      "pista": "Piensa a qué sentido ayuda cada una: a la vista, al oído o al tacto.",
+      "explicacion": "Los lentes ayudan a ver con más claridad y el audífono, a oír mejor. El braille se lee tocando puntitos. La lengua de señas usa las manos, la cara y el cuerpo; en Bolivia se usa la Lengua de Señas Boliviana. El bastón blanco ayuda a sentir el camino.",
+      "error": "diversidad-ayudas"
+    },
+    {
+      "id": "p15", "tipo": "pasos", "nivel": 3,
+      "enunciado": "Rosa compra una piña en la feria y la lleva a su casa.",
+      "visual": { "tipo": "emoji", "valor": "🍍" },
+      "pasos": [
+        {
+          "tipo": "completar",
+          "enunciado": "Completa lo que siente Rosa.",
+          "texto": "Con los ojos ve que las hojas de la piña son [verdes]. Con las manos siente que la cáscara es [áspera].",
+          "banco": ["dulces", "ruidosa"],
+          "pista": "¿Qué se puede saber mirando? ¿Cómo se siente algo que raspa?",
+          "explicacion": "Con la vista, Rosa ve que las hojas son **verdes**. Con el tacto siente que la cáscara es **áspera**.",
+          "error": "que-percibe"
+        },
+        {
+          "tipo": "opcion",
+          "enunciado": "En casa, Rosa prueba un pedazo de piña. ¡Está dulce! ¿Qué sentido usa?",
+          "opciones": [
+            { "texto": "el gusto", "correcta": true },
+            { "texto": "el olfato", "pista": "Con el olfato sentiría su olor. Para saber si es dulce, hay que probarla.", "error": "que-percibe" },
+            { "texto": "el oído", "pista": "El oído sirve para los sonidos.", "error": "que-percibe" }
+          ],
+          "columnas": 3,
+          "pista": "Rosa se pone la piña en la boca.",
+          "explicacion": "Para sentir que la piña es dulce, Rosa usa el **gusto**.",
+          "error": "que-percibe"
+        },
+        {
+          "tipo": "escribir",
+          "enunciado": "¿Con qué órgano sintió Rosa el sabor dulce? Escribe su nombre.",
+          "respuestas": ["lengua", "la lengua", "con la lengua", "su lengua", "con su lengua"],
+          "pista": "Está dentro de la boca y se mueve cuando hablas.",
+          "explicacion": "El órgano del gusto es la **lengua**.",
+          "error": "sentido-organo"
+        }
+      ],
+      "pista": "Resuelve un paso a la vez: primero la vista y el tacto, después el gusto.",
+      "explicacion": "Rosa usó la vista (hojas verdes), el tacto (cáscara áspera) y el gusto, con la lengua (piña dulce). ¡Usamos varios sentidos a la vez!",
+      "error": "que-percibe"
+    },
+    {
+      "id": "p16", "tipo": "escribir-libre", "nivel": 3,
+      "enunciado": "Escribe una oración sobre algo que te gusta sentir. Di con qué parte del cuerpo lo sientes.",
+      "guia": ["Me gusta oler... con mi nariz.", "Me gusta escuchar... con mis oídos."],
+      "requisitos": [
+        { "tipo": "mayuscula-inicial" },
+        { "tipo": "punto-final" },
+        { "tipo": "min-palabras", "valor": 5 },
+        { "tipo": "incluye", "palabras": ["ojo", "oído", "oreja", "nariz", "lengua", "boca", "piel", "mano", "dedo"] }
+      ],
+      "modelo": "Me gusta oler las flores del parque con mi nariz.",
+      "pista": "Piensa en algo rico de ver, oír, oler, probar o tocar.",
+      "explicacion": "Por ejemplo: «Me gusta oler las flores del parque con mi nariz». Empieza con mayúscula y termina con punto.",
+      "error": "produce-oracion"
+    }
+  ],
+  "comprobacion": [
+    {
+      "id": "c1", "tipo": "opcion", "nivel": 1,
+      "enunciado": "Mira las partes marcadas del dibujo. ¿A qué sentido corresponden?",
+      "visual": { "tipo": "ilustracion", "id": "sentidos", "resaltar": "oido" },
+      "opciones": [
+        { "texto": "oído", "correcta": true },
+        { "texto": "vista", "pista": "La vista usa los ojos. Las partes marcadas están a los lados de la cabeza.", "error": "sentido-organo" },
+        { "texto": "tacto", "pista": "El tacto está en la piel, como la de la mano. Mira otra vez las partes marcadas.", "error": "sentido-organo" }
+      ],
+      "columnas": 3,
+      "pista": "Las partes marcadas están a los dos lados de la cabeza.",
+      "explicacion": "Las partes marcadas son las **orejas**, la entrada de los oídos. Corresponden al sentido del **oído**.",
+      "error": "sentido-organo"
+    },
+    {
+      "id": "c2", "tipo": "relacionar", "nivel": 1,
+      "enunciado": "Une cada órgano con lo que siente.",
+      "pares": [
+        [{ "texto": "ojos", "emoji": "👀" }, "colores y formas"],
+        [{ "texto": "oídos", "emoji": "👂" }, "sonidos"],
+        [{ "texto": "nariz", "emoji": "👃" }, "olores"],
+        [{ "texto": "lengua", "emoji": "👅" }, "sabores"],
+        [{ "texto": "piel", "emoji": "✋" }, "frío y calor"]
+      ],
+      "pista": "Piensa qué haces con cada órgano: mirar, escuchar, oler, probar o tocar.",
+      "explicacion": "Los ojos ven colores y formas; los oídos, sonidos; la nariz, olores; la lengua, sabores, y la piel siente el frío y el calor.",
+      "error": "que-percibe"
+    },
+    {
+      "id": "c3", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "¿Cuida o puede dañar los ojos?",
+      "categorias": [
+        { "id": "cuida", "texto": "Los cuida", "emoji": "✅" },
+        { "id": "dana", "texto": "Los puede dañar", "emoji": "⚠️" }
+      ],
+      "elementos": [
+        { "texto": "usar gorra y lentes de sol cuando hay mucho sol", "categoria": "cuida" },
+        { "texto": "lavarse las manos antes de tocarse los ojos", "categoria": "cuida" },
+        { "texto": "ir al doctor de los ojos si ves borroso", "categoria": "cuida" },
+        { "texto": "frotarse los ojos con las manos sucias", "categoria": "dana" },
+        { "texto": "jugar con palos o lápices cerca de la cara", "categoria": "dana" },
+        { "texto": "tirar tierra o arena a la cara de otro niño", "categoria": "dana" }
+      ],
+      "pista": "Pregúntate: ¿esto protege los ojos o los puede lastimar?",
+      "explicacion": "La gorra y los lentes de sol, las manos limpias y la visita al doctor **cuidan** los ojos. Frotarlos con las manos sucias, jugar con palos cerca de la cara y tirar tierra o arena a la cara los **pueden dañar**.",
+      "error": "cuidado-sentidos"
+    },
+    {
+      "id": "c4", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha y escribe el nombre del sentido que usa Luis.",
+      "escuchar": "Luis está sentado en la feria con los ojos cerrados. Aun así, sabe que cerca venden buñuelos, porque siente su olor. ¿Qué sentido usa Luis?",
+      "respuestas": ["olfato", "el olfato", "sentido del olfato", "el sentido del olfato"],
+      "pista": "Es el sentido que sirve para sentir olores. Empieza con «ol».",
+      "explicacion": "Luis usa el **olfato**: siente el olor de los buñuelos con su nariz.",
+      "error": "que-percibe"
+    },
+    {
+      "id": "c5", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa con el sabor correcto.",
+      "texto": "El limón es [ácido], el mango maduro es [dulce] y el café sin azúcar es [amargo].",
+      "banco": ["salado"],
+      "pista": "Imagina cada sabor en tu boca: el limón te hace fruncir la cara y el café sin azúcar no es nada dulce.",
+      "explicacion": "El limón es **ácido**, el mango maduro es **dulce** y el café sin azúcar es **amargo**. Ninguno de los tres es salado.",
+      "error": "sabores"
+    },
+    {
+      "id": "c6", "tipo": "tocar", "nivel": 2,
+      "enunciado": "Toca las palabras que dicen cómo siente Ana las cosas con la piel.",
+      "texto": "Ana ayuda a su abuelo en la huerta. Toca la tierra *húmeda* y una piedra *caliente* por el sol. Ve tomates rojos y escucha a los pájaros.",
+      "pista": "Busca cómo se sienten las cosas al tocarlas. Hay dos palabras. Recuerda: un color se ve, no se toca.",
+      "explicacion": "«Húmeda» y «caliente» dicen cómo siente Ana la tierra y la piedra con el tacto. Que los tomates son rojos lo sabe con la vista, y a los pájaros los escucha con los oídos.",
+      "error": "tacto-sensaciones"
+    },
+    {
+      "id": "c7", "tipo": "multiple", "nivel": 3,
+      "enunciado": "Kusi y su papá van a cruzar la calle. ¿Qué sentidos les ayudan a saber si viene un auto? Elige todos los correctos.",
+      "opciones": [
+        { "texto": "la vista", "emoji": "👀", "correcta": true },
+        { "texto": "el oído", "emoji": "👂", "correcta": true },
+        { "texto": "el gusto", "emoji": "👅", "pista": "El gusto sirve para los sabores, no para saber si viene un auto.", "error": "que-percibe" }
+      ],
+      "columnas": 3,
+      "pista": "¿Cómo te das cuenta de que se acerca un auto? Hay dos sentidos correctos.",
+      "explicacion": "La **vista** nos deja ver los autos y el semáforo, y el **oído** nos deja escuchar el motor y la bocina. ¡Por eso miramos y escuchamos antes de cruzar!",
+      "error": "que-percibe"
+    },
+    {
+      "id": "c8", "tipo": "completar", "nivel": 3,
+      "enunciado": "Completa cómo conversan y leen algunas personas.",
+      "texto": "Muchas personas sordas conversan en lengua de [señas]. Muchas personas ciegas leen en [braille], tocando puntitos con los dedos.",
+      "banco": ["lupa", "colores"],
+      "pista": "Una es una forma de hablar con las manos. La otra es una escritura que se lee con el tacto.",
+      "explicacion": "Muchas personas sordas conversan en **lengua de señas**; en Bolivia se usa la Lengua de Señas Boliviana. Muchas personas ciegas leen en **braille**, con el tacto.",
+      "error": "diversidad-ayudas"
+    }
+  ],
+  "repaso": {
+    "texto": "Los cinco sentidos son la vista (ojos), el oído (oídos), el olfato (nariz), el gusto (lengua) y el tacto (piel). Los cuidamos para que nos ayuden toda la vida.",
+    "visual": { "tipo": "ilustracion", "id": "sentidos" }
+  },
+  "adulto": {
+    "objetivo": "Reconocer los cinco sentidos y sus órganos (vista-ojos, oído-oídos, olfato-nariz, gusto-lengua, tacto-piel), lo que percibe cada uno, cómo cuidarlos y que se usan juntos. También valorar con respeto que algunas personas ven u oyen poco o nada y usan otros sentidos y ayudas: lentes, audífonos, bastón blanco, braille y lengua de señas (en Bolivia se usa la Lengua de Señas Boliviana, LSB).",
+    "sugerencias": [
+      "Jueguen a la «bolsa misteriosa»: pongan en una bolsa de tela cosas de la casa (una papa, una cuchara, un ovillo de lana, una piedra) y pidan que adivine qué es solo con el tacto y diga si es suave o áspera, fría o tibia.",
+      "En la cocina, con los ojos cerrados, denle a probar un poquito de azúcar, sal, limón y café sin azúcar, y que diga cada sabor: dulce, salado, ácido o amargo. Otro día, con la nariz tapada, que pruebe un pedacito de manzana y otro de pera, y luego sin taparse: notará que sin el olfato cuesta más distinguirlos.",
+      "Salgan a la plaza o al patio y hagan un minuto de silencio: anoten juntos todos los sonidos que escuchan (pájaros, micros, voces) y si son fuertes o suaves. Aprovechen para hablar de cómo cuidar los oídos y los ojos del sol fuerte."
+    ],
+    "errores": {
+      "sentido-organo": { "descripcion": "Confunde un sentido con su órgano (por ejemplo, cree que el gusto está en la nariz).", "sugerencia": "Jueguen «Simón dice»: «Simón dice: toca el órgano del olfato», y que señale su nariz. Luego cambien de papel." },
+      "que-percibe": { "descripcion": "No identifica qué sentido usa en una situación (ver, oír, oler, probar, tocar).", "sugerencia": "Durante la comida o en la feria, pregunten: «¿con qué sentido te diste cuenta?» ante un olor, un sonido, un color o una textura." },
+      "tacto-sensaciones": { "descripcion": "Confunde las sensaciones del tacto (frío y caliente, suave y áspero).", "sugerencia": "Toquen juntos objetos de la casa y descríbanlos: la lana es suave, la lija es áspera, el agua del grifo está fría." },
+      "sabores": { "descripcion": "Confunde los sabores dulce, salado, ácido y amargo.", "sugerencia": "Prueben azúcar, sal, limón y un poquito de café sin azúcar, y nombren cada sabor. Eviten el antiguo «mapa de la lengua»: toda la lengua siente todos los sabores." },
+      "cuidado-sentidos": { "descripcion": "No reconoce qué acciones cuidan o dañan los órganos de los sentidos.", "sugerencia": "Hagan juntos un cartel «Cuido mis sentidos» para la pared: gorra y lentes de sol, volumen bajo, nada dentro del oído, cepillado de dientes y lengua, bloqueador." },
+      "sentidos-juntos": { "descripcion": "No se da cuenta de que usamos varios sentidos a la vez (el olfato ayuda al gusto).", "sugerencia": "Prueben un pedacito de fruta con la nariz tapada y luego destapada, y comparen el sabor." },
+      "diversidad-ayudas": { "descripcion": "No conoce las ayudas que usan las personas que ven u oyen poco o nada.", "sugerencia": "Conversen con respeto sobre personas que usan lentes, audífonos, bastón blanco, braille o lengua de señas. Busquen un video con intérprete de Lengua de Señas Boliviana y aprendan juntos a saludar." },
+      "vocabulario-tema": { "descripcion": "Le cuesta escribir palabras del tema (nariz, lengua, olfato).", "sugerencia": "Escriban las palabras del tema en tarjetas y díctenlas separando las sílabas con palmadas (na-riz, len-gua)." },
+      "produce-oracion": { "descripcion": "Le cuesta escribir una oración completa con mayúscula inicial y punto final.", "sugerencia": "Pidan que primero diga la oración en voz alta y después la escriba; revisen juntos la mayúscula y el punto." }
+    }
+  }
+}

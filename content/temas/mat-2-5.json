@@ -1,0 +1,416 @@
+{
+  "id": "mat-2-5",
+  "titulo": "Resta prestando",
+  "objetivo": "Resto aunque arriba haya menos: cambio 1 decena por 10 unidades y sigo restando.",
+  "explicacion": [
+    {
+      "texto": "Queremos restar 42 − 17. Empezamos por las unidades: arriba hay 2 y hay que quitar 7. ¡No alcanza!",
+      "emoji": "🤔",
+      "visual": { "tipo": "bloques", "decenas": 4, "unidades": 2 }
+    },
+    {
+      "texto": "Entonces **pedimos prestada** una decena: cambiamos 1 barra por 10 cubitos. Ahora hay 3 decenas y 12 unidades. ¡Sigue siendo 42!",
+      "emoji": "🤝",
+      "visual": { "tipo": "bloques", "decenas": 3, "unidades": 12 }
+    },
+    {
+      "texto": "Ahora sí: 12 − 7 = 5 unidades y 3 − 1 = 2 decenas. Entonces 42 − 17 = 25. ¡Ojo! No hagas 7 − 2: el 7 está abajo. Arriba siempre va lo que tienes.",
+      "visual": { "tipo": "tabla", "columnas": ["", "D", "U"], "filas": [["", "3", "12"], ["−", "1", "7"], ["=", "2", "5"]] }
+    },
+    {
+      "texto": "Con centenas es igual. En 234 − 52, las 3 decenas no alcanzan para quitar 5. Cambiamos 1 centena por 10 decenas: ahora hay 13 decenas y 13 − 5 = 8. El resultado es 182. A veces hay que pedir prestado dos veces.",
+      "visual": { "tipo": "bloques", "centenas": 1, "decenas": 13, "unidades": 4 }
+    }
+  ],
+  "ejemplo": {
+    "instruccion": "Mira cómo restamos 63 − 28 pidiendo prestado. Después, juega tú con los bloques.",
+    "pasos": [
+      { "texto": "Armamos el 63. Hay que quitar 28, pero arriba hay 3 unidades y hay que quitar 8. No alcanza.", "visual": { "tipo": "bloques", "decenas": 6, "unidades": 3 } },
+      { "texto": "Cambiamos 1 barra por 10 cubitos. Ahora hay 5 decenas y 13 unidades.", "visual": { "tipo": "bloques", "decenas": 5, "unidades": 13 } },
+      { "texto": "Quitamos 8 cubitos: 13 − 8 = 5. Quitamos 2 barras: 5 − 2 = 3.", "visual": { "tipo": "bloques", "decenas": 3, "unidades": 5 } },
+      { "texto": "Quedan 3 decenas y 5 unidades: 63 − 28 = 35. Comprobamos sumando: 35 + 28 = 63. ¡Está bien!", "visual": { "tipo": "tabla", "columnas": ["", "D", "U"], "filas": [["", "5", "13"], ["−", "2", "8"], ["=", "3", "5"]] } }
+    ],
+    "explorar": { "tipo": "bloques" }
+  },
+  "guiada": {
+    "intro": "Ahora restamos juntos, paso a paso.",
+    "pasos": [
+      {
+        "id": "g1", "tipo": "numero",
+        "enunciado": "Cambiamos 1 barra por 10 cubitos. 5 decenas y 4 unidades es lo mismo que 4 decenas y ¿cuántas unidades?",
+        "apoyo": "La barra que cambias son 10 cubitos. Júntalos con los 4 cubitos que ya había.",
+        "visual": { "tipo": "bloques", "decenas": 5, "unidades": 4 },
+        "respuesta": 14,
+        "erroresComunes": [
+          { "respuesta": 10, "pista": "No olvides los 4 cubitos que ya estaban.", "error": "canje-decena" },
+          { "respuesta": 5, "pista": "Una barra no se cambia por 1 cubito: se cambia por 10.", "error": "canje-decena" }
+        ],
+        "pista": "Suma los 10 cubitos de la barra y los 4 que ya había.",
+        "explicacion": "10 + 4 = 14. Entonces 54 es igual a 4 decenas y 14 unidades.",
+        "error": "canje-decena"
+      },
+      {
+        "id": "g2", "tipo": "manipular",
+        "enunciado": "Aquí tienes 52 en bloques. Quita 24. Si no alcanzan los cubitos, cambia 1 barra por 10 cubitos.",
+        "apoyo": "Toca «Cambiar 1 decena por 10 unidades»: tendrás 4 barras y 12 cubitos. Luego quita 4 cubitos y 2 barras.",
+        "manipulable": { "tipo": "bloques", "inicial": { "centenas": 0, "decenas": 5, "unidades": 2 }, "objetivo": 28 },
+        "pista": "Hay que quitar 4 cubitos y solo hay 2. Primero cambia una barra por 10 cubitos.",
+        "explicacion": "Con 4 barras y 12 cubitos: 12 − 4 = 8 cubitos y 4 − 2 = 2 barras. Quedan 28: 52 − 24 = 28.",
+        "error": "resta-bloques"
+      },
+      {
+        "id": "g3", "tipo": "numero",
+        "enunciado": "¿Cuánto es 71 − 38?",
+        "apoyo": "1 es menor que 8: pide 1 decena prestada. Arriba quedarán 6 decenas y 11 unidades.",
+        "visual": { "tipo": "operacion", "numeros": [71, 38], "op": "-", "vertical": true },
+        "respuesta": 33,
+        "erroresComunes": [
+          { "respuesta": 47, "pista": "Hiciste 8 − 1, pero el 8 está abajo. Pide prestado y resta 11 − 8.", "error": "resta-invierte" },
+          { "respuesta": 43, "pista": "Pediste prestado, pero arriba ya no quedan 7 decenas: quedan 6.", "error": "prestamo-olvida" }
+        ],
+        "pista": "Resta las unidades con las 11 que tienes ahora. Después resta las decenas con las 6 que quedaron.",
+        "explicacion": "11 − 8 = 3 unidades y 6 − 3 = 3 decenas. Entonces 71 − 38 = 33. Compruébalo: 33 + 38 = 71.",
+        "error": "resta-calculo"
+      }
+    ]
+  },
+  "practica": [
+    {
+      "id": "p1", "tipo": "generador", "nivel": 1, "generador": "resta", "params": { "digitos": 2, "prestar": false }
+    },
+    {
+      "id": "p2", "tipo": "clasificar", "nivel": 1,
+      "enunciado": "¿Hay que pedir prestado para restar las unidades?",
+      "categorias": [ { "id": "si", "texto": "Hay que prestar", "emoji": "🤝" }, { "id": "no", "texto": "No hace falta", "emoji": "👍" } ],
+      "elementos": [
+        { "texto": "45 − 23", "categoria": "no" },
+        { "texto": "52 − 18", "categoria": "si" },
+        { "texto": "37 − 29", "categoria": "si" },
+        { "texto": "68 − 34", "categoria": "no" },
+        { "texto": "81 − 46", "categoria": "si" },
+        { "texto": "99 − 57", "categoria": "no" }
+      ],
+      "pista": "Mira solo las unidades: ¿la de arriba es menor que la de abajo?",
+      "explicacion": "Hay que prestar en 52 − 18, 37 − 29 y 81 − 46, porque arriba hay menos unidades que abajo: 2 es menor que 8, 7 es menor que 9 y 1 es menor que 6. En las otras, arriba alcanza.",
+      "error": "necesita-prestar"
+    },
+    {
+      "id": "p3", "tipo": "relacionar", "nivel": 1,
+      "enunciado": "Une las dos formas de decir el mismo número.",
+      "pares": [
+        ["3 decenas y 5 unidades", "2 decenas y 15 unidades"],
+        ["6 decenas y 0 unidades", "5 decenas y 10 unidades"],
+        ["4 decenas y 8 unidades", "3 decenas y 18 unidades"]
+      ],
+      "pista": "Si quitas 1 decena, tienes 10 unidades más.",
+      "explicacion": "35 es 2 decenas y 15 unidades; 60 es 5 decenas y 10 unidades; 48 es 3 decenas y 18 unidades.",
+      "error": "canje-decena"
+    },
+    {
+      "id": "p4", "tipo": "numero", "nivel": 1,
+      "enunciado": "Cambia la barra por 10 cubitos. ¿Cuántos cubitos tienes en total?",
+      "visual": { "tipo": "bloques", "decenas": 1, "unidades": 6 },
+      "respuesta": 16,
+      "erroresComunes": [
+        { "respuesta": 7, "pista": "La barra no vale 1 cubito: vale 10.", "error": "canje-decena" },
+        { "respuesta": 10, "pista": "Cuenta también los 6 cubitos que ya había.", "error": "canje-decena" }
+      ],
+      "pista": "Una barra son 10 cubitos. Súmale los cubitos sueltos.",
+      "explicacion": "10 + 6 = 16 cubitos.",
+      "error": "canje-decena"
+    },
+    {
+      "id": "p5", "tipo": "generador", "nivel": 2, "generador": "resta", "params": { "digitos": 2, "prestar": true }
+    },
+    {
+      "id": "p6", "tipo": "manipular", "nivel": 2,
+      "enunciado": "Aquí tienes 43 en bloques. Quita 19. Si faltan cubitos, cambia 1 barra por 10 cubitos.",
+      "manipulable": { "tipo": "bloques", "inicial": { "centenas": 0, "decenas": 4, "unidades": 3 }, "objetivo": 24 },
+      "pista": "Hay que quitar 9 cubitos y solo hay 3. Cambia una barra por 10 cubitos.",
+      "explicacion": "Al cambiar 1 barra quedan 3 barras y 13 cubitos. 13 − 9 = 4 y 3 − 1 = 2. Quedan 24: 43 − 19 = 24.",
+      "error": "resta-bloques"
+    },
+    {
+      "id": "p7", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa los pasos de la resta 64 − 27.",
+      "visual": { "tipo": "operacion", "numeros": [64, 27], "op": "-", "vertical": true },
+      "texto": "4 es menor que 7: pido 1 decena prestada. Unidades: [14] − 7 = [7]. Decenas: [5] − 2 = [3]. Resultado: [37].",
+      "banco": ["6", "43", "47"],
+      "pista": "Al pedir 1 decena, arriba queda una decena menos y 10 unidades más.",
+      "explicacion": "Al pedir 1 decena, arriba quedan 14 unidades y 5 decenas. 14 − 7 = 7 y 5 − 2 = 3. Entonces 64 − 27 = 37.",
+      "error": "prestamo-olvida"
+    },
+    {
+      "id": "p8", "tipo": "numero", "nivel": 2,
+      "enunciado": "En la feria había 84 choclos. Se vendieron 46. ¿Cuántos choclos quedan?",
+      "visual": { "tipo": "operacion", "numeros": [84, 46], "op": "-", "vertical": true },
+      "respuesta": 38,
+      "erroresComunes": [
+        { "respuesta": 42, "pista": "Hiciste 6 − 4, pero el 6 está abajo. Pide 1 decena prestada y resta 14 − 6.", "error": "resta-invierte" },
+        { "respuesta": 48, "pista": "Pediste prestado, pero no quitaste esa decena: arriba quedan 7 decenas.", "error": "prestamo-olvida" },
+        { "respuesta": 130, "pista": "Si se vendieron choclos, quedan menos. Hay que restar.", "error": "confunde-operacion" }
+      ],
+      "pista": "4 es menor que 6: pide 1 decena prestada.",
+      "explicacion": "14 − 6 = 8 unidades y 7 − 4 = 3 decenas. Quedan 38 choclos: 84 − 46 = 38.",
+      "error": "resta-calculo"
+    },
+    {
+      "id": "p9", "tipo": "numero", "nivel": 2,
+      "enunciado": "Escucha la resta y escribe el resultado.",
+      "escuchar": "Cincuenta menos veintitrés.",
+      "respuesta": 27,
+      "erroresComunes": [
+        { "respuesta": 33, "pista": "Arriba hay 0 unidades y no puedes quitar 3. Pide 1 decena prestada.", "error": "resta-invierte" },
+        { "respuesta": 37, "pista": "Pediste prestado, pero no quitaste esa decena: arriba quedan 4 decenas.", "error": "prestamo-olvida" }
+      ],
+      "pista": "Vuelve a escuchar. Si arriba hay 0 unidades, tienes que pedir 1 decena prestada.",
+      "explicacion": "Cincuenta menos veintitrés: 50 − 23 = 27, porque 10 − 3 = 7 unidades y 4 − 2 = 2 decenas.",
+      "error": "resta-calculo"
+    },
+    {
+      "id": "p10", "tipo": "ordenar", "nivel": 2,
+      "enunciado": "Ordena los pasos para resolver 53 − 26. Empieza por las unidades.",
+      "elementos": [
+        "Veo que 3 es menor que 6.",
+        "Pido 1 decena prestada: tengo 13 unidades.",
+        "Resto las unidades: 13 − 6 = 7.",
+        "Resto las decenas: 4 − 2 = 2.",
+        "El resultado es 27."
+      ],
+      "vertical": true,
+      "pista": "Antes de restar las unidades, arriba tiene que haber suficientes unidades.",
+      "explicacion": "Primero veo que 3 es menor que 6 y pido 1 decena prestada. Resto las unidades (13 − 6 = 7), después las decenas (4 − 2 = 2), y el resultado es 27.",
+      "error": "pasos-resta"
+    },
+    {
+      "id": "p11", "tipo": "memoria", "nivel": 2,
+      "enunciado": "Encuentra las parejas: cada resta con su resultado.",
+      "pares": [ ["42 − 17", "25"], ["60 − 34", "26"], ["75 − 48", "27"], ["91 − 63", "28"] ],
+      "pista": "En todas hay que pedir prestado. Los resultados se parecen: calcula con cuidado.",
+      "explicacion": "42 − 17 = 25, 60 − 34 = 26, 75 − 48 = 27 y 91 − 63 = 28.",
+      "error": "resta-calculo"
+    },
+    {
+      "id": "p12", "tipo": "manipular", "nivel": 2,
+      "enunciado": "Kusi tiene 50 Bs y gasta 27 Bs en la feria. Pon en la bandeja el dinero que le queda.",
+      "manipulable": { "tipo": "dinero", "objetivo": 2300, "disponibles": ["b20", "b10", "m5", "m2", "m1"], "mostrarTotal": true },
+      "pista": "Primero calcula 50 − 27. Arriba hay 0 unidades: pide 1 decena prestada.",
+      "explicacion": "50 − 27 = 23. Le quedan 23 Bs: por ejemplo, un billete de 20 Bs, una moneda de 2 Bs y una de 1 Bs.",
+      "error": "resta-calculo"
+    },
+    {
+      "id": "p13", "tipo": "generador", "nivel": 3, "generador": "resta", "params": { "digitos": 3, "prestar": true }
+    },
+    {
+      "id": "p14", "tipo": "multiple", "nivel": 3,
+      "enunciado": "Elige todas las restas que están bien resueltas.",
+      "opciones": [
+        { "texto": "61 − 25 = 36", "correcta": true },
+        { "texto": "74 − 38 = 44", "pista": "En las unidades alguien hizo 8 − 4, pero el 8 está abajo.", "error": "resta-invierte" },
+        { "texto": "90 − 45 = 45", "correcta": true },
+        { "texto": "83 − 57 = 36", "pista": "Pidieron prestado, pero no quitaron la decena: arriba quedan 7 decenas.", "error": "prestamo-olvida" },
+        { "texto": "56 − 29 = 27", "correcta": true }
+      ],
+      "columnas": 1,
+      "pista": "Comprueba cada una sumando: el resultado más el número de abajo debe dar el de arriba.",
+      "explicacion": "Están bien 61 − 25 = 36, 90 − 45 = 45 y 56 − 29 = 27. En cambio, 74 − 38 = 36 y 83 − 57 = 26.",
+      "error": "revisa-resta"
+    },
+    {
+      "id": "p15", "tipo": "pasos", "nivel": 3,
+      "enunciado": "Resuelve 531 − 267. ¡Aquí hay que pedir prestado dos veces! Al final, compruébalo con una suma.",
+      "visual": { "tipo": "operacion", "numeros": [531, 267], "op": "-", "vertical": true },
+      "pasos": [
+        {
+          "tipo": "numero", "enunciado": "Unidades: 1 es menor que 7. Pides 1 decena prestada. ¿Cuánto es 11 − 7?",
+          "respuesta": 4,
+          "erroresComunes": [ { "respuesta": 6, "pista": "Hiciste 7 − 1, pero el 7 está abajo. Con la decena prestada tienes 11 unidades.", "error": "resta-invierte" } ],
+          "pista": "Piensa: ¿qué número le sumas a 7 para llegar a 11?",
+          "explicacion": "11 − 7 = 4. Quedan 4 unidades.",
+          "error": "resta-calculo"
+        },
+        {
+          "tipo": "numero", "enunciado": "Decenas: había 3, pero prestaste 1. Para quitar 6 no alcanza: pides 1 centena. ¿Cuántas decenas quedan después de quitar 6?",
+          "respuesta": 6,
+          "erroresComunes": [
+            { "respuesta": 12, "pista": "12 son las decenas que tienes antes de quitar. Ahora quita las 6 decenas de abajo.", "error": "resta-calculo" },
+            { "respuesta": 7, "pista": "Arriba ya no hay 3 decenas: prestaste 1 a las unidades. Quedan 2, y con la centena prestada son 12.", "error": "prestamo-olvida" },
+            { "respuesta": 4, "pista": "Hiciste 6 − 2, pero el 6 está abajo. Con la centena prestada tienes 12 decenas.", "error": "resta-invierte" }
+          ],
+          "pista": "Arriba quedaron 2 decenas. La centena prestada son 10 decenas más.",
+          "explicacion": "2 + 10 = 12 decenas, y 12 − 6 = 6. Quedan 6 decenas.",
+          "error": "prestamo-olvida"
+        },
+        {
+          "tipo": "numero", "enunciado": "Centenas: prestaste 1. Ahora di el resultado: ¿cuánto es 531 − 267?",
+          "respuesta": 264,
+          "erroresComunes": [
+            { "respuesta": 364, "pista": "Prestaste 1 centena a las decenas: arriba quedan 4 centenas, no 5.", "error": "prestamo-olvida" },
+            { "respuesta": 274, "pista": "En las decenas quedaban 12, no 13: ya habías prestado 1 decena a las unidades.", "error": "prestamo-olvida" },
+            { "respuesta": 336, "pista": "Restaste al revés: el número de abajo no se le quita al de arriba. Si arriba no alcanza, pide prestado.", "error": "resta-invierte" }
+          ],
+          "pista": "Usa las unidades y las decenas que ya encontraste. En las centenas quedan 4 y hay que quitar 2.",
+          "explicacion": "4 unidades, 6 decenas y 4 − 2 = 2 centenas. Entonces 531 − 267 = 264.",
+          "error": "resta-calculo"
+        },
+        {
+          "tipo": "numero", "enunciado": "Comprueba: ¿cuánto es 264 + 267?",
+          "respuesta": 531,
+          "erroresComunes": [
+            { "respuesta": 521, "pista": "4 + 7 = 11: llevas 1 decena. ¿La sumaste en las decenas?", "error": "prueba-suma" },
+            { "respuesta": 431, "pista": "En las decenas, 6 + 6 + 1 = 13: llevas 1 centena. ¿La sumaste?", "error": "prueba-suma" }
+          ],
+          "pista": "Suma las unidades, las decenas y las centenas. No olvides lo que llevas.",
+          "explicacion": "264 + 267 = 531. ¡Da el número de arriba! La resta está bien.",
+          "error": "prueba-suma"
+        }
+      ],
+      "pista": "Un paso a la vez: primero las unidades, después las decenas y al final las centenas.",
+      "explicacion": "531 − 267 = 264, porque 11 − 7 = 4, 12 − 6 = 6 y 4 − 2 = 2. Se comprueba así: 264 + 267 = 531.",
+      "error": "resta-calculo"
+    },
+    {
+      "id": "p16", "tipo": "numero", "nivel": 3,
+      "enunciado": "Una cooperativa tenía 634 kilos de quinua. Vendió 272 kilos. ¿Cuántos kilos de quinua le quedan?",
+      "visual": { "tipo": "operacion", "numeros": [634, 272], "op": "-", "vertical": true },
+      "respuesta": 362,
+      "sufijo": "kilos",
+      "erroresComunes": [
+        { "respuesta": 442, "pista": "En las decenas hiciste 7 − 3, pero el 7 está abajo. Cambia 1 centena por 10 decenas.", "error": "resta-invierte" },
+        { "respuesta": 462, "pista": "Pediste 1 centena prestada, pero no la quitaste: arriba quedan 5 centenas.", "error": "prestamo-olvida" }
+      ],
+      "pista": "Las unidades no necesitan préstamo. En las decenas, 3 es menor que 7: cambia 1 centena por 10 decenas.",
+      "explicacion": "4 − 2 = 2; 13 − 7 = 6; 5 − 2 = 3. Le quedan 362 kilos: 634 − 272 = 362.",
+      "error": "resta-calculo"
+    }
+  ],
+  "comprobacion": [
+    {
+      "id": "c1", "tipo": "completar", "nivel": 1,
+      "enunciado": "Cambia 1 decena por 10 unidades y completa.",
+      "visual": { "tipo": "bloques", "decenas": 7, "unidades": 2 },
+      "texto": "7 decenas y 2 unidades es lo mismo que 6 decenas y [12] unidades.",
+      "banco": ["2", "10"],
+      "pista": "La decena que cambias son 10 unidades. Júntalas con las 2 que ya había.",
+      "explicacion": "10 + 2 = 12. Entonces 72 es 6 decenas y 12 unidades.",
+      "error": "canje-decena"
+    },
+    {
+      "id": "c2", "tipo": "opcion", "nivel": 1,
+      "enunciado": "¿En qué resta hay que pedir prestado?",
+      "opciones": [
+        { "texto": "54 − 38", "correcta": true },
+        { "texto": "57 − 34", "pista": "En las unidades, 7 es mayor que 4: arriba alcanza.", "error": "necesita-prestar" },
+        { "texto": "59 − 30", "pista": "En las unidades, 9 es mayor que 0: arriba alcanza.", "error": "necesita-prestar" }
+      ],
+      "columnas": 3,
+      "pista": "Busca la resta en la que arriba hay menos unidades que abajo.",
+      "explicacion": "En 54 − 38, arriba hay 4 unidades y hay que quitar 8. Por eso hay que pedir prestado.",
+      "error": "necesita-prestar"
+    },
+    {
+      "id": "c3", "tipo": "generador", "nivel": 2, "generador": "resta", "params": { "digitos": 2, "prestar": true }
+    },
+    {
+      "id": "c4", "tipo": "manipular", "nivel": 2,
+      "enunciado": "Aquí tienes 61 en bloques. Quita 34. Si faltan cubitos, cambia 1 barra por 10 cubitos.",
+      "manipulable": { "tipo": "bloques", "inicial": { "centenas": 0, "decenas": 6, "unidades": 1 }, "objetivo": 27 },
+      "pista": "Hay que quitar 4 cubitos y solo hay 1. Cambia una barra por 10 cubitos.",
+      "explicacion": "Al cambiar 1 barra quedan 5 barras y 11 cubitos. 11 − 4 = 7 y 5 − 3 = 2. Quedan 27: 61 − 34 = 27.",
+      "error": "resta-bloques"
+    },
+    {
+      "id": "c5", "tipo": "numero", "nivel": 2,
+      "enunciado": "Wara tiene 40 Bs en su alcancía. Gasta 16 Bs en un libro de cuentos. ¿Cuánto dinero le queda?",
+      "visual": { "tipo": "dinero", "items": ["b20", "b20"] },
+      "respuesta": 24,
+      "sufijo": "Bs",
+      "erroresComunes": [
+        { "respuesta": 36, "pista": "Arriba hay 0 unidades y no puedes quitar 6. Pide 1 decena prestada: 10 − 6.", "error": "resta-invierte" },
+        { "respuesta": 34, "pista": "Pediste prestado, pero no quitaste esa decena: arriba quedan 3 decenas.", "error": "prestamo-olvida" },
+        { "respuesta": 56, "pista": "Si gasta dinero, le queda menos. Hay que restar.", "error": "confunde-operacion" }
+      ],
+      "pista": "Resta 40 − 16. En las unidades tendrás que pedir prestado.",
+      "explicacion": "40 − 16 = 24: 10 − 6 = 4 unidades y 3 − 1 = 2 decenas. A Wara le quedan 24 Bs.",
+      "error": "resta-calculo"
+    },
+    {
+      "id": "c6", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "Calcula y une cada resta con su resultado.",
+      "pares": [ ["33 − 18", "15"], ["50 − 26", "24"], ["72 − 39", "33"], ["94 − 47", "47"] ],
+      "pista": "En todas hay que pedir prestado. Arriba queda una decena menos.",
+      "explicacion": "33 − 18 = 15, 50 − 26 = 24, 72 − 39 = 33 y 94 − 47 = 47.",
+      "error": "resta-calculo"
+    },
+    {
+      "id": "c7", "tipo": "numero", "nivel": 3,
+      "enunciado": "¿Cuánto es 526 − 183?",
+      "visual": { "tipo": "operacion", "numeros": [526, 183], "op": "-", "vertical": true },
+      "respuesta": 343,
+      "erroresComunes": [
+        { "respuesta": 463, "pista": "En las decenas hiciste 8 − 2, pero el 8 está abajo. Cambia 1 centena por 10 decenas.", "error": "resta-invierte" },
+        { "respuesta": 443, "pista": "Pediste 1 centena prestada, pero no la quitaste: arriba quedan 4 centenas.", "error": "prestamo-olvida" }
+      ],
+      "pista": "Las unidades no necesitan préstamo. En las decenas, 2 es menor que 8.",
+      "explicacion": "6 − 3 = 3; 12 − 8 = 4; 4 − 1 = 3. Entonces 526 − 183 = 343.",
+      "error": "resta-calculo"
+    },
+    {
+      "id": "c8", "tipo": "pasos", "nivel": 3,
+      "enunciado": "Rosa cosechó 93 naranjas. Regaló 25 a sus vecinos. ¿Cuántas naranjas le quedan?",
+      "visual": { "tipo": "emojis", "items": ["🍊", "🧺"] },
+      "pasos": [
+        {
+          "tipo": "opcion", "enunciado": "Para restar 93 − 25, ¿hay que pedir prestado en las unidades?",
+          "opciones": [
+            { "texto": "Sí", "correcta": true },
+            { "texto": "No", "pista": "Arriba hay 3 unidades y hay que quitar 5. ¿Alcanza?", "error": "necesita-prestar" }
+          ],
+          "mezclar": false, "columnas": 2,
+          "pista": "Compara las unidades: 3 arriba y 5 abajo.",
+          "explicacion": "Sí, porque 3 es menor que 5. Pedimos 1 decena y tenemos 13 unidades.",
+          "error": "necesita-prestar"
+        },
+        {
+          "tipo": "numero", "enunciado": "¿Cuántas naranjas le quedan a Rosa?",
+          "respuesta": 68,
+          "erroresComunes": [
+            { "respuesta": 72, "pista": "Hiciste 5 − 3, pero el 5 está abajo. Resta 13 − 5.", "error": "resta-invierte" },
+            { "respuesta": 78, "pista": "Pediste prestado, pero no quitaste esa decena: arriba quedan 8 decenas.", "error": "prestamo-olvida" }
+          ],
+          "pista": "Unidades: 13 − 5. Decenas: 8 − 2.",
+          "explicacion": "13 − 5 = 8 y 8 − 2 = 6. A Rosa le quedan 68 naranjas.",
+          "error": "resta-calculo"
+        }
+      ],
+      "pista": "Primero mira si hay que prestar; después resta.",
+      "explicacion": "93 − 25 = 68. A Rosa le quedan 68 naranjas.",
+      "error": "resta-calculo"
+    }
+  ],
+  "repaso": {
+    "texto": "Si arriba hay menos, pide 1 decena prestada: cambia 1 barra por 10 cubitos. Arriba queda 1 decena menos y 10 unidades más. Al final, comprueba sumando.",
+    "visual": { "tipo": "tabla", "columnas": ["", "D", "U"], "filas": [["", "5", "13"], ["−", "2", "8"], ["=", "3", "5"]] }
+  },
+  "adulto": {
+    "objetivo": "Resolver restas de dos y tres cifras con préstamo: comprender con material concreto el canje de 1 decena por 10 unidades (o de 1 centena por 10 decenas), evitar el error de restar la cifra menor de la mayor en cada columna y comprobar el resultado con una suma.",
+    "sugerencias": [
+      "Armen atados de 10 palitos (de helado, bombillas cortadas o fideos largos) con una liga. Para restar 42 − 17, cuando falten palitos sueltos, desaten un atado y sigan quitando.",
+      "Jueguen a la tienda con billetes de 10 Bs y monedas de 1 Bs (de papel o reales). Si hay que pagar 7 Bs y solo hay 2 monedas, cambien un billete de 10 Bs por 10 monedas de 1 Bs.",
+      "Después de cada resta, pidan que la compruebe sumando el resultado y el número que quitó (25 + 17 = 42). Si no da el número de arriba, busquen juntos el error.",
+      "En el nivel 3, la app a veces propone restas que piden prestado dos veces (531 − 267) o que tienen un cero en el medio (405 − 128). Háganlas con palitos: si en las decenas hay 0, primero desaten un paquete de 100 en 10 atados de 10 y después un atado en 10 palitos sueltos (405 − 128 = 277)."
+    ],
+    "errores": {
+      "resta-invierte": { "descripcion": "En la columna donde arriba hay menos, resta al revés el número pequeño del grande (por ejemplo, 42 − 17 = 35).", "sugerencia": "Recuérdele: «Arriba está lo que tienes; abajo, lo que quitas». Si arriba no alcanza, desaten un atado de 10 palitos antes de quitar." },
+      "resta-calculo": { "descripcion": "Se equivoca en algún cálculo de la resta.", "sugerencia": "Pidan que compruebe cada resta sumando el resultado y el número que quitó." },
+      "canje-decena": { "descripcion": "Le cuesta ver que 1 decena se puede cambiar por 10 unidades sin que cambie el número.", "sugerencia": "Cambien un billete de 10 Bs por 10 monedas de 1 Bs y cuenten: sigue siendo el mismo dinero." },
+      "prestamo-olvida": { "descripcion": "Pide prestado, pero olvida quitar esa decena (o centena) de la columna siguiente.", "sugerencia": "Pidan que tache la cifra de la que pidió prestado y escriba encima una menos antes de seguir restando." },
+      "necesita-prestar": { "descripcion": "No reconoce cuándo hay que pedir prestado.", "sugerencia": "Antes de restar, que mire cada columna y se pregunte: «¿Arriba hay menos que abajo?». Si la respuesta es sí, hay que prestar." },
+      "resta-bloques": { "descripcion": "Le cuesta restar con bloques cuando hay que cambiar una barra por cubitos.", "sugerencia": "Usen atados de 10 palitos con liga: cuando falten sueltos, que desate un atado y cuente los palitos sueltos que tiene ahora." },
+      "pasos-resta": { "descripcion": "Confunde el orden de los pasos de la resta con préstamo.", "sugerencia": "Escriban los pasos en tarjetas (miro las unidades, pido prestado, resto las unidades, resto las decenas) y úsenlas como guía." },
+      "confunde-operacion": { "descripcion": "Suma cuando la situación pide restar.", "sugerencia": "Antes de calcular, pregunten: «Al final, ¿habrá más o menos?». Si habrá menos, se resta." },
+      "revisa-resta": { "descripcion": "No descubre los errores en restas ya resueltas.", "sugerencia": "Jueguen a «la maestra o el maestro»: usted resuelve restas con algún error y la niña o el niño las revisa sumando." },
+      "prueba-suma": { "descripcion": "Le cuesta comprobar la resta con una suma, sobre todo cuando hay que llevar.", "sugerencia": "Repasen la suma llevando con palitos: 10 sueltos se atan y forman 1 decena." }
+    }
+  }
+}

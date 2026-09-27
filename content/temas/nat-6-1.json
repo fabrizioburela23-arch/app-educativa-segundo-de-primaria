@@ -1,0 +1,468 @@
+{
+  "id": "nat-6-1",
+  "titulo": "Ovíparos y vivíparos",
+  "objetivo": "Sé qué animales nacen de un huevo y cuáles crecen dentro del vientre de su mamá.",
+  "explicacion": [
+    {
+      "texto": "Todos los animales tienen crías, pero no todas nacen igual. Unas salen de un **huevo**. Otras crecen dentro del **vientre** de su mamá, es decir, en su barriga.",
+      "emoji": "🐾",
+      "visual": { "tipo": "emojis", "items": ["🐣", "🤰"], "etiquetas": ["sale de un huevo", "crece en el vientre"] }
+    },
+    {
+      "texto": "Los animales **ovíparos** nacen de huevos. La mamá pone los huevos y la cría crece dentro del huevo, fuera del cuerpo de su mamá. Cuando está lista, sale del huevo.",
+      "visual": { "tipo": "ilustracion", "id": "ciclo-gallina" }
+    },
+    {
+      "texto": "Todas las aves son ovíparas, como el cóndor, la paraba y la gallina. También son ovíparos el caimán, la tortuga, la rana, la mayoría de los peces y casi todos los insectos, como la mariposa.",
+      "visual": {
+        "tipo": "emojis",
+        "items": ["🦅", "🦜", "🐔", "🐊", "🐢", "🐸", "🐟", "🦋"],
+        "etiquetas": ["cóndor", "paraba", "gallina", "caimán", "tortuga", "rana", "trucha", "mariposa"]
+      }
+    },
+    {
+      "texto": "Los animales **vivíparos** crecen dentro del vientre de su mamá y nacen cuando están listos. Son vivíparos la llama, la vicuña, el jucumari, el jaguar, el bufeo, el murciélago y las personas. Sus crías toman leche.",
+      "visual": {
+        "tipo": "emojis",
+        "items": ["🦙", "🐻", "🐆", "🐬", "🦇", "👶"],
+        "etiquetas": ["llama", "jucumari", "jaguar", "bufeo", "murciélago", "bebé"]
+      }
+    }
+  ],
+  "ejemplo": {
+    "instruccion": "Mira cómo averiguamos si un animal es ovíparo o vivíparo.",
+    "pasos": [
+      {
+        "texto": "Hacemos una sola pregunta: ¿su cría sale de un huevo o crece dentro del vientre de su mamá?",
+        "visual": { "tipo": "emojis", "items": ["🥚", "🤰"], "etiquetas": ["huevo: ovíparo", "vientre: vivíparo"] }
+      },
+      {
+        "texto": "La **paraba** pone sus huevos en el hueco de un árbol. Cuando están listos, sus pichones salen de los huevos. Entonces, la paraba es **ovípara**.",
+        "visual": { "tipo": "emojis", "items": ["🦜", "🥚", "🐣"], "etiquetas": ["paraba", "huevo", "pichón"] }
+      },
+      {
+        "texto": "La **llama** lleva a su cría en el vientre. La cría nace, al poco rato se para y toma leche de su mamá. Entonces, la llama es **vivípara**.",
+        "visual": { "tipo": "ilustracion", "id": "paisaje-altiplano" }
+      },
+      {
+        "texto": "¡Ojo! El **bufeo** vive en el río, pero no es un pez. Crece en el vientre de su mamá y después toma su leche: es **vivíparo**.",
+        "visual": { "tipo": "emoji", "valor": "🐬", "etiqueta": "bufeo" }
+      }
+    ]
+  },
+  "guiada": {
+    "intro": "Ahora lo hacemos juntos, paso a paso.",
+    "pasos": [
+      {
+        "id": "g1", "tipo": "clasificar",
+        "enunciado": "¿Nace de un huevo o crece en el vientre de su mamá?",
+        "apoyo": "Con cada animal pregúntate: ¿su cría sale de un huevo? Si no, crece en el vientre de su mamá.",
+        "categorias": [
+          { "id": "ovi", "texto": "Ovíparo: nace de un huevo", "emoji": "🥚" },
+          { "id": "vivi", "texto": "Vivíparo: crece en el vientre", "emoji": "🤰" }
+        ],
+        "elementos": [
+          { "texto": "gallina", "emoji": "🐔", "categoria": "ovi" },
+          { "texto": "llama", "emoji": "🦙", "categoria": "vivi" },
+          { "texto": "tortuga", "emoji": "🐢", "categoria": "ovi" },
+          { "texto": "perro", "emoji": "🐕", "categoria": "vivi" },
+          { "texto": "rana", "emoji": "🐸", "categoria": "ovi" },
+          { "texto": "gato", "emoji": "🐈", "categoria": "vivi" }
+        ],
+        "pista": "Piensa en cada cría: ¿el pollito sale de un huevo? ¿Y el cachorro del perro?",
+        "explicacion": "Ovíparos: la gallina, la tortuga y la rana, porque salen de huevos. Vivíparos: la llama, el perro y el gato, porque crecen en el vientre de su mamá.",
+        "error": "clasifica-ovi-vivi"
+      },
+      {
+        "id": "g2", "tipo": "completar",
+        "enunciado": "Completa con las palabras correctas.",
+        "apoyo": "Primero piensa cómo nace cada cría. Después elige «ovípara» o «vivípara».",
+        "texto": "La gallina pone [huevos]: es [ovípara]. La llama lleva a su cría en el [vientre]: es [vivípara].",
+        "banco": ["plumas", "hojas"],
+        "pista": "¿Dónde crece el pollito? ¿Y dónde crece la cría de la llama?",
+        "explicacion": "La gallina pone **huevos**: es **ovípara**. La llama lleva a su cría en el **vientre**: es **vivípara**.",
+        "error": "vocabulario-ovi-vivi"
+      },
+      {
+        "id": "g3", "tipo": "opcion",
+        "enunciado": "Kusi dice: «El murciélago vuela, entonces nace de un huevo». ¿Tiene razón?",
+        "apoyo": "Volar no dice cómo nace un animal. Piensa: ¿la cría del murciélago toma leche de su mamá?",
+        "visual": { "tipo": "emoji", "valor": "🦇", "etiqueta": "murciélago" },
+        "opciones": [
+          { "texto": "Sí. Todos los animales que vuelan nacen de huevos.", "pista": "Piensa en el murciélago: sus crías toman leche de su mamá.", "error": "vuela-oviparo" },
+          { "texto": "No. El murciélago crece en el vientre de su mamá: es vivíparo.", "correcta": true }
+        ],
+        "mezclar": false,
+        "pista": "El murciélago no es un ave. Tiene pelo, como la llama.",
+        "explicacion": "Kusi se confundió. El murciélago vuela, pero crece en el vientre de su mamá y toma su leche: es **vivíparo**.",
+        "error": "vuela-oviparo"
+      }
+    ]
+  },
+  "practica": [
+    {
+      "id": "p1", "tipo": "memoria", "nivel": 1,
+      "enunciado": "Encuentra las parejas: la mamá y su cría.",
+      "pares": [
+        [ { "texto": "gallina", "emoji": "🐔" }, { "texto": "pollito", "emoji": "🐤" } ],
+        [ { "texto": "vaca", "emoji": "🐄" }, "ternero" ],
+        [ { "texto": "oveja", "emoji": "🐑" }, "cordero" ],
+        [ { "texto": "perra", "emoji": "🐕" }, "cachorro" ],
+        [ { "texto": "rana", "emoji": "🐸" }, "renacuajo" ]
+      ],
+      "pista": "Piensa cómo se llama el bebé de cada animal.",
+      "explicacion": "Gallina y pollito, vaca y ternero, oveja y cordero, perra y cachorro, rana y renacuajo. El pollito y el renacuajo salen de huevos; el ternero, el cordero y el cachorro crecen en el vientre de su mamá.",
+      "error": "vocabulario-crias"
+    },
+    {
+      "id": "p2", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Toca los animales que nacen de un huevo.",
+      "texto": "En la granja de Nayra hay *gallinas*, una vaca, *patos* y un perro.",
+      "pista": "Busca las aves: tienen plumas y ponen huevos.",
+      "explicacion": "Las **gallinas** y los **patos** son aves: nacen de huevos. La vaca y el perro crecen en el vientre de su mamá.",
+      "error": "clasifica-ovi-vivi"
+    },
+    {
+      "id": "p3", "tipo": "opcion", "nivel": 1,
+      "enunciado": "¿Qué animal nace de un huevo?",
+      "opciones": [
+        { "texto": "tortuga", "emoji": "🐢", "correcta": true },
+        { "texto": "jaguar", "emoji": "🐆", "pista": "El cachorro del jaguar crece en el vientre de su mamá.", "error": "clasifica-ovi-vivi" },
+        { "texto": "llama", "emoji": "🦙", "pista": "La cría de la llama crece en el vientre de su mamá.", "error": "clasifica-ovi-vivi" }
+      ],
+      "columnas": 3,
+      "pista": "Dos de ellos tienen pelo y, de crías, toman leche de su mamá. ¿Cuál es diferente?",
+      "explicacion": "La **tortuga** es ovípara: entierra sus huevos en la arena o en la tierra, y de ellos salen las tortuguitas.",
+      "error": "clasifica-ovi-vivi"
+    },
+    {
+      "id": "p4", "tipo": "ordenar", "nivel": 1,
+      "enunciado": "Ordena cómo nace un pollito.",
+      "elementos": [
+        { "texto": "La gallina pone un huevo en el nido.", "emoji": "🥚" },
+        { "texto": "La gallina se sienta sobre el huevo para darle calor.", "emoji": "🐔" },
+        { "texto": "El pollito rompe el cascarón.", "emoji": "🐣" },
+        { "texto": "El pollito sale y camina junto a su mamá.", "emoji": "🐤" }
+      ],
+      "vertical": true,
+      "pista": "Primero tiene que haber un huevo. ¿Qué pasa al final?",
+      "explicacion": "Primero la gallina pone el huevo. Después se sienta encima para darle calor. El pollito crece adentro, rompe el cascarón y sale.",
+      "error": "orden-nacimiento"
+    },
+    {
+      "id": "p5", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "Animales de Bolivia: ¿ovíparo o vivíparo?",
+      "categorias": [
+        { "id": "ovi", "texto": "Ovíparo", "emoji": "🥚" },
+        { "id": "vivi", "texto": "Vivíparo", "emoji": "🤰" }
+      ],
+      "elementos": [
+        { "texto": "cóndor", "emoji": "🦅", "categoria": "ovi" },
+        { "texto": "jucumari", "emoji": "🐻", "categoria": "vivi" },
+        { "texto": "caimán", "emoji": "🐊", "categoria": "ovi" },
+        { "texto": "vicuña", "categoria": "vivi" },
+        { "texto": "trucha", "emoji": "🐟", "categoria": "ovi" },
+        { "texto": "jaguar", "emoji": "🐆", "categoria": "vivi" },
+        { "texto": "abeja", "emoji": "🐝", "categoria": "ovi" },
+        { "texto": "bufeo", "emoji": "🐬", "categoria": "vivi" }
+      ],
+      "pista": "Piensa en cada cría: ¿sale de un huevo o crece en el vientre y después toma leche de su mamá?",
+      "explicacion": "Ovíparos: el cóndor, el caimán, la trucha y la abeja. Vivíparos: el jucumari, la vicuña, el jaguar y el bufeo, porque crecen en el vientre de su mamá.",
+      "error": "clasifica-ovi-vivi"
+    },
+    {
+      "id": "p6", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "Une cada palabra con lo que quiere decir.",
+      "pares": [
+        ["ovíparo", "nace de un huevo"],
+        ["vivíparo", "crece en el vientre de su mamá"],
+        ["cría", "animal bebé"],
+        ["cascarón", "cubierta dura del huevo"]
+      ],
+      "pista": "«Ovíparo» suena a «óvalo», la forma del huevo. «Vivíparo» empieza con «vi», como «vientre».",
+      "explicacion": "Ovíparo: nace de un huevo. Vivíparo: crece en el vientre de su mamá. Cría: animal bebé. Cascarón: cubierta dura del huevo.",
+      "error": "vocabulario-ovi-vivi"
+    },
+    {
+      "id": "p7", "tipo": "multiple", "nivel": 2,
+      "enunciado": "Elige todos los animales vivíparos.",
+      "opciones": [
+        { "texto": "murciélago", "emoji": "🦇", "correcta": true },
+        { "texto": "alpaca", "emoji": "🦙", "correcta": true },
+        { "texto": "paraba", "emoji": "🦜", "pista": "La paraba es un ave: sus pichones salen de huevos.", "error": "clasifica-ovi-vivi" },
+        { "texto": "persona", "emoji": "👶", "correcta": true },
+        { "texto": "rana", "emoji": "🐸", "pista": "La rana pone muchos huevitos en el agua.", "error": "clasifica-ovi-vivi" }
+      ],
+      "pista": "Hay tres. Busca a los que toman leche de su mamá cuando son crías.",
+      "explicacion": "El murciélago, la alpaca y las personas crecen en el vientre de su mamá: son vivíparos. La paraba y la rana nacen de huevos.",
+      "error": "clasifica-ovi-vivi"
+    },
+    {
+      "id": "p8", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa las oraciones.",
+      "texto": "El pato es [ovíparo] porque nace de un [huevo]. El perro es [vivíparo] porque crece en el [vientre] de su mamá.",
+      "banco": ["plumas", "río"],
+      "pista": "El pato es un ave. El perro toma leche de su mamá.",
+      "explicacion": "El pato es **ovíparo** porque nace de un **huevo**. El perro es **vivíparo** porque crece en el **vientre** de su mamá.",
+      "error": "vocabulario-ovi-vivi"
+    },
+    {
+      "id": "p9", "tipo": "numero", "nivel": 2,
+      "enunciado": "¿Cuántos animales ovíparos hay?",
+      "visual": {
+        "tipo": "emojis",
+        "items": ["🐔", "🐄", "🐢", "🐕", "🐸", "🦜", "🐈"],
+        "etiquetas": ["gallina", "vaca", "tortuga", "perro", "rana", "paraba", "gato"]
+      },
+      "respuesta": 4,
+      "erroresComunes": [
+        { "respuesta": 3, "pista": "Ese es el número de vivíparos. Cuenta los que salen de un huevo.", "error": "cuenta-clasifica" },
+        { "respuesta": 7, "pista": "Contaste todos los animales. Cuenta solo los que nacen de un huevo.", "error": "cuenta-clasifica" }
+      ],
+      "pista": "Tapa con el dedo los animales que toman leche de su mamá y cuenta los demás.",
+      "explicacion": "Son 4 ovíparos: la gallina, la tortuga, la rana y la paraba. La vaca, el perro y el gato son vivíparos.",
+      "error": "cuenta-clasifica"
+    },
+    {
+      "id": "p10", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha la adivinanza y escribe la respuesta.",
+      "escuchar": "Tengo plumas y pico. Pongo huevos en el gallinero, y de ellos salen mis pollitos. ¿Quién soy?",
+      "respuestas": ["gallina", "la gallina", "una gallina", "gallinita", "la gallinita"],
+      "pista": "Es un ave de la granja. No es el gallo: el gallo no pone huevos.",
+      "explicacion": "Es la **gallina**. Es un ave ovípara: sus pollitos salen de huevos.",
+      "error": "escritura-tema"
+    },
+    {
+      "id": "p11", "tipo": "manipular", "nivel": 2,
+      "enunciado": "En el corral de Inti hay 4 gallinas, 2 patos, 3 ovejas y 1 caballo. Arma el pictograma de ovíparos y vivíparos.",
+      "visual": { "tipo": "emojis", "items": ["🐔", "🐔", "🐔", "🐔", "🦆", "🦆", "🐑", "🐑", "🐑", "🐎"] },
+      "manipulable": {
+        "tipo": "pictograma", "icono": "🐾", "escala": 1,
+        "categorias": [
+          { "etiqueta": "Ovíparos", "emoji": "🥚", "objetivo": 6 },
+          { "etiqueta": "Vivíparos", "emoji": "🤰", "objetivo": 4 }
+        ]
+      },
+      "pista": "Primero separa: ¿quiénes nacen de un huevo? Después cuenta cada grupo.",
+      "explicacion": "Ovíparos: 4 gallinas + 2 patos = 6. Vivíparos: 3 ovejas + 1 caballo = 4.",
+      "error": "cuenta-clasifica"
+    },
+    {
+      "id": "p12", "tipo": "opcion", "nivel": 3,
+      "enunciado": "El bufeo vive en los ríos del Beni y nada como un pez. ¿Cómo nace su cría?",
+      "visual": { "tipo": "emoji", "valor": "🐬", "etiqueta": "bufeo" },
+      "opciones": [
+        { "texto": "Crece en el vientre de su mamá.", "correcta": true },
+        { "texto": "Sale de un huevo, como la trucha.", "pista": "Nadar en el río no dice cómo nace. ¿El bufeo es un pez?", "error": "agua-oviparo" },
+        { "texto": "Sale de un huevo en la arena, como la tortuga.", "pista": "Eso hace la tortuga. La cría del bufeo toma leche de su mamá.", "error": "agua-oviparo" }
+      ],
+      "pista": "El bufeo no es un pez: toma leche de su mamá, como la llama.",
+      "explicacion": "El bufeo es **vivíparo**: su cría crece en el vientre de su mamá y después toma su leche. No todos los animales del agua son peces.",
+      "error": "agua-oviparo"
+    },
+    {
+      "id": "p13", "tipo": "tocar", "nivel": 3,
+      "enunciado": "Toca los animales vivíparos.",
+      "texto": "En el río Mamoré viven el *bufeo*, la tortuga, el pez surubí y el caimán. En la orilla come pasto la *capibara*.",
+      "pista": "Hay dos. Busca a los que toman leche de su mamá, aunque vivan cerca del agua.",
+      "explicacion": "El **bufeo** y la **capibara** son vivíparos. La tortuga, el surubí y el caimán nacen de huevos.",
+      "error": "agua-oviparo"
+    },
+    {
+      "id": "p14", "tipo": "escribir-libre", "nivel": 3,
+      "enunciado": "Escribe una oración sobre un animal. Di si es ovíparo o vivíparo y por qué.",
+      "guia": ["La paraba es ovípara porque...", "La vicuña es vivípara porque..."],
+      "requisitos": [
+        { "tipo": "mayuscula-inicial" },
+        { "tipo": "punto-final" },
+        { "tipo": "min-palabras", "valor": 6 },
+        { "tipo": "incluye", "palabras": ["ovíparo", "ovípara", "vivíparo", "vivípara"] }
+      ],
+      "modelo": "El jaguar es vivíparo porque sus cachorros crecen en el vientre de su mamá.",
+      "pista": "Piensa en un animal que conoces. ¿Su cría sale de un huevo o crece en el vientre?",
+      "explicacion": "Por ejemplo: «El cóndor es ovíparo porque su pichón sale de un huevo». Revisa la mayúscula al inicio y el punto al final.",
+      "error": "produce-oracion"
+    },
+    {
+      "id": "p15", "tipo": "pasos", "nivel": 3,
+      "enunciado": "En una laguna, Inti vio muchos huevitos pequeños dentro de una gelatina transparente. Días después, de ellos salieron renacuajos.",
+      "pasos": [
+        {
+          "tipo": "opcion",
+          "enunciado": "¿Qué animal puso esos huevitos?",
+          "opciones": [
+            { "texto": "rana", "emoji": "🐸", "correcta": true },
+            { "texto": "pato", "emoji": "🦆", "pista": "De los huevos del pato salen patitos, no renacuajos.", "error": "clasifica-ovi-vivi" },
+            { "texto": "bufeo", "emoji": "🐬", "pista": "El bufeo no pone huevos: su cría crece en el vientre de su mamá.", "error": "agua-oviparo" }
+          ],
+          "columnas": 3,
+          "pista": "Los renacuajos son las crías de un animal que salta y croa.",
+          "explicacion": "Los huevitos eran de una **rana**. De ellos salen renacuajos, que crecen y se vuelven ranas.",
+          "error": "clasifica-ovi-vivi"
+        },
+        {
+          "tipo": "opcion",
+          "enunciado": "Entonces, ¿cómo es la rana?",
+          "opciones": [
+            { "texto": "ovípara", "emoji": "🥚", "correcta": true },
+            { "texto": "vivípara", "emoji": "🤰", "pista": "Los renacuajos salieron de huevos, no del vientre de su mamá.", "error": "vocabulario-ovi-vivi" }
+          ],
+          "mezclar": false,
+          "pista": "¿De dónde salieron los renacuajos?",
+          "explicacion": "La rana es **ovípara**: sus crías salen de huevos.",
+          "error": "vocabulario-ovi-vivi"
+        },
+        {
+          "tipo": "multiple",
+          "enunciado": "¿Qué otros animales nacen de huevos, como la rana?",
+          "opciones": [
+            { "texto": "caimán", "emoji": "🐊", "correcta": true },
+            { "texto": "alpaca", "emoji": "🦙", "pista": "La cría de la alpaca crece en el vientre de su mamá.", "error": "clasifica-ovi-vivi" },
+            { "texto": "trucha", "emoji": "🐟", "correcta": true },
+            { "texto": "murciélago", "emoji": "🦇", "pista": "El murciélago es vivíparo: sus crías toman leche.", "error": "vuela-oviparo" }
+          ],
+          "pista": "Hay dos. Con cada animal pregúntate: ¿su cría sale de un huevo o toma leche de su mamá?",
+          "explicacion": "El caimán y la trucha son ovíparos. La alpaca y el murciélago son vivíparos.",
+          "error": "clasifica-ovi-vivi"
+        }
+      ],
+      "pista": "Resuelve un paso a la vez. Piensa de dónde salieron los renacuajos.",
+      "explicacion": "Los huevitos eran de una rana. Como sus crías salen de huevos, la rana es ovípara, igual que el caimán y la trucha.",
+      "error": "clasifica-ovi-vivi"
+    }
+  ],
+  "comprobacion": [
+    {
+      "id": "c1", "tipo": "opcion", "nivel": 1,
+      "enunciado": "¿Qué animal crece en el vientre de su mamá?",
+      "opciones": [
+        { "texto": "vaca", "emoji": "🐄", "correcta": true },
+        { "texto": "gallina", "emoji": "🐔", "pista": "La gallina es un ave: pone huevos.", "error": "clasifica-ovi-vivi" },
+        { "texto": "pato", "emoji": "🦆", "pista": "El patito sale de un huevo.", "error": "clasifica-ovi-vivi" }
+      ],
+      "columnas": 3,
+      "pista": "Dos de ellos son aves. ¿Qué hacen todas las aves para tener crías?",
+      "explicacion": "La **vaca** es vivípara: su ternero crece en su vientre. La gallina y el pato nacen de huevos.",
+      "error": "clasifica-ovi-vivi"
+    },
+    {
+      "id": "c2", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Toca el animal que nace de un huevo.",
+      "texto": "Luis vio una *rana* junto al perro de su vecina.",
+      "pista": "Piensa en los renacuajos: ¿de qué animal son crías y de dónde salen?",
+      "explicacion": "La **rana** es ovípara: sus renacuajos salen de huevitos. El perro es vivíparo, y las personas también: todos los bebés crecen en el vientre antes de nacer.",
+      "error": "clasifica-ovi-vivi"
+    },
+    {
+      "id": "c3", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "¿Ovíparo o vivíparo? Pon cada animal en su grupo.",
+      "categorias": [
+        { "id": "ovi", "texto": "Ovíparo", "emoji": "🥚" },
+        { "id": "vivi", "texto": "Vivíparo", "emoji": "🤰" }
+      ],
+      "elementos": [
+        { "texto": "paraba", "emoji": "🦜", "categoria": "ovi" },
+        { "texto": "murciélago", "emoji": "🦇", "categoria": "vivi" },
+        { "texto": "hormiga", "emoji": "🐜", "categoria": "ovi" },
+        { "texto": "tatú", "categoria": "vivi" },
+        { "texto": "pejerrey", "emoji": "🐟", "categoria": "ovi" },
+        { "texto": "chancho", "emoji": "🐖", "categoria": "vivi" }
+      ],
+      "pista": "¿Su cría sale de un huevo o toma leche de su mamá?",
+      "explicacion": "Ovíparos: la paraba, la hormiga y el pejerrey. Vivíparos: el murciélago, el tatú y el chancho.",
+      "error": "clasifica-ovi-vivi"
+    },
+    {
+      "id": "c4", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha la adivinanza y escribe la respuesta.",
+      "escuchar": "Soy un ave muy grande de los Andes y estoy en el escudo de Bolivia. Pongo mi huevo en lo alto de las rocas. ¿Quién soy?",
+      "respuestas": ["cóndor", "el cóndor", "un cóndor"],
+      "pista": "Vuela muy alto sobre las montañas y tiene un collar de plumas blancas.",
+      "explicacion": "Es el **cóndor**. Es un ave ovípara: su pichón sale de un huevo.",
+      "error": "escritura-tema"
+    },
+    {
+      "id": "c5", "tipo": "ordenar", "nivel": 2,
+      "enunciado": "Ordena cómo nace y crece una cría de llama.",
+      "elementos": [
+        "La llama mamá lleva a su cría en el vientre.",
+        "La cría nace.",
+        "La cría toma leche de su mamá.",
+        "La cría crece y come pasto."
+      ],
+      "vertical": true,
+      "pista": "Antes de nacer, ¿dónde está la cría?",
+      "explicacion": "Primero la cría crece en el vientre de su mamá. Después nace, toma leche y, cuando es más grande, come pasto.",
+      "error": "orden-nacimiento"
+    },
+    {
+      "id": "c6", "tipo": "multiple", "nivel": 2,
+      "enunciado": "Elige todos los animales ovíparos.",
+      "opciones": [
+        { "texto": "caimán", "emoji": "🐊", "correcta": true },
+        { "texto": "jucumari", "emoji": "🐻", "pista": "El jucumari es un oso: sus crías crecen en el vientre de su mamá.", "error": "clasifica-ovi-vivi" },
+        { "texto": "picaflor", "correcta": true },
+        { "texto": "bufeo", "emoji": "🐬", "pista": "El bufeo vive en el agua, pero su cría toma leche de su mamá.", "error": "agua-oviparo" },
+        { "texto": "mariposa", "emoji": "🦋", "correcta": true }
+      ],
+      "pista": "Hay tres: un animal con escamas, un ave y un insecto.",
+      "explicacion": "El caimán, el picaflor y la mariposa nacen de huevos. El jucumari y el bufeo son vivíparos.",
+      "error": "clasifica-ovi-vivi"
+    },
+    {
+      "id": "c7", "tipo": "opcion", "nivel": 3,
+      "enunciado": "El suri es un ave grande del altiplano que no vuela. ¿Cómo nacen sus crías?",
+      "opciones": [
+        { "texto": "De huevos, como todas las aves.", "correcta": true },
+        { "texto": "Del vientre de su mamá, porque no vuela.", "pista": "No volar no cambia cómo nace un ave. ¿Qué tienen en común todas las aves?", "error": "aves-oviparas" },
+        { "texto": "Del vientre de su mamá, porque es grande.", "pista": "El tamaño no dice cómo nace. El cóndor también es grande y pone huevos.", "error": "aves-oviparas" }
+      ],
+      "pista": "Todas las aves nacen de la misma manera, aunque no vuelen.",
+      "explicacion": "Todas las aves son ovíparas, también el suri, aunque no vuela. ¡Y en el suri es el papá quien cuida los huevos!",
+      "error": "aves-oviparas"
+    },
+    {
+      "id": "c8", "tipo": "numero", "nivel": 3,
+      "enunciado": "¿Cuántos animales vivíparos hay?",
+      "visual": {
+        "tipo": "emojis",
+        "items": ["🦇", "🐊", "🐬", "🦜", "🐻", "🐢", "🐟"],
+        "etiquetas": ["murciélago", "caimán", "bufeo", "paraba", "jucumari", "tortuga", "trucha"]
+      },
+      "respuesta": 3,
+      "erroresComunes": [
+        { "respuesta": 4, "pista": "Contaste los ovíparos. Cuenta los que crecen en el vientre de su mamá.", "error": "cuenta-clasifica" },
+        { "respuesta": 2, "pista": "Te falta uno. Mira bien a los que vuelan y a los que nadan: ¿todos salen de un huevo?", "error": "agua-oviparo" },
+        { "respuesta": 1, "pista": "Te faltan. Mira bien a los que vuelan y a los que nadan: ¿todos salen de un huevo?", "error": "agua-oviparo" }
+      ],
+      "pista": "Busca a los que toman leche de su mamá, aunque vuelen o naden.",
+      "explicacion": "Son 3 vivíparos: el murciélago, el bufeo y el jucumari. El caimán, la paraba, la tortuga y la trucha son ovíparos.",
+      "error": "cuenta-clasifica"
+    }
+  ],
+  "repaso": {
+    "texto": "**Ovíparos**: nacen de un huevo (aves, caimanes, tortugas, ranas y casi todos los peces e insectos). **Vivíparos**: crecen en el vientre de su mamá (llama, perro, murciélago, bufeo y personas). Truco: «ovíparo» suena a «óvalo», como el huevo.",
+    "visual": { "tipo": "emojis", "items": ["🐣", "🤰"], "etiquetas": ["ovíparo", "vivíparo"] }
+  },
+  "adulto": {
+    "objetivo": "Distinguir animales ovíparos (la cría se desarrolla dentro de un huevo, fuera del cuerpo de la madre) de vivíparos (la cría se desarrolla dentro del vientre de la madre), con fauna de Bolivia, y superar dos ideas erróneas frecuentes: «todo lo que vuela pone huevos» (el murciélago es vivíparo) y «todo lo que vive en el agua es pez» (el bufeo es vivíparo).",
+    "sugerencias": [
+      "Al cocinar, rompan un huevo en un plato y miren la yema y la clara. Expliquen que, cuando un huevo tiene un pollito, esa es la comida que lo alimenta mientras crece. Los huevos que compramos normalmente no tienen pollito. Después, lávense las manos.",
+      "En el mercado o la feria, busquen productos que vienen de animales: huevos de gallina y de codorniz, leche y queso. Pregunten: «¿este animal pone huevos o su cría toma leche?» y ordenen juntos los productos en dos grupos.",
+      "Jueguen «¿Huevo o vientre?»: una persona dice un animal y la otra hace la mímica de un pollito que rompe el cascarón o la de mecer a un bebé. Incluyan animales que confunden: el murciélago (vuela y es vivíparo), el bufeo (nada y es vivíparo) y el suri (no vuela y es ovíparo).",
+      "Si hay gallinas, patos o una perrita con crías cerca de casa, obsérvenlos de lejos, sin tocar los nidos ni a las crías. Si pregunta por casos raros: el ornitorrinco (de Australia) es un mamífero que pone huevos, y algunas serpientes, lagartijas y peces tienen crías vivas; por eso aquí usamos solo ejemplos claros."
+    ],
+    "errores": {
+      "clasifica-ovi-vivi": { "descripcion": "Duda al decidir si un animal es ovíparo o vivíparo.", "sugerencia": "Hagan dos cajas («huevo» y «vientre») y clasifiquen dibujos o figuras de animales preguntando siempre: «¿su cría sale de un huevo o crece dentro de su mamá?»." },
+      "vocabulario-ovi-vivi": { "descripcion": "Confunde las palabras «ovíparo» y «vivíparo» o lo que significan.", "sugerencia": "Usen el truco: «ovíparo» suena a «óvalo», la forma del huevo; «vivíparo» empieza con «vi», como «vientre». Escriban cada palabra en una tarjeta con un dibujo." },
+      "vocabulario-crias": { "descripcion": "No recuerda los nombres de algunas crías (pollito, ternero, cordero, cachorro, renacuajo).", "sugerencia": "Miren fotos o animales del barrio y nombren juntos a la mamá y a su cría." },
+      "orden-nacimiento": { "descripcion": "Le cuesta ordenar cómo nace una cría (huevo, calor, cascarón; o vientre, nacimiento, leche).", "sugerencia": "Dibujen la historia en cuatro cuadros y cuéntenla usando «primero», «después» y «al final»." },
+      "vuela-oviparo": { "descripcion": "Cree que todo animal que vuela nace de un huevo (por ejemplo, el murciélago).", "sugerencia": "Expliquen que el murciélago es un mamífero con pelo, como el perro: sus crías crecen en el vientre y toman leche de su mamá." },
+      "agua-oviparo": { "descripcion": "Cree que todo animal que vive en el agua es un pez o nace de huevos (por ejemplo, el bufeo).", "sugerencia": "Comparen el bufeo con un pez: el bufeo sube a respirar aire, y su cría crece en el vientre de su mamá y toma su leche." },
+      "aves-oviparas": { "descripcion": "No reconoce que todas las aves ponen huevos, aunque no vuelen (suri) o sean muy grandes (cóndor).", "sugerencia": "Busquen juntos aves de distintos tamaños (picaflor, paloma, gallina, suri, cóndor) y recuerden que todas nacen de huevos." },
+      "cuenta-clasifica": { "descripcion": "Clasifica, pero se equivoca al contar los animales de cada grupo.", "sugerencia": "Pidan que marque con un color los ovíparos y con otro los vivíparos antes de contar cada grupo." },
+      "escritura-tema": { "descripcion": "Tiene dificultad para escribir los nombres de los animales que escucha.", "sugerencia": "Dicten nombres de animales separando sílabas con palmadas (ga-lli-na, cón-dor) y revisen juntos cómo se escriben." },
+      "produce-oracion": { "descripcion": "Le cuesta escribir una oración completa que explique cómo nace un animal.", "sugerencia": "Usen el molde «El/La ___ es ___ porque ___» y digan oraciones en voz alta antes de escribirlas." }
+    }
+  }
+}

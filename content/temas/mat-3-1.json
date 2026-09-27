@@ -1,0 +1,420 @@
+{
+  "id": "mat-3-1",
+  "titulo": "Patrones numéricos",
+  "objetivo": "Descubro la regla de un patrón, lo continúo y hasta invento mis propios patrones.",
+  "explicacion": [
+    {
+      "texto": "Un **patrón** sigue siempre la misma regla. A veces algo se repite: rojo, azul, rojo, azul, rojo... ¿Qué sigue? ¡Azul!",
+      "emoji": "🔁",
+      "visual": { "tipo": "secuencia", "items": ["🔴", "🔵", "🔴", "🔵", "🔴", "?"] }
+    },
+    {
+      "texto": "En un **patrón numérico**, los números cambian con una **regla**. En 5, 10, 15, 20 la regla es **sumar 5**: cada número tiene 5 más que el anterior.",
+      "visual": { "tipo": "recta", "min": 0, "max": 25, "paso": 5, "marcar": [5, 10, 15, 20], "saltos": [[5, 10], [10, 15], [15, 20]] }
+    },
+    {
+      "texto": "Si los números bajan, la regla es restar. En 50, 40, 30, 20 cada número tiene 10 menos que el anterior. La regla es **restar 10**.",
+      "visual": { "tipo": "secuencia", "items": ["50", "40", "30", "20"] }
+    },
+    {
+      "texto": "Para encontrar la regla, compara un número con el que sigue: ¿sube o baja? ¿Cuánto? Tú también puedes inventar un patrón. Por ejemplo, empiezo en 3 y sumo 2: 3, 5, 7, 9...",
+      "emoji": "💡"
+    }
+  ],
+  "ejemplo": {
+    "instruccion": "Mira cómo Wara descubre un patrón con su dinero. Después, pon monedas de 5 Bs una por una y mira cómo crece el total.",
+    "pasos": [
+      {
+        "texto": "Wara ahorra para comprar un libro. El primer domingo pone una moneda de 5 Bs en su alcancía.",
+        "visual": { "tipo": "dinero", "items": ["m5"] }
+      },
+      {
+        "texto": "Cada domingo pone otra moneda de 5 Bs. En tres domingos junta 5 Bs, 10 Bs y 15 Bs.",
+        "visual": { "tipo": "dinero", "items": ["m5", "m5", "m5"] }
+      },
+      {
+        "texto": "Los números son 5, 10, 15, 20... Siempre suben 5. ¡La regla es **sumar 5**!",
+        "visual": { "tipo": "secuencia", "items": ["5", "10", "15", "20", "?"] }
+      },
+      {
+        "texto": "Con la regla sabemos lo que viene: 20 + 5 = 25. El quinto domingo Wara tendrá 25 Bs.",
+        "visual": { "tipo": "recta", "min": 0, "max": 25, "paso": 5, "marcar": [25], "saltos": [[0, 5], [5, 10], [10, 15], [15, 20], [20, 25]] }
+      }
+    ],
+    "explorar": { "tipo": "dinero", "disponibles": ["m5"] }
+  },
+  "guiada": {
+    "intro": "Vamos a descubrir patrones juntos, paso a paso.",
+    "pasos": [
+      {
+        "id": "g1", "tipo": "manipular",
+        "enunciado": "Continúa el patrón con los colores de nuestra bandera.",
+        "apoyo": "Di los colores en voz alta: rojo, amarillo, verde, rojo... ¿Qué color viene después del verde?",
+        "manipulable": {
+          "tipo": "patron",
+          "secuencia": ["❤️", "💛", "💚", "❤️", "💛", "💚"],
+          "opciones": ["❤️", "💛", "💚", "💙"],
+          "completar": 3,
+          "solucion": ["❤️", "💛", "💚"]
+        },
+        "pista": "La parte que se repite tiene tres colores. ¿Con cuál empieza?",
+        "explicacion": "Se repite rojo, amarillo, verde. Después del verde vuelve el rojo: rojo, amarillo, verde.",
+        "error": "patron-repeticion"
+      },
+      {
+        "id": "g2", "tipo": "numero",
+        "enunciado": "¿Qué número sigue en el patrón?",
+        "apoyo": "Mira la recta: cada salto es igual. ¿De cuánto es cada salto?",
+        "visual": { "tipo": "recta", "min": 0, "max": 50, "paso": 10, "marcar": [10, 20, 30, 40], "saltos": [[10, 20], [20, 30], [30, 40]], "ocultar": [50] },
+        "respuesta": 50,
+        "erroresComunes": [
+          { "respuesta": 41, "pista": "Sumaste 1. Mira cuánto sube de 10 a 20.", "error": "patron-regla" },
+          { "respuesta": 45, "pista": "Los saltos no son de 5. Mira cuánto sube de 30 a 40.", "error": "patron-regla" }
+        ],
+        "pista": "Los números van 10, 20, 30, 40... ¿Cuánto sube cada vez?",
+        "explicacion": "La regla es sumar 10. Después de 40 viene 40 + 10 = 50.",
+        "error": "patron-numerico"
+      },
+      {
+        "id": "g3", "tipo": "opcion",
+        "enunciado": "¿Cuál es la regla de este patrón?",
+        "apoyo": "Compara dos números vecinos: 35 y 30. ¿Subió o bajó? ¿Cuánto?",
+        "visual": { "tipo": "secuencia", "items": ["35", "30", "25", "20"] },
+        "opciones": [
+          { "texto": "restar 5", "correcta": true },
+          { "texto": "sumar 5", "pista": "Mira bien: los números se hacen más pequeños. ¿Suben o bajan?", "error": "patron-sube-baja" },
+          { "texto": "restar 10", "pista": "De 35 a 30, ¿bajó 10? Cuenta hacia atrás desde 35.", "error": "patron-regla" }
+        ],
+        "pista": "Los números bajan. Cuenta cuánto hay de 30 a 35.",
+        "explicacion": "Cada número tiene 5 menos que el anterior: 35, 30, 25, 20. La regla es restar 5.",
+        "error": "patron-regla"
+      }
+    ]
+  },
+  "practica": [
+    {
+      "id": "p1", "tipo": "manipular", "nivel": 1,
+      "enunciado": "Continúa el patrón del puesto de la feria.",
+      "manipulable": {
+        "tipo": "patron",
+        "secuencia": ["🌽", "🥔", "🥔", "🌽", "🥔", "🥔", "🌽"],
+        "opciones": ["🌽", "🥔", "🍌"],
+        "completar": 2,
+        "solucion": ["🥔", "🥔"]
+      },
+      "pista": "Mira qué viene después de cada choclo.",
+      "explicacion": "Se repite un choclo y dos papas. Después del choclo vienen dos papas.",
+      "error": "patron-repeticion"
+    },
+    {
+      "id": "p2", "tipo": "manipular", "nivel": 1,
+      "enunciado": "Continúa el patrón de números.",
+      "manipulable": {
+        "tipo": "patron",
+        "secuencia": ["1", "2", "3", "1", "2", "3", "1"],
+        "opciones": ["1", "2", "3", "4"],
+        "completar": 2,
+        "solucion": ["2", "3"]
+      },
+      "pista": "Busca la parte que se repite. ¿Qué número va después del 1?",
+      "explicacion": "Se repite 1, 2, 3. Después del 1 vienen el 2 y el 3.",
+      "error": "patron-repeticion"
+    },
+    {
+      "id": "p3", "tipo": "completar", "nivel": 1,
+      "enunciado": "Cuenta de 10 en 10 y completa.",
+      "texto": "10, 20, [30], 40, [50], [60]",
+      "banco": ["35", "41"],
+      "pista": "Suma 10 cada vez. Solo cambia la cifra de las decenas.",
+      "explicacion": "De 10 en 10: 10, 20, 30, 40, 50, 60.",
+      "error": "patron-numerico"
+    },
+    {
+      "id": "p4", "tipo": "generador", "nivel": 1, "generador": "patron-numerico",
+      "params": { "paso": 10, "max": 100, "operacion": "suma" }
+    },
+    {
+      "id": "p5", "tipo": "clasificar", "nivel": 1,
+      "enunciado": "¿El patrón sube o baja?",
+      "categorias": [
+        { "id": "sube", "texto": "Sube: se suma", "emoji": "⬆️" },
+        { "id": "baja", "texto": "Baja: se resta", "emoji": "⬇️" }
+      ],
+      "elementos": [
+        { "texto": "2, 4, 6, 8", "categoria": "sube" },
+        { "texto": "9, 8, 7, 6", "categoria": "baja" },
+        { "texto": "10, 20, 30", "categoria": "sube" },
+        { "texto": "50, 45, 40", "categoria": "baja" },
+        { "texto": "1, 3, 5, 7", "categoria": "sube" },
+        { "texto": "100, 90, 80", "categoria": "baja" }
+      ],
+      "pista": "Mira el primer número y el último. ¿El último es más grande o más pequeño?",
+      "explicacion": "Suben: 2, 4, 6, 8; 10, 20, 30 y 1, 3, 5, 7. Bajan: 9, 8, 7, 6; 50, 45, 40 y 100, 90, 80.",
+      "error": "patron-sube-baja"
+    },
+    {
+      "id": "p6", "tipo": "manipular", "nivel": 2,
+      "enunciado": "Continúa el patrón con los números que siguen.",
+      "manipulable": {
+        "tipo": "patron",
+        "secuencia": ["5", "10", "15", "20"],
+        "opciones": ["21", "25", "30", "35", "40"],
+        "completar": 3,
+        "solucion": ["25", "30", "35"]
+      },
+      "pista": "Primero descubre la regla: ¿cuánto sube de 5 a 10?",
+      "explicacion": "La regla es sumar 5: 20 + 5 = 25, 25 + 5 = 30 y 30 + 5 = 35.",
+      "error": "patron-numerico"
+    },
+    {
+      "id": "p7", "tipo": "generador", "nivel": 2, "generador": "patron-numerico",
+      "params": { "paso": [2, 5, 10], "max": 200, "operacion": "suma" }
+    },
+    {
+      "id": "p8", "tipo": "generador", "nivel": 2, "generador": "patron-numerico",
+      "params": { "paso": [5, 10], "max": 100, "operacion": "resta" }
+    },
+    {
+      "id": "p9", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "Une cada patrón con su regla.",
+      "pares": [
+        ["5, 10, 15, 20", "sumar 5"],
+        ["20, 18, 16, 14", "restar 2"],
+        ["100, 200, 300", "sumar 100"],
+        ["3, 6, 9, 12", "sumar 3"]
+      ],
+      "pista": "En cada patrón, mira cuánto cambia del primer número al segundo, y si sube o baja.",
+      "explicacion": "5, 10, 15, 20: sumar 5. 20, 18, 16, 14: restar 2. 100, 200, 300: sumar 100. 3, 6, 9, 12: sumar 3.",
+      "error": "patron-regla"
+    },
+    {
+      "id": "p10", "tipo": "tocar", "nivel": 2,
+      "enunciado": "Este patrón suma 10. Toca el número que no sigue la regla.",
+      "texto": "10, 20, 30, *45*, 50, 60",
+      "pista": "Suma 10 desde el principio: 10, 20, 30... ¿Qué número debería seguir?",
+      "explicacion": "Después de 30 viene 40, no 45. El patrón correcto es 10, 20, 30, 40, 50, 60.",
+      "error": "patron-numerico"
+    },
+    {
+      "id": "p11", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha el patrón. Escribe el número que sigue.",
+      "escuchar": "cinco, diez, quince, veinte, veinticinco... ¿Qué número sigue?",
+      "respuestas": ["30", "treinta"],
+      "pista": "Escucha otra vez. Los números suben siempre lo mismo. ¿Cuánto?",
+      "explicacion": "Escuchaste 5, 10, 15, 20, 25. La regla es sumar 5, así que sigue 30.",
+      "error": "patron-numerico"
+    },
+    {
+      "id": "p12", "tipo": "memoria", "nivel": 2,
+      "enunciado": "Encuentra las parejas: el patrón y el número que sigue.",
+      "pares": [
+        ["5, 10, 15", "20"],
+        ["30, 20, 10", "0"],
+        ["100, 200, 300", "400"],
+        ["7, 9, 11", "13"]
+      ],
+      "pista": "Descubre la regla de cada patrón antes de buscar su pareja.",
+      "explicacion": "5, 10, 15 → 20. 30, 20, 10 → 0. 100, 200, 300 → 400. 7, 9, 11 → 13.",
+      "error": "patron-numerico"
+    },
+    {
+      "id": "p13", "tipo": "pasos", "nivel": 3,
+      "enunciado": "Don Luis acomoda naranjas en su puesto de la feria. En la primera fila pone 3, en la segunda pone 6 y en la tercera pone 9.",
+      "visual": { "tipo": "tabla", "columnas": ["Fila", "1", "2", "3", "4", "5"], "filas": [["Naranjas", "3", "6", "9", "?", "?"]] },
+      "pasos": [
+        {
+          "tipo": "opcion",
+          "enunciado": "¿Cuál es la regla del patrón?",
+          "opciones": [
+            { "texto": "sumar 3", "correcta": true },
+            { "texto": "sumar 2", "pista": "De 3 a 6, ¿aumenta 2? Cuenta con los dedos.", "error": "patron-regla" },
+            { "texto": "restar 3", "pista": "Cada fila tiene más naranjas: los números suben.", "error": "patron-sube-baja" }
+          ],
+          "pista": "Compara 3 y 6. ¿Cuántas naranjas más hay?",
+          "explicacion": "De 3 a 6 hay 3 más, y de 6 a 9 también. La regla es sumar 3.",
+          "error": "patron-regla"
+        },
+        {
+          "tipo": "numero",
+          "enunciado": "¿Cuántas naranjas pone en la cuarta fila?",
+          "respuesta": 12,
+          "erroresComunes": [ { "respuesta": 10, "pista": "Sumaste 1. La regla es sumar 3: 9 + 3.", "error": "patron-regla" } ],
+          "pista": "Usa la regla: suma 3 a las naranjas de la tercera fila.",
+          "explicacion": "9 + 3 = 12 naranjas.",
+          "error": "patron-problema"
+        },
+        {
+          "tipo": "numero",
+          "enunciado": "¿Y cuántas pone en la quinta fila?",
+          "respuesta": 15,
+          "pista": "Suma 3 a las naranjas de la cuarta fila.",
+          "explicacion": "12 + 3 = 15 naranjas.",
+          "error": "patron-problema"
+        }
+      ],
+      "pista": "Primero encuentra la regla. Después úsala fila por fila.",
+      "explicacion": "La regla es sumar 3: 3, 6, 9, 12, 15. En la quinta fila pone 15 naranjas.",
+      "error": "patron-problema"
+    },
+    {
+      "id": "p14", "tipo": "escribir-libre", "nivel": 3,
+      "enunciado": "Inventa tu propio patrón. Escribe con qué número empiezas, tu regla y cinco números.",
+      "guia": ["Empiezo en ... y sumo ...: ...", "Empiezo en ... y resto ...: ..."],
+      "requisitos": [
+        { "tipo": "mayuscula-inicial" },
+        { "tipo": "punto-final" },
+        { "tipo": "min-palabras", "valor": 8 },
+        { "tipo": "incluye", "palabras": ["sumo", "suma", "resto", "resta"] }
+      ],
+      "modelo": "Empiezo en 4 y sumo 3: 4, 7, 10, 13, 16.",
+      "pista": "Elige un número para empezar. Después elige cuánto vas a sumar o restar cada vez.",
+      "explicacion": "Por ejemplo: «Empiezo en 4 y sumo 3: 4, 7, 10, 13, 16». Revisa que cada número cumpla tu regla.",
+      "error": "patron-crear"
+    },
+    {
+      "id": "p15", "tipo": "numero", "nivel": 3,
+      "enunciado": "¿Qué número falta en el patrón?",
+      "visual": { "tipo": "secuencia", "items": ["450", "400", "350", "?", "250"] },
+      "respuesta": 300,
+      "erroresComunes": [
+        { "respuesta": 200, "pista": "Ese número iría después de 250. Busca el que va entre 350 y 250.", "error": "patron-numerico" },
+        { "respuesta": 340, "pista": "Mira bien: de 450 a 400 baja 50, no 10.", "error": "patron-regla" }
+      ],
+      "pista": "Los números bajan. ¿Cuánto bajan de 450 a 400?",
+      "explicacion": "La regla es restar 50: 450, 400, 350, 300, 250. Falta el 300.",
+      "error": "patron-numerico"
+    },
+    {
+      "id": "p16", "tipo": "generador", "nivel": 3, "generador": "patron-numerico",
+      "params": { "paso": [3, 4, 25, 50], "max": 500, "operacion": "suma" }
+    }
+  ],
+  "comprobacion": [
+    {
+      "id": "c1", "tipo": "manipular", "nivel": 1,
+      "enunciado": "Continúa el patrón del cielo.",
+      "manipulable": {
+        "tipo": "patron",
+        "secuencia": ["⭐", "🌙", "⭐", "🌙", "⭐"],
+        "opciones": ["⭐", "🌙", "☀️"],
+        "completar": 3,
+        "solucion": ["🌙", "⭐", "🌙"]
+      },
+      "pista": "Mira qué viene siempre después de una estrella.",
+      "explicacion": "Se repite estrella, luna. Sigue luna, estrella, luna.",
+      "error": "patron-repeticion"
+    },
+    {
+      "id": "c2", "tipo": "numero", "nivel": 1,
+      "enunciado": "¿Qué número sigue en el patrón?",
+      "visual": { "tipo": "secuencia", "items": ["40", "50", "60", "70", "?"] },
+      "respuesta": 80,
+      "erroresComunes": [ { "respuesta": 71, "pista": "Sumaste 1. Mira cuánto sube de 40 a 50.", "error": "patron-regla" } ],
+      "pista": "¿Cuánto sube de un número al siguiente?",
+      "explicacion": "La regla es sumar 10: 70 + 10 = 80.",
+      "error": "patron-numerico"
+    },
+    {
+      "id": "c3", "tipo": "opcion", "nivel": 2,
+      "enunciado": "Nayra cuenta las patas de sus llamas: 4, 8, 12, 16. ¿Cuál es la regla?",
+      "visual": { "tipo": "grupos", "grupos": 4, "porGrupo": 4, "emoji": "🐾" },
+      "opciones": [
+        { "texto": "sumar 4", "correcta": true },
+        { "texto": "sumar 2", "pista": "De 4 a 8, ¿aumenta 2? Cuenta las patas de una llama.", "error": "patron-regla" },
+        { "texto": "restar 4", "pista": "Cada vez hay más patas: los números suben.", "error": "patron-sube-baja" }
+      ],
+      "pista": "Cada llama nueva trae sus patas. ¿Cuántas patas tiene una llama?",
+      "explicacion": "Cada llama tiene 4 patas, así que cada vez se suman 4: 4, 8, 12, 16.",
+      "error": "patron-regla"
+    },
+    {
+      "id": "c4", "tipo": "ordenar", "nivel": 2,
+      "enunciado": "Mateo inventó un patrón: empieza en 95 y su regla es restar 10. Ordena los números de su patrón.",
+      "elementos": ["95", "85", "75", "65", "55"],
+      "pista": "Empieza en 95 y resta 10 cada vez.",
+      "explicacion": "95, 85, 75, 65, 55: empieza en 95 y cada número tiene 10 menos que el anterior.",
+      "error": "patron-sube-baja"
+    },
+    {
+      "id": "c5", "tipo": "generador", "nivel": 2, "generador": "patron-numerico",
+      "params": { "paso": [10, 100], "max": 999, "operacion": "resta" }
+    },
+    {
+      "id": "c6", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa el patrón que sube de 100 en 100.",
+      "texto": "120, 220, [320], 420, [520]",
+      "banco": ["330", "421"],
+      "pista": "Al sumar 100, solo cambia la cifra de las centenas.",
+      "explicacion": "120, 220, 320, 420, 520: la cifra de las centenas sube 1 cada vez.",
+      "error": "patron-numerico"
+    },
+    {
+      "id": "c7", "tipo": "pasos", "nivel": 3,
+      "enunciado": "Doña Rosa lleva 60 salteñas para vender en la fiesta de la escuela. Cada hora vende 10.",
+      "visual": { "tipo": "tabla", "columnas": ["Al empezar", "1 hora", "2 horas", "3 horas", "4 horas"], "filas": [["60", "?", "?", "?", "?"]] },
+      "pasos": [
+        {
+          "tipo": "numero",
+          "enunciado": "¿Cuántas salteñas le quedan después de 1 hora?",
+          "respuesta": 50,
+          "erroresComunes": [ { "respuesta": 70, "pista": "Doña Rosa vende salteñas: le quedan menos, no más.", "error": "patron-sube-baja" } ],
+          "pista": "Tenía 60 y vendió 10.",
+          "explicacion": "60 − 10 = 50 salteñas.",
+          "error": "patron-problema"
+        },
+        {
+          "tipo": "opcion",
+          "enunciado": "Las salteñas que quedan forman el patrón 60, 50, 40... ¿Cuál es la regla?",
+          "opciones": [
+            { "texto": "restar 10", "correcta": true },
+            { "texto": "sumar 10", "pista": "Cada hora quedan menos salteñas: los números bajan.", "error": "patron-sube-baja" },
+            { "texto": "restar 1", "pista": "De 60 a 50, ¿bajó solo 1?", "error": "patron-regla" }
+          ],
+          "pista": "¿Cuántas vende cada hora?",
+          "explicacion": "Cada hora hay 10 salteñas menos: la regla es restar 10.",
+          "error": "patron-regla"
+        },
+        {
+          "tipo": "numero",
+          "enunciado": "¿Cuántas salteñas le quedan después de 4 horas?",
+          "respuesta": 20,
+          "erroresComunes": [ { "respuesta": 30, "pista": "Eso es lo que le queda después de 3 horas. Falta una hora más.", "error": "patron-problema" } ],
+          "pista": "Sigue el patrón hora por hora: 60, 50, 40...",
+          "explicacion": "60, 50, 40, 30, 20. Después de 4 horas le quedan 20 salteñas.",
+          "error": "patron-problema"
+        }
+      ],
+      "pista": "Escribe el patrón hora por hora.",
+      "explicacion": "Empieza en 60 y resta 10 cada hora: 50, 40, 30, 20. Le quedan 20 salteñas.",
+      "error": "patron-problema"
+    },
+    {
+      "id": "c8", "tipo": "tocar", "nivel": 3,
+      "enunciado": "Este patrón suma 5. Toca los dos números que no siguen la regla.",
+      "texto": "5, 10, *16*, 20, 25, *31*, 35",
+      "pista": "Cuenta de 5 en 5 desde el principio y compara cada número.",
+      "explicacion": "De 5 en 5 es 5, 10, 15, 20, 25, 30, 35. Los que no siguen la regla son 16 y 31.",
+      "error": "patron-numerico"
+    }
+  ],
+  "repaso": {
+    "texto": "Para encontrar la regla, mira cuánto cambia de un número al siguiente. Si sube, se suma. Si baja, se resta.",
+    "visual": { "tipo": "recta", "min": 0, "max": 50, "paso": 10, "marcar": [10, 20, 30, 40], "saltos": [[10, 20], [20, 30], [30, 40]] }
+  },
+  "adulto": {
+    "objetivo": "Reconocer y continuar patrones de repetición (colores, dibujos, números) y patrones numéricos que suben o bajan de 2, 3, 4, 5, 10, 25, 50 o 100; descubrir la regla (sumar o restar siempre la misma cantidad) e inventar patrones propios.",
+    "sugerencias": [
+      "Armen patrones con cosas de la casa (tapas de botella de colores, frijoles, fideos): «tapa roja, tapa azul, tapa azul...». Pidan que diga qué parte se repite y que lo continúe.",
+      "En la feria o la tienda, cuenten de 5 en 5 con monedas de 5 Bs o de 10 en 10 con billetes de 10 Bs, y pregunten: «si agrego uno más, ¿cuánto habrá?».",
+      "En el patio o la vereda, salten contando de 2 en 2, de 5 en 5 y de 10 en 10, y también hacia atrás desde 50. Túrnense para inventar una regla secreta y adivinarla."
+    ],
+    "errores": {
+      "patron-repeticion": { "descripcion": "No reconoce la parte que se repite en un patrón de colores, dibujos o números.", "sugerencia": "Digan el patrón en voz alta con palmadas y encierren con el dedo la parte que se repite (por ejemplo, «choclo, papa, papa»)." },
+      "patron-numerico": { "descripcion": "Le cuesta encontrar el número que sigue o el que falta en un patrón.", "sugerencia": "Usen la recta numérica dibujada en el piso: den saltos iguales y digan el número donde caen." },
+      "patron-regla": { "descripcion": "No descubre cuánto cambia el patrón (confunde sumar 2, 5 o 10, o suma de 1 en 1).", "sugerencia": "Pidan que compare solo dos números vecinos y cuente con los dedos o con monedas cuánto hay de uno al otro." },
+      "patron-sube-baja": { "descripcion": "Confunde si el patrón sube (se suma) o baja (se resta).", "sugerencia": "Antes de buscar la regla, pregunten: «¿el número se hace más grande o más pequeño?». Usen una escalera: subir es sumar, bajar es restar." },
+      "patron-crear": { "descripcion": "Le cuesta inventar un patrón y explicar su regla.", "sugerencia": "Inventen patrones juntos: uno elige el número de inicio y el otro la regla; después escriban los cinco primeros números." },
+      "patron-problema": { "descripcion": "Le cuesta usar un patrón para resolver un problema de varios pasos.", "sugerencia": "Hagan una tabla sencilla (hora 1, hora 2, hora 3...) y llénenla paso a paso con objetos reales." }
+    }
+  }
+}

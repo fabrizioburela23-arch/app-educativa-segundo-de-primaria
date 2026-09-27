@@ -1,0 +1,282 @@
+{
+  "version": 1,
+  "materias": [
+    {
+      "id": "comunicacion",
+      "nombre": "Comunicación y Lenguajes",
+      "corto": "Lenguaje",
+      "emoji": "📖",
+      "color": "#D9542F",
+      "unidades": [
+        {
+          "id": "com-1", "numero": 1, "titulo": "Los sustantivos y la oración", "emoji": "🏷️",
+          "temas": [
+            { "id": "com-1-1", "titulo": "¿Qué es un sustantivo?", "emoji": "🐕", "cubre": ["qué son los sustantivos"] },
+            { "id": "com-1-2", "titulo": "Género y número", "emoji": "👧", "cubre": ["género del sustantivo (masculino y femenino)", "número del sustantivo (singular y plural)"] },
+            { "id": "com-1-3", "titulo": "Sustantivos comunes y propios", "emoji": "🏙️", "cubre": ["sustantivos comunes y propios", "mayúscula en los nombres propios"] },
+            { "id": "com-1-4", "titulo": "Los artículos", "emoji": "🔤", "cubre": ["artículos (el, la, los, las, un, una, unos, unas)"] },
+            { "id": "com-1-5", "titulo": "Adjetivos y concordancia", "emoji": "🌈", "cubre": ["adjetivos", "concordancia entre sustantivo y adjetivo"] },
+            { "id": "com-1-6", "titulo": "La oración y las mayúsculas", "emoji": "✍️", "cubre": ["la oración", "uso de mayúsculas"] }
+          ]
+        },
+        {
+          "id": "com-2", "numero": 2, "titulo": "Letras, sílabas y palabras", "emoji": "🔡",
+          "temas": [
+            { "id": "com-2-1", "titulo": "El abecedario", "emoji": "🔠", "cubre": ["abecedario", "orden alfabético"] },
+            { "id": "com-2-2", "titulo": "Las sílabas", "emoji": "👏", "cubre": ["sílabas"] },
+            { "id": "com-2-3", "titulo": "Familias de palabras", "emoji": "🌳", "cubre": ["familias de palabras", "palabras primitivas y derivadas"] },
+            { "id": "com-2-4", "titulo": "Analogías", "emoji": "🔗", "cubre": ["analogías"] },
+            { "id": "com-2-5", "titulo": "Sinónimos y antónimos", "emoji": "↔️", "cubre": ["sinónimos", "antónimos"] },
+            { "id": "com-2-6", "titulo": "Palabras homónimas", "emoji": "🪞", "cubre": ["palabras homónimas"] }
+          ]
+        },
+        {
+          "id": "com-3", "numero": 3, "titulo": "Leo y comprendo", "emoji": "📚",
+          "temas": [
+            { "id": "com-3-1", "titulo": "Cuentos: personajes y secuencia", "emoji": "🦙", "cubre": ["comprensión de cuentos", "personajes", "secuencia de hechos"] },
+            { "id": "com-3-2", "titulo": "Leyendas: idea principal y detalles", "emoji": "🌄", "cubre": ["comprensión de leyendas", "idea principal", "detalles"] },
+            { "id": "com-3-3", "titulo": "Diálogos", "emoji": "💬", "cubre": ["comprensión de diálogos"] },
+            { "id": "com-3-4", "titulo": "Rimas y trabalenguas", "emoji": "🎵", "cubre": ["rimas", "trabalenguas"] },
+            { "id": "com-3-5", "titulo": "Adivinanzas", "emoji": "❓", "cubre": ["adivinanzas originales"] },
+            { "id": "com-3-6", "titulo": "Escribo oraciones y textos", "emoji": "📝", "cubre": ["producción de oraciones", "producción de textos breves"] }
+          ]
+        },
+        {
+          "id": "com-4", "numero": 4, "titulo": "Los signos de puntuación", "emoji": "❗",
+          "temas": [
+            { "id": "com-4-1", "titulo": "El punto", "emoji": "⏺️", "cubre": ["el punto"] },
+            { "id": "com-4-2", "titulo": "La coma", "emoji": "✏️", "cubre": ["la coma"] },
+            { "id": "com-4-3", "titulo": "Signos de interrogación y exclamación", "emoji": "❓", "cubre": ["signos de interrogación", "signos de exclamación"] }
+          ]
+        },
+        {
+          "id": "com-5", "numero": 5, "titulo": "Ortografía y pronunciación", "emoji": "🗣️",
+          "temas": [
+            { "id": "com-5-1", "titulo": "br, bl, cr y cl", "emoji": "🤸", "cubre": ["grupos consonánticos br, bl, cr, cl"] },
+            { "id": "com-5-2", "titulo": "fr, fl, gr y gl", "emoji": "🌸", "cubre": ["grupos consonánticos fr, fl, gr, gl"] },
+            { "id": "com-5-3", "titulo": "c, s y z; ce y ci", "emoji": "🦓", "cubre": ["uso de c, s y z", "ce y ci"] },
+            { "id": "com-5-4", "titulo": "g, gu, güe y güi", "emoji": "🐧", "cubre": ["g, gu, güe y güi"] },
+            { "id": "com-5-5", "titulo": "j, r y rr", "emoji": "🐸", "cubre": ["j", "r y rr"] },
+            { "id": "com-5-6", "titulo": "Sonidos con p", "emoji": "🍐", "cubre": ["sonidos con p (pa, pe, pi, po, pu, pl, pr)"] }
+          ]
+        },
+        {
+          "id": "com-6", "numero": 6, "titulo": "Verbos y palabras", "emoji": "🏃",
+          "temas": [
+            { "id": "com-6-1", "titulo": "¿Qué es un verbo?", "emoji": "🏃", "cubre": ["verbos"] },
+            { "id": "com-6-2", "titulo": "Pasado, presente y futuro", "emoji": "⏳", "cubre": ["tiempos verbales"] },
+            { "id": "com-6-3", "titulo": "La sílaba tónica", "emoji": "📢", "cubre": ["clasificación de palabras según la sílaba tónica"] },
+            { "id": "com-6-4", "titulo": "Mi autobiografía", "emoji": "🧒", "cubre": ["autobiografía sencilla"] }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "matematica",
+      "nombre": "Matemática",
+      "corto": "Matemática",
+      "emoji": "🔢",
+      "color": "#2F6FDE",
+      "unidades": [
+        {
+          "id": "mat-1", "numero": 1, "titulo": "Números hasta el 999", "emoji": "🔢",
+          "temas": [
+            { "id": "mat-1-1", "titulo": "Leo y escribo números", "emoji": "✏️", "cubre": ["lectura de números del 1 al 999", "escritura de números del 1 al 999"] },
+            { "id": "mat-1-2", "titulo": "Unidades, decenas y centenas", "emoji": "🧱", "cubre": ["unidades, decenas y centenas", "valor posicional", "descomposición"] },
+            { "id": "mat-1-3", "titulo": "La recta numérica", "emoji": "📏", "cubre": ["recta numérica", "anterior y siguiente"] },
+            { "id": "mat-1-4", "titulo": "Comparo y ordeno números", "emoji": "⚖️", "cubre": ["comparación de números", "orden de números"] },
+            { "id": "mat-1-5", "titulo": "Pares e impares", "emoji": "🧦", "cubre": ["números pares e impares"] },
+            { "id": "mat-1-6", "titulo": "Números ordinales", "emoji": "🥇", "cubre": ["números ordinales (introducción)"] },
+            { "id": "mat-1-7", "titulo": "Números romanos", "emoji": "🏛️", "cubre": ["números romanos (introducción)"] }
+          ]
+        },
+        {
+          "id": "mat-2", "numero": 2, "titulo": "Sumamos y restamos", "emoji": "➕",
+          "temas": [
+            { "id": "mat-2-1", "titulo": "Suma sin llevar", "emoji": "➕", "cubre": ["sumas sin llevadas"] },
+            { "id": "mat-2-2", "titulo": "Suma llevando", "emoji": "🎒", "cubre": ["sumas con llevadas"] },
+            { "id": "mat-2-3", "titulo": "Propiedades de la suma", "emoji": "🔄", "cubre": ["propiedades básicas de la suma"] },
+            { "id": "mat-2-4", "titulo": "Resta sin prestar", "emoji": "➖", "cubre": ["restas sin préstamo"] },
+            { "id": "mat-2-5", "titulo": "Resta prestando", "emoji": "🤝", "cubre": ["restas con préstamo"] },
+            { "id": "mat-2-6", "titulo": "Problemas de suma y resta", "emoji": "🧺", "cubre": ["problemas cotidianos de suma y resta"] }
+          ]
+        },
+        {
+          "id": "mat-3", "numero": 3, "titulo": "Patrones y formas", "emoji": "🔷",
+          "temas": [
+            { "id": "mat-3-1", "titulo": "Patrones numéricos", "emoji": "🔁", "cubre": ["patrones numéricos"] },
+            { "id": "mat-3-2", "titulo": "La simetría", "emoji": "🦋", "cubre": ["simetría"] },
+            { "id": "mat-3-3", "titulo": "Cuerpos geométricos", "emoji": "🧊", "cubre": ["cuerpos geométricos tridimensionales"] }
+          ]
+        },
+        {
+          "id": "mat-4", "numero": 4, "titulo": "Multiplicamos y dividimos", "emoji": "✖️",
+          "temas": [
+            { "id": "mat-4-1", "titulo": "Multiplicar es sumar grupos iguales", "emoji": "🍊", "cubre": ["multiplicación como grupos iguales", "multiplicación como suma repetida"] },
+            { "id": "mat-4-2", "titulo": "Tablas del 2 al 5", "emoji": "✋", "cubre": ["tablas del 2 al 5"] },
+            { "id": "mat-4-3", "titulo": "Tablas del 6 al 10", "emoji": "🔟", "cubre": ["tablas del 6 al 10"] },
+            { "id": "mat-4-4", "titulo": "Multiplico por 10, 100 y 1000", "emoji": "💯", "cubre": ["multiplicación por 10, 100 y 1000"] },
+            { "id": "mat-4-5", "titulo": "Dividir es repartir", "emoji": "🍞", "cubre": ["división como reparto"] },
+            { "id": "mat-4-6", "titulo": "Dividir es agrupar", "emoji": "🥚", "cubre": ["división como agrupación", "relación entre multiplicación y división"] }
+          ]
+        },
+        {
+          "id": "mat-5", "numero": 5, "titulo": "Fracciones", "emoji": "🍕",
+          "temas": [
+            { "id": "mat-5-1", "titulo": "Mitades", "emoji": "🍊", "cubre": ["fracciones sencillas: mitades"] },
+            { "id": "mat-5-2", "titulo": "Cuartos", "emoji": "🥧", "cubre": ["fracciones sencillas: cuartos"] }
+          ]
+        },
+        {
+          "id": "mat-6", "numero": 6, "titulo": "Medimos", "emoji": "📏",
+          "temas": [
+            { "id": "mat-6-1", "titulo": "Longitud: el metro", "emoji": "📏", "cubre": ["medidas de longitud", "el metro y el centímetro"] },
+            { "id": "mat-6-2", "titulo": "El peso", "emoji": "⚖️", "cubre": ["medidas de peso"] },
+            { "id": "mat-6-3", "titulo": "La hora", "emoji": "🕒", "cubre": ["medidas de tiempo: la hora"] },
+            { "id": "mat-6-4", "titulo": "Semana, meses y calendario", "emoji": "📅", "cubre": ["la semana", "los meses", "el calendario"] }
+          ]
+        },
+        {
+          "id": "mat-7", "numero": 7, "titulo": "El dinero y la feria", "emoji": "💵",
+          "temas": [
+            { "id": "mat-7-1", "titulo": "Monedas y billetes de Bolivia", "emoji": "💰", "cubre": ["sistema monetario boliviano"] },
+            { "id": "mat-7-2", "titulo": "Cuento dinero", "emoji": "💰", "cubre": ["contar dinero"] },
+            { "id": "mat-7-3", "titulo": "Compro en la feria", "emoji": "🧺", "cubre": ["situaciones de compra en la feria", "calcular el total", "calcular el cambio"] }
+          ]
+        },
+        {
+          "id": "mat-8", "numero": 8, "titulo": "Pictogramas", "emoji": "📊",
+          "temas": [
+            { "id": "mat-8-1", "titulo": "Leo pictogramas", "emoji": "📊", "cubre": ["lectura de pictogramas"] },
+            { "id": "mat-8-2", "titulo": "Interpreto y armo pictogramas", "emoji": "🧮", "cubre": ["interpretación de pictogramas"] }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sociales",
+      "nombre": "Ciencias Sociales",
+      "corto": "Sociales",
+      "emoji": "🏘️",
+      "color": "#B7791F",
+      "unidades": [
+        {
+          "id": "soc-1", "numero": 1, "titulo": "Familia, escuela y comunidad", "emoji": "🏡",
+          "temas": [
+            { "id": "soc-1-1", "titulo": "Mi familia", "emoji": "👨‍👩‍👧", "cubre": ["la familia", "distintos tipos de familia", "responsabilidades compartidas"] },
+            { "id": "soc-1-2", "titulo": "Mi escuela", "emoji": "🏫", "cubre": ["la escuela", "convivencia"] },
+            { "id": "soc-1-3", "titulo": "Mi barrio y mi comunidad", "emoji": "🏘️", "cubre": ["el barrio", "la comunidad", "cuidado del entorno", "desarrollo comunitario"] }
+          ]
+        },
+        {
+          "id": "soc-2", "numero": 2, "titulo": "Personas y lugares de mi comunidad", "emoji": "👩‍🌾",
+          "temas": [
+            { "id": "soc-2-1", "titulo": "Personas que ayudan en mi comunidad", "emoji": "👩‍⚕️", "cubre": ["personajes locales"] },
+            { "id": "soc-2-2", "titulo": "Mi historia", "emoji": "🧒", "cubre": ["autobiografía"] },
+            { "id": "soc-2-3", "titulo": "El mercado", "emoji": "🧺", "cubre": ["el mercado"] },
+            { "id": "soc-2-4", "titulo": "Medios de transporte", "emoji": "🚌", "cubre": ["medios de transporte"] },
+            { "id": "soc-2-5", "titulo": "Medios de comunicación", "emoji": "📻", "cubre": ["medios de comunicación"] }
+          ]
+        },
+        {
+          "id": "soc-3", "numero": 3, "titulo": "Culturas de Bolivia", "emoji": "🏺",
+          "temas": [
+            { "id": "soc-3-1", "titulo": "Culturas antiguas de Bolivia", "emoji": "🗿", "cubre": ["culturas precolombinas de Bolivia"] },
+            { "id": "soc-3-2", "titulo": "Pueblos originarios y diversidad", "emoji": "🤝", "cubre": ["pueblos originarios", "diversidad cultural del Estado Plurinacional"] },
+            { "id": "soc-3-3", "titulo": "Ayni y mink’a", "emoji": "🌾", "cubre": ["trabajo comunitario: ayni", "trabajo comunitario: mink’a"] }
+          ]
+        },
+        {
+          "id": "soc-4", "numero": 4, "titulo": "¿Cómo nos organizamos?", "emoji": "🏛️",
+          "temas": [
+            { "id": "soc-4-1", "titulo": "Instituciones del Estado", "emoji": "🏛️", "cubre": ["instituciones del Estado"] },
+            { "id": "soc-4-2", "titulo": "Mi municipio y mi comunidad", "emoji": "🗳️", "cubre": ["organización municipal", "formas de organización local"] }
+          ]
+        },
+        {
+          "id": "soc-5", "numero": 5, "titulo": "Símbolos y derechos", "emoji": "🇧🇴",
+          "temas": [
+            { "id": "soc-5-1", "titulo": "Símbolos patrios", "emoji": "🇧🇴", "cubre": ["símbolos patrios", "la bandera"] },
+            { "id": "soc-5-2", "titulo": "Los nueve departamentos", "emoji": "🗺️", "cubre": ["banderas departamentales", "escudos departamentales"] },
+            { "id": "soc-5-3", "titulo": "Derechos y deberes de la niñez", "emoji": "🧒", "cubre": ["derechos de la niñez", "deberes de la niñez"] }
+          ]
+        },
+        {
+          "id": "soc-6", "numero": 6, "titulo": "Fechas importantes", "emoji": "📅",
+          "temas": [
+            { "id": "soc-6-1", "titulo": "Fechas cívicas", "emoji": "🎉", "cubre": ["fechas cívicas y su significado"] },
+            { "id": "soc-6-2", "titulo": "Fechas conmemorativas y de mi departamento", "emoji": "🎊", "cubre": ["fechas conmemorativas", "aniversarios departamentales"] }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "naturales",
+      "nombre": "Ciencias Naturales",
+      "corto": "Naturales",
+      "emoji": "🌱",
+      "color": "#2E8B57",
+      "unidades": [
+        {
+          "id": "nat-1", "numero": 1, "titulo": "La Madre Tierra", "emoji": "🌎",
+          "temas": [
+            { "id": "nat-1-1", "titulo": "La Madre Tierra y sus componentes", "emoji": "🌎", "cubre": ["Madre Tierra y sus componentes"] },
+            { "id": "nat-1-2", "titulo": "El agua y sus estados", "emoji": "💧", "cubre": ["el agua", "estados del agua"] },
+            { "id": "nat-1-3", "titulo": "El sol y el aire", "emoji": "☀️", "cubre": ["el sol", "el aire"] },
+            { "id": "nat-1-4", "titulo": "Paisajes de Bolivia", "emoji": "🏔️", "cubre": ["paisajes naturales"] },
+            { "id": "nat-1-5", "titulo": "Las estaciones del año", "emoji": "🍂", "cubre": ["estaciones del año"] }
+          ]
+        },
+        {
+          "id": "nat-2", "numero": 2, "titulo": "Cuidamos nuestros recursos", "emoji": "♻️",
+          "temas": [
+            { "id": "nat-2-1", "titulo": "Recursos naturales", "emoji": "⛏️", "cubre": ["recursos naturales"] },
+            { "id": "nat-2-2", "titulo": "Uso responsable", "emoji": "🚰", "cubre": ["uso responsable de los recursos"] },
+            { "id": "nat-2-3", "titulo": "Prevenimos riesgos", "emoji": "⛑️", "cubre": ["gestión de riesgos", "acciones preventivas ante desastres naturales"] }
+          ]
+        },
+        {
+          "id": "nat-3", "numero": 3, "titulo": "La Tierra, el universo y mi cuerpo", "emoji": "🪐",
+          "temas": [
+            { "id": "nat-3-1", "titulo": "Los movimientos de la Tierra", "emoji": "🌍", "cubre": ["movimientos de la Tierra", "relación con fenómenos observables (día y noche, año)"] },
+            { "id": "nat-3-2", "titulo": "El universo", "emoji": "🌌", "cubre": ["el universo (introducción)"] },
+            { "id": "nat-3-3", "titulo": "El esqueleto", "emoji": "🦴", "cubre": ["esqueleto humano (introducción)"] }
+          ]
+        },
+        {
+          "id": "nat-4", "numero": 4, "titulo": "Mi cuerpo y mi salud", "emoji": "🍎",
+          "temas": [
+            { "id": "nat-4-1", "titulo": "Los cinco sentidos", "emoji": "👀", "cubre": ["tacto", "vista", "oído", "gusto", "olfato"] },
+            { "id": "nat-4-2", "titulo": "Alimentación y origen de los alimentos", "emoji": "🥗", "cubre": ["alimentación", "origen de los alimentos"] },
+            { "id": "nat-4-3", "titulo": "Salud e higiene", "emoji": "🧼", "cubre": ["salud", "higiene"] },
+            { "id": "nat-4-4", "titulo": "El aparato digestivo", "emoji": "🍽️", "cubre": ["aparato digestivo"] }
+          ]
+        },
+        {
+          "id": "nat-5", "numero": 5, "titulo": "Plantas y transformación", "emoji": "🌿",
+          "temas": [
+            { "id": "nat-5-1", "titulo": "La planta y sus partes", "emoji": "🌱", "cubre": ["la planta y sus partes"] },
+            { "id": "nat-5-2", "titulo": "La deforestación", "emoji": "🌳", "cubre": ["deforestación"] },
+            { "id": "nat-5-3", "titulo": "Materia prima y transformación", "emoji": "🧶", "cubre": ["materia prima", "transformación de la materia prima"] },
+            { "id": "nat-5-4", "titulo": "Máquinas simples del barrio", "emoji": "⚙️", "cubre": ["máquinas simples del barrio"] }
+          ]
+        },
+        {
+          "id": "nat-6", "numero": 6, "titulo": "Los animales y los seres vivos", "emoji": "🐾",
+          "temas": [
+            { "id": "nat-6-1", "titulo": "Ovíparos y vivíparos", "emoji": "🥚", "cubre": ["animales ovíparos", "animales vivíparos"] },
+            { "id": "nat-6-2", "titulo": "Vertebrados e invertebrados", "emoji": "🐛", "cubre": ["animales vertebrados", "animales invertebrados"] },
+            { "id": "nat-6-3", "titulo": "Los hábitats", "emoji": "🏞️", "cubre": ["hábitats"] },
+            { "id": "nat-6-4", "titulo": "Ciclo de vida y necesidades", "emoji": "🐸", "cubre": ["ciclo vital de los seres vivos", "necesidades comunes de los seres vivos"] }
+          ]
+        },
+        {
+          "id": "nat-7", "numero": 7, "titulo": "Todos somos parecidos y diferentes", "emoji": "👫",
+          "temas": [
+            { "id": "nat-7-1", "titulo": "Semejanzas y diferencias entre las personas", "emoji": "👫", "cubre": ["semejanzas y diferencias biológicas entre las personas"] }
+          ]
+        }
+      ]
+    }
+  ]
+}

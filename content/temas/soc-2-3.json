@@ -1,0 +1,476 @@
+{
+  "id": "soc-2-3",
+  "titulo": "El mercado",
+  "objetivo": "Sé qué se vende en el mercado y en la feria, de dónde llegan los productos, quiénes trabajan allí y cómo comprar con respeto y limpieza.",
+  "explicacion": [
+    {
+      "texto": "En el **mercado** y en la **feria** se compra y se vende. La feria se arma en la calle o en la plaza ciertos días. Allí trabajan vendedoras y vendedores, cargadores, choferes que traen los productos y quienes limpian.",
+      "emoji": "🧺",
+      "visual": { "tipo": "emojis", "items": ["🏪", "📦", "🚚", "🧹"], "etiquetas": ["vende", "carga", "transporta", "limpia"] }
+    },
+    {
+      "texto": "Productoras y productores de todo el país cultivan lo que se vende. Del **altiplano** llegan la quinua y el chuño. De los **valles**, el durazno y la uva. De los **llanos** y la Amazonía, el plátano, el arroz y la castaña.",
+      "visual": { "tipo": "tabla", "columnas": ["Altiplano", "Valles", "Llanos y Amazonía"], "filas": [["quinua", "durazno", "plátano"], ["chuño", "uva", "arroz"]] }
+    },
+    {
+      "texto": "Para **comprar**, pagamos con bolivianos (Bs) y centavos, y a veces recibimos **cambio**. En el **trueque** no se usa dinero: se cambia un producto por otro, como chuño por fruta. En algunas ferias todavía se hace.",
+      "visual": { "tipo": "emojis", "items": ["🥔", "🔄", "🍊"], "etiquetas": ["chuño", "se cambia por", "fruta"] }
+    },
+    {
+      "texto": "Saludamos a la **casera** o al **casero**, pedimos «por favor», esperamos nuestro turno y damos las gracias. Lavamos las frutas antes de comerlas, nos lavamos las manos y botamos la basura en el basurero.",
+      "emoji": "🧼",
+      "visual": { "tipo": "emojis", "items": ["👋", "🙏", "🧼", "🗑️"], "etiquetas": ["saludar", "agradecer", "lavar", "basurero"] }
+    }
+  ],
+  "ejemplo": {
+    "instruccion": "Acompaña a Kusi y a su abuela a la feria. Después, juega a pagar con monedas y billetes.",
+    "pasos": [
+      { "texto": "Kusi y su abuela llegan a la feria del domingo. Saludan: «Buenos días, casera».", "visual": { "tipo": "emojis", "items": ["👦", "👵", "🧺"], "etiquetas": ["Kusi", "abuela", "feria"] } },
+      { "texto": "Kusi pregunta con amabilidad: «¿A cuánto está el kilo de papa?». La casera responde: «A 6 Bs».", "visual": { "tipo": "emoji", "valor": "🥔", "etiqueta": "1 kilo de papa: 6 Bs" } },
+      { "texto": "La abuela paga con un billete de 10 Bs. La casera le da 4 Bs de cambio, porque 10 − 6 = 4. ¡Y les da unas papitas más de **yapa**, de regalo!", "visual": { "tipo": "dinero", "items": ["b10"] } },
+      { "texto": "Se despiden: «¡Gracias, casera!». En casa, Kusi se lava las manos y lavan las papas antes de cocinarlas.", "visual": { "tipo": "emojis", "items": ["🙏", "🧼", "💧", "🥔"], "etiquetas": ["gracias", "jabón", "agua", "papas"] } }
+    ],
+    "explorar": { "tipo": "dinero" }
+  },
+  "guiada": {
+    "intro": "Ahora vamos juntos al mercado, paso a paso.",
+    "pasos": [
+      {
+        "id": "g1", "tipo": "clasificar",
+        "enunciado": "¿De dónde llega cada producto al mercado?",
+        "apoyo": "Recuerda la tabla: del altiplano frío llegan la quinua y el chuño; de los valles, frutas como el durazno y la uva; de los llanos calurosos, el plátano y el arroz.",
+        "categorias": [
+          { "id": "altiplano", "texto": "Altiplano", "emoji": "🏔️" },
+          { "id": "valles", "texto": "Valles", "emoji": "🌄" },
+          { "id": "llanos", "texto": "Llanos y Amazonía", "emoji": "🌴" }
+        ],
+        "elementos": [
+          { "texto": "quinua", "emoji": "🌾", "categoria": "altiplano" },
+          { "texto": "chuño", "categoria": "altiplano" },
+          { "texto": "durazno", "emoji": "🍑", "categoria": "valles" },
+          { "texto": "uva", "emoji": "🍇", "categoria": "valles" },
+          { "texto": "plátano", "emoji": "🍌", "categoria": "llanos" },
+          { "texto": "arroz", "emoji": "🍚", "categoria": "llanos" }
+        ],
+        "pista": "Piensa: ¿este producto se da donde hace frío, donde el clima es templado o donde hace calor?",
+        "explicacion": "La quinua y el chuño llegan del altiplano. El durazno y la uva, de los valles. El plátano y el arroz, de los llanos.",
+        "error": "origen-productos"
+      },
+      {
+        "id": "g2", "tipo": "ordenar",
+        "enunciado": "Ordena cómo compra Nayra tomates en el mercado.",
+        "apoyo": "Primero se saluda y al final se agradece. Antes de pedir, Nayra quiere saber cuánto cuesta.",
+        "elementos": [
+          "Saluda a la casera.",
+          "Pregunta el precio del tomate.",
+          "Pide un kilo de tomate.",
+          "Paga y recibe su cambio.",
+          "Da las gracias y se despide."
+        ],
+        "vertical": true,
+        "pista": "¿Qué hace Nayra al llegar? ¿Y qué hace al irse?",
+        "explicacion": "Nayra saluda, pregunta el precio, pide un kilo, paga y recibe su cambio, y al final da las gracias.",
+        "error": "orden-compra"
+      },
+      {
+        "id": "g3", "tipo": "completar",
+        "enunciado": "Completa lo que hace Luis al volver de la feria.",
+        "apoyo": "Piensa en lo que nos ayuda a no enfermarnos.",
+        "texto": "Luis se lava las manos con agua y [jabón]. Antes de comer las manzanas, las [lava] bien. Las cáscaras van al [basurero].",
+        "banco": ["barro", "suelo"],
+        "pista": "¿Con qué se lavan bien las manos? ¿Dónde se bota la basura?",
+        "explicacion": "Luis se lava las manos con agua y jabón, lava las manzanas antes de comerlas y bota las cáscaras en el basurero.",
+        "error": "higiene-mercado"
+      }
+    ]
+  },
+  "practica": [
+    {
+      "id": "p1", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Toca las palabras que nombran trabajos.",
+      "texto": "En el mercado, la *vendedora* ofrece fruta, el *cargador* lleva las cajas y el *chofer* trae más plátanos.",
+      "pista": "Busca las palabras que dicen qué trabajo hace cada persona.",
+      "explicacion": "Vendedora, cargador y chofer son trabajos. «Mercado» es un lugar y «plátanos» es un producto.",
+      "error": "trabajos-mercado"
+    },
+    {
+      "id": "p2", "tipo": "memoria", "nivel": 1,
+      "enunciado": "Encuentra las parejas: el producto y su nombre.",
+      "pares": [
+        [ { "emoji": "🥔" }, "papa" ],
+        [ { "emoji": "🍌" }, "plátano" ],
+        [ { "emoji": "🌽" }, "choclo" ],
+        [ { "emoji": "🧀" }, "queso" ],
+        [ { "emoji": "🍊" }, "naranja" ]
+      ],
+      "pista": "Mira bien cada dibujo y di su nombre en voz alta.",
+      "explicacion": "Papa, plátano, choclo, queso y naranja: todos se venden en el mercado.",
+      "error": "productos-mercado"
+    },
+    {
+      "id": "p3", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Arami compra en la feria. Toca las palabras amables que usa para saludar, para pedir y para agradecer.",
+      "texto": "*Buenos días*. Quiero un kilo de habas, *por favor*. ¡*Gracias*!",
+      "pista": "Hay tres: una para saludar, otra para pedir y otra para agradecer.",
+      "explicacion": "«Buenos días» es un saludo, «por favor» sirve para pedir con amabilidad y «gracias» sirve para agradecer.",
+      "error": "trato-respetuoso"
+    },
+    {
+      "id": "p4", "tipo": "escribir", "nivel": 1,
+      "enunciado": "Escucha y escribe la palabra.",
+      "escuchar": "feria",
+      "visual": { "tipo": "emoji", "valor": "🧺" },
+      "respuestas": ["feria"],
+      "pista": "Es el mercado que se arma en la calle ciertos días. Tiene dos sílabas: fe-...",
+      "explicacion": "La palabra es «feria»: fe-ria.",
+      "error": "escritura-mercado"
+    },
+    {
+      "id": "p5", "tipo": "manipular", "nivel": 1,
+      "enunciado": "La piña cuesta 8 Bs. Paga exactamente 8 Bs con monedas.",
+      "visual": { "tipo": "emoji", "valor": "🍍", "etiqueta": "8 Bs" },
+      "manipulable": { "tipo": "dinero", "objetivo": 800, "disponibles": ["m1", "m2", "m5"] },
+      "pista": "Empieza con la moneda de 5 Bs. ¿Cuánto falta para llegar a 8?",
+      "explicacion": "5 Bs + 2 Bs + 1 Bs = 8 Bs. También sirven otras monedas, si suman 8 Bs.",
+      "error": "dinero-pagar"
+    },
+    {
+      "id": "p6", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "Une cada producto con el lugar de donde llega.",
+      "pares": [
+        [ { "texto": "castaña" }, "la Amazonía" ],
+        [ { "texto": "uva", "emoji": "🍇" }, "los valles de Tarija" ],
+        [ { "texto": "quinua", "emoji": "🌾" }, "el altiplano" ],
+        [ { "texto": "trucha", "emoji": "🐟" }, "el lago Titicaca" ]
+      ],
+      "pista": "Piensa: ¿dónde vive un pez? ¿Qué crece donde hace frío y qué crece donde hace calor?",
+      "explicacion": "La castaña llega de la Amazonía, la uva de los valles de Tarija, la quinua del altiplano y la trucha del lago Titicaca.",
+      "error": "origen-productos"
+    },
+    {
+      "id": "p7", "tipo": "numero", "nivel": 2,
+      "enunciado": "Escucha lo que dice la casera. ¿Cuánto cuesta el kilo de uva?",
+      "escuchar": "Casero, el kilo de uva cuesta quince bolivianos.",
+      "visual": { "tipo": "emoji", "valor": "🍇" },
+      "respuesta": 15,
+      "sufijo": "Bs",
+      "erroresComunes": [ { "respuesta": 50, "pista": "Escucha otra vez: la casera dijo «quince», no «cincuenta».", "error": "compra-venta" } ],
+      "pista": "Escucha con atención el número que dice la casera.",
+      "explicacion": "La casera dijo «quince bolivianos»: el kilo de uva cuesta 15 Bs.",
+      "error": "compra-venta"
+    },
+    {
+      "id": "p8", "tipo": "numero", "nivel": 2,
+      "enunciado": "Rosa compra 2 kilos de tomate. Cada kilo cuesta 7 Bs. ¿Cuánto paga?",
+      "visual": { "tipo": "emoji", "valor": "🍅", "cantidad": 2, "etiqueta": "2 kilos de tomate" },
+      "respuesta": 14,
+      "sufijo": "Bs",
+      "erroresComunes": [ { "respuesta": 9, "pista": "Sumaste 7 + 2. Rosa paga 7 Bs por cada kilo.", "error": "compra-venta" } ],
+      "pista": "Cada kilo cuesta 7 Bs. Suma el precio de los 2 kilos.",
+      "explicacion": "7 Bs + 7 Bs = 14 Bs. Rosa paga 14 Bs.",
+      "error": "compra-venta"
+    },
+    {
+      "id": "p9", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa con la palabra correcta.",
+      "texto": "La [vendedora] ofrece papas en su puesto. Mi tío es el [comprador]: pide un kilo que cuesta 6 Bs, paga con 10 Bs y recibe 4 Bs de [cambio].",
+      "banco": ["precio", "trueque"],
+      "pista": "Piensa: ¿quién vende y quién compra? ¿Cómo se llama el dinero que te devuelven?",
+      "explicacion": "La vendedora vende y mi tío es el comprador. Paga 10 Bs por algo que cuesta 6 Bs, y recibe 4 Bs de cambio.",
+      "error": "compra-venta"
+    },
+    {
+      "id": "p10", "tipo": "multiple", "nivel": 2,
+      "enunciado": "Vuelves de la feria. ¿Qué haces para cuidar tu salud? Elige todas las respuestas correctas.",
+      "opciones": [
+        { "texto": "Me lavo las manos con agua y jabón.", "emoji": "🧼", "correcta": true },
+        { "texto": "Lavo las frutas con agua limpia antes de comerlas.", "emoji": "💧", "correcta": true },
+        { "texto": "Como la fruta sin lavarla, apenas llego.", "pista": "La fruta pasó por muchas manos. Hay que lavarla.", "error": "higiene-mercado" },
+        { "texto": "Dejo la carne al sol toda la tarde.", "pista": "Con el calor, la carne se malogra. Se guarda en un lugar fresco.", "error": "higiene-mercado" },
+        { "texto": "Guardo la carne en el refrigerador o en un lugar fresco.", "correcta": true }
+      ],
+      "pista": "Piensa en lo que nos cuida de los microbios.",
+      "explicacion": "Nos lavamos las manos, lavamos las frutas y guardamos la carne en un lugar fresco. Comer fruta sin lavar o dejar la carne al sol puede enfermarnos.",
+      "error": "higiene-mercado"
+    },
+    {
+      "id": "p11", "tipo": "opcion", "nivel": 2,
+      "enunciado": "¿Qué es el trueque?",
+      "visual": { "tipo": "emojis", "items": ["🥔", "🔄", "🍊"] },
+      "opciones": [
+        { "texto": "Cambiar un producto por otro, sin usar dinero.", "correcta": true },
+        { "texto": "Comprar algo con billetes y monedas.", "pista": "Eso es comprar. En el trueque no se usa dinero.", "error": "trueque" },
+        { "texto": "Recibir el cambio después de pagar.", "pista": "El cambio es dinero. En el trueque no hay dinero.", "error": "trueque" }
+      ],
+      "pista": "Recuerda el ejemplo del chuño y la fruta.",
+      "explicacion": "El trueque es cambiar un producto por otro sin usar dinero, por ejemplo chuño por fruta.",
+      "error": "trueque"
+    },
+    {
+      "id": "p12", "tipo": "pasos", "nivel": 3,
+      "enunciado": "Estás en el mercado con tu papá. Dos señoras llegaron antes que ustedes al puesto de pan.",
+      "visual": { "tipo": "emojis", "items": ["🏪", "🍞", "👵", "👩"] },
+      "pasos": [
+        {
+          "tipo": "opcion",
+          "enunciado": "¿Qué hacen?",
+          "opciones": [
+            { "texto": "Esperamos nuestro turno con paciencia.", "correcta": true },
+            { "texto": "Pasamos adelante porque tenemos prisa.", "pista": "Las señoras llegaron primero. Lo justo es esperar.", "error": "trato-respetuoso" },
+            { "texto": "Gritamos para que nos atiendan primero.", "pista": "Gritar no es amable. Hay que esperar el turno.", "error": "trato-respetuoso" }
+          ],
+          "pista": "¿Quién llegó primero al puesto?",
+          "explicacion": "Esperamos nuestro turno, porque las señoras llegaron antes. Así nos respetamos.",
+          "error": "trato-respetuoso"
+        },
+        {
+          "tipo": "opcion",
+          "enunciado": "Ya es tu turno. ¿Cómo eliges los panes?",
+          "opciones": [
+            { "texto": "Le digo a la casera cuáles quiero, sin tocar los demás.", "correcta": true },
+            { "texto": "Aprieto todos los panes para ver cuál es más blando.", "pista": "Otras personas comprarán esos panes. Con tantas manos se ensucian y se aplastan.", "error": "higiene-mercado" },
+            { "texto": "Me como un pan antes de pagar.", "pista": "Primero se paga. Además, hay que lavarse las manos antes de comer.", "error": "compra-venta" }
+          ],
+          "pista": "Piensa en las personas que comprarán después de ti.",
+          "explicacion": "Le decimos a la casera lo que queremos, sin tocar ni aplastar los panes: así cuidamos la limpieza y el trabajo de la vendedora.",
+          "error": "higiene-mercado"
+        },
+        {
+          "tipo": "opcion",
+          "enunciado": "La casera te regala un pan de yapa. ¿Qué le dices?",
+          "opciones": [
+            { "texto": "¡Gracias, casera!", "correcta": true },
+            { "texto": "¡Deme dos más!", "pista": "La yapa es un regalo. ¿Qué se dice cuando te regalan algo?", "error": "trato-respetuoso" },
+            { "texto": "No le digo nada.", "pista": "Cuando alguien es amable contigo, se lo agradeces.", "error": "trato-respetuoso" }
+          ],
+          "pista": "¿Qué palabra usamos cuando alguien nos regala algo?",
+          "explicacion": "Le decimos «¡Gracias, casera!». La yapa es un regalito que se agradece.",
+          "error": "trato-respetuoso"
+        }
+      ],
+      "pista": "Piensa en cómo te gustaría que te traten a ti.",
+      "explicacion": "En el mercado esperamos el turno, no manoseamos los alimentos y agradecemos a quien nos atiende.",
+      "error": "trato-respetuoso"
+    },
+    {
+      "id": "p13", "tipo": "pasos", "nivel": 3,
+      "enunciado": "En una feria del campo, Wara cambia 1 bolsa de chuño por 5 naranjas.",
+      "visual": { "tipo": "emojis", "items": ["🥔", "🔄", "🍊"], "etiquetas": ["1 bolsa de chuño", "se cambia por", "5 naranjas"] },
+      "pasos": [
+        {
+          "tipo": "opcion",
+          "enunciado": "¿Wara usó dinero?",
+          "mezclar": false,
+          "opciones": [
+            { "texto": "Sí, pagó con dinero.", "pista": "Wara no pagó con monedas ni billetes: dio su chuño.", "error": "trueque" },
+            { "texto": "No, hizo un trueque.", "correcta": true }
+          ],
+          "pista": "¿Viste monedas o billetes en lo que hizo Wara?",
+          "explicacion": "No usó dinero: cambió chuño por naranjas. Eso es un trueque.",
+          "error": "trueque"
+        },
+        {
+          "tipo": "numero",
+          "enunciado": "Si Wara cambia 2 bolsas de chuño, ¿cuántas naranjas recibe?",
+          "respuesta": 10,
+          "erroresComunes": [ { "respuesta": 7, "pista": "Sumaste 5 + 2. Por cada bolsa recibe 5 naranjas.", "error": "trueque" } ],
+          "pista": "Por 1 bolsa recibe 5 naranjas. Por la otra bolsa, recibe 5 más.",
+          "explicacion": "5 + 5 = 10. Por 2 bolsas de chuño, Wara recibe 10 naranjas.",
+          "error": "trueque"
+        }
+      ],
+      "pista": "Resuelve un paso a la vez.",
+      "explicacion": "Wara hizo trueque: por cada bolsa de chuño recibe 5 naranjas. Por 2 bolsas, recibe 10.",
+      "error": "trueque"
+    },
+    {
+      "id": "p14", "tipo": "ordenar", "nivel": 3,
+      "enunciado": "Ordena el viaje del plátano, desde la chacra hasta tu mesa.",
+      "elementos": [
+        { "texto": "Una familia cosecha plátanos en los llanos.", "emoji": "👨‍🌾" },
+        { "texto": "Un chofer los lleva en camión hasta la ciudad.", "emoji": "🚚" },
+        { "texto": "Los cargadores bajan las cajas en el mercado.", "emoji": "📦" },
+        { "texto": "La casera vende los plátanos en su puesto.", "emoji": "🏪" },
+        { "texto": "Tu familia los compra y los come en casa.", "emoji": "🍌" }
+      ],
+      "vertical": true,
+      "pista": "¿Qué pasa primero: vender los plátanos o cosecharlos?",
+      "explicacion": "Primero se cosechan; luego el chofer los trae, los cargadores bajan las cajas, la casera los vende y tu familia los compra. ¡Muchas personas trabajan para que comas un plátano!",
+      "error": "cadena-productos"
+    },
+    {
+      "id": "p15", "tipo": "escribir-libre", "nivel": 3,
+      "enunciado": "Escribe lo que le dirías a la casera para comprar algo con amabilidad.",
+      "guia": ["Buenos días, casera. ¿Me vende...?", "Buenas tardes, casero. Deme..., por favor.", "¡Gracias, casera!"],
+      "requisitos": [
+        { "tipo": "mayuscula-inicial" },
+        { "tipo": "punto-final" },
+        { "tipo": "min-palabras", "valor": 5 },
+        { "tipo": "incluye", "palabras": ["por favor", "gracias", "buenos días", "buenas tardes", "buenas noches"] }
+      ],
+      "modelo": "Buenos días, casera. ¿Me vende un kilo de papa, por favor?",
+      "pista": "Empieza con un saludo y usa «por favor» o «gracias».",
+      "explicacion": "Por ejemplo: «Buenos días, casera. ¿Me vende un kilo de papa, por favor?». Saludar y pedir por favor es tratar con respeto.",
+      "error": "produce-oracion"
+    }
+  ],
+  "comprobacion": [
+    {
+      "id": "c1", "tipo": "relacionar", "nivel": 1,
+      "enunciado": "Une cada persona con lo que hace en el mercado.",
+      "pares": [
+        [ { "texto": "vendedora", "emoji": "🏪" }, "vende en su puesto" ],
+        [ { "texto": "cargador", "emoji": "📦" }, "lleva bultos pesados" ],
+        [ { "texto": "chofer", "emoji": "🚚" }, "trae los productos en camión" ],
+        [ { "texto": "productora", "emoji": "👩‍🌾" }, "cultiva los alimentos" ]
+      ],
+      "pista": "Piensa qué necesita cada persona para su trabajo: un puesto, fuerza, un camión o una chacra.",
+      "explicacion": "La vendedora vende en su puesto, el cargador lleva bultos, el chofer trae los productos en camión y la productora cultiva los alimentos.",
+      "error": "trabajos-mercado"
+    },
+    {
+      "id": "c2", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Toca los productos que vende don Juan.",
+      "texto": "Don Juan vende *naranjas*, *piñas* y *plátanos* en un mercado de Santa Cruz.",
+      "pista": "Busca los nombres de frutas.",
+      "explicacion": "Don Juan vende naranjas, piñas y plátanos. El mercado es el lugar donde vende.",
+      "error": "productos-mercado"
+    },
+    {
+      "id": "c3", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "¿Compra con dinero o hace trueque?",
+      "categorias": [
+        { "id": "dinero", "texto": "Compra con dinero", "emoji": "💵" },
+        { "id": "trueque", "texto": "Hace trueque", "emoji": "🔄" }
+      ],
+      "elementos": [
+        { "texto": "Nayra paga 6 Bs por un kilo de papa.", "categoria": "dinero" },
+        { "texto": "Inti cambia su chuño por naranjas.", "categoria": "trueque" },
+        { "texto": "Sofía da 3 Bs y recibe un choclo.", "categoria": "dinero" },
+        { "texto": "La abuela cambia un tejido por una caja de fruta.", "categoria": "trueque" },
+        { "texto": "Mateo paga con un billete y recibe su cambio.", "categoria": "dinero" },
+        { "texto": "Rosa cambia habas por cebollas.", "categoria": "trueque" }
+      ],
+      "pista": "Si hay monedas o billetes, es una compra. Si se cambia una cosa por otra, es trueque.",
+      "explicacion": "Nayra, Sofía y Mateo compran con dinero. Inti, la abuela y Rosa hacen trueque: cambian un producto por otro.",
+      "error": "trueque"
+    },
+    {
+      "id": "c4", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha y escribe la palabra.",
+      "escuchar": "vendedora",
+      "visual": { "tipo": "emoji", "valor": "🏪" },
+      "respuestas": ["vendedora"],
+      "pista": "Es la persona que vende en su puesto. Tiene cuatro sílabas: ven-de-...",
+      "explicacion": "La palabra es «vendedora»: ven-de-do-ra.",
+      "error": "escritura-mercado"
+    },
+    {
+      "id": "c5", "tipo": "numero", "nivel": 2,
+      "enunciado": "Kusi compra 3 choclos. Cada choclo cuesta 3 Bs. ¿Cuánto paga?",
+      "visual": { "tipo": "emoji", "valor": "🌽", "cantidad": 3, "etiqueta": "3 Bs cada uno" },
+      "respuesta": 9,
+      "sufijo": "Bs",
+      "erroresComunes": [ { "respuesta": 6, "pista": "Sumaste 3 + 3. Son 3 choclos: suma 3 Bs por cada uno.", "error": "compra-venta" } ],
+      "pista": "Suma 3 Bs por cada choclo.",
+      "explicacion": "3 + 3 + 3 = 9. Kusi paga 9 Bs.",
+      "error": "compra-venta"
+    },
+    {
+      "id": "c6", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa cómo cuidamos la limpieza de los alimentos.",
+      "texto": "La casera [tapa] el pan para que no le caigan moscas ni polvo. Es mejor comprar en puestos [limpios]. En casa, [lavamos] la fruta con agua limpia antes de comerla.",
+      "banco": ["destapa", "sucios"],
+      "pista": "Piensa en lo que ayuda a que los alimentos no se ensucien.",
+      "explicacion": "La casera tapa el pan para protegerlo de las moscas y del polvo. Compramos en puestos limpios y, en casa, lavamos la fruta antes de comerla.",
+      "error": "higiene-mercado"
+    },
+    {
+      "id": "c7", "tipo": "pasos", "nivel": 3,
+      "enunciado": "Vas a la feria con tu abuelo. Quieren comprar un kilo de duraznos, que cuesta 8 Bs.",
+      "visual": { "tipo": "emoji", "valor": "🍑", "etiqueta": "1 kilo: 8 Bs" },
+      "pasos": [
+        {
+          "tipo": "opcion",
+          "enunciado": "¿Cómo piden los duraznos?",
+          "opciones": [
+            { "texto": "Buenas tardes, casera. ¿Nos da un kilo de duraznos, por favor?", "correcta": true },
+            { "texto": "¡Duraznos, rápido!", "pista": "Así suena a una orden. ¿Cómo lo pedirías con amabilidad?", "error": "trato-respetuoso" },
+            { "texto": "Tomamos los duraznos sin decir nada.", "pista": "Primero se saluda y se pide. Tomar sin pedir no está bien.", "error": "trato-respetuoso" }
+          ],
+          "pista": "Usa un saludo y «por favor».",
+          "explicacion": "Saludamos y pedimos por favor: «Buenas tardes, casera. ¿Nos da un kilo de duraznos, por favor?».",
+          "error": "trato-respetuoso"
+        },
+        {
+          "tipo": "numero",
+          "enunciado": "El abuelo paga con un billete de 10 Bs. ¿Cuánto cambio reciben?",
+          "visual": { "tipo": "dinero", "items": ["b10"] },
+          "respuesta": 2,
+          "sufijo": "Bs",
+          "erroresComunes": [ { "respuesta": 18, "pista": "Sumaste. El cambio es lo que sobra: quita 8 a 10.", "error": "compra-venta" } ],
+          "pista": "¿Cuánto le falta a 8 para llegar a 10?",
+          "explicacion": "10 − 8 = 2. Reciben 2 Bs de cambio.",
+          "error": "compra-venta"
+        },
+        {
+          "tipo": "opcion",
+          "enunciado": "En casa, ¿qué hacen antes de comer los duraznos?",
+          "opciones": [
+            { "texto": "Los lavamos con agua limpia.", "correcta": true },
+            { "texto": "Los comemos así, sin lavar.", "pista": "Muchas manos tocaron los duraznos. Hay que lavarlos.", "error": "higiene-mercado" },
+            { "texto": "Los dejamos en el suelo.", "pista": "En el suelo se ensucian más.", "error": "higiene-mercado" }
+          ],
+          "pista": "Piensa en lo que nos cuida de los microbios.",
+          "explicacion": "Lavamos los duraznos con agua limpia antes de comerlos.",
+          "error": "higiene-mercado"
+        }
+      ],
+      "pista": "Resuelve un paso a la vez.",
+      "explicacion": "Pedimos con amabilidad, recibimos 2 Bs de cambio y lavamos los duraznos antes de comerlos.",
+      "error": "compra-venta"
+    },
+    {
+      "id": "c8", "tipo": "multiple", "nivel": 3,
+      "enunciado": "Un camión llega al mercado desde el altiplano. ¿Qué productos trae? Elige todos.",
+      "visual": { "tipo": "emojis", "items": ["🏔️", "🚚", "🧺"], "etiquetas": ["altiplano", "camión", "mercado"] },
+      "opciones": [
+        { "texto": "chuño", "correcta": true },
+        { "texto": "quinua", "emoji": "🌾", "correcta": true },
+        { "texto": "carne de llama", "emoji": "🦙", "correcta": true },
+        { "texto": "plátano", "emoji": "🍌", "pista": "El plátano necesita calor. Llega de los llanos.", "error": "origen-productos" },
+        { "texto": "durazno", "emoji": "🍑", "pista": "El durazno se da en los valles, donde el clima es templado.", "error": "origen-productos" },
+        { "texto": "castaña", "pista": "La castaña crece en árboles muy altos de la selva amazónica.", "error": "origen-productos" }
+      ],
+      "pista": "El altiplano es alto y frío. ¿Qué se produce allí?",
+      "explicacion": "Del altiplano llegan el chuño, la quinua y la carne de llama. El plátano y la castaña llegan de los llanos y la Amazonía; el durazno, de los valles.",
+      "error": "origen-productos"
+    }
+  ],
+  "repaso": {
+    "texto": "En el mercado compramos y vendemos. Los productos llegan del altiplano, de los valles y de los llanos. Saludamos, pedimos por favor, damos las gracias y lavamos los alimentos.",
+    "visual": { "tipo": "emojis", "items": ["🏔️", "🌄", "🌴", "🧺"], "etiquetas": ["altiplano", "valles", "llanos", "mercado"] }
+  },
+  "adulto": {
+    "objetivo": "Conocer el mercado y la feria como lugares de trabajo y encuentro: qué se vende, de qué regiones de Bolivia llegan los productos, quiénes trabajan allí, cómo se compra y se vende (precio, pago, cambio), qué es el trueque (que todavía se practica en algunas ferias rurales, por ejemplo en Pongo K’asa, Cochabamba) y cómo tratar con respeto a vendedoras y vendedores cuidando la higiene de los alimentos.",
+    "sugerencias": [
+      "Vayan juntos al mercado o a la feria: pidan que salude a la casera o al casero, pregunte el precio de un producto, pague y cuente el cambio, y que al final dé las gracias.",
+      "En la cocina, elijan tres productos (por ejemplo quinua, arroz y durazno) y conversen sobre de qué región llegan y quiénes trabajaron para que estén en su mesa: productores, choferes, cargadores y vendedores.",
+      "Jueguen al mercado en casa con frutas y verduras reales y monedas: túrnense para vender y comprar. Hagan también un trueque sin dinero (una fruta por un pan) y, al terminar, laven juntos las frutas antes de comerlas."
+    ],
+    "errores": {
+      "productos-mercado": { "descripcion": "No reconoce con seguridad los productos que se venden en el mercado.", "sugerencia": "En la feria o en la cocina, nombren juntos los productos y pregunten en qué puesto se compran." },
+      "origen-productos": { "descripcion": "Confunde de qué región llegan los productos (altiplano, valles, llanos y Amazonía).", "sugerencia": "Dibujen un mapa sencillo de Bolivia con tres zonas y peguen allí dibujos de quinua, durazno, plátano o castaña." },
+      "trabajos-mercado": { "descripcion": "No identifica quiénes trabajan en el mercado ni qué hace cada persona.", "sugerencia": "Al visitar el mercado, observen juntos a vendedoras, cargadores, choferes y personas de limpieza, y comenten qué hace cada uno." },
+      "cadena-productos": { "descripcion": "Le cuesta ordenar el recorrido de un producto desde la chacra hasta la casa.", "sugerencia": "Cuenten la historia de un alimento con cuatro dibujos (cosecha, camión, puesto, mesa) y pidan que los ordene." },
+      "compra-venta": { "descripcion": "Confunde precio, pago y cambio, o se equivoca al calcular cuánto se paga.", "sugerencia": "Jueguen a la tiendita con precios pequeños y monedas reales; pregunten cuánto se paga y cuánto sobra." },
+      "dinero-pagar": { "descripcion": "Le cuesta juntar monedas para pagar un precio exacto.", "sugerencia": "Pongan monedas de 1, 2 y 5 Bs sobre la mesa y pidan que forme precios de 3 a 10 Bs de varias maneras." },
+      "trato-respetuoso": { "descripcion": "No reconoce todavía las formas respetuosas de tratar a quienes venden (saludar, esperar el turno, agradecer).", "sugerencia": "Antes de ir a comprar, ensayen juntos el saludo, el pedido con «por favor» y el agradecimiento." },
+      "higiene-mercado": { "descripcion": "No aplica siempre los hábitos de higiene con los alimentos.", "sugerencia": "Al volver de la feria, háganlo juntos: lavarse las manos, lavar frutas y verduras y guardar la carne en un lugar fresco." },
+      "trueque": { "descripcion": "No distingue el trueque (cambio sin dinero) de la compra con dinero.", "sugerencia": "Hagan trueques en casa (un lápiz por una galleta) y pregunten: «¿usamos dinero?»." },
+      "orden-compra": { "descripcion": "Le cuesta ordenar los pasos de una compra (saludar, preguntar el precio, pedir, pagar, agradecer).", "sugerencia": "Representen una compra con un títere o un peluche que hace de casera y repitan los pasos en orden." },
+      "escritura-mercado": { "descripcion": "Comete errores al escribir palabras dictadas del tema (feria, vendedora).", "sugerencia": "Dicten las palabras separando las sílabas con palmadas y revisen juntos cómo quedaron escritas." },
+      "produce-oracion": { "descripcion": "Le cuesta escribir una frase amable completa, con mayúscula y signo final.", "sugerencia": "Escriban juntos en tarjetas frases para comprar («Buenos días, casera. ¿Me vende...?») y léanlas en voz alta." }
+    }
+  }
+}

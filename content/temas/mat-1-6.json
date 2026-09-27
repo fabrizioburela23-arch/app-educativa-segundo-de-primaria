@@ -1,0 +1,350 @@
+{
+  "id": "mat-1-6",
+  "titulo": "Números ordinales",
+  "objetivo": "Uso los números ordinales para decir qué lugar ocupa algo: primero, segundo, tercero...",
+  "explicacion": [
+    {
+      "texto": "Los números **ordinales** dicen qué **lugar** ocupa algo en una fila: primero, segundo, tercero, cuarto, quinto... El primer micro es el que está junto a la parada.",
+      "emoji": "🏁",
+      "visual": { "tipo": "emojis", "items": ["🚏", "🚌", "🚌", "🚌", "🚌", "🚌"], "etiquetas": ["parada", "primero", "segundo", "tercero", "cuarto", "quinto"] }
+    },
+    {
+      "texto": "Del 1.º al 10.º: primero, segundo, tercero, cuarto, quinto, sexto, séptimo, octavo, noveno y décimo. ¡Desafío! 11.º undécimo, 12.º duodécimo, 13.º decimotercero... 20.º vigésimo.",
+      "audio": "Del primero al décimo: primero, segundo, tercero, cuarto, quinto, sexto, séptimo, octavo, noveno y décimo. ¡Desafío! Después vienen undécimo, duodécimo, decimotercero... hasta vigésimo, que es el lugar número veinte.",
+      "visual": { "tipo": "tabla", "columnas": ["Número", "Se dice", "Número", "Se dice"], "filas": [["1.º", "primero", "6.º", "sexto"], ["2.º", "segundo", "7.º", "séptimo"], ["3.º", "tercero", "8.º", "octavo"], ["4.º", "cuarto", "9.º", "noveno"], ["5.º", "quinto", "10.º", "décimo"]] }
+    },
+    {
+      "texto": "Para escribirlos rápido usamos un punto y una letrita: **1.º** es primero y **1.ª** es primera. Con palabras como casa, fila o llama usamos **ª**: la 2.ª casa, la 3.ª llama.",
+      "audio": "Para escribirlos rápido usamos el número, un punto y una letrita. Con la o pequeña se lee primero. Con la a pequeña se lee primera. Con palabras como casa, fila o llama usamos la a pequeña: la segunda casa, la tercera llama.",
+      "visual": { "tipo": "emojis", "items": ["🦙", "🦙", "🦙"], "etiquetas": ["1.ª", "2.ª", "3.ª"] }
+    },
+    {
+      "texto": "No es lo mismo **cuántos** que **qué lugar**. En la fila de la tienda hay 6 niños: eso dice cuántos. Mateo es el cuarto: ese es su lugar.",
+      "emoji": "🤔",
+      "visual": { "tipo": "emojis", "items": ["🏪", "🧒", "🧒", "🧒", "👦", "🧒", "🧒"], "etiquetas": ["tienda", "", "", "", "Mateo", "", ""] }
+    }
+  ],
+  "ejemplo": {
+    "instruccion": "Mira el edificio donde vive Ana. Los pisos se cuentan desde abajo hacia arriba.",
+    "pasos": [
+      {
+        "texto": "Este edificio tiene 5 pisos. Ana vive abajo de todo: en el **primer piso**.",
+        "visual": { "tipo": "tabla", "columnas": ["Piso", "Quién vive"], "filas": [["5.º", "Inti"], ["4.º", "Rosa"], ["3.º", "Wara"], ["2.º", "Luis"], ["1.º", "Ana"]] }
+      },
+      {
+        "texto": "Luis vive en el **segundo piso** y Wara, en el **tercer piso**.",
+        "visual": { "tipo": "tabla", "columnas": ["Piso", "Quién vive"], "filas": [["5.º", "Inti"], ["4.º", "Rosa"], ["3.º", "Wara"], ["2.º", "Luis"], ["1.º", "Ana"]] }
+      },
+      {
+        "texto": "Rosa vive en el **cuarto piso**. Inti vive arriba de todo, en el **quinto piso**.",
+        "visual": { "tipo": "tabla", "columnas": ["Piso", "Quién vive"], "filas": [["5.º", "Inti"], ["4.º", "Rosa"], ["3.º", "Wara"], ["2.º", "Luis"], ["1.º", "Ana"]] }
+      },
+      {
+        "texto": "Fíjate: justo antes de una palabra como «piso» o «lugar», decimos **primer** y **tercer**, sin la o final: el primer piso, el tercer lugar.",
+        "visual": { "tipo": "emojis", "items": ["🥇", "🥈", "🥉"], "etiquetas": ["primer lugar", "segundo lugar", "tercer lugar"] }
+      }
+    ]
+  },
+  "guiada": {
+    "intro": "Ahora lo hacemos juntos.",
+    "pasos": [
+      {
+        "id": "g1", "tipo": "numero",
+        "enunciado": "En la feria, estas personas hacen fila para comprar api. ¿En qué lugar está el abuelo 👴? Escribe el número.",
+        "apoyo": "La fila empieza junto al puesto 🏪. Cuenta desde ahí: primero, segundo, tercero...",
+        "visual": { "tipo": "emojis", "items": ["🏪", "👩", "👦", "👧", "👴", "👨"] },
+        "respuesta": 4,
+        "sufijo": ".º",
+        "erroresComunes": [
+          { "respuesta": 5, "pista": "Contaste el puesto. Empieza por la persona que está junto a él.", "error": "cuenta-posicion" },
+          { "respuesta": 2, "pista": "Contaste desde el otro lado. La fila empieza junto al puesto.", "error": "cuenta-posicion" }
+        ],
+        "pista": "Toca a cada persona desde el puesto mientras cuentas.",
+        "explicacion": "Desde el puesto: la señora es la primera, el niño es el segundo, la niña es la tercera y el abuelo es el cuarto (4.º).",
+        "error": "cuenta-posicion"
+      },
+      {
+        "id": "g2", "tipo": "relacionar",
+        "enunciado": "Une cada ordinal con su nombre.",
+        "apoyo": "Cuenta con los dedos: primero, segundo, tercero... hasta llegar al número.",
+        "pares": [ ["1.º", "primero"], ["3.º", "tercero"], ["5.º", "quinto"], ["8.º", "octavo"] ],
+        "pista": "Di los ordinales en orden y cuenta cuántos llevas.",
+        "explicacion": "1.º es primero, 3.º es tercero, 5.º es quinto y 8.º es octavo.",
+        "error": "ordinal-cifra"
+      },
+      {
+        "id": "g3", "tipo": "completar",
+        "enunciado": "Completa los ordinales en orden.",
+        "apoyo": "Di la lista en voz alta. Recuerda: los ordinales dicen el lugar, no cuántos hay.",
+        "texto": "primero, segundo, [tercero], cuarto, [quinto], sexto, [séptimo]",
+        "banco": ["tres", "cinco", "siete"],
+        "pista": "Tres, cinco y siete dicen cuántos. Busca las palabras que dicen el lugar.",
+        "explicacion": "El orden es: primero, segundo, tercero, cuarto, quinto, sexto, séptimo.",
+        "error": "secuencia-ordinales"
+      }
+    ]
+  },
+  "practica": [
+    {
+      "id": "p1", "tipo": "ordenar", "nivel": 1,
+      "enunciado": "Ordena los ordinales, desde el primero.",
+      "elementos": ["primero", "segundo", "tercero", "cuarto", "quinto"],
+      "pista": "Empieza por «primero». ¿Qué lugar viene después?",
+      "explicacion": "El orden es: primero, segundo, tercero, cuarto y quinto.",
+      "error": "secuencia-ordinales"
+    },
+    {
+      "id": "p2", "tipo": "generador", "nivel": 1, "generador": "ordinal", "params": { "max": 5 }
+    },
+    {
+      "id": "p3", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Toca el número ordinal: la palabra que dice en qué orden está mi casa.",
+      "texto": "En mi calle hay ocho casas en fila. La mía es la *cuarta*.",
+      "pista": "Una palabra dice cuántas casas hay. Otra dice en qué orden está la mía.",
+      "explicacion": "«Cuarta» dice el orden de mi casa en la fila: es un número ordinal. «Ocho» dice cuántas casas hay.",
+      "error": "cantidad-lugar"
+    },
+    {
+      "id": "p4", "tipo": "manipular", "nivel": 1,
+      "enunciado": "En esta recta, cada número es un lugar de la fila. Pon el marcador en el sexto lugar.",
+      "manipulable": { "tipo": "recta", "min": 1, "max": 10, "paso": 1, "objetivo": 6 },
+      "pista": "Sexto va justo después de quinto.",
+      "explicacion": "El sexto lugar es el 6.º: está en el número 6.",
+      "error": "ordinal-cifra"
+    },
+    {
+      "id": "p5", "tipo": "generador", "nivel": 2, "generador": "ordinal", "params": { "max": 10 }
+    },
+    {
+      "id": "p6", "tipo": "memoria", "nivel": 2,
+      "enunciado": "Encuentra las parejas: el ordinal y su nombre.",
+      "pares": [ ["6.º", "sexto"], ["7.º", "séptimo"], ["8.º", "octavo"], ["9.º", "noveno"], ["10.º", "décimo"] ],
+      "pista": "Cuenta hacia adelante desde el 5.º, quinto.",
+      "explicacion": "6.º sexto, 7.º séptimo, 8.º octavo, 9.º noveno y 10.º décimo.",
+      "error": "ordinal-cifra"
+    },
+    {
+      "id": "p7", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "¿La palabra dice cuántos o qué lugar?",
+      "categorias": [ { "id": "cuantos", "texto": "Cuántos", "emoji": "🔢" }, { "id": "lugar", "texto": "Qué lugar", "emoji": "🏁" } ],
+      "elementos": [
+        { "texto": "tres", "categoria": "cuantos" }, { "texto": "tercero", "categoria": "lugar" },
+        { "texto": "siete", "categoria": "cuantos" }, { "texto": "séptimo", "categoria": "lugar" },
+        { "texto": "diez", "categoria": "cuantos" }, { "texto": "décimo", "categoria": "lugar" },
+        { "texto": "noveno", "categoria": "lugar" }, { "texto": "cinco", "categoria": "cuantos" }
+      ],
+      "pista": "Pregúntate: ¿sirve para contar cosas o para decir el lugar en una fila?",
+      "explicacion": "Tres, siete, diez y cinco dicen cuántos. Tercero, séptimo, décimo y noveno dicen qué lugar.",
+      "error": "cantidad-lugar"
+    },
+    {
+      "id": "p8", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha y escribe el ordinal con letras.",
+      "escuchar": "séptimo",
+      "respuestas": ["séptimo", "sétimo"],
+      "tildes": "flexible",
+      "pista": "Es el ordinal que viene después de sexto.",
+      "explicacion": "Escuchaste «séptimo»: es el 7.º. Se escribe sép-ti-mo, con tilde.",
+      "error": "escritura-ordinal"
+    },
+    {
+      "id": "p9", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa con la palabra correcta.",
+      "texto": "Wara llegó antes que todos: es la [primera] de la fila. Juan está justo detrás de ella: es el [segundo].",
+      "banco": ["primero", "segunda"],
+      "pista": "Mira si antes del hueco dice «la» o «el».",
+      "explicacion": "Decimos «la primera» y «el segundo»: el ordinal cambia según la palabra que acompaña.",
+      "error": "genero-ordinal"
+    },
+    {
+      "id": "p10", "tipo": "pasos", "nivel": 2,
+      "enunciado": "Rosa vive en el segundo piso. Sube 3 pisos por las gradas para visitar a su tía.",
+      "visual": { "tipo": "tabla", "columnas": ["Piso"], "filas": [["6.º"], ["5.º"], ["4.º"], ["3.º"], ["2.º"], ["1.º"]] },
+      "pasos": [
+        {
+          "tipo": "numero", "enunciado": "¿A qué piso llega? Escribe el número.",
+          "respuesta": 5,
+          "sufijo": ".º",
+          "erroresComunes": [
+            { "respuesta": 3, "pista": "Rosa no empieza abajo: empieza en el segundo piso.", "error": "problema-ordinales" },
+            { "respuesta": 4, "pista": "Cuenta 3 pisos a partir del segundo, sin contar el segundo.", "error": "problema-ordinales" }
+          ],
+          "pista": "Empieza en el 2.º y sube de un piso en un piso, tres veces.",
+          "explicacion": "Del 2.º piso sube 3: 3.º, 4.º y 5.º. Llega al quinto piso.",
+          "error": "problema-ordinales"
+        },
+        {
+          "tipo": "escribir", "enunciado": "Escribe con letras: ¿en qué piso vive su tía?",
+          "respuestas": ["quinto", "quinto piso", "el quinto piso", "en el quinto piso", "el quinto", "en el quinto"],
+          "pista": "¿Cómo se dice el ordinal 5.º?",
+          "explicacion": "5.º se dice quinto: la tía vive en el quinto piso.",
+          "error": "escritura-ordinal"
+        }
+      ],
+      "pista": "Resuelve un paso a la vez.",
+      "explicacion": "Rosa sube del 2.º al 5.º piso: su tía vive en el quinto piso.",
+      "error": "problema-ordinales"
+    },
+    {
+      "id": "p11", "tipo": "generador", "nivel": 3, "generador": "ordinal", "params": { "max": 20 }
+    },
+    {
+      "id": "p12", "tipo": "relacionar", "nivel": 3,
+      "enunciado": "¡Desafío! Une cada ordinal con su nombre.",
+      "pares": [ ["11.º", "undécimo"], ["12.º", "duodécimo"], ["15.º", "decimoquinto"], ["20.º", "vigésimo"] ],
+      "pista": "El 15.º es como 10 + 5: décimo y quinto, juntos en una palabra. El 11.º y el 12.º tienen nombres especiales.",
+      "explicacion": "11.º undécimo, 12.º duodécimo, 15.º decimoquinto y 20.º vigésimo.",
+      "error": "ordinales-desafio"
+    },
+    {
+      "id": "p13", "tipo": "numero", "nivel": 3,
+      "enunciado": "En la fila para comprar salteñas hay 8 personas. Mateo es el tercero. ¿Cuántas personas hay detrás de él?",
+      "respuesta": 5,
+      "erroresComunes": [
+        { "respuesta": 2, "pista": "Esas son las personas que están delante de Mateo. Cuenta las de atrás.", "error": "cuenta-posicion" },
+        { "respuesta": 6, "pista": "No cuentes a Mateo: solo a las personas que están detrás de él.", "error": "cuenta-posicion" }
+      ],
+      "pista": "Dibuja 8 palitos y marca el tercero. Cuenta los que quedan después.",
+      "explicacion": "Detrás de Mateo están el 4.º, 5.º, 6.º, 7.º y 8.º: son 5 personas.",
+      "error": "cuenta-posicion"
+    },
+    {
+      "id": "p14", "tipo": "completar", "nivel": 3,
+      "enunciado": "Escribe cada ordinal en corto, con la letrita correcta.",
+      "texto": "La segunda casa es la [2.ª] casa. El quinto piso es el [5.º] piso. La cuarta fila es la [4.ª] fila.",
+      "banco": ["2.º", "5.ª", "4.º"],
+      "pista": "Si la palabra termina en a (segunda, cuarta), usa ª. Si termina en o, usa º.",
+      "explicacion": "La segunda casa es la 2.ª casa, el quinto piso es el 5.º piso y la cuarta fila es la 4.ª fila.",
+      "error": "genero-ordinal"
+    },
+    {
+      "id": "p15", "tipo": "manipular", "nivel": 3,
+      "enunciado": "Mira el calendario de octubre de 2026. Toca el tercer lunes del mes.",
+      "manipulable": { "tipo": "calendario", "mes": 10, "anio": 2026, "objetivo": 19 },
+      "pista": "Busca la columna de los lunes. Cuenta desde arriba solo los días que tienen número: primero, segundo, tercero.",
+      "explicacion": "Los lunes de octubre de 2026 son 5, 12, 19 y 26. El tercer lunes es el 19.",
+      "error": "cuenta-posicion"
+    }
+  ],
+  "comprobacion": [
+    {
+      "id": "c1", "tipo": "ordenar", "nivel": 1,
+      "enunciado": "Ordena los ordinales del sexto al décimo.",
+      "elementos": ["sexto", "séptimo", "octavo", "noveno", "décimo"],
+      "pista": "Piensa en 6.º, 7.º, 8.º, 9.º y 10.º. ¿Cómo se dice cada uno?",
+      "explicacion": "Sexto (6.º), séptimo (7.º), octavo (8.º), noveno (9.º) y décimo (10.º).",
+      "error": "secuencia-ordinales"
+    },
+    {
+      "id": "c2", "tipo": "relacionar", "nivel": 1,
+      "enunciado": "Une cada ordinal con su nombre.",
+      "pares": [ ["2.º", "segundo"], ["4.º", "cuarto"], ["6.º", "sexto"], ["9.º", "noveno"] ],
+      "pista": "Cuenta con los dedos: primero, segundo, tercero...",
+      "explicacion": "2.º es segundo, 4.º es cuarto, 6.º es sexto y 9.º es noveno.",
+      "error": "ordinal-cifra"
+    },
+    {
+      "id": "c3", "tipo": "opcion", "nivel": 2,
+      "enunciado": "Mira el edificio. ¿Quién vive en el cuarto piso?",
+      "visual": { "tipo": "tabla", "columnas": ["Piso", "Quién vive"], "filas": [["6.º", "Nayra"], ["5.º", "Juan"], ["4.º", "Sofía"], ["3.º", "Mateo"], ["2.º", "Arami"], ["1.º", "Luis"]] },
+      "opciones": [
+        { "texto": "Sofía", "correcta": true },
+        { "texto": "Mateo", "pista": "Mateo vive en el 3.º piso: el tercero.", "error": "ordinal-cifra" },
+        { "texto": "Juan", "pista": "Juan vive en el 5.º piso: el quinto.", "error": "ordinal-cifra" }
+      ],
+      "columnas": 3,
+      "pista": "Cuarto se escribe 4.º. Búscalo en el edificio.",
+      "explicacion": "El cuarto piso es el 4.º. Allí vive Sofía.",
+      "error": "ordinal-cifra"
+    },
+    {
+      "id": "c4", "tipo": "numero", "nivel": 2,
+      "enunciado": "Escucha el ordinal y escribe su número.",
+      "escuchar": "noveno",
+      "respuesta": 9,
+      "sufijo": ".º",
+      "erroresComunes": [
+        { "respuesta": 10, "pista": "El 10.º es décimo. Escucha otra vez: es uno antes.", "error": "ordinal-cifra" }
+      ],
+      "pista": "Cuenta: primero, segundo, tercero... hasta llegar al que escuchaste.",
+      "explicacion": "Escuchaste «noveno»: es el 9.º, el lugar número 9.",
+      "error": "ordinal-cifra"
+    },
+    {
+      "id": "c5", "tipo": "generador", "nivel": 2, "generador": "ordinal", "params": { "max": 10 }
+    },
+    {
+      "id": "c6", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "¿Cada palabra va con segundo o con segunda?",
+      "categorias": [ { "id": "o", "texto": "segundo (2.º)" }, { "id": "a", "texto": "segunda (2.ª)" } ],
+      "elementos": [
+        { "texto": "el micro", "categoria": "o" }, { "texto": "la casa", "categoria": "a" },
+        { "texto": "el piso", "categoria": "o" }, { "texto": "la fila", "categoria": "a" },
+        { "texto": "el vagón", "categoria": "o" }, { "texto": "la llama", "categoria": "a" },
+        { "texto": "el cuaderno", "categoria": "o" }, { "texto": "la puerta", "categoria": "a" }
+      ],
+      "pista": "Si dices «el», usa segundo. Si dices «la», usa segunda.",
+      "explicacion": "El segundo micro, piso, vagón y cuaderno. La segunda casa, fila, llama y puerta.",
+      "error": "genero-ordinal"
+    },
+    {
+      "id": "c7", "tipo": "pasos", "nivel": 3,
+      "enunciado": "En la carrera de bicicletas de la escuela corren 10 estudiantes. Luis llega en sexto lugar.",
+      "visual": { "tipo": "emoji", "valor": "🚲", "cantidad": 10 },
+      "pasos": [
+        {
+          "tipo": "numero", "enunciado": "¿Cuántos estudiantes llegaron antes que Luis?",
+          "respuesta": 5,
+          "erroresComunes": [ { "respuesta": 6, "pista": "No cuentes a Luis: solo a los que llegaron antes que él.", "error": "cuenta-posicion" } ],
+          "pista": "Llegaron antes el 1.º, el 2.º... hasta el que está justo antes de Luis.",
+          "explicacion": "Antes de Luis llegaron el 1.º, 2.º, 3.º, 4.º y 5.º: son 5.",
+          "error": "cuenta-posicion"
+        },
+        {
+          "tipo": "numero", "enunciado": "¿Cuántos estudiantes llegaron después de Luis?",
+          "respuesta": 4,
+          "erroresComunes": [ { "respuesta": 5, "pista": "Cuenta solo desde el 7.º hasta el 10.º.", "error": "cuenta-posicion" } ],
+          "pista": "Luis es el 6.º. Cuenta los lugares que siguen hasta el 10.º.",
+          "explicacion": "Después de Luis llegaron el 7.º, 8.º, 9.º y 10.º: son 4.",
+          "error": "cuenta-posicion"
+        }
+      ],
+      "pista": "Dibuja 10 palitos en fila y marca el sexto.",
+      "explicacion": "Luis es el 6.º de 10: antes llegaron 5 y después llegaron 4. 5 + 1 + 4 = 10.",
+      "error": "cuenta-posicion"
+    },
+    {
+      "id": "c8", "tipo": "escribir", "nivel": 3,
+      "enunciado": "¡Desafío! ¿Cómo se escribe con letras el ordinal 12.º?",
+      "audio": "¡Desafío! ¿Cómo se escribe con letras el ordinal del lugar número doce?",
+      "respuestas": ["duodécimo", "decimosegundo", "décimo segundo"],
+      "tildes": "flexible",
+      "pista": "Es el que viene después de undécimo (11.º).",
+      "explicacion": "12.º se escribe duodécimo. También se puede decir decimosegundo.",
+      "error": "ordinales-desafio"
+    }
+  ],
+  "repaso": {
+    "texto": "Los ordinales dicen el lugar: primero (1.º), segundo (2.º), tercero (3.º)... décimo (10.º). Con palabras como casa o fila: primera (1.ª), segunda (2.ª).",
+    "visual": { "tipo": "tabla", "columnas": ["Número", "Se dice", "Número", "Se dice"], "filas": [["1.º", "primero", "6.º", "sexto"], ["2.º", "segundo", "7.º", "séptimo"], ["3.º", "tercero", "8.º", "octavo"], ["4.º", "cuarto", "9.º", "noveno"], ["5.º", "quinto", "10.º", "décimo"]] }
+  },
+  "adulto": {
+    "objetivo": "Usar los números ordinales del 1.º al 10.º para decir el lugar que ocupa algo en una fila, una carrera, un edificio o el calendario; leer y escribir sus nombres y abreviaturas (1.º, 1.ª), y distinguirlos de los números que dicen cuántos hay. Del 11.º al 20.º es solo un desafío.",
+    "sugerencias": [
+      "En la fila de la tienda, del mercado o del micro, pregunten: «¿En qué lugar estamos? ¿Quién es el tercero?». Cuenten siempre desde la persona que está adelante.",
+      "Organicen una carrera en el patio o en la cancha con primos, amigos o juguetes. Anoten los resultados en un papel con 1.º, 2.º, 3.º... y lean juntos quién llegó en cada lugar.",
+      "Al subir las gradas de un edificio, nombren cada piso: primer piso, segundo piso... Si el edificio tiene planta baja, explíquenle que allí el primer piso es el que está encima de ella."
+    ],
+    "errores": {
+      "ordinales": { "descripcion": "Confunde el nombre de un ordinal con su número o con su lugar en la fila.", "sugerencia": "Pongan 10 objetos en fila y túrnense para señalar «el séptimo», «el cuarto»... contando siempre desde el primero." },
+      "secuencia-ordinales": { "descripcion": "No recuerda el orden de los ordinales (por ejemplo, salta de quinto a séptimo).", "sugerencia": "Digan juntos la lista del primero al décimo mientras suben gradas: un escalón por palabra." },
+      "ordinal-cifra": { "descripcion": "No relaciona el ordinal con su número (séptimo con 7.º).", "sugerencia": "Hagan tarjetas con 1.º... 10.º y otras con sus nombres, y jueguen a encontrar las parejas." },
+      "cantidad-lugar": { "descripcion": "Confunde los números que dicen cuántos (tres) con los que dicen el lugar (tercero).", "sugerencia": "Con objetos reales, alternen dos preguntas: «¿cuántos hay?» y «¿en qué lugar está este?»." },
+      "genero-ordinal": { "descripcion": "No cambia el ordinal según la palabra: dice «la primero» o escribe 1.º en lugar de 1.ª.", "sugerencia": "Digan en voz alta pares como «el segundo piso» y «la segunda casa», y comparen cómo termina el ordinal." },
+      "escritura-ordinal": { "descripcion": "Olvida letras o tildes al escribir los ordinales (por ejemplo, «decimo» u «octabo»).", "sugerencia": "Separen la palabra en sílabas con palmadas (dé-ci-mo) y escríbanla juntos." },
+      "cuenta-posicion": { "descripcion": "Cuenta desde el extremo equivocado, o se cuenta a sí mismo cuando no corresponde.", "sugerencia": "Pongan juguetes en fila y pregunten: «¿cuántos hay delante del cuarto? ¿Y detrás?»." },
+      "problema-ordinales": { "descripcion": "Le cuesta resolver problemas con pisos o lugares que cambian.", "sugerencia": "Suban o bajen gradas de verdad y digan en voz alta el piso al que llegan en cada parada." },
+      "ordinales-desafio": { "descripcion": "Le cuestan los ordinales del 11.º al 20.º, que son un desafío.", "sugerencia": "No es obligatorio en este grado. Cuando cuenten algo largo, jueguen a decir undécimo (11.º), duodécimo (12.º) y vigésimo (20.º)." }
+    }
+  }
+}

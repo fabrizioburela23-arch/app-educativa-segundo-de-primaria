@@ -1,0 +1,373 @@
+{
+  "id": "mat-5-2",
+  "titulo": "Cuartos",
+  "objetivo": "Parto un entero en 4 partes iguales, nombro los cuartos y encuentro un cuarto de una cantidad.",
+  "explicacion": [
+    {
+      "texto": "Si partimos un entero en **4 partes iguales**, cada parte es **un cuarto**. Las 4 partes deben ser del mismo tamaño.",
+      "emoji": "🍊",
+      "visual": { "tipo": "fraccion", "forma": "circulo", "partes": 4, "coloreadas": 1 }
+    },
+    {
+      "texto": "Contamos así: un cuarto (1/4), dos cuartos (2/4), tres cuartos (3/4) y cuatro cuartos (4/4). Aquí hay tres cuartos pintados. ¡Cuatro cuartos forman el entero!",
+      "audio": "Contamos así: un cuarto, dos cuartos, tres cuartos y cuatro cuartos. Aquí hay tres cuartos pintados. ¡Cuatro cuartos forman el entero!",
+      "visual": { "tipo": "fraccion", "forma": "barra", "partes": 4, "coloreadas": 3 }
+    },
+    {
+      "texto": "**Dos cuartos** ocupan lo mismo que **un medio**. Entonces, un cuarto es más pequeño que un medio: ¡un cuarto es la mitad de una mitad!",
+      "emoji": "💡",
+      "visual": { "tipo": "fraccion", "forma": "circulo", "partes": 4, "coloreadas": 2 }
+    },
+    {
+      "texto": "Para hallar un cuarto de 12 panes, repártelos en 4 grupos iguales: cada grupo tiene 3. Un cuarto de 12 es 3.",
+      "emoji": "🍞",
+      "visual": { "tipo": "grupos", "grupos": 4, "porGrupo": 3, "emoji": "🍞" }
+    }
+  ],
+  "ejemplo": {
+    "instruccion": "Mira cómo Inti parte una sandía para compartirla entre 4. Después, pinta tú los cuartos y cuéntalos.",
+    "pasos": [
+      { "texto": "Inti tiene una sandía entera. La quiere compartir con 3 amigos: son 4 en total.", "visual": { "tipo": "fraccion", "forma": "circulo", "partes": 1, "coloreadas": 1 } },
+      { "texto": "Primero la corta por la mitad: quedan 2 mitades iguales.", "visual": { "tipo": "fraccion", "forma": "circulo", "partes": 2, "coloreadas": 0 } },
+      { "texto": "Después corta cada mitad por la mitad. ¡Quedan 4 partes iguales! Cada parte es un cuarto.", "visual": { "tipo": "fraccion", "forma": "circulo", "partes": 4, "coloreadas": 1 } },
+      { "texto": "Inti y cada uno de sus 3 amigos reciben un cuarto. Los 4 cuartos juntos son la sandía entera.", "visual": { "tipo": "fraccion", "forma": "circulo", "partes": 4, "coloreadas": 4 } }
+    ],
+    "explorar": { "tipo": "fraccion", "forma": "circulo", "partes": 4 }
+  },
+  "guiada": {
+    "intro": "Vamos a buscar cuartos juntos, paso a paso.",
+    "pasos": [
+      {
+        "id": "g1", "tipo": "manipular",
+        "enunciado": "Pinta un cuarto del queque.",
+        "apoyo": "El queque está partido en 4 partes iguales. Un cuarto es 1 de esas 4 partes. Toca una parte para pintarla.",
+        "manipulable": { "tipo": "fraccion", "forma": "rectangulo", "partes": 4, "objetivo": 1 },
+        "pista": "Pinta solo una de las 4 partes.",
+        "explicacion": "Un cuarto es 1 de 4 partes iguales. Pintaste un cuarto del queque.",
+        "error": "pinta-fraccion"
+      },
+      {
+        "id": "g2", "tipo": "opcion",
+        "enunciado": "¿Qué tortilla está partida en cuartos?",
+        "apoyo": "Cuenta las partes de cada tortilla. Después mira si todas son del mismo tamaño.",
+        "opciones": [
+          { "visual": { "tipo": "fraccion", "forma": "circulo", "partes": 4 }, "correcta": true },
+          { "visual": { "tipo": "fraccion", "forma": "circulo", "partes": 4, "iguales": false }, "pista": "Esta tortilla tiene 4 partes, pero no son del mismo tamaño.", "error": "partes-desiguales" },
+          { "visual": { "tipo": "fraccion", "forma": "circulo", "partes": 2 }, "pista": "Esta tortilla tiene 2 partes iguales: son mitades, no cuartos.", "error": "confunde-mitad-cuarto" }
+        ],
+        "pista": "Busca una tortilla con 4 partes del mismo tamaño.",
+        "explicacion": "Los cuartos son 4 partes iguales. Solo una tortilla tiene 4 partes del mismo tamaño.",
+        "error": "partes-desiguales"
+      },
+      {
+        "id": "g3", "tipo": "manipular",
+        "enunciado": "Reparte las 8 mandarinas en 4 platos para encontrar un cuarto de 8.",
+        "apoyo": "Pon una mandarina en cada plato, por turnos, hasta que no quede ninguna. Los 4 platos deben tener lo mismo.",
+        "manipulable": { "tipo": "repartir", "total": 8, "grupos": 4, "emoji": "🍊" },
+        "pista": "Revisa que los 4 platos tengan la misma cantidad.",
+        "explicacion": "Cada plato tiene 2 mandarinas. Un cuarto de 8 es 2, porque 2 + 2 + 2 + 2 = 8.",
+        "error": "reparte-desigual"
+      }
+    ]
+  },
+  "practica": [
+    {
+      "id": "p1", "tipo": "generador", "nivel": 1, "generador": "fraccion", "params": { "partes": [4] }
+    },
+    {
+      "id": "p2", "tipo": "manipular", "nivel": 1,
+      "enunciado": "Pinta un cuarto de la torta.",
+      "manipulable": { "tipo": "fraccion", "forma": "circulo", "partes": 4, "objetivo": 1 },
+      "pista": "La torta tiene 4 partes iguales. ¿Cuántas de esas partes son un cuarto?",
+      "explicacion": "Un cuarto es 1 de 4 partes iguales. Se pinta una sola parte.",
+      "error": "pinta-fraccion"
+    },
+    {
+      "id": "p3", "tipo": "multiple", "nivel": 1,
+      "enunciado": "Elige todas las figuras partidas en cuartos.",
+      "opciones": [
+        { "visual": { "tipo": "fraccion", "forma": "rectangulo", "partes": 4 }, "correcta": true },
+        { "visual": { "tipo": "fraccion", "forma": "barra", "partes": 4 }, "correcta": true },
+        { "visual": { "tipo": "fraccion", "forma": "circulo", "partes": 4 }, "correcta": true },
+        { "visual": { "tipo": "fraccion", "forma": "barra", "partes": 4, "iguales": false }, "pista": "Una figura tiene 4 partes, pero no son iguales.", "error": "partes-desiguales" },
+        { "visual": { "tipo": "fraccion", "forma": "rectangulo", "partes": 2 }, "pista": "Una figura tiene 2 partes: esas son mitades.", "error": "confunde-mitad-cuarto" }
+      ],
+      "pista": "Los cuartos son 4 partes del mismo tamaño.",
+      "explicacion": "Están partidas en cuartos las 3 figuras con 4 partes iguales. La barra de partes distintas y el rectángulo de 2 partes no.",
+      "error": "partes-desiguales"
+    },
+    {
+      "id": "p4", "tipo": "relacionar", "nivel": 1,
+      "enunciado": "Une lo que está pintado con su nombre.",
+      "pares": [
+        ["1 parte pintada de 4", "un cuarto"],
+        ["2 partes pintadas de 4", "dos cuartos"],
+        ["3 partes pintadas de 4", "tres cuartos"],
+        ["4 partes pintadas de 4", "cuatro cuartos"]
+      ],
+      "pista": "El número de partes pintadas dice cuántos cuartos hay.",
+      "explicacion": "1 parte de 4 es un cuarto; 2 partes, dos cuartos; 3 partes, tres cuartos; y 4 partes, cuatro cuartos: el entero.",
+      "error": "cuenta-partes"
+    },
+    {
+      "id": "p5", "tipo": "escribir", "nivel": 1,
+      "enunciado": "Una tortilla se parte en 4 partes iguales. ¿Cómo se llama cada parte? Escribe.",
+      "visual": { "tipo": "fraccion", "forma": "circulo", "partes": 4, "coloreadas": 1 },
+      "respuestas": ["cuarto", "un cuarto", "el cuarto", "1/4", "cuarta parte", "una cuarta parte", "la cuarta parte"],
+      "pista": "El nombre suena parecido al número 4.",
+      "explicacion": "Cada parte se llama **un cuarto**.",
+      "error": "vocabulario-fraccion"
+    },
+    {
+      "id": "p6", "tipo": "numero", "nivel": 2,
+      "enunciado": "Juan tiene 12 huevos. Usa un cuarto de los huevos para hacer un queque. ¿Cuántos huevos usa?",
+      "visual": { "tipo": "emoji", "valor": "🥚", "cantidad": 12 },
+      "respuesta": 3,
+      "erroresComunes": [
+        { "respuesta": 6, "pista": "6 es la mitad de 12. Un cuarto es más pequeño: reparte en 4 grupos iguales.", "error": "confunde-mitad-cuarto" },
+        { "respuesta": 4, "pista": "Un cuarto no son 4 huevos. Reparte los 12 huevos en 4 grupos iguales.", "error": "cuarto-es-cuatro" }
+      ],
+      "pista": "Reparte los 12 huevos en 4 grupos iguales. ¿Cuántos hay en un grupo?",
+      "explicacion": "12 huevos en 4 grupos iguales: 3 en cada grupo. Un cuarto de 12 es 3, así que Juan usa 3 huevos.",
+      "error": "cuarto-cantidad"
+    },
+    {
+      "id": "p7", "tipo": "manipular", "nivel": 2,
+      "enunciado": "Reparte las 16 papas en 4 platos para encontrar un cuarto de 16.",
+      "manipulable": { "tipo": "repartir", "total": 16, "grupos": 4, "emoji": "🥔" },
+      "pista": "Pon una papa en cada plato, por turnos, hasta que no quede ninguna.",
+      "explicacion": "Cada plato tiene 4 papas. Un cuarto de 16 es 4, porque 4 + 4 + 4 + 4 = 16.",
+      "error": "reparte-desigual"
+    },
+    {
+      "id": "p8", "tipo": "completar", "nivel": 2,
+      "enunciado": "Mira la figura y completa.",
+      "visual": { "tipo": "fraccion", "forma": "circulo", "partes": 4, "coloreadas": 2 },
+      "texto": "Con [dos] cuartos formo un medio y con [cuatro] cuartos formo un entero.",
+      "banco": ["tres", "cinco"],
+      "pista": "¿Cuántos cuartos cubren la mitad del círculo? ¿Y cuántos cubren todo el círculo?",
+      "explicacion": "Dos cuartos ocupan lo mismo que un medio, y cuatro cuartos forman el entero.",
+      "error": "equivalencia-cuartos"
+    },
+    {
+      "id": "p9", "tipo": "opcion", "nivel": 2,
+      "enunciado": "¿Qué pedazo es más grande: un cuarto o un medio de la misma tortilla?",
+      "opciones": [
+        { "texto": "un medio", "correcta": true },
+        { "texto": "un cuarto", "pista": "4 es más que 2, pero si partes en 4, cada pedazo sale más pequeño.", "error": "compara-fracciones" },
+        { "texto": "los dos son iguales", "pista": "Imagina una tortilla partida en 2 y otra igual partida en 4. ¿Dónde salen pedazos más grandes?", "error": "compara-fracciones" }
+      ],
+      "pista": "Mientras más pedazos haces de la misma tortilla, más pequeño es cada pedazo.",
+      "explicacion": "Un medio es más grande: la tortilla se partió en menos pedazos. Un cuarto es la mitad de un medio.",
+      "error": "compara-fracciones"
+    },
+    {
+      "id": "p10", "tipo": "numero", "nivel": 2,
+      "enunciado": "Escucha el problema y escribe la respuesta.",
+      "escuchar": "Nayra cosechó 20 choclos. Le dio un cuarto de los choclos a su vecino. ¿Cuántos choclos le dio?",
+      "respuesta": 5,
+      "erroresComunes": [
+        { "respuesta": 10, "pista": "10 es la mitad de 20. Un cuarto es 1 de 4 grupos iguales.", "error": "confunde-mitad-cuarto" },
+        { "respuesta": 4, "pista": "Un cuarto no son 4 choclos. Reparte los 20 choclos en 4 grupos iguales.", "error": "cuarto-es-cuatro" }
+      ],
+      "pista": "Reparte 20 en 4 grupos iguales. Puedes escuchar otra vez.",
+      "explicacion": "20 choclos en 4 grupos iguales: 5 en cada grupo, porque 5 + 5 + 5 + 5 = 20. Nayra le dio 5 choclos.",
+      "error": "cuarto-cantidad"
+    },
+    {
+      "id": "p11", "tipo": "memoria", "nivel": 2,
+      "enunciado": "Encuentra las parejas: el nombre y cómo se escribe.",
+      "pares": [ ["un cuarto", "1/4"], ["dos cuartos", "2/4"], ["tres cuartos", "3/4"], ["un medio", "1/2"] ],
+      "pista": "En la fracción escrita, el primer número dice cuántas partes tomamos y el segundo, en cuántas partes iguales se partió el entero.",
+      "explicacion": "Un cuarto es 1/4, dos cuartos es 2/4, tres cuartos es 3/4 y un medio es 1/2.",
+      "error": "notacion-fraccion"
+    },
+    {
+      "id": "p12", "tipo": "pasos", "nivel": 3,
+      "enunciado": "En la fiesta hay 24 salteñas. Un cuarto de las salteñas es de pollo y las demás son de carne.",
+      "visual": { "tipo": "emoji", "valor": "🥟", "cantidad": 24 },
+      "pasos": [
+        {
+          "tipo": "numero", "enunciado": "¿Cuántas salteñas son de pollo?", "respuesta": 6,
+          "erroresComunes": [
+            { "respuesta": 12, "pista": "12 es la mitad de 24. Un cuarto es más pequeño.", "error": "confunde-mitad-cuarto" },
+            { "respuesta": 4, "pista": "Un cuarto no son 4 salteñas. Reparte las 24 en 4 grupos iguales.", "error": "cuarto-es-cuatro" }
+          ],
+          "pista": "Reparte las 24 salteñas en 4 grupos iguales. ¿Cuántas hay en un grupo?",
+          "explicacion": "24 en 4 grupos iguales: 6 en cada grupo, porque 6 + 6 + 6 + 6 = 24. Hay 6 salteñas de pollo.",
+          "error": "cuarto-cantidad"
+        },
+        {
+          "tipo": "numero", "enunciado": "¿Cuántas salteñas son de carne?", "respuesta": 18,
+          "erroresComunes": [ { "respuesta": 6, "pista": "Esas son las de pollo. Al total, quítale las de pollo.", "error": "problema-cuartos" } ],
+          "pista": "Al total de salteñas, quítale las de pollo.",
+          "explicacion": "24 − 6 = 18. Hay 18 salteñas de carne: son tres cuartos de todas.",
+          "error": "problema-cuartos"
+        }
+      ],
+      "pista": "Resuelve un paso a la vez.",
+      "explicacion": "Un cuarto de 24 es 6: son las de pollo. Las de carne son 24 − 6 = 18.",
+      "error": "problema-cuartos"
+    },
+    {
+      "id": "p13", "tipo": "numero", "nivel": 3,
+      "enunciado": "Un cuarto de un número es 5. ¿Cuál es el número?",
+      "respuesta": 20,
+      "erroresComunes": [
+        { "respuesta": 10, "pista": "10 son solo 2 cuartos. El entero tiene 4 cuartos de 5.", "error": "equivalencia-cuartos" },
+        { "respuesta": 9, "pista": "No sumes 5 + 4. Piensa en 4 grupos de 5.", "error": "cuarto-cantidad" }
+      ],
+      "pista": "El entero tiene 4 cuartos, y cada cuarto es 5.",
+      "explicacion": "5 + 5 + 5 + 5 = 20. Un cuarto de 20 es 5.",
+      "error": "cuarto-cantidad"
+    },
+    {
+      "id": "p14", "tipo": "ordenar", "nivel": 3,
+      "enunciado": "Piensa en la misma tortilla. Ordena de la parte más pequeña a la más grande.",
+      "elementos": ["un cuarto", "un medio", "tres cuartos", "un entero"],
+      "vertical": true,
+      "pista": "Un medio son 2 cuartos y el entero son 4 cuartos. Compara cuántos cuartos tiene cada uno.",
+      "explicacion": "Un cuarto es lo más pequeño. Después viene un medio (2 cuartos), luego tres cuartos y al final el entero (4 cuartos).",
+      "error": "compara-fracciones"
+    },
+    {
+      "id": "p15", "tipo": "manipular", "nivel": 3,
+      "enunciado": "Esta barra de chocolate tiene 8 cuadritos iguales. Pinta un cuarto del chocolate.",
+      "manipulable": { "tipo": "fraccion", "forma": "rectangulo", "partes": 8, "objetivo": 2 },
+      "pista": "Un cuarto es la mitad de la mitad. Primero busca la mitad de 8.",
+      "explicacion": "La mitad de 8 es 4, y la mitad de 4 es 2. Un cuarto de 8 es 2: se pintan 2 cuadritos.",
+      "error": "cuarto-cantidad"
+    },
+    {
+      "id": "p16", "tipo": "clasificar", "nivel": 3,
+      "enunciado": "Piensa en la misma naranja. ¿Es menos que la mitad, justo la mitad o más que la mitad?",
+      "categorias": [
+        { "id": "menos", "texto": "Menos que la mitad" },
+        { "id": "igual", "texto": "Justo la mitad" },
+        { "id": "mas", "texto": "Más que la mitad" }
+      ],
+      "elementos": [
+        { "texto": "un cuarto", "categoria": "menos" },
+        { "texto": "dos cuartos", "categoria": "igual" },
+        { "texto": "un medio", "categoria": "igual" },
+        { "texto": "tres cuartos", "categoria": "mas" },
+        { "texto": "cuatro cuartos", "categoria": "mas" }
+      ],
+      "pista": "La mitad son 2 cuartos. Compara cada uno con 2 cuartos.",
+      "explicacion": "Un cuarto es menos que la mitad. Dos cuartos y un medio son justo la mitad. Tres cuartos y cuatro cuartos son más que la mitad.",
+      "error": "equivalencia-cuartos"
+    }
+  ],
+  "comprobacion": [
+    {
+      "id": "c1", "tipo": "generador", "nivel": 1, "generador": "fraccion", "params": { "partes": [4] }
+    },
+    {
+      "id": "c2", "tipo": "manipular", "nivel": 1,
+      "enunciado": "Pinta tres cuartos de la barra de chocolate.",
+      "manipulable": { "tipo": "fraccion", "forma": "barra", "partes": 4, "objetivo": 3 },
+      "pista": "Cuenta: un cuarto, dos cuartos, tres cuartos. Pinta una parte por cada cuarto que cuentas.",
+      "explicacion": "Tres cuartos son 3 de 4 partes iguales. Queda un cuarto sin pintar.",
+      "error": "pinta-fraccion"
+    },
+    {
+      "id": "c3", "tipo": "numero", "nivel": 2,
+      "enunciado": "Tania tiene 16 caramelos. Le regala un cuarto a su primo. ¿Cuántos caramelos le regala?",
+      "visual": { "tipo": "emoji", "valor": "🍬", "cantidad": 16 },
+      "respuesta": 4,
+      "erroresComunes": [
+        { "respuesta": 8, "pista": "8 es la mitad de 16. Un cuarto es más pequeño: reparte en 4 grupos iguales.", "error": "confunde-mitad-cuarto" },
+        { "respuesta": 16, "pista": "Esos son todos los caramelos. Tania regala solo un cuarto.", "error": "cuarto-cantidad" }
+      ],
+      "pista": "Reparte los 16 caramelos en 4 grupos iguales.",
+      "explicacion": "16 caramelos en 4 grupos iguales: 4 en cada grupo, porque 4 + 4 + 4 + 4 = 16. Tania le regala 4 caramelos.",
+      "error": "cuarto-cantidad"
+    },
+    {
+      "id": "c4", "tipo": "completar", "nivel": 2,
+      "enunciado": "Mira la figura y completa.",
+      "visual": { "tipo": "fraccion", "forma": "rectangulo", "partes": 4, "coloreadas": 3 },
+      "texto": "Cada parte es un [cuarto]. Lo pintado son [tres] cuartos. Falta [un] cuarto para formar el entero.",
+      "banco": ["medio", "dos", "cuatro"],
+      "pista": "Cuenta todas las partes y después solo las pintadas. ¿Cuántas partes quedan sin pintar?",
+      "explicacion": "La figura tiene 4 partes iguales: cada una es un cuarto. Hay 3 pintadas: son tres cuartos. Falta un cuarto para tener los cuatro cuartos del entero.",
+      "error": "cuenta-partes"
+    },
+    {
+      "id": "c5", "tipo": "manipular", "nivel": 2,
+      "enunciado": "Reparte los 20 limones en 4 platos para encontrar un cuarto de 20.",
+      "manipulable": { "tipo": "repartir", "total": 20, "grupos": 4, "emoji": "🍋" },
+      "pista": "Pon un limón en cada plato, por turnos, hasta que no quede ninguno.",
+      "explicacion": "Cada plato tiene 5 limones. Un cuarto de 20 es 5, porque 5 + 5 + 5 + 5 = 20.",
+      "error": "reparte-desigual"
+    },
+    {
+      "id": "c6", "tipo": "multiple", "nivel": 2,
+      "enunciado": "Elige todas las figuras que tienen un cuarto pintado.",
+      "opciones": [
+        { "visual": { "tipo": "fraccion", "forma": "circulo", "partes": 4, "coloreadas": 1 }, "correcta": true },
+        { "visual": { "tipo": "fraccion", "forma": "rectangulo", "partes": 4, "coloreadas": 1 }, "correcta": true },
+        { "visual": { "tipo": "fraccion", "forma": "barra", "partes": 4, "iguales": false, "coloreadas": 1 }, "pista": "En una figura las 4 partes no son iguales: no son cuartos.", "error": "partes-desiguales" },
+        { "visual": { "tipo": "fraccion", "forma": "circulo", "partes": 2, "coloreadas": 1 }, "pista": "Una figura tiene 2 partes: lo pintado es un medio.", "error": "confunde-mitad-cuarto" },
+        { "visual": { "tipo": "fraccion", "forma": "barra", "partes": 4, "coloreadas": 2 }, "pista": "Una figura tiene 2 partes pintadas: son dos cuartos.", "error": "cuenta-partes" }
+      ],
+      "pista": "Un cuarto pintado es 1 parte pintada de 4 partes iguales.",
+      "explicacion": "Tienen un cuarto pintado el círculo y el rectángulo de 4 partes iguales con 1 parte pintada. En las otras, las partes no son iguales, son 2 o hay 2 pintadas.",
+      "error": "cuenta-partes"
+    },
+    {
+      "id": "c7", "tipo": "opcion", "nivel": 3,
+      "enunciado": "Kusi y Arami tienen naranjas iguales. Kusi comió dos cuartos de su naranja y Arami, la mitad de la suya. ¿Quién comió más?",
+      "opciones": [
+        { "texto": "Comieron lo mismo.", "correcta": true },
+        { "texto": "Kusi, porque comió 2 pedazos.", "pista": "Kusi comió 2 pedazos, pero son más pequeños. ¿Cuánto ocupan 2 cuartos?", "error": "equivalencia-cuartos" },
+        { "texto": "Arami, porque la mitad es más grande.", "pista": "La mitad es más grande que un cuarto, pero Kusi comió 2 cuartos.", "error": "equivalencia-cuartos" }
+      ],
+      "pista": "Piensa cuántos cuartos ocupan lo mismo que un medio.",
+      "explicacion": "Dos cuartos ocupan lo mismo que un medio, es decir, la mitad. Kusi y Arami comieron lo mismo.",
+      "error": "equivalencia-cuartos"
+    },
+    {
+      "id": "c8", "tipo": "numero", "nivel": 3,
+      "enunciado": "Escucha el problema y escribe la respuesta.",
+      "escuchar": "Mateo tiene 20 bolivianos. Gasta un cuarto de su dinero en pan. ¿Cuántos bolivianos le quedan?",
+      "respuesta": 15,
+      "sufijo": "Bs",
+      "erroresComunes": [
+        { "respuesta": 5, "pista": "Eso es lo que gastó en pan. ¿Cuánto dinero le queda?", "error": "problema-cuartos" },
+        { "respuesta": 10, "pista": "Gastar la mitad deja 10 Bs. Pero Mateo gasta un cuarto, que es menos.", "error": "confunde-mitad-cuarto" },
+        { "respuesta": 16, "pista": "Un cuarto no son 4 Bs. Reparte 20 Bs en 4 partes iguales.", "error": "cuarto-es-cuatro" }
+      ],
+      "pista": "Primero busca un cuarto de 20. Después réstalo de 20. Puedes escuchar otra vez.",
+      "explicacion": "Un cuarto de 20 es 5, porque 5 + 5 + 5 + 5 = 20. Mateo gasta 5 Bs y le quedan 20 − 5 = 15 Bs.",
+      "error": "problema-cuartos"
+    }
+  ],
+  "repaso": {
+    "texto": "Un cuarto es 1 de 4 partes iguales. Dos cuartos son un medio y cuatro cuartos forman el entero. Para hallar un cuarto de una cantidad, repártela en 4 grupos iguales.",
+    "visual": { "tipo": "fraccion", "forma": "circulo", "partes": 4, "coloreadas": 1 }
+  },
+  "adulto": {
+    "objetivo": "Reconocer cuartos como 4 partes iguales de un entero; nombrar un cuarto, dos cuartos, tres cuartos y cuatro cuartos; entender que 2 cuartos equivalen a un medio y 4 cuartos al entero; comparar un cuarto con un medio y hallar un cuarto de cantidades pequeñas repartiendo en 4 grupos iguales.",
+    "sugerencias": [
+      "Doblen una hoja por la mitad y otra vez por la mitad: al abrirla verán 4 partes iguales. Pinten un cuarto, dos cuartos o tres cuartos y díganlos en voz alta.",
+      "Al servir una torta, una tortilla o una sandía, córtenla en 4 partes iguales y pregunten: «¿qué es más grande, un cuarto o la mitad?». Comprueben poniendo 2 cuartos sobre una mitad.",
+      "En la feria o la tienda, repartan 12 papas o 16 limones en 4 bolsas iguales y pregunten cuánto hay en cada bolsa: eso es un cuarto."
+    ],
+    "errores": {
+      "fraccion-reconocer": { "descripcion": "Le cuesta reconocer si una figura está partida en partes iguales o qué parte está pintada.", "sugerencia": "Corten figuras de papel en 4 partes iguales y desiguales, y pregunten cuáles están partidas en cuartos." },
+      "pinta-fraccion": { "descripcion": "Pinta más o menos partes de las que pide la fracción.", "sugerencia": "Antes de pintar, pidan que muestre con el dedo «un cuarto», «dos cuartos» o «tres cuartos» en una hoja doblada en 4." },
+      "partes-desiguales": { "descripcion": "Acepta como cuartos 4 partes de distinto tamaño.", "sugerencia": "Corten una tortilla en 4 pedazos desiguales y pregunten si es justo repartirla así entre 4 personas." },
+      "confunde-mitad-cuarto": { "descripcion": "Confunde un cuarto con un medio (reparte en 2 en lugar de 4).", "sugerencia": "Partan una naranja en 2 y otra igual en 4, y comparen los pedazos: «medio es 1 de 2; un cuarto es 1 de 4»." },
+      "cuenta-partes": { "descripcion": "Se equivoca al contar todas las partes o las partes pintadas.", "sugerencia": "Pidan que cuente primero todas las partes y después solo las pintadas, tocándolas con el dedo." },
+      "vocabulario-fraccion": { "descripcion": "No recuerda la palabra «cuarto» para cada una de 4 partes iguales.", "sugerencia": "Usen la palabra al servir la comida: «te doy un cuarto de sandía», «quedan tres cuartos de torta»." },
+      "notacion-fraccion": { "descripcion": "Le cuesta relacionar el nombre de la fracción con su forma escrita (1/4, 2/4, 3/4, 1/2).", "sugerencia": "Escriban tarjetas con «un cuarto» y «1/4», etc., y jueguen a juntar parejas usando una hoja doblada en 4 para comprobar." },
+      "cuarto-cantidad": { "descripcion": "Le cuesta hallar un cuarto de una cantidad (por ejemplo, un cuarto de 12).", "sugerencia": "Repartan objetos reales (papas, fideos, piedritas) uno a uno en 4 platos y cuenten lo que hay en un plato." },
+      "cuarto-es-cuatro": { "descripcion": "Cree que «un cuarto» de algo son siempre 4 unidades.", "sugerencia": "Repartan 8 y luego 12 objetos en 4 platos: verán que un cuarto cambia según la cantidad total." },
+      "reparte-desigual": { "descripcion": "Al repartir en 4, deja platos con cantidades distintas o sobrantes.", "sugerencia": "Repartan de a uno en cada plato, por turnos, hasta que no quede nada, y comparen los montones." },
+      "equivalencia-cuartos": { "descripcion": "No reconoce que 2 cuartos equivalen a un medio y 4 cuartos al entero.", "sugerencia": "Pongan 2 cuartos de una hoja sobre la mitad de otra hoja igual, y 4 cuartos sobre la hoja entera." },
+      "compara-fracciones": { "descripcion": "Cree que un cuarto es más grande que un medio porque 4 es mayor que 2.", "sugerencia": "Partan dos panes iguales, uno en 2 y otro en 4, y pregunten qué pedazo prefiere si tiene mucha hambre." },
+      "problema-cuartos": { "descripcion": "Se pierde en problemas de cuartos con más de un paso (lo que se usa y lo que queda).", "sugerencia": "Representen el problema con objetos o monedas de juguete: separen un cuarto y cuenten lo que queda." }
+    }
+  }
+}

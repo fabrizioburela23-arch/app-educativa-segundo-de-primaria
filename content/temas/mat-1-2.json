@@ -1,0 +1,252 @@
+{
+  "id": "mat-1-2",
+  "titulo": "Unidades, decenas y centenas",
+  "objetivo": "Sé cuánto vale cada cifra de un número y puedo descomponerlo.",
+  "explicacion": [
+    {
+      "texto": "Una **unidad** es uno solo. Diez unidades juntas forman una **decena**.",
+      "emoji": "🧱",
+      "visual": { "tipo": "bloques", "decenas": 1, "unidades": 3 }
+    },
+    {
+      "texto": "Diez decenas juntas forman una **centena**. Una centena vale 100.",
+      "visual": { "tipo": "bloques", "centenas": 1 }
+    },
+    {
+      "texto": "En el número 243, el 2 está en las centenas y vale 200. El 4 está en las decenas y vale 40. El 3 está en las unidades y vale 3.",
+      "visual": { "tipo": "tabla", "columnas": ["C", "D", "U"], "filas": [[2, 4, 3]] }
+    },
+    {
+      "texto": "**Descomponer** es separar un número según sus valores: 243 = 200 + 40 + 3.",
+      "visual": { "tipo": "bloques", "centenas": 2, "decenas": 4, "unidades": 3 }
+    }
+  ],
+  "ejemplo": {
+    "instruccion": "Mira cómo armamos el número 243. Después, juega tú con los bloques.",
+    "pasos": [
+      { "texto": "Ponemos 2 placas de centena: son 200.", "visual": { "tipo": "bloques", "centenas": 2 } },
+      { "texto": "Agregamos 4 barras de decena: 200 + 40 = 240.", "visual": { "tipo": "bloques", "centenas": 2, "decenas": 4 } },
+      { "texto": "Agregamos 3 cubitos: 240 + 3 = 243.", "visual": { "tipo": "bloques", "centenas": 2, "decenas": 4, "unidades": 3 } }
+    ],
+    "explorar": { "tipo": "bloques" }
+  },
+  "guiada": {
+    "intro": "Vamos a hacerlo juntos, paso a paso.",
+    "pasos": [
+      {
+        "id": "g1", "tipo": "numero",
+        "enunciado": "¿Cuántas decenas hay?",
+        "apoyo": "Cada barra larga es una decena. Cuenta las barras.",
+        "visual": { "tipo": "bloques", "decenas": 5, "unidades": 2 },
+        "respuesta": 5,
+        "erroresComunes": [ { "respuesta": 2, "pista": "Esos son los cubitos sueltos. Cuenta las barras largas.", "error": "confunde-decenas-unidades" } ],
+        "pista": "Las barras largas son las decenas.",
+        "explicacion": "Hay 5 barras, entonces hay 5 decenas.",
+        "error": "confunde-decenas-unidades"
+      },
+      {
+        "id": "g2", "tipo": "manipular",
+        "enunciado": "Arma el número 132 con bloques.",
+        "apoyo": "Primero pon 1 centena, después 3 decenas y al final 2 unidades.",
+        "manipulable": { "tipo": "bloques", "objetivo": 132, "canonico": true },
+        "pista": "132 tiene 1 centena, 3 decenas y 2 unidades.",
+        "explicacion": "132 = 100 + 30 + 2: una placa, tres barras y dos cubitos.",
+        "error": "arma-numero"
+      },
+      {
+        "id": "g3", "tipo": "completar",
+        "enunciado": "Completa la descomposición.",
+        "apoyo": "Mira la cifra de cada lugar y agrégale los ceros que necesita.",
+        "texto": "358 = [300] + [50] + [8]",
+        "banco": ["30", "500", "5"],
+        "pista": "El 3 está en las centenas, así que vale 300.",
+        "explicacion": "358 = 300 + 50 + 8.",
+        "error": "descomposicion"
+      }
+    ]
+  },
+  "practica": [
+    {
+      "id": "p1", "tipo": "numero", "nivel": 1,
+      "enunciado": "¿Qué número forman estos bloques?",
+      "visual": { "tipo": "bloques", "decenas": 3, "unidades": 4 },
+      "respuesta": 34,
+      "erroresComunes": [ { "respuesta": 7, "pista": "Contaste las piezas. Cada barra vale 10.", "error": "confunde-decenas-unidades" } ],
+      "pista": "Cada barra vale 10 y cada cubito vale 1.",
+      "explicacion": "3 decenas son 30 y 4 unidades son 4: 30 + 4 = 34.",
+      "error": "lee-bloques"
+    },
+    {
+      "id": "p2", "tipo": "manipular", "nivel": 1,
+      "enunciado": "Arma el número 25 con bloques.",
+      "manipulable": { "tipo": "bloques", "objetivo": 25, "canonico": true },
+      "pista": "25 tiene 2 decenas y 5 unidades.",
+      "explicacion": "Para 25 necesitas 2 barras y 5 cubitos.",
+      "error": "arma-numero"
+    },
+    {
+      "id": "p3", "tipo": "relacionar", "nivel": 1,
+      "enunciado": "Une cada cantidad con su nombre.",
+      "pares": [ ["10 unidades", "1 decena"], ["10 decenas", "1 centena"], ["100 unidades", "10 decenas"] ],
+      "pista": "Diez de una clase forman una de la clase siguiente.",
+      "explicacion": "10 unidades = 1 decena; 10 decenas = 1 centena = 100 unidades.",
+      "error": "equivalencias"
+    },
+    {
+      "id": "p4", "tipo": "generador", "nivel": 2, "generador": "valor-posicional", "params": { "max": 999 }
+    },
+    {
+      "id": "p5", "tipo": "generador", "nivel": 2, "generador": "descomponer", "params": { "max": 999 }
+    },
+    {
+      "id": "p6", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "¿Dónde está el 7: en las decenas o en las unidades?",
+      "categorias": [ { "id": "d", "texto": "Decenas" }, { "id": "u", "texto": "Unidades" } ],
+      "elementos": [
+        { "texto": "72", "categoria": "d" }, { "texto": "47", "categoria": "u" },
+        { "texto": "175", "categoria": "d" }, { "texto": "807", "categoria": "u" },
+        { "texto": "370", "categoria": "d" }, { "texto": "17", "categoria": "u" }
+      ],
+      "pista": "Las unidades son la última cifra. Las decenas son la cifra de antes.",
+      "explicacion": "En 72, 175 y 370 el 7 está en las decenas. En 47, 807 y 17 está en las unidades.",
+      "error": "confunde-decenas-unidades"
+    },
+    {
+      "id": "p7", "tipo": "manipular", "nivel": 2,
+      "enunciado": "Arma el número 406 con bloques.",
+      "manipulable": { "tipo": "bloques", "objetivo": 406, "canonico": true },
+      "pista": "406 no tiene decenas: el 0 está en su lugar.",
+      "explicacion": "406 = 4 centenas, 0 decenas y 6 unidades.",
+      "error": "cero-intermedio"
+    },
+    {
+      "id": "p8", "tipo": "pasos", "nivel": 3,
+      "enunciado": "Wara guarda sus figuritas en cajas de 100, sobres de 10 y sueltas. Tiene 2 cajas, 13 sobres y 4 sueltas.",
+      "visual": { "tipo": "bloques", "centenas": 2, "decenas": 13, "unidades": 4 },
+      "pasos": [
+        { "tipo": "numero", "enunciado": "13 decenas, ¿cuántas unidades son?", "respuesta": 130, "pista": "Cada decena vale 10.", "explicacion": "13 decenas son 130.", "error": "canje" },
+        { "tipo": "numero", "enunciado": "¿Cuántas figuritas tiene en total?", "respuesta": 334, "erroresComunes": [ { "respuesta": 2134, "pista": "No pegues los números. Suma: 200 + 130 + 4.", "error": "canje" } ], "pista": "Suma 200 + 130 + 4.", "explicacion": "200 + 130 + 4 = 334 figuritas.", "error": "canje" }
+      ],
+      "pista": "Primero piensa cuánto valen los 13 sobres.",
+      "explicacion": "2 centenas (200) + 13 decenas (130) + 4 unidades = 334.",
+      "error": "canje"
+    },
+    {
+      "id": "p9", "tipo": "escribir", "nivel": 3,
+      "enunciado": "Escribe con cifras: 5 centenas, 0 decenas y 9 unidades.",
+      "respuestas": ["509"],
+      "pista": "Si no hay decenas, escribe un 0 en su lugar.",
+      "explicacion": "5 centenas, 0 decenas y 9 unidades forman 509.",
+      "error": "cero-intermedio"
+    },
+    {
+      "id": "p10", "tipo": "generador", "nivel": 3, "generador": "valor-posicional", "params": { "max": 999 }
+    },
+    {
+      "id": "p11", "tipo": "numero", "nivel": 1,
+      "enunciado": "¿Cuántas unidades hay en 1 decena?",
+      "visual": { "tipo": "bloques", "decenas": 1 },
+      "respuesta": 10,
+      "pista": "Cuenta los cuadraditos de la barra.",
+      "explicacion": "Una decena tiene 10 unidades.",
+      "error": "equivalencias"
+    },
+    {
+      "id": "p12", "tipo": "memoria", "nivel": 2,
+      "enunciado": "Encuentra las parejas: número y descomposición.",
+      "pares": [ ["245", "200 + 40 + 5"], ["524", "500 + 20 + 4"], ["452", "400 + 50 + 2"], ["305", "300 + 5"] ],
+      "pista": "Fíjate bien en qué lugar está cada cifra.",
+      "explicacion": "El valor de una cifra depende del lugar donde está.",
+      "error": "descomposicion"
+    }
+  ],
+  "comprobacion": [
+    {
+      "id": "c1", "tipo": "numero", "nivel": 1,
+      "enunciado": "¿Qué número forman estos bloques?",
+      "visual": { "tipo": "bloques", "centenas": 1, "decenas": 2, "unidades": 6 },
+      "respuesta": 126,
+      "erroresComunes": [ { "respuesta": 9, "pista": "Contaste las piezas. Una placa vale 100 y una barra vale 10.", "error": "confunde-decenas-unidades" } ],
+      "pista": "Placa = 100, barra = 10, cubito = 1.",
+      "explicacion": "100 + 20 + 6 = 126.",
+      "error": "lee-bloques"
+    },
+    {
+      "id": "c2", "tipo": "manipular", "nivel": 2,
+      "enunciado": "Arma el número 318 con bloques.",
+      "manipulable": { "tipo": "bloques", "objetivo": 318, "canonico": true },
+      "pista": "318 tiene 3 centenas, 1 decena y 8 unidades.",
+      "explicacion": "3 placas, 1 barra y 8 cubitos forman 318.",
+      "error": "arma-numero"
+    },
+    {
+      "id": "c3", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa la descomposición.",
+      "texto": "674 = [600] + [70] + [4]",
+      "banco": ["60", "700", "7"],
+      "pista": "El 6 está en las centenas, el 7 en las decenas y el 4 en las unidades.",
+      "explicacion": "674 = 600 + 70 + 4.",
+      "error": "descomposicion"
+    },
+    {
+      "id": "c4", "tipo": "opcion", "nivel": 2,
+      "enunciado": "¿Cuánto vale el 5 en el número 253?",
+      "opciones": [
+        { "texto": "50", "correcta": true },
+        { "texto": "5", "pista": "Esa es la cifra. ¿En qué lugar está?", "error": "valor-posicional" },
+        { "texto": "500", "pista": "El 5 no está en las centenas. Mira otra vez.", "error": "valor-posicional" }
+      ],
+      "columnas": 3,
+      "pista": "El 5 está en el lugar de las decenas.",
+      "explicacion": "En 253, el 5 está en las decenas y vale 50.",
+      "error": "valor-posicional"
+    },
+    {
+      "id": "c5", "tipo": "clasificar", "nivel": 3,
+      "enunciado": "¿Qué números tienen 4 centenas?",
+      "categorias": [ { "id": "si", "texto": "Tiene 4 centenas" }, { "id": "no", "texto": "No tiene 4 centenas" } ],
+      "elementos": [
+        { "texto": "412", "categoria": "si" }, { "texto": "124", "categoria": "no" },
+        { "texto": "490", "categoria": "si" }, { "texto": "241", "categoria": "no" },
+        { "texto": "404", "categoria": "si" }, { "texto": "44", "categoria": "no" }
+      ],
+      "pista": "Las centenas son la primera cifra de un número de tres cifras.",
+      "explicacion": "412, 490 y 404 empiezan con 4: tienen 4 centenas. 44 solo tiene decenas y unidades.",
+      "error": "valor-posicional"
+    },
+    {
+      "id": "c6", "tipo": "escribir", "nivel": 3,
+      "enunciado": "Escribe con cifras: 7 centenas, 3 decenas y 0 unidades.",
+      "respuestas": ["730"],
+      "pista": "Si no hay unidades, escribe 0 al final.",
+      "explicacion": "7 centenas, 3 decenas y 0 unidades forman 730.",
+      "error": "cero-intermedio"
+    },
+    {
+      "id": "c7", "tipo": "generador", "nivel": 2, "generador": "descomponer", "params": { "max": 999 }
+    }
+  ],
+  "repaso": {
+    "texto": "Recuerda: cubito = 1 unidad, barra = 1 decena (10), placa = 1 centena (100).",
+    "visual": { "tipo": "bloques", "centenas": 1, "decenas": 1, "unidades": 1 }
+  },
+  "adulto": {
+    "objetivo": "Comprender el valor posicional en números de hasta tres cifras: leer cantidades con bloques base 10, componer y descomponer números.",
+    "sugerencias": [
+      "Armen atados de 10 palitos (o fideos) con una liga y bolsas de 10 atados: cuenten cuántos palitos hay en total.",
+      "En la feria o la tienda, pidan que diga cuántos billetes de 100, de 10 y monedas de 1 Bs formarían un precio (por ejemplo, 235 Bs).",
+      "Escriban un número de tres cifras en una hoja dividida en C, D y U y túrnense para decir cuánto vale cada cifra."
+    ],
+    "errores": {
+      "confunde-decenas-unidades": { "descripcion": "Cuenta piezas en lugar de valores, o confunde decenas con unidades.", "sugerencia": "Usen atados de 10 palitos: pregunten cuántos palitos hay, no cuántos atados." },
+      "arma-numero": { "descripcion": "Le cuesta formar un número con bloques.", "sugerencia": "Pidan que arme primero números de dos cifras con palitos y atados antes de pasar a tres cifras." },
+      "descomposicion": { "descripcion": "Escribe mal la descomposición (por ejemplo, 358 = 3 + 5 + 8).", "sugerencia": "Escriban cada cifra en una tarjeta y agreguen los ceros según el lugar: 3 → 300." },
+      "lee-bloques": { "descripcion": "Le cuesta leer el número que forman los bloques.", "sugerencia": "Cuenten juntos de 100 en 100, luego de 10 en 10 y al final de 1 en 1." },
+      "equivalencias": { "descripcion": "No recuerda que 10 unidades forman 1 decena y 10 decenas forman 1 centena.", "sugerencia": "Cambien 10 monedas de 1 Bs por un billete de 10 Bs, y 10 billetes de 10 Bs por uno de 100 Bs (de juguete)." },
+      "cero-intermedio": { "descripcion": "Olvida el cero cuando falta una posición (escribe 59 en lugar de 509).", "sugerencia": "Usen una tabla C-D-U y pidan que escriba 0 en la columna vacía." },
+      "canje": { "descripcion": "Le cuesta cuando hay más de 9 decenas o unidades (canje).", "sugerencia": "Practiquen cambiar 10 atados de palitos por una bolsa de 100 y vuelvan a contar." },
+      "valor-posicional": { "descripcion": "Confunde el valor de una cifra con la cifra misma (dice 5 en lugar de 50).", "sugerencia": "Pregunten: «¿cuánto vale este número aquí?» señalando cada lugar en una tabla C-D-U." },
+      "descomponer": { "descripcion": "Le cuesta separar un número en centenas, decenas y unidades.", "sugerencia": "Armen el número con palitos y atados y cuenten cada grupo por separado." }
+    }
+  }
+}

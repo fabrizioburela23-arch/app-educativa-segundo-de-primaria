@@ -1,0 +1,354 @@
+{
+  "id": "mat-4-5",
+  "titulo": "Dividir es repartir",
+  "objetivo": "Reparto en partes iguales y escribo el reparto como una división con el signo ÷.",
+  "explicacion": [
+    {
+      "texto": "**Repartir en partes iguales** es dar a cada uno la misma cantidad, sin que sobre nada. Nayra reparte 6 plátanos entre 2 amigos: cada uno recibe 3.",
+      "emoji": "🍌",
+      "visual": { "tipo": "grupos", "grupos": 2, "porGrupo": 3, "emoji": "🍌" }
+    },
+    {
+      "texto": "¿Cómo se reparte? Da uno a cada uno, por turnos, hasta que no quede nada. Si repartes así 12 panes en 3 platos, cada plato queda con 4 panes.",
+      "visual": { "tipo": "grupos", "grupos": 3, "porGrupo": 4, "emoji": "🍞" }
+    },
+    {
+      "texto": "Repartir en partes iguales es **dividir**. Se escribe con el signo **÷**: 12 ÷ 3 = 4. Se lee «12 entre 3 es igual a 4».",
+      "emoji": "➗",
+      "visual": { "tipo": "tabla", "columnas": ["Lo que repartes", "Entre cuántos", "Cada uno recibe"], "filas": [["12", "3", "4"]] }
+    },
+    {
+      "texto": "Para comprobar un reparto, mira que todos tengan lo mismo y que no sobre nada. Si juntas lo de cada uno, vuelves al total: 4 + 4 + 4 = 12.",
+      "emoji": "✅"
+    }
+  ],
+  "ejemplo": {
+    "instruccion": "Mira cómo Kusi reparte sus caramelos. Después, reparte tú 12 caramelos en 4 platos.",
+    "pasos": [
+      { "texto": "Kusi tiene 15 caramelos para sus 3 primos. Quiere que todos reciban lo mismo.", "visual": { "tipo": "emoji", "valor": "🍬", "cantidad": 15 } },
+      { "texto": "Primera vuelta: da 1 caramelo a cada primo. Ya repartió 3 y quedan 12.", "visual": { "tipo": "grupos", "grupos": 3, "porGrupo": 1, "emoji": "🍬" } },
+      { "texto": "Sigue dando por turnos. Después de 5 vueltas no queda ninguno: cada primo tiene 5.", "visual": { "tipo": "grupos", "grupos": 3, "porGrupo": 5, "emoji": "🍬" } },
+      { "texto": "Lo escribimos así: 15 ÷ 3 = 5. Se lee «15 entre 3 es igual a 5».", "visual": { "tipo": "tabla", "columnas": ["Caramelos", "Primos", "Cada primo recibe"], "filas": [["15", "3", "5"]] } }
+    ],
+    "explorar": { "tipo": "repartir", "total": 12, "grupos": 4, "emoji": "🍬" }
+  },
+  "guiada": {
+    "intro": "Vamos a repartir juntos, paso a paso.",
+    "pasos": [
+      {
+        "id": "g1", "tipo": "manipular",
+        "enunciado": "Reparte 8 mandarinas en 2 platos, en partes iguales.",
+        "apoyo": "Pon una mandarina en cada plato, por turnos, hasta que no quede ninguna.",
+        "manipulable": { "tipo": "repartir", "total": 8, "grupos": 2, "emoji": "🍊" },
+        "pista": "Revisa que los dos platos tengan la misma cantidad y que no quede ninguna afuera.",
+        "explicacion": "8 mandarinas en 2 platos: 4 en cada plato. 8 ÷ 2 = 4.",
+        "error": "reparto-desigual"
+      },
+      {
+        "id": "g2", "tipo": "numero",
+        "enunciado": "Luis reparte 12 panes entre 4 niños, en partes iguales. ¿Cuántos panes recibe cada niño?",
+        "apoyo": "Imagina 4 platos. Pon un pan en cada plato, por turnos, y al final cuenta los panes de un plato.",
+        "visual": { "tipo": "emoji", "valor": "🍞", "cantidad": 12 },
+        "respuesta": 3,
+        "erroresComunes": [
+          { "respuesta": 4, "pista": "4 es el número de niños. ¿Cuántos panes recibe cada uno?", "error": "confunde-grupos" },
+          { "respuesta": 8, "pista": "Restaste 12 − 4. Reparte los panes de uno en uno.", "error": "operacion-equivocada" },
+          { "respuesta": 16, "pista": "Sumaste 12 + 4. Aquí hay que repartir.", "error": "operacion-equivocada" }
+        ],
+        "pista": "En cada vuelta das 4 panes, uno a cada niño. ¿Cuántas vueltas das con 12 panes?",
+        "explicacion": "12 ÷ 4 = 3. Cada niño recibe 3 panes, porque 3 + 3 + 3 + 3 = 12.",
+        "error": "division"
+      },
+      {
+        "id": "g3", "tipo": "completar",
+        "enunciado": "Rosa reparte 10 plátanos en 2 platos. Completa la división.",
+        "apoyo": "Primero va lo que se reparte. Después el signo ÷, entre cuántos y, al final, lo que recibe cada uno.",
+        "texto": "10 [÷] 2 = [5]",
+        "banco": ["×", "+", "8", "6"],
+        "pista": "Repartir se escribe con el signo ÷. Piensa cuántos plátanos quedan en cada plato.",
+        "explicacion": "10 ÷ 2 = 5. Se lee «10 entre 2 es igual a 5»: cada plato tiene 5 plátanos.",
+        "error": "signo-division"
+      }
+    ]
+  },
+  "practica": [
+    {
+      "id": "p1", "tipo": "generador", "nivel": 1, "generador": "division", "params": { "divisores": [2, 3], "maxCociente": 5, "contexto": "repartir" }
+    },
+    {
+      "id": "p2", "tipo": "manipular", "nivel": 1,
+      "enunciado": "Reparte 6 panes en 3 platos, en partes iguales.",
+      "manipulable": { "tipo": "repartir", "total": 6, "grupos": 3, "emoji": "🍞" },
+      "pista": "Pon un pan en cada plato, por turnos, hasta que no quede ninguno.",
+      "explicacion": "6 panes en 3 platos: 2 en cada plato. 6 ÷ 3 = 2.",
+      "error": "reparto-desigual"
+    },
+    {
+      "id": "p3", "tipo": "clasificar", "nivel": 1,
+      "enunciado": "Los números dicen cuántas uvas recibió cada niño. ¿Fue un reparto en partes iguales?",
+      "categorias": [
+        { "id": "si", "texto": "Partes iguales", "emoji": "✅" },
+        { "id": "no", "texto": "No son iguales", "emoji": "❌" }
+      ],
+      "elementos": [
+        { "texto": "3, 3, 3", "categoria": "si" }, { "texto": "4, 2, 3", "categoria": "no" },
+        { "texto": "5, 5", "categoria": "si" }, { "texto": "6, 4", "categoria": "no" },
+        { "texto": "2, 2, 2, 2", "categoria": "si" }, { "texto": "1, 3, 1, 3", "categoria": "no" }
+      ],
+      "pista": "En un reparto en partes iguales, todos los números son iguales.",
+      "explicacion": "3, 3, 3; 5, 5 y 2, 2, 2, 2 son partes iguales. En 4, 2, 3; 6, 4 y 1, 3, 1, 3 alguien recibe más que otro.",
+      "error": "reparto-desigual"
+    },
+    {
+      "id": "p4", "tipo": "opcion", "nivel": 1,
+      "enunciado": "Sofía reparte 8 manzanas entre 2 niños. ¿Cuál reparto es en partes iguales?",
+      "visual": { "tipo": "emoji", "valor": "🍎", "cantidad": 8 },
+      "opciones": [
+        { "texto": "4 y 4", "correcta": true },
+        { "texto": "5 y 3", "pista": "5 y 3 suman 8, pero un niño recibe más que el otro.", "error": "reparto-desigual" },
+        { "texto": "6 y 2", "pista": "6 y 2 suman 8, pero no es lo mismo para los dos.", "error": "reparto-desigual" }
+      ],
+      "columnas": 3,
+      "pista": "Los dos niños deben recibir la misma cantidad.",
+      "explicacion": "4 y 4: los dos reciben lo mismo y no sobra nada. 8 ÷ 2 = 4.",
+      "error": "reparto-desigual"
+    },
+    {
+      "id": "p5", "tipo": "numero", "nivel": 1,
+      "enunciado": "Escucha el problema y escribe la respuesta.",
+      "escuchar": "Ana tiene seis choclos. Los reparte en partes iguales entre sus dos hermanos. ¿Cuántos choclos recibe cada hermano?",
+      "respuesta": 3,
+      "erroresComunes": [
+        { "respuesta": 4, "pista": "Restaste 6 − 2. Reparte los choclos de uno en uno.", "error": "operacion-equivocada" },
+        { "respuesta": 8, "pista": "Sumaste 6 + 2. Aquí hay que repartir.", "error": "operacion-equivocada" },
+        { "respuesta": 2, "pista": "2 es el número de hermanos. ¿Cuántos choclos recibe cada uno?", "error": "confunde-grupos" },
+        { "respuesta": 12, "pista": "Multiplicaste 6 × 2. Repartir es dividir.", "error": "operacion-equivocada" }
+      ],
+      "pista": "Da un choclo a cada hermano, por turnos, hasta que no quede ninguno. Escucha otra vez si lo necesitas.",
+      "explicacion": "6 ÷ 2 = 3. Cada hermano recibe 3 choclos, porque 3 + 3 = 6.",
+      "error": "division"
+    },
+    {
+      "id": "p6", "tipo": "generador", "nivel": 2, "generador": "division", "params": { "divisores": [2, 3, 4], "maxCociente": 6, "contexto": "repartir" }
+    },
+    {
+      "id": "p7", "tipo": "manipular", "nivel": 2,
+      "enunciado": "Reparte 18 caramelos en 3 platos, en partes iguales.",
+      "manipulable": { "tipo": "repartir", "total": 18, "grupos": 3, "emoji": "🍬" },
+      "pista": "Da un caramelo a cada plato por turnos. Cuando se acaben, revisa que los platos tengan lo mismo.",
+      "explicacion": "18 caramelos en 3 platos: 6 en cada plato. 18 ÷ 3 = 6.",
+      "error": "reparto-desigual"
+    },
+    {
+      "id": "p8", "tipo": "memoria", "nivel": 2,
+      "enunciado": "Encuentra las parejas: la división y lo que recibe cada uno.",
+      "pares": [["12 ÷ 3", "4"], ["10 ÷ 2", "5"], ["9 ÷ 3", "3"], ["12 ÷ 2", "6"], ["8 ÷ 4", "2"]],
+      "pista": "Imagina el reparto: ¿cuánto recibe cada uno?",
+      "explicacion": "12 ÷ 3 = 4; 10 ÷ 2 = 5; 9 ÷ 3 = 3; 12 ÷ 2 = 6; 8 ÷ 4 = 2.",
+      "error": "division"
+    },
+    {
+      "id": "p9", "tipo": "numero", "nivel": 2,
+      "enunciado": "El profesor Juan reparte 24 lápices en 6 mesas, en partes iguales. ¿Cuántos lápices van en cada mesa?",
+      "visual": { "tipo": "emoji", "valor": "✏️", "cantidad": 24 },
+      "respuesta": 4,
+      "erroresComunes": [
+        { "respuesta": 6, "pista": "6 es el número de mesas. ¿Cuántos lápices van en cada una?", "error": "confunde-grupos" },
+        { "respuesta": 18, "pista": "Restaste 24 − 6. Reparte los lápices entre las mesas.", "error": "operacion-equivocada" },
+        { "respuesta": 30, "pista": "Sumaste 24 + 6. Aquí hay que repartir.", "error": "operacion-equivocada" }
+      ],
+      "pista": "En cada vuelta das 6 lápices, uno a cada mesa. ¿Cuántas vueltas das con 24 lápices?",
+      "explicacion": "24 ÷ 6 = 4. Van 4 lápices en cada mesa, porque 4 + 4 + 4 + 4 + 4 + 4 = 24.",
+      "error": "division"
+    },
+    {
+      "id": "p10", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "Une cada reparto con su división.",
+      "pares": [["12 panes en 3 platos", "12 ÷ 3"], ["12 panes en 4 platos", "12 ÷ 4"], ["12 panes en 2 platos", "12 ÷ 2"], ["6 panes en 3 platos", "6 ÷ 3"]],
+      "pista": "Primero se escribe cuántos panes repartes y después en cuántos platos.",
+      "explicacion": "12 panes en 3 platos: 12 ÷ 3. En 4 platos: 12 ÷ 4. En 2 platos: 12 ÷ 2. Y 6 panes en 3 platos: 6 ÷ 3.",
+      "error": "escribe-division"
+    },
+    {
+      "id": "p11", "tipo": "tocar", "nivel": 2,
+      "enunciado": "¿Cuántos limones van en cada bolsa? Toca los dos números que necesitas para saberlo.",
+      "texto": "Doña Ana tiene *24* limones. Los reparte en *4* bolsas iguales. Vende cada bolsa a 5 Bs.",
+      "pista": "Busca cuántos limones hay y en cuántas bolsas se reparten. El precio no hace falta.",
+      "explicacion": "Necesitas el 24 (los limones) y el 4 (las bolsas): 24 ÷ 4 = 6 limones en cada bolsa. El precio no sirve para esta pregunta.",
+      "error": "datos-problema"
+    },
+    {
+      "id": "p12", "tipo": "generador", "nivel": 3, "generador": "division", "params": { "divisores": [4, 5, 6], "maxCociente": 5, "contexto": "repartir" }
+    },
+    {
+      "id": "p13", "tipo": "pasos", "nivel": 3,
+      "enunciado": "Para la fiesta del curso, Mateo trae 20 salteñas y Wara trae 10. Las reparten en partes iguales en 5 mesas.",
+      "visual": { "tipo": "emoji", "valor": "🥟", "cantidad": 30 },
+      "pasos": [
+        {
+          "tipo": "numero", "enunciado": "¿Cuántas salteñas hay en total?", "respuesta": 30,
+          "erroresComunes": [ { "respuesta": 10, "pista": "Restaste. Mateo y Wara juntan sus salteñas: suma.", "error": "operacion-equivocada" } ],
+          "pista": "Junta las salteñas de Mateo y las de Wara.",
+          "explicacion": "20 + 10 = 30 salteñas.",
+          "error": "problema-pasos"
+        },
+        {
+          "tipo": "numero", "enunciado": "¿Cuántas salteñas van en cada mesa?", "respuesta": 6,
+          "erroresComunes": [
+            { "respuesta": 5, "pista": "5 es el número de mesas. ¿Cuántas salteñas van en cada una?", "error": "confunde-grupos" },
+            { "respuesta": 25, "pista": "Restaste 30 − 5. Reparte las 30 salteñas en las 5 mesas.", "error": "operacion-equivocada" }
+          ],
+          "pista": "En cada vuelta pones 5 salteñas, una en cada mesa. ¿Cuántas vueltas das con 30?",
+          "explicacion": "30 ÷ 5 = 6 salteñas en cada mesa.",
+          "error": "division"
+        }
+      ],
+      "pista": "Primero junta todas las salteñas. Después repártelas.",
+      "explicacion": "20 + 10 = 30 salteñas. 30 ÷ 5 = 6 salteñas en cada mesa.",
+      "error": "problema-pasos"
+    },
+    {
+      "id": "p14", "tipo": "numero", "nivel": 3,
+      "enunciado": "Se repartieron unas naranjas entre 4 niños, en partes iguales. Cada niño recibió 5. ¿Cuántas naranjas había?",
+      "respuesta": 20,
+      "erroresComunes": [
+        { "respuesta": 9, "pista": "Sumaste 4 + 5. Son 4 niños y cada uno tiene 5 naranjas.", "error": "total-reparto" },
+        { "respuesta": 1, "pista": "Restaste 5 − 4. Junta las naranjas de todos los niños.", "error": "total-reparto" }
+      ],
+      "pista": "Piensa al revés: junta otra vez las naranjas de los 4 niños.",
+      "explicacion": "5 + 5 + 5 + 5 = 20. Había 20 naranjas, porque 20 ÷ 4 = 5.",
+      "error": "total-reparto"
+    },
+    {
+      "id": "p15", "tipo": "escribir-libre", "nivel": 3,
+      "enunciado": "Inventa un problema de repartir en partes iguales. Termina con una pregunta.",
+      "guia": ["Mi abuelo reparte... entre...", "¿Cuántos recibe cada uno?"],
+      "requisitos": [
+        { "tipo": "mayuscula-inicial" },
+        { "tipo": "signos-pregunta" },
+        { "tipo": "min-palabras", "valor": 8 },
+        { "tipo": "incluye", "palabras": ["reparte", "repartió", "repartir", "repartimos", "repartieron", "reparto"] }
+      ],
+      "modelo": "Rosa reparte 12 panes entre 3 amigos. ¿Cuántos panes recibe cada uno?",
+      "pista": "Di qué se reparte, cuántos hay y entre cuántos. Después pregunta cuánto recibe cada uno.",
+      "explicacion": "Por ejemplo: «Rosa reparte 12 panes entre 3 amigos. ¿Cuántos panes recibe cada uno?». La respuesta es 12 ÷ 3 = 4.",
+      "error": "produce-problema"
+    }
+  ],
+  "comprobacion": [
+    {
+      "id": "c1", "tipo": "manipular", "nivel": 1,
+      "enunciado": "Reparte 10 panes en 2 platos, en partes iguales.",
+      "manipulable": { "tipo": "repartir", "total": 10, "grupos": 2, "emoji": "🍞" },
+      "pista": "Pon un pan en cada plato, por turnos, hasta que no quede ninguno.",
+      "explicacion": "10 panes en 2 platos: 5 en cada plato. 10 ÷ 2 = 5.",
+      "error": "reparto-desigual"
+    },
+    {
+      "id": "c2", "tipo": "opcion", "nivel": 1,
+      "enunciado": "¿Cómo se lee esta división?",
+      "visual": { "tipo": "operacion", "numeros": [8, 2], "op": "÷" },
+      "opciones": [
+        { "texto": "8 entre 2", "correcta": true },
+        { "texto": "8 por 2", "pista": "«Por» se usa para multiplicar, con el signo ×.", "error": "signo-division" },
+        { "texto": "8 más 2", "pista": "«Más» se usa para sumar, con el signo +.", "error": "signo-division" }
+      ],
+      "columnas": 1,
+      "pista": "El signo ÷ es el de repartir.",
+      "explicacion": "8 ÷ 2 se lee «8 entre 2». Es repartir 8 en 2 partes iguales: 4 para cada uno.",
+      "error": "signo-division"
+    },
+    {
+      "id": "c3", "tipo": "generador", "nivel": 2, "generador": "division", "params": { "divisores": [3, 4, 5], "maxCociente": 6, "contexto": "repartir" }
+    },
+    {
+      "id": "c4", "tipo": "numero", "nivel": 2,
+      "enunciado": "Escucha el problema y escribe la respuesta.",
+      "escuchar": "Luis tiene quince figuritas. Las reparte en partes iguales entre sus tres amigos. ¿Cuántas figuritas recibe cada amigo?",
+      "respuesta": 5,
+      "erroresComunes": [
+        { "respuesta": 12, "pista": "Restaste 15 − 3. Reparte las figuritas de una en una.", "error": "operacion-equivocada" },
+        { "respuesta": 18, "pista": "Sumaste 15 + 3. Aquí hay que repartir.", "error": "operacion-equivocada" },
+        { "respuesta": 3, "pista": "3 es el número de amigos. ¿Cuántas figuritas recibe cada uno?", "error": "confunde-grupos" }
+      ],
+      "pista": "En cada vuelta das 3 figuritas, una a cada amigo. Escucha otra vez si lo necesitas.",
+      "explicacion": "15 ÷ 3 = 5. Cada amigo recibe 5 figuritas, porque 5 + 5 + 5 = 15.",
+      "error": "division"
+    },
+    {
+      "id": "c5", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "Une cada división con lo que recibe cada uno.",
+      "pares": [["14 ÷ 2", "7"], ["20 ÷ 5", "4"], ["18 ÷ 3", "6"], ["25 ÷ 5", "5"]],
+      "pista": "Imagina el reparto o haz dibujitos: ¿cuánto le toca a cada uno?",
+      "explicacion": "14 ÷ 2 = 7; 20 ÷ 5 = 4; 18 ÷ 3 = 6; 25 ÷ 5 = 5.",
+      "error": "division"
+    },
+    {
+      "id": "c6", "tipo": "manipular", "nivel": 2,
+      "enunciado": "Reparte 16 mangos en 4 platos, en partes iguales.",
+      "manipulable": { "tipo": "repartir", "total": 16, "grupos": 4, "emoji": "🥭" },
+      "pista": "Da un mango a cada plato, por turnos. Al final, todos los platos deben tener lo mismo.",
+      "explicacion": "16 mangos en 4 platos: 4 en cada plato. 16 ÷ 4 = 4.",
+      "error": "reparto-desigual"
+    },
+    {
+      "id": "c7", "tipo": "pasos", "nivel": 3,
+      "enunciado": "La familia de Inti cosechó 30 duraznos. Comieron 2 y repartieron los demás en 4 canastas, en partes iguales.",
+      "pasos": [
+        {
+          "tipo": "numero", "enunciado": "¿Cuántos duraznos quedaron para repartir?", "respuesta": 28,
+          "erroresComunes": [ { "respuesta": 32, "pista": "Sumaste. Si se comieron 2, quedan menos: resta.", "error": "operacion-equivocada" } ],
+          "pista": "A los duraznos que cosecharon, quítales los que comieron.",
+          "explicacion": "30 − 2 = 28 duraznos.",
+          "error": "problema-pasos"
+        },
+        {
+          "tipo": "numero", "enunciado": "¿Cuántos duraznos van en cada canasta?", "respuesta": 7,
+          "erroresComunes": [
+            { "respuesta": 4, "pista": "4 es el número de canastas. ¿Cuántos duraznos van en cada una?", "error": "confunde-grupos" },
+            { "respuesta": 24, "pista": "Restaste 28 − 4. Reparte los 28 duraznos en las 4 canastas.", "error": "operacion-equivocada" }
+          ],
+          "pista": "En cada vuelta pones 4 duraznos, uno en cada canasta. ¿Cuántas vueltas das con 28?",
+          "explicacion": "28 ÷ 4 = 7 duraznos en cada canasta, porque 7 + 7 + 7 + 7 = 28.",
+          "error": "division"
+        }
+      ],
+      "pista": "Primero resta los que comieron. Después reparte los que quedan.",
+      "explicacion": "30 − 2 = 28 duraznos. 28 ÷ 4 = 7 duraznos en cada canasta.",
+      "error": "problema-pasos"
+    },
+    {
+      "id": "c8", "tipo": "completar", "nivel": 3,
+      "enunciado": "Kusi repartió sus galletas entre 3 amigos y cada uno recibió 7. Completa la división.",
+      "texto": "[21] ÷ 3 = 7",
+      "banco": ["10", "4", "24"],
+      "pista": "Junta otra vez las galletas de los 3 amigos.",
+      "explicacion": "7 + 7 + 7 = 21. Kusi tenía 21 galletas: 21 ÷ 3 = 7.",
+      "error": "total-reparto"
+    }
+  ],
+  "repaso": {
+    "texto": "Repartir en partes iguales es dividir: todos reciben lo mismo y no sobra nada. 12 ÷ 3 = 4 se lee «12 entre 3 es igual a 4».",
+    "visual": { "tipo": "grupos", "grupos": 3, "porGrupo": 4, "emoji": "🍞" }
+  },
+  "adulto": {
+    "objetivo": "Comprender la división como reparto en partes iguales (cuánto recibe cada uno), resolver repartos exactos con material concreto y escribirlos con el signo ÷ («12 ÷ 3 = 4», que se lee «12 entre 3 es igual a 4»).",
+    "sugerencias": [
+      "A la hora del té, pidan que reparta panes, galletas o frutas en partes iguales entre los platos de la familia, dando uno a cada plato por turnos. Pregunten: «¿Cuánto recibe cada uno?» y escriban juntos la división (por ejemplo, 12 ÷ 4 = 3).",
+      "En la feria o la tienda, compren una cantidad que se pueda repartir sin que sobre (10 mandarinas para 2 personas o 12 plátanos para 3) y dejen que la reparta en bolsas iguales.",
+      "Con porotos, piedritas o tapitas, repartan 12, 15 o 20 en 2, 3, 4 o 5 vasos. Escriban la división en una hoja y comprueben sumando lo que hay en cada vaso."
+    ],
+    "errores": {
+      "division": { "descripcion": "Se equivoca al calcular cuánto recibe cada uno en un reparto.", "sugerencia": "Repartan objetos reales de uno en uno, por turnos, y cuenten lo que quedó en un plato." },
+      "reparto-desigual": { "descripcion": "Reparte sin que todos reciban lo mismo, o deja objetos sin repartir.", "sugerencia": "Después de repartir, comparen los platos: «¿Todos tienen lo mismo? ¿Quedó algo afuera?»." },
+      "confunde-grupos": { "descripcion": "Responde con el número de personas, platos o bolsas en lugar de lo que recibe cada uno.", "sugerencia": "Pregunten siempre dos cosas: «¿Entre cuántos repartimos?» y «¿Cuánto le toca a cada uno?», señalando primero todos los platos y después uno solo." },
+      "operacion-equivocada": { "descripcion": "Suma, resta o multiplica los números del problema en lugar de repartir.", "sugerencia": "Actúen el problema con objetos antes de calcular. Si hay que dar a cada uno la misma cantidad, es repartir." },
+      "signo-division": { "descripcion": "No reconoce el signo ÷ o no sabe cómo se lee.", "sugerencia": "Hagan tarjetas con los signos +, −, × y ÷ y jueguen a decir su nombre: más, menos, por y entre." },
+      "escribe-division": { "descripcion": "Escribe la división en otro orden (3 ÷ 12 en lugar de 12 ÷ 3).", "sugerencia": "Recuerden: primero se escribe el total que se reparte y después entre cuántos se reparte." },
+      "datos-problema": { "descripcion": "No identifica los datos que necesita para resolver un problema.", "sugerencia": "Lean el problema en voz alta y subrayen solo los números que sirven para responder la pregunta." },
+      "problema-pasos": { "descripcion": "Se pierde en los problemas de varios pasos.", "sugerencia": "Resuelvan un paso a la vez y anoten cada resultado antes de seguir." },
+      "total-reparto": { "descripcion": "Le cuesta encontrar el total cuando sabe cuánto recibió cada uno.", "sugerencia": "Repartan objetos y después júntenlos otra vez: lo que tiene cada uno, sumado, da el total." },
+      "produce-problema": { "descripcion": "Le cuesta inventar un problema de repartir.", "sugerencia": "Inventen juntos problemas con cosas de la casa («Tengo 8 galletas para 2 hermanos...») y dejen que lo termine con una pregunta." }
+    }
+  }
+}

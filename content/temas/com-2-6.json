@@ -1,0 +1,389 @@
+{
+  "id": "com-2-6",
+  "titulo": "Palabras homónimas",
+  "objetivo": "Descubro palabras que se escriben y suenan igual pero significan cosas distintas, y entiendo qué significan por la oración.",
+  "explicacion": [
+    {
+      "texto": "Algunas palabras se escriben igual y suenan igual, pero significan cosas **distintas**. Se llaman palabras **homónimas**. Por ejemplo, **llama** es un animal y también es el fuego de una vela.",
+      "visual": { "tipo": "emojis", "items": ["🦙", "🔥"], "etiquetas": ["llama", "llama"] }
+    },
+    {
+      "texto": "Mira la palabra **vela**: puede ser la vela que da luz o la vela de un barco, que se llena de viento para que el barco avance.",
+      "visual": { "tipo": "emojis", "items": ["🕯️", "⛵"], "etiquetas": ["vela", "vela"] }
+    },
+    {
+      "texto": "¿Cómo sabemos qué significa? Leemos toda la **oración** y buscamos pistas: «El viento movió la **hoja** del árbol». «Escribí mi nombre en una **hoja**».",
+      "emoji": "🔍",
+      "visual": { "tipo": "emojis", "items": ["🍃", "📄"], "etiquetas": ["hoja del árbol", "hoja de papel"] }
+    },
+    {
+      "texto": "Otras homónimas: **gato** (el animal y la herramienta para levantar un auto), **carta** (la que se envía y la de un juego) y **banco** (para sentarse y para guardar dinero).",
+      "visual": { "tipo": "tabla", "columnas": ["Palabra", "Significado 1", "Significado 2"], "filas": [["gato", "animal 🐈", "herramienta para levantar un auto 🚗"], ["carta", "la que se envía ✉️", "la de un juego 🃏"], ["banco", "para sentarse", "para guardar dinero 🏦"]] }
+    }
+  ],
+  "ejemplo": {
+    "instruccion": "Mira cómo descubrimos qué significa una palabra homónima.",
+    "pasos": [
+      {
+        "texto": "Leemos: «La **llama** de la vela es amarilla». ¿Qué llama es: el animal o el fuego?",
+        "visual": { "tipo": "emojis", "items": ["🦙", "🔥"], "etiquetas": ["¿animal?", "¿fuego?"] }
+      },
+      {
+        "texto": "Buscamos pistas en la oración: dice «de la vela» y «amarilla». Una vela tiene fuego, no tiene un animal.",
+        "visual": { "tipo": "emoji", "valor": "🕯️", "etiqueta": "vela" }
+      },
+      {
+        "texto": "Entonces aquí **llama** es el fuego de la vela. Pero en «La **llama** come pasto en el altiplano», es el animal.",
+        "visual": { "tipo": "emojis", "items": ["🔥", "🦙"], "etiquetas": ["llama de la vela", "llama que come pasto"] }
+      },
+      {
+        "texto": "La palabra se escribe igual en las dos oraciones. ¡La oración nos dice qué significa!",
+        "emoji": "💡"
+      }
+    ]
+  },
+  "guiada": {
+    "intro": "Ahora lo hacemos juntos.",
+    "pasos": [
+      {
+        "id": "g1", "tipo": "opcion",
+        "enunciado": "Lee: «El barco tiene una vela blanca». ¿Qué es la vela aquí?",
+        "apoyo": "Busca la pista en la oración: ¿de qué habla?",
+        "opciones": [
+          { "texto": "la tela grande del barco", "emoji": "⛵", "correcta": true },
+          { "texto": "la vela que da luz", "emoji": "🕯️", "pista": "Esa vela da luz en la casa. Fíjate: la oración habla de un barco.", "error": "confunde-significado" }
+        ],
+        "pista": "La oración habla de un barco.",
+        "explicacion": "Aquí «vela» es la tela grande del barco, que se llena de viento.",
+        "error": "confunde-significado"
+      },
+      {
+        "id": "g2", "tipo": "relacionar",
+        "enunciado": "Une cada oración con lo que significa «llama».",
+        "apoyo": "La palabra «llama» está en las tres oraciones. Lee las otras palabras: ellas son las pistas.",
+        "pares": [
+          ["La llama come pasto.", { "texto": "animal", "emoji": "🦙" }],
+          ["La llama del fogón calienta la olla.", { "texto": "fuego", "emoji": "🔥" }],
+          ["Luis llama a su abuela por teléfono.", { "texto": "llamar a alguien", "emoji": "📞" }]
+        ],
+        "pista": "¿Quién come pasto? ¿Qué calienta la olla? ¿Qué hace Luis con el teléfono?",
+        "explicacion": "La llama que come pasto es el animal. La llama del fogón es el fuego. «Luis llama a su abuela» dice lo que hace Luis: usa el teléfono para hablar con ella.",
+        "error": "confunde-significado"
+      },
+      {
+        "id": "g3", "tipo": "escribir",
+        "enunciado": "Escucha las dos oraciones y escribe la palabra que se repite.",
+        "apoyo": "Una palabra aparece en las dos oraciones, pero significa algo distinto en cada una.",
+        "escuchar": "El gato duerme en la cama. Mi tía usó el gato para levantar el auto y cambiar la llanta.",
+        "respuestas": ["gato"],
+        "pista": "Una oración habla de un animal que duerme. La otra habla de una herramienta.",
+        "explicacion": "La palabra es «gato»: en la primera oración es el animal y en la segunda es la herramienta para levantar el auto.",
+        "error": "escucha-homonima"
+      }
+    ]
+  },
+  "practica": [
+    {
+      "id": "p1", "tipo": "opcion", "nivel": 1,
+      "enunciado": "Escucha la oración. ¿Qué gato es?",
+      "escuchar": "Mi gato juega con una pelota de lana.",
+      "opciones": [
+        { "texto": "el animal", "emoji": "🐈", "correcta": true },
+        { "texto": "la herramienta para levantar un auto", "emoji": "🚗", "pista": "Una herramienta no juega. ¿Quién puede jugar con una pelota?", "error": "confunde-significado" }
+      ],
+      "pista": "Escucha otra vez: ¿qué hace el gato en la oración?",
+      "explicacion": "«Mi gato juega con una pelota de lana»: el gato que juega es el animal.",
+      "error": "confunde-significado"
+    },
+    {
+      "id": "p2", "tipo": "memoria", "nivel": 1,
+      "enunciado": "Encuentra las parejas: cada dibujo con su significado.",
+      "pares": [
+        [ { "emoji": "🍃" }, "hoja del árbol" ],
+        [ { "emoji": "📄" }, "hoja de papel" ],
+        [ { "emoji": "🦙" }, "llama que come pasto" ],
+        [ { "emoji": "🔥" }, "llama del fuego" ],
+        [ { "emoji": "🕯️" }, "vela que da luz" ],
+        [ { "emoji": "⛵" }, "vela del barco" ]
+      ],
+      "pista": "Las palabras se repiten, pero cada dibujo va con un significado distinto.",
+      "explicacion": "Hoja, llama y vela son homónimas: cada una tiene dos significados.",
+      "error": "confunde-significado"
+    },
+    {
+      "id": "p3", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Toca las dos veces que aparece la palabra homónima.",
+      "texto": "La *llama* toma agua y la *llama* del fogón calienta.",
+      "pista": "Busca una palabra que se escribe igual dos veces.",
+      "explicacion": "«Llama» aparece dos veces: primero es el animal y después es el fuego del fogón.",
+      "error": "no-reconoce-homonima"
+    },
+    {
+      "id": "p4", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "¿Qué significa «banco» en cada oración?",
+      "categorias": [
+        { "id": "sentar", "texto": "Para sentarse" },
+        { "id": "dinero", "texto": "Para guardar dinero", "emoji": "🏦" }
+      ],
+      "elementos": [
+        { "texto": "Los abuelos descansan en el banco del parque.", "categoria": "sentar" },
+        { "texto": "En la plaza hay un banco de madera.", "categoria": "sentar" },
+        { "texto": "Me senté en el banco a esperar el micro.", "categoria": "sentar" },
+        { "texto": "Mi tío fue al banco a sacar dinero.", "categoria": "dinero" },
+        { "texto": "El banco abre a las ocho de la mañana.", "categoria": "dinero" },
+        { "texto": "El banco guarda el dinero de muchas personas.", "categoria": "dinero" }
+      ],
+      "pista": "Busca pistas: «descansan», «madera», «me senté» o «dinero», «abre».",
+      "explicacion": "Para sentarse: el banco del parque, el banco de madera y el banco donde esperé el micro. Para guardar dinero: donde mi tío sacó dinero, el que abre a las ocho y el que guarda dinero.",
+      "error": "confunde-significado"
+    },
+    {
+      "id": "p5", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa las dos oraciones con la misma palabra homónima.",
+      "texto": "Kusi escribe una [carta] para su abuela. En el juego, Ana sacó una [carta] con el número 7.",
+      "banco": ["llama", "gato"],
+      "pista": "Busca una palabra que sirve para escribir a alguien y también para jugar.",
+      "explicacion": "«Carta» sirve para las dos: la carta que se escribe y se envía, y la carta de un juego.",
+      "error": "no-reconoce-homonima"
+    },
+    {
+      "id": "p6", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha y escribe la palabra que sirve para las dos cosas.",
+      "escuchar": "Es una parte verde de las plantas. También es un papel donde puedes escribir. ¿Qué palabra es?",
+      "respuestas": ["hoja"],
+      "pista": "Crece en las ramas de los árboles, y tu cuaderno tiene muchas. Empieza con h.",
+      "explicacion": "La palabra es «hoja»: la hoja de una planta y la hoja de papel. Se escribe con h al inicio.",
+      "error": "escucha-homonima"
+    },
+    {
+      "id": "p7", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "Une cada oración con lo que significa «planta».",
+      "pares": [
+        ["Riego la planta del patio.", { "texto": "ser vivo con hojas", "emoji": "🌱" }],
+        ["Me pica la planta del pie.", { "texto": "parte de abajo del pie", "emoji": "🦶" }],
+        ["Vivo en la planta baja del edificio.", { "texto": "piso de un edificio", "emoji": "🏢" }]
+      ],
+      "pista": "Busca las pistas: «riego», «pie», «edificio».",
+      "explicacion": "La planta que se riega es un ser vivo. La planta del pie es la parte de abajo del pie. La planta baja es un piso del edificio.",
+      "error": "confunde-significado"
+    },
+    {
+      "id": "p8", "tipo": "opcion", "nivel": 1,
+      "enunciado": "Lee: «Agarra la escoba por el mango». ¿Qué es el mango aquí?",
+      "opciones": [
+        { "texto": "la parte de la escoba que agarras", "emoji": "🧹", "correcta": true },
+        { "texto": "una fruta", "emoji": "🥭", "pista": "La fruta no es parte de una escoba. Lee otra vez la oración.", "error": "confunde-significado" }
+      ],
+      "pista": "La oración habla de una escoba.",
+      "explicacion": "Aquí «mango» es el palo largo de la escoba, la parte que agarras. El mango también es una fruta, pero no en esta oración.",
+      "error": "confunde-significado"
+    },
+    {
+      "id": "p9", "tipo": "multiple", "nivel": 2,
+      "enunciado": "¿En qué oraciones «sobre» es un papel doblado para guardar cartas? Elige todas.",
+      "opciones": [
+        { "texto": "Guardé la carta en un sobre.", "correcta": true },
+        { "texto": "El sobre tiene una estampilla.", "correcta": true },
+        { "texto": "El gato duerme sobre la cama.", "pista": "Aquí «sobre» dice dónde duerme el gato: encima de la cama.", "error": "confunde-significado" },
+        { "texto": "Dejé mi mochila sobre la silla.", "pista": "Aquí «sobre» dice dónde está la mochila: encima de la silla.", "error": "confunde-significado" }
+      ],
+      "columnas": 1,
+      "pista": "En dos oraciones «sobre» es una cosa. En las otras dice dónde está algo.",
+      "explicacion": "El sobre donde guardé la carta y el sobre con estampilla son papeles para cartas. En las otras, «sobre» significa «encima de».",
+      "error": "confunde-significado"
+    },
+    {
+      "id": "p10", "tipo": "tocar", "nivel": 3,
+      "enunciado": "Toca las dos palabras que se escriben igual pero significan cosas distintas.",
+      "texto": "Wara *nada* en la piscina y no tiene miedo de *nada*.",
+      "pista": "Una palabra dice lo que hace Wara en el agua. La misma palabra aparece otra vez al final.",
+      "explicacion": "«Nada» aparece dos veces: primero es lo que hace Wara en el agua (nadar) y después significa «ninguna cosa».",
+      "error": "no-reconoce-homonima"
+    },
+    {
+      "id": "p11", "tipo": "pasos", "nivel": 3,
+      "enunciado": "La palabra «río» también es homónima. Resuelve paso a paso.",
+      "visual": { "tipo": "emojis", "items": ["🏞️", "😄"], "etiquetas": ["río", "me río"] },
+      "pasos": [
+        {
+          "tipo": "opcion",
+          "enunciado": "En «Me río con los chistes de mi abuelo», ¿qué significa «río»?",
+          "opciones": [
+            { "texto": "que me estoy riendo", "emoji": "😄", "correcta": true },
+            { "texto": "un río con agua", "emoji": "🏞️", "pista": "Los chistes no tienen agua. ¿Qué haces cuando escuchas un chiste?", "error": "confunde-significado" }
+          ],
+          "pista": "¿Qué hacemos cuando escuchamos un chiste?",
+          "explicacion": "Aquí «río» viene de reír: me río con los chistes.",
+          "error": "confunde-significado"
+        },
+        {
+          "tipo": "completar",
+          "enunciado": "Completa las dos oraciones con la misma palabra.",
+          "texto": "El [río] Beni lleva mucha agua. Yo me [río] cuando juego con mi hermana.",
+          "banco": ["cerro", "pan"],
+          "pista": "Busca la palabra que es agua que corre y también lo que haces cuando algo te da risa.",
+          "explicacion": "«Río» sirve para las dos: el río Beni y yo me río. Se escriben igual, con tilde en la í.",
+          "error": "no-reconoce-homonima"
+        }
+      ],
+      "pista": "Lee las pistas de cada oración: agua o risa.",
+      "explicacion": "«Río» puede ser el agua que corre (el río Beni) o lo que hago cuando algo me da risa (me río).",
+      "error": "no-reconoce-homonima"
+    },
+    {
+      "id": "p12", "tipo": "escribir", "nivel": 3,
+      "enunciado": "Escribe la palabra que completa las dos oraciones: «El ___ del cóndor es fuerte». «Subimos hasta el ___ de la montaña».",
+      "visual": { "tipo": "emojis", "items": ["🦅", "🏔️"], "etiquetas": ["cóndor", "montaña"] },
+      "respuestas": ["pico"],
+      "pista": "Es la parte de la boca de un ave. También es la punta más alta de una montaña.",
+      "explicacion": "La palabra es «pico»: el pico del cóndor y el pico de la montaña.",
+      "error": "no-reconoce-homonima"
+    },
+    {
+      "id": "p13", "tipo": "escribir-libre", "nivel": 3,
+      "enunciado": "Escribe dos oraciones con la palabra «banco»: una con el banco para sentarse y otra con el banco del dinero.",
+      "guia": ["Me senté en el banco...", "Mi mamá fue al banco..."],
+      "requisitos": [
+        { "tipo": "mayuscula-inicial" },
+        { "tipo": "punto-final" },
+        { "tipo": "min-oraciones", "valor": 2 },
+        { "tipo": "incluye-todas", "palabras": ["banco"] }
+      ],
+      "modelo": "Me senté en el banco de la plaza. Mi tía trabaja en un banco.",
+      "pista": "Piensa en un banco de la plaza y en un banco donde las personas guardan su dinero.",
+      "explicacion": "Por ejemplo: «Me senté en el banco de la plaza. Mi tía trabaja en un banco». La misma palabra tiene dos significados.",
+      "error": "produce-homonima"
+    },
+    {
+      "id": "p14", "tipo": "completar", "nivel": 3,
+      "enunciado": "«Hola» y «ola» suenan igual, pero se escriben distinto. Completa las oraciones.",
+      "texto": "Inti le dijo [hola] a su abuela. Una [ola] del lago Titicaca mojó sus pies.",
+      "banco": ["olla"],
+      "pista": "El saludo se escribe con h. El agua que sube y baja en el lago se escribe sin h.",
+      "explicacion": "«Hola» es un saludo y se escribe con h. «Ola» es el agua que se mueve en el lago o en el mar. Suenan igual, pero se escriben distinto: se llaman homófonas.",
+      "error": "homofonas"
+    },
+    {
+      "id": "p15", "tipo": "ordenar", "nivel": 2,
+      "enunciado": "Es un juguete y también la parte donde se unen la mano y el brazo. Ordena las sílabas.",
+      "elementos": ["mu", "ñe", "ca"],
+      "unir": "",
+      "pista": "La palabra tiene la letra ñ en la segunda sílaba.",
+      "explicacion": "La palabra es «muñeca»: la muñeca para jugar y la muñeca de tu brazo. Mu-ñe-ca.",
+      "error": "escritura-palabra"
+    }
+  ],
+  "comprobacion": [
+    {
+      "id": "c1", "tipo": "opcion", "nivel": 1,
+      "enunciado": "Lee: «Wara y su abuelo juegan a las cartas». ¿Qué cartas son?",
+      "opciones": [
+        { "texto": "las cartas de un juego", "emoji": "🃏", "correcta": true },
+        { "texto": "las cartas que se escriben y se envían", "emoji": "✉️", "pista": "Esas cartas se escriben para alguien. Fíjate: la oración dice que juegan.", "error": "confunde-significado" }
+      ],
+      "pista": "Busca la pista en la oración: ¿qué hacen Wara y su abuelo?",
+      "explicacion": "Aquí «cartas» son las de un juego, porque Wara y su abuelo juegan con ellas.",
+      "error": "confunde-significado"
+    },
+    {
+      "id": "c2", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Toca las dos palabras que se escriben igual.",
+      "texto": "Sofía enciende una *vela* en su casa. En el lago, un bote con una *vela* blanca avanza con el viento.",
+      "pista": "Busca una palabra que aparece dos veces.",
+      "explicacion": "«Vela» aparece dos veces: la vela que Sofía encendió da luz, y la vela del bote es la tela que recibe el viento.",
+      "error": "no-reconoce-homonima"
+    },
+    {
+      "id": "c3", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "¿Qué significa «copa» en cada oración?",
+      "categorias": [
+        { "id": "arbol", "texto": "Parte de arriba del árbol", "emoji": "🌳" },
+        { "id": "premio", "texto": "Premio de un campeonato", "emoji": "🏆" }
+      ],
+      "elementos": [
+        { "texto": "El viento mueve la copa del árbol.", "categoria": "arbol" },
+        { "texto": "El mono subió hasta la copa del árbol.", "categoria": "arbol" },
+        { "texto": "La copa del toborochi está llena de flores.", "categoria": "arbol" },
+        { "texto": "Nuestro equipo ganó la copa.", "categoria": "premio" },
+        { "texto": "La capitana levantó la copa en la cancha.", "categoria": "premio" },
+        { "texto": "La copa del campeonato es dorada.", "categoria": "premio" }
+      ],
+      "pista": "Busca pistas: «árbol», «toborochi» o «equipo», «campeonato», «cancha».",
+      "explicacion": "Parte de arriba del árbol: la copa que mueve el viento, adonde subió el mono y la del toborochi. Premio: la que ganó el equipo, la que levantó la capitana y la del campeonato.",
+      "error": "confunde-significado"
+    },
+    {
+      "id": "c4", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha y escribe la palabra que sirve para las dos cosas.",
+      "escuchar": "Es la parte del cuerpo que el perro mueve cuando está contento. También es la fila de personas que esperan su turno. ¿Qué palabra es?",
+      "respuestas": ["cola"],
+      "pista": "El perro la mueve de un lado a otro. Y cuando esperas tu turno para comprar pan, haces una... Empieza con c.",
+      "explicacion": "La palabra es «cola»: la cola del perro y la cola de personas que esperan.",
+      "error": "escucha-homonima"
+    },
+    {
+      "id": "c5", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa las dos oraciones con la misma palabra homónima.",
+      "texto": "El perro saca la [lengua] cuando tiene calor. El aimara es una [lengua] de Bolivia.",
+      "banco": ["mesa", "nube"],
+      "pista": "Busca una parte de la boca que también sirve para nombrar un idioma.",
+      "explicacion": "«Lengua» es la parte de la boca y también es un idioma, como el aimara, el quechua, el guaraní o el castellano.",
+      "error": "no-reconoce-homonima"
+    },
+    {
+      "id": "c6", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "Une cada oración con lo que significa la palabra «bota» o «sierra».",
+      "pares": [
+        ["La bota de Kusi está llena de barro.", { "texto": "calzado", "emoji": "👢" }],
+        ["Luis bota la basura en el basurero.", { "texto": "echa, tira", "emoji": "🗑️" }],
+        ["La carpintera corta la tabla con la sierra.", { "texto": "herramienta para cortar" }],
+        ["A lo lejos se ven las montañas de la sierra.", { "texto": "fila de montañas", "emoji": "⛰️" }]
+      ],
+      "pista": "Busca las pistas: «barro», «basura», «corta», «montañas».",
+      "explicacion": "La bota de Kusi con barro es un calzado. Luis bota la basura: la tira. La sierra que corta es una herramienta. La sierra de montañas es una fila de montañas.",
+      "error": "confunde-significado"
+    },
+    {
+      "id": "c7", "tipo": "escribir", "nivel": 3,
+      "enunciado": "Escribe la palabra que completa las dos oraciones: «La ___ de la silla está rota». «La ___ nada en la laguna con sus patitos».",
+      "respuestas": ["pata"],
+      "pista": "Una silla tiene cuatro. Y la mamá de los patitos también se llama así.",
+      "explicacion": "La palabra es «pata»: la pata de la silla es la parte que la sostiene, y la pata es la mamá de los patitos, la hembra del pato.",
+      "error": "no-reconoce-homonima"
+    },
+    {
+      "id": "c8", "tipo": "multiple", "nivel": 3,
+      "enunciado": "¿En qué oraciones «sal» es lo que se pone a la comida? Elige todas.",
+      "opciones": [
+        { "texto": "La sopa necesita un poco de sal.", "correcta": true },
+        { "texto": "Mi abuela compra sal en la feria.", "correcta": true },
+        { "texto": "¡Sal al patio a jugar!", "pista": "Aquí «sal» es una orden: ¡ve afuera! Viene de «salir».", "error": "confunde-significado" },
+        { "texto": "Sal de la casa con tu chompa.", "pista": "Aquí «sal» viene de «salir»: es una orden para ir afuera.", "error": "confunde-significado" }
+      ],
+      "columnas": 1,
+      "pista": "En dos oraciones «sal» es algo que se come. En las otras es una orden para ir afuera.",
+      "explicacion": "La sal de la sopa y la sal que compra la abuela en la feria se ponen a la comida. «¡Sal al patio!» y «Sal de la casa» vienen de «salir».",
+      "error": "confunde-significado"
+    }
+  ],
+  "repaso": {
+    "texto": "Las palabras homónimas se escriben y suenan igual, pero significan cosas distintas. Lee toda la oración para saber qué significan.",
+    "visual": { "tipo": "emojis", "items": ["🕯️", "⛵", "🍃", "📄"], "etiquetas": ["vela", "vela", "hoja", "hoja"] }
+  },
+  "adulto": {
+    "objetivo": "Reconocer palabras homónimas (se escriben y suenan igual, pero tienen significados distintos, como vela, banco, llama, hoja o carta) y descubrir su significado a partir del contexto de la oración. Se menciona de forma breve que hay palabras que solo suenan igual y se escriben distinto (hola, ola), llamadas homófonas.",
+    "sugerencias": [
+      "Jueguen «Una palabra, dos dibujos»: escriban una homónima (vela, hoja, banco, llama, cola) en una hoja doblada por la mitad y que dibuje un significado en cada lado.",
+      "En la calle o en la feria, cuando aparezca una homónima (el banco de la plaza, la cola para comprar, la planta del patio), pregunten: «¿Qué significa aquí? ¿Qué palabras te dieron la pista?».",
+      "Inventen juntos oraciones cortas con los dos significados de una palabra («La llama come pasto. La llama de la vela se mueve»), léanlas en voz alta y que el niño o la niña explique la diferencia."
+    ],
+    "errores": {
+      "confunde-significado": { "descripcion": "Elige el significado que no corresponde a la oración: no usa las pistas del contexto.", "sugerencia": "Lean la oración completa y subrayen juntos las palabras que ayudan a decidir («barco», «dinero», «come pasto»)." },
+      "no-reconoce-homonima": { "descripcion": "No reconoce que la misma palabra puede tener otro significado.", "sugerencia": "Hagan una lista en la pared con homónimas y sus dos significados, con un dibujo para cada uno, y agreguen las que vayan descubriendo." },
+      "escucha-homonima": { "descripcion": "Le cuesta descubrir la palabra homónima cuando escucha las pistas.", "sugerencia": "Díganle dos pistas en voz alta («da luz y tiene un barco») y pidan que adivine la palabra antes de escribirla." },
+      "produce-homonima": { "descripcion": "Le cuesta escribir oraciones que muestren los dos significados de una palabra.", "sugerencia": "Primero dibujen los dos significados y después escriban una oración corta para cada dibujo." },
+      "homofonas": { "descripcion": "Confunde palabras que suenan igual pero se escriben distinto (hola y ola).", "sugerencia": "Recuerden juntos que el saludo «hola» lleva h, y escriban las dos palabras con un dibujo: una mano que saluda y el agua del lago." },
+      "escritura-palabra": { "descripcion": "Reconoce la palabra, pero le cuesta escribirla (por ejemplo, con ñ).", "sugerencia": "Separen la palabra en sílabas con palmadas (mu-ñe-ca) y escríbanla sílaba por sílaba." }
+    }
+  }
+}

@@ -1,0 +1,453 @@
+{
+  "id": "com-6-4",
+  "titulo": "Mi autobiografía",
+  "objetivo": "Cuento mi propia historia en orden y con «yo»: desde que nací hasta hoy, y lo que sueño para el futuro.",
+  "lecturas": [
+    {
+      "id": "historia-inti",
+      "titulo": "Mi historia",
+      "genero": "autobiografía",
+      "emoji": "🧒",
+      "parrafos": [
+        "Me llamo Inti y tengo ocho años. Nací en Cochabamba, un día de mucho sol. Por eso mi familia me puso Inti, que en quechua quiere decir «sol».",
+        "Cuando era bebé, dormía mucho y me gustaba jugar con una cuchara. Aprendí a caminar cuando tenía un año.",
+        "A los seis años entré a la escuela. El primer día estaba nervioso, pero conocí a Luis, mi mejor amigo. Ese año aprendí a leer.",
+        "Ahora estoy en segundo de primaria. Me gusta jugar fútbol y ayudar a mi abuela a cocinar sopa de maní.",
+        "Cuando sea grande, quiero ser piloto de avión para ver las montañas desde el cielo."
+      ]
+    }
+  ],
+  "explicacion": [
+    {
+      "texto": "Una **autobiografía** es la historia de mi vida, **escrita por mí**. «Auto» quiere decir «uno mismo», «bio» es «vida» y «grafía» es «escritura».",
+      "emoji": "📖",
+      "visual": { "tipo": "emojis", "items": ["🧒", "📖", "✏️"], "etiquetas": ["yo", "mi vida", "la escribo"] }
+    },
+    {
+      "texto": "La escribo en **primera persona**, con palabras como yo, me y mi: «Yo nací...», «Me gusta...», «Mi familia...». Si cuento la vida de otra persona, ya no es mi autobiografía.",
+      "visual": {
+        "tipo": "tabla",
+        "columnas": ["Mi autobiografía", "La historia de Ana"],
+        "filas": [["Yo nací en Sucre.", "Ana nació en Sucre."], ["Me gusta el majadito.", "A Ana le gusta el majadito."]]
+      }
+    },
+    {
+      "texto": "Cuento mi vida **en orden**: cuando nací, cuando era bebé, cuando entré a la escuela, cómo soy ahora y qué quiero hacer en el futuro.",
+      "visual": { "tipo": "emojis", "items": ["👶", "🍼", "🎒", "🧒", "🌟"], "etiquetas": ["nací", "bebé", "escuela", "ahora", "futuro"] }
+    },
+    {
+      "texto": "¡Cuídate! Usa solo tu nombre o tu apodo. **Nunca** escribas tu dirección, tu teléfono ni el nombre de tu escuela. Esos datos son privados.",
+      "emoji": "🔒",
+      "visual": {
+        "tipo": "tabla",
+        "columnas": ["Sí escribo", "No escribo"],
+        "filas": [["mi nombre o apodo", "mi dirección"], ["lo que me gusta", "mi teléfono"], ["mis recuerdos", "el nombre de mi escuela"]]
+      }
+    }
+  ],
+  "ejemplo": {
+    "instruccion": "Mira cómo Nayra escribe su autobiografía, paso a paso.",
+    "pasos": [
+      {
+        "texto": "Primero, Nayra piensa en las partes de su vida, en orden: cuando nació, cuando era bebé, la escuela, ahora y el futuro.",
+        "visual": { "tipo": "emojis", "items": ["👶", "🍼", "🎒", "👧", "🌟"], "etiquetas": ["nací", "bebé", "escuela", "ahora", "futuro"] }
+      },
+      {
+        "texto": "Empieza por el principio y usa «yo»: «Me llamo Nayra. Nací en Oruro, en invierno. Cuando era bebé, me reía mucho».",
+        "visual": { "tipo": "emojis", "items": ["👶", "🍼"], "etiquetas": ["nací", "bebé"] }
+      },
+      {
+        "texto": "Sigue en orden: «A los seis años entré a la escuela y aprendí a leer. Ahora tengo siete años y me gusta bailar».",
+        "visual": { "tipo": "emojis", "items": ["🎒", "👧"], "etiquetas": ["escuela", "ahora"] }
+      },
+      {
+        "texto": "Termina con el futuro: «Cuando sea grande, quiero ser científica». Nayra usó solo su nombre: no escribió su dirección, su teléfono ni su escuela.",
+        "visual": { "tipo": "emojis", "items": ["🔬", "🔒"], "etiquetas": ["futuro", "datos cuidados"] }
+      }
+    ]
+  },
+  "guiada": {
+    "intro": "Ahora lo hacemos juntos.",
+    "pasos": [
+      {
+        "id": "g1", "tipo": "completar",
+        "enunciado": "Nayra escribe sobre sí misma. Completa con las palabras que usa ella.",
+        "apoyo": "Pon «yo» delante de cada ficha y léela en voz alta. ¿Cuál suena bien?",
+        "texto": "Yo [nací] en Oruro y [vivo] con mi familia.",
+        "banco": ["nació", "vive"],
+        "pista": "Di la oración completa con cada ficha. ¿Cuál suena bien con «yo»?",
+        "explicacion": "Yo **nací** en Oruro y **vivo** con mi familia. «Nació» y «vive» se usan cuando hablamos de otra persona.",
+        "error": "primera-persona"
+      },
+      {
+        "id": "g2", "tipo": "ordenar",
+        "enunciado": "Ordena las partes de una autobiografía.",
+        "apoyo": "Empieza por lo que pasó hace más tiempo: ¡cuando naciste!",
+        "elementos": [
+          { "texto": "Cuando nací", "emoji": "👶" },
+          { "texto": "Cuando era bebé", "emoji": "🍼" },
+          { "texto": "Cuando entré a la escuela", "emoji": "🎒" },
+          { "texto": "Ahora", "emoji": "🧒" },
+          { "texto": "En el futuro", "emoji": "🌟" }
+        ],
+        "vertical": true,
+        "pista": "Piensa: ¿qué pasó primero, ser bebé o entrar a la escuela? El futuro va al final.",
+        "explicacion": "El orden es: cuando nací, cuando era bebé, cuando entré a la escuela, ahora y en el futuro.",
+        "error": "orden-cronologico"
+      },
+      {
+        "id": "g3", "tipo": "escribir-libre",
+        "enunciado": "Escribe la primera oración de tu autobiografía: di cómo te llamas.",
+        "apoyo": "Usa solo tu nombre o tu apodo. No escribas tu apellido, tu dirección ni tu teléfono.",
+        "guia": ["Me llamo...", "Mi apodo es..."],
+        "requisitos": [
+          { "tipo": "mayuscula-inicial" },
+          { "tipo": "punto-final" },
+          { "tipo": "min-palabras", "valor": 3 },
+          { "tipo": "incluye", "palabras": ["llamo", "apodo", "nombre", "soy"] }
+        ],
+        "modelo": "Me llamo Kusi.",
+        "pista": "Empieza con «Me llamo...» y termina con un punto.",
+        "explicacion": "Por ejemplo: «Me llamo Kusi.» Empieza con mayúscula, termina con punto y solo dice el nombre.",
+        "error": "produce-texto"
+      }
+    ]
+  },
+  "practica": [
+    {
+      "id": "p1", "tipo": "opcion", "nivel": 1,
+      "enunciado": "¿Qué es una autobiografía?",
+      "opciones": [
+        { "texto": "La historia de mi vida, escrita por mí.", "correcta": true },
+        { "texto": "La historia de otra persona, escrita por mí.", "pista": "Si cuentas la vida de otra persona, no es tu autobiografía. «Auto» quiere decir «uno mismo».", "error": "concepto-autobiografia" },
+        { "texto": "Un cuento inventado sobre animales.", "pista": "Una autobiografía cuenta cosas que pasaron de verdad en tu vida.", "error": "concepto-autobiografia" }
+      ],
+      "columnas": 1,
+      "pista": "Recuerda: «auto» es «uno mismo» y «bio» es «vida».",
+      "explicacion": "Una autobiografía es la historia de mi propia vida, y la escribo yo.",
+      "error": "concepto-autobiografia"
+    },
+    {
+      "id": "p2", "tipo": "relacionar", "nivel": 1,
+      "enunciado": "Une cada parte de la vida de Rosa con lo que ella cuenta.",
+      "pares": [
+        [{ "texto": "Cuando nací", "emoji": "👶" }, "Pesé tres kilos."],
+        [{ "texto": "Cuando era bebé", "emoji": "🍼" }, "Gateaba por toda la casa."],
+        [{ "texto": "En la escuela", "emoji": "🎒" }, "Aprendí a sumar."],
+        [{ "texto": "En el futuro", "emoji": "🌟" }, "Seré veterinaria."]
+      ],
+      "pista": "Piensa qué pasa cuando alguien nace, cuando es bebé, cuando va a la escuela y cuando sea grande.",
+      "explicacion": "Cuando nací: pesé tres kilos. Cuando era bebé: gateaba. En la escuela: aprendí a sumar. En el futuro: seré veterinaria.",
+      "error": "orden-cronologico"
+    },
+    {
+      "id": "p3", "tipo": "ordenar", "nivel": 1,
+      "enunciado": "Ordena la autobiografía de Mateo, desde que nació.",
+      "elementos": [
+        "Nací en Trinidad, en el Beni.",
+        "Cuando era bebé, dormía en una hamaca.",
+        "A los seis años entré a la escuela.",
+        "Ahora tengo siete años y juego con mi perro.",
+        "Cuando sea grande, quiero ser músico."
+      ],
+      "vertical": true,
+      "pista": "Busca las palabras que dicen cuándo: «nací», «cuando era bebé», «a los seis años», «ahora», «cuando sea grande».",
+      "explicacion": "Primero nació, luego fue bebé, después entró a la escuela, ahora tiene siete años y al final cuenta lo que quiere ser.",
+      "error": "orden-cronologico"
+    },
+    {
+      "id": "p4", "tipo": "escribir", "nivel": 1,
+      "enunciado": "Escucha y escribe la oración.",
+      "escuchar": "Yo nací en Tarija.",
+      "respuestas": ["Yo nací en Tarija.", "Yo nací en Tarija"],
+      "pista": "Son cuatro palabras. «Nací» es de la familia de «nacer»: se escribe con c. Tarija es un nombre propio.",
+      "explicacion": "Se escribe: «Yo nací en Tarija.» «Nací» lleva c, como «nacer», y tilde en la í. «Tarija» empieza con mayúscula.",
+      "error": "dictado"
+    },
+    {
+      "id": "p5", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Toca las palabras que dicen cuándo pasó cada cosa.",
+      "texto": "*Primero* aprendí a gatear. *Después* aprendí a caminar. *Ahora* corro en el patio.",
+      "pista": "Son tres palabras, una al comienzo de cada oración. Pregúntate: ¿qué pasó antes, qué pasó luego y qué pasa hoy?",
+      "explicacion": "**Primero**, **después** y **ahora** dicen cuándo pasó cada cosa. Te ayudan a contar tu vida en orden.",
+      "error": "palabras-tiempo"
+    },
+    {
+      "id": "p6", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "¿La oración habla de quien escribe (yo) o de otra persona?",
+      "categorias": [
+        { "id": "yo", "texto": "Habla de mí (yo)", "emoji": "🙋" },
+        { "id": "otra", "texto": "Habla de otra persona", "emoji": "👉" }
+      ],
+      "elementos": [
+        { "texto": "Nací en un día de lluvia.", "categoria": "yo" },
+        { "texto": "Nació en un día de lluvia.", "categoria": "otra" },
+        { "texto": "Aprendí a nadar en el río.", "categoria": "yo" },
+        { "texto": "Aprendió a nadar en el río.", "categoria": "otra" },
+        { "texto": "Me gusta el majadito.", "categoria": "yo" },
+        { "texto": "A Luis le gusta el majadito.", "categoria": "otra" }
+      ],
+      "pista": "Fíjate en cómo termina la palabra que dice qué pasó: «nací» o «nació», «aprendí» o «aprendió».",
+      "explicacion": "Hablan de mí: nací, aprendí, me gusta. Hablan de otra persona: nació, aprendió, a Luis le gusta.",
+      "error": "primera-persona"
+    },
+    {
+      "id": "p7", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa la autobiografía de Luis. Él la escribe con «yo».",
+      "texto": "Me llamo Luis. [Nací] en Cobija. A los seis años [entré] a la escuela. Ahora [tengo] siete años.",
+      "banco": ["Nació", "entró", "tiene"],
+      "pista": "Luis habla de sí mismo. Prueba cada ficha con «yo» delante: ¿suena bien?",
+      "explicacion": "Me llamo Luis. **Nací** en Cobija. A los seis años **entré** a la escuela. Ahora **tengo** siete años. «Nació», «entró» y «tiene» sirven para hablar de otra persona.",
+      "error": "primera-persona"
+    },
+    {
+      "id": "p8", "tipo": "multiple", "nivel": 2,
+      "enunciado": "¿Qué SÍ puedes escribir en tu autobiografía? Elige todas.",
+      "opciones": [
+        { "texto": "Mi nombre o mi apodo", "correcta": true },
+        { "texto": "Lo que me gusta hacer", "correcta": true },
+        { "texto": "Un recuerdo de cuando era bebé", "correcta": true },
+        { "texto": "La dirección de mi casa", "pista": "La dirección dice dónde vives: es un dato privado.", "error": "privacidad" },
+        { "texto": "Mi número de teléfono", "pista": "Tu número de teléfono es un dato privado.", "error": "privacidad" },
+        { "texto": "El nombre de mi escuela", "pista": "El nombre de tu escuela dice dónde estás cada día: es privado.", "error": "privacidad" }
+      ],
+      "columnas": 1,
+      "pista": "Algunos datos son privados porque dicen dónde encontrarte. Esos no se escriben.",
+      "explicacion": "Puedes escribir tu nombre o apodo, lo que te gusta y tus recuerdos. La dirección, el teléfono y el nombre de tu escuela son privados.",
+      "error": "privacidad"
+    },
+    {
+      "id": "p9", "tipo": "opcion", "nivel": 2,
+      "enunciado": "Escucha lo que cuenta Wara. ¿De qué parte de su vida habla?",
+      "escuchar": "Cuando sea grande, quiero ser bombera y ayudar a las personas.",
+      "opciones": [
+        { "texto": "Del futuro", "emoji": "🌟", "correcta": true },
+        { "texto": "De cuando era bebé", "emoji": "🍼", "pista": "Escucha otra vez el principio: ¿dice «cuando era bebé»?", "error": "palabras-tiempo" },
+        { "texto": "De cuando entró a la escuela", "emoji": "🎒", "pista": "¿Habla de algo que ya pasó o de algo que todavía no pasa?", "error": "palabras-tiempo" }
+      ],
+      "columnas": 1,
+      "pista": "Escucha bien las primeras palabras: dicen cuándo pasa.",
+      "explicacion": "Wara dice «Cuando sea grande, quiero ser bombera». Habla del **futuro**: algo que todavía no pasó.",
+      "error": "palabras-tiempo"
+    },
+    {
+      "id": "p10", "tipo": "memoria", "nivel": 2,
+      "enunciado": "Encuentra las parejas: lo que digo yo y lo que digo de otra persona.",
+      "pares": [["nací", "nació"], ["aprendí", "aprendió"], ["tengo", "tiene"], ["me gusta", "le gusta"]],
+      "pista": "«Nací» lo digo de mí; «nació», de otra persona. Busca las palabras que se parecen.",
+      "explicacion": "De mí: nací, aprendí, tengo, me gusta. De otra persona: nació, aprendió, tiene, le gusta. En tu autobiografía usas las de «yo».",
+      "error": "primera-persona"
+    },
+    {
+      "id": "p11", "tipo": "escribir-libre", "nivel": 2,
+      "enunciado": "Escribe una oración sobre ti ahora: cuántos años tienes y algo que te gusta.",
+      "guia": ["Ahora tengo... años.", "Me gusta..."],
+      "requisitos": [
+        { "tipo": "mayuscula-inicial" },
+        { "tipo": "punto-final" },
+        { "tipo": "min-palabras", "valor": 6 },
+        { "tipo": "incluye", "palabras": ["tengo"] },
+        { "tipo": "incluye", "palabras": ["gusta", "encanta"] }
+      ],
+      "modelo": "Ahora tengo ocho años y me gusta pintar.",
+      "pista": "Empieza con «Ahora tengo...» y después cuenta algo que te guste hacer.",
+      "explicacion": "Por ejemplo: «Ahora tengo ocho años y me gusta pintar.» Habla de ti con «yo» y cuenta cómo eres hoy.",
+      "error": "produce-texto"
+    },
+    {
+      "id": "p12", "tipo": "ordenar", "nivel": 3,
+      "enunciado": "Ordena lo que cuenta Arami, desde lo que pasó primero hasta hoy.",
+      "elementos": [
+        "Nací en Santa Cruz.",
+        "Aprendí a gatear.",
+        "Aprendí a caminar.",
+        "Entré al kínder.",
+        "Ahora estoy en segundo de primaria."
+      ],
+      "vertical": true,
+      "pista": "Aquí no dice «cuando era bebé». Piensa: ¿qué aprende primero un bebé, a gatear o a caminar?",
+      "explicacion": "Arami nació, después aprendió a gatear, luego a caminar, más tarde entró al kínder y ahora está en segundo.",
+      "error": "orden-cronologico"
+    },
+    {
+      "id": "p13", "tipo": "opcion", "nivel": 3,
+      "enunciado": "Lee la historia de Inti. ¿Por qué es una autobiografía?",
+      "lectura": "historia-inti",
+      "opciones": [
+        { "texto": "Porque Inti cuenta su propia vida y usa «yo».", "correcta": true },
+        { "texto": "Porque habla de la ciudad de Cochabamba.", "pista": "Cochabamba aparece en el texto, pero ¿de quién es la historia y quién la cuenta?", "error": "concepto-autobiografia" },
+        { "texto": "Porque es un cuento inventado.", "pista": "Inti cuenta cosas que le pasaron de verdad.", "error": "concepto-autobiografia" }
+      ],
+      "columnas": 1,
+      "pista": "Fíjate en quién escribe el texto y de quién habla.",
+      "explicacion": "Es una autobiografía porque Inti escribe sobre su propia vida, en orden y con «yo»: «Me llamo Inti», «nací», «aprendí».",
+      "error": "concepto-autobiografia"
+    },
+    {
+      "id": "p14", "tipo": "escribir", "nivel": 3,
+      "enunciado": "Escribe esta oración como la diría Kusi en su autobiografía, con «yo»: «Kusi aprendió a tocar el charango.»",
+      "respuestas": [
+        "Aprendí a tocar el charango.",
+        "Yo aprendí a tocar el charango.",
+        "Aprendí a tocar el charango",
+        "Yo aprendí a tocar el charango"
+      ],
+      "pista": "Kusi habla de su propia vida. Cambia «aprendió» por la palabra que usarías tú para hablar de ti.",
+      "explicacion": "Kusi escribiría: «Aprendí a tocar el charango.» (o «Yo aprendí...»). «Aprendí» es la palabra que va con «yo».",
+      "error": "primera-persona"
+    },
+    {
+      "id": "p15", "tipo": "escribir-libre", "nivel": 3,
+      "enunciado": "Escribe tu autobiografía corta, en orden: cuando naciste, ahora y el futuro. Usa solo tu nombre o apodo.",
+      "guia": ["Me llamo... Nací en...", "Cuando era bebé...", "Ahora tengo... años y me gusta...", "Cuando sea grande, quiero..."],
+      "requisitos": [
+        { "tipo": "mayuscula-inicial" },
+        { "tipo": "punto-final" },
+        { "tipo": "min-oraciones", "valor": 3 },
+        { "tipo": "min-palabras", "valor": 15 },
+        { "tipo": "incluye-todas", "palabras": ["nací", "ahora"] },
+        { "tipo": "incluye", "palabras": ["grande", "futuro", "quiero", "seré"] }
+      ],
+      "modelo": "Me llamo Kusi. Nací en Potosí. Cuando era bebé, dormía mucho. Ahora tengo ocho años y me gusta leer. Cuando sea grande, quiero ser astronauta.",
+      "pista": "Sigue la guía, una oración para cada parte de tu vida. Cada oración empieza con mayúscula y termina con punto.",
+      "explicacion": "Por ejemplo: «Me llamo Kusi. Nací en Potosí. Cuando era bebé, dormía mucho. Ahora tengo ocho años y me gusta leer. Cuando sea grande, quiero ser astronauta.»",
+      "error": "produce-texto"
+    }
+  ],
+  "comprobacion": [
+    {
+      "id": "c1", "tipo": "opcion", "nivel": 1,
+      "enunciado": "Kusi escribe su autobiografía. ¿Qué oración cuenta algo de su propia vida?",
+      "opciones": [
+        { "texto": "Yo aprendí a andar en bicicleta.", "correcta": true },
+        { "texto": "Ana aprendió a andar en bicicleta.", "pista": "Esta oración habla de Ana, no de quien escribe.", "error": "primera-persona" },
+        { "texto": "La bicicleta tiene dos ruedas.", "pista": "Esta oración no cuenta nada de la vida de quien escribe.", "error": "concepto-autobiografia" }
+      ],
+      "columnas": 1,
+      "pista": "Busca la oración en la que Kusi habla de su propia vida, con «yo».",
+      "explicacion": "«Yo aprendí a andar en bicicleta» cuenta algo de la propia vida de Kusi, con «yo». Eso es lo que se escribe en una autobiografía.",
+      "error": "concepto-autobiografia"
+    },
+    {
+      "id": "c2", "tipo": "escribir", "nivel": 1,
+      "enunciado": "Escucha y escribe la oración.",
+      "escuchar": "Aprendí a leer.",
+      "respuestas": ["Aprendí a leer.", "Aprendí a leer"],
+      "pista": "Son tres palabras. La primera empieza con mayúscula porque inicia la oración.",
+      "explicacion": "Se escribe: «Aprendí a leer.» «Aprendí» lleva tilde en la í.",
+      "error": "dictado"
+    },
+    {
+      "id": "c3", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "¿Cuándo pasa? ¿Antes, ahora o en el futuro?",
+      "categorias": [
+        { "id": "antes", "texto": "Antes", "emoji": "👶" },
+        { "id": "ahora", "texto": "Ahora", "emoji": "🧒" },
+        { "id": "futuro", "texto": "En el futuro", "emoji": "🌟" }
+      ],
+      "elementos": [
+        { "texto": "Nací en el campo.", "categoria": "antes" },
+        { "texto": "Tomaba leche en mamadera.", "categoria": "antes" },
+        { "texto": "Tengo siete años.", "categoria": "ahora" },
+        { "texto": "Me gusta dibujar llamas.", "categoria": "ahora" },
+        { "texto": "Viajaré al salar de Uyuni.", "categoria": "futuro" },
+        { "texto": "Seré carpintera.", "categoria": "futuro" }
+      ],
+      "pista": "Fíjate en la palabra que dice qué pasa: «nací» ya pasó, «tengo» es hoy y «seré» todavía no pasa.",
+      "explicacion": "Antes: nací, tomaba leche. Ahora: tengo siete años, me gusta dibujar. En el futuro: viajaré, seré carpintera.",
+      "error": "palabras-tiempo"
+    },
+    {
+      "id": "c4", "tipo": "opcion", "nivel": 2,
+      "enunciado": "Sofía escribió: «Me llamo Sofía. Vivo en la calle Los Pinos, número 123.» ¿Qué debe borrar?",
+      "opciones": [
+        { "texto": "La calle y el número de su casa", "correcta": true },
+        { "texto": "Su nombre", "pista": "El nombre o el apodo sí se pueden escribir.", "error": "privacidad" },
+        { "texto": "Nada, está bien así", "pista": "Hay un dato que dice dónde vive Sofía. ¿Es privado?", "error": "privacidad" }
+      ],
+      "columnas": 1,
+      "pista": "Piensa: ¿qué dato dice dónde encontrar a Sofía?",
+      "explicacion": "Sofía debe borrar la calle y el número de su casa: la dirección es un dato privado. Su nombre sí puede quedar.",
+      "error": "privacidad"
+    },
+    {
+      "id": "c5", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa la autobiografía de Juan con las palabras que dicen cuándo.",
+      "texto": "[Cuando era bebé], dormía en una cuna. [A los seis años] entré a la escuela. [Ahora] estoy en segundo.",
+      "banco": ["En el futuro"],
+      "pista": "Lee cada oración: ¿habla de un bebé, de la escuela o de hoy?",
+      "explicacion": "**Cuando era bebé**, dormía en una cuna. **A los seis años** entré a la escuela. **Ahora** estoy en segundo. «En el futuro» es para lo que todavía no pasó.",
+      "error": "palabras-tiempo"
+    },
+    {
+      "id": "c6", "tipo": "multiple", "nivel": 2,
+      "enunciado": "Escucha a Mateo. ¿De qué partes de su vida habla? Elige todas.",
+      "escuchar": "Me llamo Mateo. Nací en Sucre. Cuando era bebé, me gustaba jugar con agua. Cuando sea grande, quiero ser enfermero.",
+      "opciones": [
+        { "texto": "De cuando nació", "emoji": "👶", "correcta": true },
+        { "texto": "De cuando era bebé", "emoji": "🍼", "correcta": true },
+        { "texto": "De cuando entró a la escuela", "emoji": "🎒", "pista": "¿Mateo dijo algo de la escuela? Escucha otra vez.", "error": "palabras-tiempo" },
+        { "texto": "De cómo es ahora", "emoji": "🧒", "pista": "¿Mateo contó cómo es hoy? Escucha otra vez.", "error": "palabras-tiempo" },
+        { "texto": "Del futuro", "emoji": "🌟", "correcta": true }
+      ],
+      "mezclar": false,
+      "columnas": 1,
+      "pista": "Escucha otra vez y fíjate en las palabras que dicen cuándo pasa cada cosa. Mateo no habla de todas las partes.",
+      "explicacion": "Mateo habla de cuando nació («Nací en Sucre»), de cuando era bebé («me gustaba jugar con agua») y del futuro («quiero ser enfermero»). No habla de la escuela ni de cómo es ahora.",
+      "error": "palabras-tiempo"
+    },
+    {
+      "id": "c7", "tipo": "ordenar", "nivel": 3,
+      "enunciado": "Lee la historia de Inti y ordena lo que le pasó.",
+      "lectura": "historia-inti",
+      "elementos": [
+        "Nació en Cochabamba.",
+        "Aprendió a caminar.",
+        "Entró a la escuela y conoció a Luis.",
+        "Ahora está en segundo de primaria."
+      ],
+      "vertical": true,
+      "pista": "Busca en el texto cuándo pasó cada cosa: al nacer, al año, a los seis años y ahora.",
+      "explicacion": "Inti nació en Cochabamba, aprendió a caminar al año, entró a la escuela a los seis años y conoció a Luis. Ahora está en segundo.",
+      "error": "comprension-lectura"
+    },
+    {
+      "id": "c8", "tipo": "escribir-libre", "nivel": 3,
+      "enunciado": "Escribe dos oraciones sobre ti: una de cuando eras bebé y otra de ahora.",
+      "guia": ["Cuando era bebé...", "Ahora..."],
+      "requisitos": [
+        { "tipo": "mayuscula-inicial" },
+        { "tipo": "punto-final" },
+        { "tipo": "min-oraciones", "valor": 2 },
+        { "tipo": "incluye-todas", "palabras": ["bebé", "ahora"] }
+      ],
+      "modelo": "Cuando era bebé, lloraba mucho. Ahora me gusta cantar con mi hermana.",
+      "pista": "Primero escribe «Cuando era bebé...» y termina con punto. Después escribe «Ahora...».",
+      "explicacion": "Por ejemplo: «Cuando era bebé, lloraba mucho. Ahora me gusta cantar con mi hermana.» Dos oraciones en orden y con «yo».",
+      "error": "produce-texto"
+    }
+  ],
+  "repaso": {
+    "texto": "Una autobiografía es mi propia historia, escrita por mí con «yo». La cuento en orden: nací, era bebé, entré a la escuela, ahora y el futuro. Uso solo mi nombre o mi apodo.",
+    "visual": { "tipo": "emojis", "items": ["👶", "🍼", "🎒", "🧒", "🌟"], "etiquetas": ["nací", "bebé", "escuela", "ahora", "futuro"] }
+  },
+  "adulto": {
+    "objetivo": "Comprender qué es una autobiografía (la historia de la propia vida, escrita por uno mismo y en primera persona), ordenar hechos de la propia vida en el tiempo (nacimiento, primeros años, escuela, presente y futuro) y escribir oraciones autobiográficas sencillas, cuidando los datos personales.",
+    "sugerencias": [
+      "En casa, miren juntos fotos o recuerdos de la familia y ordénenlos desde que nació hasta hoy. Si no hay fotos, cuéntenle anécdotas o hagan dibujos: toda historia vale. Si hay datos que no conocen o que prefieren no contar (por ejemplo, dónde nació), puede elegir otros recuerdos.",
+      "Hagan una «línea de la vida» con una cuerda o una tira de papel y cuelguen tarjetas con dibujos: «nací», «bebé», «escuela», «ahora» y «cuando sea grande».",
+      "En el camino a la feria o al mercado, pídanle que cuente con «yo» algo que aprendió de más pequeño o pequeña. Al volver, escriban juntos esa oración.",
+      "Al revisar sus textos, verifiquen que use solo su nombre o apodo y que no aparezcan la dirección, el teléfono ni el nombre de la escuela. Expliquen por qué esos datos se cuidan."
+    ],
+    "errores": {
+      "concepto-autobiografia": { "descripcion": "No distingue una autobiografía de otros textos (un cuento inventado o la historia de otra persona).", "sugerencia": "Comparen dos textos cortos: uno en el que alguien cuenta su vida con «yo» y otro sobre otra persona. Pregunten: «¿quién lo escribió y de quién habla?»." },
+      "primera-persona": { "descripcion": "Mezcla la primera persona (yo nací) con la tercera (él o ella nació).", "sugerencia": "Jueguen a «¿de quién habla?»: digan oraciones como «nací en el campo» o «nació en el campo» y pidan que levante la mano solo cuando la oración habla de quien la dice (yo)." },
+      "orden-cronologico": { "descripcion": "Le cuesta ordenar los hechos de una vida en el tiempo.", "sugerencia": "Usen tarjetas con dibujos de etapas (bebé, gatear, caminar, escuela, ahora) y ordénenlas sobre la mesa de la más antigua a la más reciente." },
+      "palabras-tiempo": { "descripcion": "No reconoce las palabras que indican cuándo pasa algo (cuando era bebé, ahora, cuando sea grande).", "sugerencia": "Al conversar sobre el día, usen «primero», «después», «ahora» y «mañana», y pidan que cuente lo que hizo con esas palabras." },
+      "privacidad": { "descripcion": "No identifica qué datos personales son privados.", "sugerencia": "Conversen sobre qué datos se pueden compartir (nombre, gustos) y cuáles no (dirección, teléfono, escuela), también al usar internet o juegos en línea." },
+      "dictado": { "descripcion": "Tiene dificultad para escribir oraciones dictadas (letras, tildes, mayúscula o punto).", "sugerencia": "Dicten oraciones cortas palabra por palabra y revisen juntos la mayúscula inicial, las tildes y el punto final. Relacionen palabras de la misma familia: nacer, nací." },
+      "produce-texto": { "descripcion": "Le cuesta escribir oraciones sobre su propia vida.", "sugerencia": "Primero que lo cuente en voz alta; luego escriban juntos una oración por cada etapa usando «Cuando era bebé...», «Ahora...» y «Cuando sea grande...»." },
+      "comprension-lectura": { "descripcion": "Le cuesta encontrar en un texto el orden en que pasaron los hechos.", "sugerencia": "Lean juntos un texto corto y subrayen las palabras que dicen cuándo (al año, a los seis años, ahora). Luego cuenten la historia en orden." }
+    }
+  }
+}

@@ -1,0 +1,497 @@
+{
+  "id": "soc-5-3",
+  "titulo": "Derechos y deberes de la niñez",
+  "objetivo": "Sé que todas las niñas y todos los niños tenemos derechos, conozco mis deberes y sé a quién pedir ayuda.",
+  "explicacion": [
+    {
+      "texto": "Un **derecho** es algo que toda niña y todo niño necesita para vivir bien y crecer feliz. Los derechos son para todos, y nadie te los puede quitar.",
+      "emoji": "🧒",
+      "visual": { "tipo": "emojis", "items": ["🏠", "📚", "🏥", "⚽"], "etiquetas": ["familia", "educación", "salud", "juego"] }
+    },
+    {
+      "texto": "En Bolivia, el **Código Niña, Niño y Adolescente** (Ley 548) protege tus derechos. Bolivia y casi todos los países del mundo aceptaron la **Convención sobre los Derechos del Niño**.",
+      "emoji": "📜"
+    },
+    {
+      "texto": "Tienes derecho a la **vida**, a un **nombre**, a una **familia**, a la **educación**, a la **salud**, a **jugar y descansar**, a que te **protejan** y a que te **escuchen**.",
+      "visual": {
+        "tipo": "emojis",
+        "items": ["❤️", "📛", "🏠", "📚", "🏥", "⚽", "🛡️", "👂"],
+        "etiquetas": ["vida", "nombre", "familia", "educación", "salud", "jugar", "protección", "ser escuchado"]
+      }
+    },
+    {
+      "texto": "También tienes **deberes**: respetar a las personas, estudiar, cuidar tus cosas y la naturaleza, y ayudar en casa según tu edad. Si algo te hace daño, pide ayuda a un **adulto de confianza**.",
+      "visual": { "tipo": "emojis", "items": ["🤝", "✏️", "🌳", "🧹"], "etiquetas": ["respetar", "estudiar", "cuidar", "ayudar"] }
+    }
+  ],
+  "ejemplo": {
+    "instruccion": "Mira qué hace Inti cuando algo no está bien.",
+    "pasos": [
+      {
+        "texto": "Inti tiene derecho a jugar y a estar seguro. En el recreo juega con sus amigas y sus amigos.",
+        "visual": { "tipo": "emoji", "valor": "⚽" }
+      },
+      {
+        "texto": "Un día, un niño más grande le quita su merienda y lo empuja. Inti se siente triste y con miedo.",
+        "visual": { "tipo": "emoji", "valor": "😟" }
+      },
+      {
+        "texto": "Inti no se queda callado. Se lo cuenta a un **adulto de confianza**: su mamá, su abuelo o su maestra. Ellos lo escuchan y lo ayudan.",
+        "visual": { "tipo": "emojis", "items": ["👩", "👴", "👩‍🏫"], "etiquetas": ["mamá", "abuelo", "maestra"] }
+      },
+      {
+        "texto": "Si hace falta más ayuda, un adulto lo acompaña a la **Defensoría de la Niñez y Adolescencia**. Está en los municipios y ayuda gratis a niñas, niños y adolescentes.",
+        "visual": { "tipo": "emoji", "valor": "🤝" }
+      }
+    ]
+  },
+  "guiada": {
+    "intro": "Vamos a pensarlo juntos.",
+    "pasos": [
+      {
+        "id": "g1", "tipo": "clasificar",
+        "enunciado": "¿Es un derecho o un deber?",
+        "apoyo": "Un derecho es algo que te deben dar o respetar. Un deber es algo que tú haces para cuidar y respetar.",
+        "categorias": [
+          { "id": "derecho", "texto": "Derecho", "emoji": "⭐" },
+          { "id": "deber", "texto": "Deber", "emoji": "💪" }
+        ],
+        "elementos": [
+          { "texto": "tener un nombre", "categoria": "derecho" },
+          { "texto": "recibir atención cuando me enfermo", "categoria": "derecho" },
+          { "texto": "jugar y descansar", "categoria": "derecho" },
+          { "texto": "tener una escuela donde aprender", "categoria": "derecho" },
+          { "texto": "respetar a mis compañeros", "categoria": "deber" },
+          { "texto": "hacer mis tareas", "categoria": "deber" },
+          { "texto": "cuidar las plantas del patio", "categoria": "deber" },
+          { "texto": "ayudar a poner la mesa", "categoria": "deber" }
+        ],
+        "pista": "Pregúntate: ¿esto me lo deben dar a mí, o esto lo hago yo?",
+        "explicacion": "Derechos: tener un nombre, recibir atención, jugar y descansar, tener una escuela. Deberes: respetar, hacer mis tareas, cuidar las plantas y ayudar en casa.",
+        "error": "derecho-o-deber"
+      },
+      {
+        "id": "g2", "tipo": "relacionar",
+        "enunciado": "Une cada derecho con la situación que lo muestra.",
+        "apoyo": "Lee cada situación y piensa qué necesita la niña o el niño.",
+        "pares": [
+          ["salud", "Sofía va al centro de salud cuando tiene fiebre"],
+          ["identidad", "Juan tiene su nombre y su certificado de nacimiento"],
+          ["educación", "Rosa aprende a leer en la escuela"],
+          ["ser escuchado", "la maestra le pregunta a Luis qué opina"]
+        ],
+        "pista": "Busca primero la palabra «fiebre» y la palabra «nombre».",
+        "explicacion": "Salud: Sofía en el centro de salud. Identidad: el nombre de Juan. Educación: Rosa en la escuela. Ser escuchado: la maestra pregunta a Luis.",
+        "error": "reconoce-derechos"
+      },
+      {
+        "id": "g3", "tipo": "pasos",
+        "enunciado": "A la salida de la escuela, una persona que Luis no conoce le ofrece dulces y le pide que se vaya con ella.",
+        "apoyo": "Recuerda lo que hizo Inti en el ejemplo: habló con un adulto de confianza.",
+        "pasos": [
+          {
+            "tipo": "opcion",
+            "enunciado": "¿Qué debe hacer Luis?",
+            "opciones": [
+              { "texto": "No irse con ella y avisar enseguida a un adulto de confianza", "correcta": true },
+              { "texto": "Irse con ella porque le ofreció dulces", "pista": "Nunca nos vamos con personas que no conocemos, aunque nos ofrezcan regalos.", "error": "pedir-ayuda" },
+              { "texto": "Guardar el secreto y no contar nada", "pista": "Lo que nos da miedo o nos preocupa se cuenta a un adulto de confianza.", "error": "pedir-ayuda" }
+            ],
+            "pista": "Busca la opción que lo mantiene seguro.",
+            "explicacion": "Luis no debe irse con una persona desconocida. Debe avisar enseguida a un adulto de confianza.",
+            "error": "pedir-ayuda"
+          },
+          {
+            "tipo": "multiple",
+            "enunciado": "¿A quiénes puede contarle Luis? Elige todas las respuestas correctas.",
+            "opciones": [
+              { "texto": "a alguien de su familia", "correcta": true },
+              { "texto": "a su maestra", "correcta": true },
+              { "texto": "a la directora de la escuela", "correcta": true },
+              { "texto": "a la persona que no conoce", "pista": "Esa persona es desconocida: no es un adulto de confianza.", "error": "pedir-ayuda" },
+              { "texto": "a nadie: mejor se queda callado", "pista": "Callar no ayuda. Contarlo sí ayuda.", "error": "pedir-ayuda" }
+            ],
+            "pista": "Un adulto de confianza es alguien que conoces y que te cuida.",
+            "explicacion": "Luis puede contarle a alguien de su familia, a su maestra o a la directora: son adultos de confianza.",
+            "error": "pedir-ayuda"
+          }
+        ],
+        "pista": "Resuelve un paso a la vez.",
+        "explicacion": "Tienes derecho a estar protegido. Si algo te da miedo, no te vas con desconocidos y se lo cuentas a un adulto de confianza.",
+        "error": "pedir-ayuda"
+      }
+    ]
+  },
+  "practica": [
+    {
+      "id": "p1", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Toca las palabras que nombran derechos.",
+      "texto": "Todas las niñas y todos los niños tienen derecho a la *educación*, a la *salud* y al *juego*.",
+      "pista": "Busca lo que necesitas para aprender, para estar sano y para divertirte.",
+      "explicacion": "Educación, salud y juego son derechos de todas las niñas y todos los niños.",
+      "error": "reconoce-derechos"
+    },
+    {
+      "id": "p2", "tipo": "multiple", "nivel": 1,
+      "enunciado": "Elige todos los derechos de las niñas y los niños.",
+      "opciones": [
+        { "texto": "tener un nombre", "correcta": true },
+        { "texto": "vivir en una familia", "correcta": true },
+        { "texto": "jugar y descansar", "correcta": true },
+        { "texto": "que me griten y me peguen", "pista": "Nadie puede hacerte daño. Tienes derecho a que te protejan.", "error": "reconoce-derechos" },
+        { "texto": "quedarme sin escuela", "pista": "Tienes derecho a la educación: a ir a la escuela y aprender.", "error": "reconoce-derechos" }
+      ],
+      "pista": "Un derecho es algo bueno que te ayuda a crecer feliz.",
+      "explicacion": "Tener un nombre, vivir en una familia y jugar y descansar son derechos. Nadie puede gritarte ni pegarte, y todos tienen derecho a ir a la escuela.",
+      "error": "reconoce-derechos"
+    },
+    {
+      "id": "p3", "tipo": "memoria", "nivel": 1,
+      "enunciado": "Encuentra las parejas: el dibujo y el derecho.",
+      "pares": [
+        [{ "emoji": "🏥" }, "salud"],
+        [{ "emoji": "📚" }, "educación"],
+        [{ "emoji": "⚽" }, "juego"],
+        [{ "emoji": "📛" }, "nombre"],
+        [{ "emoji": "🏠" }, "familia"]
+      ],
+      "pista": "El hospital es para la salud y los libros, para aprender.",
+      "explicacion": "Hospital: salud. Libros: educación. Pelota: juego. Tarjeta con nombre: nombre. Casa: familia.",
+      "error": "reconoce-derechos"
+    },
+    {
+      "id": "p4", "tipo": "ordenar", "nivel": 1,
+      "enunciado": "Ordena las palabras para formar la oración.",
+      "elementos": ["Tengo", "derecho", "a", "jugar", "y", "descansar."],
+      "unir": " ",
+      "pista": "Empieza con la palabra que tiene mayúscula y termina con la que tiene punto.",
+      "explicacion": "«Tengo derecho a jugar y descansar.»",
+      "error": "orden-oracion"
+    },
+    {
+      "id": "p5", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "Separa los derechos de los deberes.",
+      "categorias": [
+        { "id": "derecho", "texto": "Derecho", "emoji": "⭐" },
+        { "id": "deber", "texto": "Deber", "emoji": "💪" }
+      ],
+      "elementos": [
+        { "texto": "tener un documento con mi nombre", "categoria": "derecho" },
+        { "texto": "dar mi opinión y que me escuchen", "categoria": "derecho" },
+        { "texto": "que nadie me haga daño", "categoria": "derecho" },
+        { "texto": "escuchar a los demás", "categoria": "deber" },
+        { "texto": "cuidar el agua", "categoria": "deber" },
+        { "texto": "respetar a mis vecinos", "categoria": "deber" }
+      ],
+      "pista": "Los derechos son lo que te deben dar o respetar. Los deberes son lo que tú haces por los demás y por la naturaleza.",
+      "explicacion": "Derechos: tener un documento con mi nombre, dar mi opinión y estar protegido. Deberes: escuchar a los demás, cuidar el agua y respetar a mis vecinos.",
+      "error": "derecho-o-deber"
+    },
+    {
+      "id": "p6", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "Une cada derecho con un deber que va con él.",
+      "pares": [
+        ["derecho a la educación", "deber de estudiar"],
+        ["derecho a que me escuchen", "deber de escuchar a los demás"],
+        ["derecho a jugar", "deber de respetar las reglas del juego"],
+        ["derecho a la salud", "deber de cuidar mi cuerpo"]
+      ],
+      "pista": "Cada derecho va con un deber parecido. Si quiero que me escuchen, yo también...",
+      "explicacion": "Educación con estudiar; que me escuchen con escuchar; jugar con respetar las reglas; y salud con cuidar mi cuerpo.",
+      "error": "derechos-deberes"
+    },
+    {
+      "id": "p7", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa la oración.",
+      "texto": "Tengo derecho a que me [respeten] y tengo el deber de [respetar] a los demás.",
+      "banco": ["griten", "molestar"],
+      "pista": "Lo que quiero para mí, también lo doy a los demás.",
+      "explicacion": "Tengo derecho a que me respeten y el deber de respetar a los demás.",
+      "error": "derechos-deberes"
+    },
+    {
+      "id": "p8", "tipo": "opcion", "nivel": 2,
+      "enunciado": "Escucha y elige de qué derecho se habla.",
+      "escuchar": "Cuando Ana nació, su familia la inscribió. Así recibió su certificado de nacimiento, con su nombre y sus apellidos.",
+      "opciones": [
+        { "texto": "derecho a la identidad y al nombre", "correcta": true },
+        { "texto": "derecho al juego", "pista": "Escucha otra vez: ¿qué recibió Ana cuando la inscribieron?", "error": "reconoce-derechos" },
+        { "texto": "derecho a la salud", "pista": "Aquí no se habla de enfermedades. ¿Qué dice el certificado de Ana?", "error": "reconoce-derechos" }
+      ],
+      "pista": "Fíjate en lo que dice el certificado de nacimiento.",
+      "explicacion": "Es el derecho a la identidad y al nombre: Ana tiene su nombre, sus apellidos y su certificado de nacimiento.",
+      "error": "reconoce-derechos"
+    },
+    {
+      "id": "p9", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha y escribe qué derecho se cumple.",
+      "escuchar": "Kusi tiene fiebre. Su tío lo lleva al centro de salud y una doctora lo atiende. ¿Qué derecho se cumple?",
+      "respuestas": ["salud", "la salud", "a la salud", "derecho a la salud", "el derecho a la salud"],
+      "pista": "Kusi estaba enfermo y lo atendieron en un centro de...",
+      "explicacion": "Se cumple el derecho a la **salud**: cuando Kusi se enferma, lo atienden.",
+      "error": "reconoce-derechos"
+    },
+    {
+      "id": "p10", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "¿Pido ayuda a un adulto de confianza o todo está bien?",
+      "categorias": [
+        { "id": "ayuda", "texto": "Pido ayuda", "emoji": "🙋" },
+        { "id": "bien", "texto": "Todo está bien", "emoji": "😊" }
+      ],
+      "elementos": [
+        { "texto": "alguien me pega o me empuja", "categoria": "ayuda" },
+        { "texto": "un adulto me pide guardar un secreto que me hace sentir mal", "categoria": "ayuda" },
+        { "texto": "me pierdo en la feria", "categoria": "ayuda" },
+        { "texto": "un compañero se burla de mí todos los días", "categoria": "ayuda" },
+        { "texto": "juego a la pelota con mis primos", "categoria": "bien" },
+        { "texto": "mi abuela me lee un cuento", "categoria": "bien" },
+        { "texto": "ayudo a regar las plantas", "categoria": "bien" }
+      ],
+      "pista": "Si algo te da miedo, te duele o te hace sentir mal, se lo cuentas a un adulto de confianza.",
+      "explicacion": "Si alguien te pega, te pide un secreto que te hace sentir mal, te pierdes o se burlan de ti, pides ayuda. Jugar, escuchar un cuento y ayudar en casa son momentos buenos.",
+      "error": "pedir-ayuda"
+    },
+    {
+      "id": "p11", "tipo": "opcion", "nivel": 2,
+      "enunciado": "¿Qué hace la Defensoría de la Niñez y Adolescencia?",
+      "opciones": [
+        { "texto": "Ayuda gratis a niñas, niños y adolescentes a defender sus derechos", "correcta": true },
+        { "texto": "Vende juguetes para niñas y niños", "pista": "La Defensoría no es una tienda. Su nombre dice que defiende.", "error": "conoce-defensoria" },
+        { "texto": "Organiza campeonatos de fútbol", "pista": "Piensa en la palabra «Defensoría»: ¿qué defiende?", "error": "conoce-defensoria" }
+      ],
+      "pista": "«Defensoría» viene de «defender». ¿Qué defiende?",
+      "explicacion": "La Defensoría de la Niñez y Adolescencia ayuda gratis a niñas, niños y adolescentes a defender sus derechos.",
+      "error": "conoce-defensoria"
+    },
+    {
+      "id": "p12", "tipo": "ordenar", "nivel": 2,
+      "enunciado": "Ordena los pasos para pedir ayuda.",
+      "elementos": [
+        "Me doy cuenta de que algo no está bien.",
+        "Busco a un adulto de confianza.",
+        "Le cuento lo que pasó.",
+        "El adulto me ayuda a resolverlo."
+      ],
+      "vertical": true,
+      "pista": "Primero te das cuenta del problema; al final, el adulto te ayuda.",
+      "explicacion": "Primero me doy cuenta de que algo no está bien, busco a un adulto de confianza, le cuento lo que pasó y el adulto me ayuda.",
+      "error": "pedir-ayuda"
+    },
+    {
+      "id": "p13", "tipo": "pasos", "nivel": 3,
+      "enunciado": "En el recreo, Mateo y Sofía no dejan jugar a Wara porque es nueva en la escuela.",
+      "pasos": [
+        {
+          "tipo": "opcion",
+          "enunciado": "¿Qué derecho de Wara no están respetando?",
+          "opciones": [
+            { "texto": "su derecho a jugar", "correcta": true },
+            { "texto": "su derecho a tener un nombre", "pista": "Wara tiene su nombre. ¿Qué quiere hacer en el recreo?", "error": "reconoce-derechos" },
+            { "texto": "su derecho a la salud", "pista": "Wara no está enferma. ¿Qué no la dejan hacer?", "error": "reconoce-derechos" }
+          ],
+          "pista": "¿Qué quiere hacer Wara en el recreo?",
+          "explicacion": "No respetan su derecho a jugar. Todas las niñas y todos los niños pueden jugar.",
+          "error": "reconoce-derechos"
+        },
+        {
+          "tipo": "escribir-libre",
+          "enunciado": "Escribe qué les dirías a Mateo y Sofía.",
+          "guia": ["Mateo y Sofía, dejen...", "Todos podemos..."],
+          "requisitos": [
+            { "tipo": "mayuscula-inicial" },
+            { "tipo": "punto-final" },
+            { "tipo": "min-palabras", "valor": 5 }
+          ],
+          "modelo": "Dejen jugar a Wara. Todos tenemos derecho a jugar.",
+          "pista": "Díselo con calma y respeto. Recuerda que todos tenemos derecho a jugar.",
+          "explicacion": "Por ejemplo: «Dejen jugar a Wara. Todos tenemos derecho a jugar».",
+          "error": "respeta-derechos"
+        }
+      ],
+      "pista": "Resuelve un paso a la vez.",
+      "explicacion": "Wara tiene derecho a jugar. Podemos hablar con respeto para que nadie quede fuera del juego.",
+      "error": "respeta-derechos"
+    },
+    {
+      "id": "p14", "tipo": "clasificar", "nivel": 3,
+      "enunciado": "¿Es verdadero o falso?",
+      "categorias": [
+        { "id": "v", "texto": "Verdadero", "emoji": "✅" },
+        { "id": "f", "texto": "Falso", "emoji": "❌" }
+      ],
+      "elementos": [
+        { "texto": "Las niñas y los niños tienen los mismos derechos.", "categoria": "v" },
+        { "texto": "Tengo derecho a dar mi opinión y a que me escuchen.", "categoria": "v" },
+        { "texto": "La Defensoría de la Niñez y Adolescencia ayuda a niñas y niños.", "categoria": "v" },
+        { "texto": "Los derechos son solo para algunos niños.", "categoria": "f" },
+        { "texto": "Si no hago la tarea, pierdo mis derechos.", "categoria": "f" },
+        { "texto": "Un secreto que me hace sentir mal lo guardo solo para mí.", "categoria": "f" }
+      ],
+      "pista": "Recuerda: los derechos son para todos y nadie te los puede quitar.",
+      "explicacion": "Son verdaderas: niñas y niños tenemos los mismos derechos, puedo dar mi opinión y la Defensoría ayuda a niñas y niños. Las otras son falsas, porque los derechos son de todas las niñas y todos los niños, no se pierden, y un secreto que te hace sentir mal se cuenta a un adulto de confianza.",
+      "error": "datos-derechos"
+    },
+    {
+      "id": "p15", "tipo": "escribir-libre", "nivel": 3,
+      "enunciado": "Escribe un deber que cumples en tu casa o en la escuela.",
+      "guia": ["En mi casa, yo ayudo a...", "En la escuela, yo cuido..."],
+      "requisitos": [
+        { "tipo": "mayuscula-inicial" },
+        { "tipo": "punto-final" },
+        { "tipo": "min-palabras", "valor": 5 }
+      ],
+      "modelo": "En mi casa, yo ayudo a regar las plantas.",
+      "pista": "Piensa en algo que haces para ayudar, para cuidar o para respetar.",
+      "explicacion": "Por ejemplo: «En mi casa, yo ayudo a regar las plantas». Ayudar según tu edad es un deber.",
+      "error": "produce-oracion"
+    }
+  ],
+  "comprobacion": [
+    {
+      "id": "c1", "tipo": "clasificar", "nivel": 1,
+      "enunciado": "¿Es un derecho o un deber?",
+      "categorias": [
+        { "id": "derecho", "texto": "Derecho", "emoji": "⭐" },
+        { "id": "deber", "texto": "Deber", "emoji": "💪" }
+      ],
+      "elementos": [
+        { "texto": "tener tiempo para jugar", "categoria": "derecho" },
+        { "texto": "recibir vacunas", "categoria": "derecho" },
+        { "texto": "tener un nombre y un apellido", "categoria": "derecho" },
+        { "texto": "cuidar mis útiles", "categoria": "deber" },
+        { "texto": "botar la basura en su lugar", "categoria": "deber" },
+        { "texto": "respetar los símbolos de Bolivia", "categoria": "deber" }
+      ],
+      "pista": "Pregúntate: ¿esto me lo deben dar a mí, o esto lo hago yo?",
+      "explicacion": "Derechos: tener tiempo para jugar, recibir vacunas y tener un nombre y un apellido. Deberes: cuidar mis útiles, botar la basura en su lugar y respetar los símbolos de Bolivia.",
+      "error": "derecho-o-deber"
+    },
+    {
+      "id": "c2", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Toca las acciones que son deberes.",
+      "texto": "Kusi *respeta* a sus vecinos, *cuida* sus plantas y juega en la plaza.",
+      "pista": "Kusi hace tres cosas. Dos son deberes y una es un derecho.",
+      "explicacion": "Respetar a los vecinos y cuidar las plantas son deberes. Jugar es un derecho.",
+      "error": "derecho-o-deber"
+    },
+    {
+      "id": "c3", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "Une cada derecho con la situación que lo muestra.",
+      "pares": [
+        ["familia", "Nayra vive con su abuela, que la cuida y la quiere"],
+        ["juego", "Mateo juega a la ronda en el recreo"],
+        ["protección", "nadie puede hacerle daño a Ana"],
+        ["educación", "Luis aprende a sumar en la escuela"]
+      ],
+      "pista": "Busca quién aprende, quién juega, quién está segura y quién vive con alguien que la cuida.",
+      "explicacion": "Familia: Nayra y su abuela. Juego: Mateo en el recreo. Protección: nadie puede hacerle daño a Ana. Educación: Luis en la escuela.",
+      "error": "reconoce-derechos"
+    },
+    {
+      "id": "c4", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa con el derecho y el deber.",
+      "texto": "Tengo derecho a vivir en una [familia] que me quiere y me cuida. En casa, tengo el deber de [ayudar] según mi edad.",
+      "banco": ["mochila", "gritar"],
+      "pista": "¿Quiénes te quieren y te cuidan en casa? ¿Qué puedes hacer tú por ellos?",
+      "explicacion": "Tengo derecho a vivir en una familia que me quiere y me cuida, y el deber de ayudar en casa según mi edad.",
+      "error": "derechos-deberes"
+    },
+    {
+      "id": "c5", "tipo": "opcion", "nivel": 2,
+      "enunciado": "Escucha y elige qué debe hacer Rosa.",
+      "escuchar": "Rosa está en la feria con su papá. De pronto, ya no lo ve. Rosa está perdida.",
+      "opciones": [
+        { "texto": "Pedir ayuda a una vendedora o a un policía y decir su nombre", "correcta": true },
+        { "texto": "Irse sola caminando a su casa", "pista": "Sola por la calle podría perderse más. ¿A quién puede pedir ayuda allí mismo?", "error": "pedir-ayuda" },
+        { "texto": "Irse con una persona que le ofrece dulces", "pista": "Nunca nos vamos con alguien que nos ofrece cosas. Pedimos ayuda a quien trabaja allí o a un policía.", "error": "pedir-ayuda" }
+      ],
+      "pista": "Rosa necesita ayuda allí mismo, sin irse del lugar.",
+      "explicacion": "Rosa puede pedir ayuda a una vendedora o a un policía y decir su nombre, para que encuentren a su papá.",
+      "error": "pedir-ayuda"
+    },
+    {
+      "id": "c6", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escribe la palabra que falta: la Defensoría de la ____ y Adolescencia ayuda gratis a niñas y niños.",
+      "respuestas": ["Niñez", "niñez"],
+      "pista": "Es una palabra que nombra la etapa de la vida de las niñas y los niños. Empieza con «Ni».",
+      "explicacion": "Se llama **Defensoría de la Niñez y Adolescencia**. «Niñez» se escribe con ñ y z.",
+      "error": "conoce-defensoria"
+    },
+    {
+      "id": "c7", "tipo": "pasos", "nivel": 3,
+      "enunciado": "En una reunión familiar, Luis quiere dar su idea para el paseo del domingo, pero sus primos no lo dejan hablar.",
+      "pasos": [
+        {
+          "tipo": "opcion",
+          "enunciado": "¿Qué derecho de Luis no están respetando sus primos?",
+          "opciones": [
+            { "texto": "Dar su opinión y que lo escuchen", "correcta": true },
+            { "texto": "Decidir todo él solo", "pista": "Ese no es un derecho: Luis puede opinar, pero la familia decide junta.", "error": "reconoce-derechos" },
+            { "texto": "Recibir vacunas", "pista": "Las vacunas son parte del derecho a la salud, pero aquí nadie habla de vacunas. ¿Qué no dejan hacer a Luis?", "error": "reconoce-derechos" }
+          ],
+          "pista": "¿Qué quiere hacer Luis en la reunión y qué no lo dejan hacer?",
+          "explicacion": "Sus primos no respetan su derecho a dar su opinión y a que lo escuchen.",
+          "error": "reconoce-derechos"
+        },
+        {
+          "tipo": "opcion",
+          "enunciado": "¿Y qué deber tiene Luis?",
+          "opciones": [
+            { "texto": "Escuchar también las ideas de sus primos", "correcta": true },
+            { "texto": "Gritar más fuerte que todos", "pista": "Si todos gritan, nadie se escucha.", "error": "derechos-deberes" },
+            { "texto": "Irse enojado sin hablar", "pista": "Si se va, nadie conoce su idea. ¿Qué puede hacer para que todos se escuchen?", "error": "derechos-deberes" }
+          ],
+          "pista": "Si Luis quiere que lo escuchen, ¿qué debe hacer él con los demás?",
+          "explicacion": "Luis tiene el deber de escuchar también las ideas de sus primos. Así todos pueden opinar.",
+          "error": "derechos-deberes"
+        }
+      ],
+      "pista": "Resuelve un paso a la vez.",
+      "explicacion": "Luis tiene derecho a opinar y el deber de escuchar a los demás. Con diálogo, la familia decide junta.",
+      "error": "derechos-deberes"
+    },
+    {
+      "id": "c8", "tipo": "clasificar", "nivel": 3,
+      "enunciado": "¿Es verdadero o falso?",
+      "categorias": [
+        { "id": "v", "texto": "Verdadero", "emoji": "✅" },
+        { "id": "f", "texto": "Falso", "emoji": "❌" }
+      ],
+      "elementos": [
+        { "texto": "Todas las niñas y todos los niños tienen derechos, vivan en el campo o en la ciudad.", "categoria": "v" },
+        { "texto": "Tengo derecho a la vida y a la salud.", "categoria": "v" },
+        { "texto": "Si alguien me hace daño, se lo cuento a un adulto de confianza.", "categoria": "v" },
+        { "texto": "Solo los adultos tienen derechos.", "categoria": "f" },
+        { "texto": "Jugar y descansar no es un derecho.", "categoria": "f" },
+        { "texto": "Si me porto mal, pierdo mi derecho a la salud.", "categoria": "f" }
+      ],
+      "pista": "Recuerda: los derechos son de todas las niñas y todos los niños, y nadie te los puede quitar.",
+      "explicacion": "Son verdaderas: todas las niñas y todos los niños tienen derechos, tengo derecho a la vida y a la salud, y si alguien me hace daño, lo cuento a un adulto de confianza. Las otras son falsas, porque las niñas y los niños también tienen derechos, jugar y descansar es un derecho, y los derechos no se pierden por portarse mal.",
+      "error": "datos-derechos"
+    }
+  ],
+  "repaso": {
+    "texto": "Tienes derechos: vida, nombre, familia, educación, salud, juego, protección y ser escuchado. Tienes deberes: respetar, estudiar, cuidar y ayudar. Si algo te hace daño, pide ayuda a un adulto de confianza.",
+    "visual": { "tipo": "emojis", "items": ["⭐", "💪", "🤝"], "etiquetas": ["derechos", "deberes", "pedir ayuda"] }
+  },
+  "adulto": {
+    "objetivo": "Reconocer que niñas, niños y adolescentes tienen derechos (a la vida, a la identidad y al nombre, a la familia, a la educación, a la salud, al juego y al descanso, a la protección contra la violencia y a opinar y ser escuchados), según el Código Niña, Niño y Adolescente (Ley 548, de 17 de julio de 2014) y la Convención sobre los Derechos del Niño de las Naciones Unidas (1989). Conocer deberes propios de su edad (respetar a las personas, cumplir sus obligaciones escolares, colaborar en el hogar según su edad, cuidar la naturaleza y respetar los símbolos patrios), y saber pedir ayuda a un adulto de confianza o a la Defensoría de la Niñez y Adolescencia (DNA), un servicio municipal gratuito. Importante: los derechos no se ganan ni se pierden por cumplir o no los deberes.",
+    "sugerencias": [
+      "Hagan juntos una lista de «adultos de confianza» (personas de la familia, la maestra, una vecina conocida) con sus nombres y, si es posible, sus teléfonos. Practiquen qué decir: «Me pasó algo y necesito ayuda».",
+      "Pregunten en la alcaldía o en la escuela dónde funciona la Defensoría de la Niñez y Adolescencia de su municipio. Si pasan cerca, muéstrenle el lugar y expliquen que allí ayudan gratis a niñas, niños y adolescentes.",
+      "En casa, repartan tareas según la edad de cada persona (poner la mesa, regar las plantas, ordenar sus útiles) y, cuando decidan algo en familia, como un paseo o la comida del domingo, pidan su opinión y escúchenla. Conversen: «¿qué derecho se cumple aquí?, ¿qué deber cumplo yo?»."
+    ],
+    "errores": {
+      "reconoce-derechos": { "descripcion": "Le cuesta reconocer los derechos de la niñez en situaciones concretas.", "sugerencia": "Cuando pase algo cotidiano (ir al centro de salud, jugar, ir a la escuela), pregunten: «¿qué derecho se está cumpliendo?»." },
+      "derecho-o-deber": { "descripcion": "Confunde los derechos con los deberes.", "sugerencia": "Usen una pregunta clave: «¿esto me lo deben dar o respetar (derecho), o esto lo hago yo (deber)?». Hagan tarjetas y sepárenlas en dos grupos." },
+      "derechos-deberes": { "descripcion": "No relaciona cada derecho con un deber que lo acompaña.", "sugerencia": "Conversen con ejemplos: si quiero que me escuchen, escucho a los demás; si tengo derecho a la educación, estudio. Aclaren que los derechos no se pierden si falla un deber." },
+      "pedir-ayuda": { "descripcion": "No tiene claro cuándo ni a quién pedir ayuda.", "sugerencia": "Practiquen con juegos de «¿qué harías si...?» (te pierdes en la feria, alguien te molesta, un desconocido te ofrece algo) y repasen la lista de adultos de confianza." },
+      "respeta-derechos": { "descripcion": "Le cuesta pensar cómo respetar los derechos de otras niñas y otros niños.", "sugerencia": "Cuando jueguen, inviten a que incluyan a todos y a que digan con palabras amables lo que sienten." },
+      "datos-derechos": { "descripcion": "Tiene ideas equivocadas sobre los derechos (por ejemplo, que se pierden o que son solo para algunos).", "sugerencia": "Repitan juntos: «los derechos son de todas las niñas y todos los niños, y nadie los puede quitar». Conversen sobre por qué los secretos que hacen sentir mal se cuentan." },
+      "conoce-defensoria": { "descripcion": "No recuerda qué es la Defensoría de la Niñez y Adolescencia.", "sugerencia": "Expliquen que «defensoría» viene de «defender», que es gratuita y que está en el municipio. Si pueden, visiten o señalen el lugar." },
+      "orden-oracion": { "descripcion": "Le cuesta ordenar palabras para formar una oración.", "sugerencia": "Escriban oraciones cortas en tiras de papel, córtenlas por palabras y ármenlas juntos, empezando por la mayúscula." },
+      "produce-oracion": { "descripcion": "Le cuesta escribir oraciones completas con mayúscula y punto.", "sugerencia": "Conversen primero la idea en voz alta, luego escríbanla juntos y revisen la mayúscula inicial y el punto final." }
+    }
+  }
+}

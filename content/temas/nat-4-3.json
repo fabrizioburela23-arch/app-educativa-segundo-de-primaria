@@ -1,0 +1,444 @@
+{
+  "id": "nat-4-3",
+  "titulo": "Salud e higiene",
+  "objetivo": "Sé cuidar mi salud: me lavo bien las manos, cuido mi higiene, tomo agua segura, descanso, me muevo y voy a mis vacunas y controles.",
+  "explicacion": [
+    {
+      "texto": "La **higiene** es mantener limpios tu cuerpo, tu ropa y tus cosas. Así alejas a los **microbios**: seres vivos tan pequeñitos que tus ojos no los pueden ver. Algunos causan enfermedades, como la diarrea.",
+      "emoji": "🦠",
+      "visual": { "tipo": "emojis", "items": ["🦠", "🧼", "💧"], "etiquetas": ["microbios", "jabón", "agua limpia"] }
+    },
+    {
+      "texto": "**Lávate las manos** con agua y jabón antes de comer, después de ir al baño, al volver de jugar y después de tocar animales o basura. Frota **al menos 20 segundos**.",
+      "visual": { "tipo": "emojis", "items": ["🍽️", "🚽", "⚽", "🐕", "🗑️"], "etiquetas": ["antes de comer", "después del baño", "al volver de jugar", "después de tocar animales", "después de tocar basura"] }
+    },
+    {
+      "texto": "**Cepilla tus dientes** al menos dos veces al día, sobre todo antes de dormir: así ayudas a evitar las **caries**. **Báñate** seguido, ponte **ropa limpia** y ten las uñas cortas y limpias.",
+      "visual": { "tipo": "emojis", "items": ["🦷", "🚿", "👕", "🧦"], "etiquetas": ["dientes limpios", "baño", "ropa limpia", "medias limpias"] }
+    },
+    {
+      "texto": "Tu salud también necesita **agua segura** (hervida o potable), frutas y verduras **lavadas**, **dormir** bien, **moverte** cada día y tus **vacunas y controles** en el centro de salud.",
+      "visual": { "tipo": "emojis", "items": ["💧", "🍎", "😴", "🏃", "💉"], "etiquetas": ["agua segura", "fruta lavada", "dormir", "moverse", "vacunas"] }
+    }
+  ],
+  "ejemplo": {
+    "instruccion": "Mira cómo Inti se lava las manos antes de almorzar. Haz lo mismo con tus manos.",
+    "pasos": [
+      {
+        "texto": "Inti **moja** sus manos con agua limpia, **cierra el grifo** para no gastar agua y se pone **jabón**.",
+        "visual": { "tipo": "emojis", "items": ["💧", "🚰", "🧼"], "etiquetas": ["mojar", "cerrar el grifo", "jabón"] }
+      },
+      {
+        "texto": "**Frota** las palmas, el dorso, entre los dedos y las uñas, y cuenta despacio hasta 20.",
+        "visual": { "tipo": "emojis", "items": ["✋", "🤚"], "etiquetas": ["palma", "dorso"] }
+      },
+      {
+        "texto": "Abre el grifo y se **enjuaga** con agua limpia hasta que no quede nada de espuma.",
+        "visual": { "tipo": "emoji", "valor": "💧", "cantidad": 3 }
+      },
+      {
+        "texto": "Se **seca** con una toalla limpia. ¡Sus manos están listas para comer una rica sopa de maní!",
+        "visual": { "tipo": "emojis", "items": ["🙌", "🍲"], "etiquetas": ["manos limpias", "sopa de maní"] }
+      }
+    ]
+  },
+  "guiada": {
+    "intro": "Ahora lo hacemos juntos. Recuerda cómo se lavó las manos Inti.",
+    "pasos": [
+      {
+        "id": "g1", "tipo": "ordenar",
+        "enunciado": "Ordena los pasos para lavarte bien las manos.",
+        "apoyo": "Primero va el agua y al final, la toalla. Piensa qué hizo Inti en el medio.",
+        "elementos": [
+          { "texto": "Mojo mis manos con agua limpia.", "emoji": "💧" },
+          { "texto": "Me pongo jabón.", "emoji": "🧼" },
+          { "texto": "Froto mis manos mientras cuento hasta 20.", "emoji": "🤲" },
+          { "texto": "Me enjuago con agua limpia.", "emoji": "🚰" },
+          { "texto": "Me seco con una toalla limpia.", "emoji": "🙌" }
+        ],
+        "vertical": true,
+        "pista": "No puedes secarte antes de enjuagarte, ni enjuagarte antes de ponerte jabón.",
+        "explicacion": "El orden es: mojo mis manos, me pongo jabón, froto contando hasta 20, me enjuago y me seco con una toalla limpia.",
+        "error": "orden-lavado"
+      },
+      {
+        "id": "g2", "tipo": "multiple",
+        "enunciado": "¿Cuándo debe Wara lavarse las manos? Elige todos los momentos correctos.",
+        "apoyo": "Piensa en los momentos en que las manos se ensucian o van a tocar la comida.",
+        "opciones": [
+          { "texto": "antes de comer", "emoji": "🍽️", "correcta": true },
+          { "texto": "después de ir al baño", "emoji": "🚽", "correcta": true },
+          { "texto": "después de jugar con su perro", "emoji": "🐕", "correcta": true },
+          { "texto": "mientras duerme", "emoji": "😴", "pista": "Mientras duermes no puedes lavarte las manos. Busca momentos en que las manos se ensucian.", "error": "cuando-lavar" },
+          { "texto": "mientras mira las nubes", "emoji": "☁️", "pista": "Mirar las nubes no ensucia las manos.", "error": "cuando-lavar" }
+        ],
+        "pista": "Hay tres momentos correctos: uno antes de tocar la comida y dos después de algo que ensucia las manos.",
+        "explicacion": "Wara debe lavarse las manos antes de comer, después de ir al baño y después de jugar con su perro.",
+        "error": "cuando-lavar"
+      },
+      {
+        "id": "g3", "tipo": "completar",
+        "enunciado": "Completa el consejo para tus dientes.",
+        "apoyo": "Recuerda la tarjeta de los dientes: ¿cuántas veces al día? ¿Antes de qué?",
+        "texto": "Me cepillo los [dientes] al menos [dos] veces al día, sobre todo antes de [dormir].",
+        "banco": ["codos", "diez", "saltar"],
+        "pista": "Se cepillan en la boca. Lo más importante es cepillarte antes de ir a la cama.",
+        "explicacion": "Me cepillo los **dientes** al menos **dos** veces al día, sobre todo antes de **dormir**.",
+        "error": "higiene-personal"
+      }
+    ]
+  },
+  "practica": [
+    {
+      "id": "p1", "tipo": "opcion", "nivel": 1,
+      "enunciado": "¿Con qué se lavan bien las manos?",
+      "opciones": [
+        { "texto": "con agua y jabón", "emoji": "🧼", "correcta": true },
+        { "texto": "solo con agua", "emoji": "💧", "pista": "El agua sola no saca bien la grasa ni los microbios. Falta algo que hace espuma.", "error": "lavado-manos" },
+        { "texto": "solo con una toalla", "pista": "La toalla sirve para secar, no para lavar.", "error": "lavado-manos" }
+      ],
+      "columnas": 1,
+      "pista": "Busca lo que hace espuma y saca la suciedad.",
+      "explicacion": "Las manos se lavan con **agua y jabón**. El jabón ayuda a sacar la suciedad y los microbios.",
+      "error": "lavado-manos"
+    },
+    {
+      "id": "p2", "tipo": "memoria", "nivel": 1,
+      "enunciado": "Encuentra las parejas: el dibujo y su nombre.",
+      "pares": [
+        [ { "emoji": "🧼" }, "jabón" ],
+        [ { "emoji": "🦷" }, "diente" ],
+        [ { "emoji": "🚿" }, "ducha" ],
+        [ { "emoji": "💉" }, "vacuna" ],
+        [ { "emoji": "🧦" }, "medias" ]
+      ],
+      "pista": "Di en voz alta el nombre de cada dibujo.",
+      "explicacion": "🧼 jabón, 🦷 diente, 🚿 ducha, 💉 vacuna y 🧦 medias. Todos tienen que ver con cuidar tu salud.",
+      "error": "vocabulario-tema"
+    },
+    {
+      "id": "p3", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Toca las tres cosas que Luis usa para bañarse.",
+      "texto": "Para bañarse, Luis usa *jabón*, *champú* y una *toalla* limpia. Su gato lo espera en la puerta.",
+      "pista": "Una cosa hace espuma en el cuerpo, otra lava el pelo y otra sirve para secarse.",
+      "explicacion": "Luis usa **jabón**, **champú** y una **toalla** limpia. El gato no sirve para bañarse, ¡solo lo acompaña!",
+      "error": "higiene-personal"
+    },
+    {
+      "id": "p4", "tipo": "clasificar", "nivel": 1,
+      "enunciado": "¿Te ayuda a estar sano o puede enfermarte?",
+      "categorias": [
+        { "id": "sano", "texto": "Me ayuda a estar sano", "emoji": "💪" },
+        { "id": "enferma", "texto": "Puede enfermarme", "emoji": "🤒" }
+      ],
+      "elementos": [
+        { "texto": "lavarme las manos antes de comer", "emoji": "🧼", "categoria": "sano" },
+        { "texto": "tomar agua hervida", "emoji": "💧", "categoria": "sano" },
+        { "texto": "dormir temprano", "emoji": "😴", "categoria": "sano" },
+        { "texto": "comer con las manos sucias", "categoria": "enferma" },
+        { "texto": "tomar agua del río sin hervir", "categoria": "enferma" },
+        { "texto": "comer comida que tocaron las moscas", "categoria": "enferma" }
+      ],
+      "pista": "Piensa: ¿esto aleja a los microbios o los deja entrar a tu cuerpo?",
+      "explicacion": "Te ayudan: lavarte las manos, tomar agua hervida y dormir temprano. Pueden enfermarte: comer con las manos sucias, tomar agua del río sin hervir y comer lo que tocaron las moscas, porque así entran los microbios a tu cuerpo.",
+      "error": "habitos-salud"
+    },
+    {
+      "id": "p5", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha y escribe la palabra.",
+      "escuchar": "higiene",
+      "respuestas": ["higiene"],
+      "pista": "Empieza con una letra que no suena, como «hielo». Fíjate en el sonido «gie»: ¿va con g o con j?",
+      "explicacion": "Se escribe «higiene», con **h** al principio (no suena) y con **g** en «gie».",
+      "error": "escritura-tema"
+    },
+    {
+      "id": "p6", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "Une cada hábito con lo que logra.",
+      "pares": [
+        ["cepillarme los dientes", "protege mis dientes de las caries"],
+        ["lavarme las manos con jabón", "saca los microbios de mis manos"],
+        ["dormir bien", "mi cuerpo descansa y crece"],
+        ["jugar y correr", "fortalece mis músculos y mi corazón"],
+        ["vacunarme", "ayuda a mi cuerpo a defenderse de enfermedades"]
+      ],
+      "pista": "Piensa qué parte del cuerpo cuida cada hábito: los dientes, las manos, todo el cuerpo...",
+      "explicacion": "Cepillarte protege tus dientes de las caries; el jabón saca los microbios; al dormir tu cuerpo descansa y crece; al jugar y correr se fortalecen tus músculos y tu corazón, y las vacunas ayudan a tu cuerpo a defenderse.",
+      "error": "habitos-salud"
+    },
+    {
+      "id": "p7", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa sobre la comida y el agua.",
+      "texto": "Antes de comer una manzana, la [lavo] con agua segura. El agua para tomar debe ser [hervida] o potable.",
+      "banco": ["ensucio", "salada"],
+      "pista": "La fruta puede tener tierra y microbios: ¿qué hacemos antes de comerla? Piensa también qué hace una persona adulta con el agua en la olla para quitarle los microbios.",
+      "explicacion": "Antes de comer una manzana, la **lavo** con agua segura. El agua para tomar debe ser **hervida** o potable.",
+      "error": "agua-alimentos"
+    },
+    {
+      "id": "p8", "tipo": "ordenar", "nivel": 2,
+      "enunciado": "Ordena lo que le pasó a Sofía.",
+      "elementos": [
+        "Sofía juega con tierra en el patio.",
+        "Entra a la casa y no se lava las manos.",
+        "Come un pan con las manos sucias.",
+        "Los microbios de sus manos llegan a su boca.",
+        "Más tarde le duele la barriga."
+      ],
+      "vertical": true,
+      "pista": "Primero sus manos se ensucian. Al final aparece el dolor de barriga.",
+      "explicacion": "Sofía jugó con tierra, no se lavó las manos, comió con las manos sucias, los microbios llegaron a su boca y le dolió la barriga. Por eso nos lavamos las manos antes de comer.",
+      "error": "microbios"
+    },
+    {
+      "id": "p9", "tipo": "numero", "nivel": 2,
+      "enunciado": "Kusi juega a la pelota 40 minutos y anda en bicicleta 20 minutos. ¿Cuántos minutos se movió en total?",
+      "visual": { "tipo": "emojis", "items": ["⚽", "🚲"], "etiquetas": ["40 minutos", "20 minutos"] },
+      "respuesta": 60,
+      "sufijo": "minutos",
+      "erroresComunes": [
+        { "respuesta": 20, "pista": "Restaste. Para saber el total, junta los minutos: suma.", "error": "calculo" },
+        { "respuesta": 6, "pista": "Son 4 decenas y 2 decenas: ¿cuántas decenas son? Cada decena vale 10.", "error": "calculo" }
+      ],
+      "pista": "Suma los minutos de los dos juegos: 40 + 20.",
+      "explicacion": "40 + 20 = **60 minutos**, que es una hora. Los niños y las niñas necesitan moverse al menos una hora cada día.",
+      "error": "calculo"
+    },
+    {
+      "id": "p10", "tipo": "multiple", "nivel": 2,
+      "enunciado": "¿Qué cuida tus dientes? Elige todo lo correcto.",
+      "opciones": [
+        { "texto": "cepillarlos antes de dormir", "correcta": true },
+        { "texto": "ir al dentista para un control", "correcta": true },
+        { "texto": "cepillarlos por todos lados, también las muelas", "correcta": true },
+        { "texto": "comer dulces a cada rato", "emoji": "🍬", "pista": "El azúcar que queda en los dientes ayuda a que salgan caries.", "error": "higiene-personal" },
+        { "texto": "dormir sin cepillarme", "pista": "Si no te cepillas, los restos de comida se quedan en tus dientes toda la noche.", "error": "higiene-personal" }
+      ],
+      "pista": "Hay tres respuestas correctas. Piensa qué deja tus dientes limpios y sanos.",
+      "explicacion": "Cuidan tus dientes: cepillarlos antes de dormir, ir al dentista y cepillarlos por todos lados, también las muelas. Comer dulces a cada rato y dormir sin cepillarte pueden causar caries.",
+      "error": "higiene-personal"
+    },
+    {
+      "id": "p11", "tipo": "pasos", "nivel": 3,
+      "enunciado": "Nayra se acuesta a las 8 de la noche y se levanta a las 7 de la mañana.",
+      "visual": { "tipo": "emojis", "items": ["🌙", "😴", "☀️"], "etiquetas": ["8 de la noche", "duerme", "7 de la mañana"] },
+      "pasos": [
+        {
+          "tipo": "numero",
+          "enunciado": "¿Cuántas horas duerme Nayra?",
+          "respuesta": 11,
+          "sufijo": "horas",
+          "erroresComunes": [
+            { "respuesta": 1, "pista": "No restes 8 − 7. Cuenta las horas desde las 8 de la noche hasta las 7 de la mañana.", "error": "calculo" },
+            { "respuesta": 15, "pista": "No sumes 8 + 7. Cuenta de hora en hora: 9, 10, 11, 12... y sigue hasta las 7.", "error": "calculo" }
+          ],
+          "pista": "De las 8 a las 12 de la noche hay 4 horas. Después, de las 12 a las 7 de la mañana, ¿cuántas hay?",
+          "explicacion": "De 8 a 12 de la noche son 4 horas, y de 12 a 7 de la mañana son 7 horas: 4 + 7 = **11 horas**.",
+          "error": "calculo"
+        },
+        {
+          "tipo": "opcion",
+          "enunciado": "Los niños de tu edad necesitan dormir entre 9 y 12 horas. ¿Nayra duerme lo suficiente?",
+          "opciones": [
+            { "texto": "Sí", "correcta": true },
+            { "texto": "No", "pista": "Nayra duerme 11 horas. ¿El 11 está entre el 9 y el 12?", "error": "habitos-salud" }
+          ],
+          "mezclar": false,
+          "columnas": 2,
+          "pista": "Mira si 11 está entre 9 y 12.",
+          "explicacion": "Sí. Nayra duerme 11 horas, y 11 está entre 9 y 12. ¡Su cuerpo descansa bien!",
+          "error": "habitos-salud"
+        }
+      ],
+      "pista": "Resuelve un paso a la vez.",
+      "explicacion": "Nayra duerme 11 horas: es lo que necesita un niño o una niña de su edad para descansar y crecer.",
+      "error": "habitos-salud"
+    },
+    {
+      "id": "p12", "tipo": "clasificar", "nivel": 3,
+      "enunciado": "Cuando toses o estornudas, ¿esto cuida a los demás o les pasa microbios?",
+      "categorias": [
+        { "id": "cuida", "texto": "Cuida a los demás", "emoji": "✅" },
+        { "id": "pasa", "texto": "Pasa microbios", "emoji": "🦠" }
+      ],
+      "elementos": [
+        { "texto": "taparme con el codo al estornudar", "categoria": "cuida" },
+        { "texto": "usar un pañuelo de papel y botarlo al basurero", "categoria": "cuida" },
+        { "texto": "lavarme las manos después de sonarme la nariz", "categoria": "cuida" },
+        { "texto": "toser encima de la comida", "categoria": "pasa" },
+        { "texto": "estornudar hacia mis compañeros", "categoria": "pasa" },
+        { "texto": "limpiarme la nariz con la mano y tocar la mesa", "categoria": "pasa" }
+      ],
+      "pista": "Los microbios salen con la tos y el estornudo. ¿Qué acciones los atrapan y cuáles los reparten?",
+      "explicacion": "Cuidan a los demás: taparte con el codo, usar un pañuelo y botarlo, y lavarte las manos. Pasan microbios: toser sobre la comida, estornudar hacia otros y tocar la mesa con la mano sucia.",
+      "error": "microbios"
+    },
+    {
+      "id": "p13", "tipo": "opcion", "nivel": 3,
+      "enunciado": "En la comunidad de Rosa, el agua sale de un pozo y no es potable. ¿Qué debe hacer su familia antes de tomarla?",
+      "opciones": [
+        { "texto": "Hacerla hervir y dejarla enfriar tapada.", "correcta": true },
+        { "texto": "Ponerle azúcar para que sea más rica.", "pista": "El azúcar le cambia el sabor, pero no quita los microbios.", "error": "agua-alimentos" },
+        { "texto": "Guardarla en un balde sin tapa.", "pista": "Sin tapa, al agua le puede caer polvo, tierra y bichos.", "error": "agua-alimentos" }
+      ],
+      "columnas": 1,
+      "pista": "Los microbios del agua no se ven. ¿Qué los elimina?",
+      "explicacion": "Hay que **hervir** el agua y dejarla enfriar tapada. El hervor elimina los microbios. ¡Hervir el agua es trabajo de una persona adulta!",
+      "error": "agua-alimentos"
+    },
+    {
+      "id": "p14", "tipo": "tocar", "nivel": 3,
+      "enunciado": "Toca las tres acciones del abuelo que hacen que la comida y el agua sean seguras.",
+      "texto": "El abuelo de Kusi *lava* las lechugas con agua segura, *hierve* el agua para tomar y *tapa* la comida. Su gato duerme en la silla.",
+      "pista": "Busca tres palabras que dicen lo que el abuelo hace con las lechugas, con el agua y con la comida.",
+      "explicacion": "El abuelo **lava** las lechugas, **hierve** el agua y **tapa** la comida. Así los microbios, el polvo y las moscas no llegan a lo que come su familia.",
+      "error": "agua-alimentos"
+    },
+    {
+      "id": "p15", "tipo": "escribir-libre", "nivel": 3,
+      "enunciado": "Escribe un consejo para no enfermarse.",
+      "guia": ["Lávate las manos...", "Antes de comer una fruta...", "Para tener dientes sanos..."],
+      "requisitos": [
+        { "tipo": "mayuscula-inicial" },
+        { "tipo": "punto-final" },
+        { "tipo": "min-palabras", "valor": 5 },
+        { "tipo": "incluye", "palabras": ["mano", "jabón", "dientes", "cepilla", "agua", "lava", "baña", "ropa", "limpia", "limpio", "vacuna", "duerme", "dormir"] }
+      ],
+      "modelo": "Lávate las manos con agua y jabón antes de comer.",
+      "pista": "Piensa en tus manos, tus dientes, el agua que tomas o la comida que comes.",
+      "explicacion": "Por ejemplo: «Lávate las manos con agua y jabón antes de comer». Empieza con mayúscula y termina con punto.",
+      "error": "produce-oracion"
+    }
+  ],
+  "comprobacion": [
+    {
+      "id": "c1", "tipo": "ordenar", "nivel": 1,
+      "enunciado": "Ordena cómo se lava las manos Ana.",
+      "elementos": [
+        { "texto": "Se moja las manos.", "emoji": "💧" },
+        { "texto": "Se frota con jabón.", "emoji": "🧼" },
+        { "texto": "Se enjuaga.", "emoji": "🚰" },
+        { "texto": "Se seca.", "emoji": "🙌" }
+      ],
+      "vertical": true,
+      "pista": "Primero va el agua. Al final, la toalla.",
+      "explicacion": "Ana se moja las manos, se frota con jabón, se enjuaga y se seca.",
+      "error": "orden-lavado"
+    },
+    {
+      "id": "c2", "tipo": "opcion", "nivel": 1,
+      "enunciado": "¿Qué cosa es solo tuya y no se presta?",
+      "opciones": [
+        { "texto": "mi cepillo de dientes", "correcta": true },
+        { "texto": "mi pelota", "emoji": "⚽", "pista": "La pelota se puede compartir para jugar. Busca algo que va dentro de tu boca.", "error": "higiene-personal" },
+        { "texto": "mi libro de cuentos", "emoji": "📖", "pista": "Un libro se puede prestar. Busca algo que va dentro de tu boca.", "error": "higiene-personal" }
+      ],
+      "columnas": 1,
+      "pista": "Piensa en algo que se mete en la boca.",
+      "explicacion": "El **cepillo de dientes** es solo tuyo: si lo prestas, pasan microbios de una boca a otra.",
+      "error": "higiene-personal"
+    },
+    {
+      "id": "c3", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha la adivinanza y escribe la respuesta.",
+      "escuchar": "Con el agua hago espuma y saco los microbios de tus manos. ¿Qué soy?",
+      "respuestas": ["jabón", "el jabón", "un jabón"],
+      "pista": "Lo usas cuando te lavas las manos y cuando te bañas.",
+      "explicacion": "Es el **jabón**. Con agua hace espuma y ayuda a sacar la suciedad y los microbios.",
+      "error": "lavado-manos"
+    },
+    {
+      "id": "c4", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa cómo lavarte bien las manos.",
+      "texto": "Frota tus manos con jabón al menos [20] segundos. Después enjuágalas y sécalas con una toalla [limpia].",
+      "banco": ["2", "sucia"],
+      "pista": "Hay que frotar un buen rato, contando despacio. La toalla no debe tener microbios.",
+      "explicacion": "Frota al menos **20** segundos y sécate con una toalla **limpia**.",
+      "error": "lavado-manos"
+    },
+    {
+      "id": "c5", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "Une cada cosa con cómo cuida tu salud.",
+      "pares": [
+        ["la dentista", "revisa tus dientes"],
+        ["el control en el centro de salud", "mide cuánto creciste y cuánto pesas"],
+        ["el agua hervida", "se puede tomar sin peligro"],
+        ["el baño con jabón", "quita el sudor y la suciedad de tu cuerpo"]
+      ],
+      "pista": "Piensa para qué sirve cada una: ¿quién trabaja con los dientes? ¿Qué te hacen cuando vas a tu control? ¿Qué pasa con el agua en la olla?",
+      "explicacion": "La dentista revisa tus dientes; en el control del centro de salud miden cuánto creciste y cuánto pesas; el agua hervida se puede tomar sin peligro, y el baño con jabón quita el sudor y la suciedad.",
+      "error": "habitos-salud"
+    },
+    {
+      "id": "c6", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "¿Es un hábito saludable o no?",
+      "categorias": [
+        { "id": "si", "texto": "Saludable", "emoji": "👍" },
+        { "id": "no", "texto": "No saludable", "emoji": "👎" }
+      ],
+      "elementos": [
+        { "texto": "ponerme ropa limpia después de bañarme", "emoji": "👕", "categoria": "si" },
+        { "texto": "correr y jugar en el recreo", "emoji": "🏃", "categoria": "si" },
+        { "texto": "tener las uñas cortas y limpias", "categoria": "si" },
+        { "texto": "ponerme la vacuna que me toca", "emoji": "💉", "categoria": "si" },
+        { "texto": "comer uvas sin lavarlas", "emoji": "🍇", "categoria": "no" },
+        { "texto": "ver la tele hasta muy tarde en la noche", "emoji": "📺", "categoria": "no" },
+        { "texto": "quedarme toda la tarde en la silla sin moverme", "categoria": "no" }
+      ],
+      "pista": "Los hábitos saludables mantienen tu cuerpo limpio, descansado y con energía.",
+      "explicacion": "Saludables: la ropa limpia, correr en el recreo, las uñas cortas y ponerte tus vacunas. No saludables: comer fruta sin lavar, desvelarse con la tele y pasar toda la tarde sin moverse.",
+      "error": "habitos-salud"
+    },
+    {
+      "id": "c7", "tipo": "numero", "nivel": 3,
+      "enunciado": "Pedro se cepilla los dientes 2 veces cada día. ¿Cuántas veces se cepilla en una semana?",
+      "respuesta": 14,
+      "sufijo": "veces",
+      "erroresComunes": [
+        { "respuesta": 9, "pista": "Sumaste 2 + 7. Pedro se cepilla 2 veces en cada uno de los 7 días.", "error": "calculo" },
+        { "respuesta": 7, "pista": "Una semana tiene 7 días, pero cada día se cepilla 2 veces.", "error": "calculo" }
+      ],
+      "pista": "Una semana tiene 7 días. Cuenta de 2 en 2, siete veces.",
+      "explicacion": "2 veces en cada uno de los 7 días: 7 × 2 = **14 veces** en una semana.",
+      "error": "calculo"
+    },
+    {
+      "id": "c8", "tipo": "opcion", "nivel": 3,
+      "enunciado": "¿Por qué debes lavarte las manos aunque se vean limpias?",
+      "opciones": [
+        { "texto": "Porque los microbios son tan pequeños que no se ven.", "correcta": true },
+        { "texto": "Porque el jabón hace que las manos crezcan.", "pista": "El jabón no hace crecer las manos. Piensa en lo que no podemos ver.", "error": "microbios" },
+        { "texto": "Porque así las manos se secan más rápido.", "pista": "Lavarse no ayuda a secarse más rápido. Piensa en lo que hay en las manos y no se ve.", "error": "microbios" }
+      ],
+      "columnas": 1,
+      "pista": "¿Puedes ver a los microbios con tus ojos?",
+      "explicacion": "Los microbios son tan pequeños que no se ven. Unas manos pueden verse limpias y tener microbios. ¡Por eso siempre usamos agua y jabón!",
+      "error": "microbios"
+    }
+  ],
+  "repaso": {
+    "texto": "Recuerda: lávate las manos con agua y jabón al menos 20 segundos. Cepilla tus dientes, báñate, toma agua segura, duerme bien, muévete y ve a tus vacunas y controles.",
+    "visual": { "tipo": "emojis", "items": ["🧼", "🦷", "🚿", "💧", "😴", "🏃"], "etiquetas": ["manos", "dientes", "baño", "agua segura", "dormir", "moverse"] }
+  },
+  "adulto": {
+    "objetivo": "Reconocer hábitos de higiene y de salud: cuándo y cómo lavarse las manos (con jabón, frotando al menos 20 segundos), cepillarse los dientes, bañarse y usar ropa limpia, tomar agua segura, lavar frutas y verduras, dormir entre 9 y 12 horas, moverse cada día y asistir a vacunas y controles.",
+    "sugerencias": [
+      "Pongan un poquito de témpera lavable en las manos de su hijo o hija y pídanle que se las lave con los ojos cerrados. Al abrirlos, verán qué partes olvidó frotar (el dorso, entre los dedos, las uñas). Repitan contando juntos hasta 20.",
+      "En la feria o el mercado, elijan juntos frutas y verduras y conversen sobre cuáles se comen crudas. En casa, lávenlas juntos con agua segura. Cuando el adulto hierva el agua de tomar, observen desde lejos las burbujas grandes y déjenla enfriar tapada.",
+      "Hagan una tabla semanal con dibujos: cepillado en la mañana y en la noche, baño, hora de dormir y una hora de juego activo. Marquen cada día con una carita. Revisen también el carnet de vacunas y conversen sobre la próxima visita al centro de salud."
+    ],
+    "errores": {
+      "orden-lavado": { "descripcion": "Le cuesta recordar el orden de los pasos para lavarse las manos.", "sugerencia": "Lávense las manos juntos diciendo en voz alta cada paso: «mojo, jabón, froto, enjuago, seco». Pueden pegar dibujos de los pasos junto al lavamanos." },
+      "cuando-lavar": { "descripcion": "No reconoce todos los momentos en que debe lavarse las manos.", "sugerencia": "Durante el día, pregunten «¿ahora toca lavarse las manos?» antes de comer, al volver de jugar, al salir del baño o después de tocar a una mascota." },
+      "lavado-manos": { "descripcion": "No recuerda cómo lavarse bien las manos (con jabón, frotando al menos 20 segundos y secando con toalla limpia).", "sugerencia": "Hagan la prueba de la témpera lavable y cuenten juntos hasta 20 mientras frotan." },
+      "higiene-personal": { "descripcion": "Confunde los cuidados del cuerpo: el cepillado de dientes, el baño, la ropa limpia o las cosas que no se prestan.", "sugerencia": "Preparen juntos su bolsita de aseo (cepillo, jabón, toalla) y conversen sobre para qué sirve cada cosa y por qué el cepillo no se presta." },
+      "agua-alimentos": { "descripcion": "No reconoce qué agua es segura para tomar o por qué hay que lavar y tapar los alimentos.", "sugerencia": "Muéstrenle cómo hierven el agua de tomar (sin que la toque) y pídanle que ayude a lavar las frutas y a tapar la comida." },
+      "habitos-salud": { "descripcion": "Le cuesta distinguir hábitos saludables (dormir bien, moverse, vacunarse) de los que no lo son.", "sugerencia": "Usen una tabla semanal de hábitos y conversen cada noche sobre lo que hicieron para cuidar su salud." },
+      "microbios": { "descripcion": "No entiende que los microbios no se ven y que pasan de las manos o de la tos a la boca.", "sugerencia": "Pongan un poco de harina en la mano de uno de ustedes, salúdense y toquen objetos: vean cómo la harina pasa a todas partes, igual que los microbios que no se ven." },
+      "vocabulario-tema": { "descripcion": "No recuerda algunas palabras del tema (jabón, ducha, vacuna...).", "sugerencia": "Jueguen a nombrar las cosas del baño y del botiquín mientras las señalan." },
+      "escritura-tema": { "descripcion": "Tiene dificultad para escribir palabras del tema, como «higiene» (con h y g).", "sugerencia": "Escriban juntos las palabras del tema en tarjetas, marcando con color la h que no suena." },
+      "produce-oracion": { "descripcion": "Le cuesta escribir una oración completa con mayúscula y punto.", "sugerencia": "Digan el consejo en voz alta, escríbanlo juntos y péguenlo junto al lavamanos." },
+      "calculo": { "descripcion": "Se equivoca al sumar o al contar las horas y las veces en los problemas de salud.", "sugerencia": "Usen un reloj de verdad o dibujado para contar horas de una en una, y fichas para contar de 2 en 2." }
+    }
+  }
+}

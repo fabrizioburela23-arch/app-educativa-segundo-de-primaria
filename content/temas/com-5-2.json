@@ -1,0 +1,414 @@
+{
+  "id": "com-5-2",
+  "titulo": "fr, fl, gr y gl",
+  "objetivo": "Leo, escucho, digo y escribo palabras con fr, fl, gr y gl.",
+  "explicacion": [
+    {
+      "texto": "La **f** y la **g** también tienen consonantes amigas: la **r** y la **l**. Se juntan en la misma sílaba: **fre**-sa, **flor**, **gri**-llo, **glo**-bo.",
+      "emoji": "🌸",
+      "visual": { "tipo": "emojis", "items": ["🍓", "🌸", "🦗", "🎈"], "etiquetas": ["fresa", "flor", "grillo", "globo"] }
+    },
+    {
+      "texto": "Escucha bien si suena **r** o **l**, porque una letra cambia la palabra. Te **fr**otas las manos con jabón. Un bote **fl**ota en el lago Titicaca.",
+      "visual": { "tipo": "emojis", "items": ["🧼", "⛵"], "etiquetas": ["frota", "flota"] }
+    },
+    {
+      "texto": "Cada grupo se junta con las cinco vocales. Léelas despacio, sin meter otra vocal en medio: se dice «**flor**», no «fe-lor».",
+      "visual": {
+        "tipo": "tabla",
+        "columnas": ["Grupo", "Sílabas"],
+        "filas": [
+          ["fr", "fra, fre, fri, fro, fru"],
+          ["fl", "fla, fle, fli, flo, flu"],
+          ["gr", "gra, gre, gri, gro, gru"],
+          ["gl", "gla, gle, gli, glo, glu"]
+        ]
+      }
+    },
+    {
+      "texto": "Al escribir, pon las dos consonantes y en su orden: fruta, no «futa» ni «furta». Al separar en sílabas, el grupo va junto: ti-**gre**, re-**gla**.",
+      "visual": { "tipo": "emojis", "items": ["🐯", "📏"], "etiquetas": ["ti-gre", "re-gla"] }
+    }
+  ],
+  "ejemplo": {
+    "instruccion": "Mira cómo buscamos las consonantes amigas en una oración.",
+    "pasos": [
+      {
+        "texto": "Leemos: «Flora infla un globo grande y come frutillas».",
+        "visual": { "tipo": "emojis", "items": ["👧", "🎈", "🍓"], "etiquetas": ["Flora", "globo", "frutillas"] }
+      },
+      {
+        "texto": "**Flo**-ra e in-**fla** llevan **fl**. **Fru**-ti-llas lleva **fr**. ¡En Bolivia, a las fresas también les decimos frutillas!",
+        "visual": { "tipo": "tabla", "columnas": ["fl", "fr"], "filas": [["Flora, infla", "frutillas"]] }
+      },
+      {
+        "texto": "**Glo**-bo lleva **gl** y **gran**-de lleva **gr**. ¡Encontramos los cuatro grupos!",
+        "visual": { "tipo": "tabla", "columnas": ["fr", "fl", "gr", "gl"], "filas": [["frutillas", "Flora, infla", "grande", "globo"]] }
+      },
+      {
+        "texto": "Ahora dilo tú en voz alta: primero despacio, sílaba por sílaba, y después más rápido. «Flo-ra in-fla un glo-bo gran-de...»",
+        "emoji": "🗣️"
+      }
+    ]
+  },
+  "guiada": {
+    "intro": "Ahora lo hacemos juntos.",
+    "pasos": [
+      {
+        "id": "g1", "tipo": "opcion",
+        "enunciado": "Escucha la palabra. ¿Empieza con fr o con fl?",
+        "apoyo": "Escúchala dos veces. Después de la f, ¿suena r, como en «fresa», o l, como en «flor»?",
+        "escuchar": "flauta",
+        "opciones": [
+          { "texto": "fr", "pista": "Escucha otra vez y compara con «fresa» y con «flor». ¿A cuál se parece el comienzo?", "error": "confunde-r-l" },
+          { "texto": "fl", "correcta": true }
+        ],
+        "mezclar": false,
+        "columnas": 2,
+        "pista": "Repite la palabra en voz baja, muy despacio, y fíjate en su primera sílaba.",
+        "explicacion": "«Flauta» empieza con fl: **flau**-ta. La flauta es un instrumento de viento.",
+        "error": "confunde-r-l"
+      },
+      {
+        "id": "g2", "tipo": "completar",
+        "enunciado": "Completa con gr o gl.",
+        "apoyo": "Lee cada palabra en voz alta. Después de la g, ¿suena r o l?",
+        "texto": "El ti[gr]e mira un [gl]obo [gr]ande.",
+        "pista": "Di cada palabra despacio y escucha qué letra va después de la g.",
+        "explicacion": "«Tigre» y «grande» llevan gr. «Globo» lleva gl.",
+        "error": "confunde-r-l"
+      },
+      {
+        "id": "g3", "tipo": "escribir",
+        "enunciado": "Escucha y escribe la palabra.",
+        "apoyo": "Sepárala en sílabas: fru-ta. La primera sílaba empieza con dos consonantes amigas.",
+        "escuchar": "fruta",
+        "visual": { "tipo": "emojis", "items": ["🍎", "🍌", "🍇"] },
+        "respuestas": ["fruta"],
+        "pista": "Tiene dos sílabas. Escucha bien la primera: tiene tres sonidos.",
+        "explicacion": "Se escribe **fruta**: **fru**-ta, con fr.",
+        "error": "dictado-grupos"
+      }
+    ]
+  },
+  "practica": [
+    {
+      "id": "p1", "tipo": "memoria", "nivel": 1,
+      "enunciado": "Encuentra las parejas: el dibujo y su nombre.",
+      "pares": [
+        [{ "emoji": "🍓" }, "fresa"],
+        [{ "emoji": "🌸" }, "flor"],
+        [{ "emoji": "🦗" }, "grillo"],
+        [{ "emoji": "🎈" }, "globo"],
+        [{ "emoji": "🐯" }, "tigre"]
+      ],
+      "pista": "Mira cada dibujo, di su nombre en voz alta y busca la tarjeta que lo dice.",
+      "explicacion": "Fresa lleva fr; flor, fl; grillo y tigre, gr, y globo, gl.",
+      "error": "vocabulario-grupos"
+    },
+    {
+      "id": "p2", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Toca las palabras que tienen fr.",
+      "texto": "Sofía come *frutillas* *frescas* en la feria.",
+      "pista": "Hay dos. Busca la f con la r pegada. ¡Ojo: no todas las palabras con f tienen fr!",
+      "explicacion": "«Frutillas» y «frescas» tienen fr. «Sofía» y «feria» tienen f, pero sin la r pegada.",
+      "error": "no-reconoce-grupo"
+    },
+    {
+      "id": "p3", "tipo": "completar", "nivel": 1,
+      "enunciado": "Completa con fr o fl.",
+      "texto": "La [fl]or es roja y la [fr]esa también.",
+      "pista": "Di cada palabra despacio: después de la f, ¿suena r o suena l?",
+      "explicacion": "«Flor» lleva fl y «fresa» lleva fr.",
+      "error": "confunde-r-l"
+    },
+    {
+      "id": "p4", "tipo": "escribir", "nivel": 1,
+      "enunciado": "Escucha y escribe la palabra.",
+      "escuchar": "regla",
+      "visual": { "tipo": "emoji", "valor": "📏" },
+      "respuestas": ["regla"],
+      "pista": "Tiene dos sílabas. La segunda empieza con dos consonantes amigas: ¿suena r o l?",
+      "explicacion": "Se escribe **regla**: re-**gla**, con gl.",
+      "error": "dictado-grupos"
+    },
+    {
+      "id": "p5", "tipo": "relacionar", "nivel": 1,
+      "enunciado": "Une el comienzo con el final de cada palabra.",
+      "pares": [
+        [{ "texto": "ti", "emoji": "🐯" }, "gre"],
+        [{ "texto": "re", "emoji": "📏" }, "gla"],
+        [{ "texto": "i", "emoji": "⛪" }, "glesia"],
+        [{ "texto": "gri", "emoji": "🦗" }, "llo"]
+      ],
+      "pista": "Mira el dibujo, junta el comienzo con un final y léelo en voz alta: ¿forma la palabra?",
+      "explicacion": "Se forman tigre, regla, iglesia y grillo.",
+      "error": "arma-palabras"
+    },
+    {
+      "id": "p6", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "¿Lleva gr o gl?",
+      "categorias": [
+        { "id": "gr", "texto": "gr" },
+        { "id": "gl", "texto": "gl" }
+      ],
+      "elementos": [
+        { "texto": "alegre", "emoji": "😄", "categoria": "gr" },
+        { "texto": "granja", "categoria": "gr" },
+        { "texto": "grano", "emoji": "🌾", "categoria": "gr" },
+        { "texto": "jungla", "emoji": "🌴", "categoria": "gl" },
+        { "texto": "renglón", "emoji": "📝", "categoria": "gl" },
+        { "texto": "arreglar", "emoji": "🔧", "categoria": "gl" }
+      ],
+      "pista": "Lee cada palabra despacio. Después de la g, ¿suena r o suena l?",
+      "explicacion": "Con gr: alegre, granja y grano. Con gl: jungla, renglón y arreglar.",
+      "error": "confunde-r-l"
+    },
+    {
+      "id": "p7", "tipo": "ordenar", "nivel": 2,
+      "enunciado": "Ordena las sílabas. Es un ave rosada que vive en lagunas del altiplano.",
+      "elementos": ["fla", "men", "co"],
+      "unir": "",
+      "pista": "Tiene tres sílabas. La primera tiene fl.",
+      "explicacion": "Fla-men-co: **flamenco**. En la Laguna Colorada, en Potosí, viven muchos flamencos.",
+      "error": "arma-palabras"
+    },
+    {
+      "id": "p8", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha y escribe la palabra.",
+      "escuchar": "frío",
+      "visual": { "tipo": "emoji", "valor": "🥶" },
+      "respuestas": ["frío"],
+      "pista": "Tiene dos sílabas. La primera empieza con dos consonantes amigas: ¿suena r o l?",
+      "explicacion": "Se escribe **frío**: **frí**-o, con fr. Lleva tilde en la í.",
+      "error": "dictado-grupos"
+    },
+    {
+      "id": "p9", "tipo": "tocar", "nivel": 2,
+      "enunciado": "Lee el trabalenguas. Toca las palabras que tienen fl.",
+      "texto": "*Flavio* toca la *flauta* y *Florencia* *infla* un globo.",
+      "pista": "Hay cuatro. Busca la f con la l pegada. ¡Cuidado con una palabra que tiene gl!",
+      "explicacion": "Flavio, flauta, Florencia e infla tienen fl. «Globo» tiene gl, no fl.",
+      "error": "no-reconoce-grupo"
+    },
+    {
+      "id": "p10", "tipo": "multiple", "nivel": 2,
+      "enunciado": "Elige todas las palabras que están bien escritas.",
+      "opciones": [
+        { "texto": "grande", "correcta": true },
+        { "texto": "garnde", "pista": "Mira el orden: en «grande», la r va pegada a la g.", "error": "invierte-grupo" },
+        { "texto": "iglesia", "correcta": true },
+        { "texto": "igesia", "pista": "Falta una letra. Di despacio: i-gle-sia.", "error": "omite-consonante" },
+        { "texto": "frazada", "correcta": true },
+        { "texto": "farzada", "pista": "Mira el orden: en «frazada», la r va pegada a la f.", "error": "invierte-grupo" }
+      ],
+      "pista": "Lee cada palabra en voz alta, despacio. ¿Falta una letra o hay letras cambiadas de lugar?",
+      "explicacion": "Están bien escritas grande, iglesia y frazada. En «garnde» y «farzada» la r cambió de lugar; en «igesia» falta la l.",
+      "error": "invierte-grupo"
+    },
+    {
+      "id": "p11", "tipo": "completar", "nivel": 3,
+      "enunciado": "Completa con fr o fl. ¡Cuidado: una letra cambia el significado!",
+      "texto": "El bote [fl]ota en el lago y Ana se [fr]ota las manos con jabón.",
+      "pista": "«Flotar» es quedarse sobre el agua. «Frotar» es pasar algo una y otra vez, apretando.",
+      "explicacion": "El bote **flota** (se queda sobre el agua) y Ana se **frota** las manos (las pasa una contra otra).",
+      "error": "confunde-r-l"
+    },
+    {
+      "id": "p12", "tipo": "escribir-libre", "nivel": 2,
+      "enunciado": "Escribe una oración con una de estas palabras: fruta, flor, grande, globo, tigre o regla.",
+      "guia": ["En la feria hay...", "Mi globo es..."],
+      "requisitos": [
+        { "tipo": "mayuscula-inicial" },
+        { "tipo": "punto-final" },
+        { "tipo": "min-palabras", "valor": 4 },
+        { "tipo": "incluye", "palabras": ["fruta", "flor", "grande", "globo", "tigre", "regla"] }
+      ],
+      "modelo": "Mi hermano compra fruta en la feria.",
+      "pista": "Elige una palabra y piensa qué hace o cómo es. Empieza con mayúscula y termina con punto.",
+      "explicacion": "Por ejemplo: «Mi hermano compra fruta en la feria.» Revisa que tu palabra tenga sus dos consonantes amigas.",
+      "error": "produce-oracion"
+    },
+    {
+      "id": "p13", "tipo": "opcion", "nivel": 2,
+      "enunciado": "¿Cómo se separa «negro» en sílabas?",
+      "opciones": [
+        { "texto": "ne-gro", "correcta": true },
+        { "texto": "neg-ro", "pista": "La g y la r son amigas: van juntas en la misma sílaba.", "error": "separa-grupo" },
+        { "texto": "ne-go-ro", "pista": "No agregues vocales: «negro» tiene dos sílabas.", "error": "separa-grupo" }
+      ],
+      "columnas": 3,
+      "pista": "Da una palmada por cada sílaba. El grupo gr no se parte.",
+      "explicacion": "Se separa ne-**gro**: la g y la r van juntas en la misma sílaba.",
+      "error": "separa-grupo"
+    },
+    {
+      "id": "p14", "tipo": "tocar", "nivel": 3,
+      "enunciado": "Toca todas las palabras que tienen gr o gl.",
+      "texto": "En la *granja* de *Gladys* hay un *grillo* *alegre* y un gato gordo.",
+      "pista": "Hay cuatro. Busca la g con la r o la l pegada. ¡Cuidado con las palabras que tienen una vocal después de la g!",
+      "explicacion": "Granja, Gladys, grillo y alegre tienen gr o gl. En «gato» y «gordo», después de la g viene una vocal.",
+      "error": "no-reconoce-grupo"
+    },
+    {
+      "id": "p15", "tipo": "pasos", "nivel": 3,
+      "enunciado": "Lee: «Grover viaja en flota a Oruro. Hace frío y lleva una frazada gris.»",
+      "visual": { "tipo": "emojis", "items": ["🚌", "🥶"] },
+      "pasos": [
+        {
+          "tipo": "tocar",
+          "enunciado": "Toca las palabras que tienen fr.",
+          "texto": "Grover viaja en flota a Oruro. Hace *frío* y lleva una *frazada* gris.",
+          "pista": "Hay dos. Busca la f con la r pegada.",
+          "explicacion": "«Frío» y «frazada» tienen fr. «Flota» tiene fl.",
+          "error": "confunde-r-l"
+        },
+        {
+          "tipo": "tocar",
+          "enunciado": "Ahora toca las palabras que tienen gr.",
+          "texto": "*Grover* viaja en flota a Oruro. Hace frío y lleva una frazada *gris*.",
+          "pista": "Hay dos: una al principio y otra al final.",
+          "explicacion": "«Grover» y «gris» tienen gr.",
+          "error": "no-reconoce-grupo"
+        },
+        {
+          "tipo": "escribir",
+          "enunciado": "¿En qué viaja Grover? Escribe la palabra.",
+          "respuestas": ["flota", "en flota", "una flota", "en una flota"],
+          "pista": "Vuelve a leer la primera oración.",
+          "explicacion": "Grover viaja en **flota**, con fl. En Bolivia, la flota es el bus que viaja de una ciudad a otra.",
+          "error": "lectura-comprension"
+        }
+      ],
+      "pista": "Resuelve un paso a la vez. Vuelve a leer las oraciones si lo necesitas.",
+      "explicacion": "Con fr: frío y frazada. Con gr: Grover y gris. Con fl: flota.",
+      "error": "no-reconoce-grupo"
+    },
+    {
+      "id": "p16", "tipo": "escribir", "nivel": 3,
+      "enunciado": "Escucha la oración y escríbela.",
+      "escuchar": "La flor es grande.",
+      "respuestas": ["La flor es grande.", "La flor es grande"],
+      "pista": "Son cuatro palabras. Dos tienen consonantes amigas: escúchalas despacio.",
+      "explicacion": "Se escribe «La flor es grande.» «Flor» lleva fl y «grande» lleva gr.",
+      "error": "dictado-grupos"
+    }
+  ],
+  "comprobacion": [
+    {
+      "id": "c1", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Toca las palabras que tienen gl.",
+      "texto": "*Gloria* lleva un *globo* a la *iglesia*.",
+      "pista": "Hay tres. Busca la g con la l pegada; puede estar al principio o en medio.",
+      "explicacion": "Gloria, globo e iglesia tienen gl: **Glo**-ria, **glo**-bo, i-**gle**-sia.",
+      "error": "no-reconoce-grupo"
+    },
+    {
+      "id": "c2", "tipo": "relacionar", "nivel": 1,
+      "enunciado": "Une cada palabra con su grupo de consonantes amigas.",
+      "pares": [
+        [{ "texto": "flecha", "emoji": "🏹" }, "fl"],
+        [{ "texto": "cangrejo", "emoji": "🦀" }, "gr"],
+        [{ "texto": "frazada" }, "fr"],
+        [{ "texto": "iglú" }, "gl"]
+      ],
+      "pista": "Busca en cada palabra la f o la g, y mira qué letra va pegada después.",
+      "explicacion": "Flecha lleva fl; cangrejo, gr; frazada, fr, e iglú, gl.",
+      "error": "clasifica-grupos"
+    },
+    {
+      "id": "c3", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa con fr, fl, gr o gl.",
+      "texto": "En la feria, Arami compra [fr]utas y [fl]ores, y su abuelo le regala un [gl]obo [gr]ande.",
+      "pista": "Lee cada palabra en voz alta. ¿Empieza con f o con g? ¿Después suena r o l?",
+      "explicacion": "Se escribe **frutas** (fr), **flores** (fl), **globo** (gl) y **grande** (gr).",
+      "error": "confunde-r-l"
+    },
+    {
+      "id": "c4", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha y escribe la palabra.",
+      "escuchar": "florero",
+      "respuestas": ["florero"],
+      "pista": "Tiene tres sílabas. La primera empieza con dos consonantes amigas: ¿suena r o l?",
+      "explicacion": "Se escribe **florero**: **flo**-re-ro, con fl. Es de la familia de «flor».",
+      "error": "dictado-grupos"
+    },
+    {
+      "id": "c5", "tipo": "opcion", "nivel": 2,
+      "enunciado": "Escucha la palabra. ¿Cuál está bien escrita?",
+      "escuchar": "granizo",
+      "opciones": [
+        { "texto": "granizo", "correcta": true },
+        { "texto": "glanizo", "pista": "Escucha otra vez: después de la g, ¿suena r o l?", "error": "confunde-r-l" },
+        { "texto": "garnizo", "pista": "Mira el orden: la r va pegada a la g, sin vocal en medio.", "error": "invierte-grupo" }
+      ],
+      "columnas": 3,
+      "pista": "Escucha la primera sílaba: tiene dos consonantes amigas.",
+      "explicacion": "Se escribe **granizo**: **gra**-ni-zo, con gr. El granizo son bolitas de hielo que caen de las nubes.",
+      "error": "confunde-r-l"
+    },
+    {
+      "id": "c6", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "¿Lleva fr o fl?",
+      "categorias": [
+        { "id": "fr", "texto": "fr" },
+        { "id": "fl", "texto": "fl" }
+      ],
+      "elementos": [
+        { "texto": "freír", "emoji": "🍳", "categoria": "fr" },
+        { "texto": "frente", "categoria": "fr" },
+        { "texto": "cofre", "categoria": "fr" },
+        { "texto": "reflejo", "categoria": "fl" },
+        { "texto": "inflar", "emoji": "🎈", "categoria": "fl" },
+        { "texto": "flotador", "categoria": "fl" }
+      ],
+      "pista": "Lee cada palabra despacio. Después de la f, ¿suena r o suena l?",
+      "explicacion": "Con fr: freír, frente y cofre. Con fl: reflejo, inflar y flotador.",
+      "error": "confunde-r-l"
+    },
+    {
+      "id": "c7", "tipo": "ordenar", "nivel": 3,
+      "enunciado": "Ordena las palabras para armar el trabalenguas.",
+      "elementos": ["Graciela", "agradece", "los", "granos", "de", "quinua."],
+      "unir": " ",
+      "pista": "Empieza con el nombre, que lleva mayúscula, y termina con la palabra que tiene punto.",
+      "explicacion": "«Graciela agradece los granos de quinua.» Se repite gr: Graciela, agradece, granos.",
+      "error": "orden-oracion"
+    },
+    {
+      "id": "c8", "tipo": "escribir", "nivel": 3,
+      "enunciado": "Escucha la oración y escríbela.",
+      "escuchar": "Flora pinta un tigre.",
+      "respuestas": ["Flora pinta un tigre.", "Flora pinta un tigre"],
+      "pista": "Son cuatro palabras y la primera es un nombre. Dos tienen consonantes amigas: escúchalas despacio.",
+      "explicacion": "Se escribe «Flora pinta un tigre.» «Flora» lleva fl y «tigre» lleva gr. Flora es un nombre: va con mayúscula.",
+      "error": "dictado-grupos"
+    }
+  ],
+  "repaso": {
+    "texto": "Las consonantes amigas van juntas en la misma sílaba: fr (fre-sa), fl (flor), gr (ti-gre) y gl (glo-bo). Escucha si suena r o l, y escribe las dos letras en su orden.",
+    "visual": { "tipo": "emojis", "items": ["🍓", "🌸", "🐯", "🎈"], "etiquetas": ["fre-sa", "flor", "ti-gre", "glo-bo"] }
+  },
+  "adulto": {
+    "objetivo": "Leer, pronunciar y escribir palabras con los grupos consonánticos fr, fl, gr y gl. Se trabaja la escucha (distinguir r de l, como en frota y flota), la escritura sin omitir ni invertir letras (fruta, no «futa» ni «furta») y la separación en sílabas sin partir el grupo (ti-gre, re-gla).",
+    "sugerencias": [
+      "En la feria o el mercado, busquen productos y cosas con estos grupos: frutillas, frutas, flores, granos, globos. Al volver a casa, hagan una lista y pinten de color las dos consonantes amigas de cada palabra.",
+      "Jueguen a «¿Flota o se hunde?» con una fuente de agua y objetos de la casa (tapa, hoja, cuchara, corcho). Después sequen cada objeto frotándolo con un trapo. Escriban «flota» y «frota» y comparen la l y la r.",
+      "En un paseo, inventen juntos trabalenguas con fr, fl, gr y gl sobre lo que ven (por ejemplo: «Gladys agradece las flores frescas»). Díganlos primero despacio y después rápido, con una palmada en cada sílaba que tiene el grupo."
+    ],
+    "errores": {
+      "no-reconoce-grupo": { "descripcion": "No encuentra las palabras que tienen fr, fl, gr o gl, sobre todo cuando el grupo está en medio (infla, alegre, iglesia).", "sugerencia": "Lean palabras juntos y pidan que subraye con color la f o la g y su amiga (r o l). Muestren también palabras que no lo tienen: feria, gato." },
+      "confunde-r-l": { "descripcion": "Confunde la r y la l después de f o de g (escribe «flesa» por fresa o «grobo» por globo).", "sugerencia": "Digan pares de sílabas exagerando el sonido (fra-fla, gra-gla) y pidan que levante la mano cuando escuche la l. Usen pares con significado: frota y flota." },
+      "omite-consonante": { "descripcion": "Olvida la segunda consonante del grupo (escribe «futa» por fruta o «igesia» por iglesia).", "sugerencia": "Digan la palabra muy despacio, estirando los sonidos (f-r-u-t-a), y cuenten con los dedos cuántos sonidos escuchan antes de escribir." },
+      "invierte-grupo": { "descripcion": "Cambia de lugar las letras del grupo (escribe «furta» por fruta o «garnde» por grande).", "sugerencia": "Armen la palabra con letras recortadas y lean cada sílaba en voz alta: «gran», no «gar»." },
+      "separa-grupo": { "descripcion": "Parte el grupo al separar sílabas (neg-ro) o mete una vocal de más (ne-go-ro).", "sugerencia": "Separen palabras con palmadas y recuerden que las consonantes amigas van en la misma palmada: ne-gro, ti-gre, re-gla." },
+      "dictado-grupos": { "descripcion": "Tiene dificultad para escribir palabras u oraciones dictadas con fr, fl, gr o gl.", "sugerencia": "Dicten pocas palabras por día, sílaba por sílaba. Después, que lea en voz alta lo que escribió y lo compare con la palabra escrita por ustedes." },
+      "vocabulario-grupos": { "descripcion": "No reconoce o no nombra algunas palabras con estos grupos.", "sugerencia": "Miren dibujos o fotos, nombren juntos las cosas (fresa, flor, grillo, globo) y escriban el nombre debajo de cada una." },
+      "arma-palabras": { "descripcion": "Le cuesta unir partes o sílabas para formar palabras (fla-men-co, i-gle-sia).", "sugerencia": "Escriban sílabas en papelitos, mézclenlas y armen palabras juntos, leyendo en voz alta cada intento." },
+      "clasifica-grupos": { "descripcion": "Duda al decidir qué grupo tiene una palabra cuando se trabajan los cuatro a la vez.", "sugerencia": "Hagan cuatro sobres rotulados fr, fl, gr y gl, y repartan tarjetas con palabras. Primero decidan si es f o g; después, si sigue r o l." },
+      "lectura-comprension": { "descripcion": "Encuentra las letras, pero le cuesta responder qué dice el texto.", "sugerencia": "Después de leer una oración, hagan preguntas cortas (¿quién?, ¿qué?, ¿en qué?) y pidan que busque la respuesta en el texto." },
+      "orden-oracion": { "descripcion": "Le cuesta ordenar las palabras de una oración o un trabalenguas.", "sugerencia": "Escriban la oración en una tira de papel, córtenla por palabras y ármenla juntos: la mayúscula va al principio y el punto al final." },
+      "produce-oracion": { "descripcion": "Le cuesta escribir una oración completa con una palabra que tenga el grupo.", "sugerencia": "Pidan que diga la oración en voz alta antes de escribirla; después revisen juntos la mayúscula inicial, el punto final y el grupo de consonantes." }
+    }
+  }
+}

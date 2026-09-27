@@ -1,0 +1,456 @@
+{
+  "id": "soc-2-5",
+  "titulo": "Medios de comunicación",
+  "objetivo": "Conozco los medios de comunicación de antes y de ahora, y sé usarlos con cuidado, con permiso y con ayuda de un adulto.",
+  "explicacion": [
+    {
+      "texto": "Los **medios de comunicación** sirven para enviar y recibir mensajes y noticias, aunque estemos lejos. Algunos son la carta, el teléfono, la radio, la televisión, el periódico e internet.",
+      "emoji": "💬",
+      "visual": { "tipo": "emojis", "items": ["✉️", "☎️", "📻", "📺", "📰", "💻"], "etiquetas": ["carta", "teléfono", "radio", "televisión", "periódico", "internet"] }
+    },
+    {
+      "texto": "Con la carta y el teléfono nos comunicamos **con una persona**. La radio, la televisión y el periódico llevan noticias **a muchas personas** a la vez. Muchas **radios comunitarias** hablan en aimara, quechua, guaraní y otros idiomas.",
+      "visual": { "tipo": "tabla", "columnas": ["Con una persona", "Con muchas personas"], "filas": [["carta", "radio"], ["teléfono", "televisión"], ["", "periódico"]] }
+    },
+    {
+      "texto": "**Antes**, los chasquis corrían por los caminos para llevar mensajes, y una carta tardaba muchos días. La radio llegó a Bolivia hace casi 100 años y la televisión, en 1969. **Ahora**, con internet, un mensaje llega en segundos.",
+      "visual": { "tipo": "emojis", "items": ["🏃", "✉️", "📻", "📺", "📱"], "etiquetas": ["chasqui", "carta", "radio", "televisión", "celular"] }
+    },
+    {
+      "texto": "Usa el celular e internet **con permiso** y con un adulto cerca. No des tu nombre completo, tu dirección, tu escuela ni fotos tuyas a desconocidos. Si algo te asusta o te incomoda, cuéntalo a un adulto de confianza.",
+      "emoji": "🔒"
+    }
+  ],
+  "ejemplo": {
+    "instruccion": "Mira cómo se comunicaba la familia de Nayra antes y cómo se comunica ahora.",
+    "pasos": [
+      { "texto": "Hace muchos años, la abuela Rosa vivía en una comunidad de Potosí. Escribía cartas a su hermano, que vivía en Santa Cruz. ¡Cada carta tardaba muchos días en llegar!", "visual": { "tipo": "emojis", "items": ["👵", "✉️", "⌛"], "etiquetas": ["abuela Rosa", "carta", "muchos días"] } },
+      { "texto": "En su comunidad, la radio comunitaria avisaba de las reuniones en quechua. Así, todas las familias se enteraban.", "visual": { "tipo": "emojis", "items": ["📻", "🏘️"], "etiquetas": ["radio comunitaria", "comunidad"] } },
+      { "texto": "Hoy, Nayra, la nieta de Rosa, manda un mensaje de voz por celular a su tío abuelo, que vive en Santa Cruz. ¡Llega en segundos!", "visual": { "tipo": "emojis", "items": ["👧", "📱", "💬"], "etiquetas": ["Nayra", "celular", "mensaje"] } },
+      { "texto": "Nayra usa el celular con permiso de su mamá y nunca da sus datos a personas que no conoce.", "visual": { "tipo": "emojis", "items": ["👩", "👧", "🔒"], "etiquetas": ["mamá", "Nayra", "datos cuidados"] } }
+    ]
+  },
+  "guiada": {
+    "intro": "Ahora lo hacemos juntos, paso a paso.",
+    "pasos": [
+      {
+        "id": "g1", "tipo": "relacionar",
+        "enunciado": "Une cada medio de comunicación con lo que hace.",
+        "apoyo": "Piensa en cada uno: ¿se lee, se escucha o se mira?",
+        "pares": [
+          [ { "texto": "carta", "emoji": "✉️" }, "Se escribe en papel y se envía en un sobre." ],
+          [ { "texto": "teléfono", "emoji": "☎️" }, "Sirve para conversar con alguien que está lejos." ],
+          [ { "texto": "radio", "emoji": "📻" }, "Da noticias y música que se escuchan, sin imágenes." ],
+          [ { "texto": "televisión", "emoji": "📺" }, "Muestra imágenes con sonido." ]
+        ],
+        "pista": "Empieza por el que tiene imágenes. Después, el que solo se escucha.",
+        "explicacion": "La carta se escribe y se envía en un sobre. El teléfono sirve para conversar. La radio da noticias y música que solo se escuchan. La televisión muestra imágenes con sonido.",
+        "error": "uso-medios"
+      },
+      {
+        "id": "g2", "tipo": "clasificar",
+        "enunciado": "¿El mensaje es para una persona o para muchas personas?",
+        "apoyo": "Pregúntate: ¿el mensaje es para alguien en especial o lo reciben muchas personas a la vez?",
+        "categorias": [
+          { "id": "una", "texto": "Para una persona", "emoji": "👤" },
+          { "id": "muchas", "texto": "Para muchas personas", "emoji": "👥" }
+        ],
+        "elementos": [
+          { "texto": "una carta para tu prima", "emoji": "✉️", "categoria": "una" },
+          { "texto": "una llamada a tu abuelo", "emoji": "☎️", "categoria": "una" },
+          { "texto": "una tarjeta de cumpleaños para tu amigo", "categoria": "una" },
+          { "texto": "el noticiero de la televisión", "emoji": "📺", "categoria": "muchas" },
+          { "texto": "un programa de radio", "emoji": "📻", "categoria": "muchas" },
+          { "texto": "el periódico del día", "emoji": "📰", "categoria": "muchas" }
+        ],
+        "pista": "¿El mensaje lleva el nombre de alguien en especial, o es para todas las personas que miran, escuchan o leen?",
+        "explicacion": "La carta, la llamada y la tarjeta son para una persona. El noticiero, el programa de radio y el periódico llegan a muchas personas a la vez.",
+        "error": "medios-masivos"
+      },
+      {
+        "id": "g3", "tipo": "ordenar",
+        "enunciado": "Ordena del más antiguo al más nuevo.",
+        "apoyo": "La carta es la más antigua de todas e internet es el más nuevo. En Bolivia, la radio llegó antes que la televisión.",
+        "elementos": [
+          { "texto": "carta", "emoji": "✉️" },
+          { "texto": "radio", "emoji": "📻" },
+          { "texto": "televisión", "emoji": "📺" },
+          { "texto": "internet", "emoji": "💻" }
+        ],
+        "pista": "¿Qué llegó primero a Bolivia: la radio o la televisión?",
+        "explicacion": "Primero, la carta. Después, la radio (hace casi 100 años) y la televisión (1969). Al final, internet.",
+        "error": "linea-tiempo"
+      }
+    ]
+  },
+  "practica": [
+    {
+      "id": "p1", "tipo": "memoria", "nivel": 1,
+      "enunciado": "Encuentra las parejas: el dibujo y su nombre.",
+      "pares": [
+        [ { "emoji": "✉️" }, "carta" ],
+        [ { "emoji": "📻" }, "radio" ],
+        [ { "emoji": "📺" }, "televisión" ],
+        [ { "emoji": "📰" }, "periódico" ],
+        [ { "emoji": "☎️" }, "teléfono" ]
+      ],
+      "pista": "Mira bien cada dibujo: ¿es un papel, un aparato con pantalla o un aparato para escuchar?",
+      "explicacion": "Carta, radio, televisión, periódico y teléfono son medios de comunicación.",
+      "error": "identifica-medios"
+    },
+    {
+      "id": "p2", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Toca los medios de comunicación.",
+      "texto": "Mi abuelo escucha la *radio* y mi tía lee el *periódico* en la cocina.",
+      "pista": "Busca lo que escucha el abuelo y lo que lee la tía.",
+      "explicacion": "La radio y el periódico son medios de comunicación. La cocina es un lugar.",
+      "error": "identifica-medios"
+    },
+    {
+      "id": "p3", "tipo": "escribir", "nivel": 1,
+      "enunciado": "Escucha y escribe el medio de comunicación.",
+      "escuchar": "carta",
+      "visual": { "tipo": "emoji", "valor": "✉️" },
+      "respuestas": ["carta"],
+      "pista": "Se escribe en papel y va en un sobre. Tiene dos sílabas: car-...",
+      "explicacion": "La palabra es «carta»: car-ta.",
+      "error": "escritura-medios"
+    },
+    {
+      "id": "p4", "tipo": "completar", "nivel": 1,
+      "enunciado": "Completa: ¿cómo usamos cada medio?",
+      "texto": "La radio se [escucha]. El periódico se [lee]. La televisión se [mira] y también se escucha.",
+      "banco": ["come"],
+      "pista": "¿Qué parte del cuerpo usas con cada uno: los oídos, los ojos o los dos?",
+      "explicacion": "La radio se escucha, el periódico se lee y la televisión se mira y se escucha.",
+      "error": "uso-medios"
+    },
+    {
+      "id": "p5", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "¿Pasaba hace mucho tiempo o pasa ahora?",
+      "categorias": [
+        { "id": "antes", "texto": "Hace mucho tiempo", "emoji": "⌛" },
+        { "id": "ahora", "texto": "Ahora", "emoji": "📱" }
+      ],
+      "elementos": [
+        { "texto": "Los chasquis corrían por los caminos con los mensajes.", "categoria": "antes" },
+        { "texto": "En Bolivia no había televisión; las familias escuchaban la radio.", "categoria": "antes" },
+        { "texto": "Nadie tenía celular, porque todavía no existía.", "categoria": "antes" },
+        { "texto": "Hacemos videollamadas para ver a la familia que vive lejos.", "categoria": "ahora" },
+        { "texto": "Mandamos mensajes por celular que llegan en segundos.", "categoria": "ahora" },
+        { "texto": "Leemos noticias en internet.", "categoria": "ahora" }
+      ],
+      "pista": "Si se necesita celular o internet, es de ahora.",
+      "explicacion": "Hace mucho tiempo había chasquis, no existía el celular y en Bolivia había radio, pero no televisión. Ahora usamos celulares, videollamadas e internet.",
+      "error": "antes-ahora"
+    },
+    {
+      "id": "p6", "tipo": "multiple", "nivel": 2,
+      "enunciado": "¿Cuáles son datos personales que no debes dar a desconocidos? Elige todos.",
+      "opciones": [
+        { "texto": "la dirección de tu casa", "emoji": "🏠", "correcta": true },
+        { "texto": "el nombre de tu escuela", "emoji": "🏫", "correcta": true },
+        { "texto": "tu número de teléfono", "emoji": "📱", "correcta": true },
+        { "texto": "cuántas patas tiene una llama", "emoji": "🦙", "pista": "Eso no dice nada de ti: es algo que todos pueden saber.", "error": "datos-personales" },
+        { "texto": "de qué color es el cielo", "pista": "Eso no dice nada de ti: es algo que todos pueden saber.", "error": "datos-personales" }
+      ],
+      "pista": "Un dato personal dice quién eres o dónde encontrarte.",
+      "explicacion": "Tu dirección, tu escuela y tu teléfono son datos personales: dicen dónde encontrarte. Por eso no se dan a desconocidos.",
+      "error": "datos-personales"
+    },
+    {
+      "id": "p7", "tipo": "ordenar", "nivel": 2,
+      "enunciado": "Nayra envía una carta a su prima. Ordena lo que pasa.",
+      "elementos": [
+        "Nayra escribe la carta.",
+        "Pone la carta en un sobre y escribe la dirección.",
+        "Lleva el sobre al correo.",
+        "El cartero entrega la carta.",
+        "Su prima lee la carta."
+      ],
+      "vertical": true,
+      "pista": "¿Qué se hace antes de poner la carta en el sobre?",
+      "explicacion": "Nayra escribe la carta, la pone en un sobre con la dirección y la lleva al correo. El cartero la entrega y su prima la lee.",
+      "error": "envio-carta"
+    },
+    {
+      "id": "p8", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha el aviso de la radio comunitaria. ¿Qué día es la reunión?",
+      "escuchar": "Atención, vecinas y vecinos. El martes, a las nueve de la mañana, hay reunión en la escuela para limpiar el canal de agua.",
+      "visual": { "tipo": "emoji", "valor": "📻" },
+      "respuestas": ["martes", "el martes"],
+      "pista": "Escucha otra vez: el aviso dice un día de la semana.",
+      "explicacion": "El aviso dice que la reunión es el martes, a las nueve de la mañana, en la escuela.",
+      "error": "escucha-mensaje"
+    },
+    {
+      "id": "p9", "tipo": "opcion", "nivel": 2,
+      "enunciado": "¿Por qué las radios comunitarias son importantes en el campo?",
+      "opciones": [
+        { "texto": "Llegan a lugares lejanos y hablan en los idiomas de la comunidad.", "correcta": true },
+        { "texto": "Solo pasan dibujos animados.", "pista": "La radio no tiene imágenes. Además, da avisos y noticias.", "error": "radio-comunitaria" },
+        { "texto": "Solo se pueden escuchar en otro país.", "pista": "La radio comunitaria es de la comunidad y se escucha allí.", "error": "radio-comunitaria" }
+      ],
+      "pista": "Piensa en la abuela Rosa y en los avisos de su comunidad.",
+      "explicacion": "Las radios comunitarias llegan lejos, dan avisos y noticias de la comunidad, y muchas hablan en aimara, quechua, guaraní y otros idiomas.",
+      "error": "radio-comunitaria"
+    },
+    {
+      "id": "p10", "tipo": "tocar", "nivel": 2,
+      "enunciado": "Toca los medios que llevan noticias a muchas personas a la vez.",
+      "texto": "En la casa de Inti hay un *periódico*, una *radio*, una *televisión* y un sobre con una carta.",
+      "pista": "Hay tres. La carta es para una sola persona.",
+      "explicacion": "El periódico, la radio y la televisión llevan noticias a muchas personas. La carta es para una persona.",
+      "error": "medios-masivos"
+    },
+    {
+      "id": "p11", "tipo": "pasos", "nivel": 3,
+      "enunciado": "Juegas en la tableta de tu casa y alguien que no conoces te escribe: «¿Dónde vives? ¿En qué escuela estudias?».",
+      "visual": { "tipo": "emojis", "items": ["💬", "❓"] },
+      "pasos": [
+        {
+          "tipo": "opcion",
+          "enunciado": "¿Qué haces?",
+          "opciones": [
+            { "texto": "No respondo y se lo cuento a un adulto de confianza.", "correcta": true },
+            { "texto": "Le digo dónde vivo, porque parece amable.", "pista": "No sabemos quién es. Tu dirección no se da a desconocidos.", "error": "datos-personales" },
+            { "texto": "Le mando una foto mía con mi uniforme.", "pista": "Una foto con uniforme muestra tu escuela. No se envían fotos a desconocidos.", "error": "datos-personales" }
+          ],
+          "pista": "Esa persona te pide datos personales. ¿Quién puede ayudarte?",
+          "explicacion": "No respondemos y se lo contamos a un adulto de confianza. Esa persona sabrá qué hacer.",
+          "error": "uso-seguro"
+        },
+        {
+          "tipo": "opcion",
+          "enunciado": "La persona escribe: «No le cuentes a nadie, es nuestro secreto». ¿Qué haces?",
+          "opciones": [
+            { "texto": "Se lo cuento igual a un adulto de confianza.", "correcta": true },
+            { "texto": "Guardo el secreto.", "pista": "Un secreto que te pide un desconocido no se guarda: se cuenta.", "error": "uso-seguro" },
+            { "texto": "Sigo conversando para saber quién es.", "pista": "Es mejor dejar de conversar y pedir ayuda.", "error": "uso-seguro" }
+          ],
+          "pista": "¿Un desconocido puede pedirte que guardes secretos?",
+          "explicacion": "Se lo contamos igual a un adulto de confianza. Los secretos que pide un desconocido o que nos hacen sentir mal no se guardan.",
+          "error": "uso-seguro"
+        }
+      ],
+      "pista": "Resuelve un paso a la vez. Piensa en tu seguridad.",
+      "explicacion": "Con desconocidos en internet: no damos datos, no enviamos fotos y avisamos a un adulto de confianza, aunque nos pidan guardar el secreto.",
+      "error": "uso-seguro"
+    },
+    {
+      "id": "p12", "tipo": "pasos", "nivel": 3,
+      "enunciado": "Hoy es el cumpleaños de tu tío Juan, que vive en Tarija. Tú vives en El Alto.",
+      "visual": { "tipo": "emojis", "items": ["🎂", "☎️"] },
+      "pasos": [
+        {
+          "tipo": "opcion",
+          "enunciado": "Quieres saludarlo hoy mismo. ¿Qué medio es el más rápido?",
+          "opciones": [
+            { "texto": "Una llamada por teléfono.", "correcta": true },
+            { "texto": "Una carta por correo.", "pista": "Una carta tarda días en llegar a Tarija. Hoy no llegaría.", "error": "uso-medios" },
+            { "texto": "Un dibujo que le darás en las vacaciones.", "pista": "Las vacaciones están lejos, y tú quieres saludarlo hoy.", "error": "uso-medios" }
+          ],
+          "pista": "¿Con cuál puedes hablar con tu tío ahora mismo?",
+          "explicacion": "Con una llamada por teléfono lo saludas enseguida, hoy mismo.",
+          "error": "uso-medios"
+        },
+        {
+          "tipo": "escribir-libre",
+          "enunciado": "Escribe el saludo que le dirías a tu tío.",
+          "guia": ["¡Feliz cumpleaños, tío Juan!", "Te deseo...", "Te quiero..."],
+          "requisitos": [
+            { "tipo": "mayuscula-inicial" },
+            { "tipo": "punto-final" },
+            { "tipo": "min-palabras", "valor": 4 },
+            { "tipo": "incluye", "palabras": ["cumpleaños", "felicidades", "feliz"] }
+          ],
+          "modelo": "¡Feliz cumpleaños, tío Juan! Te quiero mucho.",
+          "pista": "Empieza con «¡Feliz cumpleaños!» y agrega un buen deseo.",
+          "explicacion": "Por ejemplo: «¡Feliz cumpleaños, tío Juan! Te quiero mucho». Empieza con mayúscula y termina con punto o con signo de exclamación.",
+          "error": "produce-oracion"
+        }
+      ],
+      "pista": "Resuelve un paso a la vez.",
+      "explicacion": "Para saludar hoy mismo, llamamos por teléfono y decimos un saludo con cariño.",
+      "error": "uso-medios"
+    },
+    {
+      "id": "p13", "tipo": "escribir-libre", "nivel": 3,
+      "enunciado": "Escribe una regla para usar internet o el celular con cuidado.",
+      "guia": ["Pido permiso a...", "No doy mi...", "Si algo me asusta, ..."],
+      "requisitos": [
+        { "tipo": "mayuscula-inicial" },
+        { "tipo": "punto-final" },
+        { "tipo": "min-palabras", "valor": 5 }
+      ],
+      "modelo": "Pido permiso a mi mamá antes de usar internet.",
+      "pista": "Piensa en pedir permiso, en tus datos personales o en qué hacer si algo te asusta.",
+      "explicacion": "Por ejemplo: «Pido permiso a mi mamá antes de usar internet». Empieza con mayúscula y termina con punto.",
+      "error": "produce-oracion"
+    },
+    {
+      "id": "p14", "tipo": "ordenar", "nivel": 3,
+      "enunciado": "¿Cómo se enviaban los mensajes? Ordena del más antiguo al más nuevo.",
+      "elementos": [
+        { "texto": "Un chasqui corre con el mensaje.", "emoji": "🏃" },
+        { "texto": "Una carta viaja por correo.", "emoji": "✉️" },
+        { "texto": "Una llamada por teléfono fijo.", "emoji": "☎️" },
+        { "texto": "Un mensaje por celular.", "emoji": "📱" }
+      ],
+      "vertical": true,
+      "pista": "Los chasquis corrían en tiempos muy antiguos. El celular es lo más nuevo.",
+      "explicacion": "Primero, los chasquis corrían con los mensajes. Después llegaron las cartas por correo, luego el teléfono fijo y, al final, el celular.",
+      "error": "linea-tiempo"
+    }
+  ],
+  "comprobacion": [
+    {
+      "id": "c1", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Toca los medios de comunicación.",
+      "texto": "Wara habla por *teléfono* con su papá y después mira la *televisión*.",
+      "pista": "Busca con qué habla Wara y qué mira después.",
+      "explicacion": "El teléfono y la televisión son medios de comunicación.",
+      "error": "identifica-medios"
+    },
+    {
+      "id": "c2", "tipo": "opcion", "nivel": 1,
+      "enunciado": "¿Qué medio de comunicación es este?",
+      "visual": { "tipo": "emoji", "valor": "📻" },
+      "opciones": [
+        { "texto": "la radio", "correcta": true },
+        { "texto": "el periódico", "pista": "El periódico es de papel y se lee.", "error": "identifica-medios" },
+        { "texto": "la carta", "pista": "La carta es de papel y va en un sobre.", "error": "identifica-medios" }
+      ],
+      "pista": "Es un aparato que se escucha.",
+      "explicacion": "Es una radio: la escuchamos para saber noticias y oír música.",
+      "error": "identifica-medios"
+    },
+    {
+      "id": "c3", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "¿Se lee, se escucha o se mira y se escucha?",
+      "categorias": [
+        { "id": "lee", "texto": "Se lee", "emoji": "📖" },
+        { "id": "escucha", "texto": "Se escucha", "emoji": "👂" },
+        { "id": "mira", "texto": "Se mira y se escucha", "emoji": "👀" }
+      ],
+      "elementos": [
+        { "texto": "una carta de tu prima", "emoji": "✉️", "categoria": "lee" },
+        { "texto": "un mensaje escrito en el celular", "emoji": "💬", "categoria": "lee" },
+        { "texto": "un aviso de la radio comunitaria", "emoji": "📻", "categoria": "escucha" },
+        { "texto": "una llamada por teléfono", "emoji": "☎️", "categoria": "escucha" },
+        { "texto": "el noticiero de la televisión", "emoji": "📺", "categoria": "mira" },
+        { "texto": "una videollamada con tu abuela", "emoji": "📱", "categoria": "mira" }
+      ],
+      "pista": "Piensa: ¿usas solo los ojos, solo los oídos, o los ojos y los oídos a la vez?",
+      "explicacion": "La carta y el mensaje escrito se leen. El aviso de la radio y la llamada por teléfono se escuchan. El noticiero y la videollamada se miran y se escuchan.",
+      "error": "uso-medios"
+    },
+    {
+      "id": "c4", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha y escribe el medio de comunicación.",
+      "escuchar": "periódico",
+      "visual": { "tipo": "emoji", "valor": "📰" },
+      "respuestas": ["periódico"],
+      "pista": "Trae noticias escritas en papel. Tiene cuatro sílabas: pe-rió-...",
+      "explicacion": "La palabra es «periódico»: pe-rió-di-co, con tilde en la o.",
+      "error": "escritura-medios"
+    },
+    {
+      "id": "c5", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa: antes y ahora.",
+      "texto": "Antes, los [chasquis] corrían para llevar mensajes. Una carta tardaba muchos [días] en llegar. Ahora, un mensaje por celular llega en [segundos].",
+      "banco": ["colores"],
+      "pista": "Recuerda a los mensajeros que corrían por los caminos de los Andes. Después piensa: ¿qué tarda más y qué tarda menos?",
+      "explicacion": "Antes, los chasquis corrían con los mensajes y una carta tardaba muchos días. Ahora, un mensaje por celular llega en segundos.",
+      "error": "antes-ahora"
+    },
+    {
+      "id": "c6", "tipo": "multiple", "nivel": 2,
+      "enunciado": "¿Qué debes hacer para usar internet con cuidado? Elige todas las respuestas correctas.",
+      "opciones": [
+        { "texto": "Pedir permiso a un adulto antes de usarlo.", "correcta": true },
+        { "texto": "Contar a un adulto si algo te asusta.", "correcta": true },
+        { "texto": "No dar tu dirección ni tu escuela a desconocidos.", "correcta": true },
+        { "texto": "Aceptar como amigo a cualquier desconocido.", "pista": "No sabemos quién es en verdad una persona desconocida.", "error": "uso-seguro" },
+        { "texto": "Enviar fotos tuyas a quien te las pida.", "pista": "Tus fotos son tuyas. No se envían a desconocidos.", "error": "datos-personales" }
+      ],
+      "pista": "Piensa en lo que te cuida y en lo que te pone en riesgo.",
+      "explicacion": "Pedimos permiso, contamos a un adulto si algo nos asusta y no damos datos a desconocidos. No aceptamos a desconocidos como amigos ni les enviamos fotos.",
+      "error": "uso-seguro"
+    },
+    {
+      "id": "c7", "tipo": "pasos", "nivel": 3,
+      "enunciado": "Ves videos en el celular de tu papá y aparece un mensaje: «¡Ganaste un premio! Escribe tu nombre y tu dirección».",
+      "visual": { "tipo": "emojis", "items": ["📱", "🎁"] },
+      "pasos": [
+        {
+          "tipo": "opcion",
+          "enunciado": "¿Es seguro escribir tus datos allí?",
+          "mezclar": false,
+          "opciones": [
+            { "texto": "Sí, porque es un premio.", "pista": "Muchos mensajes de premios son trampas para pedir datos.", "error": "datos-personales" },
+            { "texto": "No, no es seguro.", "correcta": true }
+          ],
+          "pista": "¿Un mensaje de un desconocido debe pedirte tu dirección?",
+          "explicacion": "No es seguro. Los mensajes de premios que piden datos pueden ser trampas.",
+          "error": "datos-personales"
+        },
+        {
+          "tipo": "opcion",
+          "enunciado": "¿Qué haces?",
+          "opciones": [
+            { "texto": "Le muestro el mensaje a mi papá, sin tocar nada.", "correcta": true },
+            { "texto": "Escribo mis datos rápido para ganar.", "pista": "Tus datos personales no se escriben en mensajes así.", "error": "datos-personales" },
+            { "texto": "Toco todos los botones para ver qué pasa.", "pista": "Tocar botones sin saber puede ser peligroso. Pide ayuda.", "error": "uso-seguro" }
+          ],
+          "pista": "¿Quién te puede ayudar?",
+          "explicacion": "Le mostramos el mensaje a un adulto de confianza, sin tocar nada.",
+          "error": "uso-seguro"
+        }
+      ],
+      "pista": "Resuelve un paso a la vez. Piensa en quién te puede ayudar.",
+      "explicacion": "No escribimos datos personales en mensajes de premios: se los mostramos a un adulto de confianza.",
+      "error": "uso-seguro"
+    },
+    {
+      "id": "c8", "tipo": "ordenar", "nivel": 3,
+      "enunciado": "¿Cómo llega un aviso por la radio comunitaria? Ordena lo que pasa.",
+      "elementos": [
+        "Una vecina ve que el puente del río se rompió.",
+        "Ella llama por teléfono a la radio comunitaria.",
+        "La locutora da el aviso en quechua y en castellano.",
+        "Las familias escuchan el aviso y toman otro camino."
+      ],
+      "vertical": true,
+      "pista": "Primero pasa algo; después alguien avisa a la radio.",
+      "explicacion": "La vecina ve el puente roto, llama a la radio, la locutora da el aviso y las familias, al escucharlo, toman otro camino.",
+      "error": "radio-comunitaria"
+    }
+  ],
+  "repaso": {
+    "texto": "Los medios de comunicación llevan mensajes: la carta y el teléfono, a una persona; la radio, la televisión y el periódico, a muchas. Usa internet con permiso y no des tus datos a desconocidos.",
+    "visual": { "tipo": "emojis", "items": ["✉️", "☎️", "📻", "📺", "📰", "🔒"], "etiquetas": ["carta", "teléfono", "radio", "televisión", "periódico", "datos cuidados"] }
+  },
+  "adulto": {
+    "objetivo": "Reconocer los medios de comunicación (carta, teléfono, radio, televisión, periódico, internet), distinguir los que comunican a una persona de los que informan a muchas, valorar las radios comunitarias y sus idiomas, comparar cómo nos comunicábamos antes y ahora, y aprender normas básicas de uso seguro de internet: pedir permiso, no compartir datos personales y avisar a un adulto de confianza.",
+    "sugerencias": [
+      "Escriban juntos una carta o una tarjeta para un familiar, con sobre y dirección. Entréguenla o envíenla y conversen sobre cuánto tarda en llegar, comparada con una llamada o un mensaje de celular.",
+      "Escuchen juntos una radio local o comunitaria (si es posible, en aimara, quechua, guaraní u otro idioma) o lean una noticia corta del periódico, y pidan que cuente con sus palabras lo que entendió.",
+      "Pregunten a los abuelos cómo se comunicaban cuando eran niños y armen una línea del tiempo con dibujos. Después, acuerden en familia tres reglas para el celular e internet: usarlo con permiso, no dar datos personales y contar si algo le incomoda."
+    ],
+    "errores": {
+      "identifica-medios": { "descripcion": "No reconoce algunos medios de comunicación por su nombre o su dibujo.", "sugerencia": "Busquen en casa medios de comunicación (radio, teléfono, periódico, televisión) y nómbrenlos juntos." },
+      "uso-medios": { "descripcion": "Confunde cómo se usa cada medio (se lee, se escucha, se mira) o cuál conviene en cada situación.", "sugerencia": "Pregunten con cada medio: «¿usamos los ojos, los oídos o los dos?» y «¿cuál llega más rápido?»." },
+      "medios-masivos": { "descripcion": "No distingue los medios que comunican a una persona (carta, teléfono) de los que llegan a muchas personas (radio, televisión, periódico).", "sugerencia": "Comparen una carta con el nombre de alguien y una noticia del periódico: «¿para quién es cada una?»." },
+      "antes-ahora": { "descripcion": "Le cuesta distinguir cómo nos comunicábamos antes y cómo lo hacemos ahora.", "sugerencia": "Conversen con los abuelos sobre cómo recibían noticias cuando eran niños y hagan una lista de «antes» y otra de «ahora»." },
+      "linea-tiempo": { "descripcion": "Le cuesta ordenar en el tiempo los medios de comunicación.", "sugerencia": "Hagan una línea del tiempo en una tira de papel con dibujos: chasqui, carta, radio, televisión, celular." },
+      "envio-carta": { "descripcion": "No ordena bien los pasos para enviar una carta.", "sugerencia": "Escriban y envíen juntos una carta o tarjeta real, nombrando cada paso en voz alta." },
+      "radio-comunitaria": { "descripcion": "No comprende todavía para qué sirven las radios comunitarias.", "sugerencia": "Escuchen juntos una radio local y comenten qué avisos o noticias de la comunidad dio, y en qué idioma." },
+      "escucha-mensaje": { "descripcion": "Le cuesta encontrar un dato (día, hora, lugar) en un mensaje que escucha.", "sugerencia": "Lean en voz alta avisos cortos y pregunten por un solo dato cada vez: ¿qué día?, ¿a qué hora?, ¿dónde?" },
+      "datos-personales": { "descripcion": "No reconoce qué datos personales no debe dar a desconocidos.", "sugerencia": "Hagan juntos una lista de datos que se cuidan (dirección, escuela, teléfono, fotos) y practiquen qué responder si alguien los pide." },
+      "uso-seguro": { "descripcion": "No sabe todavía qué hacer ante un desconocido o un mensaje extraño en internet.", "sugerencia": "Acuerden una regla clara: ante un mensaje raro o un desconocido, no responder, no tocar nada y avisar a un adulto de confianza." },
+      "escritura-medios": { "descripcion": "Comete errores al escribir nombres de medios de comunicación dictados (carta, periódico).", "sugerencia": "Dicten las palabras separando las sílabas con palmadas y recuerden en qué sílaba va la tilde." },
+      "produce-oracion": { "descripcion": "Le cuesta escribir una regla o un saludo completo, con mayúscula y signo final.", "sugerencia": "Escriban juntos mensajes cortos para la familia y revisen la mayúscula inicial y el signo final." }
+    }
+  }
+}

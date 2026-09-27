@@ -1,0 +1,441 @@
+{
+  "id": "soc-3-1",
+  "titulo": "Culturas antiguas de Bolivia",
+  "objetivo": "Conozco culturas muy antiguas de lo que hoy es Bolivia y lo que aprendemos de ellas.",
+  "explicacion": [
+    {
+      "texto": "Hace muchísimos años, antes de que existiera Bolivia, aquí ya vivían pueblos con grandes culturas. Se llaman culturas **precolombinas** porque existieron antes de que Colón y los europeos llegaran a América.",
+      "emoji": "⏳",
+      "visual": {
+        "tipo": "tabla",
+        "columnas": ["¿Cuándo?", "¿Qué pasó?"],
+        "filas": [
+          ["hace más de 3000 años", "aldeas de Chiripa y Wankarani"],
+          ["hace más de 1000 años", "la gran ciudad de Tiwanaku"],
+          ["hace más de 500 años", "llegan los incas"],
+          ["poco después", "llegan los españoles"],
+          ["en 1825", "nace Bolivia"]
+        ]
+      }
+    },
+    {
+      "texto": "**Tiwanaku** fue una gran ciudad cerca del lago Titicaca. Allí están la **Puerta del Sol**, tallada en un solo bloque de piedra; la **Akapana**, una pirámide con escalones; y el **Kalasasaya**, un templo de piedras paradas.",
+      "visual": { "tipo": "emojis", "items": ["☀️", "🔺", "🏛️"], "etiquetas": ["Puerta del Sol", "Akapana", "Kalasasaya"] }
+    },
+    {
+      "texto": "En los llanos de **Moxos** (Beni), pueblos antiguos hicieron **lomas** para vivir en alto, **camellones** para cultivar y **canales**. En **Samaipata** (Santa Cruz) tallaron una roca enorme, hoy Patrimonio de la Humanidad.",
+      "visual": { "tipo": "ilustracion", "id": "paisaje-llanos" }
+    },
+    {
+      "texto": "Nos dejaron muchos saberes: cultivar en camellones y terrazas, construir con piedra y adobe, tejer lana de llama y alpaca, y hacer **cerámica**. ¡Todavía aprendemos de ellos!",
+      "visual": { "tipo": "emojis", "items": ["🌱", "🧱", "🧶", "🏺"], "etiquetas": ["agricultura", "construcción", "tejidos", "cerámica"] }
+    }
+  ],
+  "ejemplo": {
+    "instruccion": "Viaja en el tiempo con Nayra y conoce más culturas antiguas.",
+    "pasos": [
+      {
+        "texto": "Aldeas muy antiguas: **Chiripa**, a orillas del lago Titicaca, y **Wankarani**, en el altiplano de Oruro y La Paz. En Wankarani hacían casas redondas de adobe, criaban llamas y tallaban cabezas de llama en piedra.",
+        "visual": { "tipo": "emojis", "items": ["🌊", "🧱", "🦙"], "etiquetas": ["lago Titicaca", "casas de adobe", "llamas"] }
+      },
+      {
+        "texto": "En Tiwanaku cultivaban en **suka kollus** o camellones: tierra alta con canales de agua al lado. De día, el agua guardaba el calor del sol; de noche, protegía las plantas de las heladas.",
+        "visual": { "tipo": "emojis", "items": ["🌱", "💧", "❄️"], "etiquetas": ["tierra alta", "canal con agua", "helada"] }
+      },
+      {
+        "texto": "La cultura **Mollo**, en el norte de La Paz, construyó la ciudad de **Iskanwaya**, con casas de piedra, terrazas de cultivo en los cerros y canales de riego.",
+        "visual": { "tipo": "emojis", "items": ["🏔️", "🌱", "💧"], "etiquetas": ["cerros", "terrazas", "canales"] }
+      },
+      {
+        "texto": "Mucho después de Tiwanaku llegaron los **incas**. Llamaban **Qullasuyu** (o Collasuyu) a la región del lago Titicaca, el altiplano y los valles. Hicieron caminos, construyeron Incallajta (Cochabamba) y también edificios en Samaipata.",
+        "visual": { "tipo": "emojis", "items": ["🛣️", "🏛️", "⛰️"], "etiquetas": ["caminos", "Incallajta", "Samaipata"] }
+      }
+    ]
+  },
+  "guiada": {
+    "intro": "Vamos a recordar juntos lo que aprendimos.",
+    "pasos": [
+      {
+        "id": "g1", "tipo": "completar",
+        "enunciado": "Completa con el nombre de cada construcción de Tiwanaku.",
+        "apoyo": "Hay una puerta, una pirámide y un templo. Lee con calma cada oración.",
+        "texto": "La [Puerta del Sol] está tallada en un solo bloque de piedra. La [Akapana] es una pirámide con escalones. El [Kalasasaya] es un templo con muros de piedras paradas.",
+        "banco": ["Iskanwaya"],
+        "pista": "Fíjate en las palabras «la» y «el» antes de cada espacio. Iskanwaya es de otra cultura.",
+        "explicacion": "La Puerta del Sol es de un solo bloque de piedra, la Akapana es la pirámide y el Kalasasaya es el templo de piedras paradas. Iskanwaya es una ciudad de la cultura Mollo.",
+        "error": "tiwanaku-obras"
+      },
+      {
+        "id": "g2", "tipo": "ordenar",
+        "enunciado": "Ordena desde lo más antiguo hasta lo más nuevo.",
+        "apoyo": "Mira la tabla de la primera tarjeta: arriba está lo más antiguo y abajo lo más nuevo.",
+        "elementos": ["Aldeas de Chiripa y Wankarani", "La gran ciudad de Tiwanaku", "Llegan los incas", "Nace Bolivia (1825)"],
+        "vertical": true,
+        "pista": "Los incas llegaron mucho después de Tiwanaku. Bolivia es lo más nuevo.",
+        "explicacion": "Primero, las aldeas de Chiripa y Wankarani (hace más de 3000 años). Luego, Tiwanaku. Después, los incas. Y en 1825 nació Bolivia.",
+        "error": "linea-tiempo"
+      },
+      {
+        "id": "g3", "tipo": "relacionar",
+        "enunciado": "Une cada técnica antigua con aquello para lo que servía.",
+        "apoyo": "Piensa en el problema que resolvía cada una: el frío, las inundaciones, los cerros o llevar agua.",
+        "pares": [
+          ["camellones (suka kollus)", "proteger los cultivos de las heladas"],
+          ["lomas de Moxos", "vivir en alto cuando hay inundaciones"],
+          ["terrazas", "sembrar en las laderas de los cerros"],
+          ["canales", "llevar el agua de un lugar a otro"]
+        ],
+        "pista": "En el Beni, cuando llueve mucho, el agua cubre gran parte de la tierra. En el altiplano, las noches son muy frías.",
+        "explicacion": "Los camellones protegían de las heladas, las lomas servían para vivir en alto, las terrazas para sembrar en los cerros y los canales para llevar el agua.",
+        "error": "tecnicas-antiguas"
+      }
+    ]
+  },
+  "practica": [
+    {
+      "id": "p1", "tipo": "clasificar", "nivel": 1,
+      "enunciado": "¿Qué saber muestra cada acción?",
+      "categorias": [
+        { "id": "cultivar", "texto": "Cultivar", "emoji": "🌱" },
+        { "id": "construir", "texto": "Construir", "emoji": "🧱" },
+        { "id": "arte", "texto": "Tejer y hacer cerámica", "emoji": "🧶" }
+      ],
+      "elementos": [
+        { "texto": "sembrar papa en camellones", "emoji": "🥔", "categoria": "cultivar" },
+        { "texto": "cultivar maíz en terrazas", "emoji": "🌽", "categoria": "cultivar" },
+        { "texto": "levantar muros de piedra", "categoria": "construir" },
+        { "texto": "hacer casas de adobe", "emoji": "🏠", "categoria": "construir" },
+        { "texto": "tejer lana de alpaca", "categoria": "arte" },
+        { "texto": "pintar vasijas de barro", "emoji": "🏺", "categoria": "arte" }
+      ],
+      "pista": "Pregúntate: ¿sirve para tener alimentos, para tener dónde vivir o para hacer telas y vasijas?",
+      "explicacion": "Sembrar y cultivar son saberes de agricultura. Los muros y las casas son construcción. Tejer y pintar vasijas son saberes de tejido y cerámica.",
+      "error": "saberes-antiguos"
+    },
+    {
+      "id": "p2", "tipo": "opcion", "nivel": 1,
+      "enunciado": "¿Cerca de qué lago estaba la ciudad de Tiwanaku?",
+      "visual": { "tipo": "ilustracion", "id": "paisaje-altiplano" },
+      "opciones": [
+        { "texto": "lago Titicaca", "correcta": true },
+        { "texto": "lago Poopó", "pista": "El lago Poopó está en Oruro. Tiwanaku está en La Paz, cerca de un lago más grande.", "error": "ubica-culturas" },
+        { "texto": "laguna Colorada", "pista": "La laguna Colorada está en el sur de Potosí, muy lejos de Tiwanaku.", "error": "ubica-culturas" }
+      ],
+      "pista": "Es el lago más grande de Bolivia y lo compartimos con Perú.",
+      "explicacion": "Tiwanaku estaba cerca del lago Titicaca, en el departamento de La Paz.",
+      "error": "ubica-culturas"
+    },
+    {
+      "id": "p3", "tipo": "memoria", "nivel": 1,
+      "enunciado": "Encuentra las parejas: cada cultura con algo que hizo.",
+      "pares": [
+        ["Tiwanaku", "Puerta del Sol"],
+        ["Wankarani", "cabezas de llama de piedra"],
+        ["Moxos", "lomas y canales"],
+        ["Mollo", "ciudad de Iskanwaya"]
+      ],
+      "pista": "Recuerda el viaje con Nayra: una puerta, llamas de piedra, lomas en los llanos y una ciudad en los cerros.",
+      "explicacion": "Tiwanaku: Puerta del Sol. Wankarani: cabezas de llama de piedra. Moxos: lomas y canales. Mollo: ciudad de Iskanwaya.",
+      "error": "cultura-obra"
+    },
+    {
+      "id": "p4", "tipo": "completar", "nivel": 1,
+      "enunciado": "Completa con la palabra correcta.",
+      "texto": "Las culturas que existieron antes de que los europeos llegaran a América se llaman culturas [precolombinas].",
+      "banco": ["modernas", "extranjeras"],
+      "pista": "La palabra viene del nombre de Cristóbal Colón.",
+      "explicacion": "Se llaman culturas precolombinas: existieron antes de que Colón y los europeos llegaran a América.",
+      "error": "concepto-precolombino"
+    },
+    {
+      "id": "p5", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Toca los nombres de las culturas antiguas.",
+      "texto": "En el museo, Rosa vio un tejido de *Tiwanaku*, una vasija de *Mollo* y una cabeza de llama de *Wankarani*.",
+      "pista": "Hay tres nombres de culturas. Rosa es la niña que visita el museo.",
+      "explicacion": "Tiwanaku, Mollo y Wankarani son culturas antiguas. Rosa es una niña y el museo es el lugar que visita.",
+      "error": "reconoce-culturas"
+    },
+    {
+      "id": "p6", "tipo": "tocar", "nivel": 2,
+      "enunciado": "Toca los nombres de las tres construcciones antiguas de Tiwanaku.",
+      "texto": "En su paseo, Luis vio la *Puerta del Sol*, la *Akapana* y el *Kalasasaya*. Después almorzó en la plaza del pueblo.",
+      "pista": "Busca los nombres de una puerta, una pirámide y un templo. La plaza del pueblo es de hoy.",
+      "explicacion": "Las construcciones antiguas son la Puerta del Sol, la Akapana y el Kalasasaya. La plaza donde almorzó Luis es del pueblo de hoy.",
+      "error": "tiwanaku-obras"
+    },
+    {
+      "id": "p7", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "Une cada lugar antiguo con el departamento donde está.",
+      "pares": [
+        ["Tiwanaku", "La Paz"],
+        ["Samaipata", "Santa Cruz"],
+        ["lomas de Moxos", "Beni"],
+        ["Incallajta", "Cochabamba"]
+      ],
+      "pista": "Empieza por el que conoces mejor. Recuerda: Tiwanaku está cerca del lago Titicaca.",
+      "explicacion": "Tiwanaku está en La Paz, Samaipata en Santa Cruz, las lomas de Moxos en el Beni e Incallajta en Cochabamba.",
+      "error": "ubica-culturas"
+    },
+    {
+      "id": "p8", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha la adivinanza y escribe la respuesta.",
+      "escuchar": "Soy una puerta muy antigua. Me tallaron en un solo bloque de piedra y estoy en Tiwanaku. ¿Quién soy?",
+      "respuestas": ["Puerta del Sol", "la Puerta del Sol", "Puerta del Sol de Tiwanaku", "la Puerta del Sol de Tiwanaku"],
+      "pista": "Su nombre tiene algo que brilla en el cielo durante el día.",
+      "explicacion": "Es la Puerta del Sol, tallada en un solo bloque de piedra en Tiwanaku.",
+      "error": "tiwanaku-obras"
+    },
+    {
+      "id": "p9", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa cómo funcionaban los suka kollus de Tiwanaku.",
+      "texto": "Las plantas crecían sobre tierra [alta]. Al lado había canales con [agua]. De día, el agua guardaba el calor del [sol] y, de noche, protegía las plantas de las [heladas].",
+      "banco": ["piedras", "luna"],
+      "pista": "El agua se calienta con el sol durante el día. En el altiplano, las noches son muy frías.",
+      "explicacion": "Tierra alta y canales con agua: el agua guardaba el calor del sol y protegía las plantas de las heladas.",
+      "error": "tecnicas-antiguas"
+    },
+    {
+      "id": "p10", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "Une cada palabra con su significado.",
+      "pares": [
+        ["loma", "montículo de tierra alta para vivir sin inundarse"],
+        ["terraza", "escalón de tierra en un cerro para cultivar"],
+        ["cerámica", "objetos de barro cocido, como vasijas"],
+        ["tejido", "tela hecha con hilos de lana o algodón"]
+      ],
+      "pista": "Piensa en el material de cada cosa: tierra, barro o hilos.",
+      "explicacion": "Una loma es tierra alta para vivir; una terraza es un escalón para cultivar; la cerámica es de barro cocido; un tejido se hace con hilos.",
+      "error": "saberes-antiguos"
+    },
+    {
+      "id": "p11", "tipo": "pasos", "nivel": 2,
+      "enunciado": "Kusi visita Tiwanaku con su curso. Un compañero quiere rayar su nombre en una piedra antigua.",
+      "pasos": [
+        {
+          "tipo": "opcion",
+          "enunciado": "¿Qué debería hacer Kusi?",
+          "opciones": [
+            { "texto": "Decirle con respeto que no lo haga y avisar a la maestra", "correcta": true },
+            { "texto": "Rayar también su propio nombre", "pista": "Si todos rayan las piedras, se dañan para siempre.", "error": "cuidado-patrimonio" },
+            { "texto": "Reírse y tomarle una foto", "pista": "Así el compañero seguiría dañando la piedra. ¿Cómo puede ayudar Kusi?", "error": "cuidado-patrimonio" }
+          ],
+          "pista": "Piensa en cómo cuidar algo que es de todas y todos.",
+          "explicacion": "Kusi puede hablar con respeto y avisar a la maestra. Así cuida Tiwanaku.",
+          "error": "cuidado-patrimonio"
+        },
+        {
+          "tipo": "completar",
+          "enunciado": "Completa la idea.",
+          "texto": "Tiwanaku es [patrimonio] de todos. Si lo dañamos, las personas del [futuro] ya no podrán conocerlo.",
+          "banco": ["juguete", "pasado"],
+          "pista": "Piensa en las niñas y los niños que van a nacer dentro de muchos años.",
+          "explicacion": "Tiwanaku es patrimonio de todos: hay que cuidarlo para que las personas del futuro también lo conozcan.",
+          "error": "cuidado-patrimonio"
+        }
+      ],
+      "pista": "Resuelve un paso a la vez.",
+      "explicacion": "Los lugares antiguos son patrimonio de todos. Los cuidamos hablando con respeto y avisando a una persona adulta cuando alguien los daña.",
+      "error": "cuidado-patrimonio"
+    },
+    {
+      "id": "p12", "tipo": "ordenar", "nivel": 3,
+      "enunciado": "Ordena la línea del tiempo, de lo más antiguo a lo más nuevo.",
+      "elementos": [
+        "Aldeas de Chiripa y Wankarani",
+        "Tiwanaku, la gran ciudad",
+        "Los incas llegan al Qullasuyu",
+        "Llegan los españoles",
+        "Nace Bolivia (1825)",
+        "Hoy: Estado Plurinacional de Bolivia"
+      ],
+      "vertical": true,
+      "pista": "Los españoles llegaron después de los incas. Bolivia nació mucho después de que llegaran los españoles.",
+      "explicacion": "Chiripa y Wankarani → Tiwanaku → los incas → los españoles → nace Bolivia en 1825 → hoy, el Estado Plurinacional.",
+      "error": "linea-tiempo"
+    },
+    {
+      "id": "p13", "tipo": "multiple", "nivel": 3,
+      "enunciado": "¿Qué hicieron los pueblos antiguos de los llanos de Moxos? Elige todas las respuestas correctas.",
+      "visual": { "tipo": "ilustracion", "id": "paisaje-llanos" },
+      "opciones": [
+        { "texto": "lomas para vivir en alto", "correcta": true },
+        { "texto": "canales para mover el agua", "correcta": true },
+        { "texto": "camellones para cultivar", "correcta": true },
+        { "texto": "la Puerta del Sol", "pista": "La Puerta del Sol está en Tiwanaku, en el altiplano.", "error": "cultura-obra" },
+        { "texto": "la ciudad de Iskanwaya", "pista": "Iskanwaya la construyó la cultura Mollo, en el norte de La Paz.", "error": "cultura-obra" }
+      ],
+      "pista": "En Moxos, el gran desafío era el agua de las inundaciones.",
+      "explicacion": "En Moxos hicieron lomas, canales y camellones. La Puerta del Sol es de Tiwanaku e Iskanwaya es de la cultura Mollo.",
+      "error": "cultura-obra"
+    },
+    {
+      "id": "p14", "tipo": "escribir", "nivel": 3,
+      "enunciado": "¿Cómo llamaban los incas a la región del lago Titicaca y el altiplano? Escribe el nombre.",
+      "respuestas": ["Qullasuyu", "Collasuyu", "Collasuyo", "Qollasuyu", "Kollasuyu", "Kollasuyo", "Qullasuyo", "Kullasuyu", "el Qullasuyu", "el Collasuyu", "el Collasuyo"],
+      "pista": "Termina en «suyu», que quiere decir «región» o «parte».",
+      "explicacion": "Los incas la llamaban Qullasuyu (o Collasuyu). Era una de las cuatro partes de su gran territorio, y una parte de él está hoy en Bolivia.",
+      "error": "incas"
+    },
+    {
+      "id": "p15", "tipo": "escribir-libre", "nivel": 3,
+      "enunciado": "¿Qué saber de las culturas antiguas te parece más útil hoy? Escribe una oración y di por qué.",
+      "guia": ["Me parecen útiles los ... porque ...", "Las terrazas sirven para ..."],
+      "requisitos": [
+        { "tipo": "mayuscula-inicial" },
+        { "tipo": "punto-final" },
+        { "tipo": "min-palabras", "valor": 7 },
+        { "tipo": "incluye", "palabras": ["porque"] }
+      ],
+      "modelo": "Me parecen útiles los camellones porque protegen las plantas de las heladas.",
+      "pista": "Elige uno: camellones, terrazas, lomas, canales, tejidos o cerámica. Después escribe «porque» y la razón.",
+      "explicacion": "Por ejemplo: «Me parecen útiles los camellones porque protegen las plantas de las heladas».",
+      "error": "produce-oracion"
+    }
+  ],
+  "comprobacion": [
+    {
+      "id": "c1", "tipo": "opcion", "nivel": 1,
+      "enunciado": "¿Qué es la Puerta del Sol?",
+      "opciones": [
+        { "texto": "Una puerta de piedra muy antigua que está en Tiwanaku", "correcta": true },
+        { "texto": "Un río de los llanos del Beni", "pista": "La Puerta del Sol no tiene agua: es de piedra.", "error": "tiwanaku-obras" },
+        { "texto": "Una fiesta de la ciudad de Oruro", "pista": "No es una fiesta: es una construcción que se puede visitar.", "error": "tiwanaku-obras" }
+      ],
+      "pista": "Está cerca del lago Titicaca y es de piedra.",
+      "explicacion": "La Puerta del Sol es una puerta de piedra muy antigua, tallada en un solo bloque, que está en Tiwanaku.",
+      "error": "tiwanaku-obras"
+    },
+    {
+      "id": "c2", "tipo": "multiple", "nivel": 1,
+      "enunciado": "¿Qué nos dejaron las culturas antiguas? Elige todas las respuestas correctas.",
+      "opciones": [
+        { "texto": "formas de cultivar la tierra", "emoji": "🌱", "correcta": true },
+        { "texto": "construcciones de piedra", "emoji": "🧱", "correcta": true },
+        { "texto": "tejidos y cerámica", "emoji": "🏺", "correcta": true },
+        { "texto": "teléfonos celulares", "emoji": "📱", "pista": "Los celulares son un invento de nuestra época.", "error": "saberes-antiguos" }
+      ],
+      "pista": "Una de las opciones es un invento de estos años.",
+      "explicacion": "Nos dejaron formas de cultivar, construcciones de piedra, tejidos y cerámica. Los celulares son de hoy.",
+      "error": "saberes-antiguos"
+    },
+    {
+      "id": "c3", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "Une cada cultura con el lugar donde vivió.",
+      "pares": [
+        ["Chiripa", "orillas del lago Titicaca"],
+        ["Wankarani", "altiplano de Oruro"],
+        ["Mollo", "cerros del norte de La Paz"],
+        ["Moxos", "llanos del Beni"]
+      ],
+      "pista": "Moxos es el nombre de unos llanos. Mollo construyó una ciudad con terrazas en los cerros.",
+      "explicacion": "Chiripa vivió a orillas del lago Titicaca, Wankarani en el altiplano de Oruro, Mollo en los cerros del norte de La Paz y los pueblos de Moxos en los llanos del Beni.",
+      "error": "ubica-culturas"
+    },
+    {
+      "id": "c4", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa sobre los pueblos antiguos de Moxos.",
+      "texto": "En los llanos de Moxos, el agua cubre la tierra cuando llueve mucho. Por eso, los pueblos antiguos hicieron [lomas] para vivir en alto y [canales] para mover el agua.",
+      "banco": ["puertas", "techos"],
+      "pista": "Piensa en montículos de tierra y en caminos para el agua.",
+      "explicacion": "Hicieron lomas para vivir en alto, lejos del agua, y canales para mover el agua.",
+      "error": "tecnicas-antiguas"
+    },
+    {
+      "id": "c5", "tipo": "ordenar", "nivel": 2,
+      "enunciado": "Ordena la historia de la roca de Samaipata, de lo más antiguo a lo más nuevo.",
+      "elementos": [
+        "Pueblos antiguos empiezan a tallar la gran roca",
+        "Los incas llegan y construyen allí",
+        "Samaipata es declarada Patrimonio de la Humanidad (1998)"
+      ],
+      "vertical": true,
+      "pista": "Los incas llegaron después de los primeros pueblos que tallaron la roca. El año 1998 es muy reciente.",
+      "explicacion": "Primero, pueblos antiguos tallaron la roca; después llegaron los incas; y en 1998 Samaipata fue declarada Patrimonio de la Humanidad.",
+      "error": "linea-tiempo"
+    },
+    {
+      "id": "c6", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha la adivinanza y escribe el nombre de la cultura.",
+      "escuchar": "Fuimos un pueblo muy antiguo del altiplano. Vivíamos en casas redondas de adobe, criábamos llamas y tallábamos cabezas de llama en piedra. ¿Cómo se llama nuestra cultura?",
+      "respuestas": ["Wankarani", "Wancarani", "Huancarani", "Huankarani", "cultura Wankarani", "la cultura Wankarani"],
+      "pista": "Es una de las primeras aldeas del altiplano, junto con Chiripa.",
+      "explicacion": "Es la cultura Wankarani: casas redondas de adobe, llamas y cabezas de llama talladas en piedra.",
+      "error": "escritura-nombres"
+    },
+    {
+      "id": "c7", "tipo": "clasificar", "nivel": 3,
+      "enunciado": "¿Es verdadero o falso?",
+      "categorias": [
+        { "id": "v", "texto": "Verdadero", "emoji": "✅" },
+        { "id": "f", "texto": "Falso", "emoji": "❌" }
+      ],
+      "elementos": [
+        { "texto": "Tiwanaku estaba cerca del lago Titicaca.", "categoria": "v" },
+        { "texto": "La Puerta del Sol está tallada en un solo bloque de piedra.", "categoria": "v" },
+        { "texto": "Para los incas, el lago Titicaca estaba en el Qullasuyu.", "categoria": "v" },
+        { "texto": "Los incas llegaron antes que Tiwanaku.", "categoria": "f" },
+        { "texto": "Samaipata está en Oruro.", "categoria": "f" },
+        { "texto": "Las culturas antiguas no sabían cultivar.", "categoria": "f" }
+      ],
+      "pista": "Recuerda la línea del tiempo y dónde está cada lugar. Piensa en los camellones y las terrazas.",
+      "explicacion": "Son verdaderas las tres primeras. Los incas llegaron mucho después de Tiwanaku, Samaipata está en Santa Cruz y las culturas antiguas cultivaban muy bien.",
+      "error": "linea-tiempo"
+    },
+    {
+      "id": "c8", "tipo": "pasos", "nivel": 3,
+      "enunciado": "En la escuela de Wara, en el altiplano, quieren hacer un huerto. Pero en invierno hay heladas fuertes.",
+      "pasos": [
+        {
+          "tipo": "opcion",
+          "enunciado": "¿Qué saber antiguo les puede ayudar?",
+          "opciones": [
+            { "texto": "Hacer camellones con canales de agua, como los suka kollus", "correcta": true },
+            { "texto": "Hacer lomas altas para vivir", "pista": "Las lomas servían para vivir lejos de las inundaciones, no para cuidar las plantas del frío.", "error": "tecnicas-antiguas" },
+            { "texto": "Tallar una puerta de piedra", "pista": "Una puerta de piedra no protege las plantas. Piensa en el agua y el calor del sol.", "error": "tecnicas-antiguas" }
+          ],
+          "pista": "¿Qué técnica de Tiwanaku protegía las plantas de las heladas?",
+          "explicacion": "Los camellones con canales de agua, como los suka kollus de Tiwanaku, protegen las plantas de las heladas.",
+          "error": "tecnicas-antiguas"
+        },
+        {
+          "tipo": "completar",
+          "enunciado": "Completa por qué funciona.",
+          "texto": "De día, el [sol] calienta el agua de los canales. De noche, el agua suelta ese calor y [abriga] a las plantas.",
+          "banco": ["luna", "congela"],
+          "pista": "¿Qué calienta el agua durante el día? Si el agua suelta calor, ¿las plantas sienten más frío o menos frío?",
+          "explicacion": "De día, el sol calienta el agua. De noche, el agua suelta ese calor y abriga a las plantas, como una manta.",
+          "error": "tecnicas-antiguas"
+        }
+      ],
+      "pista": "Resuelve un paso a la vez.",
+      "explicacion": "Los camellones con canales de agua guardan el calor del sol y protegen el huerto de las heladas. ¡Un saber de Tiwanaku que sirve hoy!",
+      "error": "tecnicas-antiguas"
+    }
+  ],
+  "repaso": {
+    "texto": "Recuerda: hace muchísimos años vivieron aquí Chiripa, Wankarani, Tiwanaku, Mollo y los pueblos de Moxos. Después llegaron los incas. Nos dejaron saberes para cultivar, construir, tejer y hacer cerámica.",
+    "visual": { "tipo": "emojis", "items": ["🌱", "🧱", "🧶", "🏺"], "etiquetas": ["cultivar", "construir", "tejer", "cerámica"] }
+  },
+  "adulto": {
+    "objetivo": "Conocer de forma sencilla las culturas precolombinas del actual territorio boliviano (Chiripa, Wankarani, Tiwanaku, Mollo, las culturas de los Llanos de Moxos, Samaipata y la presencia inca en el Qullasuyu), ubicarlas en una línea de tiempo simple y valorar sus aportes en agricultura, arquitectura, tejidos y cerámica. Las fechas son aproximadas («hace más de 1000 años»): Tiwanaku tuvo su mayor esplendor entre los años 500 y 900 d. C., según la UNESCO.",
+    "sugerencias": [
+      "Hagan una línea de tiempo en el piso con una cuerda o una tira de papel: coloquen tarjetas con «Chiripa y Wankarani», «Tiwanaku», «incas», «españoles», «Bolivia 1825» y «hoy», y caminen juntos desde lo más antiguo hasta hoy.",
+      "En la feria o el mercado, busquen alimentos andinos de origen muy antiguo (papa, chuño, quinua, maíz, oca) y objetos que continúan esos saberes (aguayos, tejidos de lana, ollas de barro). Conversen sobre quién los produce hoy.",
+      "Armen un camellón en miniatura en una bandeja: dos montoncitos de tierra con un «canal» de agua en medio. Siembren semillas de haba o de trigo y observen varios días. Si pueden, visiten un museo arqueológico o miren fotos de Tiwanaku, Samaipata o Iskanwaya."
+    ],
+    "errores": {
+      "tiwanaku-obras": { "descripcion": "Confunde las construcciones de Tiwanaku (Puerta del Sol, Akapana, Kalasasaya).", "sugerencia": "Dibujen juntos una puerta, una pirámide con escalones y un templo con piedras paradas, y escriban el nombre de cada uno debajo." },
+      "linea-tiempo": { "descripcion": "Ordena mal los hechos en el tiempo (por ejemplo, pone a los incas antes que Tiwanaku).", "sugerencia": "Usen la línea de tiempo con cuerda y tarjetas; pregunten «¿qué pasó primero?» y «¿qué pasó después?»." },
+      "tecnicas-antiguas": { "descripcion": "No relaciona cada técnica (camellones, lomas, terrazas, canales) con el problema que resolvía.", "sugerencia": "Pregunten: «¿qué problema tenían: frío, inundaciones o cerros?». Hagan maquetas simples con tierra y agua." },
+      "saberes-antiguos": { "descripcion": "No reconoce los aportes de las culturas antiguas (agricultura, construcción, tejidos, cerámica).", "sugerencia": "Busquen en casa objetos de barro, tejidos o alimentos andinos y conversen sobre desde cuándo se hacen." },
+      "ubica-culturas": { "descripcion": "No ubica dónde vivió cada cultura o dónde está cada lugar antiguo.", "sugerencia": "Usen un mapa de Bolivia y peguen papelitos: Tiwanaku en La Paz, Samaipata en Santa Cruz, Moxos en el Beni, Incallajta en Cochabamba." },
+      "cultura-obra": { "descripcion": "Confunde qué hizo cada cultura (por ejemplo, atribuye la Puerta del Sol a Moxos).", "sugerencia": "Hagan tarjetas de memoria: en una, el nombre de la cultura; en otra, lo que construyó. Jueguen a encontrar las parejas." },
+      "concepto-precolombino": { "descripcion": "No comprende qué significa «precolombino».", "sugerencia": "Expliquen que Colón llegó a América en 1492 y que «pre» quiere decir «antes»: precolombino es lo que existía antes de su llegada." },
+      "reconoce-culturas": { "descripcion": "No distingue los nombres de las culturas de otras palabras del texto.", "sugerencia": "Lean juntos los nombres (Chiripa, Wankarani, Tiwanaku, Mollo) y jueguen a decir «¡cultura!» cada vez que escuchen uno." },
+      "cuidado-patrimonio": { "descripcion": "Duda sobre cómo cuidar los lugares y objetos antiguos.", "sugerencia": "Conversen sobre por qué no se raya ni se toca lo que hay en los museos y sitios arqueológicos: es patrimonio de todos." },
+      "incas": { "descripcion": "No recuerda que para los incas esta región era el Qullasuyu (Collasuyu).", "sugerencia": "Expliquen que el territorio inca tenía cuatro partes («suyus») y que la del sur, con el lago Titicaca, era el Qullasuyu." },
+      "escritura-nombres": { "descripcion": "Le cuesta escribir los nombres de las culturas que escucha.", "sugerencia": "Separen los nombres en sílabas con palmadas (Wan-ka-ra-ni, Ti-wa-na-ku) y escríbanlos juntos." },
+      "produce-oracion": { "descripcion": "Le cuesta escribir una oración completa que explique una razón.", "sugerencia": "Practiquen oralmente frases con «porque» antes de escribir: «Me gustan las terrazas porque…»." }
+    }
+  }
+}

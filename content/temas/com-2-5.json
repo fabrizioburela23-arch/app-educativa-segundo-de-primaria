@@ -1,0 +1,380 @@
+{
+  "id": "com-2-5",
+  "titulo": "Sinónimos y antónimos",
+  "objetivo": "Encuentro palabras que significan lo mismo y palabras que significan lo contrario, y las uso en oraciones.",
+  "explicacion": [
+    {
+      "texto": "Los **sinónimos** son palabras que significan lo mismo o casi lo mismo. «Inti está contento» e «Inti está alegre» dicen lo mismo: contento y alegre son sinónimos.",
+      "emoji": "🤝",
+      "visual": { "tipo": "emojis", "items": ["😊", "😄"], "etiquetas": ["contento", "alegre"] }
+    },
+    {
+      "texto": "Más sinónimos: rápido y veloz, empezar y comenzar, cerdo y chancho. Los sinónimos nos ayudan a no repetir la misma palabra muchas veces.",
+      "visual": { "tipo": "emojis", "items": ["🐆", "▶️", "🐖"], "etiquetas": ["rápido = veloz", "empezar = comenzar", "cerdo = chancho"] }
+    },
+    {
+      "texto": "Los **antónimos** son palabras que significan lo **contrario**. La jirafa es alta y la tortuga es baja: alto y bajo son antónimos.",
+      "emoji": "↔️",
+      "visual": { "tipo": "emojis", "items": ["🦒", "🐢"], "etiquetas": ["alta", "baja"] }
+    },
+    {
+      "texto": "Más antónimos: frío y caliente, abrir y cerrar, lleno y vacío. Algunos se forman agregando **des-** o **in-** al inicio: ordenado y desordenado, feliz e infeliz.",
+      "visual": { "tipo": "tabla", "columnas": ["Palabra", "Antónimo"], "filas": [["frío", "caliente"], ["abrir", "cerrar"], ["lleno", "vacío"], ["ordenado", "desordenado"]] }
+    }
+  ],
+  "ejemplo": {
+    "instruccion": "Mira qué pasa cuando cambiamos una palabra por un sinónimo o por un antónimo.",
+    "pasos": [
+      {
+        "texto": "Leemos: «Kusi está **contento** porque llegó su abuela».",
+        "visual": { "tipo": "emojis", "items": ["👦", "😊", "👵"], "etiquetas": ["Kusi", "contento", "abuela"] }
+      },
+      {
+        "texto": "Cambiamos «contento» por un **sinónimo**: «Kusi está **alegre** porque llegó su abuela». ¡La oración dice lo mismo!",
+        "visual": { "tipo": "emojis", "items": ["😊", "😄"], "etiquetas": ["contento", "alegre"] }
+      },
+      {
+        "texto": "Ahora usamos **antónimos**: «Kusi está **triste** porque **se fue** su abuela». Triste es lo contrario de contento, y irse es lo contrario de llegar.",
+        "visual": { "tipo": "emojis", "items": ["😊", "😢"], "etiquetas": ["contento", "triste"] }
+      },
+      {
+        "texto": "Recuerda: con un sinónimo la oración **dice lo mismo**. Con un antónimo la oración **cambia** y dice lo contrario.",
+        "visual": { "tipo": "tabla", "columnas": ["Sinónimos", "Antónimos"], "filas": [["dicen lo mismo", "dicen lo contrario"], ["contento = alegre", "contento ↔ triste"]] }
+      }
+    ]
+  },
+  "guiada": {
+    "intro": "Vamos a hacerlo juntos, paso a paso.",
+    "pasos": [
+      {
+        "id": "g1", "tipo": "relacionar",
+        "enunciado": "Une cada palabra con su sinónimo.",
+        "apoyo": "Busca la palabra que significa lo mismo. Prueba decir las dos en la misma oración, como «La sopa está rica» y «La sopa está sabrosa».",
+        "pares": [ ["rápido", "veloz"], ["bonito", "lindo"], ["empezar", "comenzar"] ],
+        "pista": "Los sinónimos significan lo mismo. Cambia una palabra por la otra en una oración y fíjate si dice lo mismo.",
+        "explicacion": "Rápido = veloz, bonito = lindo, empezar = comenzar. Cada pareja significa lo mismo.",
+        "error": "confunde-sinonimo"
+      },
+      {
+        "id": "g2", "tipo": "completar",
+        "enunciado": "Completa con el antónimo de «lleno».",
+        "apoyo": "El antónimo dice lo contrario. Si un vaso no tiene nada adentro, ¿cómo está?",
+        "texto": "El vaso de Ana está lleno, pero el vaso de Luis está [vacío].",
+        "banco": ["grande", "limpio"],
+        "pista": "Busca la palabra que dice que no hay nada adentro.",
+        "explicacion": "Lo contrario de «lleno» es «vacío». El vaso de Luis no tiene nada.",
+        "error": "confunde-antonimo"
+      },
+      {
+        "id": "g3", "tipo": "escribir",
+        "enunciado": "Escucha la palabra y escribe su antónimo.",
+        "apoyo": "Escucha bien la palabra. Imagina esa acción y piensa en la acción contraria.",
+        "escuchar": "abrir",
+        "visual": { "tipo": "emoji", "valor": "🚪" },
+        "respuestas": ["cerrar"],
+        "pista": "Piensa en una puerta: ¿qué haces cuando ya no quieres que esté abierta?",
+        "explicacion": "Lo contrario de «abrir» es «cerrar».",
+        "error": "escucha-palabra"
+      }
+    ]
+  },
+  "practica": [
+    {
+      "id": "p1", "tipo": "memoria", "nivel": 1,
+      "enunciado": "Encuentra las parejas de sinónimos.",
+      "pares": [ ["grande", "enorme"], [ { "texto": "cerdo", "emoji": "🐖" }, "chancho" ], ["cara", "rostro"], ["volver", "regresar"] ],
+      "pista": "Busca dos palabras que signifiquen lo mismo.",
+      "explicacion": "Grande y enorme, cerdo y chancho, cara y rostro, volver y regresar son sinónimos.",
+      "error": "confunde-sinonimo"
+    },
+    {
+      "id": "p2", "tipo": "relacionar", "nivel": 1,
+      "enunciado": "Une cada palabra con su antónimo.",
+      "pares": [
+        [ { "texto": "día", "emoji": "☀️" }, { "texto": "noche", "emoji": "🌙" } ],
+        [ { "texto": "subir", "emoji": "⬆️" }, { "texto": "bajar", "emoji": "⬇️" } ],
+        [ { "texto": "frío", "emoji": "❄️" }, { "texto": "caliente", "emoji": "🔥" } ],
+        ["limpio", "sucio"]
+      ],
+      "pista": "Los antónimos dicen lo contrario. Piensa: ¿qué es lo contrario de cada palabra?",
+      "explicacion": "Día ↔ noche, subir ↔ bajar, frío ↔ caliente, limpio ↔ sucio.",
+      "error": "confunde-antonimo"
+    },
+    {
+      "id": "p3", "tipo": "opcion", "nivel": 1,
+      "enunciado": "Escucha las dos palabras. ¿Son sinónimos o antónimos?",
+      "escuchar": "encender, apagar",
+      "visual": { "tipo": "emoji", "valor": "💡" },
+      "mezclar": false,
+      "opciones": [
+        { "texto": "Sinónimos", "pista": "¿Encender la luz y apagar la luz es lo mismo? Piensa otra vez.", "error": "mezcla-sin-ant" },
+        { "texto": "Antónimos", "correcta": true }
+      ],
+      "pista": "Piensa en la luz de tu casa: ¿encender y apagar es lo mismo o es lo contrario?",
+      "explicacion": "«Encender» y «apagar» significan lo contrario: son antónimos.",
+      "error": "mezcla-sin-ant"
+    },
+    {
+      "id": "p4", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Toca el antónimo de «grande».",
+      "texto": "La sandía es grande y la uva es *pequeña*.",
+      "visual": { "tipo": "emojis", "items": ["🍉", "🍇"], "etiquetas": ["sandía", "uva"] },
+      "pista": "Busca la palabra que dice lo contrario de «grande».",
+      "explicacion": "«Pequeña» es lo contrario de «grande»: son antónimos.",
+      "error": "confunde-antonimo"
+    },
+    {
+      "id": "p5", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "¿Estas parejas son sinónimos o antónimos?",
+      "categorias": [
+        { "id": "sin", "texto": "Sinónimos", "emoji": "🤝" },
+        { "id": "ant", "texto": "Antónimos", "emoji": "↔️" }
+      ],
+      "elementos": [
+        { "texto": "feliz – alegre", "categoria": "sin" },
+        { "texto": "mirar – observar", "categoria": "sin" },
+        { "texto": "lindo – hermoso", "categoria": "sin" },
+        { "texto": "lento – rápido", "categoria": "ant" },
+        { "texto": "entrar – salir", "categoria": "ant" },
+        { "texto": "mucho – poco", "categoria": "ant" }
+      ],
+      "pista": "Si las dos palabras dicen lo mismo, son sinónimos. Si dicen lo contrario, son antónimos.",
+      "explicacion": "Sinónimos: feliz – alegre, mirar – observar, lindo – hermoso. Antónimos: lento – rápido, entrar – salir, mucho – poco.",
+      "error": "mezcla-sin-ant"
+    },
+    {
+      "id": "p6", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa con un sinónimo de «empezó».",
+      "texto": "Luis empezó a leer y Ana [comenzó] a dibujar.",
+      "banco": ["terminó", "durmió"],
+      "pista": "Busca la palabra que significa lo mismo que «empezó».",
+      "explicacion": "«Comenzó» es sinónimo de «empezó». «Terminó» es su antónimo: dice lo contrario.",
+      "error": "confunde-sinonimo"
+    },
+    {
+      "id": "p7", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa con el antónimo de «abierta» y el antónimo de «vacío».",
+      "texto": "La ventana está abierta y la puerta está [cerrada]. El plato está vacío y la jarra está [llena].",
+      "banco": ["dormida", "feliz"],
+      "pista": "¿Qué es lo contrario de «abierta»? ¿Y lo contrario de «vacío»?",
+      "explicacion": "Abierta ↔ cerrada y vacío ↔ llena. Son antónimos.",
+      "error": "usa-en-oracion"
+    },
+    {
+      "id": "p8", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha la palabra y escribe un sinónimo.",
+      "escuchar": "lindo",
+      "visual": { "tipo": "emoji", "valor": "🌸" },
+      "respuestas": ["bonito", "hermoso", "bello", "precioso", "bonita", "hermosa", "bella", "preciosa"],
+      "pista": "Piensa en otra palabra que dirías de una flor que te gusta mucho.",
+      "explicacion": "Sinónimos de «lindo» son «bonito», «hermoso» y «bello».",
+      "error": "escucha-palabra"
+    },
+    {
+      "id": "p9", "tipo": "escribir-libre", "nivel": 2,
+      "enunciado": "Escribe una oración con dos antónimos: «día» y «noche».",
+      "guia": ["En el día...", "En la noche..."],
+      "requisitos": [
+        { "tipo": "mayuscula-inicial" },
+        { "tipo": "punto-final" },
+        { "tipo": "incluye-todas", "palabras": ["día", "noche"] },
+        { "tipo": "min-palabras", "valor": 5 }
+      ],
+      "modelo": "En el día juego y en la noche duermo.",
+      "pista": "Piensa en algo que haces de día y algo que haces de noche.",
+      "explicacion": "Por ejemplo: «En el día juego y en la noche duermo». Día y noche son antónimos.",
+      "error": "usa-en-oracion"
+    },
+    {
+      "id": "p10", "tipo": "tocar", "nivel": 2,
+      "enunciado": "Toca las dos palabras que son antónimos.",
+      "texto": "El *primero* en llegar a la escuela fue Mateo y el *último* fue Juan.",
+      "pista": "Busca dos palabras que digan el orden de llegada y que sean contrarias.",
+      "explicacion": "«Primero» y «último» son antónimos: dicen lo contrario.",
+      "error": "confunde-antonimo"
+    },
+    {
+      "id": "p11", "tipo": "ordenar", "nivel": 3,
+      "enunciado": "Forma el antónimo de «peinado». Ordena las sílabas.",
+      "elementos": ["des", "pei", "na", "do"],
+      "unir": "",
+      "pista": "Empieza con la sílaba que da el significado contrario: des-.",
+      "explicacion": "Des-pei-na-do: «despeinado» es lo contrario de «peinado».",
+      "error": "prefijo-antonimo"
+    },
+    {
+      "id": "p12", "tipo": "multiple", "nivel": 3,
+      "enunciado": "Elige todos los sinónimos de «grande».",
+      "opciones": [
+        { "texto": "enorme", "correcta": true },
+        { "texto": "gigante", "correcta": true },
+        { "texto": "pequeño", "pista": "«Pequeño» dice lo contrario de «grande»: es su antónimo.", "error": "mezcla-sin-ant" },
+        { "texto": "chico", "pista": "«Chico» significa lo mismo que «pequeño». Es un antónimo de «grande».", "error": "mezcla-sin-ant" },
+        { "texto": "limpio", "pista": "«Limpio» no habla del tamaño.", "error": "confunde-sinonimo" }
+      ],
+      "pista": "Hay dos palabras que dicen que algo es muy grande.",
+      "explicacion": "«Enorme» y «gigante» son sinónimos de «grande». «Pequeño» y «chico» son antónimos. «Limpio» no habla del tamaño.",
+      "error": "confunde-sinonimo"
+    },
+    {
+      "id": "p13", "tipo": "escribir", "nivel": 3,
+      "enunciado": "Escribe el antónimo de «posible». Agrega una sílaba al inicio.",
+      "respuestas": ["imposible"],
+      "pista": "La sílaba empieza con i. Recuerda: antes de p se escribe m.",
+      "explicacion": "Se escribe «imposible». Antes de p va m: im-po-si-ble.",
+      "error": "prefijo-antonimo"
+    },
+    {
+      "id": "p14", "tipo": "pasos", "nivel": 3,
+      "enunciado": "Lee: «La sopa está fría y el pan está duro». Vamos a cambiarla con antónimos.",
+      "visual": { "tipo": "emojis", "items": ["🥣", "🍞"], "etiquetas": ["sopa", "pan"] },
+      "pasos": [
+        {
+          "tipo": "tocar",
+          "enunciado": "Toca las palabras que dicen cómo están la sopa y el pan.",
+          "texto": "La sopa está *fría* y el pan está *duro*.",
+          "pista": "Pregunta: ¿cómo está la sopa? ¿Cómo está el pan?",
+          "explicacion": "«Fría» dice cómo está la sopa y «duro» dice cómo está el pan.",
+          "error": "usa-en-oracion"
+        },
+        {
+          "tipo": "completar",
+          "enunciado": "Ahora cámbialas por sus antónimos.",
+          "texto": "La sopa está [caliente] y el pan está [blando].",
+          "banco": ["helada", "seco"],
+          "pista": "Busca lo contrario de «fría» y lo contrario de «duro».",
+          "explicacion": "Fría ↔ caliente y duro ↔ blando. «Helada» y «seco» no dicen lo contrario.",
+          "error": "confunde-antonimo"
+        }
+      ],
+      "pista": "Primero encuentra las palabras que dicen cómo están las cosas. Después busca sus contrarios.",
+      "explicacion": "«La sopa está caliente y el pan está blando»: cambiamos fría por caliente y duro por blando.",
+      "error": "usa-en-oracion"
+    },
+    {
+      "id": "p15", "tipo": "escribir-libre", "nivel": 3,
+      "enunciado": "Escribe dos oraciones sobre dos animales. Usa los antónimos «rápido» y «lento».",
+      "guia": ["El jaguar...", "La tortuga..."],
+      "requisitos": [
+        { "tipo": "mayuscula-inicial" },
+        { "tipo": "punto-final" },
+        { "tipo": "min-oraciones", "valor": 2 },
+        { "tipo": "incluye", "palabras": ["rápido", "rápida"] },
+        { "tipo": "incluye", "palabras": ["lento", "lenta"] }
+      ],
+      "modelo": "El jaguar es rápido. La tortuga es lenta.",
+      "pista": "Piensa en un animal que corre mucho y en otro que camina despacio.",
+      "explicacion": "Por ejemplo: «El jaguar es rápido. La tortuga es lenta». Rápido y lento son antónimos.",
+      "error": "usa-en-oracion"
+    }
+  ],
+  "comprobacion": [
+    {
+      "id": "c1", "tipo": "relacionar", "nivel": 1,
+      "enunciado": "Une cada palabra con su antónimo.",
+      "pares": [ ["mojado", "seco"], ["nuevo", "viejo"], ["arriba", "abajo"], ["ganar", "perder"] ],
+      "pista": "Para cada palabra, busca la que dice lo contrario.",
+      "explicacion": "Mojado ↔ seco, nuevo ↔ viejo, arriba ↔ abajo, ganar ↔ perder.",
+      "error": "confunde-antonimo"
+    },
+    {
+      "id": "c2", "tipo": "opcion", "nivel": 1,
+      "enunciado": "¿Qué palabra es un sinónimo de «caminar»?",
+      "opciones": [
+        { "texto": "andar", "correcta": true },
+        { "texto": "correr", "pista": "Correr es ir mucho más rápido que caminar. No es lo mismo.", "error": "confunde-sinonimo" },
+        { "texto": "sentarse", "pista": "Sentarse es quedarse quieto. Busca otra forma de decir «caminar».", "error": "confunde-sinonimo" }
+      ],
+      "pista": "Busca la palabra que significa lo mismo que «caminar».",
+      "explicacion": "«Andar» es sinónimo de «caminar»: significan lo mismo.",
+      "error": "confunde-sinonimo"
+    },
+    {
+      "id": "c3", "tipo": "tocar", "nivel": 2,
+      "enunciado": "Toca las dos palabras que son sinónimos.",
+      "texto": "Sofía *terminó* su tarea y después *acabó* su dibujo.",
+      "pista": "Busca dos palabras que digan lo mismo sobre lo que hizo Sofía.",
+      "explicacion": "«Terminó» y «acabó» significan lo mismo: son sinónimos.",
+      "error": "confunde-sinonimo"
+    },
+    {
+      "id": "c4", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha la oración y escríbela.",
+      "escuchar": "El agua está fría y el té está caliente.",
+      "respuestas": ["El agua está fría y el té está caliente.", "El agua está fría y el té está caliente"],
+      "pista": "Escucha otra vez, despacio. La oración tiene dos antónimos.",
+      "explicacion": "Se escribe: «El agua está fría y el té está caliente». Fría y caliente son antónimos.",
+      "error": "escucha-palabra"
+    },
+    {
+      "id": "c5", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa con el antónimo de «sube».",
+      "texto": "Nayra sube al teleférico y Luis [baja] del teleférico.",
+      "banco": ["corre", "sube"],
+      "pista": "¿Qué es lo contrario de subir?",
+      "explicacion": "Lo contrario de «sube» es «baja»: Nayra sube y Luis baja.",
+      "error": "usa-en-oracion"
+    },
+    {
+      "id": "c6", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "¿Son sinónimos o antónimos?",
+      "categorias": [
+        { "id": "sin", "texto": "Sinónimos", "emoji": "🤝" },
+        { "id": "ant", "texto": "Antónimos", "emoji": "↔️" }
+      ],
+      "elementos": [
+        { "texto": "pelo – cabello", "categoria": "sin" },
+        { "texto": "auto – carro", "categoria": "sin" },
+        { "texto": "regalo – obsequio", "categoria": "sin" },
+        { "texto": "cerca – lejos", "categoria": "ant" },
+        { "texto": "ancho – angosto", "categoria": "ant" },
+        { "texto": "temprano – tarde", "categoria": "ant" }
+      ],
+      "pista": "Pregúntate: ¿dicen lo mismo o dicen lo contrario?",
+      "explicacion": "Sinónimos: pelo – cabello, auto – carro, regalo – obsequio. Antónimos: cerca – lejos, ancho – angosto, temprano – tarde.",
+      "error": "mezcla-sin-ant"
+    },
+    {
+      "id": "c7", "tipo": "escribir", "nivel": 3,
+      "enunciado": "Escribe el antónimo de «hacer» agregando des- al inicio.",
+      "respuestas": ["deshacer"],
+      "pista": "Pon des- delante de «hacer» y no quites ninguna letra.",
+      "explicacion": "Se escribe «deshacer»: des + hacer. La h de «hacer» se queda.",
+      "error": "prefijo-antonimo"
+    },
+    {
+      "id": "c8", "tipo": "multiple", "nivel": 3,
+      "enunciado": "Elige las oraciones donde las palabras entre comillas son antónimos.",
+      "opciones": [
+        { "texto": "La calle es «ancha» y el pasillo es «angosto».", "correcta": true },
+        { "texto": "El bebé está «dormido» y el abuelo está «despierto».", "correcta": true },
+        { "texto": "La niña está «contenta» y su hermano está «alegre».", "pista": "«Contenta» y «alegre» dicen lo mismo: son sinónimos.", "error": "mezcla-sin-ant" },
+        { "texto": "El cerro es «grande» y el lago es «enorme».", "pista": "«Grande» y «enorme» dicen casi lo mismo: son sinónimos.", "error": "mezcla-sin-ant" }
+      ],
+      "columnas": 1,
+      "pista": "En cada oración, revisa si las dos palabras dicen lo contrario.",
+      "explicacion": "Son antónimos «ancha» y «angosto», y «dormido» y «despierto». «Contenta» y «alegre», y «grande» y «enorme», son sinónimos.",
+      "error": "mezcla-sin-ant"
+    }
+  ],
+  "repaso": {
+    "texto": "Sinónimos: palabras que significan lo mismo (contento, alegre). Antónimos: palabras que significan lo contrario (alto, bajo).",
+    "visual": { "tipo": "tabla", "columnas": ["Sinónimos", "Antónimos"], "filas": [["contento = alegre", "alto ↔ bajo"], ["rápido = veloz", "frío ↔ caliente"]] }
+  },
+  "adulto": {
+    "objetivo": "Reconocer y usar sinónimos (palabras de significado igual o parecido) y antónimos (palabras de significado contrario, incluidos los que se forman con des-, in- o im-), y emplearlos al leer y escribir oraciones.",
+    "sugerencias": [
+      "Jueguen «Al revés» en el camino a la escuela o en el mercado: el adulto dice una palabra (subir, lleno, temprano, abierto) y el niño o la niña responde con su contraria. Después cambien los papeles.",
+      "En la cocina, muestren antónimos con cosas reales: un vaso lleno y uno vacío, agua fría y agua caliente (con cuidado), pan duro y pan blando, la luz encendida y apagada.",
+      "Lean juntos un cuento corto o una receta, elijan una palabra y busquen un sinónimo para cambiarla. Lean la oración otra vez y comenten si dice lo mismo; luego prueben con un antónimo y vean cómo cambia."
+    ],
+    "errores": {
+      "confunde-sinonimo": { "descripcion": "No reconoce palabras que significan lo mismo o elige una palabra parecida pero distinta (correr por caminar).", "sugerencia": "Pongan las dos palabras en la misma oración y pregunten: «¿Dice lo mismo o cambia?»." },
+      "confunde-antonimo": { "descripcion": "Le cuesta encontrar la palabra de significado contrario.", "sugerencia": "Actúen los contrarios con el cuerpo o con objetos: subir y bajar una escalera, abrir y cerrar una caja, llenar y vaciar un vaso." },
+      "mezcla-sin-ant": { "descripcion": "Confunde sinónimos con antónimos.", "sugerencia": "Usen dos señas: manos juntas para «dicen lo mismo» (sinónimos) y manos separadas para «dicen lo contrario» (antónimos)." },
+      "escucha-palabra": { "descripcion": "Le cuesta escribir una palabra u oración que escucha.", "sugerencia": "Dicten palabras y oraciones cortas, despacio, y pidan que repita en voz alta antes de escribir." },
+      "prefijo-antonimo": { "descripcion": "Tiene dificultad con los antónimos que se forman con des-, in- o im- (desordenado, imposible).", "sugerencia": "Escriban la sílaba des- o im- en un papelito y pónganla delante de palabras (hacer, atar, posible) para leer el contrario. Recuerden que antes de p y b se escribe m." },
+      "usa-en-oracion": { "descripcion": "Reconoce sinónimos y antónimos sueltos, pero le cuesta usarlos dentro de una oración.", "sugerencia": "Digan una oración («La sopa está fría») y pidan que la diga al revés con un antónimo, y luego igual con un sinónimo." }
+    }
+  }
+}

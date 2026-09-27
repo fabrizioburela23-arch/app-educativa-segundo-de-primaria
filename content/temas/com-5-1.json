@@ -1,0 +1,440 @@
+{
+  "id": "com-5-1",
+  "titulo": "br, bl, cr y cl",
+  "objetivo": "Leo, escucho, digo y escribo palabras con br, bl, cr y cl.",
+  "explicacion": [
+    {
+      "texto": "Algunas consonantes son **amigas**: van juntas en la misma sílaba. La **b** se junta con la **r** o con la **l**: **bra**-zo, **blu**-sa. Antes de r o de l siempre va **b**, nunca v.",
+      "emoji": "🤝",
+      "visual": { "tipo": "emojis", "items": ["💪", "👚"], "etiquetas": ["brazo", "blusa"] }
+    },
+    {
+      "texto": "La **c** también tiene amigas: la **r** y la **l**. Mira: **cruz**, mi-**cro**, **cla**-vo, bi-ci-**cle**-ta. Cada grupo se junta con las cinco vocales.",
+      "visual": {
+        "tipo": "tabla",
+        "columnas": ["Grupo", "Sílabas"],
+        "filas": [
+          ["br", "bra, bre, bri, bro, bru"],
+          ["bl", "bla, ble, bli, blo, blu"],
+          ["cr", "cra, cre, cri, cro, cru"],
+          ["cl", "cla, cle, cli, clo, clu"]
+        ]
+      }
+    },
+    {
+      "texto": "Escucha qué suena después de la b o de la c: ¿**r** o **l**? «Cabra» lleva r y «tabla» lleva l. Al escribir, no olvides esa letra (cabra, no «caba») ni la cambies de lugar (brazo, no «barzo»).",
+      "emoji": "👂"
+    },
+    {
+      "texto": "Para decirlo bien, junta las dos consonantes sin meter otra vocal: se dice «**bra**», no «ba-ra». Al separar en sílabas, el grupo no se parte: ca-**bra**, ta-**bla**, bi-ci-**cle**-ta.",
+      "visual": { "tipo": "emojis", "items": ["🐐", "🚲"], "etiquetas": ["ca-bra", "bi-ci-cle-ta"] }
+    }
+  ],
+  "ejemplo": {
+    "instruccion": "Mira cómo buscamos las consonantes amigas en una oración.",
+    "pasos": [
+      {
+        "texto": "Leemos: «Clara lleva un libro y una blusa blanca en el micro».",
+        "visual": { "tipo": "emojis", "items": ["👧", "📖", "👚", "🚌"], "etiquetas": ["Clara", "libro", "blusa", "micro"] }
+      },
+      {
+        "texto": "**Cla**-ra empieza con **cl**. En li-**bro**, la **br** está en la segunda sílaba.",
+        "visual": { "tipo": "emojis", "items": ["👧", "📖"], "etiquetas": ["Cla-ra", "li-bro"] }
+      },
+      {
+        "texto": "**Blu**-sa y **blan**-ca empiezan con **bl**. Y en mi-**cro** está la **cr**.",
+        "visual": { "tipo": "emojis", "items": ["👚", "🚌"], "etiquetas": ["blu-sa", "mi-cro"] }
+      },
+      {
+        "texto": "¡Encontramos los cuatro grupos! Ahora di la oración en voz alta: primero despacio y después más rápido, sin meter vocales de más.",
+        "visual": { "tipo": "tabla", "columnas": ["br", "bl", "cr", "cl"], "filas": [["libro", "blusa, blanca", "micro", "Clara"]] }
+      }
+    ]
+  },
+  "guiada": {
+    "intro": "Ahora lo hacemos juntos.",
+    "pasos": [
+      {
+        "id": "g1", "tipo": "tocar",
+        "enunciado": "Toca la palabra que tiene br.",
+        "apoyo": "Busca una b con una r pegada, sin vocal entre ellas.",
+        "texto": "La *cabra* come pasto en el cerro.",
+        "pista": "Lee cada palabra despacio y busca dónde suena «bra».",
+        "explicacion": "«Cabra» tiene br: ca-**bra**. Las otras palabras no tienen b.",
+        "error": "no-reconoce-grupo"
+      },
+      {
+        "id": "g2", "tipo": "completar",
+        "enunciado": "Completa con br o bl.",
+        "apoyo": "Lee cada palabra en voz alta. Después de la b, ¿escuchas r o l?",
+        "texto": "Wara lleva una [bl]usa roja y un li[br]o en el [br]azo.",
+        "pista": "Di cada palabra despacio y fíjate qué suena justo después de la b.",
+        "explicacion": "Se escribe **blusa**, con bl, y **libro** y **brazo**, con br.",
+        "error": "confunde-r-l"
+      },
+      {
+        "id": "g3", "tipo": "escribir",
+        "enunciado": "Escucha y escribe la palabra.",
+        "apoyo": "Sepárala en sílabas: mi-cro. En la segunda sílaba van juntas la c y la r.",
+        "escuchar": "micro",
+        "visual": { "tipo": "emoji", "valor": "🚌" },
+        "respuestas": ["micro"],
+        "pista": "Tiene dos sílabas. La segunda empieza con dos consonantes amigas.",
+        "explicacion": "Se escribe **micro**: mi-**cro**, con cr.",
+        "error": "dictado-grupos"
+      }
+    ]
+  },
+  "practica": [
+    {
+      "id": "p1", "tipo": "memoria", "nivel": 1,
+      "enunciado": "Encuentra las parejas: el dibujo y su nombre.",
+      "pares": [
+        [{ "emoji": "💪" }, "brazo"],
+        [{ "emoji": "🐐" }, "cabra"],
+        [{ "emoji": "👚" }, "blusa"],
+        [{ "emoji": "🚲" }, "bicicleta"],
+        [{ "emoji": "🎤" }, "micrófono"]
+      ],
+      "pista": "Mira cada dibujo, di su nombre en voz alta y busca la tarjeta que lo dice.",
+      "explicacion": "Brazo y cabra llevan br; blusa lleva bl; bicicleta lleva cl, y micrófono lleva cr.",
+      "error": "vocabulario-grupos"
+    },
+    {
+      "id": "p2", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Toca las palabras que tienen cl.",
+      "texto": "*Claudia* anda en *bicicleta* por el parque.",
+      "pista": "Hay dos. Busca la c con la l pegada.",
+      "explicacion": "«Claudia» y «bicicleta» tienen cl: **Clau**-dia, bi-ci-**cle**-ta.",
+      "error": "no-reconoce-grupo"
+    },
+    {
+      "id": "p3", "tipo": "relacionar", "nivel": 1,
+      "enunciado": "Une el comienzo con el final de cada palabra.",
+      "pares": [
+        [{ "texto": "som", "emoji": "👒" }, "brero"],
+        [{ "texto": "mi", "emoji": "🚌" }, "cro"],
+        [{ "texto": "bici", "emoji": "🚲" }, "cleta"],
+        ["ta", "bla"]
+      ],
+      "pista": "Junta un comienzo con cada final y léelo en voz alta: ¿forma una palabra?",
+      "explicacion": "Se forman sombrero, micro, bicicleta y tabla.",
+      "error": "arma-palabras"
+    },
+    {
+      "id": "p4", "tipo": "completar", "nivel": 1,
+      "enunciado": "Completa con cr o cl.",
+      "texto": "Rosa [cl]ava un [cl]avo en la pared y Luis se pone [cr]ema en las manos.",
+      "pista": "Di cada palabra despacio: después de la c, ¿suena r o suena l?",
+      "explicacion": "«Clava» y «clavo» llevan cl. «Crema» lleva cr.",
+      "error": "confunde-r-l"
+    },
+    {
+      "id": "p5", "tipo": "escribir", "nivel": 1,
+      "enunciado": "Escucha y escribe la palabra.",
+      "escuchar": "libro",
+      "visual": { "tipo": "emoji", "valor": "📖" },
+      "respuestas": ["libro"],
+      "pista": "Tiene dos sílabas: la primera es «li». Escucha bien la segunda.",
+      "explicacion": "Se escribe **libro**: li-**bro**, con br. Antes de r siempre va b, nunca v.",
+      "error": "dictado-grupos"
+    },
+    {
+      "id": "p6", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "¿Lleva br o bl?",
+      "categorias": [
+        { "id": "br", "texto": "br" },
+        { "id": "bl", "texto": "bl" }
+      ],
+      "elementos": [
+        { "texto": "cabra", "emoji": "🐐", "categoria": "br" },
+        { "texto": "sombrero", "emoji": "👒", "categoria": "br" },
+        { "texto": "abrigo", "emoji": "🧥", "categoria": "br" },
+        { "texto": "tabla", "categoria": "bl" },
+        { "texto": "mueble", "categoria": "bl" },
+        { "texto": "cable", "emoji": "🔌", "categoria": "bl" }
+      ],
+      "pista": "Lee cada palabra despacio. Después de la b, ¿suena r o suena l?",
+      "explicacion": "Con br: cabra, sombrero y abrigo. Con bl: tabla, mueble y cable.",
+      "error": "confunde-r-l"
+    },
+    {
+      "id": "p7", "tipo": "ordenar", "nivel": 2,
+      "enunciado": "Ordena las sílabas para formar el nombre de un animal.",
+      "visual": { "tipo": "emoji", "valor": "🐍" },
+      "elementos": ["cu", "le", "bra"],
+      "unir": "",
+      "pista": "Es un animal largo y sin patas. Su última sílaba tiene br.",
+      "explicacion": "Cu-le-bra: **culebra**. La última sílaba, «bra», tiene br.",
+      "error": "arma-palabras"
+    },
+    {
+      "id": "p8", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha y escribe la palabra.",
+      "escuchar": "pueblo",
+      "visual": { "tipo": "emoji", "valor": "🏘️" },
+      "respuestas": ["pueblo"],
+      "pista": "Tiene dos sílabas. En la segunda hay dos consonantes amigas: ¿suena r o l?",
+      "explicacion": "Se escribe **pueblo**: pue-**blo**, con bl.",
+      "error": "dictado-grupos"
+    },
+    {
+      "id": "p9", "tipo": "multiple", "nivel": 2,
+      "enunciado": "Elige todas las palabras que tienen cr.",
+      "opciones": [
+        { "texto": "secreto", "emoji": "🤫", "correcta": true },
+        { "texto": "cruz", "correcta": true },
+        { "texto": "crudo", "correcta": true },
+        { "texto": "carro", "emoji": "🚗", "pista": "En «carro» hay una a entre la c y la r. Busca la c con la r pegada.", "error": "no-reconoce-grupo" },
+        { "texto": "clima", "pista": "«Clima» lleva c y l: es cl, no cr.", "error": "confunde-r-l" },
+        { "texto": "cuna", "pista": "«Cuna» no tiene r. Busca la c con la r pegada.", "error": "no-reconoce-grupo" }
+      ],
+      "pista": "Busca la c con la r pegada, sin vocal en medio.",
+      "explicacion": "Secreto, cruz y crudo tienen cr: se-**cre**-to, **cruz**, **cru**-do. En «carro» hay una vocal entre la c y la r.",
+      "error": "no-reconoce-grupo"
+    },
+    {
+      "id": "p10", "tipo": "multiple", "nivel": 2,
+      "enunciado": "Elige todas las palabras que están bien escritas.",
+      "opciones": [
+        { "texto": "cabra", "correcta": true },
+        { "texto": "carba", "pista": "Mira el orden: en «cabra», primero va la b y después la r.", "error": "invierte-grupo" },
+        { "texto": "bicicleta", "correcta": true },
+        { "texto": "biciceta", "pista": "Falta una letra. Di despacio: bi-ci-cle-ta.", "error": "omite-consonante" },
+        { "texto": "blusa", "correcta": true },
+        { "texto": "vlusa", "pista": "La b y la v suenan igual, pero antes de l o de r siempre va b.", "error": "b-v-grupo" }
+      ],
+      "pista": "Lee cada palabra despacio. ¿Falta una letra? ¿Hay letras cambiadas de lugar? ¿Va la letra correcta antes de la l o la r?",
+      "explicacion": "Están bien escritas cabra, bicicleta y blusa. En «carba» la b y la r cambiaron de lugar; en «biciceta» falta la l, y «vlusa» va con b: antes de l o de r siempre va b.",
+      "error": "omite-consonante"
+    },
+    {
+      "id": "p11", "tipo": "escribir-libre", "nivel": 2,
+      "enunciado": "Escribe una oración con una de estas palabras: cabra, libro, blusa, tabla, micro o bicicleta.",
+      "guia": ["La cabra...", "En el micro..."],
+      "requisitos": [
+        { "tipo": "mayuscula-inicial" },
+        { "tipo": "punto-final" },
+        { "tipo": "min-palabras", "valor": 4 },
+        { "tipo": "incluye", "palabras": ["cabra", "libro", "blusa", "tabla", "micro", "bicicleta"] }
+      ],
+      "modelo": "Mi prima va a la escuela en bicicleta.",
+      "pista": "Elige una palabra y piensa qué hace o cómo es. Empieza con mayúscula y termina con punto.",
+      "explicacion": "Por ejemplo: «Mi prima va a la escuela en bicicleta.» Revisa que tu palabra tenga sus dos consonantes amigas.",
+      "error": "produce-oracion"
+    },
+    {
+      "id": "p12", "tipo": "opcion", "nivel": 2,
+      "enunciado": "Escucha la palabra. ¿Con qué grupo empieza?",
+      "escuchar": "clase",
+      "opciones": [
+        { "texto": "cl", "correcta": true },
+        { "texto": "cr", "pista": "Empieza con c, ¡bien! Escucha otra vez: después de la c, ¿suena r o l?", "error": "confunde-r-l" },
+        { "texto": "bl", "pista": "Escucha la primera letra: ¿suena como en «boca» o como en «casa»?", "error": "no-reconoce-grupo" },
+        { "texto": "br", "pista": "Escucha la primera letra: ¿suena como en «boca» o como en «casa»?", "error": "no-reconoce-grupo" }
+      ],
+      "columnas": 4,
+      "pista": "Repite la palabra en voz baja y fíjate en su primera sílaba.",
+      "explicacion": "«Clase» empieza con cl: **cla**-se.",
+      "error": "confunde-r-l"
+    },
+    {
+      "id": "p13", "tipo": "tocar", "nivel": 3,
+      "enunciado": "Lee el trabalenguas. Toca todas las palabras que tienen br.",
+      "texto": "El *cabrito* *Bruno* *brinca* *sobre* la *sombra* del árbol.",
+      "pista": "Hay cinco. Busca la b con la r pegada después. ¡Cuidado con una palabra que tiene r y b al revés!",
+      "explicacion": "Cabrito, Bruno, brinca, sobre y sombra tienen br. «Árbol» tiene r y b, pero al revés y en sílabas distintas: ár-bol.",
+      "error": "no-reconoce-grupo"
+    },
+    {
+      "id": "p14", "tipo": "ordenar", "nivel": 3,
+      "enunciado": "Ordena las sílabas. Es un lugar con muchos libros para leer.",
+      "elementos": ["bi", "blio", "te", "ca"],
+      "unir": "",
+      "pista": "Tiene cuatro sílabas. La sílaba con bl va en el segundo lugar.",
+      "explicacion": "Bi-blio-te-ca: **biblioteca**. La sílaba «blio» tiene bl.",
+      "error": "arma-palabras"
+    },
+    {
+      "id": "p15", "tipo": "pasos", "nivel": 3,
+      "enunciado": "Lee el trabalenguas en voz alta: «La cabra Brenda brinca en la tabla blanca del pueblo».",
+      "visual": { "tipo": "emoji", "valor": "🐐" },
+      "pasos": [
+        {
+          "tipo": "tocar",
+          "enunciado": "Toca las palabras que tienen br.",
+          "texto": "La *cabra* *Brenda* *brinca* en la tabla blanca del pueblo.",
+          "pista": "Hay tres. Busca la b con la r pegada.",
+          "explicacion": "Cabra, Brenda y brinca tienen br.",
+          "error": "no-reconoce-grupo"
+        },
+        {
+          "tipo": "tocar",
+          "enunciado": "Ahora toca las palabras que tienen bl.",
+          "texto": "La cabra Brenda brinca en la *tabla* *blanca* del *pueblo*.",
+          "pista": "Hay tres. Busca la b con la l pegada.",
+          "explicacion": "Tabla, blanca y pueblo tienen bl.",
+          "error": "confunde-r-l"
+        },
+        {
+          "tipo": "opcion",
+          "enunciado": "¿Cómo se separa «tabla» en sílabas?",
+          "opciones": [
+            { "texto": "ta-bla", "correcta": true },
+            { "texto": "tab-la", "pista": "La b y la l son amigas: van juntas en la misma sílaba.", "error": "separa-grupo" },
+            { "texto": "ta-ba-la", "pista": "No agregues vocales: la palabra es «tabla» y tiene dos sílabas.", "error": "separa-grupo" }
+          ],
+          "columnas": 3,
+          "pista": "Da una palmada por cada sílaba. El grupo bl no se parte.",
+          "explicacion": "Se separa ta-**bla**: la b y la l van juntas.",
+          "error": "separa-grupo"
+        }
+      ],
+      "pista": "Resuelve un paso a la vez. Lee despacio cada palabra.",
+      "explicacion": "Con br: cabra, Brenda y brinca. Con bl: tabla, blanca y pueblo. «Tabla» se separa ta-bla.",
+      "error": "no-reconoce-grupo"
+    },
+    {
+      "id": "p16", "tipo": "escribir", "nivel": 3,
+      "enunciado": "Escribe la palabra de la familia de «libro» que nombra la tienda donde se venden libros.",
+      "respuestas": ["librería"],
+      "pista": "Empieza igual que «libro». Piensa en «panadería» o «heladería»: ¿cómo terminan?",
+      "explicacion": "Es **librería**. En la familia de «libro», el grupo br se queda: libro, librería, libreta.",
+      "error": "familia-palabras"
+    }
+  ],
+  "comprobacion": [
+    {
+      "id": "c1", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Toca las palabras que tienen cr.",
+      "texto": "Mi abuela vive en *Sucre* y viaja en *micro* al mercado.",
+      "pista": "Hay dos. Busca la c con la r pegada. Una es el nombre de una ciudad.",
+      "explicacion": "«Sucre» y «micro» tienen cr: Su-**cre**, mi-**cro**. En «mercado», la r y la c están al revés y en sílabas distintas: mer-ca-do.",
+      "error": "no-reconoce-grupo"
+    },
+    {
+      "id": "c2", "tipo": "relacionar", "nivel": 1,
+      "enunciado": "Une cada palabra con su dibujo.",
+      "pares": [
+        ["abrazo", { "emoji": "🤗" }],
+        ["escribir", { "emoji": "✍️" }],
+        ["ancla", { "emoji": "⚓" }],
+        ["nublado", { "emoji": "🌥️" }]
+      ],
+      "pista": "Lee cada palabra despacio y piensa qué dibujo la muestra.",
+      "explicacion": "Abrazo lleva br; escribir, cr; ancla, cl, y nublado, bl.",
+      "error": "vocabulario-grupos"
+    },
+    {
+      "id": "c3", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa con br, bl, cr o cl.",
+      "texto": "Nayra [cr]uza la calle con su [bl]usa [bl]anca y su som[br]ero.",
+      "banco": ["cl"],
+      "pista": "Lee cada palabra en voz alta. ¿Empieza con b o con c? ¿Después suena r o l?",
+      "explicacion": "Se escribe **cruza** (cr), **blusa** y **blanca** (bl) y **sombrero** (br).",
+      "error": "confunde-r-l"
+    },
+    {
+      "id": "c4", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha y escribe las dos palabras.",
+      "escuchar": "cabra blanca",
+      "visual": { "tipo": "emoji", "valor": "🐐" },
+      "respuestas": ["cabra blanca"],
+      "pista": "Son dos palabras y las dos tienen consonantes amigas. Escúchalas despacio.",
+      "explicacion": "Se escribe **cabra blanca**: ca-**bra** lleva br y **blan**-ca lleva bl.",
+      "error": "dictado-grupos"
+    },
+    {
+      "id": "c5", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "¿Lleva cr o cl?",
+      "categorias": [
+        { "id": "cr", "texto": "cr" },
+        { "id": "cl", "texto": "cl" }
+      ],
+      "elementos": [
+        { "texto": "recreo", "categoria": "cr" },
+        { "texto": "cresta", "emoji": "🐓", "categoria": "cr" },
+        { "texto": "escritorio", "categoria": "cr" },
+        { "texto": "clase", "emoji": "🏫", "categoria": "cl" },
+        { "texto": "chicle", "categoria": "cl" },
+        { "texto": "tecla", "emoji": "⌨️", "categoria": "cl" }
+      ],
+      "pista": "Lee cada palabra despacio. Después de la c, ¿suena r o suena l?",
+      "explicacion": "Con cr: recreo, cresta y escritorio. Con cl: clase, chicle y tecla.",
+      "error": "confunde-r-l"
+    },
+    {
+      "id": "c6", "tipo": "opcion", "nivel": 2,
+      "enunciado": "Escucha la palabra. ¿Cuál está bien escrita?",
+      "escuchar": "niebla",
+      "visual": { "tipo": "emoji", "valor": "🌫️" },
+      "opciones": [
+        { "texto": "niebla", "correcta": true },
+        { "texto": "niebra", "pista": "Escucha otra vez: después de la b, ¿suena r o l?", "error": "confunde-r-l" },
+        { "texto": "nieba", "pista": "Falta una letra. Escucha bien la última sílaba.", "error": "omite-consonante" }
+      ],
+      "columnas": 3,
+      "pista": "Escucha la última sílaba: tiene dos consonantes amigas.",
+      "explicacion": "Se escribe **niebla**: nie-**bla**, con bl. La niebla es como una nube muy baja.",
+      "error": "confunde-r-l"
+    },
+    {
+      "id": "c7", "tipo": "clasificar", "nivel": 3,
+      "enunciado": "¿Qué grupo tiene cada palabra?",
+      "categorias": [
+        { "id": "br", "texto": "br" },
+        { "id": "bl", "texto": "bl" },
+        { "id": "cr", "texto": "cr" },
+        { "id": "cl", "texto": "cl" }
+      ],
+      "elementos": [
+        { "texto": "febrero", "categoria": "br" },
+        { "texto": "abril", "categoria": "br" },
+        { "texto": "doble", "categoria": "bl" },
+        { "texto": "hablar", "categoria": "bl" },
+        { "texto": "escribo", "categoria": "cr" },
+        { "texto": "acróbata", "emoji": "🤸", "categoria": "cr" },
+        { "texto": "ciclista", "emoji": "🚴", "categoria": "cl" },
+        { "texto": "reciclar", "emoji": "♻️", "categoria": "cl" }
+      ],
+      "pista": "Busca en cada palabra la b o la c con su amiga. Primero mira si es b o c; después, si sigue r o l.",
+      "explicacion": "br: febrero y abril. bl: doble y hablar. cr: escribo y acróbata. cl: ciclista y reciclar.",
+      "error": "clasifica-grupos"
+    },
+    {
+      "id": "c8", "tipo": "escribir", "nivel": 3,
+      "enunciado": "Escucha la oración y escríbela.",
+      "escuchar": "Clara abre el libro.",
+      "respuestas": ["Clara abre el libro.", "Clara abre el libro"],
+      "pista": "Son cuatro palabras. Tres de ellas tienen consonantes amigas: escúchalas despacio.",
+      "explicacion": "Se escribe «Clara abre el libro.» «Clara» lleva cl; «abre» y «libro» llevan br.",
+      "error": "dictado-grupos"
+    }
+  ],
+  "repaso": {
+    "texto": "Las consonantes amigas van juntas en la misma sílaba: br (li-bro), bl (blu-sa), cr (mi-cro) y cl (bi-ci-cle-ta). Escucha si suena r o l, y escribe las dos letras. Antes de r o l va b, nunca v.",
+    "visual": { "tipo": "emojis", "items": ["📖", "👚", "🚌", "🚲"], "etiquetas": ["li-bro", "blu-sa", "mi-cro", "bi-ci-cle-ta"] }
+  },
+  "adulto": {
+    "objetivo": "Leer, pronunciar y escribir palabras con los grupos consonánticos br, bl, cr y cl. Se trabaja la escucha (distinguir r de l después de b y de c), la escritura sin omitir ni invertir letras (cabra, no «caba» ni «carba»), la regla de que antes de r o l siempre se escribe b y nunca v (blusa, libro), y la separación en sílabas sin partir el grupo (ca-bra, ta-bla).",
+    "sugerencias": [
+      "En casa, jueguen «Veo, veo una palabra con br, bl, cr o cl» (libro, sombrero, blusa, cable, crema, clavo). Por cada palabra, den una palmada fuerte en la sílaba que tiene el grupo: som-BRE-ro.",
+      "En la tienda o la feria, busquen en etiquetas y carteles palabras con estos grupos (crema dental, cloro, sobres, cable). Cópienlas en un cuaderno y pinten de color las dos consonantes amigas.",
+      "En el patio o la vereda, dibujen con tiza cuatro cuadros: br, bl, cr y cl. Digan una palabra (cabra, pueblo, micro, bicicleta), pidan que salte al cuadro de su grupo y que después la escriba."
+    ],
+    "errores": {
+      "no-reconoce-grupo": { "descripcion": "No encuentra las palabras que tienen br, bl, cr o cl, sobre todo cuando el grupo está en medio de la palabra (sombrero, micro).", "sugerencia": "Lean palabras juntos y pidan que subraye con color la b o la c y su amiga (r o l). Empiecen con palabras cortas: cabra, tabla." },
+      "confunde-r-l": { "descripcion": "Confunde la r y la l después de b o de c (escribe «brusa» por blusa o «clema» por crema).", "sugerencia": "Digan pares de sílabas exagerando el sonido (bra-bla, cra-cla) y pidan que levante la mano cuando escuche la l. Miren juntos en un espejo cómo se mueve la lengua." },
+      "omite-consonante": { "descripcion": "Olvida la segunda consonante del grupo (escribe «caba» por cabra o «biciceta» por bicicleta).", "sugerencia": "Digan la palabra muy despacio, estirando los sonidos (c-a-b-r-a), y cuenten con los dedos cuántos sonidos escuchan antes de escribir." },
+      "invierte-grupo": { "descripcion": "Cambia de lugar las letras del grupo (escribe «barzo» por brazo o «bulsa» por blusa).", "sugerencia": "Armen la palabra con letras recortadas o tapitas con letras y lean en voz alta cada sílaba: «bra», no «bar»." },
+      "b-v-grupo": { "descripcion": "Escribe v en lugar de b antes de r o de l (escribe «vlusa» por blusa o «livro» por libro). La b y la v suenan igual, así que se decide por la regla.", "sugerencia": "Recuerden juntos la regla: antes de r o l siempre va b. Busquen en un libro o en etiquetas palabras con br y bl, y comprueben que nunca aparece «vr» ni «vl»." },
+      "separa-grupo": { "descripcion": "Parte el grupo al separar sílabas (tab-la) o mete una vocal de más al hablar (ta-ba-la).", "sugerencia": "Separen palabras con palmadas y recuerden que las consonantes amigas van en la misma palmada: ta-bla, ca-bra." },
+      "dictado-grupos": { "descripcion": "Tiene dificultad para escribir palabras u oraciones dictadas con br, bl, cr o cl.", "sugerencia": "Dicten tres palabras por día, sílaba por sílaba. Después, que lea en voz alta lo que escribió y lo compare con la palabra escrita por ustedes." },
+      "vocabulario-grupos": { "descripcion": "No reconoce o no nombra algunas palabras con estos grupos (micrófono, ancla, nublado).", "sugerencia": "Miren dibujos o fotos, nombren juntos las cosas y escriban el nombre debajo de cada dibujo." },
+      "arma-palabras": { "descripcion": "Le cuesta unir partes o sílabas para formar palabras (cu-le-bra, bi-blio-te-ca).", "sugerencia": "Escriban sílabas en papelitos, mézclenlas y armen palabras juntos, leyendo en voz alta cada intento." },
+      "clasifica-grupos": { "descripcion": "Duda al decidir qué grupo tiene una palabra cuando se trabajan los cuatro a la vez.", "sugerencia": "Hagan cuatro sobres rotulados br, bl, cr y cl, y repartan tarjetas con palabras. Primero decidan si es b o c; después, si sigue r o l." },
+      "familia-palabras": { "descripcion": "Le cuesta encontrar palabras de la misma familia (libro → librería).", "sugerencia": "Armen familias en voz alta: libro, librería, libreta; cabra, cabrito. Muestren que el grupo br se queda en todas." },
+      "produce-oracion": { "descripcion": "Le cuesta escribir una oración completa con una palabra que tenga el grupo.", "sugerencia": "Pidan que diga la oración en voz alta antes de escribirla; después revisen juntos la mayúscula inicial, el punto final y el grupo de consonantes." }
+    }
+  }
+}

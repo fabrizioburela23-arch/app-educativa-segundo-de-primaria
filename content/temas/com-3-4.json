@@ -1,0 +1,414 @@
+{
+  "id": "com-3-4",
+  "titulo": "Rimas y trabalenguas",
+  "objetivo": "Encuentro palabras que riman y juego con trabalenguas.",
+  "lecturas": [
+    {
+      "id": "llama-luna",
+      "titulo": "La llama y la luna",
+      "genero": "poema",
+      "emoji": "🦙",
+      "parrafos": [
+        "Por el cerro camina",
+        "la llama de Wara;",
+        "lleva lana suave",
+        "y una cinta clara.",
+        "Cuando llega la noche",
+        "y se va el sol,",
+        "la llama mira la luna",
+        "redonda como un farol."
+      ]
+    }
+  ],
+  "explicacion": [
+    {
+      "texto": "Dos palabras **riman** cuando terminan con los mismos sonidos. «Llama» y «cama» terminan en «ama». ¡Riman!",
+      "emoji": "🎵",
+      "visual": { "tipo": "emojis", "items": ["🦙", "🛏️"], "etiquetas": ["llama", "cama"] }
+    },
+    {
+      "texto": "Mira todo el final, no solo la última sílaba. «Casa» y «masa» terminan en «asa»: riman. «Mesa» termina en «esa»: no rima con ellas.",
+      "visual": { "tipo": "tabla", "columnas": ["Palabra", "Termina en"], "filas": [["casa", "asa"], ["masa", "asa"], ["mesa", "esa"]] }
+    },
+    {
+      "texto": "Los poemas se escriben en renglones llamados **versos**. Muchas veces, los versos terminan con palabras que riman. Aquí separamos los versos con una barra: /.",
+      "visual": { "tipo": "tabla", "columnas": ["Verso", "Termina en"], "filas": [["Mi gato Tomás", "ás"], ["camina hacia atrás.", "ás"]] }
+    },
+    {
+      "texto": "Un **trabalenguas** es un juego de palabras: un sonido se repite muchas veces y es difícil decirlo rápido. «Ocho chanchitos chiquitos chapotean en el charco.» ¡Se repite «ch»!",
+      "visual": { "tipo": "emoji", "valor": "🐷", "cantidad": 8, "etiqueta": "ocho chanchitos" }
+    }
+  ],
+  "ejemplo": {
+    "instruccion": "Mira cómo buscamos rimas en un poema y el sonido que se repite en un trabalenguas.",
+    "pasos": [
+      {
+        "texto": "Leemos un poema: «El sapo del lago / salta sin parar; / con su amigo el pato / se pone a nadar.» Miramos la última palabra de cada verso.",
+        "visual": { "tipo": "emojis", "items": ["🐸", "🦆"], "etiquetas": ["sapo", "pato"] }
+      },
+      {
+        "texto": "«Parar» y «nadar» terminan con los mismos sonidos: «ar». ¡Riman! Por eso el poema suena como una canción.",
+        "visual": { "tipo": "tabla", "columnas": ["Palabra", "Termina en"], "filas": [["parar", "ar"], ["nadar", "ar"]] }
+      },
+      {
+        "texto": "Ahora un trabalenguas: «Lala lava lana lila.» Lo decimos despacio: La-la la-va la-na li-la. ¿Qué sonido se repite? ¡La **l**!",
+        "visual": { "tipo": "emojis", "items": ["👧", "💧", "🧶"], "etiquetas": ["Lala", "lava", "lana lila"] }
+      },
+      {
+        "texto": "Para decir un trabalenguas: primero despacio, sílaba por sílaba; después, cada vez más rápido. Si te trabas, ¡ríete y empieza otra vez!",
+        "visual": { "tipo": "emojis", "items": ["🐢", "🐇"], "etiquetas": ["despacio", "rápido"] }
+      }
+    ]
+  },
+  "guiada": {
+    "intro": "Ahora lo hacemos juntos.",
+    "pasos": [
+      {
+        "id": "g1", "tipo": "tocar",
+        "enunciado": "Toca la palabra que rima con «gato».",
+        "apoyo": "«Gato» termina en «ato». Busca otra palabra que termine igual.",
+        "texto": "Kusi vio un *pato* en el río.",
+        "pista": "Busca un animal. Dilo en voz alta junto con «gato».",
+        "explicacion": "«Pato» rima con «gato»: las dos terminan en «ato».",
+        "error": "no-reconoce-rima"
+      },
+      {
+        "id": "g2", "tipo": "relacionar",
+        "enunciado": "Une cada palabra con la que rima.",
+        "apoyo": "Lee cada palabra en voz alta y fíjate en su final.",
+        "pares": [
+          [{ "texto": "luna", "emoji": "🌙" }, "cuna"],
+          ["vaso", "paso"],
+          [{ "texto": "pino", "emoji": "🌲" }, "camino"],
+          [{ "texto": "sol", "emoji": "☀️" }, "col"]
+        ],
+        "pista": "Compara los finales: «una», «aso», «ino», «ol».",
+        "explicacion": "Luna y cuna terminan en «una»; vaso y paso, en «aso»; pino y camino, en «ino»; sol y col, en «ol».",
+        "error": "no-reconoce-rima"
+      },
+      {
+        "id": "g3", "tipo": "opcion",
+        "enunciado": "Escucha el trabalenguas. ¿Qué sonido se repite?",
+        "apoyo": "Escúchalo dos veces. ¿Con qué sonido empiezan casi todas las palabras?",
+        "escuchar": "Trini trae tres trompos; tres trompos trae Trini.",
+        "opciones": [
+          { "texto": "tr", "correcta": true },
+          { "texto": "ch", "pista": "¿Oíste «ch», como en «choclo»? Escucha otra vez.", "error": "sonido-repetido" },
+          { "texto": "l", "pista": "¿Oíste muchas veces la «l», como en «luna»? Escucha otra vez.", "error": "sonido-repetido" }
+        ],
+        "columnas": 3,
+        "pista": "Repite el trabalenguas en voz baja y fíjate cómo empieza cada palabra.",
+        "explicacion": "Se repite «tr»: Trini, trae, tres, trompos. Por eso es difícil decirlo rápido.",
+        "error": "sonido-repetido"
+      }
+    ]
+  },
+  "practica": [
+    {
+      "id": "p1", "tipo": "memoria", "nivel": 1,
+      "enunciado": "Encuentra las parejas de palabras que riman.",
+      "pares": [
+        [{ "texto": "rosa", "emoji": "🌹" }, { "texto": "mariposa", "emoji": "🦋" }],
+        [{ "texto": "globo", "emoji": "🎈" }, { "texto": "lobo", "emoji": "🐺" }],
+        [{ "texto": "pan", "emoji": "🍞" }, { "texto": "flan", "emoji": "🍮" }],
+        [{ "texto": "perro", "emoji": "🐕" }, { "texto": "cerro", "emoji": "⛰️" }]
+      ],
+      "pista": "Di cada palabra en voz alta y escucha cómo termina.",
+      "explicacion": "Riman rosa y mariposa (osa), globo y lobo (obo), pan y flan (an), perro y cerro (erro).",
+      "error": "no-reconoce-rima"
+    },
+    {
+      "id": "p2", "tipo": "opcion", "nivel": 1,
+      "enunciado": "¿Qué palabra rima con «llama»?",
+      "visual": { "tipo": "emoji", "valor": "🦙" },
+      "opciones": [
+        { "texto": "rama", "emoji": "🌿", "correcta": true },
+        { "texto": "mesa", "pista": "«Mesa» termina en «esa». Escucha cómo termina «llama».", "error": "no-reconoce-rima" },
+        { "texto": "sol", "emoji": "☀️", "pista": "«Sol» termina en «ol». Escucha cómo termina «llama».", "error": "no-reconoce-rima" }
+      ],
+      "pista": "Di «llama» despacio y fíjate en su final.",
+      "explicacion": "«Rama» rima con «llama»: las dos terminan en «ama».",
+      "error": "no-reconoce-rima"
+    },
+    {
+      "id": "p3", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Lee el trabalenguas. Toca las palabras que tienen «bl».",
+      "texto": "*Blanca* y *Blas* pintan *bloques* *blancos*.",
+      "pista": "Busca la b pegada a la l, como en «blusa».",
+      "explicacion": "Blanca, Blas, bloques y blancos tienen «bl». Ese es el sonido que se repite en el trabalenguas.",
+      "error": "sonido-repetido"
+    },
+    {
+      "id": "p4", "tipo": "escribir", "nivel": 1,
+      "enunciado": "Cambia la primera letra de «pato» y escribe el nombre de un animal que dice «miau».",
+      "respuestas": ["gato", "el gato", "un gato"],
+      "pista": "Deja «ato» igual y cambia solo la primera letra.",
+      "explicacion": "Es «gato». «Pato» y «gato» riman: las dos terminan en «ato».",
+      "error": "forma-rima"
+    },
+    {
+      "id": "p5", "tipo": "ordenar", "nivel": 1,
+      "enunciado": "Ordena las palabras para armar el trabalenguas.",
+      "elementos": ["Pita", "pela", "papas", "para", "la", "paila."],
+      "unir": " ",
+      "pista": "Empieza con el nombre de la niña y termina con la palabra que tiene punto.",
+      "explicacion": "«Pita pela papas para la paila.» La paila es un recipiente para cocinar. Se repite el sonido de la p.",
+      "error": "orden-trabalenguas"
+    },
+    {
+      "id": "p6", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "Une cada palabra con la que rima.",
+      "pares": [
+        [{ "texto": "maní", "emoji": "🥜" }, { "texto": "ají", "emoji": "🌶️" }],
+        [{ "texto": "flor", "emoji": "🌸" }, { "texto": "tambor", "emoji": "🥁" }],
+        [{ "texto": "niño", "emoji": "👦" }, "cariño"],
+        ["pluma", "espuma"]
+      ],
+      "pista": "Lee cada palabra en voz alta y compara su final con los de la otra columna.",
+      "explicacion": "Maní y ají terminan en «í»; flor y tambor, en «or»; niño y cariño, en «iño»; pluma y espuma, en «uma».",
+      "error": "no-reconoce-rima"
+    },
+    {
+      "id": "p7", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "¿Rima con «ratón» o con «mesa»?",
+      "categorias": [
+        { "id": "raton", "texto": "Rima con ratón", "emoji": "🐭" },
+        { "id": "mesa", "texto": "Rima con mesa" }
+      ],
+      "elementos": [
+        { "texto": "camión", "emoji": "🚚", "categoria": "raton" },
+        { "texto": "jabón", "emoji": "🧼", "categoria": "raton" },
+        { "texto": "cajón", "categoria": "raton" },
+        { "texto": "fresa", "emoji": "🍓", "categoria": "mesa" },
+        { "texto": "princesa", "emoji": "👸", "categoria": "mesa" },
+        { "texto": "sorpresa", "emoji": "🎁", "categoria": "mesa" }
+      ],
+      "pista": "«Ratón» termina en «ón» y «mesa» termina en «esa». Di cada palabra y escucha su final.",
+      "explicacion": "Camión, jabón y cajón terminan en «ón», como ratón. Fresa, princesa y sorpresa terminan en «esa», como mesa.",
+      "error": "clasifica-rimas"
+    },
+    {
+      "id": "p8", "tipo": "tocar", "nivel": 2,
+      "enunciado": "Mira la última palabra de cada verso. Toca las dos que riman.",
+      "texto": "En la feria del barrio / hay choclo, papa y *maní*; / la casera me regala / un plátano para *mí*.",
+      "pista": "Lee la palabra que está antes de cada barra / y la del final. ¿Cuáles suenan igual al terminar?",
+      "explicacion": "«Maní» y «mí» riman: las dos terminan en «í». «Barrio» y «regala» no riman con ellas.",
+      "error": "rima-en-poema"
+    },
+    {
+      "id": "p9", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa el poema con la palabra que rima con «tenedor».",
+      "texto": "Tengo una cuchara / y un tenedor; / como sopa de maní / con mucho [sabor].",
+      "banco": ["gusto", "pan"],
+      "pista": "Di «tenedor» y después cada palabra del banco. ¿Cuál suena igual al final?",
+      "explicacion": "«Sabor» rima con «tenedor»: las dos terminan en «or». «Gusto» y «pan» también tienen sentido, pero no riman.",
+      "error": "completa-rima"
+    },
+    {
+      "id": "p10", "tipo": "opcion", "nivel": 2,
+      "enunciado": "Escucha el trabalenguas. ¿Qué sonido se repite más?",
+      "escuchar": "El grillo Gregorio grita en la granja: ¡gri, gri, gri!",
+      "opciones": [
+        { "texto": "gr", "correcta": true },
+        { "texto": "ch", "pista": "¿Oíste «ch», como en «choclo»? Escucha otra vez.", "error": "sonido-repetido" },
+        { "texto": "p", "pista": "¿Oíste muchas veces la «p», como en «papa»? Escucha otra vez.", "error": "sonido-repetido" }
+      ],
+      "columnas": 3,
+      "pista": "Escúchalo con la tortuga, más despacio, y fíjate cómo empiezan casi todas las palabras.",
+      "explicacion": "Se repite «gr»: grillo, Gregorio, grita, granja y gri, gri, gri.",
+      "error": "sonido-repetido"
+    },
+    {
+      "id": "p11", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha las tres palabras. Escribe la que rima con «papa».",
+      "escuchar": "sopa, capa, mesa.",
+      "respuestas": ["capa", "la capa", "una capa"],
+      "pista": "«Papa» termina en «apa». Escucha otra vez: ¿cuál termina igual?",
+      "explicacion": "«Capa» rima con «papa»: las dos terminan en «apa». «Sopa» termina en «opa»: se parece, pero no rima.",
+      "error": "escucha-rima"
+    },
+    {
+      "id": "p12", "tipo": "ordenar", "nivel": 2,
+      "enunciado": "Ordena las sílabas para formar una palabra que rima con «ratón».",
+      "elementos": ["co", "ra", "zón"],
+      "unir": "",
+      "pista": "Es lo que late dentro de tu pecho.",
+      "explicacion": "«Corazón» rima con «ratón»: las dos terminan en «ón».",
+      "error": "orden-silabas"
+    },
+    {
+      "id": "p13", "tipo": "multiple", "nivel": 3,
+      "enunciado": "Elige todas las palabras que riman con «sol».",
+      "opciones": [
+        { "texto": "col", "emoji": "🥬", "correcta": true },
+        { "texto": "caracol", "emoji": "🐌", "correcta": true },
+        { "texto": "girasol", "emoji": "🌻", "correcta": true },
+        { "texto": "sal", "pista": "«Sal» termina en «al», no en «ol».", "error": "rima-parcial" },
+        { "texto": "sopa", "pista": "«Sopa» empieza como «sol», pero termina diferente. La rima está al final.", "error": "rima-parcial" },
+        { "texto": "luna", "emoji": "🌙", "pista": "«Luna» termina en «una», no en «ol».", "error": "no-reconoce-rima" }
+      ],
+      "pista": "«Sol» termina en «ol». Busca todas las palabras que terminan igual.",
+      "explicacion": "Col, caracol y girasol terminan en «ol»: riman con «sol». Sal, sopa y luna no terminan así.",
+      "error": "no-reconoce-rima"
+    },
+    {
+      "id": "p14", "tipo": "clasificar", "nivel": 3,
+      "enunciado": "¿Qué sonido se repite en cada trabalenguas?",
+      "categorias": [
+        { "id": "tr", "texto": "tr" },
+        { "id": "ch", "texto": "ch" },
+        { "id": "p", "texto": "p" }
+      ],
+      "elementos": [
+        { "texto": "Tres trenes traen trigo.", "categoria": "tr" },
+        { "texto": "Tristán trota tras el tractor.", "categoria": "tr" },
+        { "texto": "Nacho come choclo con charque.", "categoria": "ch" },
+        { "texto": "El chivo Chucho come chala.", "categoria": "ch" },
+        { "texto": "Paco pinta patos para Paula.", "categoria": "p" },
+        { "texto": "Pepa pide pan y papaya.", "categoria": "p" }
+      ],
+      "pista": "Lee cada trabalenguas en voz alta. ¿Qué sonido escuchas muchas veces?",
+      "explicacion": "Con tr: «Tres trenes traen trigo» y «Tristán trota tras el tractor». Con ch: «Nacho come choclo con charque» y «El chivo Chucho come chala». Con p: «Paco pinta patos para Paula» y «Pepa pide pan y papaya».",
+      "error": "sonido-repetido"
+    },
+    {
+      "id": "p15", "tipo": "tocar", "nivel": 3,
+      "enunciado": "Toca todas las palabras que tienen «tr», aunque esté en el medio de la palabra.",
+      "texto": "El *tren* *trae* *cuatro* *trompos* y *otros* juguetes para *Beatriz*.",
+      "pista": "Hay seis. Algunas tienen «tr» al principio y otras en el medio.",
+      "explicacion": "Tren, trae, cuatro, trompos, otros y Beatriz tienen «tr». En «cuatro», «otros» y «Beatriz» está en el medio.",
+      "error": "sonido-repetido"
+    },
+    {
+      "id": "p16", "tipo": "escribir-libre", "nivel": 3,
+      "enunciado": "Inventa un trabalenguas corto: usa muchas palabras que empiecen con el mismo sonido.",
+      "guia": ["Mateo mira...", "Tina toma..."],
+      "requisitos": [
+        { "tipo": "mayuscula-inicial" },
+        { "tipo": "punto-final" },
+        { "tipo": "min-palabras", "valor": 4 }
+      ],
+      "modelo": "Mateo mira mangos maduros en el mercado.",
+      "pista": "Elige un sonido, como la m o la p, y busca palabras que empiecen con él.",
+      "explicacion": "Por ejemplo: «Mateo mira mangos maduros en el mercado.» Se repite la m. ¡Léeselo rápido a alguien de tu casa!",
+      "error": "inventa-trabalenguas"
+    }
+  ],
+  "comprobacion": [
+    {
+      "id": "c1", "tipo": "opcion", "nivel": 1,
+      "enunciado": "¿Qué es un trabalenguas?",
+      "opciones": [
+        { "texto": "Un juego de palabras difícil de decir rápido.", "correcta": true },
+        { "texto": "Un cuento largo con personajes y un final.", "pista": "Eso es un cuento. Piensa en lo que pasa cuando dices un trabalenguas rápido.", "error": "concepto-trabalenguas" },
+        { "texto": "Una pregunta con pistas para adivinar algo.", "pista": "Eso es una adivinanza. Piensa en lo que pasa cuando dices un trabalenguas rápido.", "error": "concepto-trabalenguas" }
+      ],
+      "columnas": 1,
+      "pista": "Recuerda «Ocho chanchitos chiquitos chapotean en el charco». ¿Qué tiene de especial?",
+      "explicacion": "Un trabalenguas es un juego de palabras: un sonido se repite muchas veces y por eso es difícil decirlo rápido.",
+      "error": "concepto-trabalenguas"
+    },
+    {
+      "id": "c2", "tipo": "relacionar", "nivel": 1,
+      "enunciado": "Une cada palabra con la que rima.",
+      "pares": [
+        [{ "texto": "rana", "emoji": "🐸" }, "ventana"],
+        [{ "texto": "pelota", "emoji": "⚽" }, { "texto": "bota", "emoji": "👢" }],
+        [{ "texto": "grillo", "emoji": "🦗" }, { "texto": "anillo", "emoji": "💍" }],
+        [{ "texto": "bebé", "emoji": "👶" }, { "texto": "café", "emoji": "☕" }]
+      ],
+      "pista": "Di cada palabra en voz alta y fíjate en cómo termina.",
+      "explicacion": "Rana y ventana terminan en «ana»; pelota y bota, en «ota»; grillo y anillo, en «illo»; bebé y café, en «é».",
+      "error": "no-reconoce-rima"
+    },
+    {
+      "id": "c3", "tipo": "opcion", "nivel": 2,
+      "enunciado": "Lee el poema. ¿Qué palabra rima con «Wara»?",
+      "lectura": "llama-luna",
+      "opciones": [
+        { "texto": "clara", "correcta": true },
+        { "texto": "cerro", "pista": "«Cerro» termina en «erro». Escucha cómo termina «Wara».", "error": "rima-en-poema" },
+        { "texto": "suave", "pista": "«Suave» termina en «ave». Escucha cómo termina «Wara».", "error": "rima-en-poema" }
+      ],
+      "columnas": 3,
+      "pista": "Mira la última palabra de los primeros cuatro versos.",
+      "explicacion": "«Wara» y «clara» riman: las dos terminan en «ara». Están al final del segundo y del cuarto verso.",
+      "error": "rima-en-poema"
+    },
+    {
+      "id": "c4", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa el poema. Las dos palabras que faltan riman entre sí.",
+      "texto": "Mi abuelo pide quinua, / mi tía, pan y [queso]; / yo cargo la bolsa / y les doy un [beso].",
+      "banco": ["leche", "abrazo"],
+      "pista": "Busca en el banco dos palabras que terminen igual.",
+      "explicacion": "«Queso» y «beso» riman: terminan en «eso». «Leche» y «abrazo» tienen sentido, pero no riman.",
+      "error": "completa-rima"
+    },
+    {
+      "id": "c5", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha el trabalenguas y escríbelo.",
+      "escuchar": "Tito toma té con Tita.",
+      "respuestas": ["Tito toma té con Tita.", "Tito toma té con Tita"],
+      "pista": "Son cinco palabras y casi todas empiezan con t. Escúchalo despacio con la tortuga.",
+      "explicacion": "Se escribe «Tito toma té con Tita.» Se repite el sonido de la t.",
+      "error": "dictado-trabalenguas"
+    },
+    {
+      "id": "c6", "tipo": "tocar", "nivel": 2,
+      "enunciado": "Lee el trabalenguas. ¿Qué sonido se repite? Toca todas las palabras que lo tienen.",
+      "texto": "*Saúl* *sirve* *sopa* *sabrosa* con *sal*.",
+      "pista": "Dilo en voz alta: ¿con qué sonido empiezan casi todas las palabras? Hay cinco.",
+      "explicacion": "Se repite el sonido de la s: Saúl, sirve, sopa, sabrosa y sal. «Con» no lo tiene.",
+      "error": "sonido-repetido"
+    },
+    {
+      "id": "c7", "tipo": "opcion", "nivel": 3,
+      "enunciado": "La rima se escucha: no importa con qué letras se escriben las palabras. ¿Qué palabra rima con «mesa»?",
+      "opciones": [
+        { "texto": "cereza", "emoji": "🍒", "correcta": true },
+        { "texto": "cosa", "pista": "«Cosa» termina en «osa» y «mesa» en «esa»: la vocal cambia.", "error": "rima-parcial" },
+        { "texto": "masa", "pista": "«Masa» termina en «asa» y «mesa» en «esa»: la vocal cambia.", "error": "rima-parcial" }
+      ],
+      "columnas": 3,
+      "pista": "Di «mesa» y cada palabra en voz alta. No mires las letras: escucha el final.",
+      "explicacion": "«Cereza» rima con «mesa»: cuando las decimos, las dos terminan en «esa». Una se escribe con z y la otra con s, pero suenan igual.",
+      "error": "rima-por-sonido"
+    },
+    {
+      "id": "c8", "tipo": "escribir", "nivel": 3,
+      "enunciado": "Escribe una palabra que rime con «ratón» y que nombre lo que cierra tu camisa.",
+      "respuestas": ["botón", "el botón", "un botón"],
+      "pista": "Termina en «ón», como «ratón». Tu camisa tiene varios, pequeños y redondos.",
+      "explicacion": "Es «botón»: rima con «ratón» porque las dos terminan en «ón».",
+      "error": "forma-rima"
+    }
+  ],
+  "repaso": {
+    "texto": "Riman las palabras que terminan con los mismos sonidos: llama y cama (ama). En un trabalenguas, un sonido se repite muchas veces: dilo primero despacio y después rápido.",
+    "visual": { "tipo": "emojis", "items": ["🦙", "🛏️"], "etiquetas": ["llama", "cama"] }
+  },
+  "adulto": {
+    "objetivo": "Reconocer y producir rimas (palabras que terminan con los mismos sonidos desde la vocal acentuada) en poemas originales, y escuchar, leer y crear trabalenguas identificando el sonido que se repite. Se trabajan la conciencia fonológica, la escucha y la fluidez lectora.",
+    "sugerencias": [
+      "Jueguen a «¿Qué rima con...?» camino a la escuela o mientras cocinan: una persona dice una palabra (pan) y la otra busca una que rime (flan, Juan). Si solo coincide la última sílaba (casa y mesa), digan juntos el final completo para comparar.",
+      "En la feria o el mercado, busquen rimas con los productos que ven: «papa, capa», «maní, ají», «piña, niña». En casa, escriban el par que más les guste y hagan un dibujo.",
+      "Inventen un trabalenguas con el nombre de alguien de la familia (por ejemplo: «Luis lava lechugas en la laguna»). Díganlo primero despacio y después rápido, y den una palmada cada vez que suena el sonido repetido."
+    ],
+    "errores": {
+      "no-reconoce-rima": { "descripcion": "No reconoce cuándo dos palabras riman.", "sugerencia": "Digan pares de palabras en voz alta (gato-pato, gato-mesa) y pidan que levante la mano solo cuando riman." },
+      "rima-parcial": { "descripcion": "Cree que dos palabras riman si solo coincide la última sílaba o la primera parte (casa y mesa, sol y sopa).", "sugerencia": "Pidan que diga el final desde la vocal que suena más fuerte: c-asa, m-esa. Si esos finales no son iguales, no riman." },
+      "clasifica-rimas": { "descripcion": "Le cuesta agrupar palabras según su rima.", "sugerencia": "Escriban palabras en papelitos y armen dos montones: las que terminan en «ón» y las que terminan en «esa»." },
+      "rima-en-poema": { "descripcion": "Le cuesta encontrar las palabras que riman en un poema.", "sugerencia": "Lean juntos un poema corto, señalen con el dedo la última palabra de cada renglón y comparen cómo suenan." },
+      "completa-rima": { "descripcion": "Le cuesta completar un verso con una palabra que rime.", "sugerencia": "Digan versos incompletos («Tengo un gato que se llama Tomás, camina adelante y camina...») y pidan que complete con una rima (atrás)." },
+      "escucha-rima": { "descripcion": "Le cuesta reconocer la rima cuando solo escucha las palabras.", "sugerencia": "Digan tres palabras despacio (sopa, capa, mesa) y pidan que repita en voz alta la que rima con «papa»." },
+      "forma-rima": { "descripcion": "Le cuesta crear una palabra que rime cambiando el comienzo.", "sugerencia": "Jueguen a cambiar la primera letra: pato, gato, rato, dato. Escríbanlas una debajo de otra y lean los finales iguales." },
+      "orden-silabas": { "descripcion": "Le cuesta ordenar sílabas para formar una palabra.", "sugerencia": "Escriban sílabas en tapas de botella o papelitos y armen palabras juntos, diciéndolas con palmadas." },
+      "sonido-repetido": { "descripcion": "No identifica el sonido que se repite en un trabalenguas.", "sugerencia": "Digan el trabalenguas despacio y den una palmada cada vez que aparece el sonido repetido. Luego pregunten qué sonido fue." },
+      "orden-trabalenguas": { "descripcion": "Le cuesta ordenar las palabras de un trabalenguas.", "sugerencia": "Escriban el trabalenguas en una tira de papel, córtenlo por palabras y ármenlo juntos leyéndolo en voz alta." },
+      "concepto-trabalenguas": { "descripcion": "Confunde el trabalenguas con otros textos, como el cuento o la adivinanza.", "sugerencia": "Lean un cuento, una adivinanza y un trabalenguas cortos, y pregunten: ¿cuál es difícil de decir rápido? ¿Cuál tiene pistas?" },
+      "dictado-trabalenguas": { "descripcion": "Tiene dificultad para escribir un trabalenguas dictado.", "sugerencia": "Dicten el trabalenguas palabra por palabra, despacio. Después, que lo lea en voz alta para revisar si falta alguna palabra." },
+      "rima-por-sonido": { "descripcion": "Cree que las palabras riman solo si se escriben igual (no acepta que «cereza» rime con «mesa»).", "sugerencia": "Recuerden que la rima se escucha: digan «cereza» y «mesa» con los ojos cerrados y comparen el final. Después miren juntos cómo se escribe cada una." },
+      "inventa-trabalenguas": { "descripcion": "Le cuesta inventar un trabalenguas propio.", "sugerencia": "Elijan juntos un sonido (la m) y hagan una lista de palabras que empiecen con él (mamá, mango, mercado). Luego armen una oración con ellas." }
+    }
+  }
+}

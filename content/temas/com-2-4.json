@@ -1,0 +1,404 @@
+{
+  "id": "com-2-4",
+  "titulo": "Analogías",
+  "objetivo": "Descubro cómo se relacionan dos palabras y busco otra pareja que se relacione igual.",
+  "explicacion": [
+    {
+      "texto": "Algunas palabras forman **parejas** porque se relacionan. El perro ladra y el gato maúlla. Por eso decimos: «Perro es a ladrar como gato es a maullar».",
+      "emoji": "🐕",
+      "visual": { "tipo": "emojis", "items": ["🐕", "🐈"], "etiquetas": ["perro → ladrar", "gato → maullar"] }
+    },
+    {
+      "texto": "Eso se llama **analogía**: dos parejas que se relacionan de la **misma manera**. El zapato se pone en el pie y el guante, en la mano: «Pie es a zapato como mano es a guante».",
+      "visual": { "tipo": "emojis", "items": ["🦶", "👟", "✋", "🧤"], "etiquetas": ["pie", "zapato", "mano", "guante"] }
+    },
+    {
+      "texto": "Para resolver una analogía, descubre la relación de la primera pareja. La llama vive en el altiplano. ¿Dónde vive el bufeo? En el río: «Llama es a altiplano como bufeo es a río».",
+      "emoji": "🔍",
+      "visual": { "tipo": "emojis", "items": ["🦙", "🏔️", "🐬", "🏞️"], "etiquetas": ["llama", "altiplano", "bufeo", "río"] }
+    },
+    {
+      "texto": "Hay muchas relaciones: un animal y su cría, una cosa y para qué sirve, un animal y dónde vive. ¡Cuida el orden! Si la primera pareja empieza con el animal, la segunda también.",
+      "visual": { "tipo": "tabla", "columnas": ["Relación", "Ejemplo"], "filas": [["animal y su cría", "gallina → pollito"], ["cosa y para qué sirve", "tijera → cortar"], ["animal y dónde vive", "pez → agua"]] }
+    }
+  ],
+  "ejemplo": {
+    "instruccion": "Mira cómo resolvemos una analogía, paso a paso.",
+    "pasos": [
+      {
+        "texto": "Leemos: «Vaca es a leche como gallina es a...». Falta una palabra.",
+        "visual": { "tipo": "emojis", "items": ["🐄", "🥛", "🐔", "❓"], "etiquetas": ["vaca", "leche", "gallina", "?"] }
+      },
+      {
+        "texto": "Miramos la primera pareja: vaca y leche. ¿Qué relación tienen? **La vaca nos da leche.**",
+        "visual": { "tipo": "emojis", "items": ["🐄", "🥛"], "etiquetas": ["vaca", "leche"] }
+      },
+      {
+        "texto": "Usamos la misma relación con la gallina: ¿qué nos da la gallina? ¡El huevo! La palabra que falta es **huevo**.",
+        "visual": { "tipo": "emojis", "items": ["🐔", "🥚"], "etiquetas": ["gallina", "huevo"] }
+      },
+      {
+        "texto": "Leemos todo para comprobar: «Vaca es a leche como gallina es a huevo». Las dos parejas se relacionan igual.",
+        "visual": { "tipo": "emojis", "items": ["🐄", "🥛", "🐔", "🥚"], "etiquetas": ["vaca", "leche", "gallina", "huevo"] }
+      }
+    ]
+  },
+  "guiada": {
+    "intro": "Ahora lo hacemos juntos, paso a paso.",
+    "pasos": [
+      {
+        "id": "g1", "tipo": "opcion",
+        "enunciado": "Vaca es a mugir como perro es a...",
+        "apoyo": "La primera pareja es un animal y su sonido: la vaca muge. ¿Qué sonido hace el perro?",
+        "visual": { "tipo": "emojis", "items": ["🐄", "🐕"], "etiquetas": ["vaca", "perro"] },
+        "opciones": [
+          { "texto": "ladrar", "correcta": true },
+          { "texto": "maullar", "pista": "Maullar es el sonido del gato. ¿Qué sonido hace el perro?", "error": "relacion-distinta" },
+          { "texto": "correr", "pista": "El perro corre, pero la pareja habla de un sonido. ¿Qué sonido hace el perro?", "error": "relacion-distinta" }
+        ],
+        "pista": "Piensa en el sonido que hace el perro.",
+        "explicacion": "La vaca muge y el perro ladra. «Vaca es a mugir como perro es a ladrar»: cada animal con su sonido.",
+        "error": "relacion-distinta"
+      },
+      {
+        "id": "g2", "tipo": "completar",
+        "enunciado": "Completa la analogía.",
+        "apoyo": "El sombrero se pone en la cabeza. ¿Qué se pone en la mano?",
+        "visual": { "tipo": "emojis", "items": ["👒", "✋"], "etiquetas": ["sombrero", "mano"] },
+        "texto": "Cabeza es a sombrero como mano es a [guante].",
+        "banco": ["zapato", "bufanda"],
+        "pista": "Busca algo que abriga la mano cuando hace frío.",
+        "explicacion": "El sombrero va en la cabeza y el guante va en la mano: «Cabeza es a sombrero como mano es a guante».",
+        "error": "relacion-distinta"
+      },
+      {
+        "id": "g3", "tipo": "escribir",
+        "enunciado": "Escucha la analogía y escribe la palabra que falta.",
+        "apoyo": "Primero piensa qué hace el primer animal. Después piensa qué hace el segundo animal de la misma manera.",
+        "escuchar": "Pájaro es a volar como pez es a...",
+        "visual": { "tipo": "emojis", "items": ["🐦", "🐟"], "etiquetas": ["pájaro", "pez"] },
+        "respuestas": ["nadar"],
+        "pista": "El pájaro se mueve por el aire volando. ¿Cómo se mueve el pez en el agua?",
+        "explicacion": "El pájaro vuela y el pez nada: «Pájaro es a volar como pez es a nadar».",
+        "error": "escucha-analogia"
+      }
+    ]
+  },
+  "practica": [
+    {
+      "id": "p1", "tipo": "relacionar", "nivel": 1,
+      "enunciado": "Une cada animal con el sonido que hace.",
+      "pares": [
+        [ { "texto": "perro", "emoji": "🐕" }, "ladrar" ],
+        [ { "texto": "vaca", "emoji": "🐄" }, "mugir" ],
+        [ { "texto": "gato", "emoji": "🐈" }, "maullar" ],
+        [ { "texto": "gallo", "emoji": "🐓" }, "cantar" ]
+      ],
+      "pista": "Imagina el sonido que hace cada animal.",
+      "explicacion": "El perro ladra, la vaca muge, el gato maúlla y el gallo canta. Con estas parejas podemos armar analogías.",
+      "error": "no-identifica-relacion"
+    },
+    {
+      "id": "p2", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Toca las dos palabras de la primera pareja.",
+      "texto": "*Tijera* es a *cortar* como escoba es a barrer.",
+      "pista": "La primera pareja está antes de la palabra «como».",
+      "explicacion": "La primera pareja es «tijera» y «cortar». Después de «como» viene la segunda pareja: «escoba» y «barrer».",
+      "error": "estructura-analogia"
+    },
+    {
+      "id": "p3", "tipo": "opcion", "nivel": 1,
+      "enunciado": "Gallina es a pollito como vaca es a...",
+      "visual": { "tipo": "emojis", "items": ["🐔", "🐣", "🐄", "❓"], "etiquetas": ["gallina", "pollito", "vaca", "?"] },
+      "opciones": [
+        { "texto": "ternero", "correcta": true },
+        { "texto": "leche", "pista": "La vaca nos da leche, pero el pollito no es un alimento: es la cría de la gallina. Busca la cría de la vaca.", "error": "relacion-distinta" },
+        { "texto": "pasto", "pista": "La vaca come pasto. Busca a su cría.", "error": "relacion-distinta" }
+      ],
+      "pista": "El pollito es la cría de la gallina. ¿Cómo se llama la cría de la vaca?",
+      "explicacion": "El pollito es la cría de la gallina y el ternero es la cría de la vaca.",
+      "error": "relacion-distinta"
+    },
+    {
+      "id": "p4", "tipo": "memoria", "nivel": 1,
+      "enunciado": "Encuentra las parejas: cada cosa con lo que hacemos con ella.",
+      "pares": [
+        [ { "texto": "tijera", "emoji": "✂️" }, "cortar" ],
+        [ { "texto": "lápiz", "emoji": "✏️" }, "escribir" ],
+        [ { "texto": "escoba", "emoji": "🧹" }, "barrer" ],
+        [ { "texto": "llave", "emoji": "🔑" }, "abrir" ]
+      ],
+      "pista": "Piensa para qué sirve cada cosa.",
+      "explicacion": "Tijera: cortar. Lápiz: escribir. Escoba: barrer. Llave: abrir. Con estas parejas se arman analogías.",
+      "error": "no-identifica-relacion"
+    },
+    {
+      "id": "p5", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa la analogía.",
+      "visual": { "tipo": "emojis", "items": ["🦅", "🐬"], "etiquetas": ["cóndor", "bufeo"] },
+      "texto": "Cóndor es a volar como bufeo es a [nadar].",
+      "banco": ["río", "caminar"],
+      "pista": "«Volar» es cómo se mueve el cóndor. ¿Cómo se mueve el bufeo?",
+      "explicacion": "El cóndor vuela y el bufeo nada. «Río» dice dónde vive el bufeo, y aquí buscamos cómo se mueve.",
+      "error": "relacion-distinta"
+    },
+    {
+      "id": "p6", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha la analogía y escribe la palabra que falta.",
+      "escuchar": "Ojo es a ver como oreja es a...",
+      "visual": { "tipo": "emojis", "items": ["👁️", "👂"], "etiquetas": ["ojo", "oreja"] },
+      "respuestas": ["oír", "escuchar"],
+      "pista": "Con los ojos vemos. ¿Qué hacemos con las orejas?",
+      "explicacion": "Con los ojos vemos y con las orejas oímos: «Ojo es a ver como oreja es a oír». También vale «escuchar».",
+      "error": "escucha-analogia"
+    },
+    {
+      "id": "p7", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "¿Qué relación tiene cada pareja?",
+      "categorias": [
+        { "id": "cria", "texto": "Animal y su cría", "emoji": "🐣" },
+        { "id": "uso", "texto": "Cosa y para qué sirve", "emoji": "✂️" },
+        { "id": "vive", "texto": "Animal y dónde vive", "emoji": "🏠" }
+      ],
+      "elementos": [
+        { "texto": "oveja – cordero", "categoria": "cria" },
+        { "texto": "perro – cachorro", "categoria": "cria" },
+        { "texto": "lápiz – escribir", "categoria": "uso" },
+        { "texto": "peine – peinar", "categoria": "uso" },
+        { "texto": "abeja – colmena", "categoria": "vive" },
+        { "texto": "bufeo – río", "categoria": "vive" }
+      ],
+      "pista": "Di una oración con cada pareja: «El cordero es la cría de la oveja», «El peine sirve para peinar».",
+      "explicacion": "Animal y su cría: oveja – cordero, perro – cachorro. Cosa y para qué sirve: lápiz – escribir, peine – peinar. Animal y dónde vive: abeja – colmena, bufeo – río.",
+      "error": "no-identifica-relacion"
+    },
+    {
+      "id": "p8", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "Une cada analogía con la palabra que la completa.",
+      "pares": [
+        ["Gato es a maullar como perro es a...", "ladrar"],
+        ["Leche es a vaca como miel es a...", "abeja"],
+        ["Tijera es a cortar como lápiz es a...", "escribir"],
+        ["Día es a sol como noche es a...", "luna"]
+      ],
+      "pista": "En cada analogía, lee la primera pareja y piensa qué relación tiene.",
+      "explicacion": "El perro ladra; la miel nos la da la abeja; el lápiz sirve para escribir; de noche vemos la luna.",
+      "error": "relacion-distinta"
+    },
+    {
+      "id": "p9", "tipo": "ordenar", "nivel": 2,
+      "enunciado": "Vaca es a ternero como oveja es a... Ordena las sílabas de la palabra que falta.",
+      "visual": { "tipo": "emojis", "items": ["🐄", "🐑"], "etiquetas": ["vaca", "oveja"] },
+      "elementos": ["cor", "de", "ro"],
+      "unir": "",
+      "pista": "Busca el nombre de la cría de la oveja. Dilo despacio, sílaba por sílaba, dando palmadas.",
+      "explicacion": "El ternero es la cría de la vaca y el cordero es la cría de la oveja: cor-de-ro.",
+      "error": "escritura-palabra"
+    },
+    {
+      "id": "p10", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escribe la palabra que falta: «Lunes es a martes como jueves es a ___».",
+      "respuestas": ["viernes"],
+      "pista": "El martes es el día que viene después del lunes. ¿Qué día viene después del jueves?",
+      "explicacion": "Después del lunes viene el martes, y después del jueves viene el viernes.",
+      "error": "escritura-palabra"
+    },
+    {
+      "id": "p11", "tipo": "multiple", "nivel": 3,
+      "enunciado": "Elige todas las analogías que están bien armadas.",
+      "opciones": [
+        { "texto": "Pez es a nadar como pájaro es a volar.", "correcta": true },
+        { "texto": "Tambor es a golpear como zampoña es a soplar.", "correcta": true },
+        { "texto": "Perro es a ladrar como gato es a mugir.", "pista": "El gato no muge. ¿Qué sonido hace el gato?", "error": "relacion-distinta" },
+        { "texto": "Pie es a guante como mano es a zapato.", "pista": "Revisa dónde se pone el guante y dónde se pone el zapato.", "error": "orden-pareja" }
+      ],
+      "columnas": 1,
+      "pista": "Di en voz alta la relación de cada pareja. ¿Las dos parejas se relacionan igual?",
+      "explicacion": "Están bien: «Pez es a nadar como pájaro es a volar» y «Tambor es a golpear como zampoña es a soplar». El gato maúlla, y el guante va en la mano, no en el pie.",
+      "error": "relacion-distinta"
+    },
+    {
+      "id": "p12", "tipo": "completar", "nivel": 3,
+      "enunciado": "Completa las dos analogías con las palabras del banco.",
+      "texto": "Llama es a lana como abeja es a [miel]. Guante es a mano como [sombrero] es a cabeza.",
+      "banco": ["colmena", "zapato"],
+      "pista": "La llama nos da lana: ¿qué nos da la abeja? En la segunda, mira bien el orden: primero va la prenda y después la parte del cuerpo.",
+      "explicacion": "La llama nos da lana y la abeja nos da miel. El guante va en la mano y el sombrero va en la cabeza.",
+      "error": "orden-pareja"
+    },
+    {
+      "id": "p13", "tipo": "pasos", "nivel": 3,
+      "enunciado": "Resuelve en dos pasos: «Abeja es a colmena como hormiga es a ___».",
+      "visual": { "tipo": "emojis", "items": ["🐝", "🐜"], "etiquetas": ["abeja", "hormiga"] },
+      "pasos": [
+        {
+          "tipo": "opcion",
+          "enunciado": "¿Qué relación tienen «abeja» y «colmena»?",
+          "opciones": [
+            { "texto": "La abeja vive en la colmena.", "correcta": true },
+            { "texto": "La abeja nos da la colmena.", "pista": "La abeja nos da miel, no la colmena. ¿Qué es la colmena para la abeja?", "error": "no-identifica-relacion" },
+            { "texto": "La colmena es la cría de la abeja.", "pista": "La colmena no es un animal. Piensa: ¿qué hace la abeja en la colmena?", "error": "no-identifica-relacion" }
+          ],
+          "pista": "Piensa: ¿qué es una colmena para la abeja?",
+          "explicacion": "La colmena es la casa de las abejas: la abeja vive en la colmena.",
+          "error": "no-identifica-relacion"
+        },
+        {
+          "tipo": "completar",
+          "enunciado": "Ahora completa con la misma relación.",
+          "texto": "Abeja es a colmena como hormiga es a [hormiguero].",
+          "banco": ["azúcar", "caminar"],
+          "pista": "La colmena es la casa de las abejas. ¿Cómo se llama la casa de las hormigas?",
+          "explicacion": "La abeja vive en la colmena y la hormiga vive en el hormiguero. «Azúcar» es algo que come la hormiga y «caminar» es algo que hace: no dicen dónde vive.",
+          "error": "relacion-distinta"
+        }
+      ],
+      "pista": "Primero descubre la relación de la primera pareja. Después úsala en la segunda.",
+      "explicacion": "«Abeja es a colmena como hormiga es a hormiguero»: cada animal con el lugar donde vive.",
+      "error": "no-identifica-relacion"
+    },
+    {
+      "id": "p14", "tipo": "ordenar", "nivel": 3,
+      "enunciado": "Ordena los pasos para resolver una analogía.",
+      "elementos": [
+        "Leo la primera pareja.",
+        "Descubro qué relación tiene.",
+        "Busco una palabra con la misma relación.",
+        "Leo toda la analogía para comprobar."
+      ],
+      "vertical": true,
+      "pista": "No puedes buscar la palabra antes de saber la relación.",
+      "explicacion": "Primero leo la primera pareja, luego descubro su relación, después busco la palabra que falta y al final leo todo para comprobar.",
+      "error": "estructura-analogia"
+    },
+    {
+      "id": "p15", "tipo": "escribir-libre", "nivel": 3,
+      "enunciado": "Inventa tu propia analogía. Usa «es a» y «como».",
+      "guia": ["Vaca es a ternero como...", "Tijera es a cortar como..."],
+      "requisitos": [
+        { "tipo": "mayuscula-inicial" },
+        { "tipo": "punto-final" },
+        { "tipo": "incluye-todas", "palabras": ["es a", "como"] },
+        { "tipo": "min-palabras", "valor": 8 }
+      ],
+      "modelo": "Pato es a nadar como caballo es a galopar.",
+      "pista": "Piensa en una pareja, por ejemplo un animal y lo que hace. Después busca otra pareja igual.",
+      "explicacion": "Por ejemplo: «Pato es a nadar como caballo es a galopar». Las dos parejas son un animal y cómo se mueve.",
+      "error": "produce-analogia"
+    }
+  ],
+  "comprobacion": [
+    {
+      "id": "c1", "tipo": "opcion", "nivel": 1,
+      "enunciado": "Oveja es a lana como gallina es a...",
+      "visual": { "tipo": "emojis", "items": ["🐑", "🐔"], "etiquetas": ["oveja", "gallina"] },
+      "opciones": [
+        { "texto": "plumas", "correcta": true },
+        { "texto": "pollito", "pista": "El pollito es la cría de la gallina. La lana cubre el cuerpo de la oveja: ¿qué cubre el cuerpo de la gallina?", "error": "relacion-distinta" },
+        { "texto": "maíz", "pista": "La gallina come maíz, pero la oveja no come lana. Busca lo que cubre su cuerpo.", "error": "relacion-distinta" }
+      ],
+      "pista": "La lana cubre el cuerpo de la oveja. ¿Qué cubre el cuerpo de la gallina?",
+      "explicacion": "La lana cubre a la oveja y las plumas cubren a la gallina: «Oveja es a lana como gallina es a plumas».",
+      "error": "relacion-distinta"
+    },
+    {
+      "id": "c2", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Toca las dos palabras de la segunda pareja.",
+      "texto": "Llama es a altiplano como *bufeo* es a *río*.",
+      "pista": "La segunda pareja está después de la palabra «como».",
+      "explicacion": "La primera pareja es «llama» y «altiplano». La segunda pareja, después de «como», es «bufeo» y «río».",
+      "error": "estructura-analogia"
+    },
+    {
+      "id": "c3", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "Une cada analogía con la palabra que falta.",
+      "pares": [
+        ["Oveja es a cordero como perro es a...", "cachorro"],
+        ["Pie es a zapato como cabeza es a...", "sombrero"],
+        ["Martillo es a clavar como tijera es a...", "cortar"]
+      ],
+      "pista": "Busca la relación de la primera pareja: ¿es una cría, una prenda o para qué sirve algo?",
+      "explicacion": "El cachorro es la cría del perro; el sombrero se pone en la cabeza; la tijera sirve para cortar.",
+      "error": "relacion-distinta"
+    },
+    {
+      "id": "c4", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha la analogía y escribe la palabra que falta.",
+      "escuchar": "Enero es a febrero como junio es a...",
+      "visual": { "tipo": "emoji", "valor": "📅" },
+      "respuestas": ["julio"],
+      "pista": "Febrero es el mes que viene después de enero. ¿Qué mes viene después de junio?",
+      "explicacion": "Después de enero viene febrero, y después de junio viene julio.",
+      "error": "escucha-analogia"
+    },
+    {
+      "id": "c5", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa la analogía.",
+      "visual": { "tipo": "emojis", "items": ["🎶", "📖"], "etiquetas": ["charango", "libro"] },
+      "texto": "Charango es a tocar como libro es a [leer].",
+      "banco": ["dormir", "comer"],
+      "pista": "El charango sirve para tocar música. ¿Para qué sirve un libro?",
+      "explicacion": "El charango sirve para tocar y el libro sirve para leer: cada cosa con para qué sirve.",
+      "error": "relacion-distinta"
+    },
+    {
+      "id": "c6", "tipo": "ordenar", "nivel": 2,
+      "enunciado": "Gato es a gatito como pato es a... Ordena las sílabas de la palabra que falta.",
+      "visual": { "tipo": "emojis", "items": ["🐈", "🦆"], "etiquetas": ["gato", "pato"] },
+      "elementos": ["pa", "ti", "to"],
+      "unir": "",
+      "pista": "La cría del gato es el gatito. Piensa en la cría del pato: se forma igual.",
+      "explicacion": "Gatito es la cría del gato y patito es la cría del pato: pa-ti-to.",
+      "error": "escritura-palabra"
+    },
+    {
+      "id": "c7", "tipo": "clasificar", "nivel": 3,
+      "enunciado": "¿La analogía está bien armada o no?",
+      "categorias": [
+        { "id": "si", "texto": "Está bien", "emoji": "✅" },
+        { "id": "no", "texto": "No está bien", "emoji": "❌" }
+      ],
+      "elementos": [
+        { "texto": "Gato es a maullar como vaca es a mugir.", "categoria": "si" },
+        { "texto": "Vaca es a ternero como gallina es a pollito.", "categoria": "si" },
+        { "texto": "Escoba es a barrer como cuchara es a comer.", "categoria": "si" },
+        { "texto": "Lápiz es a escribir como tijera es a dormir.", "categoria": "no" },
+        { "texto": "Pez es a agua como pájaro es a piedra.", "categoria": "no" },
+        { "texto": "Perro es a cachorro como oveja es a lana.", "categoria": "no" }
+      ],
+      "pista": "En cada una, di la relación de la primera pareja y revisa si la segunda pareja cumple la misma.",
+      "explicacion": "Están bien las del gato y la vaca (sonidos), la vaca y la gallina (crías) y la escoba y la cuchara (para qué sirven). La tijera no sirve para dormir, el pájaro no vive en una piedra y la lana no es la cría de la oveja.",
+      "error": "relacion-distinta"
+    },
+    {
+      "id": "c8", "tipo": "completar", "nivel": 3,
+      "enunciado": "El chuño se hace con papa. Completa la analogía.",
+      "texto": "Chuño es a papa como [queso] es a [leche].",
+      "banco": ["mesa", "zapato"],
+      "pista": "Primero va lo que se prepara y después con qué se hace, como el chuño y la papa.",
+      "explicacion": "El chuño se hace con papa y el queso se hace con leche: «Chuño es a papa como queso es a leche».",
+      "error": "orden-pareja"
+    }
+  ],
+  "repaso": {
+    "texto": "Una analogía compara dos parejas que se relacionan igual. Descubre la relación de la primera pareja y úsala en la segunda: «Pie es a zapato como mano es a guante».",
+    "visual": { "tipo": "emojis", "items": ["🦶", "👟", "✋", "🧤"], "etiquetas": ["pie", "zapato", "mano", "guante"] }
+  },
+  "adulto": {
+    "objetivo": "Resolver y crear analogías sencillas: descubrir la relación entre dos palabras (sonido, cría, uso, lugar donde vive, de qué está hecho) y aplicarla a otra pareja respetando el orden.",
+    "sugerencias": [
+      "En la cocina o en la feria, jueguen a «¿Qué va con qué?»: el adulto dice una pareja (vaca, leche) y el niño o la niña arma otra igual (gallina, huevo). Luego cambien los papeles.",
+      "Junten objetos de la casa (tijera, peine, cuchara, escoba, llave), pidan que diga para qué sirve cada uno y armen analogías en voz alta: «Peine es a peinar como cuchara es a comer».",
+      "En un paseo al aire libre, nombren animales y el lugar donde viven (pez, río; abeja, colmena; llama, altiplano) e inventen analogías. Revisen juntos si las dos parejas se relacionan igual y en el mismo orden."
+    ],
+    "errores": {
+      "relacion-distinta": { "descripcion": "Elige una palabra relacionada, pero con una relación distinta a la de la primera pareja (por ejemplo, «vaca es a leche» cuando se busca la cría).", "sugerencia": "Pidan que diga la relación con una oración («la gallina tiene un pollito») y que use la misma oración para la segunda pareja." },
+      "no-identifica-relacion": { "descripcion": "Le cuesta descubrir qué relación tienen dos palabras.", "sugerencia": "Con objetos o dibujos, pregunten: «¿Para qué sirve? ¿Dónde vive? ¿Qué sonido hace? ¿Quién es su cría?»." },
+      "orden-pareja": { "descripcion": "Invierte el orden de las palabras en la segunda pareja (dice «pie es a zapato como guante es a mano»).", "sugerencia": "Escriban la analogía en dos columnas: a la izquierda lo que va primero (pie, mano) y a la derecha lo que va segundo (zapato, guante)." },
+      "estructura-analogia": { "descripcion": "No reconoce las dos parejas que forman una analogía.", "sugerencia": "Lean analogías marcando con un color la primera pareja (antes de «como») y con otro color la segunda." },
+      "escucha-analogia": { "descripcion": "Le cuesta resolver una analogía cuando la escucha sin verla.", "sugerencia": "Digan analogías en voz alta, despacio, y pidan que repita la primera pareja antes de responder." },
+      "escritura-palabra": { "descripcion": "Encuentra la palabra, pero tiene dificultad para escribirla.", "sugerencia": "Separen la palabra en sílabas con palmadas (cor-de-ro) y escríbanla sílaba por sílaba." },
+      "produce-analogia": { "descripcion": "Le cuesta inventar una analogía propia.", "sugerencia": "Den la primera pareja y un inicio («Pato es a nadar como caballo es a...») para que complete, y poco a poco dejen que invente las dos parejas." }
+    }
+  }
+}

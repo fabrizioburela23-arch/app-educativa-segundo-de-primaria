@@ -1,0 +1,451 @@
+{
+  "id": "nat-7-1",
+  "titulo": "Semejanzas y diferencias entre las personas",
+  "objetivo": "Sé en qué nos parecemos y en qué somos diferentes las personas, cuido mi cuerpo y respeto a todos.",
+  "explicacion": [
+    {
+      "texto": "Las personas nos **parecemos** mucho: todos tenemos corazón, pulmones, huesos y piel. Todos necesitamos comer, dormir y cariño. Todos sentimos alegría, tristeza, miedo y enojo. ¡Y tenemos los mismos derechos!",
+      "emoji": "🤝",
+      "visual": { "tipo": "emojis", "items": ["😊", "😢", "😨", "😠"], "etiquetas": ["alegría", "tristeza", "miedo", "enojo"] }
+    },
+    {
+      "texto": "También somos **diferentes** en la estatura, el color de la piel, los ojos y el cabello, la voz y la edad. El color de la piel viene de la **melanina**: con más melanina, la piel es más oscura. Nos ayuda a protegernos del sol.",
+      "visual": { "tipo": "emojis", "items": ["🧒🏻", "🧒🏼", "🧒🏽", "🧒🏾", "🧒🏿"] }
+    },
+    {
+      "texto": "Nos parecemos a nuestra familia porque heredamos rasgos de la mamá y el papá que nos dieron la vida, como el color de los ojos o la forma del cabello. Eso es la **herencia**. ¡Y a toda familia la une el cariño!",
+      "emoji": "💞"
+    },
+    {
+      "texto": "El cuerpo de niñas y niños es casi igual. Solo son diferentes las **partes íntimas**, las que cubre la ropa interior. Son privadas: nadie puede tocarlas ni pedir verlas. Si algo te incomoda, cuéntalo a un adulto de confianza.",
+      "emoji": "🛡️"
+    }
+  ],
+  "ejemplo": {
+    "instruccion": "Conoce al curso de la profesora Ana. Todos son distintos y todos valen lo mismo.",
+    "pasos": [
+      {
+        "texto": "Kusi es el más alto del curso. Arami tiene el cabello rizado y Mateo, lacio. Rosa tiene la piel oscura y Wara, clara. ¡Y nadie tiene las mismas huellas de los dedos que otra persona!",
+        "visual": { "tipo": "emojis", "items": ["👦🏽", "👧🏾", "👦🏼", "👧🏿", "👧🏻"], "etiquetas": ["Kusi", "Arami", "Mateo", "Rosa", "Wara"] }
+      },
+      {
+        "texto": "Luis usa **lentes** para ver mejor. Nayra usa **silla de ruedas** y juega básquet. Juan es sordo y conversa en **lengua de señas**. La abuela de Inti es ciega y lee en **braille**, con los dedos.",
+        "visual": { "tipo": "emojis", "items": ["👓", "♿", "🤟", "☝️"], "etiquetas": ["lentes", "silla de ruedas", "lengua de señas", "braille"] }
+      },
+      {
+        "texto": "No hay colores, juegos ni trabajos solo «de niñas» o «de niños». Rosa juega fútbol y Mateo cocina con su papá. Ninguna piel, estatura o cabello es más bonito que otro: ¡todos valemos lo mismo!",
+        "visual": { "tipo": "emojis", "items": ["⚽", "🍳", "🎨", "🔧"], "etiquetas": ["fútbol", "cocina", "pintura", "arreglos"] }
+      },
+      {
+        "texto": "Tu cuerpo es tuyo. Solo una doctora o un enfermero pueden revisar tus partes íntimas, para cuidar tu salud y con un adulto de confianza presente. Si algo te hace sentir mal, di «¡No!», aléjate y cuéntalo.",
+        "visual": { "tipo": "emojis", "items": ["✋", "🏃", "🗣️"], "etiquetas": ["di «¡No!»", "aléjate", "cuéntalo"] }
+      }
+    ]
+  },
+  "guiada": {
+    "intro": "Ahora lo hacemos juntos, paso a paso.",
+    "pasos": [
+      {
+        "id": "g1", "tipo": "clasificar",
+        "enunciado": "¿Todas las personas lo tienen igual, o cambia de una persona a otra?",
+        "apoyo": "Pregúntate: ¿esto lo tienen todas las personas del mundo, o cada una lo tiene distinto?",
+        "categorias": [
+          { "id": "igual", "texto": "Igual en todas las personas", "emoji": "🤝" },
+          { "id": "cambia", "texto": "Cambia de una persona a otra", "emoji": "🌈" }
+        ],
+        "elementos": [
+          { "texto": "tener corazón", "categoria": "igual" },
+          { "texto": "necesitar dormir", "categoria": "igual" },
+          { "texto": "sentir alegría", "categoria": "igual" },
+          { "texto": "la estatura", "categoria": "cambia" },
+          { "texto": "el color de la piel", "categoria": "cambia" },
+          { "texto": "la voz", "categoria": "cambia" }
+        ],
+        "pista": "Todos tenemos corazón, necesitamos dormir y sentimos alegría. Piensa en lo que ves distinto en tus compañeros.",
+        "explicacion": "Todas las personas tenemos corazón, necesitamos dormir y sentimos alegría. La estatura, el color de la piel y la voz cambian de una persona a otra.",
+        "error": "semejanzas"
+      },
+      {
+        "id": "g2", "tipo": "completar",
+        "enunciado": "Completa con las palabras correctas.",
+        "apoyo": "Recuerda la palabra nueva de la tarjeta: empieza con «me».",
+        "texto": "El color de la piel viene de la [melanina]. Con más melanina, la piel es más [oscura].",
+        "banco": ["comida", "clara"],
+        "pista": "La melanina da color. Si hay más color, ¿la piel es más clara o más oscura?",
+        "explicacion": "El color de la piel viene de la melanina. Con más melanina, la piel es más oscura; con menos, es más clara.",
+        "error": "melanina"
+      },
+      {
+        "id": "g3", "tipo": "opcion",
+        "enunciado": "Alguien le pide a Kusi ver sus partes íntimas y le dice que es un secreto. ¿Qué debe hacer Kusi?",
+        "apoyo": "Recuerda: tu cuerpo es tuyo y tus partes íntimas son privadas.",
+        "opciones": [
+          { "texto": "Decir «¡No!», alejarse y contárselo a un adulto de confianza.", "correcta": true },
+          { "texto": "Guardar el secreto para no causar problemas.", "pista": "Los secretos que te hacen sentir mal siempre se cuentan. Nunca es tu culpa.", "error": "cuidado-cuerpo" },
+          { "texto": "Aceptar, si es una persona que conoce.", "pista": "Nadie puede pedirte eso, aunque sea una persona conocida.", "error": "cuidado-cuerpo" }
+        ],
+        "pista": "Tu cuerpo es tuyo. ¿Qué tres cosas puedes hacer si algo te incomoda?",
+        "explicacion": "Kusi debe decir «¡No!», alejarse y contárselo a un adulto de confianza, como su mamá, su papá o su maestra. Ese secreto sí se cuenta, y nunca es su culpa.",
+        "error": "cuidado-cuerpo"
+      }
+    ]
+  },
+  "practica": [
+    {
+      "id": "p1", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Toca lo que tienen todas las personas.",
+      "texto": "Todas las personas tienen *corazón*, *huesos* y *piel*, pero no todas usan lentes.",
+      "pista": "Busca partes del cuerpo que tiene todo el mundo. Hay tres.",
+      "explicacion": "Todas las personas tienen corazón, huesos y piel. Los lentes los usan solo algunas personas, para ver mejor.",
+      "error": "semejanzas"
+    },
+    {
+      "id": "p2", "tipo": "opcion", "nivel": 1,
+      "enunciado": "¿De qué depende el color de la piel?",
+      "opciones": [
+        { "texto": "De la melanina, una sustancia de nuestro cuerpo.", "correcta": true },
+        { "texto": "De lo que comemos.", "pista": "La comida nos da energía, pero no decide el color de la piel.", "error": "melanina" },
+        { "texto": "Del color de la ropa que usamos.", "pista": "La ropa cubre la piel, pero no le da su color.", "error": "melanina" }
+      ],
+      "pista": "Recuerda la palabra nueva que empieza con «me».",
+      "explicacion": "El color de la piel depende de la melanina. Con más melanina, la piel es más oscura; con menos, más clara.",
+      "error": "melanina"
+    },
+    {
+      "id": "p3", "tipo": "memoria", "nivel": 1,
+      "enunciado": "Encuentra las parejas: cada diferencia y un ejemplo.",
+      "pares": [
+        ["estatura", "alto o bajo"],
+        ["cabello", "lacio, ondulado o rizado"],
+        ["edad", "bebé, niña o abuelo"],
+        ["color de ojos", "cafés, verdes o azules"]
+      ],
+      "pista": "Piensa en lo que describe cada ejemplo: ¿el tamaño, el pelo, los años o el color de los ojos?",
+      "explicacion": "Estatura: alto o bajo. Cabello: lacio, ondulado o rizado. Edad: bebé, niña o abuelo. Color de ojos: cafés, verdes o azules.",
+      "error": "diferencias"
+    },
+    {
+      "id": "p4", "tipo": "escribir", "nivel": 1,
+      "enunciado": "Escucha y escribe cómo se siente Kusi.",
+      "escuchar": "Kusi perdió su pelota favorita y tiene ganas de llorar. ¿Cómo se siente?",
+      "respuestas": ["triste", "está triste", "se siente triste", "muy triste", "está muy triste", "se siente muy triste", "tristeza", "con tristeza", "siente tristeza", "se siente con tristeza"],
+      "pista": "Piensa cómo te sientes tú cuando pierdes algo que quieres mucho.",
+      "explicacion": "Kusi se siente **triste**. Todas las personas sentimos tristeza a veces: es un sentimiento que compartimos.",
+      "error": "sentimientos"
+    },
+    {
+      "id": "p5", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "Mira la tabla. ¿En qué se parecen Nayra y su abuelo Luis, y en qué son diferentes?",
+      "visual": {
+        "tipo": "tabla",
+        "columnas": ["¿Qué?", "Nayra", "Abuelo Luis"],
+        "filas": [
+          ["edad", "7 años", "70 años"],
+          ["estatura", "baja", "alta"],
+          ["cabello", "negro", "blanco"],
+          ["tiene corazón", "sí", "sí"],
+          ["le gusta reír", "sí", "sí"]
+        ]
+      },
+      "categorias": [
+        { "id": "parecen", "texto": "Se parecen" },
+        { "id": "diferentes", "texto": "Son diferentes" }
+      ],
+      "elementos": [
+        { "texto": "la edad", "categoria": "diferentes" },
+        { "texto": "la estatura", "categoria": "diferentes" },
+        { "texto": "el color del cabello", "categoria": "diferentes" },
+        { "texto": "tener corazón", "categoria": "parecen" },
+        { "texto": "las ganas de reír", "categoria": "parecen" }
+      ],
+      "pista": "Si en la tabla los dos dicen lo mismo, se parecen. Si dicen cosas distintas, son diferentes.",
+      "explicacion": "Nayra y su abuelo son diferentes en la edad, la estatura y el color del cabello. Se parecen en que los dos tienen corazón y les gusta reír.",
+      "error": "semejanzas"
+    },
+    {
+      "id": "p6", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa con las palabras correctas.",
+      "texto": "Nos parecemos a nuestra familia por la [herencia]. El color de los ojos y la forma del [cabello] se heredan.",
+      "banco": ["comida", "cuaderno"],
+      "pista": "La palabra que falta se parece a «heredar». Después, piensa en algo del cuerpo que puede ser lacio o rizado.",
+      "explicacion": "Nos parecemos a nuestra familia por la herencia. El color de los ojos y la forma del cabello se heredan.",
+      "error": "herencia"
+    },
+    {
+      "id": "p7", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "Une cada ayuda con para qué sirve.",
+      "pares": [
+        [{ "texto": "lentes", "emoji": "👓" }, "para ver mejor"],
+        [{ "texto": "silla de ruedas", "emoji": "♿" }, "para moverse de un lugar a otro"],
+        [{ "texto": "lengua de señas", "emoji": "🤟" }, "para conversar con las manos y la cara"],
+        [{ "texto": "braille", "emoji": "☝️" }, "para leer con los dedos"]
+      ],
+      "pista": "Recuerda a Luis, a Nayra, a Juan y a la abuela de Inti.",
+      "explicacion": "Los lentes sirven para ver mejor; la silla de ruedas, para moverse; la lengua de señas, para conversar con las manos y la cara; y el braille, para leer con los dedos.",
+      "error": "discapacidad"
+    },
+    {
+      "id": "p8", "tipo": "opcion", "nivel": 2,
+      "enunciado": "Pedro dice: «El fútbol es solo para niños». ¿Qué le puedes responder con respeto?",
+      "opciones": [
+        { "texto": "Niñas y niños pueden jugar fútbol: los juegos son para todos.", "correcta": true },
+        { "texto": "Tienes razón: las niñas no juegan fútbol.", "pista": "Recuerda a Rosa, que juega fútbol. ¿Los juegos tienen dueño?", "error": "estereotipos" },
+        { "texto": "Solo pueden jugar los más altos.", "pista": "La estatura no decide quién puede jugar.", "error": "estereotipos" }
+      ],
+      "pista": "Piensa: ¿hay juegos solo «de niñas» o solo «de niños»?",
+      "explicacion": "Los juegos son para todos: niñas y niños pueden jugar fútbol, cocinar, pintar o bailar.",
+      "error": "estereotipos"
+    },
+    {
+      "id": "p9", "tipo": "multiple", "nivel": 2,
+      "enunciado": "¿En qué nos parecemos TODAS las personas? Elige todas las respuestas correctas.",
+      "opciones": [
+        { "texto": "necesitamos comer y dormir", "correcta": true },
+        { "texto": "sentimos alegría y tristeza", "correcta": true },
+        { "texto": "tenemos los mismos derechos", "correcta": true },
+        { "texto": "tenemos la misma estatura", "pista": "Mira a tu alrededor: hay personas altas y bajas.", "error": "semejanzas" },
+        { "texto": "tenemos el mismo color de ojos", "pista": "Hay ojos cafés, verdes, azules...", "error": "semejanzas" }
+      ],
+      "pista": "Hay tres respuestas correctas: una sobre necesidades, otra sobre sentimientos y otra sobre derechos.",
+      "explicacion": "Todas las personas necesitamos comer y dormir, sentimos alegría y tristeza y tenemos los mismos derechos. La estatura y el color de ojos cambian.",
+      "error": "semejanzas"
+    },
+    {
+      "id": "p10", "tipo": "ordenar", "nivel": 2,
+      "enunciado": "Mira la tabla. Ordena a los niños del más bajo al más alto.",
+      "visual": {
+        "tipo": "tabla",
+        "columnas": ["Nombre", "Estatura"],
+        "filas": [["Inti", "125 cm"], ["Sofía", "118 cm"], ["Kusi", "131 cm"], ["Arami", "122 cm"]]
+      },
+      "elementos": ["Sofía", "Arami", "Inti", "Kusi"],
+      "pista": "Busca el número más pequeño: esa persona va primero.",
+      "explicacion": "Sofía (118 cm), Arami (122 cm), Inti (125 cm) y Kusi (131 cm). Cada persona crece a su ritmo: ninguna estatura es mejor que otra.",
+      "error": "diferencias"
+    },
+    {
+      "id": "p11", "tipo": "opcion", "nivel": 3,
+      "enunciado": "Tomás dice que Nayra no puede jugar a la pelota porque usa silla de ruedas. ¿Qué es lo correcto?",
+      "opciones": [
+        { "texto": "Nayra puede jugar: podemos cambiar un poco el juego para que todos participen.", "correcta": true },
+        { "texto": "Tomás tiene razón: Nayra solo puede mirar.", "pista": "Recuerda que Nayra juega básquet en su silla. ¿Cómo pueden jugar juntos?", "error": "discapacidad" },
+        { "texto": "Nayra debe jugar sola, en otro lugar.", "pista": "Jugar juntos es más divertido. ¿Qué pueden cambiar del juego?", "error": "discapacidad" }
+      ],
+      "pista": "Nayra juega básquet en su silla de ruedas. ¿Cómo podemos incluirla?",
+      "explicacion": "Nayra puede jugar. Si cambiamos un poco el juego, por ejemplo pasando la pelota con las manos, todos pueden participar.",
+      "error": "discapacidad"
+    },
+    {
+      "id": "p12", "tipo": "pasos", "nivel": 3,
+      "enunciado": "En el curso de Mateo, 6 niñas y niños tienen el cabello lacio, 4 lo tienen ondulado y 2 lo tienen rizado.",
+      "pasos": [
+        {
+          "tipo": "manipular",
+          "enunciado": "Arma el pictograma del cabello del curso.",
+          "manipulable": {
+            "tipo": "pictograma",
+            "icono": "🧒",
+            "escala": 1,
+            "categorias": [
+              { "etiqueta": "lacio", "objetivo": 6 },
+              { "etiqueta": "ondulado", "objetivo": 4 },
+              { "etiqueta": "rizado", "objetivo": 2 }
+            ]
+          },
+          "pista": "Pon un ícono por cada niña o niño: 6, 4 y 2.",
+          "explicacion": "Lacio: 6 íconos. Ondulado: 4 íconos. Rizado: 2 íconos.",
+          "error": "datos-curso"
+        },
+        {
+          "tipo": "numero",
+          "enunciado": "¿Cuántos estudiantes hay en total?",
+          "respuesta": 12,
+          "erroresComunes": [
+            { "respuesta": 10, "pista": "¿Sumaste los tres grupos? 6 + 4 + 2.", "error": "datos-curso" }
+          ],
+          "pista": "Suma los tres grupos: 6 + 4 + 2.",
+          "explicacion": "6 + 4 + 2 = 12 estudiantes.",
+          "error": "datos-curso"
+        },
+        {
+          "tipo": "numero",
+          "enunciado": "¿Cuántos más tienen el cabello lacio que el rizado?",
+          "respuesta": 4,
+          "erroresComunes": [
+            { "respuesta": 8, "pista": "Eso es sumar. Aquí se busca cuántos más hay: 6 − 2.", "error": "datos-curso" }
+          ],
+          "pista": "Compara 6 con 2: ¿cuántos le faltan al 2 para llegar a 6?",
+          "explicacion": "6 − 2 = 4. Hay 4 estudiantes más con cabello lacio que con cabello rizado.",
+          "error": "datos-curso"
+        }
+      ],
+      "pista": "Resuelve un paso a la vez.",
+      "explicacion": "Hay 12 estudiantes (6 + 4 + 2) y 4 más con cabello lacio que rizado. En un mismo curso hay cabellos muy distintos, ¡y todos están bien!",
+      "error": "datos-curso"
+    },
+    {
+      "id": "p13", "tipo": "clasificar", "nivel": 3,
+      "enunciado": "¿Es una sorpresa que se guarda un rato, o algo que se cuenta a un adulto de confianza?",
+      "categorias": [
+        { "id": "sorpresa", "texto": "Sorpresa: se guarda un rato", "emoji": "🎁" },
+        { "id": "contar", "texto": "Se cuenta a un adulto de confianza", "emoji": "🗣️" }
+      ],
+      "elementos": [
+        { "texto": "el regalo para el cumpleaños de papá", "categoria": "sorpresa" },
+        { "texto": "la fiesta sorpresa para la abuela", "categoria": "sorpresa" },
+        { "texto": "alguien quiso tocar tus partes íntimas y te pidió no contarlo", "categoria": "contar" },
+        { "texto": "algo que te da miedo o te hace sentir mal", "categoria": "contar" },
+        { "texto": "un secreto que alguien te pide guardar y te incomoda", "categoria": "contar" }
+      ],
+      "pista": "Las sorpresas alegran a alguien y pronto se cuentan. Lo que da miedo o incomoda siempre se cuenta.",
+      "explicacion": "El regalo y la fiesta son sorpresas: se guardan un rato y alegran. Lo que te da miedo, te incomoda o tiene que ver con tus partes íntimas siempre se cuenta a un adulto de confianza. Nunca es tu culpa.",
+      "error": "cuidado-cuerpo"
+    },
+    {
+      "id": "p14", "tipo": "escribir-libre", "nivel": 3,
+      "enunciado": "Escribe una oración: ¿en qué te pareces a alguien de tu familia?",
+      "guia": ["Me parezco a mi mamá en...", "Mi hermano y yo tenemos la misma..."],
+      "requisitos": [
+        { "tipo": "mayuscula-inicial" },
+        { "tipo": "punto-final" },
+        { "tipo": "min-palabras", "valor": 5 },
+        { "tipo": "incluye", "palabras": ["parezco", "parecemos", "parece", "igual", "mismo", "misma", "mismos", "mismas"] }
+      ],
+      "modelo": "Me parezco a mi abuela en los ojos.",
+      "pista": "Puede ser algo del cuerpo, como los ojos, o algo que les gusta hacer, como reír o cantar.",
+      "explicacion": "Por ejemplo: «Me parezco a mi abuela en los ojos». Empieza con mayúscula, di en qué se parecen y termina con punto.",
+      "error": "produce-oracion"
+    },
+    {
+      "id": "p15", "tipo": "completar", "nivel": 1,
+      "enunciado": "Completa sobre el cuerpo de niñas y niños.",
+      "texto": "El cuerpo de niñas y niños es casi [igual]. Solo son diferentes las partes íntimas. Son [privadas]: nadie puede tocarlas ni pedir verlas.",
+      "banco": ["distinto", "de todos"],
+      "pista": "Piensa en los brazos, las piernas y el corazón de niñas y niños. Y recuerda: tu cuerpo es tuyo.",
+      "explicacion": "El cuerpo de niñas y niños es casi igual. Solo son diferentes las partes íntimas, que son privadas: nadie puede tocarlas ni pedir verlas, salvo para cuidar tu salud, con un adulto de confianza presente.",
+      "error": "vocabulario-cuerpo"
+    }
+  ],
+  "comprobacion": [
+    {
+      "id": "c1", "tipo": "opcion", "nivel": 1,
+      "enunciado": "¿Qué tenemos todas las personas?",
+      "opciones": [
+        { "texto": "corazón y pulmones", "correcta": true },
+        { "texto": "ojos verdes", "pista": "El color de los ojos cambia de una persona a otra.", "error": "semejanzas" },
+        { "texto": "cabello rizado", "pista": "Hay cabello lacio, ondulado y rizado.", "error": "semejanzas" }
+      ],
+      "pista": "Piensa en algo que está dentro del cuerpo de todas las personas.",
+      "explicacion": "Todas las personas tenemos corazón y pulmones. El color de los ojos y la forma del cabello cambian de una persona a otra.",
+      "error": "semejanzas"
+    },
+    {
+      "id": "c2", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Toca las palabras que dicen en qué somos diferentes.",
+      "texto": "Las personas somos distintas en la *estatura*, el *color de la piel* y la *voz*, pero todas necesitamos cariño.",
+      "pista": "Hay tres. El cariño lo necesitamos todos.",
+      "explicacion": "Somos diferentes en la estatura, el color de la piel y la voz. Pero todos necesitamos cariño.",
+      "error": "diferencias"
+    },
+    {
+      "id": "c3", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa con las palabras correctas.",
+      "texto": "Lucía es sorda y conversa con sus amigos en [lengua de señas]. Don Mario es ciego y lee cuentos en [braille].",
+      "banco": ["lentes", "silla de ruedas"],
+      "pista": "Piensa: ¿cómo conversa una persona que no oye? ¿Y cómo lee una persona que no ve?",
+      "explicacion": "Lucía conversa en lengua de señas, con las manos y la cara. Don Mario lee en braille, tocando puntitos con los dedos.",
+      "error": "discapacidad"
+    },
+    {
+      "id": "c4", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "Une cada palabra con lo que significa.",
+      "pares": [
+        ["melanina", "da color a la piel, al cabello y a los ojos"],
+        ["herencia", "rasgos que recibimos de la familia"],
+        ["partes íntimas", "partes privadas que cubre la ropa interior"],
+        ["huellas de los dedos", "son distintas en cada persona"]
+      ],
+      "pista": "Empieza por la palabra que mejor conoces. ¿Cuál tiene que ver con el color?",
+      "explicacion": "La melanina da color; la herencia son los rasgos que recibimos de la familia; las partes íntimas son privadas; y las huellas de los dedos son distintas en cada persona.",
+      "error": "vocabulario-cuerpo"
+    },
+    {
+      "id": "c5", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "¿Es igual en todas las personas o cambia de una a otra?",
+      "categorias": [
+        { "id": "igual", "texto": "Igual en todas las personas", "emoji": "🤝" },
+        { "id": "cambia", "texto": "Cambia de una persona a otra", "emoji": "🌈" }
+      ],
+      "elementos": [
+        { "texto": "necesitar agua", "categoria": "igual" },
+        { "texto": "sentir miedo a veces", "categoria": "igual" },
+        { "texto": "tener derechos", "categoria": "igual" },
+        { "texto": "el color de los ojos", "categoria": "cambia" },
+        { "texto": "la forma del cabello", "categoria": "cambia" },
+        { "texto": "las huellas de los dedos", "categoria": "cambia" }
+      ],
+      "pista": "Todos necesitamos lo mismo y sentimos lo mismo. Pero el cuerpo de cada persona tiene detalles únicos.",
+      "explicacion": "Todas las personas necesitamos agua, a veces sentimos miedo y tenemos derechos. El color de los ojos, la forma del cabello y las huellas de los dedos cambian de una persona a otra.",
+      "error": "semejanzas"
+    },
+    {
+      "id": "c6", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha y escribe la palabra.",
+      "escuchar": "Wara tiene los ojos de su mamá y el cabello de su papá. ¿Cómo se llama recibir rasgos de la familia?",
+      "respuestas": ["herencia", "la herencia", "es la herencia"],
+      "pista": "Se parece a la palabra «heredar».",
+      "explicacion": "Es la **herencia**: recibimos rasgos de la mamá y el papá que nos dieron la vida.",
+      "error": "herencia"
+    },
+    {
+      "id": "c7", "tipo": "opcion", "nivel": 3,
+      "enunciado": "¿Quién puede revisar tus partes íntimas?",
+      "opciones": [
+        { "texto": "Una doctora o un enfermero, para cuidar tu salud y con un adulto de confianza presente.", "correcta": true },
+        { "texto": "Cualquier persona que conozcas bien.", "pista": "Tus partes íntimas son privadas, aunque la persona sea conocida.", "error": "cuidado-cuerpo" },
+        { "texto": "Un amigo, si te lo pide como un juego.", "pista": "Eso no es un juego. Si alguien te lo pide, di «¡No!» y cuéntalo a un adulto de confianza.", "error": "cuidado-cuerpo" }
+      ],
+      "pista": "Solo se revisan para cuidar tu salud.",
+      "explicacion": "Solo una doctora o un enfermero pueden revisarlas, para cuidar tu salud y con un adulto de confianza presente. Tu cuerpo es tuyo.",
+      "error": "cuidado-cuerpo"
+    },
+    {
+      "id": "c8", "tipo": "multiple", "nivel": 3,
+      "enunciado": "¿Qué frases son verdaderas y respetuosas? Elige todas las respuestas correctas.",
+      "opciones": [
+        { "texto": "Todas las personas valemos lo mismo.", "correcta": true },
+        { "texto": "Mujeres y hombres pueden trabajar de doctores, choferes o cocineros.", "correcta": true },
+        { "texto": "Hay un color de piel más bonito que los demás.", "pista": "Todos los colores de piel son bonitos. Ninguno es mejor.", "error": "estereotipos" },
+        { "texto": "Las personas en silla de ruedas no pueden hacer deporte.", "pista": "Recuerda a Nayra, que juega básquet en su silla.", "error": "discapacidad" }
+      ],
+      "pista": "Hay dos frases correctas. Busca las que tratan a todos con respeto.",
+      "explicacion": "Es verdad que todas las personas valemos lo mismo y que mujeres y hombres pueden tener cualquier trabajo. Ningún color de piel es más bonito, y las personas en silla de ruedas pueden hacer deporte.",
+      "error": "estereotipos"
+    }
+  ],
+  "repaso": {
+    "texto": "Todas las personas nos parecemos: cuerpo, necesidades, sentimientos y derechos. Y somos diferentes en estatura, piel, ojos, cabello, voz y edad. Tu cuerpo es tuyo. ¡Todos valemos lo mismo!",
+    "visual": { "tipo": "emojis", "items": ["🧒🏻", "🧒🏽", "🧒🏿"] }
+  },
+  "adulto": {
+    "objetivo": "Reconocer semejanzas (partes del cuerpo, necesidades, sentimientos, derechos) y diferencias biológicas entre las personas (estatura, color de piel por la melanina, ojos, cabello, voz, edad); explicar el parecido familiar con la idea sencilla de herencia; saber que el cuerpo de niñas y niños es casi igual y que las partes íntimas son privadas (autocuidado); y respetar a todas las personas, incluidas las personas con discapacidad, sin estereotipos de género ni de belleza.",
+    "sugerencias": [
+      "Frente a un espejo y con fotos de la familia, busquen semejanzas y diferencias (ojos, cabello, sonrisa, estatura). Marquen en la pared la estatura de cada uno y comparen sus huellas: froten un lápiz en un papel, apoyen el dedo y pásenlo a una cinta adhesiva. ¡Ninguna huella es igual!",
+      "Aprendan juntos algunas señas de la Lengua de Señas Boliviana (hola, gracias) y hagan «braille casero» con puntitos en relieve, pinchando una cartulina con un lápiz, para leerlos con los ojos cerrados. Conversen cómo cambiar un juego para que todos puedan jugar.",
+      "Conversen con calma sobre el cuidado del cuerpo. Usen los nombres correctos de las partes íntimas (vulva, pene), expliquen que son privadas y hagan juntos una lista de adultos de confianza. Diferencien sorpresas (alegran y pronto se cuentan) de secretos que incomodan (siempre se cuentan). Si su hija o hijo cuenta algo preocupante, escuchen sin culpar y busquen ayuda, por ejemplo en la Defensoría de la Niñez y Adolescencia de su municipio."
+    ],
+    "errores": {
+      "semejanzas": { "descripcion": "No reconoce lo que todas las personas tenemos en común.", "sugerencia": "Hagan una lista «todos tenemos...» (corazón, sentimientos, necesidades, derechos) pensando en personas muy distintas de la familia y del barrio." },
+      "diferencias": { "descripcion": "Le cuesta nombrar diferencias físicas entre las personas.", "sugerencia": "Jueguen a «¿Quién es?» describiendo a familiares por su estatura, cabello, ojos o voz, siempre con palabras respetuosas." },
+      "melanina": { "descripcion": "No sabe de qué depende el color de la piel o tiene ideas equivocadas (por ejemplo, que depende de la comida o de la ropa).", "sugerencia": "Expliquen que la melanina da color a la piel, al cabello y a los ojos, y que ayuda a proteger del sol. Corrijan con calma expresiones como «piel sucia»: todas las pieles quedan limpias al bañarse." },
+      "herencia": { "descripcion": "No relaciona el parecido familiar con la herencia.", "sugerencia": "Busquen en fotos quién tiene los ojos o el cabello de quién. En familias adoptivas o diversas, resalten también los parecidos en gustos y costumbres." },
+      "sentimientos": { "descripcion": "Le cuesta nombrar sentimientos.", "sugerencia": "Nombren en voz alta cómo se sienten durante el día («estoy alegre», «me siento triste») y pregunten cómo se siente él o ella." },
+      "discapacidad": { "descripcion": "Tiene ideas equivocadas sobre las personas con discapacidad o sobre las ayudas que usan.", "sugerencia": "Conversen sobre personas conocidas o deportistas con discapacidad, y sobre cómo adaptar un juego para que todos participen." },
+      "estereotipos": { "descripcion": "Repite estereotipos de género o de belleza.", "sugerencia": "Pregunten «¿por qué piensas eso?» y busquen ejemplos reales que lo desmientan: mujeres futbolistas, hombres que cocinan, personas de todos los colores en todos los trabajos." },
+      "cuidado-cuerpo": { "descripcion": "Duda sobre qué hacer para cuidar su cuerpo o sobre qué secretos se cuentan.", "sugerencia": "Repasen con calma la regla «mi cuerpo es mío: digo ¡no!, me alejo y lo cuento» y su lista de adultos de confianza. Háblenlo sin miedo ni culpa, como cualquier otra regla de cuidado." },
+      "vocabulario-cuerpo": { "descripcion": "Confunde palabras nuevas (melanina, herencia, partes íntimas).", "sugerencia": "Hagan tarjetas con cada palabra y un dibujo, y jueguen a explicarlas con sus propias palabras." },
+      "datos-curso": { "descripcion": "Le cuesta armar o leer el pictograma y comparar cantidades.", "sugerencia": "Hagan un pictograma en familia (color de ojos, comida favorita) con papelitos y cuenten juntos cada fila." },
+      "produce-oracion": { "descripcion": "Le cuesta escribir una oración completa con mayúscula y punto.", "sugerencia": "Digan la oración en voz alta antes de escribirla y revisen juntos la mayúscula inicial y el punto final." }
+    }
+  }
+}

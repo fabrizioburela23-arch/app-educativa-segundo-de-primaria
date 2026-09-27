@@ -1,0 +1,416 @@
+{
+  "id": "nat-6-4",
+  "titulo": "Ciclo de vida y necesidades",
+  "objetivo": "Sé que los seres vivos nacen, crecen, pueden reproducirse y mueren, y sé lo que todos necesitamos para vivir.",
+  "explicacion": [
+    {
+      "texto": "Todos los seres vivos tienen un **ciclo de vida**: **nacen**, **crecen**, pueden **reproducirse** (tener crías o dar semillas) y, al final, **mueren**. Así pasa con las personas, los animales y las plantas.",
+      "emoji": "🔄",
+      "visual": { "tipo": "ilustracion", "id": "ciclo-gallina" }
+    },
+    {
+      "texto": "Algunos animales cambian mucho al crecer. Del huevo de la rana nace un **renacuajo**: vive en el agua y tiene cola. Luego le salen patas, pierde la cola y se convierte en rana. La mariposa y la abeja también cambian mucho.",
+      "visual": { "tipo": "ilustracion", "id": "ciclo-rana" }
+    },
+    {
+      "texto": "Las plantas también tienen un ciclo. De la **semilla** sale un **brote**, que crece y da flores. De la flor nace el **fruto**, que guarda semillas nuevas. ¡Y el ciclo empieza otra vez!",
+      "visual": { "tipo": "ilustracion", "id": "ciclo-planta" }
+    },
+    {
+      "texto": "Todos los seres vivos necesitan **agua**, **alimento**, **aire** y un **espacio** para vivir, sin mucho frío ni mucho calor. Las plantas, además, necesitan **luz** para fabricar su alimento.",
+      "visual": { "tipo": "emojis", "items": ["💧", "🍎", "🌬️", "🏠", "☀️"], "etiquetas": ["agua", "alimento", "aire", "espacio", "luz"] }
+    }
+  ],
+  "ejemplo": {
+    "instruccion": "Mira cómo cambia una mariposa durante su ciclo de vida.",
+    "pasos": [
+      {
+        "texto": "Una mariposa pone **huevos** muy pequeños sobre una hoja.",
+        "visual": { "tipo": "emojis", "items": ["🦋", "🥚", "🍃"], "etiquetas": ["mariposa", "huevo", "hoja"] }
+      },
+      {
+        "texto": "Del huevo nace una **oruga**. Come hojas sin parar y crece mucho.",
+        "visual": { "tipo": "emojis", "items": ["🐛", "🍃", "🍃"], "etiquetas": ["oruga", "hoja", "hoja"] }
+      },
+      {
+        "texto": "La oruga se cuelga de una rama y se convierte en **crisálida**, con una cubierta dura. Adentro, su cuerpo cambia por completo.",
+        "visual": { "tipo": "ilustracion", "id": "ciclo-mariposa" }
+      },
+      {
+        "texto": "De la crisálida sale una **mariposa** adulta. Cuando ponga sus huevos, el ciclo empezará otra vez.",
+        "visual": { "tipo": "emojis", "items": ["🦋", "🌸"], "etiquetas": ["mariposa", "flor"] }
+      }
+    ]
+  },
+  "guiada": {
+    "intro": "Ahora lo hacemos juntos, paso a paso.",
+    "pasos": [
+      {
+        "id": "g1", "tipo": "ordenar",
+        "enunciado": "Ordena el ciclo de vida de la rana. Empieza por los huevos.",
+        "apoyo": "Primero hay huevos en el agua. Después el cuerpo cambia poco a poco: primero salen las patas y al final se va la cola.",
+        "elementos": ["huevos", "renacuajo con cola", "renacuajo con patas", "rana adulta"],
+        "pista": "El renacuajo recién nacido todavía no tiene patas.",
+        "explicacion": "Primero los huevos, después el renacuajo con cola, luego el renacuajo con patas y al final la rana adulta.",
+        "error": "orden-ciclo"
+      },
+      {
+        "id": "g2", "tipo": "relacionar",
+        "enunciado": "Une cada etapa del ciclo de vida con un ejemplo.",
+        "apoyo": "Nacer es empezar la vida. Crecer es hacerse más grande. Reproducirse es tener crías o dar semillas. Morir es terminar la vida.",
+        "pares": [
+          ["nacer", "el pollito sale del huevo"],
+          ["crecer", "la niña se hace más alta"],
+          ["reproducirse", "la llama tiene una cría"],
+          ["morir", "el árbol muy viejo deja de vivir"]
+        ],
+        "pista": "Busca primero el ejemplo donde la vida empieza y después el ejemplo donde la vida termina.",
+        "explicacion": "Nacer: el pollito sale del huevo. Crecer: la niña se hace más alta. Reproducirse: la llama tiene una cría. Morir: el árbol muy viejo deja de vivir.",
+        "error": "ciclo-etapas"
+      },
+      {
+        "id": "g3", "tipo": "completar",
+        "enunciado": "Completa con lo que necesita cada ser vivo.",
+        "apoyo": "Piensa: ¿qué toman las raíces del suelo mojado? ¿Qué entra por la nariz al respirar? ¿Qué es la comida?",
+        "texto": "La planta toma [agua] con sus raíces. El perro respira [aire]. La llama come pasto: ese es su [alimento].",
+        "banco": ["piedras", "música"],
+        "pista": "Piensa: ¿qué bebemos? ¿Qué entra por la nariz? ¿Cómo se llama lo que comemos?",
+        "explicacion": "La planta toma agua con sus raíces, el perro respira aire y el pasto es el alimento de la llama. Todos los seres vivos necesitan agua, aire y alimento.",
+        "error": "necesidades"
+      }
+    ]
+  },
+  "practica": [
+    {
+      "id": "p1", "tipo": "ordenar", "nivel": 1,
+      "enunciado": "Ordena el ciclo de vida de la gallina. Empieza por el huevo.",
+      "elementos": [
+        { "texto": "Hay un huevo en el nido.", "emoji": "🥚" },
+        { "texto": "El pollito rompe el cascarón.", "emoji": "🐣" },
+        { "texto": "El pollito come y crece.", "emoji": "🐥" },
+        { "texto": "Ya es una gallina adulta.", "emoji": "🐔" }
+      ],
+      "vertical": true,
+      "pista": "El pollito tiene que salir del huevo antes de crecer.",
+      "explicacion": "Primero hay un huevo, después el pollito rompe el cascarón, luego come y crece, y al final es una gallina adulta.",
+      "error": "orden-ciclo"
+    },
+    {
+      "id": "p2", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Toca lo que la planta necesita para vivir.",
+      "texto": "Inti pone su planta de haba junto a la ventana, para que reciba *luz*. Cada tarde la riega con *agua* y le canta una canción.",
+      "pista": "Hay dos palabras. Una viene del sol y la otra sale de la regadera.",
+      "explicacion": "La planta necesita luz y agua. La canción es un lindo detalle de Inti, pero la planta no la necesita para vivir.",
+      "error": "necesidades"
+    },
+    {
+      "id": "p3", "tipo": "escribir", "nivel": 1,
+      "enunciado": "Escucha la adivinanza y escribe qué animal es.",
+      "escuchar": "Nazco de un huevo en el agua. Primero soy un renacuajo con cola. Después me salen patas y pierdo la cola. ¿Quién soy?",
+      "respuestas": ["rana", "la rana", "una rana", "es la rana", "es una rana", "soy la rana", "soy una rana", "sapo", "el sapo", "un sapo", "es el sapo", "es un sapo"],
+      "pista": "Es un animal que vive en el agua y en la tierra, y que croa.",
+      "explicacion": "Es la **rana**: nace de un huevo, es renacuajo y después se convierte en rana. El sapo tiene un ciclo parecido.",
+      "error": "cambios-forma"
+    },
+    {
+      "id": "p4", "tipo": "memoria", "nivel": 1,
+      "enunciado": "Encuentra las parejas: el ser vivo adulto y cómo es cuando es muy joven.",
+      "pares": [
+        [{ "texto": "rana", "emoji": "🐸" }, "renacuajo"],
+        [{ "texto": "mariposa", "emoji": "🦋" }, "oruga"],
+        [{ "texto": "gallina", "emoji": "🐔" }, "pollito"],
+        [{ "texto": "persona", "emoji": "🧑" }, "bebé"],
+        [{ "texto": "árbol", "emoji": "🌳" }, "brote"]
+      ],
+      "pista": "Recuerda cómo empieza cada ciclo: el renacuajo, la oruga, el pollito, el bebé y el brote.",
+      "explicacion": "El renacuajo crece y es rana; la oruga, mariposa; el pollito, gallina; el bebé, persona adulta; y el brote, árbol.",
+      "error": "ciclo-etapas"
+    },
+    {
+      "id": "p5", "tipo": "opcion", "nivel": 1,
+      "enunciado": "¿Cuál es el orden del ciclo de vida?",
+      "opciones": [
+        { "texto": "nacer, crecer, reproducirse, morir", "correcta": true },
+        { "texto": "crecer, nacer, morir, reproducirse", "pista": "Antes de crecer, hay que nacer.", "error": "orden-ciclo" },
+        { "texto": "nacer, morir, crecer, reproducirse", "pista": "Morir es lo último que pasa en la vida.", "error": "orden-ciclo" }
+      ],
+      "pista": "¿Qué pasa primero en la vida de un ser vivo? ¿Y qué pasa al final?",
+      "explicacion": "El orden es: nacer, crecer, reproducirse y morir.",
+      "error": "orden-ciclo"
+    },
+    {
+      "id": "p6", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "¿Nace parecido a sus padres o cambia de forma al crecer?",
+      "categorias": [
+        { "id": "parecido", "texto": "Nace parecido a sus padres" },
+        { "id": "cambia", "texto": "Cambia de forma al crecer" }
+      ],
+      "elementos": [
+        { "texto": "llama", "emoji": "🦙", "categoria": "parecido" },
+        { "texto": "perro", "emoji": "🐕", "categoria": "parecido" },
+        { "texto": "persona", "emoji": "🧑", "categoria": "parecido" },
+        { "texto": "gallina", "emoji": "🐔", "categoria": "parecido" },
+        { "texto": "rana", "emoji": "🐸", "categoria": "cambia" },
+        { "texto": "mariposa", "emoji": "🦋", "categoria": "cambia" }
+      ],
+      "pista": "Si al crecer solo se hace más grande, nace parecido a sus padres. Si su cuerpo cambia por completo, como el del renacuajo, cambia de forma.",
+      "explicacion": "La llama, el perro, la persona y la gallina nacen parecidos a sus padres y solo crecen: el pollito ya tiene pico, alas y patas como la gallina. La rana y la mariposa cambian de forma: renacuajo y oruga.",
+      "error": "cambios-forma"
+    },
+    {
+      "id": "p7", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa el ciclo de vida de la planta.",
+      "texto": "La [semilla] se abre y sale un brote. La planta crece y da [flores]. De la flor nace el [fruto], que guarda semillas nuevas.",
+      "banco": ["piedra", "huevos"],
+      "pista": "Recuerda el dibujo del ciclo de la planta: semilla, brote, planta, flor y fruto.",
+      "explicacion": "La semilla se abre y sale un brote. La planta crece y da flores. De la flor nace el fruto, que guarda semillas nuevas.",
+      "error": "orden-ciclo"
+    },
+    {
+      "id": "p8", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "Une cada necesidad con para qué sirve.",
+      "pares": [
+        ["aire", "para respirar"],
+        ["alimento", "para tener energía y crecer"],
+        ["agua", "para que el cuerpo no se seque"],
+        ["refugio", "para protegerse del frío y del peligro"],
+        ["luz", "para que la planta fabrique su alimento"]
+      ],
+      "pista": "Empieza por la más fácil: ¿qué entra a tu cuerpo cuando respiras?",
+      "explicacion": "El aire sirve para respirar; el alimento, para tener energía y crecer; el agua, para que el cuerpo no se seque; el refugio, para protegerse; y la luz, para que la planta fabrique su alimento.",
+      "error": "necesidades"
+    },
+    {
+      "id": "p9", "tipo": "multiple", "nivel": 2,
+      "enunciado": "¿Qué necesita la llama para vivir? Elige todas las respuestas correctas.",
+      "opciones": [
+        { "texto": "agua", "emoji": "💧", "correcta": true },
+        { "texto": "pasto para comer", "emoji": "🌾", "correcta": true },
+        { "texto": "aire para respirar", "emoji": "🌬️", "correcta": true },
+        { "texto": "una chompa de lana", "pista": "La llama ya tiene su propia lana, que la abriga.", "error": "necesidades" },
+        { "texto": "golosinas", "emoji": "🍬", "pista": "Las golosinas no son alimento para la llama. Ella come pasto.", "error": "necesidades" }
+      ],
+      "pista": "Piensa en lo que necesita cualquier ser vivo. Hay tres respuestas correctas.",
+      "explicacion": "La llama necesita agua, pasto para comer y aire para respirar. No necesita chompa, porque ya tiene lana, ni golosinas.",
+      "error": "necesidades"
+    },
+    {
+      "id": "p10", "tipo": "manipular", "nivel": 2,
+      "enunciado": "El ciclo de la mariposa se repite. Completa lo que sigue.",
+      "manipulable": {
+        "tipo": "patron",
+        "secuencia": ["huevo", "oruga", "crisálida", "mariposa", "huevo"],
+        "opciones": ["oruga", "crisálida", "mariposa", "renacuajo"],
+        "completar": 2,
+        "solucion": ["oruga", "crisálida"]
+      },
+      "pista": "Después del huevo viene la etapa que come hojas sin parar.",
+      "explicacion": "Después del huevo nace la oruga, y la oruga se convierte en crisálida. Luego sale la mariposa y el ciclo sigue.",
+      "error": "orden-ciclo"
+    },
+    {
+      "id": "p11", "tipo": "ordenar", "nivel": 2,
+      "enunciado": "Ordena las etapas de la vida de una persona, desde que nace.",
+      "elementos": ["bebé", "niña o niño", "adolescente", "persona adulta", "persona adulta mayor"],
+      "vertical": true,
+      "pista": "Primero somos muy pequeños. La última etapa es la de las personas mayores.",
+      "explicacion": "Una persona es bebé, después niña o niño, luego adolescente, persona adulta y, al final, persona adulta mayor.",
+      "error": "orden-ciclo"
+    },
+    {
+      "id": "p12", "tipo": "pasos", "nivel": 3,
+      "enunciado": "La gallina de la abuela Rosa empieza a empollar sus huevos el 2 de octubre. Los pollitos tardan 21 días en nacer.",
+      "visual": { "tipo": "emojis", "items": ["🐔", "🥚", "🥚", "🥚"] },
+      "pasos": [
+        {
+          "tipo": "numero",
+          "enunciado": "¿Qué día de octubre nacen los pollitos?",
+          "respuesta": 23,
+          "erroresComunes": [
+            { "respuesta": 21, "pista": "21 son los días que tardan. Súmalos al día 2.", "error": "calculo-dias" },
+            { "respuesta": 19, "pista": "Los días pasan hacia adelante: hay que sumar, no restar.", "error": "calculo-dias" }
+          ],
+          "pista": "Empieza en el día 2 y suma 21 días.",
+          "explicacion": "2 + 21 = 23. Los pollitos nacen el 23 de octubre.",
+          "error": "calculo-dias"
+        },
+        {
+          "tipo": "manipular",
+          "enunciado": "Toca en el calendario el día en que nacen los pollitos.",
+          "manipulable": { "tipo": "calendario", "mes": 10, "anio": 2026, "objetivo": 23 },
+          "pista": "Busca el número 23 en el calendario de octubre.",
+          "explicacion": "Los pollitos nacen el 23 de octubre.",
+          "error": "calculo-dias"
+        },
+        {
+          "tipo": "opcion",
+          "enunciado": "Cuando un pollito crezca y sea gallina, ¿qué podrá hacer?",
+          "opciones": [
+            { "texto": "Poner huevos, y así el ciclo continúa.", "correcta": true },
+            { "texto": "Volver a ser un huevo.", "pista": "Los seres vivos no vuelven atrás en su ciclo. ¿Qué viene después de crecer?", "error": "ciclo-etapas" },
+            { "texto": "Convertirse en un renacuajo.", "pista": "El renacuajo es parte del ciclo de la rana, no del de la gallina.", "error": "ciclo-etapas" }
+          ],
+          "pista": "Después de crecer, muchos seres vivos pueden reproducirse.",
+          "explicacion": "La gallina adulta puede poner huevos: se reproduce y el ciclo continúa.",
+          "error": "ciclo-etapas"
+        }
+      ],
+      "pista": "Resuelve un paso a la vez.",
+      "explicacion": "Los pollitos nacen el 23 de octubre (2 + 21 = 23). Cuando crezcan, podrán poner huevos: así sigue el ciclo.",
+      "error": "ciclo-etapas"
+    },
+    {
+      "id": "p13", "tipo": "opcion", "nivel": 3,
+      "enunciado": "Mateo dice: «La oruga y la mariposa son dos animales distintos». ¿Tiene razón?",
+      "opciones": [
+        { "texto": "No. La oruga es la mariposa joven: es el mismo animal en otra etapa.", "correcta": true },
+        { "texto": "Sí, porque no se parecen en nada.", "pista": "No se parecen, pero dentro de la crisálida la oruga se transforma en mariposa.", "error": "cambios-forma" },
+        { "texto": "Sí, porque la oruga nunca cambia.", "pista": "Recuerda qué sale de la crisálida.", "error": "cambios-forma" }
+      ],
+      "pista": "Recuerda el ciclo: huevo, oruga, crisálida y mariposa.",
+      "explicacion": "Mateo no tiene razón. La oruga es la mariposa cuando es joven: el mismo animal cambia de forma al crecer.",
+      "error": "cambios-forma"
+    },
+    {
+      "id": "p14", "tipo": "opcion", "nivel": 3,
+      "enunciado": "Wara guarda una planta en un ropero oscuro por muchos días. La riega bien. ¿Qué le pasa?",
+      "opciones": [
+        { "texto": "Se pone pálida y débil, porque le falta luz.", "correcta": true },
+        { "texto": "Crece más verde y fuerte.", "pista": "¿Qué necesita la planta que no hay dentro del ropero?", "error": "necesidades" },
+        { "texto": "Nada, porque las plantas solo necesitan agua.", "pista": "Las plantas necesitan agua, pero también algo que viene del sol.", "error": "necesidades" }
+      ],
+      "pista": "Dentro del ropero hay agua y aire, pero falta algo que la planta necesita.",
+      "explicacion": "Sin luz, la planta no puede fabricar bien su alimento: se pone pálida y débil. Las plantas necesitan luz.",
+      "error": "necesidades"
+    },
+    {
+      "id": "p15", "tipo": "escribir-libre", "nivel": 3,
+      "enunciado": "Escribe cómo es el ciclo de vida de un animal o de una planta.",
+      "guia": ["La gallina nace de un huevo...", "La semilla de maíz..."],
+      "requisitos": [
+        { "tipo": "mayuscula-inicial" },
+        { "tipo": "punto-final" },
+        { "tipo": "min-palabras", "valor": 8 },
+        { "tipo": "incluye", "palabras": ["nace", "crece", "reproduce", "muere"] }
+      ],
+      "modelo": "La gallina nace de un huevo, crece, pone huevos y un día muere.",
+      "pista": "Elige un ser vivo y cuenta qué le pasa primero, después y al final.",
+      "explicacion": "Por ejemplo: «La gallina nace de un huevo, crece, pone huevos y un día muere». Usa palabras como nace, crece o muere.",
+      "error": "produce-oracion"
+    }
+  ],
+  "comprobacion": [
+    {
+      "id": "c1", "tipo": "ordenar", "nivel": 1,
+      "enunciado": "Ordena el ciclo de vida de la planta. Empieza por la semilla.",
+      "elementos": ["semilla", "brote", "planta con hojas", "flor", "fruto con semillas"],
+      "pista": "Del fruto salen semillas nuevas, así que el fruto va al final.",
+      "explicacion": "Semilla, brote, planta con hojas, flor y fruto con semillas. Con esas semillas, el ciclo empieza otra vez.",
+      "error": "orden-ciclo"
+    },
+    {
+      "id": "c2", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Toca las palabras que dicen lo que necesita la vicuña para vivir.",
+      "texto": "La vicuña toma *agua*, respira *aire* y come *pasto* tranquila.",
+      "pista": "Hay tres: algo que bebe, algo que respira y su alimento.",
+      "explicacion": "La vicuña necesita agua, aire y pasto, que es su alimento.",
+      "error": "necesidades"
+    },
+    {
+      "id": "c3", "tipo": "completar", "nivel": 2,
+      "enunciado": "Completa el ciclo de vida de la rana.",
+      "texto": "Del huevo de la rana nace un [renacuajo]. Vive en el agua y tiene [cola]. Después le salen [patas].",
+      "banco": ["pollito", "plumas"],
+      "pista": "La cría de la rana nada como un pececito. Al crecer, le salen las partes que usa para saltar.",
+      "explicacion": "Del huevo nace un renacuajo, que vive en el agua y tiene cola. Después le salen patas y se convierte en rana.",
+      "error": "cambios-forma"
+    },
+    {
+      "id": "c4", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "Une cada etapa de la vida de la llama con lo que pasa.",
+      "pares": [
+        ["nacer", "la cría sale de la panza de su mamá"],
+        ["crecer", "la cría toma leche, come pasto y se hace grande"],
+        ["reproducirse", "la llama adulta tiene su propia cría"],
+        ["morir", "la llama muy vieja deja de vivir"]
+      ],
+      "pista": "Piensa en el orden de la vida: ¿qué pasa primero, qué pasa después y qué pasa al final?",
+      "explicacion": "Nacer: la cría sale de la panza de su mamá. Crecer: toma leche, come pasto y se hace grande. Reproducirse: la llama adulta tiene su propia cría. Morir: la llama muy vieja deja de vivir.",
+      "error": "ciclo-etapas"
+    },
+    {
+      "id": "c5", "tipo": "multiple", "nivel": 2,
+      "enunciado": "¿Qué necesitan TODOS los seres vivos? Elige todas las respuestas correctas.",
+      "opciones": [
+        { "texto": "agua", "emoji": "💧", "correcta": true },
+        { "texto": "aire", "emoji": "🌬️", "correcta": true },
+        { "texto": "alimento", "emoji": "🍎", "correcta": true },
+        { "texto": "leche", "emoji": "🥛", "pista": "Solo los bebés y las crías de algunos animales, como la llama, toman leche.", "error": "necesidades" },
+        { "texto": "pasto", "emoji": "🌾", "pista": "Solo algunos animales comen pasto.", "error": "necesidades" }
+      ],
+      "pista": "Busca lo que necesitan las plantas, los animales y las personas. Hay tres respuestas correctas.",
+      "explicacion": "Todos los seres vivos necesitan agua, aire y alimento. La leche y el pasto son el alimento solo de algunos.",
+      "error": "necesidades"
+    },
+    {
+      "id": "c6", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Escucha y escribe el nombre de la etapa.",
+      "escuchar": "La mariposa pone un huevo. Del huevo nace una oruga. La oruga se cuelga de una rama y forma una cubierta dura. ¿Cómo se llama esa etapa?",
+      "respuestas": ["crisálida", "la crisálida", "una crisálida", "es la crisálida", "pupa", "la pupa"],
+      "pista": "Empieza con «cri».",
+      "explicacion": "Es la **crisálida**: allí la oruga se transforma en mariposa.",
+      "error": "cambios-forma"
+    },
+    {
+      "id": "c7", "tipo": "opcion", "nivel": 3,
+      "enunciado": "¿Un pez necesita aire para vivir?",
+      "opciones": [
+        { "texto": "Sí. Con sus branquias toma el oxígeno del aire que está mezclado en el agua.", "correcta": true },
+        { "texto": "No. Los peces solo necesitan agua.", "pista": "Todos los seres vivos necesitan aire. ¿Cómo lo toma el pez?", "error": "necesidades" },
+        { "texto": "No. Solo lo necesitan los animales de la tierra.", "pista": "Todos los seres vivos necesitan aire, también los que viven en el agua.", "error": "necesidades" }
+      ],
+      "pista": "Recuerda: todos los seres vivos necesitan aire.",
+      "explicacion": "Sí. El pez también necesita aire: con sus branquias toma el oxígeno del aire que está mezclado en el agua. Por eso no puede vivir en agua sin aire.",
+      "error": "necesidades"
+    },
+    {
+      "id": "c8", "tipo": "clasificar", "nivel": 3,
+      "enunciado": "Piensa en su ciclo de vida: ¿cambia de forma al crecer?",
+      "categorias": [
+        { "id": "cambia", "texto": "Sí, cambia de forma" },
+        { "id": "parecido", "texto": "No, nace parecido a sus padres" }
+      ],
+      "elementos": [
+        { "texto": "sapo", "categoria": "cambia" },
+        { "texto": "abeja", "emoji": "🐝", "categoria": "cambia" },
+        { "texto": "mosquito", "emoji": "🦟", "categoria": "cambia" },
+        { "texto": "vicuña", "categoria": "parecido" },
+        { "texto": "cóndor", "emoji": "🦅", "categoria": "parecido" },
+        { "texto": "gato", "emoji": "🐈", "categoria": "parecido" }
+      ],
+      "pista": "Piensa en cómo son sus crías: ¿se parecen a sus padres o son muy distintas, como el renacuajo y la oruga? Hay tres de cada grupo.",
+      "explicacion": "El sapo, la abeja y el mosquito cambian de forma al crecer: el sapo es primero renacuajo, y la abeja y el mosquito nacen como larvas, parecidas a gusanitos. La vicuña, el cóndor y el gato nacen parecidos a sus padres y solo crecen.",
+      "error": "cambios-forma"
+    }
+  ],
+  "repaso": {
+    "texto": "El ciclo de vida es nacer, crecer, reproducirse y morir. Todos los seres vivos necesitan agua, alimento, aire y un espacio para vivir. Las plantas, además, necesitan luz.",
+    "visual": { "tipo": "emojis", "items": ["🥚", "🐣", "🐥", "🐔"], "etiquetas": ["huevo", "nace", "crece", "gallina adulta"] }
+  },
+  "adulto": {
+    "objetivo": "Reconocer las etapas del ciclo vital (nacer, crecer, reproducirse, morir) en animales —incluidos los que cambian de forma, como la rana y la mariposa— y en plantas, e identificar las necesidades comunes de todos los seres vivos: agua, alimento, aire, espacio y una temperatura adecuada; y luz para las plantas.",
+    "sugerencias": [
+      "Siembren un grano de maíz, haba o frejol en un vaso con algodón húmedo o con tierra. Durante dos o tres semanas, dibujen cada pocos días cómo cambia: semilla, raíz, brote y hojas.",
+      "Experimento: pongan dos plantitas iguales, una junto a la ventana y otra dentro de una caja cerrada, y rieguen las dos. Después de una semana comparen su color y su tamaño y conversen sobre la luz. Al terminar, devuelvan la plantita a la luz para que se recupere.",
+      "Miren fotos de la familia en distintas edades (bebé, niñez, adultez) y ordénenlas. Si en el barrio o en la feria hay gallinas y pollitos, obsérvenlos y conversen sobre su ciclo. Si aparece el tema de la muerte de una mascota o de un ser querido, respondan con calma y palabras sencillas: es parte de la vida."
+    ],
+    "errores": {
+      "orden-ciclo": { "descripcion": "Confunde el orden de las etapas de un ciclo de vida.", "sugerencia": "Hagan tarjetas con dibujos (huevo, pollito, gallina) y ordénenlas en un círculo diciendo «primero, después, al final»." },
+      "ciclo-etapas": { "descripcion": "No reconoce qué significa cada etapa (nacer, crecer, reproducirse, morir).", "sugerencia": "Busquen ejemplos de cada etapa en la casa o el barrio: una semilla que brota, un cachorro que crece, un árbol con frutos, una planta que se secó." },
+      "cambios-forma": { "descripcion": "No sabe que algunos animales cambian de forma al crecer (rana, mariposa, abeja).", "sugerencia": "Miren juntos láminas o videos de renacuajos y orugas, y compárenlos con una llama o un perro, que nacen parecidos a sus padres." },
+      "necesidades": { "descripcion": "Olvida alguna necesidad común de los seres vivos (el aire de los peces, la luz de las plantas...).", "sugerencia": "Hagan una lista con dibujos (agua, alimento, aire, espacio, luz) y revisen juntos si sus plantas o su mascota tienen todo." },
+      "calculo-dias": { "descripcion": "Se equivoca al contar días hacia adelante en el calendario.", "sugerencia": "Usen el calendario de la casa: marquen un día y cuenten juntos hacia adelante con el dedo." },
+      "produce-oracion": { "descripcion": "Le cuesta escribir una oración completa con mayúscula y punto.", "sugerencia": "Cuenten primero en voz alta el ciclo con «primero, después, al final» y luego escríbanlo juntos." }
+    }
+  }
+}

@@ -1,0 +1,349 @@
+{
+  "id": "mat-6-3",
+  "titulo": "La hora",
+  "objetivo": "Leo y marco la hora en un reloj de agujas: en punto, y cuarto, y media y menos cuarto.",
+  "explicacion": [
+    {
+      "texto": "El reloj tiene dos agujas. La **aguja corta** marca la hora. La **aguja larga** marca los minutos. Un día completo tiene 24 horas: en un día, la aguja corta da dos vueltas.",
+      "emoji": "⏰",
+      "visual": { "tipo": "reloj", "hora": 3, "minutos": 0 }
+    },
+    {
+      "texto": "Cuando la aguja larga está en el 12, es la hora **en punto**. Aquí la aguja corta señala el 7: son las 7 en punto. En un reloj digital se ve así: 7:00.",
+      "visual": { "tipo": "reloj", "hora": 7, "minutos": 0 }
+    },
+    {
+      "texto": "Una hora tiene **60 minutos**. Cuando la aguja larga pasa de un número al siguiente, pasan 5 minutos. En el 6 marca 30 minutos: son las 7 **y media** (7:30). La aguja corta está entre el 7 y el 8.",
+      "visual": { "tipo": "reloj", "hora": 7, "minutos": 30 }
+    },
+    {
+      "texto": "Si la aguja larga está en el 3, son las 7 **y cuarto** (7:15). Si está en el 9, faltan 15 minutos para las 8: son las 8 **menos cuarto** (7:45).",
+      "visual": { "tipo": "reloj", "hora": 7, "minutos": 45 }
+    }
+  ],
+  "ejemplo": {
+    "instruccion": "Mira la mañana de Kusi en el reloj. Después, mueve tú las agujas.",
+    "pasos": [
+      { "texto": "Kusi se levanta a las 7 en punto de la mañana. La aguja larga está en el 12 y la corta, en el 7.", "visual": { "tipo": "reloj", "hora": 7, "minutos": 0 } },
+      { "texto": "Se lava y se viste. Pasa un cuarto de hora: la aguja larga llega al 3. Son las 7 y cuarto (7:15).", "visual": { "tipo": "reloj", "hora": 7, "minutos": 15 } },
+      { "texto": "Toma api con pan. Ya pasó media hora desde que se levantó: la aguja larga está en el 6. Son las 7 y media (7:30).", "visual": { "tipo": "reloj", "hora": 7, "minutos": 30 } },
+      { "texto": "Sale a la escuela. La aguja larga está en el 9: faltan 15 minutos para las 8. Son las 8 menos cuarto (7:45).", "visual": { "tipo": "reloj", "hora": 7, "minutos": 45 } }
+    ],
+    "explorar": { "tipo": "reloj", "paso": 5 }
+  },
+  "guiada": {
+    "intro": "Vamos a leer y marcar la hora juntos.",
+    "pasos": [
+      {
+        "id": "g1", "tipo": "numero",
+        "enunciado": "¿Qué hora marca el reloj? Son las ☐ en punto.",
+        "apoyo": "La aguja larga está en el 12: es en punto. Mira el número que señala la aguja corta.",
+        "visual": { "tipo": "reloj", "hora": 4, "minutos": 0 },
+        "respuesta": 4,
+        "erroresComunes": [ { "respuesta": 12, "pista": "El 12 lo señala la aguja larga, la de los minutos. Mira adónde apunta la aguja corta.", "error": "confunde-agujas" } ],
+        "pista": "La aguja corta es la que marca la hora.",
+        "explicacion": "La aguja corta señala el 4 y la larga está en el 12: son las 4 en punto.",
+        "error": "reloj-lectura"
+      },
+      {
+        "id": "g2", "tipo": "manipular",
+        "enunciado": "La clase de música empieza a las 9 y media. Marca esa hora en el reloj.",
+        "apoyo": "Y media: la aguja larga va al 6. La aguja corta queda entre el 9 y el 10.",
+        "manipulable": { "tipo": "reloj", "objetivo": { "hora": 9, "minutos": 30 }, "paso": 30, "inicial": { "hora": 12, "minutos": 0 } },
+        "pista": "Primero pon la hora con los botones de la aguja corta. Después, lleva la aguja larga al 6.",
+        "explicacion": "Para las 9 y media, la aguja larga apunta al 6 y la corta está entre el 9 y el 10.",
+        "error": "marca-hora"
+      },
+      {
+        "id": "g3", "tipo": "relacionar",
+        "enunciado": "Une cada hora con el reloj digital que la muestra.",
+        "apoyo": "«Y cuarto» son 15 minutos; «y media», 30 minutos. «Menos cuarto» son 45 minutos: faltan 15 para la hora siguiente.",
+        "pares": [ ["las 2 en punto", "2:00"], ["las 2 y cuarto", "2:15"], ["las 2 y media", "2:30"], ["las 3 menos cuarto", "2:45"] ],
+        "pista": "Mira los minutos de cada reloj digital: 00, 15, 30 o 45.",
+        "explicacion": "Las 2 en punto = 2:00. Las 2 y cuarto = 2:15. Las 2 y media = 2:30. Las 3 menos cuarto = 2:45, porque faltan 15 minutos para las 3.",
+        "error": "nombra-hora"
+      }
+    ]
+  },
+  "practica": [
+    {
+      "id": "p1", "tipo": "generador", "nivel": 1, "generador": "reloj", "params": { "precision": "media" }
+    },
+    {
+      "id": "p2", "tipo": "manipular", "nivel": 1,
+      "enunciado": "El recreo empieza a las 10 en punto. Marca esa hora en el reloj.",
+      "manipulable": { "tipo": "reloj", "objetivo": { "hora": 10, "minutos": 0 }, "paso": 30, "inicial": { "hora": 12, "minutos": 0 } },
+      "pista": "En punto: la aguja larga se queda en el 12. Mueve la aguja corta hasta el número de la hora.",
+      "explicacion": "A las 10 en punto, la aguja corta señala el 10 y la larga está en el 12.",
+      "error": "marca-hora"
+    },
+    {
+      "id": "p3", "tipo": "numero", "nivel": 1,
+      "enunciado": "¿Cuántos minutos tiene una hora?",
+      "visual": { "tipo": "reloj", "hora": 12, "minutos": 0 },
+      "respuesta": 60,
+      "sufijo": "minutos",
+      "erroresComunes": [
+        { "respuesta": 100, "pista": "Cuenta de 5 en 5 por los números del reloj: 5, 10, 15... ¿A cuánto llegas en el 12?", "error": "equivalencias-tiempo" },
+        { "respuesta": 12, "pista": "El reloj tiene 12 números, pero de un número al otro pasan 5 minutos. Cuenta de 5 en 5.", "error": "equivalencias-tiempo" }
+      ],
+      "pista": "La aguja larga da una vuelta completa en una hora. Cuenta de 5 en 5 los números del reloj.",
+      "explicacion": "Una hora tiene 60 minutos: es una vuelta completa de la aguja larga. Si cuentas de 5 en 5 por los 12 números del reloj, llegas a 60.",
+      "error": "equivalencias-tiempo"
+    },
+    {
+      "id": "p4", "tipo": "ordenar", "nivel": 1,
+      "enunciado": "Ordena el día de Arami, desde que se levanta hasta que se duerme.",
+      "elementos": [
+        { "texto": "6:30 de la mañana: se levanta.", "emoji": "🛏️" },
+        { "texto": "7:30 de la mañana: va a la escuela.", "emoji": "🏫" },
+        { "texto": "1:00 de la tarde: almuerza.", "emoji": "🍲" },
+        { "texto": "4:00 de la tarde: hace sus tareas.", "emoji": "📚" },
+        { "texto": "9:00 de la noche: se duerme.", "emoji": "🌙" }
+      ],
+      "vertical": true,
+      "pista": "Primero va la mañana, después la tarde y al final la noche.",
+      "explicacion": "Arami se levanta a las 6:30, va a la escuela a las 7:30, almuerza a la 1:00, hace sus tareas a las 4:00 y se duerme a las 9:00 de la noche.",
+      "error": "rutina-hora"
+    },
+    {
+      "id": "p5", "tipo": "tocar", "nivel": 1,
+      "enunciado": "Toca las palabras que dicen en qué parte del día pasa cada cosa.",
+      "texto": "Nayra se levanta a las 6 de la *mañana*. Almuerza a la 1 de la *tarde*. Se duerme a las 9 de la *noche*.",
+      "pista": "Hay tres partes del día. Busca la palabra que va después de «de la».",
+      "explicacion": "Las partes del día son mañana, tarde y noche.",
+      "error": "rutina-hora"
+    },
+    {
+      "id": "p6", "tipo": "generador", "nivel": 2, "generador": "reloj", "params": { "precision": "cuarto" }
+    },
+    {
+      "id": "p7", "tipo": "clasificar", "nivel": 2,
+      "enunciado": "¿Cómo se dice cada hora? Ponla en su grupo.",
+      "categorias": [
+        { "id": "cuarto", "texto": "y cuarto" },
+        { "id": "media", "texto": "y media" },
+        { "id": "menos", "texto": "menos cuarto" }
+      ],
+      "elementos": [
+        { "texto": "4:15", "categoria": "cuarto" }, { "texto": "10:30", "categoria": "media" },
+        { "texto": "1:45", "categoria": "menos" }, { "texto": "7:15", "categoria": "cuarto" },
+        { "texto": "12:30", "categoria": "media" }, { "texto": "5:45", "categoria": "menos" }
+      ],
+      "pista": "Mira los minutos: 15 minutos es un cuarto de hora y 30 minutos es media hora. ¿Y 45?",
+      "explicacion": "4:15 y 7:15 son «y cuarto». 10:30 y 12:30 son «y media». 1:45 y 5:45 son «menos cuarto»: las 2 menos cuarto y las 6 menos cuarto.",
+      "error": "nombra-hora"
+    },
+    {
+      "id": "p8", "tipo": "numero", "nivel": 2,
+      "enunciado": "Escucha la hora y escríbela con números, como en un reloj digital.",
+      "escuchar": "Son las nueve y cuarto.",
+      "campos": [ { "etiqueta": "Hora", "respuesta": 9 }, { "etiqueta": "Minutos", "respuesta": 15 } ],
+      "pista": "Y cuarto quiere decir 15 minutos.",
+      "explicacion": "Las 9 y cuarto se escriben 9:15: hora 9 y 15 minutos.",
+      "error": "nombra-hora"
+    },
+    {
+      "id": "p9", "tipo": "manipular", "nivel": 2,
+      "enunciado": "El partido de fútbol empieza a las 5 y cuarto. Marca esa hora en el reloj.",
+      "manipulable": { "tipo": "reloj", "objetivo": { "hora": 5, "minutos": 15 }, "paso": 15, "inicial": { "hora": 12, "minutos": 0 } },
+      "pista": "Y cuarto: la aguja larga va al 3. La aguja corta queda un poquito después del 5.",
+      "explicacion": "A las 5 y cuarto, la aguja larga apunta al 3 y la corta está un poco después del 5.",
+      "error": "marca-hora"
+    },
+    {
+      "id": "p10", "tipo": "memoria", "nivel": 2,
+      "enunciado": "Encuentra las parejas que duran lo mismo.",
+      "pares": [ ["1 hora", "60 minutos"], ["media hora", "30 minutos"], ["un cuarto de hora", "15 minutos"], ["1 día", "24 horas"] ],
+      "pista": "Media hora es la mitad de 60 minutos. Un cuarto de hora es la mitad de media hora.",
+      "explicacion": "1 hora = 60 minutos, media hora = 30 minutos, un cuarto de hora = 15 minutos y 1 día = 24 horas.",
+      "error": "equivalencias-tiempo"
+    },
+    {
+      "id": "p11", "tipo": "generador", "nivel": 3, "generador": "reloj", "params": { "precision": "cinco" }
+    },
+    {
+      "id": "p12", "tipo": "manipular", "nivel": 3,
+      "enunciado": "El micro a Oruro sale a las 11 menos cuarto. Marca esa hora en el reloj.",
+      "manipulable": { "tipo": "reloj", "objetivo": { "hora": 10, "minutos": 45 }, "paso": 15, "inicial": { "hora": 12, "minutos": 0 } },
+      "pista": "Menos cuarto: la aguja larga va al 9. Faltan 15 minutos para las 11, así que la aguja corta todavía no llega al 11.",
+      "explicacion": "Las 11 menos cuarto son las 10:45. La aguja larga apunta al 9 y la corta está entre el 10 y el 11, muy cerca del 11.",
+      "error": "menos-cuarto"
+    },
+    {
+      "id": "p13", "tipo": "ordenar", "nivel": 3,
+      "enunciado": "Ordena estas horas de la más temprana a la más tarde.",
+      "elementos": ["las 7 y media", "las 8 menos cuarto", "las 8 en punto", "las 8 y cuarto"],
+      "pista": "«Las 8 menos cuarto» llega antes que las 8: faltan 15 minutos para las 8.",
+      "explicacion": "7:30 (las 7 y media), 7:45 (las 8 menos cuarto), 8:00 (las 8 en punto) y 8:15 (las 8 y cuarto).",
+      "error": "menos-cuarto"
+    },
+    {
+      "id": "p14", "tipo": "pasos", "nivel": 3,
+      "enunciado": "El micro sale de la parada a las 7 y cuarto. El viaje hasta la escuela dura media hora.",
+      "visual": { "tipo": "reloj", "hora": 7, "minutos": 15 },
+      "pasos": [
+        {
+          "tipo": "numero",
+          "enunciado": "¿Cuántos minutos son media hora?",
+          "respuesta": 30,
+          "sufijo": "minutos",
+          "erroresComunes": [ { "respuesta": 15, "pista": "15 minutos es un cuarto de hora. Media hora es el doble.", "error": "equivalencias-tiempo" } ],
+          "pista": "Una hora tiene 60 minutos. Media hora es la mitad.",
+          "explicacion": "Media hora son 30 minutos, la mitad de 60.",
+          "error": "equivalencias-tiempo"
+        },
+        {
+          "tipo": "manipular",
+          "enunciado": "Avanza la aguja larga 30 minutos. ¿A qué hora llega el micro a la escuela?",
+          "manipulable": { "tipo": "reloj", "objetivo": { "hora": 7, "minutos": 45 }, "paso": 15, "inicial": { "hora": 7, "minutos": 15 } },
+          "pista": "Cada toque en «+ minutos» avanza 15 minutos. ¿Cuántos toques necesitas para 30 minutos?",
+          "explicacion": "7:15 más 30 minutos son las 7:45: la aguja larga pasa del 3 al 9.",
+          "error": "duracion"
+        },
+        {
+          "tipo": "opcion",
+          "enunciado": "¿Cómo se dice la hora a la que llega el micro?",
+          "opciones": [
+            { "texto": "las 8 menos cuarto", "correcta": true },
+            { "texto": "las 7 menos cuarto", "pista": "«Menos cuarto» se dice con la hora que viene. Después de las 7 vienen las 8.", "error": "menos-cuarto" },
+            { "texto": "las 7 y cuarto", "pista": "A esa hora sale el micro. Ya pasaron 30 minutos más.", "error": "duracion" }
+          ],
+          "columnas": 1,
+          "pista": "Son las 7:45. ¿Cuántos minutos faltan para las 8?",
+          "explicacion": "7:45 se dice «las 8 menos cuarto», porque faltan 15 minutos para las 8.",
+          "error": "menos-cuarto"
+        }
+      ],
+      "pista": "Resuelve un paso a la vez: primero piensa cuánto es media hora.",
+      "explicacion": "Media hora son 30 minutos. 7:15 + 30 minutos = 7:45, que se dice «las 8 menos cuarto».",
+      "error": "duracion"
+    },
+    {
+      "id": "p15", "tipo": "numero", "nivel": 3,
+      "enunciado": "Mateo entra a la escuela a las 8 en punto de la mañana y sale a la 1 en punto de la tarde. ¿Cuántas horas está en la escuela?",
+      "respuesta": 5,
+      "sufijo": "horas",
+      "erroresComunes": [
+        { "respuesta": 7, "pista": "Restar 8 − 1 no sirve aquí. Cuenta las horas en el reloj: de las 8 a las 9 es 1 hora...", "error": "duracion" },
+        { "respuesta": 6, "pista": "Cuenta los saltos, no los números: de las 8 a las 9 es 1 hora, de las 9 a las 10 es otra...", "error": "duracion" }
+      ],
+      "pista": "Cuenta los saltos de una hora desde las 8 hasta la 1. Después del 12 viene el 1.",
+      "explicacion": "De las 8 a la 1 hay 5 saltos de una hora: 8→9, 9→10, 10→11, 11→12 y 12→1. Mateo está 5 horas en la escuela.",
+      "error": "duracion"
+    },
+    {
+      "id": "p16", "tipo": "escribir-libre", "nivel": 3,
+      "enunciado": "Escribe a qué hora te levantas. Usa «en punto», «y cuarto», «y media» o «menos cuarto».",
+      "guia": ["Me levanto a las...", "Los domingos me levanto a las..."],
+      "requisitos": [
+        { "tipo": "mayuscula-inicial" }, { "tipo": "punto-final" },
+        { "tipo": "min-palabras", "valor": 5 },
+        { "tipo": "incluye", "palabras": ["punto", "cuarto", "media"] }
+      ],
+      "modelo": "Me levanto a las 6 y media de la mañana.",
+      "pista": "Mira un reloj de tu casa cuando te levantes. ¿Dónde está la aguja larga?",
+      "explicacion": "Por ejemplo: «Me levanto a las 6 y media de la mañana». Usa la hora a la que tú te levantas.",
+      "error": "escribe-oracion"
+    }
+  ],
+  "comprobacion": [
+    {
+      "id": "c1", "tipo": "opcion", "nivel": 1,
+      "enunciado": "¿Qué hora marca el reloj?",
+      "visual": { "tipo": "reloj", "hora": 2, "minutos": 30 },
+      "opciones": [
+        { "texto": "las 2 y media", "correcta": true },
+        { "texto": "las 6 en punto", "pista": "El 6 lo señala la aguja larga: son los minutos. La hora la marca la aguja corta.", "error": "confunde-agujas" },
+        { "texto": "las 3 y media", "pista": "La aguja corta todavía no llega al 3: está entre el 2 y el 3.", "error": "lee-hora" }
+      ],
+      "columnas": 1,
+      "pista": "La aguja corta marca la hora y la larga marca los minutos.",
+      "explicacion": "La aguja corta está entre el 2 y el 3, y la larga está en el 6: son las 2 y media (2:30).",
+      "error": "lee-hora"
+    },
+    {
+      "id": "c2", "tipo": "manipular", "nivel": 1,
+      "enunciado": "Wara se levanta a las 6 y media. Marca esa hora en el reloj.",
+      "manipulable": { "tipo": "reloj", "objetivo": { "hora": 6, "minutos": 30 }, "paso": 30, "inicial": { "hora": 12, "minutos": 0 } },
+      "pista": "Y media: la aguja larga va al 6. La aguja corta queda entre el 6 y el 7.",
+      "explicacion": "A las 6 y media, la aguja larga apunta al 6 y la corta está entre el 6 y el 7.",
+      "error": "marca-hora"
+    },
+    {
+      "id": "c3", "tipo": "opcion", "nivel": 2,
+      "enunciado": "Escucha la hora y elige el reloj que la marca.",
+      "escuchar": "Son las once y media.",
+      "opciones": [
+        { "visual": { "tipo": "reloj", "hora": 11, "minutos": 30 }, "correcta": true },
+        { "visual": { "tipo": "reloj", "hora": 5, "minutos": 55 }, "pista": "En ese reloj la aguja larga está en el 11 y la corta, cerca del 6. La hora la marca la aguja corta.", "error": "confunde-agujas" },
+        { "visual": { "tipo": "reloj", "hora": 12, "minutos": 30 }, "pista": "En ese reloj la aguja corta ya pasó el 12. A las 11 y media, la aguja corta está entre el 11 y el 12.", "error": "lee-hora" }
+      ],
+      "pista": "Y media: la aguja larga en el 6. Después mira dónde está la aguja corta.",
+      "explicacion": "Las 11 y media son las 11:30: la aguja larga apunta al 6 y la corta está entre el 11 y el 12.",
+      "error": "nombra-hora"
+    },
+    {
+      "id": "c4", "tipo": "escribir", "nivel": 2,
+      "enunciado": "Mira el reloj y escribe la palabra que falta: «Son las 5 y ☐».",
+      "visual": { "tipo": "reloj", "hora": 5, "minutos": 15 },
+      "respuestas": ["cuarto", "quince", "15"],
+      "pista": "La aguja larga está en el 3. ¿Cuántos minutos son?",
+      "explicacion": "La aguja larga en el 3 marca 15 minutos: son las 5 y cuarto (5:15).",
+      "error": "nombra-hora"
+    },
+    {
+      "id": "c5", "tipo": "generador", "nivel": 2, "generador": "reloj", "params": { "precision": "cuarto" }
+    },
+    {
+      "id": "c6", "tipo": "relacionar", "nivel": 2,
+      "enunciado": "Une cada forma de decir la hora con el lugar de la aguja larga.",
+      "pares": [ ["en punto", "aguja larga en el 12"], ["y cuarto", "aguja larga en el 3"], ["y media", "aguja larga en el 6"], ["menos cuarto", "aguja larga en el 9"] ],
+      "pista": "Cuenta de 5 en 5: en el 3 son 15 minutos, en el 6 son 30 y en el 9 son 45.",
+      "explicacion": "En punto: 12. Y cuarto: 3 (15 minutos). Y media: 6 (30 minutos). Menos cuarto: 9 (45 minutos).",
+      "error": "nombra-hora"
+    },
+    {
+      "id": "c7", "tipo": "manipular", "nivel": 3,
+      "enunciado": "Escucha la hora y márcala en el reloj.",
+      "escuchar": "Son las diez menos cuarto.",
+      "manipulable": { "tipo": "reloj", "objetivo": { "hora": 9, "minutos": 45 }, "paso": 15, "inicial": { "hora": 12, "minutos": 0 } },
+      "pista": "Menos cuarto: la aguja larga va al 9. Faltan 15 minutos para las 10, así que la aguja corta todavía no llega al 10.",
+      "explicacion": "Las 10 menos cuarto son las 9:45. La aguja larga apunta al 9 y la corta está entre el 9 y el 10, muy cerca del 10.",
+      "error": "menos-cuarto"
+    },
+    {
+      "id": "c8", "tipo": "numero", "nivel": 3,
+      "enunciado": "La clase de dibujo empieza a las 10 y media y dura media hora. ¿A qué hora termina? Escríbela como en un reloj digital.",
+      "visual": { "tipo": "reloj", "hora": 10, "minutos": 30 },
+      "campos": [ { "etiqueta": "Hora", "respuesta": 11 }, { "etiqueta": "Minutos", "respuesta": 0 } ],
+      "pista": "Desde el 6, la aguja larga avanza 30 minutos más. ¿A qué número llega? Si da la vuelta completa, empieza una hora nueva.",
+      "explicacion": "30 + 30 = 60 minutos: la aguja larga da la vuelta y llega al 12. Empieza una hora nueva: la clase termina a las 11 en punto (11:00).",
+      "error": "duracion"
+    }
+  ],
+  "repaso": {
+    "texto": "Aguja corta: la hora. Aguja larga: los minutos. Si la larga está en el 12, es en punto; en el 3, y cuarto; en el 6, y media; en el 9, menos cuarto.",
+    "visual": { "tipo": "reloj", "hora": 2, "minutos": 15 }
+  },
+  "adulto": {
+    "objetivo": "Leer y marcar la hora en un reloj de agujas (en punto, y cuarto, y media y menos cuarto), relacionarla con la hora digital, conocer que una hora tiene 60 minutos y un día 24 horas, y ubicar en el tiempo las actividades de la rutina diaria. Como desafío, leer la hora de 5 en 5 minutos y calcular duraciones sencillas.",
+    "sugerencias": [
+      "Hagan un reloj con un plato de cartón, dos flechas de papel (una corta y una larga) y un clip o chinche en el centro. Pidan que marque la hora de su rutina: me levanto, voy a la escuela, almuerzo, me duermo.",
+      "Cuando vean un reloj en la casa, en el micro o en la plaza, pregunten «¿qué hora es?» y pidan que responda con «en punto», «y cuarto», «y media» o «menos cuarto».",
+      "Cuando hagan algo que dure un rato (hervir papas, ir a la feria, viajar en micro), miren la hora al empezar y al terminar, y cuenten juntos cuántos minutos u horas pasaron."
+    ],
+    "errores": {
+      "reloj-lectura": { "descripcion": "Le cuesta leer la hora en un reloj de agujas.", "sugerencia": "Practiquen primero solo con horas en punto y luego agreguen y media, y cuarto y menos cuarto, con un reloj de cartón." },
+      "confunde-agujas": { "descripcion": "Confunde la aguja corta (hora) con la larga (minutos).", "sugerencia": "Pinten la aguja corta de un color y la larga de otro. Repitan: «la corta dice la hora; la larga, los minutos»." },
+      "lee-hora": { "descripcion": "Cuando la aguja corta está entre dos números, elige el número que no corresponde (dice las 3 y media cuando son las 2 y media).", "sugerencia": "Muevan juntos la aguja larga una vuelta completa y observen cómo la corta avanza despacio de un número al siguiente: la hora es el último número que la corta ya pasó." },
+      "marca-hora": { "descripcion": "Le cuesta mover las agujas para mostrar una hora.", "sugerencia": "Con un reloj de cartón, pidan que coloque primero la aguja larga (minutos) y después la corta (hora), diciendo en voz alta lo que hace." },
+      "nombra-hora": { "descripcion": "Confunde «y cuarto», «y media» y «menos cuarto» con los minutos que representan.", "sugerencia": "Doblen un círculo de papel en mitades y en cuartos: media vuelta son 30 minutos y un cuarto de vuelta, 15 minutos." },
+      "menos-cuarto": { "descripcion": "Nombra mal las horas con «menos cuarto» (dice «las 7 menos cuarto» para las 7:45).", "sugerencia": "Expliquen que «las 8 menos cuarto» (también se dice «un cuarto para las 8») es cuando faltan 15 minutos para las 8, es decir, 7:45. Muévanlo en el reloj de cartón." },
+      "equivalencias-tiempo": { "descripcion": "No recuerda cuántos minutos tiene una hora, media hora o un cuarto de hora.", "sugerencia": "Cuenten de 5 en 5 los números del reloj (5, 10, 15... 60) y marquen con color el 15, el 30 y el 45." },
+      "rutina-hora": { "descripcion": "Le cuesta ubicar las actividades del día en orden o en la parte del día que corresponde (mañana, tarde, noche).", "sugerencia": "Dibujen juntos un horario de su día con la hora de cada actividad y péguenlo en la pared." },
+      "duracion": { "descripcion": "Le cuesta calcular cuánto tiempo pasa entre dos horas.", "sugerencia": "Muevan la aguja larga de un reloj de cartón y cuenten los saltos: de 5 en 5 minutos o de hora en hora." },
+      "escribe-oracion": { "descripcion": "Le cuesta escribir una oración que diga la hora.", "sugerencia": "Pidan que diga en voz alta la oración antes de escribirla («Me levanto a las 6 y media») y revisen juntos la mayúscula y el punto." }
+    }
+  }
+}
